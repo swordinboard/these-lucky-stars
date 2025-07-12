@@ -1,0 +1,15 @@
+baseURL: 'http://theseluckystars.com/'
+languageCode: 'en-us'
+title: 'These Lucky Stars'
+
+module:
+  imports:
+  - path: "github.com/alex-shpak/hugo-book"
+  
+params:
+ BookFavicon: "SiB-favicon.ico"
+ BookLogo: "SiB-logo.png"
+ BookComments: false
+ BookEditPages: false
+ BookSection: '*'
+ 
