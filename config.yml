@@ -7,7 +7,7 @@ module:
   - path: "github.com/alex-shpak/hugo-book"
   
 params:
- BookTheme: "dark"
+ BookTheme: "light"
  BookFavicon: "SiB-favicon.ico"
  BookLogo: "SiB-logo.png"
  BookComments: false
