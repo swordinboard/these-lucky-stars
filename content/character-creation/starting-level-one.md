@@ -3,11 +3,17 @@ title: "Starting at Level One"
 weight: 10
 ---
 
-# Character Archetype
-
-Choose a short character archetype description like "Sneaky Pirate" or "Lucky Pilot" to guide your choices. This archetype will not otherwise be referenced during play, but it should be a direct reflection of your character and allow you to give the table a quick answerr to the question "What are you playing?"
-
 # Character Creation: Starting at Level One
+
+## Archetypes
+
+Players should choose an Archetype for their character. An archetype is a short description such as "Sneaky Pirate" or "Lucky Pilot" to guide their choices. This archetype will not otherwise be referenced during play, but it should be a direct reflection of your character and allow you to give the table a quick answer to the question "What are you playing?"
+
+## Rolling Attributes
+
+## Calculating Stats
+
+## Starting Features
 
 Each character starts at level one with:
 - Two traits

@@ -1,6 +1,6 @@
 ---
 title: "Combat"
-weight: 40
+weight: 50
 ---
 
 # Combat Rules
@@ -8,8 +8,7 @@ weight: 40
 Everything you need to know about combat in These Lucky Stars.
 
 ## Combat Sections
-- [Initiative](initiative)
-- [Taking Actions](taking-actions)
+- [Initiative and Action](taking-action)
 - [Attacking & Defending](attacking)
-- [Actions in Combat](actions)
 - [Damage & Defense](damage)
+- [Conditions](conditions)

@@ -1,77 +1,52 @@
 ---
-title: "Base Mechanic & Target"
+title: "Base Mechanic & Target Numbers"
 weight: 10
 ---
 
-# Base Mechanic & Target Numbers
+# Base Mechanic
 
-## Core Resolution System
+In most situations when determining success and failure some form of the following mechanic will be used:
 
-In most situations when determining success and failure, the following mechanic is used:
-
-**D20 + Stat + Modifiers vs. Target Number**
-
-This is the fundamental resolution system for These Lucky Stars RPG.
-
-### How it Works
-
-1. **Roll a 20-sided die**
-2. **Add your relevant attribute** (STR, AGI, DEX, etc.)
-3. **Add any applicable modifiers** (bonuses, penalties, equipment)
-4. **Compare the total to the target number**
-5. **If you meet or exceed the target, you succeed**
+**D20 + STAT + MODIFIERS VS. TARGET NUMBER**
 
 ---
 
-## Determining Target Numbers
+## Determining the Target Number
 
-The target number is based on a difficulty scale that represents how challenging the action is to perform.
+The target number lands on a scale that is based on the difficulty of the action being attempted. Many tasks have guidelines associated with them to help the Game Master best determine where on the scale a given target should land, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number.
 
-![ ](/difficulty-scale.png)
+![Difficulty Scale](/difficulty-scale.png)
 
+With a little practice, use of this scale becomes intuitive. It may help the GM to have it written or printed in front of them so they may quickly move a marker along it during situations with many modifiers such as combat.
 
-### How GMs Set Target Numbers
+Situational advantages/disadvantages move the target up or down the scale. For example, using inappropriate tools for a task -such as using a screwdriver as a hammer- results in the target becoming more difficult and moving up the scale.
 
-- **Simple Tasks:** Basic, everyday actions
-- **Challenging Tasks:** Actions requiring skill or effort (default for attacks and stealth: **15**)
-- **Strenuous Tasks:** Very difficult actions requiring expertise
-- **"Impossible" Tasks:** Things that cannot normally be attempted
+All attack and stealth rolls start at 15. Advantages to the defender move the target up the scale, while advantages to the attacker move the target down the scale.
 
-### Modifying Difficulty
+### "Impossible" Tasks
 
-**Situational advantages/disadvantages move the target up or down the scale:**
-
-- **Using inappropriate tools** (screwdriver as hammer) → Target moves UP
-- **Environmental factors** → Target moves UP or DOWN
-- **Character conditions** → Usually moves target UP
-
-### Special Cases
-
-**Attack Rolls:** All attack and stealth rolls start at **15**
-- Advantages to defender → Target moves UP
-- Advantages to attacker → Target moves DOWN
-
-**"Impossible" Tasks:** Reserved for things that would be impossible to achieve normally (lifting a train car, running on clouds, etc.). The GM decides whether to allow attempts at this difficulty level.
+The "Impossible" task level is used to describe any task that would be impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar a glance. These things cannot -or should not- normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above the "Impossible" level. A target that reaches this level due to adjustments from advantages/disadvantages, abilities, or other modifications to the target level, is not considered an "Impossible" task.
 
 ---
 
 ## Success and Failure
 
-### When You Succeed
-- **Equal or exceed the target** → Success
-- **GM describes what happens** → Play continues
-- **Ties go to the roller** (think of target as minimum needed)
+When the result of a roll has been determined and is equal to or higher than the target, the action is a success, the GM describes what has occurred, and play continues.
 
-### When You Fail
-- **Roll below the target** → Failure
-- **GM describes what happens** → Play continues
-- **Contested rolls that tie** → Reroll
+When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues.
 
-### Describing Results
+Describing these actions can take practice. Each GM has their own level of serious realism or nonsensical fun that they wish to inspire, and these descriptions are excellent places to do so. Leaning into the numbers to generate variety helps keep the table lively. This way, the further away from the target number the result is the more dramatic the result. A result much higher than the target may be described as completed with ease or flare, and one much lower may be described as failing dramatically or as a struggle to attempt. Those close to the target may be described as just barely missing the mark or succeeding just in time.
 
-The further your roll is from the target number, the more dramatic the result:
+In the case of a tie the win goes to the roller. Think of the target number as the minimum number needed to succeed. Ties during a contested roll are rerolled.
 
-- **Much higher than target:** Completed with ease or flair
-- **Just barely made it:** Succeeded just in time
-- **Close miss:** Just barely missing the mark
-- **Much lower than target:** Dramatic failure or struggle
+### Contested Rolls
+
+Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls a D20 and adds their applicable modifiers, with the win going to the highest roller of the characters/groups involved.
+
+If a group of two or more characters are involved in a contested roll the opposing groups use the highest roll of their allies +3 for each additional ally involved in the action.
+
+Take for example two characters attempting to restrain a third:
+- Allied pair roll 15 and 7, which becomes 15+3=18
+- Resisting combatant rolls a 16
+
+In this case the resisting character would be restrained even though his roll was the highest out of the three. Teamwork rewards the pair, and they win the roll.
