@@ -12,7 +12,7 @@ A science fiction tabletop RPG system designed to be simple to learn yet detaile
 ## Quick Reference
 - [Base Mechanic & Target Numbers](general-rules/base-mechanic)
 - [Character Creation](character-creation)
-- [Digital Character Sheet](content/digital-character-sheet.html)
+- [Digital Character Sheet](digital-character-sheet.html)
 - [Combat Rules](general-rules/combat)
 - [Equipment & Gear](equipment)
 
