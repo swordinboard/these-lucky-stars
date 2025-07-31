@@ -5,17 +5,19 @@ weight: 40
 
 ## Stats
 
-Most of these stats are derived from Attributes. Some stats act as a pool of points, others act as modifiers for certain rolls. They are listed here in the order they appear on the character sheet.
+Most of these stats are derived from Attributes. Some stats act as a pool of points, others act as modifiers for certain rolls. If a stat doesnt show up here, try searching for it. If you still have no luck, check the [other stats](other-stats) page.
 
-- [Initiative](initiative)
 - [Action Points](action-points)
-- [Speed](speed)
+- [Attack](attack)
 - [Defense](defense)
+- [Grapple](grapple)
+- [Initiative](initiative)
+- [Luck](luck)
+- [Size](size)
+- [Speed](speed)
+- [Stealth]
+- [Stress Threshold](stress)
 - [Vitality](vitality)
 - [Wounds and Conditions](wounds-conditions)
-- [Stress Threshold](stress)
-- [Luck](luck)
-- [Grapple](grapple)
-- [Stealth]
-- [Attack](attack)
+
 - [other Stats](other-stats)
