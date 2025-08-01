@@ -1,0 +1,22 @@
+{{- $pwa := .Site.Params.pwa -}}
+{
+  "name": "{{ $pwa.name }}",
+  "short_name": "{{ $pwa.short_name }}",
+  "description": "{{ .Site.Params.description }}",
+  "start_url": "{{ "/character-sheet/" | absURL }}",
+  "display": "standalone",
+  "background_color": "{{ $pwa.background_color }}",
+  "theme_color": "{{ $pwa.theme_color }}",
+  "orientation": "any",
+  "scope": "{{ "/character-sheet/" | absURL }}",
+  "icons": [
+    {{- range $size := slice 72 96 128 144 152 192 384 512 }}
+    {
+      "src": "{{ printf "character-sheet/icon-%d.png" $size | absURL }}",
+      "sizes": "{{ $size }}x{{ $size }}",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }{{ if ne $size 512 }},{{ end }}
+    {{- end }}
+  ]
+}

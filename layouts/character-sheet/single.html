@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO from YAML -->
+    <title>{{ .Params.seo.title | default .Title }}</title>
+    <meta name="description" content="{{ .Params.seo.description | default .Description }}">
+    <meta name="keywords" content="{{ delimit .Params.seo.keywords ", " }}">
+    
+    <!-- PWA Configuration from YAML -->
+    <meta name="theme-color" content="{{ .Params.pwa.theme_color }}">
+    <link rel="manifest" href="{{ "character-sheet/manifest.json" | absURL }}">
+    
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="{{ .Params.pwa.short_name }}">
+    <link rel="apple-touch-icon" href="{{ "character-sheet/icon-192.png" | absURL }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "character-sheet/icon-32.png" | absURL }}">
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Hugo-generated CSS -->
+    {{ $style := resources.Get "css/character-sheet.css" }}
+    {{ if $style }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ end }}
+
+    <style>
+        body { margin: 0; font-family: system-ui, sans-serif; }
+        .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        #installPrompt {
+            position: fixed; bottom: 20px; right: 20px; background: {{ .Params.pwa.theme_color }};
+            color: white; padding: 12px 20px; border-radius: 8px; border: none;
+            cursor: pointer; display: none; z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Optional: Hugo site header/nav -->
+    {{ if .Site.Params.include_site_nav }}
+        {{ partial "header.html" . }}
+    {{ end }}
+
+    <!-- App Container -->
+    <div id="root">
+        <div class="loading">
+            <div>Loading {{ .Params.pwa.name }}...</div>
+        </div>
+    </div>
+    
+    <!-- Install Button -->
+    <button id="installPrompt">📱 Install App</button>
+
+    <!-- Character Sheet App -->
+    <script type="text/babel" src="{{ "js/character-sheet.js" | absURL }}"></script>
+
+    <!-- PWA Registration -->
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('{{ "character-sheet/sw.js" | absURL }}')
+                .then(reg => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed'));
+        }
+
+        // Install Prompt from Hugo config
+        let deferredPrompt;
+        const installButton = document.getElementById('installPrompt');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installButton.style.display = 'block';
+        });
+
+        installButton.addEventListener('click', () => {
+            installButton.style.display = 'none';
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                deferredPrompt = null;
+            });
+        });
+    </script>
+
+    <!-- Optional: Hugo site footer -->
+    {{ if .Site.Params.include_site_footer }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+</body>
+</html>
