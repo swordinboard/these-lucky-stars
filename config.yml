@@ -16,35 +16,3 @@ params:
  BookEditPages: false
  BookSection: "*"
  BookCollapseSection: true
-baseURL: 'https://yoursite.com'
-languageCode: 'en-us'
-title: 'Your Site'
-
-params:
-  pwa:
-    enabled: true
-    name: "These Lucky Stars Character Sheet"
-    short_name: "Lucky Stars"
-    theme_color: "#1e3a8a"
-    background_color: "#ffffff"
-  
-  # Optional: Include site navigation in PWA
-  include_site_nav: false  # Set to true if you want your site header/footer
-  include_site_footer: false
-
-# Menu configuration
-menu:
-  main:
-    - name: "Home"
-      url: "/"
-      weight: 10
-    - name: "About" 
-      url: "/about/"
-      weight: 20
-    - name: "Character Sheet"
-      url: "/character-sheet/"
-      weight: 30
-
-# Build settings
-build:
-  writeStats: true
