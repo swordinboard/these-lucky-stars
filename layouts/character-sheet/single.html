@@ -4,76 +4,1089 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO from YAML -->
-    <title>{{ .Params.seo.title | default .Title }}</title>
-    <meta name="description" content="{{ .Params.seo.description | default .Description }}">
-    <meta name="keywords" content="{{ delimit .Params.seo.keywords ", " }}">
+    <title>These Lucky Stars Character Sheet</title>
+    <meta name="description" content="Digital character sheet for These Lucky Stars tabletop RPG">
     
-    <!-- PWA Configuration from YAML -->
-    <meta name="theme-color" content="{{ .Params.pwa.theme_color }}">
-    <link rel="manifest" href="{{ "character-sheet/manifest.json" | absURL }}">
+    <!-- PWA Configuration -->
+    <meta name="theme-color" content="#1e3a8a">
+    <link rel="manifest" href="/character-sheet/manifest.json">
     
     <!-- iOS PWA Support -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="{{ .Params.pwa.short_name }}">
-    <link rel="apple-touch-icon" href="{{ "character-sheet/icon-192.png" | absURL }}">
+    <meta name="apple-mobile-web-app-title" content="Lucky Stars">
+    <link rel="apple-touch-icon" href="/character-sheet/icon-192.png">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "character-sheet/icon-32.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/character-sheet/icon-32.png">
     
     <!-- External Dependencies -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <!-- Hugo-generated CSS -->
-    {{ $style := resources.Get "css/character-sheet.css" }}
-    {{ if $style }}
-        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    {{ end }}
 
     <style>
         body { margin: 0; font-family: system-ui, sans-serif; }
         .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
         #installPrompt {
-            position: fixed; bottom: 20px; right: 20px; background: {{ .Params.pwa.theme_color }};
+            position: fixed; bottom: 20px; right: 20px; background: #1e3a8a;
             color: white; padding: 12px 20px; border-radius: 8px; border: none;
             cursor: pointer; display: none; z-index: 1000;
         }
     </style>
 </head>
 <body>
-    <!-- Optional: Hugo site header/nav -->
-    {{ if .Site.Params.include_site_nav }}
-        {{ partial "header.html" . }}
-    {{ end }}
-
     <!-- App Container -->
     <div id="root">
         <div class="loading">
-            <div>Loading {{ .Params.pwa.name }}...</div>
+            <div>Loading Character Sheet...</div>
         </div>
     </div>
     
     <!-- Install Button -->
     <button id="installPrompt">📱 Install App</button>
 
-    <!-- Character Sheet App -->
-    <script type="text/babel" src="{{ "js/character-sheet.js" | absURL }}"></script>
+    <!-- Character Sheet App - Embed the React component directly -->
+    <script type="text/babel">
+        const CharacterSheet = () => {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [showHelp, setShowHelp] = useState(false);
+  const [character, setCharacter] = useState({
+    // Basic Info
+    characterName: '',
+    playerName: '',
+    archetype: '',
+    level: 1,
+    description: '',
+    height: '',
+    weight: '',
+    size: 'Medium/0',
+    
+    // Physical Attributes
+    str: { base: 0, mods: 0 },
+    agi: { base: 0, mods: 0 },
+    dex: { base: 0, mods: 0 },
+    fort: { base: 0, mods: 0 },
+    
+    // Mental Attributes
+    kno: { base: 0, mods: 0 },
+    ins: { base: 0, mods: 0 },
+    cha: { base: 0, mods: 0 },
+    will: { base: 0, mods: 0 },
+    
+    // Derived Stats
+    maxLuck: 5,
+    currentLuck: 5,
+    maxVitality: 1,
+    currentVitality: 1,
+    maxDefense: 0,
+    currentDefense: 0,
+    maxStressThreshold: 1,
+    currentStress: 0,
+    initiative: 0,
+    initiativeMods: 0,
+    actionPoints: 4,
+    speed: 20,
+    speedNotes: '',
+    grapple: 0,
+    stealth: '',
+    damageReduction: 0,
+    damageReductionMods: 0,
+    
+    // Equipment
+    weapons: [
+      { name: '', atkBonus: '', dmg: '', ammo: '', notes: '' },
+      { name: '', atkBonus: '', dmg: '', ammo: '', notes: '' },
+      { name: '', atkBonus: '', dmg: '', ammo: '', notes: '' }
+    ],
+    armor: { name: '', dmgReduction: 0, dexAgiPenalty: 0, notes: '' },
+    equipment: { name: '', dmgReduction: 0, dexAgiPenalty: 0, notes: '' },
+    
+    // Equipment Slots
+    equipmentSlots: {
+      head: '',
+      neck: '',
+      chest: '',
+      back: '',
+      arms: '',
+      hands: '',
+      belt: '',
+      legsFeet: ''
+    },
+    
+    // Inventory
+    currentWeight: 0,
+    maxWeight: 0,
+    currentBulkyItems: 0,
+    maxBulkyItems: 1,
+    currency: '',
+    languages: '',
+    inventoryItems: [
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false },
+      { name: '', weight: 0, bulky: false }
+    ],
+    
+    // Wounds & Conditions
+    woundsConditions: [
+      '', '', '', '', '', '', '', '', '', ''
+    ],
+    
+    // Character Features
+    levelTracker: '',
+    characterFeatures: ''
+  });
+
+  const fileInputRef = useRef(null);
+
+  // Calculate derived stats based on attributes
+  const calculateDerivedStats = (char) => {
+    // Get size modifiers
+    const getSizeModifiers = (size) => {
+      switch(size) {
+        case 'Tiny/-2': return { str: -4, agi: 4, grapple: -2 };
+        case 'Small/-1': return { str: -2, agi: 2, grapple: -1 };
+        case 'Medium/0': return { str: 0, agi: 0, grapple: 0 };
+        case 'Large/+1': return { str: 2, agi: -2, grapple: 1 };
+        case 'Huge/+2': return { str: 4, agi: -4, grapple: 2 };
+        default: return { str: 0, agi: 0, grapple: 0 };
+      }
+    };
+
+    const sizeModifiers = getSizeModifiers(char.size);
+    
+    const getBonus = (attr, sizeMod = 0) => Math.floor((attr.base + attr.mods + sizeMod) / 1) || 0;
+    
+    const agiBonus = getBonus(char.agi, sizeModifiers.agi);
+    const fortBonus = getBonus(char.fort);
+    const willBonus = getBonus(char.will);
+    const strBonus = getBonus(char.str, sizeModifiers.str);
+    const dexBonus = getBonus(char.dex);
+    const insBonus = getBonus(char.ins);
+    
+    // Calculate inventory totals
+    const inventoryWeight = char.inventoryItems ? char.inventoryItems.reduce((total, item) => total + (item.weight || 0), 0) : 0;
+    const inventoryBulky = char.inventoryItems ? char.inventoryItems.reduce((total, item) => total + (item.bulky ? 1 : 0), 0) : 0;
+    
+    // Calculate equipment penalties
+    const equipmentDexPenalty = (char.armor.dexAgiPenalty || 0) + (char.equipment.dexAgiPenalty || 0);
+    const equipmentAgiPenalty = equipmentDexPenalty; // Same penalty applies to both
+    
+    // Calculate total damage reduction
+    const totalDamageReduction = Math.max(0, (char.armor.dmgReduction || 0)) + Math.max(0, (char.equipment.dmgReduction || 0)) + (char.damageReductionMods || 0);
+    
+    return {
+      ...char,
+      sizeModifiers,
+      equipmentPenalties: { dex: equipmentDexPenalty, agi: equipmentAgiPenalty },
+      initiative: agiBonus + dexBonus + insBonus + (char.initiativeMods || 0),
+      maxDefense: agiBonus + fortBonus,
+      currentDefense: char.currentDefense || agiBonus + fortBonus,
+      maxVitality: Math.max(1, Math.floor(char.level / 2) + Math.floor(Math.max(0, char.fort.base) / 2)),
+      maxStressThreshold: Math.max(1, Math.floor(char.level / 2) + Math.floor(willBonus / 2)),
+      speed: 20 + (agiBonus >= 0 ? Math.floor(agiBonus / 2) * 5 : -5),
+      grapple: strBonus + agiBonus + sizeModifiers.grapple,
+      maxWeight: Math.max(0, char.str.base + char.str.mods + sizeModifiers.str) * 25,
+      maxBulkyItems: 1 + Math.floor(Math.max(0, char.str.base + char.str.mods + sizeModifiers.str) / 5),
+      currentWeight: inventoryWeight,
+      currentBulkyItems: inventoryBulky,
+      damageReduction: totalDamageReduction
+    };
+  };
+
+  const updateCharacter = (updates) => {
+    setCharacter(prev => calculateDerivedStats({ ...prev, ...updates }));
+  };
+
+  const updateAttribute = (attr, field, value) => {
+    const numValue = parseInt(value) || 0;
+    updateCharacter({
+      [attr]: { ...character[attr], [field]: numValue }
+    });
+  };
+
+  const updateWeapon = (index, field, value) => {
+    const newWeapons = [...character.weapons];
+    newWeapons[index] = { ...newWeapons[index], [field]: value };
+    updateCharacter({ weapons: newWeapons });
+  };
+
+  const updateWoundCondition = (index, value) => {
+    const newWounds = [...character.woundsConditions];
+    newWounds[index] = value;
+    updateCharacter({ woundsConditions: newWounds });
+  };
+
+  const updateInventoryItem = (index, field, value) => {
+    const newItems = [...character.inventoryItems];
+    if (field === 'bulky') {
+      newItems[index] = { ...newItems[index], [field]: value === 'yes' };
+    } else if (field === 'weight') {
+      newItems[index] = { ...newItems[index], [field]: parseFloat(value) || 0 };
+    } else {
+      newItems[index] = { ...newItems[index], [field]: value };
+    }
+    updateCharacter({ inventoryItems: newItems });
+  };
+
+  const updateEquipmentSlot = (slot, value) => {
+    updateCharacter({
+      equipmentSlots: { ...character.equipmentSlots, [slot]: value }
+    });
+  };
+
+  const saveCharacter = () => {
+    const dataStr = JSON.stringify(character, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${character.characterName || 'character'}_sheet.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const loadCharacter = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const loadedCharacter = JSON.parse(e.target.result);
+          setCharacter(calculateDerivedStats(loadedCharacter));
+        } catch (error) {
+          alert('Error loading character sheet. Please check the file format.');
+        }
+      };
+      reader.readAsText(file);
+    }
+  };
+
+  const AttributeBlock = ({ label, attr, icon: Icon }) => {
+    const sizeModifier = character.sizeModifiers && (attr === 'str' || attr === 'agi') ? character.sizeModifiers[attr] : 0;
+    const equipmentPenalty = character.equipmentPenalties && (attr === 'dex' || attr === 'agi') ? character.equipmentPenalties[attr] : 0;
+    const total = (character[attr].base + character[attr].mods + sizeModifier + equipmentPenalty) || 0;
+    
+    return (
+      <div className="bg-gray-50 p-3 rounded-lg border">
+        <div className="flex items-center gap-2 mb-2">
+          <Icon size={16} className="text-blue-600" />
+          <label className="font-semibold text-sm">{label}:</label>
+        </div>
+        <div className="flex gap-2 mb-2">
+          <div className="flex-1">
+            <label className="block text-xs text-gray-600 mb-1">Base</label>
+            <input
+              type="number"
+              value={character[attr].base}
+              onChange={(e) => updateAttribute(attr, 'base', e.target.value)}
+              className="w-full p-1 border rounded text-center"
+            />
+          </div>
+          <div className="flex-1">
+            <label className="block text-xs text-gray-600 mb-1">Mods</label>
+            <input
+              type="number"
+              value={character[attr].mods}
+              onChange={(e) => updateAttribute(attr, 'mods', e.target.value)}
+              className="w-full p-1 border rounded text-center"
+            />
+          </div>
+        </div>
+        <div className="text-center">
+          <div className="text-lg font-bold text-blue-800 flex items-center justify-center gap-1">
+            {total}
+            {sizeModifier !== 0 && (
+              <span className="text-xs text-gray-500">
+                ({sizeModifier > 0 ? '+' : ''}{sizeModifier} size)
+              </span>
+            )}
+            {equipmentPenalty !== 0 && (
+              <span className="text-xs text-gray-500">
+                ({equipmentPenalty > 0 ? '+' : ''}{equipmentPenalty} equip)
+              </span>
+            )}
+          </div>
+          <div className="text-xs text-gray-500">Total</div>
+        </div>
+      </div>
+    );
+  };
+
+  const TabButton = ({ id, label, icon: Icon, isActive, onClick }) => (
+    <button
+      onClick={() => onClick(id)}
+      className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+        isActive 
+          ? 'bg-blue-900 text-white border-b-2 border-blue-900' 
+          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+      }`}
+    >
+      <Icon size={16} />
+      {label}
+    </button>
+  );
+
+  return (
+    <div className="max-w-6xl mx-auto p-4 bg-white">
+      {/* Header */}
+      <div className="bg-blue-900 text-white p-4 rounded-t-lg">
+        <h1 className="text-xl font-bold text-center">These Lucky Stars v.4.25 - Digital Character Sheet</h1>
+      </div>
+
+      {/* Save/Load Controls */}
+      <div className="bg-gray-100 p-3 border-x flex gap-2 justify-center">
+        <button
+          onClick={saveCharacter}
+          className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+        >
+          <Download size={16} />
+          Save Sheet
+        </button>
+        <button
+          onClick={() => fileInputRef.current?.click()}
+          className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors"
+        >
+          <Upload size={16} />
+          Load Sheet
+        </button>
+        <button
+          onClick={() => setShowHelp(true)}
+          className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors"
+        >
+          <HelpCircle size={16} />
+          How To Use
+        </button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept=".json"
+          onChange={loadCharacter}
+          className="hidden"
+        />
+      </div>
+
+      {/* Help Modal */}
+      {showHelp && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg p-6 max-w-lg w-full max-h-96 overflow-y-auto">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold">How To Use</h2>
+              <button
+                onClick={() => setShowHelp(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="space-y-4 text-sm">
+              <p>This character companion is designed for use with the These Lucky Stars tabletop rpg system.</p>
+              
+              <p>You can fill the sheet and download a copy to reload into the app whenever you wish to visit that character.</p>
+              
+              <div>
+                <h3 className="font-semibold mb-2">Auto-Calculations:</h3>
+                <p>Attribute totals and most base stats are calculated for you. Modifiers from size and defensive equipment will be applied directly to the totals in Stats. In order for the calculations to work, DMG Reduction must be entered as 0 or positive, and DEX/AGI Penalty must be entered as 0 or negative.</p>
+              </div>
+            </div>
+            <div className="mt-6 flex justify-end">
+              <button
+                onClick={() => setShowHelp(false)}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+              >
+                Got it
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Tab Navigation */}
+      <div className="border-x bg-gray-50 p-3">
+        <div className="flex gap-1">
+          <TabButton 
+            id="overview" 
+            label="Overview" 
+            icon={FileText} 
+            isActive={activeTab === 'overview'} 
+            onClick={setActiveTab} 
+          />
+          <TabButton 
+            id="combat" 
+            label="Combat" 
+            icon={Swords} 
+            isActive={activeTab === 'combat'} 
+            onClick={setActiveTab} 
+          />
+          <TabButton 
+            id="inventory" 
+            label="Inventory" 
+            icon={Package} 
+            isActive={activeTab === 'inventory'} 
+            onClick={setActiveTab} 
+          />
+        </div>
+      </div>
+
+      {/* Tab Content */}
+      <div className="border-x border-b rounded-b-lg p-6">
+        {/* OVERVIEW TAB */}
+        {activeTab === 'overview' && (
+          <div className="space-y-6">
+            {/* Basic Information */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div>
+                <label className="block text-sm font-semibold mb-1">Character Name:</label>
+                <input
+                  type="text"
+                  value={character.characterName}
+                  onChange={(e) => updateCharacter({ characterName: e.target.value })}
+                  className="w-full p-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-1">Player Name:</label>
+                <input
+                  type="text"
+                  value={character.playerName}
+                  onChange={(e) => updateCharacter({ playerName: e.target.value })}
+                  className="w-full p-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-1">Archetype:</label>
+                <input
+                  type="text"
+                  value={character.archetype}
+                  onChange={(e) => updateCharacter({ archetype: e.target.value })}
+                  className="w-full p-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-1">Level:</label>
+                <input
+                  type="number"
+                  value={character.level}
+                  min="1"
+                  onChange={(e) => updateCharacter({ level: parseInt(e.target.value) || 1 })}
+                  className="w-full p-2 border rounded"
+                />
+              </div>
+            </div>
+
+            {/* Description and Physical Details */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-semibold mb-1">Description:</label>
+                <textarea
+                  value={character.description}
+                  onChange={(e) => updateCharacter({ description: e.target.value })}
+                  className="w-full p-2 border rounded h-20"
+                />
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Height:</label>
+                  <input
+                    type="text"
+                    value={character.height}
+                    onChange={(e) => updateCharacter({ height: e.target.value })}
+                    className="w-full p-2 border rounded"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Weight:</label>
+                  <input
+                    type="text"
+                    value={character.weight}
+                    onChange={(e) => updateCharacter({ weight: e.target.value })}
+                    className="w-full p-2 border rounded"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Size:</label>
+                  <select
+                    value={character.size}
+                    onChange={(e) => updateCharacter({ size: e.target.value })}
+                    className="w-full p-2 border rounded"
+                  >
+                    <option>Tiny/-2</option>
+                    <option>Small/-1</option>
+                    <option>Medium/0</option>
+                    <option>Large/+1</option>
+                    <option>Huge/+2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Attributes */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Physical Attributes */}
+              <div>
+                <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                  <User className="text-red-600" size={20} />
+                  Physical Attributes
+                </h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <AttributeBlock label="STR" attr="str" icon={Sword} />
+                  <AttributeBlock label="AGI" attr="agi" icon={Zap} />
+                  <AttributeBlock label="DEX" attr="dex" icon={Hand} />
+                  <AttributeBlock label="FORT" attr="fort" icon={Heart} />
+                </div>
+              </div>
+
+              {/* Mental Attributes */}
+              <div>
+                <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                  <MessageCircle className="text-blue-600" size={20} />
+                  Mental Attributes
+                </h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <AttributeBlock label="KNO" attr="kno" icon={Briefcase} />
+                  <AttributeBlock label="INS" attr="ins" icon={Eye} />
+                  <AttributeBlock label="CHA" attr="cha" icon={MessageCircle} />
+                  <AttributeBlock label="WILL" attr="will" icon={Brain} />
+                </div>
+              </div>
+            </div>
+
+            {/* Level Tracker */}
+            <div>
+              <h3 className="text-lg font-bold mb-3">Level Tracker / Character Features</h3>
+              <div className="space-y-3">
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Level Tracker:</label>
+                  <textarea
+                    value={character.levelTracker}
+                    onChange={(e) => updateCharacter({ levelTracker: e.target.value })}
+                    className="w-full p-2 border rounded h-20"
+                    placeholder="Track level progression, abilities gained, etc."
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Character Features:</label>
+                  <textarea
+                    value={character.characterFeatures}
+                    onChange={(e) => updateCharacter({ characterFeatures: e.target.value })}
+                    className="w-full p-2 border rounded h-32"
+                    placeholder="List traits, proficiencies, abilities, and other character features"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* COMBAT TAB */}
+        {activeTab === 'combat' && (
+          <div className="space-y-6">
+            {/* Stats - Clean 2x6 Grid */}
+            <div>
+              <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                <Calculator className="text-green-600" size={20} />
+                Stats
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                {/* Row 1: Initiative, Action Points */}
+                <div className="bg-yellow-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Initiative</label>
+                  <div className="text-lg font-bold mb-1">{character.initiative}</div>
+                  <div className="text-xs text-gray-500 mb-1">AGI+DEX+INS</div>
+                  <input
+                    type="number"
+                    value={character.initiativeMods}
+                    onChange={(e) => updateCharacter({ initiativeMods: parseInt(e.target.value) || 0 })}
+                    className="w-full p-1 border rounded text-sm"
+                    placeholder="Mods"
+                  />
+                </div>
+                <div className="bg-green-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Action Points</label>
+                  <input
+                    type="number"
+                    value={character.actionPoints}
+                    onChange={(e) => updateCharacter({ actionPoints: parseInt(e.target.value) || 4 })}
+                    className="w-full p-1 border rounded text-sm text-center mb-1"
+                  />
+                  <div className="text-xs text-gray-500">Base = 4</div>
+                </div>
+
+                {/* Row 2: Speed (spans both columns) */}
+                <div className="bg-blue-50 p-3 rounded border col-span-2">
+                  <label className="block text-xs font-semibold mb-1">Speed</label>
+                  <div className="flex gap-2">
+                    <div className="w-20">
+                      <label className="block text-xs text-gray-600 mb-1">Ground</label>
+                      <div className="text-lg font-bold text-center p-1 bg-gray-100 rounded">
+                        {character.speed}
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-600 mb-1">Notes</label>
+                      <input
+                        type="text"
+                        value={character.speedNotes}
+                        onChange={(e) => updateCharacter({ speedNotes: e.target.value })}
+                        className="w-full p-1 border rounded text-sm"
+                        placeholder="Other speeds (climb, swim, fly, etc.)"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Row 3: Damage Reduction, Defense */}
+                <div className="bg-indigo-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Damage Reduction</label>
+                  <div className="text-lg font-bold mb-1">{character.damageReduction}</div>
+                  <input
+                    type="number"
+                    value={character.damageReductionMods}
+                    onChange={(e) => updateCharacter({ damageReductionMods: parseInt(e.target.value) || 0 })}
+                    className="w-full p-1 border rounded text-sm"
+                    placeholder="Mods"
+                  />
+                </div>
+                <div className="bg-red-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold">Defense</label>
+                  <div className="text-lg font-bold">{character.maxDefense}</div>
+                  <input
+                    type="number"
+                    value={character.currentDefense}
+                    onChange={(e) => updateCharacter({ currentDefense: parseInt(e.target.value) || 0 })}
+                    className="w-full mt-1 p-1 border rounded text-sm"
+                    placeholder="Current"
+                  />
+                </div>
+
+                {/* Row 4: Vitality, Stress */}
+                <div className="bg-purple-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold">Vitality</label>
+                  <div className="text-lg font-bold">{character.maxVitality}</div>
+                  <input
+                    type="number"
+                    value={character.currentVitality}
+                    onChange={(e) => updateCharacter({ currentVitality: parseInt(e.target.value) || 0 })}
+                    className="w-full mt-1 p-1 border rounded text-sm"
+                    placeholder="Current"
+                  />
+                </div>
+                <div className="bg-red-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Stress</label>
+                  <div className="flex gap-2">
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-600 mb-1">Threshold</label>
+                      <div className="text-sm font-bold text-center p-1 bg-gray-100 rounded">
+                        {character.maxStressThreshold}
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-600 mb-1">Current</label>
+                      <input
+                        type="number"
+                        value={character.currentStress}
+                        onChange={(e) => updateCharacter({ currentStress: parseInt(e.target.value) || 0 })}
+                        className="w-full p-1 border rounded text-sm text-center"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Row 5: Luck, Grapple */}
+                <div className="bg-yellow-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Luck</label>
+                  <div className="flex gap-2">
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-600 mb-1">Max</label>
+                      <input
+                        type="number"
+                        value={character.maxLuck}
+                        onChange={(e) => updateCharacter({ maxLuck: parseInt(e.target.value) || 0 })}
+                        className="w-full p-1 border rounded text-sm text-center"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-600 mb-1">Current</label>
+                      <input
+                        type="number"
+                        value={character.currentLuck}
+                        onChange={(e) => updateCharacter({ currentLuck: parseInt(e.target.value) || 0 })}
+                        className="w-full p-1 border rounded text-sm text-center"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-orange-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold">Grapple</label>
+                  <div className="text-lg font-bold flex items-center justify-center gap-1">
+                    {character.grapple}
+                    {character.sizeModifiers && character.sizeModifiers.grapple !== 0 && (
+                      <span className="text-xs text-gray-500">
+                        ({character.sizeModifiers.grapple > 0 ? '+' : ''}{character.sizeModifiers.grapple} size)
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-xs text-gray-500">STR+AGI</div>
+                </div>
+
+                {/* Row 6: Stealth, Custom */}
+                <div className="bg-gray-50 p-3 rounded border">
+                  <label className="block text-xs font-semibold mb-1">Stealth</label>
+                  <input
+                    type="text"
+                    value={character.stealth}
+                    onChange={(e) => updateCharacter({ stealth: e.target.value })}
+                    className="w-full p-1 border rounded text-center"
+                    placeholder="Varies"
+                  />
+                </div>
+                <div className="bg-gray-100 p-3 rounded border">
+                  <label className="block text-xs font-semibold">Custom</label>
+                  <input
+                    type="text"
+                    className="w-full p-1 border rounded text-center"
+                    placeholder="Custom"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Combat Equipment */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Offensive Equipment */}
+              <div>
+                <h3 className="text-lg font-bold mb-3">Offensive Equipment</h3>
+                {character.weapons.map((weapon, index) => (
+                  <div key={index} className="bg-gray-50 p-4 rounded border mb-4">
+                    <h4 className="font-semibold mb-2">Weapon {index + 1}</h4>
+                    <div className="space-y-2">
+                      <input
+                        type="text"
+                        value={weapon.name}
+                        onChange={(e) => updateWeapon(index, 'name', e.target.value)}
+                        placeholder="Weapon name"
+                        className="w-full p-2 border rounded"
+                      />
+                      <div className="grid grid-cols-3 gap-2">
+                        <input
+                          type="text"
+                          value={weapon.atkBonus}
+                          onChange={(e) => updateWeapon(index, 'atkBonus', e.target.value)}
+                          placeholder="ATK Bonus"
+                          className="p-2 border rounded"
+                        />
+                        <input
+                          type="text"
+                          value={weapon.dmg}
+                          onChange={(e) => updateWeapon(index, 'dmg', e.target.value)}
+                          placeholder="DMG"
+                          className="p-2 border rounded"
+                        />
+                        <input
+                          type="text"
+                          value={weapon.ammo}
+                          onChange={(e) => updateWeapon(index, 'ammo', e.target.value)}
+                          placeholder="Ammo"
+                          className="p-2 border rounded"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">Notes:</label>
+                        <input
+                          type="text"
+                          value={weapon.notes}
+                          onChange={(e) => updateWeapon(index, 'notes', e.target.value)}
+                          placeholder="Tags, special properties, etc."
+                          className="w-full p-2 border rounded"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Defensive Equipment */}
+              <div>
+                <h3 className="text-lg font-bold mb-3">Defensive Equipment</h3>
+                <div className="space-y-3">
+                  <div className="bg-gray-50 p-4 rounded border">
+                    <h4 className="font-semibold mb-2">Armor</h4>
+                    <input
+                      type="text"
+                      value={character.armor.name}
+                      onChange={(e) => updateCharacter({ armor: { ...character.armor, name: e.target.value } })}
+                      placeholder="Armor name"
+                      className="w-full p-2 border rounded mb-2"
+                    />
+                    <div className="grid grid-cols-2 gap-2 mb-2">
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">DMG Reduction:</label>
+                        <input
+                          type="number"
+                          min="0"
+                          value={character.armor.dmgReduction}
+                          onChange={(e) => {
+                            const value = parseInt(e.target.value) || 0;
+                            updateCharacter({ armor: { ...character.armor, dmgReduction: Math.max(0, value) } });
+                          }}
+                          className="w-full p-2 border rounded"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">DEX/AGI Penalty:</label>
+                        <input
+                          type="number"
+                          max="0"
+                          value={character.armor.dexAgiPenalty}
+                          onChange={(e) => {
+                            const value = parseInt(e.target.value) || 0;
+                            updateCharacter({ armor: { ...character.armor, dexAgiPenalty: Math.min(0, value) } });
+                          }}
+                          className="w-full p-2 border rounded"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-1">Notes:</label>
+                      <input
+                        type="text"
+                        value={character.armor.notes}
+                        onChange={(e) => updateCharacter({ armor: { ...character.armor, notes: e.target.value } })}
+                        className="w-full p-2 border rounded"
+                        placeholder="Tags, special properties, etc."
+                      />
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded border">
+                    <h4 className="font-semibold mb-2">Equipment</h4>
+                    <input
+                      type="text"
+                      value={character.equipment.name}
+                      onChange={(e) => updateCharacter({ equipment: { ...character.equipment, name: e.target.value } })}
+                      placeholder="Equipment name"
+                      className="w-full p-2 border rounded mb-2"
+                    />
+                    <div className="grid grid-cols-2 gap-2 mb-2">
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">DMG Reduction:</label>
+                        <input
+                          type="number"
+                          min="0"
+                          value={character.equipment.dmgReduction}
+                          onChange={(e) => {
+                            const value = parseInt(e.target.value) || 0;
+                            updateCharacter({ equipment: { ...character.equipment, dmgReduction: Math.max(0, value) } });
+                          }}
+                          className="w-full p-2 border rounded"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">DEX/AGI Penalty:</label>
+                        <input
+                          type="number"
+                          max="0"
+                          value={character.equipment.dexAgiPenalty}
+                          onChange={(e) => {
+                            const value = parseInt(e.target.value) || 0;
+                            updateCharacter({ equipment: { ...character.equipment, dexAgiPenalty: Math.min(0, value) } });
+                          }}
+                          className="w-full p-2 border rounded"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold mb-1">Notes:</label>
+                      <input
+                        type="text"
+                        value={character.equipment.notes}
+                        onChange={(e) => updateCharacter({ equipment: { ...character.equipment, notes: e.target.value } })}
+                        className="w-full p-2 border rounded"
+                        placeholder="Tags, special properties, etc."
+                      />
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-100 p-3 rounded">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div>
+                        <label className="block text-xs font-semibold">Total DMG Reduction from Equipment:</label>
+                        <div className="text-lg font-bold">{character.armor.dmgReduction + character.equipment.dmgReduction}</div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold">Total DEX/AGI Penalty from Equipment:</label>
+                        <div className="text-lg font-bold">{character.armor.dexAgiPenalty + character.equipment.dexAgiPenalty}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Wounds & Conditions */}
+            <div>
+              <h3 className="text-lg font-bold mb-3">Wounds & Conditions</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                {character.woundsConditions.map((wound, index) => (
+                  <input
+                    key={index}
+                    type="text"
+                    value={wound}
+                    onChange={(e) => updateWoundCondition(index, e.target.value)}
+                    placeholder={`${index + 1}`}
+                    className="p-1 border rounded text-sm"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* INVENTORY TAB */}
+        {activeTab === 'inventory' && (
+          <div className="space-y-6">
+            {/* Equipment Slots */}
+            <div>
+              <h3 className="text-lg font-bold mb-3">Equipment Slots</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                {Object.entries(character.equipmentSlots).map(([slot, value]) => (
+                  <div key={slot}>
+                    <label className="block text-sm font-semibold mb-1 capitalize">
+                      {slot.replace(/([A-Z])/g, '/$1').replace(/^\//, '').replace('/', ' ')}:
+                    </label>
+                    <input
+                      type="text"
+                      value={value}
+                      onChange={(e) => updateEquipmentSlot(slot, e.target.value)}
+                      className="w-full p-2 border rounded"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Inventory */}
+            <div>
+              <h3 className="text-lg font-bold mb-3">Inventory</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Current Weight:</label>
+                  <div className="p-2 bg-gray-100 rounded">{character.currentWeight} lbs</div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Max Weight:</label>
+                  <div className="p-2 bg-gray-100 rounded">{character.maxWeight} lbs</div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Bulky Items:</label>
+                  <div className="p-2 bg-gray-100 rounded">{character.currentBulkyItems}</div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Max Bulky:</label>
+                  <div className="p-2 bg-gray-100 rounded">{character.maxBulkyItems}</div>
+                </div>
+              </div>
+              
+              {/* Inventory Items */}
+              <div className="mb-4">
+                <h4 className="font-semibold mb-2">Items</h4>
+                <div className="space-y-1">
+                  <div className="grid grid-cols-12 gap-2 text-xs font-semibold text-gray-600 mb-1">
+                    <div className="col-span-8">Item Name</div>
+                    <div className="col-span-2">Weight (lbs)</div>
+                    <div className="col-span-2">Bulky (Y/N)</div>
+                  </div>
+                  {character.inventoryItems.map((item, index) => (
+                    <div key={index} className="grid grid-cols-12 gap-2">
+                      <input
+                        type="text"
+                        value={item.name}
+                        onChange={(e) => updateInventoryItem(index, 'name', e.target.value)}
+                        className="col-span-8 p-1 border rounded text-sm"
+                        placeholder={`Item ${index + 1}`}
+                      />
+                      <input
+                        type="number"
+                        step="0.1"
+                        min="0"
+                        value={item.weight || ''}
+                        onChange={(e) => updateInventoryItem(index, 'weight', e.target.value)}
+                        className="col-span-2 p-1 border rounded text-sm text-center"
+                        placeholder="0"
+                      />
+                      <select
+                        value={item.bulky ? 'yes' : 'no'}
+                        onChange={(e) => updateInventoryItem(index, 'bulky', e.target.value)}
+                        className="col-span-2 p-1 border rounded text-sm"
+                      >
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                      </select>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Currency:</label>
+                  <input
+                    type="text"
+                    value={character.currency}
+                    onChange={(e) => updateCharacter({ currency: e.target.value })}
+                    className="w-full p-2 border rounded"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-1">Languages:</label>
+                  <input
+                    type="text"
+                    value={character.languages}
+                    onChange={(e) => updateCharacter({ languages: e.target.value })}
+                    className="w-full p-2 border rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+        // Render the app
+        ReactDOM.render(<CharacterSheet />, document.getElementById('root'));
+    </script>
 
     <!-- PWA Registration -->
     <script>
         // Service Worker Registration
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('{{ "character-sheet/sw.js" | absURL }}')
+            navigator.serviceWorker.register('/character-sheet/sw.js')
                 .then(reg => console.log('SW registered'))
                 .catch(err => console.log('SW registration failed'));
         }
 
-        // Install Prompt from Hugo config
+        // Install Prompt
         let deferredPrompt;
         const installButton = document.getElementById('installPrompt');
 
@@ -91,10 +1104,5 @@
             });
         });
     </script>
-
-    <!-- Optional: Hugo site footer -->
-    {{ if .Site.Params.include_site_footer }}
-        {{ partial "footer.html" . }}
-    {{ end }}
 </body>
 </html>
