@@ -719,13 +719,11 @@
                 <button class="modal-close" onclick="hideHelp()">&times;</button>
             </div>
             <div class="modal-body">
-                <p><strong>Save/Load:</strong> Use the Save Sheet button to download your character as a JSON file. Use Load Sheet to restore from a saved file.</p>
+                <p><strong>Save/Load:</strong> Use the Save Sheet button to download your character as a JSON file. Use Load Sheet to restore from a saved file. SAVE OFTEN.</p>
                 <p><strong>Tabs:</strong> Navigate between Overview, Features, Combat, Equipment, Inventory, and Notes tabs to access different parts of your character sheet.</p>
                 <p><strong>Collapsible Sections:</strong> Click on section headers to expand or collapse them.</p>
                 <p><strong>Formulas:</strong> Toggle formula visibility with the Show/Hide Formulas button. Formulas show how stats are calculated.</p>
                 <p><strong>Auto-Calculate:</strong> Most derived stats update automatically when you change base values.</p>
-                <h3>Combat Tab</h3>
-                <p>The Combat tab contains your Stats (Initiative, Action Points, Luck, Speed, Grapple, Stealth) and Health (Defense, Vitality, Tracker, Stress Threshold) sections along with Wounds & Conditions.</p>
             </div>
             <div class="modal-footer"><button class="btn btn-blue" onclick="hideHelp()">Got it!</button></div>
         </div>
@@ -735,16 +733,18 @@
     <div id="readmeModal" class="modal-overlay hidden">
         <div class="modal">
             <div class="modal-header">
-                <span class="modal-title">Alpha Version Read Me</span>
+                <span class="modal-title">Alpha Version READ ME</span>
                 <button class="modal-close" onclick="hideReadme()">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Dear friends,</p>
+                <p><strong>Dear friends,</strong></p>
                 <p>This little app is getting close to finished now. At least by my eyes, I'm sure there's some things that could be tweaked and I would really love some feedback on it. Things that could be changed, adjusted, how it fits on different screens, and missing features are all much appreciated.</p>
-                <p>If you've made it this far, I don't have to tell you how to make it run. And it also means the buttons are working, so the JavaScript should be good.</p>
+                <p>I didn't plan on publishing this to the website this soon, but got a little carried away and figured what the hell.</p>
                 <p>I vibe coded this whole thing. It has taken me four days of full credits for Claude.ai night and day. I've learned a bit about coding as I went but I'm still very very green. So if you have experience in that area and find ways to improve on what front end eyes would miss please boss me around.</p>
-                <p>I hope to release this on the (upcoming) website once parts of the rule set are set in stone. For now there are lots of changes happening, but I thought this would be a fun project to try out now and be nice for everybody to have while playing. I've always been a fan of a paper sheet, but I know there's a lot of value in a digital one.</p>
-                <p>Fighting imposter syndrome with sharp stick,<br>-Anthony DiRuzza</p>
+                <p>My hope is that this website will also host a full reference for all of TLS one day. But that has to wait for the rules to be more set in stone. For now there are lots of changes happening, but I thought this would be a fun project to try out now and be nice for everybody to have while playing. I've always been a fan of a paper sheet, but I know there's a lot of value in a digital one. I hope it helps.</p>
+                <p>Fighting imposter syndrome with a sharp stick,<br>-Anthony DiRuzza</p>
+				<p><strong>Known Bug Report:</strong></p>
+				<p>Note text boxes in the Combat tab overhang the background of their stat block on at least some screens.</p>
             </div>
             <div class="modal-footer"><button class="btn btn-blue" onclick="hideReadme()">Close</button></div>
         </div>
