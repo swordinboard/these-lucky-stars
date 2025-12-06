@@ -4,5 +4,5 @@ title: "Welcome"
 
 This is the temporary homepage for These Lucky Stars projects.
 
-- [Digital Character Sheet](/digitalcharactersheet.html)
+- Check out the {{</* newtab href="/digitalcharactersheet.html" */>}}digital character sheet{{</* /newtab */>}}.
 - [Planet Name Generator](/planetnamegenerator.html)
