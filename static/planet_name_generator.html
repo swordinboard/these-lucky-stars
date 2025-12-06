@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Name Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4c1d95, #1e3a8a, #312e81);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header p {
+            color: #93c5fd;
+            font-size: 1.1em;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            fill: #93c5fd;
+        }
+
+        .generator-box {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .name-display {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .planet-name {
+            font-size: 4em;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 0.2em;
+            min-height: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .generate-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+        }
+
+        .generate-btn:hover {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+
+        .character-display {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .character-display p {
+            color: #93c5fd;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .character {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #93c5fd;
+            font-size: 0.9em;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+        }
+
+        .spin {
+            animation: spin 0.5s linear;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 600px) {
+            .planet-name {
+                font-size: 2.5em;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .generator-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a10 10 0 1 0 10 10"/>
+                    <path d="M7 13h10"/>
+                    <path d="M7 17h4"/>
+                </svg>
+                Planet Name Generator
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 3L14 10L21 12L14 14L12 21L10 14L3 12L10 10L12 3Z"/>
+                    <path d="M5 3L7 8L12 10L7 12L5 21L3 12L-2 10L3 8L5 3Z"/>
+                </svg>
+            </h1>
+            <p>Generate unique 4-character planet names from 810,000 possible combinations</p>
+        </div>
+
+        <!-- Main Generator -->
+        <div class="generator-box">
+            <div class="name-display">
+                <div class="planet-name" id="planetName">????</div>
+            </div>
+            
+            <button class="generate-btn" onclick="generateName()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.22.45 4.56 1.24"/>
+                    <path d="M17.27 6.73L21 3h-4v4"/>
+                </svg>
+                Generate Name
+            </button>
+
+            <!-- Character Set Display -->
+            <div class="character-display">
+                <p>Available Characters:</p>
+                <div class="characters" id="characterList"></div>
+            </div>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="footer">
+            <p>Each generation picks 4 characters randomly with repetition allowed</p>
+            <p>Total possible combinations: 810,000</p>
+        </div>
+    </div>
+
+    <script>
+        const characters = ['H','J','K','L','M','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0'];
+        
+        // Initialize character display
+        function initializeCharacterDisplay() {
+            const characterList = document.getElementById('characterList');
+            characters.forEach(char => {
+                const span = document.createElement('span');
+                span.className = 'character';
+                span.textContent = char;
+                characterList.appendChild(span);
+            });
+        }
+
+        // Generate random planet name
+        function generateName() {
+            const button = document.querySelector('.generate-btn svg');
+            button.classList.add('spin');
+            
+            let name = '';
+            for (let i = 0; i < 4; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                name += characters[randomIndex];
+            }
+            
+            // Small delay for animation effect
+            setTimeout(() => {
+                document.getElementById('planetName').textContent = name;
+                button.classList.remove('spin');
+            }, 200);
+        }
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharacterDisplay();
+        });
+    </script>
+</body>
+</html>
