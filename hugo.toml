@@ -19,10 +19,6 @@ theme = 'hugo-book'
   # Use '*' for all sections, 'docs' for just /docs/
   BookSection = 'docs'
   
-  # Repository for "Edit this page" links
-  BookRepo = 'https://github.com/yourusername/theseluckystars'
-  BookEditPath = 'edit/main/content/'
-  
   # Date format
   BookDateFormat = 'January 2, 2006'
   
@@ -31,8 +27,3 @@ theme = 'hugo-book'
   
   # Comments (uses Disqus if configured)
   BookComments = false
-  
-  # SEO
-  description = 'Your site description for search engines'
-  author = 'Your Name'
-  images = ['/images/og-image.jpg']
