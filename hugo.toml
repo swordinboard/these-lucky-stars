@@ -2,3 +2,37 @@ baseURL = 'https://theseluckystars.com'
 languageCode = 'en-us'
 title = 'These Lucky Stars'
 theme = 'hugo-book'
+# ===========================================
+# BOOK THEME PARAMETERS
+# ===========================================
+[params]
+  # Theme: 'light', 'dark', or 'auto' (follows browser/OS preference)
+  BookTheme = 'auto'
+  
+  # Path to logo (relative to /static/)
+  BookLogo = 'images/logo.png'
+  
+  # Table of Contents - global setting
+  BookToC = true
+  
+  # Menu section - which content folder generates menu
+  # Use '*' for all sections, 'docs' for just /docs/
+  BookSection = 'docs'
+  
+  # Repository for "Edit this page" links
+  BookRepo = 'https://github.com/yourusername/theseluckystars'
+  BookEditPath = 'edit/main/content/'
+  
+  # Date format
+  BookDateFormat = 'January 2, 2006'
+  
+  # Search functionality (uses FlexSearch)
+  BookSearch = true
+  
+  # Comments (uses Disqus if configured)
+  BookComments = false
+  
+  # SEO
+  description = 'Your site description for search engines'
+  author = 'Your Name'
+  images = ['/images/og-image.jpg']
