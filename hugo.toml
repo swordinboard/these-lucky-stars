@@ -2,6 +2,7 @@ baseURL = 'https://theseluckystars.com'
 languageCode = 'en-us'
 title = 'These Lucky Stars'
 theme = 'hugo-book'
+
 # ===========================================
 # BOOK THEME PARAMETERS
 # ===========================================
@@ -9,8 +10,8 @@ theme = 'hugo-book'
   # Theme: 'light', 'dark', or 'auto' (follows browser/OS preference)
   BookTheme = 'auto'
   
-  # Path to logo (relative to /static/)
-  BookLogo = 'images/logo.png'
+  # Path to logo anf favicon (relative to /static/)
+  BookLogo = 'sib_swordonly.png'
   
   # Table of Contents - global setting
   BookToC = true
