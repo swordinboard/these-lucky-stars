@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Welcome on These Lucky Stars</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome on These Lucky Stars</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome on These Lucky Stars</title><link>http://localhost:1313/</link><description>Recent content in Welcome on These Lucky Stars</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction &amp; Core Mechanics</title><link>http://localhost:1313/docs/core-ruleset/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/core-ruleset/introduction/</guid><description>&lt;h1 id="introduction">Introduction&lt;a class="anchor" href="#introduction">#&lt;/a>&lt;/h1>
+&lt;p>This began as a simple &amp;ldquo;just beat 15&amp;rdquo; ruleset with six attributes a luck stat and no frill, at all. Wilth a wee sprinkle of OCD or whatever&amp;rsquo;s going on upstair, we are here now. (One day, I will make that simple system avaible here.)&lt;/p>
+&lt;p>This is intended to be a core system to adapted to any setting and situation.&lt;/p>
+&lt;p>While this is being written content may come and go from the site. Updates to the rules doc will be posted on discord and a copy will always be kept there. My hope is that the core rules outside character creation are solid enough to drop here for easier referenceing and searching. Hopefully these only need minor tweaks if anything, or at most rewording and writing style or format changes.&lt;/p></description></item><item><title>Attributes</title><link>http://localhost:1313/docs/core-ruleset/attributes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/core-ruleset/attributes/</guid><description>&lt;h1 id="character-attributes">Character Attributes&lt;a class="anchor" href="#character-attributes">#&lt;/a>&lt;/h1>
+&lt;p>Attributes act as your primary stat block, the building blocks of your character that act as a base for their other stats. They are divided into two categories: physical attributes and mental attributes.&lt;/p>
+&lt;p>For ease of reference attributes are often written as two numbers, the temporary value after modifiers and the base value before modifiers.&lt;/p>
+&lt;p>Attribute checks are used for any action that does not directly have another stat affecting it. The attribute used is determined by the GM, based on the player&amp;rsquo;s description of their action.&lt;/p></description></item><item><title>Stats</title><link>http://localhost:1313/docs/core-ruleset/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/core-ruleset/stats/</guid><description>&lt;h1 id="character-stats">Character Stats&lt;a class="anchor" href="#character-stats">#&lt;/a>&lt;/h1>
+&lt;p>These stats are derived from Attributes. Most of them are combat focused, but are important for any character nonetheless. All of them can be affected by additional modifiers from a range of effects, character features, and items. Unless otherwise noted stats can be negative, providing a penalty rather than a bonus. Some stats act as a pool of points, others act as modifiers for certain rolls. They are listed here in the order they appear on the character sheet.&lt;/p></description></item></channel></rss>
