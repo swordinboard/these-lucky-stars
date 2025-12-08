@@ -3,7 +3,7 @@
   command = "hugo --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.148.1-98ba786f2f5dca0866f47ab79f394370bcb77d2f+extended"
+  HUGO_VERSION = "0.148.1+extended"
   
 # ===========================================
 # SECURITY HEADERS
