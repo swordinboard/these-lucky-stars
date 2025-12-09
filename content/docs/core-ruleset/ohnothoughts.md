@@ -10,7 +10,7 @@ weight: 4
 
 Dont Knock It Till You Try It
 -Anthony DiRuzza
-{{ /hint }}
+{{% /hint %}}
 
 ---
 
@@ -56,7 +56,7 @@ The "Impossible" task description is used to describe any task that would be imp
 
 ## Success and Failure
 
-{{% Hint tip %}}
+{{% hint tip %}}
 **Short:** Success = Higher than or equal to target.
 {{% /hint %}}
 
@@ -98,7 +98,7 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 {{% hint tip %}}
 **Short:** Round *down* the final result, not each fraction during a calculation.
-{{% \hint }}
+{{% /hint %}}
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations. The most forthcoming example of this is when calculating Stress and Vitality, which require two values to be halved and added together:
 
@@ -111,7 +111,7 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 **Short:** 
 *Evens* on Luck dice add *bonus* normally.
 *Odds* do not, and cause cause a flat -2 penalty to the roll.*
-{{ /hint }}
+{{% /hint %}}
 
 Luck can still be used to add a 1d4 to any 2d6 actkon/decision roll. However, when determing results even nunbers on the Luck die are added in normaly, while odd numbers cause a flat -2 penalty to the roll instead of being added in.
 
