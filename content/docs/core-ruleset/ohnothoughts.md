@@ -46,7 +46,7 @@ With a little practice, use of this scale becomes intuitive. It may help the GM 
 
 Situational advantages/disadvantages move the target up or down the scale. For example, using inappropriate tools for a task - such as using a screwdriver as a hammer - results in the target becoming more difficult and moving up the scale.
 
-All attack and stealth rolls start at 15. Advantages to the defender move the target up the scale, while advantages to the attacker move the target down the scale.
+All attack and stealth rolls start at 8. Advantages to the defender move the target up the scale, while advantages to the attacker move the target down the scale.
 
 ### "Impossible" Tasks
 
@@ -64,13 +64,11 @@ When the total result of a roll has been determined and is equal to or higher th
 
 When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues.
 
-Describing these actions can take practice. Each GM has their own level of serious realism or nonsensical fun that they wish to inspire, and these descriptions are excellent places to do so. Leaning into the numbers to generate variety helps keep the table lively. This way, the further away from the target number the result is the more dramatic the result. A result much higher than the target may be described as completed with ease or flare, and one much lower may be described as failing dramatically or as a struggle to attempt. Those close to the target may be described as just barely missing the mark or succeeding just in time.
-
 ---
 
 ## Contested Rolls
 
-Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls a D20 and adds their applicable modifiers, with the win going to the highest roller.
+Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2d6 and adds their applicable modifiers, with the win going to the highest roller. *A tie in a contested roll is rerolled without any modifiers, until a winner is determined.*
 
 ## Group Rolls
 
