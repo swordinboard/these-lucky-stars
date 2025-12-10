@@ -5,8 +5,8 @@ weight: 4
 
 # OH NO THOUGHTS of Rewriting
 
-{{% hint warning %}}
-**Primary Changes:** Moving from 1d20 to **2d6** as the primary roll mechanic. The math benefits player choices and offers better odds early in leveled play.
+{{% hint [warning] %}}
+**Primary Changes:** Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play.
 
 Dont Knock It Till You Try It
 -Anthony DiRuzza
@@ -56,7 +56,7 @@ The "Impossible" task description is used to describe any task that would be imp
 
 ## Success and Failure
 
-{{% hint tip %}}
+{{% hint [info] %}}
 **Short:** Success = Higher than or equal to target.
 {{% /hint %}}
 
@@ -68,22 +68,24 @@ When the result is lower than the target the action is unsuccessful, the GM desc
 
 ## Contested Rolls
 
-Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2d6 and adds their applicable modifiers, with the win going to the highest roller. *A tie in a contested roll is rerolled without any modifiers, until a winner is determined.*
+Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2d6 and adds their applicable modifiers, with the win going to the highest roller.
+
+*A tie in a contested roll is rerolled without any modifiers, until a winner is determined.*
 
 ## Group Rolls
 
-{{% hint tip %}}
-**Short:** Only when applicable, may reduce AP.
-Group result = highest +1 per ally involved
+{{% hint [info] %}}
+**Short:** Only whhmen applicable
+Group result = result +1 per ally involved
 {{% /hint %}}
 
-When two or more characters are involved in an action a group roll can be used. Group rolls can also be applied to contested rolls. The GM decides when geoup rolls can apply. In most cases, onoy two characters can attempt an action together effectively.
+When two or more characters are involved in an action a group roll can be used. Group rolls can also be applied to contested rolls. The GM decides when group rolls can apply. In most cases, only two characters can attempt an action together effectively.
 
-*Group rolls: Participating ally adds +1 to result.
+**Group rolls: Participating ally adds +1 to result.**
 
 ---
 
-# Supply Rolls <!-- interrupted in this section, incomplete -->
+# Supply Rolls
 
 Supply rolls or supply dice are used to track inventory and conditions with a level of randomness to them. 
 Many pieces of equipment, particularly kits, do not have a set number of uses. Different applications will require different amounts of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
@@ -94,8 +96,8 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 # The Rounding Rule
 
-{{% hint tip %}}
-**Short:** Round *down* the final result, not each fraction during a calculation.
+{{% hint [info] %}}
+**Short:** Round down the *final* result, not each fraction during a calculation.
 {{% /hint %}}
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations. The most forthcoming example of this is when calculating Stress and Vitality, which require two values to be halved and added together:
@@ -105,12 +107,12 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 
 # Luck
 
-{{% hint tip %}}
+{{% hint [info] %}}
 **Short:** 
 *Evens* on Luck dice add *bonus* normally.
 *Odds* do not, and cause cause a flat -2 penalty to the roll.*
 {{% /hint %}}
 
-Luck can still be used to add a 1d4 to any 2d6 actkon/decision roll. However, when determing results even nunbers on the Luck die are added in normaly, while odd numbers cause a flat -2 penalty to the roll instead of being added in.
+Luck can still be used to add a 1d4 to any 2d6 action/decision roll. However, when determing results even numbers on the Luck die are added in normaly, while odd numbers cause a flat -2 penalty to the roll instead of being added in.
 
 Calculations remain the same as latest 4.251130.
