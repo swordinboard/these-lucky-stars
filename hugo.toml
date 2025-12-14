@@ -3,6 +3,11 @@ languageCode = 'en-us'
 title = 'These Lucky Stars'
 theme = 'hugo-book'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # ===========================================
 # BOOK THEME PARAMETERS
 # ===========================================
