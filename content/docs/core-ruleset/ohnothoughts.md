@@ -6,7 +6,8 @@ weight: 4
 # OH NO THOUGHTS of Rewriting
 
 {{% hint [warning] %}}
-**Primary Changes:** Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play.
+**Primary Changes:**
+Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play.
 
 Dont Knock It Till You Try It
 -Anthony DiRuzza
@@ -57,7 +58,8 @@ The "Impossible" task description is used to describe any task that would be imp
 ## Success and Failure
 
 {{% hint [info] %}}
-**Short:** Success = Higher than or equal to target.
+**Short Version:**
+Success = Higher than or equal to target.
 {{% /hint %}}
 
 When the total result of a roll has been determined and is equal to or higher than the target, the action is a success, the GM describes what has occurred, and play continues.
@@ -75,7 +77,8 @@ Occasionally, characters may face a situation requiring a contested roll. Each c
 ## Group Rolls
 
 {{% hint [info] %}}
-**Short:** Only whhmen applicable
+**Short Version:**
+Only whhmen applicable
 Group result = result +1 per ally involved
 {{% /hint %}}
 
@@ -97,7 +100,8 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 # The Rounding Rule
 
 {{% hint [info] %}}
-**Short:** Round down the *final* result, not each fraction during a calculation.
+**Short Version:**
+Round down the *final* result, not each fraction during a calculation.
 {{% /hint %}}
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations. The most forthcoming example of this is when calculating Stress and Vitality, which require two values to be halved and added together:
@@ -108,7 +112,7 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 # Luck
 
 {{% hint [info] %}}
-**Short:** 
+**Short Version:** 
 *Evens* on Luck dice add *bonus* normally.
 *Odds* do not, and cause cause a flat -2 penalty to the roll.*
 {{% /hint %}}
