@@ -5,7 +5,7 @@ weight: 4
 
 # OH NO THOUGHTS of Rewriting
 
-{{% hint [warning] %}}
+{{% hint warning %}}
 **Primary Changes:**
 Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play.
 
@@ -57,7 +57,7 @@ The "Impossible" task description is used to describe any task that would be imp
 
 ## Success and Failure
 
-{{% hint [info] %}}
+{{% hint info %}}
 **Short Version:**
 Success = Higher than or equal to target.
 {{% /hint %}}
@@ -76,7 +76,7 @@ Occasionally, characters may face a situation requiring a contested roll. Each c
 
 ## Group Rolls
 
-{{% hint [info] %}}
+{{% hint info %}}
 **Short Version:**
 Only whhmen applicable
 Group result = result +1 per ally involved
@@ -99,7 +99,7 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 # The Rounding Rule
 
-{{% hint [info] %}}
+{{% hint info %}}
 **Short Version:**
 Round down the *final* result, not each fraction during a calculation.
 {{% /hint %}}
@@ -111,7 +111,7 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 
 # Luck
 
-{{% hint [info] %}}
+{{% hint info %}}
 **Short Version:** 
 *Evens* on Luck dice add *bonus* normally.
 *Odds* do not, and cause cause a flat -2 penalty to the roll.*
