@@ -25,7 +25,7 @@ To determine success or failure of an action, the following mechanic is used:
 
 ## Attribute Values
 
-With the 2d6 system, attribute values will be calculated a little differently: value = |1d4-1d4| including zeros. All players can adapt their original attribute values (before any bonus points added from leveling up) using this [Attribute Convertion Tool(attributeconverter.html)] that I made. Just plug in your base array, and it will spit out the equivalent array under new system. Then add back in any changes from leveling that you had, if any.
+With the 2d6 system, attribute values will be calculated a little differently: value = |1d4-1d4| including zeros. All players can adapt their original attribute values (before any bonus points added from leveling up) using this [Attribute Convertion Tool](/static/attributeconverter.html) that I made. Just plug in your base array, and it will spit out the equivalent array under new system. Then add back in any changes from leveling that you had, if any.
 
 ---
 
