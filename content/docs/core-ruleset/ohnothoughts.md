@@ -7,10 +7,12 @@ weight: 4
 
 {{% hint info %}}
 **Primary Changes:**
-Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play.
+Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play. This does result in a change to your attribute values, which I go over how to adapt below.
 
-Dont Knock It Till You Try It
--Anthony DiRuzza
+Second Major change is to Luck, giving it more swing and making it a gamble rather than a guarantee. Makes it the more of the tool I intended it to be rather than the basically necessary addition to each choice.
+
+Don't Knock It Till You Try It
+- Anthony DiRuzza
 {{% /hint %}}
 
 ---
@@ -19,15 +21,19 @@ Dont Knock It Till You Try It
 
 To determine success or failure of an action, the following mechanic is used:
 
-**2D6 + STAT + MODIFIERS VS. TARGET NUMBER**
+**2D6 + MODIFIERS VS. TARGET NUMBER**
+
+## Attribute Values
+
+With the 2d6 system, attribute values will be calculated a little differently: value = |1d4-1d4| including zeros. All players can adapt their original attribute values (before any bonus points added from leveling up) using this [Attribute Convertion Tool(attributeconverter.html)] that I made. Just plug in your base array, and it will spit out the equivalent array under new system. Then add back in any changes from leveling that you had, if any.
 
 ---
 
 ## Determining the Target Number
 
-The target number lands on a scale that is based on the difficulty of the action being attempted. Many tasks have guidelines associated with them to help the Game Master best determine where on the scale a given target should land, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number.
+The target number lands on a scale as before, but with a shift in numbers.
 
-## Difficulty Scale
+## Updated 2d6 Difficulty Scale
 
 | Description        | Target Number   |
 |--------------------|-----------------|
@@ -43,22 +49,14 @@ The target number lands on a scale that is based on the difficulty of the action
 |         ↓          | 4               |
 |                    | 2               |
 
-With a little practice, use of this scale becomes intuitive. It may help the GM to have it written or printed in front of them so they may quickly move a marker along it during situations with many modifiers such as combat.
-
-Situational advantages/disadvantages move the target up or down the scale. For example, using inappropriate tools for a task - such as using a screwdriver as a hammer - results in the target becoming more difficult and moving up the scale.
-
-All attack and stealth rolls start at 8. Advantages to the defender move the target up the scale, while advantages to the attacker move the target down the scale.
-
-### "Impossible" Tasks
-
-The "Impossible" task description is used to describe any task that would be impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches these target steps due to adjustments from advantages, disadvantages, abilities, or other modifications to the target value, is not considered an "Impossible" task.
-
+Movement from advantage and disadvantage, impossible tasks, and other functions relating to the scale, remain the same.
+ 
 ---
 
 ## Success and Failure
 
 {{% hint info %}}
-**Short Version:**
+**Short Version:** Unchanged:
 Success = Higher than or equal to target.
 {{% /hint %}}
 
@@ -70,6 +68,11 @@ When the result is lower than the target the action is unsuccessful, the GM desc
 
 ## Contested Rolls
 
+{{% hint info %}}
+**Short Version:** Unchanged:
+Result vs Result, ties roll without modifiers until decided.
+{{% /hint %}}
+
 Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2d6 and adds their applicable modifiers, with the win going to the highest roller.
 
 *A tie in a contested roll is rerolled without any modifiers, until a winner is determined.*
@@ -78,7 +81,7 @@ Occasionally, characters may face a situation requiring a contested roll. Each c
 
 {{% hint info %}}
 **Short Version:**
-Only whhmen applicable
+Only when applicable:
 Group result = result +1 per ally involved
 {{% /hint %}}
 
@@ -90,6 +93,12 @@ When two or more characters are involved in an action a group roll can be used. 
 
 # Supply Rolls
 
+{{% hint info %}}
+**Short:** Unchanged:
+When prompted roll the current supply die:
+D12, D10, D8, D6,or D4. results of three or less lower the die size by one until empty.
+{{% /hint %}}
+
 Supply rolls or supply dice are used to track inventory and conditions with a level of randomness to them. 
 Many pieces of equipment, particularly kits, do not have a set number of uses. Different applications will require different amounts of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
 
@@ -97,26 +106,14 @@ When using equipment that requires a supply roll to complete/attempt an action, 
 
 Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
-# The Rounding Rule
-
-{{% hint info %}}
-**Short Version:**
-Round down the *final* result, not each fraction during a calculation.
-{{% /hint %}}
-
-Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations. The most forthcoming example of this is when calculating Stress and Vitality, which require two values to be halved and added together:
-
-- If those values are 3 and 1, they become 1.5 and 0.5, and are added together to become 2.
-- If those values are 3 and 2, they become 1.5 and 1, and are added up to become 2.5, which is then rounded down to 2.
-
 # Luck
 
 {{% hint info %}}
 **Short Version:** 
 *Evens* on Luck dice add *bonus* normally.
-*Odds* do not, and cause cause a flat -2 penalty to the roll.*
+*Odds* do not, and instead cause a flat -2 penalty to the roll.*
 {{% /hint %}}
 
 Luck can still be used to add a 1d4 to any 2d6 action/decision roll. However, when determing results even numbers on the Luck die are added in normaly, while odd numbers cause a flat -2 penalty to the roll instead of being added in.
 
-Calculations remain the same as latest 4.251130.
+Calculations for luck remain the same as latest 4.251130.
