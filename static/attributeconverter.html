@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Array Converter - Probability Weighted</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .system-selector {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .radio-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .radio-option label {
+            font-weight: 600;
+            cursor: pointer;
+            color: #333;
+        }
+        .input-section {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        /* Responsive grid layouts */
+        @media (min-width: 768px) {
+            .input-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .array-display {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .conversion-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .input-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .array-display {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .conversion-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .input-grid input {
+            padding: 12px;
+            font-size: 1.1em;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .input-grid input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        button.secondary {
+            background: #6b7280;
+        }
+        .results {
+            display: none;
+            margin-top: 25px;
+        }
+        .result-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .result-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.3em;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .array-display {
+            display: grid;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .array-value {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+        .conversion-card {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .conversion-card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        .conversion-grid {
+            display: grid;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .converted-value {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .info-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box p {
+            margin: 5px 0;
+            color: #92400e;
+        }
+        .note-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .prob-display {
+            background: rgba(255,255,255,0.15);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Attribute Array Converter</h1>
+        <p class="subtitle">Probability-weighted conversion between dice systems</p>
+
+        <div class="system-selector">
+            <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Input System:</h3>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="system1" name="system" value="1d6-1d4" checked>
+                    <label for="system1">|1d6 - 1d4| (exclude zeros)</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="system2" name="system" value="1d4-1d4">
+                    <label for="system2">|1d4 - 1d4| (include zeros)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <h3 style="margin-top: 0; color: #333;">Enter Your 8 Attribute Values:</h3>
+            <p style="color: #666; margin-bottom: 15px;">Order doesn't matter</p>
+            <div class="input-grid">
+                <input type="number" id="attr1" min="0" max="24" placeholder="1">
+                <input type="number" id="attr2" min="0" max="24" placeholder="2">
+                <input type="number" id="attr3" min="0" max="24" placeholder="3">
+                <input type="number" id="attr4" min="0" max="24" placeholder="4">
+                <input type="number" id="attr5" min="0" max="24" placeholder="5">
+                <input type="number" id="attr6" min="0" max="24" placeholder="6">
+                <input type="number" id="attr7" min="0" max="24" placeholder="7">
+                <input type="number" id="attr8" min="0" max="24" placeholder="8">
+            </div>
+            <div class="button-group">
+                <button onclick="calculate()">Convert Array</button>
+                <button class="secondary" onclick="clearInputs()">Clear</button>
+                <button class="secondary" onclick="generateRandom()">Random Example</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p><strong>How it works:</strong></p>
+            <p>• Calculates the probability of getting your exact array combination</p>
+            <p>• Converts each value while considering both individual odds and array rarity</p>
+            <p>• Finds an equivalent array with similar probability in the target system</p>
+        </div>
+
+        <div class="results" id="results">
+            <div class="result-card">
+                <h3>📊 Your Input Array</h3>
+                <p style="text-align: center; opacity: 0.9; margin-bottom: 10px;" id="inputSystemName">-</p>
+                <div class="array-display" id="inputArray"></div>
+                <div class="stat-row">
+                    <span>Total:</span>
+                    <span id="inputTotal" style="font-weight: bold; font-size: 1.2em;">-</span>
+                </div>
+                <div class="prob-display">
+                    <strong>Array Probability:</strong> <span id="inputProb">-</span><br>
+                    <strong>Rarity:</strong> <span id="inputRarity">-</span>
+                </div>
+            </div>
+
+            <div class="conversion-card">
+                <h3>🔄 Converted Array</h3>
+                <p style="text-align: center; color: #666; margin: 10px 0;">In <strong id="outputSystemName">-</strong> system:</p>
+                <div class="conversion-grid" id="outputArray"></div>
+                <div style="text-align: center; margin-top: 15px;">
+                    <p style="color: #666;"><strong>Total:</strong> <span id="outputTotal" style="color: #667eea; font-weight: bold; font-size: 1.3em;">-</span></p>
+                </div>
+                <div style="background: rgba(102, 126, 234, 0.1); padding: 10px; border-radius: 5px; margin: 10px 0;">
+                    <strong style="color: #667eea;">Array Probability:</strong> <span id="outputProb">-</span><br>
+                    <strong style="color: #667eea;">Rarity:</strong> <span id="outputRarity">-</span>
+                </div>
+                <div class="note-box">
+                    <p><strong>Conversion Method:</strong> This algorithm considers both the z-score of each individual value AND the probability of getting that specific combination. It optimizes to find an array in the target system with similar rarity while maintaining the relative distribution of high/low values.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const systems = {
+            '1d6-1d4': {
+                name: '|1d6 - 1d4| (exclude zeros)',
+                probs: {1: 7/20, 2: 6/20, 3: 4/20, 4: 2/20, 5: 1/20},
+                expectedPerAttr: 2.2,
+                stdDevPerAttr: 1.166,
+                minVal: 1,
+                maxVal: 5
+            },
+            '1d4-1d4': {
+                name: '|1d4 - 1d4| (include zeros)',
+                probs: {0: 4/16, 1: 6/16, 2: 4/16, 3: 2/16},
+                expectedPerAttr: 1.25,
+                stdDevPerAttr: 0.968,
+                minVal: 0,
+                maxVal: 3
+            }
+        };
+
+        function factorial(n) {
+            if (n <= 1) return 1;
+            return n * factorial(n - 1);
+        }
+
+        function calculateArrayProbability(values, system) {
+            const systemData = systems[system];
+            const counts = {};
+            values.forEach(v => counts[v] = (counts[v] || 0) + 1);
+            
+            let multinomial = factorial(8);
+            Object.values(counts).forEach(count => multinomial /= factorial(count));
+            
+            let prob = multinomial;
+            Object.entries(counts).forEach(([value, count]) => {
+                const p = systemData.probs[value] || 0;
+                prob *= Math.pow(p, count);
+            });
+            
+            return prob;
+        }
+
+        function logProbability(prob) {
+            return Math.log10(prob);
+        }
+
+        function getRarityDescription(prob) {
+            const log = logProbability(prob);
+            if (log > -3) return "Very Common";
+            if (log > -4) return "Common";
+            if (log > -5) return "Uncommon";
+            if (log > -6) return "Rare";
+            if (log > -7) return "Very Rare";
+            return "Extremely Rare";
+        }
+
+        function convertValueBasic(value, fromSystem, toSystem) {
+            const fromStats = systems[fromSystem];
+            const toStats = systems[toSystem];
+            const zScore = (value - fromStats.expectedPerAttr) / fromStats.stdDevPerAttr;
+            const convertedValue = toStats.expectedPerAttr + (zScore * toStats.stdDevPerAttr);
+            return Math.max(toStats.minVal, Math.min(toStats.maxVal, Math.round(convertedValue)));
+        }
+
+        function optimizeArray(baseArray, targetProb, targetSystem, maxIterations = 10000) {
+            const systemData = systems[targetSystem];
+            let bestArray = [...baseArray];
+            let bestScore = Math.abs(logProbability(calculateArrayProbability(bestArray, targetSystem)) - 
+                                     logProbability(targetProb));
+            
+            for (let iter = 0; iter < maxIterations; iter++) {
+                let testArray = [...bestArray];
+                const idx = Math.floor(Math.random() * 8);
+                const adjustment = Math.random() < 0.5 ? -1 : 1;
+                testArray[idx] = Math.max(systemData.minVal, 
+                                         Math.min(systemData.maxVal, testArray[idx] + adjustment));
+                
+                const testProb = calculateArrayProbability(testArray, targetSystem);
+                const testScore = Math.abs(logProbability(testProb) - logProbability(targetProb));
+                const totalDiff = Math.abs(testArray.reduce((a,b) => a+b, 0) - 
+                                          baseArray.reduce((a,b) => a+b, 0)) * 0.1;
+                
+                const combinedScore = testScore + totalDiff;
+                const bestCombinedScore = bestScore + Math.abs(bestArray.reduce((a,b) => a+b, 0) - 
+                                                               baseArray.reduce((a,b) => a+b, 0)) * 0.1;
+                
+                if (combinedScore < bestCombinedScore) {
+                    bestArray = testArray;
+                    bestScore = testScore;
+                }
+            }
+            
+            return bestArray;
+        }
+
+        function getSelectedSystem() {
+            return document.querySelector('input[name="system"]:checked').value;
+        }
+
+        function getOtherSystem(current) {
+            return current === '1d6-1d4' ? '1d4-1d4' : '1d6-1d4';
+        }
+
+        function getInputValues() {
+            const values = [];
+            for (let i = 1; i <= 8; i++) {
+                const val = parseInt(document.getElementById('attr' + i).value);
+                if (isNaN(val)) return null;
+                values.push(val);
+            }
+            return values;
+        }
+
+        function clearInputs() {
+            for (let i = 1; i <= 8; i++) {
+                document.getElementById('attr' + i).value = '';
+            }
+            document.getElementById('results').style.display = 'none';
+        }
+
+        function generateRandom() {
+            const system = getSelectedSystem();
+            function rollDie(sides) {
+                return Math.floor(Math.random() * sides) + 1;
+            }
+            
+            for (let i = 1; i <= 8; i++) {
+                let value;
+                if (system === '1d6-1d4') {
+                    do {
+                        value = Math.abs(rollDie(6) - rollDie(4));
+                    } while (value === 0);
+                } else {
+                    value = Math.abs(rollDie(4) - rollDie(4));
+                }
+                document.getElementById('attr' + i).value = value;
+            }
+            
+            calculate();
+        }
+
+        function calculate() {
+            const values = getInputValues();
+            if (!values) {
+                alert('Please enter all 8 attribute values');
+                return;
+            }
+
+            const inputSystem = getSelectedSystem();
+            const outputSystem = getOtherSystem(inputSystem);
+            const inputStats = systems[inputSystem];
+            const outputStats = systems[outputSystem];
+
+            const inputProb = calculateArrayProbability(values, inputSystem);
+            const inputTotal = values.reduce((a, b) => a + b, 0);
+
+            const basicConverted = values.map(v => convertValueBasic(v, inputSystem, outputSystem));
+            const optimizedArray = optimizeArray(basicConverted, inputProb, outputSystem);
+            
+            const outputProb = calculateArrayProbability(optimizedArray, outputSystem);
+            const outputTotal = optimizedArray.reduce((a, b) => a + b, 0);
+
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('inputSystemName').textContent = inputStats.name;
+            
+            let inputHTML = '';
+            values.forEach(val => inputHTML += `<div class="array-value">${val}</div>`);
+            document.getElementById('inputArray').innerHTML = inputHTML;
+            document.getElementById('inputTotal').textContent = inputTotal;
+            document.getElementById('inputProb').textContent = 
+                inputProb.toExponential(3) + ' (1 in ' + Math.round(1/inputProb).toLocaleString() + ')';
+            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
+
+            document.getElementById('outputSystemName').textContent = outputStats.name;
+            
+            let outputHTML = '';
+            optimizedArray.forEach(val => outputHTML += `<div class="converted-value">${val}</div>`);
+            document.getElementById('outputArray').innerHTML = outputHTML;
+            document.getElementById('outputTotal').textContent = outputTotal;
+            document.getElementById('outputProb').textContent = 
+                outputProb.toExponential(3) + ' (1 in ' + Math.round(1/outputProb).toLocaleString() + ')';
+            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
+
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        for (let i = 1; i <= 8; i++) {
+            document.getElementById('attr' + i).addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') calculate();
+            });
+        }
+    </script>
+</body>
+</html>
