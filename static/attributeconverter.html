@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute Array Converter - Probability Weighted</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 1000px;
@@ -16,13 +19,15 @@
         .container {
             background: white;
             border-radius: 15px;
-            padding: 30px;
+            padding: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
         }
         h1 {
             text-align: center;
             color: #667eea;
             margin-bottom: 10px;
+            font-size: 1.5em;
         }
         .subtitle {
             text-align: center;
@@ -31,14 +36,20 @@
         }
         .system-selector {
             background: #f0f4ff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        .system-selector h3 {
+            margin: 0 0 15px 0;
+            text-align: center;
+            color: #667eea;
+            font-size: 1em;
         }
         .radio-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
         .radio-option {
             display: flex;
@@ -63,6 +74,8 @@
             cursor: pointer;
             color: #333;
             line-height: 1.4;
+            flex: 1;
+            min-width: 0;
         }
         .radio-option label strong {
             color: #667eea;
@@ -72,46 +85,33 @@
             color: #666;
             margin-top: 2px;
         }
+        .system-stats {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 4px;
+        }
         .input-section {
             background: #f9fafb;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        .input-section h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1em;
         }
         .input-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
             margin-top: 15px;
         }
-
-        @media (min-width: 768px) {
-            .input-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .array-display {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .conversion-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        @media (max-width: 767px) {
-            .input-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .array-display {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .conversion-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
         .input-grid input {
-            padding: 12px;
-            font-size: 1.1em;
+            width: 100%;
+            min-width: 0;
+            padding: 10px 5px;
+            font-size: 1em;
             text-align: center;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -123,7 +123,7 @@
         }
         .button-group {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             justify-content: center;
             margin-top: 15px;
             flex-wrap: wrap;
@@ -132,10 +132,10 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
-            padding: 12px 24px;
+            padding: 10px 16px;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 0.9em;
             font-weight: 600;
             transition: transform 0.2s;
         }
@@ -148,32 +148,42 @@
         }
         .results {
             display: none;
-            margin-top: 25px;
+            margin-top: 20px;
         }
         .result-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
         }
         .result-card h3 {
             margin: 0 0 15px 0;
-            font-size: 1.3em;
+            font-size: 1.2em;
             border-bottom: 2px solid rgba(255,255,255,0.3);
             padding-bottom: 10px;
         }
-        .array-display {
+        .array-display, .conversion-grid {
             display: grid;
-            gap: 10px;
-            margin: 20px 0;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin: 15px 0;
         }
         .array-value {
             background: rgba(255,255,255,0.2);
-            padding: 15px;
+            padding: 12px 5px;
             border-radius: 8px;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .converted-value {
+            background: #667eea;
+            color: white;
+            padding: 12px 5px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3em;
             font-weight: bold;
         }
         .stat-row {
@@ -196,20 +206,6 @@
             color: #667eea;
             margin-top: 0;
         }
-        .conversion-grid {
-            display: grid;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .converted-value {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
         .info-box {
             background: #fef3c7;
             border-left: 4px solid #f59e0b;
@@ -220,6 +216,7 @@
         .info-box p {
             margin: 5px 0;
             color: #92400e;
+            font-size: 0.9em;
         }
         .note-box {
             background: white;
@@ -236,10 +233,43 @@
             margin: 10px 0;
             font-size: 0.9em;
         }
-        .system-stats {
-            font-size: 0.8em;
-            color: #888;
-            margin-top: 4px;
+        #inputNote {
+            color: #f59e0b;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            .input-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 6px;
+            }
+            .input-grid input {
+                padding: 8px 2px;
+                font-size: 0.95em;
+            }
+            .array-display, .conversion-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 6px;
+            }
+            .array-value, .converted-value {
+                padding: 10px 3px;
+                font-size: 1.1em;
+            }
+            .button-group {
+                gap: 6px;
+            }
+            button {
+                padding: 8px 12px;
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
@@ -249,7 +279,7 @@
         <p class="subtitle">Probability-weighted conversion between dice systems</p>
 
         <div class="system-selector">
-            <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Input System:</h3>
+            <h3>Select Input System:</h3>
             <div class="radio-group">
                 <div class="radio-option">
                     <input type="radio" id="input-1d6-1d4" name="inputSystem" value="1d6-1d4" checked>
@@ -270,7 +300,7 @@
                 <div class="radio-option">
                     <input type="radio" id="input-d20a" name="inputSystem" value="d20a">
                     <label for="input-d20a">
-                        <strong>D20A: 4d6 Drop Lowest</strong>
+                        <strong>D20: 4d6 Drop Lowest</strong>
                         <div class="system-description">Roll 4d6, drop lowest die, sum remaining 3. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.87 | StdDev: 1.45</div>
                     </label>
@@ -278,7 +308,7 @@
                 <div class="radio-option">
                     <input type="radio" id="input-d20b" name="inputSystem" value="d20b">
                     <label for="input-d20b">
-                        <strong>D20B: 3d6 Straight</strong>
+                        <strong>D20: 3d6 Straight</strong>
                         <div class="system-description">Roll 3d6, sum all dice. Classic method. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.00 | StdDev: 1.50</div>
                     </label>
@@ -286,7 +316,7 @@
                 <div class="radio-option">
                     <input type="radio" id="input-d20c" name="inputSystem" value="d20c">
                     <label for="input-d20c">
-                        <strong>D20C: 3d6 Reroll Ones</strong>
+                        <strong>D20: 3d6 Reroll Ones</strong>
                         <div class="system-description">Roll 3d6, reroll any 1s once (keep second roll). Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.34 | StdDev: 1.41</div>
                     </label>
@@ -294,7 +324,7 @@
                 <div class="radio-option">
                     <input type="radio" id="input-d20dd" name="inputSystem" value="d20dd">
                     <label for="input-d20dd">
-                        <strong>D20DD: 4d6 Drop Lowest + Reroll Ones</strong>
+                        <strong>D20: 4d6 Drop Lowest + Reroll Ones</strong>
                         <div class="system-description">Roll 4d6, reroll any 1s once, then drop lowest. Heroic method. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +1.17 | StdDev: 1.33</div>
                     </label>
@@ -303,7 +333,7 @@
         </div>
 
         <div class="system-selector">
-            <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Output System:</h3>
+            <h3>Select Output System:</h3>
             <div class="radio-group">
                 <div class="radio-option">
                     <input type="radio" id="output-1d6-1d4" name="outputSystem" value="1d6-1d4">
@@ -324,7 +354,7 @@
                 <div class="radio-option">
                     <input type="radio" id="output-d20a" name="outputSystem" value="d20a">
                     <label for="output-d20a">
-                        <strong>D20A: 4d6 Drop Lowest</strong>
+                        <strong>D20: 4d6 Drop Lowest</strong>
                         <div class="system-description">Roll 4d6, drop lowest die, sum remaining 3. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.87 | StdDev: 1.45</div>
                     </label>
@@ -332,7 +362,7 @@
                 <div class="radio-option">
                     <input type="radio" id="output-d20b" name="outputSystem" value="d20b">
                     <label for="output-d20b">
-                        <strong>D20B: 3d6 Straight</strong>
+                        <strong>D20: 3d6 Straight</strong>
                         <div class="system-description">Roll 3d6, sum all dice. Classic method. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.00 | StdDev: 1.50</div>
                     </label>
@@ -340,7 +370,7 @@
                 <div class="radio-option">
                     <input type="radio" id="output-d20c" name="outputSystem" value="d20c">
                     <label for="output-d20c">
-                        <strong>D20C: 3d6 Reroll Ones</strong>
+                        <strong>D20: 3d6 Reroll Ones</strong>
                         <div class="system-description">Roll 3d6, reroll any 1s once (keep second roll). Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +0.34 | StdDev: 1.41</div>
                     </label>
@@ -348,7 +378,7 @@
                 <div class="radio-option">
                     <input type="radio" id="output-d20dd" name="outputSystem" value="d20dd">
                     <label for="output-d20dd">
-                        <strong>D20DD: 4d6 Drop Lowest + Reroll Ones</strong>
+                        <strong>D20: 4d6 Drop Lowest + Reroll Ones</strong>
                         <div class="system-description">Roll 4d6, reroll any 1s once, then drop lowest. Heroic method. Scores 3-18, Modifiers −4 to +4</div>
                         <div class="system-stats">Expected Modifier: +1.17 | StdDev: 1.33</div>
                     </label>
@@ -357,9 +387,9 @@
         </div>
 
         <div class="input-section">
-            <h3 style="margin-top: 0; color: #333;">Enter Your 8 Attribute Values:</h3>
-            <p style="color: #666; margin-bottom: 5px;">Order doesn't matter</p>
-            <p id="inputNote" style="color: #f59e0b; margin-bottom: 15px; font-size: 0.9em; font-weight: 600;"></p>
+            <h3>Enter Your 8 Attribute Values:</h3>
+            <p style="color: #666; margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
+            <p id="inputNote"></p>
             <div class="input-grid">
                 <input type="number" id="attr1" placeholder="1">
                 <input type="number" id="attr2" placeholder="2">
@@ -371,16 +401,16 @@
                 <input type="number" id="attr8" placeholder="8">
             </div>
             <div class="button-group">
-                <button onclick="calculate()">Convert Array</button>
-                <button class="secondary" onclick="clearInputs()">Clear</button>
-                <button class="secondary" onclick="generateRandom()">Random Example</button>
+                <button type="button" id="convertBtn">Convert Array</button>
+                <button type="button" class="secondary" id="clearBtn">Clear</button>
+                <button type="button" class="secondary" id="randomBtn">Random Example</button>
             </div>
         </div>
 
         <div class="info-box">
             <p><strong>How it works:</strong></p>
-            <p>• Supports TLS systems (|1d6−1d4|, |1d4−1d4|) and D20 systems (4d6 drop lowest, 3d6, 3d6 reroll 1s, 4d6 drop lowest reroll 1s)</p>
-            <p>• For D20 systems: Enter modifiers (−4 to +4), not ability scores. The tool uses modifier probabilities directly.</p>
+            <p>• Supports TLS systems (|1d6−1d4|, |1d4−1d4|) and D20 systems with various rolling methods</p>
+            <p>• For D20 systems: Enter modifiers (−4 to +4), not ability scores</p>
             <p>• Calculates the probability of rolling your exact array combination</p>
             <p>• Finds an equivalent array with similar probability in the target system</p>
         </div>
@@ -412,7 +442,7 @@
                     <strong style="color: #667eea;">Rarity:</strong> <span id="outputRarity">-</span>
                 </div>
                 <div class="note-box">
-                    <p><strong>Conversion Method:</strong> This algorithm uses z-scores to map between systems while preserving the relative strength of each attribute. It then optimizes to find an array with similar overall rarity in the target system.</p>
+                    <p><strong>Conversion Method:</strong> Uses z-scores to map between systems while preserving relative attribute strength, then optimizes to match overall array rarity.</p>
                 </div>
             </div>
         </div>
@@ -421,11 +451,10 @@
     <script>
         // System definitions with correct probabilities
         // For D20 systems: probabilities are for MODIFIERS (not scores)
-        // This correctly handles that multiple scores map to the same modifier
-        const systems = {
+        var systems = {
             '1d6-1d4': {
                 name: 'Old TLS: |1d6 − 1d4| (reroll zeros)',
-                probs: {1: 7/20, 2: 6/20, 3: 4/20, 4: 2/20, 5: 1/20},
+                probs: {'1': 7/20, '2': 6/20, '3': 4/20, '4': 2/20, '5': 1/20},
                 expected: 2.2,
                 stdDev: 1.166,
                 minVal: 1,
@@ -434,27 +463,24 @@
             },
             '1d4-1d4': {
                 name: 'New TLS: |1d4 − 1d4| (keep zeros)',
-                probs: {0: 4/16, 1: 6/16, 2: 4/16, 3: 2/16},
+                probs: {'0': 4/16, '1': 6/16, '2': 4/16, '3': 2/16},
                 expected: 1.25,
                 stdDev: 0.968,
                 minVal: 0,
                 maxVal: 3,
                 isD20: false
             },
-            // D20A: 4d6 drop lowest
-            // Modifier probs = sum of score probs that produce each modifier
-            // -4: P(3), -3: P(4)+P(5), -2: P(6)+P(7), etc.
             'd20a': {
-                name: 'D20A: 4d6 Drop Lowest',
+                name: 'D20: 4d6 Drop Lowest',
                 probs: {
                     '-4': 0.000772,
-                    '-3': 0.010802,  // 0.003086 + 0.007716
-                    '-2': 0.045525,  // 0.016204 + 0.029321
-                    '-1': 0.118056,  // 0.047840 + 0.070216
-                    '0': 0.208334,   // 0.094136 + 0.114198
-                    '1': 0.261574,   // 0.128858 + 0.132716
-                    '2': 0.224537,   // 0.123457 + 0.101080
-                    '3': 0.114198,   // 0.072531 + 0.041667
+                    '-3': 0.010802,
+                    '-2': 0.045525,
+                    '-1': 0.118056,
+                    '0': 0.208334,
+                    '1': 0.261574,
+                    '2': 0.224537,
+                    '3': 0.114198,
                     '4': 0.016204
                 },
                 expected: 0.87,
@@ -463,19 +489,396 @@
                 maxVal: 4,
                 isD20: true
             },
-            // D20B: 3d6 straight (symmetric distribution)
             'd20b': {
-                name: 'D20B: 3d6 Straight',
+                name: 'D20: 3d6 Straight',
                 probs: {
                     '-4': 0.004630,
-                    '-3': 0.041667,  // 0.013889 + 0.027778
-                    '-2': 0.115740,  // 0.046296 + 0.069444
-                    '-1': 0.212963,  // 0.097222 + 0.115741
-                    '0': 0.250000,   // 0.125000 + 0.125000
-                    '1': 0.212963,   // 0.115741 + 0.097222
-                    '2': 0.115740,   // 0.069444 + 0.046296
-                    '3': 0.041667,   // 0.027778 + 0.013889
+                    '-3': 0.041667,
+                    '-2': 0.115740,
+                    '-1': 0.212963,
+                    '0': 0.250000,
+                    '1': 0.212963,
+                    '2': 0.115740,
+                    '3': 0.041667,
                     '4': 0.004630
                 },
                 expected: 0.00,
-              
+                stdDev: 1.500,
+                minVal: -4,
+                maxVal: 4,
+                isD20: true
+            },
+            'd20c': {
+                name: 'D20: 3d6 Reroll Ones',
+                probs: {
+                    '-4': 0.000751,
+                    '-3': 0.018032,
+                    '-2': 0.078137,
+                    '-1': 0.181818,
+                    '0': 0.261458,
+                    '1': 0.249436,
+                    '2': 0.150263,
+                    '3': 0.054095,
+                    '4': 0.006011
+                },
+                expected: 0.34,
+                stdDev: 1.409,
+                minVal: -4,
+                maxVal: 4,
+                isD20: true
+            },
+            'd20dd': {
+                name: 'D20: 4d6 Drop Lowest + Reroll Ones',
+                probs: {
+                    '-4': 0.000068,
+                    '-3': 0.002732,
+                    '-2': 0.023495,
+                    '-1': 0.084147,
+                    '0': 0.188512,
+                    '1': 0.274845,
+                    '2': 0.263370,
+                    '3': 0.142066,
+                    '4': 0.020764
+                },
+                expected: 1.17,
+                stdDev: 1.331,
+                minVal: -4,
+                maxVal: 4,
+                isD20: true
+            }
+        };
+
+        function factorial(n) {
+            if (n <= 1) return 1;
+            var result = 1;
+            for (var i = 2; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        function calculateArrayProbability(values, system) {
+            var systemData = systems[system];
+            var counts = {};
+            
+            for (var i = 0; i < values.length; i++) {
+                var key = values[i].toString();
+                counts[key] = (counts[key] || 0) + 1;
+            }
+
+            var multinomial = factorial(8);
+            var countKeys = Object.keys(counts);
+            for (var i = 0; i < countKeys.length; i++) {
+                multinomial /= factorial(counts[countKeys[i]]);
+            }
+
+            var prob = multinomial;
+            for (var i = 0; i < countKeys.length; i++) {
+                var value = countKeys[i];
+                var count = counts[value];
+                var p = systemData.probs[value];
+                if (p === undefined || p === 0) {
+                    return 0;
+                }
+                prob *= Math.pow(p, count);
+            }
+
+            return prob;
+        }
+
+        function logProbability(prob) {
+            if (prob <= 0) return -Infinity;
+            return Math.log10(prob);
+        }
+
+        function getRarityDescription(prob) {
+            if (prob <= 0) return "Impossible";
+            var log = logProbability(prob);
+            if (log > -3) return "Very Common";
+            if (log > -4) return "Common";
+            if (log > -5) return "Uncommon";
+            if (log > -6) return "Rare";
+            if (log > -7) return "Very Rare";
+            return "Extremely Rare";
+        }
+
+        function convertValueBasic(value, fromSystem, toSystem) {
+            var fromStats = systems[fromSystem];
+            var toStats = systems[toSystem];
+            var zScore = (value - fromStats.expected) / fromStats.stdDev;
+            var convertedValue = toStats.expected + (zScore * toStats.stdDev);
+            return Math.max(toStats.minVal, Math.min(toStats.maxVal, Math.round(convertedValue)));
+        }
+
+        function optimizeArray(baseArray, targetProb, targetSystem, maxIterations) {
+            maxIterations = maxIterations || 10000;
+            var systemData = systems[targetSystem];
+            var bestArray = baseArray.slice();
+            var bestProb = calculateArrayProbability(bestArray, targetSystem);
+            var bestScore = Math.abs(logProbability(bestProb) - logProbability(targetProb));
+
+            for (var iter = 0; iter < maxIterations; iter++) {
+                var testArray = bestArray.slice();
+                var idx = Math.floor(Math.random() * 8);
+                var adjustment = Math.random() < 0.5 ? -1 : 1;
+                testArray[idx] = Math.max(systemData.minVal, 
+                                         Math.min(systemData.maxVal, testArray[idx] + adjustment));
+
+                var testProb = calculateArrayProbability(testArray, targetSystem);
+                var testScore = Math.abs(logProbability(testProb) - logProbability(targetProb));
+                
+                var baseTotal = 0, testTotal = 0, bestTotal = 0;
+                for (var i = 0; i < 8; i++) {
+                    baseTotal += baseArray[i];
+                    testTotal += testArray[i];
+                    bestTotal += bestArray[i];
+                }
+                
+                var totalDiff = Math.abs(testTotal - baseTotal) * 0.1;
+                var combinedScore = testScore + totalDiff;
+                var bestCombinedScore = bestScore + Math.abs(bestTotal - baseTotal) * 0.1;
+
+                if (combinedScore < bestCombinedScore) {
+                    bestArray = testArray;
+                    bestScore = testScore;
+                }
+            }
+
+            return bestArray;
+        }
+
+        function getInputSystem() {
+            var radios = document.getElementsByName('inputSystem');
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) return radios[i].value;
+            }
+            return '1d6-1d4';
+        }
+
+        function getOutputSystem() {
+            var radios = document.getElementsByName('outputSystem');
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) return radios[i].value;
+            }
+            return '1d4-1d4';
+        }
+
+        function updateInputNote() {
+            var inputSystem = getInputSystem();
+            var systemData = systems[inputSystem];
+            var noteElement = document.getElementById('inputNote');
+
+            if (systemData.isD20) {
+                noteElement.textContent = 'For D20 systems: Enter MODIFIERS (−4 to +4), not ability scores';
+            } else if (inputSystem === '1d6-1d4') {
+                noteElement.textContent = 'Enter values 1 to 5 (zeros are rerolled in this system)';
+            } else if (inputSystem === '1d4-1d4') {
+                noteElement.textContent = 'Enter values 0 to 3 (zeros are kept in this system)';
+            } else {
+                noteElement.textContent = '';
+            }
+        }
+
+        function validateAndGetInputValues() {
+            var inputSystem = getInputSystem();
+            var systemData = systems[inputSystem];
+            var values = [];
+            var errors = [];
+
+            for (var i = 1; i <= 8; i++) {
+                var inputEl = document.getElementById('attr' + i);
+                var val = parseInt(inputEl.value, 10);
+                
+                if (isNaN(val)) {
+                    errors.push('Attribute ' + i + ' is empty');
+                    continue;
+                }
+
+                if (val < systemData.minVal || val > systemData.maxVal) {
+                    errors.push('Attribute ' + i + ' (' + val + ') is outside valid range ' + systemData.minVal + ' to ' + systemData.maxVal);
+                    continue;
+                }
+
+                if (systemData.probs[val.toString()] === undefined) {
+                    errors.push('Attribute ' + i + ' (' + val + ') is not possible in this system');
+                    continue;
+                }
+
+                values.push(val);
+            }
+
+            if (errors.length > 0) {
+                return { valid: false, errors: errors };
+            }
+
+            return { valid: true, values: values };
+        }
+
+        function clearInputs() {
+            for (var i = 1; i <= 8; i++) {
+                document.getElementById('attr' + i).value = '';
+            }
+            document.getElementById('results').style.display = 'none';
+        }
+
+        function rollDie(sides) {
+            return Math.floor(Math.random() * sides) + 1;
+        }
+
+        function scoreToModifier(score) {
+            return Math.floor((score - 10) / 2);
+        }
+
+        function generateRandom() {
+            var system = getInputSystem();
+
+            for (var i = 1; i <= 8; i++) {
+                var value;
+                
+                if (system === '1d6-1d4') {
+                    do {
+                        value = Math.abs(rollDie(6) - rollDie(4));
+                    } while (value === 0);
+                } else if (system === '1d4-1d4') {
+                    value = Math.abs(rollDie(4) - rollDie(4));
+                } else if (system === 'd20a') {
+                    var rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
+                    rolls.sort(function(a, b) { return a - b; });
+                    var score = rolls[1] + rolls[2] + rolls[3];
+                    value = scoreToModifier(score);
+                } else if (system === 'd20b') {
+                    var score = rollDie(6) + rollDie(6) + rollDie(6);
+                    value = scoreToModifier(score);
+                } else if (system === 'd20c') {
+                    var rolls = [rollDie(6), rollDie(6), rollDie(6)];
+                    for (var j = 0; j < rolls.length; j++) {
+                        if (rolls[j] === 1) rolls[j] = rollDie(6);
+                    }
+                    var score = rolls[0] + rolls[1] + rolls[2];
+                    value = scoreToModifier(score);
+                } else if (system === 'd20dd') {
+                    var rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
+                    for (var j = 0; j < rolls.length; j++) {
+                        if (rolls[j] === 1) rolls[j] = rollDie(6);
+                    }
+                    rolls.sort(function(a, b) { return a - b; });
+                    var score = rolls[1] + rolls[2] + rolls[3];
+                    value = scoreToModifier(score);
+                }
+
+                document.getElementById('attr' + i).value = value;
+            }
+
+            calculate();
+        }
+
+        function formatValue(val, isD20) {
+            if (isD20) {
+                return val >= 0 ? '+' + val : val.toString();
+            }
+            return val.toString();
+        }
+
+        function calculate() {
+            var validation = validateAndGetInputValues();
+            
+            if (!validation.valid) {
+                alert('Input errors:\n' + validation.errors.join('\n'));
+                return;
+            }
+
+            var values = validation.values;
+            var inputSystem = getInputSystem();
+            var outputSystem = getOutputSystem();
+
+            if (inputSystem === outputSystem) {
+                alert('Please select different input and output systems');
+                return;
+            }
+
+            var inputStats = systems[inputSystem];
+            var outputStats = systems[outputSystem];
+
+            var inputProb = calculateArrayProbability(values, inputSystem);
+            var inputTotal = 0;
+            for (var i = 0; i < values.length; i++) {
+                inputTotal += values[i];
+            }
+
+            var basicConverted = [];
+            for (var i = 0; i < values.length; i++) {
+                basicConverted.push(convertValueBasic(values[i], inputSystem, outputSystem));
+            }
+            
+            var optimizedArray = optimizeArray(basicConverted, inputProb, outputSystem);
+
+            var outputProb = calculateArrayProbability(optimizedArray, outputSystem);
+            var outputTotal = 0;
+            for (var i = 0; i < optimizedArray.length; i++) {
+                outputTotal += optimizedArray[i];
+            }
+
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('inputSystemName').textContent = inputStats.name;
+
+            var inputHTML = '';
+            for (var i = 0; i < values.length; i++) {
+                inputHTML += '<div class="array-value">' + formatValue(values[i], inputStats.isD20) + '</div>';
+            }
+            document.getElementById('inputArray').innerHTML = inputHTML;
+            document.getElementById('inputTotal').textContent = inputStats.isD20 
+                ? (inputTotal >= 0 ? '+' + inputTotal : inputTotal)
+                : inputTotal;
+            
+            if (inputProb > 0) {
+                document.getElementById('inputProb').textContent =
+                    inputProb.toExponential(3) + ' (1 in ' + Math.round(1/inputProb).toLocaleString() + ')';
+            } else {
+                document.getElementById('inputProb').textContent = 'Invalid (probability = 0)';
+            }
+            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
+
+            document.getElementById('outputSystemName').textContent = outputStats.name;
+
+            var outputHTML = '';
+            for (var i = 0; i < optimizedArray.length; i++) {
+                outputHTML += '<div class="converted-value">' + formatValue(optimizedArray[i], outputStats.isD20) + '</div>';
+            }
+            document.getElementById('outputArray').innerHTML = outputHTML;
+            document.getElementById('outputTotal').textContent = outputStats.isD20
+                ? (outputTotal >= 0 ? '+' + outputTotal : outputTotal)
+                : outputTotal;
+
+            if (outputProb > 0) {
+                document.getElementById('outputProb').textContent =
+                    outputProb.toExponential(3) + ' (1 in ' + Math.round(1/outputProb).toLocaleString() + ')';
+            } else {
+                document.getElementById('outputProb').textContent = 'Calculation error';
+            }
+            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
+
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Set up event listeners when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('convertBtn').addEventListener('click', calculate);
+            document.getElementById('clearBtn').addEventListener('click', clearInputs);
+            document.getElementById('randomBtn').addEventListener('click', generateRandom);
+
+            for (var i = 1; i <= 8; i++) {
+                document.getElementById('attr' + i).addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') calculate();
+                });
+            }
+
+            var inputRadios = document.getElementsByName('inputSystem');
+            for (var i = 0; i < inputRadios.length; i++) {
+                inputRadios[i].addEventListener('change', updateInputNote);
+            }
+
+            updateInputNote();
+        });
+    </script>
+</body>
+</html>
