@@ -234,28 +234,75 @@
             <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Input System:</h3>
             <div class="radio-group">
                 <div class="radio-option">
-                    <input type="radio" id="system1" name="system" value="1d6-1d4" checked>
-                    <label for="system1">|1d6 - 1d4| (exclude zeros)</label>
+                    <input type="radio" id="input-1d6-1d4" name="inputSystem" value="1d6-1d4" checked>
+                    <label for="input-1d6-1d4">Old TLS</label>
                 </div>
                 <div class="radio-option">
-                    <input type="radio" id="system2" name="system" value="1d4-1d4">
-                    <label for="system2">|1d4 - 1d4| (include zeros)</label>
+                    <input type="radio" id="input-1d4-1d4" name="inputSystem" value="1d4-1d4">
+                    <label for="input-1d4-1d4">New TLS</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20a" name="inputSystem" value="d20a">
+                    <label for="input-d20a">D20A</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20b" name="inputSystem" value="d20b">
+                    <label for="input-d20b">D20B</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20c" name="inputSystem" value="d20c">
+                    <label for="input-d20c">D20C</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20dd" name="inputSystem" value="d20dd">
+                    <label for="input-d20dd">D20DD</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="system-selector">
+            <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Output System:</h3>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="output-1d6-1d4" name="outputSystem" value="1d6-1d4">
+                    <label for="output-1d6-1d4">Old TLS</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-1d4-1d4" name="outputSystem" value="1d4-1d4" checked>
+                    <label for="output-1d4-1d4">New TLS</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20a" name="outputSystem" value="d20a">
+                    <label for="output-d20a">D20A</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20b" name="outputSystem" value="d20b">
+                    <label for="output-d20b">D20B</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20c" name="outputSystem" value="d20c">
+                    <label for="output-d20c">D20C</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20dd" name="outputSystem" value="d20dd">
+                    <label for="output-d20dd">D20DD</label>
                 </div>
             </div>
         </div>
 
         <div class="input-section">
             <h3 style="margin-top: 0; color: #333;">Enter Your 8 Attribute Values:</h3>
-            <p style="color: #666; margin-bottom: 15px;">Order doesn't matter</p>
+            <p style="color: #666; margin-bottom: 5px;">Order doesn't matter</p>
+            <p id="inputNote" style="color: #f59e0b; margin-bottom: 15px; font-size: 0.9em; font-weight: 600;"></p>
             <div class="input-grid">
-                <input type="number" id="attr1" min="0" max="24" placeholder="1">
-                <input type="number" id="attr2" min="0" max="24" placeholder="2">
-                <input type="number" id="attr3" min="0" max="24" placeholder="3">
-                <input type="number" id="attr4" min="0" max="24" placeholder="4">
-                <input type="number" id="attr5" min="0" max="24" placeholder="5">
-                <input type="number" id="attr6" min="0" max="24" placeholder="6">
-                <input type="number" id="attr7" min="0" max="24" placeholder="7">
-                <input type="number" id="attr8" min="0" max="24" placeholder="8">
+                <input type="number" id="attr1" min="-5" max="24" placeholder="1">
+                <input type="number" id="attr2" min="-5" max="24" placeholder="2">
+                <input type="number" id="attr3" min="-5" max="24" placeholder="3">
+                <input type="number" id="attr4" min="-5" max="24" placeholder="4">
+                <input type="number" id="attr5" min="-5" max="24" placeholder="5">
+                <input type="number" id="attr6" min="-5" max="24" placeholder="6">
+                <input type="number" id="attr7" min="-5" max="24" placeholder="7">
+                <input type="number" id="attr8" min="-5" max="24" placeholder="8">
             </div>
             <div class="button-group">
                 <button onclick="calculate()">Convert Array</button>
@@ -266,6 +313,8 @@
 
         <div class="info-box">
             <p><strong>How it works:</strong></p>
+            <p>• Supports TLS systems (|1d6-1d4|, |1d4-1d4|) and D20 systems (4d6 drop lowest, 3d6, 3d6 reroll ones, 4d6 drop lowest and reroll ones)</p>
+            <p>• For D20 systems: Enter modifiers (-5 to +5), not ability scores. The tool converts them internally.</p>
             <p>• Calculates the probability of getting your exact array combination</p>
             <p>• Converts each value while considering both individual odds and array rarity</p>
             <p>• Finds an equivalent array with similar probability in the target system</p>
@@ -307,22 +356,85 @@
     <script>
         const systems = {
             '1d6-1d4': {
-                name: '|1d6 - 1d4| (exclude zeros)',
+                name: 'Old TLS: |1d6 - 1d4| (reroll zeros)',
                 probs: {1: 7/20, 2: 6/20, 3: 4/20, 4: 2/20, 5: 1/20},
                 expectedPerAttr: 2.2,
                 stdDevPerAttr: 1.166,
                 minVal: 1,
-                maxVal: 5
+                maxVal: 5,
+                isD20: false
             },
             '1d4-1d4': {
-                name: '|1d4 - 1d4| (include zeros)',
+                name: 'New TLS: |1d4 - 1d4|',
                 probs: {0: 4/16, 1: 6/16, 2: 4/16, 3: 2/16},
                 expectedPerAttr: 1.25,
                 stdDevPerAttr: 0.968,
                 minVal: 0,
-                maxVal: 3
+                maxVal: 3,
+                isD20: false
+            },
+            'd20a': {
+                name: 'D20A: 4d6 drop the lowest',
+                probs: {3: 0.000772, 4: 0.003086, 5: 0.007716, 6: 0.016204, 7: 0.029321, 8: 0.047840, 9: 0.070216, 10: 0.094136, 11: 0.114198, 12: 0.128858, 13: 0.132716, 14: 0.123457, 15: 0.101080, 16: 0.072531, 17: 0.041667, 18: 0.016204},
+                expectedPerAttr: 12.2446,
+                stdDevPerAttr: 2.8468,
+                minVal: 3,
+                maxVal: 18,
+                isD20: true
+            },
+            'd20b': {
+                name: 'D20B: 3d6',
+                probs: {3: 0.004630, 4: 0.013889, 5: 0.027778, 6: 0.046296, 7: 0.069444, 8: 0.097222, 9: 0.115741, 10: 0.125000, 11: 0.125000, 12: 0.115741, 13: 0.097222, 14: 0.069444, 15: 0.046296, 16: 0.027778, 17: 0.013889, 18: 0.004630},
+                expectedPerAttr: 10.5,
+                stdDevPerAttr: 2.9580,
+                minVal: 3,
+                maxVal: 18,
+                isD20: true
+            },
+            'd20c': {
+                name: 'D20C: 3d6 reroll ones',
+                probs: {3: 0.000751, 4: 0.004508, 5: 0.013524, 6: 0.028550, 7: 0.049587, 8: 0.076634, 9: 0.105184, 10: 0.126221, 11: 0.135237, 12: 0.132231, 13: 0.117205, 14: 0.090158, 15: 0.060105, 16: 0.036063, 17: 0.018032, 18: 0.006011},
+                expectedPerAttr: 11.1818,
+                stdDevPerAttr: 2.7724,
+                minVal: 3,
+                maxVal: 18,
+                isD20: true
+            },
+            'd20dd': {
+                name: 'D20DD: 4d6 drop the lowest and reroll ones',
+                probs: {3: 0.000068, 4: 0.000546, 5: 0.002186, 6: 0.007103, 7: 0.016392, 8: 0.031145, 9: 0.053002, 10: 0.080869, 11: 0.107643, 12: 0.131139, 13: 0.143706, 14: 0.142067, 15: 0.121303, 16: 0.089611, 17: 0.052455, 18: 0.020764},
+                expectedPerAttr: 12.8392,
+                stdDevPerAttr: 2.6099,
+                minVal: 3,
+                maxVal: 18,
+                isD20: true
             }
         };
+
+        // Convert D20 modifier to ability score
+        function modifierToScore(modifier) {
+            // Standard D&D 5e modifier-to-score mapping
+            // Use the middle value of each score range
+            const mapping = {
+                '-5': 1,
+                '-4': 3,
+                '-3': 5,
+                '-2': 7,
+                '-1': 9,
+                '0': 10,
+                '1': 13,
+                '2': 15,
+                '3': 17,
+                '4': 18,
+                '5': 20
+            };
+            return mapping[modifier.toString()] || 10;
+        }
+
+        // Convert D20 ability score to modifier
+        function scoreToModifier(score) {
+            return Math.floor((score - 10) / 2);
+        }
 
         function factorial(n) {
             if (n <= 1) return 1;
@@ -399,15 +511,46 @@
             return bestArray;
         }
 
-        function getSelectedSystem() {
-            return document.querySelector('input[name="system"]:checked').value;
+        function getInputSystem() {
+            return document.querySelector('input[name="inputSystem"]:checked').value;
         }
 
-        function getOtherSystem(current) {
-            return current === '1d6-1d4' ? '1d4-1d4' : '1d6-1d4';
+        function getOutputSystem() {
+            return document.querySelector('input[name="outputSystem"]:checked').value;
+        }
+
+        function updateInputNote() {
+            const inputSystem = getInputSystem();
+            const systemData = systems[inputSystem];
+            const noteElement = document.getElementById('inputNote');
+
+            if (systemData.isD20) {
+                noteElement.textContent = 'For D20 systems: Enter MODIFIERS (-5 to +5), not ability scores';
+            } else {
+                noteElement.textContent = '';
+            }
         }
 
         function getInputValues() {
+            const inputSystem = getInputSystem();
+            const systemData = systems[inputSystem];
+            const values = [];
+
+            for (let i = 1; i <= 8; i++) {
+                const val = parseInt(document.getElementById('attr' + i).value);
+                if (isNaN(val)) return null;
+
+                // If it's a D20 system, convert modifier to score
+                if (systemData.isD20) {
+                    values.push(modifierToScore(val));
+                } else {
+                    values.push(val);
+                }
+            }
+            return values;
+        }
+
+        function getDisplayValues() {
             const values = [];
             for (let i = 1; i <= 8; i++) {
                 const val = parseInt(document.getElementById('attr' + i).value);
@@ -425,35 +568,81 @@
         }
 
         function generateRandom() {
-            const system = getSelectedSystem();
+            const system = getInputSystem();
+            const systemData = systems[system];
+
             function rollDie(sides) {
                 return Math.floor(Math.random() * sides) + 1;
             }
-            
+
+            function roll4d6DropLowest() {
+                const rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
+                rolls.sort((a, b) => a - b);
+                return rolls.slice(1).reduce((a, b) => a + b, 0);
+            }
+
+            function roll3d6() {
+                return rollDie(6) + rollDie(6) + rollDie(6);
+            }
+
+            function roll3d6RerollOnes() {
+                let rolls = [rollDie(6), rollDie(6), rollDie(6)];
+                rolls = rolls.map(r => r === 1 ? rollDie(6) : r);
+                return rolls.reduce((a, b) => a + b, 0);
+            }
+
+            function roll4d6DropLowestRerollOnes() {
+                let rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
+                rolls = rolls.map(r => r === 1 ? rollDie(6) : r);
+                rolls.sort((a, b) => a - b);
+                return rolls.slice(1).reduce((a, b) => a + b, 0);
+            }
+
             for (let i = 1; i <= 8; i++) {
                 let value;
                 if (system === '1d6-1d4') {
                     do {
                         value = Math.abs(rollDie(6) - rollDie(4));
                     } while (value === 0);
-                } else {
+                } else if (system === '1d4-1d4') {
                     value = Math.abs(rollDie(4) - rollDie(4));
+                } else if (system === 'd20a') {
+                    value = roll4d6DropLowest();
+                } else if (system === 'd20b') {
+                    value = roll3d6();
+                } else if (system === 'd20c') {
+                    value = roll3d6RerollOnes();
+                } else if (system === 'd20dd') {
+                    value = roll4d6DropLowestRerollOnes();
                 }
+
+                // If D20 system, convert score to modifier for display
+                if (systemData.isD20) {
+                    value = scoreToModifier(value);
+                }
+
                 document.getElementById('attr' + i).value = value;
             }
-            
+
             calculate();
         }
 
         function calculate() {
             const values = getInputValues();
-            if (!values) {
+            const displayValues = getDisplayValues();
+            if (!values || !displayValues) {
                 alert('Please enter all 8 attribute values');
                 return;
             }
 
-            const inputSystem = getSelectedSystem();
-            const outputSystem = getOtherSystem(inputSystem);
+            const inputSystem = getInputSystem();
+            const outputSystem = getOutputSystem();
+
+            if (inputSystem === outputSystem) {
+                alert('Please select different input and output systems');
+                return;
+            }
+
             const inputStats = systems[inputSystem];
             const outputStats = systems[outputSystem];
 
@@ -462,28 +651,51 @@
 
             const basicConverted = values.map(v => convertValueBasic(v, inputSystem, outputSystem));
             const optimizedArray = optimizeArray(basicConverted, inputProb, outputSystem);
-            
+
             const outputProb = calculateArrayProbability(optimizedArray, outputSystem);
             const outputTotal = optimizedArray.reduce((a, b) => a + b, 0);
 
+            // Display logic
             document.getElementById('results').style.display = 'block';
             document.getElementById('inputSystemName').textContent = inputStats.name;
-            
+
             let inputHTML = '';
-            values.forEach(val => inputHTML += `<div class="array-value">${val}</div>`);
+            if (inputStats.isD20) {
+                // Display as modifiers
+                displayValues.forEach(val => inputHTML += `<div class="array-value">${val >= 0 ? '+' : ''}${val}</div>`);
+            } else {
+                displayValues.forEach(val => inputHTML += `<div class="array-value">${val}</div>`);
+            }
             document.getElementById('inputArray').innerHTML = inputHTML;
-            document.getElementById('inputTotal').textContent = inputTotal;
-            document.getElementById('inputProb').textContent = 
+            document.getElementById('inputTotal').textContent = inputStats.isD20
+                ? displayValues.reduce((a, b) => a + b, 0)
+                : inputTotal;
+            document.getElementById('inputProb').textContent =
                 inputProb.toExponential(3) + ' (1 in ' + Math.round(1/inputProb).toLocaleString() + ')';
             document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
 
             document.getElementById('outputSystemName').textContent = outputStats.name;
-            
+
             let outputHTML = '';
-            optimizedArray.forEach(val => outputHTML += `<div class="converted-value">${val}</div>`);
+            if (outputStats.isD20) {
+                // Display as modifiers
+                optimizedArray.forEach(val => {
+                    const mod = scoreToModifier(val);
+                    outputHTML += `<div class="converted-value">${mod >= 0 ? '+' : ''}${mod}</div>`;
+                });
+            } else {
+                optimizedArray.forEach(val => outputHTML += `<div class="converted-value">${val}</div>`);
+            }
             document.getElementById('outputArray').innerHTML = outputHTML;
-            document.getElementById('outputTotal').textContent = outputTotal;
-            document.getElementById('outputProb').textContent = 
+
+            if (outputStats.isD20) {
+                const modTotal = optimizedArray.map(scoreToModifier).reduce((a, b) => a + b, 0);
+                document.getElementById('outputTotal').textContent = modTotal;
+            } else {
+                document.getElementById('outputTotal').textContent = outputTotal;
+            }
+
+            document.getElementById('outputProb').textContent =
                 outputProb.toExponential(3) + ' (1 in ' + Math.round(1/outputProb).toLocaleString() + ')';
             document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
 
@@ -495,6 +707,14 @@
                 if (e.key === 'Enter') calculate();
             });
         }
+
+        // Add event listeners for system selection changes
+        document.querySelectorAll('input[name="inputSystem"]').forEach(radio => {
+            radio.addEventListener('change', updateInputNote);
+        });
+
+        // Initialize the input note on page load
+        window.addEventListener('DOMContentLoaded', updateInputNote);
     </script>
 </body>
 </html>
