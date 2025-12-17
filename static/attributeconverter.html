@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,25 +37,40 @@
         }
         .radio-group {
             display: flex;
-            gap: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 12px;
         }
         .radio-option {
             display: flex;
-            align-items: center;
-            gap: 8px;
+            align-items: flex-start;
+            gap: 10px;
             cursor: pointer;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .radio-option:hover {
+            background: rgba(102, 126, 234, 0.1);
         }
         .radio-option input[type="radio"] {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             cursor: pointer;
+            margin-top: 2px;
+            flex-shrink: 0;
         }
         .radio-option label {
-            font-weight: 600;
             cursor: pointer;
             color: #333;
+            line-height: 1.4;
+        }
+        .radio-option label strong {
+            color: #667eea;
+        }
+        .system-description {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 2px;
         }
         .input-section {
             background: #f9fafb;
@@ -70,8 +84,7 @@
             gap: 10px;
             margin-top: 15px;
         }
-        
-        /* Responsive grid layouts */
+
         @media (min-width: 768px) {
             .input-grid {
                 grid-template-columns: repeat(4, 1fr);
@@ -83,7 +96,7 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
-        
+
         @media (max-width: 767px) {
             .input-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -95,7 +108,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         .input-grid input {
             padding: 12px;
             font-size: 1.1em;
@@ -223,6 +236,11 @@
             margin: 10px 0;
             font-size: 0.9em;
         }
+        .system-stats {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 4px;
+        }
     </style>
 </head>
 <body>
@@ -234,28 +252,123 @@
             <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Input System:</h3>
             <div class="radio-group">
                 <div class="radio-option">
-                    <input type="radio" id="system1" name="system" value="1d6-1d4" checked>
-                    <label for="system1">|1d6 - 1d4| (exclude zeros)</label>
+                    <input type="radio" id="input-1d6-1d4" name="inputSystem" value="1d6-1d4" checked>
+                    <label for="input-1d6-1d4">
+                        <strong>Old TLS: |1d6 − 1d4|</strong>
+                        <div class="system-description">Roll 1d6 and 1d4, take absolute difference, reroll zeros. Range: 1-5</div>
+                        <div class="system-stats">Expected: 2.20 | StdDev: 1.17</div>
+                    </label>
                 </div>
                 <div class="radio-option">
-                    <input type="radio" id="system2" name="system" value="1d4-1d4">
-                    <label for="system2">|1d4 - 1d4| (include zeros)</label>
+                    <input type="radio" id="input-1d4-1d4" name="inputSystem" value="1d4-1d4">
+                    <label for="input-1d4-1d4">
+                        <strong>New TLS: |1d4 − 1d4|</strong>
+                        <div class="system-description">Roll 2d4, take absolute difference, keep zeros. Range: 0-3</div>
+                        <div class="system-stats">Expected: 1.25 | StdDev: 0.97</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20a" name="inputSystem" value="d20a">
+                    <label for="input-d20a">
+                        <strong>D20A: 4d6 Drop Lowest</strong>
+                        <div class="system-description">Roll 4d6, drop lowest die, sum remaining 3. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.87 | StdDev: 1.45</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20b" name="inputSystem" value="d20b">
+                    <label for="input-d20b">
+                        <strong>D20B: 3d6 Straight</strong>
+                        <div class="system-description">Roll 3d6, sum all dice. Classic method. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.00 | StdDev: 1.50</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20c" name="inputSystem" value="d20c">
+                    <label for="input-d20c">
+                        <strong>D20C: 3d6 Reroll Ones</strong>
+                        <div class="system-description">Roll 3d6, reroll any 1s once (keep second roll). Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.34 | StdDev: 1.41</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-d20dd" name="inputSystem" value="d20dd">
+                    <label for="input-d20dd">
+                        <strong>D20DD: 4d6 Drop Lowest + Reroll Ones</strong>
+                        <div class="system-description">Roll 4d6, reroll any 1s once, then drop lowest. Heroic method. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +1.17 | StdDev: 1.33</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="system-selector">
+            <h3 style="margin-top: 0; text-align: center; color: #667eea;">Select Output System:</h3>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="output-1d6-1d4" name="outputSystem" value="1d6-1d4">
+                    <label for="output-1d6-1d4">
+                        <strong>Old TLS: |1d6 − 1d4|</strong>
+                        <div class="system-description">Roll 1d6 and 1d4, take absolute difference, reroll zeros. Range: 1-5</div>
+                        <div class="system-stats">Expected: 2.20 | StdDev: 1.17</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-1d4-1d4" name="outputSystem" value="1d4-1d4" checked>
+                    <label for="output-1d4-1d4">
+                        <strong>New TLS: |1d4 − 1d4|</strong>
+                        <div class="system-description">Roll 2d4, take absolute difference, keep zeros. Range: 0-3</div>
+                        <div class="system-stats">Expected: 1.25 | StdDev: 0.97</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20a" name="outputSystem" value="d20a">
+                    <label for="output-d20a">
+                        <strong>D20A: 4d6 Drop Lowest</strong>
+                        <div class="system-description">Roll 4d6, drop lowest die, sum remaining 3. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.87 | StdDev: 1.45</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20b" name="outputSystem" value="d20b">
+                    <label for="output-d20b">
+                        <strong>D20B: 3d6 Straight</strong>
+                        <div class="system-description">Roll 3d6, sum all dice. Classic method. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.00 | StdDev: 1.50</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20c" name="outputSystem" value="d20c">
+                    <label for="output-d20c">
+                        <strong>D20C: 3d6 Reroll Ones</strong>
+                        <div class="system-description">Roll 3d6, reroll any 1s once (keep second roll). Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +0.34 | StdDev: 1.41</div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="output-d20dd" name="outputSystem" value="d20dd">
+                    <label for="output-d20dd">
+                        <strong>D20DD: 4d6 Drop Lowest + Reroll Ones</strong>
+                        <div class="system-description">Roll 4d6, reroll any 1s once, then drop lowest. Heroic method. Scores 3-18, Modifiers −4 to +4</div>
+                        <div class="system-stats">Expected Modifier: +1.17 | StdDev: 1.33</div>
+                    </label>
                 </div>
             </div>
         </div>
 
         <div class="input-section">
             <h3 style="margin-top: 0; color: #333;">Enter Your 8 Attribute Values:</h3>
-            <p style="color: #666; margin-bottom: 15px;">Order doesn't matter</p>
+            <p style="color: #666; margin-bottom: 5px;">Order doesn't matter</p>
+            <p id="inputNote" style="color: #f59e0b; margin-bottom: 15px; font-size: 0.9em; font-weight: 600;"></p>
             <div class="input-grid">
-                <input type="number" id="attr1" min="0" max="24" placeholder="1">
-                <input type="number" id="attr2" min="0" max="24" placeholder="2">
-                <input type="number" id="attr3" min="0" max="24" placeholder="3">
-                <input type="number" id="attr4" min="0" max="24" placeholder="4">
-                <input type="number" id="attr5" min="0" max="24" placeholder="5">
-                <input type="number" id="attr6" min="0" max="24" placeholder="6">
-                <input type="number" id="attr7" min="0" max="24" placeholder="7">
-                <input type="number" id="attr8" min="0" max="24" placeholder="8">
+                <input type="number" id="attr1" placeholder="1">
+                <input type="number" id="attr2" placeholder="2">
+                <input type="number" id="attr3" placeholder="3">
+                <input type="number" id="attr4" placeholder="4">
+                <input type="number" id="attr5" placeholder="5">
+                <input type="number" id="attr6" placeholder="6">
+                <input type="number" id="attr7" placeholder="7">
+                <input type="number" id="attr8" placeholder="8">
             </div>
             <div class="button-group">
                 <button onclick="calculate()">Convert Array</button>
@@ -266,8 +379,9 @@
 
         <div class="info-box">
             <p><strong>How it works:</strong></p>
-            <p>• Calculates the probability of getting your exact array combination</p>
-            <p>• Converts each value while considering both individual odds and array rarity</p>
+            <p>• Supports TLS systems (|1d6−1d4|, |1d4−1d4|) and D20 systems (4d6 drop lowest, 3d6, 3d6 reroll 1s, 4d6 drop lowest reroll 1s)</p>
+            <p>• For D20 systems: Enter modifiers (−4 to +4), not ability scores. The tool uses modifier probabilities directly.</p>
+            <p>• Calculates the probability of rolling your exact array combination</p>
             <p>• Finds an equivalent array with similar probability in the target system</p>
         </div>
 
@@ -298,203 +412,70 @@
                     <strong style="color: #667eea;">Rarity:</strong> <span id="outputRarity">-</span>
                 </div>
                 <div class="note-box">
-                    <p><strong>Conversion Method:</strong> This algorithm considers both the z-score of each individual value AND the probability of getting that specific combination. It optimizes to find an array in the target system with similar rarity while maintaining the relative distribution of high/low values.</p>
+                    <p><strong>Conversion Method:</strong> This algorithm uses z-scores to map between systems while preserving the relative strength of each attribute. It then optimizes to find an array with similar overall rarity in the target system.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // System definitions with correct probabilities
+        // For D20 systems: probabilities are for MODIFIERS (not scores)
+        // This correctly handles that multiple scores map to the same modifier
         const systems = {
             '1d6-1d4': {
-                name: '|1d6 - 1d4| (exclude zeros)',
+                name: 'Old TLS: |1d6 − 1d4| (reroll zeros)',
                 probs: {1: 7/20, 2: 6/20, 3: 4/20, 4: 2/20, 5: 1/20},
-                expectedPerAttr: 2.2,
-                stdDevPerAttr: 1.166,
+                expected: 2.2,
+                stdDev: 1.166,
                 minVal: 1,
-                maxVal: 5
+                maxVal: 5,
+                isD20: false
             },
             '1d4-1d4': {
-                name: '|1d4 - 1d4| (include zeros)',
+                name: 'New TLS: |1d4 − 1d4| (keep zeros)',
                 probs: {0: 4/16, 1: 6/16, 2: 4/16, 3: 2/16},
-                expectedPerAttr: 1.25,
-                stdDevPerAttr: 0.968,
+                expected: 1.25,
+                stdDev: 0.968,
                 minVal: 0,
-                maxVal: 3
-            }
-        };
-
-        function factorial(n) {
-            if (n <= 1) return 1;
-            return n * factorial(n - 1);
-        }
-
-        function calculateArrayProbability(values, system) {
-            const systemData = systems[system];
-            const counts = {};
-            values.forEach(v => counts[v] = (counts[v] || 0) + 1);
-            
-            let multinomial = factorial(8);
-            Object.values(counts).forEach(count => multinomial /= factorial(count));
-            
-            let prob = multinomial;
-            Object.entries(counts).forEach(([value, count]) => {
-                const p = systemData.probs[value] || 0;
-                prob *= Math.pow(p, count);
-            });
-            
-            return prob;
-        }
-
-        function logProbability(prob) {
-            return Math.log10(prob);
-        }
-
-        function getRarityDescription(prob) {
-            const log = logProbability(prob);
-            if (log > -3) return "Very Common";
-            if (log > -4) return "Common";
-            if (log > -5) return "Uncommon";
-            if (log > -6) return "Rare";
-            if (log > -7) return "Very Rare";
-            return "Extremely Rare";
-        }
-
-        function convertValueBasic(value, fromSystem, toSystem) {
-            const fromStats = systems[fromSystem];
-            const toStats = systems[toSystem];
-            const zScore = (value - fromStats.expectedPerAttr) / fromStats.stdDevPerAttr;
-            const convertedValue = toStats.expectedPerAttr + (zScore * toStats.stdDevPerAttr);
-            return Math.max(toStats.minVal, Math.min(toStats.maxVal, Math.round(convertedValue)));
-        }
-
-        function optimizeArray(baseArray, targetProb, targetSystem, maxIterations = 10000) {
-            const systemData = systems[targetSystem];
-            let bestArray = [...baseArray];
-            let bestScore = Math.abs(logProbability(calculateArrayProbability(bestArray, targetSystem)) - 
-                                     logProbability(targetProb));
-            
-            for (let iter = 0; iter < maxIterations; iter++) {
-                let testArray = [...bestArray];
-                const idx = Math.floor(Math.random() * 8);
-                const adjustment = Math.random() < 0.5 ? -1 : 1;
-                testArray[idx] = Math.max(systemData.minVal, 
-                                         Math.min(systemData.maxVal, testArray[idx] + adjustment));
-                
-                const testProb = calculateArrayProbability(testArray, targetSystem);
-                const testScore = Math.abs(logProbability(testProb) - logProbability(targetProb));
-                const totalDiff = Math.abs(testArray.reduce((a,b) => a+b, 0) - 
-                                          baseArray.reduce((a,b) => a+b, 0)) * 0.1;
-                
-                const combinedScore = testScore + totalDiff;
-                const bestCombinedScore = bestScore + Math.abs(bestArray.reduce((a,b) => a+b, 0) - 
-                                                               baseArray.reduce((a,b) => a+b, 0)) * 0.1;
-                
-                if (combinedScore < bestCombinedScore) {
-                    bestArray = testArray;
-                    bestScore = testScore;
-                }
-            }
-            
-            return bestArray;
-        }
-
-        function getSelectedSystem() {
-            return document.querySelector('input[name="system"]:checked').value;
-        }
-
-        function getOtherSystem(current) {
-            return current === '1d6-1d4' ? '1d4-1d4' : '1d6-1d4';
-        }
-
-        function getInputValues() {
-            const values = [];
-            for (let i = 1; i <= 8; i++) {
-                const val = parseInt(document.getElementById('attr' + i).value);
-                if (isNaN(val)) return null;
-                values.push(val);
-            }
-            return values;
-        }
-
-        function clearInputs() {
-            for (let i = 1; i <= 8; i++) {
-                document.getElementById('attr' + i).value = '';
-            }
-            document.getElementById('results').style.display = 'none';
-        }
-
-        function generateRandom() {
-            const system = getSelectedSystem();
-            function rollDie(sides) {
-                return Math.floor(Math.random() * sides) + 1;
-            }
-            
-            for (let i = 1; i <= 8; i++) {
-                let value;
-                if (system === '1d6-1d4') {
-                    do {
-                        value = Math.abs(rollDie(6) - rollDie(4));
-                    } while (value === 0);
-                } else {
-                    value = Math.abs(rollDie(4) - rollDie(4));
-                }
-                document.getElementById('attr' + i).value = value;
-            }
-            
-            calculate();
-        }
-
-        function calculate() {
-            const values = getInputValues();
-            if (!values) {
-                alert('Please enter all 8 attribute values');
-                return;
-            }
-
-            const inputSystem = getSelectedSystem();
-            const outputSystem = getOtherSystem(inputSystem);
-            const inputStats = systems[inputSystem];
-            const outputStats = systems[outputSystem];
-
-            const inputProb = calculateArrayProbability(values, inputSystem);
-            const inputTotal = values.reduce((a, b) => a + b, 0);
-
-            const basicConverted = values.map(v => convertValueBasic(v, inputSystem, outputSystem));
-            const optimizedArray = optimizeArray(basicConverted, inputProb, outputSystem);
-            
-            const outputProb = calculateArrayProbability(optimizedArray, outputSystem);
-            const outputTotal = optimizedArray.reduce((a, b) => a + b, 0);
-
-            document.getElementById('results').style.display = 'block';
-            document.getElementById('inputSystemName').textContent = inputStats.name;
-            
-            let inputHTML = '';
-            values.forEach(val => inputHTML += `<div class="array-value">${val}</div>`);
-            document.getElementById('inputArray').innerHTML = inputHTML;
-            document.getElementById('inputTotal').textContent = inputTotal;
-            document.getElementById('inputProb').textContent = 
-                inputProb.toExponential(3) + ' (1 in ' + Math.round(1/inputProb).toLocaleString() + ')';
-            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
-
-            document.getElementById('outputSystemName').textContent = outputStats.name;
-            
-            let outputHTML = '';
-            optimizedArray.forEach(val => outputHTML += `<div class="converted-value">${val}</div>`);
-            document.getElementById('outputArray').innerHTML = outputHTML;
-            document.getElementById('outputTotal').textContent = outputTotal;
-            document.getElementById('outputProb').textContent = 
-                outputProb.toExponential(3) + ' (1 in ' + Math.round(1/outputProb).toLocaleString() + ')';
-            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
-
-            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        for (let i = 1; i <= 8; i++) {
-            document.getElementById('attr' + i).addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') calculate();
-            });
-        }
-    </script>
-</body>
-</html>
+                maxVal: 3,
+                isD20: false
+            },
+            // D20A: 4d6 drop lowest
+            // Modifier probs = sum of score probs that produce each modifier
+            // -4: P(3), -3: P(4)+P(5), -2: P(6)+P(7), etc.
+            'd20a': {
+                name: 'D20A: 4d6 Drop Lowest',
+                probs: {
+                    '-4': 0.000772,
+                    '-3': 0.010802,  // 0.003086 + 0.007716
+                    '-2': 0.045525,  // 0.016204 + 0.029321
+                    '-1': 0.118056,  // 0.047840 + 0.070216
+                    '0': 0.208334,   // 0.094136 + 0.114198
+                    '1': 0.261574,   // 0.128858 + 0.132716
+                    '2': 0.224537,   // 0.123457 + 0.101080
+                    '3': 0.114198,   // 0.072531 + 0.041667
+                    '4': 0.016204
+                },
+                expected: 0.87,
+                stdDev: 1.447,
+                minVal: -4,
+                maxVal: 4,
+                isD20: true
+            },
+            // D20B: 3d6 straight (symmetric distribution)
+            'd20b': {
+                name: 'D20B: 3d6 Straight',
+                probs: {
+                    '-4': 0.004630,
+                    '-3': 0.041667,  // 0.013889 + 0.027778
+                    '-2': 0.115740,  // 0.046296 + 0.069444
+                    '-1': 0.212963,  // 0.097222 + 0.115741
+                    '0': 0.250000,   // 0.125000 + 0.125000
+                    '1': 0.212963,   // 0.115741 + 0.097222
+                    '2': 0.115740,   // 0.069444 + 0.046296
+                    '3': 0.041667,   // 0.027778 + 0.013889
+                    '4': 0.004630
+                },
+                expected: 0.00,
+              
