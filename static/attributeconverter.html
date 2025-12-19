@@ -4,629 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute Array Converter - Probability Weighted</title>
-    <link rel="stylesheet" href="/css/shared.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Attribute Array Converter</h1>
-        <p class="subtitle">Probability-weighted conversion between dice systems</p>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #00202e 0%, #003045 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #00202e;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .how-to-use {
+            background: #e8f4f8;
+            border-left: 4px solid #00202e;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .how-to-use h3 {
+            margin: 0 0 10px 0;
+            color: #00202e;
+            font-size: 1em;
+        }
+        .how-to-use ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .how-to-use li {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .how-to-use li strong {
+            color: #333;
+        }
+        .system-selectors {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .selector-group {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .selector-group label {
+            display: block;
+            font-weight: 600;
+            color: #00202e;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        .selector-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 0.9em;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+        }
+        .selector-group select:focus {
+            outline: none;
+            border-color: #00202e;
+        }
+        .system-info {
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 5px;
+            font-size: 0.8em;
+            color: #555;
+        }
+        .system-info .stats {
+            color: #888;
+            margin-top: 4px;
+        }
+        .input-section {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .input-section h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1em;
+        }
+        .input-grid {
+            display: grid;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .input-grid.cols-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .input-grid.cols-8 {
+            grid-template-columns: repeat(8, 1fr);
+        }
+        .input-grid input {
+            width: 100%;
+            min-width: 0;
+            padding: 10px 5px;
+            font-size: 1em;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .input-grid input:focus {
+            outline: none;
+            border-color: #00202e;
+        }
+        .input-grid input.hidden {
+            display: none;
+        }
+        .button-group {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        button {
+            background: linear-gradient(135deg, #00202e 0%, #003045 100%);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        button.secondary {
+            background: #6b7280;
+        }
+        .results {
+            display: none;
+            margin-top: 20px;
+        }
+        .result-card {
+            background: linear-gradient(135deg, #00202e 0%, #003045 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .result-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.2em;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .array-display, .conversion-grid {
+            display: grid;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        .array-display.cols-6, .conversion-grid.cols-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .array-display.cols-8, .conversion-grid.cols-8 {
+            grid-template-columns: repeat(8, 1fr);
+        }
+        .array-value {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 5px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .converted-value {
+            background: #00202e;
+            color: white;
+            padding: 12px 5px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+        .conversion-card {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #00202e;
+        }
+        .conversion-card h3 {
+            color: #00202e;
+            margin-top: 0;
+        }
+        .note-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .prob-display {
+            background: rgba(255,255,255,0.15);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        #inputNote {
+            color: #f59e0b;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
 
-        <div class="how-to-use">
-            <h3>📖 How to Use</h3>
-            <ul>
-                <li><strong>Enter base/raw arrays only</strong> — Use your character's original rolled values before any modifications from leveling up, ability score improvements, or magical items.</li>
-                <li><strong>D20 systems use modifiers</strong> — Enter the modifier (−4 to +4), not the ability score. For example, a score of 14 = modifier of +2.</li>
-                <li><strong>TLS systems use raw values</strong> — Enter the actual dice result (Old TLS: 1-5, New TLS: 0-3).</li>
-                <li><strong>D20 uses 6 attributes</strong> — The standard six: STR, DEX, CON, INT, WIS, CHA.</li>
-                <li><strong>TLS uses 8 attributes</strong> — Includes additional attributes for that system.</li>
-            </ul>
-        </div>
-
-        <div class="system-selectors">
-            <div class="selector-group">
-                <label for="inputSystem">Input System:</label>
-                <select id="inputSystem">
-                    <option value="1d6-1d4">Old TLS: |1d6 − 1d4| (reroll zeros)</option>
-                    <option value="1d4-1d4">New TLS: |1d4 − 1d4| (keep zeros)</option>
-                    <option value="d20a">D20: 4d6 Drop Lowest</option>
-                    <option value="d20b">D20: 3d6 Straight</option>
-                    <option value="d20c">D20: 3d6 Reroll Ones</option>
-                    <option value="d20dd">D20: 4d6 Drop Lowest + Reroll Ones</option>
-                </select>
-                <div class="system-info" id="inputSystemInfo">
-                    <div class="description">Roll 1d6 and 1d4, take absolute difference, reroll zeros. Range: 1-5</div>
-                    <div class="stats">Expected: 2.20 | StdDev: 1.17 | 8 attributes</div>
-                </div>
-            </div>
-            <div class="selector-group">
-                <label for="outputSystem">Output System:</label>
-                <select id="outputSystem">
-                    <option value="1d6-1d4">Old TLS: |1d6 − 1d4| (reroll zeros)</option>
-                    <option value="1d4-1d4" selected>New TLS: |1d4 − 1d4| (keep zeros)</option>
-                    <option value="d20a">D20: 4d6 Drop Lowest</option>
-                    <option value="d20b">D20: 3d6 Straight</option>
-                    <option value="d20c">D20: 3d6 Reroll Ones</option>
-                    <option value="d20dd">D20: 4d6 Drop Lowest + Reroll Ones</option>
-                </select>
-                <div class="system-info" id="outputSystemInfo">
-                    <div class="description">Roll 2d4, take absolute difference, keep zeros. Range: 0-3</div>
-                    <div class="stats">Expected: 1.25 | StdDev: 0.97 | 8 attributes</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="input-section">
-            <h3>Enter Your Attribute Values:</h3>
-            <p style="color: #666; margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
-            <p id="inputNote"></p>
-            <div class="input-grid cols-8" id="inputGrid">
-                <input type="number" id="attr1" placeholder="1">
-                <input type="number" id="attr2" placeholder="2">
-                <input type="number" id="attr3" placeholder="3">
-                <input type="number" id="attr4" placeholder="4">
-                <input type="number" id="attr5" placeholder="5">
-                <input type="number" id="attr6" placeholder="6">
-                <input type="number" id="attr7" placeholder="7">
-                <input type="number" id="attr8" placeholder="8">
-            </div>
-            <div class="button-group">
-                <button type="button" id="convertBtn">Convert Array</button>
-                <button type="button" class="secondary" id="clearBtn">Clear</button>
-                <button type="button" class="secondary" id="randomBtn">Random Example</button>
-            </div>
-        </div>
-
-        <div class="results" id="results">
-            <div class="result-card">
-                <h3>📊 Your Input Array</h3>
-                <p style="text-align: center; opacity: 0.9; margin-bottom: 10px;" id="inputSystemName">-</p>
-                <div class="array-display cols-8" id="inputArray"></div>
-                <div class="stat-row">
-                    <span>Total:</span>
-                    <span id="inputTotal" style="font-weight: bold; font-size: 1.2em;">-</span>
-                </div>
-                <div class="prob-display">
-                    <strong>Array Probability:</strong> <span id="inputProb">-</span><br>
-                    <strong>Rarity:</strong> <span id="inputRarity">-</span>
-                </div>
-            </div>
-
-            <div class="conversion-card">
-                <h3>🔄 Converted Array</h3>
-                <p style="text-align: center; color: #666; margin: 10px 0;">In <strong id="outputSystemName">-</strong> system:</p>
-                <div class="conversion-grid cols-8" id="outputArray"></div>
-                <div style="text-align: center; margin-top: 15px;">
-                    <p style="color: #666;"><strong>Total:</strong> <span id="outputTotal" style="color: #667eea; font-weight: bold; font-size: 1.3em;">-</span></p>
-                </div>
-                <div style="background: rgba(102, 126, 234, 0.1); padding: 10px; border-radius: 5px; margin: 10px 0;">
-                    <strong style="color: #667eea;">Array Probability:</strong> <span id="outputProb">-</span><br>
-                    <strong style="color: #667eea;">Rarity:</strong> <span id="outputRarity">-</span>
-                </div>
-                <div class="note-box">
-                    <p><strong>Conversion Method:</strong> Uses z-scores to map between systems while preserving relative attribute strength, then optimizes to match overall array rarity.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        var systems = {
-            '1d6-1d4': {
-                name: 'Old TLS: |1d6 − 1d4| (reroll zeros)',
-                description: 'Roll 1d6 and 1d4, take absolute difference, reroll zeros. Range: 1-5',
-                probs: {'1': 7/20, '2': 6/20, '3': 4/20, '4': 2/20, '5': 1/20},
-                expected: 2.2,
-                stdDev: 1.166,
-                minVal: 1,
-                maxVal: 5,
-                isD20: false,
-                attrCount: 8
-            },
-            '1d4-1d4': {
-                name: 'New TLS: |1d4 − 1d4| (keep zeros)',
-                description: 'Roll 2d4, take absolute difference, keep zeros. Range: 0-3',
-                probs: {'0': 4/16, '1': 6/16, '2': 4/16, '3': 2/16},
-                expected: 1.25,
-                stdDev: 0.968,
-                minVal: 0,
-                maxVal: 3,
-                isD20: false,
-                attrCount: 8
-            },
-            'd20a': {
-                name: 'D20: 4d6 Drop Lowest',
-                description: 'Roll 4d6, drop lowest die, sum remaining 3. Modifiers: −4 to +4',
-                probs: {
-                    '-4': 0.000772,
-                    '-3': 0.010802,
-                    '-2': 0.045525,
-                    '-1': 0.118056,
-                    '0': 0.208334,
-                    '1': 0.261574,
-                    '2': 0.224537,
-                    '3': 0.114198,
-                    '4': 0.016204
-                },
-                expected: 0.87,
-                stdDev: 1.447,
-                minVal: -4,
-                maxVal: 4,
-                isD20: true,
-                attrCount: 6
-            },
-            'd20b': {
-                name: 'D20: 3d6 Straight',
-                description: 'Roll 3d6, sum all dice. Classic method. Modifiers: −4 to +4',
-                probs: {
-                    '-4': 0.004630,
-                    '-3': 0.041667,
-                    '-2': 0.115740,
-                    '-1': 0.212963,
-                    '0': 0.250000,
-                    '1': 0.212963,
-                    '2': 0.115740,
-                    '3': 0.041667,
-                    '4': 0.004630
-                },
-                expected: 0.00,
-                stdDev: 1.500,
-                minVal: -4,
-                maxVal: 4,
-                isD20: true,
-                attrCount: 6
-            },
-            'd20c': {
-                name: 'D20: 3d6 Reroll Ones',
-                description: 'Roll 3d6, reroll any 1s once (keep second roll). Modifiers: −4 to +4',
-                probs: {
-                    '-4': 0.000751,
-                    '-3': 0.018032,
-                    '-2': 0.078137,
-                    '-1': 0.181818,
-                    '0': 0.261458,
-                    '1': 0.249436,
-                    '2': 0.150263,
-                    '3': 0.054095,
-                    '4': 0.006011
-                },
-                expected: 0.34,
-                stdDev: 1.409,
-                minVal: -4,
-                maxVal: 4,
-                isD20: true,
-                attrCount: 6
-            },
-            'd20dd': {
-                name: 'D20: 4d6 Drop Lowest + Reroll Ones',
-                description: 'Roll 4d6, reroll any 1s once, then drop lowest. Heroic method. Modifiers: −4 to +4',
-                probs: {
-                    '-4': 0.000068,
-                    '-3': 0.002732,
-                    '-2': 0.023495,
-                    '-1': 0.084147,
-                    '0': 0.188512,
-                    '1': 0.274845,
-                    '2': 0.263370,
-                    '3': 0.142066,
-                    '4': 0.020764
-                },
-                expected: 1.17,
-                stdDev: 1.331,
-                minVal: -4,
-                maxVal: 4,
-                isD20: true,
-                attrCount: 6
+        @media (max-width: 600px) {
+            .system-selectors {
+                grid-template-columns: 1fr;
             }
-        };
-
-        function factorial(n) {
-            if (n <= 1) return 1;
-            var result = 1;
-            for (var i = 2; i <= n; i++) {
-                result *= i;
+            .input-grid.cols-6 {
+                grid-template-columns: repeat(3, 1fr);
             }
-            return result;
-        }
-
-        function calculateArrayProbability(values, system) {
-            var systemData = systems[system];
-            var counts = {};
-            var n = values.length;
-            
-            for (var i = 0; i < n; i++) {
-                var key = values[i].toString();
-                counts[key] = (counts[key] || 0) + 1;
+            .input-grid.cols-8 {
+                grid-template-columns: repeat(4, 1fr);
             }
-
-            var multinomial = factorial(n);
-            var countKeys = Object.keys(counts);
-            for (var i = 0; i < countKeys.length; i++) {
-                multinomial /= factorial(counts[countKeys[i]]);
+            .array-display.cols-6, .conversion-grid.cols-6 {
+                grid-template-columns: repeat(3, 1fr);
             }
-
-            var prob = multinomial;
-            for (var i = 0; i < countKeys.length; i++) {
-                var value = countKeys[i];
-                var count = counts[value];
-                var p = systemData.probs[value];
-                if (p === undefined || p === 0) {
-                    return 0;
-                }
-                prob *= Math.pow(p, count);
-            }
-
-            return prob;
-        }
-
-        function logProbability(prob) {
-            if (prob <= 0) return -Infinity;
-            return Math.log10(prob);
-        }
-
-        function getRarityDescription(prob) {
-            if (prob <= 0) return "Impossible";
-            var log = logProbability(prob);
-            if (log > -3) return "Very Common";
-            if (log > -4) return "Common";
-            if (log > -5) return "Uncommon";
-            if (log > -6) return "Rare";
-            if (log > -7) return "Very Rare";
-            return "Extremely Rare";
-        }
-
-        function convertValueBasic(value, fromSystem, toSystem) {
-            var fromStats = systems[fromSystem];
-            var toStats = systems[toSystem];
-            var zScore = (value - fromStats.expected) / fromStats.stdDev;
-            var convertedValue = toStats.expected + (zScore * toStats.stdDev);
-            return Math.max(toStats.minVal, Math.min(toStats.maxVal, Math.round(convertedValue)));
-        }
-
-        function optimizeArray(baseArray, targetProb, targetSystem, maxIterations) {
-            maxIterations = maxIterations || 10000;
-            var systemData = systems[targetSystem];
-            var n = systemData.attrCount;
-            var bestArray = baseArray.slice();
-            var bestProb = calculateArrayProbability(bestArray, targetSystem);
-            var bestScore = Math.abs(logProbability(bestProb) - logProbability(targetProb));
-
-            for (var iter = 0; iter < maxIterations; iter++) {
-                var testArray = bestArray.slice();
-                var idx = Math.floor(Math.random() * n);
-                var adjustment = Math.random() < 0.5 ? -1 : 1;
-                testArray[idx] = Math.max(systemData.minVal, 
-                                         Math.min(systemData.maxVal, testArray[idx] + adjustment));
-
-                var testProb = calculateArrayProbability(testArray, targetSystem);
-                var testScore = Math.abs(logProbability(testProb) - logProbability(targetProb));
-                
-                var baseTotal = 0, testTotal = 0, bestTotal = 0;
-                for (var i = 0; i < n; i++) {
-                    baseTotal += baseArray[i];
-                    testTotal += testArray[i];
-                    bestTotal += bestArray[i];
-                }
-                
-                var totalDiff = Math.abs(testTotal - baseTotal) * 0.1;
-                var combinedScore = testScore + totalDiff;
-                var bestCombinedScore = bestScore + Math.abs(bestTotal - baseTotal) * 0.1;
-
-                if (combinedScore < bestCombinedScore) {
-                    bestArray = testArray;
-                    bestScore = testScore;
-                }
-            }
-
-            return bestArray;
-        }
-
-        function getInputSystem() {
-            return document.getElementById('inputSystem').value;
-        }
-
-        function getOutputSystem() {
-            return document.getElementById('outputSystem').value;
-        }
-
-        function updateSystemInfo(selectId, infoId) {
-            var system = document.getElementById(selectId).value;
-            var systemData = systems[system];
-            var infoDiv = document.getElementById(infoId);
-            
-            var expectedLabel = systemData.isD20 ? 'Expected Modifier' : 'Expected';
-            var expectedVal = systemData.isD20 && systemData.expected >= 0 ? '+' + systemData.expected.toFixed(2) : systemData.expected.toFixed(2);
-            
-            infoDiv.innerHTML = '<div class="description">' + systemData.description + '</div>' +
-                '<div class="stats">' + expectedLabel + ': ' + expectedVal + ' | StdDev: ' + systemData.stdDev.toFixed(2) + ' | ' + systemData.attrCount + ' attributes</div>';
-        }
-
-        function updateInputGrid() {
-            var system = getInputSystem();
-            var systemData = systems[system];
-            var grid = document.getElementById('inputGrid');
-            var count = systemData.attrCount;
-            
-            // Update grid class
-            grid.className = 'input-grid cols-' + count;
-            
-            // Show/hide inputs
-            for (var i = 1; i <= 8; i++) {
-                var input = document.getElementById('attr' + i);
-                if (i <= count) {
-                    input.classList.remove('hidden');
-                    input.placeholder = i.toString();
-                } else {
-                    input.classList.add('hidden');
-                    input.value = '';
-                }
-            }
-            
-            updateInputNote();
-        }
-
-        function updateInputNote() {
-            var inputSystem = getInputSystem();
-            var systemData = systems[inputSystem];
-            var noteElement = document.getElementById('inputNote');
-
-            if (systemData.isD20) {
-                noteElement.textContent = 'Enter MODIFIERS (−4 to +4), not ability scores';
-            } else if (inputSystem === '1d6-1d4') {
-                noteElement.textContent = 'Enter values 1 to 5 (zeros are rerolled)';
-            } else if (inputSystem === '1d4-1d4') {
-                noteElement.textContent = 'Enter values 0 to 3 (zeros are kept)';
-            } else {
-                noteElement.textContent = '';
+            .array-display.cols-8, .conversion-grid.cols-8 {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
 
-        function validateAndGetInputValues() {
-            var inputSystem = getInputSystem();
-            var systemData = systems[inputSystem];
-            var values = [];
-            var errors = [];
-            var count = systemData.attrCount;
-
-            for (var i = 1; i <= count; i++) {
-                var inputEl = document.getElementById('attr' + i);
-                var val = parseInt(inputEl.value, 10);
-                
-                if (isNaN(val)) {
-                    errors.push('Attribute ' + i + ' is empty');
-                    continue;
-                }
-
-                if (val < systemData.minVal || val > systemData.maxVal) {
-                    errors.push('Attribute ' + i + ' (' + val + ') is outside valid range ' + systemData.minVal + ' to ' + systemData.maxVal);
-                    continue;
-                }
-
-                if (systemData.probs[val.toString()] === undefined) {
-                    errors.push('Attribute ' + i + ' (' + val + ') is not possible in this system');
-                    continue;
-                }
-
-                values.push(val);
+        @media (max-width: 400px) {
+            .container {
+                padding: 15px;
             }
-
-            if (errors.length > 0) {
-                return { valid: false, errors: errors };
+            h1 {
+                font-size: 1.2em;
             }
-
-            return { valid: true, values: values };
+            .input-grid input {
+                padding: 8px 2px;
+                font-size: 0.9em;
+            }
+            .array-value, .converted-value {
+                padding: 10px 3px;
+                font-size: 1.1em;
+            }
+            button {
+                padding: 8px 12px;
+                font-size: 0.85em;
+            }
         }
-
-        function clearInputs() {
-            for (var i = 1; i <= 8; i++) {
-                document.getElementById('attr' + i).value = '';
-            }
-            document.getElementById('results').style.display = 'none';
-        }
-
-        function rollDie(sides) {
-            return Math.floor(Math.random() * sides) + 1;
-        }
-
-        function scoreToModifier(score) {
-            return Math.floor((score - 10) / 2);
-        }
-
-        function generateRandom() {
-            var system = getInputSystem();
-            var systemData = systems[system];
-            var count = systemData.attrCount;
-
-            for (var i = 1; i <= count; i++) {
-                var value;
-                
-                if (system === '1d6-1d4') {
-                    do {
-                        value = Math.abs(rollDie(6) - rollDie(4));
-                    } while (value === 0);
-                } else if (system === '1d4-1d4') {
-                    value = Math.abs(rollDie(4) - rollDie(4));
-                } else if (system === 'd20a') {
-                    var rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
-                    rolls.sort(function(a, b) { return a - b; });
-                    var score = rolls[1] + rolls[2] + rolls[3];
-                    value = scoreToModifier(score);
-                } else if (system === 'd20b') {
-                    var score = rollDie(6) + rollDie(6) + rollDie(6);
-                    value = scoreToModifier(score);
-                } else if (system === 'd20c') {
-                    var rolls = [rollDie(6), rollDie(6), rollDie(6)];
-                    for (var j = 0; j < rolls.length; j++) {
-                        if (rolls[j] === 1) rolls[j] = rollDie(6);
-                    }
-                    var score = rolls[0] + rolls[1] + rolls[2];
-                    value = scoreToModifier(score);
-                } else if (system === 'd20dd') {
-                    var rolls = [rollDie(6), rollDie(6), rollDie(6), rollDie(6)];
-                    for (var j = 0; j < rolls.length; j++) {
-                        if (rolls[j] === 1) rolls[j] = rollDie(6);
-                    }
-                    rolls.sort(function(a, b) { return a - b; });
-                    var score = rolls[1] + rolls[2] + rolls[3];
-                    value = scoreToModifier(score);
-                }
-
-                document.getElementById('attr' + i).value = value;
-            }
-
-            calculate();
-        }
-
-        function formatValue(val, isD20) {
-            if (isD20) {
-                return val >= 0 ? '+' + val : val.toString();
-            }
-            return val.toString();
-        }
-
-        function calculate() {
-            var validation = validateAndGetInputValues();
-            
-            if (!validation.valid) {
-                alert('Input errors:\n' + validation.errors.join('\n'));
-                return;
-            }
-
-            var values = validation.values;
-            var inputSystem = getInputSystem();
-            var outputSystem = getOutputSystem();
-
-            if (inputSystem === outputSystem) {
-                alert('Please select different input and output systems');
-                return;
-            }
-
-            var inputStats = systems[inputSystem];
-            var outputStats = systems[outputSystem];
-            var inputCount = inputStats.attrCount;
-            var outputCount = outputStats.attrCount;
-
-            var inputProb = calculateArrayProbability(values, inputSystem);
-            var inputTotal = 0;
-            for (var i = 0; i < values.length; i++) {
-                inputTotal += values[i];
-            }
-
-            // Sort values for consistent conversion (highest to highest, etc.)
-            var sortedInput = values.slice().sort(function(a, b) { return b - a; });
-            
-            // Convert each value using z-score mapping
-            var basicConverted = [];
-            for (var i = 0; i < sortedInput.length; i++) {
-                basicConverted.push(convertValueBasic(sortedInput[i], inputSystem, outputSystem));
-            }
-            
-            // If converting between different attribute counts, we need to adjust
-            var targetArray;
-            if (inputCount > outputCount) {
-                // Going from 8 to 6: take top 6 converted values
-                targetArray = basicConverted.slice(0, outputCount);
-            } else if (inputCount < outputCount) {
-                // Going from 6 to 8: add 2 average values
-                targetArray = basicConverted.slice();
-                var avgVal = Math.round(outputStats.expected);
-                for (var i = inputCount; i < outputCount; i++) {
-                    targetArray.push(avgVal);
-                }
-            } else {
-                targetArray = basicConverted;
-            }
-            
-            var optimizedArray = optimizeArray(targetArray, inputProb, outputSystem);
-
-            var outputProb = calculateArrayProbability(optimizedArray, outputSystem);
-            var outputTotal = 0;
-            for (var i = 0; i < optimizedArray.length; i++) {
-                outputTotal += optimizedArray[i];
-            }
-
-            // Sort output for display (highest first)
-            optimizedArray.sort(function(a, b) { return b - a; });
-
-            document.getElementById('results').style.display = 'block';
-            document.getElementById('inputSystemName').textContent = inputStats.name;
-
-            // Update input array display grid
-            var inputArrayDiv = document.getElementById('inputArray');
-            inputArrayDiv.className = 'array-display cols-' + inputCount;
-            
-            var inputHTML = '';
-            // Sort input for display too
-            var displayInput = values.slice().sort(function(a, b) { return b - a; });
-            for (var i = 0; i < displayInput.length; i++) {
-                inputHTML += '<div class="array-value">' + formatValue(displayInput[i], inputStats.isD20) + '</div>';
-            }
-            inputArrayDiv.innerHTML = inputHTML;
-            
-            document.getElementById('inputTotal').textContent = inputStats.isD20 
-                ? (inputTotal >= 0 ? '+' + inputTotal : inputTotal)
-                : inputTotal;
-            
-            if (inputProb > 0) {
-                document.getElementById('inputProb').textContent =
-                    inputProb.toExponential(3) + ' (1 in ' + Math.round(1/inputProb).toLocaleString() + ')';
-            } else {
-                document.getElementById('inputProb').textContent = 'Invalid (probability = 0)';
-            }
-            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
-
-            document.getElementById('outputSystemName').textContent = outputStats.name;
-
-            // Update output array display grid
-            var outputArrayDiv = document.getElementById('outputArray');
-            outputArrayDiv.className = 'conversion-grid cols-' + outputCount;
-            
-            var outputHTML = '';
-            for (var i = 0; i < optimizedArray.length; i++) {
-                outputHTML += '<div class="converted-value">' + formatValue(optimizedArray[i], outputStats.isD20) + '</div>';
-            }
-            outputArrayDiv.innerHTML = outputHTML;
-            
-            document.getElementById('outputTotal').textContent = outputStats.isD20
-                ? (outputTotal >= 0 ? '+' + outputTotal : outputTotal)
-                : outputTotal;
-
-            if (outputProb > 0) {
-                document.getElementById('outputProb').textContent =
-                    outputProb.toExponential(3) + ' (1 in ' + Math.round(1/outputProb).toLocaleString() + ')';
-            } else {
-                document.getElementById('outputProb').textContent = 'Calculation error';
-            }
-            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
-
-            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        // Set up event listeners when DOM is ready
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('convertBtn').addEventListener('click', calculate);
-            document.getElementById('clearBtn').addEventListener('click', clearInputs);
-            document.getElementById('randomBtn').addEventListener('click', generateRandom);
-
-            for (var i = 1; i <= 8; i++) {
-                document.getElementById('attr' + i).addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') calculate();
-                });
-            }
-
-            document.getElementById('inputSystem').addEventListener('change', function() {
-                updateSystemInfo('inputSystem', 'inputSystemInfo');
-                updateInputGrid();
-            });
-            
-            document.getElementById('outputSystem').addEventListener('change', function() {
-                updateSystemInfo('outputSystem', 'outputSystemInfo');
-            });
-
-            // Initialize
-            updateSystemInfo('inputSystem', 'inputSystemInfo');
-            updateSystemInfo('outputSystem', 'outputSystemInfo');
-            updateInputGrid();
-        });
-    </script>
-</body>
-</html>
+    </style>
