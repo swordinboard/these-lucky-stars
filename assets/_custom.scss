@@ -48,7 +48,7 @@
   --primary: #001017;
   --primary-light: #00202e;
   --accent: #e88000;
-  --accent-secondary: #745017
+  --accent-secondary: #745017;
   --body-background: #00202e;
   --body-background-tint: #001017;
 
@@ -62,7 +62,7 @@
   --gray-100: #00202e;
   --gray-200: #003045;
   --gray-500: #888888;
-  --border-color: #004060
+  --border-color: #004060;
 
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
