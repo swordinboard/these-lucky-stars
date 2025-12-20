@@ -4,18 +4,7 @@
   --color-accent-#{$name}-tint: #{rgba($color, $tint)};
 }
 
-:root {
-  --font-size: 16px;
-  --font-size-smaller: 0.875rem;
-  --font-size-smallest: 0.75rem;
-  --body-font-weight: 400;
-  --border-radius: 0.25rem;
-
-  // Apply the auto theme (responds to system preference)
-  @include theme-auto;
-}
-
-// Themes
+// Theme mixins - defined before use
 @mixin theme-light {
   --primary: #00202e;
   --primary-light: #002045;
@@ -87,4 +76,16 @@
   @media (prefers-color-scheme: dark) {
     @include theme-dark;
   }
+}
+
+// Apply theme variables
+:root {
+  --font-size: 16px;
+  --font-size-smaller: 0.875rem;
+  --font-size-smallest: 0.75rem;
+  --body-font-weight: 400;
+  --border-radius: 0.25rem;
+
+  // Apply the auto theme (responds to system preference)
+  @include theme-auto;
 }
