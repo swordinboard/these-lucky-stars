@@ -9,6 +9,9 @@
   --body-font-color: #1a1a1a;
 
   --border-radius: 0.25rem;
+
+  // Apply the auto theme (responds to system preference)
+  @include theme-auto;
 }
 
 // Themes
