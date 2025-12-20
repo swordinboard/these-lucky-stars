@@ -14,9 +14,9 @@
   --color-visited-link: #e88000;
 
   --gray-100: #f8f9fa;
-  --gray-200: #745017;
+  --gray-200: #e9ecef;
   --gray-500: #adb5bd;
-  --border-color: #745017;
+  --border-color: #d4d2cf;
 
   /* Font settings */
   --font-size: 16px;
@@ -39,8 +39,8 @@
     --color-visited-link: #e88000;
 
     --gray-100: #00202e;
-    --gray-200: #745017;
+    --gray-200: #003045;
     --gray-500: #888888;
-    --border-color: #745017;
+    --border-color: #004060;
   }
 }
