@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute Array Converter - Probability Weighted</title>
+    <link rel="stylesheet" href="/theme-vars.css">
     <style>
         * {
             box-sizing: border-box;
@@ -13,11 +14,11 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
             min-height: 100vh;
         }
         .container {
-            background: white;
+            background: var(--body-background);
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
@@ -25,7 +26,7 @@
         }
         h1 {
             text-align: center;
-            color: #667eea;
+            color: var(--accent);
             margin-bottom: 10px;
             font-size: 1.5em;
         }
@@ -35,15 +36,15 @@
             margin-bottom: 20px;
         }
         .how-to-use {
-            background: #e8f4f8;
-            border-left: 4px solid #667eea;
+            background: var(--body-background-tint);
+            border-left: 4px solid var(--accent);
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
         }
         .how-to-use h3 {
             margin: 0 0 10px 0;
-            color: #667eea;
+            color: var(--accent);
             font-size: 1em;
         }
         .how-to-use ul {
@@ -72,7 +73,7 @@
         .selector-group label {
             display: block;
             font-weight: 600;
-            color: #667eea;
+            color: var(--accent);
             margin-bottom: 8px;
             font-size: 0.95em;
         }
@@ -80,14 +81,14 @@
             width: 100%;
             padding: 10px;
             font-size: 0.9em;
-            border: 2px solid #ddd;
+            border: 2px solid var(--border-color);
             border-radius: 8px;
-            background: white;
+            background: var(--body-background);
             cursor: pointer;
         }
         .selector-group select:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: var(--accent);
         }
         .system-info {
             margin-top: 8px;
@@ -129,13 +130,13 @@
             padding: 10px 5px;
             font-size: 1em;
             text-align: center;
-            border: 2px solid #ddd;
+            border: 2px solid var(--border-color);
             border-radius: 8px;
             font-weight: 600;
         }
         .input-grid input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: var(--accent);
         }
         .input-grid input.hidden {
             display: none;
@@ -148,8 +149,8 @@
             flex-wrap: wrap;
         }
         button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            color: var(--body-background);
             border: none;
             padding: 10px 16px;
             border-radius: 8px;
@@ -163,15 +164,15 @@
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
         button.secondary {
-            background: #6b7280;
+            background: var(--gray-500);
         }
         .results {
             display: none;
             margin-top: 20px;
         }
         .result-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+            color: var(--body-background);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -202,8 +203,8 @@
             font-weight: bold;
         }
         .converted-value {
-            background: #667eea;
-            color: white;
+            background: var(--accent);
+            color: var(--body-background);
             padding: 12px 5px;
             border-radius: 8px;
             text-align: center;
@@ -224,14 +225,14 @@
             background: #f0f4ff;
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid var(--accent);
         }
         .conversion-card h3 {
-            color: #667eea;
+            color: var(--accent);
             margin-top: 0;
         }
         .note-box {
-            background: white;
+            background: var(--body-background);
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
@@ -382,11 +383,11 @@
                 <p style="text-align: center; color: #666; margin: 10px 0;">In <strong id="outputSystemName">-</strong> system:</p>
                 <div class="conversion-grid cols-8" id="outputArray"></div>
                 <div style="text-align: center; margin-top: 15px;">
-                    <p style="color: #666;"><strong>Total:</strong> <span id="outputTotal" style="color: #667eea; font-weight: bold; font-size: 1.3em;">-</span></p>
+                    <p style="color: #666;"><strong>Total:</strong> <span id="outputTotal" style="color: var(--accent); font-weight: bold; font-size: 1.3em;">-</span></p>
                 </div>
                 <div style="background: rgba(102, 126, 234, 0.1); padding: 10px; border-radius: 5px; margin: 10px 0;">
-                    <strong style="color: #667eea;">Array Probability:</strong> <span id="outputProb">-</span><br>
-                    <strong style="color: #667eea;">Rarity:</strong> <span id="outputRarity">-</span>
+                    <strong style="color: var(--accent);">Array Probability:</strong> <span id="outputProb">-</span><br>
+                    <strong style="color: var(--accent);">Rarity:</strong> <span id="outputRarity">-</span>
                 </div>
                 <div class="note-box">
                     <p><strong>Conversion Method:</strong> Uses z-scores to map between systems while preserving relative attribute strength, then optimizes to match overall array rarity.</p>

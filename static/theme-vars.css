@@ -1,0 +1,46 @@
+/* Theme CSS Variables - matches _custom.scss */
+
+:root {
+  /* Light theme (default) */
+  --primary: #00202e;
+  --primary-light: #002045;
+  --accent: #e88000;
+  --accent-secondary: #745017;
+  --body-background: #ffffff;
+  --body-background-tint: #faf8f5;
+  --body-font-color: #1a1a1a;
+
+  --color-link: #e88000;
+  --color-visited-link: #e88000;
+
+  --gray-100: #f8f9fa;
+  --gray-200: #745017;
+  --gray-500: #adb5bd;
+  --border-color: #745017;
+
+  /* Font settings */
+  --font-size: 16px;
+  --body-font-weight: 400;
+  --border-radius: 0.25rem;
+}
+
+/* Dark theme - activated by system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #001017;
+    --primary-light: #00202e;
+    --accent: #e88000;
+    --accent-secondary: #745017;
+    --body-background: #00202e;
+    --body-background-tint: #001017;
+    --body-font-color: #ffffff;
+
+    --color-link: #e88000;
+    --color-visited-link: #e88000;
+
+    --gray-100: #00202e;
+    --gray-200: #745017;
+    --gray-500: #888888;
+    --border-color: #745017;
+  }
+}
