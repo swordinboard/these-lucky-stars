@@ -88,11 +88,3 @@
     @include theme-dark;
   }
 }
-
-// Force dark mode colors with higher specificity
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #ffffff;
-    background: #00202e;
-  }
-}
