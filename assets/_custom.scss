@@ -87,3 +87,10 @@
     @include theme-dark;
   }
 }
+
+// Force dark mode font color with higher specificity
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ffffff;
+  }
+}
