@@ -1,3 +1,9 @@
+// Accent mixin (from hugo-book theme)
+@mixin accent($name, $color, $tint: 0.1) {
+  --color-accent-#{$name}: #{$color};
+  --color-accent-#{$name}-tint: #{rgba($color, $tint)};
+}
+
 :root {
   --font-size: 16px;
   --font-size-smaller: 0.875rem;
