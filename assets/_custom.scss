@@ -2,12 +2,7 @@
   --font-size: 16px;
   --font-size-smaller: 0.875rem;
   --font-size-smallest: 0.75rem;
-
   --body-font-weight: 400;
-  --body-background: #ffffff;
-  --body-background-tint: transparent;
-  --body-font-color: #1a1a1a;
-
   --border-radius: 0.25rem;
 
   // Apply the auto theme (responds to system preference)
@@ -88,9 +83,23 @@
   }
 }
 
-// Force dark mode font color with higher specificity
+// Force dark mode colors with higher specificity
 @media (prefers-color-scheme: dark) {
   body {
+    color: #ffffff;
+  }
+
+  // Sidebar/navigation background
+  .book-menu,
+  .book-menu .book-menu-content {
+    background: #00202e;
+    color: #ffffff;
+  }
+
+  // Mobile menu button
+  .book-header label,
+  #menu-control + label {
+    background: #00202e;
     color: #ffffff;
   }
 }
