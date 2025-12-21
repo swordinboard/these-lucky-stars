@@ -6,7 +6,7 @@
   --accent-secondary: #745017;
   --border-color: #292360;
   
-  --body-background: #ebe9db;
+  --body-background: ##fefefc;
   --body-background-tint: none;
   --body-font-color: #000000;
 
@@ -33,11 +33,11 @@
 }
 
 @mixin theme-dark {
-  --primary: ;
-  --primary-light: ;
+  --primary: #000000;
+  --primary-light: #1b1b1b;
   --accent: #d27f27;
   --accent-secondary: #745017;
-  --border-color: ;
+  --border-color: #292360;
   
   --body-background: #343a40;
   --body-background-tint: none;
@@ -67,7 +67,6 @@
 
 @mixin theme-auto {
   @include theme-light;
-
   @media (prefers-color-scheme: dark) {
     @include theme-dark;
   }
