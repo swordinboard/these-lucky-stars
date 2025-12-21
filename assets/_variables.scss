@@ -67,6 +67,7 @@
 
 @mixin theme-auto {
   @include theme-light;
+  
   @media (prefers-color-scheme: dark) {
     @include theme-dark;
   }
