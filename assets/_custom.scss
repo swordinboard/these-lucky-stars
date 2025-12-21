@@ -15,14 +15,16 @@
   }
 }
 
+.markdown {
 // Page divider lines
-hr {
-  background: var(--accent-secondary);
-}
+   hr {
+     background: var(--accent-secondary);
+   }
 
 // Alternating table rows
-table {
-   tr:nth-child(2n) {
+   table {
+     tr:nth-child(2n) {
       background: var(--gray-500);
+     }
    }
 }
