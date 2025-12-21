@@ -1,0 +1,13 @@
+:root {
+  --body-background: #fefefc;
+  --body-background-tint: none;
+  --body-font-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: #343a40;
+    --body-background-tint: none;
+    --body-font-color: #e9ecef;
+  }
+}
