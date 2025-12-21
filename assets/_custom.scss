@@ -17,13 +17,12 @@
 
 // Page divider lines
 hr {
-  border-color: var(--accent-secondary);
+  background: var(--accent-secondary);
 }
 
 // Alternating table rows
-table tr:nth-child(odd) {
-  background: var(--body-background);
-}
-table tr:nth-child(even) {
-  background: var(--gray-200);
+table {
+   tr:nth-child(2n) {
+      background: var(--gray-500);
+   }
 }
