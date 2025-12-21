@@ -5,13 +5,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .book-menu-content label img {
-    filter: invert(1);
-  }
   :root {
     --body-background: #343a40;
     --body-background-tint: none;
     --body-font-color: #e9ecef;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
+  .book-menu .book-menu-content label img {
+    filter: invert(1);
   }
 }
 
@@ -23,8 +26,9 @@
 
 // Alternating table rows
    table {
+     tr:first-child,
      tr:nth-child(2n) {
-      background: var(--gray-500);
+       background: var(--gray-200);
      }
    }
 }
