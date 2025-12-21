@@ -24,6 +24,12 @@
   --border-radius: 0.25rem;
 }
 
+/* Override: Divider lines use accent-secondary */
+hr {
+  background-color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+}
+
 /* Dark theme - activated by system preference */
 @media (prefers-color-scheme: dark) {
   :root {
