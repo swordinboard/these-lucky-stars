@@ -1,0 +1,74 @@
+// Themes
+@mixin theme-light {
+  --primary: #32323c;
+  --primary-light: #413029;
+  --accent: #d27f27;
+  --accent-secondary: #745017;
+  --border-color: #292360;
+  
+  --body-background: #ebe9db;
+  --body-background-tint: none;
+  --body-font-color: #000000;
+
+  --color-link: #d27f27;
+  --color-visited-link: #d27f27;
+
+  --icon-filter: none;
+
+  --gray-100: #f8f9fa;
+  --gray-200: #acb6c3;
+  --gray-500: #7d7678;
+
+  @include accent("default", #64748b);
+  @include accent("note", #4486dd);
+  @include accent("tip", #3bad3b);
+  @include accent("important", #8144dd);
+  @include accent("warning", #f59e42);
+  @include accent("caution", #d84747);
+
+  // Fallback for {{< hint >}} shortcodes
+  @include accent("info", #4486dd);
+  @include accent("success", #3bad3b);
+  @include accent("danger", #d84747);
+}
+
+@mixin theme-dark {
+  --primary: ;
+  --primary-light: ;
+  --accent: #d27f27;
+  --accent-secondary: #745017;
+  --border-color: ;
+  
+  --body-background: #343a40;
+  --body-background-tint: none;
+  --body-font-color: #e9ecef;
+
+  --color-link: #d27f27;
+  --color-visited-link: #d27f27;
+
+  --icon-filter: brightness(0) invert(1);
+
+  --gray-100: #494e54;
+  --gray-200: #7d7678;
+  --gray-500: #acb6c3;
+
+  @include accent("default", #64748b);
+  @include accent("note", #4486dd);
+  @include accent("tip", #3bad3b);
+  @include accent("important", #8144dd);
+  @include accent("warning", #f59e42);
+  @include accent("caution", #d84747);
+
+  // Fallback for {{< hint >}} shortcodes
+  @include accent("info", #4486dd);
+  @include accent("success", #3bad3b);
+  @include accent("danger", #d84747);
+}
+
+@mixin theme-auto {
+  @include theme-light;
+
+  @media (prefers-color-scheme: dark) {
+    @include theme-dark;
+  }
+}
