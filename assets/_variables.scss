@@ -18,18 +18,6 @@
   --gray-100: #f8f9fa;
   --gray-200: #acb6c3;
   --gray-500: #7d7678;
-
-  @include accent("default", #64748b);
-  @include accent("note", #4486dd);
-  @include accent("tip", #3bad3b);
-  @include accent("important", #8144dd);
-  @include accent("warning", #f59e42);
-  @include accent("caution", #d84747);
-
-  // Fallback for {{< hint >}} shortcodes
-  @include accent("info", #4486dd);
-  @include accent("success", #3bad3b);
-  @include accent("danger", #d84747);
 }
 
 @mixin theme-dark {
@@ -51,18 +39,6 @@
   --gray-100: #494e54;
   --gray-200: #7d7678;
   --gray-500: #acb6c3;
-
-  @include accent("default", #64748b);
-  @include accent("note", #4486dd);
-  @include accent("tip", #3bad3b);
-  @include accent("important", #8144dd);
-  @include accent("warning", #f59e42);
-  @include accent("caution", #d84747);
-
-  // Fallback for {{< hint >}} shortcodes
-  @include accent("info", #4486dd);
-  @include accent("success", #3bad3b);
-  @include accent("danger", #d84747);
 }
 
 @mixin theme-auto {
