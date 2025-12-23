@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
-  .book-menu .book-menu-content label img {
+  .book-header label[for="menu-control"] img {
     filter: invert(1);
   }
 }
@@ -26,12 +26,14 @@
 
 // Alternating table rows
    table {
-     tr:first-child,
-     tr:nth-child(odd) {
+     thead tr {
        background: var(--primary);
      }
-     tr:nth-chikd(even) {
-       background: var(--primary-light);
+     tbody tr:nth-child(odd) {
+        background: var(--gray-100);
+     }
+     tbody tr:nth-child(even) {
+       background: var(--gray-200);
      }
    }
 }
