@@ -33,20 +33,45 @@
         }
         .subtitle {
             text-align: center;
-            color: var(--accent-secondary);
+            color: var(--accent);
             margin-bottom: 20px;
         }
         .how-to-use {
             background: var(--gray-100);
             border-left: 4px solid var(--accent);
-            padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
+            overflow: hidden;
         }
-        .how-to-use h3 {
-            margin: 0 0 10px 0;
+        .how-to-use-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
             color: var(--body-font-color);
             font-size: 1em;
+            font-weight: bold;
+            text-align: left;
+        }
+        .how-to-use-toggle:hover {
+            background: var(--gray-200);
+        }
+        .how-to-use-toggle .arrow {
+            transition: transform 0.2s;
+        }
+        .how-to-use-toggle.open .arrow {
+            transform: rotate(180deg);
+        }
+        .how-to-use-content {
+            display: none;
+            padding: 0 15px 15px 15px;
+        }
+        .how-to-use-content.open {
+            display: block;
         }
         .how-to-use ul {
             margin: 0;
@@ -133,7 +158,7 @@
             padding: 10px 5px;
             font-size: 1em;
             text-align: center;
-            border: 2px solid var(--gray-500);
+            border: 2px solid var(--accent);
             border-radius: 8px;
             font-weight: 600;
             background: var(--body-background);
@@ -141,7 +166,7 @@
         }
         .input-grid input:focus {
             outline: none;
-            border-color: var(--accent);
+            border-color: var(--border-color);
         }
         .input-grid input.hidden {
             display: none;
@@ -186,8 +211,6 @@
         .result-card h3 {
             margin: 0 0 15px 0;
             font-size: 1.2em;
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 10px;
         }
         .array-display, .conversion-grid {
             display: grid;
@@ -228,10 +251,10 @@
             border-bottom: none;
         }
         .conversion-card {
-            background: var(--accent);
+            background: var(--gray-200);
+            color: var(--body-font-color);
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid var(--border-color);
         }
         .conversion-card h3 {
             color: var(--body-font-color);
@@ -312,14 +335,19 @@
         <p class="subtitle">Probability-weighted conversion between dice systems</p>
 
         <div class="how-to-use">
-            <h3>📖 How to Use</h3>
-            <ul>
-                <li><strong>Enter base/raw arrays only</strong> — Use your character's original rolled values before any modifications from leveling up, ability score improvements, or magical items.</li>
-                <li><strong>D20 systems use modifiers</strong> — Enter the modifier (−4 to +4), not the ability score. For example, a score of 14 = modifier of +2.</li>
-                <li><strong>TLS systems use raw values</strong> — Enter the actual dice result (Old TLS: 1-5, New TLS: 0-3).</li>
-                <li><strong>D20 uses 6 attributes</strong> — The standard six: STR, DEX, CON, INT, WIS, CHA.</li>
-                <li><strong>TLS uses 8 attributes</strong> — Includes additional attributes for that system.</li>
-            </ul>
+            <button class="how-to-use-toggle" onclick="toggleHowToUse()">
+                <span>📖 How to Use</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="how-to-use-content" id="howToUseContent">
+                <ul>
+                    <li><strong>Enter base/raw arrays only</strong> — Use your character's original rolled values before any modifications from leveling up, ability score improvements, or magical items.</li>
+                    <li><strong>D20 systems use modifiers</strong> — Enter the modifier (−4 to +4), not the ability score. For example, a score of 14 = modifier of +2.</li>
+                    <li><strong>TLS systems use raw values</strong> — Enter the actual dice result (Old TLS: 1-5, New TLS: 0-3).</li>
+                    <li><strong>D20 uses 6 attributes</strong> — The standard six: STR, DEX, CON, INT, WIS, CHA.</li>
+                    <li><strong>TLS uses 8 attributes</strong> — Includes additional attributes for that system.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="system-selectors">
@@ -357,7 +385,7 @@
 
         <div class="input-section">
             <h3>Enter Your Attribute Values:</h3>
-            <p style="color: var(--gray-500); margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
+            <p style="color: var(--body-font-color); margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
             <p id="inputNote"></p>
             <div class="input-grid cols-8" id="inputGrid">
                 <input type="number" id="attr1" placeholder="1">
@@ -408,6 +436,13 @@
     </div>
 
     <script>
+        function toggleHowToUse() {
+            var content = document.getElementById('howToUseContent');
+            var toggle = document.querySelector('.how-to-use-toggle');
+            content.classList.toggle('open');
+            toggle.classList.toggle('open');
+        }
+
         var systems = {
             '1d6-1d4': {
                 name: 'Old TLS (|1d6 − 1d4|, reroll 0)',
