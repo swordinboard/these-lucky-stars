@@ -18,6 +18,21 @@
             color: var(--body-font-color);
             min-height: 100vh;
         }
+        .home-link {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            .home-link {
+                color: var(--accent);
+            }
+        }
         .container {
             background: var(--gray-100);
             border-radius: 15px;
@@ -330,6 +345,7 @@
     </style>
 </head>
 <body>
+    <a href="https://theseluckystars.com" class="home-link">← Home</a>
     <div class="container">
         <h1>Attribute Array Converter</h1>
         <p class="subtitle">Probability-weighted conversion between dice systems</p>
