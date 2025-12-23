@@ -37,7 +37,7 @@
             margin-bottom: 20px;
         }
         .how-to-use {
-            background: var(--gray-200);
+            background: var(--gray-100);
             border-left: 4px solid var(--accent);
             padding: 15px;
             margin-bottom: 20px;
@@ -45,7 +45,7 @@
         }
         .how-to-use h3 {
             margin: 0 0 10px 0;
-            color: var(--accent-secondary);
+            color: var(--body-font-color);
             font-size: 1em;
         }
         .how-to-use ul {
@@ -68,13 +68,14 @@
         }
         .selector-group {
             background: var(--gray-200);
+            border-left: 4px solid var(--border-color);
             padding: 15px;
             border-radius: 10px;
         }
         .selector-group label {
             display: block;
             font-weight: 600;
-            color: var(--accent-secondary);
+            color: var(--body-font-color);
             margin-bottom: 8px;
             font-size: 0.95em;
         }
@@ -82,7 +83,7 @@
             width: 100%;
             padding: 10px;
             font-size: 0.9em;
-            border: 2px solid var(--border-color);
+            border: 2px solid var(--accent);
             border-radius: 8px;
             background: var(--body-background);
             color: var(--body-font-color);
@@ -378,7 +379,8 @@
         <div class="results" id="results">
             <div class="result-card">
                 <h3>📥 Input Array (<span id="inputSystemName"></span>)</h3>
-                <div class="array-display cols-8" id="inputArray"></div>
+                <div class="array-display cols-8" id="inputArray">
+                </div>
                 <div class="stat-row">
                     <span>Total:</span>
                     <span id="inputTotal"></span>
