@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute Array Converter - Probability Weighted</title>
-    <link rel="stylesheet" href="/css/shared-colors.css">
+    <link rel="stylesheet" href="/shared-colors.css">
     <style>
         * {
             box-sizing: border-box;
@@ -17,6 +17,21 @@
             background: var(--body-background);
             color: var(--body-font-color);
             min-height: 100vh;
+        }
+        .home-link {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            .home-link {
+                color: var(--accent);
+            }
         }
         .container {
             background: var(--gray-100);
@@ -33,27 +48,52 @@
         }
         .subtitle {
             text-align: center;
-            color: var(--gray-500);
+            color: var(--accent);
             margin-bottom: 20px;
         }
         .how-to-use {
-            background: var(--gray-200);
+            background: var(--gray-100);
             border-left: 4px solid var(--accent);
-            padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
+            overflow: hidden;
         }
-        .how-to-use h3 {
-            margin: 0 0 10px 0;
-            color: var(--accent);
+        .how-to-use-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--body-font-color);
             font-size: 1em;
+            font-weight: bold;
+            text-align: left;
+        }
+        .how-to-use-toggle:hover {
+            background: var(--gray-200);
+        }
+        .how-to-use-toggle .arrow {
+            transition: transform 0.2s;
+        }
+        .how-to-use-toggle.open .arrow {
+            transform: rotate(180deg);
+        }
+        .how-to-use-content {
+            display: none;
+            padding: 0 15px 15px 15px;
+        }
+        .how-to-use-content.open {
+            display: block;
         }
         .how-to-use ul {
             margin: 0;
             padding-left: 20px;
         }
         .how-to-use li {
-            color: var(--gray-500);
+            color: var(--body-font-color);
             font-size: 0.9em;
             margin-bottom: 5px;
         }
@@ -68,13 +108,14 @@
         }
         .selector-group {
             background: var(--gray-200);
+            border-left: 4px solid var(--border-color);
             padding: 15px;
             border-radius: 10px;
         }
         .selector-group label {
             display: block;
             font-weight: 600;
-            color: var(--accent);
+            color: var(--body-font-color);
             margin-bottom: 8px;
             font-size: 0.95em;
         }
@@ -82,7 +123,7 @@
             width: 100%;
             padding: 10px;
             font-size: 0.9em;
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--accent);
             border-radius: 8px;
             background: var(--body-background);
             color: var(--body-font-color);
@@ -90,7 +131,7 @@
         }
         .selector-group select:focus {
             outline: none;
-            border-color: var(--accent);
+            border-color: var(--border-color);
         }
         .system-info {
             margin-top: 8px;
@@ -98,7 +139,7 @@
             background: var(--body-background);
             border-radius: 5px;
             font-size: 0.8em;
-            color: var(--gray-500);
+            color: var(--body-font-color);
         }
         .system-info .stats {
             color: var(--gray-500);
@@ -132,7 +173,7 @@
             padding: 10px 5px;
             font-size: 1em;
             text-align: center;
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--accent);
             border-radius: 8px;
             font-weight: 600;
             background: var(--body-background);
@@ -140,7 +181,7 @@
         }
         .input-grid input:focus {
             outline: none;
-            border-color: var(--accent);
+            border-color: var(--border-color);
         }
         .input-grid input.hidden {
             display: none;
@@ -176,8 +217,8 @@
             margin-top: 20px;
         }
         .result-card {
-            background: var(--accent);
-            color: var(--body-background);
+            background: var(--gray-200);
+            color: var(--body-font-color);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -185,8 +226,6 @@
         .result-card h3 {
             margin: 0 0 15px 0;
             font-size: 1.2em;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
-            padding-bottom: 10px;
         }
         .array-display, .conversion-grid {
             display: grid;
@@ -200,7 +239,7 @@
             grid-template-columns: repeat(8, 1fr);
         }
         .array-value {
-            background: rgba(255,255,255,0.2);
+            background: var(--accent);
             padding: 12px 5px;
             border-radius: 8px;
             text-align: center;
@@ -208,8 +247,8 @@
             font-weight: bold;
         }
         .converted-value {
-            background: var(--accent-secondary);
-            color: var(--body-background);
+            background: var(--accent);
+            color: var(--body-font-color);
             padding: 12px 5px;
             border-radius: 8px;
             text-align: center;
@@ -221,19 +260,19 @@
             justify-content: space-between;
             margin: 10px 0;
             padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid var(--accent-secondary);
         }
         .stat-row:last-child {
             border-bottom: none;
         }
         .conversion-card {
             background: var(--gray-200);
+            color: var(--body-font-color);
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid var(--accent);
         }
         .conversion-card h3 {
-            color: var(--accent);
+            color: var(--body-font-color);
             margin-top: 0;
         }
         .note-box {
@@ -306,19 +345,25 @@
     </style>
 </head>
 <body>
+    <a href="https://theseluckystars.com" class="home-link">← Home</a>
     <div class="container">
         <h1>Attribute Array Converter</h1>
         <p class="subtitle">Probability-weighted conversion between dice systems</p>
 
         <div class="how-to-use">
-            <h3>📖 How to Use</h3>
-            <ul>
-                <li><strong>Enter base/raw arrays only</strong> — Use your character's original rolled values before any modifications from leveling up, ability score improvements, or magical items.</li>
-                <li><strong>D20 systems use modifiers</strong> — Enter the modifier (−4 to +4), not the ability score. For example, a score of 14 = modifier of +2.</li>
-                <li><strong>TLS systems use raw values</strong> — Enter the actual dice result (Old TLS: 1-5, New TLS: 0-3).</li>
-                <li><strong>D20 uses 6 attributes</strong> — The standard six: STR, DEX, CON, INT, WIS, CHA.</li>
-                <li><strong>TLS uses 8 attributes</strong> — Includes additional attributes for that system.</li>
-            </ul>
+            <button class="how-to-use-toggle" onclick="toggleHowToUse()">
+                <span>📖 How to Use</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="how-to-use-content" id="howToUseContent">
+                <ul>
+                    <li><strong>Enter base/raw arrays only</strong> — Use your character's original rolled values before any modifications from leveling up, ability score improvements, or magical items.</li>
+                    <li><strong>D20 systems use modifiers</strong> — Enter the modifier (−4 to +4), not the ability score. For example, a score of 14 = modifier of +2.</li>
+                    <li><strong>TLS systems use raw values</strong> — Enter the actual dice result (Old TLS: 1-5, New TLS: 0-3).</li>
+                    <li><strong>D20 uses 6 attributes</strong> — The standard six: STR, DEX, CON, INT, WIS, CHA.</li>
+                    <li><strong>TLS uses 8 attributes</strong> — Includes additional attributes for that system.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="system-selectors">
@@ -356,7 +401,7 @@
 
         <div class="input-section">
             <h3>Enter Your Attribute Values:</h3>
-            <p style="color: var(--gray-500); margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
+            <p style="color: var(--body-font-color); margin-bottom: 5px; font-size: 0.9em;">Order doesn't matter</p>
             <p id="inputNote"></p>
             <div class="input-grid cols-8" id="inputGrid">
                 <input type="number" id="attr1" placeholder="1">
@@ -378,7 +423,8 @@
         <div class="results" id="results">
             <div class="result-card">
                 <h3>📥 Input Array (<span id="inputSystemName"></span>)</h3>
-                <div class="array-display cols-8" id="inputArray"></div>
+                <div class="array-display cols-8" id="inputArray">
+                </div>
                 <div class="stat-row">
                     <span>Total:</span>
                     <span id="inputTotal"></span>
@@ -387,34 +433,32 @@
                     <span>Probability:</span>
                     <span id="inputProb"></span>
                 </div>
-                <div class="stat-row">
-                    <span>Rarity:</span>
-                    <span id="inputRarity"></span>
-                </div>
             </div>
 
             <div class="conversion-card">
                 <h3>📤 Converted to <span id="outputSystemName"></span></h3>
-                <div class="conversion-grid cols-8" id="outputArray"></div>
-                <div class="note-box">
-                    <div class="stat-row">
-                        <span>Total:</span>
-                        <span id="outputTotal"></span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Probability:</span>
-                        <span id="outputProb"></span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Rarity:</span>
-                        <span id="outputRarity"></span>
-                    </div>
+                <div class="conversion-grid cols-8" id="outputArray">
                 </div>
+                   <div class="stat-row">
+                       <span>Total:</span>
+                      <span id="outputTotal"></span>
+                  </div>
+                   <div class="stat-row">
+                       <span>Probability:</span>
+                       <span id="outputProb"></span>
+                  </div>
             </div>
         </div>
     </div>
 
     <script>
+        function toggleHowToUse() {
+            var content = document.getElementById('howToUseContent');
+            var toggle = document.querySelector('.how-to-use-toggle');
+            content.classList.toggle('open');
+            toggle.classList.toggle('open');
+        }
+
         var systems = {
             '1d6-1d4': {
                 name: 'Old TLS (|1d6 − 1d4|, reroll 0)',
@@ -593,17 +637,6 @@
                 }
             }
             return prob;
-        }
-
-        function getRarityDescription(prob) {
-            if (prob <= 0) return 'Invalid';
-            var oneIn = Math.round(1 / prob);
-            if (oneIn > 1000000) return '🌟 Legendary (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 100000) return '💎 Epic (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 10000) return '🔮 Very Rare (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 1000) return '✨ Rare (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 100) return '📘 Uncommon (1 in ' + oneIn.toLocaleString() + ')';
-            return '📗 Common (1 in ' + oneIn.toLocaleString() + ')';
         }
 
         function convertValueBasic(value, fromSystem, toSystem) {
@@ -845,7 +878,6 @@
             } else {
                 document.getElementById('inputProb').textContent = 'Invalid (probability = 0)';
             }
-            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
 
             document.getElementById('outputSystemName').textContent = outputStats.name;
 
@@ -869,7 +901,6 @@
             } else {
                 document.getElementById('outputProb').textContent = 'Calculation error';
             }
-            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
 
             document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
