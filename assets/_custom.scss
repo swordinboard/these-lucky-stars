@@ -29,8 +29,8 @@
      tr:first-child,
      tr:nth-child(odd) {
        background: var(--primary);
+     }
      tr:nth-chikd(even) {
        background: var(--primary-light);
-     }
      }
    }
