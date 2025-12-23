@@ -36,6 +36,7 @@ The target number lands on a scale as before, but with a shift in numbers.
 ## Updated 2d6 Difficulty Scale
 
 | Description        | Target Number   |
+|--------------------|-----------------|
 |         ↑          | 22+             |
 | "Impossible" Task  | 20              |
 | Strenuous Task     | 18              |
