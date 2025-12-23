@@ -33,7 +33,7 @@
         }
         .subtitle {
             text-align: center;
-            color: var(--gray-500);
+            color: var(--accent-secondary);
             margin-bottom: 20px;
         }
         .how-to-use {
@@ -45,7 +45,7 @@
         }
         .how-to-use h3 {
             margin: 0 0 10px 0;
-            color: var(--accent);
+            color: var(--accent-secondary);
             font-size: 1em;
         }
         .how-to-use ul {
@@ -53,7 +53,7 @@
             padding-left: 20px;
         }
         .how-to-use li {
-            color: var(--gray-500);
+            color: var(--body-font-color);
             font-size: 0.9em;
             margin-bottom: 5px;
         }
@@ -74,7 +74,7 @@
         .selector-group label {
             display: block;
             font-weight: 600;
-            color: var(--accent);
+            color: var(--accent-secondary);
             margin-bottom: 8px;
             font-size: 0.95em;
         }
@@ -82,7 +82,7 @@
             width: 100%;
             padding: 10px;
             font-size: 0.9em;
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--border-color);
             border-radius: 8px;
             background: var(--body-background);
             color: var(--body-font-color);
@@ -90,7 +90,7 @@
         }
         .selector-group select:focus {
             outline: none;
-            border-color: var(--accent);
+            border-color: var(--border-color);
         }
         .system-info {
             margin-top: 8px;
@@ -98,7 +98,7 @@
             background: var(--body-background);
             border-radius: 5px;
             font-size: 0.8em;
-            color: var(--gray-500);
+            color: var(--body-font-color);
         }
         .system-info .stats {
             color: var(--gray-500);
@@ -132,7 +132,7 @@
             padding: 10px 5px;
             font-size: 1em;
             text-align: center;
-            border: 2px solid var(--gray-200);
+            border: 2px solid var(--gray-500);
             border-radius: 8px;
             font-weight: 600;
             background: var(--body-background);
@@ -176,8 +176,8 @@
             margin-top: 20px;
         }
         .result-card {
-            background: var(--accent);
-            color: var(--body-background);
+            background: var(--gray-200);
+            color: var(--body-font-color);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -185,7 +185,7 @@
         .result-card h3 {
             margin: 0 0 15px 0;
             font-size: 1.2em;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 10px;
         }
         .array-display, .conversion-grid {
@@ -200,7 +200,7 @@
             grid-template-columns: repeat(8, 1fr);
         }
         .array-value {
-            background: rgba(255,255,255,0.2);
+            background: var(--accent);
             padding: 12px 5px;
             border-radius: 8px;
             text-align: center;
@@ -221,19 +221,19 @@
             justify-content: space-between;
             margin: 10px 0;
             padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid var(--accent-secondary);
         }
         .stat-row:last-child {
             border-bottom: none;
         }
         .conversion-card {
-            background: var(--gray-200);
+            background: var(--accent);
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid var(--accent);
+            border-left: 4px solid var(--border-color);
         }
         .conversion-card h3 {
-            color: var(--accent);
+            color: var(--body-font-color);
             margin-top: 0;
         }
         .note-box {
