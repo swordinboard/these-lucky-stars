@@ -387,10 +387,6 @@
                     <span>Probability:</span>
                     <span id="inputProb"></span>
                 </div>
-                <div class="stat-row">
-                    <span>Rarity:</span>
-                    <span id="inputRarity"></span>
-                </div>
             </div>
 
             <div class="conversion-card">
@@ -404,10 +400,6 @@
                     <div class="stat-row">
                         <span>Probability:</span>
                         <span id="outputProb"></span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Rarity:</span>
-                        <span id="outputRarity"></span>
                     </div>
                 </div>
             </div>
@@ -593,17 +585,6 @@
                 }
             }
             return prob;
-        }
-
-        function getRarityDescription(prob) {
-            if (prob <= 0) return 'Invalid';
-            var oneIn = Math.round(1 / prob);
-            if (oneIn > 1000000) return '🌟 Legendary (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 100000) return '💎 Epic (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 10000) return '🔮 Very Rare (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 1000) return '✨ Rare (1 in ' + oneIn.toLocaleString() + ')';
-            if (oneIn > 100) return '📘 Uncommon (1 in ' + oneIn.toLocaleString() + ')';
-            return '📗 Common (1 in ' + oneIn.toLocaleString() + ')';
         }
 
         function convertValueBasic(value, fromSystem, toSystem) {
@@ -845,7 +826,6 @@
             } else {
                 document.getElementById('inputProb').textContent = 'Invalid (probability = 0)';
             }
-            document.getElementById('inputRarity').textContent = getRarityDescription(inputProb);
 
             document.getElementById('outputSystemName').textContent = outputStats.name;
 
@@ -869,7 +849,6 @@
             } else {
                 document.getElementById('outputProb').textContent = 'Calculation error';
             }
-            document.getElementById('outputRarity').textContent = getRarityDescription(outputProb);
 
             document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
