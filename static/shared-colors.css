@@ -21,7 +21,7 @@
   --gray-500: #7d7678;
   
 /* app specific */
-   --shadow-dark: rgba(0, 0, 0, 0.12);
+   --shadow-dark: rgba(0, 0, 0, 0.5);
    --shadow-light: rgba(255, 255, 255, 0.15);
    --accent-glow: rgba(232, 128, 0, 0.15);
    --stamp-color: #ff2222;
@@ -51,7 +51,7 @@
     --gray-500: #acb6c3;
 
 /* app specific */
-   --shadow-dark: rgba(0, 0, 0, 0.12);
+   --shadow-dark: rgba(0, 0, 0, 0.5);
    --shadow-light: rgba(255, 255, 255, 0.15);
    --accent-glow: rgba(232, 128, 0, 0.15);
    --stamp-color: #ff2222;
