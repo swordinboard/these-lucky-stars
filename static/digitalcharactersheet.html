@@ -39,7 +39,7 @@
             background: var(--body-background);
             border-radius: 0.5rem;
             overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 6px -1px var(--shadow-dark), 0 2px 4px -1px var(--shadow-dark);
             border: 1px solid var(--border-color);
         }
 
@@ -62,26 +62,59 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            position: relative;
+            overflow: visible;
         }
         .header h1 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+        
+        .approval-stamp {
+            position: absolute;
+            top: 25px;
+            right: -5px;
+            transform: rotate(35deg);
+            font-family: 'Stencil', 'Impact', 'Arial Black', sans-serif;
+            color: var(--stamp-color);
+            border: 3px solid var(--stamp-color);
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 0.9rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: var(--shadow-light);
+            pointer-events: none;
+            z-index: 100;
+            display: none;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .approval-stamp.visible { display: block; }
+        .approval-stamp .stamp-edited {
+            font-size: 0.6rem;
+            color: var(--stamp-color);
+            margin-top: 2px;
+            letter-spacing: 2px;
+            display: none;
+        }
+        .approval-stamp .stamp-edited.visible { display: block; }
         
         .readme-btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             padding: 0.375rem 0.75rem;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid var(--shadow-light);
             border-radius: 0.375rem;
             font-size: 0.75rem;
             font-weight: 500;
             cursor: pointer;
-            background: rgba(255,255,255,0.1);
+            background: var(--shadow-light);
             color: white;
             transition: all 0.2s;
         }
         .readme-btn:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.5);
+            background: var(--shadow-light);
+            filter: brightness(1.5);
         }
 
         .controls {
@@ -210,7 +243,7 @@
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(232, 128, 0, 0.15);
+            box-shadow: 0 0 0 3px var(--accent-glow);
         }
         input[type="number"] { text-align: center; }
         textarea { resize: vertical; min-height: 5rem; }
@@ -271,7 +304,7 @@
             font-size: 0.7rem;
             color: var(--gray-500);
             text-align: center;
-            background: rgba(255,255,255,0.5);
+            background: var(--shadow-light);
             padding: 0.25rem;
             border-radius: 0.25rem;
             margin-bottom: 0.5rem;
@@ -279,7 +312,7 @@
         }
         @media (prefers-color-scheme: dark) {
             .stat-formula {
-                background: rgba(0,0,0,0.2);
+                background: var(--shadow-dark);
             }
         }
         .stat-formula.hidden-formula { display: none; }
@@ -328,14 +361,14 @@
             font-size: 0.7rem;
             color: var(--gray-500);
             font-family: monospace;
-            background: rgba(255,255,255,0.5);
+            background: var(--shadow-light);
             padding: 0.125rem 0.25rem;
             border-radius: 0.125rem;
             margin-top: 0.25rem;
         }
         @media (prefers-color-scheme: dark) {
             .summary-box .formula-display {
-                background: rgba(0,0,0,0.2);
+                background: var(--shadow-dark);
             }
         }
         .summary-box .formula-display.hidden-formula { display: none; }
@@ -375,7 +408,7 @@
         /* Modal */
         .modal-overlay {
             position: fixed; inset: 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: var(--shadow-dark);
             display: flex; align-items: center; justify-content: center;
             z-index: 1000; padding: 1rem;
         }
@@ -441,6 +474,10 @@
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Alpha Version Read Me
             </button>
+            <div id="approvalStamp" class="approval-stamp">
+                <div id="stampMessage"></div>
+                <div id="stampEdited" class="stamp-edited">EDITED</div>
+            </div>
         </div>
 
         <div class="controls">
@@ -820,10 +857,13 @@
             inventoryItems: Array(20).fill().map(() => ({ name: '', weight: 0, bulky: false })),
             woundsConditions: Array(10).fill(''),
             traits: '', proficiencies: '', abilities: '', healthNotes: '', additionalStats: '',
-            notes1: '', notes2: '', notes3: '', notes4: ''
+            notes1: '', notes2: '', notes3: '', notes4: '',
+            _approvalStamp: '',
+            _approvalEdited: false
         };
 
         let formulasVisible = false;
+        let stampWasLoaded = false;
 
         // ===== HELPERS =====
         const $ = id => document.getElementById(id);
@@ -1321,6 +1361,28 @@
             document.querySelectorAll('.auto-expand').forEach(el => autoExpand(el));
         }
 
+        // ===== APPROVAL STAMP =====
+        function updateStampDisplay() {
+            const stampEl = $('approvalStamp');
+            const messageEl = $('stampMessage');
+            const editedEl = $('stampEdited');
+            
+            if (character._approvalStamp && character._approvalStamp.trim()) {
+                // Truncate to 20 characters
+                const message = character._approvalStamp.substring(0, 20);
+                messageEl.textContent = message;
+                stampEl.classList.add('visible');
+                
+                if (character._approvalEdited) {
+                    editedEl.classList.add('visible');
+                } else {
+                    editedEl.classList.remove('visible');
+                }
+            } else {
+                stampEl.classList.remove('visible');
+            }
+        }
+
         // ===== MAIN FUNCTIONS =====
         function updateCharacter() { readFormValues(); calculateDerivedStats(); }
         function switchTab(tabId) {
@@ -1330,12 +1392,21 @@
 
         function saveCharacter() {
             readFormValues();
+            
+            // If a stamp was loaded, mark as edited on re-save
+            if (stampWasLoaded && character._approvalStamp) {
+                character._approvalEdited = true;
+            }
+            
             const blob = new Blob([JSON.stringify(character, null, 2)], { type: 'application/json' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
             link.download = (character.characterName || 'character') + '_sheet.json';
             link.click();
             URL.revokeObjectURL(link.href);
+            
+            // Update display to show EDITED if applicable
+            updateStampDisplay();
         }
 
         function loadCharacter(event) {
@@ -1357,8 +1428,15 @@
                     if (loaded.maxLuck !== undefined && loaded.luckBase === undefined) {
                         character.luckBase = 5; // Default base
                     }
+                    // Handle approval stamp
+                    if (loaded._approvalStamp) {
+                        character._approvalStamp = loaded._approvalStamp.substring(0, 20);
+                        character._approvalEdited = loaded._approvalEdited || false;
+                        stampWasLoaded = true;
+                    }
                     populateForm();
                     calculateDerivedStats();
+                    updateStampDisplay();
                 } catch (err) { alert('Error loading character sheet. Please check the file format.'); }
             };
             reader.readAsText(file);

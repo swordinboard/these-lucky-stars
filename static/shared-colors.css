@@ -1,13 +1,15 @@
 :root {
+/* from /assets/_custom.scss */
+  --body-background: #fefefc;
+  --body-background-tint: none;
+  --body-font-color: #000000;
+  
+/* from /assets/_variables.scss */
   --primary: #32323c;
   --primary-light: #413029;
   --accent: #d27f27;
   --accent-secondary: #745017;
   --border-color: #292360;
-  
-  --body-background: #fefefc;
-  --body-background-tint: none;
-  --body-font-color: #000000;
 
   --color-link: #d27f27;
   --color-visited-link: #d27f27;
@@ -17,19 +19,27 @@
   --gray-100: #f8f9fa;
   --gray-200: #acb6c3;
   --gray-500: #7d7678;
+  
+/* app specific */
+   --shadow-dark: rgba(0, 0, 0, 0.5);
+   --shadow-light: rgba(255, 255, 255, 0.15);
+   --accent-glow: rgba(232, 128, 0, 0.15);
+   --stamp-color: #ff2222;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+/* from /assets/_custom.scss */
+    --body-background: #343a40;
+    --body-background-tint: none;
+    --body-font-color: #e9ecef;
+
+/* from /assets/_variables.scss */
     --primary: #000000;
     --primary-light: #1b1b1b;
     --accent: #d27f27;
     --accent-secondary: #745017;
     --border-color: #292360;
-    
-    --body-background: #343a40;
-    --body-background-tint: none;
-    --body-font-color: #e9ecef;
 
     --color-link: #d27f27;
     --color-visited-link: #d27f27;
@@ -39,5 +49,11 @@
     --gray-100: #494e54;
     --gray-200: #7d7678;
     --gray-500: #acb6c3;
+
+/* app specific */
+   --shadow-dark: rgba(0, 0, 0, 0.5);
+   --shadow-light: rgba(255, 255, 255, 0.15);
+   --accent-glow: rgba(232, 128, 0, 0.15);
+   --stamp-color: #ff2222;
   }
 }
