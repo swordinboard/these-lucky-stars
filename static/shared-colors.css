@@ -5,11 +5,6 @@
   --body-font-color: #000000;
   
 /* from /assets/_variables.scss */
-  --primary: #b6b6ff;
-  --primary-light: #fff111;
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
 
   --color-link: ##5050ff;
   --color-visited-link: #5050aa;
@@ -21,6 +16,11 @@
   --gray-500: #808080;
   
 /* app specific */
+   --primary: #b6b6ff;
+    --accent: #d27f27; /* accent & secondary usually same as color-link and visited */
+    --accent-secondary: #745017;
+    --border-color: #292360;
+
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
    --accent-glow: rgba(182,233,33,0.65);
@@ -35,11 +35,6 @@
     --body-font-color: #e9ecef;
 
 /* from /assets/_variables.scss */
-    --primary: #b6b6ff;
-    --primary-light: ##fff111;
-    --accent: #d27f27;
-    --accent-secondary: #745017;
-    --border-color: #292360;
 
     --color-link: #5050ff;
     --color-visited-link: #5050aa;
@@ -51,6 +46,11 @@
     --gray-500: #303030;
 
 /* app specific */
+   --primary: #b6b6ff;
+    --accent: #d27f27; /* accent & secondary usually same as color-link and visited */
+    --accent-secondary: #745017;
+    --border-color: #292360;
+
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
    --accent-glow: rgba(182,233,33,0.65);

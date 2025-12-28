@@ -1,10 +1,5 @@
 // Themes
 @mixin theme-light {
-  --primary: #b6b6ff;
-  --primary-light: #fff111;
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
 
   --color-link: #5050ff;
   --color-visited-link: #5050aa;
@@ -29,11 +24,6 @@
 }
 
 @mixin theme-dark {
-  --primary: #b6b6ff;
-  --primary-light: ##fff111;
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
 
   --color-link: #5050ff;
   --color-visited-link: #5040aa;
