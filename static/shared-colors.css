@@ -5,8 +5,8 @@
   --body-font-color: #000000;
   
 /* from /assets/_variables.scss */
-  --primary: #32323c;
-  --primary-light: #413029;
+  --primary: #b6b6ff;
+  --primary-light: #fff111;
   --accent: #d27f27;
   --accent-secondary: #745017;
   --border-color: #292360;
@@ -16,9 +16,9 @@
 
   --icon-filter: none;
 
-  --gray-100: #f8f9fa;
-  --gray-200: #acb6c3;
-  --gray-500: #7d7678;
+  --gray-100: #ffffffd0;
+  --gray-200: #ffffff90;
+  --gray-500: #ffffff50;
   
 /* app specific */
    --shadow-dark: rgba(0, 0, 0, 0.5);
@@ -30,13 +30,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
 /* from /assets/_custom.scss */
-    --body-background: #343a40;
+    --body-background: #1b1b1b;
     --body-background-tint: none;
     --body-font-color: #e9ecef;
 
 /* from /assets/_variables.scss */
-    --primary: #000000;
-    --primary-light: #1b1b1b;
+    --primary: #b6b6ff;
+    --primary-light: ##fff111;
     --accent: #d27f27;
     --accent-secondary: #745017;
     --border-color: #292360;
@@ -46,9 +46,9 @@
 
     --icon-filter: brightness(0) invert(1);
 
-    --gray-100: #494e54;
-    --gray-200: #7d7678;
-    --gray-500: #acb6c3;
+    --gray-100: #ffffff95;
+    --gray-200: #ffffff55;
+    --gray-500: #ffffff25;
 
 /* app specific */
    --shadow-dark: rgba(0, 0, 0, 0.5);
