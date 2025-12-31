@@ -6,9 +6,9 @@
 
   --icon-filter: none;
 
-  --gray-100: #bdbbcf;
-  --gray-200: #817ead;
-  --gray-500: #605d8d;
+  --gray-100: #c3bfea;
+  --gray-200: ##9595b6;
+  --gray-500: #8585a0;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
@@ -30,9 +30,9 @@
 
   --icon-filter: brightness(0) invert(1);
 
-  --gray-100: #605d8d;
-  --gray-200: #545273;
-  --gray-500: #373649;
+  --gray-100: #515186;
+  --gray-200: #3a3a66;
+  --gray-500: #1d1d42;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);

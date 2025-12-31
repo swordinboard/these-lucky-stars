@@ -1,6 +1,6 @@
 :root {
 /* from /assets/_custom.scss */
-  --body-background: #f4eff6;
+  --body-background: #f4f4f4;
   --body-background-tint: none;
   --body-font-color: #000000;
   
@@ -11,13 +11,13 @@
 
   --icon-filter: none;
 
-  --gray-100: #bdbbcf;
-  --gray-200: #817ead;
-  --gray-500: #605d8d;
+  --gray-100: #c3bfea;
+  --gray-200: #9595b6;
+  --gray-500: #8585a0;
   
 /* app specific */
-   --primary: #605d8d;
-    --accent: #05d552; /* usually matcb color-link */
+   --primary: #7aa788;
+    --accent: #05d552; /* usually match color-link */
     --accent-secondary: #16cd5b;
     --border-color: #421a63;
 
@@ -41,13 +41,13 @@
 
     --icon-filter: brightness(0) invert(1);
 
-    --gray-100: #605d8d;
-    --gray-200: #545273;
-    --gray-500: #373649;
+    --gray-100: #515186;
+    --gray-200: #3a3a66;
+    --gray-500: #1d1d42;
 
 /* app specific */
-   --primary: #605d8d;
-    --accent: #05d552; /* accent & secondary usually same as color-link and visited */
+   --primary: #7aa788;
+    --accent: #05d552; /* usually match color-link */
     --accent-secondary: #16cd5b;
     --border-color: #421a63;
 
