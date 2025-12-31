@@ -12,8 +12,8 @@
   --icon-filter: none;
 
   --gray-100: #c3bfea;
-  --gray-200: #9595b6;
-  --gray-500: #8585a0;
+  --gray-200: #af81da;
+  --gray-500: #3a3a66;
   
 /* app specific */
    --primary: #7aa788;
@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
 /* from /assets/_custom.scss */
-    --body-background: #3d3042;
+    --body-background: #3d3663;
     --body-background-tint: none;
     --body-font-color: #e9e9e9;
 
@@ -41,9 +41,9 @@
 
     --icon-filter: brightness(0) invert(1);
 
-    --gray-100: #515186;
+    --gray-100: #1d1d42;
     --gray-200: #3a3a66;
-    --gray-500: #1d1d42;
+    --gray-500: #af81da;
 
 /* app specific */
    --primary: #7aa788;
