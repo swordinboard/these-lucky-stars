@@ -32,7 +32,7 @@
 /* from /assets/_custom.scss */
     --body-background: #3d3042;
     --body-background-tint: none;
-    --body-font-color: #e99e9;
+    --body-font-color: #e9e9e9;
 
 /* from /assets/_variables.scss */
 
@@ -53,7 +53,7 @@
 
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
-   --accent-glow: rgb(24,146,70);
+   --accent-glow: rgba(182,233,33,0.65);
    --stamp-color: #ff2222;
   }
 }
