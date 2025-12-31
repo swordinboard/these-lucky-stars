@@ -1,25 +1,25 @@
 :root {
 /* from /assets/_custom.scss */
-  --body-background: #fefefc;
+  --body-background: #f4eff6;
   --body-background-tint: none;
   --body-font-color: #000000;
   
 /* from /assets/_variables.scss */
 
-  --color-link: ##5050ff;
-  --color-visited-link: #5050aa;
+  --color-link: #05d552;
+  --color-visited-link: #16cd5b;
 
   --icon-filter: none;
 
-  --gray-100: #c0c0c0;
-  --gray-200: #a5a5a5;
-  --gray-500: #808080;
+  --gray-100: #bdbbcf;
+  --gray-200: #817ead;
+  --gray-500: #605d8d;
   
 /* app specific */
-   --primary: #b6b6ff;
-    --accent: #d27f27; /* accent & secondary usually same as color-link and visited */
-    --accent-secondary: #745017;
-    --border-color: #292360;
+   --primary: #605d8d;
+    --accent: #05d552; /* usually matcb color-link */
+    --accent-secondary: #16cd5b;
+    --border-color: #421a63;
 
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
@@ -30,30 +30,30 @@
 @media (prefers-color-scheme: dark) {
   :root {
 /* from /assets/_custom.scss */
-    --body-background: #1b1b1b;
+    --body-background: #3d3042;
     --body-background-tint: none;
-    --body-font-color: #e9ecef;
+    --body-font-color: #e99e9;
 
 /* from /assets/_variables.scss */
 
-    --color-link: #5050ff;
-    --color-visited-link: #5050aa;
+    --color-link: #05d552;
+    --color-visited-link: #16cd5b;
 
     --icon-filter: brightness(0) invert(1);
 
-    --gray-100: #808080;
-    --gray-200: #505050;
-    --gray-500: #303030;
+    --gray-100: #605d8d;
+    --gray-200: #545273;
+    --gray-500: #373649;
 
 /* app specific */
-   --primary: #b6b6ff;
-    --accent: #d27f27; /* accent & secondary usually same as color-link and visited */
-    --accent-secondary: #745017;
-    --border-color: #292360;
+   --primary: #605d8d;
+    --accent: #05d552; /* accent & secondary usually same as color-link and visited */
+    --accent-secondary: #16cd5b;
+    --border-color: #421a63;
 
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
-   --accent-glow: rgba(182,233,33,0.65);
+   --accent-glow: rgb(24,146,70);
    --stamp-color: #ff2222;
   }
 }

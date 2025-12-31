@@ -1,14 +1,14 @@
 // Themes
 @mixin theme-light {
 
-  --color-link: #5050ff;
-  --color-visited-link: #5050aa;
+  --color-link: #05d552;
+  --color-visited-link: #16cd5b;
 
   --icon-filter: none;
 
-  --gray-100: #c0c0c0;
-  --gray-200: #a5a5a5;
-  --gray-500: #808080;
+  --gray-100: ##bdbbcf;
+  --gray-200: ##817ead;
+  --gray-500: #605d8d;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
@@ -25,14 +25,14 @@
 
 @mixin theme-dark {
 
-  --color-link: #5050ff;
-  --color-visited-link: #5040aa;
+  --color-link: #05d552;
+  --color-visited-link: #16cd5b;
 
   --icon-filter: brightness(0) invert(1);
 
-  --gray-100: #808080;
-  --gray-200: #505050;
-  --gray-500: #303030;
+  --gray-100: #605d8d;
+  --gray-200: ##545273;
+  --gray-500: #373649;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
