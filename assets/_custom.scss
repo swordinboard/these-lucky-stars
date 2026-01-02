@@ -23,7 +23,6 @@
    hr {
      background: var(--accent-secondary);
    }
-
 // Alternating table rows
    table {
      thead tr {
@@ -36,4 +35,11 @@
        background: var(--gray-200);
      }
    }
+}
+
+@mixin theme-auto {
+  @include theme-light;
+  @media (prefers-color-scheme: dark) {
+    @include theme-dark;
+  }
 }
