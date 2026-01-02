@@ -1,3 +1,5 @@
+// List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
+
 :root {
   --body-background: #fefefc;
   --body-background-tint: rgba(40,50,165,0.2);
@@ -12,6 +14,7 @@
   }
 }
 
+// Sidebar menu contrast
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
   .book-header label[for="menu-control"] img {
     filter: invert(1);

@@ -1,9 +1,7 @@
 // Themes
-@mixin theme-light {
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
+// Additional variables can be added here. If adding, make sure color variable is added to both mixins. Do not break up or add to @include blocks (their values can still be changed). See _custom.scss for background and font colors. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
+@mixin theme-light {
   --color-link: #5050ff;
   --color-visited-link: #5050aa;
 
@@ -27,10 +25,6 @@
 }
 
 @mixin theme-dark {
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
-
   --color-link: #5050ff;
   --color-visited-link: #5040aa;
 

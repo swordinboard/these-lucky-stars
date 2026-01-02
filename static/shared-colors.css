@@ -1,3 +1,5 @@
+/* Used by stsic folder files only, all variables must be referenced here. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors. */
+
 :root {
 /* from /assets/_custom.scss */
   --body-background: #fefefc;
@@ -9,7 +11,7 @@
   --accent-secondary: #745017;
   --border-color: #292360;
 
-  --color-link: ##5050ff;
+  --color-link: #5050ff;
   --color-visited-link: #5050aa;
 
   --icon-filter: none;
@@ -19,7 +21,7 @@
   --gray-500: #808080;
   
 /* app specific */
-   --primary: #b6b6ff
+   --primary: #b6b6ff;
    --shadow-dark: rgba(0,0,0,0.5);
    --shadow-light: rgba(255,255,255,0.15);
    --accent-glow: rgba(182,233,33,0.65);
