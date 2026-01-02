@@ -1,19 +1,13 @@
 // Themes
 @mixin theme-light {
-  --primary: #32323c;
-  --primary-light: #413029;
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
-
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #05d552;
+  --color-visited-link: #16cd5b;
 
   --icon-filter: none;
 
-  --gray-100: #f8f9fa;
-  --gray-200: #acb6c3;
-  --gray-500: #7d7678;
+  --gray-100: #e9e9e9;
+  --gray-200: #a1a1a1;
+  --gray-500: #828282;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
@@ -29,20 +23,15 @@
 }
 
 @mixin theme-dark {
-  --primary: #000000;
-  --primary-light: #1b1b1b;
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
 
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #05d552;
+  --color-visited-link: #16cd5b;
 
   --icon-filter: brightness(0) invert(1);
 
-  --gray-100: #494e54;
-  --gray-200: #7d7678;
-  --gray-500: #acb6c3;
+  --gray-100: #323232;
+  --gray-200: #454545;
+  --gray-500: #626262;
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
