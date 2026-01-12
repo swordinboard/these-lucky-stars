@@ -4,7 +4,7 @@ title: "Welcome!"
 
 Hello! Here you can find all the web apps for These Lucky Stars. Hopefully they get put yo good use.
 
-Current major revisions and/or rewrite notes can be found [here](content/docs/ohnothoughts.md). Smaller updates can be found in the discord, look for the latest rulebook document.
+Current major revisions and/or rewrite notes can be found [here](/content/docs/ohnothoughts.md). Smaller updates can be found in the discord, look for the latest rulebook document.
 
 [Digital Character Sheet](/digitalcharactersheet.html)
 This charcter sheet was made on a whim. It should have everything the basic paper sheet has. Check the READ ME  at the top for more details.
