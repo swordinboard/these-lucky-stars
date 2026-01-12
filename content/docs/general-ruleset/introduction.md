@@ -1,6 +1,7 @@
 ---
 title: "Introduction & Core Mechanics"
 weight: 1
+draft: true
 ---
 
 # Introduction

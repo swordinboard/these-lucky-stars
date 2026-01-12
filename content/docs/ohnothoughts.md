@@ -5,7 +5,7 @@ weight: 4
 
 # OH NO THOUGHTS of Rewriting
 
-{{% hint info %}}
+{{% hint important %}}
 **Primary Changes:**
 Moving from 1d20 to **2d6** as the primary decision mechanic. The math benefits player choices and offers better odds early in leveled play. This does result in a change to your attribute values, which I go over how to adapt below.
 
