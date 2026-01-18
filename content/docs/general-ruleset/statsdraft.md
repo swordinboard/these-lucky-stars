@@ -82,9 +82,7 @@ Each player works their way down the table and compares their attributes to the 
 |--------------------------------------|-----------|
 | Highest attribute total              | -1        |
 | Lowest attribute total               | +1        |
-| Highest physical attribute total     | -1        |
 | Lowest physical attribute total      | +1        |
-| Highest mental attribute total       | -1        |
 | Lowest mental attribute total        | +1        |
 
 ### Grapple

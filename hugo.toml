@@ -12,7 +12,7 @@ theme = 'hugo-book'
 
 [[menu.after]]
   name = "Character Sheet"
-  url = "/charactersheet.html"
+  url = "/digitalcharactersheet.html"
   weight = 1
 
 [[menu.after]]
