@@ -116,4 +116,4 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 Luck can still be used to add a 1d4 to any 2d6 action/decision roll. However, when determing results even numbers on the Luck die are added in normaly, while odd numbers cause a flat -2 penalty to the roll instead of being added in.
 
-Calculations for luck remain the same as latest 4.251130.
+Calculations for luck remain the same as latest 4.260117
