@@ -12,7 +12,7 @@ theme = 'hugo-book'
 
 [[menu.after]]
   name = "Character Sheet"
-  url = "/charactersheet.html"
+  url = "/digitalcharactersheet.html"
   weight = 1
 
 [[menu.after]]
@@ -29,7 +29,7 @@ theme = 'hugo-book'
 
 [params]
   # Theme: 'light', 'dark', or 'auto' (follows browser/OS preference)
-  BookTheme = 'light'
+  BookTheme = 'auto'
   
   # Path to logo and favicon (relative to /static/)
   BookLogo = 'sib_swordonly.png'
