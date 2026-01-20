@@ -40,3 +40,18 @@
      }
    }
 }
+
+// Menu theme note
+.book-menu-content nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.theme-note {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--gray-200);
+  font-size: var(--font-size-smallest);
+  color: var(--body-font-color);
+  opacity: 0.5;
+}
