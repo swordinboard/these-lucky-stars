@@ -22,7 +22,7 @@ Roll 2d4, then subtract the lower result from the higher result. Repeat this pro
 
 **Attribute = |1d4-1d4|**
 
-{{% hint success %}}
+{{% hint tip %}}
 **Example:** If I roll a 2 and a 4, I subtract 4-2, to get a value of 2.
 {{% /hint %}}
 
@@ -35,7 +35,7 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 **Maximum Attribute Value:** without modifiers is equal to character level +2.
 
-{{% hint success %}}
+{{% hint tip %}}
 **Example:** A level 2 character has a maximum attribute value of 4 before applying modifiers.
 {{% /hint %}}
 

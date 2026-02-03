@@ -23,9 +23,9 @@ How swiftly a character reacts to a surprise situation, initiative determines th
 Action Points (AP) are spent during combat to take actions. The more complicated or the more time consuming an action is, the more AP the action uses. All characters start with 4 AP. See Actions in Combat for more on Action Points.
 
 ### Speed (______)
-**= 20 + 5 per +1 AGI Bonus or Flat -5 if AGI Penalty**
+**= 15 + 5 per +1 AGI Bonus or Flat -5 if AGI Penalty**
 
-Speed is a summary of the normal movement speed character, conveniently rounded to 5ft spaces. The speed equation provided is used to describe a character or creature's primary mode of travel (in most cases it is Speed(ground) for those that live on land).
+Speed is a summary of the normal movement speed of a character, conveniently rounded to 5ft spaces. The speed equation provided is used to describe a character or creature's primary mode of travel (in most cases it is Speed(ground) for those that live on land).
 
 The descriptor of the speed determines what type of movement or terrain the speed applies to:
 

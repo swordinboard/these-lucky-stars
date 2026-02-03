@@ -55,7 +55,7 @@ Movement from advantage and disadvantage, impossible tasks, and other functions 
 
 ## Success and Failure
 
-{{% hint info %}}
+{{% hint note %}}
 **Short Version:** Unchanged:
 Success = Higher than or equal to target.
 {{% /hint %}}
@@ -68,7 +68,7 @@ When the result is lower than the target the action is unsuccessful, the GM desc
 
 ## Contested Rolls
 
-{{% hint info %}}
+{{% hint note %}}
 **Short Version:** Unchanged:
 Result vs Result, ties roll without modifiers until decided.
 {{% /hint %}}
@@ -79,21 +79,20 @@ Occasionally, characters may face a situation requiring a contested roll. Each c
 
 ## Group Rolls
 
-{{% hint info %}}
+{{% hint note %}}
 **Short Version:**
 Only when applicable:
-Group result = result +1 per ally involved
+Group result = Highest roll +1 per ally involved
 {{% /hint %}}
 
 When two or more characters are involved in an action a group roll can be used. Group rolls can also be applied to contested rolls. The GM decides when group rolls can apply. In most cases, only two characters can attempt an action together effectively.
 
-**Group rolls: Participating ally adds +1 to result.**
 
 ---
 
 # Supply Rolls
 
-{{% hint info %}}
+{{% hint note %}}
 **Short:** Unchanged:
 When prompted roll the current supply die:
 D12, D10, D8, D6,or D4. results of three or less lower the die size by one until empty.
@@ -108,7 +107,7 @@ Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 # Luck
 
-{{% hint info %}}
+{{% hint note %}}
 **Short Version:** 
 *Evens* on Luck dice add *bonus* normally.
 *Odds* do not, and instead cause a flat -2 penalty to the roll.*
