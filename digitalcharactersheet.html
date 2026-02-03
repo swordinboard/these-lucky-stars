@@ -780,8 +780,6 @@
                 <p><strong>Collapsible Sections:</strong> Click on section headers to expand or collapse them.</p>
                 <p><strong>Formulas:</strong> Toggle formula visibility with the Show/Hide Formulas button. Formulas show how stats are calculated.</p>
                 <p><strong>Auto-Calculate:</strong> Most derived stats update automatically when you change base values.</p>
-                <h3>Combat Tab</h3>
-                <p>The Combat tab contains your Stats (Initiative, Action Points, Luck, Speed, Grapple, Stealth) and Health (Defense, Vitality, Tracker, Stress Threshold) sections along with Wounds & Conditions.</p>
             </div>
             <div class="modal-footer"><button class="btn" onclick="hideHelp()">Got it!</button></div>
         </div>
@@ -797,9 +795,8 @@
             <div class="modal-body">
                 <p>Dear friends,</p>
                 <p>This little app is getting close to finished now. At least by my eyes, I'm sure there's some things that could be tweaked and I would really love some feedback on it. Things that could be changed, adjusted, how it fits on different screens, and missing features are all much appreciated.</p>
-                <p>If you've made it this far, I don't have to tell you how to make it run. And it also means the buttons are working, so the JavaScript should be good.</p>
-                <p>I vibe coded this whole thing. It has taken me four days of full credits for Claude.ai night and day. I've learned a bit about coding as I went but I'm still very very green. So if you have experience in that area and find ways to improve on what front end eyes would miss please boss me around.</p>
-                <p>I hope to release this on the (upcoming) website once parts of the rule set are set in stone. For now there are lots of changes happening, but I thought this would be a fun project to try out now and be nice for everybody to have while playing. I've always been a fan of a paper sheet, but I know there's a lot of value in a digital one.</p>
+                <p>I vibe coded this whole thing. It has taken me four days (and counting) of full credits for Claude.ai. I've learned a bit about coding as I went but I'm still very very green. So if you have experience in that area and find ways to improve on what front end eyes would miss please boss me around.</p>
+                <p>Update: So far so good with this. Its seen a bit of use and some updates.</p>
                 <p>Fighting imposter syndrome with sharp stick,<br>-Anthony DiRuzza</p>
             </div>
             <div class="modal-footer"><button class="btn" onclick="hideReadme()">Close</button></div>
@@ -937,9 +934,9 @@
             // Speed
             const speedMods = val('speedMods');
             const agiBonus = Math.max(0, agi) * 5;
-            const speed = 20 + agiBonus + speedMods;
+            const speed = 15 + agiBonus + speedMods;
             $('speedDisplay').textContent = speed + ' ft';
-            $('speedFormula').textContent = `20 + AGI Bonus(${agiBonus}) + Mods(${speedMods}) = ${speed}`;
+            $('speedFormula').textContent = `15 + AGI Bonus(${agiBonus}) + Mods(${speedMods}) = ${speed}`;
 
             // Grapple
             const grappleMods = val('grappleMods');
@@ -981,7 +978,8 @@
 
             // Inventory
             const maxWeightMods = val('maxWeightMods');
-            const maxWeight = str * 25 + maxWeightMods;
+            const strWeightBonus = str >= 0 ? str * 25 : str * 5;
+            const maxWeight = 30 + strWeightBonus + maxWeightMods;
             let currentWeight = 0;
             let currentBulky = 0;
             for (let i = 0; i < 20; i++) {
@@ -990,7 +988,7 @@
             }
             $('currentWeightDisplay').textContent = currentWeight.toFixed(1);
             $('maxWeightDisplay').textContent = maxWeight;
-            $('maxWeightFormula').textContent = `Max = STR(${str}) × 25 + Mods(${maxWeightMods}) = ${maxWeight}`;
+            $('maxWeightFormula').textContent = `Max = 30 + STR Bonus(${strWeightBonus}) + Mods(${maxWeightMods}) = ${maxWeight}`;
 
             const maxBulkyMods = val('maxBulkyMods');
             const maxBulky = 1 + Math.floor(str / 5) + maxBulkyMods;
@@ -1191,7 +1189,7 @@
                         <div class="combined-stat-item"><div class="value" id="maxWeightDisplay">0</div><div class="label">Max</div></div>
                         <div style="font-size:0.875rem;color:var(--gray-500)">lbs</div>
                     </div>
-                    <div class="formula-display hidden-formula" id="maxWeightFormula">Max = STR × 25 + Mods = 0</div>
+                    <div class="formula-display hidden-formula" id="maxWeightFormula">Max = 30 + STR Bonus + Mods = 0</div>
                     <div class="mod-row"><label>Mods:</label><input type="number" id="maxWeightMods" value="0" onchange="updateCharacter()"></div>
                 </div>
                 <div class="summary-box">
