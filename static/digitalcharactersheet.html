@@ -351,8 +351,9 @@
 
         /* Wounds & Slots */
         .list-vertical { display: flex; flex-direction: column; gap: 0.5rem; }
-        .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: center; }
-        .slot-row label { font-size: 0.875rem; font-weight: 600; }
+        .list-vertical textarea { min-height: 2rem; }
+        .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: start; }
+        .slot-row label { font-size: 0.875rem; font-weight: 600; padding-top: 0.5rem; }
 
         /* Inventory */
         .summary-box {
@@ -375,9 +376,11 @@
         .mod-row label { font-size: 0.7rem; font-weight: 600; color: var(--body-font-color); }
         .mod-row input { width: 50px; padding: 0.25rem; font-size: 0.75rem; }
 
-        .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; }
+        .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; align-items: start; }
         .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); margin-bottom: 0.25rem; padding: 0 0.25rem; }
         .inv-row { margin-bottom: 0.25rem; }
+        .inv-row textarea { min-height: 2rem; }
+        .inv-row input, .inv-row select { margin-top: 0.25rem; }
         .inv-row input, .inv-row select { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
 
         .dual-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -1167,14 +1170,14 @@
 
         function generateWounds() {
             $('woundsContainer').innerHTML = Array(10).fill().map((_, i) => 
-                `<input type="text" id="wound${i}" placeholder="Wound/Condition ${i+1}" onchange="updateCharacter()">`
+                `<textarea id="wound${i}" class="auto-expand" style="min-height:2rem;" placeholder="Wound/Condition ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>`
             ).join('');
         }
 
         function generateEquipmentSlots() {
             const slotIds = ['slotHead', 'slotNeck', 'slotChest', 'slotBack', 'slotArms', 'slotHands', 'slotBelt', 'slotLegsFeet'];
             $('equipmentSlotsContainer').innerHTML = EQUIPMENT_SLOTS.map((label, i) =>
-                `<div class="slot-row"><label>${label}:</label><input type="text" id="${slotIds[i]}" onchange="updateCharacter()"></div>`
+                `<div class="slot-row"><label>${label}:</label><textarea id="${slotIds[i]}" class="auto-expand" style="min-height:2rem;" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>`
             ).join('');
         }
 
@@ -1206,7 +1209,7 @@
         function generateInventoryItems() {
             $('inventoryItemsContainer').innerHTML = Array(20).fill().map((_, i) => `
                 <div class="inv-row">
-                    <input type="text" id="itemName${i}" placeholder="Item ${i+1}" onchange="updateCharacter()">
+                    <textarea id="itemName${i}" class="auto-expand" style="min-height:2rem;" placeholder="Item ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
                     <input type="number" step="0.1" min="0" id="itemWeight${i}" placeholder="0" onchange="updateCharacter()">
                     <select id="itemBulky${i}" onchange="updateCharacter()"><option value="no">No</option><option value="yes">Yes</option></select>
                 </div>`).join('');
