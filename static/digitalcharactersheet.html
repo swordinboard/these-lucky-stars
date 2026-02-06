@@ -248,6 +248,7 @@
             font-family: inherit;
             background: var(--body-background);
             color: var(--body-font-color);
+            box-sizing: border-box;
         }
         input:focus, select:focus, textarea:focus {
             outline: none;
@@ -256,7 +257,8 @@
         }
         input[type="number"] { text-align: center; }
         textarea { resize: vertical; min-height: 5rem; }
-        textarea.auto-expand { overflow: hidden; resize: none; }
+        textarea.auto-expand { overflow: hidden; resize: none; line-height: 1.15; }
+        textarea.auto-expand.single-line { min-height: 0; padding: 0.35rem 0.5rem; }
 
         /* Attribute & Stat Blocks - Single layer on body background */
         .attr-block, .stat-box, .card-block {
@@ -351,9 +353,8 @@
 
         /* Wounds & Slots */
         .list-vertical { display: flex; flex-direction: column; gap: 0.5rem; }
-        .list-vertical textarea { min-height: 2rem; }
         .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: start; }
-        .slot-row label { font-size: 0.875rem; font-weight: 600; padding-top: 0.5rem; }
+        .slot-row label { font-size: 0.875rem; font-weight: 600; padding-top: 0.375rem; }
 
         /* Inventory */
         .summary-box {
@@ -379,8 +380,7 @@
         .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; align-items: start; }
         .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); margin-bottom: 0.25rem; padding: 0 0.25rem; }
         .inv-row { margin-bottom: 0.25rem; }
-        .inv-row textarea { min-height: 2rem; }
-        .inv-row input, .inv-row select { margin-top: 0.25rem; }
+        .inv-row input, .inv-row select { margin-top: 0.125rem; }
         .inv-row input, .inv-row select { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
 
         .dual-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -633,7 +633,7 @@
                         <svg class="icon collapse-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </h3>
                     <div class="section-content">
-                        <textarea id="languages" class="auto-expand" placeholder="Common, Elvish..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
+                        <textarea id="languages" class="auto-expand single-line" rows="1" placeholder="Common, Elvish..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
                     </div>
                 </div>
             </div>
@@ -742,7 +742,7 @@
                         <svg class="icon collapse-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </h3>
                     <div class="section-content">
-                        <div class="input-group mb-05"><label>Currency</label><textarea id="currency" class="auto-expand" style="min-height: 2.5rem;" placeholder="Credits, coins, etc..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
+                        <div class="input-group mb-05"><label>Currency</label><textarea id="currency" class="auto-expand single-line" rows="1" placeholder="Credits, coins, etc..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
                         <div class="input-group"><label>Inventory Notes</label><textarea id="inventoryNotes" class="auto-expand" style="min-height: 3rem;" placeholder="Special items, notes about gear..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
                     </div>
                 </div>
@@ -871,7 +871,7 @@
         const sval = id => $(id)?.value || '';
 
         function autoExpand(el) {
-            el.style.height = 'auto';
+            el.style.height = '0';
             el.style.height = el.scrollHeight + 'px';
         }
 
@@ -1144,7 +1144,7 @@
                         <div class="input-group"><label>DMG</label><input type="text" id="weaponDmg${i}" placeholder="+0" onchange="updateCharacter()"></div>
                         <div class="input-group"><label>Ammo</label><input type="text" id="weaponAmmo${i}" placeholder="-" onchange="updateCharacter()"></div>
                     </div>
-                    <div class="input-group"><label>Notes</label><textarea id="weaponNotes${i}" class="auto-expand" style="min-height:2rem" placeholder="Tags, special properties..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
+                    <div class="input-group"><label>Notes</label><textarea id="weaponNotes${i}" class="auto-expand single-line" rows="1" placeholder="Tags, special properties..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
                 </div>`).join('');
         }
 
@@ -1157,7 +1157,7 @@
                         <div class="stat-small"><label>DEF Bonus</label><input type="number" id="${type}DefBonus" value="0" min="0" onchange="updateCharacter()"></div>
                         <div class="stat-small"><label>AGI/DEX Pen.</label><input type="number" id="${type}Penalty" value="0" max="0" onchange="updateCharacter()"></div>
                     </div>
-                    <div class="input-group"><label>Notes</label><textarea id="${type}Notes" class="auto-expand" style="min-height:2.5rem" placeholder="Tags, special properties..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
+                    <div class="input-group"><label>Notes</label><textarea id="${type}Notes" class="auto-expand single-line" rows="1" placeholder="Tags, special properties..." oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>
                 </div>`;
             $('defenseContainer').innerHTML = makeBlock('armor', 'Armor') + makeBlock('equipment', 'Equipment') + `
                 <div class="totals-box">
@@ -1170,14 +1170,14 @@
 
         function generateWounds() {
             $('woundsContainer').innerHTML = Array(10).fill().map((_, i) => 
-                `<textarea id="wound${i}" class="auto-expand" style="min-height:2rem;" placeholder="Wound/Condition ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>`
+                `<textarea id="wound${i}" class="auto-expand single-line" rows="1" placeholder="Wound/Condition ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>`
             ).join('');
         }
 
         function generateEquipmentSlots() {
             const slotIds = ['slotHead', 'slotNeck', 'slotChest', 'slotBack', 'slotArms', 'slotHands', 'slotBelt', 'slotLegsFeet'];
             $('equipmentSlotsContainer').innerHTML = EQUIPMENT_SLOTS.map((label, i) =>
-                `<div class="slot-row"><label>${label}:</label><textarea id="${slotIds[i]}" class="auto-expand" style="min-height:2rem;" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>`
+                `<div class="slot-row"><label>${label}:</label><textarea id="${slotIds[i]}" class="auto-expand single-line" rows="1" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>`
             ).join('');
         }
 
@@ -1209,7 +1209,7 @@
         function generateInventoryItems() {
             $('inventoryItemsContainer').innerHTML = Array(20).fill().map((_, i) => `
                 <div class="inv-row">
-                    <textarea id="itemName${i}" class="auto-expand" style="min-height:2rem;" placeholder="Item ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
+                    <textarea id="itemName${i}" class="auto-expand single-line" rows="1" placeholder="Item ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
                     <input type="number" step="0.1" min="0" id="itemWeight${i}" placeholder="0" onchange="updateCharacter()">
                     <select id="itemBulky${i}" onchange="updateCharacter()"><option value="no">No</option><option value="yes">Yes</option></select>
                 </div>`).join('');
