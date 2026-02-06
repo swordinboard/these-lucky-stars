@@ -154,10 +154,11 @@
             border-left: 1px solid var(--border-color);
             border-right: 1px solid var(--border-color);
         }
-        .tab-list { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+        .tab-list { display: flex; gap: 0.25rem; width: 100%; }
         .tab-btn {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
             border: none;
@@ -168,9 +169,19 @@
             background: var(--gray-200);
             color: var(--body-font-color);
             transition: all 0.2s;
+            flex: 1;
+            min-width: 0;
         }
+        .tab-btn .tab-text { display: inline; }
         .tab-btn:hover { background: var(--gray-100); }
         .tab-btn.active { background: var(--primary); color: white; }
+        
+        /* Small screens: icons only */
+        @media (max-width: 600px) {
+            .tab-btn { padding: 0.5rem; }
+            .tab-btn .tab-text { display: none; }
+            .tab-btn .icon { margin: 0; }
+        }
 
         .tab-content {
             padding: 1rem;
@@ -348,8 +359,9 @@
 
         /* Wounds & Slots */
         .list-vertical { display: flex; flex-direction: column; gap: 0.5rem; }
-        .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: center; }
-        .slot-row label { font-size: 0.875rem; font-weight: 600; }
+        .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: start; }
+        .slot-row label { font-size: 0.875rem; font-weight: 600; padding-top: 0.5rem; }
+        .slot-row textarea { min-height: 2.25rem; }
 
         /* Inventory */
         .summary-box {
@@ -380,8 +392,9 @@
 
         .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; }
         .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--gray-500); margin-bottom: 0.25rem; padding: 0 0.25rem; }
-        .inv-row { margin-bottom: 0.25rem; }
-        .inv-row input, .inv-row select { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
+        .inv-row { margin-bottom: 0.25rem; align-items: start; }
+        .inv-row input, .inv-row select, .inv-row textarea { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
+        .inv-row textarea { min-height: 2.25rem; }
 
         .dual-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
         .dual-col textarea { min-height: 3rem; }
@@ -514,27 +527,27 @@
             <div class="tab-list">
                 <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                    Overview
+                    <span class="tab-text">Overview</span>
                 </button>
                 <button class="tab-btn" data-tab="features" onclick="switchTab('features')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-                    Features
+                    <span class="tab-text">Features</span>
                 </button>
                 <button class="tab-btn" data-tab="combat" onclick="switchTab('combat')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    Combat
+                    <span class="tab-text">Combat</span>
                 </button>
                 <button class="tab-btn" data-tab="equipment" onclick="switchTab('equipment')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                    Equipment
+                    <span class="tab-text">Equipment</span>
                 </button>
                 <button class="tab-btn" data-tab="inventory" onclick="switchTab('inventory')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-                    Inventory
+                    <span class="tab-text">Inventory</span>
                 </button>
                 <button class="tab-btn" data-tab="notes" onclick="switchTab('notes')">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
-                    Notes
+                    <span class="tab-text">Notes</span>
                 </button>
             </div>
         </div>
@@ -1177,14 +1190,14 @@
 
         function generateWounds() {
             $('woundsContainer').innerHTML = Array(10).fill().map((_, i) => 
-                `<input type="text" id="wound${i}" placeholder="Wound/Condition ${i+1}" onchange="updateCharacter()">`
+                `<textarea id="wound${i}" class="auto-expand" style="min-height:2.25rem" placeholder="Wound/Condition ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>`
             ).join('');
         }
 
         function generateEquipmentSlots() {
             const slotIds = ['slotHead', 'slotNeck', 'slotChest', 'slotBack', 'slotArms', 'slotHands', 'slotBelt', 'slotLegsFeet'];
             $('equipmentSlotsContainer').innerHTML = EQUIPMENT_SLOTS.map((label, i) =>
-                `<div class="slot-row"><label>${label}:</label><input type="text" id="${slotIds[i]}" onchange="updateCharacter()"></div>`
+                `<div class="slot-row"><label>${label}:</label><textarea id="${slotIds[i]}" class="auto-expand" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea></div>`
             ).join('');
         }
 
@@ -1216,7 +1229,7 @@
         function generateInventoryItems() {
             $('inventoryItemsContainer').innerHTML = Array(20).fill().map((_, i) => `
                 <div class="inv-row">
-                    <input type="text" id="itemName${i}" placeholder="Item ${i+1}" onchange="updateCharacter()">
+                    <textarea id="itemName${i}" class="auto-expand" placeholder="Item ${i+1}" oninput="autoExpand(this)" onchange="updateCharacter()"></textarea>
                     <input type="number" step="0.1" min="0" id="itemWeight${i}" placeholder="0" onchange="updateCharacter()">
                     <select id="itemBulky${i}" onchange="updateCharacter()"><option value="no">No</option><option value="yes">Yes</option></select>
                 </div>`).join('');
