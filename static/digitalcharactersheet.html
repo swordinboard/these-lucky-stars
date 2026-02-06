@@ -226,7 +226,7 @@
         }
         .form-label-sm {
             font-size: 0.75rem;
-            color: var(--gray-500);
+            color: var(--body-font-color);
             font-weight: 600;
         }
 
@@ -242,7 +242,7 @@
         }
         @media (prefers-color-scheme: dark) {
             input, select, textarea {
-                background: var(--gray-200);
+                background: var(--gray-100);
             }
         }
         input:focus, select:focus, textarea:focus {
@@ -254,12 +254,11 @@
         textarea { resize: vertical; min-height: 5rem; }
         textarea.auto-expand { overflow: hidden; resize: none; }
 
-        /* Attribute & Stat Blocks - Unified neutral background */
+        /* Attribute & Stat Blocks - Border only, no background */
         .attr-block, .stat-box, .card-block {
             padding: 0.75rem;
             border-radius: 0.5rem;
             border: 1px solid var(--border-color);
-            background: var(--gray-100);
         }
         
         @media (max-width: 400px) {
@@ -279,7 +278,7 @@
         @media (prefers-color-scheme: dark) {
             .attr-total-value { color: var(--accent); }
         }
-        .attr-total-label, .size-note { font-size: 0.75rem; color: var(--gray-500); }
+        .attr-total-label, .size-note { font-size: 0.75rem; color: var(--body-font-color); }
         
         .attr-grid { 
             display: grid; 
@@ -307,9 +306,9 @@
         .stat-value { font-size: 1.25rem; font-weight: 700; text-align: center; margin-bottom: 0.25rem; }
         .stat-formula {
             font-size: 0.7rem;
-            color: var(--gray-500);
+            color: var(--body-font-color);
             text-align: center;
-            background: var(--shadow-light);
+            background: var(--gray-200);
             padding: 0.25rem;
             border-radius: 0.25rem;
             margin-bottom: 0.5rem;
@@ -317,24 +316,17 @@
         }
         @media (prefers-color-scheme: dark) {
             .stat-formula {
-                background: var(--gray-200);
-                color: var(--gray-500);
+                background: var(--gray-100);
             }
         }
         .stat-formula.hidden-formula { display: none; }
 
         .input-group { display: flex; flex-direction: column; }
         .input-group label {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            color: var(--gray-500);
-            margin-bottom: 0.125rem;
-        }
-        /* First-layer labels (directly in section-content) should use body font color */
-        .section-content > .input-group > label,
-        .section-content > .dual-col .input-group > label {
             color: var(--body-font-color);
-            font-size: 0.875rem;
+            margin-bottom: 0.125rem;
         }
         .input-group input { padding: 0.25rem; font-size: 0.8rem; }
         .input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
@@ -351,10 +343,10 @@
         .stats-row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
         .stats-row-2 { display: flex; gap: 0.5rem; }
         .stat-small { width: 80px; flex-shrink: 0; }
-        .stat-small label { font-size: 0.7rem; font-weight: 600; color: var(--gray-500); display: block; margin-bottom: 0.125rem; }
+        .stat-small label { font-size: 0.7rem; font-weight: 600; color: var(--body-font-color); display: block; margin-bottom: 0.125rem; }
         .stat-small input { padding: 0.375rem; font-size: 0.8rem; }
         .notes-area { flex: 1; }
-        .notes-area label { font-size: 0.75rem; font-weight: 600; color: var(--gray-500); display: block; margin-bottom: 0.125rem; }
+        .notes-area label { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); display: block; margin-bottom: 0.125rem; }
         .notes-area textarea { min-height: 2.5rem; padding: 0.375rem; font-size: 0.85rem; }
 
         /* Wounds & Slots */
@@ -364,33 +356,31 @@
 
         /* Inventory */
         .summary-box {
-            background: var(--gray-100);
             padding: 0.75rem;
             border-radius: 0.375rem;
             border: 1px solid var(--border-color);
         }
         .summary-box .formula-display {
             font-size: 0.7rem;
-            color: var(--gray-500);
+            color: var(--body-font-color);
             font-family: monospace;
-            background: var(--shadow-light);
+            background: var(--gray-200);
             padding: 0.125rem 0.25rem;
             border-radius: 0.125rem;
             margin-top: 0.25rem;
         }
         @media (prefers-color-scheme: dark) {
             .summary-box .formula-display {
-                background: var(--gray-200);
-                color: var(--gray-500);
+                background: var(--gray-100);
             }
         }
         .summary-box .formula-display.hidden-formula { display: none; }
         .mod-row { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.25rem; }
-        .mod-row label { font-size: 0.7rem; font-weight: 600; color: var(--gray-500); }
+        .mod-row label { font-size: 0.7rem; font-weight: 600; color: var(--body-font-color); }
         .mod-row input { width: 50px; padding: 0.25rem; font-size: 0.75rem; }
 
         .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; }
-        .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--gray-500); margin-bottom: 0.25rem; padding: 0 0.25rem; }
+        .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); margin-bottom: 0.25rem; padding: 0 0.25rem; }
         .inv-row { margin-bottom: 0.25rem; }
         .inv-row input, .inv-row select { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
 
@@ -398,10 +388,9 @@
         .dual-col textarea { min-height: 3rem; }
         @media (max-width: 768px) { .dual-col { grid-template-columns: 1fr; } }
 
-        .totals-box { background: var(--gray-200); padding: 0.75rem; border-radius: 0.5rem; margin-top: 0.5rem; }
+        .totals-box { padding: 0.75rem; border-radius: 0.5rem; margin-top: 0.5rem; border: 1px solid var(--border-color); }
         .totals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center; }
         .totals-grid > div {
-            background: var(--gray-100);
             padding: 0.5rem;
             border-radius: 0.375rem;
             border: 1px solid var(--border-color);
@@ -410,13 +399,12 @@
         .combined-stat { display: flex; gap: 1rem; align-items: center; justify-content: center; }
         .combined-stat-item { text-align: center; }
         .combined-stat-item .value { font-size: 1.125rem; font-weight: 700; }
-        .combined-stat-item .label { font-size: 0.7rem; color: var(--gray-500); }
-        .combined-stat-sep { font-size: 1.25rem; color: var(--gray-500); }
+        .combined-stat-item .label { font-size: 0.7rem; color: var(--body-font-color); }
+        .combined-stat-sep { font-size: 1.25rem; color: var(--body-font-color); }
 
         .features-grid, .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
         .features-grid textarea { min-height: 12rem; }
         .notes-grid textarea { min-height: 10rem; }
-        .notes-grid .input-group label { color: var(--body-font-color); }
         @media (max-width: 768px) { .features-grid, .notes-grid { grid-template-columns: 1fr; } }
 
         .hidden { display: none !important; }
@@ -1207,7 +1195,7 @@
                         <div class="combined-stat-item"><div class="value" id="currentWeightDisplay">0</div><div class="label">Current</div></div>
                         <div class="combined-stat-sep">/</div>
                         <div class="combined-stat-item"><div class="value" id="maxWeightDisplay">0</div><div class="label">Max</div></div>
-                        <div style="font-size:0.875rem;color:var(--gray-500)">lbs</div>
+                        <div style="font-size:0.875rem;color:var(--body-font-color)">lbs</div>
                     </div>
                     <div class="formula-display hidden-formula" id="maxWeightFormula">Max = 30 + STR Bonus + Mods = 0</div>
                     <div class="mod-row"><label>Mods:</label><input type="number" id="maxWeightMods" value="0" onchange="updateCharacter()"></div>
