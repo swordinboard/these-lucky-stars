@@ -5,6 +5,7 @@
   --body-background: #fefefc;
   --body-background-tint: rgba(40,50,165,0.2);
   --body-font-color: #000000;
+  --invert-font-color: #e9e9e9;
   
 /* from /assets/_variables.scss */
   --accent: #d27f27;
@@ -34,7 +35,8 @@
 /* from /assets/_custom.scss */
     --body-background: #433a40;
     --body-background-tint:rgba(40,50,165,0.2);
-    --body-font-color: #e9ecef;
+    --body-font-color: #e9e9e9;
+    --invert-font-color: #000000;
 
 /* from /assets/_variables.scss */
     --accent: #d27f27;
