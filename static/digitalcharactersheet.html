@@ -8,7 +8,6 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
-
         body {
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background-color: var(--body-background);
@@ -53,8 +52,6 @@
         @media (min-width: 1400px) {
             body {
                 padding: 2rem calc((100vw - 1000px) / 2);
-                padding-top: 2rem;
-                padding-bottom: 2rem;
             }
         }
 
@@ -260,8 +257,8 @@
         textarea { resize: vertical; min-height: 5rem; }
         textarea.auto-expand { overflow: hidden; resize: none; }
 
-        /* Attribute & Stat Blocks - Unified neutral background */
-        .attr-block, .stat-box, .card-block {
+        /* Attribute & Stat Blocks */
+        .attr-block, .stat-box {
             padding: 0.75rem;
             border-radius: 0.5rem;
             border: 1px solid var(--border-color);
@@ -343,6 +340,9 @@
         /* Equipment Blocks */
         .card-block {
             padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-color);
+            background: var(--gray-100);
             margin-bottom: 1rem;
         }
         .card-block:last-child { margin-bottom: 0; }
@@ -473,10 +473,6 @@
             display: flex;
             flex-direction: column;
             min-width: 0;
-        }
-        .stat-box-full-split .stat-notes .input-group {
-            display: flex;
-            flex-direction: column;
         }
         .stat-box-full-split .stat-notes textarea {
             min-height: 4rem;
@@ -846,6 +842,8 @@
         };
 
         const EQUIPMENT_SLOTS = ['Head', 'Neck', 'Chest', 'Back', 'Arms', 'Hands', 'Belt', 'Legs/Feet'];
+
+        const SLOT_MAP = { head: 'slotHead', neck: 'slotNeck', chest: 'slotChest', back: 'slotBack', arms: 'slotArms', hands: 'slotHands', belt: 'slotBelt', legsFeet: 'slotLegsFeet' };
 
         const SIZE_MODS = {
             'Tiny/-2': { str: -4, agi: 4, grapple: -4, stealth: 4 },
@@ -1281,8 +1279,7 @@
             for (let i = 0; i < 10; i++) character.woundsConditions[i] = sval('wound' + i);
 
             // Equipment slots
-            const slotMap = { head: 'slotHead', neck: 'slotNeck', chest: 'slotChest', back: 'slotBack', arms: 'slotArms', hands: 'slotHands', belt: 'slotBelt', legsFeet: 'slotLegsFeet' };
-            Object.entries(slotMap).forEach(([key, id]) => character.equipmentSlots[key] = sval(id));
+            Object.entries(SLOT_MAP).forEach(([key, id]) => character.equipmentSlots[key] = sval(id));
 
             // Inventory
             for (let i = 0; i < 20; i++) {
@@ -1356,8 +1353,7 @@
 
             for (let i = 0; i < 10; i++) $('wound' + i).value = character.woundsConditions[i] || '';
 
-            const slotMap = { head: 'slotHead', neck: 'slotNeck', chest: 'slotChest', back: 'slotBack', arms: 'slotArms', hands: 'slotHands', belt: 'slotBelt', legsFeet: 'slotLegsFeet' };
-            Object.entries(slotMap).forEach(([key, id]) => $(id).value = character.equipmentSlots[key] || '');
+            Object.entries(SLOT_MAP).forEach(([key, id]) => $(id).value = character.equipmentSlots[key] || '');
 
             for (let i = 0; i < 20; i++) {
                 $('itemName' + i).value = character.inventoryItems[i].name || '';
