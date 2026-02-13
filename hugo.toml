@@ -32,7 +32,7 @@ theme = 'hugo-book'
   BookTheme = 'auto'
   
   # Path to logo and favicon (relative to /static/)
-  BookLogo = 'sib_swordonly.png'
+  BookLogo = 'logo.png'
   
   # Table of Contents - global setting
   BookToC = false
