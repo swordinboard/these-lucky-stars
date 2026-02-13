@@ -49,3 +49,6 @@ theme = 'hugo-book'
   
   # Comments (uses Disqus if configured)
   BookComments = false
+
+  # Caching for PWA
+  BookServiceWorker = "precache"
