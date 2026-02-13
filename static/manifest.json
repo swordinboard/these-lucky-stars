@@ -11,11 +11,7 @@
       "src": "/whitelogo-1200.png",
       "sizes": "1200x1200",
       "type": "image/png"
-    },
-    {
-      "src": "/whitelogo-1200.png",
-      "sizes": "1200x1200",
-      "type": "image/png"
+      "purpose": "any"
     }
   ],
   "shortcuts": [
