@@ -17,7 +17,7 @@ Hope this helps,
 
 ---
 
-# Some Key Terms
+# Key Terms
 
 **Game Master (GM)** – The person running the game. Responsible for creating the setting, describing scenarios, determining rolls and target numbers, lots of things.
 
@@ -29,15 +29,15 @@ Hope this helps,
 
 {{% hint important %}}
 **Modifiers** — Any additional value that alters another value. A *bonus* is a positive modifier. A *penalty* is a negative modifier. If something states a bonus and the value is negative, the bonus is 0. If something states a penalty and the value is positive, the penalty is 0. If something states a modifier it can use a bonus or a penalty.
-
-**Target Number** — A value used to describe the difficulty of attempting an action. You must meet or exceed this value to succeed.
 {{% /hint %}}
 
-# Base Mechanic
+# Decision Rolls
 
-In most situations when determining success and failure some form of the following mechanic will be used:
+In most situations when determining success or failure of an action the following mechanic will be used:
 
 **2d6 + STAT + MODIFIERS VS. TARGET NUMBER**
+
+The d6 used during such rolls are refered to as **Decision Dice.**
 
 ---
 
@@ -104,10 +104,10 @@ In this case the resisting character would be restrained even though his roll wa
 {{% hint note %}}
 **Short Version:**
 Only when applicable:
-Group result = Highest roll +1 per ally involved
+Group result = Highest roll involved
 {{% /hint %}}
 
-When two or more allied characters are involved in the same action a group roll may be used. Group rolls use th highest result of the allies involved, +1 per additional all.  Group rolls can be applied to contested rolls. Because not all situations allow for two characters to take an action or offer aid ina  meaningful way, the GM decides when group rolls can apply. In most cases, only two characters can attempt an action together effectively.
+When two or more allied characters are involved in the same action a group roll may be used. Group rolls use the highest result of the allies involved.  Group rolls can be applied to contested rolls. Because not all situations allow for two characters to take an action or offer aid ina  meaningful way, the GM decides when group rolls can apply. In most cases, only two characters can attempt an action together effectively.
 
 ## Resolving a Tied Result
 

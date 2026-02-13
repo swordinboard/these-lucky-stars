@@ -16,10 +16,15 @@ Attribute checks are used for any action that does not directly have another sta
 
 ## Two Ways to Determine Attributes
 
-### Roll Your Attributes
-Roll 1d6 and 1d4, then subtract the lower result from the higher result. If both dice show the same number, reroll both dice. Repeat this process until you have a total of 8 values, one to be assigned to each attribute.
+### Roll Your Attributes - The Standard
 
-**Example:** If I roll a 2 on my d6 and a 4 on my d4, I subtract 4-2, to get a value of 2.
+Roll 2d4, then subtract the lower result from the higher result. Repeat this process until you have a total of 8 values, one to be assigned to each attribute.
+
+**Attribute = |1d4-1d4|**
+
+{{% hint tip %}}
+**Example:** If I roll a 2 and a 4, I subtract 4-2, to get a value of 2.
+{{% /hint %}}
 
 ### Attribute Pool
 Using the rolling method above, each player rolls 8 attribute values and adds them to a pool for the entire party. The party then distributes the pool of attribute values across all characters as they see fit. It should be noted that this gives the party the opportunity to adapt the Luck stat however they like.
@@ -28,13 +33,19 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 ## Maximum and Minimum Attribute Values
 
-**Maximum attribute value** without modifiers is equal to character level +4.
+**Maximum Attribute Value:** without modifiers is equal to character level +2.
 
-**Example:** A level 2 character has a maximum attribute value of 6 before applying modifiers.
+{{% hint tip %}}
+**Example:** A level 2 character has a maximum attribute value of 4 before applying modifiers.
+{{% /hint %}}
 
-**Minimum attribute value** before unconsciousness is 0. If an attribute falls below 0 due to attribute damage or loss at any time the character immediately loses consciousness. A modifier to an attribute, such as a penalty from armor, that causes an attribute to fall below 0 does not cause unconsciousness, only attribute damage or loss.
+**Poor Attributes:** A poor attribute is any attribute with a value less than 0. Poor attributes can lead to the crippled or unconscious conditions.
 
-**Null Attributes** — Some creatures have null [-N-] attributes. Null attributes are effectively 0, however cannot be raised or lowered.
+A character with two or more poor physical attributes is crippled until they no longer have two or more poor physical attributes.
+
+A character with two or more poor mental attributes falls unconscious until they no longer have two or more poor mental attributes.
+
+**Null Attributes:**  Some creatures have null [-N-] attributes. Null attributes are effectively 0, however cannot be raised or lowered.
 
 ---
 

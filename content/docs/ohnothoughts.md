@@ -1,6 +1,6 @@
 ---
 title: "ON NO Thoughts"
-weight: 4
+weight: 2
 ---
 
 # OH NO THOUGHTS of Rewriting
