@@ -1,7 +1,7 @@
 ---
 title: "Stats"
-weight: 3
-draft: false
+weight: 4
+draft: true
 ---
 
 # Character Stats

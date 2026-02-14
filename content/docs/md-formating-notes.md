@@ -14,3 +14,8 @@ Used for examples
 
 {{% hint important %}}
 Used for major callouts
+{{% /hint%}}
+
+{{% hint warning %}}
+Used for annaouncment type callouts.
+{{% /hint %}}
