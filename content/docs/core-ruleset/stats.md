@@ -1,7 +1,7 @@
 ---
 title: "Stats"
 weight: 3
-draft: true
+draft: false
 ---
 
 # Character Stats
@@ -23,7 +23,7 @@ How swiftly a character reacts to a surprise situation, initiative determines th
 Action Points (AP) are spent during combat to take actions. The more complicated or the more time consuming an action is, the more AP the action uses. All characters start with 4 AP. See Actions in Combat for more on Action Points.
 
 ### Speed (______)
-**= 15 + 5 per +1 AGI Bonus or Flat -5 if AGI Penalty**
+**= 20 + 5 per +1 AGI Bonus or Flat -5 if AGI Penalty**
 
 Speed is a summary of the normal movement speed of a character, conveniently rounded to 5ft spaces. The speed equation provided is used to describe a character or creature's primary mode of travel (in most cases it is Speed(ground) for those that live on land).
 
@@ -74,7 +74,7 @@ Your character's Stress Threshold represents the amount of stress they can endur
 ### Luck
 **= 3 + Party Attribute Modifiers (Min 1)**
 
-Luck points can be used to add 1d4 to any d20 roll made by your character or activate certain abilities (only 1d4 per d20 roll). Luck points replenish at the beginning of each session, so be sure to use them up each session. Character features or other effects may allow luck to be used in additional ways. Temporary mods/damage to attributes does not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
+Luck points can be used to add 1d4 to any decision roll made by your character (only 1d4 per decision roll). Luck points replenish at the beginning of each session, so be sure to use them up each session. Character features or other effects may allow luck to be used in additional ways. Temporary mods/damage to attributes does not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
 
 Each player works their way down the table and compares their attributes to the rest of the party. If the statement in the left column is true about your character adjust your Luck by the amount corresponding to that statement. Each character may be affected my multiple Luck adjustments, or none at all. If a tie is presented by any number of characters, those characters are all effected by the adjustment.
 

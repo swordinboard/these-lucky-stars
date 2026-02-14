@@ -1,21 +1,7 @@
 ---
-title: "Introduction & Core Mechanics"
+title: "Core Mechanics"
 weight: 1
-draft: true
----
-
-# Introduction
-
-This began as a simple "just beat 15" ruleset with six attributes a luck stat and no frill, at all. Wilth a wee sprinkle of OCD or whatever's going on upstairs, we arehave evoleved to a more robust ruleset with open character development. (One day, I will make that simple system avaible here.)
-
-This is intended to be a core system to adapted to any setting and situation.
-
-While this is being written content may come and go from the site. 
-for official playtestwrs, updates to the setting doc will be posted on discord and a copy will always be kept there.
-
-Hope this helps,
--Anthony
-
+draft: false
 ---
 
 # Key Terms
@@ -40,15 +26,26 @@ In most situations when determining the success or failure of an action the foll
 
 **2d6 + STAT + MODIFIERS VS. TARGET NUMBER**
 
-The d6 used during such rolls are refered to as **Decision Dice.**
+The d6 used during such rolls, regardless of how many, are refered to as the **Decision Dice.**
 
----
-
-## Determining the Target Number
+## Target Numbers
 
 The target number lands on a scale that is based on the difficulty of the action being attempted. Many tasks have guidelines associated with them to help the Game Master best determine where on the scale a given target should begin, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number.
 
-## Difficulty Scale
+**Certain limitations should be noted:**
+
+The standard decision dice create a small probability curve, averaging at 7.
+
+The standard maximum roll without any modifiers on a normal 2d6 decision roll is a 12, with less than a 3% chance.
+similarly, the minimum is 2.
+
+Any modifiers to the roll move the curve and change the min/max values.
+A simple +1 to that roll increases the odds of getting 12 or higher to almost 9%.
+Meanwhile, the odds of getting an 8 or higher on the same roll is 41% without any modifiers and jumps to 58% with a +1.
+
+This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
+
+### Difficulty Scale
 
 | Description        | Target Number   |
 |--------------------|-----------------|
@@ -64,9 +61,13 @@ The target number lands on a scale that is based on the difficulty of the action
 |         ↓          | 4               |
 |                    | 2               |
 
+### Max Rolls
+
+It should be noted that for low level characters (levels 1-5), most tasks in the Strenuous range are unachievable or on the < 10% change range depending on an individuals attribute scores. While this may improve at mid and higher levels, the hard cap of 12 (high end of 2d6) for an individual with a 0 attribute and no other modifiers should be kept in mind, and unskilled or unprepared characters at all levels will often face such a cap.
+
 ### "Impossible" Tasks
 
-The "Impossible" task description is used to describe any task that would be impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches these target steps due to adjustments from advantages, disadvantages, abilities, or other modifications to the target value, is not considered an "Impossible" task.
+The "Impossible" task description is used to describe any task that would be narratively impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches this description due to adjustments, abilities, or other modifications to the target value, is not considered an "Impossible" task.
 
 ## Success and Failure
 
@@ -79,8 +80,19 @@ When the result of a roll has been determined and is equal to or higher than the
 
 When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues
 
-<!-- Change this section to reflect shortened docsite style -->
-Describing these actions can take practice. Each GM has their own level of serious realism or nonsensical fun that they wish to inspire, and these descriptions are excellent places to do so. Leaning into the numbers to generate variety helps keep the table lively. This way, the further away from the target number the result is the more dramatic the result. A result much higher than the target may be described as completed with ease or flare, and one much lower may be described as failing dramatically or as a struggle to attempt. Those close to the target may be described as just barely missing the mark or succeeding just in time.
+All GMs have their own style. Some use the situation itself to guage the results of the roll, others uses how far from the target the roll is to determine how dramatic the success or failure is. Whatever the case, consistency is key.
+
+---
+
+# Advantage and Disadvantage
+
+Some situations require a bit of dramatic effect to properly be portrayed by the dice. The GM may reward advantage or disadvantage in any such situation at thwir discresion, drastically altering the decision dice available.
+
+**Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have activaly worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
+
+**Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorabke conditions rhat go bwyond the normal alteratiob of the target nunber or bonuses provided.
+
+Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM, and usually only stick around for a roll or two. The effects do not stack, as normal sitiations or those that face both at once should cancel out to the neutral 2d6.
 
 ---
 
@@ -88,29 +100,11 @@ Describing these actions can take practice. Each GM has their own level of serio
 
 ## Contested Rolls
 
-Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2D6 and adds their applicable modifiers, with the win going to the highest roller of the characters or groups involved.
+Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their decision dice and adds their applicable modifiers, with the win going to the highest roller.
 
-{{% hint tip %}}
-**Example:**
-Take two characters attempting to restrain a third:
-- Allied pair roll 15 and 7, which becomes 15+2=17
-- Resisting combatant rolls a 16
-In this case the resisting character would be restrained even though his roll was the highest out of the three. Teamwork rewards the pair, and they win the roll.
-{{% /hint %}}
+## Resolving a Tie
 
-## Group Rolls
-
-{{% hint note %}}
-**Short Version:**
-Only when applicable:
-Group result = Highest roll involved
-{{% /hint %}}
-
-When two or more allied characters are involved in the same action a group roll may be used. Group rolls use the highest result of the allies involved.  Group rolls can be applied to contested rolls. Because not all situations allow for two characters to take an action or offer aid ina  meaningful way, the GM decides when group rolls can apply. In most cases, only two characters can attempt an action together effectively.
-
-## Resolving a Tied Result
-
-A tie with a target number counts as a success. If a tie occures during a contested roll, the decision dice (2D6) are rerolled until a winner is determined.
+A tie with a target number counts as a success. If a tie occures during a contested roll, the decision dice are rerolled until a winner is determined.
 
 ## The Rounding Rule
 
@@ -140,4 +134,4 @@ When using equipment that requires a supply roll to complete/attempt an action, 
 
 ## D100 or Percentage
 
-In situations where a 2D6 decision roll cannot be made, a supply roll does not apply, and normal means of tracking a number just doesn't fit, the situation will likely be resolved with some form of D100 roll or percentage tracker. These rules are few, the most common one involves tracking ammunition.
+In situations where a decision roll cannot be made, a supply roll does not apply, and normal means of tracking a number just doesn't fit, the situation will likely be resolved with some form of D100 roll or percentage tracker. These rules are few, the most common one involves tracking ammunition.
