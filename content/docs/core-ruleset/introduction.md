@@ -10,10 +10,11 @@ This began as a simple "just beat 15" ruleset with six attributes a luck stat an
 
 This is intended to be a core system to adapted to any setting and situation.
 
-While this is being written content may come and go from the site. Updates to the rules doc will be posted on discord and a copy will always be kept there.
+While this is being written content may come and go from the site. 
+for official playtestwrs, updates to the setting doc will be posted on discord and a copy will always be kept there.
 
 Hope this helps,
--Anthony DiRuzza
+-Anthony
 
 ---
 
@@ -31,9 +32,11 @@ Hope this helps,
 **Modifiers** — Any additional value that alters another value. A *bonus* is a positive modifier. A *penalty* is a negative modifier. If something states a bonus and the value is negative, the bonus is 0. If something states a penalty and the value is positive, the penalty is 0. If something states a modifier it can use a bonus or a penalty.
 {{% /hint %}}
 
+---
+
 # Decision Rolls
 
-In most situations when determining success or failure of an action the following mechanic will be used:
+In most situations when determining the success or failure of an action the following mechanic will be used:
 
 **2d6 + STAT + MODIFIERS VS. TARGET NUMBER**
 
@@ -61,11 +64,6 @@ The target number lands on a scale that is based on the difficulty of the action
 |         ↓          | 4               |
 |                    | 2               |
 
-
-Situational advantages/disadvantages move the target up or down the scale. For example, using inappropriate tools for a task - such as using a screwdriver as a hammer - results in the target becoming more difficult and moving up the scale.
-
-All attack and stealth rolls start at 15. Advantages to the defender move the target up the scale, while advantages to the attacker move the target down the scale.
-
 ### "Impossible" Tasks
 
 The "Impossible" task description is used to describe any task that would be impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches these target steps due to adjustments from advantages, disadvantages, abilities, or other modifications to the target value, is not considered an "Impossible" task.
@@ -79,8 +77,9 @@ Success = Higher than or equal to target.
 
 When the result of a roll has been determined and is equal to or higher than the target, the action is a success, the GM describes what has occurred, and play continues.
 
-When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues.
+When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues
 
+<!-- Change this section to reflect shortened docsite style -->
 Describing these actions can take practice. Each GM has their own level of serious realism or nonsensical fun that they wish to inspire, and these descriptions are excellent places to do so. Leaning into the numbers to generate variety helps keep the table lively. This way, the further away from the target number the result is the more dramatic the result. A result much higher than the target may be described as completed with ease or flare, and one much lower may be described as failing dramatically or as a struggle to attempt. Those close to the target may be described as just barely missing the mark or succeeding just in time.
 
 ---
@@ -89,7 +88,7 @@ Describing these actions can take practice. Each GM has their own level of serio
 
 ## Contested Rolls
 
-Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls a 2D6 and adds their applicable modifiers, with the win going to the highest roller of the characters or groups involved.
+Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their 2D6 and adds their applicable modifiers, with the win going to the highest roller of the characters or groups involved.
 
 {{% hint tip %}}
 **Example:**

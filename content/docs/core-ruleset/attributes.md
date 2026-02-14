@@ -1,7 +1,7 @@
 ---
 title: "Attributes"
 weight: 2
-draft: true
+draft: false
 ---
 
 # Character Attributes
@@ -31,9 +31,11 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 ---
 
-## Maximum and Minimum Attribute Values
+## Attribute Values
 
-**Maximum Attribute Value:** without modifiers is equal to character level +2.
+**Maximum** attribute value without modifiers is equal to character level +2.
+
+There is no **minimum** atteibute value.
 
 {{% hint tip %}}
 **Example:** A level 2 character has a maximum attribute value of 4 before applying modifiers.
@@ -53,7 +55,7 @@ A character with two or more poor mental attributes falls unconscious until they
 
 **Strength (STR)** — Physical power, how much weight or force one can lift/move. Useful for making melee attacks and carrying heavy loads.
 
-**Agility (AGI)** — Full body movement, amount of grace and control one can demonstrate in their movements. Useful for avoiding injury, moving cautiously or quietly, and increasing movement speed.
+**Agility (AGI)** — Full body movement, amount of grace and control one can demonstrate in their movements. Useful for avoiding injury, moving quietly, and increasing movement speed.
 
 **Dexterity (DEX)** — Small hand and finger movement, amount of control, precision, and accuracy one demonstrates while handling items and controls. Useful for making ranged attacks, handling locks, crafting items, and a variety of technical skills.
 
