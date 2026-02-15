@@ -23,9 +23,17 @@ weight: 1
 
 In most situations when determining the success or failure of an action the following mechanic will be used:
 
-**2d6 + STAT + MODIFIERS VS. TARGET NUMBER**
+**2d6 + STAT or ATTRIBUTE + MODIFIERS VS. TARGET NUMBER**
 
 The d6 used during such rolls, regardless of how many, are refered to as the **Decision Dice.**
+
+***Decision dice explode.*** Anytime the max value of a decision die (a six) is shown, that die is rerolled and both numbers are added to the total result. This effect stacks and can happen multiple times in a single roll or even on a single die.
+
+{{% hint tip %}}
+**Example: Billy makes a Strength check to hold a heavy gate up for his friends while they escape. He rolls 2d6 and andds his Strength of +0. He rolls a 3 and a 6, so he rerolls the 6 and gets another 6, then rolls a 2. His total becomes 3+6+6+2+0=17, a remarkable roll.
+{{% /hint %}}
+
+Only decision dice explode, dice from Luck or other sources do not.
 
 ### Target Numbers
 
@@ -34,14 +42,13 @@ The target number lands on a scale that is based on the difficulty of the action
 {{% hint important %}}
 **Certain limitations should be noted:**
 
-The standard decision dice create a small probability curve, averaging at 7.
+The standard decision dice create a small probability curve, averaging at 6 with an extended trail due to the exploding dice.
 
-The standard maximum roll without any modifiers on a normal 2d6 decision roll is a 12, with less than a 3% chance.
-similarly, the minimum is 2.
+While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
 
-Any modifiers to the roll move the curve and change the min/max values.
-A simple +1 to that roll increases the odds of getting 12 or higher to almost 9%.
-Meanwhile, the odds of getting an 8 or higher on the same roll is 41% without any modifiers and jumps to 58% with a +1.
+Any modifiers to the roll move the curve.
+A simple +1 to that roll increases the odds of getting 12 or higher to 25% from 21%.
+Meanwhile, the odds of getting an 8 or higher on the same roll is 47% without any modifiers and jumps to 58% with a +1.
 
 This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
 {{% /hint %}}
@@ -61,10 +68,6 @@ This curve and scaling increase rewards choices during character creation/level 
 | Simple Task        | 6               |
 |         ↓          | 4               |
 |                    | 2               |
-
-#### Max Rolls
-
-It should be noted that for low level characters (levels 1-5), most tasks in the Strenuous range are unachievable or on the < 10% change range depending on an individuals attribute scores. While this may improve at mid and higher levels, the hard cap of 12 (high end of 2d6) for an individual with a 0 attribute and no other modifiers should be kept in mind, and unskilled or unprepared characters at all levels will often face such a cap.
 
 #### "Impossible" Tasks
 
