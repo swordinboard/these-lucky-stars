@@ -57,30 +57,3 @@
    color: var(--body-font-color);
    opacity: 0.5;
 }
-
-// content-before table of contents 
-.book-toc-content {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 1px solid var(--gray-200);
-  border-radius: 4px;
-  background: var(--gray-100);
-  summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    user-select: none;
-    &:hover {
-      color: var(--accent-secondary);
-    }
-  }
-  // Add spacing when expanded
-  &[open] summary {
-    margin-bottom: 1rem;
-  }
-  nav ul {
-    margin: 0;
-    padding-left: 1.5rem;
-  }
-}
