@@ -12,7 +12,7 @@ These Lucky Stars is in active playtesting (v4.25). The core rules presented her
 
 # These Lucky Stars
 
-These Lucky Stars is a tabletop roleplaying game built for dynamix play balancing detail and speed.
+These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 
 ### [Core Mechanics](/core-mechanics)
 2d6 Resolution System: Roll 2d6, add your relevant attribute and modifiers, beat the target number

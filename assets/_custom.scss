@@ -1,59 +1,73 @@
 // List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
 :root {
-  --body-background: #fefefc;
-  --body-background-tint: rgba(40,50,165,0.2);
-  --body-font-color: #000000;
-  --invert-font-color: #e9e9e9;
+   --body-background: #fefefc;
+   --body-background-tint: rgba(40,50,165,0.2);
+   --body-font-color: #000000;
+   --invert-font-color: #e9e9e9;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --body-background: #343a40;
-    --body-background-tint: rgba(40,50,165,0.2);
-    --body-font-color: #e9e9e9;
-    --invert-font-color: #000000
-  }
+   :root {
+      --body-background: #343a40;
+      --body-background-tint: rgba(40,50,165,0.2);
+      --body-font-color: #e9e9e9;
+      --invert-font-color: #000000
+   }
 }
 
 // Sidebar menu contrast
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
-  .book-header label[for="menu-control"] img {
-    filter: invert(1);
-  }
+   .book-header label[for="menu-control"] img {
+      filter: invert(1);
+   }
 }
 
 .markdown {
-// Page divider lines
+   // Page divider lines
    hr {
-     background: var(--accent-secondary);
+      background: var(--accent-secondary);
    }
 
-// Alternating table rows
+   // Alternating table rows
    table {
-     thead tr {
-       background: var(--body-background-tint);
-     }
-     tbody tr:nth-child(odd) {
-        background: var(--body-background);
-     }
-     tbody tr:nth-child(even) {
-       background: var(--body-background-tint);
-     }
+      thead tr {
+         background: var(--body-background-tint);
+      }
+      tbody tr:nth-child(odd) {
+         background: var(--body-background);
+      }
+      tbody tr:nth-child(even) {
+         background: var(--body-background-tint);
+      }
    }
 }
 
 // Menu theme note
 .book-menu-content nav {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
 }
+
 .theme-note {
-  margin-top: auto;
-  padding: 0.5rem 1rem;
-  border-top: 1px solid var(--gray-200);
-  font-size: var(--font-size-smallest);
-  color: var(--body-font-color);
-  opacity: 0.5;
+   margin-top: auto;
+   padding: 0.5rem 1rem;
+   border-top: 1px solid var(--gray-200);
+   font-size: var(--font-size-smallest);
+   color: var(--body-font-color);
+   opacity: 0.5;
+}
+
+// Menu divider above custom section
+.book-menu nav ul li a[href="/character-sheet.html"] {
+   border-top: 1px solid var(--gray-200);
+   margin-top: 0.5rem;
+   padding-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+   .book-menu nav ul li a[href="/character-sheet.html"] {
+      border-top-color: var(--gray-600);
+   }
 }

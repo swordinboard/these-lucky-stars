@@ -4,8 +4,6 @@ weight: 4
 draft: true
 ---
 
-# Character Stats
-
 These stats are derived from Attributes. Most of them are combat focused, but are important for any character nonetheless. All of them can be affected by additional modifiers from a range of effects, character features, and items. Unless otherwise noted stats can be negative, providing a penalty rather than a bonus. Some stats act as a pool of points, others act as modifiers for certain rolls. They are listed here in a similar order to how they appear on the basic character sheet.
 
 ---
