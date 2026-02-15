@@ -2,6 +2,7 @@
 title: "Core Ruleset"
 weight: 1
 bookCollapseSection: true
+bookToC: true
 ---
 
 {{% hint warning %}}
@@ -13,16 +14,16 @@ These Lucky Stars is in active playtesting. The rules presented here are stable 
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 
-### [Core Mechanics](/docs/free-srd/core-mechanics)
+## [Core Mechanics](/docs/free-srd/core-mechanics)
 2d6 Resolution System: Roll 2d6, add your relevant attribute and modifiers, beat the target number
 
-### [Eight Attributes](/docs/free-srd/attributes)
+## [Eight Attributes](/docs/free-srd/attributes)
 Four physical (STR, AGI, DEX, FORT) and four mental (KNO, INS, CHA, WILL).
 
-### Flexible Character Creation
+## Flexible Character Creation
 Build your character with traits, proficiencies, and abilities - no rigid classes.
 
-### Tactical Combat
+## Tactical Combat
 Defense and Vitality system with meaningful wounds and conditions.
 
 ## Design Philosophy
