@@ -1,5 +1,5 @@
 ---
-title: "The Basics"
+title: "Core Mechanics"
 weight: 1
 ---
 
