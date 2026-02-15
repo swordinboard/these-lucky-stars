@@ -1,7 +1,6 @@
 ---
 title: "Attributes"
-weight: 3
-draft: true
+weight: 2
 ---
 
 # Character Attributes

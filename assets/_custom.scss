@@ -58,16 +58,3 @@
    color: var(--body-font-color);
    opacity: 0.5;
 }
-
-// Menu divider above custom section
-.book-menu nav ul li a[href="digitalcharactersheet.html"] {
-   border-top: 1px solid var(--accent-secondary);
-   margin-top: 0.5rem;
-   padding-top: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-   .book-menu nav ul li a[href="digitalcharactersheet.html"] {
-      border-top-color: var(--accent-secondary);
-   }
-}

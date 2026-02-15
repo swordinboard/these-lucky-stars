@@ -1,7 +1,6 @@
 ---
 title: "Core Mechanics"
-weight: 2
-draft: true
+weight: 1
 ---
 
 # Key Terms
