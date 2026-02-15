@@ -1,0 +1,6 @@
+{{ if and .TableOfContents (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") }}
+<details class="book-toc-content">
+  <summary>Table of Contents</summary>
+  {{ .TableOfContents }}
+</details>
+{{ /if }}

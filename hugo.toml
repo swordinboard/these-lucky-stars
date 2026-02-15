@@ -42,7 +42,7 @@ theme = 'hugo-book'
   BookLogo = 'logo.png'
   
   # Table of Contents - global setting
-  BookToC = true
+  BookToC = false
   
   # Menu section - which content folder generates menu
   # Use '*' for all sections, 'docs' for just /docs/
