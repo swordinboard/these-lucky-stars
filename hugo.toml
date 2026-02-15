@@ -7,6 +7,9 @@ theme = 'hugo-book'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2  # Starts at h2
+    endLevel = 4    # Ends at h4
 
 # CUSTOM MENU ITEMS
 
