@@ -11,19 +11,24 @@ theme = 'hugo-book'
 # CUSTOM MENU ITEMS
 
 [[menu.after]]
+  name = "---"
+  url = x
+  weight = 1
+  
+[[menu.after]]
   name = "Character Sheet"
   url = "/digitalcharactersheet.html"
-  weight = 1
+  weight = 2
 
 [[menu.after]]
   name = "Attribute Converter"
   url = "/attributeconverter.html"
-  weight = 2
+  weight = 3
 
 [[menu.after]]
   name = "Planet Generator"
   url = "/planetnamegenerator.html"
-  weight = 3
+  weight = 4
 
 # BOOK THEME PARAMETERS
 
@@ -35,7 +40,7 @@ theme = 'hugo-book'
   BookLogo = 'logo.png'
   
   # Table of Contents - global setting
-  BookToC = false
+  BookToC = true
   
   # Menu section - which content folder generates menu
   # Use '*' for all sections, 'docs' for just /docs/
