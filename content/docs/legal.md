@@ -1,5 +1,5 @@
 ---
-title: "License"
+title: "Licending and Legal Information"
 description: "Licensing information for These Lucky Stars core rules and content"
 weight: 100
 ---

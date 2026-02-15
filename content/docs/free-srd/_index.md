@@ -1,5 +1,5 @@
 ---
-title: "Core Ruleset"
+title: "Free SRD"
 weight: 1
 bookCollapseSection: false
 ---
@@ -29,7 +29,7 @@ Defense and Vitality system with meaningful wounds and conditions.
 The system aims to be simple enough to learn quickly and detailed enough to cover most situations without getting bogged down. If you've played any other d20 or 2d6 system you should feel right at home.
 
 ## What's Free
-All core mechanics are free and will remain free forever. The System Reference Document (SRD) contains everything you need to play and been made accesdible via this documentation site. Licensing information can be found [here](/docs/license).
+All core mechanics are free and will remain free forever. The System Reference Document (SRD) contains everything you need to play and been made accesdible via this documentation site. Licensing information can be found [here](/docs/legal).
 
 ## What's Coming
 Complete These Lucky Stars setting guides will include expanded character options, full equipment catalogs, vehicles and mechs, setting lore, and adventures. This premium content will be available through an upcoming Kickstarter.
