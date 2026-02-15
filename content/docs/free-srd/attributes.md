@@ -3,8 +3,6 @@ title: "Attributes"
 weight: 2
 ---
 
-# Character Attributes
-
 Attributes act as your primary stat block, the building blocks of your character that act as a base for their other stats. They are divided into two categories: physical attributes and mental attributes.
 
 For ease of reference attributes are often written as two numbers, the temporary value after modifiers and the base value before modifiers.

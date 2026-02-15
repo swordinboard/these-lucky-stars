@@ -4,8 +4,6 @@ description: "Licensing information for These Lucky Stars core rules and content
 weight: 100
 ---
 
-# License
-
 ## Core Rules License
 
 The **These Lucky Stars System Reference Document (SRD)** - including all core game mechanics, rules, and systems - is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
@@ -109,4 +107,4 @@ Setting content and published materials © 2024-2025 Sword in Board Workshop. Al
 
 ---
 
-*Last Updated: February 2025*
+*Last Updated: February 2026*

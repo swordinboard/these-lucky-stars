@@ -3,7 +3,7 @@ title: "The Basics"
 weight: 1
 ---
 
-# Key Terms
+## Key Terms
 
 **Game Master (GM)** – The person running the game. Responsible for creating the setting, describing scenarios, determining rolls and target numbers, lots of things.
 
@@ -19,7 +19,7 @@ weight: 1
 
 ---
 
-# Decision Rolls
+## Decision Rolls
 
 In most situations when determining the success or failure of an action the following mechanic will be used:
 
@@ -27,7 +27,7 @@ In most situations when determining the success or failure of an action the foll
 
 The d6 used during such rolls, regardless of how many, are refered to as the **Decision Dice.**
 
-## Target Numbers
+### Target Numbers
 
 The target number lands on a scale that is based on the difficulty of the action being attempted. Many tasks have guidelines associated with them to help the Game Master best determine where on the scale a given target should begin, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number.
 
@@ -62,15 +62,15 @@ This curve and scaling increase rewards choices during character creation/level 
 |         ↓          | 4               |
 |                    | 2               |
 
-### Max Rolls
+#### Max Rolls
 
 It should be noted that for low level characters (levels 1-5), most tasks in the Strenuous range are unachievable or on the < 10% change range depending on an individuals attribute scores. While this may improve at mid and higher levels, the hard cap of 12 (high end of 2d6) for an individual with a 0 attribute and no other modifiers should be kept in mind, and unskilled or unprepared characters at all levels will often face such a cap.
 
-### "Impossible" Tasks
+#### "Impossible" Tasks
 
 The "Impossible" task description is used to describe any task that would be narratively impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches this description due to adjustments, abilities, or other modifications to the target value, is not considered an "Impossible" task.
 
-## Success and Failure
+### Success and Failure
 
 {{% hint note %}}
 **Short Version:**
@@ -85,7 +85,7 @@ All GMs have their own style. Some use the situation itself to guage the results
 
 ---
 
-# Advantage and Disadvantage
+## Advantage and Disadvantage
 
 {{% hint note %}}
 **Short Version:**
@@ -104,17 +104,17 @@ Advantage/disadvantage should only be used when the narrative and situaution cal
 
 ---
 
-# General Rules of Play
+## General Rules of Play
 
-## Contested Rolls
+### Contested Rolls
 
 Occasionally, characters may face a situation requiring a contested roll. Each character simply rolls their decision dice and adds their applicable modifiers, with the win going to the highest roller.
 
-## Resolving a Tie
+### Resolving a Tie
 
 A tie with a target number counts as a success. If a tie occures during a contested roll, the decision dice are rerolled until a winner is determined.
 
-## The Rounding Rule
+### The Rounding Rule
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations.
 
@@ -129,9 +129,9 @@ The most forthcoming example of this is when calculating Stress and Vitality, wh
 ---
 
 
-# Secondary Mechanics
+## Secondary Mechanics
 
-## Supply Rolls
+### Supply Rolls
 
 Supply rolls or supply dice are used to track inventory and conditions with a level of randomness to them. 
 Many pieces of equipment, particularly kits, do not have a set number of uses as different applications will require a different amounts of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
@@ -140,6 +140,6 @@ When using equipment that requires a supply roll to complete/attempt an action, 
 
 **Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.**
 
-## D100 or Percentage
+### D100 or Percentage
 
 In situations where a decision roll cannot be made, a supply roll does not apply, and normal means of tracking a number just doesn't fit, the situation will likely be resolved with some form of D100 roll or percentage tracker. These rules are few, the most common one involves tracking ammunition.
