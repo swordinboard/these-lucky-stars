@@ -60,14 +60,14 @@
 }
 
 // Menu divider above custom section
-.book-menu nav ul li a[href="/character-sheet.html"] {
-   border-top: 1px solid var(--gray-200);
+.book-menu nav ul li:has(a[href="/character-sheet.html"]) {
+   border-top: 1px solid var(--accent-secondary);
    margin-top: 0.5rem;
    padding-top: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
-   .book-menu nav ul li a[href="/character-sheet.html"] {
-      border-top-color: var(--gray-600);
+   .book-menu nav ul li:has(a[href="/character-sheet.html"]) {
+      border-top-color: var(--accent-secondary);
    }
 }
