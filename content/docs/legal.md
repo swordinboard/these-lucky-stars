@@ -6,7 +6,7 @@ weight: 100
 
 ## Core Rules License
 
-The **These Lucky Stars System Reference Document (SRD)** - including all core game mechanics, rules, and systems - is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+The **These Lucky Stars System Reference Document (SRD)** - including all core game mechanics, rules, and systems - is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
 
 **[View Full License Text](https://creativecommons.org/licenses/by-nc-sa/4.0/)**
 
@@ -14,15 +14,15 @@ The **These Lucky Stars System Reference Document (SRD)** - including all core g
 
 You are free to:
 
-- **Share**: Copy and redistribute the core rules in any medium or format
-- **Adapt**: Remix, transform, and build upon the rules for your own games
-- **Use**: Run games, create characters, make adventures for personal use
+- **Share**: Copy and redistribute the core rules in any medium or format.
+- **Adapt**: Remix, transform, and build upon the rules for your own games.
+- **Use**: Run games, create characters, make adventures for personal use.
 
 Under the following terms:
 
-- **Attribution**: You must give appropriate credit to "These Lucky Stars by Sword in Board Workshop," provide a link to the license, and indicate if changes were made
-- **NonCommercial**: You may not use the material for commercial purposes without explicit permission
-- **ShareAlike**: If you remix or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license
+- **Attribution**: You must give appropriate credit to "These Lucky Stars by Sword in Board Workshop," provide a link to the license, and indicate if changes were made.
+- **NonCommercial**: You may not use the material for commercial purposes without permission.
+- **ShareAlike**: If you remix or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.
 
 ### What's Covered by This License
 
@@ -31,23 +31,21 @@ The following content is part of the SRD and covered by CC BY-NC-SA 4.0:
 - Core resolution mechanics (2d6 system)
 - Attribute system and derived stats
 - Combat rules and procedures
-- Wound and condition systems
+- Defense, Vitality, Wound and condition systems
 - General character creation framework
 - Core proficiency and ability mechanics
 - Generic equipment rules
+- All content included in setting starter packs
 
 ### What's NOT Covered by This License
 
 The following are **NOT** part of the SRD and remain under standard copyright:
 
 - "These Lucky Stars" name and logo (trademarks)
-- Setting-specific content and lore
-- Character races and their descriptions (Humans, Vusiea, Hrava, etc.)
-- Specific equipment, weapons, armor, and tech catalogs
-- Vehicle and mech stat blocks
+- Setting-specific content and lore included in published expansions.
+- Specific equipment, weapons, armor, and item catalogs
 - Artwork and graphic design
 - Published adventures and scenarios
-- The complete These Lucky Stars setting guide (forthcoming)
 
 These materials are © 2024-2025 Sword in Board Workshop. All rights reserved.
 
@@ -88,7 +86,7 @@ When using or sharing These Lucky Stars content, please include:
 
 **Preferred attribution:**
 > This [content type] uses the These Lucky Stars system created by Sword in Board Workshop.  
-> The These Lucky Stars core rules are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) and are available at https://theseluckystars.com  
+> The These Lucky Stars core rules are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) and are available at https://theseluckystars.com
 > "These Lucky Stars" is a trademark of Sword in Board Workshop.
 
 ## Questions?
@@ -101,9 +99,9 @@ Have questions about what you can or can't do with These Lucky Stars content? Co
 
 These Lucky Stars and the These Lucky Stars logo are trademarks of Sword in Board Workshop.
 
-Core game mechanics © 2024-2025 Sword in Board Workshop, licensed under CC BY-NC-SA 4.0.
+Core game mechanics © 2024-2026 Sword in Board Workshop, licensed under CC BY-NC-SA 4.0.
 
-Setting content and published materials © 2024-2025 Sword in Board Workshop. All rights reserved.
+Setting content and published materials © 2024-2026 Sword in Board Workshop. All rights reserved.
 
 ---
 
