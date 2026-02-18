@@ -92,18 +92,25 @@ All GMs have their own style. Some use the situation itself to guage the results
 
 {{% hint note %}}
 **Short Version:**
+
 Alter decision dice at GM's discresion:
-Advantage = 3d6
-Disadvantage = 1d6
-{{% /hint %}}
+- Minor Advabtage = +3
+- Major Advantage = +1 decision die
+- Minor Disadvantage = -3
+- Major Disadvantage = -1 decision die
+- {{% /hint %}}
 
-Some situations require a bit of dramatic effect to properly be portrayed by the dice. The GM may reward advantage or disadvantage in any such situation at thwir discresion, drastically altering the decision dice available.
+Some situations require a bit of dramatic effect to properly be portrayed by the dice. The GM may reward advantage or disadvantage in any such situation at their discresion.
 
-**Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have activaly worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
+**Minor Advantage** causes a +3 bonus to the decision roll. It is often granted by small sitiational advantages during combat.
 
-**Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorabke conditions rhat go bwyond the normal alteratiob of the target nunber or bonuses provided.
+**Major Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have activaly worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
 
-Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM, and usually only stick around for a roll or two. The effects do not stack, as normal sitiations or those that face both at once should cancel out to the neutral 2d6.
+**Minor Disadvantage** causes a -3 penalty to the decision roll. It is often caused by situational disadvantages during combat.
+
+**Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorabke conditions rhat go bwyond the normal alteratiob of the target nunber or bonuses provided.
+
+Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM. The effects of Minor and Major do not stack, and a roll can only benefit from a single effect advantage/disadvantage. **This is also true for contested rolls, only one advantage or disadvantage should be applied to either participant**
 
 ---
 

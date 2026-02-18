@@ -38,7 +38,7 @@ The descriptor of the speed determines what type of movement or terrain the spee
 ### Defense
 **= AGI Bonus + FORT Bonus (Min 1)**
 
-Defense (DEF) is a measurement of how well a character can react to a situation to avoid dangers. When a successful attack is made, damage is dealt to the defender's DEF. Once a character's DEF reaches 0, they lose one point of Vitality, their DEF is reset, and the process repeats until no damage remains to be dealt. DEF is reset anytime Vitality loss is dealt, or when a character is considered safe from combat (GM discretion, usually when combat ends or the character gains total cover or is hidden from all opponents). See Combat for more details on DEF, VIT, and wounds.
+Defense (DEF) is a measurement of how well a character can react to a situation to avoid dangers. When a successful attack is made, damage is dealt to the defender's DEF. Once a character's DEF reaches 0, they lose one point of Vitality, their DEF is reset, and the process repeats until no damage remains to be dealt. DEF is reset anytime Vitality loss is dealt, or when a character is considered safe from combat (GM discretion, usually when combat ends or the character gains total cover or is hidden from all opponents).
 
 {{% hint success %}}
 **Example of Defense Reset:** An in-world example of DEF resetting may be described as when a character readies themselves or regains their composure after receiving or dodging blows.
@@ -47,7 +47,7 @@ Defense (DEF) is a measurement of how well a character can react to a situation 
 ### Vitality
 **= ½ Level + ½ Max FORT (Total Rounded Down, Min 1)**
 
-Vitality represents a character's overall health and endurance of ailments. The more Vitality a character has, the more they can carry on through illness and wounds before succumbing to them. In combat, Vitality (VIT) represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. 1 VIT is recovered with a week of rest. Max VIT is affected by changes to a character's FORT.
+Vitality represents a character's overall health and endurance of ailments. The more Vitality a character has, the more they can carry on through illness and wounds before succumbing to them. In combat, Vitality (VIT) represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. 1 VIT is recovered with a full days rest. Max VIT is affected by changes to a character's FORT.
 
 ### Wounds and Conditions
 
@@ -71,7 +71,7 @@ Your character's Stress Threshold represents the amount of stress they can endur
 ### Luck
 **= 3 + Party Attribute Modifiers (Min 1)**
 
-Luck points can be used to add 1d4 to any decision roll made by your character (only 1d4 per decision roll). Luck points replenish at the beginning of each session, so be sure to use them up each session. Character features or other effects may allow luck to be used in additional ways. Temporary mods/damage to attributes does not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
+Luck points can be used to add 1d4 to any decision roll made by your character (once per decision roll). Luck points replenish at the beginning of each session, so be sure to use them up each session. Character features and other effects allow luck to be used in additional ways. Temporary mods/damage to attributes does not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
 
 Each player works their way down the table and compares their attributes to the rest of the party. If the statement in the left column is true about your character adjust your Luck by the amount corresponding to that statement. Each character may be affected my multiple Luck adjustments, or none at all. If a tie is presented by any number of characters, those characters are all effected by the adjustment.
 

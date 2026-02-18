@@ -1,6 +1,6 @@
 ---
 title: "Free SRD"
-weight: 1
+weight: 4
 bookCollapseSection: false
 ---
 
@@ -22,8 +22,8 @@ Four physical (STR, AGI, DEX, FORT) and four mental (KNO, INS, CHA, WILL).
 ## Flexible Character Creation
 Build your character with traits, proficiencies, and abilities - no rigid classes.
 
-### Tactical Combat
-Defense and Vitality system with meaningful wounds and conditions.
+### [Tactical Combat](/docs/free-srd/health-and-combat)
+2d6 opposed roll combat with unique health system.
 
 ## Design Philosophy
 The system aims to be simple enough to learn quickly and detailed enough to cover most situations without getting bogged down. If you've played any other d20 or 2d6 system you should feel right at home.
