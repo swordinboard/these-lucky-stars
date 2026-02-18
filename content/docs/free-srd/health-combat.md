@@ -12,7 +12,6 @@ Links to health-related resouces:
 - [Defense](/docs/free-srd/stats/#defense)
 - [Vitality](/docs/free-srd/stats/#vitality)
 - [Wounds and Conditions]
-- Combat Basics below also offers examples of the health system in action.
 
 ## Combat Basics
 
