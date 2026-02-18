@@ -2,13 +2,15 @@
 title: "Welcome!"
 ---
 
-Hello! Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
-
-These Lucky Starss is currently under development and in closed playtesting, but the free SRD is being uploaded here piece by piece. 
+{{% hint warning %}}
+These Lucky Starss is currently under development and in closed playtesting, but the free SRD is being uploaded here piece by piece.
+{{% /hint %}}
 
 {{% hint important%}}
-**Latest 2/17/26:** Added Health and Combat section with uodated opposed rolls rules.
+**Latest 2/17/26:** Added Health and Combat section with updated opposed rolls rules.
 {{% /hint %}}
+
+Hello! Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
 
 [Digital Character Sheet](/digitalcharactersheet.html)
 This character sheet was made on a whim. It should have everything the basic paper sheet has. Check the READ ME  at the top for more details.

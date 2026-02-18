@@ -23,17 +23,16 @@ weight: 1
 
 In most situations when determining the success or failure of an action the following mechanic will be used:
 
-**2d6 + STAT or ATTRIBUTE + MODIFIERS VS. TARGET NUMBER**
+>**2d6 + STAT or ATTRIBUTE + MODIFIERS VS. TARGET NUMBER**
 
 The d6 used during such rolls, regardless of how many, are refered to as the **Decision Dice.**
 
 ***Decision dice explode.*** Anytime the max value of a decision die (a six) is shown, another d6 ir rolled and both numbers are added to the total result. This effect stacks and can happen multiple times in a single roll or even on a single die.
+Only decision dice explode, not damage or dice from other sources such as Luck.
 
 {{% hint tip %}}
-**Example: Billy makes a Strength check to hold a heavy gate up for his friends while they escape. He rolls 2d6 and adds his Strength of +0. He rolls a 3 and a 6, so he another d6 and gets another 6, then rolls a 2. His total becomes 3+6+6+2+0=17, a remarkable roll.
+**Example:** Billy makes a Strength check to hold a heavy gate up for his friends while they escape. He rolls 2d6 and adds his Strength of +0. He rolls a 3 and a 6, so he another d6 and gets another 6, then rolls a 2. His total becomes 3+6+6+2+0=17, a remarkable roll.
 {{% /hint %}}
-
-Only decision dice explode, dice from Luck or other sources do not.
 
 ### Target Numbers
 
@@ -42,7 +41,7 @@ The target number lands on a scale that is based on the difficulty of the action
 {{% hint important %}}
 **Certain limitations should be noted:**
 
-The standard decision dice create a small probability curve, averaging at 6 with an extended trail due to the exploding dice.
+The standard decision dice create a small probability curve, averaging around 6-7 with an extended trail due to the exploding dice.
 
 While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
 
@@ -92,9 +91,8 @@ All GMs have their own style. Some use the situation itself to guage the results
 
 {{% hint note %}}
 **Short Version:**
-
-Alter decision dice at GM's discresion:
-- Minor Advabtage = +3
+Alter decision rolls at GM's discresion:
+- Minor Advantage = +3
 - Major Advantage = +1 decision die
 - Minor Disadvantage = -3
 - Major Disadvantage = -1 decision die
@@ -110,7 +108,7 @@ Some situations require a bit of dramatic effect to properly be portrayed by the
 
 **Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorabke conditions rhat go bwyond the normal alteratiob of the target nunber or bonuses provided.
 
-Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM. The effects of Minor and Major do not stack, and a roll can only benefit from a single effect advantage/disadvantage. **This is also true for contested rolls, only one advantage or disadvantage should be applied to either participant**
+Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM. The effects of Minor and Major do not stack, and a roll can only benefit from a single effect advantage/disadvantage. **This is also true for contested rolls, only one advantage or disadvantage should be applied to either participant** Typically, it is best practice to award an advantage to a player when narratively applicable, it just feels good.
 
 ---
 
@@ -148,7 +146,7 @@ Many pieces of equipment, particularly kits, do not have a set number of uses as
 
 When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered a size. Each roll is handled individually after the action is complete. Empty items cannot be used if a supply roll is rewuired, but can still be used in situations when supply rolls are not needed. This is particularly common with kits, where sometimes the tools are needed without using any of the consumables.
 
-**Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.**
+>**Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.**
 
 ### D100 or Percentage
 

@@ -42,9 +42,9 @@ Generally, the more time or effort an action requires, the more AP it costs:
 - **2 AP** — Focused tasks: making an attack, moving up to your speed.
 - **3+ AP** — Complex tasks: disabling a trap, intimidating opponents while breaking through a door.
 
-**Multi-Round Actions:**
+### Multi-Round Actions:
 
-Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as enviromental effects, defending from attacks, or other distractions. Typically a Will check can be used to remain focused through distracting effects and a FORT check cab be used to remain focused through physical effects.
+Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as enviromental effects, defending from attacks, or other distractions. Typically a **Will** check can be used to remain focused through distracting effects and a **FORT** check cab be used to remain focused through physical effects.
 
 ---
 
@@ -54,11 +54,11 @@ Special actions may include instructions for completing them over multiple round
 
 When a character makes an attack against a defender who is aware and able to react, both the attacker and defender make opposed rolls:
 
-**Attacker:** 2d6 + ATK + mods
+> **Attacker:** 2d6 + ATK + mods
+> 
+> **Defender:** 2d6 + current DEF + mods
 
-**Defender:** 2d6 + current DEF + mods
-
-Because the defenders roll uses their *current* DEF they become easier to hit if they have taken damage already.
+Because the defenders roll uses their *current* DEF they become easier to hit if they have taken damage.
 
 ### Advantage and Disadvantage in Combat
 
@@ -73,7 +73,7 @@ The GM may grant advantage or disadvantage to either side of an opposed roll bas
 *Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both combatants of an attack being blinded simply results in no change, as both combatants are equally disadvantaged.
 
 {{% hint tip %}}
-**Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advnatage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minir advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
+**Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advnatage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minor advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
 {{% /hint %}}
 [Advantage and Disadvantage](/docs/free-srd/core-mechanics/#advantage-and-disadvantage)
 
@@ -98,7 +98,7 @@ Making a surprise attack counts as a special attack action, but requires no addi
 
 ## Damage
 
-**DAMAGE = (Damage Die + Attribute Used in Attack + Modifiers) × Resistance**
+> **DAMAGE = (Damage Dice + Attribute Used in Attack + Modifiers) × Resistance**
 
 ### Damage Dice
 
@@ -117,6 +117,7 @@ Base damage dice are determined by the size of the attacker relative to the defe
 - The attribute used to make the attack roll is added to the damage total.
 - Unarmed attacks deal −3 damage before damage reduction.
 - Minimum damage after reduction is **1**.
+- Equipment and character features may also provide damage modifiers.
 
 ### Damage Types
 
@@ -168,7 +169,7 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 
 **Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally; the pinned character must spend 1 AP at the start of their turn to attempt to regain control. If unsuccessful, they take no other actions.
 
-> *In Control:* Move up to 10ft with gtapples opponent (3 AP), Attack with a light weapon or unarmed attack (3 AP), End Grapple (1 AP), Toss opponent up to 10ft with a successful STR roll (3 AP).
+> *In Control:* Move up to 10ft with grappled opponent (3 AP), Attack with a light weapon or unarmed attack (3 AP), End Grapple (1 AP), Toss opponent up to 10ft with a successful STR roll (3 AP).
 >
 > *Pinned:* Attempt to gain control with a contested grapple check (1 AP).
 
@@ -184,16 +185,17 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 
 ### Defensive Actions
 
-**Ready Action** — Withhold all actions to respond to a specific trigger. Declare both the action and the trigger during your turn. When the trigger occurs, complete your declared action in response. Readied actions are vulnerable to interruption or distraction. See [multi-turn actions]() for more.
+**Ready Action** — Withhold all actions to respond to a specific trigger. Declare both the action and the trigger during your turn. When the trigger occurs, complete your declared action in response. Readied actions are vulnerable to interruption or distraction. See [multi-turn actions](/docs/health-and-combat/#multi-turn-actions) for more.
 
 **Stealth** — Stealth actions generally do not cost additional AP. Moving silently costs the same as a move action; hiding behind an object costs the same as taking cover. Most stealth checks start at target 8. If an opponent is actively searching, they may roll INS to detect you.
 
 **Step** *(1 AP)* — Move one space (5ft) at any point during your turn as a defensive action.
 
-**Use Cover** *(1 AP or part of a Move)* 
+**Use Cover** *(1 AP or as part of a Move)* 
 The use of available cover is assumed during combat. Shifting cover types can be done as part of a move action, or for 1 AP if staying in place.
 Cover type depends on how much of the defender is blocked, how much is visible to the attacker, and whether the attack can penetrate the obstacle.
 
-- **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half is hidden from view.
-- **Full Cover** — The defender's entire body is behind an impenetrable object. Attackers must bypass or destroy the cover to land a hit. A character behind full cover cannot declare attacks until they move to at least partial cover.
+> **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half is hidden from view.
+>
+> **Full Cover** — The defender's entire body is behind an impenetrable object. Attackers must bypass or destroy the cover to land a hit. A character behind full cover cannot declare attacks until they move to at least partial cover.
 

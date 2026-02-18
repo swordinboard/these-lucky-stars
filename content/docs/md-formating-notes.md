@@ -1,8 +1,12 @@
 ---
 title: none
-weight: 9
+weight: 100
 draft: true
 ---
+
+> Used for small lists and minor callouts such as functions
+>
+> Can span multiple lines
 
 {{% hint note %}}
 Used for general callouts and "short version" callouts

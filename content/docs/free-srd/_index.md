@@ -19,7 +19,7 @@ These Lucky Stars is a tabletop roleplaying game built for dynamic play balancin
 ### [Eight Attributes](/docs/free-srd/attributes)
 Four physical (STR, AGI, DEX, FORT) and four mental (KNO, INS, CHA, WILL).
 
-## Flexible Character Creation
+### Flexible Character Creation
 Build your character with traits, proficiencies, and abilities - no rigid classes.
 
 ### [Tactical Combat](/docs/free-srd/health-and-combat)

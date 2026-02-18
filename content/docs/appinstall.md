@@ -1,6 +1,6 @@
 ---
 title: "How to Install as an App"
-weight: 1
+weight: 90
 ---
 
 You can install These Lucky Stars as an app on your device for quick access and partial offline use.
