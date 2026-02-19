@@ -114,14 +114,14 @@ Advantage is a special type of modifier that can be added to any decision roll b
 
 **Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorable conditions that go beyond the normal alteration of the target number or bonuses provided.
 
-### Special Notes for the Game MAster:
+### Special Notes for the Game Master:
 - All rolls start as neutral. Don't be afraid to keep them there.
-- When determinging advantage, only inlcude things that would have an effect on their own, not very minor things that only matter when they add up. This helps limit the number of effects that cause advantage and keep it more narratively consistent.
+- When determinging advantage, only inlcude things that would have an effect on their own, not very minor things that only matter when they add up. This can help limit the number of effects that cause advantage and keep it more narratively consistent.
 - Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset, especially if it comes from a single effect. This should be rare.
 
 ### Advantage and Contested Rolls
-Only advantage should be applied to a contested roll. It feels better for players when the GM awards advantage in either direction than being at a disadvantage.
-Treat advantage for contested rolls as if the two parties occupy the scale rather than advatnage/disadvantage, the two parties compete for having an advantage on the scale just as they do narratively.
+It is best practice to only award advantage to a contested roll, and avoid disadvantage. It feels better for players when the GM awards advantage in either direction than being at a disadvantage.
+Treat advantage for contested rolls as if the two parties occupy the scale rather than advantage/disadvantage, the two parties compete for having an advantage on the scale just as they do narratively.
 
 ---
 
