@@ -17,7 +17,7 @@ These Lucky Stars is a tabletop roleplaying game built for dynamic play balancin
 2d6 Resolution System: Roll 2d6, add your relevant attribute and modifiers, beat the target number
 
 ### [Eight Attributes](/docs/free-srd/attributes)
-Four physical (STR, AGI, DEX, FORT) and four mental (KNO, INS, CHA, WILL).
+Four physical (Strength, Agility, Dexterity, Fortitude) and four mental (Knowledge, Insight, Charisma, Will).
 
 ### Flexible Character Creation
 Build your character with traits, proficiencies, and abilities - no rigid classes.

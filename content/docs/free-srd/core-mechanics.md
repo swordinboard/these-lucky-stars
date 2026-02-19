@@ -46,8 +46,7 @@ The standard decision dice create a small probability curve, averaging around 6-
 While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
 
 Any modifiers to the roll move the curve.
-A simple +1 to that roll increases the odds of getting 12 or higher to 25% from 21%.
-Meanwhile, the odds of getting an 8 or higher on the same roll is 47% without any modifiers and jumps to 58% with a +1.
+A simple +1 to that roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
 
 This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
 {{% /hint %}}
@@ -83,32 +82,46 @@ When the result of a roll has been determined and is equal to or higher than the
 
 When the result is lower than the target the action is unsuccessful, the GM describes what has occurred, and play continues
 
-All GMs have their own style. Some use the situation itself to guage the results of the roll, others uses how far from the target the roll is to determine how dramatic the success or failure is. Whatever the case, consistency is key.
+All GMs have their own style. Some use the situation itself to gauge the results of the roll, others determine how dramatic the results are based on the difference between the target and the roll. Whatever the case, consistency is key.
 
 ---
 
-## Advantage and Disadvantage
+## Advantage
 
 {{% hint note %}}
 **Short Version:**
 Alter decision rolls at GM's discresion:
+- Major Advantage = +1 decision die 
 - Minor Advantage = +3
-- Major Advantage = +1 decision die
 - Minor Disadvantage = -3
 - Major Disadvantage = -1 decision die
-- {{% /hint %}}
+{{% /hint %}}
 
-Some situations require a bit of dramatic effect to properly be portrayed by the dice. The GM may reward advantage or disadvantage in any such situation at their discresion.
+Advantage is a special type of modifier that can be added to any decision roll by the GM based on the situation faced by the characters. Unlike most modifiers which only provide a bonus or penalty, advantage can alter the number of decision dice rolled. This allows the GM to quickly alter the target of a decsion roll on the fly. The Advantage modifier works on a scale with five levels: 
 
-**Minor Advantage** causes a +3 bonus to the decision roll. It is often granted by small sitiational advantages during combat.
+> Advantage Scale:
+> |   Type:   |   Advantage   |   Neutral   |   Disadvantage    |
+> | Severity: | Major | Minor |    None     |  Minor  |  Major  |
 
-**Major Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have activaly worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
 
-**Minor Disadvantage** causes a -3 penalty to the decision roll. It is often caused by situational disadvantages during combat.
+**Major Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have actively worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
 
-**Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorabke conditions rhat go bwyond the normal alteratiob of the target nunber or bonuses provided.
+**Minor Advantage** causes a +3 bonus to the decision roll. It is often granted by small situational advantages during combat.
 
-Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset at the discression of the GM. The effects of Minor and Major do not stack, and a roll can only benefit from a single effect advantage/disadvantage. **This is also true for contested rolls, only one advantage or disadvantage should be applied to either participant** Typically, it is best practice to award an advantage to a player when narratively applicable, it just feels good.
+**Neutral** is the starting point of the scale and the standard for when there is no applicable advantage/disadvantage or the two sides balance out.
+
+**Minor Disadvantage** causes a -3 penalty to the decision roll. It is often caused by small situational disadvantages during combat.
+
+**Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorable conditions that go beyond the normal alteration of the target number or bonuses provided.
+
+### Special Notes for the Game MAster:
+- All rolls start as neutral. Don't be afraid to keep them there.
+- When determinging advantage, only inlcude things that would have an effect on their own, not very minor things that only matter when they add up. This helps limit the number of effects that cause advantage and keep it more narratively consistent.
+- Major Advantage/disadvantage should only be used when the narrative and situaution call for a dramatic effect or drastic offset, especially if it comes from a single effect. This should be rare.
+
+### Advantage and Contested Rolls
+Only advantage should be applied to a contested roll. It feels better for players when the GM awards advantage in either direction than being at a disadvantage.
+Treat advantage for contested rolls as if the two parties occupy the scale rather than advatnage/disadvantage, the two parties compete for having an advantage on the scale just as they do narratively.
 
 ---
 
@@ -128,8 +141,7 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 
 {{% hint tip %}}
 **Example:**
-The most forthcoming example of this is when calculating Stress and Vitality, which require two values to be halved and added together:
-
+The most forthcoming example of this is when calculating Stress (½ Level + ½ Will) and Vitality (½ Level + ½ Fort), since this requires halving two values and adding them together:
 - If those values are 3 and 1, they become 1.5 and 0.5, and are added together to become 2.
 - If those values are 3 and 2, they become 1.5 and 1, and are added up to become 2.5, which is then rounded down to 2.
 {{% /hint %}}
@@ -141,10 +153,10 @@ The most forthcoming example of this is when calculating Stress and Vitality, wh
 
 ### Supply Rolls
 
-Supply rolls or supply dice are used to track inventory and conditions with a level of randomness to them. 
-Many pieces of equipment, particularly kits, do not have a set number of uses as different applications will require a different amounts of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
+Supply rolls or supply dice are used to track inventory and conditions with a level of randomness. 
+Many pieces of equipment, particularly kits, do not have a set number of uses as different applications will require a different amount of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
 
-When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered a size. Each roll is handled individually after the action is complete. Empty items cannot be used if a supply roll is rewuired, but can still be used in situations when supply rolls are not needed. This is particularly common with kits, where sometimes the tools are needed without using any of the consumables.
+When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered. Each roll is handled individually after the action is complete. Empty items cannot be used if a supply roll is required, but some may still be used in situations when supply rolls are not needed. This is particularly common with kits, when the included tools are needed without using any of the consumables.
 
 >**Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.**
 
