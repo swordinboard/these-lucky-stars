@@ -32,7 +32,7 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 ## Attribute Values
 
-**Maximum** attribute value without modifiers is equal to character level +2.
+**Maximum** attribute value before modifiers is 7.
 
 There is no **minimum** attribute value.
 
