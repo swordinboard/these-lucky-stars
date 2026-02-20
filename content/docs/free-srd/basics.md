@@ -1,8 +1,7 @@
 ---
-title: "Core Mechanics"
+title: "The Basics"
 weight: 1
 ---
-
 ## Key Terms
 
 **Game Master (GM)** – The person running the game. Responsible for creating the setting, describing scenarios, determining rolls and target numbers, lots of things.
@@ -19,7 +18,7 @@ weight: 1
 
 ---
 
-## Decision Rolls
+## Decision Rolls - the Primary Mechanic
 
 In most situations when determining the success or failure of an action the following mechanic will be used:
 

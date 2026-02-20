@@ -6,7 +6,7 @@ draft: false
 
 ## Health
 
-Combat in These Lucky Stars uses a unique health system. The first layer, Defense, represents how well a character defends against attacks, both in avoiding then and bracing against them. The second layer, Vitality, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
+Combat in These Lucky Stars uses a unique health system. The first layer, Defense, represents how well a character defends against attacks, both in avoiding them and bracing against them. The second layer, Vitality, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
 
 Links to health-related resouces:
 - [Defense](/docs/free-srd/stats/#defense)
@@ -15,8 +15,8 @@ Links to health-related resouces:
 
 ## Combat Basics
 
-- Combat begins when a character declares an attack or some other aggressive action against another. Initiative is then determined.
-- Combat is played in rounds, with each combatant taking one turn per round in initiative order.
+- Characters enter combat when one declares an aggressive action against another. Initiative is then determined immediately upon declaring the action.
+- Combat is then played in rounds, with each combatant taking one turn per round in initiative order.
 - The most common actions during combat are attack and move. The number of actions a character can take during combat is determined using Action Points.
 - Successful attacks deal damage to the defenders Defense (DEF). Each time their DEF reaches 0, they lose a point of Vitality (VIT). Successful attacks can also result in wounds and conditions.
 
@@ -24,9 +24,9 @@ Links to health-related resouces:
 
 ## Initiative
 
-Initiative determines the order in which characters take their turns during each *round.* When the first attack is declared, all combatants roll initiative and are placed in order from highest to lowest. The combatant with the highest initiative goes first and play continues in decending order. 
+Initiative determines the order in which characters take their turns during each *round.* When the first attack is declared, all combatants roll initiative and are placed in order from highest to lowest. The combatant with the highest initiative goes first and play continues in descending order. 
 
-**The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat. Narratively, characters can be saved by instinct or gut feeling in this way.
+**The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat. Narratively, this allows characters to be saved by instinct or gut feeling.
 
 {{% hint note %}}
 In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
@@ -42,9 +42,9 @@ Generally, the more time or effort an action requires, the more AP it costs:
 - **2 AP** — Focused tasks: making an attack, moving up to your speed.
 - **3+ AP** — Complex tasks: disabling a trap, intimidating opponents while breaking through a door.
 
-### Multi-Round Actions:
+### Multi-Tuen Actions:
 
-Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as enviromental effects, defending from attacks, or other distractions. Typically a **Will** check can be used to remain focused through distracting effects and a **FORT** check cab be used to remain focused through physical effects.
+Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through physical effects.
 
 ---
 
@@ -58,7 +58,7 @@ When a character makes an attack against a defender who is aware and able to rea
 > 
 > **Defender:** 2d6 + current DEF + mods
 
-Because the defenders roll uses their *current* DEF they become easier to hit if they have taken damage.
+Because the defender's roll uses their *current* DEF they become easier to hit if they have taken damage.
 
 ### Advantage and Disadvantage in Combat
 
@@ -66,16 +66,17 @@ The GM may grant advantage or disadvantage to either side of an opposed roll bas
 
 #### Advantages to Consider in Combat
 
-*Type of Attack* — Melee attacks and ranged attacks may face different advantages and disadvantages. It is up to the GM to use their best judgment.
+*Type of Attack* — Melee attacks and ranged attacks may face different advantages and disadvantages. It is up to the GM to use their best judgment when determining if the type of attack should give advantage or disadvantage.
 
 *Cover* — For defenders of ranged attacks, solid cover is critical. To use an object as cover it must provide a solid barrier between the attacker and defender and cover at least half of the defender. Cover grants the defender a bonus to their roll. Abilities and proficiencies can further increase the effectiveness of using cover.
 
-*Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both combatants of an attack being blinded simply results in no change, as both combatants are equally disadvantaged.
+*Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both attacker and defender being blinded simply results in no change, as both combatants are equally disadvantaged.
 
 {{% hint tip %}}
-**Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advnatage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minor advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
+**Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advantage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minor advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
 {{% /hint %}}
-[Advantage and Disadvantage](/docs/free-srd/core-mechanics/#advantage-and-disadvantage)
+
+See [Advantage](/docs/free-srd/the-basics/#advantage) for more details on how advantage works.
 
 ### Surprise Attacks
 
@@ -92,7 +93,7 @@ Making a surprise attack counts as a special attack action, but requires no addi
 1. Declare the attack and announce any relevant advantages or disadvantages. The GM will decide what applies.
 2. Both attacker and defender roll simultaneously.
 3. Compare totals. If the attacker's total exceeds the defender's total, the attack is successful.
-4. If the attack is successful, damage is applied, the GM describes what has occured, and play continues.
+4. If the attack is successful, damage is applied, the GM describes what has occurred, and play continues.
 
 ---
 
@@ -146,6 +147,7 @@ Once total damage is calculated, it is dealt to the defender's **Defense (DEF)**
 3. Any remaining damage continues to drain the new DEF.
 
 This repeats until all damage is dealt or VIT reaches 0.
+- Damaged character’s DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends.
 
 An attack inflicts a **wound or condition** on the defender if it:
 - Dealt 2 or more VIT damage, or
@@ -159,13 +161,13 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 
 ### Aggressive Actions
 
-**Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or while unarmed.
+**Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.
 
 **Move** *(2 AP)* — Move up to your speed. This action can be taken multiple times per turn.
 
 **Attack of Opportunity (AOO)** *(1 AP)* — Once per round during another character's turn, you may make an attack of opportunity against any character within your melee reach who takes an aggressive action you are not defending against. Requires a melee weapon and having already acted in combat. Cannot normally be made unarmed.
 
-**Disarm** *(3 AP)* — Attempt to disarm an opponent with a melee weapon you are proficient with. Make a standard attack roll; If successful, instead of dealinh damage make contested STR rolls. Success causes the opponent to drop their weapon.
+**Disarm** *(3 AP)* — Attempt to disarm an opponent with a melee weapon you are proficient with. Make a standard attack roll; If successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon.
 
 **Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally; the pinned character must spend 1 AP at the start of their turn to attempt to regain control. If unsuccessful, they take no other actions.
 
@@ -177,7 +179,7 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 
 **Stand** *(1 AP)* — Stand from prone. May provoke an attack of opportunity.
 
-**Trip** *(3 AP)* — Make a standard attack roll. If successful, instead of dealing damage make a contested STR vs. AGI roll. Success causes the opponent to fall prone.
+**Trip** *(3 AP)* — Make a standard attack roll. If successful, instead of dealing damage make a contested roll, the Attacker's STR vs. Defender's AGI. Success causes the opponent to fall prone.
 
 **Unarmed Attack** *(2 AP)* — Functions as a standard attack but deals −3 damage. Cannot normally be used for an AOO.
 

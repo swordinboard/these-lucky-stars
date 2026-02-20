@@ -3,6 +3,8 @@ title: "Stats"
 weight: 3
 ---
 
+## Stats
+
 These stats are derived from Attributes. Most of them are combat focused, but are important for any character nonetheless. All of them can be affected by additional modifiers from a range of effects, character features, and equipment. Unless otherwise noted stats can be negative, providing a penalty rather than a bonus. Some stats act as a pool of points, others act as modifiers for certain rolls. They are listed here in a similar order to how they appear on the basic character sheet.
 
 ---
@@ -12,7 +14,7 @@ These stats are derived from Attributes. Most of them are combat focused, but ar
 ### Initiative
 > **= AGI + DEX + INS + Mods**
 
-How swiftly a character reacts to a surprise situation, initiative determines the order in which turns will be taken during combat. Initiative is determined at the beginning of combat, characters who have not yet had their first turn are considered out of combat and are vulnerable to surprise attacks. See the section on Combat for more details.
+How swiftly a character reacts to a surprise situation, initiative determines the order in which turns will be taken during combat. Initiative is determined at the beginning of combat; characters who have not yet had their first turn are considered out of combat and are vulnerable to surprise attacks. See the section on Combat for more details.
 
 ### Action Points
 > **= 4 (Base) + Mods**
@@ -22,11 +24,11 @@ Action Points (AP) are spent during combat to take actions. The more complicated
 ### Speed (______)
 > **= 20 + 5 per +1 AGI Bonus or Flat -5 if AGI Penalty + Mods**
 
-Speed is a summary of the normal movement speed of a character, conveniently rounded to 5ft spaces. The speed equation provided is used to describe a character or creature's primary mode of travel (in most cases it is Speed(ground) for those that live on land).
+Speed is a summary of the normal movement speed of a character, conveniently rounded to 5ft spaces. The speed equation provided is used to describe a character or creature's primary mode of travel (in most cases it is Speed (ground) for those that live on land).
 
 The descriptor of the speed determines what type of movement or terrain the speed applies to:
 
-> **Ground** is the standard, for walking and running upon the ground. Most characters have a ground speed.
+> **Ground** is the standard for walking and running upon the ground. Most characters have a ground speed.
 >
 >**Climb** refers to how fast one climbs vertical surfaces.
 >
@@ -50,17 +52,17 @@ Defense (DEF) is a measurement of how well a character can react to a situation 
 ### Vitality
 > **= ½ Level + ½ Max FORT + Mods (Total Rounded Down, Min 1)**
 
-Vitality represents a character's overall health and endurance of ailments. The more Vitality a character has, the more they can carry on through illness and wounds before succumbing to them. In combat, Vitality (VIT) represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. 1 VIT is recovered with a full days rest. Max VIT is affected by changes to a character's FORT.
+Vitality (VIT) represents a character's overall health and ability to endure ailments. The more VIT a character has, the more they can carry on before succumbing to their illnesses or wounds. In combat, VIT  represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. One VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
 
 ### Wounds and Conditions
 
-A **wound** is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may be caused by:
+A **wound** is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may occure when:
 
-- When a character takes two or more VIT damage from a single attack
-- Loss of a character's final VIT point
-- Special effects such as abilities and environmental effects.
+- A character takes two or more points of VIT damage from a single attack.
+- A character loses their final VIT point.
+- A character is affected by special effects such as abilities and environmental effects.
 
-A **condition** is part of a broad category of effects that can also come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, and environment.
+A **condition** is part of a broad category of effects that can also come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, the environment, or any combination of these things.
 
 ### Stress Threshold
 > **= ½ Level + ½ WILL + Mods (Total Rounded Down, Min 1)**
@@ -74,9 +76,9 @@ Your character's Stress Threshold represents the amount of stress they can endur
 ### Luck
 > **= 3 + Party Attribute Modifiers + Mods (Min 1)**
 
-Luck points can be used to add 1d4 to any decision roll made by your character (once per decision roll). Luck points replenish at the beginning of each session, so be sure to use them up each session. Character features and other effects allow luck to be used in additional ways. Temporary mods/damage to attributes does not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
+Luck points can be used to add 1d4 to any decision roll made by your character (once per decision roll). Luck points replenish at the beginning of each session, so be sure to use them up. Character features and other effects allow luck to be used in additional ways. Temporary mods/damage to attributes do not affect total Luck. Your total Luck is dependent on your party. To calculate the number of Luck points your character has during character creation, begin with 3 points and use the table to determine any modifiers.
 
-Each player works their way down the table and compares their attributes to the rest of the party. If the statement in the left column is true about your character adjust your Luck by the amount corresponding to that statement. Each character may be affected my multiple Luck adjustments, or none at all. If a tie is presented by any number of characters, those characters are all effected by the adjustment.
+Each player works their way down the table and compares their attributes to the rest of the party. If the statement in the left column is true about your character, adjust your Luck by the amount corresponding to that statement. Each character may be affected by multiple Luck adjustments, or none at all. If a tie is presented by any number of characters, those characters are all affected by the adjustment.
 
 | Of the party, your character has the… | Luck = 3… |
 |--------------------------------------|-----------|
@@ -88,7 +90,7 @@ Each player works their way down the table and compares their attributes to the 
 ### Grapple
 > **= STR + AGI + Mods**
 
-Used when engaging in a grapple with an opponent in the form of a contested D20 roll. Though rare, grappling with multiple opponents or allies is possible and follows the same rules as other contested rolls. See Special Attacks in the Combat section for more details.
+Used when engaging in a grapple with an opponent in the form of a contested 2d6 roll. Though rare, grappling with multiple opponents or allies is possible and follows the same rules as other contested rolls. See Special Attacks in the Combat section for more details.
 
 ### Stealth
 
@@ -97,7 +99,7 @@ Like many other rolls, Stealth checks are made using different attributes based 
 ### Attack
 > **= STR or DEX + Mods**
 
-The attribute used while making an attack (ATK) varies depending on the type of weapon being used and the type of attack being made. As such, attack values are located in the weapons block on the character sheet. In most cases, melee attacks will use STR while ranged attacks will use DEX.
+The attribute used while making an attack (ATK) varies depending on the type of weapon being used and the type of attack being made. As such, ATK values are located in the weapons block on the character sheet. In most cases, melee attacks will use STR while ranged attacks will use DEX.
 
 ## Blank Boxes
 

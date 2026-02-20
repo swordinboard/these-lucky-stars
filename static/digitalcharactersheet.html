@@ -230,12 +230,12 @@
             display: block;
             font-size: 0.875rem;
             font-weight: 600;
-            color: var(--invert-font-color);
+            color: var(--body-font-color);
             margin-bottom: 0.25rem;
         }
         .form-label-sm {
             font-size: 0.75rem;
-            color: var(--invert-font-color);
+            color: var(--body-font-color);
             font-weight: 600;
         }
 
@@ -330,7 +330,7 @@
         .input-group label {
             font-size: 0.7rem;
             font-weight: 600;
-            color: var(--invert-font-color);
+            color: var(--body-font-color);
             margin-bottom: 0.125rem;
         }
         .input-group input { padding: 0.25rem; font-size: 0.8rem; }
@@ -351,16 +351,16 @@
         .stats-row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
         .stats-row-2 { display: flex; gap: 0.5rem; }
         .stat-small { width: 80px; flex-shrink: 0; }
-        .stat-small label { font-size: 0.7rem; font-weight: 600; color: var(--invert-font-color); display: block; margin-bottom: 0.125rem; }
+        .stat-small label { font-size: 0.7rem; font-weight: 600; color: var(--body-font-color); display: block; margin-bottom: 0.125rem; }
         .stat-small input { padding: 0.375rem; font-size: 0.8rem; }
         .notes-area { flex: 1; }
-        .notes-area label { font-size: 0.75rem; font-weight: 600; color: var(--invert-font-color); display: block; margin-bottom: 0.125rem; }
+        .notes-area label { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); display: block; margin-bottom: 0.125rem; }
         .notes-area textarea { min-height: 2.5rem; padding: 0.375rem; font-size: 0.85rem; }
 
         /* Wounds & Slots */
         .list-vertical { display: flex; flex-direction: column; gap: 0.5rem; }
         .slot-row { display: grid; grid-template-columns: 100px 1fr; gap: 0.5rem; align-items: start; }
-        .slot-row label { font-size: 0.875rem; font-weight: 600; color: var(--invert-font-color); padding-top: 0.5rem; }
+        .slot-row label { font-size: 0.875rem; font-weight: 600; color: var(--body-font-color); padding-top: 0.5rem; }
         .slot-row textarea { min-height: 2.25rem; }
 
         /* Inventory */
@@ -387,11 +387,11 @@
         }
         .summary-box .formula-display.hidden-formula { display: none; }
         .mod-row { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.25rem; }
-        .mod-row label { font-size: 0.7rem; font-weight: 600; color: var(--invert-font-color); }
+        .mod-row label { font-size: 0.7rem; font-weight: 600; color: var(--body-font-color); }
         .mod-row input { width: 50px; padding: 0.25rem; font-size: 0.75rem; }
 
         .inv-header, .inv-row { display: grid; grid-template-columns: 8fr 2fr 2fr; gap: 0.5rem; }
-        .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--invert-font-color); margin-bottom: 0.25rem; padding: 0 0.25rem; }
+        .inv-header { font-size: 0.75rem; font-weight: 600; color: var(--body-font-color); margin-bottom: 0.25rem; padding: 0 0.25rem; }
         .inv-row { margin-bottom: 0.25rem; align-items: start; }
         .inv-row input, .inv-row select, .inv-row textarea { padding: 0.25rem 0.5rem; font-size: 0.875rem; }
         .inv-row textarea { min-height: 2.25rem; }
@@ -412,8 +412,8 @@
         .combined-stat { display: flex; gap: 1rem; align-items: center; justify-content: center; }
         .combined-stat-item { text-align: center; }
         .combined-stat-item .value { font-size: 1.125rem; font-weight: 700; }
-        .combined-stat-item .label { font-size: 0.7rem; color: var(--gray-500); }
-        .combined-stat-sep { font-size: 1.25rem; color: var(--gray-500); }
+        .combined-stat-item .label { font-size: 0.7rem; color: var(--body-font-color); }
+        .combined-stat-sep { font-size: 1.25rem; color: var(--body-font-color); }
 
         .features-grid, .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
         .features-grid textarea { min-height: 12rem; }
@@ -1210,7 +1210,7 @@
                         <div class="combined-stat-item"><div class="value" id="currentWeightDisplay">0</div><div class="label">Current</div></div>
                         <div class="combined-stat-sep">/</div>
                         <div class="combined-stat-item"><div class="value" id="maxWeightDisplay">0</div><div class="label">Max</div></div>
-                        <div style="font-size:0.875rem;color:var(--gray-500)">lbs</div>
+                        <div style="font-size:0.875rem;color:var(--body-font-color)">lbs</div>
                     </div>
                     <div class="formula-display hidden-formula" id="maxWeightFormula">Max = STR × 25 + Mods = 0</div>
                     <div class="mod-row"><label>Mods:</label><input type="number" id="maxWeightMods" value="0" onchange="updateCharacter()"></div>

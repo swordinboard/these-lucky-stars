@@ -5,7 +5,7 @@ weight: 90
 
 You can install These Lucky Stars as an app on your device for quick access and partial offline use.
 
-Once installed, the app will appear on your home screen or app launcher like any other app. *Pages you've visited will be available offline* — handy for sessions without reliable internet. You can also open directly to the charcter sheet via a hold/right click shortcut on the app icon.
+Once installed, the app will appear on your home screen or app launcher like any other app. *Pages you've visited will be available offline* — handy for sessions without reliable internet. You can also open directly to the character sheet via a hold/right click shortcut on the app icon.
 
 ## Android (Chrome)
 

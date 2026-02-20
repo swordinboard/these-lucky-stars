@@ -3,7 +3,9 @@ title: "Attributes"
 weight: 2
 ---
 
-Attributes act as your primary stat block, the building blocks of your character that act as a base for their other stats. They are divided into two categories: physical attributes and mental attributes.
+## Attributes
+
+Attributes act as your primary stat block, they are the building blocks of your character and act as a base for their other stats. They are divided into two categories: Physical Attributes and Mental Attributes.
 
 For ease of reference attributes are often written as two numbers, the temporary value after modifiers and the base value before modifiers.
 
@@ -32,7 +34,7 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 **Maximum** attribute value without modifiers is equal to character level +2.
 
-There is no **minimum** atteibute value.
+There is no **minimum** attribute value.
 
 {{% hint tip %}}
 **Example:** A level 2 character has a maximum attribute value of 4 before applying modifiers.
