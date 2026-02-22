@@ -57,11 +57,6 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
-| [Disengage](#disengage) | Fool an enemy AI into thinking you are an ally. | Sci-Fi Cybernetics |
-| [Improved Disengage](#improved-disengage) | +4 bonus to Disengage checks. | Sci-Fi Cybernetics |
-| [Mass Disengage](#mass-disengage) | Disengage affects all AI enemies in range. | Sci-Fi Cybernetics |
-| [Jammer](#jammer) | Disrupt communications and wireless connections. | Sci-Fi Cybernetics |
-| [Shield Boost](#shield-boost) | Boost nearby energy shields with your implant. | Sci-Fi Cybernetics |
 | [Armorer](#armorer) | Install and remove upgrades without risk of damage. | Sci-Fi General |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. | Sci-Fi General |
 | [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. | Sci-Fi General |
@@ -289,7 +284,7 @@ Add 1d6 of bonus damage to successful surprise attacks. This ability can be sele
 
 *Vital Strike (2), DEX 2, KNO 2, Level 7*
 
-When performing a Focus Attack, you may add a number of d6 to the attack roll equal to half your Vital Strike die (rounded down).
+When performing a Focus Attack, gain an ATK bonus equal to your Vital Strike die.
 
 ---
 
@@ -303,7 +298,7 @@ You know just when to push your luck. 1/day you may spend two Luck points to use
 
 *At least one other ability in the Luck category, per selection*
 
-Gain one additional Luck point. This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat.
+Gain one additional Luck point. This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat (selections of this feat do not count.)
 
 ### Friend of Fortune
 
@@ -333,7 +328,7 @@ Choose an attribute. You have always had some luck in this aspect of your life, 
 
 **Student [___]**
 
-*INT 4*
+*INT 2*
 
 Choose a general topic in which your character is particularly knowledgeable about, such as math, science, sports, history, technology, combat, etc. Topic is subject to GM approval. 2/day your character may gain a +1 bonus to any roll by applying knowledge about this topic. The party must be able to explain to the GM in what way this knowledge is being applied. If some kind of consensus cannot be reached, the bonus cannot be applied to that roll. Results may vary by GM. This feat may be selected a second time to select a second topic.
 
@@ -341,9 +336,9 @@ Choose a general topic in which your character is particularly knowledgeable abo
 
 **Expert [___]**
 
-*Student, INT 6*
+*Student, INT 4*
 
-Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, increase the bonus to ½ your INT bonus. (This feat can only be selected once.)
+Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher. (This feat can only be selected once.)
 
 ---
 
@@ -357,65 +352,21 @@ You manage to squeeze just a bit more out of battery cores. You can re-roll a fa
 
 *General Technology Proficiency, KNO 3*
 
-You can spend 4 AP and a use of the Tech Kit with supplies to install a battery of up to two sizes smaller or larger than required into a piece of equipment.
-(Normal: Installing a battery of a different size requires a target 18 KNO check, 10 minutes, and is limited to batteries one size larger or smaller.)
+You can spend 4 AP and a use of the Tech Kit with supplies to install a battery of up to two sizes smaller or larger than required into a piece of equipment. Results of fit, placement, and object handling, may vary by combination.
+(Normal: Installing a battery of a different size requires a target 14 KNO check, 10 minutes, and is limited to batteries one size larger or smaller.)
 
 ### Battery Saboteur
 
 **General Technology Proficiency, one other Battery ability, KNO 4**
 
-You can turn battery cores into explosives. Doing so requires a use of the tech kit with supplies and takes one minute. Explosive cores deal damage based on size and charge. To roll damage, roll the battery's current charge (supply) and use the chart below. They can be set to explode with a hard impact, or be rigged to explode on a timer of up to 2 minutes.
+You can easily turn battery cores into explosives. Doing so requires a use of the tech kit with supplies and takes one minute. Explosive cores deal damage based on size and charge. To roll damage, roll the battery's current charge (supply) and use the chart below. They can be set to explode with a hard impact, or be rigged to explode on a pre-set timer of up to 2 minutes.
 
-Battery Size
-Burn Damage
-Splash Radius
-Mini
-Charge ÷ 2
-5ft
-Small
-Charge
-10ft
-Medium
-Charge x2
-15ft
-Large
-Charge x4
-20ft
-Industrial
-Charge x6
-30ft
-
-## Sci-Fi Cybernetics
-
-### Disengage
-
-**Cybernetics Proficiency**
-
-For 3 AP you may use your cybernetic implant to attempt a contested INS check against an enemy AI within range to confuse them into thinking you are an ally for 1 round per point beyond success, or until an action is taken proving otherwise (i.e. attacking it or its allies).
-
-### Improved Disengage
-
-**Disengage**
-
-Gain a +4 bonus to the contested INS check of your Disengage ability.
-
-### Mass Disengage
-
-**Cybernetics Proficiency, Disengage, Level 5**
-
-Using your implant, your Disengage ability effects all AI enemies that are within range of your implant and you have line of sight on. Make a single INS check and use the result against each enemy individually, using the longest duration for all enemies successfully fooled by this ability.
-
-### Jammer
-
-**General Technology or Cybernetics Proficiency**
-
-By sending out a short blast of frequencies for 2AP you can disrupt communication devices and wireless connections. This can be done with a tech kit or a cybernetic implant. If performed with a tech kit this ability costs 1 supply roll, has a radius of 40ft centered on the tech kit, and a duration of 2d6 rounds. If performed with a cybernetic implant the radius is that of your implant centered on you, and the duration is up to 6 rounds which can be canceled at any time during your turn (no AP to cancel) during which the implant cannot be used for any other actions.
-
-### Shield Boost
-
-**Cybernetics Proficiency, KNO 2**
-
-Gain the ability to boost nearby shields using your cybernetic implant 2/day. For 1 AP grant 6 points of temporary damage reduction to an energy shield within 20ft of you. This ability can be selected multiple times, each additional selection increasing the daily usage by one and the reduction bonus by 2 to a maximum of 12 points of reduction 5/day.
+| Battery Size | Burn Damage | Splash Radius |
+| Mini |Charge ÷ 2 | 5ft |
+| Small | Charge | 10ft |
+| Medium | Charge x2 | 15ft |
+| Large | Charge x4 | 20ft |
+| Industrial | Charge x6 | 30ft |
 
 ## Sci-Fi General
 
@@ -423,14 +374,14 @@ Gain the ability to boost nearby shields using your cybernetic implant 2/day. Fo
 
 **General Technology Proficiency**
 
-You can add and remove weapon and armor upgrades using the tech kit or repair kit without risk of damaging the upgrade. Each upgrade takes 30 minutes to install and calibrate for use, and half as much time to remove.
-(Normal: Upgrades require a challenging target roll and take 1hr to install or to remove. If the roll is failed, the upgrade takes 2 damage.)
+You can add and remove weapon and armor upgrades using the tech kit or repair kit without risk of damaging the upgrade. Each upgrade takes 30 minutes to install and calibrate, and half as much time to remove.
+(Normal: Upgrades require a target 12 KNO or DEX roll and take 1hr to install or to remove. If the roll is failed, the upgrade takes 1d4 damage.)
 
 ### Companion Bot
 
 **General Robotics Proficiency, Level 3**
 
-You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day tinkering and a use of the tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
+You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and a use of the tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
 (Normal: Repairs to most drones require the tech kit with supplies and a successful target 15 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.)
 
 ### Special Encouragement
@@ -439,14 +390,14 @@ You may designate one drone or robot under your control, whose base level is no 
 
 1/day With a few well-placed adjustments and maybe a few good whacks you can quickly repair your companion drone for 1 VIT without using supplies from the tech kit for 3 AP. (Must be adjacent and unrestrained to use this ability.)
 
-### Light as a Feather
+### Opensaysame
 
-**Vehicle Proficiency with at least one class of spaceship**
+*General Technology Proficiency*
 
-1/day lower the target for a roll made to pilot a ship for which you have Vehicle Proficiency by one step. This ability can be selected up to three times to increase the usage to a maximum of 3/day.
-Opensaysame
-General Technology Proficiency
 Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice). This ability can be selected up to three times to increase the usage to a maximum of 3/day.
-Rigged Comp Jack
-Comp Jack Proficiency, General Technology Proficiency, KNO 2
+
+### Rigged Comp Jack
+
+*Comp Jack Proficiency, General Technology Proficiency, DEX 2 KNO 2*
+
 By lowering the supply of your tech kit by two die sizes, you can build a makeshift comp jack. Unlike a normal comp jack, a rigged comp jack has a supply of 1d8 before it burns out and becomes useless. Building a rigged comp jack takes a total of 20 AP that can be spent over multiple rounds even if interrupted.
