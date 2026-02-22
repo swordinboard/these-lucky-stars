@@ -45,9 +45,8 @@ The descriptor of the speed determines what type of movement or terrain the spee
 
 Defense (DEF) is a measurement of how well a character can react to a situation to avoid dangers. When a successful attack is made, damage is dealt to the defender's DEF. Once a character's DEF reaches 0, they lose one point of Vitality, their DEF is reset, and the process repeats until no damage remains to be dealt. DEF is reset anytime Vitality loss is dealt, or when a character is considered safe from combat (GM discretion, usually when combat ends or the character gains total cover or is hidden from all opponents).
 
-{{% hint success %}}
-**Example of Defense Reset:** An in-world example of DEF resetting may be described as when a character readies themselves or regains their composure after receiving or dodging blows.
-{{% /hint %}}
+> [!TIP]
+> **Example of Defense Reset:** An in-world example of DEF resetting may be described as when a character readies themselves or regains their composure after receiving or dodging blows.
 
 ### Vitality
 > **= ½ Level + ½ Max FORT + Mods (Total Rounded Down, Min 1)**

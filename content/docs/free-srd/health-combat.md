@@ -28,9 +28,8 @@ Initiative determines the order in which characters take their turns during each
 
 **The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat. Narratively, this allows characters to be saved by instinct or gut feeling.
 
-{{% hint note %}}
-In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
-{{% /hint %}}
+> [!IMPORTANT]
+> In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
 
 ## Taking Action
 
@@ -72,11 +71,10 @@ The GM may grant advantage or disadvantage to either side of an opposed roll bas
 
 *Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both attacker and defender being blinded simply results in no change, as both combatants are equally disadvantaged.
 
-{{% hint tip %}}
-**Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advantage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minor advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
-{{% /hint %}}
-
 See [Advantage](/docs/free-srd/the-basics/#advantage) for more details on how advantage works.
+
+> [!TIP]
+> **Example:** If a defender is on uneven or loose ground and the attacker has solid footing, the attacker gains a +3 minor advantage to their roll. If the attacker is standing in dense underbrush while the defender is on a cleared path, the defender gains a +3 minor advantage to their roll. If both the attacker and defender are standing on a tightrope, no change would occur.
 
 ### Surprise Attacks
 

@@ -12,9 +12,8 @@ weight: 1
 
 **Table** – The players and the GM as a group. Responsible for recognizing modifiers, maintaining honesty, fair play, and a good time.
 
-{{% hint note %}}
-**Modifiers** — Any additional value that alters another value. A *bonus* is a positive modifier. A *penalty* is a negative modifier. If something states a bonus and the value is negative, the bonus is 0. If something states a penalty and the value is positive, the penalty is 0. If something states a modifier it can use a bonus or a penalty.
-{{% /hint %}}
+> [!IMPORTANT]
+> **Modifiers** — Any additional value that alters another value. A *bonus* is a positive modifier. A *penalty* is a negative modifier. If something states a bonus and the value is negative, the bonus is 0. If something states a penalty and the value is positive, the penalty is 0. If something states a modifier it can use a bonus or a penalty.
 
 ---
 
@@ -29,16 +28,15 @@ The d6 used during such rolls, regardless of how many, are refered to as the **D
 ***Decision dice explode.*** Anytime the max value of a decision die (a six) is shown, another d6 ir rolled and both numbers are added to the total result. This effect stacks and can happen multiple times in a single roll or even on a single die.
 Only decision dice explode, not damage or dice from other sources such as Luck.
 
-{{% hint tip %}}
-**Example:** Billy makes a Strength check to hold a heavy gate up for his friends while they escape. He rolls 2d6 and adds his Strength of +0. He rolls a 3 and a 6, so he another d6 and gets another 6, then rolls a 2. His total becomes 3+6+6+2+0=17, a remarkable roll.
-{{% /hint %}}
+> [!TIP]
+> **Example:** Billy makes a Strength check to hold a heavy gate up for his friends while they escape. He rolls 2d6 and adds his Strength of +0. He rolls a 3 and a 6, so he another d6 and gets another 6, then rolls a 2. His total becomes 3+6+6+2+0=17, a remarkable roll.
 
 ### Target Numbers
 
 The target number lands on a scale that is based on the difficulty of the action being attempted. Many tasks have guidelines associated with them to help the Game Master best determine where on the scale a given target should begin, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number.
 
-{{% hint important %}}
-**Certain limitations should be noted:**
+> [!IMPORTANT]
+> **Certain limitations should be noted:**
 
 The standard decision dice create a small probability curve, averaging around 6-7 with an extended trail due to the exploding dice.
 
@@ -48,7 +46,6 @@ Any modifiers to the roll move the curve.
 A simple +1 to that roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
 
 This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
-{{% /hint %}}
 
 ### Difficulty Scale
 
@@ -72,10 +69,9 @@ The "Impossible" task description is used to describe any task that would be nar
 
 ### Success and Failure
 
-{{% hint note %}}
-**Short Version:**
-Success = Higher than or equal to target.
-{{% /hint %}}
+> [!NOTE]
+> **Short Version:**
+> Success = Higher than or equal to target.
 
 When the result of a roll has been determined and is equal to or higher than the target, the action is a success, the GM describes what has occurred, and play continues.
 
@@ -87,14 +83,14 @@ All GMs have their own style. Some use the situation itself to gauge the results
 
 ## Advantage
 
-{{% hint note %}}
-**Short Version:**
-Alter decision rolls at GM's discresion:
-- Major Advantage = +1 decision die 
-- Minor Advantage = +3
-- Minor Disadvantage = -3
-- Major Disadvantage = -1 decision die
-{{% /hint %}}
+> [!NOTE]
+> **Short Version:**
+> Alter decision rolls at GM's discresion:
+> - Major Advantage = +1 decision die 
+> - Minor Advantage = +3
+> - Minor Disadvantage = -3
+> - Major Disadvantage = -1 decision die
+
 
 Advantage is a special type of modifier that can be added to any decision roll by the GM based on the situation faced by the characters. Unlike most modifiers which only provide a bonus or penalty, advantage can alter the number of decision dice rolled. This allows the GM to quickly alter the target of a decsion roll on the fly. The Advantage modifier works on a scale with five levels: 
 
@@ -138,12 +134,11 @@ A tie with a target number counts as a success. If a tie occures during a contes
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations.
 
-{{% hint tip %}}
-**Example:**
-The most forthcoming example of this is when calculating Stress (½ Level + ½ Will) and Vitality (½ Level + ½ Fort), since this requires halving two values and adding them together:
-- If those values are 3 and 1, they become 1.5 and 0.5, and are added together to become 2.
-- If those values are 3 and 2, they become 1.5 and 1, and are added up to become 2.5, which is then rounded down to 2.
-{{% /hint %}}
+> [!TIP]
+> **Example:**
+> The most forthcoming example of this is when calculating Stress (½ Level + ½ Will) and Vitality (½ Level + ½ Fort), since this requires halving two values and adding them together:
+> - If those values are 3 and 1, they become 1.5 and 0.5, and are added together to become 2.
+> - If those values are 3 and 2, they become 1.5 and 1, and are added up to become 2.5, which is then rounded down to 2.
 
 ---
 

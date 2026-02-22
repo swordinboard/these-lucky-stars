@@ -8,18 +8,17 @@ draft: true
 >
 > Can span multiple lines
 
-{{% hint note %}}
-Used for general callouts and "short version" callouts
-{{% /hint %}}
+> [!NOTE]]
+> Used for quick notes or "short versions"
 
-{{% hint tip %}}
-Used for examples
-{{% /hint %}}
+> [!TIP]
+> Used for examples
 
-{{% hint important %}}
-Used for major callouts
-{{% /hint%}}
+> [!IMPORTANT]
+> Used for longermost general callouts
 
-{{% hint warning %}}
-Used for annaouncment type callouts.
-{{% /hint %}}
+> [!WARNING]
+> Used for announcments
+
+> [!CAUTION]
+> Used for site status type annaouncments

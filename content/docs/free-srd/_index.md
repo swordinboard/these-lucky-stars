@@ -4,10 +4,9 @@ weight: 1
 bookCollapseSection: false
 ---
 
-{{% hint warning %}}
-**Current Status**
-These Lucky Stars is in active playtesting. The rules presented here are stable and playable, but may change based on ongoing testing and feedback. Setting-specific content is still in development and kept within closed playtesting.
-{{% /hint %}}
+> [!DANGER]
+> **Current Status**
+> These Lucky Stars is in active playtesting. The rules presented here are stable and playable, but may change based on ongoing testing and feedback. Setting-specific content is still in development and kept within closed playtesting while the srd is in the process of being uploaded.
 
 ## These Lucky Stars
 
