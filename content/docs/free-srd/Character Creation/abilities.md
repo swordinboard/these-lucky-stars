@@ -13,41 +13,39 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
 | [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
 | [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
-| [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. | Core Combat |
+| - [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. | Core Combat |
 | [Defender](#defender) | Double your DEF against a melee attack. | Core Combat |
-| [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. | Core Combat |
-| [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. | Core Combat |
-| [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. | Core Combat |
-| [True Defender](#true-defender) | Use Defender on behalf of an ally. | Core Combat |
+| - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. | Core Combat |
+| - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. | Core Combat |
+| -- [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. | Core Combat |
+| - [True Defender](#true-defender) | Use Defender on behalf of an ally. | Core Combat |
 | [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. | Core Combat |
-| [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. | Core Combat |
-| [Dual Strike](#dual-strike) | Increase damage die with dual attack. | Core Combat |
-| [Extra Dual Attack](#extra-dual-attack) | Use dual attack twice per round. | Core Combat |
+| - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. | Core Combat |
+| - [Dual Strike](#dual-strike) | Increase damage die with dual attack. | Core Combat |
+| - [Extra Dual Attack](#extra-dual-attack) | Use dual attack twice per round. | Core Combat |
 | [Extra Attack](#extra-attack) | Make two standard attacks per round. | Core Combat |
-| [Focus Attack](#focus-attack) | Focus on an opponent to gain ATK bonus. | Core Combat |
+| [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. | Core Combat |
+| - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. | Core Combat |
 | [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. | Core Combat |
-| [Precise Focus](#precise-focus) | Triple normal range during a Focus Attack. | Core Combat |
 | [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. | Core Combat |
 | [Improved Ability [___]](#improved-ability) | Increase the target of an ability's forced check. | Core Combat |
-| [Improved Cover](#improved-cover) | ¾ cover raises the attack target an additional step. | Core Combat |
-| [Quick Cover](#quick-cover) | Switch from partial to full cover for no AP. | Core Combat |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. | Core Combat |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. | Core Combat |
-| [Rage](#rage) | Enter an enraged state for +2 STR and +2 FORT. | Core Combat |
-| [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. | Core Combat |
-| [Fearless Rage](#fearless-rage) | Lower target for resisting fear while raging. | Core Combat |
-| [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. | Core Combat |
-| [More Rage](#more-rage) | Gain an extra daily use of Rage. | Core Combat |
-| [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR, +4 FORT. | Core Combat |
-| [Unsettling Rage](#unsettling-rage) | Intimidate a nearb opponent when activating Rage. | Core Combat |
+| [Rage](#rage) | Enter an enraged state for a short duration. | Core Combat |
+| - [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. | Core Combat |
+| - [Fearless Rage](#fearless-rage) | Resisting fear while raging. | Core Combat |
+| -- [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. | Core Combat |
+| - [More Rage](#more-rage) | Gain an extra daily use of Rage. | Core Combat |
+| - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. | Core Combat |
+| -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. | Core Combat |
 | [Reckless Attack](#reckless-attack) | Trade DEF for ATK and DMG on melee attacks. | Core Combat |
 | [Suppressing Fire](#suppressing-fire) | Pin enemies in an area with automatic fire. | Core Combat |
-| [Controlled Suppressing Fire](#controlled-suppressing-fire) | Conserve ammo during suppressive fire. | Core Combat |
-| [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. | Core Combat |
-| [Line of Fire](#line-of-fire) | Change suppression area to a line. | Core Combat |
-| [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. | Core Combat |
+| - [Controlled Suppressing Fire](#controlled-suppressing-fire) | Conserve ammo during suppressive fire. | Core Combat |
+| - [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. | Core Combat |
+| - [Line of Fire](#line-of-fire) | Change suppression area to a line. | Core Combat |
+| - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. | Core Combat |
 | [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. | Core Combat |
-| [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. | Core Combat |
+| - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. | Core Combat |
 | [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. | Core Luck |
 | [Bonus Luck](#bonus-luck) | Gain one additional Luck point. | Core Luck |
 | [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. | Core Luck |
@@ -81,21 +79,21 @@ For 4 AP you may rush at your enemies to deliver a powerful melee attack as a fu
 
 ### Agile Charge
 
-*Charge, AGI 4, Level 3*
+*Charge, AGI 2, Level 3*
 
 The movement of your Charge ability no longer needs to be in a straight line, though it still cannot pass over/under obstacles or through difficult terrain.
 
 ### Bash
 
-*Charge, STR 3, AGI 3, Level 5*
+*Charge, STR 3, Level 5*
 
-Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. Instead of making an attack make a contested grapple check at the end of your movement with a +4 bonus. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they collide with a solid object they take 1d6+STR damage and you do not take their space.
+Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. Instead of making an attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they collide with a solid object they take 1d6+STR damage and you do not take their space.
 
 ### Improved Bash
 
-*Charge, Bash, STR 5, AGI 3, Level 7*
+*Charge, Bash, STR 5, Level 7*
 
-Increase the displacement from your Bash by an additional 5ft for each 5pts the result of your contested grapple check was greater than your opponents. If your opponent was moved at least 10ft this way, they are also knocked prone. Damage is still dealt if they hit a solid object, and you take their place if able.
+Increase the displacement from your Bash by an additional 5ft for every 3pts the result of your contested grapple check was greater than your opponents. If your opponent was moved at least 10ft this way, they are also knocked prone. Damage is still dealt if they hit a solid object, and you take their place if able.
 
 ### Defender
 
@@ -119,7 +117,7 @@ You are so skilled at defending from melee attacks that you can negate a wound o
 
 *Tough Trait, Defender (2), Just Winded, Just Grazed, FORT 4, Level 9*
 
-You may spend 2 Luck points to receive no VIT loss and no wound/condition from an attack that does not deal extreme damage.
+You may spend 2 Luck points to ignore all effects of an attack that does not deal extreme damage.
 
 ### True Defender
 
@@ -131,25 +129,25 @@ You can activate your Defender ability anytime an attack is declared on an ally,
 
 *Weapon Proficiency, DEX 2, Level 3*
 
-Your melee and ranged attacks with two weapons are more difficult to defend against. Once per round when using two weapons with which you are proficient to make an attack, you may lower the target by one step.
+Your melee and ranged attacks with two weapons are more difficult to defend against. Once per round you may gain advantage while using two weapons with which you are proficient to make an attack.
 
 ### Dual Defense
 
 *Weapon Proficiency, Dual Attack, Level 3*
 
-You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 DEF per weapon.
+You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 DEF per weapon. This ability can be taken a second time to increase the bonus provided by each weapon to +2 DEF.
 
 ### Dual Strike
 
 *Weapon Proficiency, Dual Attack, Level 5*
 
-Strike with both weapons simultaneously to deal more damage. Increase the damage die by one size when using your dual attack ability 3/day. You can take this ability three additional times, each increasing the number of uses by one to a maximum of 6/day.
+Strike with both weapons simultaneously to deal more damage. Increase the damage die by one size when using your dual attack ability 2/day. You can take this ability two additional times, each increasing the number of uses by two to a maximum of 6/day.
 
 ### Extra Dual Attack
 
 *Weapon Proficiency, Dual Attack, DEX 4, Level 9*
 
-You can use your dual attack ability twice per round.
+You can use your dual attack ability twice per round (each time consuming a seperate use of the ability).
 
 ### Extra Attack
 
@@ -157,23 +155,25 @@ You can use your dual attack ability twice per round.
 
 You can make two standard attacks per round with a weapon with which you are proficient for 2 AP each. This second attack cannot be a readied action.
 
+*Normal: You can only make one attack action per round.*
+
 ### Focus Attack
 
 *WILL 2, Level 3*
 
-For 2 AP you may choose to focus on an opponent instead of an area, lowering the target of your next attack by one. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn or if you lose line of sight.
-
-### Focus In
-
-*WILL 2*
-
-While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make attacks of opportunity with your ranged weapon against enemies who attempt aggressive actions within those spaces.
+For 2 AP you may choose to focus on a single opponent, gaining advantage on your next attack against them. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn if unused or if you lose line of sight. This ability can be interrupted if held between turns.
 
 ### Precise Focus
 
 *Proficiency with a Single Shot ranged weapon, Focus Attack, WILL 2, Level 5*
 
-While making a Focus Attack the normal range of any single shot ranged weapon that you are proficient with is tripled.
+While using Focus Attack or Focus In the normal range of any single shot ranged weapon that you are proficient with is tripled.
+
+### Focus In
+
+*WILL 2*
+
+While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make attacks of opportunity with your ranged weapon against enemies who attempt aggressive actions within those spaces. This ability can be interrupted.
 
 ### Friend in Need
 
@@ -187,17 +187,7 @@ You are very protective of your allies. Anytime a melee attack is declared again
 
 *Level 5*
 
-Any ability that forces the opponent to make a target roll: Select an ability to improve that forces an opponent to make a d20 target roll (i.e., Suppressing Fire). Increase the target of the selected ability by one step. This ability can be selected multiple times, each time applying to a new ability.
-
-### Improved Cover
-
-You know how to efficiently choose and utilize cover in combat. Partial cover that hides at least ¾ of your body from view and cannot be penetrated by an attack raises the target of that attack by an additional step.
-
-### Quick Cover
-
-*Improved Cover, AGI 4*
-
-You can change from partial cover to full cover once per round without using an Action Point.
+Any ability that forces the opponent to make a target roll: Select an ability to improve that forces an opponent to make an uncontested decision roll (i.e., Suppressing Fire). Increase the target of the ability by +2. This ability can be selected multiple times; it may be applied to the same ability up to three times for a total target increase of +6, or be applied to new abilities.
 
 ### Quick Draw
 
@@ -215,7 +205,7 @@ When wielding two semi-auto ranged weapons with which you are proficient, you ma
 
 *Level 3*
 
-3/day for 1AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration or a mental attribute roll (unless required by a related ability). You may end this ability early by spending 2 AP.
+2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration/focus or a mental attribute roll (unless required by a related ability), cannot use the ready action, and take a -2 penalty to CHA. You may end this ability early at any time on your turn by spending 2 AP.
 
 ### Extended Rage
 
@@ -227,25 +217,25 @@ Your Rage ability's duration is increased by two rounds. This ability can be sel
 
 *Rage, WILL 2, Level 5*
 
-While using the Rage ability, lower the target for resisting fear effects by one step.
+While using the Rage ability, gain advantage while resisting fear effects.
 
 ### Indomitable Rage
 
 *Unshakable Trait, Rage, Fearless Rage, WILL 4, Level 9*
 
-While using the Rage ability you are immune to fear and distraction effects, and gain +4 to intimidation rolls.
+While using the Rage ability you are immune to fear and distraction effects, and gain advantage on intimidation rolls.
 
 ### More Rage
 
 *Rage*
 
-Gain an extra daily use of rage. This ability can be selected multiple times to a maximum of 6/day.
+Gain two extra daily uses of rage. This ability can be selected up to three times to increase the daily usage by a total of +6.
 
 ### Powerful Rage
 
 *Rage, Level 5*
 
-When activating the Rage ability, you may choose to spend a second use of rage to increase the bonus provided to +4 STR, +4 FORT.
+When activating the Rage ability, you may choose to spend a second use of Rage to increase the bonuses provided to +4 STR and +4 FORT.
 
 ### Unsettling Rage
 
@@ -257,25 +247,25 @@ When activating the Powerful Rage ability, roll an intimidation check. All oppon
 
 *STR 2, Level 5*
 
-While making a melee attack on your turn, you may choose to lower your current DEF to gain a bonus to your next attack. Each point of DEF can be traded for +1 ATK and DMG however you cannot lower your DEF to 0. This bonus applies only to attacks made in the same turn in which this ability was activated. This effect does not change your max DEF, so if your DEF resets it will reset to max value.
+While making a melee attack on your turn, you may choose to lower your current DEF to gain a bonus to your next attack. Each point of DEF can be traded for +1 ATK and DMG however you cannot lower your DEF to 0. This bonus applies only to attacks made in the same turn in which this ability was activated. This effect does not change or alter your max DEF.
 
 ### Suppressing Fire
 
 *Weapon Proficiency with a semi-auto or full-auto weapon, DEX 2*
 
-This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability uses 10% of the weapon's max ammunition. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 15 WILL [distraction] check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. When the effect of the ability ends, the weapon used must be reloaded/cooled.
+This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability uses 10% of the weapon's max ammunition. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL [distraction] check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through these spaces are only affected once and their movement is not interrupted. When the effect of the ability ends, the weapon used must be reloaded/cooled.
 
 ### Controlled Suppressing Fire
 
 *Weapon Proficiency with a semi-auto or full-auto weapon, Suppressing Fire*
 
-You have mastered timing your bursts of suppressive fire to conserve ammo. Your weapon no longer needs to be reloaded or cooled at the beginning of your next turn when using the Suppressing Fire ability. You use only 5% of the weapon's max ammunition.
+You have mastered timing your bursts of suppressive fire to conserve ammo. Your weapon no longer needs to be reloaded or cooled after using the Suppressing Fire ability. You use only 5% of the weapon's max ammunition.
 
 ### Improved Suppressing Fire
 
-*Weapon Proficiency with a full-auto weapon, Suppressing Fire, Level 7*
+*Weapon Proficiency with a full-auto weapon, Suppressing Fire, Level 5*
 
-While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by one step OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability uses an additional 5% ammunition.
+While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by two OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability uses an additional 5% ammunition.
 
 ### Line of Fire
 
@@ -285,9 +275,9 @@ When using your Suppressing Fire ability with a full-auto weapon that you are pr
 
 ### Oppressive Suppression
 
-*Weapon Proficiency with a full-auto heavy weapon, Suppressing Fire*
+*Weapon Proficiency with a full-auto heavy weapon, Suppressing Fire, Level 5*
 
-While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares that need not be adjacent OR increase the target for the WILL distraction check by one step. If you choose to do either of these, the ability uses an additional 5% ammunition.
+While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares that need not be adjacent OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability uses an additional 5% ammunition.
 
 ### Vital Strike
 

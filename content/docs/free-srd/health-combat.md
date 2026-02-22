@@ -41,7 +41,7 @@ Generally, the more time or effort an action requires, the more AP it costs:
 - **2 AP** — Focused tasks: making an attack, moving up to your speed.
 - **3+ AP** — Complex tasks: disabling a trap, intimidating opponents while breaking through a door.
 
-### Multi-Tuen Actions:
+### Multi-Turn Actions:
 
 Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through physical effects.
 
@@ -185,7 +185,7 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 
 ### Defensive Actions
 
-**Ready Action** — Withhold all actions to respond to a specific trigger. Declare both the action and the trigger during your turn. When the trigger occurs, complete your declared action in response. Readied actions are vulnerable to interruption or distraction. See [multi-turn actions](/docs/health-and-combat/#multi-turn-actions) for more.
+**Ready Action** — Withhold all actions to respond to a specific trigger. Declare both the action and the trigger during your turn. When the trigger occurs, complete your declared action in response. Readied actions are vulnerable to interruption or distraction. See [multi-turn actions](#multi-turn-actions) for more.
 
 **Stealth** — Stealth actions generally do not cost additional AP. Moving silently costs the same as a move action; hiding behind an object costs the same as taking cover. Most stealth checks start at target 8. If an opponent is actively searching, they may roll INS to detect you.
 

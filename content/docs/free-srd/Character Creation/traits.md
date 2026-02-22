@@ -24,9 +24,6 @@ Some traits are followed by labels — written in [brackets] — depending on th
 | [Inter-Planet Traveler](#inter-planet-traveler) | Immune system hardened by travel between planets. | Sci-Fi |
 | [Scrap Hauler](#scrap-hauler) | Accustomed to carrying heavy loads in different environments. | Sci-Fi |
 | [Space Adept](#space-adept) | Accustomed to zero and low-gravity environments. | Sci-Fi |
-| [Human [Racial]](#human) | Regarded as the luckiest species in existence. | Sci-Fi |
-| [Hrava [Racial]](#hrava) | Proud species known for unity and technology. | Sci-Fi |
-| [Vusiea [Racial]](#vusiea) | Elusive species adapted to harsh environments. | Sci-Fi |
 
 ---
 
@@ -83,25 +80,3 @@ You are accustomed to carrying heavy loads in different environments. Each point
 ### Space Adept
 
 You are accustomed to moving through zero and low-gravity environments. The target for AGI checks to safely move in zero and low gravity is lowered by one.
-
----
-
-## Sci-Fi Racial
-
-### Human
-
-**Human [Racial]**
-
-The other races generally regard humans as the luckiest species in existence, nothing else explains how they've fought each other so long and made it this far. *Fortunate Inspiration:* Each player character in the party gains +1 Luck. This effect stacks up to 3 times.
-
-### Hrava
-
-**Hrava [Racial]**
-
-Hrava are a proud species known for their unity and technology. Their extra limbs allow them to carry more, use more weapons, and climb at remarkable speeds. *Four Arms:* +1 max bulky items, 10ft base climb speed. Climb speed increases by +5ft for every 2 points in both STR and AGI. (Must have 2 STR and 2 AGI for every 5ft increase.)
-
-### Vusiea
-
-**Vusiea [Racial]**
-
-Vusiea are an elusive species that prefer isolation. Their home planet is dangerous but has left them well adapted to harsh environments. Their antennae change color according to temperature. *Adaptive:* All Vusiea have a +2 bonus against asphyxiation and damaging environmental effects that require a FORT save. Extreme damage from environmental effects is unchanged.

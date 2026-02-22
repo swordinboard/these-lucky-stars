@@ -17,12 +17,9 @@ Proficiencies are things your character is particularly skilled with. Most are r
 | [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
 | [Vehicle [____]](#vehicle) | Familiar with a type of vehicle. | Core |
-| [Licensed [____]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
+| - [Licensed [____]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
 | [Weapon [___]](#weapon) | Specialized training with a selected weapon type. | Core |
 | [Comp Jack](#comp-jack) | Specialized training in computer systems and the comp jack. | Sci-Fi |
-| [Cybernetics](#cybernetics) | Learned to make the most of cybernetic implants. | Sci-Fi |
-| [Cybernetic Defense](#cybernetic-defense) | Passively sense and prevent hostile interference. | Sci-Fi |
-| [Exoskeleton](#exoskeleton) | Specialized training in the operation of exoskeletons. | Sci-Fi |
 | [General Robotics](#general-robotics) | Trained in maintenance and repair of robotic parts and models. | Sci-Fi |
 | [General Technology](#general-technology) | Trained in the use of the Tech Kit. | Sci-Fi |
 
@@ -66,7 +63,6 @@ You have been trained in the use of the repair kit. Gain +2 to rolls to fix or a
 **Vehicle [____]**
 
 You are familiar with a type of vehicle. Gain a +1 bonus to rolls made to pilot/drive/ride the selected type of vehicle. This proficiency can be taken multiple times, each time applying to a new type of vehicle.
-[Creatures, small craft, Class 1, Class 2, Class 3, Class 4]
 
 ### Licensed
 
@@ -91,23 +87,7 @@ You have specialized training in the use of a selected weapon type. Gain +1 ATK 
 
 *KNO 1*
 
-You have specialized training in computer systems and how to operate them with the comp jack, allowing you to use the tool to interact with computer systems from almost any connected terminal.
-
-### Cybernetics
-
-You have learned to make the most of cybernetic implants. Gain +2 to rolls utilizing a cybernetic implant.
-
-### Cybernetic Defense
-
-*Cybernetics Proficiency, INS 2*
-
-You have learned to passively sense and prevent hostile interference. Gain +2 to rolls to resist cybernetic interference.
-
-### Exoskeleton
-
-*DEX 2, KNO 2*
-
-You have specialized training in the complex operation of exoskeletons and can operate them in the field.
+You have specialized training in computer systems and how to operate them with the comp jack, also called a cyberdeck or slicer, allowing you to use the tool to interact with computer systems from almost any connected terminal.
 
 ### General Robotics
 
@@ -119,4 +99,4 @@ You have been trained in the maintenance and repair of various robotic parts and
 
 *KNO 1*
 
-You are familiar with small circuitry, wiring, and soldering. Gain +2 to repair or hardwire equipment, drones/robots, and vehicles while using the tech kit.
+You are familiar with small circuitry, wiring, and soldering. Gain +2 to repair or hardwire equipment, drones/robots, and other electrical components while using the tech kit.
