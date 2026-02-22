@@ -1,6 +1,6 @@
 ---
 title: "Proficiencies"
-weight: 1
+weight: 2
 draft: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Character Creation"
-weight: 4
+weight: 5
+bookCollapseSection: true
 draft: true
 ---
 
@@ -36,6 +37,10 @@ Some traits are followed by labels -written in [brackets]- depending on the sett
 As characters increase in level they gain access to new features and increases to attributes.
 
 > - At every level after first a character gains their choice of one ability or proficiency.
-> - On every even numbered level, a character also gains one attribute point to assign as they like. (Maximum attribute vlaue is 7 before modifiers.)
+> - On every even numbered level, a character also gains one attribute point to assign as they like. (Maximum attribute value is 7 before modifiers.)
 
-While there is no max level in this system, in most cases the average person would be between levels 3 and 5, while most trained professionals likely be closer to levels 5 through 7. This tends to give access to an appropriate number of features and bonuses.
+While there is no max level in this system and a GM may alter the power-scale of their setting/game in any way they like, typically the following level spread tends to give access to an appropriate number of features and bonuses.
+- Average NPC or low level PC: Levels 3-5.
+- Trained professionals: Levels 5-7
+- Seasoned veterans and adventurers: Levels 8-12
+- Heroic characters and legends: Level 12+

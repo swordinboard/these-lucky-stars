@@ -1,6 +1,6 @@
 ---
 title: "Free SRD"
-weight: 4
+weight: 1
 bookCollapseSection: false
 ---
 
