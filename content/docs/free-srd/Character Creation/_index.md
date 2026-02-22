@@ -2,7 +2,6 @@
 title: "Character Creation"
 weight: 5
 bookCollapseSection: true
-draft: true
 ---
 
 ## Character Creation

@@ -1,7 +1,6 @@
 ---
 title: Traits
 weight: 1
-draft: true
 ---
 
 # Traits

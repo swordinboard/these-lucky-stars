@@ -1,7 +1,6 @@
 ---
 title: Abilities
 weight: 3
-draft: true
 ---
 
 # Abilities

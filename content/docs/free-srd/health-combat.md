@@ -1,7 +1,6 @@
 ---
 title: "Health and Combat"
 weight: 4
-draft: false
 ---
 
 ## Health

@@ -1,7 +1,6 @@
 ---
 title: "Proficiencies"
 weight: 2
-draft: true
 ---
 
 ## Proficiencies
