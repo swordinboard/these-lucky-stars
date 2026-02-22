@@ -14,7 +14,7 @@ Proficiencies are things your character is particularly skilled with. Most are r
 | [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
 | [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
-| [Medic Training](#medic-training) | Trained in the use of medicine and medical equipment. | Core |
+| [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
 | [Vehicle [____]](#vehicle) | Familiar with a type of vehicle. | Core |
 | [Licensed [____]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
@@ -24,7 +24,7 @@ Proficiencies are things your character is particularly skilled with. Most are r
 | [Cybernetic Defense](#cybernetic-defense) | Passively sense and prevent hostile interference. | Sci-Fi |
 | [Exoskeleton](#exoskeleton) | Specialized training in the operation of exoskeletons. | Sci-Fi |
 | [General Robotics](#general-robotics) | Trained in maintenance and repair of robotic parts and models. | Sci-Fi |
-| [General Technology](#general-technology) | Familiar with small circuitry, wiring, and soldering. | Sci-Fi |
+| [General Technology](#general-technology) | Trained in the use of the Tech Kit. | Sci-Fi |
 
 ---
 
@@ -34,7 +34,8 @@ Proficiencies are things your character is particularly skilled with. Most are r
 
 **Armor [___]**
 
-You have been trained in the use of a selected armor type. Gain +2 DEF while using selected armor type. Can be selected multiple times to improve different armors or taken twice on a single armor (providing a total +4 bonus). [Heavy, Light]
+You have been trained in the use of a selected armor type. Gain +1 DEF while using selected armor type. Can be selected multiple times to improve different armors or taken up to three times on a single armor (providing a total +3 bonus).
+[Heavy, Light]
 
 ### B&E Kit
 
@@ -50,27 +51,28 @@ You have been trained to be as deadly without a weapon as you are when armed wit
 
 ### Medic Training
 
-*KNO 2*
+*KNO 1*
 
 You have been trained in the use of medicine and medical equipment. Gain +2 to rolls involving the medical kit.
 
 ### Repair Kit
 
-*KNO 2*
+*KNO 1*
 
-You have been trained in the use of the repair kit. Gain +2 to rolls to fix or alter equipment and vehicles while using the repair kit.
+You have been trained in the use of the repair kit. Gain +2 to rolls to fix or alter equipment, vehicles, and structures while using the repair kit.
 
 ### Vehicle
 
 **Vehicle [____]**
 
-You are familiar with a type of vehicle. Gain a +1 bonus to rolls made to pilot/drive/ride the selected type of vehicle. This proficiency can be taken multiple times, each time applying to a new type of vehicle. [Creatures, small craft, Class 1, Class 2, Class 3, Class 4]
+You are familiar with a type of vehicle. Gain a +1 bonus to rolls made to pilot/drive/ride the selected type of vehicle. This proficiency can be taken multiple times, each time applying to a new type of vehicle.
+[Creatures, small craft, Class 1, Class 2, Class 3, Class 4]
 
 ### Licensed
 
 **Licensed [____]**
 
-*Vehicle Proficiency, KNO 2*
+*Vehicle Proficiency, KNO 2, INS 1*
 
 Select a vehicle type for which you have Vehicle Proficiency. Add your INS bonus to rolls to pilot/drive/ride the selected type of vehicle. This proficiency can be selected multiple times, each time applying to a new type of vehicle you have Vehicle Proficiency with.
 
@@ -78,7 +80,8 @@ Select a vehicle type for which you have Vehicle Proficiency. Add your INS bonus
 
 **Weapon [___]**
 
-You have specialized training in the use of a selected weapon type. Gain +1 ATK while using that weapon. Can be chosen multiple times to select different weapon types, or stacked up to 3 times on a single type (providing a total +3 bonus). Unarmed attacks can also gain Weapon Proficiency, but only if you have the Martial Training proficiency. [Pistol, Rifle, Heavy Ranged, Light Melee, Medium Melee, Polearms & Staffs, Two Handed Melee]
+You have specialized training in the use of a selected weapon type. Gain +1 ATK while using that weapon. Can be chosen multiple times to select different weapon types, or stacked up to thrre times on a single type (providing a total +3 bonus). Unarmed attacks can also gain Weapon Proficiency, but only if you have the Martial Training proficiency.
+[Pistol, Rifle, Heavy Ranged, Light Melee, Medium Melee, Polearms & Staffs, Two Handed Melee]
 
 ---
 
@@ -86,7 +89,7 @@ You have specialized training in the use of a selected weapon type. Gain +1 ATK 
 
 ### Comp Jack
 
-*KNO 2*
+*KNO 1*
 
 You have specialized training in computer systems and how to operate them with the comp jack, allowing you to use the tool to interact with computer systems from almost any connected terminal.
 
@@ -98,7 +101,7 @@ You have learned to make the most of cybernetic implants. Gain +2 to rolls utili
 
 *Cybernetics Proficiency, INS 2*
 
-You have learned to passively sense and prevent hostile interference. Gain +2 to rolls to resist cybernetic and interference.
+You have learned to passively sense and prevent hostile interference. Gain +2 to rolls to resist cybernetic interference.
 
 ### Exoskeleton
 
@@ -114,6 +117,6 @@ You have been trained in the maintenance and repair of various robotic parts and
 
 ### General Technology
 
-*KNO 2*
+*KNO 1*
 
 You are familiar with small circuitry, wiring, and soldering. Gain +2 to repair or hardwire equipment, drones/robots, and vehicles while using the tech kit.

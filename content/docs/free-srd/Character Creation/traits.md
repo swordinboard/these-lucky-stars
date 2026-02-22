@@ -13,11 +13,11 @@ Some traits are followed by labels — written in [brackets] — depending on th
 | Name | Description | Source |
 |------|-------------|--------|
 | [Alert](#alert) | +4 to initiative. | Core |
-| [Diplomatic](#diplomatic) | +4 to persuasion rolls. | Core |
-| [Intimidating](#intimidating) | +4to intimidation rolls. | Core |
+| [Diplomatic](#diplomatic) | +2 to persuasion rolls. | Core |
+| [Intimidating](#intimidating) | +2 to intimidation rolls. | Core |
 | [Lucky](#lucky) | Bonus to max Luck. | Core |
-| [Sly](#sly) | +4 to deception rolls. | Core |
-| [Sneaky](#sneaky) | +4 to stealth rolls. | Core |
+| [Sly](#sly) | +2 to deception rolls. | Core |
+| [Sneaky](#sneaky) | +2 to stealth rolls. | Core |
 | [Stubborn](#stubborn) | Resist manipulation and deception. | Core |
 | [Tough](#tough) | DEF bonus. | Core |
 | [Unshakable](#unshakable) | Resistant to fear and distraction. | Core |
@@ -38,11 +38,11 @@ You have particularly keen senses. Gain +4 Initiative.
 
 ### Diplomatic
 
-You understand other's needs and intentions well. Gain +4 on rolls made to persuade another.
+You understand other's needs and intentions well. Gain +2 on rolls made to persuade another.
 
 ### Intimidating
 
-You are an imposing individual, whether in attitude or stature. Gain +4 on rolls made to intimidate others.
+You are an imposing individual, whether in attitude or stature. Gain +2 on rolls made to intimidate others.
 
 ### Lucky
 
@@ -50,15 +50,15 @@ You are luckier than others. Gain Luck equal to ¼ your level to a maximum of 4 
 
 ### Sly
 
-You don't have a tell, or maybe just barely. Gain +4 on rolls when deceiving others.
+You don't have a tell, or maybe just barely. Gain +2 on rolls when deceiving others.
 
 ### Sneaky
 
-You are very good at remaining unnoticed. Gain +4 on stealth rolls.
+You are very good at remaining unnoticed. Gain +2 on stealth rolls.
 
 ### Stubborn
 
-Your ideas are your own and nobody will change your mind. Gain +4 when making rolls to avoid manipulation or deception.
+Your ideas are your own and nobody will change your mind. Gain +2 when making rolls to avoid manipulation or deception.
 
 ### Tough
 
@@ -104,4 +104,4 @@ Hrava are a proud species known for their unity and technology. Their extra limb
 
 **Vusiea [Racial]**
 
-Vusiea are an elusive species that prefer isolation. Their home planet is dangerous but has left them well adapted to harsh environments. Their antennae change color according to temperature. *Adaptive:* The targets for ignoring all environmental damaging effects and asphyxiation effects are lowered by 2 steps. Extreme damage from environmental effects is unchanged.
+Vusiea are an elusive species that prefer isolation. Their home planet is dangerous but has left them well adapted to harsh environments. Their antennae change color according to temperature. *Adaptive:* All Vusiea have a +2 bonus against asphyxiation and damaging environmental effects that require a FORT save. Extreme damage from environmental effects is unchanged.
