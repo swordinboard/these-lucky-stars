@@ -11,24 +11,24 @@ Some traits are followed by labels — written in [brackets] — depending on th
 
 {{< tabs >}}
 {{% tab "Core" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| [Alert](#alert) | +4 to initiative. | Core |
-| [Diplomatic](#diplomatic) | +2 to persuasion rolls. | Core |
-| [Intimidating](#intimidating) | +2 to intimidation rolls. | Core |
-| [Lucky](#lucky) | Bonus to max Luck. | Core |
-| [Sly](#sly) | +2 to deception rolls. | Core |
-| [Sneaky](#sneaky) | +2 to stealth rolls. | Core |
-| [Stubborn](#stubborn) | Resist manipulation and deception. | Core |
-| [Tough](#tough) | DEF bonus. | Core |
-| [Unshakable](#unshakable) | Resistant to fear and distraction. | Core |
+| Name | Description |
+|------|-------------|
+| [Alert](#alert) | +4 to initiative. |
+| [Diplomatic](#diplomatic) | +2 to persuasion rolls. |
+| [Intimidating](#intimidating) | +2 to intimidation rolls. |
+| [Lucky](#lucky) | Bonus to max Luck. |
+| [Sly](#sly) | +2 to deception rolls. |
+| [Sneaky](#sneaky) | +2 to stealth rolls. |
+| [Stubborn](#stubborn) | Resist manipulation and deception. |
+| [Tough](#tough) | DEF bonus. |
+| [Unshakable](#unshakable) | Resistant to fear and distraction. |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| [Inter-Planet Traveler](#inter-planet-traveler) | Immune system hardened by travel between planets. | Sci-Fi |
-| [Scrap Hauler](#scrap-hauler) | Accustomed to carrying heavy loads in different environments. | Sci-Fi |
-| [Space Adept](#space-adept) | Accustomed to zero and low-gravity environments. | Sci-Fi |
+| Name | Description |
+|------|-------------|
+| [Inter-Planet Traveler](#inter-planet-traveler) | Immune system hardened by travel between planets. |
+| [Scrap Hauler](#scrap-hauler) | Accustomed to carrying heavy loads in different environments. |
+| [Space Adept](#space-adept) | Accustomed to zero and low-gravity environments. |
 {{% /tab %}}
 {{< /tabs >}}
 
