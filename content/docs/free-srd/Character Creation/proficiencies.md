@@ -11,16 +11,16 @@ Proficiencies are things your character is particularly skilled with. Most are r
 {{% tab "Core" %}}
 | Name | Description | Source |
 |------|-------------|--------|
-| ["Armor [___]"](#armor) | Trained in the use of a selected armor type. | Core |
+| [Armor [___]](#armor) | Trained in the use of a selected armor type. | Core |
 | [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
 | [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
-| ["Improved Ability [___]"](#improved-ability) | Special training with a particular ability. | Core |
+| [Improved Ability [___]](#improved-ability) | Special training with a particular ability. | Core |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
-| ["Vehicle [___]"](#vehicle) | Familiar with a type of vehicle. | Core |
-| - ["Licensed [___]"](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
-| ["Weapon [___]"] (#weapon) | Specialized training with a selected weapon type. | Core |
+| [Vehicle [___]](#vehicle) | Familiar with a type of vehicle. | Core |
+| - [Licensed [___]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
+| [Weapon [___]](#weapon) | Specialized training with a selected weapon type. | Core |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
 | Name | Description | Source |
