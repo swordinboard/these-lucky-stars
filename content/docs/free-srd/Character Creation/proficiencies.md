@@ -7,21 +7,29 @@ weight: 2
 
 Proficiencies are things your character is particularly skilled with. Most are related to the use of items and/or provide a passive bonus. Some can be selected multiple times. Some actions cannot be attempted without the appropriate toolkit and/or proficiency. Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the proficiency and is written in [brackets].
 
+{{< tabs >}}
+{{% tab "Core" %}}
 | Name | Description | Source |
 |------|-------------|--------|
 | [Armor [___]](#armor) | Trained in the use of a selected armor type. | Core |
 | [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
 | [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
-| [Improved Ability [___]](#improved-ability | Special training with a particular ability. | Core |
+| [Improved Ability [___]](#improved-ability) | Special training with a particular ability. | Core |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
 | [Vehicle [____]](#vehicle) | Familiar with a type of vehicle. | Core |
 | - [Licensed [____]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
 | [Weapon [___]](#weapon) | Specialized training with a selected weapon type. | Core |
+{{% /tab %}}
+{{% tab "Sci-Fi" %}}
+| Name | Description | Source |
+|------|-------------|--------|
 | [Comp Jack](#comp-jack) | Specialized training in computer systems and the comp jack. | Sci-Fi |
 | [General Robotics](#general-robotics) | Trained in maintenance and repair of robotic parts and models. | Sci-Fi |
 | [General Technology](#general-technology) | Trained in the use of the Tech Kit. | Sci-Fi |
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 
