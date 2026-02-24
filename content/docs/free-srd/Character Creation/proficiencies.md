@@ -9,25 +9,25 @@ Proficiencies are things your character is particularly skilled with. Most are r
 
 {{< tabs >}}
 {{% tab "Core" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| [Armor [___]](#armor) | Trained in the use of a selected armor type. | Core |
-| [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
-| [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
-| [Improved Ability [___]](#improved-ability) | Special training with a particular ability. | Core |
-| [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
-| [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
-| [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
-| [Vehicle [___]](#vehicle) | Familiar with a type of vehicle. | Core |
-| - [Licensed [___]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
-| [Weapon [___]](#weapon) | Specialized training with a selected weapon type. | Core |
+| Name | Description |
+|------|-------------|
+| [Armor [___]](#armor) | Trained in the use of a selected armor type. |
+| [B&E Kit](#be-kit) | Trained in the use of the B&E kit. |
+| [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. |
+| [Improved Ability [___]](#improved-ability) | Special training with a particular ability. |
+| [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. |
+| [Medic Training](#medic-training) | Trained in the use of the med kit. |
+| [Repair Kit](#repair-kit) | Trained in the use of the repair kit. |
+| [Vehicle [___]](#vehicle) | Familiar with a type of vehicle. |
+| - [Licensed [___]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. |
+| [Weapon [___]](#weapon) | Specialized training with a selected weapon type. |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| [Comp Jack](#comp-jack) | Specialized training in computer systems and the comp jack. | Sci-Fi |
-| [General Robotics](#general-robotics) | Trained in maintenance and repair of robotic parts and models. | Sci-Fi |
-| [General Technology](#general-technology) | Trained in the use of the Tech Kit. | Sci-Fi |
+| Name | Description |
+|------|-------------|
+| [Comp Jack](#comp-jack) | Specialized training in computer systems and the comp jack. |
+| [General Robotics](#general-robotics) | Trained in maintenance and repair of robotic parts and models. |
+| [General Technology](#general-technology) | Trained in the use of the Tech Kit. |
 {{% /tab %}}
 {{< /tabs >}}
 
