@@ -37,15 +37,15 @@ The target number lands on a scale that is based on the difficulty of the action
 
 > [!IMPORTANT]
 > **Certain limitations should be noted:**
-
-The standard decision dice create a small probability curve, averaging around 6-7 with an extended trail due to the exploding dice.
-
-While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
-
-Any modifiers to the roll move the curve.
-A simple +1 to that roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
-
-This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
+>
+>The standard decision dice create a small probability curve, averaging around 6-7 with an extended trail due to the exploding dice.
+>
+>While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
+>
+>Any modifiers to the roll move the curve.
+>A simple +1 to that roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
+>
+>This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers the most volatile, especially when paired with Advantage/Disadvantage and Luck.
 
 ### Difficulty Scale
 

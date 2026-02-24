@@ -9,6 +9,8 @@ Traits are descriptors of your character. They represent a part of their persona
 
 Some traits are followed by labels — written in [brackets] — depending on the setting and set of character features being used. A character cannot have more than one trait with the same label.
 
+{{< tabs >}}
+{{% tab "Core" %}}
 | Name | Description | Source |
 |------|-------------|--------|
 | [Alert](#alert) | +4 to initiative. | Core |
@@ -20,9 +22,15 @@ Some traits are followed by labels — written in [brackets] — depending on th
 | [Stubborn](#stubborn) | Resist manipulation and deception. | Core |
 | [Tough](#tough) | DEF bonus. | Core |
 | [Unshakable](#unshakable) | Resistant to fear and distraction. | Core |
+{{% /tab %}}
+{{% tab "Sci-Fi" %}}
+| Name | Description | Source |
+|------|-------------|--------|
 | [Inter-Planet Traveler](#inter-planet-traveler) | Immune system hardened by travel between planets. | Sci-Fi |
 | [Scrap Hauler](#scrap-hauler) | Accustomed to carrying heavy loads in different environments. | Sci-Fi |
 | [Space Adept](#space-adept) | Accustomed to zero and low-gravity environments. | Sci-Fi |
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 
