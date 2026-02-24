@@ -12,16 +12,16 @@ bookCollapseSection: false
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 
-### [The Basics](/docs/free-srd/the-basics)
+## [The Basics](/docs/free-srd/basics)
 Get to know key terms, the 2d6 resolution system, and general rules of play.
 
-### [Eight Attributes](/docs/free-srd/attributes)
+## [Eight Attributes](/docs/free-srd/attributes)
 Four physical (Strength, Agility, Dexterity, Fortitude) and four mental (Knowledge, Insight, Charisma, Will).
 
-### Flexible Character Creation
+## [Flexible Character Creation](/docs/free-srd/character-creation)
 Build your character with traits, proficiencies, and abilities - no rigid classes.
 
-### [Tactical Combat](/docs/free-srd/health-and-combat)
+## [Tactical Combat](/docs/free-srd/health-combat)
 2d6 opposed roll combat system with unique health system.
 
 ## Design Philosophy

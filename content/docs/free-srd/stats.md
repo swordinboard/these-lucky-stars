@@ -51,7 +51,7 @@ Defense (DEF) is a measurement of how well a character can react to a situation 
 ### Vitality
 > **= ½ Level + ½ Max FORT + Mods (Total Rounded Down, Min 1)**
 
-Vitality (VIT) represents a character's overall health and ability to endure ailments. The more VIT a character has, the more they can carry on before succumbing to their illnesses or wounds. In combat, VIT  represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. One VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
+Vitality (VIT) represents a character's overall health and ability to endure ailments. The more VIT a character has, the more they can carry on before succumbing to their illnesses or wounds. In combat, VIT  represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. One point of VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
 
 ### Wounds and Conditions
 

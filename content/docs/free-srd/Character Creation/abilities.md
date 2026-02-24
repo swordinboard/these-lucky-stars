@@ -10,9 +10,9 @@ Abilities are special actions your character can take. Abilities have the most v
 | Name | Description | Source |
 |------|-------------|--------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
-| [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
-| [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
-| - [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. | Core Combat |
+| - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
+| - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
+| -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. | Core Combat |
 | [Defender](#defender) | Double your DEF against a melee attack. | Core Combat |
 | - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. | Core Combat |
 | - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. | Core Combat |
@@ -141,7 +141,7 @@ Strike with both weapons simultaneously to deal more damage. Increase the damage
 
 *Weapon Proficiency, Dual Attack, DEX 4, Level 9*
 
-You can use your dual attack ability twice per round (each time consuming a seperate use of the ability).
+You can use your dual attack ability twice per round provided you are able to make two attacks. Each attack consumes a seperate uses of Dual Attack. This ability does not grant a second attack, only the ability to use Dual Attack multiple times in the same round. Typically, making two attacks is achieved with the Extra Attack ability.
 
 ### Extra Attack
 
@@ -159,9 +159,9 @@ For 2 AP you may choose to focus on a single opponent, gaining advantage on your
 
 ### Precise Focus
 
-*Proficiency with a Single Shot ranged weapon, Focus Attack, WILL 2, Level 5*
+*Proficiency with a Single Shot ranged weapon, Focus Attack or Focus In, WILL 2, Level 5*
 
-While using Focus Attack or Focus In the normal range of any single shot ranged weapon that you are proficient with is tripled.
+While using Focus Attack or Focus In, the normal range of any single shot ranged weapon that you are proficient with is tripled.
 
 ### Focus In
 
@@ -189,6 +189,8 @@ Any ability that forces the opponent to make a target roll: Select an ability to
 
 Once per round you are able to draw an equipped weapon for no AP or draw a concealed weapon for 1 AP.
 
+*Normal: Under normal conditions drawing an equipped weapon costs 1 AP while drawing a concealed weapon costs 3 AP.*
+
 ### Quick Firing
 
 *Weapon Proficiency, DEX 4, Level 3*
@@ -199,7 +201,7 @@ When wielding two semi-auto ranged weapons with which you are proficient, you ma
 
 *Level 3*
 
-2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration/focus or a mental attribute roll (unless required by a related ability), cannot use the ready action, and take a -2 penalty to CHA. You may end this ability early at any time on your turn by spending 2 AP.
+2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration/focus or a mental attribute roll (unless required by a related ability), cannot ready an action, and take a -2 penalty to CHA. You may end this ability early at any time on your turn by spending 2 AP.
 
 ### Extended Rage
 
@@ -211,7 +213,7 @@ Your Rage ability's duration is increased by two rounds. This ability can be sel
 
 *Rage, WILL 2, Level 5*
 
-While using the Rage ability, gain advantage while resisting fear effects.
+While using the Rage ability, gain advantage when attempting to resist fear effects.
 
 ### Indomitable Rage
 
@@ -307,7 +309,7 @@ You are a beacon of good fortune to your friends. As long as you have at least 1
 
 ### Lucky Strike
 
-Somehow, your attacks seem to find their target quite often. When applying Luck to an attack roll, increase the die size to a d6. This can be selected a second time to increase the die size to a d8.
+Somehow, your attacks seem to find their target quite often. When applying Luck to an attack roll, increase your Luck die size from a d4 to a d6 for the attack. This can be selected a second time to increase the die size to a d8.
 
 ### Medical Marvel
 
@@ -356,7 +358,7 @@ You can spend 4 AP and a use of the Tech Kit with supplies to install a battery 
 
 ### Battery Saboteur
 
-**General Technology Proficiency, one other Battery ability, KNO 4**
+*General Technology Proficiency, one other Battery ability, KNO 4*
 
 You can easily turn battery cores into explosives. Doing so requires a use of the tech kit with supplies and takes one minute. Explosive cores deal damage based on size and charge. To roll damage, roll the battery's current charge (supply) and use the chart below. They can be set to explode with a hard impact, or be rigged to explode on a pre-set timer of up to 2 minutes.
 
@@ -371,29 +373,30 @@ You can easily turn battery cores into explosives. Doing so requires a use of th
 
 ### Armorer
 
-**General Technology Proficiency**
+*General Technology Proficiency*
 
 You can add and remove weapon and armor upgrades using the tech kit or repair kit without risk of damaging the upgrade. Each upgrade takes 30 minutes to install and calibrate, and half as much time to remove.
 (Normal: Upgrades require a target 12 KNO or DEX roll and take 1hr to install or to remove. If the roll is failed, the upgrade takes 1d4 damage.)
 
 ### Companion Bot
 
-**General Robotics Proficiency, Level 3**
+*General Robotics Proficiency, Level 3*
 
-You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and a use of the tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
-(Normal: Repairs to most drones require the tech kit with supplies and a successful target 15 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.)
+You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and the use of a tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
+
+*Normal: Repairs to most drones require the tech kit with supplies and a successful target 15 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
 
 ### Special Encouragement
 
-**General Robotics Proficiency, Companion Bot, KNO 3**
+*General Robotics Proficiency, Companion Bot, KNO 3*
 
-1/day With a few well-placed adjustments and maybe a few good whacks you can quickly repair your companion drone for 1 VIT without using supplies from the tech kit for 3 AP. (Must be adjacent and unrestrained to use this ability.)
+1/day With a few well-placed adjustments and maybe a few good whacks you can quickly repair your companion drone for 1 VIT without using supplies for 3 AP. Tools from a Tech Kit are still required. Must be adjacent and unrestrained to use this ability.
 
 ### Opensaysame
 
 *General Technology Proficiency*
 
-Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice). This ability can be selected up to three times to increase the usage to a maximum of 3/day.
+Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice). This ability can be selected up to three times to increase the usage, to a maximum of 3/day.
 
 ### Rigged Comp Jack
 

@@ -12,6 +12,7 @@ Proficiencies are things your character is particularly skilled with. Most are r
 | [Armor [___]](#armor) | Trained in the use of a selected armor type. | Core |
 | [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
 | [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
+| [Improved Ability [___]](#improved-ability | Special training with a particular ability. | Core |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
@@ -40,6 +41,12 @@ You have been trained in the use of the B&E kit. Gain +2 to rolls to unlock lock
 ### Disguise Kit
 
 You have been trained in the use of the disguise kit. Gain +2 to rolls to alter your appearance while using the disguise kit.
+
+### Improved Ability [___]
+
+*Level 4*
+
+Select an ability that forces an opponent to make an uncontested target roll (i.e. Suppressing Fire). Increase the target of the selected ability by +2. This proficiency can be selected multiple times; it may be applied to the same ability up to three times for a total target increase of +6, or may be applied to a new ability any number of times.
 
 ### Martial Training
 
@@ -75,7 +82,7 @@ Select a vehicle type for which you have Vehicle Proficiency. Add your INS bonus
 
 **Weapon [___]**
 
-You have specialized training in the use of a selected weapon type. Gain +1 ATK while using that weapon. Can be chosen multiple times to select different weapon types, or stacked up to thrre times on a single type (providing a total +3 bonus). Unarmed attacks can also gain Weapon Proficiency, but only if you have the Martial Training proficiency.
+You have specialized training in the use of a selected weapon type. Gain +1 ATK while using that weapon. Can be chosen multiple times to select different weapon types, or stacked up to three times on a single weapon type (providing a total +3 bonus). Unarmed attacks can also gain Weapon Proficiency, but only if you have the Martial Training proficiency.
 [Pistol, Rifle, Heavy Ranged, Light Melee, Medium Melee, Polearms & Staffs, Two Handed Melee]
 
 ---
@@ -92,7 +99,7 @@ You have specialized training in computer systems and how to operate them with t
 
 *KNO 2*
 
-You have been trained in the maintenance and repair of various robotic parts and models. Drones and robots under your control gain 1 Vitality.
+You have been trained in the maintenance and repair of various robotic parts and models. Drones and robots under your control gain +1 Vitality.
 
 ### General Technology
 

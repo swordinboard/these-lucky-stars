@@ -5,7 +5,7 @@ weight: 4
 
 ## Health
 
-Combat in These Lucky Stars uses a unique health system. The first layer, Defense, represents how well a character defends against attacks, both in avoiding them and bracing against them. The second layer, Vitality, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
+Combat in These Lucky Stars uses a unique health system. The first layer, Defense, represents how well a character defends against attacks, both in avoiding and bracing against them. The second layer, Vitality, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
 
 Links to health-related resouces:
 - [Defense](/docs/free-srd/stats/#defense)
@@ -165,6 +165,9 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 **Attack of Opportunity (AOO)** *(1 AP)* — Once per round during another character's turn, you may make an attack of opportunity against any character within your melee reach who takes an aggressive action you are not defending against. Requires a melee weapon and having already acted in combat. Cannot normally be made unarmed.
 
 **Disarm** *(3 AP)* — Attempt to disarm an opponent with a melee weapon you are proficient with. Make a standard attack roll; If successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon.
+
+**Draw a Weapon** *1-3 AP*
+Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed Weapon costs 3 AP.
 
 **Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally; the pinned character must spend 1 AP at the start of their turn to attempt to regain control. If unsuccessful, they take no other actions.
 
