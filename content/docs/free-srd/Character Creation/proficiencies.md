@@ -5,22 +5,22 @@ weight: 2
 
 ## Proficiencies
 
-Proficiencies are things your character is particularly skilled with. Most are related to the use of items and/or provide a passive bonus. Some can be selected multiple times. Some actions cannot be attempted without the appropriate toolkit and/or proficiency. Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the proficiency and is written in [brackets].
+Proficiencies are things your character is particularly skilled with. Most are related to the use of items and/or provide a passive bonus. Some can be selected multiple times. Some actions cannot be attempted without the appropriate toolkit and/or proficiency. Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the proficiency and is usually written in [brackets] beside the proficiency name.
 
 {{< tabs >}}
 {{% tab "Core" %}}
 | Name | Description | Source |
 |------|-------------|--------|
-| [Armor [___]](#armor) | Trained in the use of a selected armor type. | Core |
+| ["Armor [___]"](#armor) | Trained in the use of a selected armor type. | Core |
 | [B&E Kit](#be-kit) | Trained in the use of the B&E kit. | Core |
 | [Disguise Kit](#disguise-kit) | Trained in the use of the disguise kit. | Core |
-| [Improved Ability [___]](#improved-ability) | Special training with a particular ability. | Core |
+| ["Improved Ability [___]"](#improved-ability) | Special training with a particular ability. | Core |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. | Core |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. | Core |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. | Core |
-| [Vehicle [____]](#vehicle) | Familiar with a type of vehicle. | Core |
-| - [Licensed [____]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
-| [Weapon [___]](#weapon) | Specialized training with a selected weapon type. | Core |
+| ["Vehicle [___]"](#vehicle) | Familiar with a type of vehicle. | Core |
+| - ["Licensed [___]"](#licensed) | Add INS bonus to Vehicle Proficiency rolls. | Core |
+| ["Weapon [___]"] (#weapon) | Specialized training with a selected weapon type. | Core |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
 | Name | Description | Source |
@@ -50,7 +50,9 @@ You have been trained in the use of the B&E kit. Gain +2 to rolls to unlock lock
 
 You have been trained in the use of the disguise kit. Gain +2 to rolls to alter your appearance while using the disguise kit.
 
-### Improved Ability [___]
+### Improved Ability
+
+**Improved Ability [___]**
 
 *Level 4*
 
