@@ -1,0 +1,58 @@
+<!-- Scroll to Top Button -->
+<a id="scroll-to-top" href="#" aria-label="Scroll to top" title="Scroll to top">↑</a>
+
+<style>
+  #scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-link);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  #scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #scroll-to-top:hover {
+    background: var(--color-link);
+    filter: brightness(1.2);
+  }
+
+  @media (max-width: 600px) {
+    #scroll-to-top {
+      bottom: 1.25rem;
+      right: 1.25rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var btn = document.getElementById('scroll-to-top');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
