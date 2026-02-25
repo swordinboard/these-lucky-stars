@@ -10,7 +10,7 @@ Abilities are special actions your character can take. Abilities have the most v
 {{< tabs >}}
 {{% tab "Core" %}}
 | Name | Description | Source |
-|-----|-----|-----|
+|------|-------------|--------|
 | General | | |
 | [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
 | [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
@@ -60,7 +60,7 @@ Abilities are special actions your character can take. Abilities have the most v
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
 | Name | Description | Source |
-|-----|-----|-----|
+|------|-------------|--------|
 | General | | |
 | [Armorer](#armorer) | Install and remove upgrades without risk of damage. | Sci-Fi General |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. | Sci-Fi General |
@@ -74,6 +74,7 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
 {{% /tab %}}
 {{< /tabs >}}
+
 ---
 
 ## Core Combat
