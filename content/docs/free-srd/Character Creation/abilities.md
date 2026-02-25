@@ -69,7 +69,7 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
 {{% /tab %}}
-{{% tab "Sci-Fi Battery"}}
+{{% tab "Sci-Fi Battery" %}}
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
