@@ -7,6 +7,8 @@ weight: 3
 
 Abilities are special actions your character can take. Abilities have the most variance in usage and effects. Some abilities provide new actions, others modify existing actions, and some provide passive bonuses. Some abilities can be taken multiple times, improving upon the original effect or number of uses.
 
+{{< tabs >}}
+{{% tab "Core" %}}
 | Name | Description | Source |
 |------|-------------|--------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
@@ -53,6 +55,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. | Core Luck |
 | [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
 | [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
+{{% /tab %}}
+{{% tab "Sci-Fi" %}}
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
@@ -62,7 +66,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. | Sci-Fi General |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. | Sci-Fi General |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. | Sci-Fi General |
-
+{{% /tab %}}
+{{< /tabs >}}
 ---
 
 ## Core Combat
