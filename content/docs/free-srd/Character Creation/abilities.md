@@ -8,70 +8,71 @@ weight: 3
 Abilities are special actions your character can take. Abilities have the most variance in usage and effects. Some abilities provide new actions, others modify existing actions, and some provide passive bonuses. Some abilities can be taken multiple times, improving upon the original effect or number of uses.
 
 {{< tabs >}}
-{{% tab "Core" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| General | | |
-| [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
-| [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
-| Combat | | |
-| [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
-| - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
-| - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
-| -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. | Core Combat |
-| [Defender](#defender) | Double your DEF against a melee attack. | Core Combat |
-| - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. | Core Combat |
-| - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. | Core Combat |
-| -- [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. | Core Combat |
-| - [True Defender](#true-defender) | Use Defender on behalf of an ally. | Core Combat |
-| [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. | Core Combat |
-| - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. | Core Combat |
-| - [Dual Strike](#dual-strike) | Increase damage die with dual attack. | Core Combat |
-| - [Extra Dual Attack](#extra-dual-attack) | Use dual attack twice per round. | Core Combat |
-| [Extra Attack](#extra-attack) | Make two standard attacks per round. | Core Combat |
-| [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. | Core Combat |
-| - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. | Core Combat |
-| [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. | Core Combat |
-| [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. | Core Combat |
-| [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. | Core Combat |
-| [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. | Core Combat |
-| [Rage](#rage) | Enter an enraged state for a short duration. | Core Combat |
-| - [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. | Core Combat |
-| - [Fearless Rage](#fearless-rage) | Resisting fear while raging. | Core Combat |
-| -- [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. | Core Combat |
-| - [More Rage](#more-rage) | Gain an extra daily use of Rage. | Core Combat |
-| - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. | Core Combat |
-| -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. | Core Combat |
-| [Reckless Attack](#reckless-attack) | Trade DEF for ATK and DMG on melee attacks. | Core Combat |
-| [Suppressing Fire](#suppressing-fire) | Pin enemies in an area with automatic fire. | Core Combat |
-| - [Controlled Suppressing Fire](#controlled-suppressing-fire) | Conserve ammo during suppressive fire. | Core Combat |
-| - [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. | Core Combat |
-| - [Line of Fire](#line-of-fire) | Change suppression area to a line. | Core Combat |
-| - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. | Core Combat |
-| [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. | Core Combat |
-| - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. | Core Combat |
-| Luck | | |
-| [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. | Core Luck |
-| [Bonus Luck](#bonus-luck) | Gain one additional Luck point. | Core Luck |
-| [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. | Core Luck |
-| [Lucky Strike](#lucky-strike) | Increase Luck die to d6 on attack rolls. | Core Luck |
-| [Medical Marvel](#medical-marvel) | Heal a condition or wound by spending Luck. | Core Luck |
-| [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. | Core Luck |
+{{% tab "Core General" %}}
+| Name | Description |
+|------|-------------|
+| [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. |
+| [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. |
 {{% /tab %}}
-{{% tab "Sci-Fi" %}}
-| Name | Description | Source |
-|------|-------------|--------|
-| General | | |
-| [Armorer](#armorer) | Install and remove upgrades without risk of damage. | Sci-Fi General |
-| [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. | Sci-Fi General |
-| [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. | Sci-Fi General |
-| [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. | Sci-Fi General |
-| [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. | Sci-Fi General |
-| [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. | Sci-Fi General |
-| Battery | | |
-| [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
-| [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
-| [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
+{{% tab "Core Combat" %}}
+| [Charge](#charge) | Rush an enemy for a powerful melee attack. |
+| - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
+| - [Bash](#bash) | Shove an opponent at the end of a charge. |
+| -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. |
+| [Defender](#defender) | Double your DEF against a melee attack. |
+| - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. |
+| - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. |
+| -- [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. |
+| - [True Defender](#true-defender) | Use Defender on behalf of an ally. |
+| [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. |
+| - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. |
+| - [Dual Strike](#dual-strike) | Increase damage die with dual attack. |
+| - [Extra Dual Attack](#extra-dual-attack) | Use dual attack twice per round. |
+| [Extra Attack](#extra-attack) | Make two standard attacks per round. |
+| [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. |
+| - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. |
+| [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. |
+| [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. |
+| [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
+| [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
+| [Rage](#rage) | Enter an enraged state for a short duration. |
+| - [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. |
+| - [Fearless Rage](#fearless-rage) | Resisting fear while raging. |
+| -- [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. |
+| - [More Rage](#more-rage) | Gain an extra daily use of Rage. |
+| - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. |
+| -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. |
+| [Reckless Attack](#reckless-attack) | Trade DEF for ATK and DMG on melee attacks. |
+| [Suppressing Fire](#suppressing-fire) | Pin enemies in an area with automatic fire. |
+| - [Controlled Suppressing Fire](#controlled-suppressing-fire) | Conserve ammo during suppressive fire. |
+| - [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. |
+| - [Line of Fire](#line-of-fire) | Change suppression area to a line. |
+| - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. |
+| [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. |
+| - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls.
+{{% /tab %}}
+{{% tab "Core Luck" %}}
+| [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. |
+| [Bonus Luck](#bonus-luck) | Gain one additional Luck point. |
+| [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. |
+| [Lucky Strike](#lucky-strike) | Increase Luck die to d6 on attack rolls. |
+| [Medical Marvel](#medical-marvel) | Heal a condition or wound by spending Luck. |
+| [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. |
+{{% /tab %}}
+{{% tab "Sci-Fi General" %}}
+| Name | Description |
+|------|-------------|
+| [Armorer](#armorer) | Install and remove upgrades without risk of damage. |
+| [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. |
+| [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. |
+| [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. |
+| [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
+| [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
+{{% /tab %}}
+{{% tab "Sci-Fi Battery"}}
+| [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
+| [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
+| [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
 {{% /tab %}}
 {{< /tabs >}}
 
