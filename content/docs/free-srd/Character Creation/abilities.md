@@ -84,6 +84,30 @@ Abilities are special actions your character can take. Abilities have the most v
 
 ---
 
+## Core General
+
+{{% details "Student" %}}
+### Student
+
+**Student [___]**
+
+*INT 2*
+
+Choose a general topic in which your character is particularly knowledgeable about, such as math, science, sports, history, technology, combat, etc. Topic is subject to GM approval. 2/day your character may gain a +1 bonus to any roll by applying knowledge about this topic. The party must be able to explain to the GM in what way this knowledge is being applied. If some kind of consensus cannot be reached, the bonus cannot be applied to that roll. Results may vary by GM. This feat may be selected a second time to select a second topic.
+{{% /details %}}
+
+{{% details "Expert" %}}
+### Expert
+
+**Expert [___]**
+
+*Student, INT 4*
+
+Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher. (This feat can only be selected once.)
+{{% /details %}}
+
+---
+
 ## Core Combat
 
 {{% details "Charge" %}}
@@ -100,11 +124,13 @@ For 4 AP you may rush at your enemies to deliver a powerful melee attack. You mu
 The movement of your Charge ability no longer needs to be in a straight line, though it still cannot pass over/under obstacles or through difficult terrain.
 {{% /details %}}
 
+{{% details "Bash" %}}
 ### Bash
 
 *Charge, STR 3, Level 5*
 
 Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. In place of the attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they would collide with a solid object due to this movement they take 1d6+STR damage and you do not take their space.
+{{% /details %}}
 
 ### Improved Bash
 
@@ -343,26 +369,6 @@ Sometimes your body just fixes itself? Once per day you can heal a physical cond
 **Natural Gift [___]**
 
 Choose an attribute. You have always had some luck in this aspect of your life, and it seems to keep coming. When applying Luck to a check using the chosen attribute, excluding attack rolls, increase the die size to a d6. This can be selected multiple times each time applying to a new attribute.
-
----
-
-## Core General
-
-### Student
-
-**Student [___]**
-
-*INT 2*
-
-Choose a general topic in which your character is particularly knowledgeable about, such as math, science, sports, history, technology, combat, etc. Topic is subject to GM approval. 2/day your character may gain a +1 bonus to any roll by applying knowledge about this topic. The party must be able to explain to the GM in what way this knowledge is being applied. If some kind of consensus cannot be reached, the bonus cannot be applied to that roll. Results may vary by GM. This feat may be selected a second time to select a second topic.
-
-### Expert
-
-**Expert [___]**
-
-*Student, INT 4*
-
-Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher. (This feat can only be selected once.)
 
 ---
 
