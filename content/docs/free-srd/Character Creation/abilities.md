@@ -9,8 +9,8 @@ Abilities are special actions your character can take. Abilities have the most v
 
 {{< tabs >}}
 {{% tab "Core" %}}
-| Name | Description |
-|------|-------------|
+| Name | Description | Source |
+|------|-------------|--------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
