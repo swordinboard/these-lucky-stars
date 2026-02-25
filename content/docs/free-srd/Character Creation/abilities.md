@@ -78,7 +78,7 @@ Abilities are special actions your character can take. Abilities have the most v
 For 4 AP you may rush at your enemies to deliver a powerful melee attack as a full action. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. At the end of your movement make a standard melee attack at +2 ATK once within reach of them. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over/under any obstacles or through difficult terrain.
 {{% /details %}}
 
-{{% details "Agile Charge"}}
+{{% details "Agile Charge" %}}
 ### Agile Charge
 
 *Charge, AGI 2, Level 3*
