@@ -7,8 +7,10 @@ weight: 3
 
 Abilities are special actions your character can take. Abilities have the most variance in usage and effects. Some abilities provide new actions, others modify existing actions, and some provide passive bonuses. Some abilities can be taken multiple times, improving upon the original effect or number of uses.
 
-| Name | Description | Source |
-|------|-------------|--------|
+{{< tabs >}}
+{{% tab "Core" %}}
+| Name | Description |
+|------|-------------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
@@ -53,6 +55,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. | Core Luck |
 | [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
 | [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
+{{% /tab %}}
+{{% /tab "Sci-Fi" %}}
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
@@ -62,27 +66,32 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. | Sci-Fi General |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. | Sci-Fi General |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. | Sci-Fi General |
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 
 ## Core Combat
-
+{{% details "Charge" %}}
 ### Charge
 
 For 4 AP you may rush at your enemies to deliver a powerful melee attack as a full action. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. At the end of your movement make a standard melee attack at +2 ATK once within reach of them. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over/under any obstacles or through difficult terrain.
+{{% /details %}}
 
+{{% details "Agile Charge"}}
 ### Agile Charge
 
 *Charge, AGI 2, Level 3*
 
 The movement of your Charge ability no longer needs to be in a straight line, though it still cannot pass over/under obstacles or through difficult terrain.
-
+{{% /details %}}
+{{% details "Bash" %}}
 ### Bash
 
 *Charge, STR 3, Level 5*
 
 Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. Instead of making an attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they collide with a solid object they take 1d6+STR damage and you do not take their space.
-
+{{% /details %}}
 ### Improved Bash
 
 *Charge, Bash, STR 5, Level 7*
