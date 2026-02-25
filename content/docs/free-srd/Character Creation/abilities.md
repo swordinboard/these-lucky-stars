@@ -10,7 +10,10 @@ Abilities are special actions your character can take. Abilities have the most v
 {{< tabs >}}
 {{% tab "Core" %}}
 | Name | Description | Source |
-|------|-------------|--------|
+| General |-----|-----|
+| [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
+| [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
+| Combat |-----|-----|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
@@ -29,7 +32,6 @@ Abilities are special actions your character can take. Abilities have the most v
 | - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. | Core Combat |
 | [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. | Core Combat |
 | [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. | Core Combat |
-| [Improved Ability [___]](#improved-ability) | Increase the target of an ability's forced check. | Core Combat |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. | Core Combat |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. | Core Combat |
 | [Rage](#rage) | Enter an enraged state for a short duration. | Core Combat |
@@ -47,25 +49,27 @@ Abilities are special actions your character can take. Abilities have the most v
 | - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. | Core Combat |
 | [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. | Core Combat |
 | - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. | Core Combat |
+| Luck |-----|-----|
 | [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. | Core Luck |
 | [Bonus Luck](#bonus-luck) | Gain one additional Luck point. | Core Luck |
 | [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. | Core Luck |
 | [Lucky Strike](#lucky-strike) | Increase Luck die to d6 on attack rolls. | Core Luck |
 | [Medical Marvel](#medical-marvel) | Heal a condition or wound by spending Luck. | Core Luck |
 | [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. | Core Luck |
-| [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
-| [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
-| [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
-| [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
-| [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
+| Name | Description | Source |
+| General |-----|-----|
 | [Armorer](#armorer) | Install and remove upgrades without risk of damage. | Sci-Fi General |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. | Sci-Fi General |
 | [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. | Sci-Fi General |
 | [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. | Sci-Fi General |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. | Sci-Fi General |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. | Sci-Fi General |
+| Battery |-----|-----|
+| [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
+| [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
+| [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
 {{% /tab %}}
 {{< /tabs >}}
 ---
