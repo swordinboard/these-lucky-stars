@@ -15,6 +15,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. |
 {{% /tab %}}
 {{% tab "Core Combat" %}}
+| Name | Description |
+|------|-------------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. |
@@ -52,6 +54,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls.
 {{% /tab %}}
 {{% tab "Core Luck" %}}
+| Name | Description |
+|------|-------------|
 | [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. |
 | [Bonus Luck](#bonus-luck) | Gain one additional Luck point. |
 | [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. |
@@ -70,6 +74,8 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
+| Name | Description |
+|------|-------------|
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
