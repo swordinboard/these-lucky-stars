@@ -10,10 +10,11 @@ Abilities are special actions your character can take. Abilities have the most v
 {{< tabs >}}
 {{% tab "Core" %}}
 | Name | Description | Source |
-| General |-----|-----|
+|-----|-----|-----|
+| General | | |
 | [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. | Core General |
 | [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. | Core General |
-| Combat |-----|-----|
+| Combat | | |
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. | Core Combat |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. | Core Combat |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. | Core Combat |
@@ -49,7 +50,7 @@ Abilities are special actions your character can take. Abilities have the most v
 | - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. | Core Combat |
 | [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. | Core Combat |
 | - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. | Core Combat |
-| Luck |-----|-----|
+| Luck | | |
 | [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. | Core Luck |
 | [Bonus Luck](#bonus-luck) | Gain one additional Luck point. | Core Luck |
 | [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. | Core Luck |
@@ -59,14 +60,15 @@ Abilities are special actions your character can take. Abilities have the most v
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
 | Name | Description | Source |
-| General |-----|-----|
+|-----|-----|-----|
+| General | | |
 | [Armorer](#armorer) | Install and remove upgrades without risk of damage. | Sci-Fi General |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. | Sci-Fi General |
 | [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. | Sci-Fi General |
 | [Light as a Feather](#light-as-a-feather) | Lower target when piloting a ship. | Sci-Fi General |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. | Sci-Fi General |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. | Sci-Fi General |
-| Battery |-----|-----|
+| Battery | | |
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. | Sci-Fi Battery |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. | Sci-Fi Battery |
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. | Sci-Fi Battery |
