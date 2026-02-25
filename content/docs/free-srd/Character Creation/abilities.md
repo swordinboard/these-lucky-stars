@@ -82,7 +82,7 @@ Abilities are special actions your character can take. Abilities have the most v
 {{% details "Charge" %}}
 ### Charge
 
-For 4 AP you may rush at your enemies to deliver a powerful melee attack as a full action. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. At the end of your movement make a standard melee attack at +2 ATK once within reach of them. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over/under any obstacles or through difficult terrain.
+For 4 AP you may rush at your enemies to deliver a powerful melee attack. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. Once within reach of your opponent your movement ends and you make a standard melee attack at +2 bonus. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over or under any obstacles/characters or through difficult terrain. Attacks of opportunity that do not down your charactwr do not interrupt this ability.
 {{% /details %}}
 
 {{% details "Agile Charge" %}}
@@ -92,17 +92,18 @@ For 4 AP you may rush at your enemies to deliver a powerful melee attack as a fu
 
 The movement of your Charge ability no longer needs to be in a straight line, though it still cannot pass over/under obstacles or through difficult terrain.
 {{% /details %}}
+
 ### Bash
 
 *Charge, STR 3, Level 5*
 
-Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. Instead of making an attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they collide with a solid object they take 1d6+STR damage and you do not take their space.
+Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. In place of the attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they would collide with a solid object due to this movement they take 1d6+STR damage and you do not take their space.
 
 ### Improved Bash
 
 *Charge, Bash, STR 5, Level 7*
 
-Increase the displacement from your Bash by an additional 5ft for every 3pts the result of your contested grapple check was greater than your opponents. If your opponent was moved at least 10ft this way, they are also knocked prone. Damage is still dealt if they hit a solid object, and you take their place if able.
+Increase the displacement from your Bash by an additional 5ft for every 3pts the result of your contested grapple check is greater than your opponents. If your opponent is moved at least 10ft this way, they are also knocked prone. Damage is still dealt if they hit a solid object, and you take their place if able.
 
 ### Defender
 
