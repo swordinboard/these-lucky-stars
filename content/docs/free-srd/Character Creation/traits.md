@@ -7,7 +7,7 @@ weight: 1
 
 Traits are descriptors of your character. They represent a part of their personality or physique. Traits are selected at level 1 and cannot be selected multiple times.
 
-Some traits are followed by labels — written in [brackets] — depending on the setting and set of character features being used. A character cannot have more than one trait with the same label.
+Some traits are followed by labels written in [brackets]. A character cannot have more than one trait with the same label.
 
 {{< tabs >}}
 {{% tab "Core" %}}
@@ -45,13 +45,13 @@ You have particularly keen senses. Gain +4 Initiative.
 {{% details "Diplomatic" %}}
 ### Diplomatic
 
-You understand other's needs and intentions well. Gain +2 on rolls made to persuade another.
+You understand other's needs and intentions well. Gain a +2 bonus on rolls made to persuade another.
 {{% /details %}}
 
 {{% details "Intimidating" %}}
 ### Intimidating
 
-You are an imposing individual, whether in attitude or stature. Gain +2 on rolls made to intimidate others.
+You are an imposing individual, whether in attitude or stature. Gain a +2 bonus on rolls made to intimidate others.
 {{% /details %}}
 
 {{% details "Lucky" %}}
@@ -63,31 +63,31 @@ You are luckier than others. Gain Luck equal to ¼ your level to a maximum of 4 
 {{% details "Sly" %}}
 ### Sly
 
-You don't have a tell, or maybe just barely. Gain +2 on rolls when deceiving others.
+You don't have a tell, or maybe just barely. Gain a +2 bonus on rolls when deceiving others.
 {{% /details %}}
 
 {{% details "Sneaky" %}}
 ### Sneaky
 
-You are very good at remaining unnoticed. Gain +2 on stealth rolls.
+You are very good at remaining unnoticed. Gain a +2 bonus on stealth rolls.
 {{% /details %}}
 
 {{% details "Stubborn" %}}
 ### Stubborn
 
-Your ideas are your own and nobody will change your mind. Gain +2 when making rolls to avoid manipulation or deception.
+Your ideas are your own and nobody will change your mind. Gain a +2 bonus when making rolls to avoid manipulation or deception.
 {{% /details %}}
 
 {{% details "Tough" %}}
 ### Tough
 
-You are tougher than the rest. Gain a DEF bonus equal to ¼ your level (rounded down, minimum 1).
+You are tougher than the rest. Gain a max DEF bonus equal to ¼ your level (rounded down, minimum 1).
 {{% /details %}}
 
 {{% details "Unshakable" %}}
 ### Unshakable
 
-Lower target by one when rolling WILL checks against fear and distraction effects.
+No jump scare will frighten you, you were surprised thats all. Gain a +2 bonus when rolling WILL checks against fear and distraction effects.
 {{% /details %}}
 
 ---
@@ -97,7 +97,7 @@ Lower target by one when rolling WILL checks against fear and distraction effect
 {{% details "Inter-Planet Traveler" %}}
 ### Inter-Planet Traveler
 
-Your immune system has benefited from a great deal of traveling between planets. Lower target by one step when rolling FORT against disease and infections.
+Your immune system has benefited from a great deal of traveling between planets. Gain a +2 bonus when rolling FORT against disease and infections.
 {{% /details %}}
 
 {{% details "Scrap Hauler" %}}
@@ -109,5 +109,5 @@ You are accustomed to carrying heavy loads in different environments. Each point
 {{% details "Space Adept" %}}
 ### Space Adept
 
-You are accustomed to moving through zero and low-gravity environments. The target for AGI checks to safely move in zero and low gravity is lowered by one.
+You are accustomed to moving through zero and low-gravity environments. Gain a +2 bonus to AGI checks to safely move in zero and low gravity enviroments.
 {{% /details %}}

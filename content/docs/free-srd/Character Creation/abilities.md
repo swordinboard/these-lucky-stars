@@ -5,7 +5,11 @@ weight: 3
 
 # Abilities
 
-Abilities are special actions your character can take. Abilities have the most variance in usage and effects. Some abilities provide new actions, others modify existing actions, and some provide passive bonuses. Some abilities can be taken multiple times, improving upon the original effect or number of uses.
+Abilities are special actions your character can take. They have the most variance in usage and effects. Some provide new actions, others modify existing actions, and some provide passive bonuses. Certain abilities can be taken multiple times, improving upon the original effect or number of uses.
+
+Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the ability and is usually written in [brackets] beside the ability name.
+
+If an ability has requirements that must be met before it can be selected, they are written in italics. 
 
 {{< tabs >}}
 {{% tab "Core General" %}}
@@ -18,12 +22,11 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Defender](#defender) | Double your DEF against a melee attack. |
 | - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. |
 | - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. |
-| -- [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. |
 | - [True Defender](#true-defender) | Use Defender on behalf of an ally. |
 | [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. |
 | - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. |
 | - [Dual Strike](#dual-strike) | Increase damage die with dual attack. |
-| - [Extra Dual Attack](#extra-dual-attack) | Use dual attack twice per round. |
+| - [Swift Dual Attack](#extra-dual-attack) | Dual Attack ability costs 2 AP instead of 4. |
 | [Extra Attack](#extra-attack) | Make two standard attacks per round. |
 | [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. |
 | - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. |
@@ -58,6 +61,7 @@ Abilities are special actions your character can take. Abilities have the most v
 | [Lucky Strike](#lucky-strike) | Increase Luck die to d6 on attack rolls. |
 | [Medical Marvel](#medical-marvel) | Heal a condition or wound by spending Luck. |
 | [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. |
+| [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. |
 {{% /tab %}}
 {{% tab "Sci-Fi General" %}}
 | Name | Description |
@@ -92,9 +96,9 @@ The movement of your Charge ability no longer needs to be in a straight line, th
 {{% details "Bash" %}}
 ### Bash
 
-*[Charge](#charge), STR 3, Level 5*
+*[Charge](#charge), STR 2, Level 3*
 
-Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. In place of the attack make a contested grapple check at the end of your movement with advantage. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they would collide with a solid object due to this movement they take 1d6+STR damage and you do not take their space.
+Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. In place of the attack, make a contested grapple check with a +2 bonus at the end of your movement. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they would collide with a solid object due to this movement they take 1d6+STR damage and you do not take their space.
 {{% /details %}}
 
 {{% details "Charge" %}}
@@ -114,9 +118,12 @@ You have mastered timing your bursts of suppressive fire to conserve ammo. Your 
 {{% details "Defender" %}}
 ### Defender
 
-*FORT 2, Level 5*
+*FORT 2*
 
-You are particularly skilled at defending from melee attacks. Once per day (1/day) anytime a melee attack is declared against you while engaged in combat, you may double your current DEF until the beginning of your next turn. This ability must be activated before damage is rolled. You may select this ability multiple times to increase its usage by 1/day to a maximum of 3/day. This ability cannot be used if you have not yet acted in combat.
+You are particularly skilled at defending from melee attacks. Once per day (1/day) anytime a melee attack is declared against you while at max DEF, you may double your DEF until the beginning of your next turn.
+When this effect ends your max DEF returns to normal while your current DEF is lowered to the normal maximum or remains whatever it is at the end of the effect, whichever is lower.
+This ability must be activated when the attack is declared, before the roll result is revealed. This ability cannot be used if you have not yet acted in combat.
+You may select this ability multiple times to increase its usage by 1/day to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Dual Attack" %}}
@@ -124,7 +131,7 @@ You are particularly skilled at defending from melee attacks. Once per day (1/da
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), DEX 2, Level 3*
 
-Your melee and ranged attacks with two weapons are more difficult to defend against. Once per round you may gain advantage while using two weapons with which you are proficient to make an attack.
+Your melee and ranged attacks with two weapons are more difficult to defend against. Once per round, spend an additional 2 AP to gain advantage on an attack while using two weapons with which you are proficient.
 {{% /details %}}
 
 {{% details "Dual Defense" %}}
@@ -132,15 +139,17 @@ Your melee and ranged attacks with two weapons are more difficult to defend agai
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 3*
 
-You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 DEF per weapon. This ability can be taken a second time to increase the bonus provided by each weapon to +2 DEF.
+You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 max DEF per weapon.
+This ability can be taken a second time to increase the bonus provided by each weapon to +2 max DEF.
 {{% /details %}}
 
 {{% details "Dual Strike" %}}
 ### Dual Strike
 
-*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 5*
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 7*
 
-Strike with both weapons simultaneously to deal more damage. Increase the damage die by one size when using your dual attack ability 2/day. You can take this ability two additional times, each increasing the number of uses by two to a maximum of 6/day.
+Strike with two weapons simultaneously to deal more damage. 2/day increase the damage die by one size when you land an attack with your Dual Attack ability.
+You can take this ability two additional times, each increasing the number of uses by two to a maximum of 6/day.
 {{% /details %}}
 
 {{% details "Expert" %}}
@@ -148,9 +157,10 @@ Strike with both weapons simultaneously to deal more damage. Increase the damage
 
 **Expert [___]**
 
-*[Student](#student), INT 4*
+*[Student](#student), INT 2*
 
-Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher. (This feat can only be selected once.)
+Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher.
+This ability can be selected a second time to be applied to a second Student ability.
 {{% /details %}}
 
 {{% details "Extended Rage" %}}
@@ -158,7 +168,8 @@ Choose one of the topics selected by your Student ability. When applying the Stu
 
 *[Rage](#rage)*
 
-Your Rage ability's duration is increased by two rounds. This ability can be selected multiple times.
+Your Rage ability's duration is increased by two rounds.
+This ability can be selected multiple times.
 {{% /details %}}
 
 {{% details "Extra Attack" %}}
@@ -169,14 +180,6 @@ Your Rage ability's duration is increased by two rounds. This ability can be sel
 You can make two standard attacks per round with a weapon with which you are proficient for 2 AP each. This second attack cannot be a readied action.
 
 *Normal: You can only make one attack action per round.*
-{{% /details %}}
-
-{{% details "Extra Dual Attack" %}}
-### Extra Dual Attack
-
-*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), DEX 4, Level 9*
-
-You can use your dual attack ability twice per round provided you are able to make two attacks. Each attack consumes a separate use of Dual Attack. This ability does not grant a second attack, only the ability to use Dual Attack multiple times in the same round. Typically, making two attacks is achieved with the [Extra Attack](#extra-attack) ability.
 {{% /details %}}
 
 {{% details "Fearless Rage" %}}
@@ -192,7 +195,8 @@ While using the Rage ability, gain advantage when attempting to resist fear effe
 
 *WILL 2, Level 3*
 
-For 2 AP you may choose to focus on a single opponent, gaining advantage on your next attack against them. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn if unused or if you lose line of sight. This ability can be interrupted if held between turns.
+For 2 AP you may choose to focus on a single opponent, gaining advantage on your next attack against them. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn if unused or if you lose line of sight, whichever comes first.
+This ability can be interrupted if held between turns.
 {{% /details %}}
 
 {{% details "Focus In" %}}
@@ -214,9 +218,9 @@ You are very protective of your allies. Anytime a melee attack is declared again
 {{% details "Improved Bash" %}}
 ### Improved Bash
 
-*[Charge](#charge), [Bash](#bash), STR 5, Level 7*
+*[Charge](#charge), [Bash](#bash), STR 4, Level 7*
 
-Increase the displacement from your Bash by an additional 5ft for every 3pts the result of your contested grapple check is greater than your opponents. If your opponent is moved at least 10ft this way, they are also knocked prone. Damage is still dealt if they hit a solid object, and you take their place if able.
+When using your Bash ability you may choose to increase the displacement caused by a successful bash by +5ft, or choose to knock your opponwnt prone. Damage is still dealt if they hit a solid object from the displacement, and you take their original space if able.
 {{% /details %}}
 
 {{% details "Improved Suppressing Fire" %}}
@@ -238,7 +242,7 @@ While using the Rage ability you are immune to fear and distraction effects, and
 {{% details "Just Grazed" %}}
 ### Just Grazed
 
-*[Defender](#defender) (2), FORT 4, Level 5*
+*[Defender](#defender) (x2), AGI 2, FORT 2, Level 5*
 
 You are so accustomed to avoiding ranged attacks that you can negate a wound or condition from such an attack 1/day. (You still take the VIT loss associated with the attack).
 {{% /details %}}
@@ -246,7 +250,7 @@ You are so accustomed to avoiding ranged attacks that you can negate a wound or 
 {{% details "Just Winded" %}}
 ### Just Winded
 
-*[Defender](#defender) (2), FORT 4, Level 5*
+*[Defender](#defender) (x2), AGI 2, FORT 2, Level 5*
 
 You are so skilled at defending from melee attacks that you can negate a wound or condition from such an attack 1/day. (You still take the VIT loss associated with the attack).
 {{% /details %}}
@@ -264,7 +268,7 @@ When using your Suppressing Fire ability with a full-auto weapon that you are pr
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto heavy weapon, [Suppressing Fire](#suppressing-fire), Level 5*
 
-While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares that need not be adjacent OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability uses an additional 5% ammunition.
+While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares within range that need not be adjacent, OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability uses an additional 5% ammunition.
 {{% /details %}}
 
 {{% details "Powerful Rage" %}}
@@ -298,7 +302,7 @@ Once per round you are able to draw an equipped weapon for no AP or draw a conce
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), DEX 4, Level 3*
 
-When wielding two semi-auto ranged weapons with which you are proficient, you may use abilities that require semi auto or full auto weapons. Ammo requirements apply once per ammo type.
+When wielding two semi-auto ranged weapons with which you are proficient, you may use abilities that require semi auto or full auto weapons. Ammo requirements apply once per ammo type if different.
 {{% /details %}}
 
 {{% details "Rage" %}}
@@ -315,7 +319,8 @@ This ability can be selected multiple times, each increasing the number of uses 
 
 *STR 2, Level 5*
 
-While making a melee attack on your turn, you may choose to lower your current DEF to gain a bonus to your next attack. Each point of DEF can be traded for +1 ATK and DMG however you cannot lower your DEF to 0. This bonus applies only to attacks made in the same turn in which this ability was activated. This effect does not change or alter your max DEF.
+While making a melee attack on your turn, you may choose to lower your current DEF to gain a bonus to your next attack. Each point of DEF can be traded for +1 ATK and DMG however you cannot lower your DEF to 0. This bonus applies only to attacks made in the same turn in which this ability was activated.
+This effect does not change or alter your max DEF, only your current DEF.
 {{% /details %}}
 
 {{% details "Student" %}}
@@ -333,15 +338,15 @@ Choose a general topic in which your character is particularly knowledgeable abo
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, DEX 2*
 
-This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability uses 10% of the weapon's max ammunition. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL [distraction] check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through these spaces are only affected once and their movement is not interrupted. When the effect of the ability ends, the weapon used must be reloaded/cooled.
+This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability uses 10% of the weapon's max ammunition. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL distraction check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through multiple threatened spaces are only affected once, and their movement ends . When the effect of the ability ends, the weapon used must be reloaded/cooled.
 {{% /details %}}
 
-{{% details "Tis But a Scratch" %}}
-### Tis But a Scratch
+{{% details "Swift Dual Attack" %}}
+### Swift Dual Attack
 
-*[Tough](/docs/free-srd/character-creation/traits/#tough) Trait, [Defender](#defender) (2), [Just Winded](#just-winded), [Just Grazed](#just-grazed), FORT 4, Level 9*
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), DEX 4, Level 9*
 
-You may spend 2 Luck points to ignore all effects of an attack that does not deal extreme damage.
+Your Dual Attack ability is more efficient, consuming only 2 AP per use instead of 4.
 {{% /details %}}
 
 {{% details "True Defender" %}}
@@ -420,6 +425,14 @@ Sometimes your body just fixes itself? Once per day you can heal a physical cond
 **Natural Gift [___]**
 
 Choose an attribute. You have always had some luck in this aspect of your life, and it seems to keep coming. When applying Luck to a check using the chosen attribute, excluding attack rolls, increase the die size to a d6. This can be selected multiple times each time applying to a new attribute.
+{{% /details %}}
+
+{{% details "Tis But a Scratch" %}}
+### Tis But a Scratch
+
+*[Tough](/docs/free-srd/character-creation/traits/#tough) Trait, [Defender](#defender) (2), [Just Winded](#just-winded), [Just Grazed](#just-grazed), Level 9*
+
+You may spend 2 Luck points to ignore all effects of an attack that does not deal extreme damage.
 {{% /details %}}
 
 ---
