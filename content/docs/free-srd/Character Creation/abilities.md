@@ -17,6 +17,7 @@ If an ability has requirements that must be met before it can be selected, they 
 |------|-------------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
+| [Leaping Charge](#leaping-charge) | Charge can pass through difficult terrain. |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. |
 | -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. |
 | [Defender](#defender) | Double your DEF against a melee attack. |
@@ -32,6 +33,11 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. |
 | [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. |
 | [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. |
+| [General Spectacle](#general-spectacle) | Cause a Stress with a distraction. |
+| - [Long Performance](#long-performance) | Use General Spectacle for multiple rounds. |
+| [Kit Trap](#kit-trap) | Use your tool kit to make difficult terrain. |
+| - [Fast Kit Trap](#fast-kit-trap) | Kit Trap uses less AP. |
+| [Outburst](#outburst) | Interrupt enemies mid action. |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
 | [Rage](#rage) | Enter an enraged state for a short duration. |
@@ -182,6 +188,14 @@ You can make two standard attacks per round with a weapon with which you are pro
 *Normal: You can only make one attack action per round.*
 {{% /details %}}
 
+{{% details "Fast Kit Trap" %}}
+### Fast Kit Trap
+
+*Proficiency with any tool kit*
+
+With a few special adjustments to how you store your kit, the AP cost to use the Kit Trap ability is lowered to 2 AP, and retrieving the kit after is lowered to 12 AP.
+{{% /details %}}
+
 {{% details "Fearless Rage" %}}
 ### Fearless Rage
 
@@ -213,6 +227,18 @@ While wielding a ranged weapon you may spend 1 AP to focus on an area in a strai
 *[Tough](/docs/free-srd/character-creation/traits/#tough) Trait*
 
 You are very protective of your allies. Anytime a melee attack is declared against an adjacent ally, you may sacrifice your own DEF to protect that ally by spending 1 AP. The damage is then dealt to your own DEF before doing damage to your ally. If your DEF is reduced to 0, you take the appropriate VIT damage, and any remaining damage is dealt to the original target of the attack as normal.
+{{% /details %}}
+
+{{% details "General Spectacle" %}}
+### General Spectacle
+
+*CHA 2*
+
+You can make a real ruckus. 2/day for 4 AP you may attempt to draw the attention of all characters in a 30ft radius. This can be done with a performance, loud noises, or some other manner of attention grabbing interruption. All characters within a 30ft radius that can hear you must make a target 8 WILL distraction check. Upon success they resist and cannot be affected by your General Spectacle ability for 24hrs. Upon failure they become distracted, shift their focus to you, and gain +1 point of Stress. This point of Stress lasts until rested.
+
+The results of gaining attention in this way vary, and may include immediate and continued danger even after the effect ends.
+
+*Normal: You may gain the attention of a group, usually with a CHA check, but no stress is dealt.*
 {{% /details %}}
 
 {{% details "Improved Bash" %}}
@@ -255,6 +281,27 @@ You are so accustomed to avoiding ranged attacks that you can negate a wound or 
 You are so skilled at defending from melee attacks that you can negate a wound or condition from such an attack 1/day. (You still take the VIT loss associated with the attack).
 {{% /details %}}
 
+{{% details "Kit Trap" %}}
+### Kit Trap
+
+*Proficiency with any tool kit*
+
+You've dropped your kit enough times to know exactly how to empty it out in the most inconvenient way possible. For 3 AP you can completely empty your toolkit in a 15ft² area (3 spaces) to put any character acting in those spaces at a disadvantage as if they were acting in difficult terrain.
+The three spaces must be adjacent to each other but only one must be adjacent to you.
+
+An affected character can clear the spaces they occupy of the tool kit for 3 AP to remove the effect.
+
+This ability requires a tool kit with at least 1d4 of supplies, however it requires no supply roll.
+Using this ability drops your kit and leaves it empty of tools and supplies. Tools and supplies can be retrieved for 20 AP.
+{{% /details %}}
+
+{{% details "Leaping Charge" %}}
+###Leaping Charge
+*Charge, Agile Charge, AGI 3,  Level 5*
+
+The movement of your charge can now pass over/under obstacles and through difficult terrain.
+{{% /details %}}
+
 {{% details "Line of Fire" %}}
 ### Line of Fire
 
@@ -263,12 +310,30 @@ You are so skilled at defending from melee attacks that you can negate a wound o
 When using your Suppressing Fire ability with a full-auto weapon that you are proficient with: You can change the shape of your Suppressing Fire ability to a straight line with a length equal to your weapon's normal range. If you do so, the ability uses double the required ammunition.
 {{% /details %}}
 
+{{% details "Long Performance" %}}
+### Long Performance
+
+ *CHA 3*
+
+Once begun, you may continue your General Spectacle performance for a number of rounds equal to 1/2 your level. Each round after the first, the target for the will distraction save is lowered by -2. Each failed save accumulates another  +1 point of Stress. Taking any other action during these rounds end the effect. This ability can be interrupted.
+{{% /details %}}
+
 {{% details "Oppressive Suppression" %}}
 ### Oppressive Suppression
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto heavy weapon, [Suppressing Fire](#suppressing-fire), Level 5*
 
 While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares within range that need not be adjacent, OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability uses an additional 5% ammunition.
+{{% /details %}}
+
+{{% details "Outburst" %}}
+### Outburst
+
+*CHA 2*
+
+You know how to take particularly distracting actions at just the right time. By doing so, you may force a character's attention to shift to you, interrupting actions or abilities and breaking focus. 2/day for 3 AP you may choose a target that can see and hear you within 20ft and perform a series of targeted actions to briefly throw off their focus. (i.e. threatening or suggestive behavior, loud banging, "HEY YOU!"). Your opponent must succeed on a target 10 WILL distraction save in order to remain focused. This can be used to interrupt abilities and actions as they happen.
+
+You cannot use this ability if you have not acted in initiative or if you are restrained or otherwise incapacitated. However, this ability can be used at any time that you have the AP available as an uninterruptible readied action.
 {{% /details %}}
 
 {{% details "Powerful Rage" %}}
