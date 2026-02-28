@@ -23,9 +23,10 @@ If a proficiency has requirements that must be met before it can be selected, th
 | [Improved Ability [___]](#improved-ability) | Special training with a particular ability. |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. |
+| - [Medical Instincts](#Medical-instincts) | Add INS to Medic Training rolls. |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. |
 | [Vehicle [___]](#vehicle) | Familiar with a type of vehicle. |
-| - [Licensed [___]](#licensed) | Add INS bonus to Vehicle Proficiency rolls. |
+| - [Licensed Instincts [___]](#licensed-instincts) | Add INS bonus to Vehicle Proficiency rolls. |
 | [Weapon [___]](#weapon) | Specialized training with a selected weapon type. |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
@@ -75,10 +76,10 @@ Select an ability that forces an opponent to make an uncontested target roll (i.
 This proficiency may be selected multiple times; it may be applied to the same ability up to three times for a total target increase of +6, or may be applied to a new ability any number of times.
 {{% /details %}}
 
-{{% details "Licensed" %}}
-### Licensed
+{{% details "Licensed Instincts" %}}
+### Licensed Instincts
 
-**Licensed [____]**
+**Licensed Instincts [____]**
 
 *[Vehicle](#vehicle) Proficiency, KNO 2, INS 1*
 
@@ -98,6 +99,14 @@ You have been trained to be as deadly without a weapon as you are when armed wit
 *KNO 1*
 
 You have been trained in the use of medicine and medical equipment. Gain a +2 bonus when using the medical kit to heal damage or stablize/remove wounds and conditions.
+{{% /details %}}
+
+{{% details "Medical Instincts" %}}
+### Medical Instincts
+
+*[Medic Training](#medic-training) proficiency, KNO 1*
+
+Your experience with medicine and and trauma care benefits from your instincts. Add your INS bonua to rolls that benefit from your Medic Training proficiency.
 {{% /details %}}
 
 {{% details "Repair Kit" %}}

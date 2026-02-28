@@ -388,7 +388,7 @@ Add 1d6 of bonus damage to successful surprise attacks. This ability can be sele
 {{% details "Adaptive Luck" %}}
 ### Adaptive Luck
 
-You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses. This ability can be selected multiple times, each time increasing the daily usage by 1, to a maximum of 3. (This ability cannot be used on itself).
+You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses. This ability can be selected multiple times, each time increasing the daily usage by +1, to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Bonus Luck" %}}
@@ -416,7 +416,7 @@ Somehow, your attacks seem to find their target quite often. When applying Luck 
 {{% details "Medical Marvel" %}}
 ### Medical Marvel
 
-Sometimes your body just fixes itself? Once per day you can heal a physical condition or wound for 3 Luck points. Doing so in combat uses 4 AP. You do not need to be conscious to do so, however this ability cannot be used to remove the dying or stressed conditions.
+Sometimes your body just fixes itself? Once per day you can heal a physical condition or wound for 2 Luck points. Doing so in combat uses 4 AP. You do not need to be conscious to do so, however this ability cannot be used to remove the dying or stressed conditions.
 {{% /details %}}
 
 {{% details "Natural Gift" %}}
