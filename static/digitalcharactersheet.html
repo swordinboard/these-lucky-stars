@@ -1015,15 +1015,15 @@
 
             // Vitality
             const vitalityMods = val('vitalityMods');
-            const vitality = Math.floor(level / 2) + Math.floor(fort / 2) + vitalityMods;
+            const vitality = Math.floor(level / 2 + fort / 2 + vitalityMods;
             $('vitalityDisplay').textContent = level > 0 ? vitality : 'n/a';
-            $('vitalityFormula').textContent = `½ Level(${Math.floor(level/2)}) + ½ FORT(${Math.floor(fort/2)}) + Mods(${vitalityMods}) = ${vitality}`;
+            $('vitalityFormula').textContent = `½ Level(${level/2}) + ½ FORT(${fort/2}) + Mods(${vitalityMods}) = ${vitality}`;
 
             // Stress Threshold
             const stressMods = val('stressMods');
-            const stressThreshold = Math.max(1, Math.floor(level / 2) + Math.floor(will / 2) + stressMods);
+            const stressThreshold = Math.max(1, Math.floor(level / 2 + will / 2 + stressMods));
             $('stressThresholdDisplay').textContent = level > 0 ? stressThreshold : 'n/a';
-            $('stressFormula').textContent = `½ Level(${Math.floor(level/2)}) + ½ WILL(${Math.floor(will/2)}) + Mods(${stressMods}) = ${stressThreshold} (min 1)`;
+            $('stressFormula').textContent = `½ Level(${level/2}) + ½ WILL(${will/2}) + Mods(${stressMods}) = ${stressThreshold} (min 1)`;
 
             // Equipment totals
             const armorPenalty = val('armorPenalty');

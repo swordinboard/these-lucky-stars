@@ -17,7 +17,7 @@ If an ability has requirements that must be met before it can be selected, they 
 |------|-------------|
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
-| [Leaping Charge](#leaping-charge) | Charge can pass through difficult terrain. |
+| -- [Leaping Charge](#leaping-charge) | Charge can pass through difficult terrain. |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. |
 | -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. |
 | [Defender](#defender) | Double your DEF against a melee attack. |
@@ -218,7 +218,7 @@ This ability can be interrupted if held between turns.
 
 *WILL 2*
 
-While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make attacks of opportunity with your ranged weapon against enemies who attempt aggressive actions within those spaces. This ability can be interrupted.
+While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make attacks of opportunity with your ranged weapon against enemies who attempt aggressive actions within those spaces. Taking any other than an AOO ends this effect. This ability can be interrupted.
 {{% /details %}}
 
 {{% details "Friend in Need" %}}
@@ -296,7 +296,7 @@ Using this ability drops your kit and leaves it empty of tools and supplies. Too
 {{% /details %}}
 
 {{% details "Leaping Charge" %}}
-###Leaping Charge
+### Leaping Charge
 *Charge, Agile Charge, AGI 3,  Level 5*
 
 The movement of your charge can now pass over/under obstacles and through difficult terrain.
