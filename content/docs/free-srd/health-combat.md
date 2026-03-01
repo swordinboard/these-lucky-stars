@@ -28,7 +28,8 @@ Initiative determines the order in which characters take their turns during each
 **The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat. Narratively, this allows characters to be saved by instinct or gut feeling.
 
 > [!IMPORTANT]
-> In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
+> *An exception to the tie breaker rule:*
+>In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
 
 ## Taking Action
 
@@ -42,7 +43,7 @@ Generally, the more time or effort an action requires, the more AP it costs:
 
 ### Multi-Turn Actions:
 
-Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through physical effects.
+Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through damaging physical effects.
 
 ---
 
@@ -51,6 +52,8 @@ Special actions may include instructions for completing them over multiple round
 ### The Attack Roll: Opposed Rolls
 
 When a character makes an attack against a defender who is aware and able to react, both the attacker and defender make opposed rolls:
+
+Attackers roll their attack (ATK) while defenders roll their deffense (DEF).
 
 > **Attacker:** 2d6 + ATK + mods
 > 
@@ -79,7 +82,7 @@ See [Advantage](/docs/free-srd/the-basics/#advantage) for more details on how ad
 
 Characters who have not yet engaged in combat or who are otherwise unable to defend themselves are vulnerable to surprise attacks. When making a surprise attack, the attacker rolls normally, while the defender rolls only their decision dice (Luck may still be applied). 
 
-Surprise may attacks still benefit from advantage if the GM determines the situation warrants it, such as attacking from an ideal ambush position.
+Surprise attacks still benefit from advantage/disadvantage if the GM determines the situation warrants it, such as attacking from an ideal ambush position, or attacking an opponent who is behind partial cover.
 
 Making a surprise attack counts as a special attack action, but requires no additional AP other than that of the attack being used. In many cases, a surprise attack will initiate combat. Once the defender has acted in initiative, all subsequent attacks against them become normal attack rolls.
 
@@ -104,17 +107,18 @@ Base damage dice are determined by the size of the attacker relative to the defe
 
 | Attacker vs. Defender | Damage Die |
 |---|---|
+
 | Two or more sizes smaller | 1d4 |
 | Same size or ±1 size | 1d8 |
 | Two or more sizes larger | 1d12 |
 
-**Bonus Damage** — Attack rolls that beat the target by 5 or more gain an additional damage die.
+**Bonus Damage** — Attack rolls that beat the target by 10 or more gain an additional damage die.
 
 ### Damage Modifiers
 
 - The attribute used to make the attack roll is added to the damage total.
-- Unarmed attacks deal −3 damage before damage reduction.
-- Minimum damage after reduction is **1**.
+- Unarmed attacks deal −3 damage before damage resistance.
+- Minimum damage from most attacks is **1** unless a resistance determines otherwise.
 - Equipment and character features may also provide damage modifiers.
 
 ### Damage Types
@@ -137,11 +141,11 @@ Extreme damage has no defense against it. It reduces or bypasses damage resistan
 
 ## Applying Damage
 
-Once total damage is calculated, it is dealt to the defender's **Defense (DEF)**. When DEF reaches 0:
+Once total damage is calculated, it is dealt to the defender's current **Defense (DEF)**. When DEF reaches 0:
 
 1. The defender takes **1 point of Vitality (VIT)** damage.
-2. DEF resets.
-3. Any remaining damage continues to drain the new DEF.
+2. DEF resets to max.
+3. Any remaining damage is applied to the new DEF.
 
 This repeats until all damage is dealt or VIT reaches 0.
 - Damaged character’s DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends.
@@ -169,19 +173,21 @@ If VIT reaches 0, the character is **incapacitated** — and the attacker decide
 **Draw a Weapon** *1-3 AP*
 Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed Weapon costs 3 AP.
 
-**Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally; the pinned character must spend 1 AP at the start of their turn to attempt to regain control. If unsuccessful, they take no other actions.
+**Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally using the actions below; the pinned character must spend 1 AP at the start of their turn to attempt to gain control. If unsuccessful, they take no other actions.
 
 > *In Control:* Move up to 10ft with grappled opponent (3 AP), Attack with a light weapon or unarmed attack (3 AP), End Grapple (1 AP), Toss opponent up to 10ft with a successful STR roll (3 AP).
 >
 > *Pinned:* Attempt to gain control with a contested grapple check (1 AP).
 
+Characters engaged in a grapple are vulnerable to external attacks. Any attack made against a grappling character from a character not engaged in the grapple has advantage. Grappling character's cannot make attacks outside of the grapple.
+
 **Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item rather than the opponent. See the Equipment section for rules on damaged and broken gear.
 
 **Stand** *(1 AP)* — Stand from prone. May provoke an attack of opportunity.
 
-**Trip** *(3 AP)* — Make a standard attack roll. If successful, instead of dealing damage make a contested roll, the Attacker's STR vs. Defender's AGI. Success causes the opponent to fall prone.
+**Trip** *(3 AP)* — Make a standard attack roll. If successful, instead of dealing damage make a contested roll, the Attacker's STR vs. Defender's AGI. Attacker success causes the defender to fall prone.
 
-**Unarmed Attack** *(2 AP)* — Functions as a standard attack but deals −3 damage. Cannot normally be used for an AOO.
+**Unarmed Attack** *(2 AP)* — Functions as a standard attack but deals −3 damage. Cannot be used for an AOO without the [Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) proficiency.
 
 ---
 
@@ -189,13 +195,13 @@ Drawing an equipped weapon or picking one up that is within your reach costs 1 A
 
 **Ready Action** — Withhold all actions to respond to a specific trigger. Declare both the action and the trigger during your turn. When the trigger occurs, complete your declared action in response. Readied actions are vulnerable to interruption or distraction. See [multi-turn actions](#multi-turn-actions) for more.
 
-**Stealth** — Stealth actions generally do not cost additional AP. Moving silently costs the same as a move action; hiding behind an object costs the same as taking cover. Most stealth checks start at target 8. If an opponent is actively searching, they may roll INS to detect you.
+**Stealth** — Stealth actions generally do not cost additional AP. Moving silently costs the same as a move action; hiding behind an object costs the same as taking cover. Most stealth checks start at target 8. If an opponent is actively searching, they may roll INS to detect you. Successful or unnoticed stealth actions count as defensive actions, faioed or noticed stealth actions usually count as aggressive actions.
 
 **Step** *(1 AP)* — Move one space (5ft) at any point during your turn as a defensive action.
 
 **Use Cover** *(1 AP or as part of a Move)* 
-The use of available cover is assumed during combat. Shifting cover types can be done as part of a move action, or for 1 AP if staying in place.
-Cover type depends on how much of the defender is blocked, how much is visible to the attacker, and whether the attack can penetrate the obstacle.
+Shifting cover types can be done as part of a move action or for 1 AP if staying in place.
+Cover type depends on how much of the defender is visible to the attacker, and whether the attack can penetrate the obstacle.
 
 > **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half is hidden from view.
 >
