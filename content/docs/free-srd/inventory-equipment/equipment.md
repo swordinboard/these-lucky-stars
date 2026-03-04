@@ -3,7 +3,8 @@ title: "Sci-Fi Equipment"
 weight: 1
 ---
 
-Supplies and Equipment Usage
+## Supplies and Equipment Usage
+
 Many pieces of equipment, particularly kits and batteries, do not have a set number of uses. Different applications will require different amounts of supplies or charge to complete. To simulate this the number of uses most items has is described by a die size. When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered until empty. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
 Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
