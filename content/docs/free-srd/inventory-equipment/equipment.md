@@ -38,7 +38,7 @@ Some weapons and upgrades have a minimum range. These are written in parenthesis
 {{% /tab %}}
 {{< /tabs >}}
 
-{{% details "Knuckle Taser %"}}
+{{% details "Knuckle Taser" %}}
 Knuckle Taser — This weapon is equipped to the hand body slot like a glove. Pressure plates help to prevent accidental activation, allowing normal use of the hands. Requires a micro battery to operate. Often worn in pairs, this classic low-profile weapon delivers a shocking punch.
 {{% /details %}}
 
