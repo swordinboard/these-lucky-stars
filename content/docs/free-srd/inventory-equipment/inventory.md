@@ -1,5 +1,7 @@
-title: "Inventory"
-weight: 50
+---
+title: "Inventory Management"
+weight: 1
+---
 
 ## Inventory Management
 A character's equipment is often as crucial as their features. What they bring with them and what they can carry back make all the difference. When referring to a character's inventory, there are two important limits to remember. If either limit is exceeded, the character is unable to move.
