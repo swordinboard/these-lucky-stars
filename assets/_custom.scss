@@ -43,6 +43,30 @@
    }
 }
 
+// Multi-column layout for link lists and short content
+.three-col {
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+
+.three-col a {
+  display: block;
+  padding: 0.15rem 0;
+}
+
+@media (max-width: 800px) {
+  .three-col {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .three-col {
+    column-count: 1;
+  }
+}
+
+
 // Menu theme note
 .book-menu-content nav {
    display: flex;
