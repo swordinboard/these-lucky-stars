@@ -1,5 +1,5 @@
 ---
-tiyle: "Bulky"
+title: "Bulky"
 weight: 1
 ---
 

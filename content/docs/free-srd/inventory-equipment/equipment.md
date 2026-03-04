@@ -1,6 +1,6 @@
 ---
 title: "Sci-Fi Equipment"
-weight: 50
+weight: 1
 ---
 
 Supplies and Equipment Usage
