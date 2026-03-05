@@ -8,7 +8,7 @@ bookToc: false
 
 Many weapons have tags to quickly identify common features and use requirements. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 
-<div class="three-col">
+<div class="two-col">
 
 [Arcing](#arcing)
 [Ballistic](#ballistic)
