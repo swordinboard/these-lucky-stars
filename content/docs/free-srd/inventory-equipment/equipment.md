@@ -6,13 +6,13 @@ weight: 1
 ## Supplies and Equipment Usage
 
 Many pieces of equipment, particularly kits and batteries, do not have a set number of uses. Different applications will require different amounts of supplies or charge to complete. To simulate this the number of uses most items has is described by a die size. When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered until empty. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
-Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
+> Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
 ## Equipment
 
 **Price** — The standard price for a new piece of equipment.
 **Weight** — The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)
-**Condition Threshold** — The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
+**Damage Threshold** — The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
 **Tags** — Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 *Range** — The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
 Some weapons and upgrades have a minimum range. These are written in parenthesis before the normal range, such as (20)100. In these cases, attacks made at or below the minimum range also put the user at a disadvantage.
@@ -76,51 +76,25 @@ Ripper Blade — A 2ft saw-like serrated blade with a second handle cut out near
 {{% /tab %}}
 {{< /tabs >}}
 
-## Weapon Tags
+## Weapon Upgrades
 
-Ballistic — Ballistic weapons require ballistic ammunition to be used. Total ammo is tracked as a percentage where 100% represents the standard amount of ammo carried for a weapon of that type. To keep things simple, all weapons with the Ballistic tag use interchangeable ammo. If the tag is followed by a term in [brackets], only that ammo type can be used.
-Knockback: Ballistic weapons fired in zero gravity push the user back at a speed of 5ft/round. Users can brace against a nearby stationary object for 1 AP to prevent knockback.
-Reloading: Ballistic weapons must be reloaded when a 1, 2, 3, or 4 is rolled on an attack die. A standard reload costs 2 AP.
-Equipping for Use: Ammo also includes the necessary magazines, pouches, and storage to equip and use it effectively. Ammo must be equipped to the chest, back, belt, or legs in order to be used for a normal reload during combat. To carry more than 100% ammo or ammo of a specific type and have it accessible during combat, you must designate another body slot. It is possible to carry more than 100% ammo by using more inventory space.
-Pricing: Ammo usually costs 50Cr per 100%, and weighs 20lbs/100%.
-Arcing — Successful attacks made with these weapons also affect one random combatant adjacent to the target. Use a new attack roll for the secondary target.
-Battery [___] — Requires a standard battery core of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (each attack). Depleted batteries can quickly be reloaded with a fresh one for 2AP if equipped to the belt, chest, or back. Each slot can hold dispensers for 40 micro batteries, 20 small batteries, or 2 medium batteries. A single large battery can only be equipped to the back. Battery weapons have the same firing modes as Ballistic weapons, however, they only require a reload when the battery core is empty.
-Belt Fed — 1/day skip the required reload when a 1, 2, 3, or 4 is rolled.
-Bulky — Bulky items are awkward to carry and count toward a character's max bulky item count. Equipped items such as worn armor or items equipped to body slots, do not count toward a character's max bulky item count.
-Burn — Deals burn damage rather than physical damage.
-Concealable — These compact weapons are easier to hide on your person.
-Firing Mode Tags — A weapon's firing mode determines what abilities can be used with it and how much ammo a ballistic weapon consumes per an attack. (Battery powered weapons require 1 battery supply roll per an attack.)
-Full-auto: A rapid-fire mode good for suppression and support. Uses 5% ammo per attack.
-Semi-auto: The most versatile firing mode, capable of applying to the widest range of abilities. Uses 2% ammo per attack.
-Single Shot: A slow but precise firing mode best for long range engagements. Uses 1% ammo per attack. Must be cocked or primed after each shot for 1 AP.
-Long Reload — The reload or cool down for these weapons requires 3 AP rather than 2.
-Throwable [___] — Can be used as a thrown ranged weapon. The number indicated is the normal range when used as a ranged weapon.
-Two-Handed — Requires two hands to operate.
-Weapon Upgrades
-Type
-Notes
 Ranged Weapon Upgrades
+{{< tabs >}}
+{{ tab "Ranged Weaoon Upgrades" %}}
+| Bipod | --Cr — 1lbs — Compatibility: Rifles, Heavy Ranged Weapons — Deployable stabilization that increases accuracy. Can be deployed on a solid surface for 1 AP. Grants a +4 bonus to attack when deployed, but increases minimum range by 10ft. |
+| Drum Magazines | --Cr — 4lbs — Compatibility: All ballistic ranged weapons — A high capacity magazine that lowers the reload requirement to rolls of 1 and 2 only, but causes a -2 attack penalty due to the added weight. |
+| Extended Barrel | --Cr — 1lbs — Compatibility: Pistols, Rifles — Increases the normal range of a weapon by 20ft. If applied to a one handed weapon, turns it into a two handed weapon. If applied to a two handed weapon, increases the minimum range by 5ft. |
+| Forward Assault Shield | --Cr — 3lbs — Compatibility: Heavy Ranged Weapons — A mounted ballistic shield that provides partial cover but causes a -1 penalty to attack while active. Can be deployed or folded away for 1 AP. |
+| Overcharge Chamber | --Cr — 0lbs — Compatibility: All battery based ranged weapons — Allows a temporary power boost. 3/day user can spend an extra supply roll to increase a damage die by one size. (Affects a single die at a time, can stack multiple times to increase multiple damage die of the same attack.) |
+| Recoil Compensation System | --Cr — 1lbs — Compatibility: All ballistic ranged weapons — Significantly reduces the effects of recoil. Eliminates the knockback effect of ballistic weapons in zero gravity and grants +1 bonus to attacks. | 
+| Reflex Sight | --Cr — 0lbs — Compatibility: All ranged weapons — A holographic sight that improves target acquisition. Grants +2 to attacks made at normal range. |
+{{% /tab %}}
+{{% tab "Melee Weapon Upgrades" %}}
+| Shock Charger | --Cr — 2lbs — Compatibility: All melee weapons — Adds +2 damage to attacks and changes damage type to shock. On successful hit, target must succeed on a target 15 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP. |
+| Weighted Core | --Cr — 3lbs — Compatibility: Medium Melee, Polearms and Staffs, and Two-handed Melee Weapons — A dense weight is added to the striking end of this weapon, increasing damage dealt by +3. The weapon loses the throwable tag if it had it, and users with less than 3 STR suffer a -3 penalty to attack. |
+{{% /tab %}}
+{{< /tabs >}}
 
-Bipod
---Cr — 1lbs — Compatibility: Rifles, Heavy Ranged Weapons — Deployable stabilization that increases accuracy. Can be deployed on a solid surface for 1 AP. Grants a +4 bonus to attack when deployed, but increases minimum range by 10ft.
-Drum Magazines
---Cr — 4lbs — Compatibility: All ballistic ranged weapons — A high capacity magazine that lowers the reload requirement to rolls of 1 and 2 only, but causes a -2 attack penalty due to the added weight.
-Extended Barrel
---Cr — 1lbs — Compatibility: Pistols, Rifles — Increases the normal range of a weapon by 20ft. If applied to a one handed weapon, turns it into a two handed weapon. If applied to a two handed weapon, increases the minimum range by 5ft.
-Forward Assault Shield
---Cr — 3lbs — Compatibility: Heavy Ranged Weapons — A mounted ballistic shield that provides partial cover but causes a -1 penalty to attack while active. Can be deployed or folded away for 1 AP.
-Overcharge Chamber
---Cr — 0lbs — Compatibility: All battery based ranged weapons — Allows a temporary power boost. 3/day user can spend an extra supply roll to increase a damage die by one size. (Affects a single die at a time, can stack multiple times to increase multiple damage die of the same attack.)
-Recoil Compensation System
---Cr — 1lbs — Compatibility: All ballistic ranged weapons — Significantly reduces the effects of recoil. Eliminates the knockback effect of ballistic weapons in zero gravity and grants +1 bonus to attacks.
-Reflex Sight
---Cr — 0lbs — Compatibility: All ranged weapons — A holographic sight that improves target acquisition. Grants +2 to attacks made at normal range.
-Melee Weapon Upgrades
-
-Shock Charger
---Cr — 2lbs — Compatibility: All melee weapons — Adds +2 damage to attacks and changes damage type to shock. On successful hit, target must succeed on a target 15 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
-Weighted Core
---Cr — 3lbs — Compatibility: Medium Melee, Polearms and Staffs, and Two-handed Melee Weapons — A dense weight is added to the striking end of this weapon, increasing damage dealt by +3. The weapon loses the throwable tag if it had it, and users with less than 3 STR suffer a -3 penalty to attack.
 Protective Equipment
 Notes Layout: Price — DEF Bonus — AGI/DEX Penalty — Weight — Damage Threshold — Tags
 DEF Bonus — The bonus to DEF provided by the armor.

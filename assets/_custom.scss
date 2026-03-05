@@ -54,15 +54,9 @@
   padding: 0.15rem 0;
 }
 
-@media (max-width: 800px) {
-  .three-col {
-    column-count: 2;
-  }
-}
-
 @media (max-width: 500px) {
   .three-col {
-    column-count: 1;
+    column-count: 2;
   }
 }
 
