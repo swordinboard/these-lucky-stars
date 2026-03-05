@@ -80,7 +80,9 @@ Ripper Blade — A 2ft saw-like serrated blade with a second handle cut out near
 
 Ranged Weapon Upgrades
 {{< tabs >}}
-{{ tab "Ranged Weaoon Upgrades" %}}
+{{% tab "Ranged Weaoon Upgrades" %}}
+| Upgrade | Description |
+|---|---|
 | Bipod | --Cr — 1lbs — Compatibility: Rifles, Heavy Ranged Weapons — Deployable stabilization that increases accuracy. Can be deployed on a solid surface for 1 AP. Grants a +4 bonus to attack when deployed, but increases minimum range by 10ft. |
 | Drum Magazines | --Cr — 4lbs — Compatibility: All ballistic ranged weapons — A high capacity magazine that lowers the reload requirement to rolls of 1 and 2 only, but causes a -2 attack penalty due to the added weight. |
 | Extended Barrel | --Cr — 1lbs — Compatibility: Pistols, Rifles — Increases the normal range of a weapon by 20ft. If applied to a one handed weapon, turns it into a two handed weapon. If applied to a two handed weapon, increases the minimum range by 5ft. |
@@ -90,6 +92,8 @@ Ranged Weapon Upgrades
 | Reflex Sight | --Cr — 0lbs — Compatibility: All ranged weapons — A holographic sight that improves target acquisition. Grants +2 to attacks made at normal range. |
 {{% /tab %}}
 {{% tab "Melee Weapon Upgrades" %}}
+| Upgrade | Description |
+|---|---|
 | Shock Charger | --Cr — 2lbs — Compatibility: All melee weapons — Adds +2 damage to attacks and changes damage type to shock. On successful hit, target must succeed on a target 15 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP. |
 | Weighted Core | --Cr — 3lbs — Compatibility: Medium Melee, Polearms and Staffs, and Two-handed Melee Weapons — A dense weight is added to the striking end of this weapon, increasing damage dealt by +3. The weapon loses the throwable tag if it had it, and users with less than 3 STR suffer a -3 penalty to attack. |
 {{% /tab %}}
