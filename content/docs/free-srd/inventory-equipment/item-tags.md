@@ -32,7 +32,6 @@ Many weapons have tags to quickly identify common features and use requirements.
 ### Arching
 
 Successful attacks made with these weapons also affect one random combatant adjacent to the target. Use a new attack roll for the secondary target.
-
 {{% /details %}}
 
 {{% details "Ballistic [___]" %}}
@@ -116,6 +115,8 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 
 > [!TIP]
 > 1d4 remains in Sasha's revolver, and she has 1d6 of ammo equipped to her chest. For 1 AP she can move all of this ammo to his revolver to increase the die size to a 1d8.
+
+{{% /details %}}
 
 
 {{% details "Shock" %}}
