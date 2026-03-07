@@ -82,130 +82,18 @@
 }
 
 // ============================================================================
-// TLS STARFIELD THEME — _custom.scss additions (v2 — lightweight)
+// STARFIELD TEST — drop this into _custom.scss temporarily
+// If you see tiny dots on the background, the approach works.
+// Remove after testing.
 // ============================================================================
-// Append to your existing _custom.scss.
-// This version: static starfield, no animation, no frosted panels.
-// ============================================================================
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
-
-// ---------------------------------------------------------------------------
-// 1. CUSTOM PROPERTIES
-// ---------------------------------------------------------------------------
-
-:root {
-  --tls-font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
-  --tls-font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
-
-  // Gold accents (light mode)
-  --tls-gold: #8b7032;
-  --tls-gold-bright: #a68a3e;
-  --tls-gold-dim: rgba(139, 112, 50, 0.4);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tls-gold: #d4a853;
-    --tls-gold-bright: #e0bc6a;
-    --tls-gold-dim: rgba(212, 168, 83, 0.35);
-  }
-}
-
-
-// ---------------------------------------------------------------------------
-// 2. STATIC STARFIELD BACKGROUND
-// ---------------------------------------------------------------------------
-// Fewer stars, no animation. Uses background-attachment: fixed so the
-// stars stay put while content scrolls over them.
-// The theme's --body-background handles the base color; we layer
-// stars on top via --body-background-tint which hugo-book applies
-// after the background color on the body element.
-
-:root {
-  --body-background-tint:
-    radial-gradient(1px 1px at 5% 8%,    rgba(0,0,0,0.08), transparent),
-    radial-gradient(1px 1px at 18% 73%,  rgba(0,0,0,0.06), transparent),
-    radial-gradient(1px 1px at 34% 88%,  rgba(0,0,0,0.08), transparent),
-    radial-gradient(1px 1px at 53% 62%,  rgba(0,0,0,0.05), transparent),
-    radial-gradient(1px 1px at 68% 47%,  rgba(0,0,0,0.07), transparent),
-    radial-gradient(1px 1px at 83% 22%,  rgba(0,0,0,0.06), transparent),
-    radial-gradient(1px 1px at 96% 91%,  rgba(0,0,0,0.08), transparent),
-    radial-gradient(1.5px 1.5px at 9% 67%,  rgba(0,0,0,0.04), transparent),
-    radial-gradient(1.5px 1.5px at 38% 72%, rgba(0,0,0,0.04), transparent),
-    radial-gradient(1.5px 1.5px at 64% 38%, rgba(0,0,0,0.04), transparent),
-    radial-gradient(1.5px 1.5px at 88% 43%, rgba(0,0,0,0.04), transparent);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-background-tint:
-      radial-gradient(1px 1px at 5% 8%,    rgba(200,210,230,0.3), transparent),
-      radial-gradient(1px 1px at 18% 73%,  rgba(200,210,230,0.22), transparent),
-      radial-gradient(1px 1px at 34% 88%,  rgba(200,210,230,0.3), transparent),
-      radial-gradient(1px 1px at 53% 62%,  rgba(200,210,230,0.18), transparent),
-      radial-gradient(1px 1px at 68% 47%,  rgba(200,210,230,0.25), transparent),
-      radial-gradient(1px 1px at 83% 22%,  rgba(200,210,230,0.2), transparent),
-      radial-gradient(1px 1px at 96% 91%,  rgba(200,210,230,0.3), transparent),
-      radial-gradient(1.5px 1.5px at 9% 67%,  rgba(200,210,230,0.12), transparent),
-      radial-gradient(1.5px 1.5px at 38% 72%, rgba(200,210,230,0.12), transparent),
-      radial-gradient(1.5px 1.5px at 64% 38%, rgba(200,210,230,0.12), transparent),
-      radial-gradient(1.5px 1.5px at 88% 43%, rgba(200,210,230,0.12), transparent);
-  }
-}
-
-
-// ---------------------------------------------------------------------------
-// 3. GOLD ACCENT OVERRIDES
-// ---------------------------------------------------------------------------
-
-:root {
-  --color-link: var(--tls-gold);
-  --color-visited-link: var(--tls-gold-dim);
-}
-
-.markdown .book-tabs input[type=radio]:checked + label {
-  border-bottom-color: var(--tls-gold);
-}
-
-.markdown details summary:hover::before {
-  color: var(--tls-gold);
-}
-
-.markdown h1,
-.markdown h2 {
-  color: var(--tls-gold-bright);
-}
-
-
-// ---------------------------------------------------------------------------
-// 4. TYPOGRAPHY
-// ---------------------------------------------------------------------------
-
-html {
-  font-family: var(--tls-font-body);
-}
-
-.markdown h1 {
-  font-family: var(--tls-font-display);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.markdown h2 {
-  font-family: var(--tls-font-display);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
-  font-family: var(--tls-font-body);
-  font-weight: 600;
-}
-
-.book-brand {
-  font-family: var(--tls-font-display);
+body {
+  background-image:
+    radial-gradient(1.5px 1.5px at 10% 15%, rgba(200,210,230,0.5), transparent),
+    radial-gradient(1.5px 1.5px at 30% 65%, rgba(200,210,230,0.5), transparent),
+    radial-gradient(1.5px 1.5px at 50% 35%, rgba(200,210,230,0.5), transparent),
+    radial-gradient(1.5px 1.5px at 70% 80%, rgba(200,210,230,0.5), transparent),
+    radial-gradient(1.5px 1.5px at 90% 45%, rgba(200,210,230,0.5), transparent) !important;
+  background-size: 400px 400px !important;
+  background-repeat: repeat !important;
 }
