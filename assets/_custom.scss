@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 :root {
-   --body-background: #fefefc;
-   --body-font-color: #000000;
-   --invert-font-color: #e9e9e9;
+   // Warm parchment cream — faint starlight on paper
+   --body-background: #f8f7f2;
+   --body-font-color: #1a1c20;
+   --invert-font-color: #d8dce2;
 
    // NOTE: --body-background-tint is a theme variable intended for background-image
    // values (gradients, urls), not plain colors. Our rgba value here doesn't actually
    // apply to the body (the browser ignores it in the shorthand image slot), but we
    // keep it defined because we reference it directly in table row styles below.
-   --body-background-tint: rgba(40,50,165,0.2);
+   --body-background-tint: rgba(42,45,94,0.15);
 
    // TLS font families
    --font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
@@ -20,10 +21,11 @@
 
 @media (prefers-color-scheme: dark) {
    :root {
-      --body-background: #343a40;
-      --body-background-tint: rgba(40,50,165,0.2);
-      --body-font-color: #e9e9e9;
-      --invert-font-color: #000000;
+      // Deep space blue-black — the void between the pillars
+      --body-background: #1c2028;
+      --body-background-tint: rgba(42,45,94,0.15);
+      --body-font-color: #d8dce2;
+      --invert-font-color: #1a1c20;
    }
 }
 
