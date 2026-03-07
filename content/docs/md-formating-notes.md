@@ -8,7 +8,7 @@ draft: true
 >
 > Can span multiple lines
 
-> [!NOTE]]
+> [!NOTE]
 > Used for quick notes or "short versions"
 
 > [!TIP]
