@@ -23,10 +23,6 @@
   --gray-200: #9da3ad;
   --gray-500: #6b7280;
 
-  // Starfield dot colors
-  --star-color-1: rgba(110, 120, 150, 0.22);
-  --star-color-2: rgba(100, 110, 145, 0.13);
-
   // Callout accents (Pillars of Creation palette)
   @include accent("default", #5c6d7e);
   @include accent("note", #3d8ab0);
@@ -58,10 +54,6 @@
   --gray-100: #4a5568;
   --gray-200: #333a47;
   --gray-500: #232830;
-
-  // Starfield dot colors (brighter for deeper background)
-  --star-color-1: rgba(190, 205, 230, 0.32);
-  --star-color-2: rgba(180, 195, 220, 0.15);
 
   // Callout accents (Pillars of Creation palette)
   @include accent("default", #5c6d7e);
