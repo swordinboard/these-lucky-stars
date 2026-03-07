@@ -33,13 +33,13 @@
 // Static CSS-only starfield via background-image on body.
 // Uses --star-color-1 and --star-color-2 from _variables.scss
 // so dots adapt automatically to light/dark mode.
-// Layer 1 (14 stars, 1px) tiles at 550px.
-// Layer 2 (8 stars, 1.5px) tiles at 700px.
+// Layer 1 (28 stars, 1px) tiles at 550px.
+// Layer 2 (16 stars, 1.5px) tiles at 700px.
 // Different tile sizes prevent obvious repeating patterns.
 
 body {
    background-image:
-      // Layer 1: Foreground stars (14 points, 1px, brighter)
+      // Layer 1: Foreground stars (28 points, 1px, brighter)
       radial-gradient(1px 1px at 5% 8%,     var(--star-color-1), transparent),
       radial-gradient(1px 1px at 12% 42%,   var(--star-color-1), transparent),
       radial-gradient(1px 1px at 18% 73%,   var(--star-color-1), transparent),
@@ -54,7 +54,21 @@ body {
       radial-gradient(1px 1px at 91% 56%,   var(--star-color-1), transparent),
       radial-gradient(1px 1px at 96% 91%,   var(--star-color-1), transparent),
       radial-gradient(1px 1px at 45% 3%,    var(--star-color-1), transparent),
-      // Layer 2: Background stars (8 points, 1.5px, dimmer)
+      radial-gradient(1px 1px at 8% 55%,    var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 15% 26%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 23% 94%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 31% 51%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 39% 70%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 48% 19%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 57% 83%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 65% 34%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 72% 11%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 80% 65%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 87% 40%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 94% 76%,   var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 2% 85%,    var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 50% 48%,   var(--star-color-1), transparent),
+      // Layer 2: Background stars (16 points, 1.5px, dimmer)
       radial-gradient(1.5px 1.5px at 3% 28%,    var(--star-color-2), transparent),
       radial-gradient(1.5px 1.5px at 9% 67%,    var(--star-color-2), transparent),
       radial-gradient(1.5px 1.5px at 22% 51%,   var(--star-color-2), transparent),
@@ -62,14 +76,27 @@ body {
       radial-gradient(1.5px 1.5px at 56% 84%,   var(--star-color-2), transparent),
       radial-gradient(1.5px 1.5px at 64% 38%,   var(--star-color-2), transparent),
       radial-gradient(1.5px 1.5px at 79% 59%,   var(--star-color-2), transparent),
-      radial-gradient(1.5px 1.5px at 88% 73%,   var(--star-color-2), transparent);
+      radial-gradient(1.5px 1.5px at 88% 73%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 14% 9%,    var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 26% 81%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 33% 35%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 47% 92%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 59% 17%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 71% 44%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 84% 6%,    var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 95% 53%,   var(--star-color-2), transparent);
    background-size:
-      // Layer 1 (14 stars)
+      // Layer 1 (28 stars)
       550px 550px, 550px 550px, 550px 550px, 550px 550px,
       550px 550px, 550px 550px, 550px 550px, 550px 550px,
       550px 550px, 550px 550px, 550px 550px, 550px 550px,
-      550px 550px, 550px 550px,
-      // Layer 2 (8 stars)
+      550px 550px, 550px 550px, 550px 550px, 550px 550px,
+      550px 550px, 550px 550px, 550px 550px, 550px 550px,
+      550px 550px, 550px 550px, 550px 550px, 550px 550px,
+      550px 550px, 550px 550px, 550px 550px, 550px 550px,
+      // Layer 2 (16 stars)
+      700px 700px, 700px 700px, 700px 700px, 700px 700px,
+      700px 700px, 700px 700px, 700px 700px, 700px 700px,
       700px 700px, 700px 700px, 700px 700px, 700px 700px,
       700px 700px, 700px 700px, 700px 700px, 700px 700px;
    background-repeat: repeat;
@@ -90,6 +117,11 @@ html {
 // ---------------------------------------------------------------------------
 // SIDEBAR
 // ---------------------------------------------------------------------------
+
+// Mobile header — match display font
+.book-header h3 {
+   font-family: var(--font-display);
+}
 
 // Sidebar menu contrast
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
