@@ -2,14 +2,15 @@
 // Additional variables can be added here. If adding, make sure color variable is added to both mixins. Do not break up or add to @include blocks (their values can still be changed). See _custom.scss for background and font colors. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
 @mixin theme-light {
-  --accent: #a68a3e;
-  --accent-secondary: #745017;
-  --accent-bright: #d3be03;
-  --accent-dim: rgba(139, 112, 50, 0.4);
+  // Gold accent palette — yellow-gold to match TLS logo (black/white/yellow)
+  --accent: #c49a1a;
+  --accent-secondary: #8a6c12;
+  --accent-bright: #a08618;
+  --accent-dim: rgba(196, 154, 26, 0.2);
   --border-color: #292360;
 
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #b08d16;
+  --color-visited-link: #b08d16;
 
   --icon-filter: none;
 
@@ -35,14 +36,15 @@
 }
 
 @mixin theme-dark {
-  --accent: #e0bc6a;
-  --accent-secondary: #745017;
-  --accent-bright: #d3be03;
-  --accent-dim: rgba(212, 168, 83, 0.35);
+  // Gold accent palette — brighter yellow-gold for dark backgrounds
+  --accent: #e0b830;
+  --accent-secondary: #a07e18;
+  --accent-bright: #f0cc44;
+  --accent-dim: rgba(224, 184, 48, 0.25);
   --border-color: #292360;
 
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #e0b830;
+  --color-visited-link: #e0b830;
 
   --icon-filter: brightness(0) invert(1);
 
