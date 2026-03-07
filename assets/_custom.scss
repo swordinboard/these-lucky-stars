@@ -44,18 +44,24 @@
 }
 
 // Multi-column layout for link lists and short content
-.two-col {
+.three-col {
   column-count: 2;
   column-gap: 1.5rem;
 }
 
-.two-col a {
+.three-col a {
   display: block;
   padding: 0.3rem 0;
 }
 
+@media (max-width: 600px) {
+  .three-col {
+    column-count: 2;
+  }
+}
+
 @media (max-width: 300px) {
-  .two-col {
+  .three-col {
     column-count: 1;
   }
 }
