@@ -8,14 +8,14 @@ weight: 1
 Many pieces of equipment, particularly kits and batteries, do not have a set number of uses. Different applications will require different amounts of supplies or charge to complete. To simulate this the number of uses most items has is described by a die size. When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered until empty. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description.
 > Supplies die sizes/order: D12, D10, D8, D6, D4, Empty.
 
-## Equipment
+## Equipment Terms, Tags, and Descriptions
 
 **Price** — The standard price for a new piece of equipment.
 **Weight** — The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)
 **Damage Threshold** — The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
-**Tags** — Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary.
-*Range** — The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
+**Range** — The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
 Some weapons and upgrades have a minimum range. These are written in parenthesis before the normal range, such as (20)100. In these cases, attacks made at or below the minimum range also put the user at a disadvantage.
+**Tags** — Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 
 ## Weapons
 
