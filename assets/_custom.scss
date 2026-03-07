@@ -37,8 +37,7 @@
 // ---------------------------------------------------------------------------
 // STARFIELD BACKGROUND
 // ---------------------------------------------------------------------------
-// Single tileable PNG per color scheme. The browser caches the image
-// and repeats it with near-zero rendering cost — no gradient compositing.
+// Single tileable PNG per color scheme.
 // Images are transparent PNGs that layer over --body-background.
 // Place stars-light.png and stars-dark.png in /static/images/.
 
