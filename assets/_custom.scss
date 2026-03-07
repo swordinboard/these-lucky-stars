@@ -1,10 +1,21 @@
 // List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
 :root {
    --body-background: #fefefc;
-   --body-background-tint: rgba(40,50,165,0.2);
    --body-font-color: #000000;
    --invert-font-color: #e9e9e9;
+
+   // NOTE: --body-background-tint is a theme variable intended for background-image
+   // values (gradients, urls), not plain colors. Our rgba value here doesn't actually
+   // apply to the body (the browser ignores it in the shorthand image slot), but we
+   // keep it defined because we reference it directly in table row styles below.
+   --body-background-tint: rgba(40,50,165,0.2);
+
+   // TLS font families
+   --font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
+   --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,9 +23,56 @@
       --body-background: #343a40;
       --body-background-tint: rgba(40,50,165,0.2);
       --body-font-color: #e9e9e9;
-      --invert-font-color: #000000
+      --invert-font-color: #000000;
    }
 }
+
+// ---------------------------------------------------------------------------
+// STARFIELD BACKGROUND
+// ---------------------------------------------------------------------------
+// Static CSS-only starfield via background-image on body.
+// Uses --star-color-1 and --star-color-2 from _variables.scss
+// dots adapt automatically to light/dark mode.
+// Two layers tile at different sizes (550px, 700px) to avoid
+// obvious repeating patterns.
+
+body {
+   background-image:
+      // Layer 1: Foreground stars (7 points, 1px, brighter)
+      radial-gradient(1px 1px at 5% 8%,    var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 18% 73%,  var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 34% 88%,  var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 53% 62%,  var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 68% 47%,  var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 83% 22%,  var(--star-color-1), transparent),
+      radial-gradient(1px 1px at 96% 91%,  var(--star-color-1), transparent),
+      // Layer 2: Background stars (4 points, 1.5px, dimmer)
+      radial-gradient(1.5px 1.5px at 9% 37%,   var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 38% 12%,  var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 64% 58%,  var(--star-color-2), transparent),
+      radial-gradient(1.5px 1.5px at 88% 73%,  var(--star-color-2), transparent);
+   background-size:
+      550px 550px, 550px 550px, 550px 550px, 550px 550px,
+      550px 550px, 550px 550px, 550px 550px,
+      700px 700px, 700px 700px, 700px 700px, 700px 700px;
+   background-repeat: repeat;
+}
+
+// ---------------------------------------------------------------------------
+// TYPOGRAPHY
+// ---------------------------------------------------------------------------
+
+html {
+   font-family: var(--font-body);
+}
+
+.book-brand {
+   font-family: var(--font-display);
+}
+
+// ---------------------------------------------------------------------------
+// SIDEBAR
+// ---------------------------------------------------------------------------
 
 // Sidebar menu contrast
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
@@ -23,13 +81,57 @@
    }
 }
 
+// Menu theme note
+.book-menu-content nav {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+.theme-note {
+   margin-top: auto;
+   padding: 0.5rem 1rem;
+   border-top: 1px solid var(--gray-200);
+   font-size: var(--font-size-smallest);
+   color: var(--body-font-color);
+   opacity: 0.5;
+}
+
+// ---------------------------------------------------------------------------
+// MARKDOWN CONTENT
+// ---------------------------------------------------------------------------
+
 .markdown {
-   // Page divider lines
-   hr {
-      background: var(--accent-secondary);
+
+   // Display headings — Cinzel with gold accent
+   h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+   }
+   h2 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: var(--accent);
+   }
+   h3 {
+       font-family: (var--font-display);
+       font-weight: 600;
+       color: var(--accent);
+   }
+   // Further sub-headings stay in body font
+    h4, h5, h6 {
+      font-family: var(--font-body);
+      font-weight: 600;
    }
 
-   // Alternating table rows
+   // Page divider lines
+   hr {
+      background: var(--accent-bright);
+   }
+
+   // Alternating table rows (uses --body-background-tint directly as a color)
    table {
       thead tr {
          background: var(--body-background-tint);
@@ -41,9 +143,22 @@
          background: var(--body-background-tint);
       }
    }
+
+   // Tab active indicator
+   .book-tabs input[type=radio]:checked + label {
+      border-bottom-color: var(--accent);
+   }
+
+   // Details chevron hover
+   details summary:hover::before {
+      color: var(--accent-bright);
+   }
 }
 
-// Multi-column layout for link lists and short content
+// ---------------------------------------------------------------------------
+// MULTI-COLUMN LAYOUT
+// ---------------------------------------------------------------------------
+
 .three-col {
   column-count: 2;
   column-gap: 1.5rem;
@@ -64,36 +179,4 @@
   .three-col {
     column-count: 1;
   }
-}
-
-// Menu theme note
-.book-menu-content nav {
-   display: flex;
-   flex-direction: column;
-   min-height: 100%;
-}
-.theme-note {
-   margin-top: auto;
-   padding: 0.5rem 1rem;
-   border-top: 1px solid var(--gray-200);
-   font-size: var(--font-size-smallest);
-   color: var(--body-font-color);
-   opacity: 0.5;
-}
-
-// ============================================================================
-// STARFIELD TEST — drop this into _custom.scss temporarily
-// If you see tiny dots on the background, the approach works.
-// Remove after testing.
-// ============================================================================
-
-body {
-  background-image:
-    radial-gradient(1.5px 1.5px at 10% 15%, rgba(200,210,230,0.5), transparent),
-    radial-gradient(1.5px 1.5px at 30% 65%, rgba(200,210,230,0.5), transparent),
-    radial-gradient(1.5px 1.5px at 50% 35%, rgba(200,210,230,0.5), transparent),
-    radial-gradient(1.5px 1.5px at 70% 80%, rgba(200,210,230,0.5), transparent),
-    radial-gradient(1.5px 1.5px at 90% 45%, rgba(200,210,230,0.5), transparent) !important;
-  background-size: 400px 400px !important;
-  background-repeat: repeat !important;
 }
