@@ -2,8 +2,10 @@
 // Additional variables can be added here. If adding, make sure color variable is added to both mixins. Do not break up or add to @include blocks (their values can still be changed). See _custom.scss for background and font colors. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
 @mixin theme-light {
-  --accent: #d27f27;
+  --accent: #a68a3e;
   --accent-secondary: #745017;
+  --accent-bright: #d3be03;
+  --accent-dim: rgba(139, 112, 50, 0.4);
   --border-color: #292360;
 
   --color-link: #d27f27;
@@ -14,6 +16,10 @@
   --gray-100: #c0c0c0;
   --gray-200: #a5a5a5;
   --gray-500: #808080;
+
+  // Starfield dot colors (subtle against light background)
+  --star-color-1: rgba(120, 130, 160, 0.18);
+  --star-color-2: rgba(100, 110, 140, 0.10);
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
@@ -29,8 +35,10 @@
 }
 
 @mixin theme-dark {
-  --accent: #d27f27;
+  --accent: #e0bc6a;
   --accent-secondary: #745017;
+  --accent-bright: #d3be03;
+  --accent-dim: rgba(212, 168, 83, 0.35);
   --border-color: #292360;
 
   --color-link: #d27f27;
@@ -41,6 +49,10 @@
   --gray-100: #808080;
   --gray-200: #505050;
   --gray-500: #303030;
+
+  // Starfield dot colors (visible against dark background)
+  --star-color-1: rgba(200, 210, 230, 0.28);
+  --star-color-2: rgba(200, 210, 230, 0.12);
   
   @include accent("default", #64748b);
   @include accent("note", #4486dd);
