@@ -66,7 +66,6 @@
   }
 }
 
-
 // Menu theme note
 .book-menu-content nav {
    display: flex;
@@ -83,217 +82,96 @@
 }
 
 // ============================================================================
-// TLS STARFIELD THEME — _custom.scss additions
+// TLS STARFIELD THEME — _custom.scss additions (v2 — lightweight)
 // ============================================================================
-// Append this to your existing _custom.scss (don't replace it).
-// Requires the Google Fonts import below, OR add it via layouts/partials/inject/head.html
-//
-// This file provides:
-//   1. Google Fonts import (Cinzel + Source Sans 3)
-//   2. CSS-only starfield background (no JavaScript)
-//   3. Frosted glass backdrop on content areas for readability
-//   4. Gold accent color system
-//   5. Typography overrides using the new font pairing
-//   6. Both light and dark mode support via prefers-color-scheme
-//
-// If you prefer to load fonts via the inject partial instead of @import,
-// remove the @import line below and add this to layouts/partials/inject/head.html:
-//   <link rel="preconnect" href="https://fonts.googleapis.com">
-//   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+// Append to your existing _custom.scss.
+// This version: static starfield, no animation, no frosted panels.
 // ============================================================================
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 // ---------------------------------------------------------------------------
-// 1. CUSTOM PROPERTIES — TLS Theme Tokens
+// 1. CUSTOM PROPERTIES
 // ---------------------------------------------------------------------------
 
 :root {
-  // Font families
   --tls-font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
   --tls-font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
 
-  // Gold accent palette
+  // Gold accents (light mode)
   --tls-gold: #8b7032;
   --tls-gold-bright: #a68a3e;
   --tls-gold-dim: rgba(139, 112, 50, 0.4);
-  --tls-gold-glow: rgba(139, 112, 50, 0.15);
-
-  // Starfield colors (light mode — subtle, daytime sky feel)
-  --tls-star-bg: #f0f1f4;
-  --tls-star-color-1: rgba(100, 110, 140, 0.25);
-  --tls-star-color-2: rgba(80, 90, 120, 0.18);
-  --tls-star-color-3: rgba(120, 125, 150, 0.12);
-
-  // Frosted panel (light mode)
-  --tls-frost-bg: rgba(255, 255, 255, 0.88);
-  --tls-frost-border: rgba(0, 0, 0, 0.06);
-  --tls-frost-sidebar-bg: rgba(248, 249, 250, 0.92);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    // Gold accent palette (brighter for dark backgrounds)
     --tls-gold: #d4a853;
     --tls-gold-bright: #e0bc6a;
     --tls-gold-dim: rgba(212, 168, 83, 0.35);
-    --tls-gold-glow: rgba(212, 168, 83, 0.12);
-
-    // Starfield colors (dark mode — full night sky)
-    --tls-star-bg: #0d1117;
-    --tls-star-color-1: rgba(180, 195, 220, 0.35);
-    --tls-star-color-2: rgba(200, 210, 230, 0.25);
-    --tls-star-color-3: rgba(160, 175, 200, 0.15);
-
-    // Frosted panel (dark mode)
-    --tls-frost-bg: rgba(13, 17, 23, 0.88);
-    --tls-frost-border: rgba(110, 130, 160, 0.1);
-    --tls-frost-sidebar-bg: rgba(22, 27, 34, 0.92);
   }
 }
 
 
 // ---------------------------------------------------------------------------
-// 2. CSS-ONLY STARFIELD BACKGROUND
+// 2. STATIC STARFIELD BACKGROUND
 // ---------------------------------------------------------------------------
-// Uses layered radial-gradients on the body to simulate stars.
-// Each gradient is a tiny circle at a fixed position. We layer ~40 "stars"
-// across 3 gradient sets with different sizes and opacities for depth.
-// A subtle CSS animation shifts the background-position to create a
-// gentle twinkling/drifting effect.
+// Fewer stars, no animation. Uses background-attachment: fixed so the
+// stars stay put while content scrolls over them.
+// The theme's --body-background handles the base color; we layer
+// stars on top via --body-background-tint which hugo-book applies
+// after the background color on the body element.
 
-body {
-  background-color: var(--tls-star-bg);
-  background-image:
-    // Layer 1: Bright foreground stars (small, sharp)
-    radial-gradient(1px 1px at 5% 8%,    var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 12% 42%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 18% 73%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 27% 15%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 34% 88%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 41% 31%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 53% 62%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 61% 5%,    var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 68% 47%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 76% 79%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 83% 22%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 91% 56%,   var(--tls-star-color-1), transparent),
-    radial-gradient(1px 1px at 96% 91%,   var(--tls-star-color-1), transparent),
-
-    // Layer 2: Mid-depth stars (slightly larger, dimmer)
-    radial-gradient(1.5px 1.5px at 3% 28%,   var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 9% 67%,   var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 22% 51%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 31% 3%,   var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 38% 72%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 47% 19%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 56% 84%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 64% 38%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 72% 11%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 79% 59%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 88% 43%,  var(--tls-star-color-2), transparent),
-    radial-gradient(1.5px 1.5px at 94% 76%,  var(--tls-star-color-2), transparent),
-
-    // Layer 3: Background dust (largest, faintest)
-    radial-gradient(2px 2px at 7% 52%,   var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 16% 18%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 25% 84%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 36% 41%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 44% 7%,   var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 58% 33%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 67% 69%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 74% 94%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 85% 14%,  var(--tls-star-color-3), transparent),
-    radial-gradient(2px 2px at 92% 61%,  var(--tls-star-color-3), transparent);
-
-  // Each layer tiles on a different-sized box so the pattern doesn't
-  // repeat obviously. The animation shifts each at a different rate.
-  background-size:
-    // Layer 1 (13 stars)
-    550px 550px, 550px 550px, 550px 550px, 550px 550px,
-    550px 550px, 550px 550px, 550px 550px, 550px 550px,
-    550px 550px, 550px 550px, 550px 550px, 550px 550px,
-    550px 550px,
-    // Layer 2 (12 stars)
-    700px 700px, 700px 700px, 700px 700px, 700px 700px,
-    700px 700px, 700px 700px, 700px 700px, 700px 700px,
-    700px 700px, 700px 700px, 700px 700px, 700px 700px,
-    // Layer 3 (10 stars)
-    900px 900px, 900px 900px, 900px 900px, 900px 900px,
-    900px 900px, 900px 900px, 900px 900px, 900px 900px,
-    900px 900px, 900px 900px;
-
-  background-attachment: fixed;
-  animation: tls-starfield-drift 120s linear infinite;
+:root {
+  --body-background-tint:
+    radial-gradient(1px 1px at 5% 8%,    rgba(0,0,0,0.08), transparent),
+    radial-gradient(1px 1px at 18% 73%,  rgba(0,0,0,0.06), transparent),
+    radial-gradient(1px 1px at 34% 88%,  rgba(0,0,0,0.08), transparent),
+    radial-gradient(1px 1px at 53% 62%,  rgba(0,0,0,0.05), transparent),
+    radial-gradient(1px 1px at 68% 47%,  rgba(0,0,0,0.07), transparent),
+    radial-gradient(1px 1px at 83% 22%,  rgba(0,0,0,0.06), transparent),
+    radial-gradient(1px 1px at 96% 91%,  rgba(0,0,0,0.08), transparent),
+    radial-gradient(1.5px 1.5px at 9% 67%,  rgba(0,0,0,0.04), transparent),
+    radial-gradient(1.5px 1.5px at 38% 72%, rgba(0,0,0,0.04), transparent),
+    radial-gradient(1.5px 1.5px at 64% 38%, rgba(0,0,0,0.04), transparent),
+    radial-gradient(1.5px 1.5px at 88% 43%, rgba(0,0,0,0.04), transparent);
 }
 
-@keyframes tls-starfield-drift {
-  from { background-position: 0 0; }
-  to   { background-position: 550px 300px; }
-}
-
-// Optional: reduce motion for users who prefer it
-@media (prefers-reduced-motion: reduce) {
-  body {
-    animation: none;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-tint:
+      radial-gradient(1px 1px at 5% 8%,    rgba(200,210,230,0.3), transparent),
+      radial-gradient(1px 1px at 18% 73%,  rgba(200,210,230,0.22), transparent),
+      radial-gradient(1px 1px at 34% 88%,  rgba(200,210,230,0.3), transparent),
+      radial-gradient(1px 1px at 53% 62%,  rgba(200,210,230,0.18), transparent),
+      radial-gradient(1px 1px at 68% 47%,  rgba(200,210,230,0.25), transparent),
+      radial-gradient(1px 1px at 83% 22%,  rgba(200,210,230,0.2), transparent),
+      radial-gradient(1px 1px at 96% 91%,  rgba(200,210,230,0.3), transparent),
+      radial-gradient(1.5px 1.5px at 9% 67%,  rgba(200,210,230,0.12), transparent),
+      radial-gradient(1.5px 1.5px at 38% 72%, rgba(200,210,230,0.12), transparent),
+      radial-gradient(1.5px 1.5px at 64% 38%, rgba(200,210,230,0.12), transparent),
+      radial-gradient(1.5px 1.5px at 88% 43%, rgba(200,210,230,0.12), transparent);
   }
 }
 
 
 // ---------------------------------------------------------------------------
-// 3. FROSTED GLASS CONTENT PANELS
+// 3. GOLD ACCENT OVERRIDES
 // ---------------------------------------------------------------------------
-// Semi-transparent backdrop on the main content area and sidebar
-// so text is readable over the starfield.
-
-// Main content area
-.book-page {
-  background: var(--tls-frost-bg);
-  border-left: 1px solid var(--tls-frost-border);
-  border-right: 1px solid var(--tls-frost-border);
-}
-
-// Sidebar menu
-.book-menu .book-menu-content {
-  background: var(--tls-frost-sidebar-bg);
-}
-
-// Table of contents sidebar
-.book-toc .book-toc-content {
-  background: var(--tls-frost-sidebar-bg);
-}
-
-// Mobile menu overlay — make it frosted too
-@media screen and (max-width: 56rem) {
-  #menu-control:checked ~ main .book-menu .book-menu-content {
-    background: var(--tls-frost-sidebar-bg);
-    backdrop-filter: blur(8px);
-  }
-}
-
-
-// ---------------------------------------------------------------------------
-// 4. GOLD ACCENT OVERRIDES
-// ---------------------------------------------------------------------------
-// Override the hugo-book link color and a few accent elements with
-// the TLS gold. Keeps visited links distinguishable.
 
 :root {
   --color-link: var(--tls-gold);
   --color-visited-link: var(--tls-gold-dim);
 }
 
-// Tab active indicator
 .markdown .book-tabs input[type=radio]:checked + label {
   border-bottom-color: var(--tls-gold);
 }
 
-// Details/collapsible chevron on hover
 .markdown details summary:hover::before {
   color: var(--tls-gold);
 }
 
-// Headings get a subtle gold tint
 .markdown h1,
 .markdown h2 {
   color: var(--tls-gold-bright);
@@ -301,16 +179,13 @@ body {
 
 
 // ---------------------------------------------------------------------------
-// 5. TYPOGRAPHY
+// 4. TYPOGRAPHY
 // ---------------------------------------------------------------------------
-// Cinzel for display headings, Source Sans 3 for body text.
-// We override the html font-family and specific heading selectors.
 
 html {
   font-family: var(--tls-font-body);
 }
 
-// Display headings — Cinzel
 .markdown h1 {
   font-family: var(--tls-font-display);
   font-weight: 600;
@@ -323,7 +198,6 @@ html {
   letter-spacing: 0.01em;
 }
 
-// h3 and below stay in the body font for readability
 .markdown h3,
 .markdown h4,
 .markdown h5,
@@ -332,43 +206,6 @@ html {
   font-weight: 600;
 }
 
-// Site title / brand in sidebar
 .book-brand {
   font-family: var(--tls-font-display);
-}
-
-// Code blocks stay monospace (no override needed, theme handles this)
-
-
-// ---------------------------------------------------------------------------
-// 6. MINOR POLISH
-// ---------------------------------------------------------------------------
-
-// Give the book-page a touch of vertical padding so content
-// doesn't press right against the frost edges
-.book-page {
-  padding-top: 1rem;
-}
-
-// Soften the search input to match the frost aesthetic
-.book-search input {
-  background: var(--tls-frost-bg);
-  border-color: var(--tls-frost-border);
-}
-
-// Scrollbar styling for dark mode (Webkit browsers)
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--tls-star-bg);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--tls-gold-dim);
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--tls-gold);
-  }
 }
