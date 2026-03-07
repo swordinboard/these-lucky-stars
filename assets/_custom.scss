@@ -1,45 +1,78 @@
 // List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
 :root {
-   --body-background: #fefefc;
-   --body-background-tint: rgba(40,50,165,0.2);
-   --body-font-color: #000000;
-   --invert-font-color: #e9e9e9;
+   // Warm parchment cream — faint starlight on paper
+   --body-background: #f8f7f2;
+   --body-font-color: #1a1c20;
+   --invert-font-color: #d8dce2;
+
+   // NOTE: --body-background-tint is a theme variable intended for background-image
+   // values (gradients, urls), not plain colors. Our rgba value here doesn't actually
+   // apply to the body (the browser ignores it in the shorthand image slot), but we
+   // keep it defined because we reference it directly in table row styles below.
+   --body-background-tint: rgba(42,45,94,0.15);
+
+   // TLS font families
+   --font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
+   --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+
+   // Starfield tile image (swapped per color scheme)
+   --starfield-image: url('/images/stars-light.png');
 }
 
 @media (prefers-color-scheme: dark) {
    :root {
-      --body-background: #343a40;
-      --body-background-tint: rgba(40,50,165,0.2);
-      --body-font-color: #e9e9e9;
-      --invert-font-color: #000000
+      // Deep space blue-black — the void between the pillars
+      --body-background: #1c2028;
+      --body-background-tint: rgba(42,45,94,0.15);
+      --body-font-color: #d8dce2;
+      --invert-font-color: #1a1c20;
+
+      --starfield-image: url('/images/stars-dark.png');
    }
+}
+
+// ---------------------------------------------------------------------------
+// STARFIELD BACKGROUND
+// ---------------------------------------------------------------------------
+// Single tileable PNG per color scheme. The browser caches the image
+// and repeats it with near-zero rendering cost — no gradient compositing.
+// Images are transparent PNGs that layer over --body-background.
+// Place stars-light.png and stars-dark.png in /static/images/.
+
+body {
+   background-image: var(--starfield-image);
+   background-repeat: repeat;
+   background-size: 800px 800px;
+}
+
+// ---------------------------------------------------------------------------
+// TYPOGRAPHY
+// ---------------------------------------------------------------------------
+
+html {
+   font-family: var(--font-body);
+}
+
+.book-brand {
+   font-family: var(--font-display);
+}
+
+// ---------------------------------------------------------------------------
+// SIDEBAR
+// ---------------------------------------------------------------------------
+
+// Mobile header — match display font
+.book-header h3 {
+   font-family: var(--font-display);
 }
 
 // Sidebar menu contrast
 @media screen and (max-width: $mobile-breakpoint) and (prefers-color-scheme: dark) {
    .book-header label[for="menu-control"] img {
       filter: invert(1);
-   }
-}
-
-.markdown {
-   // Page divider lines
-   hr {
-      background: var(--accent-secondary);
-   }
-
-   // Alternating table rows
-   table {
-      thead tr {
-         background: var(--body-background-tint);
-      }
-      tbody tr:nth-child(odd) {
-         background: var(--body-background);
-      }
-      tbody tr:nth-child(even) {
-         background: var(--body-background-tint);
-      }
    }
 }
 
@@ -56,4 +89,85 @@
    font-size: var(--font-size-smallest);
    color: var(--body-font-color);
    opacity: 0.5;
+}
+
+// ---------------------------------------------------------------------------
+// MARKDOWN CONTENT
+// ---------------------------------------------------------------------------
+
+.markdown {
+
+   // Display headings — Cinzel with gold accent
+   h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--accent-bright);
+   }
+   h2 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: var(--accent-bright);
+   }
+
+   // Sub-headings stay in body font
+   h3, h4, h5, h6 {
+      font-family: var(--font-body);
+      font-weight: 600;
+   }
+
+   // Page divider lines
+   hr {
+      background: var(--accent-secondary);
+   }
+
+   // Alternating table rows (uses --body-background-tint directly as a color)
+   table {
+      thead tr {
+         background: var(--body-background-tint);
+      }
+      tbody tr:nth-child(odd) {
+         background: var(--body-background);
+      }
+      tbody tr:nth-child(even) {
+         background: var(--body-background-tint);
+      }
+   }
+
+   // Tab active indicator
+   .book-tabs input[type=radio]:checked + label {
+      border-bottom-color: var(--accent);
+   }
+
+   // Details chevron hover
+   details summary:hover::before {
+      color: var(--accent);
+   }
+}
+
+// ---------------------------------------------------------------------------
+// MULTI-COLUMN LAYOUT
+// ---------------------------------------------------------------------------
+
+.three-col {
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+
+.three-col a {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+@media (max-width: 600px) {
+  .three-col {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 300px) {
+  .three-col {
+    column-count: 1;
+  }
 }

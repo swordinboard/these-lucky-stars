@@ -1,58 +1,72 @@
 // Themes
 // Additional variables can be added here. If adding, make sure color variable is added to both mixins. Do not break up or add to @include blocks (their values can still be changed). See _custom.scss for background and font colors. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
+//
+// Color palette inspired by the JWST Pillars of Creation image.
+// Golds are warm amber (pillar-edge glow), grays are cool blue
+// (nebula dust), callouts pull from the gas/dust/void tones.
 
 @mixin theme-light {
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
+  // Gold accent palette — warm amber, less saturated than pure yellow
+  --accent: #b8922a;
+  --accent-secondary: #7a6414;
+  --accent-bright: #96801a;
+  --accent-dim: rgba(184, 146, 42, 0.15);
+  --border-color: #2a2d5e;
 
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #a8880e;
+  --color-visited-link: #a8880e;
 
   --icon-filter: none;
 
-  --gray-100: #c0c0c0;
-  --gray-200: #a5a5a5;
-  --gray-500: #808080;
-  
-  @include accent("default", #64748b);
-  @include accent("note", #4486dd);
-  @include accent("tip", #3bad3b);
-  @include accent("important", #8144dd);
-  @include accent("warning", #f59e42);
-  @include accent("caution", #d84747);
+  // Cool blue-gray scale (nebula dust)
+  --gray-100: #b8bcc4;
+  --gray-200: #9da3ad;
+  --gray-500: #6b7280;
+
+  // Callout accents (Pillars of Creation palette)
+  @include accent("default", #5c6d7e);
+  @include accent("note", #3d8ab0);
+  @include accent("tip", #4a9e6b);
+  @include accent("important", #7b52a8);
+  @include accent("warning", #d4923a);
+  @include accent("caution", #c05040);
 
   // Fallback for {{< hint >}} shortcodes
-  @include accent("info", #4486dd);
-  @include accent("success", #3bad3b);
-  @include accent("danger", #d84747);
+  @include accent("info", #3d8ab0);
+  @include accent("success", #4a9e6b);
+  @include accent("danger", #c05040);
 }
 
 @mixin theme-dark {
-  --accent: #d27f27;
-  --accent-secondary: #745017;
-  --border-color: #292360;
+  // Gold accent palette — brighter amber for deep space background
+  --accent: #d4a83a;
+  --accent-secondary: #9a7a1c;
+  --accent-bright: #e8c450;
+  --accent-dim: rgba(212, 168, 58, 0.18);
+  --border-color: #2a2d5e;
 
-  --color-link: #d27f27;
-  --color-visited-link: #d27f27;
+  --color-link: #d4a83a;
+  --color-visited-link: #d4a83a;
 
   --icon-filter: brightness(0) invert(1);
 
-  --gray-100: #808080;
-  --gray-200: #505050;
-  --gray-500: #303030;
-  
-  @include accent("default", #64748b);
-  @include accent("note", #4486dd);
-  @include accent("tip", #3bad3b);
-  @include accent("important", #8144dd);
-  @include accent("warning", #f59e42);
-  @include accent("caution", #d84747);
+  // Cool blue-gray scale (deep space dust)
+  --gray-100: #4a5568;
+  --gray-200: #333a47;
+  --gray-500: #232830;
+
+  // Callout accents (Pillars of Creation palette)
+  @include accent("default", #5c6d7e);
+  @include accent("note", #3d8ab0);
+  @include accent("tip", #4a9e6b);
+  @include accent("important", #7b52a8);
+  @include accent("warning", #d4923a);
+  @include accent("caution", #c05040);
 
   // Fallback for {{< hint >}} shortcodes
-  @include accent("info", #4486dd);
-  @include accent("success", #3bad3b);
-  @include accent("danger", #d84747);
+  @include accent("info", #3d8ab0);
+  @include accent("success", #4a9e6b);
+  @include accent("danger", #c05040);
 }
 
 @mixin theme-auto {
