@@ -6,7 +6,7 @@
 /* Roadmap-scoped styles — all colors inherit from site variables */
 .roadmap {
   --rm-text: var(--body-font-color);
-  --rm-text-dim: var(--gray-500);
+  --rm-text-dim: var(--gray-100);
   --rm-line: var(--gray-200);
   --rm-card-border: var(--gray-200);
   --rm-active: var(--accent-bright);
@@ -111,7 +111,7 @@
   border: 1px solid var(--rm-line);
   transition: all 0.3s ease;
   font-size: 0.85rem;
-  color: var(--rm-text-dim);
+  color: var(--rm-text);
 }
 .rm-waypoint.active .rm-waypoint-dot,
 .rm-waypoint.complete .rm-waypoint-dot {
@@ -223,7 +223,7 @@
   content: "◇";
   position: absolute;
   left: 0;
-  color: var(--rm-text-dim);
+  color: var(--rm-text);
   font-size: 0.6rem;
   top: 0.35em;
 }
