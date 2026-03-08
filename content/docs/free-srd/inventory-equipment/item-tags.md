@@ -4,6 +4,9 @@ weight: 2
 bookToc: false
 ---
 
+<- Pressurized — Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
+Space Suit — All Space Suits have the Bulky and Pressurized tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer full resistance to radiation and toxin, and partial resistances to cold and burn. ->
+
 # Weapon Tags
 
 Many weapons have tags to quickly identify common features and use requirements. The tag "Special" is used when that piece of equipment has details out of the ordinary.
