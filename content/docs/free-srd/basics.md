@@ -96,9 +96,8 @@ Advantage is a special type of modifier that can be added to any decision roll b
 
 > Advantage Scale:
 > |   Type:   |    Advantage    |   Neutral   |   Disadvantage   |
-> |---|---|---|---|
-> | Severity: |  Major ⟨ Minor  |  None  |  Minor  ⟩  Major  |
-
+> |-----------|-----------------|-------------|------------------|
+> | Severity: |  Major ⟨⟨ Minor  |    None     |   Minor ⟩⟩ Major  |
 
 **Major Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have actively worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
 
