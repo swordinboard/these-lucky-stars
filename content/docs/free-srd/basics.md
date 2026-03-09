@@ -95,9 +95,9 @@ All GMs have their own style. Some use the situation itself to gauge the results
 Advantage is a special type of modifier that can be added to any decision roll by the GM based on the situation faced by the characters. Unlike most modifiers which only provide a bonus or penalty, advantage can also alter the number of decision dice rolled. This allows the GM to quickly alter the target of a decsion roll on the fly. The Advantage modifier works on a scale with five levels: 
 
 > Advantage Scale:
-> |   Type:   |     Advantage     |   Neutral   |    Disadvantage    |
+> |   Type:   |.    Advantage    .|.  Neutral  .|.   Disadvantage   .|
 > |-----------|-------------------|-------------|--------------------|
-> | Severity: |   Major ⟨⟨ Mino r  |    None     |    Minor ⟩⟩ Major   |
+> | Severity: |   Major ⟨⟨ Minor   |    None     |    Minor ⟩⟩ Major   |
 
 **Major Advantage** adds one d6 to the decision dice for a total of 3d6. Advantage may be rewarded when characters have actively worked to be particularly prepared for a situation, propose creative solutions, have clearly outmatched an opponent, or have created some other form of favorable situation that goes beyond the normal alteration of the target number or bonuses provided.
 
