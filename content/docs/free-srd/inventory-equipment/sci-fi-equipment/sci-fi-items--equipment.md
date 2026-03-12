@@ -32,7 +32,7 @@ Single use injector that removes radiation-based wounds and conditions if applie
 Developed by Altoa Research for use by Iris Federation employees only.
 {{% /details %}}
 
-{{% details "HEmergency Trauma Patch" %}}
+{{% details "Emergency Trauma Patch" %}}
 ### Emergency Trauma Patch
 
 *--Cr — 0lbs*
