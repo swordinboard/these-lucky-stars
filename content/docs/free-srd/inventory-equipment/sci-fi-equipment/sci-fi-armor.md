@@ -1,9 +1,9 @@
 ---
-title: "Sci-Fi Protective Gear"
+title: "Sci-Fi Armor"
 weight: 2
 ---
 
-## Protective Gear
+## Sci-Fi Armor
 
 Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX penalty based on how restrictive it is. Some armor includes built-in upgrades or special properties.
 
