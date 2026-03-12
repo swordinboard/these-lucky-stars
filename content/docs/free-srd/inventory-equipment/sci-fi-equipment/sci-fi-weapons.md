@@ -3,6 +3,8 @@ title: "Sci-Fi Weapons"
 weight: 2
 ---
 
+<!-- need to add ballistic weapon ammo sizes -->
+
 ## Weapons
 
 ### Melee Weapons

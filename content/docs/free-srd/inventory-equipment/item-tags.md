@@ -4,8 +4,8 @@ weight: 2
 bookToc: false
 ---
 
-<- Pressurized — Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
-Space Suit — All Space Suits have the Bulky and Pressurized tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer full resistance to radiation and toxin, and partial resistances to cold and burn. ->
+<!-- Pressurized — Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
+Space Suit — All Space Suits have the Bulky and Pressurized tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer full resistance to radiation and toxin, and partial resistances to cold and burn. -->
 
 # Weapon Tags
 
@@ -110,6 +110,7 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 ### Injector
 
 Items with the injector tag are advanced medical devices that use a series of small needles to rapidly administer medications. They can be used through thin layers of cloth such as a shirt, but are typically applied to bare skin. Some space suits and armors have systems built in for automatically applying injectors.
+{{% /details %}}
 
 {{% details "Long Reload" %}}
 ### Long Reload
