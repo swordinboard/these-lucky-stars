@@ -149,24 +149,45 @@ html {
 // MULTI-COLUMN LAYOUT
 // ---------------------------------------------------------------------------
 
-.three-col {
+.two-col {
   column-count: 2;
   column-gap: 1.5rem;
 }
 
-.three-col a {
-  display: block;
-  padding: 0.3rem 0;
+.three-col {
+  column-count: 3;
+  column-gap: 1.5rem;
 }
 
-@media (max-width: 600px) {
-  .three-col {
+.four-col {
+  column-count: 4;
+  column-gap: 1.5rem;
+}
+
+.two-col a,
+.three-col a,
+.four-col a {
+  display: block;
+  padding: 0.15rem 0;
+}
+
+@media (max-width: 1200px) {
+  .four-col {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .three-col,
+  .four-col {
     column-count: 2;
   }
 }
 
-@media (max-width: 300px) {
-  .three-col {
+@media (max-width: 500px) {
+  .two-col,
+  .three-col,
+  .four-col {
     column-count: 1;
   }
 }

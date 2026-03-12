@@ -11,20 +11,23 @@ Space Suit — All Space Suits have the Bulky and Pressurized tags. Space suits 
 
 Many weapons have tags to quickly identify common features and use requirements. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 
-<div class="two-col">
-[Arcing](#arcing)
-[Ballistic](#ballistic)
-[Battery](#battery)
-[Belt Fed](#belt-fed)
-[Bulky](#bulky)
-[Burn](#burn)
-[Concealable](#concealable)
-[Firing Modes](#firing-modes)
-[Long Reload](#long-reload)
-[Rounds Reload](#rounds-reload)
-[Shock](#shock)
-[Throwable](#throwable)
-[Two-Handed](#two-handed)
+<div class="four-col">
+
+- [Arcing](#arcing)
+- [Ballistic](#ballistic)
+- [Battery](#battery)
+- [Belt Fed](#belt-fed)
+- [Bulky](#bulky)
+- [Burn](#burn)
+- [Concealable](#concealable)
+- [Firing Modes](#firing-modes)
+- [Injector](#injector)
+- [Long Reload](#long-reload)
+- [Rounds Reload](#rounds-reload)
+- [Shock](#shock)
+- [Throwable](#throwable)
+- [Two-Handed](#two-handed)
+
 </div>
 
 ---
@@ -102,6 +105,11 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 
 **Single Shot:** A slow but precise firing mode best for long range engagements. Each attack lowers the supply/ammo die by one size.
 {{% /details %}}
+
+{{% details "Injector" %}}
+### Injector
+
+Items with the injector tag are advanced medical devices that use a series of small needles to rapidly administer medications. They can be used through thin layers of cloth such as a shirt, but are typically applied to bare skin. Some space suits and armors have systems built in for automatically applying injectors.
 
 {{% details "Long Reload" %}}
 ### Long Reload

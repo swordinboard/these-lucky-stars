@@ -7,8 +7,11 @@ title: "Welcome!"
 > These Lucky Stars is in active playtesting. The rules presented here are stable and playable, but may change based on ongoing testing and feedback. Setting-specific content is still in development and kept within closed playtesting while the srd is in the process of being uploaded.
 
 > [!WARNING]
-> **Latest 2/22/26:**
-> Added core entries to Character Creation. While the system is playable without item specifics if you've a creative GM, I think that should be next don't you?
+> **Latest 3/12/26 Additions:**
+> - Equipment and Invetnory Managmanet, Item Tags List
+> - Sci-Fi Equipment
+> - Minor balancing changes to AP usage across equipment and abilities
+> - Re-aligned ballistic weapons with supply dice rules
 > -- Anthony
 
 ## Welcome!

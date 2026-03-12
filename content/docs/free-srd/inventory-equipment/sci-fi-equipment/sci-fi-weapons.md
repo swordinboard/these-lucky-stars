@@ -25,11 +25,19 @@ weight: 2
 {{< /tabs >}}
 
 {{% details "Knuckle Taser" %}}
-Knuckle Taser — This weapon is equipped to the hand body slot like a glove. Pressure plates help to prevent accidental activation, allowing normal use of the hands. Requires a micro battery to operate. Often worn in pairs, this classic low-profile weapon delivers a shocking punch.
+Knuckle Taser
+
+*--Cr — 0.5lbs — 20pts — Battery [micro], Shock*
+
+ This weapon is equipped to the hand body slot like a glove. Pressure plates help to prevent accidental activation, allowing normal use of the hands. Requires a micro battery to operate. Often worn in pairs, this classic low-profile weapon delivers a shocking punch.
 {{% /details %}}
 
 {{% details "Ripper Blade " %}}
-Ripper Blade — A 2ft saw-like serrated blade with a second handle cut out near the midsection. Designed to catch onto fabric or armor and be torn free by activating the blade with the second hand. Deals +5 shatter damage to armor.
+Ripper Blade
+
+*--Cr — 2lbs — 25pts — Battery [small], Two-handed*
+
+A 2ft reciprocating serrated blade with a second handle cut out near the midsection. Designed to catch onto fabric or armor and be torn free by activating the blade with the second hand. Deals +5 shatter damage to armor.
 {{% /details %}}
 
 ### Ranged Weapons
