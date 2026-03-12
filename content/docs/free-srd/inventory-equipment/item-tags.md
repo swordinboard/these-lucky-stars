@@ -12,7 +12,6 @@ Space Suit — All Space Suits have the Bulky and Pressurized tags. Space suits 
 Many weapons have tags to quickly identify common features and use requirements. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 
 <div class="two-col">
-
 [Arcing](#arcing)
 [Ballistic](#ballistic)
 [Battery](#battery)
@@ -26,7 +25,6 @@ Many weapons have tags to quickly identify common features and use requirements.
 [Shock](#shock)
 [Throwable](#throwable)
 [Two-Handed](#two-handed)
-
 </div>
 
 ---
@@ -120,7 +118,6 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 > 1d4 remains in Sasha's revolver, and she has 1d6 of ammo equipped to her chest. For 1 AP she can move all of this ammo to his revolver to increase the die size to a 1d8.
 
 {{% /details %}}
-
 
 {{% details "Shock" %}}
 ### Shock

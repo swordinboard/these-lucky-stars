@@ -19,11 +19,12 @@ Some weapons and upgrades have a minimum range. These are written in parenthesis
 
 Tech, Utility, and Survival Equipment
 Kits
+
 Tool kits are required for many actions crucial to mission success. These kits are most often equipped to a body slot while carried with intent to use.
 Kit Supplies — Most actions using a kit will also require supplies. Each kit comes with a max supply of 1d12. Certain actions only require the tools associated with a kit, and don't require the use of supplies. These actions can still be performed if a kit's supply is depleted. Kit refills cost 50Cr and generally weigh 1/4 as much as the full kit.
-Type
-Notes
-B&E Kit
+
+
+Breaking and Entering Kit (B&E Kit)
 200Cr — 12lbs — Bulky — Used for opening/bypassing or disabling physical locks, keys, and traps. Contains lockpicks and shims, screwdrivers, a prybar, bolt cutters, tape, key molds, generic/common test keys, and a handful of other useful items. Can be equipped to the chest, back, or belt.
 Disguise Kit
 150Cr — 8lbs — Used for altering one's appearance and applying camouflage to objects and people. Contains various cosmetics, brushes, scissors, a clipboard, ID lanyard, camouflage paints, false facial hair, an inconspicuous black hoodie, and tape. Can be equipped to the chest, back, or belt.
