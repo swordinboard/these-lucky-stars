@@ -51,17 +51,20 @@ Defense (DEF) is a measurement of how well a character can react to a situation 
 ### Vitality
 > **= ½ Level + ½ Max FORT + Mods (Total Rounded Down, Min 1)**
 
-Vitality (VIT) represents a character's overall health and ability to endure ailments. The more VIT a character has, the more they can carry on before succumbing to their illnesses or wounds. In combat, VIT  represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound or condition. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious. One point of VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
+Vitality (VIT) represents a character's overall health and ability to endure ailments. The more VIT a character has, the more they can carry on before succumbing to their illnesses or wounds.
+In combat, VIT  represents the number of blows a character can take before being incapacitated. Taking multiple points of VIT damage from a single attack also causes the character to receive a wound. When a character's VIT reaches 0 the attacker (or GM if an effect) must choose the final blow to be lethal or non-lethal. If they choose lethal, the character gains the dying condition, if nonlethal the character is left unconscious.
+VIT damage cannot be accumulated lower than 0.
+One point of VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
 
-### Wounds and Conditions
+### [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions)
 
-A **wound** is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may occure when:
+A [wound](/docs/free-srd/core-rules/wounds--conditions/#wounds) is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may occure when:
 
 - A character takes two or more points of VIT damage from a single attack.
 - A character loses their final VIT point.
 - A character is affected by special effects such as abilities and environmental effects.
 
-A **condition** is part of a broad category of effects that can also come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, the environment, or any combination of these things.
+A [condition](/docs/free-srd/core-rules/wounds--conditions/#conditions) is part of a broad category of effects that can come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, the environment, or any combination of these things.
 
 ### Stress Threshold
 > **= ½ Level + ½ WILL + Mods (Total Rounded Down, Min 1)**

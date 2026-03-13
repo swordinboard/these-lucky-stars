@@ -13,11 +13,5 @@
       "type": "image/png",
       "purpose": "any"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "Character Sheet",
-      "url": "/digitalcharactersheet.html"
-    }
   ]
 }

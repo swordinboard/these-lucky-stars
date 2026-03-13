@@ -254,7 +254,7 @@ When using your Bash ability you may choose to increase the displacement caused 
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto weapon, [Suppressing Fire](#suppressing-fire), Level 5*
 
-While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by two OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability uses an additional 5% ammunition.
+While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by two OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability automatically lowers one of the weapon's ammo die by one size after the initial suuply rolls for the attack have been made.
 {{% /details %}}
 
 {{% details "Indomitable Rage" %}}
@@ -307,7 +307,7 @@ The movement of your charge can now pass over/under obstacles and through diffic
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto weapon, [Suppressing Fire](#suppressing-fire)*
 
-When using your Suppressing Fire ability with a full-auto weapon that you are proficient with: You can change the shape of your Suppressing Fire ability to a straight line with a length equal to your weapon's normal range. If you do so, the ability uses double the required ammunition.
+When using your Suppressing Fire ability with a full-auto weapon that you are proficient with: You may change the shape of your Suppressing Fire ability to a straight line with a length equal to your weapon's normal range. If you do so, the ability reqires another ammo supply roll.
 {{% /details %}}
 
 {{% details "Long Performance" %}}
@@ -323,7 +323,7 @@ Once begun, you may continue your General Spectacle performance for a number of 
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto heavy weapon, [Suppressing Fire](#suppressing-fire), Level 5*
 
-While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares within range that need not be adjacent, OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability uses an additional 5% ammunition.
+While using the Suppressing Fire ability and a full-auto heavy weapon that you have Weapon Proficiency with: You may select up to six squares within range that need not be adjacent, OR increase the target for the WILL distraction check by two. If you choose to do either of these, the ability requires an additional ammo supply roll.
 {{% /details %}}
 
 {{% details "Outburst" %}}
@@ -367,7 +367,7 @@ Once per round you are able to draw an equipped weapon for no AP or draw a conce
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), DEX 4, Level 3*
 
-When wielding two semi-auto ranged weapons with which you are proficient, you may use abilities that require semi auto or full auto weapons. Ammo requirements apply once per ammo type if different.
+When wielding two semi-auto ranged weapons with which you are proficient, you may use abilities that require semi auto or full auto weapons. Ammo requirements apply to each weapon individually.
 {{% /details %}}
 
 {{% details "Rage" %}}
@@ -403,7 +403,7 @@ Choose a general topic in which your character is particularly knowledgeable abo
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, DEX 2*
 
-This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability uses 10% of the weapon's max ammunition. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL distraction check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through multiple threatened spaces are only affected once, and their movement ends . When the effect of the ability ends, the weapon used must be reloaded/cooled.
+This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability requires two ammo supply rolls. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL distraction check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through multiple threatened spaces are only affected once.
 {{% /details %}}
 
 {{% details "Swift Dual Attack" %}}
