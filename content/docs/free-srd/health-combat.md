@@ -17,7 +17,7 @@ Links to health-related resouces:
 - Characters enter combat when one declares an aggressive action against another. Initiative is then determined immediately upon declaring the action.
 - Combat is then played in rounds, with each combatant taking one turn per round in initiative order.
 - The most common actions during combat are attack and move. The number of actions a character can take during combat is determined using Action Points.
-- Successful attacks deal damage to the defenders Defense (DEF). Each time their DEF reaches 0, they lose a point of Vitality (VIT). Successful attacks can also result in wounds and conditions.
+- Successful attacks deal damage to the defenders Defense (DEF). Each time their DEF reaches 0, they lose a point of Vitality (VIT). Successful attacks can also result in [wounds and conditions](/docs/free-srd/health--combat/wounds--conditions).
 
 ---
 
@@ -150,11 +150,15 @@ Once total damage is calculated, it is dealt to the defender's current **Defense
 This repeats until all damage is dealt or VIT reaches 0.
 - Damaged character’s DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends.
 
-An attack inflicts a **wound or condition** on the defender if it:
+An attack inflicts a [wound](/docs/free-srd/health--combat/wounds--conditions) on the defender if it:
 - Dealt 2 or more VIT damage, or
 - Caused the defender to reach 0 VIT.
 
-If VIT reaches 0, the character is **incapacitated** — and the attacker decides whether the blow was lethal or non-lethal. A lethal blow applies the dying condition.
+Most wound causing attacks cause minor wounds. It is up to the GM to determine the appropriate wound severity to apply.
+
+If VIT reaches 0, the attacker decides whether the blow was lethal or non-lethal. 
+- A lethal blow applies the [dying conditon](/docs/free-srd/health--combat/wounds--conditions/#dying) and a [major wound](/docs/free-srd/health--combat/wounds--conditions/#major-wounds).
+- A nonlethal blow applies the [unconscious condition](/docs/free-srd/health--combat/wounds--conditions/#unconscious) and a minor wound, usually a contusion to the head.
 
 ---
 
