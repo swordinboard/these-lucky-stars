@@ -1,7 +1,7 @@
 ---
 title: "Sci-Fi Starter Module"
 weight: 7
-draft:true
+draft: true
 ---
 
 ## Sci-Fi Starter Module
