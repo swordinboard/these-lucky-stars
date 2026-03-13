@@ -1,5 +1,5 @@
 ---
-title: "Health and Combat"
+title: "Health & Combat"
 weight: 4
 ---
 

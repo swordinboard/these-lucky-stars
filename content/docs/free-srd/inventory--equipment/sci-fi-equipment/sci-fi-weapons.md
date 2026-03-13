@@ -30,7 +30,7 @@ weight: 2
 {{% details "Knuckle Taser" %}}
 ### Knuckle Taser
 
-*--Cr — 0.5lbs — 20pts — Battery [Micro], Shock, Special*
+*--Cr — 0.5lbs — 20pts — Battery [Micro], [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Special](/docs/free-srd/inventory--equipment/item-tags/#special)*
 
 Equipped to the hand body slot like a glove. Pressure plates help to prevent accidental activation, allowing normal use of the hands. Often worn in pairs, this classic low-profile weapon delivers a shocking punch.
 {{% /details %}}
@@ -38,7 +38,7 @@ Equipped to the hand body slot like a glove. Pressure plates help to prevent acc
 {{% details "Standard Issue Knife" %}}
 ### Standard Issue Knife
 
-*--Cr — 0.5lbs — 20pts — Concealable, Throwable [10ft]*
+*--Cr — 0.5lbs — 20pts — [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable), [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) [10ft]*
 
 A reliable all-purpose combat knife. Compact enough to conceal and balanced for throwing.
 {{% /details %}}
@@ -48,7 +48,7 @@ A reliable all-purpose combat knife. Compact enough to conceal and balanced for 
 {{% details "Emergency Hatchet" %}}
 ### Emergency Hatchet
 
-*--Cr — 1lbs — 25pts — Throwable [20ft]*
+*--Cr — 1lbs — 25pts — [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) [20ft]*
 
 A sturdy hatchet designed for emergency use. Equally suited to breaching, survival tasks, and close combat.
 {{% /details %}}
@@ -56,7 +56,7 @@ A sturdy hatchet designed for emergency use. Equally suited to breaching, surviv
 {{% details "Ripper Blade" %}}
 ### Ripper Blade
 
-*--Cr — 2lbs — 25pts — Battery [Small], Two-Handed, Special*
+*--Cr — 2lbs — 25pts — Battery [Small], [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed), [Special](/docs/free-srd/inventory--equipment/item-tags/#special)*
 
 A 2ft reciprocating serrated blade with a second handle cut out near the midsection. Designed to catch onto fabric or armor and be torn free by activating the blade with the second hand. Deals +5 shatter damage to armor.
 {{% /details %}}
@@ -64,7 +64,7 @@ A 2ft reciprocating serrated blade with a second handle cut out near the midsect
 {{% details "Shock Baton" %}}
 ### Shock Baton
 
-*--Cr — 1lbs — 25pts — Battery [Small], Shock*
+*--Cr — 1lbs — 25pts — Battery [Small], [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock)*
 
 A standard issue electrified baton used by law enforcement and security personnel. Effective at stunning and incapacitating targets.
 {{% /details %}}
@@ -103,7 +103,7 @@ A standard issue electrified baton used by law enforcement and security personne
 {{% details "Auto Pistol" %}}
 ### Auto Pistol
 
-*--Cr — 2lbs — 15pts — 20ft — Ballistic, Full-Auto, Concealable*
+*--Cr — 2lbs — 15pts — 20ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
 
 A compact fully automatic pistol chambered for close quarters. High rate of fire at the cost of range.
 {{% /details %}}
@@ -111,7 +111,7 @@ A compact fully automatic pistol chambered for close quarters. High rate of fire
 {{% details "Heavy Pistol" %}}
 ### Heavy Pistol
 
-*--Cr — 2lbs — 18pts — 50ft — Ballistic, Single Shot*
+*--Cr — 2lbs — 18pts — 50ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
 A hard-hitting single shot sidearm with notable stopping power and effective range for a pistol.
 {{% /details %}}
@@ -119,7 +119,7 @@ A hard-hitting single shot sidearm with notable stopping power and effective ran
 {{% details "Laser Pistol" %}}
 ### Laser Pistol
 
-*--Cr — 1lbs — 18pts — 60ft — Battery [Small], Single Shot, Burn*
+*--Cr — 1lbs — 18pts — 60ft — Battery [Small], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn)*
 
 A compact energy sidearm with excellent range for its size. Shots apply the Burn condition on hit.
 {{% /details %}}
@@ -127,7 +127,7 @@ A compact energy sidearm with excellent range for its size. Shots apply the Burn
 {{% details "Light Pistol" %}}
 ### Light Pistol
 
-*--Cr — 1lbs — 15pts — 30ft — Ballistic, Semi-Auto, Concealable*
+*--Cr — 1lbs — 15pts — 30ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Semi-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
 
 A slim, lightweight sidearm easy to conceal and quick to draw. Reliable for self-defense at moderate range.
 {{% /details %}}
@@ -137,7 +137,7 @@ A slim, lightweight sidearm easy to conceal and quick to draw. Reliable for self
 {{% details "Compact Rifle" %}}
 ### Compact Rifle
 
-*--Cr — 6lbs — 18pts — 30ft — Ballistic, Full-Auto, Two-Handed*
+*--Cr — 6lbs — 18pts — 30ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 A lightweight automatic rifle optimized for maneuverability in tight spaces.
 {{% /details %}}
@@ -145,7 +145,7 @@ A lightweight automatic rifle optimized for maneuverability in tight spaces.
 {{% details "Laser Rifle" %}}
 ### Laser Rifle
 
-*--Cr — 12lbs — 20pts — (10) 90ft — Battery [Small], Single Shot, Burn, Two-Handed*
+*--Cr — 12lbs — 20pts — (10) 90ft — Battery [Small], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 A long-range energy rifle capable of precise shots at extended distances. Shots apply the Burn condition on hit. Minimum range of 10ft.
 {{% /details %}}
@@ -153,7 +153,7 @@ A long-range energy rifle capable of precise shots at extended distances. Shots 
 {{% details "Long Rifle" %}}
 ### Long Rifle
 
-*--Cr — 12lbs — 18pts — (10) 50ft — Ballistic, Single Shot, Bulky, Two-Handed*
+*--Cr — 12lbs — 18pts — (10) 50ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 A heavy precision rifle designed for long-range engagements. Bulky and slow to maneuver but highly effective at distance. Minimum range of 10ft.
 {{% /details %}}
@@ -161,7 +161,7 @@ A heavy precision rifle designed for long-range engagements. Bulky and slow to m
 {{% details "Shock Rifle" %}}
 ### Shock Rifle
 
-*--Cr — 6lbs — 20pts — 20ft — Battery [Medium], Single Shot, Arcing, Shock, Two-Handed*
+*--Cr — 6lbs — 20pts — 20ft — Battery [Medium], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 An energy rifle that fires arcing electrical bolts capable of jumping between nearby targets. Shots apply the Shock condition on hit.
 {{% /details %}}
@@ -169,7 +169,7 @@ An energy rifle that fires arcing electrical bolts capable of jumping between ne
 {{% details "Standard Issue Rifle" %}}
 ### Standard Issue Rifle
 
-*--Cr — 18lbs — 18pts — 40ft — Ballistic, Semi-Auto, Two-Handed*
+*--Cr — 18lbs — 18pts — 40ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Semi-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 The workhorse of military and paramilitary forces. Reliable, accurate, and effective at standard combat ranges.
 {{% /details %}}
@@ -179,7 +179,7 @@ The workhorse of military and paramilitary forces. Reliable, accurate, and effec
 {{% details "Heavy Rotary Cannon" %}}
 ### Heavy Rotary Cannon
 
-*--Cr — 20lbs — 25pts — (5) 60ft — Ballistic, Full-Auto, Bulky, Belt Fed, Long Reload, Two-Handed*
+*--Cr — 20lbs — 25pts — (5) 60ft — [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky), [Belt Fed](/docs/free-srd/inventory--equipment/item-tags/#belt-fed), [Long Reload](/docs/free-srd/inventory--equipment/item-tags/#long-reload), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 A devastating multi-barrel rotary cannon fed by an external ammunition belt. Requires time to spin up and reload, but delivers overwhelming suppressive fire.
 {{% /details %}}
@@ -221,7 +221,7 @@ Deployable stabilization that increases accuracy. Can be deployed on a solid sur
 {{% details "Drum Magazines" %}}
 ### Drum Magazines
 
-*--Cr — 4lbs — Compatibility: All Ballistic Ranged Weapons*
+*--Cr — 4lbs — Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
 
 A high capacity magazine that lowers the reload requirement to rolls of 1 and 2 only, but causes a -2 attack penalty due to the added weight.
 {{% /details %}}
@@ -231,7 +231,7 @@ A high capacity magazine that lowers the reload requirement to rolls of 1 and 2 
 
 *--Cr — 1lbs — Compatibility: Pistols, Rifles*
 
-Increases the normal range of a weapon by 20ft. If applied to a one-handed weapon, turns it into a two-handed weapon. If applied to a two-handed weapon, increases the minimum range by 5ft.
+Increases the normal range of a weapon by 20ft. If applied to a one-handed weapon, turns it into a [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed) weapon. If applied to a two-handed weapon, increases the minimum range by 5ft.
 {{% /details %}}
 
 {{% details "Forward Assault Shield" %}}
@@ -253,7 +253,7 @@ Allows a temporary power boost. 3/day the user can spend an extra supply roll to
 {{% details "Recoil Compensation System" %}}
 ### Recoil Compensation System
 
-*--Cr — 1lbs — Compatibility: All Ballistic Ranged Weapons*
+*--Cr — 1lbs — Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
 
 Significantly reduces the effects of recoil. Eliminates the knockback effect of ballistic weapons in zero gravity and grants a +1 bonus to attacks.
 {{% /details %}}
@@ -273,7 +273,7 @@ A holographic sight that improves target acquisition. Grants +2 to attacks made 
 
 *--Cr — 2lbs — Compatibility: All Melee Weapons*
 
-Adds +2 damage to attacks and changes the damage type to shock. On a successful hit, the target must succeed on a target 15 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
+Adds +2 damage to attacks and changes the damage type to [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock). On a successful hit, the target must succeed on a target 15 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
 {{% /details %}}
 
 {{% details "Weighted Core" %}}
@@ -281,5 +281,5 @@ Adds +2 damage to attacks and changes the damage type to shock. On a successful 
 
 *--Cr — 3lbs — Compatibility: Medium Melee, Polearms and Staffs, Two-Handed Melee Weapons*
 
-A dense weight added to the striking end of the weapon, increasing damage dealt by +3. The weapon loses the throwable tag if it had it, and users with less than 3 STR suffer a -3 penalty to attack.
+A dense weight added to the striking end of the weapon, increasing damage dealt by +3. The weapon loses the [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) tag if it had it, and users with less than 3 STR suffer a -3 penalty to attack.
 {{% /details %}}

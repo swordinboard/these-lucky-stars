@@ -25,7 +25,7 @@ Consumable medical items for field treatment, injury response, and condition man
 {{% details "Altoa Radiation Antidote 5 (ARA-5)" %}}
 ### Altoa Radiation Antidote 5 (ARA-5)
 
-*--Cr — 0lbs — Injector*
+*--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
 
 Single use injector that removes radiation-based wounds and conditions if applied within 1hr of exposure. Application costs 2 AP.
 
@@ -37,13 +37,13 @@ Developed by Altoa Research for use by Iris Federation employees only.
 
 *--Cr — 0lbs*
 
-A 9×9in patch that closes and sterilizes most lacerations, punctures, and burns while drawing small foreign material such as shrapnel out of the wound. Can also be safely applied directly to a pdamaged spacesuit, sealing both the wound and the suit. Application costs 3 AP.
+A 9×9in patch that closes and sterilizes most lacerations, punctures, and burns while drawing small foreign material such as shrapnel out of the wound. Can also be safely applied directly to a damaged spacesuit, sealing both the wound and the suit. Application costs 3 AP.
 {{% /details %}}
 
 {{% details "Pain Suppressant Injector" %}}
 ### Pain Suppressant Injector
 
-*--Cr — 0lbs — Injector*
+*--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
 
 Single use injector that quickly dulls pain receptors. Allows character to pause most wound penalties for 1hr. All applicable effects return when pain suppressant effect ends. 2 AP to administer.
 {{% /details %}}
@@ -51,7 +51,7 @@ Single use injector that quickly dulls pain receptors. Allows character to pause
 {{% details "Vitaboost Injector" %}}
 ### Vitaboost Injector
 
-*--Cr — 0lbs — Injector*
+*--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
 
 Single use injector that heals 1 VIT or attribute damage. Does not remove wounds or conditions. Costs 2 AP to administer.
 {{% /details %}}
@@ -98,7 +98,7 @@ Vacuum-sealed ration paste providing one day of nutrients and water for one pers
 {{% details "Portable Water Purifier" %}}
 ### Portable Water Purifier
 
-*--Cr — 3lbs — Battery [Small]*
+*--Cr — 3lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
 
 Purifies up to 5 gallons of water per supply roll over the course of 30 minutes. Has carrying handles that can be used as a backpack.
 {{% /details %}}
@@ -114,9 +114,9 @@ A deployable backpack that unfolds into a 5ft² solar panel array. Can charge a 
 {{% details "Survival Tent" %}}
 ### Survival Tent
 
-*--Cr — 20lbs — Bulky — Single Use*
+*--Cr — 20lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Single Use*
 
-A compact survival tent contained in a large bag with a handlecarrying handle and quick-deploy pull cord. Automatically deploys a pressurized 10ft×10ft shelter with basic environment controls and contaminant purge. Includes basic environment controls, but cannot withstand extreme heat. Supports up to four individuals for 24hrs. Costs 2 AP to deploy and takes ten minutes to pack up.
+A compact survival tent contained in a large bag with a carrying handle and quick-deploy pull cord. Automatically deploys a pressurized 10ft×10ft shelter with basic environment controls and contaminant purge. Cannot withstand extreme heat. Supports up to four individuals for 24hrs. Costs 2 AP to deploy and takes ten minutes to pack up.
 {{% /details %}}
 
 ---
@@ -141,12 +141,12 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 | [Personal Shield](#personal-shield) | 10pts protection for up to 3 rounds. |
 | [Remote Detonator](#remote-detonator) | Detonates rigged explosives or systems. |
 | [Squad Shield](#squad-shield) | 30pts protection, 20ft radius, up to 6 rounds. |
-| [Standardized Battery Cores](#standardized-battery-cores) | Portable power available in multiple sizes.|
+| [Standardized Battery Cores](#standardized-battery-cores) | Portable power available in multiple sizes. |
 
 {{% details "Bio Scanner" %}}
 ### Bio Scanner
 
-*--Cr — 2lbs — Battery [Small]*
+*--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
 
 A scanner that can determine useful properties of most organic matter. Costs 2 AP to use, 5ft range. Requires one supply roll when activated.
 {{% /details %}}
@@ -154,7 +154,7 @@ A scanner that can determine useful properties of most organic matter. Costs 2 A
 {{% details "Comp Jack" %}}
 ### Comp Jack
 
-*--Cr — 1lb — Two-Handed*
+*--Cr — 1lb — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 A common but complex tool used to interact with computer systems at virtually any connected terminal. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. Can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack).
 {{% /details %}}
@@ -162,7 +162,7 @@ A common but complex tool used to interact with computer systems at virtually an
 {{% details "Data Ripper [Level X]" %}}
 ### Data Ripper [Level X]
 
-*--Cr — 0lbs — Battery [Small]*
+*--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
 
 An AI-assisted data extraction device that forcefully extracts data from systems without proper access, but triggers all countermeasures. Rated based on the highest security level of systems it can extract from. Larger files or those with heavy encryption may take longer to download, but most items can be downloaded in 3d4 rounds. Requires 3 AP and a comp jack to set up.
 {{% /details %}}
@@ -178,7 +178,7 @@ A disposable high-speed data extraction USB storage device. Can be used to rapid
 {{% details "Decoy Beacon" %}}
 ### Decoy Beacon
 
-*--Cr — 0lbs — Battery [Micro]*
+*--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 Mimics scrambled com signals and life signs of a human. Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 1hr.
 {{% /details %}}
@@ -194,7 +194,7 @@ Gloves with variable grip actuators and selective high friction material. Grants
 {{% details "Grapple-Line Launcher" %}}
 ### Grapple-Line Launcher
 
-*--Cr — 4lbs — Battery [Small] — Two-Handed*
+*--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
 Fires a magnetic grappling hook that can puncture soft materials, hook an edge, or attach to magnetic surfaces. The launcher can be anchored to provide a stable line that grants +3 to related climb checks. The line can support up to 400lbs. Requires 1 supply roll per use. Costs 2 AP to fire and anchor.
 {{% /details %}}
@@ -202,7 +202,7 @@ Fires a magnetic grappling hook that can puncture soft materials, hook an edge, 
 {{% details "Gravity Anchor" %}}
 ### Gravity Anchor
 
-*--Cr — 10lbs — Battery [Medium] — Bulky*
+*--Cr — 10lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
 
 A box-shaped device that creates a standard gravity field in a 10ft radius in zero or low gravity environments. Useful for creating temporary work stations. Costs 2 AP to deploy on the surface intended to be the "floor" of the directional field. Requires 1 supply roll per activation; each activation lasts 10 minutes.
 {{% /details %}}
@@ -210,7 +210,7 @@ A box-shaped device that creates a standard gravity field in a 10ft radius in ze
 {{% details "Jump Boosters" %}}
 ### Jump Boosters
 
-*--Cr — 5lbs — Battery [Medium] — Legs*
+*--Cr — 5lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] — Legs*
 
 A pair of leg actuators that increase jump capabilities. Adds +10ft to horizontal and vertical jump capabilities under normal gravity. Requires 1 supply roll per use.
 {{% /details %}}
@@ -226,7 +226,7 @@ A pair of electric handcuffs that pair with a wrist-mounted controller. The magn
 {{% details "Mini Laser Cutter" %}}
 ### Mini Laser Cutter
 
-*--Cr — 1lb — 18pts — Battery [Medium]*
+*--Cr — 1lb — 18pts — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
 
 A powerful handheld direct contact laser cutter and welder suitable for small to medium projects on most metals. Cut depth can be dialed in to a max of 6in. Requires 1 supply roll per use.
 {{% /details %}}
@@ -234,7 +234,7 @@ A powerful handheld direct contact laser cutter and welder suitable for small to
 {{% details "Personal Shield" %}}
 ### Personal Shield
 
-*--Cr — 2lbs — Battery [Small] — Belt*
+*--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — Belt*
 
 Once activated, creates a sheet-like protective energy shield over the user that protects from 10 points of damage for up to 3 rounds. Costs 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
 
@@ -245,7 +245,7 @@ Once activated, creates a sheet-like protective energy shield over the user that
 {{% details "Remote Detonator" %}}
 ### Remote Detonator
 
-*--Cr — 0lbs — Battery [Micro]*
+*--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 Can be used to detonate rigged explosives or electrical systems. Comes with four receiver chips. Each chip can be wired to an explosive device or into an electrical system for 4 AP, a use of the tech kit with supplies, and a successful target 15 KNO check.
 {{% /details %}}
@@ -253,7 +253,7 @@ Can be used to detonate rigged explosives or electrical systems. Comes with four
 {{% details "Squad Shield" %}}
 ### Squad Shield
 
-*--Cr — 4lbs — Battery [Medium]*
+*--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
 
 Once activated, creates a spherical energy shield with a 20ft radius that protects from 30 points of damage for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
 
@@ -272,6 +272,6 @@ Batteries are available in standard sizes that cannot be interchanged without mo
 | Mini | 1d6 | 30Cr — 0lbs — 1/2in round, coin like |
 | Small | 1d12 | 75Cr — 0.5lbs — 3×1in cylinder |
 | Medium | 2d12 | 200Cr — 2lbs — 8×4in cylinder |
-| Large | 4d12 | 600Cr — 50lbs — Bulky — 1ft cube with a handle recessed in the top. A similar size to modern car batteries. |
-| Industrial | 6d12 | 1500Cr — 120lbs — Bulky — 4×1×1ft, essentially four large batteries stacked together with recessed carry handles near the ends. |
+| Large | 4d12 | 600Cr — 50lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — 1ft cube with a handle recessed in the top. A similar size to modern car batteries. |
+| Industrial | 6d12 | 1500Cr — 120lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — 4×1×1ft, essentially four large batteries stacked together with recessed carry handles near the ends. |
 {{% /details %}}

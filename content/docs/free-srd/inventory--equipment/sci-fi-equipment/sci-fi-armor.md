@@ -17,26 +17,26 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 | Name | Notes |
 |---|---|
 | [Basic P-Suit](#basic-p-suit) | Pressurized. 1hr oxygen. Minimum protection for airless environments. |
-| [Classic Evosuit 2](#classic-evosuit-2) | Space suit. Popular among pilots and hazardous atmosphere workers. |
-| [Combat Vest 3](#combat-vest-3) | Simple, effective protective vest. No AGI/DEX penalty. |
-| [Light Combat Vest 2](#light-combat-vest-2) | Concealable. Lower profile version of the combat vest. |
-| [Messer Armory Chameleon Armor System 3](#messer-armory-chameleon-armor-system-3) | Integrated chameleon unit. Frees up an equipment slot. |
-| [Padded Flight Suit 1](#padded-flight-suit-1) | Partial Resistance: Burn. More protection than a standard coverall. |
-| [Scav Gear 2](#scav-gear-2) | Grants an extra body slot and +50 max carry weight. |
-| [Site Safety Gear 1](#site-safety-gear-1) | Basic corporate-approved protective gear. |
-| [Vusiean Chitinweave 2](#vusiean-chitinweave-2) | Partial Resistance: Toxin. Regenerates 1d6 damage per day. Rare. |
-| [Workweek Co. Coverall 1](#workweek-co-coverall-1) | Partial Resistance: Shock. Equipped kits weigh half as much. |
-| [WorkWeek Co. Site Safety Gear 2](#workweek-co-site-safety-gear-2) | Partial Resistance: Burn, Shock, Sonic, Toxin. Built-in coms and HUD. |
+| [Classic Evosuit](#classic-evosuit) | Space suit. Popular among pilots and hazardous atmosphere workers. |
+| [Combat Vest](#combat-vest) | Simple, effective protective vest. No AGI/DEX penalty. |
+| [Light Combat Vest](#light-combat-vest) | Concealable. Lower profile version of the combat vest. |
+| [Messer Armory Chameleon Armor System](#messer-armory-chameleon-armor-system) | Integrated chameleon unit. Frees up an equipment slot. |
+| [Padded Flight Suit](#padded-flight-suit) | Partial Resistance: Burn. More protection than a standard coverall. |
+| [Scav Gear](#scav-gear) | Grants an extra body slot and +50 max carry weight. |
+| [Site Safety Gear](#site-safety-gear) | Basic corporate-approved protective gear. |
+| [Vusiean Chitinweave](#vusiean-chitinweave) | Partial Resistance: Toxin. Regenerates 1d6 damage per day. Rare. |
+| [Workweek Co. Coverall](#workweek-co-coverall) | Partial Resistance: Shock. Equipped kits weigh half as much. |
+| [WorkWeek Co. Site Safety Gear](#workweek-co-site-safety-gear) | Partial Resistance: Burn, Shock, Sonic, Toxin. Built-in coms and HUD. |
 {{% /tab %}}
 {{% tab "Heavy Armor" %}}
 | Name | Notes |
 |---|---|
-| [Combat Evosuit 4](#combat-evosuit-4) | Space suit. Targeting HUD. Designed for tactical use. |
-| [Enforcer Armor 4](#enforcer-armor-4) | No-frills armor favored by private security. |
-| [Mechanic's Evosuit by WorkWeek Co. 3](#mechanics-evosuit-by-workweek-co-3) | Space suit. Partial Resistance: Shock. Hazard HUD included. |
-| [Messer Armory Kinetic Armor System 0](#messer-armory-kinetic-armor-system-0) | Partial Resistance: Physical, Sonic. Distributes kinetic energy. |
-| [Security Flight Suit 3](#security-flight-suit-3) | Built-in coms. Tactical variation of the padded flight suit. |
-| [Ultraweave Evosuit 5](#ultraweave-evosuit-5) | Space suit. Partial Resistance: Sonic, Toxin. Most advanced Evosuit available. |
+| [Combat Evosuit](#combat-evosuit) | Space suit. Targeting HUD. Designed for tactical use. |
+| [Enforcer Armor](#enforcer-armor) | No-frills armor favored by private security. |
+| [Mechanic's Evosuit by WorkWeek Co.](#mechanics-evosuit-by-workweek-co) | Space suit. Partial Resistance: Shock. Hazard HUD included. |
+| [Messer Armory Kinetic Armor System](#messer-armory-kinetic-armor-system) | Partial Resistance: Physical, Sonic. Distributes kinetic energy. |
+| [Security Flight Suit](#security-flight-suit) | Built-in coms. Tactical variation of the padded flight suit. |
+| [Ultraweave Evosuit](#ultraweave-evosuit) | Space suit. Partial Resistance: Sonic, Toxin. Most advanced Evosuit available. |
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -45,59 +45,59 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 {{% details "Basic P-Suit" %}}
 ### Basic P-Suit
 
-*--Cr — +2 DEF — -1 AGI/DEX — 20lbs — 20pts — Pressurized*
+*--Cr — +2 DEF — -1 AGI/DEX — 20lbs — 20pts — [Pressurized](/docs/free-srd/inventory--equipment/item-tags/#pressurized)*
 
-*Upgrades: Local Coms, 1hr Oxygen Microtank*
+*Upgrades: [Local Coms](#local-coms), 1hr Oxygen Microtank*
 
 A basic pressure suit providing the bare minimum for work in environments lacking an atmosphere.
 {{% /details %}}
 
-{{% details "Classic Evosuit 2" %}}
-### Classic Evosuit 2
+{{% details "Classic Evosuit" %}}
+### Classic Evosuit
 
-*--Cr — +3 DEF — -1 AGI/DEX — 20lbs — 20pts — Space Suit*
+*--Cr — +3 DEF — -1 AGI/DEX — 20lbs — 20pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
-*Upgrades: Local Coms*
+*Upgrades: [Local Coms](#local-coms)*
 
 The lightest and cheapest of the Evosuit lineup, mass manufactured in staggering numbers. Popular among small craft pilots and those who work in settlements with hazardous atmospheres.
 {{% /details %}}
 
-{{% details "Combat Vest 3" %}}
-### Combat Vest 3
+{{% details "Combat Vest" %}}
+### Combat Vest
 
 *--Cr — +3 DEF — -0 AGI/DEX — 18lbs — 25pts*
 
 A simple, effective, tried and true protective vest.
 {{% /details %}}
 
-{{% details "Light Combat Vest 2" %}}
-### Light Combat Vest 2
+{{% details "Light Combat Vest" %}}
+### Light Combat Vest
 
-*--Cr — +2 DEF — -0 AGI/DEX — 12lbs — 15pts — Concealable*
+*--Cr — +2 DEF — -0 AGI/DEX — 12lbs — 15pts — [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
 
 Similar to the combat vest but lighter and with a lower profile.
 {{% /details %}}
 
-{{% details "Messer Armory Chameleon Armor System 3" %}}
-### Messer Armory Chameleon Armor System 3
+{{% details "Messer Armory Chameleon Armor System" %}}
+### Messer Armory Chameleon Armor System
 
 *--Cr — +4 DEF — -1 AGI/DEX — 20lbs — 20pts*
 
-*Upgrades: Chameleon Unit*
+*Upgrades: [Chameleon Unit](#chameleon-unit)*
 
 The original chameleon system developed by Messer Armory applied to a lightweight armor so that the Chameleon unit does not take up an equipment slot.
 {{% /details %}}
 
-{{% details "Padded Flight Suit 1" %}}
-### Padded Flight Suit 1
+{{% details "Padded Flight Suit" %}}
+### Padded Flight Suit
 
-*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — Partial Resistance: Burn*
+*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Burn*
 
 A padded version of a basic flight suit offering a bit more protection than a standard coverall.
 {{% /details %}}
 
-{{% details "Scav Gear 2" %}}
-### Scav Gear 2
+{{% details "Scav Gear" %}}
+### Scav Gear
 
 *--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 15pts*
 
@@ -106,96 +106,96 @@ A padded version of a basic flight suit offering a bit more protection than a st
 Scavengers throughout the galaxy have found many ways to carry everything all at once.
 {{% /details %}}
 
-{{% details "Site Safety Gear 1" %}}
-### Site Safety Gear 1
+{{% details "Site Safety Gear" %}}
+### Site Safety Gear
 
 *--Cr — +1 DEF — -0 AGI/DEX — 4lbs — 10pts*
 
 The most basic gear approved by all corporate health and safety groups.
 {{% /details %}}
 
-{{% details "Vusiean Chitinweave 2" %}}
-### Vusiean Chitinweave 2
+{{% details "Vusiean Chitinweave" %}}
+### Vusiean Chitinweave
 
-*--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 30pts — Partial Resistance: Toxin*
+*--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 30pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Toxin*
 
 A flexible skin-tight suit with light armor plates made from the carapace of crystal-boring beetles, interwoven with flexible crystal fibers unique to Vusiea. When damaged this armor slowly regenerates 1d6 points of damage per day. Very rare and valuable among collectors.
 {{% /details %}}
 
-{{% details "Workweek Co. Coverall 1" %}}
-### Workweek Co. Coverall 1
+{{% details "Workweek Co. Coverall" %}}
+### Workweek Co. Coverall
 
-*--Cr — +1 DEF — -0 AGI/DEX — 3lbs — 15pts — Partial Resistance: Shock*
+*--Cr — +1 DEF — -0 AGI/DEX — 3lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Shock*
 
 *Special: Equipped kits weigh half as much*
 
 Designed for workers of all trades.
 {{% /details %}}
 
-{{% details "WorkWeek Co. Site Safety Gear 2" %}}
-### WorkWeek Co. Site Safety Gear 2
+{{% details "WorkWeek Co. Site Safety Gear" %}}
+### WorkWeek Co. Site Safety Gear
 
-*--Cr — +2 DEF — -0 AGI/DEX — 7lbs — 15pts — Partial Resistance: Burn, Shock, Sonic, Toxin*
+*--Cr — +2 DEF — -0 AGI/DEX — 7lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Burn, Shock, Sonic, Toxin*
 
-*Upgrades: Local Coms*
+*Upgrades: [Local Coms](#local-coms)*
 
 Incredibly popular among trade workers, this shock-rated, fire resistant, BSOSHA approved PPE includes an encloseable hardhat with full face visor, automatic sound control, and built-in coms.
 {{% /details %}}
 
 #### Heavy Armor
 
-{{% details "Combat Evosuit 4" %}}
-### Combat Evosuit 4
+{{% details "Combat Evosuit" %}}
+### Combat Evosuit
 
-*--Cr — +5 DEF — -1 AGI/DEX — 35lbs — 30pts — Space Suit*
+*--Cr — +5 DEF — -1 AGI/DEX — 35lbs — 30pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
-*Upgrades: Targeting HUD, Emergency Shank*
+*Upgrades: [Targeting HUD](#targeting-hud), [Emergency Shank](#emergency-shank)*
 
 A more durable version of the Classic Evosuit, intended for tactical use.
 {{% /details %}}
 
-{{% details "Enforcer Armor 4" %}}
-### Enforcer Armor 4
+{{% details "Enforcer Armor" %}}
+### Enforcer Armor
 
 *--Cr — +5 DEF — -1 AGI/DEX — 20lbs — 40pts*
 
 A no-frills armor set often used by private security details.
 {{% /details %}}
 
-{{% details "Mechanic's Evosuit by WorkWeek Co. 3" %}}
-### Mechanic's Evosuit by WorkWeek Co. 3
+{{% details "Mechanic's Evosuit by WorkWeek Co." %}}
+### Mechanic's Evosuit by WorkWeek Co.
 
-*--Cr — +4 DEF — -1 AGI/DEX — 30lbs — 30pts — Space Suit — Partial Resistance: Shock*
+*--Cr — +4 DEF — -1 AGI/DEX — 30lbs — 30pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Shock*
 
-*Upgrades: Hazard HUD*
+*Upgrades: [Hazard HUD](#hazard-hud)*
 
 A rare collaboration between two of the largest PPE manufacturers, praised for its reliability.
 {{% /details %}}
 
-{{% details "Messer Armory Kinetic Armor System 0" %}}
-### Messer Armory Kinetic Armor System 0
+{{% details "Messer Armory Kinetic Armor System" %}}
+### Messer Armory Kinetic Armor System
 
-*--Cr — +1 DEF — -1 AGI/DEX — 30lbs — 50pts — Partial Resistance: Physical, Sonic*
+*--Cr — +1 DEF — -1 AGI/DEX — 30lbs — 50pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Physical, Sonic*
 
 Unlike traditional armor the MA-KA System distributes kinetic energy throughout the suit to reduce harsh blows and improve durability against physical wear.
 {{% /details %}}
 
-{{% details "Security Flight Suit 3" %}}
-### Security Flight Suit 3
+{{% details "Security Flight Suit" %}}
+### Security Flight Suit
 
 *--Cr — +4 DEF — -1 AGI/DEX — 12lbs — 20pts*
 
-*Upgrades: Local Coms*
+*Upgrades: [Local Coms](#local-coms)*
 
 A variation of the padded flight suit designed for tactical use.
 {{% /details %}}
 
-{{% details "Ultraweave Evosuit 5" %}}
-### Ultraweave Evosuit 5
+{{% details "Ultraweave Evosuit" %}}
+### Ultraweave Evosuit
 
-*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — Space Suit — Partial Resistance: Sonic, Toxin*
+*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Sonic, Toxin*
 
-*Upgrades: Local Coms*
+*Upgrades: [Local Coms](#local-coms)*
 
 The most advanced Evosuit available, using a state of the art high durability fabric by Altoa Research.
 {{% /details %}}
@@ -225,7 +225,7 @@ The most advanced Evosuit available, using a state of the art high durability fa
 
 *--Cr — 0lbs — Neck*
 
-Automatically administers a preloaded medication for 0 AP when sufficient trauma is detected. Can be loaded with any injector such as ARA-5, Pain Suppressant, or Vitaboost.
+Automatically administers a preloaded medication for 0 AP when sufficient trauma is detected. Can be loaded with any injector such as [ARA-5](/docs/free-srd/inventory--equipment/medical-supplies/#altoa-radiation-antidote-5-ara-5), [Pain Suppressant](/docs/free-srd/inventory--equipment/medical-supplies/#pain-suppressant), or [Vitaboost](/docs/free-srd/inventory--equipment/medical-supplies/#vitaboost-injection).
 {{% /details %}}
 
 {{% details "Chameleon Unit" %}}
