@@ -1,5 +1,5 @@
 ---
 title: "Inventory and Equipment"
-weight: 5
+weight: 6
 bookCollapseSection: true
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Roadmap"
-weight: 5
-draft: true
+weight: 1
 ---
 
 {{< roadmap >}}
