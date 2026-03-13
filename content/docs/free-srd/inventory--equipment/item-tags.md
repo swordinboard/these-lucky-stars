@@ -84,7 +84,7 @@ Bulky items are awkward to carry and count toward a character's max bulky item c
 {{% details "Burn" %}}
 ### Burn
 
-Deals [burn damage](/docs/free-srd/health--combat/#damage-types) as the primary damage type.
+Deals [burn damage](/docs/free-srd/core-rules/health--combat/#damage-types) as the primary damage type.
 {{% /details %}}
 
 {{% details "Concealable" %}}
@@ -130,7 +130,7 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 {{% details "Shock" %}}
 ### Shock
 
-Deals [shock damage](/docs/free-srd/health--combat/#damage-types) as the primary damage type.
+Deals [shock damage](/docs/free-srd/core-rules/health--combat/#damage-types) as the primary damage type.
 {{% /details %}}
 
 {{% details "Throwable [___]" %}}
@@ -156,5 +156,5 @@ Pressurized suits are capable of withstanding the vacuum of space, but provide n
 {{% details "Space Suit" %}}
 ### Space Suit
 
-All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer [full resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistances](/docs/free-srd/health--combat/#damage-resistance-and-weakness) to cold and burn.
+All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistances](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
 {{% /details %}}

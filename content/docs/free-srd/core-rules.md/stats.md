@@ -56,15 +56,15 @@ In combat, VIT  represents the number of blows a character can take before being
 VIT damage cannot be accumulated lower than 0.
 One point of VIT is recovered with a full day's rest. Max VIT is affected by changes to a character's FORT.
 
-### [Wounds & Conditions](/docs/free-srd/health--combat/wounds--conditions)
+### [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions)
 
-A [wound](/docs/free-srd/health--combat/wounds--conditions/#wounds) is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may occure when:
+A [wound](/docs/free-srd/core-rules/wounds--conditions/#wounds) is an injury, usually brought on by an attack or other damaging effect. Many wounds have conditions associated with them. Wounds may occure when:
 
 - A character takes two or more points of VIT damage from a single attack.
 - A character loses their final VIT point.
 - A character is affected by special effects such as abilities and environmental effects.
 
-A [condition](/docs/free-srd/health--combat/wounds--conditions/#conditions) is part of a broad category of effects that can come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, the environment, or any combination of these things.
+A [condition](/docs/free-srd/core-rules/wounds--conditions/#conditions) is part of a broad category of effects that can come from a variety of sources, including attacks, wounds, abilities, stress, VIT loss, the environment, or any combination of these things.
 
 ### Stress Threshold
 > **= ½ Level + ½ WILL + Mods (Total Rounded Down, Min 1)**

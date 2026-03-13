@@ -91,7 +91,7 @@ The original chameleon system developed by Messer Armory applied to a lightweigh
 {{% details "Padded Flight Suit" %}}
 ### Padded Flight Suit
 
-*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Burn*
+*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Burn*
 
 A padded version of a basic flight suit offering a bit more protection than a standard coverall.
 {{% /details %}}
@@ -117,7 +117,7 @@ The most basic gear approved by all corporate health and safety groups.
 {{% details "Vusiean Chitinweave" %}}
 ### Vusiean Chitinweave
 
-*--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 30pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Toxin*
+*--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 30pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Toxin*
 
 A flexible skin-tight suit with light armor plates made from the carapace of crystal-boring beetles, interwoven with flexible crystal fibers unique to Vusiea. When damaged this armor slowly regenerates 1d6 points of damage per day. Very rare and valuable among collectors.
 {{% /details %}}
@@ -125,7 +125,7 @@ A flexible skin-tight suit with light armor plates made from the carapace of cry
 {{% details "Workweek Co. Coverall" %}}
 ### Workweek Co. Coverall
 
-*--Cr — +1 DEF — -0 AGI/DEX — 3lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Shock*
+*--Cr — +1 DEF — -0 AGI/DEX — 3lbs — 15pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Shock*
 
 *Special: Equipped kits weigh half as much*
 
@@ -135,7 +135,7 @@ Designed for workers of all trades.
 {{% details "WorkWeek Co. Site Safety Gear" %}}
 ### WorkWeek Co. Site Safety Gear
 
-*--Cr — +2 DEF — -0 AGI/DEX — 7lbs — 15pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Burn, Shock, Sonic, Toxin*
+*--Cr — +2 DEF — -0 AGI/DEX — 7lbs — 15pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Burn, Shock, Sonic, Toxin*
 
 *Upgrades: [Local Coms](#local-coms)*
 
@@ -165,7 +165,7 @@ A no-frills armor set often used by private security details.
 {{% details "Mechanic's Evosuit by WorkWeek Co." %}}
 ### Mechanic's Evosuit by WorkWeek Co.
 
-*--Cr — +4 DEF — -1 AGI/DEX — 30lbs — 30pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Shock*
+*--Cr — +4 DEF — -1 AGI/DEX — 30lbs — 30pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Shock*
 
 *Upgrades: [Hazard HUD](#hazard-hud)*
 
@@ -175,7 +175,7 @@ A rare collaboration between two of the largest PPE manufacturers, praised for i
 {{% details "Messer Armory Kinetic Armor System" %}}
 ### Messer Armory Kinetic Armor System
 
-*--Cr — +1 DEF — -1 AGI/DEX — 30lbs — 50pts — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Physical, Sonic*
+*--Cr — +1 DEF — -1 AGI/DEX — 30lbs — 50pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Physical, Sonic*
 
 Unlike traditional armor the MA-KA System distributes kinetic energy throughout the suit to reduce harsh blows and improve durability against physical wear.
 {{% /details %}}
@@ -193,7 +193,7 @@ A variation of the padded flight suit designed for tactical use.
 {{% details "Ultraweave Evosuit" %}}
 ### Ultraweave Evosuit
 
-*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/health--combat/#damage-resistance-and-weakness): Sonic, Toxin*
+*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Sonic, Toxin*
 
 *Upgrades: [Local Coms](#local-coms)*
 
