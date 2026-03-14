@@ -1,5 +1,5 @@
 ---
-title: "Equipment"
+title: "Equipment Overview"
 weight: 1
 ---
 
@@ -16,13 +16,23 @@ weight: 1
 
 ## Common Equipment Terms
 
-**Price** — The standard price for a new piece of equipment.
+### Price
 
-**Weight** — The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)
+The standard price for a new piece of equipment.
 
-**Damage Threshold** — The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
+### Weight
 
-**Range** — The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
+The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)
+
+### Damage Threshold
+
+The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
+
+### Range
+
+The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
 Some weapons and upgrades have a minimum range. These are written in parenthesis before the normal range, such as (20)100. In these cases, attacks made at or below the minimum range also put the user at a disadvantage.
 
-**Tags** — Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary. You can find a complete list of item tags [here](/docs/free-srd/inventory-and-equipment/item-tags).
+### Tags
+
+Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary. You can find a complete list of item tags [here](/docs/free-srd/inventory-and-equipment/item-tags).
