@@ -10,7 +10,7 @@ Combat in These Lucky Stars uses a unique health system. The first layer, Defens
 Links to health-related resouces:
 - [Defense](/docs/free-srd/core-rules/stats/#defense)
 - [Vitality](/docs/free-srd/core-rules/stats/#vitality)
-- [Wounds and Conditions]
+- [Wounds and Conditions](/docd/free-srd/core-ruled/wounds--conditions)
 
 ## Combat Basics
 
@@ -107,7 +107,6 @@ Base damage dice are determined by the size of the attacker relative to the defe
 
 | Attacker vs. Defender | Damage Die |
 |---|---|
-
 | Two or more sizes smaller | 1d4 |
 | Same size or ±1 size | 1d8 |
 | Two or more sizes larger | 1d12 |

@@ -57,6 +57,11 @@ Regardless of type, ammo weighs 5lbs per ammo die.
 > Fred is carrying a fully loaded heavy pistol, a rifle loaded with 1d8 ammo, and 3d8 of ammo equipped to his chest. Since his rifle can carry a max d12 ammo, he may choose to combine some of his ammo dice outside of combat by combining one of his d8 with the d8 loaded into his rifle, maxing it out to a d12 and leaving him with 1d4 and 2d8 equipped to his chest. He combines 1d4 and 1d8 into 1d10 to free up space for more ammo, but he cannot load the 1d10 into his pistol, which has a max capacity of 1d8.
 > Larry, Fred's accomplice, thinks all this worry about max ammo is silly. He also carries all the same equipment as Fred, but chooses to keep all his ammo dice at a comfortable d8 so that he can reload either of his guns with any of his ammo dice even if they take up a bit more space.
 
+#### Sci-Fi Additions
+
+**Zero-Gravity Knockback:** Full-auto ballistic weapons fired in zero gravity enviroments push the user back at a rate of 5ft per round until they can steady themselves with a larger object.
+
+**Heat Dissipation:** *Optional rules:* Ballistic weapons fired in a vaccum quickly warp due to trapped heat. For futuristic space-faring settings, heat dissipation technology can solve this issue. For GMs that wish to include this effect, it is recommended to apply to the entire ballistic tag for ease of reference, and include a new tag on space-worth ballistic weapons.
 {{% /details %}}
 
 {{% details "Battery [___]" %}}
@@ -72,19 +77,13 @@ Requires a standard battery core of the listed size to operate. Most items with 
 {{% details "Belt Fed" %}}
 ### Belt Fed
 
-Belt fed weapons can have two ammo die loaded into them at once. Once equipped, ammo die cannot be replaced/reloaded until both are empty.
+Belt fed weapons can have two ammo die loaded into them at once during a standard reload. Once equipped, ammo die cannot be replaced/reloaded until both are empty.
 {{% /details %}}
 
 {{% details "Bulky" %}}
 ### Bulky
 
 Bulky items are awkward to carry and count toward a character's max bulky item count. Equipped items such as worn armor or items equipped to body slots, do not count toward a character's max bulky item count.
-{{% /details %}}
-
-{{% details "Burn" %}}
-### Burn
-
-Deals [burn damage](/docs/free-srd/core-rules/health--combat/#damage-types) as the primary damage type.
 {{% /details %}}
 
 {{% details "Concealable" %}}
@@ -117,6 +116,12 @@ Items with the injector tag are advanced medical devices that use a series of sm
 The normal reload for these weapons requires 3 AP rather than 2.
 {{% /details %}}
 
+{{% details "Pressurized" %}}
+### Pressurized
+
+Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
+{{% /details %}}
+
 {{% details "Rounds Reload" %}}
 ### Rounds Reload
 
@@ -127,10 +132,10 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 
 {{% /details %}}
 
-{{% details "Shock" %}}
-### Shock
+{{% details "Space Suit" %}}
+### Space Suit
 
-Deals [shock damage](/docs/free-srd/core-rules/health--combat/#damage-types) as the primary damage type.
+All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistances](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
 {{% /details %}}
 
 {{% details "Throwable [___]" %}}
@@ -143,18 +148,4 @@ Can be used as a thrown ranged weapon. The number indicated is the normal range 
 ### Two-Handed
 
 Requires two hands to operate.
-{{% /details %}}
-
----
-
-{{% details "Pressurized" %}}
-### Pressurized
-
-Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
-{{% /details %}}
-
-{{% details "Space Suit" %}}
-### Space Suit
-
-All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistances](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
 {{% /details %}}
