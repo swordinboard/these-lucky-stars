@@ -33,6 +33,7 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 |---|---|
 | [Combat Evosuit](#combat-evosuit) | Space suit. Targeting HUD. Designed for tactical use. |
 | [Enforcer Armor](#enforcer-armor) | No-frills armor favored by private security. |
+| [EVA Suit](#eva-suit) | An early model space suit well equipped but bulky. |
 | [Mechanic's Evosuit by WorkWeek Co.](#mechanics-evosuit-by-workweek-co) | Space suit. Partial Resistance: Shock. Hazard HUD included. |
 | [Messer Armory Kinetic Armor System](#messer-armory-kinetic-armor-system) | Partial Resistance: Physical, Sonic. Distributes kinetic energy. |
 | [Security Flight Suit](#security-flight-suit) | Built-in coms. Tactical variation of the padded flight suit. |
@@ -147,7 +148,7 @@ Incredibly popular among trade workers, this shock-rated, fire resistant, BSOSHA
 {{% details "Combat Evosuit" %}}
 ### Combat Evosuit
 
-*--Cr — +5 DEF — -1 AGI/DEX — 35lbs — 30pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+*--Cr — +5 DEF — -1 AGI/DEX — 50lbs — 40pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades: [Targeting HUD](#targeting-hud), [Emergency Shank](#emergency-shank)*
 
@@ -160,6 +161,15 @@ A more durable version of the Classic Evosuit, intended for tactical use.
 *--Cr — +5 DEF — -1 AGI/DEX — 20lbs — 40pts*
 
 A no-frills armor set often used by private security details.
+{{% /details %}}
+
+{{% details "EVA Suit" %}}
+### EVA Suit
+*--Cr — +6 DEF — -2 AGI/DEX — 200lbs — 80pts — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+
+*Upgrades:[Local Coms](#local-coms), [SAFER Unit](#safer-unit),
+
+An early model multi-layered space suit designed primarily for maintenance spacewalks. The attatched backpack includes 5hr oxygen tank, SAFER unit, and medium battery power source. The user cannot equip items to the gloves, legs, or back while wearing this space suit.
 {{% /details %}}
 
 {{% details "Mechanic's Evosuit by WorkWeek Co." %}}
@@ -214,6 +224,7 @@ The most advanced Evosuit available, using a state of the art high durability fa
 | [Hazard HUD](#hazard-hud) | Helmet [HUD]. Lowers hazard detection checks within 10ft. |
 | [Local Coms](#local-coms) | Helmet [ear]. Short range encrypted radio coms. |
 | [MeBN HUD](#mebn-hud) | Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network. |
+| [SAFER Unit](#safer-unit) | Back. A propulsion unit for navigating in zero gravity. |
 | [Targeting HUD](#targeting-hud) | Helmet [HUD]. Lock on to lower target number for ranged attacks. |
 {{% /tab %}}
 {{< /tabs >}}
@@ -266,6 +277,16 @@ Short range radios used to communicate via encrypted direct channels.
 *--Cr — 0lbs — Lvl 1 Encryption — Helmet [HUD]*
 
 A passive HUD that compares facial IDs to contracts on the Mark'em Bounty Network. Must have line of sight on a target within 30ft to make an accurate reading. Can be tricked by changes in appearance or lack of description/ID in the contract. Displays information related to any bounty placed on matching IDs — does not guarantee a match, further investigation may be needed.
+{{% /details %}}
+
+{{% details "SAFER Unit" %}}
+### SAFER Unit
+
+*--Cr — 40lbs — [Battery [Medoum]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
+
+Simplified Aid For EVA Rescue unit
+
+An early model propulsion unit for navigating in 0 gravity when separated from the spacecraft. Activate for 2 AP to push the user in any direction 10ft per round until collision with another object. Each activation requires one supply roll. Requires a medium battery to operate.
 {{% /details %}}
 
 {{% details "Targeting HUD" %}}

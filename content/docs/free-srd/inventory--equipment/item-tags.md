@@ -11,21 +11,20 @@ Many items have tags to quickly identify common features and use requirements. T
 <div class="four-col">
 
 - [Arcing](#arcing)
-- [Ballistic](#ballistic)
-- [Battery](#battery)
+- [Ballistic [___]](#ballistic)
+- [Battery [___]](#battery)
 - [Belt Fed](#belt-fed)
 - [Bulky](#bulky)
-- [Burn](#burn)
 - [Concealable](#concealable)
 - [Firing Modes](#firing-modes)
 - [Injector](#injector)
 - [Long Reload](#long-reload)
 - [Pressurized](#pressurized)
 - [Rounds Reload](#rounds-reload)
-- [Shock](#shock)
 - [Space Suit](#space-suit)
-- [Throwable](#throwable)
+- [Throwable [___]](#throwable)
 - [Two-Handed](#two-handed)
+- [Versatile](#versatile)
 
 </div>
 
@@ -38,18 +37,18 @@ Successful attacks made with these weapons also affect one random combatant adja
 {{% /details %}}
 
 {{% details "Ballistic [___]" %}}
-## Ballistic [___]
+## Ballistic
+
+*Ballistic [type, max ammo]*
 
 Ballistic weapons use ballistic ammunition (ammo). To keep things simple, most weapons with the Ballistic tag use interchangeable ammo. If the tag is followed by a term in brackets, only that ammo type can be used.
 Ammo is tracked using [supply dice](/docs/free-srd/the-basics/#supply-rolls), often referred to in this case as ammo dice. The max size of a weapon's ammo die is also written in the brackets following the Ballistic tag. The weapon's [firing mode](#firing-modes) determines when a supply roll is needed.
-
-> Ballistic [type, max ammo]
 
 Regardless of type, ammo weighs 5lbs per ammo die.
 
 **Equipping for Use:** Ammo must be equipped to the back, belt, chest, or legs in order to be used for a normal reload during combat. If not equipped, more AP is required to access. Ammo comes with basic pouches necessary to equip it, and any of these slots can have up to 3 ammo dice of any size equipped to it.
 
-**Reloading:** A Ballistic weapon must be reloaded when its current ammo die is depleted, or to swap to another ammo die. Reloading a ballistic weapon normally costs 2 AP regardless of weapon style. Some weapon tags, upgrades, and abilities change the reload time of a weapon.
+**Reloading:** A ballistic weapon must be reloaded when its current ammo die is depleted, or to swap to another ammo die. Reloading a ballistic weapon normally costs 2 AP regardless of weapon style. Some weapon tags, upgrades, and abilities change the reload time of a weapon.
 
 **Managing Inventory:** Outside of combat ammo dice can be combined to provide the highest die size possible or broken into multiple smaller sizes. Once initiative is rolled, it costs 10 AP to rearrange any amount of ammo into larger or smaller dice. It may help to think of the individual die as a magazine and the size as the number of bullets in it.
 
@@ -61,11 +60,13 @@ Regardless of type, ammo weighs 5lbs per ammo die.
 
 **Zero-Gravity Knockback:** Full-auto ballistic weapons fired in zero gravity enviroments push the user back at a rate of 5ft per round until they can steady themselves with a larger object.
 
-**Heat Dissipation:** *Optional rules:* Ballistic weapons fired in a vaccum quickly warp due to trapped heat. For futuristic space-faring settings, heat dissipation technology can solve this issue. For GMs that wish to include this effect, it is recommended to apply to the entire ballistic tag for ease of reference, and include a new tag on space-worth ballistic weapons.
+**Heat Dissipation:** *Optional rules:* Ballistic weapons fired in a vaccum quickly warp due to trapped heat. For futuristic space-faring settings, heat dissipation technology can solve this issue. For GMs that wish to include this effect, it is recommended to apply to the entire ballistic tag for ease of reference, and include a new tag on space-worthy ballistic weapons.
 {{% /details %}}
 
 {{% details "Battery [___]" %}}
-### Battery [___]
+### Battery
+
+*Battery [size]
 
 Requires a standard battery core of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack).
 
@@ -135,11 +136,13 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 {{% details "Space Suit" %}}
 ### Space Suit
 
-All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, and offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistances](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
+All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
 {{% /details %}}
 
 {{% details "Throwable [___]" %}}
-### Throwable [___]
+### Throwable
+
+*Throwable [range]*
 
 Can be used as a thrown ranged weapon. The number indicated is the normal range when used as a ranged weapon.
 {{% /details %}}
@@ -147,5 +150,13 @@ Can be used as a thrown ranged weapon. The number indicated is the normal range 
 {{% details "Two-Handed" %}}
 ### Two-Handed
 
-Requires two hands to operate.
+Requires two hands to operate. 
+Two-handed melee weapons gain a +1 bonus to damage for each damage die.
+{{% /details %}}
+
+{{% details "Versatile" %}}
+### Versatile
+
+Can be weilded with one or two hands.
+Versatile melee weapons gain a +1 bonus to damage for each damage die.
 {{% /details %}}

@@ -92,7 +92,7 @@ A sealable full face mask that provides 30 minutes of oxygen via a built-in sing
 
 *--Cr — 1lb*
 
-Vacuum-sealed ration paste providing one day of nutrients and water for one person. Cardboard flavors vary.
+Vacuum-sealed ration paste providing one day of nutrients and water for one person. Cardboard-like flavors vary.
 {{% /details %}}
 
 {{% details "Portable Water Purifier" %}}
@@ -148,7 +148,7 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 
 *--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
 
-A scanner that can determine useful properties of most organic matter. Costs 2 AP to use, 5ft range. Requires one supply roll when activated.
+A scanner that can determine potential useful properties of most organic matter. Costs 2 AP to use, 5ft range. Requires one supply roll when activated.
 {{% /details %}}
 
 {{% details "Comp Jack" %}}
@@ -156,7 +156,7 @@ A scanner that can determine useful properties of most organic matter. Costs 2 A
 
 *--Cr — 1lb — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
-A common but complex tool used to interact with computer systems at virtually any connected terminal. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. Can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack).
+A common but complex tool used to interact with computer systems at virtually any connected terminal. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. All function generally the same way, they plugged in or hardwired in, then use a screen to access different functions. Comp jacks can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack).
 {{% /details %}}
 
 {{% details "Data Ripper [Level X]" %}}

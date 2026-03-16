@@ -3,8 +3,6 @@ title: "Sci-Fi Weapons"
 weight: 2
 ---
 
-<!-- need to add ballistic weapon ammo sizes -->
-
 ## Weapons
 
 ### Melee Weapons
@@ -13,15 +11,15 @@ weight: 2
 {{% tab "Light Melee Weapons" %}}
 | Name | Notes |
 |---|---|
-| [Knuckle Taser](#knuckle-taser) | Battery [micro]. Hand slot. Built in shock charger for a shocking punch. |
+| [Knuckle Taser](#knuckle-taser) | Hand slot. Built in shock charger for a shocking punch. |
 | [Standard Issue Knife](#standard-issue-knife) | Concealable. Throwable [10ft]. |
 {{% /tab %}}
 {{% tab "Medium Melee Weapons" %}}
 | Name | Notes |
 |---|---|
 | [Emergency Hatchet](#emergency-hatchet) | Throwable [20ft]. |
-| [Ripper Blade](#ripper-blade) | Battery [small]. Two-handed. Deals +5 shatter damage to armor. |
-| [Shock Baton](#shock-baton) | Battery [small]. Built in shock charger. |
+| [Ripper Blade](#ripper-blade) | Two-handed. Deals +5 shatter damage to armor. |
+| [Shock Baton](#shock-baton) | Built in shock charger. |
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -30,7 +28,7 @@ weight: 2
 {{% details "Knuckle Taser" %}}
 ### Knuckle Taser
 
-*--Cr — 0.5lbs — 20pts — Battery [Micro], [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock)*
+*--Cr — 0.5lbs — 20pts — [Battery [Micro]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
 *Damage Type: Physical or Shock*
 *Upgrades: [Shock Charger](#shock-charger)*
 
@@ -60,7 +58,7 @@ A sturdy hatchet designed for emergency use. Equally suited to breaching, surviv
 {{% details "Ripper Blade" %}}
 ### Ripper Blade
 
-*--Cr — 2lbs — 25pts — Battery [Small], [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 2lbs — 25pts — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Physical*
 
 A 2ft reciprocating serrated blade with a second handle cut out near the midsection. Designed to catch onto fabric or armor and be torn free by activating the blade with the second hand. Deals +5 shatter damage to armor.
@@ -69,7 +67,7 @@ A 2ft reciprocating serrated blade with a second handle cut out near the midsect
 {{% details "Shock Baton" %}}
 ### Shock Baton
 
-*--Cr — 1lbs — 25pts — Battery [Small], [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock)*
+*--Cr — 1lbs — 25pts — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
 *Damage Type: Physical or Shock*
 *Upgrades: [Shock Charger](#shock-charger)*
 
@@ -128,7 +126,7 @@ A hard-hitting single shot sidearm with notable stopping power and effective ran
 {{% details "Laser Pistol" %}}
 ### Laser Pistol
 
-*--Cr — 1lbs — 18pts — 60ft — Battery [Small], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn)*
+*--Cr — 1lbs — 18pts — 60ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn)*
 *Damage Type: Burn*
 
 A compact energy sidearm with excellent range for its size.
@@ -157,7 +155,7 @@ A lightweight automatic rifle optimized for maneuverability in tight spaces.
 {{% details "Laser Rifle" %}}
 ### Laser Rifle
 
-*--Cr — 12lbs — 20pts — (10) 90ft — Battery [Small], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 12lbs — 20pts — (10) 90ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Burn*
 
 A long-range energy rifle capable of precise shots at extended distances. Minimum range of 10ft.
@@ -175,7 +173,7 @@ A heavy precision rifle designed for long-range engagements. Bulky and slow to m
 {{% details "Shock Rifle" %}}
 ### Shock Rifle
 
-*--Cr — 6lbs — 20pts — 20ft — Battery [Medium], [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 6lbs — 20pts — 20ft — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Shock*
 
 An energy rifle that fires arcing electrical bolts capable of jumping between nearby targets.
