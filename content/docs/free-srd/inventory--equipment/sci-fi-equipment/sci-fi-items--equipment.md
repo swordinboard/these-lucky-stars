@@ -159,14 +159,6 @@ A scanner that can determine potential useful properties of most organic matter.
 A common but complex tool used to interact with computer systems at virtually any connected terminal. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. All function generally the same way, they plugged in or hardwired in, then use a screen to access different functions. Comp jacks can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack).
 {{% /details %}}
 
-{{% details "Data Ripper [Level X]" %}}
-### Data Ripper [Level X]
-
-*--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
-
-An AI-assisted data extraction device that forcefully extracts data from systems without proper access, but triggers all countermeasures. Rated based on the highest security level of systems it can extract from. Larger files or those with heavy encryption may take longer to download, but most items can be downloaded in 3d4 rounds. Requires 3 AP and a comp jack to set up.
-{{% /details %}}
-
 {{% details "Data Spike" %}}
 ### Data Spike
 
@@ -180,15 +172,7 @@ A disposable high-speed data extraction USB storage device. Can be used to rapid
 
 *--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
-Mimics scrambled com signals and life signs of a human. Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 1hr.
-{{% /details %}}
-
-{{% details "Friction Gloves by Altoa Research" %}}
-### Friction Gloves by Altoa Research
-
-*--Cr — 2lbs — Hands*
-
-Gloves with variable grip actuators and selective high friction material. Grants +10 climb speed and +4 to climb checks.
+Mimics encrypted com signals and life signs of a human. Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 1hr.
 {{% /details %}}
 
 {{% details "Grapple-Line Launcher" %}}
@@ -196,7 +180,7 @@ Gloves with variable grip actuators and selective high friction material. Grants
 
 *--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
-Fires a magnetic grappling hook that can puncture soft materials, hook an edge, or attach to magnetic surfaces. The launcher can be anchored to provide a stable line that grants +3 to related climb checks. The line can support up to 400lbs. Requires 1 supply roll per use. Costs 2 AP to fire and anchor.
+Fires a magnetic grappling hook that can puncture soft materials, hook an edge, or attach to magnetic surfaces. Successfuly dwployed lines can be detatched from the gun and anchored to provide a +2 bonus to related climb checks. The line can support up to 400lbs. Requires 1 supply roll per use. Costs 2 AP to fire, 0 AP to detatch a fired line, and 2 AP to anchor a detatched line. 
 {{% /details %}}
 
 {{% details "Gravity Anchor" %}}
@@ -204,7 +188,7 @@ Fires a magnetic grappling hook that can puncture soft materials, hook an edge, 
 
 *--Cr — 10lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
 
-A box-shaped device that creates a standard gravity field in a 10ft radius in zero or low gravity environments. Useful for creating temporary work stations. Costs 2 AP to deploy on the surface intended to be the "floor" of the directional field. Requires 1 supply roll per activation; each activation lasts 10 minutes.
+A box-shaped device that creates a standard gravity field in a 10ft radius in zero or low gravity environments. Useful for creating temporary work stations. Costs 2 AP to deploy on the surface intended to be the "floor" of the directional field. Spaces beyond the "floor" of the field are unaffected. Requires 1 supply roll per activation; each activation lasts 10 minutes.
 {{% /details %}}
 
 {{% details "Jump Boosters" %}}
@@ -231,34 +215,12 @@ A pair of electric handcuffs that pair with a wrist-mounted controller. The magn
 A powerful handheld direct contact laser cutter and welder suitable for small to medium projects on most metals. Cut depth can be dialed in to a max of 6in. Requires 1 supply roll per use.
 {{% /details %}}
 
-{{% details "Personal Shield" %}}
-### Personal Shield
-
-*--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — Belt*
-
-Once activated, creates a sheet-like protective energy shield over the user that protects from 10 points of damage for up to 3 rounds. Costs 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
-
-#### Energy Shields
-{{% include "/snippets/energy-shields" %}}
-{{% /details %}}
-
 {{% details "Remote Detonator" %}}
 ### Remote Detonator
 
 *--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 Can be used to detonate rigged explosives or electrical systems. Comes with four receiver chips. Each chip can be wired to an explosive device or into an electrical system for 4 AP, a use of the tech kit with supplies, and a successful target 15 KNO check.
-{{% /details %}}
-
-{{% details "Squad Shield" %}}
-### Squad Shield
-
-*--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
-
-Once activated, creates a spherical energy shield with a 20ft radius that protects from 30 points of damage for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
-
-#### Energy Shields
-{{% include "/snippets/energy-shields" %}}
 {{% /details %}}
 
 {{% details "Standardized Battery Cores" %}}
