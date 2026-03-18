@@ -1,9 +1,9 @@
 ---
-title: "Sci-Fi Items & Equipment"
+title: "Sci-Fi Misc Equipment"
 weight: 2
 ---
 
-## Sci-Fi Items and Equipment
+## Sci-Fi Miscellaneous Equipment
 
 - [Medical Supplies](#medical-supplies)
 - [Survival Equipment](#survival-equipment)
@@ -215,12 +215,34 @@ A pair of electric handcuffs that pair with a wrist-mounted controller. The magn
 A powerful handheld direct contact laser cutter and welder suitable for small to medium projects on most metals. Cut depth can be dialed in to a max of 6in. Requires 1 supply roll per use.
 {{% /details %}}
 
+{{% details "Personal Shield" %}}
+### Personal Shield
+
+*--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — Belt*
+
+A belt lined with projectors that, once activated, create a sheet-like protective energy shield over the user. The shield protects from 10 points of damage for up to 3 rounds. Costs 1 AP to activate. There is a required cooldown period of 2d4 rounds between activations. Requires 2 supply rolls when activated. Takes up the belt body slot.
+
+#### Energy Shields
+{{% include "/snippets/energy-shields" %}}
+{{% /details %}}
+
 {{% details "Remote Detonator" %}}
 ### Remote Detonator
 
 *--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 Can be used to detonate rigged explosives or electrical systems. Comes with four receiver chips. Each chip can be wired to an explosive device or into an electrical system for 4 AP, a use of the tech kit with supplies, and a successful target 15 KNO check.
+{{% /details %}}
+
+{{% details "Squad Shield" %}}
+### Squad Shield
+
+*--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
+
+Once activated, creates a spherical energy shield with a 20ft radius that protects from 30 points of damage for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
+
+#### Energy Shields
+{{% include "/snippets/energy-shields" %}}
 {{% /details %}}
 
 {{% details "Standardized Battery Cores" %}}

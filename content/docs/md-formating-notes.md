@@ -1,7 +1,5 @@
 ---
-title: none
-weight: 100
-draft: true
+headless: true
 ---
 
 > Used for small lists and minor callouts such as functions
@@ -15,10 +13,10 @@ draft: true
 > Used for examples
 
 > [!IMPORTANT]
-> Used for longermost general callouts
+> Used for longer or more general callouts
 
 > [!WARNING]
 > Used for announcments
 
 > [!CAUTION]
-> Used for site status type annaouncments
+> Used for site status annaouncments

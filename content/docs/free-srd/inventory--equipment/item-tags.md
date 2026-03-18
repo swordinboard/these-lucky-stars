@@ -66,9 +66,9 @@ Regardless of type, ammo weighs 5lbs per ammo die.
 {{% details "Battery [___]" %}}
 ### Battery
 
-*Battery [size]
+*Battery [size]*
 
-Requires a standard battery core of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack).
+Requires a [standard battery core](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores) of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack).
 
 **Equipping for Use:** Each slot can hold dispensers for 12 micro batteries, 6 small batteries, or 3 medium batteries. A single large battery can only be equipped to the back. Industrial batteries cannot be equipped.
 
@@ -98,7 +98,7 @@ These compact weapons are easier to hide on your person.
 
 A weapon's firing mode determines what abilities can be used with it and how quickly it depletes ammo.
 
-**Full-auto:** A rapid-fire mode good for suppression and support. Each attack requires two supply rolls.
+**Full-auto:** A rapid-fire mode good for suppression and support. Each attack requires one supply roll.
 
 **Semi-auto:** The most versatile firing mode, capable of applying to the widest range of abilities. Each attack requires one supply roll.
 
