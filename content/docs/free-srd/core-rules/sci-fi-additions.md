@@ -11,4 +11,4 @@ weight: 6
 {{% include "/snippets/energy-shields" %}}
 
 ### Heads Up Display (HUD)
-{{% include "/snippets/huds"}}
+{{% include "/snippets/huds" %}}
