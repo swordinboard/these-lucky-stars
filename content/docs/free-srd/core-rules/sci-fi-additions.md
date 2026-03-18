@@ -1,6 +1,6 @@
 ---
 title: "Sci-Fi Additions"
-weight: 6
+weight: 7
 ---
 
 ## Additonal Sci-Fi Rules
@@ -10,5 +10,5 @@ weight: 6
 ### Energy Shields
 {{% include "/snippets/energy-shields" %}}
 
-### Heads Up Display (HUD)
+### Heads Up Displays (HUDs)
 {{% include "/snippets/huds" %}}
