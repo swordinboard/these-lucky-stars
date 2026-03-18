@@ -120,7 +120,7 @@ The normal reload for these weapons requires 3 AP rather than 2.
 {{% details "Pressurized" %}}
 ### Pressurized
 
-Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against harsh environmental conditions. Most often used in controlled low-oxygen environments.
+Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against other harsh environmental conditions. These full-body suits include a helmet. Most often used in controlled low-oxygen environments.
 {{% /details %}}
 
 {{% details "Rounds Reload" %}}

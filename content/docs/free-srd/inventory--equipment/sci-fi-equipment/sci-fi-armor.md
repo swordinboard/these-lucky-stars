@@ -145,7 +145,7 @@ A variation of the padded flight suit designed for tactical use.
 
 *Upgrades: [Local Coms](#local-coms)*
 
-The most advanced Evosuit available, using a state of the art high durability fabric by Altoa Research.
+The most advanced Evosuit available, using a state of the art multilayered high durability fabrics. 
 {{% /details %}}
 
 ---
