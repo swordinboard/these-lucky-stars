@@ -10,4 +10,4 @@ This page links to useful information specific to a sci-fi themed setting in a s
 
 ### Character Feature Links
 
-<!-- need to add js listener to add links to soecific tabs -->
+<!-- need to add js listener to add links to specific tabs -->

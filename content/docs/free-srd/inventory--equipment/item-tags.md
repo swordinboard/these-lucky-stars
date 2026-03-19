@@ -57,10 +57,7 @@ Regardless of type, ammo weighs 5lbs per ammo die.
 > Larry, Fred's accomplice, thinks all this worry about max ammo is silly. He also carries all the same equipment as Fred, but chooses to keep all his ammo dice at a comfortable d8 so that he can reload either of his guns with any of his ammo dice even if they take up a bit more space.
 
 #### Sci-Fi Additions
-
-**Zero-Gravity Knockback:** Full-auto ballistic weapons fired in zero gravity enviroments push the user back at a rate of 5ft per round until they can steady themselves with a larger object.
-
-**Heat Dissipation:** *Optional rules:* Ballistic weapons fired in a vaccum quickly warp due to trapped heat. For futuristic space-faring settings, heat dissipation technology can solve this issue. For GMs that wish to include this effect, it is recommended to apply to the entire ballistic tag for ease of reference, and include a new tag on space-worthy ballistic weapons.
+{{% include "/snippets/sci-fi-add-ballistic" %}}
 {{% /details %}}
 
 {{% details "Battery [___]" %}}

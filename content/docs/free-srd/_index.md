@@ -4,13 +4,13 @@ weight: 2
 bookCollapseSection: false
 ---
 
-> [!DANGER]
-> **Current Status**
-> These Lucky Stars is in active playtesting. The rules presented here are stable and playable, but may change based on ongoing testing and feedback. Setting-specific content is still in development and kept within closed playtesting while the srd is in the process of being uploaded.
+{{% include "/snippets/announcement" %}}
 
-## These Lucky Stars
+## These Lucky Stars Free SRD
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
+
+The system is built in a series of starter modules intended to help GMs build specific settings. Each starter module is intended to cover a range of related settings and allow the GM to set the dial to exactly where they want. Good examples of this can be seen in the Sci-Fi armor list -which includes a modern EVA space suit alongside futuristic Evosuits- as well as the Sci-Fi weapons list -which includes modern ballistic weapons alongside futuristic laser weapons.
 
 [**The Basics**](/docs/free-srd/core-rules/basics)
 Get to know key terms, the 2d6 resolution system, and general rules of play.
@@ -22,7 +22,7 @@ Four physical (Strength, Agility, Dexterity, Fortitude) and four mental (Knowled
 Dynamic stats evolve with play and reflect changes in combat; no flat AC or standard HP pool. The Luck mechanic enhances player agency and choice with a special bonus.
 
 [**Flexible Character Creation**](/docs/free-srd/character-creation)
-Build your character with traits, proficiencies, and abilities - no rigid classes. comr up with an archetype and build it yourself or with the whole table. Characters can move in any direction as play evolves. 
+Build your character with traits, proficiencies, and abilities - no rigid classes. Come up with an archetype and build it yourself or with the whole table. Characters can move in any direction as play evolves. 
 
 [**Tactical Combat**](/docs/free-srd/health-combat)
 2d6 opposed roll combat system with unique health and damage systems.
@@ -38,4 +38,4 @@ The system aims to:
 All core mechanics are free and will remain free forever. The System Reference Document (SRD) contains everything you need to play and has been made accessible via this documentation site. Licensing information can be found [here](/docs/legal).
 
 ## What's Coming
-Complete These Lucky Stars setting modules will include expanded character options, full equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns.
+Complete These Lucky Stars setting modules will include expanded character options, full equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns. See the [roadmap](/roadmap) for the latest on what's to come.
