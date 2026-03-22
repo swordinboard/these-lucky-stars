@@ -52,7 +52,7 @@ The target number of a normal decision roll should reflect the difficulty of the
 | Description        |  Target Number  |
 |--------------------|-----------------|
 | "Impossible" Task  |       20+       |
-| Strenuous Task     |     14-16       |
+| Strenuous Task     |     14-18       |
 | Challenging Task   |      8-12       |
 | Simple Task        |      4-6        |
 
@@ -62,15 +62,15 @@ The "Impossible" task description is used to describe any task that would be nar
 
 #### Strenuous Tasks
 
-Most strenuous tasks are the result of many modifiers to a target number, and would give even a trained professional a difficult time under normal conditions. They may be attempted, but their diffuculty should be made narratively clear.
+Most strenuous tasks are the result of many modifiers to a target number, and would give even a trained professional a difficult time under normal conditions. They may be attempted, but their diffuculty should be made narratively clear. Even for the prepared and well trained, targets in this range present a real risk of failure. Even at the low end of the range, a 14 often becomes no better than a coin flip for such charact
 
 #### Challenging Tasks
 
-Most tasks fall into the challenging range. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the sutuation can quicky tip the scale in favor of success or failure.
+Most tasks fall into the challenging range between 8 and 12. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the sutuation can quicky tip the scale in favor of success or failure. Generally an 8 is almost a coin flip for the unprepared or untrained, while a 12 is unlikely. For the trained or prepared, an 8 can become guaranteed, while a 12 can become routine.
 
 #### Simple tasks
 
-Simple tasks stanf a good chance of success for anyone of able body and mind. Many actions that present a small risk or are performed under pressure require a decision roll at this level.
+Simple tasks stand a good chance of success for anyone of able body and mind. Many actions or effects that present a risk outside of a character's control or are performed under pressure require a decision roll at this level, usually a 6.
 
 ### Success and Failure
 

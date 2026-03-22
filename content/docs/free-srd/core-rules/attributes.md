@@ -35,14 +35,12 @@ Using the rolling method above, each player rolls 8 attribute values and adds th
 
 There is no **minimum** attribute value.
 
-> [!TIP]
-**Example:** A level 2 character has a maximum attribute value of 4 before applying modifiers.
 
 **Poor Attributes:** A poor attribute is any attribute with a value less than 0. Poor attributes can lead to the crippled or unconscious conditions.
 
-A character with two or more poor physical attributes is crippled until they no longer have two or more poor physical attributes.
+A character with two or more poor physical attributes is [crippled](/docs/free-srd/core-rules/wounds--conditions/#crippled) until they no longer have two or more poor physical attributes.
 
-A character with two or more poor mental attributes falls unconscious until they no longer have two or more poor mental attributes.
+A character with two or more poor mental attributes falls [unconscious](/docs/free-srd/core-rules/wounds--conditions/#unconscious) until they no longer have two or more poor mental attributes.
 
 **Null Attributes:**  Some creatures have null [-N-] attributes. Null attributes are effectively 0, however cannot be raised or lowered.
 
