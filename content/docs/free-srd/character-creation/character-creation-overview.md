@@ -25,8 +25,8 @@ Some traits are followed by labels -written in [brackets]- depending on the sett
 - Step 1: Begin with determining and assigning your [attributes](/docs/free-srd/attributes).
 - Step 2: Use your attributes to calculate your remaining [stats](/docs/free-srd/stats).
 - Step 3: Choose your first level character features. Each character starts at level one with:
--- One Racial [Trait](/docs/free-srd/character-creation/traits)
--- Two additional Traits
+-- One [Racial Trait](/docs/free-srd/character-creation/traits/#racial-traits) (if applicable)
+-- Two [Traits](/docs/free-srd/character-creation/traits)
 -- Two [Proficiencies](/docs/free-srd/character-creation/proficiencies)
 -- One [Ability](/docs/free-srd/character-creation/abilities)
 
