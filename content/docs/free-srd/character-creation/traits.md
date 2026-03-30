@@ -61,13 +61,13 @@ You are an imposing individual, whether in attitude or stature. Gain a +2 bonus 
 {{% details "Lucky" %}}
 ### Lucky
 
-You are luckier than others. Gain Luck equal to ¼ your level to a maximum of 4 (rounded down, minimum 1).
+You are luckier than others. Gain a bonus to Luck equal to ¼ your level to a maximum of 4 (rounded down, minimum 1).
 {{% /details %}}
 
 {{% details "Sly" %}}
 ### Sly
 
-You don't have a tell, or maybe just barely. Gain a +2 bonus on rolls when deceiving others.
+You don't have a tell, or maybe just barely. Gain a +2 bonus on rolls when deceiving others verbally.
 {{% /details %}}
 
 {{% details "Sneaky" %}}
