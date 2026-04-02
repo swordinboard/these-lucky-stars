@@ -5,12 +5,10 @@ title: "Welcome!"
 {{% include "/snippets/announcement" %}}
 
 > [!WARNING]
-> **Latest 3/19/26 Additions:**
-> - Cleaned Sci-Fi Weapon and Armor lists
-> - Updated include snippets shortcode to load properly across the site
-> - Updated Roadmap
+> **Latest 4/2/26 Additions:**
+> - Added Generic Items list for common setting-agnostic items
 > - Began content reorganization to maintain order for multiple modules
-> - - Anthony
+> -- Anthony
 
 ## Welcome!
 

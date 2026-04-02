@@ -20,6 +20,9 @@ weight: 1
 
 The standard price for a new piece of equipment.
 
+> [!CAUTION]
+> **All prices are currently removed.**
+
 ### Weight
 
 The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)

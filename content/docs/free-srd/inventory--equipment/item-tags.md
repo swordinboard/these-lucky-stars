@@ -44,9 +44,9 @@ Successful attacks made with these weapons also affect one random combatant adja
 Ballistic weapons use ballistic ammunition (ammo). To keep things simple, most weapons with the Ballistic tag use interchangeable ammo. If the tag is followed by a term in brackets, only that ammo type can be used.
 Ammo is tracked using [supply dice](/docs/free-srd/the-basics/#supply-rolls), often referred to in this case as ammo dice. The max size of a weapon's ammo die is also written in the brackets following the Ballistic tag. The weapon's [firing mode](#firing-modes) determines when a supply roll is needed.
 
-Regardless of type, ammo weighs 5lbs per ammo die.
+Regardless of type, ammo weighs 3lbs per ammo die.
 
-**Equipping for Use:** Ammo must be equipped to the back, belt, chest, or legs in order to be used for a normal reload during combat. If not equipped, more AP is required to access. Ammo comes with basic pouches necessary to equip it, and any of these slots can have up to 3 ammo dice of any size equipped to it.
+**Equipping for Use:** Ammo must be equipped in an [Ammo Pouch Set](/docs/free-srd/inventory--equipmeny/generic-equipment/#pouch-set-ammo) a normal reload during combat. If not equipped in this manner, additional AP is required to retrieve it.
 
 **Reloading:** A ballistic weapon must be reloaded when its current ammo die is depleted, or to swap to another ammo die. Reloading a ballistic weapon normally costs 2 AP regardless of weapon style. Some weapon tags, upgrades, and abilities change the reload time of a weapon.
 
