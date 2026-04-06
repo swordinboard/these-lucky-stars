@@ -5,7 +5,7 @@ weight: 4
 
 ## Health
 
-Combat in These Lucky Stars uses a unique health system. The first layer, Defense, represents how well a character defends against attacks, both in avoiding and bracing against them. The second layer, Vitality, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
+Combat in These Lucky Stars uses a unique health system. The first layer, Defense (DEF), represents how well a character defends against attacks, both in avoiding and bracing against them. The second layer, Vitality (VIT), represents how much of a beating or how many injuries a character can withstand before they are incapacitated. During combat a character may also withstand wounds and conditions which, while related, have their own set of effects that change gameplay and demand attention to resolve.
 
 Links to health-related resouces:
 - [Defense](/docs/free-srd/core-rules/stats/#defense)
@@ -14,7 +14,7 @@ Links to health-related resouces:
 
 ## Combat Basics
 
-- Characters enter combat when one declares an aggressive action against another. Initiative is then determined immediately upon declaring the action.
+- Characters enter combat when one declares an aggressive action against another. Initiative is determined immediately upon declaring the action.
 - Combat is then played in rounds, with each combatant taking one turn per round in initiative order.
 - The most common actions during combat are attack and move. The number of actions a character can take during combat is determined using Action Points.
 - Successful attacks deal damage to the defenders Defense (DEF). Each time their DEF reaches 0, they lose a point of Vitality (VIT). Successful attacks can also result in [wounds and conditions](/docs/free-srd/core-rules/wounds--conditions).
@@ -23,9 +23,9 @@ Links to health-related resouces:
 
 ## Initiative
 
-Initiative determines the order in which characters take their turns during each *round.* When the first attack is declared, all combatants roll initiative and are placed in order from highest to lowest. The combatant with the highest initiative goes first and play continues in descending order. 
+Initiative determines the order in which characters take their turn during each *round.* When the first attack is declared, all combatants roll initiative and are placed in order from highest to lowest. The combatant with the highest initiative goes first and play continues in descending order. 
 
-**The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat. Narratively, this allows characters to be saved by instinct or gut feeling.
+**The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat, or their reflexes have saved them and allowed then to react to it quickly. Narratively, this allows characters to be saved by instinct or gut feeling.
 
 > [!IMPORTANT]
 > *An exception to the tie breaker rule:*
@@ -43,7 +43,7 @@ Generally, the more time or effort an action requires, the more AP it costs:
 
 ### Multi-Turn Actions:
 
-Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through damaging physical effects.
+Special actions may include instructions for completing them over multiple rounds or with multiple characters if there is a high AP requirement. In most cases, the action must be done uninterrupted and in consecutive rounds/actions. Many things can interrupt multi-round actions such as environmental effects, defending from attacks, nearby explosions, or other distractions. Typically a **WILL** check can be used to remain focused through distracting effects and a **FORT** check can be used to remain focused through physical effects.
 
 ---
 
@@ -126,15 +126,21 @@ Every attack has a damage type based on the weapon or effect used. When an attac
 
 Damage types include: Physical, Mental, Toxin, Burn, Cold, Shock, Radiation, Sonic, and Magic.
 
+### Damage Sources
+
+**Normal Damage** — Damage comes from a direct source such as an attack or a trap is considered normal damage and is applied to the character's DEF before potential VIT loss. If there is an action responsible for the damage or if the damage could have been dodged or physcially avoided, it is most likely normal damage.
+
+**Exposure Damage** — Damage that is unavoidable and sustained over time is considered exposure damage. Most sources of exposure damage are from the environment. Exposure damage leads to attribute checks, and often causes conditions and VIT loss.
+
+**Extreme Damage** — If a damage source is considered outside the typical realm of survivability for a living creature, it is considered extereme damage. Exteme damage and extreme exposure exist primarily to overcome or alter how resistances interact with those damage sources. Most extreme sources come from things much larger than the defender or highly inhospitable enviroments.
+
 ### Damage Resistance and Weakness
 
-- **Partial Resistance [÷2]** — Damage of this type is halved. Extreme damage bypasses partial resistance.
-- **Full Resistance [×0 or ÷2]** — Damage is reduced to 0, unless from an extreme source, in which case it is halved.
-- **Weakness [×2]** — Damage of this type is doubled.
+**Partial Resistance [÷2]** — Normal damage of this type is halved. Extreme damage and exposure bypass partial resistance.
 
-### Extreme Damage
+**Full Resistance [×0 or ÷2]** — Normal damage of this type is reduced to zero. Extreme damage of this type is halved. Exposure effects, including extreme exposure effects, of this type are ignored. New sources of normal damage during extreme exposure may bypass full resistance at the GMs discresion; usually resulting in taking half damage unless it it is being sustained often, at which point the full damage may be taken. the combination of direct damage and exposure damage is often to much to bear in any situation.
 
-Extreme damage has no defense against it. It reduces or bypasses damage resistances and may deal automatic VIT damage regardless of resistance or weakness. Primarily reserved for environmental hazards, though some character features and equipment can also inflict extreme damage.
+**Weakness [×2]** — Normal and extreme damage of this type is doubled. Attribute checks made to resist effects of this type are made at a major disadvantage (including those from exposure).
 
 ---
 
@@ -150,14 +156,12 @@ This repeats until all damage is dealt or VIT reaches 0.
 - Damaged character’s DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends.
 
 An attack inflicts a [wound](/docs/free-srd/core-rules/wounds--conditions) on the defender if it:
-- Dealt 2 or more VIT damage, or
+- Dealt 2 or more VIT damage
 - Caused the defender to reach 0 VIT.
-
-Most wound causing attacks cause minor wounds. It is up to the GM to determine the appropriate wound severity to apply.
 
 If VIT reaches 0, the attacker decides whether the blow was lethal or non-lethal. 
 - A lethal blow applies the [dying conditon](/docs/free-srd/core-rules/wounds--conditions/#dying) and a [major wound](/docs/free-srd/core-rules/wounds--conditions/#major-wounds).
-- A nonlethal blow applies the [unconscious condition](/docs/free-srd/core-rules/wounds--conditions/#unconscious) and a minor wound, usually a contusion to the head.
+- A nonlethal blow applies the [unconscious condition](/docs/free-srd/core-rules/wounds--conditions/#unconscious) and a minor wound,such as a contusion to the head.
 
 ---
 
@@ -176,13 +180,13 @@ If VIT reaches 0, the attacker decides whether the blow was lethal or non-lethal
 **Draw a Weapon** *1-3 AP*
 Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed Weapon costs 3 AP.
 
-**Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally using the actions below; the pinned character must spend 1 AP at the start of their turn to attempt to gain control. If unsuccessful, they take no other actions.
+**Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally using the actions below; the pinned character must spend 1 AP at the start of their turn to attempt to gain control in order to act. If unsuccessful, they take no other actions.
 
 > *In Control:* Move up to 10ft with grappled opponent (3 AP), Attack with a light weapon or unarmed attack (3 AP), End Grapple (1 AP), Toss opponent up to 10ft with a successful STR roll (3 AP).
 >
 > *Pinned:* Attempt to gain control with a contested grapple check (1 AP).
 
-Characters engaged in a grapple are vulnerable to external attacks. Any attack made against a grappling character from a character not engaged in the grapple has advantage. Grappling character's cannot make attacks outside of the grapple.
+Characters engaged in a grapple are vulnerable to external attacks. Any attack made against a grappling character from a character not engaged in the grapple has advantage. Grappling character's that attempt to make an attack against a target outside of the grapple do so at a minor disadvantage.
 
 **Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item rather than the opponent. See the Equipment section for rules on damaged and broken gear.
 

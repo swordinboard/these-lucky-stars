@@ -8,6 +8,9 @@ weight: 7
 ### Ballistic Weapons In Space
 {{% include "/snippets/sci-fi-add-ballistic" %}}
 
+## Extreme Environments
+{{% include "/snippets/extreme-environments" %}}
+
 ## New Equipment Types
 
 ### Energy Shields
@@ -15,4 +18,3 @@ weight: 7
 
 ### Heads Up Displays (HUDs)
 {{% include "/snippets/huds" %}}
-
