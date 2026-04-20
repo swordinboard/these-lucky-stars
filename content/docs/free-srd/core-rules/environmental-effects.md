@@ -74,3 +74,9 @@ The following extends the Common Injuries table in [Wounds & Conditions](/docs/f
 | Prolonged heat exposure (burn) | Burn | Fatigued, Shaken |
 | Prolonged cold exposure (cold) | Burn (frostbite) | Fatigued, Shaken |
 | Smoke or toxic fume inhalation (toxin) | — | Sick, Asphyxiating, Fatigued |
+
+---
+
+## Exteme Environments
+**Sci-Fi Module Addition**
+{{% include "/snippets/extreme-environments" %}}
