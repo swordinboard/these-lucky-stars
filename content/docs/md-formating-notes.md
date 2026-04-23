@@ -1,5 +1,6 @@
 ---
 headless: true
+draft: true
 ---
 
 > Used for small lists and minor callouts such as functions
