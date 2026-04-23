@@ -1,6 +1,6 @@
 ---
 title: "Stats"
-weight: 3
+weight: 25
 ---
 
 ## Stats

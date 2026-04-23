@@ -1,6 +1,6 @@
 ---
 title: Wounds & Conditions
-weight: 6
+weight: 70
 ---
 
 # Wounds & Conditions

@@ -1,7 +1,6 @@
 ---
 title: "Combat"
 weight: 60
-draft: true
 ---
 
 ## Combat

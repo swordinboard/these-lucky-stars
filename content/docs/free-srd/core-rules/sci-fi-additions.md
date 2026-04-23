@@ -1,6 +1,6 @@
 ---
 title: "Sci-Fi Additions"
-weight: 7
+weight: 90
 ---
 
 ## Additonal Sci-Fi Rules

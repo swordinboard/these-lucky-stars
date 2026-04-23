@@ -1,8 +1,7 @@
 ---
 title: "Size"
-weight: 99
+weight: 27
 bookHidden: true
-draft: true
 ---
 
 ## Size

@@ -1,7 +1,6 @@
 ---
 title: "Action Economy"
-weight: 50
-draft: true
+weight: 40
 ---
 
 ## Action Economy & Movement

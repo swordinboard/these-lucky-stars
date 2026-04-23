@@ -1,7 +1,6 @@
 ---
 title: "Health"
-weight: 40
-draft: true
+weight: 50
 ---
 
 ## Health

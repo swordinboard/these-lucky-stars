@@ -1,6 +1,6 @@
 ---
 title: "Attributes"
-weight: 2
+weight: 20
 ---
 
 ## Attributes

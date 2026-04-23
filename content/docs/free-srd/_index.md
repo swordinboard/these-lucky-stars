@@ -24,7 +24,7 @@ Dynamic stats evolve with play and reflect changes in combat; no flat AC or stan
 [**Flexible Character Creation**](/docs/free-srd/character-creation)
 Build your character with traits, proficiencies, and abilities - no rigid classes. Come up with an archetype and build it yourself or with the whole table. Characters can move in any direction as play evolves. 
 
-[**Tactical Combat**](/docs/free-srd/health-combat)
+[**Tactical Combat**](/docs/free-srd/combat)
 2d6 opposed roll combat system with unique health and damage systems.
 
 ## Design Philosophy
