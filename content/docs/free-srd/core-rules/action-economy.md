@@ -11,11 +11,9 @@ This page covers how a character spends their time and effort during a round of 
 
 ## Action Points
 
-> **Action Points (AP) = 4 (Base) + Mods**
+{{% include "/snippets/action-points" %}}
 
-On their turn, each character spends **Action Points (AP)** to perform actions. All characters have **4 AP** per round, which replenish at the start of their turn. Like other stats, AP can be affected by modifiers from character features or other effects.
-
-AP is a shared pool used for every action a character takes, on their own turn using Standard Actions or in response to events on other characters' turns with Opportunity Actions. A character who spends all of their AP on their own turn has no AP remaining for Opportunity Actions until their AP replenish at the beginning of their next turn. Managing the AP pool is a tactical choice, not just a bookkeeping step.
+Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features.
 
 ---
 
@@ -63,19 +61,6 @@ In normal play, Reactions rarely need to be identified as a distinct category. T
 
 ---
 
-## Common AP Costs
-
-Generally, the more time or effort an action requires, the more AP it costs:
-
-- **0 AP** — Free or instinctive actions: speaking a short sentence, dropping an item, certain character features.
-- **1 AP** — Simple tasks: picking up an item, drawing a weapon, stepping to an adjacent space, opening a door, drinking a potion already in hand.
-- **2 AP** — Focused tasks: making an attack, moving up to your Speed.
-- **3+ AP** — Complex tasks: disabling a trap, intimidating opponents while breaking through a door.
-
-Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features.
-
----
-
 ## Movement
 
 Movement is the most common action a character takes during any scene — in combat, during exploration, and in any situation where physical position matters. On a character's turn, they may spend AP to move up to their Speed, to step, or to take other movement-related actions, many of which are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog.
@@ -94,36 +79,17 @@ Move and Step are the two primary movement actions. Both are Standard Actions, a
 
 {{% include "/snippets/primary-speed" %}}
 
-#### Speed Modes
+#### Speed Descriptors
 
-The descriptor of a Speed determines what type of movement or terrain the Speed applies to. A character may have Speeds in multiple modes.
-
-- **Ground** — Standard walking and running on solid ground. Most characters have a ground Speed; it should be assumed that a Speed without a descriptor is a ground Speed.
-- **Climb** — How fast a character scales vertical surfaces.
-- **Swim** — How fast a character moves through water.
-- **Fly** — How fast a character moves through the air.
-
-#### Maneuverability
-
-> Maneuverability Rating = Rating Value + Sive Value + Speed Tier
-
-Speeds also have a **maneuverability rating** (High (0), Medium (+2), or Low (+4)) that is used to determine how many spaces are required to make a 90° turn. To determine the turning distance, add the maneuverability number to the character's size value (see [Size](/docs/free-srd/core-rules/size/)), and [Speed Tier](/docs/free-srd/core-rules/action-economy/#speed-tiers). The arc is then traced forward and to the side that many spaces. The minimum is zero spaces, which allows the character to fully turn in place. If a Speed does not provide a Maneuverability rating, treat it as high (0).
-
-Vehicles also use maneuverability ratings when performing complex or difficult maneuvers/move actions. See the [vehicles] <!-- placeholder for link --> for more info on vehicle movement.
-
-#### Combining Speeds
-
-Some movements can combine multiple modes in a single Move action — for example, a character with both a ground and climb Speed may walk across a floor and climb a wall as part of one move. When combining modes, the character's maximum travel distance cannot exceed their Primary Speed.
+{{% include "/snippets/speed-descriptors" %}}
 
 #### Speed Tiers
 
-Speed in These Lucky Stars is categorized into four tiers based on distance covered per round. These tiers are used to describe how fast something is actually moving at the time another action is taken that affects it. The tiers are used across several rules — including Opportunity Attacks, reaction dodge difficulties, and vehicle impact damage — *Ones current Speed tier is determined by how far their most current movement takes them in one round.* In almost all cases this is determined by a move action where the continuation of that move is assumed or predetermined.
+{{% include "/snippets/speed-tiers" %}}
 
 <!-- maybe we add an example of how a characters speed tier is determined by their previous turn,s movement -->
 
-{{% include "/snippets/speed-tiers" %}}
-
-Most characters on foot operate entirely within the **Slow** tier. The **Moderate** tier is reached through extended sprinting, mounts at a trot, or features that push character Speed significantly. **Fast** and **Very Fast** are generally reserved for vehicles, and mounts at gallop. The Opportunity Attacks cannot be made against those moving at the **Fast** and **Very Fast** tiers.
+{{% include "/snippets/speed-tiers-chart" %}}
 
 ### Difficult Terrain and Obstacles
 

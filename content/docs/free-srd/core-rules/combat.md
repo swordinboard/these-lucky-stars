@@ -1,6 +1,7 @@
 ---
 title: "Combat"
 weight: 60
+draft: true
 ---
 
 ## Combat
@@ -20,12 +21,7 @@ This page covers how fights are resolved in These Lucky Stars — from initiativ
 
 ## Initiative
 
-Initiative determines the order in which characters take their turn during each *round.* When the first attack is declared, all combatants roll initiative and are placed in order from highest to lowest. The combatant with the highest initiative goes first and play continues in descending order.
-
-**The character that declares the first attack gains a +6 bonus to their initiative roll.** If multiple characters are acting in unison — such as in a coordinated ambush — all allies involved gain the +6 bonus. Note that initiating combat does not guarantee that character goes first nor does it guarantee their intended action plays out. In situations where another character goes before the initiating character, it means their Insight tipped them off and they have sensed the immediate threat, or their reflexes have saved them and allowed them to react to it quickly. Narratively, this allows characters to be saved by instinct or gut feeling.
-
-> *An exception to the tie breaker rule:*
-> In an initiative tie between opponents, the group that initiated combat goes first. In a tie between allies, the players decide the order and may change it from round to round.
+{{% include "/snippets/initiative" %}}
 
 ---
 
@@ -148,13 +144,9 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Draw a Weapon** *(1–3 AP)* — Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed weapon costs 3 AP.
 
-**Grapple** *(2 AP)* — Make a contested grapple check. The winner chooses to engage or end the grapple immediately. The character in control can act normally using the actions below; the pinned character must spend 1 AP at the start of their turn to attempt to gain control in order to act. If unsuccessful, they take no other actions.
+*Grapple — (2 AP)*
 
-> *In Control:* Move up to 10 ft with grappled opponent (3 AP), Attack with a light weapon or unarmed attack (3 AP), End Grapple (1 AP), Toss opponent up to 10 ft with a successful STR roll (3 AP).
->
-> *Pinned:* Attempt to gain control with a contested grapple check (1 AP).
-
-Characters engaged in a grapple are vulnerable to external attacks. Any attack made against a grappling character from a character not engaged in the grapple has advantage. Grappling characters that attempt to make an attack against a target outside of the grapple do so at a minor disadvantage.
+{{% include "/snippets/grapple" %}}
 
 **Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item rather than the opponent. See the Equipment section for rules on damaged and broken gear.
 
@@ -170,7 +162,9 @@ Characters engaged in a grapple are vulnerable to external attacks. Any attack m
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-**Stealth** — Stealth actions generally do not cost additional AP. Moving silently costs the same as a Move action; hiding behind an object costs the same as taking cover. Most stealth checks start at target 8. If an opponent is actively searching, they may roll INS to detect you. Successful or unnoticed stealth actions count as defensive actions; failed or noticed stealth actions usually count as aggressive actions.
+*Stealth*
+
+{{% include "/snippets/stealth" %}}
 
 *Step — (1 AP)*
 
