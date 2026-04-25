@@ -5,14 +5,14 @@ title: "Welcome!"
 {{% include "/snippets/announcement" %}}
 
 > [!WARNING]
-> **Latest 4/6/26 Additions:**
+> **Latest 4/24/26 Changes:**
+> - Core Rules page reorganization. Combat, Health, and Action Economy each given their own page.
+> Stats page revised to reflect full information whenever possible.
+>
+> **4/6/26 Additions:**
 > - Environmental Effects page added
-> - Damage sources section added to [Damage](/docs/free-srd/core-rules/health--combat/#damage) section.
+> - Damage sources section added to [Combat](/docs/free-srd/core-rules/combat/#damage) page.
 > - Extreme Environments addition from Sci-Fi module
-> 
-> **4/2/26 Additions:**
-> - Added Generic Items list for common setting-agnostic items
-> - Began content reorganization to maintain order for multiple modules
 > -- Anthony
 
 ## Welcome!

@@ -42,8 +42,8 @@ The target number of a normal decision roll should reflect the difficulty of the
 >
 >While there is technically no maximum on a standard decision roll with no modifiers, the odds of getting higher than a 15 is less than 10%.
 >
->Any modifiers to the roll move the curve.
->A simple +1 to that roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
+>Any modifiers to a roll move the curve.
+>A simple +1 to any roll increases the odds of getting a 12 or higher from 21% to  25%. Meanwhile, the odds of getting an 8 or higher on the same roll increases from 47% without any modifiers to 58% with a +1 modifier.
 >
 >This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers hold their value for common rolls, especially when paired with Advantage/Disadvantage and Luck.
 
@@ -62,11 +62,11 @@ The "Impossible" task description is used to describe any task that would be nar
 
 #### Strenuous Tasks
 
-Most strenuous tasks are the result of many modifiers to a target number, and would give even a trained professional a difficult time under normal conditions. They may be attempted, but their diffuculty should be made narratively clear. Even for the prepared and well trained, targets in this range present a real risk of failure. Even at the low end of the range, a 14 often becomes no better than a coin flip for such charact
+Most strenuous tasks are the result of many modifiers to a target number, and would give even a trained professional a difficult time under normal conditions. They may be attempted, but their diffuculty should be made narratively clear. Even for the prepared and well trained targets in this range present a real risk of failure. At the low end of the range, a 14 often becomes no better than a coin flip for such characters.
 
 #### Challenging Tasks
 
-Most tasks fall into the challenging range between 8 and 12. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the sutuation can quicky tip the scale in favor of success or failure. Generally an 8 is almost a coin flip for the unprepared or untrained, while a 12 is unlikely. For the trained or prepared, an 8 can become guaranteed, while a 12 can become routine.
+Most tasks fall into the challenging range between 8 and 12. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the situation can quicky tip the scale in favor of success or failure. Generally an 8 is almost a coin flip for the unprepared or untrained, while a 12 is unlikely. For the trained or prepared, an 8 can become guaranteed, while a 12 can become routine.
 
 #### Simple tasks
 
@@ -115,17 +115,17 @@ Advantage is a special type of modifier that can be added to any decision roll b
 **Major Disadvantage** removes one d6 from the decision dice for a total of 1d6. Disadvantage may be given when the players characters are significantly unprepared, are heavily outmatched or outnumbered, or are facing multiple unfavorable conditions that go beyond the normal alteration of the target number or bonuses provided.
 
 ### Gaining Advantage
-Some abilities and effects grant advantage, particularly in combat. This simply moves the advantage in the user's favor, but it does not guarantee a bonus or change to decision dice. Other effects in play that also grant an advantage are still taken into consideration. On a neutral roll an ability or effect that "grants advantage" simply grants a minor advantage on its own. All afvantages and disadvantages must be revealed before the dice have been rolled, including thise from activating abilities.
+Some abilities and effects grant advantage, particularly in combat. This simply moves the advantage in the user's favor, but it does not guarantee a bonus or change to decision dice. Other effects in play that also grant an advantage are still taken into consideration. On a neutral roll an ability or effect that "grants advantage" simply grants a minor advantage on its own. All advantages and disadvantages must be revealed before the dice have been rolled, including those from abilities.
 
 ### Special Notes for the Game Master:
 - All rolls start as neutral. Don't be afraid to keep them there.
 - When determinging advantage, only inlcude things that would have an effect on their own, not very minor things that only matter when they add up. This can help limit the number of effects that cause advantage and keep it more narratively consistent.
-- Do not include things that alreadyd grant a bonus.
+- Do not include things that already grant a bonus.
 - Talk with the rest of the table when determinging advantage, it is everyone's responsibility to announce effects. It is the GM's responisbility to determine the balance of the situation and whatever advantage it may grant.
 - Major Advantage/disadvantage should be reserved for when the narrative and situaution call for a dramatic effect or drastic offset, especially if it comes from a single effect. This should be uncommon when compared to the minor effect.
 
 ### Advantage and Contested Rolls
-It is best practice to avoid handing out disadvantage during a contested roll. It feels better for players when the GM awards advantage in either direction than being stuck at a disadvantage.
+It is best practice to avoid handing out disadvantage during a contested roll if something could reasonably be an advantage to the other party instead. It feels better for players when the GM awards advantage in either direction than being stuck at a disadvantage.
 Treat advantage for contested rolls as if the two parties occupy the scale rather than advantage/disadvantage, the two parties compete for having an advantage on the scale just as they do narratively.
 
 ---
@@ -158,7 +158,7 @@ Anytime you are faced with a fraction in the end result of a roll or series of r
 ### Supply Rolls
 
 Supply rolls or supply dice are used to track inventory and conditions with a level of randomness. 
-Many pieces of equipment, particularly kits and weapons requiring ammunition, do not have a set number of uses as different applications will require a different amount of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description. Moat items require one supply roll per activation.
+Many pieces of equipment, particularly kits and weapons requiring ammunition, do not have a set number of uses as different applications will require a different amount of supplies to complete. To simulate this the number of uses is described by a die size. Details on when supply rolls are performed and if/how an item can be resupplied is provided in its description. Most items require one supply roll per activation.
 
 When using equipment that requires a supply roll to complete/attempt an action, roll the die listed. If the result is 3 or lower, the die size is lowered. *Each roll is handled individually after the action is complete.* Empty items cannot be used if a supply roll is required, but some may still be used in situations when supply rolls are not needed. This is particularly common with kits, when the included tools are needed without using any of the consumables.
 

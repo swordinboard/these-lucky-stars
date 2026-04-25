@@ -38,4 +38,4 @@ The system aims to:
 All core mechanics are free and will remain free forever. The System Reference Document (SRD) contains everything you need to play and has been made accessible via this documentation site. Licensing information can be found [here](/docs/legal).
 
 ## What's Coming
-Complete These Lucky Stars setting modules will include expanded character options, full equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns. See the [roadmap](/roadmap) for the latest on what's to come.
+Complete These Lucky Stars setting modules will include expanded character options, full equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns. See the [roadmap](/docs/roadmap) for the latest on what's to come.
