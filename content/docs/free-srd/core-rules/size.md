@@ -42,7 +42,7 @@ Size influences characters along three separate paths:
 
 Size affects combat in three specific ways:
 
-**Damage dice.** {{% iclude "/snippets/damage-dice" %}}
+**Damage dice.** {{% include "/snippets/damage-dice" %}}
 
 **Space and reach.** The space occupied and melee reach values on the chart above determine how a character positions on the battlefield and who they can strike in melee. Some creatures have modified space and reach compared to the sizes present on the chart.
 
