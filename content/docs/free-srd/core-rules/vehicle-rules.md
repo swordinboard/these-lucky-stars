@@ -20,24 +20,24 @@ A vehicle's size is described by its footprint, the number of spaces it occupies
 ### Speed
 
 > [!Note]
-> Because these rules deal closely with movement and Speed, this section includes many of the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calclations.
+> Because these rules deal closely with movement and Speed, this section includes many of the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations.
 
 #### Speed tiers
 
 Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers are universal across all vehicles and characters, and each tier carries a **speed modifier** used as a flat bonus to damage and to determine check targets for vehicle interactions.
 
 > [!IMPORTANT]
-> Base targets for vehicle interactions (dive, board, bail, dodge) are calculated as **6 + the speed modifier**: > 
+> Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as **6 + the speed modifier**: > 
 > - 6 at Slow
-> - 10 at Moderate
-> - 14 at Fast
+> - 9 at Moderate
+> - 13 at Fast
 > - 18 at Very Fast.
 
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
 {{% include "/snippets/speed-tiers" %}}
 
-#### Modes and Maneuverability
+#### Modes & Maneuverability
 
 {{% include "/snippets/speed-descriptors" %}}
 
@@ -48,8 +48,7 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 Vehicles primarily introduce variations of the [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action. Drive is simply directing a Move, and Board and Bail interact with the existing Move action directly. All other combat actions work as normal whether a character is on foot, a passenger, or the driver.
 
 > [!IMPORTANT]
-> **Driver Actions**
-> Actions other than Drive and Bail taken by the driver of a vehicle are at a *disadvantage*, reflecting the attention required to pilot/drive a vehicle.
+> **Driver Actions** — Actions other than Drive and Bail taken by the driver of a vehicle are at a *disadvantage*, reflecting the attention required to pilot/drive a vehicle.
 
 #### Drive
 
@@ -67,7 +66,7 @@ Boarding a stationary vehicle or bailing from a stationary vehicle requires no c
 
 ---
 
-### Initiative and Occupants
+### Initiative & Occupants
 
 Every character rolls [Initiative](/docs/free-srd/core-rules/stats/#initiative) individually, whether they are on foot, driving a vehicle, or a passenger inside one. There is no grouped initiative for vehicle occupants.
 
@@ -81,7 +80,7 @@ The [cover](/docs/free-srd/core-rules/combat/#use-cover) a vehicle provides to i
 
 ---
 
-### Impact and Overrun (Movement Consequence)
+### Impact & Overrun
 
 When a vehicle's path passes through a creature's space, the creature is in the vehicle's way. This is not an attack — it is a consequence of movement. The rules below resolve what happens, and who rolls what, based on whose intent created the situation.
 
@@ -89,9 +88,9 @@ When a vehicle's path passes through a creature's space, the creature is in the 
 
 If the driver declares a Drive path that deliberately passes through a creature's space, no driver check is required. The driver intended the collision and the vehicle proceeds along its path.
 
-The creature in the path may attempt to dodge as a reaction. A creature who has not yet acted in initiative is caught by [surprise](/docs/free-srd/core-rules/combat/#surprise-attacks) and makes the dodge at a  [minor disadvantage](/docs/free-srd/core-rules/basics/#advantage) for vehicles moving at Slow and Moderate Speeds, and at a [major disadvantage](docs/free-srd/core-rules/basics/#advantage) for those moving at Fast and Very Fast Speeds.
+The creature in the path may attempt to dodge as a reaction. A creature who has not yet acted in initiative is caught by [surprise](/docs/free-srd/core-rules/combat/#surprise-attacks) and makes the dodge at a [minor disadvantage](/docs/free-srd/core-rules/basics/#advantage) for vehicles moving at Slow and Moderate Speeds, and at a [major disadvantage](/docs/free-srd/core-rules/basics/#advantage) for those moving at Fast and Very Fast Speeds.
 
-A creature eligible to dodge makes an **AGI check** against the vehicles speed and size (see below). On a success, they move to an unoccupied adjacent space outside the vehicle's path and take no damage. On a failure, they suffer the full impact/overrun damage and are knocked [prone](/docs/free-srd/core-rules/wounds--conditions/#prone). The vehicle continues along its declared path in either case.
+A creature eligible to dodge makes an **AGI check** against the vehicle's speed and size (see below). On a success, they move to an unoccupied adjacent space outside the vehicle's path and take no damage. On a failure, they suffer the full impact/overrun damage and are knocked [**prone**](/docs/free-srd/core-rules/wounds--conditions/#prone). The vehicle continues along its declared path in either case.
 
 > Target to Dodge a Vehicle = 6 + vehicle's Speed modifier + number of spaces character is required to move.
 
@@ -103,11 +102,11 @@ The GM selects the appropriate check based on the vehicle type and situation. Co
 
 > Target to Avoid Collision = 6 + the vehicle's Speed modifier + the vehicle's maneuverability rating
 
-On a **success**, the driver controls the vehicle enough to avoid the incident. Most vehicles small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. in soke cases, the path must be altered to avoid incident, possibly shortening the total distance travelled.
+On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled.
 
 On a **failure**, the GM determines what happens based on the situation:
 
-- The vehicle swerves and loses control, possibly triggering a **Collision with  a static object** (see below).
+- The vehicle swerves and loses control, possibly triggering a **Collision with a static object** (see below).
 - The vehicle strikes the obstacle and is forced to a stop, dealing impact/overrun damage to the obstacle and taking damage itself if the obstacle is of comparable size or larger.
 
 The choice between these failure outcomes is narrative — a motorcycle might lay down in a partially controlled slide, while a car at speed might slam into a barrier.
@@ -142,13 +141,20 @@ This is why a slow-moving large vehicle still deals meaningful damage even with 
 
 #### Damage to the Vehicle
 
-The steiking vehicle takes **collision damage** from an impact/overrun **only** if the target is of comparable size or larger than the vehicle. A car striking a pedestrian takes no damage. A car striking another car, a wall, or a Large creature takes damage equal to the collision damage (rolled seperately).
+The striking vehicle takes **collision damage** from an impact/overrun **only** if the target is of comparable size or larger than the vehicle. A car striking a pedestrian takes no damage. A car striking another car, a wall, or a Large creature takes damage equal to the collision damage (rolled separately).
 
 #### Collision Occupants
 
-Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude) check (target 8)** to brace — on a success, the occupant takes half damage.
+Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude) check** to brace against an impact — on a success, the occupant takes half damage.
 
-> **Example:** A car (2 spaces) moving at Moderate speed strikes a wall. Collision damage is 2d6 + 4, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 8 FORT check takes half.
+> Target to Brace = 6 + Speed modifier
+
+> **Example:** A car (2 spaces) moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
+
+<!--
+> **Example — Motorcycle hits pedestrian at speed.** A 1-space motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce their collision damage by half.
+
+> **Example — Truck rams car head-on.** A 4-space truck moving at a Fast speed collides head-on with a 2-space car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
 
 ---
 
@@ -173,7 +179,7 @@ A mount's combat capabilities come from its own stat block. When a rider command
 
 ### Unwilling Mounts
 
-Not every mount obeys every command. A well-trained, bonded, or willing mount cooperates with its rider's commands automatically. Riders may face a disadvantage when attempting to command a unwilling, unfamiliar, or spooked mount. 
+Not every mount obeys every command. A well-trained, bonded, or willing mount cooperates with its rider's commands automatically. Riders may face a disadvantage when attempting to command an unwilling, unfamiliar, or spooked mount. 
 
 A mount may also be willing to perform some actions, but unwilling to perform others. Most mounts are unwilling to perform actions that put them in direct danger.
 
