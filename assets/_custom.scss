@@ -104,9 +104,13 @@ html {
       letter-spacing: 0.01em;
       color: var(--accent-bright);
    }
-
+   h3 {
+     font-family: var(--font-body);
+     font-weight: 600;
+     color: var(--accent-bright);
+   }
    // Sub-headings stay in body font
-   h3, h4, h5, h6 {
+   h4, h5, h6 {
       font-family: var(--font-body);
       font-weight: 600;
    }
