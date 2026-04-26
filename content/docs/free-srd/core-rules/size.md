@@ -27,8 +27,8 @@ Size influences characters along three separate paths:
 | | Tiny | Small | Medium | Large | Huge |
 |---|---|---|---|---|---|
 | **Expected Height** | < 1 ft | 1–3 ft | 3–9 ft | 9–18 ft | > 18 ft |
-| **Space Occupied** | Can enter occupied spaces | ½ space (2.5 ft²) | 1 space (5 ft²) | 4-space square (20 ft²) | 9-space square (45 ft²) |
-| **Normal Melee Reach** | Occupied space only | 1 space (5 ft) | 1 space (5 ft) | 2 spaces (10 ft) | 3 spaces (15 ft) |
+| **Space Occupied** | Can enter occupied spaces | ½ space (2.5ft square) | 1 space (5ft square) | 4-spaces (10ft square) | 9-spaces (15ft square) |
+| **Normal Melee Reach** | Occupied space only | 1 space (5ft) | 1 space (5ft) | 2 spaces (10ft) | 3 spaces (15ft) |
 | **STR Modifier** | −4 | −2 | — | +2 | +4 |
 | **AGI Modifier** | +4 | +2 | — | −2 | −4 |
 | **Grapple Modifier** | −4 | −2 | — | +2 | +4 |
@@ -42,15 +42,9 @@ Size influences characters along three separate paths:
 
 Size affects combat in three specific ways:
 
-<!-- potential snippet: damage dize is also discussed on the combat page -->
+**Damage dice.** {{% iclude "/snippets/damage-dice" %}}
 
-**Damage dice.** The base damage die size for an attack is determined by the size of the attacker relative to the defender:
-
-- Attacker is the same size or ±1 size as defender: damage die is a d8.
-- Attacker is two or more sizes smaller than the defender: damage die is a d4.
-- Attacker is two or more sizes larger than the defwnder: damage die is a d12.
-
-**Space and reach.** The space occupied and melee reach values on the chart above determine how a character positions on the battlefield and who they can strike in melee.
+**Space and reach.** The space occupied and melee reach values on the chart above determine how a character positions on the battlefield and who they can strike in melee. Some creatures have modified space and reach compared to the sizes present on the chart.
 
 **Handling and visibility.** The Grapple and Stealth modifiers apply whenever those stats are rolled — not only in combat, but most often during it.
 

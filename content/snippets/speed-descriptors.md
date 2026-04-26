@@ -2,7 +2,12 @@
 headless: true
 ---
 
-The descriptor of a Speed determines what type of movement or terrain the Speed applies to and how difficult it is to maneuver. A character may have Speeds in multiple modes of travel, each with its own maneuverability.
+> **Format:**
+> Mode  Distance in Feet (Base Maneuverability, Acceleration)
+> Swim 80ft (High, 20ft/round)
+
+The descriptors of a Speed determine what type of movement or terrain the Speed applies to, how difficult it is to maneuver, and how much it can accelerate per round.
+A character may have Speeds in multiple modes of travel, each with its own desceiptors.
 
 **Modes**
 
@@ -18,8 +23,22 @@ Some movements can combine multiple modes in a single Move action — for exampl
 
 **Maneuverability**
 
-> Maneuverability = Rating Value + Size Value + Speed Tier
+> Maneuverability = Base Value + Size Value + Speed Tier
 
-Each speed also have a **base maneuverability rating** (High (0), Medium (+2), or Low (+4)) that is used to determine how many spaces are required to make a 90° turn. To determine the turning distance, add the maneuverability number to the character's size value (see [Size](/docs/free-srd/core-rules/size/)), and [Speed Tier](/docs/free-srd/core-rules/action-economy/#speed-tiers). The arc is then traced forward and to the side that many spaces. The minimum is zero spaces, which allows the character to fully turn in place. *If a Speed does not provide a maneuverability rating, treat it as High (0).*
+Each speed also has a **base maneuverability rating** (High (0), Medium (2), or Low (4)) that is used to determine how many spaces are required to make a 180° turn. To determine the turning distance, add the maneuverability number to the character's size value (see [Size](/docs/free-srd/core-rules/size/)), and [Speed Tier](/docs/free-srd/core-rules/action-economy/#speed-tiers). The arc is then traced forward and to the side that many spaces. The minimum is zero spaces, which allows the character to fully turn in place. To determine the number of spaces for a 90° turn, simply divide thin snumber by two and round down if necessary. 
 
-Vehicles also use maneuverability ratings when performing complex or difficult maneuvers. <!-- placeholder: link to vehicles page when finalized -->
+*If a Speed does not provide a maneuverability rating, treat it as High (0).*
+
+**Acceleration**
+
+Not all Speeds can be reached in a single turn. A Speed's Acceleration describes how much a Speed can increase in one round regardless of how many Move actions is taken in a sinlge round.
+
+*If a Speed does not provide an Acceleration, treat it as equal to the Speed.*
+
+> [!TIP]
+> **Acceleration Example:** If a stationary Vehicle has a Speed of Ground 350ft (Moderate, 75ft/round), it must spend fice rounds accelerating (via a Drive action) before it can reach its top Speed:
+> - Round 1: +75ft/round acceleration, Speed 75ft.
+> - Round 2: +75ft/round acceleration, Speed 150ft
+> - Round 3: +75ft/round acceleration, Speed 225ft
+> - Round 4: +75ft/round acceleration, Speed 300ft
+> - Round 5: +50ft/round acceleration, Speed 350ft
