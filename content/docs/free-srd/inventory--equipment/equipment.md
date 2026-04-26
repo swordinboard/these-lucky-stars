@@ -1,5 +1,6 @@
 ---
 title: "Equipment Overview"
+description: "Common equipment terms for These Lucky Stars — how price, weight, damage thresholds, range, and item tags work across all modules."
 weight: 1
 ---
 

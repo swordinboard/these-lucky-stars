@@ -1,5 +1,6 @@
 ---
 title: "Generic Equipment"
+description: "Setting-agnostic gear for These Lucky Stars: tools, survival supplies, medkits, containers, light sources, and general utility items usable across any module."
 weight: 1
 ---
 

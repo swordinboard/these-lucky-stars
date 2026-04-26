@@ -1,5 +1,6 @@
 ---
 title: "The Basics"
+description: "How These Lucky Stars works — decision rolls, exploding dice, advantage and disadvantage, supply rolls, and the core mechanics that run the whole system."
 weight: 10
 ---
 ## Key Terms

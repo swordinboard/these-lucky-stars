@@ -1,5 +1,6 @@
 ---
 title: Wounds & Conditions
+description: "The full list of wounds and conditions in These Lucky Stars — from minor lacerations to the dying condition — and how to treat them."
 weight: 70
 ---
 

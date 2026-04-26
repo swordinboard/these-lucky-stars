@@ -1,5 +1,6 @@
 ---
 title: "Stats"
+description: "Initiative, Action Points, Defense, Vitality, Luck, and every other derived stat in These Lucky Stars — what they do and how to calculate them."
 weight: 30
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Proficiencies"
+description: "Proficiencies in These Lucky Stars cover what your character is trained in — weapon types, tools, armor, and skills that provide passive bonuses or unlock actions."
 weight: 2
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Character Creation Overview"
+description: "How to build a character in These Lucky Stars — attributes, stats, traits, proficiencies, and abilities — plus how leveling up works."
 weight: 1
 ---
 

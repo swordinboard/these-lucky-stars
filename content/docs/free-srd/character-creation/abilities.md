@@ -1,5 +1,6 @@
 ---
 title: Abilities
+description: "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others."
 weight: 3
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Attributes"
+description: "The eight attributes that define your character in These Lucky Stars — STR, AGI, DEX, FORT, KNO, INS, CHA, and WILL — and how to generate them."
 weight: 20
 ---
 

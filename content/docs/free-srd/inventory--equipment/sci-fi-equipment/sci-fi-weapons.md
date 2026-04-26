@@ -1,5 +1,6 @@
 ---
 title: "Sci-Fi Weapons"
+description: "Weapons for the sci-fi module in These Lucky Stars — energy weapons, ballistics, and more, with range, tags, and special rules."
 weight: 2
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Sci-Fi Additions"
+description: "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, extreme environments, vacuum and radiation exposure, energy shields, and HUDs."
 weight: 90
 ---
 

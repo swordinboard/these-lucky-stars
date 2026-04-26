@@ -1,5 +1,6 @@
 ---
 title: "Inventory Management"
+description: "How inventory works in These Lucky Stars — carry weight, item slots, the bulky tag, and managing what your character can realistically haul around."
 weight: 1
 ---
 

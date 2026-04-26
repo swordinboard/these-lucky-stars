@@ -1,5 +1,6 @@
 ---
 title: "Item Tags"
+description: "A reference for all item tags in These Lucky Stars — the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions."
 weight: 2
 bookToc: false
 ---
