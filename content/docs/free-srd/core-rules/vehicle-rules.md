@@ -11,9 +11,11 @@ These rules govern how vehicles and their occupants interact with characters on 
 > [!IMPORTANT]
 > Vehicles include any mode of transport a character can ride or pilot, from living mounts to mechanical transports.
 
-A vehicle has its own stat block that defines its [size](/docs/free-srd/core-rules/size/) (in spaces), [speed](/docs/free-srd/core-rules/stats/#speed), and any special features. 
+A vehicle has its own stat block that defines its size (in spaces), speed, and any special features. 
 
----
+### Vehicle Size
+
+A vehicle's size is described by its footprint, the number of spaces it occupies.
 
 ### Speed
 
@@ -38,12 +40,6 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 #### Modes and Maneuverability
 
 {{% include "/snippets/speed-descriptors" %}}
-
----
-
-## Vehicle size
-
-A vehicle' size is described by its footprint, the number of spaces it occupies. 
 
 ---
 
