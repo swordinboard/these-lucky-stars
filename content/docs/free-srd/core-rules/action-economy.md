@@ -1,5 +1,6 @@
 ---
 title: "Action Economy"
+description: "How AP works in These Lucky Stars — action types, opportunity attacks, reactions, movement, speed tiers, and the tactical choices behind managing your action pool."
 weight: 40
 ---
 

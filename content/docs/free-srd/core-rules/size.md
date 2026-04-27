@@ -1,5 +1,6 @@
 ---
 title: "Size"
+description: "How size works in These Lucky Stars — attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge."
 weight: 27
 bookHidden: true
 ---

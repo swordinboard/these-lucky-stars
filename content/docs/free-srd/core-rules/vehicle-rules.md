@@ -1,5 +1,6 @@
 ---
 title: "Vehicle Rules"
+description: "Rules for vehicles and mounts in These Lucky Stars — driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles."
 weight: 84
 bookHidden: true
 ---

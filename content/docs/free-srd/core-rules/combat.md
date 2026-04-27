@@ -1,5 +1,6 @@
 ---
 title: "Combat"
+description: "How fights are resolved in These Lucky Stars — initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog."
 weight: 60
 ---
 

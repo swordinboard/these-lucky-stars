@@ -1,5 +1,6 @@
 ---
 title: "Health"
+description: "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero."
 weight: 50
 ---
 
