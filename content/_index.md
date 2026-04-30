@@ -1,5 +1,6 @@
 ---
 title: "Welcome!"
+bookToC: fasle
 ---
 
 {{% include "/snippets/announcement" %}}
