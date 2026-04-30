@@ -69,7 +69,7 @@ Most strenuous tasks are the result of many modifiers to a target number, and wo
 
 Most tasks fall into the challenging range between 8 and 12. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the situation can quicky tip the scale in favor of success or failure. Generally an 8 is almost a coin flip for the unprepared or untrained, while a 12 is unlikely. For the trained or prepared, an 8 can become guaranteed, while a 12 can become routine.
 
-#### Simple tasks
+#### Simple Tasks
 
 Simple tasks stand a good chance of success for anyone of able body and mind. Many actions or effects that present a risk outside of a character's control or are performed under pressure require a decision roll at this level, usually a 6.
 
