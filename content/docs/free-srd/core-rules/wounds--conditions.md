@@ -215,7 +215,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 ### Dying Δ
 
-*Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. The character must succeed on a FORT check at the beginning of their turn. The target begins at 3 and increases by +1 each round. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a disadvantage.
+*Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. Such a character must succeed on a FORT check immediately, as well as at the beginning of their subsequent turns. The target begins at 3 and increases by +1 after each success. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a disadvantage.
 
 *Duration* — Until healed, or death.
 

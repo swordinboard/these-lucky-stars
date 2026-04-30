@@ -2,7 +2,7 @@
 headless: true
 ---
 
-> **Vitality (VIT) = ½ Level + ½ Max FORT + Mods (Total Rounded Down, Min 1)**
+> **Vitality (VIT) = ½ Level + ½ FORT + Mods (Total Rounded Down, Min 1)**
 
 Vitality is the second layer of a character's health. It represents a character's overall durability and ability to endure ailments. The more VIT a character has, the more they can push through before succumbing to their injuries.
 

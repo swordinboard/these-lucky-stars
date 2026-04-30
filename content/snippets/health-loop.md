@@ -8,4 +8,4 @@ Once total damage is calculated, it is dealt to the defender's current **Defense
 2. DEF resets to max.
 3. Any remaining damage is applied to the new DEF.
 
-This repeats until all damage is dealt or VIT reaches 0.
+This repeats until all damage is dealt or VIT reaches 0. Once VIT reaches 0, any remaining damage is wasted.
