@@ -12,6 +12,9 @@ For ease of reference attributes are often written as two numbers, the temporary
 
 Attribute checks are used for any action that does not directly have another stat affecting it. The attribute used is determined by the GM, based on the player's description of their action.
 
+**Size Note:**
+Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
+
 ---
 
 ## Two Ways to Determine Attributes
