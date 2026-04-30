@@ -6,6 +6,13 @@ weight: 1
 
 ## Character Creation
 
+> [!Important]
+> It is highly recommended for players to familiarize themselves with the rules before making a character.
+> Minimal reading:
+> - [The Basics](/docs/free-srd/core-rules/basics), [Attributes](/docs/free-srd/core-rules/attributes), and [Stats](/docs/free-srd/core/rules/stats)
+> Full picture reading: 
+> - [Action Economy](/docs/free-srd/core-rules/action-economy), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
+
 ## Character Archetypes
 
 Unlike many systems that use a class system to define different character roles and determine special abilities, These Lucky Stars is classless and leaves full creative power to the players. Even so, to help hone in on your character it is often helpful to define a character by archetype. Choose a short description that presents an overview of the character. Some examples: “Sneaky Pirate,” “Stalwart Defender,” “Lucky Pilot,” “Fire Mage,” “Tired Librarian,” “Gibbering Warrior,” “Reluctant Manager,” "Retiring Officer." This title will not be referenced otherwise during character creation or level up, but it will provide the party and GM with a general sense of your character. As you play and level up, this archetype may change. When in doubt, look to your selected character features for inspiration.
