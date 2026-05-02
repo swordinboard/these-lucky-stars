@@ -1,0 +1,19 @@
+{{- $title := .Get "title" -}}
+{{- $pdf := .Get "pdf" -}}
+{{- $preview := .Get "preview" -}}
+
+<div class="download-card">
+  <a href="{{ $pdf }}" download class="download-card-link">
+    <div class="download-card-image-wrap">
+      {{ if $preview }}
+        <img src="{{ $preview }}" alt="{{ $title }} preview" class="download-card-img" loading="lazy" />
+      {{ else }}
+        <div class="download-card-placeholder">No Preview Available</div>
+      {{ end }}
+      <div class="download-card-overlay">
+        <span class="download-card-title">{{ $title }}</span>
+        <span class="download-card-cta">⬇ Download PDF</span>
+      </div>
+    </div>
+  </a>
+</div>
