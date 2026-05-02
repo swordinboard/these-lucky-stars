@@ -3,6 +3,7 @@ baseURL = 'https://theseluckystars.com'
 languageCode = 'en-us'
 title = 'These Lucky Stars'
 theme = 'hugo-book'
+disableKinds = ["taxonomy", "term"]
 
 [markup]
   [markup.goldmark]
