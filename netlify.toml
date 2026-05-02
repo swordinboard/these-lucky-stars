@@ -58,8 +58,99 @@
 # ===========================================
 # REDIRECTS
 # ===========================================
+
+# www → apex
 [[redirects]]
   from = "https://www.theseluckystars.com/*"
   to = "https://theseluckystars.com/:splat"
   status = 301
   force = true
+
+# ===========================================
+# LEGACY URL REDIRECTS
+# Fixes Google Search Console 404s caused by
+# historical content restructuring.
+# Specific rules must come before wildcards.
+# ===========================================
+
+# /core-ruleset/ (old top-level section, now under /docs/free-srd/)
+[[redirects]]
+  from = "/core-ruleset/"
+  to = "/docs/free-srd/"
+  status = 301
+
+[[redirects]]
+  from = "/core-ruleset/*"
+  to = "/docs/free-srd/core-rules/:splat"
+  status = 301
+
+# /docs/core-ruleset/ (same old section, accessed via /docs/ prefix)
+[[redirects]]
+  from = "/docs/core-ruleset/introduction/"
+  to = "/docs/free-srd/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/core-ruleset/ohnothoughts/"
+  to = "/docs/free-srd/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/core-ruleset/"
+  to = "/docs/free-srd/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/core-ruleset/*"
+  to = "/docs/free-srd/core-rules/:splat"
+  status = 301
+
+# Pages that moved into /core-rules/ subsection
+[[redirects]]
+  from = "/docs/free-srd/basics/"
+  to = "/docs/free-srd/core-rules/basics/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/stats/"
+  to = "/docs/free-srd/core-rules/stats/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/attributes/"
+  to = "/docs/free-srd/core-rules/attributes/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/health-combat/"
+  to = "/docs/free-srd/core-rules/health/"
+  status = 301
+
+# /inventory-equipment/ → /inventory--equipment/ (single → double dash)
+# Specific renamed sub-page first, then wildcard
+[[redirects]]
+  from = "/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-items--equipment/"
+  to = "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/inventory-equipment/*"
+  to = "/docs/free-srd/inventory--equipment/:splat"
+  status = 301
+
+# Removed or drafted-out pages → nearest valid parent
+[[redirects]]
+  from = "/docs/free-srd/sci-fi-module/"
+  to = "/docs/free-srd/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/ohnothoughts/"
+  to = "/"
+  status = 301
+
+# Bare /attributes/ that existed at root level
+[[redirects]]
+  from = "/attributes/"
+  to = "/docs/free-srd/core-rules/attributes/"
+  status = 301
