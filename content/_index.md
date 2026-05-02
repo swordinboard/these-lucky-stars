@@ -3,19 +3,6 @@ title: "Welcome!"
 bookToC: fasle
 ---
 
-{{% include "/snippets/announcement" %}}
-
-> [!WARNING]
-> **Latest 4/24/26 Changes:**
-> - Core Rules page reorganization. Combat, Health, and Action Economy each given their own page.
-> Stats page revised to reflect full information whenever possible.
->
-> **4/6/26 Additions:**
-> - Environmental Effects page added
-> - Damage sources section added to [Combat](/docs/free-srd/core-rules/combat/#damage) page.
-> - Extreme Environments addition from Sci-Fi module
-> -- Anthony
-
 ## Welcome!
 
 Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
@@ -23,6 +10,17 @@ Here you can find the free SRD content and related web apps for These Lucky Star
 Get started with the [Free SRD](/docs/free-srd) learn the system and start playing.
 
 Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
+
+{{% include "/snippets/announcement" %}}
+
+> [!WARNING]
+> **Latest 5/2/26 Changes**
+> - Downloads page added with Standard Character Sheet PDF
+> - Digital Character Sheet Updated with bug and formula fixes
+> **4/24/26 Changes:**
+> - Core Rules page reorganization. Combat, Health, and Action Economy each given their own page.
+> - Stats page revised to reflect full information whenever possible.
+> -- Anthony
 
 ### Related Web Apps:
 

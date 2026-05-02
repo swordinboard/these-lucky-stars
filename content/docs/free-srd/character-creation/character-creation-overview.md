@@ -13,6 +13,11 @@ weight: 1
 > Full picture reading: 
 > - [Action Economy](/docs/free-srd/core-rules/action-economy), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
 
+## Character Sheets
+
+You can find a dowbloadable PDF character sheet on the [Downloads](/docs/downloads) page.
+You can find a digital character sheet option [here](/digitalcharactersheet).
+
 ## Character Archetypes
 
 Unlike many systems that use a class system to define different character roles and determine special abilities, These Lucky Stars is classless and leaves full creative power to the players. Even so, to help hone in on your character it is often helpful to define a character by archetype. Choose a short description that presents an overview of the character. Some examples: “Sneaky Pirate,” “Stalwart Defender,” “Lucky Pilot,” “Fire Mage,” “Tired Librarian,” “Gibbering Warrior,” “Reluctant Manager,” "Retiring Officer." This title will not be referenced otherwise during character creation or level up, but it will provide the party and GM with a general sense of your character. As you play and level up, this archetype may change. When in doubt, look to your selected character features for inspiration.
