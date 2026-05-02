@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>These Lucky Stars v.4.25 - Digital Character Sheet</title>
+    <title>These Lucky Stars v.4.26 - Digital Character Sheet</title>
     <link rel="stylesheet" href="/shared-colors.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -523,7 +523,7 @@
         </div>
         
         <div class="header">
-            <h1>These Lucky Stars v.4.25 - Digital Character Sheet</h1>
+            <h1>These Lucky Stars v.4.26 - Digital Character Sheet</h1>
             <button class="readme-btn" onclick="showReadme()">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Alpha Version Read Me
@@ -893,7 +893,7 @@
             dex: { base: 0, mods: 0 }, fort: { base: 0, mods: 0 },
             kno: { base: 0, mods: 0 }, ins: { base: 0, mods: 0 },
             cha: { base: 0, mods: 0 }, will: { base: 0, mods: 0 },
-            luckBase: 5, luckMods: 0, currentLuck: 5,
+            luckBase: 3, luckMods: 0, currentLuck: 3,
             currentVitality: 1, vitalityMods: 0,
             currentDefense: 0, defenseMods: 0,
             currentStress: 0, stressMods: 0,
@@ -953,17 +953,35 @@
 
         function calculateDerivedStats() {
             const str = getAttrTotal('str');
-            const agi = getAttrTotal('agi');
-            const dex = getAttrTotal('dex');
+            let agi = getAttrTotal('agi');
+            let dex = getAttrTotal('dex');
             const fort = getAttrTotal('fort');
             const ins = getAttrTotal('ins');
             const will = getAttrTotal('will');
             const level = val('level') || 0;
             const sizeMod = SIZE_MODS[sval('size')] || SIZE_MODS['Medium/0'];
 
-            // Update attribute displays
+            // Equipment totals (read first; armor/equipment penalties propagate to AGI/DEX)
+            const armorDef = val('armorDefBonus');
+            const equipDef = val('equipmentDefBonus');
+            const armorPenalty = val('armorPenalty');
+            const equipPenalty = val('equipmentPenalty');
+            $('totalDefBonus').textContent = '+' + (armorDef + equipDef);
+            $('totalPenalty').textContent = (armorPenalty + equipPenalty);
+
+            // Apply armor & equipment AGI/DEX penalties before downstream stats.
+            // STR is unaffected by armor penalties per SRD.
+            const agiDexPenalty = armorPenalty + equipPenalty;
+            agi += agiDexPenalty;
+            dex += agiDexPenalty;
+
+            // Update attribute displays — AGI and DEX show post-armor-penalty values
             [...ATTRS.physical, ...ATTRS.mental].forEach(attr => {
-                const total = getAttrTotal(attr.id);
+                let total;
+                if      (attr.id === 'str') total = str;
+                else if (attr.id === 'agi') total = agi;
+                else if (attr.id === 'dex') total = dex;
+                else                        total = getAttrTotal(attr.id);
                 $(attr.id + 'Total').textContent = total >= 0 ? '+' + total : total;
             });
 
@@ -986,12 +1004,18 @@
             $('luckDisplay').textContent = maxLuck;
             $('luckFormula').textContent = `Base(${luckBase}) + Mods(${luckMods}) = ${maxLuck}`;
 
-            // Speed
+            // Speed — 20 base; +5 per +1 AGI Bonus, or flat -5 if any AGI Penalty
+            // Display shows both branches so players can verify either case.
             const speedMods = val('speedMods');
-            const agiBonus = Math.max(0, agi) * 5;
-            const speed = 15 + agiBonus + speedMods;
+            let agiSpeedTerm;
+            if (agi > 0)      agiSpeedTerm = agi * 5;
+            else if (agi < 0) agiSpeedTerm = -5;
+            else              agiSpeedTerm = 0;
+            const speed = 20 + agiSpeedTerm + speedMods;
             $('speedDisplay').textContent = speed + ' ft';
-            $('speedFormula').textContent = `15 + AGI Bonus(${agiBonus}) + Mods(${speedMods}) = ${speed}`;
+            $('speedFormula').textContent =
+                `If AGI Bonus: 20 + (5 × AGI) + Mods | If AGI Penalty: 20 − 5 + Mods`
+                + `\nApplied: 20 + AGI(${agiSpeedTerm}) + Mods(${speedMods}) = ${speed}`;
 
             // Grapple
             const grappleMods = val('grappleMods');
@@ -1005,19 +1029,21 @@
             $('stealthDisplay').textContent = stealth >= 0 ? '+' + stealth : stealth;
             $('stealthFormula').textContent = `Size(${sizeMod.stealth || 0}) + Mods(${stealthMods}) = ${stealth}`;
 
-            // Defense
-            const armorDef = val('armorDefBonus');
-            const equipDef = val('equipmentDefBonus');
+            // Defense — uses Bonus semantics per SRD Basics > Modifiers
             const defenseMods = val('defenseMods');
-            const defense = Math.max(1, agi + fort + armorDef + equipDef + defenseMods);
+            const agiBonus  = Math.max(0, agi);
+            const fortBonus = Math.max(0, fort);
+            const defense = Math.max(1, agiBonus + fortBonus + armorDef + equipDef + defenseMods);
             $('defenseDisplay').textContent = defense;
-            $('defenseFormula').textContent = `AGI(${agi}) + FORT(${fort}) + Equip(${armorDef + equipDef}) + Mods(${defenseMods}) = ${defense} (min 1)`;
+            $('defenseFormula').textContent =
+                `AGI Bonus(${agiBonus}) + FORT Bonus(${fortBonus}) + Equip(${armorDef + equipDef}) + Mods(${defenseMods}) = ${defense} (min 1)`;
 
-            // Vitality
+            // Vitality — ½ Level + ½ FORT + Mods (min 1), round at end per Basics > Rounding
             const vitalityMods = val('vitalityMods');
-            const vitality = Math.floor(level / 2 + fort / 2 + vitalityMods);
+            const vitality = Math.max(1, Math.floor(level / 2 + fort / 2 + vitalityMods));
             $('vitalityDisplay').textContent = level > 0 ? vitality : 'n/a';
-            $('vitalityFormula').textContent = `½ Level(${level/2}) + ½ FORT(${fort/2}) + Mods(${vitalityMods}) = ${vitality}`;
+            $('vitalityFormula').textContent =
+                `½ Level(${level/2}) + ½ FORT(${fort/2}) + Mods(${vitalityMods}) = ${vitality} (min 1)`;
 
             // Stress Threshold
             const stressMods = val('stressMods');
@@ -1025,15 +1051,12 @@
             $('stressThresholdDisplay').textContent = level > 0 ? stressThreshold : 'n/a';
             $('stressFormula').textContent = `½ Level(${level/2}) + ½ WILL(${will/2}) + Mods(${stressMods}) = ${stressThreshold} (min 1)`;
 
-            // Equipment totals
-            const armorPenalty = val('armorPenalty');
-            const equipPenalty = val('equipmentPenalty');
-            $('totalDefBonus').textContent = '+' + (armorDef + equipDef);
-            $('totalPenalty').textContent = (armorPenalty + equipPenalty);
-
-            // Inventory
+            // Inventory — Max Weight: split formula on STR sign per SRD Inventory.
+            // STR ≥ 0:  30 + (STR × 40);  STR < 0:  30 + (STR × 5)
+            // Display shows both branches so players can verify either case.
             const maxWeightMods = val('maxWeightMods');
-            const maxWeight = str * 25 + maxWeightMods;
+            const strMultiplier = str >= 0 ? 40 : 5;
+            const maxWeight = 30 + (str * strMultiplier) + maxWeightMods;
             let currentWeight = 0;
             let currentBulky = 0;
             for (let i = 0; i < 20; i++) {
@@ -1042,13 +1065,16 @@
             }
             $('currentWeightDisplay').textContent = currentWeight.toFixed(1);
             $('maxWeightDisplay').textContent = maxWeight;
-            $('maxWeightFormula').textContent = `Max = STR(${str}) × 25 + Mods(${maxWeightMods}) = ${maxWeight}`;
+            $('maxWeightFormula').textContent =
+                `If STR Bonus: Max = 30 + (STR × 40) + Mods | If STR Penalty: Max = 30 + (STR × 5) + Mods`
+                + `\nApplied: 30 + (STR(${str}) × ${strMultiplier}) + Mods(${maxWeightMods}) = ${maxWeight}`;
 
+            // Max Bulky — 1 + floor(STR / 3) + Mods
             const maxBulkyMods = val('maxBulkyMods');
-            const maxBulky = 1 + Math.floor(str / 5) + maxBulkyMods;
+            const maxBulky = 1 + Math.floor(str / 3) + maxBulkyMods;
             $('currentBulkyDisplay').textContent = currentBulky;
             $('maxBulkyDisplay').textContent = maxBulky;
-            $('maxBulkyFormula').textContent = `Max = 1 + STR÷5(${Math.floor(str/5)}) + Mods(${maxBulkyMods}) = ${maxBulky}`;
+            $('maxBulkyFormula').textContent = `Max = 1 + STR÷3(${Math.floor(str/3)}) + Mods(${maxBulkyMods}) = ${maxBulky}`;
         }
 
         // ===== GENERATORS =====
@@ -1101,11 +1127,11 @@
                 <div class="stat-box">
                     <div class="stat-label">Luck</div>
                     <div class="combined-stat mb-05">
-                        <div class="combined-stat-item"><div class="stat-value" id="luckDisplay" style="margin:0">5</div><div class="label">Max</div></div>
-                        <div class="combined-stat-item"><input type="number" id="currentLuck" value="5" style="width:50px;padding:0.25rem;font-size:1rem;font-weight:700" onchange="updateCharacter()"><div class="label">Current</div></div>
+                        <div class="combined-stat-item"><div class="stat-value" id="luckDisplay" style="margin:0">3</div><div class="label">Max</div></div>
+                        <div class="combined-stat-item"><input type="number" id="currentLuck" value="3" style="width:50px;padding:0.25rem;font-size:1rem;font-weight:700" onchange="updateCharacter()"><div class="label">Current</div></div>
                     </div>
-                    <div class="stat-formula hidden-formula" id="luckFormula">Base(5) + Mods(0) = 5</div>
-                    <div class="input-row"><div class="input-group"><label>Base</label><input type="number" id="luckBase" value="5" onchange="updateCharacter()"></div><div class="input-group"><label>Mods</label><input type="number" id="luckMods" value="0" onchange="updateCharacter()"></div></div>
+                    <div class="stat-formula hidden-formula" id="luckFormula">Base(3) + Mods(0) = 3</div>
+                    <div class="input-row"><div class="input-group"><label>Base</label><input type="number" id="luckBase" value="3" onchange="updateCharacter()"></div><div class="input-group"><label>Mods</label><input type="number" id="luckMods" value="0" onchange="updateCharacter()"></div></div>
                 </div>
                 <!-- Speed - Full Row -->
                 <div class="stat-box full-row">
@@ -1113,7 +1139,7 @@
                         <div class="stat-main">
                             <div class="stat-label">Speed (Ground)</div>
                             <div class="stat-value" id="speedDisplay">20</div>
-                            <div class="stat-formula hidden-formula" id="speedFormula">20 + AGI Bonus + Mods = 20</div>
+                            <div class="stat-formula hidden-formula" id="speedFormula">If AGI Bonus: 20 + (5 × AGI) + Mods | If AGI Penalty: 20 − 5 + Mods</div>
                             <div class="input-group"><label>Mods</label><input type="number" id="speedMods" value="0" onchange="updateCharacter()"></div>
                         </div>
                         <div class="stat-notes">
@@ -1153,7 +1179,7 @@
                         <div class="combined-stat-item"><div class="stat-value" id="defenseDisplay" style="margin:0">1</div><div class="label">Max</div></div>
                         <div class="combined-stat-item"><input type="number" id="currentDefense" value="0" style="width:50px;padding:0.25rem;font-size:1rem;font-weight:700" onchange="updateCharacter()"><div class="label">Current</div></div>
                     </div>
-                    <div class="stat-formula hidden-formula" id="defenseFormula">AGI + FORT + Equip + Mods = 1 (min 1)</div>
+                    <div class="stat-formula hidden-formula" id="defenseFormula">AGI Bonus + FORT Bonus + Equip + Mods = 1 (min 1)</div>
                     <div class="input-group"><label>Mods</label><input type="number" id="defenseMods" value="0" onchange="updateCharacter()"></div>
                 </div>
                 <div class="stat-box">
@@ -1162,7 +1188,7 @@
                         <div class="combined-stat-item"><div class="stat-value" id="vitalityDisplay" style="margin:0">n/a</div><div class="label">Max</div></div>
                         <div class="combined-stat-item"><input type="number" id="currentVitality" value="1" style="width:50px;padding:0.25rem;font-size:1rem;font-weight:700" onchange="updateCharacter()"><div class="label">Current</div></div>
                     </div>
-                    <div class="stat-formula hidden-formula" id="vitalityFormula">½ Level + ½ FORT + Mods</div>
+                    <div class="stat-formula hidden-formula" id="vitalityFormula">½ Level + ½ FORT + Mods (min 1)</div>
                     <div class="input-group"><label>Mods</label><input type="number" id="vitalityMods" value="0" onchange="updateCharacter()"></div>
                 </div>
                 <!-- Tracker | Stress Threshold -->
@@ -1243,7 +1269,7 @@
                         <div class="combined-stat-item"><div class="value" id="maxWeightDisplay">0</div><div class="label">Max</div></div>
                         <div style="font-size:0.875rem;color:var(--body-font-color)">lbs</div>
                     </div>
-                    <div class="formula-display hidden-formula" id="maxWeightFormula">Max = STR × 25 + Mods = 0</div>
+                    <div class="formula-display hidden-formula" id="maxWeightFormula">If STR Bonus: Max = 30 + (STR × 40) + Mods | If STR Penalty: Max = 30 + (STR × 5) + Mods</div>
                     <div class="mod-row"><label>Mods:</label><input type="number" id="maxWeightMods" value="0" onchange="updateCharacter()"></div>
                 </div>
                 <div class="summary-box">
@@ -1253,7 +1279,7 @@
                         <div class="combined-stat-sep">/</div>
                         <div class="combined-stat-item"><div class="value" id="maxBulkyDisplay">1</div><div class="label">Max</div></div>
                     </div>
-                    <div class="formula-display hidden-formula" id="maxBulkyFormula">Max = 1 + STR÷5 + Mods = 1</div>
+                    <div class="formula-display hidden-formula" id="maxBulkyFormula">Max = 1 + STR÷3 + Mods = 1</div>
                     <div class="mod-row"><label>Mods:</label><input type="number" id="maxBulkyMods" value="0" onchange="updateCharacter()"></div>
                 </div>`;
         }
@@ -1359,9 +1385,9 @@
             $('currentVitality').value = character.currentVitality || 1;
             $('stressMods').value = character.stressMods || 0;
             $('currentStress').value = character.currentStress || 0;
-            $('luckBase').value = character.luckBase || 5;
+            $('luckBase').value = character.luckBase || 3;
             $('luckMods').value = character.luckMods || 0;
-            $('currentLuck').value = character.currentLuck || 5;
+            $('currentLuck').value = character.currentLuck || 3;
             $('grappleMods').value = character.grappleMods || 0;
             $('stealthMods').value = character.stealthMods || 0;
             $('tracker').value = character.tracker || '';
@@ -1476,7 +1502,7 @@
                     }
                     // Handle legacy maxLuck to luckBase conversion
                     if (loaded.maxLuck !== undefined && loaded.luckBase === undefined) {
-                        character.luckBase = 5; // Default base
+                        character.luckBase = 3; // Default base
                     }
                     // Handle approval stamp
                     if (loaded._approvalStamp) {
