@@ -1,6 +1,6 @@
 ---
 title: "Welcome!"
-bookToC: fasle
+bookToC: false
 ---
 
 {{% include "/snippets/announcement" %}}
@@ -17,6 +17,7 @@ Join the Reddit community and get involved! [r/theseluckystars](https://www.redd
 > **Latest 5/2/26 Changes**
 > - Downloads page added with Standard Character Sheet PDF
 > - Digital Character Sheet Updated with bug and formula fixes
+>
 > **4/24/26 Changes:**
 > - Core Rules page reorganization. Combat, Health, and Action Economy each given their own page.
 > - Stats page revised to reflect full information whenever possible.

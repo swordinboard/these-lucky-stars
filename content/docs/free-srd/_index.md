@@ -3,11 +3,12 @@ title: "Free SRD"
 description: "Introducing the free SRD for These Lucky Stars — a classless, dynamic tabletop RPG built around exploding dice, tactical combat, and flexible character building."
 weight: 20
 bookCollapseSection: false
+bookToC: false
 ---
 
 {{% include "/snippets/announcement" %}}
 
-## These Lucky Stars Free SRD
+## Free SRD
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 
@@ -22,10 +23,10 @@ Four physical (Strength, Agility, Dexterity, Fortitude) and four mental (Knowled
 [**Dynamic Stats**](/docs/free-srd/core-rules/stats)
 Dynamic stats evolve with play and reflect changes in combat; no flat AC or standard HP pool. The Luck mechanic enhances player agency and choice with a special bonus.
 
-[**Flexible Character Creation**](/docs/free-srd/character-creation)
+[**Flexible Character Creation**](/docs/free-srd/character-creation/character-creation-overview)
 Build your character with traits, proficiencies, and abilities - no rigid classes. Come up with an archetype and build it yourself or with the whole table. Characters can move in any direction as play evolves. 
 
-[**Tactical Combat**](/docs/free-srd/combat)
+[**Tactical Combat**](/docs/free-srd/core-rules/combat)
 2d6 opposed roll combat system with unique health and damage systems.
 
 ## Design Philosophy

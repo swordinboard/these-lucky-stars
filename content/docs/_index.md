@@ -2,9 +2,10 @@
 title: "These Lucky Stars"
 weight: 1
 bookCollapseSection: true
+bookToC: false
 ---
 
-Select a section to get started:
+## These Lucky Stars
 
 - [Free SRD](free-srd/) — Core rules, character creation, and equipment
 - [Downloads](downloads/) — Printable PDFs

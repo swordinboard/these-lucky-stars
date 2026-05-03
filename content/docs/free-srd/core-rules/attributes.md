@@ -52,22 +52,30 @@ A character with two or more poor mental attributes falls [unconscious](/docs/fr
 
 ## Physical Attributes
 
-**Strength (STR)** — Physical power, how much weight or force one can lift/move. Useful for making melee attacks and carrying heavy loads.
+#### Strength (STR)
+Physical power, how much weight or force one can lift/move. Useful for making melee attacks and carrying heavy loads.
 
-**Agility (AGI)** — Full body movement, amount of grace and control one can demonstrate in their movements. Useful for avoiding injury, moving quietly, and increasing movement speed.
+#### Agility (AGI)
+Full body movement, amount of grace and control one can demonstrate in their movements. Useful for avoiding injury, moving quietly, and increasing movement speed.
 
-**Dexterity (DEX)** — Small hand and finger movement, amount of control, precision, and accuracy one demonstrates while handling items and controls. Useful for making ranged attacks, handling locks, crafting items, and a variety of technical skills.
+#### Dexterity (DEX)
+Small hand and finger movement, amount of control, precision, and accuracy one demonstrates while handling items and controls. Useful for making ranged attacks, handling locks, crafting items, and a variety of technical skills.
 
-**Fortitude (FORT)** — A measurement of how physically resilient and healthy one is. How well one shrugs off fatigue, minor injuries, and sickness. Useful for avoiding injury and withstanding hazardous conditions.
+#### Fortitude (FORT)
+A measurement of how physically resilient and healthy one is. How well one shrugs off fatigue, minor injuries, and sickness. Useful for avoiding injury and withstanding hazardous conditions.
 
 ---
 
 ## Mental Attributes
 
-**Knowledge (KNO)** — General intelligence and familiarity with complex or specific subjects. Useful for navigating, crafting items, investigation, problem solving, and a variety of technical skills.
+#### Knowledge (KNO)
+General intelligence and familiarity with complex or specific subjects. Useful for navigating, crafting items, investigation, problem solving, and a variety of technical skills.
 
-**Insight (INS)** — General awareness, gut instincts, ability to read situations, moods, and intentions. Useful for noticing details, searching for things, understanding those around you, riding animals, and interpreting and reacting to situations as they unfold.
+#### Insight (INS)
+General awareness, gut instincts, ability to read situations, moods, and intentions. Useful for noticing details, searching for things, understanding those around you, riding animals, and interpreting and reacting to situations as they unfold.
 
-**Charisma (CHA)** — General social skills, ability to persuade or change the moods of others, to lie, and to hide or successfully express one's intentions. Useful for communicating and manipulating.
+#### Charisma (CHA)
+General social skills, ability to persuade or change the moods of others, to lie, and to hide or successfully express one's intentions. Useful for communicating and manipulating.
 
-**Will (WILL)** — A measurement of how mentally resilient one is. How well one dismisses temptation, fear and influence. Useful for avoiding other's influence and remaining focused under stress.
+#### Will (WILL)
+A measurement of how mentally resilient one is. How well one dismisses temptation, fear and influence. Useful for avoiding other's influence and remaining focused under stress.
