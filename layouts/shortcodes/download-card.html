@@ -3,7 +3,7 @@
 {{- $preview := .Get "preview" -}}
 
 <div class="download-card">
-  <a href="{{ $pdf }}" download class="download-card-link">
+  <a href="{{ $pdf }}" target="_blank" rel="noopener noreferrer" class="download-card-link">
     <div class="download-card-image-wrap">
       {{ if $preview }}
         <img src="{{ $preview }}" alt="{{ $title }} preview" class="download-card-img" loading="lazy" />
@@ -12,7 +12,7 @@
       {{ end }}
       <div class="download-card-overlay">
         <span class="download-card-title">{{ $title }}</span>
-        <span class="download-card-cta">⬇ Download PDF</span>
+        <span class="download-card-cta">↗ View PDF</span>
       </div>
     </div>
   </a>
