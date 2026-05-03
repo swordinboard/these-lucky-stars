@@ -3,6 +3,8 @@ title: "Welcome!"
 bookToC: fasle
 ---
 
+{{% include "/snippets/announcement" %}}
+
 ## Welcome!
 
 Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
@@ -10,8 +12,6 @@ Here you can find the free SRD content and related web apps for These Lucky Star
 Get started with the [Free SRD](/docs/free-srd) learn the system and start playing.
 
 Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
-
-{{% include "/snippets/announcement" %}}
 
 > [!WARNING]
 > **Latest 5/2/26 Changes**

@@ -1,10 +1,11 @@
 ---
 title: Downloads
-weight: 2
+description: "Free PDF resources for These Lucky Stars RPG — Character Sheet and more toc come"
+weight: 30
 bookToC: false
 ---
 
-# Downloads
+## Downloads
 
 Printable PDF resources for These Lucky Stars. Click any card to download.
 

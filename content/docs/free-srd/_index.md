@@ -1,7 +1,7 @@
 ---
 title: "Free SRD"
 description: "Introducing the free SRD for These Lucky Stars — a classless, dynamic tabletop RPG built around exploding dice, tactical combat, and flexible character building."
-weight: 2
+weight: 20
 bookCollapseSection: false
 ---
 
