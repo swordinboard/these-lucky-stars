@@ -41,7 +41,8 @@ disableKinds = ["taxonomy", "term"]
   BookTheme = 'auto'
   
   # Path to logo and favicon (relative to /static/)
-  BookLogo = 'logo.png'
+  BookLogo = '/images/logo.png'
+  BookFavicon = '/images/favicon.png'
   
   # Table of Contents - global setting
   BookToC = true
