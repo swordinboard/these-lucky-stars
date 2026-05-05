@@ -44,6 +44,9 @@ disableKinds = ["taxonomy", "term"]
   BookLogo = '/images/logo.png'
   BookFavicon = '/images/favicon.png'
   
+  # og-image pull
+  images = ["/images/og-image.jpg"]
+  
   # Table of Contents - global setting
   BookToC = true
   
