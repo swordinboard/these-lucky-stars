@@ -63,4 +63,4 @@ disableKinds = ["taxonomy", "term"]
   BookServiceWorker = "precache"
   
   # og image
-  images = ["https://theseluckystars.com/images/og-image.png"]
+  images = ["https://theseluckystars.com/images/og-image.jpg"]
