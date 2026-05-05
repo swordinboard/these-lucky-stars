@@ -61,6 +61,3 @@ disableKinds = ["taxonomy", "term"]
 
   # Caching for PWA
   BookServiceWorker = "precache"
-  
-  # og image
-  images = ["https://theseluckystars.com/images/og-image.jpg"]
