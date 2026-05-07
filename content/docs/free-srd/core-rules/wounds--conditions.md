@@ -158,7 +158,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 | [Immobilized](#immobilized) Δ | Cannot take physical actions — DEX and AGI treated as null | Cause specific |
 | [Pinned](#pinned) | Only physical action is to escape the pin | See Grapple |
 | [Restrained [___]](#restrained) Δ | Physical actions limited — affected limb unusable | Until cause is removed |
-| [Shaken](#shaken) | -2 to all decision rolls, -2 max DEF, +1 Stress | 1d4+1 rounds |
+| [Shaken](#shaken) | -1 to all decision rolls, -2 max DEF, +1 Stress | 1d4+1 rounds |
 | [Sick](#sick) Δ | 2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress | 1d4 rounds |
 | [Stressed](#stressed) | Cannot use Luck, -1 to all decision rolls per point over threshold | Until stress drops below threshold |
 | [Unconscious](#unconscious) Δ | Cannot take any actions — attackers gain advantage and surprise | Cause specific |

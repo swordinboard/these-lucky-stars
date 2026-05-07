@@ -14,13 +14,12 @@ Get started with the [Free SRD](/docs/free-srd) learn the system and start playi
 Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 
 > [!WARNING]
-> **Latest 5/2/26 Changes**
+> **Latest 5/7/26 Changes**
+> - Character features balancing audit and new additions. Still in progress.
+> **5/2/26 Changes**
 > - Downloads page added with Standard Character Sheet PDF
 > - Digital Character Sheet Updated with bug and formula fixes
 >
-> **4/24/26 Changes:**
-> - Core Rules page reorganization. Combat, Health, and Action Economy each given their own page.
-> - Stats page revised to reflect full information whenever possible.
 > -- Anthony
 
 ### Related Web Apps:

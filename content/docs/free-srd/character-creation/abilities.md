@@ -128,8 +128,8 @@ You have mastered timing your bursts of suppressive fire to conserve ammo. Your 
 *FORT 2*
 
 You are particularly skilled at defending from melee attacks. Once per day (1/day) anytime a melee attack is declared against you while at max DEF, you may double your DEF until the beginning of your next turn.
-When this effect ends your max DEF returns to normal while your current DEF is lowered to the normal maximum or remains whatever it is at the end of the effect, whichever is lower.
-This ability must be activated when the attack is declared, before the roll result is revealed. This ability cannot be used if you have not yet acted in combat.
+When this effect ends your max DEF returns to normal while your current DEF is lowered to the normal maximum or remains whatever it is at the time the effect ends, whichever is lower.
+This ability is activated as a 0 AP Opportunity action when an attack is declared by an opponent, before the roll result is revealed. This ability cannot be used if you have not yet acted in combat.
 You may select this ability multiple times to increase its usage by 1/day to a maximum of 3/day.
 {{% /details %}}
 
@@ -210,8 +210,7 @@ While using the Rage ability, gain advantage when attempting to resist fear effe
 
 *WILL 2, Level 3*
 
-For 2 AP you may choose to focus on a single opponent, gaining advantage on your next attack against them. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn if unused or if you lose line of sight, whichever comes first.
-This ability can be interrupted if held between turns.
+For 2 AP you may choose to focus on a single opponent, gaining advantage on your next attack against them. Your opponent must be within line of sight when a focus attack is declared, and the effect expires at the end of your next turn if unused or if you lose line of sight, whichever comes first. This ability can be interrupted by distractions or other effects.
 {{% /details %}}
 
 {{% details "Focus In" %}}
@@ -219,7 +218,7 @@ This ability can be interrupted if held between turns.
 
 *WILL 2*
 
-While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make attacks of opportunity with your ranged weapon against enemies who attempt aggressive actions within those spaces. Taking any other than an AOO ends this effect. This ability can be interrupted.
+While wielding a ranged weapon you may spend 1 AP to focus on an area in a straight line up to your weapon's normal range. Until the beginning of your next turn you may make Opportunity Attacks with your ranged weapon against enemies who attempt aggressive actions within those spaces. Taking any action other than an Opportunity Attack ends this effect. This ability can be interrupted.
 {{% /details %}}
 
 {{% details "Friend in Need" %}}
@@ -287,13 +286,11 @@ You are so skilled at defending from melee attacks that you can negate a wound o
 
 *Proficiency with any tool kit*
 
-You've dropped your kit enough times to know exactly how to empty it out in the most inconvenient way possible. For 3 AP you can completely empty your toolkit in a 15ft² area (3 spaces) to put any character acting in those spaces at a disadvantage as if they were acting in difficult terrain.
-The three spaces must be adjacent to each other but only one must be adjacent to you.
+You’ve dropped your kit enough times to know exactly how to empty it out in the most inconvenient way possible. For 3 AP you can completely empty and drop your toolkit, covering up to six 5ft spaces. These spaces must be connected and no space can be further than 15ft from another. Spaces that become covered in a toolkit from this ability become difficult terrain for all other characters: actions taken are at a minor disadvantage and their speed is reduced to half (you remain unaffected).
 
-An affected character can clear the spaces they occupy of the tool kit for 3 AP to remove the effect.
+An affected character can clear one 5ft space they occupy for 3 AP to remove the effect. Clearing a space in this manner provokes Opportunity Attacks and does not pick up/retrieve parts of the toolkit or supplies, it simply piles it up or otherwise moves it out of the way. If a character occupies multiple spaces, they must  clear them individually.
 
-This ability requires a tool kit with at least 1d4 of supplies, however it requires no supply roll.
-Using this ability drops your kit and leaves it empty of tools and supplies. Tools and supplies can be retrieved for 20 AP.
+This ability requires a tool kit with at least 1d4 of supplies, however it requires no supply roll. Using this ability drops your kit and leaves it empty of tools and supplies. Tools and supplies can be gatheredd up and retrieved for 20 AP, reassembling the toolkit.
 {{% /details %}}
 
 {{% details "Leaping Charge" %}}
@@ -332,9 +329,9 @@ While using the Suppressing Fire ability and a full-auto heavy weapon that you h
 
 *CHA 2*
 
-You know how to take particularly distracting actions at just the right time. By doing so, you may force a character's attention to shift to you, interrupting actions or abilities and breaking focus. 2/day for 3 AP you may choose a target that can see and hear you within 20ft and perform a series of targeted actions to briefly throw off their focus. (i.e. threatening or suggestive behavior, loud banging, "HEY YOU!"). Your opponent must succeed on a target 10 WILL distraction save in order to remain focused. This can be used to interrupt abilities and actions as they happen.
+You know how to take particularly distracting actions at just the right time. By doing so, you may force a character's attention to shift to you, interrupting actions or abilities and breaking focus. 2/day for 3 AP you may choose a target that can see and hear you within 20ft and perform a series of targeted actions to briefly throw off their focus. (i.e. threatening or suggestive behavior, loud banging, "HEY YOU!"). Your opponent must succeed on a target 10 WILL distraction save in order to remain focused. This can be used as an Opportunity action to interrupt abilities and actions as they happen.
 
-You cannot use this ability if you have not acted in initiative or if you are restrained or otherwise incapacitated. However, this ability can be used at any time that you have the AP available as an uninterruptible readied action.
+You cannot use this ability if you have not acted in initiative or if you are restrained or otherwise incapacitated. However, this ability can be used an as Opportunity action any time that you have the AP available.
 {{% /details %}}
 
 {{% details "Powerful Rage" %}}
@@ -396,7 +393,7 @@ This effect does not change or alter your max DEF, only your current DEF.
 
 *INT 2*
 
-Choose a general topic in which your character is particularly knowledgeable about, such as math, science, sports, history, technology, combat, etc. Topic is subject to GM approval. 2/day your character may gain a +1 bonus to any roll by applying knowledge about this topic. The party must be able to explain to the GM in what way this knowledge is being applied. If some kind of consensus cannot be reached, the bonus cannot be applied to that roll. Results may vary by GM. This feat may be selected a second time to select a second topic.
+Choose a general topic in which your character is particularly knowledgeable about, such as math, science, sports, history, technology, combat, etc. Topic is subject to GM approval. 2/day your character may gain a +2 bonus to any roll by applying knowledge about this topic. The party must be able to explain to the GM in what way this knowledge is being applied. If some kind of consensus cannot be reached, the bonus cannot be applied to that roll. Results may vary by GM. This feat may be selected a second time to select a second topic.
 {{% /details %}}
 
 {{% details "Suppressing Fire" %}}
@@ -405,7 +402,7 @@ Choose a general topic in which your character is particularly knowledgeable abo
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, DEX 2*
 
 This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability requires two ammo supply rolls. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL distraction check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through multiple threatened spaces are only affected once.
-{{% /details %}}
+Characters who begin their movement in a safe space and enter the effect of this ability may continue moving if they fail their WILL check (they still take the appropriate Stress). {{% /details %}}
 
 {{% details "Swift Dual Attack" %}}
 ### Swift Dual Attack
@@ -420,7 +417,7 @@ Your Dual Attack ability is more efficient, consuming only 2 AP per use instead 
 
 *[Tough](/docs/free-srd/character-creation/traits/#tough) Trait, [Defender](#defender), [Friend in Need](#friend-in-need)*
 
-You can activate your Defender ability anytime an attack is declared on an ally, allowing you to combine the benefits of Defender with Friend in Need.
+You can activate your Defender ability ad an Opportunity action anytime an attack is declared on an ally, allowing you to combine the benefits of Defender with Friend in Need.
 {{% /details %}}
 
 {{% details "Unsettling Rage" %}}
