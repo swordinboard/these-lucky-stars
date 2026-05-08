@@ -19,14 +19,21 @@ Racial Traits are an optional set of traits used when more than one sentient spe
 | Name | Description |
 |------|-------------|
 | [Alert](#alert) | +4 to initiative. |
+| [Composed](#composed) | Re-roll one decision die after your first failed WILL check each session. |
 | [Diplomatic](#diplomatic) | +2 to persuasion rolls. |
+| [Hot-Headed](#hot-headed) | Gain temporary +2 AP the first time you take VIT damage each session. |
 | [Intimidating](#intimidating) | +2 to intimidation rolls. |
 | [Lucky](#lucky) | Bonus to max Luck. |
+| [Mentally Sound](#mentally-sound) | +1 bonus to max Stress Threshold. |
+| [Particularly Attractive](#particularly-attractive) | +2 to persuasion rolls with someone who finds you attractive. |
+| [Picture of Health](#picture-of-health) | +1 bonus to VIT. |
 | [Sly](#sly) | +2 to deception rolls. |
 | [Sneaky](#sneaky) | +2 to stealth rolls. |
 | [Stubborn](#stubborn) | Resist manipulation and deception. |
 | [Tough](#tough) | DEF bonus. |
+| [Unremarkable](#unremarkable) | +2 bonus to blend into a crowd or visually hide your identity. |
 | [Unshakable](#unshakable) | Resistant to fear and distraction. |
+| [Well-Connected](#well-connected) | Declare a contact once per session in your current location. |
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
 | Name | Description |
@@ -47,10 +54,22 @@ Racial Traits are an optional set of traits used when more than one sentient spe
 You have particularly keen senses. Gain +4 Initiative.
 {{% /details %}}
 
+{{% details "Composed" %}}
+### Composed
+
+The first time you fail a WILL check each session, you may re-roll one decision die and use the higher result.
+{{% /details %}}
+
 {{% details "Diplomatic" %}}
 ### Diplomatic
 
 You understand other's needs and intentions well. Gain a +2 bonus on rolls made to persuade another.
+{{% /details %}}
+
+{{% details "Hot-Headed" %}}
+### Hot-Headed
+
+The first time you take VIT damage each session, you gain a temporary +2 AP to be used before the end of your next turn.
 {{% /details %}}
 
 {{% details "Intimidating" %}}
@@ -63,6 +82,26 @@ You are an imposing individual, whether in attitude or stature. Gain a +2 bonus 
 ### Lucky
 
 You are luckier than others. Gain a bonus to Luck equal to ¼ your level to a maximum of 4 (rounded down, minimum 1).
+{{% /details %}}
+
+{{% details "Mentally Sound" %}}
+### Mentally Sound
+
+Your therapist wonders what you pay them for. Gain a +1 bonus to max Stress Threshold.
+{{% /details %}}
+
+{{% details "Particularly Attractive" %}}
+### Particularly Attractive
+
+**Cannot be combined with the [Unremarkable](#unremarkable) trait.**
+
+I guess nobody can argue: *Someone* thinks this character is particularly good looking. Gain +2 to rolls made to persuade someone who finds you attractive (GM discretion, results may vary).
+{{% /details %}}
+
+{{% details "Picture of Health" %}}
+### Picture of Health
+
+You've definitely kept up with your doctor appointments. Gain a +1 bonus to VIT.
 {{% /details %}}
 
 {{% details "Sly" %}}
@@ -89,10 +128,24 @@ Your ideas are your own and nobody will change your mind. Gain a +2 bonus when m
 You are tougher than the rest. Gain a max DEF bonus equal to ¼ your level (rounded down, minimum 1).
 {{% /details %}}
 
+{{% details "Unremarkable" %}}
+### Unremarkable
+
+**Cannot be combined with the [Particularly Attractive](#particularly-attractive) trait.**
+
+Some would consider you the most average of Joes. There is simply nothing that stands out about you. Gain a +2 bonus on rolls to blend into a crowd or otherwise visually hide your identity.
+{{% /details %}}
+
 {{% details "Unshakable" %}}
 ### Unshakable
 
 No jump scare will frighten you, you were surprised thats all. Gain a +2 bonus when rolling WILL checks against fear and distraction effects.
+{{% /details %}}
+
+{{% details "Well-Connected" %}}
+### Well-Connected
+
+Once per session, you may declare a contact in the current location (provided you have not already done so at that location). The GM determines what they know and how helpful they'll be. Results may vary.
 {{% /details %}}
 
 ---

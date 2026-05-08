@@ -25,7 +25,10 @@ If a proficiency has requirements that must be met before it can be selected, th
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. |
 | - [Medical Instincts](#Medical-instincts) | Add INS to Medic Training rolls. |
+| [Negotiation Training](#negotiation-training) | +2 bonus on rolls to negotiate, broker deals, or de-escalate conflict. |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. |
+| [Research [___]](#research) | +2 bonus on KNO checks related to a chosen field of study. |
+| [Survival Training](#survival-training) | +2 bonus on rolls to navigate, forage, track, or endure harsh environments. |
 | [Vehicle [___]](#vehicle) | Familiar with a type of vehicle. |
 | - [Licensed Instincts [___]](#licensed-instincts) | Add INS bonus to Vehicle Proficiency rolls. |
 | [Weapon [___]](#weapon) | Specialized training with a selected weapon type. |
@@ -109,12 +112,32 @@ You have been trained in the use of medicine and medical equipment. Gain a +2 bo
 Your experience with medicine and and trauma care benefits from your instincts. Add your INS bonua to rolls that benefit from your Medic Training proficiency.
 {{% /details %}}
 
+{{% details "Negotiation Training" %}}
+### Negotiation Training
+
+You have been trained in negotiation and conflict resolution. Gain a +2 bonus on rolls made to negotiate terms, broker deals, or de-escalate conflict.
+{{% /details %}}
+
 {{% details "Repair Kit" %}}
 ### Repair Kit
 
 *KNO 1*
 
 You have been trained in the use of the repair kit. Gain a +2 bonus when using the repair kit to fix or alter equipment, vehicles, and structures.
+{{% /details %}}
+
+{{% details "Research" %}}
+### Research
+
+**Research [___]**
+
+Select a field of study (medicine, history, engineering, geography, etc.). Gain a +2 bonus on KNO checks related to that field. This proficiency may be selected multiple times, each time selecting a new field.
+{{% /details %}}
+
+{{% details "Survival Training" %}}
+### Survival Training
+
+You have been trained in wilderness and field survival. Gain a +2 bonus on rolls made to navigate, forage, track, or endure harsh environments.
 {{% /details %}}
 
 {{% details "Vehicle" %}}

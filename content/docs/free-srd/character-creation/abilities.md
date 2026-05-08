@@ -16,11 +16,18 @@ If an ability has requirements that must be met before it can be selected, they 
 {{% tab "Core General" %}}
 | Name | Description |
 |------|-------------|
+| [Agile Dodge](#agile-dodge) | Immediate 5ft step when an opponent misses a melee attack against you. |
+| - [Momentum Dodge](#momentum-dodge) | Swap spaces with your attacker using Agile Dodge. |
+| -- [Slip Strike](#slip-strike) | Make a melee attack during Agile Dodge or Momentum Dodge movement. |
+| [Bolster](#bolster) | Once per combat, up to 3 allies within 30ft gain +1 to all rolls until end of their next turn. |
 | [Charge](#charge) | Rush an enemy for a powerful melee attack. |
 | - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
 | -- [Leaping Charge](#leaping-charge) | Charge can pass through difficult terrain. |
 | - [Bash](#bash) | Shove an opponent at the end of a charge. |
 | -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. |
+| [Coordinated Strike](#coordinated-strike) | Designate a target — the next ally to attack it gains advantage. |
+| [Danger Reflex](#danger-reflex) | Advantage on AGI/DEX checks against effects of a triggered trap. |
+| [Dead Drop](#dead-drop) | Quickly hide a small object in a room or vehicle using your B&E kit. |
 | [Defender](#defender) | Double your DEF against a melee attack. |
 | - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. |
 | - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. |
@@ -30,6 +37,8 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Dual Strike](#dual-strike) | Increase damage die with dual attack. |
 | - [Swift Dual Attack](#extra-dual-attack) | Dual Attack ability costs 2 AP instead of 4. |
 | [Extra Attack](#extra-attack) | Make two standard attacks per round. |
+| [Field Medic](#field-medic) | Use a med kit to stabilize or treat wounds as a 2 AP action. |
+| [Field Patch](#field-patch) | Stabilize a dying ally without a med kit. |
 | [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. |
 | - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. |
 | [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. |
@@ -38,6 +47,7 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Long Performance](#long-performance) | Use General Spectacle for multiple rounds. |
 | [Kit Trap](#kit-trap) | Use your tool kit to make difficult terrain. |
 | - [Fast Kit Trap](#fast-kit-trap) | Kit Trap uses less AP. |
+| [Martial Supremacy](#martial-supremacy) | Reroll a decision die during unarmed trip, disarm, or grapple. |
 | [Outburst](#outburst) | Interrupt enemies mid action. |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
@@ -48,6 +58,7 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [More Rage](#more-rage) | Gain an extra daily use of Rage. |
 | - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. |
 | -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. |
+| [Rally](#rally) | Grant a temporary 1 AP to an ally within 30ft who can hear you. |
 | [Reckless Attack](#reckless-attack) | Trade DEF for ATK and DMG on melee attacks. |
 | [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. |
 | - [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. |
@@ -56,6 +67,7 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. |
 | - [Line of Fire](#line-of-fire) | Change suppression area to a line. |
 | - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. |
+| [The Look](#the-look) | Lock eyes to gain advantage on your next roll against them. |
 | [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. |
 | - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. |
 {{% /tab %}}
@@ -100,6 +112,14 @@ If an ability has requirements that must be met before it can be selected, they 
 The movement of your Charge ability no longer needs to be in a straight line, though it still cannot pass over/under obstacles or through difficult terrain.
 {{% /details %}}
 
+{{% details "Agile Dodge" %}}
+### Agile Dodge
+
+*AGI 2*
+
+Once per round when an opponent misses an attack against you during their turn, you may take an immediate 5ft step into any adjacent unoccupied space for 1 AP as an opportunity action. You cannot use this ability if you have not yet acted in initiative or remain unaware of the attack.
+{{% /details %}}
+
 {{% details "Bash" %}}
 ### Bash
 
@@ -108,10 +128,26 @@ The movement of your Charge ability no longer needs to be in a straight line, th
 Instead of making an attack at the end of your charge you may attempt to shove your opponent and displace them. In place of the attack, make a contested grapple check with a +2 bonus at the end of your movement. If you win the grapple check your opponent is pushed backwards 5ft and you take their space. If they would collide with a solid object due to this movement they take 1d6+STR damage and you do not take their space.
 {{% /details %}}
 
+{{% details "Bolster" %}}
+### Bolster
+
+*CHA 3, Level 5*
+
+Once per combat, spend 4 AP to deliver a rousing statement. Up to three allies within 30ft who can hear you gain +1 to all rolls until the end of their next turn.
+{{% /details %}}
+
 {{% details "Charge" %}}
 ### Charge
 
 For 4 AP you may rush at your enemies to deliver a powerful melee attack. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. Once within reach of your opponent your movement ends and you make a standard melee attack at +2 bonus. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over or under any obstacles/characters or through difficult terrain. Attacks of opportunity that do not down your character do not interrupt this ability.
+{{% /details %}}
+
+{{% details "Coordinated Strike" %}}
+### Coordinated Strike
+
+*CHA 2, Level 3*
+
+For 2 AP, designate a target within line of sight. The next ally who attacks that target before the start of your next turn gains advantage on the attack.
 {{% /details %}}
 
 {{% details "Controlled Suppressing Fire" %}}
@@ -120,6 +156,23 @@ For 4 AP you may rush at your enemies to deliver a powerful melee attack. You mu
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, [Suppressing Fire](#suppressing-fire)*
 
 You have mastered timing your bursts of suppressive fire to conserve ammo. Your weapon no longer needs to be reloaded or cooled after using the Suppressing Fire ability. You use only 5% of the weapon's max ammunition.
+{{% /details %}}
+
+{{% details "Danger Reflex" %}}
+### Danger Reflex
+
+*AGI 1, DEX 1*
+
+2/day gain advantage when making an AGI or DEX check against effects of a trap that you have triggered. This may include traps manually activated by another that affect you or those activated through readied actions. This does not include attacks without a trap component.
+This ability may be selected multiple times, each time increasing the number of uses per day by +2.
+{{% /details %}}
+
+{{% details "Dead Drop" %}}
+### Dead Drop
+
+*[B&E Kit](/docs/free-srd/character-creation/proficiencies/#be-kit) Proficiency, Level 3*
+
+For 3 AP you may use your B&E kit to quickly hide a small object in a room or on a vehicle without an attribute check. This object cannot be discovered passively — a character must be actively inspecting the room or vehicle in order to notice it. The target to discover an object hidden in this way is equal to 6 + your DEX.
 {{% /details %}}
 
 {{% details "Defender" %}}
@@ -203,6 +256,22 @@ With a few special adjustments to how you store your kit, the AP cost to use the
 *[Rage](#rage), WILL 2, Level 5*
 
 While using the Rage ability, gain advantage when attempting to resist fear effects.
+{{% /details %}}
+
+{{% details "Field Medic" %}}
+### Field Medic
+
+*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training)*
+
+2/day you may use a med kit to stabilize or treat wounds as a 2 AP action rather than the standard cost.
+{{% /details %}}
+
+{{% details "Field Patch" %}}
+### Field Patch
+
+*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training), Level 3*
+
+For 3 AP and without a med kit, you may stabilize an adjacent ally who has the dying condition, halting the FORT check progression without restoring VIT. They remain unconscious at 0 VIT until properly treated.
 {{% /details %}}
 
 {{% details "Focus Attack" %}}
@@ -316,6 +385,23 @@ When using your Suppressing Fire ability with a full-auto weapon that you are pr
 Once begun, you may continue your General Spectacle performance for a number of rounds equal to 1/2 your level. Each round after the first, the target for the will distraction save is lowered by -2. Each failed save accumulates another  +1 point of Stress. Taking any other action during these rounds end the effect. This ability can be interrupted.
 {{% /details %}}
 
+{{% details "Martial Supremacy" %}}
+### Martial Supremacy
+
+*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training), Level 3*
+
+2/day you may reroll a single decision die during any unarmed trip, disarm, or grapple attempt. This ability may be used once per decision die.
+This ability may be selected up to three times, each increasing the number of uses per day by +2 to a maximum of 6/day.
+{{% /details %}}
+
+{{% details "Momentum Dodge" %}}
+### Momentum Dodge
+
+*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Agile Dodge](#agile-dodge), AGI 2, DEX 1*
+
+When using your Agile Dodge following a failed melee attack from an opponent within your reach that is the same size as you or smaller, you may make an opposed grapple check to swap spaces with them in place of your 5ft step.
+{{% /details %}}
+
 {{% details "Oppressive Suppression" %}}
 ### Oppressive Suppression
 
@@ -377,6 +463,14 @@ When wielding two semi-auto ranged weapons with which you are proficient, you ma
 This ability can be selected multiple times, each increasing the number of uses per day by +2, to a maximum of 8/day.
 {{% /details %}}
 
+{{% details "Rally" %}}
+### Rally
+
+*CHA 2*
+
+For 2 AP, one ally within 30ft who can hear you gains a temporary 1 AP to be used before the end of their next turn.
+{{% /details %}}
+
 {{% details "Reckless Attack" %}}
 ### Reckless Attack
 
@@ -384,6 +478,14 @@ This ability can be selected multiple times, each increasing the number of uses 
 
 While making a melee attack on your turn, you may choose to lower your current DEF to gain a bonus to your next attack. Each point of DEF can be traded for +1 ATK and DMG however you cannot lower your DEF to 0. This bonus applies only to attacks made in the same turn in which this ability was activated.
 This effect does not change or alter your max DEF, only your current DEF.
+{{% /details %}}
+
+{{% details "Slip Strike" %}}
+### Slip Strike
+
+*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Agile Dodge](#agile-dodge), AGI 3, DEX 1, Level 7*
+
+When using your Agile Dodge or Momentum Dodge abilities, you may make a standard melee attack of opportunity during the movement for an additional 1 AP.
 {{% /details %}}
 
 {{% details "Student" %}}
@@ -410,6 +512,14 @@ Characters who begin their movement in a safe space and enter the effect of this
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), DEX 4, Level 9*
 
 Your Dual Attack ability is more efficient, consuming only 2 AP per use instead of 4.
+{{% /details %}}
+
+{{% details "The Look" %}}
+### The Look
+
+*[Particularly Attractive](/docs/free-srd/character-creation/traits/#particularly-attractive) Trait, CHA 3*
+
+2/day for 1 AP you may carefully lock eyes with an opponent to gain advantage on your next non-stealth roll made against them in the same turn, such as an attack roll or social check. Your opponent must be within 30ft, be aware of you, and be able to see you. Your opponent can resist this effect with a target 10 WILL check, denying you the bonus upon success.
 {{% /details %}}
 
 {{% details "True Defender" %}}
