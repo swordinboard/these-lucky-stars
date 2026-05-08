@@ -16,6 +16,7 @@ Join the Reddit community and get involved! [r/theseluckystars](https://www.redd
 > [!WARNING]
 > **Latest 5/7/26 Changes**
 > - Character features balancing audit and new additions. Update preview with change notes posted to [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
+>
 > **5/2/26 Changes**
 > - Downloads page added with Standard Character Sheet PDF
 > - Digital Character Sheet Updated with bug and formula fixes
