@@ -12,7 +12,8 @@ Some traits are followed by labels written in [brackets]. These traits are part 
 
 ## Racial Traits
 *[Racial]*
-Racial Traits are an optional set of traits used when more than one sentient species ocuppies the setting. A Game Master may choose not to include racial traits if the players are not given a choice between races in the selected setting, usually meaning all players are human. GMs may allow the selection of an additional trait in place of a racial trait in such situations.
+
+Racial Traits are an optional set of traits used when more than one sentient species occupies the setting. A Game Master may choose not to include racial traits if the players are not given a choice between races in the selected setting, usually meaning all players are human. GMs may allow the selection of an additional trait in place of a racial trait in such situations.
 
 {{< tabs >}}
 {{% tab "Core" %}}
@@ -139,7 +140,7 @@ Some would consider you the most average of Joes. There is simply nothing that s
 {{% details "Unshakable" %}}
 ### Unshakable
 
-No jump scare will frighten you, you were surprised thats all. Gain a +2 bonus when rolling WILL checks against fear and distraction effects.
+No jump scare will frighten you, you were surprised that's all. Gain a +2 bonus when rolling WILL checks against fear and distraction effects.
 {{% /details %}}
 
 {{% details "Well-Connected" %}}
@@ -167,5 +168,5 @@ You are accustomed to carrying heavy loads in different environments. Each point
 {{% details "Space Adept" %}}
 ### Space Adept
 
-You are accustomed to moving through zero and low-gravity environments. Gain a +2 bonus to AGI checks to safely move in zero and low gravity enviroments.
+You are accustomed to moving through zero and low-gravity environments. Gain a +2 bonus to AGI checks to safely move in zero and low gravity environments.
 {{% /details %}}

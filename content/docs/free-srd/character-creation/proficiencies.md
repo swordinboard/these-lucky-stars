@@ -6,7 +6,7 @@ weight: 2
 
 ## Proficiencies
 
-Proficiencies are things for which your character has recieved training or otherwise become particularly skilled at. Most are related to the use of items. Certain actions cannot be attempted at all without the appropriate tool/item and proficiency.
+Proficiencies are things for which your character has received training or otherwise become particularly skilled at. Most are related to the use of items. Certain actions cannot be attempted at all without the appropriate tool/item and proficiency.
 
 Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the proficiency and is usually written in [brackets] beside the proficiency name.
 
@@ -101,7 +101,7 @@ You have been trained to be as deadly without a weapon as you are when armed wit
 
 *KNO 1*
 
-You have been trained in the use of medicine and medical equipment. Gain a +2 bonus when using the medical kit to heal damage or stablize/remove wounds and conditions.
+You have been trained in the use of medicine and medical equipment. Gain a +2 bonus when using the medical kit to heal damage or stabilize/remove wounds and conditions.
 {{% /details %}}
 
 {{% details "Medical Instincts" %}}
@@ -109,7 +109,7 @@ You have been trained in the use of medicine and medical equipment. Gain a +2 bo
 
 *[Medic Training](#medic-training) proficiency, KNO 1*
 
-Your experience with medicine and and trauma care benefits from your instincts. Add your INS bonua to rolls that benefit from your Medic Training proficiency.
+Your experience with medicine and trauma care benefits from your instincts. Add your INS bonus to rolls that benefit from your Medic Training proficiency.
 {{% /details %}}
 
 {{% details "Negotiation Training" %}}
