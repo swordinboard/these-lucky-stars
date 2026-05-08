@@ -831,7 +831,7 @@
                 <p><strong>Tabs:</strong> Navigate between Overview, Features, Combat, Equipment, Inventory, and Notes tabs to access different parts of your character sheet.</p>
                 <p><strong>Collapsible Sections:</strong> Click on section headers to expand or collapse them.</p>
                 <p><strong>Formulas:</strong> Toggle formula visibility with the Show/Hide Formulas button. Formulas show how stats are calculated.</p>
-                <p><strong>Auto-Calculate:</strong> Most derived stats update automatically when you change base values.</p>
+                <p><strong>Auto-Calculate:</strong> Most derived stats update automatically when you change base values. Size modifiers apply automatically once a size is selected.</p>
                 <p><strong>NOTE:</strong> All items, including those equipped or written in other tabs, must be entered into the inventory item list in order to be included in a total weight calculation. Use your effective weight or bulky item entry for inventory. Some features change if an item is bulky or not, or the weight of an item that is equipped.</p>
             </div>
             <div class="modal-footer"><button class="btn" onclick="hideHelp()">Got it!</button></div>
@@ -846,9 +846,9 @@
                 <button class="modal-close" onclick="hideReadme()">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Dear friends,</p>
-                <p>This little app is getting close to finished now. At least by my eyes, I'm sure there's some things that could be tweaked and I would really love some feedback on it. Things that could be changed, adjusted, how it fits on different screens, and missing features are all much appreciated.</p>
-                <p>I vibe coded this whole thing. It has taken me four days (and counting) of full credits for Claude.ai. I've learned a bit about coding as I went but I'm still very very green. So if you have experience in that area and find ways to improve on what front end eyes would miss please boss me around.</p>
+                <p>Dear User,</p>
+                <p>I am by no means an expert in coding, but I've done my best to create a useful tool to pair with These Lucky Stars sessions.</p>
+                <p>Digital sheets aren't really my thing, so if you have suggestions please let me  know.</p>
                 <p>Update: So far so good with this. Its seen a bit of use and some updates.</p>
                 <p>Fighting imposter syndrome with sharp stick,<br>-Anthony DiRuzza</p>
             </div>
@@ -1137,7 +1137,7 @@
                 <div class="stat-box full-row">
                     <div class="stat-box-full-split">
                         <div class="stat-main">
-                            <div class="stat-label">Speed (Ground)</div>
+                            <div class="stat-label">Speed (Primary)</div>
                             <div class="stat-value" id="speedDisplay">20</div>
                             <div class="stat-formula hidden-formula" id="speedFormula">If AGI Bonus: 20 + (5 × AGI) + Mods | If AGI Penalty: 20 − 5 + Mods</div>
                             <div class="input-group"><label>Mods</label><input type="number" id="speedMods" value="0" onchange="updateCharacter()"></div>
