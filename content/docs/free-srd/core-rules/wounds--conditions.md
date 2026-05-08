@@ -219,7 +219,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 *Duration* — Until healed, or death.
 
-*Healing* — The dying condition can be removed by another character with a use of the Medic Kit and a successful target 12 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
+*Healing* — The dying condition can be removed by another character with a use of the Medic Kit and a successful target 10 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
 
 {{% /details %}}
 

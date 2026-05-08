@@ -413,7 +413,7 @@ While using the Suppressing Fire ability and a full-auto heavy weapon that you h
 {{% details "Outburst" %}}
 ### Outburst
 
-*CHA 2*
+*CHA 2, Level 3*
 
 You know how to take particularly distracting actions at just the right time. By doing so, you may force a character's attention to shift to you, interrupting actions or abilities and breaking focus. 2/day for 3 AP you may choose a target that can see and hear you within 20ft and perform a series of targeted actions to briefly throw off their focus. (i.e. threatening or suggestive behavior, loud banging, "HEY YOU!"). Your opponent must succeed on a target 10 WILL distraction save in order to remain focused. This can be used as an Opportunity action to interrupt abilities and actions as they happen.
 
@@ -483,9 +483,9 @@ This effect does not change or alter your max DEF, only your current DEF.
 {{% details "Slip Strike" %}}
 ### Slip Strike
 
-*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Agile Dodge](#agile-dodge), AGI 3, DEX 1, Level 7*
+*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Agile Dodge](#agile-dodge), AGI 3, DEX 1, Level 5*
 
-When using your Agile Dodge or Momentum Dodge abilities, you may make a standard melee attack of opportunity during the movement for an additional 1 AP.
+When using your Agile Dodge or Momentum Dodge abilities, you may make a standard melee Opportunity Attack during the movement for an additional 1 AP.
 {{% /details %}}
 
 {{% details "Student" %}}
