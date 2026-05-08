@@ -10,7 +10,7 @@ Abilities are special actions your character can take. They have the most varian
 
 Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the ability and is usually written in [brackets] beside the ability name.
 
-If an ability has requirements that must be met before it can be selected, they are written in italics. 
+If an ability has requirements that must be met before it can be selected, they are written in italics.
 
 {{< tabs >}}
 {{% tab "Core General" %}}
@@ -55,7 +55,6 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. |
 | - [Fearless Rage](#fearless-rage) | Resisting fear while raging. |
 | -- [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. |
-| - [More Rage](#more-rage) | Gain an extra daily use of Rage. |
 | - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. |
 | -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. |
 | [Rally](#rally) | Grant a temporary 1 AP to an ally within 30ft who can hear you. |
@@ -142,20 +141,20 @@ Once per combat, spend 4 AP to deliver a rousing statement. Up to three allies w
 For 4 AP you may rush at your enemies to deliver a powerful melee attack. You must move at least 10ft in a direct line toward your opponent, but may move up to double your movement speed. Once within reach of your opponent your movement ends and you make a standard melee attack at +2 bonus. The movement portion of this ability must be in a straight, uninterrupted line that does not pass over or under any obstacles/characters or through difficult terrain. Attacks of opportunity that do not down your character do not interrupt this ability.
 {{% /details %}}
 
-{{% details "Coordinated Strike" %}}
-### Coordinated Strike
-
-*CHA 2, Level 3*
-
-For 2 AP, designate a target within line of sight. The next ally who attacks that target before the start of your next turn gains advantage on the attack.
-{{% /details %}}
-
 {{% details "Controlled Suppressing Fire" %}}
 ### Controlled Suppressing Fire
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, [Suppressing Fire](#suppressing-fire)*
 
 You have mastered timing your bursts of suppressive fire to conserve ammo. Your weapon no longer needs to be reloaded or cooled after using the Suppressing Fire ability. You use only 5% of the weapon's max ammunition.
+{{% /details %}}
+
+{{% details "Coordinated Strike" %}}
+### Coordinated Strike
+
+*CHA 2, Level 3*
+
+For 2 AP, designate a target within line of sight. The next ally who attacks that target before the start of your next turn gains advantage on the attack.
 {{% /details %}}
 
 {{% details "Danger Reflex" %}}
@@ -261,7 +260,7 @@ While using the Rage ability, gain advantage when attempting to resist fear effe
 {{% details "Field Medic" %}}
 ### Field Medic
 
-*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training)*
+*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training) Proficiency*
 
 2/day you may use a med kit to stabilize or treat wounds as a 2 AP action rather than the standard cost.
 {{% /details %}}
@@ -269,7 +268,7 @@ While using the Rage ability, gain advantage when attempting to resist fear effe
 {{% details "Field Patch" %}}
 ### Field Patch
 
-*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training), Level 3*
+*[Medic Training](/docs/free-srd/character-creation/proficiencies/#medic-training) Proficiency, Level 3*
 
 For 3 AP and without a med kit, you may stabilize an adjacent ally who has the dying condition, halting the FORT check progression without restoring VIT. They remain unconscious at 0 VIT until properly treated.
 {{% /details %}}
@@ -315,7 +314,7 @@ The results of gaining attention in this way vary, and may include immediate and
 
 *[Charge](#charge), [Bash](#bash), STR 4, Level 7*
 
-When using your Bash ability you may choose to increase the displacement caused by a successful bash by +5ft, or choose to knock your opponwnt prone. Damage is still dealt if they hit a solid object from the displacement, and you take their original space if able.
+When using your Bash ability you may choose to increase the displacement caused by a successful bash by +5ft, or choose to knock your opponent prone. Damage is still dealt if they hit a solid object from the displacement, and you take their original space if able.
 {{% /details %}}
 
 {{% details "Improved Suppressing Fire" %}}
@@ -323,7 +322,7 @@ When using your Bash ability you may choose to increase the displacement caused 
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto weapon, [Suppressing Fire](#suppressing-fire), Level 5*
 
-While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by two OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability automatically lowers one of the weapon's ammo die by one size after the initial suuply rolls for the attack have been made.
+While using a full-auto weapon that you are proficient with: Your suppressing fire is particularly stressful for enemies to endure. When activating your Suppressing Fire ability, you may choose to increase the target for the WILL check by two OR increase the amount of stress caused by an opponent's failed check by one. If you choose either of these, the ability automatically lowers one of the weapon's ammo die by one size after the initial supply rolls for the attack have been made.
 {{% /details %}}
 
 {{% details "Indomitable Rage" %}}
@@ -357,14 +356,15 @@ You are so skilled at defending from melee attacks that you can negate a wound o
 
 You’ve dropped your kit enough times to know exactly how to empty it out in the most inconvenient way possible. For 3 AP you can completely empty and drop your toolkit, covering up to six 5ft spaces. These spaces must be connected and no space can be further than 15ft from another. Spaces that become covered in a toolkit from this ability become difficult terrain for all other characters: actions taken are at a minor disadvantage and their speed is reduced to half (you remain unaffected).
 
-An affected character can clear one 5ft space they occupy for 3 AP to remove the effect. Clearing a space in this manner provokes Opportunity Attacks and does not pick up/retrieve parts of the toolkit or supplies, it simply piles it up or otherwise moves it out of the way. If a character occupies multiple spaces, they must  clear them individually.
+An affected character can clear one 5ft space they occupy for 3 AP to remove the effect. Clearing a space in this manner provokes Opportunity Attacks and does not pick up/retrieve parts of the toolkit or supplies, it simply piles it up or otherwise moves it out of the way. If a character occupies multiple spaces, they must clear them individually.
 
-This ability requires a tool kit with at least 1d4 of supplies, however it requires no supply roll. Using this ability drops your kit and leaves it empty of tools and supplies. Tools and supplies can be gatheredd up and retrieved for 20 AP, reassembling the toolkit.
+This ability requires a tool kit with at least 1d4 of supplies, however it requires no supply roll. Using this ability drops your kit and leaves it empty of tools and supplies. Tools and supplies can be gathered up and retrieved for 20 AP, reassembling the toolkit.
 {{% /details %}}
 
 {{% details "Leaping Charge" %}}
 ### Leaping Charge
-*Charge, Agile Charge, AGI 3,  Level 5*
+
+*[Charge](#charge), [Agile Charge](#agile-charge), AGI 3, Level 5*
 
 The movement of your charge can now pass over/under obstacles and through difficult terrain.
 {{% /details %}}
@@ -374,21 +374,21 @@ The movement of your charge can now pass over/under obstacles and through diffic
 
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a full-auto weapon, [Suppressing Fire](#suppressing-fire)*
 
-When using your Suppressing Fire ability with a full-auto weapon that you are proficient with: You may change the shape of your Suppressing Fire ability to a straight line with a length equal to your weapon's normal range. If you do so, the ability reqires another ammo supply roll.
+When using your Suppressing Fire ability with a full-auto weapon that you are proficient with: You may change the shape of your Suppressing Fire ability to a straight line with a length equal to your weapon's normal range. If you do so, the ability requires another ammo supply roll.
 {{% /details %}}
 
 {{% details "Long Performance" %}}
 ### Long Performance
 
- *CHA 3*
+*CHA 3*
 
-Once begun, you may continue your General Spectacle performance for a number of rounds equal to 1/2 your level. Each round after the first, the target for the will distraction save is lowered by -2. Each failed save accumulates another  +1 point of Stress. Taking any other action during these rounds end the effect. This ability can be interrupted.
+Once begun, you may continue your General Spectacle performance for a number of rounds equal to 1/2 your level. Each round after the first, the target for the WILL distraction save is lowered by -2. Each failed save accumulates another +1 point of Stress. Taking any other action during these rounds end the effect. This ability can be interrupted.
 {{% /details %}}
 
 {{% details "Martial Supremacy" %}}
 ### Martial Supremacy
 
-*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training), Level 3*
+*[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, Level 3*
 
 2/day you may reroll a single decision die during any unarmed trip, disarm, or grapple attempt. This ability may be used once per decision die.
 This ability may be selected up to three times, each increasing the number of uses per day by +2 to a maximum of 6/day.
@@ -504,7 +504,8 @@ Choose a general topic in which your character is particularly knowledgeable abo
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a semi-auto or full-auto weapon, DEX 2*
 
 This ability can only be used with a semi or full auto weapon that you have Weapon Proficiency with. This ability requires two ammo supply rolls. For 3 AP, select four adjacent spaces within max range. Any combatant that is in or enters these spaces cannot take any action without succeeding on a target 8 WILL distraction check until the beginning of your next turn. Failure increases their Stress by 1 and they cannot attempt any further actions until the beginning of their next turn. Characters moving through multiple threatened spaces are only affected once.
-Characters who begin their movement in a safe space and enter the effect of this ability may continue moving if they fail their WILL check (they still take the appropriate Stress). {{% /details %}}
+Characters who begin their movement in a safe space and enter the effect of this ability may continue moving if they fail their WILL check (they still take the appropriate Stress).
+{{% /details %}}
 
 {{% details "Swift Dual Attack" %}}
 ### Swift Dual Attack
@@ -527,7 +528,7 @@ Your Dual Attack ability is more efficient, consuming only 2 AP per use instead 
 
 *[Tough](/docs/free-srd/character-creation/traits/#tough) Trait, [Defender](#defender), [Friend in Need](#friend-in-need)*
 
-You can activate your Defender ability ad an Opportunity action anytime an attack is declared on an ally, allowing you to combine the benefits of Defender with Friend in Need.
+You can activate your Defender ability as an Opportunity action anytime an attack is declared on an ally, allowing you to combine the benefits of Defender with Friend in Need.
 {{% /details %}}
 
 {{% details "Unsettling Rage" %}}
@@ -535,7 +536,7 @@ You can activate your Defender ability ad an Opportunity action anytime an attac
 
 *[Intimidating](/docs/free-srd/character-creation/traits/#intimidating) Trait, [Rage](#rage), [Powerful Rage](#powerful-rage), Level 7*
 
-When activating the Powerful Rage ability, Roll an intimidation check. All opponents within 30ft must succeed on a contested WILL fear check against your intimidation. Those who fail their check gain 1 point of Stress.
+When activating the Powerful Rage ability, roll an intimidation check. All opponents within 30ft must succeed on a contested WILL fear check against your intimidation. Those who fail their check gain 1 point of Stress.
 {{% /details %}}
 
 {{% details "Vital Focus" %}}
@@ -688,5 +689,6 @@ You manage to squeeze just a bit more out of battery cores. You can re-roll a fa
 *[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 3*
 
 You can spend 4 AP and a use of the Tech Kit with supplies to install a battery of up to two sizes smaller or larger than required into a piece of equipment. Results of fit, placement, and object handling, may vary by combination.
-(Normal: Installing a battery of a different size requires a target 14 KNO check, 10 minutes, and is limited to batteries one size larger or smaller.)
+
+*Normal: Installing a battery of a different size requires a target 14 KNO check, 10 minutes, and is limited to batteries one size larger or smaller.*
 {{% /details %}}
