@@ -1,7 +1,7 @@
 ---
 title: "How to Install as an App"
 description: "How to install the These Lucky Stars SRD as a progressive web app on your phone or desktop for offline access at the table."
-weight: 99
+weight: 97
 bookToC: false
 ---
 

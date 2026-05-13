@@ -1,7 +1,7 @@
 ---
 title: "Development Team"
 description: "A list of contributors to the development and release of the These Lucky Stars tabletop roleplaying game."
-weight: 98
+weight: 97
 bookToC: false
 ---
 
