@@ -1,6 +1,6 @@
 ---
 title: "Sci-Fi Equipment"
-weight: 3
+weight: 40
 bookCollapseSection: true
 bookNavButton: true
 bookToC: false
