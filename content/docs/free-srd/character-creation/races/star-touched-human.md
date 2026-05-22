@@ -2,7 +2,6 @@
 title: "Star-touched Human"
 description: "Introducing the Star-Touched Human — Without a doubt the Luckiest species in the galaxy"
 weight: 30
-draft: false
 bookHidden: true
 ---
 
