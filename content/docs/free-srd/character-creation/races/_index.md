@@ -2,7 +2,7 @@
 title: "Races"
 description: "The various Races available for player characters in These Lucky Stars"
 weight: 10
-draft: true
+draft: false
 ---
 
 ## Races

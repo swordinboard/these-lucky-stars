@@ -2,7 +2,7 @@
 title: "Zeta Grey"
 description: "Introducing the Zeta Grey — A classic sci-fi race known for their many cryptic encounters and high intelligence."
 weight: 30
-draft: true
+draft: false
 bookHidden: true
 ---
 
