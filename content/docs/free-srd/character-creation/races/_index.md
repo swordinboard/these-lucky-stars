@@ -2,6 +2,7 @@
 title: "Races"
 description: "The various Races available for player characters in These Lucky Stars"
 weight: 10
+bookToC: false
 ---
 
 ## Races
@@ -31,6 +32,8 @@ A character's race describes their species, governing physical appearance and ab
 - Half-Orcs
 - Orcs
 
+<--->
+
 ### Frontier and Industry
 
 - Human, Earth-bound
@@ -40,7 +43,7 @@ A character's race describes their species, governing physical appearance and ab
 
 - Human, Half-Dead
 
-Submodules (Paid)
+### Submodules (Paid)
 - Hollow Man (Old Magic)
 - Undone (Old Magic)
 - Dragonkin (Fantasy 2)
