@@ -49,4 +49,4 @@ Submodules (Paid)
 - good v bad races i think need new names? (tielfing type) (Fantasy 2)
 - Hrava (Sci-Fi Mosaic
 - Vusiea (Sci-Fi Mosaic)
-{{/ columns %}}
+{{% /columns %}}
