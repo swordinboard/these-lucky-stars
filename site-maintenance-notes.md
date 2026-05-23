@@ -20,12 +20,12 @@ After pulling a theme update, **always diff these overridden files** before depl
 
 | Our file | Theme original | What we changed |
 |---|---|---|
-| `layouts/partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
-| `layouts/partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
+| `layouts/_partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
+| `layouts/_partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
 
 **How to diff:**
 ```
-git diff themes/hugo-book/layouts/_partials/docs/menu-filetree.html layouts/partials/docs/menu-filetree.html
+diff themes/hugo-book/layouts/_partials/docs/menu-filetree.html layouts/_partials/docs/menu-filetree.html
 ```
 
 ---
@@ -122,7 +122,7 @@ Page content starts here...
 
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
-- Shortcodes available: `download-card`, `include`, `quickref`, `roadmap` (see `layouts/shortcodes/`)
+- Shortcodes available: `download-card`, `include`, `quickref`, `roadmap`, `columns` (see `layouts/_shortcodes/`)
 - Snippet includes: `{{% include "/snippets/filename" %}}` — source files in `content/snippets/`, none are published
 - `content/snippets/_index.md` has `build: render: never` cascading to all children — do not remove this
 
