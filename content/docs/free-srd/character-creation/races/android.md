@@ -6,7 +6,7 @@ bookHidden: true
 ---
 
 ## Android
-<!-- classic android race -->
+<!-- basic android race -->
 
 ## Features
 

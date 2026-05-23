@@ -14,12 +14,11 @@ Get started with the [Free SRD](/docs/free-srd) learn the system and start playi
 Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 
 > [!WARNING]
-> **Latest 5/7/26 Changes**
-> - Character features balancing audit and new additions. Update preview with change notes posted to [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
+> **Latest 5/23/26 Changes**
+> - [Playable Races](docs/free-srd/character-creation/races) introduced to character creation. Includes core Human Star-touched variant, Androids, Reptilians, and Zeta Greys.
 >
-> **5/2/26 Changes**
-> - Downloads page added with Standard Character Sheet PDF
-> - Digital Character Sheet Updated with bug and formula fixes
+> **5/7/26 Changes**
+> - Character features balancing audit and new additions. Update preview with change notes posted to [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 >
 > -- Anthony
 

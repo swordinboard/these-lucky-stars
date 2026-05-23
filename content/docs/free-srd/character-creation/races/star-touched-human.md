@@ -11,7 +11,7 @@ The other races generally regard humans as the luckiest species in existence, no
 
 ### Features
 
-*Fortunate Inspiration* — Each player character in the party gains +1 Luck. This effect stacks up to 3 times.
+**Fortunate Inspiration** — Each player character in the party gains +1 Luck. This effect stacks up to 3 times.
 
-*Traits* — Star-touched Humans begin with 2 Trait selections.
+**Traits** — Star-touched Humans begin with 2 Trait selections.
 

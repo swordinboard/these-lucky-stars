@@ -13,10 +13,15 @@ weight: 1
 > Full picture reading: 
 > - [Action Economy](/docs/free-srd/core-rules/action-economy), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
 
+
 ## Character Sheets
 
 You can find a dowbloadable PDF character sheet on the [Downloads](/docs/downloads) page.
 You can find a digital character sheet option [here](/digitalcharactersheet).
+
+## Playable Races
+
+Players choose a race or species from the Races available to their GM's setting. This selection often comes with narrative depth per the GM but otherwise describes the character's physical appearance while providing any special abilities and Trait selections the player may make during character creation.
 
 ## Character Archetypes
 
@@ -35,13 +40,12 @@ Some traits are followed by labels -written in [brackets]- depending on the sett
 
 ## Starting at Level 1
 
-- Step 1: Begin with determining and assigning your [attributes](/docs/free-srd/attributes).
-- Step 2: Use your attributes to calculate your remaining [stats](/docs/free-srd/stats).
+- Step 1: Choose your [Race](/docs/free-srd/character-creation/races)
+- Step 2: Determine and assign your[Attributes](docs/free-srd/core-rules/attributes), and other [Stats](docs/free-srd/core-rules/stats). (This is often trhe most time consuming step)
 - Step 3: Choose your first level character features. Each character starts at level one with:
--- One [Racial Trait](/docs/free-srd/character-creation/traits/#racial-traits) (if applicable)
--- Two [Traits](/docs/free-srd/character-creation/traits)
--- Two [Proficiencies](/docs/free-srd/character-creation/proficiencies)
--- One [Ability](/docs/free-srd/character-creation/abilities)
+   - Any [Trait](/docs/free-srd/character-creation/traits) selections provided by their Race
+   - Two [Proficiencies](/docs/free-srd/character-creation/proficiencies)
+   - One [Ability](/docs/free-srd/character-creation/abilities)
 
 ## Leveling Up
 
