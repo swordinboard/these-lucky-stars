@@ -12,6 +12,7 @@ A character's race describes their species, governing physical appearance and ab
 ## Playable Races
 
 {{% columns %}}
+
 ### Core
 
 - [Classic Human](/docs/free-srd/character-creation/races/classic-human)
