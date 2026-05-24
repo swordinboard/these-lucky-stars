@@ -1,6 +1,6 @@
 ---
-title: "Star-touched Human"
-description: "Introducing the Star-Touched Human — Without a doubt the Luckiest species in the galaxy"
+title: "Classic Human"
+description: "Introducing the Classic Human — the most adaptable and widespread species in any setting."
 weight: 30
 bookHidden: true
 ---

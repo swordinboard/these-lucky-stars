@@ -9,14 +9,14 @@ weight: 1
 > [!Important]
 > It is highly recommended for players to familiarize themselves with the rules before making a character.
 > Minimal reading:
-> - [The Basics](/docs/free-srd/core-rules/basics), [Attributes](/docs/free-srd/core-rules/attributes), and [Stats](/docs/free-srd/core/rules/stats)
-> Full picture reading: 
+> - [The Basics](/docs/free-srd/core-rules/basics), [Attributes](/docs/free-srd/core-rules/attributes), and [Stats](/docs/free-srd/core-rules/stats)
+> Full picture reading:
 > - [Action Economy](/docs/free-srd/core-rules/action-economy), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
 
 
 ## Character Sheets
 
-You can find a dowbloadable PDF character sheet on the [Downloads](/docs/downloads) page.
+You can find a downloadable PDF character sheet on the [Downloads](/docs/downloads) page.
 You can find a digital character sheet option [here](/digitalcharactersheet).
 
 ## Playable Races
@@ -41,7 +41,7 @@ Some traits are followed by labels -written in [brackets]- depending on the sett
 ## Starting at Level 1
 
 - Step 1: Choose your [Race](/docs/free-srd/character-creation/races)
-- Step 2: Determine and assign your[Attributes](docs/free-srd/core-rules/attributes), and other [Stats](docs/free-srd/core-rules/stats). (This is often trhe most time consuming step)
+- Step 2: Determine and assign your [Attributes](/docs/free-srd/core-rules/attributes), and other [Stats](/docs/free-srd/core-rules/stats). (This is often the most time-consuming step)
 - Step 3: Choose your first level character features. Each character starts at level one with:
    - Any [Trait](/docs/free-srd/character-creation/traits) selections provided by their Race
    - Two [Proficiencies](/docs/free-srd/character-creation/proficiencies)
@@ -57,5 +57,5 @@ As characters increase in level they gain access to new features and increases t
 While there is no max level in this system and a GM may alter the power-scale of their setting/game in any way they like, typically the following level spread tends to give access to an appropriate number of features and bonuses.
 - Entry level PC: Levels 1-4.
 - Trained professionals: Levels 5-8
-- Seasoned veterans and renouned adventurers: Levels 9-12
+- Seasoned veterans and renowned adventurers: Levels 9-12
 - Heroic characters and legends: Level 12+

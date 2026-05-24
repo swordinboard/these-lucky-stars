@@ -6,7 +6,7 @@ bookToC: false
 ---
 
 > [!Warning]
-> This page temporarily shows future races added as an example of how it will fill out going forward. released version will be reduced to active races only.
+> This page temporarily shows future races added as an example of how it will fill out going forward. Released version will be reduced to active races only.
 
 ## Races
 
@@ -53,7 +53,7 @@ A character's race describes their species, governing physical appearance and ab
 - Dragonkin (Fantasy 2)
 - Halfling (Fantasy 2)
 - Human, Spell-Touched (Fantasy 2)
-- good v bad races i think need new names? (tielfing type) (Fantasy 2)
-- Hrava (Sci-Fi Mosaic
+- *(TBD) (Fantasy 2)*
+- Hrava (Sci-Fi Mosaic)
 - Vusiea (Sci-Fi Mosaic)
 {{% /columns %}}

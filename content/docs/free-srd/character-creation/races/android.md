@@ -1,6 +1,6 @@
 ---
 title: "Android"
-description: "Introducing the Android — liberated robots able to act and think independantly"
+description: "Introducing the Android — liberated robots able to act and think independently"
 weight: 30
 bookHidden: true
 ---
@@ -10,7 +10,7 @@ bookHidden: true
 
 ## Features
 
-*Robotic Chasis* — An Android's chasis is tough and build to last, offering a rnage of benefits:
+*Robotic Chassis* — An Android's chassis is tough and built to last, offering a range of benefits:
  - +2 FORT
  - Immune to asphyxiation and sickness. All other wounds and conditions remain possibilities through similar effect. For example, a bleeding robot leaks its coolant or lubricant, a Stressed robot suffers from circuitry issues.
  - Wounds require a Repair or Tech Kit (in this case either works regardless of scale) rather than a Medical Kit. Methods and targets remain the same and features that apply to the use of the Med Kit do not carry their benefit when working on an Android.
