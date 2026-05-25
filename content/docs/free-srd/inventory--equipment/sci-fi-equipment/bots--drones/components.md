@@ -12,7 +12,7 @@ Components are devices designed for installation in automated machines (Androids
 
 Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](../../character-creation/abilities/#tech-armor) ability applies to components.
 
-Regardless of being an internal or external component, a body slot can hold only one component at a time. Whether an installed component also prevents worn equipment in that slot depends on whether the install is **internal** or **external**:
+Regardless of being an internal or external component, a body slot can hold only one component at a time. Whether an installed component also prevents the use of other equipment — such as backpacks, pouche sets, or bracers — depends on whether the install is **internal** or **external**:
 
 - **Internal** parts are built into the host's frame and do not occupy the visible slot. The host can still wear normal equipment in that body slot.
 - **External** parts replace or extend the host's frame at that slot, and prevent any other equipment from being worn there. Armor that includes that slot still functions but is reduced to its remaining slot coverage at the GM's discretion.
@@ -44,9 +44,9 @@ Bot Parts do not have their own VIT — they rely on their host. A Bot Part is d
 | [Internal Comp Jack](#internal-comp-jack) | Hands | Internal | Comp Jack without occupying hands |
 | [Manipulator Override](#manipulator-override) | Hands | External | +2 DEX for fine motor tasks while powered |
 | [Optical Suite](#optical-suite) | Head [HUD] | Internal | Low-light, thermal, zoom |
-| [Reinforced Chassis Plating](#reinforced-chassis-plating) | Chest | External | +2 DEF |
+| [Reinforced Chassis Plating](#reinforced-chassis-plating) | Chest | External | +3 DEF |
 | [Relay Node](#relay-node) | Neck | Internal | Sync into a shared sensor network |
-| [Repair Subroutine](#repair-subroutine) | Belt | Internal | Self-repair 1 VIT per long rest |
+| [Repair Subroutine](#repair-subroutine) | Belt | External | Self-repair 1 VIT per long rest |
 | [Servo Boost Legs](#servo-boost-legs) | Legs/Feet | External | +10ft speed, +5ft jump while powered |
 | [Signal Mast, Heavy](#signal-mast-heavy) | Back | External | Increases com range to planetary |
 | [Signal Mast, Retractable](#signal-mast-retractable) | Neck | Internal | Increases com range |
@@ -78,7 +78,7 @@ Does not occupy the Head slot for other equipment.
 
 Augmented arm actuators that allow for an overcharge to increase STR by +2. Each activation requires 1 supply roll of the machine's primary power source and lasts for 10 minutes.
 
-Cannot be installed alongside bracers or other Arms slot equipment.
+Occupies the Arms slot for other equipment.
 {{% /details %}}
 
 {{% details "Automatic Crash Foam System" %}}
@@ -100,7 +100,7 @@ Does not occupy the Chest slot for other equipment.
 
 A secondary medium battery housing. While installed, switching which battery is actively powering the host costs 2 AP — the equivalent of flipping a circuit switch. Physically removing or replacing either battery still costs the standard 8 AP.
 
-Cannot be installed alongside belts, pouch sets, or other Belt slot equipment.
+Occupies the Belt slot for other equipment.
 {{% /details %}}
 
 {{% details "Heavy Wrist Laser" %}}
@@ -112,7 +112,7 @@ A larger laser emitter that runs along the length of the host's forearm. Functio
 
 Unlike a standard laser rifle, the Heavy Wrist Laser is mounted and does not carry the [Two-Handed](../item-tags/#two-handed) tag. The host's free hand can be used normally during fire.
 
-Cannot be installed alongside bracers or other Arms slot equipment.
+Occupies the Arms slot for other equipment.
 {{% /details %}}
 
 {{% details "Improved Cooling System" %}}
@@ -122,7 +122,7 @@ Cannot be installed alongside bracers or other Arms slot equipment.
 
 Secondary external heat exchangers and coolant lines. The host gains [partial resistance](../../core-rules/health/#damage-resistance-and-weakness) to burn damage and ignores the effects of high-heat environments.
 
-Cannot be installed alongside backpacks, air tanks, or other Back-slot equipment.
+Occupies the Back slot for other equipment.
 {{% /details %}}
 
 {{% details "Internal Comp Jack" %}}
@@ -142,7 +142,7 @@ Does not occupy the Hands slot for other equipment.
 
 Replacement manipulators with high-precision actuators. While the primary power source has supply remaining, the host gains +2 DEX for fine motor tasks including lockpicking, tech kit work, medical procedures, and similar checks. Does not apply to attack rolls or AGI/DEX-based defensive movement.
 
-Cannot be installed alongside gloves, rings, or other Hand slot equipment.
+Occupies the Hand slot for other equipment.
 {{% /details %}}
 
 {{% details "Optical Suite" %}}
@@ -162,9 +162,9 @@ Does not occupy the Head slot or HUD subslot for other equipment.
 
 *–Cr — 8lbs — Chest — External*
 
-Heavy plating bonded to the host's frame. Grants +2 DEF. Adds 20lbs to the host regardless of body slot rules.
+Heavy plating bonded to the host's frame. Grants +3 DEF. Adds 20lbs to the host regardless of body slot rules.
 
-Cannot be installed alongside Subdermal Plating.
+Occupies the Chest slot for other equipmeny.
 {{% /details %}}
 
 {{% details "Relay Node" %}}
@@ -186,11 +186,11 @@ Does not occupy the Neck slot for other equipment.
 {{% details "Repair Subroutine" %}}
 ### Repair Subroutine
 
-*–Cr — 2lbs — Belt — Internal*
+*–Cr — 2lbs — Belt — External*
 
-An automated diagnostic and minor repair system built into the host's frame. The host recovers 1 VIT per long rest in addition to normal rest recovery. Does not function if the host is at 0 VIT or has the dying condition.
+An automated diagnostic and minor repair system built into the host's frame. The host recovers 1 VIT per completion of a 6hr Rest Mode cycle. Does not function if the host is at 0 VIT or has the dying condition.
 
-Does not occupy the Belt slot for other equipment.
+Occupies the Belt slot for other equipment.
 {{% /details %}}
 
 {{% details "Servo Boost Legs" %}}
@@ -200,7 +200,7 @@ Does not occupy the Belt slot for other equipment.
 
 Reinforced leg actuators that allow for an overcharge to increase the host's speed by +10ft and increase horizontal and vertical jump capabilities by +5ft. Each activation requires 1 supply roll of the machine's primary power source, and lasts for 10 minutes.
 
-Cannot be installed alongside [Jump Boosters](../sci-fi-misc-equipment/#jump-boosters) or other Legs/Feet equipment.
+Occupies the Legs/Feet slot for other equipment.
 {{% /details %}}
 
 {{% details "Signal Masts" %}}
@@ -221,6 +221,8 @@ Does not occupy the Neck slot for other equipment.
 A larger version of the Signal Mast, Retractable that improves the host's standard com range to planetary. The host can transmit and receive on any open or shared encrypted frequency, however, the increased range causes a draw on the host's primary battery source. Each activation requires one supply roll of the host's primary power source and lasts for six hours.
 
 Any character using the [Companion Bot](../../character-creation/abilities/#companion-bot) ability who has a Signal Mast, Heavy installed on their companion can issue commands and receive updates at its full range.
+
+Occupies the Back slot for other equipment.
 {{% /details %}}
 
 {{% details "Stabilizer Gyros" %}}
@@ -240,7 +242,7 @@ Does not occupy the Legs/Feet slot for other equipment.
 
 Lighter armor woven into the host's frame beneath the chassis. Grants +1 DEF. Does not occupy the chest slot and can be worn under armor or other chest equipment.
 
-Cannot be installed alongside Reinforced Chassis Plating.
+Does not occupy the Chest slot for other equipment.
 {{% /details %}}
 
 {{% details "Targeting Array" %}}
@@ -252,7 +254,7 @@ A targeting computer wired directly into the host's optical systems. 3/day for 1
 
 The Targeting Array runs in low-power mode by default to conserve battery and requires no supply rolls.
 
-Does not occupy the Head slot or HUD subslot for other equipment.
+Does not occupy the Head slot or HUD subslot for other equipment, however, the effect does not stack with other targeting HUDs.
 {{% /details %}}
 
 {{% details "Wrist Laser" %}}
@@ -262,5 +264,5 @@ Does not occupy the Head slot or HUD subslot for other equipment.
 
 A compact laser emitter mounted to the host's forearm. Fires in a fixed forward position from the wrist, leaving the hands free. Functions as a [Laser Pistol](../sci-fi-weapons/#laser-pistol) and can benefit from a Laser Pistol [Weapon Proficiency](../../character-creation/proficiencies/#weapon).
 
-Cannot be installed alongside bracers or other Arms slot equipment. Aiming the Wrist Laser requires the same body posture as aiming a pistol — abilities and effects that prevent pistol use also prevent Wrist Laser use.
+Occupies the Arm slot for other equipment. Aiming the Wrist Laser requires the same body posture as aiming a pistol — abilities and effects that prevent pistol use also prevent Wrist Laser use.
 {{% /details %}}
