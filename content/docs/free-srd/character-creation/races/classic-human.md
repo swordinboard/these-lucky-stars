@@ -1,6 +1,6 @@
 ---
 title: "Classic Human"
-description: "Introducing the Classic Human — the most adaptable and widespread species in any setting."
+description: "Introducing the Classic Human — the most adaptable and widespread species in most settings."
 weight: 30
 bookHidden: true
 ---

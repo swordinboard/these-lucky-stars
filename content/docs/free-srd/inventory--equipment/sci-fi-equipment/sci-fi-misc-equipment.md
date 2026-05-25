@@ -18,19 +18,28 @@ Consumable medical items for field treatment, injury response, and condition man
 
 | Item | Notes |
 |------|-------|
-| [ARA-5](#altoa-radiation-antidote-5-ara-5) | Single use. Removes radiation wounds and conditions within 1hr. |
+| [ARA-5](#analgesic-radiation-antidote-5-ara-5) | Single use. Removes radiation wounds and conditions within 1hr. |
+| [Crash Foam Canister](#crash-foam-canister) | Single use. Stabilizes a Dying Android or automated machine. |
 | [Emergency Trauma Patch](#emergency-trauma-patch) | Single use. Closes lacerations and punctures. Works on Evosuits. |
 | [Pain Suppressant Injector](#pain-suppressant-injector) | Variable dosage. Suppresses condition effects temporarily. |
 | [Vitaboost Injector](#vitaboost-injector) | Single use. Heals 1 VIT or attribute damage. |
 
 {{% details "Altoa Radiation Antidote 5 (ARA-5)" %}}
-### Altoa Radiation Antidote 5 (ARA-5)
+### Analgesic Radiation Antidote 5 (ARA-5)
 
 *--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
 
 Single use injector that removes radiation-based wounds and conditions if applied within 1hr of exposure. Application costs 2 AP.
 
-Developed by Altoa Research for use by Iris Federation employees only.
+*Lore* -- Developed for use by corporate employees only, however, its value to exploration groups has made its availability more widespread. The corporate entities that develop it make an ongoing effort to seize any ARA-5 they come across as corporate property.
+{{% /details %}}
+
+{{% details "Crash Foam Canister" %}}
+### Crash Foam Canister
+
+*–Cr — 1lb — Single Use*
+
+A pressurized aerosol that deploys a fast-setting composite foam to seal chassis breaches and stabilize critical internal systems. When applied to an Android or automated machine with the Dying condition, it halts FORT check progression without restoring VIT — the machine remains unconscious at 0 VIT until properly repaired. Costs 2 AP to apply. Has no effect on organic creatures.
 {{% /details %}}
 
 {{% details "Emergency Trauma Patch" %}}
@@ -129,6 +138,7 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 | Item | Notes |
 |------|-------|
 | [Bio Scanner](#bio-scanner) | Scans organic matter. 2 AP, 5ft range. |
+| [Bioskin Veil](#bioskin-veil) | Creates a near-perfect disguise. |
 | [Comp Jack](#comp-jack) | Required for interfacing with computer systems. |
 | [Data Ripper [Level X]](#data-ripper-level-x) | Forceful AI-assisted data extraction. |
 | [Data Spike](#data-spike) | Disposable high-speed USB data extraction device. |
@@ -140,7 +150,9 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 | [Mag Cuffs](#mag-cuffs) | Encrypted magnetic handcuffs with wrist controller. |
 | [Mini Laser Cutter](#mini-laser-cutter) | Direct contact laser cutter/welder. |
 | [Personal Shield](#personal-shield) | 10pts protection for up to 3 rounds. |
+| [Reactor Cores](#reactor-cores) | Self-charging power cores for automated machines. |
 | [Remote Detonator](#remote-detonator) | Detonates rigged explosives or systems. |
+| [Signature Spoofer](#signature-spoofer) | Emits a false bio-signature to scanners. |
 | [Squad Shield](#squad-shield) | 30pts protection, 20ft radius, up to 6 rounds. |
 | [Standardized Battery Cores](#standardized-battery-cores) | Portable power available in multiple sizes. |
 
@@ -150,6 +162,20 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 *--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small]*
 
 A scanner that can determine potential useful properties of most organic matter. Costs 2 AP to use, 5ft range. Requires one supply roll when activated.
+{{% /details %}}
+
+{{% details "Bioskin Veil" %}}
+### Bioskin Veil
+
+*--Cr — 0lbs — Head — Single Use per application*
+
+A near-invisible membrane that overlays the wearer's face and neck, reshaping to match another creature's. This appearance must be scanned from a captured image or live subject. The scanning process takes one minute, during which the veil must be worn adjacent to the scanned subject. Activation costs 1 AP and the transformation takes only a few seconds.
+
+Once applied, the disguise holds for 8hrs or until the membrane is damaged or removed, whichever comes first. The disguise is convincing to passive observation. An actively suspicious observer can attempt an INS check to discover the deception — target 14, or 8 if the disguise impersonates a specific individual known to the observer. The Veil does not alter voice, biometrics, or limb structure.
+
+Cannot be applied to a Reptilian using its Single Shift, as the membrane interferes with the shift.
+
+*Lore* -- Of dubious legal origin in most systems. Possession is usually a minor offense facing confiscation and a fine.
 {{% /details %}}
 
 {{% details "Comp Jack" %}}
@@ -165,7 +191,12 @@ A common but complex tool used to interact with computer systems at virtually an
 
 *--Cr — 0lbs — Single Use*
 
-A disposable high-speed data extraction USB storage device. Can be used to rapidly download secured data with proper access. Larger files or those with heavy encryption may take longer to download, but most items can be downloaded in 1d4+2 rounds.
+A disposable high-speed data extraction USB storage device used to rapidly download data. Large or complicated files may take longer to download, but most items can be downloaded in 1d4+2 rounds.
+A data spike can be used to download encrypted files, but there is a 20% chance of failure for each level of encryption.
+
+To use, simply pull up the data you would like to download on a computer/terminal and insert the USB. To retrieve, plug the USB into the desired computer or terminal and the data will be downloaded to it at the same rate it was loaded onto the data spike. The data spike will then be useless, please recycle appropriately.
+
+Successfully downloaded encrypted data will still need to be decrypted once retrieved.
 {{% /details %}}
 
 {{% details "Decoy Beacon" %}}
@@ -181,7 +212,7 @@ Mimics encrypted com signals and life signs of a human. Costs 1 AP to activate. 
 
 *--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
-Fires a magnetic grappling hook that can puncture soft materials, hook an edge, or attach to magnetic surfaces. Successfuly dwployed lines can be detatched from the gun and anchored to provide a +2 bonus to related climb checks. The line can support up to 400lbs. Requires 1 supply roll per use. Costs 2 AP to fire, 0 AP to detatch a fired line, and 2 AP to anchor a detatched line. 
+Fires a magnetic grappling hook that can puncture soft materials, hook an edge, or attach to magnetic surfaces. Successfully deployed lines can be detached from the gun and anchored to provide a +2 bonus to related climb checks. The line can support up to 400lbs. Requires 1 supply roll per use. Costs 2 AP to fire, 0 AP to detach a fired line, and 2 AP to anchor a detached line. 
 {{% /details %}}
 
 {{% details "Gravity Anchor" %}}
@@ -227,12 +258,38 @@ A belt lined with projectors that, once activated, create a sheet-like protectiv
 {{% include "/snippets/energy-shields" %}}
 {{% /details %}}
 
+{{% details "Reactor Cores" %}}
+### Reactor Cores
+
+Self-sustaining power reactors for automated machines and high-drain equipment. Unlike standard battery cores, reactor cores are not interchangeable with standard battery slots without modification — adapting a [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) item to accept a reactor core requires a Tech Kit, a target 14 KNO check, and 1 hour of work.
+
+Reactor cores slowly regenerate their supply — a depleted die recovers one size after 6 hours in Rest Mode. They cannot be used with the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability.
+
+| Size | Physical Size | Common Charge | Description |
+|------|--------------|---------------|-------------|
+| Compact | ≈ Medium battery | 1d12 | –Cr — 2lbs |
+| Standard | ≈ Large battery | 2d12 | –Cr — 50lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+| Industrial | ≈ Industrial battery | 4d12 | –Cr — 120lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+{{% /details %}}
+
 {{% details "Remote Detonator" %}}
 ### Remote Detonator
 
 *--Cr — 0lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 Can be used to detonate rigged explosives or electrical systems. Comes with four receiver chips. Each chip can be wired to an explosive device or into an electrical system for 4 AP, a use of the tech kit with supplies, and a successful target 15 KNO check.
+{{% /details %}}
+
+{{% details "Signature Spoofer" %}}
+### Signature Spoofer
+
+*–Cr — 1lb — Neck — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
+
+A pendant-style device that broadcasts a forged biometric signature — voiceprint, retinal pattern, thermal profile, and pulse — to nearby sensors. Once a target signature is loaded (requires a [Data Spike](#data-spike) of the original sample), the spoofer presents that signature to any scanner within 15ft.
+
+Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 10 minutes.
+
+Does not alter visual appearance in any way.
 {{% /details %}}
 
 {{% details "Squad Shield" %}}

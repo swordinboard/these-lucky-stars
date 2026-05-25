@@ -84,7 +84,7 @@ If an ability has requirements that must be met before it can be selected, they 
 {{% tab "Sci-Fi General" %}}
 | Name | Description |
 |------|-------------|
-| [Armorer](#armorer) | Install and remove upgrades without risk of damage. |
+| [Tech Armor](#tech-armor) | Install and remove upgrades and components without risk of damage. |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. |
 | - [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
@@ -613,14 +613,14 @@ You may spend 2 Luck points to ignore all effects of an attack that does not dea
 
 ## Sci-Fi General
 
-{{% details "Armorer" %}}
-### Armorer
+{{% details "Tech Armor" %}}
+### Tech Armor
 
 *[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency*
 
-You can add and remove electronic weapon and armor upgrades using the tech kit or repair kit without risk of damaging the upgrade. Each upgrade takes 30 minutes to install and calibrate, and half as much time to remove.
+You can add and remove electronic weapon and armor upgrades, as well as [components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components), using the tech kit or repair kit without risk of damaging them. Each takes 30 minutes to install and calibrate, and half as much time to remove.
 
-*Normal: Upgrades require tech kit, a target 12 KNO or DEX roll, and take 1hr to install or remove. If the roll is failed, the upgrade takes 1d4 damage and 3d20 minutes is wasted.*
+*Normal: Upgrades require a tech kit, a target 12 KNO roll, and take 1hr to install or remove — on a failed roll the upgrade takes 1d4 damage and 3d20 minutes is wasted. Components follow the same process; on a failed roll the component takes 1d4 damage and 1d4 supplies are wasted.*
 {{% /details %}}
 
 {{% details "Companion Bot" %}}
@@ -628,9 +628,9 @@ You can add and remove electronic weapon and armor upgrades using the tech kit o
 
 *[General Robotics](/docs/free-srd/character-creation/proficiencies/#general-robotics) Proficiency, Level 3*
 
-You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and the use of a tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
+You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and the use of a tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. You gain a minor advantage to all rolls made to repair your companion due to your familiarity. You are always able to understand your companion and communicate with it via normal speech. Unlike commanding other automated machines, it does not cost any AP to command your companion, the two of you act in sync.
 
-*Normal: Repairs to most drones require the tech kit with supplies and a successful target 15 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
+*Normal: Repairs to most automated machines require the tech kit with supplies and a successful target 12 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
 {{% /details %}}
 
 {{% details "Opensaysame" %}}

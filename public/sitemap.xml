@@ -24,6 +24,8 @@
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/inventory--equipment/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/free-srd/inventory--equipment/item-tags/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/character-creation/races/</loc>
@@ -48,6 +50,8 @@
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/character-creation/races/android/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/free-srd/character-creation/races/classic-human/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/downloads/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/character-creation/races/reptilian/</loc>
@@ -61,6 +65,8 @@
     <loc>http://localhost:1313/docs/free-srd/core-rules/action-economy/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/free-srd/core-rules/health/</loc>
   </url><url>
@@ -79,6 +85,14 @@
     <loc>http://localhost:1313/docs/appinstall/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/legal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hakr/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url>

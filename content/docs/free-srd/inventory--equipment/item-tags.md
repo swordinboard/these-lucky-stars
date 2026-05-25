@@ -11,6 +11,7 @@ Many items have tags to quickly identify common features and use requirements. T
 
 <div class="four-col">
 
+- [Adaptive Mesh](#adaptive-mesh)
 - [Arcing](#arcing)
 - [Ballistic [___]](#ballistic)
 - [Battery [___]](#battery)
@@ -21,6 +22,7 @@ Many items have tags to quickly identify common features and use requirements. T
 - [Injector](#injector)
 - [Long Reload](#long-reload)
 - [Pressurized](#pressurized)
+- [Power Source](#power-source)
 - [Rounds Reload](#rounds-reload)
 - [Space Suit](#space-suit)
 - [Throwable [___]](#throwable)
@@ -30,6 +32,16 @@ Many items have tags to quickly identify common features and use requirements. T
 </div>
 
 ---
+
+{{% details "Adaptive Mesh" %}}
+### Adaptive Mesh
+
+A highly engineered fabric originally developed to accommodate dramatic changes in shape and size. Items with the Adaptive Mesh tag scale with their wearer when their size changes, and do not interfere with abilities that change wearer's size or shape. Adaptive Mesh does not transfer this property to other items worn over or under it.
+
+This tag can be applied to most clothing items, armors, and space suits. Typically, the amount of "hard parts" an article has the more expensive it is to make with Adaptive Mesh layers, increasing the price significantly for armors and space suits.
+
+*Lore* Adaptive Mesh was first developed by Zeta Grey engineers to accommodate their resize ability, particularly while wearing space suits. Adaptive Mesh items are rare outside of Zeta Grey enclaves, and are priced accordingly.
+{{% /details %}}
 
 {{% details "Arcing" %}}
 ### Arcing
@@ -47,7 +59,7 @@ Ammo is tracked using [supply dice](/docs/free-srd/the-basics/#supply-rolls), of
 
 Regardless of type, ammo weighs 3lbs per ammo die.
 
-**Equipping for Use:** Ammo must be equipped in an [Ammo Pouch Set](/docs/free-srd/inventory--equipmeny/generic-equipment/#pouch-set-ammo) a normal reload during combat. If not equipped in this manner, additional AP is required to retrieve it.
+**Equipping for Use:** Ammo must be equipped in an [Ammo Pouch Set](/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-ammo) a normal reload during combat. If not equipped in this manner, additional AP is required to retrieve it.
 
 **Reloading:** A ballistic weapon must be reloaded when its current ammo die is depleted, or to swap to another ammo die. Reloading a ballistic weapon normally costs 2 AP regardless of weapon style. Some weapon tags, upgrades, and abilities change the reload time of a weapon.
 
@@ -119,6 +131,16 @@ The normal reload for these weapons requires 3 AP rather than 2.
 ### Pressurized
 
 Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against other harsh environmental conditions. These full-body suits include a helmet. Most often used in controlled low-oxygen environments.
+{{% /details %}}
+
+{{% details "Power Source" %}}
+### Power Source
+
+Items with the Power Source tag have a built-in primary power supply that drives all of their systems. Most commonly found on automated machines — robots, drones, and Androids — these items can accept different types of primary power supply, including [standardized battery cores](#battery) and [reactor cores](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores).
+
+Components and other equipment with the Power Source tag draw from their host's primary power supply rather than a dedicated battery. Supply rolls for these components are made against the primary power source's current supply die.
+
+Items with the Power Source tag can have their power supply swapped or modified with a Tech Kit.
 {{% /details %}}
 
 {{% details "Rounds Reload" %}}

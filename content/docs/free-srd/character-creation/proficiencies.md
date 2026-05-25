@@ -24,7 +24,7 @@ If a proficiency has requirements that must be met before it can be selected, th
 | [Improved Ability [___]](#improved-ability) | Special training with a particular ability. |
 | [Martial Training](#martial-training) | Trained to fight unarmed as effectively as armed. |
 | [Medic Training](#medic-training) | Trained in the use of the med kit. |
-| - [Medical Instincts](#Medical-instincts) | Add INS to Medic Training rolls. |
+| - [Medical Instincts](#medical-instincts) | Add INS to Medic Training rolls. |
 | [Negotiation Training](#negotiation-training) | +2 bonus on rolls to negotiate, broker deals, or de-escalate conflict. |
 | [Repair Kit](#repair-kit) | Trained in the use of the repair kit. |
 | [Research [___]](#research) | +2 bonus on KNO checks related to a chosen field of study. |
