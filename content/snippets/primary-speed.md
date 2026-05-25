@@ -4,7 +4,7 @@ headless: true
 
 > **Primary Speed = 20 + 5 per +1 AGI Bonus or Flat −5 if AGI Penalty + Mods**
 
-Speed describes the normal mode of movement of a character, conveniently rounded to 5ft spaces. It represents the distance in feet a character can cover with a single Move action using a designated method of movement.
+Speed describes the normal mode of movement of a character, conveniently rounded to 5ft spaces. It represents the distance in feet a character or vehicle can cover with a single Move action using a designated method of movement.
 
 **Primary Speed**
 

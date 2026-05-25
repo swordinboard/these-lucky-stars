@@ -15,12 +15,12 @@ A vehicle has its own stat block that defines its size (in spaces), speed, and a
 
 ### Vehicle Size
 
-A vehicle's size is described by its footprint, the number of spaces it occupies.
+A vehicle's size is described by the longest length of the vehicle in spaces. For instance a car that is 4ft high, 7ft wide, and 12ft long would have a vehicle size of 3 (3, 5ft spaces for the 12ft length). This number represents the vehicle's size modifier which is used for maneuverability and collision.
 
 ### Speed
 
 > [!Note]
-> Because these rules deal closely with movement and Speed, this section includes many of the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations.
+> Because these rules deal closely with movement and Speed, this section includes the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations. Thus, those rules are reiterated here.
 
 #### Speed tiers
 
@@ -35,6 +35,7 @@ Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers a
 
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
+*As included in [Speed](/docs/free-srd/core-rules/action-economy/#speed)*
 {{% include "/snippets/speed-tiers" %}}
 
 #### Modes & Maneuverability
