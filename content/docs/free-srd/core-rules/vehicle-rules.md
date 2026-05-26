@@ -27,7 +27,7 @@ A vehicle's size is described by the longest length of the vehicle in spaces. Fo
 Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers are universal across all vehicles and characters, and each tier carries a **speed modifier** used as a flat bonus to damage and to determine check targets for vehicle interactions.
 
 > [!IMPORTANT]
-> Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as **6 + the speed modifier**: > 
+> Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as *6 + the speed modifier:* > 
 > - 6 at Slow
 > - 9 at Moderate
 > - 13 at Fast
@@ -35,13 +35,14 @@ Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers a
 
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
-*As included in [Speed](/docs/free-srd/core-rules/action-economy/#speed)*
+{{% details "*As included in [Speed](/docs/free-srd/core-rules/action-economy/#speed):*" %}}
 {{% include "/snippets/speed-tiers" %}}
 
 #### Modes & Maneuverability
 
 {{% include "/snippets/speed-descriptors" %}}
 
+{{% /details %}}
 ---
 
 ### Vehicle Actions
@@ -59,9 +60,9 @@ Pilot/drive the vehicle. The driver spends 2 AP and declares a path within the v
 
 A character may attempt to board or bail from a moving vehicle for **2 AP**, or as part of a **[Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action for no additional AP**.
 
-**Board** — The character must be adjacent to or in the path of the vehicle. Make an **AGI check against the vehicle's speed target** (6 + speed modifier). On a success, the character is now an occupant of the vehicle. On a failure, the character remains where they are.
+**Board** — The character must be adjacent to or in the path of the vehicle. Make an **AGI check with a target of 6 + the vehicle's speed modifier.* On a success, the character is now an occupant of the vehicle in some capacity. On a failure, the character remains where they are. It should be noted that success does not neccesarily grant the person boarding a vehicle atraditional space within the vehicle; They may be clinging to the hood of a truck or have landed on the top of a traincar.
 
-**Bail** — The character is an occupant of the vehicle. Make an **AGI check against the vehicle's speed target**. On a success, the character lands safely in an unoccupied space adjacent to the vehicle's path. On a failure, the character lands [**prone**](/docs/free-srd/core-rules/wounds--conditions/#prone) in an adjacent space and takes damage equal to the vehicle's impact/overrun dice (without the speed bonus).
+**Bail** — Characters jumping off of a moving vehicle can attempt an *AGI check with a target of 6 + the vehicle's speed modifier* to avoid injury. On a success, the character lands safely in an unoccupied space adjacent to the vehicle's path. Depending on the speed and distance to the ground  the character may land on their feet or [prone](/docs/free-srd/core-rules/wounds--conditions/#prone) and/or tumble several spaces. the vehicle was moving at a slow speed they are able to land safely on their feet. Upon failure, the character lands [prone](/docs/free-srd/core-rules/wounds--conditions/#prone), is subject to the same GM discression on tumbling, and loses one VIT for every 10mph (or 60ft of movement) of the vehicle's speed at the time og bailing.
 
 Boarding a stationary vehicle or bailing from a stationary vehicle requires no check and happens as part of a normal Move action.
 
@@ -91,7 +92,7 @@ If the driver declares a Drive path that deliberately passes through a creature'
 
 The creature in the path may attempt to dodge as a reaction. A creature who has not yet acted in initiative is caught by [surprise](/docs/free-srd/core-rules/combat/#surprise-attacks) and makes the dodge at a [minor disadvantage](/docs/free-srd/core-rules/basics/#advantage) for vehicles moving at Slow and Moderate Speeds, and at a [major disadvantage](/docs/free-srd/core-rules/basics/#advantage) for those moving at Fast and Very Fast Speeds.
 
-A creature eligible to dodge makes an **AGI check** against the vehicle's speed and size (see below). On a success, they move to an unoccupied adjacent space outside the vehicle's path and take no damage. On a failure, they suffer the full impact/overrun damage and are knocked [**prone**](/docs/free-srd/core-rules/wounds--conditions/#prone). The vehicle continues along its declared path in either case.
+A creature eligible to dodge makes an *AGI check against the vehicle's speed and the numner of spaces they need to move to get out of danger*. On a success, they move to an unoccupied adjacent space outside the vehicle's path and take no damage. On a failure, they suffer the full impact/overrun damage and are knocked [prone](/docs/free-srd/core-rules/wounds--conditions/#prone). The vehicle continues along its declared path in either case. It should be noted that in some cases a character may not need to move out of the way entirely, only react enough to duck or lay down, reducing the target of the dodge.
 
 > Target to Dodge a Vehicle = 6 + vehicle's Speed modifier + number of spaces character is required to move.
 
