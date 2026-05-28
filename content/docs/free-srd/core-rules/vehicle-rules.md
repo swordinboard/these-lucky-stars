@@ -24,18 +24,20 @@ A vehicle's size is described by the longest length of the vehicle in spaces. Fo
 
 #### Speed tiers
 
-Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers are universal across all vehicles and characters, and each tier carries a **speed modifier** used as a flat bonus to damage and to determine check targets for vehicle interactions.
+> [!NOTE]
+> *Short:* Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as *6 + the speed modifier:*
+> - 6 at Slow (mod 0)
+> - 9 at Moderate (mod 3)
+> - 13 at Fast (mod 7)
+> - 18 at Very Fast. (mod 12)
 
-> [!IMPORTANT]
-> Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as *6 + the speed modifier:* > 
-> - 6 at Slow
-> - 9 at Moderate
-> - 13 at Fast
-> - 18 at Very Fast.
+Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers are universal across all vehicles and characters, and each tier carries a **speed modifier** used as a flat bonus to damage and to determine check targets for vehicle interactions.
 
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
-{{% details "*As included in [Speed](/docs/free-srd/core-rules/action-economy/#speed):*" %}}
+{{% include "/snippets/speed-tiers-chart" %}}
+
+{{% details "*Speed References from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed):*" %}}
 {{% include "/snippets/speed-tiers" %}}
 
 #### Modes & Maneuverability
@@ -47,22 +49,34 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 
 ### Vehicle Actions
 
-Vehicles primarily introduce variations of the [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action. Drive is simply directing a Move, and Board and Bail interact with the existing Move action directly. All other combat actions work as normal whether a character is on foot, a passenger, or the driver.
+Vehicles primarily introduce variations of the [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action. Drive is simply directing a Move, Board and Bail interact with the existing Move action directly, impact and overrun (seen [below](#impact--overrun) are not their own actions and are instead concequences of a Move action. All other actions work as normal whether a character is on foot, a passenger, or the driver.
 
 > [!IMPORTANT]
-> **Driver Actions** — Actions other than Drive and Bail taken by the driver of a vehicle are at a *disadvantage*, reflecting the attention required to pilot/drive a vehicle.
+> **Driver Actions** — Actions other than Drive and Bail taken by the driver of a vehicle are done at a *disadvantage*, reflecting the attention required to pilot/drive a vehicle.
+
+#### Ignition
+
+Many vehicles must be turned on before they can be driven or piloted. Some require an ignition phase that stretches over multiple rounds. Details on each vehicle's ignition sequence — or how to simply start the vehicle — is provided in each vehicle's description. Some have a simple AP cost tied to an action while others involve multiple rounds and AP costs.
 
 #### Drive
 
-Pilot/drive the vehicle. The driver spends 2 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. Success may be determined by the complexity of the path, requiring Drive checks for tight turns or other difficult maneuvers. The driver must have the appropriate vehicle proficiency to drive without penalty — an untrained driver suffers disadvantage on all checks related to operating the vehicle (including [mounts](#mounts)). Once a vehicle is moving it will continue to travel in the chosen direction upon the driver's next turn at the designated speed unless stopped/slowed by the driver as part of a Drive action, or acted upon by an external force such as a collision.
+ This action and its checks may be refered to as Drive, Pilot, or Ride depending on the vehicle or mount being used. It is used to direct or command the vehicle or mount's movement during one's turn similar to a Move action.
+
+**Path** — The driver spends 3 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. This path can pass through occupies spaces, however it risks a [collision](#imapct--overrun). A single Drive action can move uo to *double* a vehicle's Speed, as if combining teo Move actions into one. Howrver, acceleration must be considered when determining the total travel distance one can cover in a singke round. and acceleratioj only applies once per Drive action.
+
+**Drive Checks** — Success may need to be determined based on the complexity of the path, requiring Drive checks for tight turns — typically those close to or morw than 90° — sudden accelerations or deccelerations, or other difficult maneuvers at the GM's discression. The driver must have the appropriate vehicle proficiency to drive without penalty — an *untrained driver suffers disadvantage on all checks related to operating the vehicle* (including [mounts](#mounts)).
+
+**Continued Movement** — Once a vehicle is moving it will continue to travel in the chosen direction upon the driver's next turn at the designated speed unless directed or stopped/slowed by the driver as part of another Drive action, or acted upon by an external force such as a collision. The Drive action is required to direct the path and alter speed, it is recommened to maintain control of the vehicle.
 
 #### Boarding & Bailing
 
-A character may attempt to board or bail from a moving vehicle for **2 AP**, or as part of a **[Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action for no additional AP**.
+A character may attempt to board or bail from a moving vehicle for 2 AP, or as part of a [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action for no additional AP.
 
-**Board** — The character must be adjacent to or in the path of the vehicle. Make an **AGI check with a target of 6 + the vehicle's speed modifier.* On a success, the character is now an occupant of the vehicle in some capacity. On a failure, the character remains where they are. It should be noted that success does not neccesarily grant the person boarding a vehicle atraditional space within the vehicle; They may be clinging to the hood of a truck or have landed on the top of a traincar.
+**Board** — The character must be adjacent to or in the path of the vehicle. Make an *AGI check with a target of 6 + the vehicle's speed modifier.* On a success, the character is now an occupant of the vehicle in some capacity. On a failure, the character remains where they are. It should be noted that success does not neccesarily grant the person boarding a vehicle atraditional space within the vehicle; They may be clinging to the hood of a truck or have landed on the top of a traincar.
 
-**Bail** — Characters jumping off of a moving vehicle can attempt an *AGI check with a target of 6 + the vehicle's speed modifier* to avoid injury. On a success, the character lands safely in an unoccupied space adjacent to the vehicle's path. Depending on the speed and distance to the ground  the character may land on their feet or [prone](/docs/free-srd/core-rules/wounds--conditions/#prone) and/or tumble several spaces. the vehicle was moving at a slow speed they are able to land safely on their feet. Upon failure, the character lands [prone](/docs/free-srd/core-rules/wounds--conditions/#prone), is subject to the same GM discression on tumbling, and loses one VIT for every 10mph (or 60ft of movement) of the vehicle's speed at the time og bailing.
+**Bail** — Characters jumping off of a moving vehicle can attempt an *AGI check with a target of 6 + the vehicle's speed modifier* to avoid injury.
+On a success, the character lands safely in an unoccupied space adjacent to the vehicle's path. Depending on the speed and distance to the ground  the character may land on their feet or [prone](/docs/free-srd/core-rules/wounds--conditions/#prone) and/or tumble several spaces at the discression of the GM.
+Upon failure, the character lands [prone](/docs/free-srd/core-rules/wounds--conditions/#prone), is subject to the same GM discression on tumbling, and loses one VIT for every 10mph (or 60ft of movement) of the vehicle's speed at the time of bailing.
 
 Boarding a stationary vehicle or bailing from a stationary vehicle requires no check and happens as part of a normal Move action.
 
@@ -104,14 +118,14 @@ The GM selects the appropriate check based on the vehicle type and situation. Co
 
 > Target to Avoid Collision = 6 + the vehicle's Speed modifier + the vehicle's maneuverability rating
 
-On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled.
+On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled. The driver may also choose to stop before impact, provided their decceleration allows it.
 
 On a **failure**, the GM determines what happens based on the situation:
 
 - The vehicle swerves and loses control, possibly triggering a **Collision with a static object** (see below).
 - The vehicle strikes the obstacle and is forced to a stop, dealing impact/overrun damage to the obstacle and taking damage itself if the obstacle is of comparable size or larger.
 
-The choice between these failure outcomes is narrative — a motorcycle might lay down in a partially controlled slide, while a car at speed might slam into a barrier.
+The choice between these failure outcomes may be primarily narrative and result in collision damage — a motorcycle might lay down in an uncontrolled slide, while a car at speed might slam into a barrier.
 
 ---
 
@@ -121,7 +135,7 @@ The choice between these failure outcomes is narrative — a motorcycle might la
 
 A single formula handles all damage dealt by a vehicle's contact with a creature or object, whether that contact is a high-speed impact or a slow, inexorable crushing. Collision damage is rolled per object. When a large creature is struck by a car, the creature rolls the damage it is dealt and the driver of the car rolls the damage that the car and its occupants are dealt.
 
-Damage type is [**Physical**](/docs/free-srd/core-rules/combat/#damage-types).
+Damage type is [Physical](/docs/free-srd/core-rules/combat/#damage-types).
 
 **Number of Dice** — The vehicle rolls one d6 for each space it occupies. A motorcycle (1 space) rolls 1d6. A car (2 spaces) rolls 2d6. A truck (4 spaces) rolls 4d6. A bus (6 spaces) rolls 6d6. This scales linearly with the vehicle's physical footprint, all the way up to massive craft — a small spaceship occupying 16 spaces rolls 16d6.
 
@@ -137,9 +151,9 @@ The damage a vehicle deals to a creature can come from two different physical re
 
 Most real collisions involve a mix of both. A car at moderate speed hitting a pedestrian delivers some damage from impact (the initial strike) and some from overrun (being thrown, dragged, or pinned afterward). The GM describes the damage narratively according to what happened, but mechanically it's all resolved through the same roll.
 
-This is why a slow-moving large vehicle still deals meaningful damage even with no speed modifier — the dice represent the crushing weight of the vehicle, which doesn't go away just because the vehicle is barely moving. It's also why a fast motorcycle deals meaningful damage despite being a single space — the speed modifier represents the kinetic energy of the strike, which doesn't require mass to be dangerous.
+This is why a slow-moving large vehicle still deals meaningful damage even with no speed modifier — the dice represent the crushing weight of the vehicle, which doesn't go away just because the vehicle is barely moving. It's also why a fast motorcycle deals meaningful damage despite its small size — the speed modifier represents the kinetic energy of the strike, which doesn't require mass to be dangerous.
 
-> **Example — Truck crushes pedestrian.** A 4-space truck is slowly backing up (Slow speed) and a pedestrian is caught under its wheels. Damage is 4d6 + 0, averaging 14. The GM describes this as the pedestrian being pinned and dragged by the truck's weight — overrun, not impact. The character takes significant damage despite the truck barely moving.
+> **Example — Truck crushes pedestrian.** A size 4 truck is slowly backing up (Slow speed) and a pedestrian is caught under its wheels. Damage is 4d6 + 0, averaging 14. The GM describes this as the pedestrian being pinned and dragged by the truck's weight — overrun, not impact. The character takes significant damage despite the truck barely moving.
 
 #### Damage to the Vehicle
 
@@ -151,18 +165,22 @@ Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-
 
 > Target to Brace = 6 + Speed modifier
 
-> **Example:** A car (2 spaces) moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
+> **Example** — A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
 
 <!--
-> **Example — Motorcycle hits pedestrian at speed.** A 1-space motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce their collision damage by half.
+> **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.
 
-> **Example — Truck rams car head-on.** A 4-space truck moving at a Fast speed collides head-on with a 2-space car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
+> **Example** — A size 4 truck moving at a Fast speed collides head-on with a size 2 car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
 
 ---
 
 ## Mounts
 
 Mounts are a special type of vehicle. Because mounts are living creatures with their own attributes, features, and behavior, they follow slightly different rules from mechanical vehicles. This section gathers all mount-specific rules in one place.
+
+### Cover, Ignition
+Most mounts do not provide cover to their riders the way a solid vehicle may, but can do so like amy other obstructing object if the angle is correct.
+Mounts do not have an ignition phase. Sticking a key in a horse is not recommended, please wake gently.
 
 ### Mounts as Equipment vs. Mounts as Allies
 
@@ -183,10 +201,10 @@ A mount's combat capabilities come from its own stat block. When a rider command
 
 Not every mount obeys every command. A well-trained, bonded, or willing mount cooperates with its rider's commands automatically. Riders may face a disadvantage when attempting to command an unwilling, unfamiliar, or spooked mount. 
 
-A mount may also be willing to perform some actions, but unwilling to perform others. Most mounts are unwilling to perform actions that put them in direct danger.
+A mount may also be willing to perform some actions, but unwilling to perform others. Most mounts are unwilling to perform actions that put them in direct danger and in some cases no command check will force them to do so.
 
 ### Mounts and Impact/Overrun
 
 Unlike other vehicles, living mounts do not automatically deal impact/overrun damage through their movement. Most mounts will adjust their footing whenever possible to avoid other creatures, so a Speed of Moderate or greater is required to deliberately deal collision damage to a target. If the rider wants the mount to run someone down deliberately, they must command the mount with a Drive action *and* be moving at sufficient speed before the impact. 
 
-A mount commanded to collide with a target it would normally consider an ally, or against a creature much larger than itself, is likely to be considered unwilling — the rider must succeed on the command check before the mount will obey. Similarly, mounts are unwilling to collide with most static objects and will outright refuse to collide with static objects that are larger than themselves.
+A mount commanded to collide with a target it would normally consider an ally, or against a creature of similar size to itself, is likely to be considered unwilling — the rider must succeed on the command check before the mount will obey. Similarly, mounts are unwilling to collide with most static objects and and will outright refuse to collide with static objects that are larger than themselves regardless of any unwilling attempt made.
