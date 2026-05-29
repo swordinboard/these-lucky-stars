@@ -64,7 +64,7 @@ Many vehicles must be turned on before they can be driven or piloted. Some requi
 
 **Path** — The driver spends 3 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. This path can pass through occupies spaces, however it risks a [collision](#imapct--overrun). A single Drive action can move uo to *double* a vehicle's Speed, as if combining teo Move actions into one. Howrver, acceleration must be considered when determining the total travel distance one can cover in a singke round. and acceleratioj only applies once per Drive action.
 
-**Drive Checks** — Success may need to be determined based on the complexity of the path, requiring Drive checks for tight turns — typically those close to or morw than 90° — sudden accelerations or deccelerations, or other difficult maneuvers at the GM's discression. The driver must have the appropriate vehicle proficiency to drive without penalty — an *untrained driver suffers disadvantage on all checks related to operating the vehicle* (including [mounts](#mounts)).
+**Drive Checks** — Success may need to be determined based on the complexity of the path, requiring Drive checks for tight turns — typically those close to or morw than 90° — sudden accelerations or decelerations, or other difficult maneuvers at the GM's discression. The driver must have the appropriate vehicle proficiency to drive without penalty — an *untrained driver suffers disadvantage on all checks related to operating the vehicle* (including [mounts](#mounts)).
 
 **Continued Movement** — Once a vehicle is moving it will continue to travel in the chosen direction upon the driver's next turn at the designated speed unless directed or stopped/slowed by the driver as part of another Drive action, or acted upon by an external force such as a collision. The Drive action is required to direct the path and alter speed, it is recommened to maintain control of the vehicle.
 
@@ -118,7 +118,7 @@ The GM selects the appropriate check based on the vehicle type and situation. Co
 
 > Target to Avoid Collision = 6 + the vehicle's Speed modifier + the vehicle's maneuverability rating
 
-On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled. The driver may also choose to stop before impact, provided their decceleration allows it in the distance before the impact.
+On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled. The driver may also choose to stop before impact, provided their deceleration allows it in the distance before the impact.
 
 On a **failure**, the GM determines what happens based on the situation:
 

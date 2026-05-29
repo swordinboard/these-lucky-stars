@@ -28,7 +28,7 @@ Each speed also has a **base maneuverability rating** (High (0), Medium (2), or 
 
 *If maneuverability is excluded or left blank, then it is null. A vehicle or creature with such a Speed may change direction at will without requiring any turn radius regardless of size or speed tier.*
 
-**Acceleration & Decceleration**
+**Acceleration & Deceleration**
 
 Most vehicles require time to accelerate in order to travel at their full Speed. Acceleration describes how much a vehicle or creature can increase its movement speed in a *single Move or Drive action*.
 
@@ -45,6 +45,6 @@ A vehicle or creature can safely deccelerate twice as quickly as it is able to a
 > - Round 5: +50ft/round acceleration, Speed 350ft
 >
 > Similarly, if already moving at top speed and continuing to make single move actions each turn, said creature must spend three rounds deccelerating before it can come to a stop.
- > - Round 1: -150ft/round decceleration, Speed 200ft
- > - Round 2: -150ft/round decceleration, Speed 50ft
- > - Round 3: -50ft/round decceleration, movement ends after 50ft of travel and Speed ends at 0.
+ > - Round 1: -150ft/round deceleration, Speed 200ft
+ > - Round 2: -150ft/round deceleration, Speed 50ft
+ > - Round 3: -50ft/round deceleration, movement ends after 50ft of travel and Speed ends at 0.
