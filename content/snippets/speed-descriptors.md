@@ -34,7 +34,7 @@ Most vehicles require time to accelerate in order to travel at their full Speed.
 
 A vehicle or creature can safely deccelerate twice as quickly as it is able to accelerate.
 
-*If acceleration is excluded or left blank, then it is null. A vehicle or creature with such a Speed may accelerate to its full movement in a single Move or Drive action, including any bonuses to Speed. Acceleratioj is primaroly reserved for vehicles, living creatures and mounts typically have null acceleration.*
+*If acceleration is excluded or left blank, then it is null. A vehicle or creature with such a Speed may accelerate to its full movement in a single Move or Drive action, including any bonuses to Speed. Acceleration is primarily reserved for vehicles, living creatures and mounts typically have null acceleration.*
 
 > [!TIP]
 > **Example** — If a stationary creature has a Speed of Ground 350ft (Moderate, 75ft/round) and is making single move actions each turn, it must spend five rounds accelerating (via a move action) before it can reach its top Speed:

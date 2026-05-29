@@ -22,7 +22,7 @@ A vehicle's size is described by the longest length of the vehicle in spaces. Fo
 > [!Note]
 > Because these rules deal closely with movement and Speed, this section includes the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations. Thus, those rules are reiterated here.
 
-#### Speed tiers
+#### Speed Tiers
 
 > [!NOTE]
 > *Short:* Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as *6 + the speed modifier:*
@@ -35,15 +35,19 @@ Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers a
 
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
+{{% details "Speed Tiers" %}}
 {{% include "/snippets/speed-tiers-chart" %}}
 
-{{% details "*Speed References from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed):*" %}}
-{{% include "/snippets/speed-tiers" %}}
+**Direct From Action Economy](/docs/free-srd/core-rules/action-economy/#speed):**
 
+{{% include "/snippets/speed-tiers" %}}
+{{% /details %}}
+
+{{% details "Modes & Maneuverability" %}}
+**Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed)**
 #### Modes & Maneuverability
 
 {{% include "/snippets/speed-descriptors" %}}
-
 {{% /details %}}
 ---
 
@@ -88,8 +92,6 @@ Every character rolls [Initiative](/docs/free-srd/core-rules/stats/#initiative) 
 
 A vehicle moves only on the driver's turn. Passengers whose turns come before the driver act from the vehicle's current position. Passengers whose turns come after the driver act from the vehicle's new position. A passenger who wants to act from a specific position relative to the driver's movement can use a [Readied Action](/docs/free-srd/core-rules/action-economy/#readied-actions) to wait for the driver's turn.
 
----
-
 ### Cover from Vehicles
 
 The [cover](/docs/free-srd/core-rules/combat/#use-cover) a vehicle provides to its occupants depends on its construction, which is specified in the vehicle's stat block. Enclosed vehicles typically provide [full cover](/docs/free-srd/core-rules/combat/#use-cover) from most angles. Open vehicles provide partial cover or none at all. Mounts provide no cover to their riders.
@@ -126,8 +128,6 @@ On a **failure**, the GM determines what happens based on the situation:
 - The vehicle strikes the obstacle and is forced to a stop, dealing impact/overrun damage to the obstacle and taking damage itself if the obstacle is of comparable size or larger.
 
 The choice between these failure outcomes may be primarily narrative and result in collision damage — a motorcycle might lay down in an uncontrolled slide, while a car at speed might slam into a barrier.
-
----
 
 ### Collision Damage
 
