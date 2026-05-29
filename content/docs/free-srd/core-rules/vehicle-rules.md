@@ -110,7 +110,7 @@ A creature eligible to dodge makes an *AGI check against the vehicle's speed and
 
 > Target to Dodge a Vehicle = 6 + vehicle's Speed modifier + number of spaces character is required to move.
 
-#### Scenario B — A Hazard Appeared in the Path
+#### Scenario B — A Hazard Appeares in the Path
 
 If a creature, object, or other obstacle unexpectedly enters the driver's declared path mid-movement — through a [Readied Action](/docs/free-srd/core-rules/action-economy/#readied-actions), sudden visibility, another character's movement, or any other circumstance the driver did not anticipate — the driver makes a check to react.
 
@@ -118,7 +118,7 @@ The GM selects the appropriate check based on the vehicle type and situation. Co
 
 > Target to Avoid Collision = 6 + the vehicle's Speed modifier + the vehicle's maneuverability rating
 
-On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled. The driver may also choose to stop before impact, provided their decceleration allows it.
+On a **success**, the driver controls the vehicle enough to avoid the incident. Most small vehicles have enough room within a space to dodge a hazard without requiring a change to the declared path. In some cases, the path must be altered to avoid incident, possibly shortening the total distance traveled. The driver may also choose to stop before impact, provided their decceleration allows it in the distance before the impact.
 
 On a **failure**, the GM determines what happens based on the situation:
 
@@ -159,7 +159,7 @@ This is why a slow-moving large vehicle still deals meaningful damage even with 
 
 The striking vehicle takes **collision damage** from an impact/overrun **only** if the target is of comparable size or larger than the vehicle. A car striking a pedestrian takes no damage. A car striking another car, a wall, or a Large creature takes damage equal to the collision damage (rolled separately).
 
-#### Collision Occupants
+#### Collision & Occupants
 
 Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude) check** to brace against an impact — on a success, the occupant takes half damage.
 
@@ -177,10 +177,6 @@ Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-
 ## Mounts
 
 Mounts are a special type of vehicle. Because mounts are living creatures with their own attributes, features, and behavior, they follow slightly different rules from mechanical vehicles. This section gathers all mount-specific rules in one place.
-
-### Cover, Ignition
-Most mounts do not provide cover to their riders the way a solid vehicle may, but can do so like amy other obstructing object if the angle is correct.
-Mounts do not have an ignition phase. Sticking a key in a horse is not recommended, please wake gently.
 
 ### Mounts as Equipment vs. Mounts as Allies
 
@@ -205,6 +201,10 @@ A mount may also be willing to perform some actions, but unwilling to perform ot
 
 ### Mounts and Impact/Overrun
 
-Unlike other vehicles, living mounts do not automatically deal impact/overrun damage through their movement. Most mounts will adjust their footing whenever possible to avoid other creatures, so a Speed of Moderate or greater is required to deliberately deal collision damage to a target. If the rider wants the mount to run someone down deliberately, they must command the mount with a Drive action *and* be moving at sufficient speed before the impact. 
+Unlike other vehicles, living mounts do not automatically deal impact/overrun damage through their movement. Most mounts will adjust their footing whenever possible to avoid other creatures, so a Speed of Moderate or greater is required to deliberately deal collision damage to a target unless specified otherwise. If the rider wants the mount to run someone down deliberately, they must command the mount with a Drive action *and* be moving at sufficient speed before the impact. 
 
 A mount commanded to collide with a target it would normally consider an ally, or against a creature of similar size to itself, is likely to be considered unwilling — the rider must succeed on the command check before the mount will obey. Similarly, mounts are unwilling to collide with most static objects and and will outright refuse to collide with static objects that are larger than themselves regardless of any unwilling attempt made.
+
+### Sudden Stops
+
+When a mount stops while moving at moderate speed or faster, the rider must succeed on an *STR check with a target of 6 the mounts speed modifier,* or be thrown 10ft in the direction of travel and take *collision damage using the rider's size modifier to determine the numbwr of d6, and adding the speed modifier at which they were traveling before the sudden stop.*

@@ -3,7 +3,7 @@ headless: true
 ---
 
 > **Format:**
-> Mode  Distance in Feet (Base Maneuverability, Acceleration)
+> Mode Distance in Feet (Base Maneuverability, Acceleration)
 > Swim 80ft (High, 20ft/round)
 
 Speed descriptors describe what type of movement or terrain the Speed applies to, how difficult it is to maneuver, and how much it can accelerate per round.
@@ -34,7 +34,7 @@ Most vehicles require time to accelerate in order to travel at their full Speed.
 
 A vehicle or creature can safely deccelerate twice as quickly as it is able to accelerate.
 
-*If acceleration is excluded or left blank, then it is null.A vehicle or creature with such a Speed may accelerate to its full movement in a single Move or Drive action, including any bonuses to Speed. Acceleratioj is primaroly reserved for vehicles, living creatures and mounts typically have null acceleration.*
+*If acceleration is excluded or left blank, then it is null. A vehicle or creature with such a Speed may accelerate to its full movement in a single Move or Drive action, including any bonuses to Speed. Acceleratioj is primaroly reserved for vehicles, living creatures and mounts typically have null acceleration.*
 
 > [!TIP]
 > **Example** — If a stationary creature has a Speed of Ground 350ft (Moderate, 75ft/round) and is making single move actions each turn, it must spend five rounds accelerating (via a move action) before it can reach its top Speed:
@@ -48,6 +48,3 @@ A vehicle or creature can safely deccelerate twice as quickly as it is able to a
  > - Round 1: -150ft/round decceleration, Speed 200ft
  > - Round 2: -150ft/round decceleration, Speed 50ft
  > - Round 3: -50ft/round decceleration, movement ends after 50ft of travel and Speed ends at 0.
- 
- **Sudden Stops**
-<!-- inseet rules here -->
