@@ -31,7 +31,7 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 | [Combat Evosuit](#combat-evosuit) | Space suit. Targeting HUD. Designed for tactical use. |
 | [Enforcer Armor](#enforcer-armor) | No-frills armor favored by private security. |
 | [EVA Suit](#eva-suit) | An early model space suit well equipped but bulky. |
-| [Security Flight Suit](#security-flight-suit) | Built-in coms. Tactical variation of the padded flight suit. |
+| [Security Flight Suit](#security-flight-suit) | Tactical variation of the padded flight suit. |
 | [Ultraweave Evosuit](#ultraweave-evosuit) | Space suit. Partial Resistance: Sonic, Toxin. Most advanced Evosuit available. |
 {{% /tab %}}
 {{< /tabs >}}
@@ -43,7 +43,7 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 
 *--Cr — +2 DEF — -1 AGI/DEX — 20lbs — 20pts — [Pressurized](/docs/free-srd/inventory--equipment/item-tags/#pressurized)*
 
-*Upgrades: [Local Coms](#local-coms), 1hr Oxygen Microtank*
+*Upgrades: [Coms Unit](#coms-unit), 1hr Oxygen Microtank*
 
 A basic unarmored pressure suit providing the bare minimum for work in environments with no or dangerous atmospheres.
 {{% /details %}}
@@ -53,7 +53,7 @@ A basic unarmored pressure suit providing the bare minimum for work in environme
 
 *--Cr — +3 DEF — -1 AGI/DEX — 20lbs — 20pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
-*Upgrades: [Local Coms](#local-coms)*
+*Upgrades: [Coms Unit](#coms-unit)*
 
 The lightest and cheapest of the Evosuit lineup, mass manufactured in staggering numbers. Popular among small craft pilots and those who work in settlements with hazardous atmospheres.
 {{% /details %}}
@@ -124,7 +124,7 @@ A no-frills armor set often used by private security details.
 ### EVA Suit
 *--Cr — +6 DEF — -2 AGI/DEX — 200lbs — 80pts — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
-*Upgrades:[Local Coms](#local-coms), [SAFER Unit](#safer-unit)*
+*Upgrades:[Coms Unit](#coms-unit), [SAFER Unit](#safer-unit)*
 
 An early model multi-layered space suit designed primarily for maintenance spacewalks. The attatched backpack includes a 5hr oxygen tank, [SAFER unit](#safer-unit), and medium battery power source. The user cannot equip items to the head, gloves, legs, or back while wearing this space suit.
 {{% /details %}}
@@ -134,7 +134,7 @@ An early model multi-layered space suit designed primarily for maintenance space
 
 *--Cr — +4 DEF — -1 AGI/DEX — 12lbs — 20pts*
 
-*Upgrades: [Local Coms](#local-coms)*
+*Upgrades: [Coms Unit](#coms-unit)*
 
 A variation of the padded flight suit designed for tactical use.
 {{% /details %}}
@@ -144,7 +144,7 @@ A variation of the padded flight suit designed for tactical use.
 
 *--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Sonic, Toxin*
 
-*Upgrades: [Local Coms](#local-coms)*
+*Upgrades: [Coms Unit](#coms-unit)*
 
 The most advanced Evosuit available, using a state of the art multilayered high durability fabrics. 
 {{% /details %}}
@@ -161,7 +161,7 @@ The most advanced Evosuit available, using a state of the art multilayered high 
 | [Chameleon Unit](#chameleon-unit) | Active camouflage system. |
 | [Emergency Shank](#emergency-shank) | Arm slot. Single-use ranged or melee weapon. |
 | [Hazard HUD](#hazard-hud) | Helmet [HUD]. Lowers hazard detection checks within 10ft. |
-| [Local Coms](#local-coms) | Helmet [ear]. Short range encrypted radio coms. |
+| [Coms Unit](#coms-unit) | Head [Coms]. Encrypted radio, 1 mile range. |
 | [MeBN HUD](#mebn-hud) | Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network. |
 | [SAFER Unit](#safer-unit) | Back. A propulsion unit for navigating in zero gravity. |
 | [Targeting HUD](#targeting-hud) | Helmet [HUD]. Lock on to lower target number for ranged attacks. |
@@ -205,12 +205,12 @@ A passive HUD that grants a minor advantage to detect or notice hazardous terrai
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
-{{% details "Local Coms" %}}
-### Local Coms
+{{% details "Coms Unit" %}}
+### Coms Unit
 
 *--Cr — 0lbs — Lvl 2 Encryption — Head [Coms]*
 
-Short range radios used to communicate via encrypted direct channels. Takes up the head [coms] subslot.
+Encrypted helmet-mounted radio with a range of up to 1 mile. Connects directly to other Coms Unit-equipped devices or to nearby relay network nodes. Takes up the Head [Coms] subslot.
 {{% /details %}}
 
 {{% details "MeBN HUD" %}}

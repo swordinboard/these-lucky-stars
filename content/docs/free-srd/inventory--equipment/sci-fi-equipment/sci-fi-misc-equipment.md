@@ -6,9 +6,49 @@ weight: 2
 
 ## Sci-Fi Miscellaneous Equipment
 
+- [Communications](#communications)
 - [Medical Supplies](#medical-supplies)
 - [Survival Equipment](#survival-equipment)
 - [Tech & Gadgets](#tech--gadgets)
+
+---
+
+## Communications
+
+{{% include "/snippets/coms" %}}
+
+| Item | Notes |
+|------|-------|
+| [Coms Headset](#coms-headset) | Wireless connection for com devices. |
+| [Long Range Coms](#long-range-coms) | 500 mile range. Connects to local networks. |
+| [Mobile Phone](#mobile-phone) | 1 mile range. Connects to local networks. |
+
+*See also: [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) — a helmet-mounted Local tier upgrade for armor and space suits.*
+
+{{% details "Coms Headset" %}}
+### Coms Headset
+
+*--Cr — 0lbs — Head*
+
+Headsets are popular items that connect to a communication device and allow hands-free operation of the device. Styles vary, but all include a headphone (either in or over ear) and a microphone.
+
+Occupy the head slot and cannot comfrotably be worn with a helmet, requiring a com unit be built in to the helmet itslef. See [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) for the helmet-mounted upgrade.
+
+{{% details "Long Range Coms" %}}
+### Long Range Coms
+
+*--Cr — 3lbs*
+
+A handheld satellite radio capable of direct device-to-device communication or network connection up to 500 miles. Bulkier than standard mobile devices, these are standard issue for field teams, exploration crews, and military units operating beyond standard local network coverage.
+{{% /details %}}
+
+{{% details "Mobile Phone" %}}
+### Mobile Phone
+
+*--Cr — 0lbs*
+
+A compact personal communication device capable of direct device-to-device communication or network connection up to 1 mile. Connects to local public or private networks where available. Standard civilian hardware found almost everywhere.
+{{% /details %}}
 
 ---
 
@@ -139,14 +179,18 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 |------|-------|
 | [Bio Scanner](#bio-scanner) | Scans organic matter. 2 AP, 5ft range. |
 | [Bioskin Veil](#bioskin-veil) | Creates a near-perfect disguise. |
+| [Boost Pack](#boost-pack) | 10ft directional burst for 1 AP; does not provoke Opportunity Attacks. |
 | [Comp Jack](#comp-jack) | Required for interfacing with computer systems. |
 | [Data Ripper [Level X]](#data-ripper-level-x) | Forceful AI-assisted data extraction. |
 | [Data Spike](#data-spike) | Disposable high-speed USB data extraction device. |
 | [Decoy Beacon](#decoy-beacon) | Mimics com signals and life signs for 1hr. |
 | [Friction Gloves](#friction-gloves-by-altoa-research) | +10 climb speed, +4 to climb checks. |
+| [Fuel Cells](#fuel-cells) | Pressurized propellant canisters in small, medium, and large sizes. |
 | [Grapple-Line Launcher](#grapple-line-launcher) | Magnetic grappling hook. |
 | [Gravity Anchor](#gravity-anchor) | 10ft gravity field, 10 min per roll. |
 | [Jump Boosters](#jump-boosters) | +10ft to horizontal and vertical jump. |
+| [Jump Pack](#jump-pack) | Vertical launch up to 25ft or controlled arc; reduces fall damage. |
+| [Mag Boots](#mag-boots) | Anchor to metal surfaces in zero/low gravity; -1 AGI while active. |
 | [Mag Cuffs](#mag-cuffs) | Encrypted magnetic handcuffs with wrist controller. |
 | [Mini Laser Cutter](#mini-laser-cutter) | Direct contact laser cutter/welder. |
 | [Personal Shield](#personal-shield) | 10pts protection for up to 3 rounds. |
@@ -178,6 +222,16 @@ Cannot be applied to a Reptilian using its Single Shift, as the membrane interfe
 *Lore* -- Of dubious legal origin in most systems. Possession is usually a minor offense facing confiscation and a fine.
 {{% /details %}}
 
+{{% details "Boost Pack" %}}
+### Boost Pack
+
+*--Cr — 20lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
+
+A backpack-sized single-propulsion unit that delivers short directional bursts. For 1 AP the user can push themselves 10ft in any direction. This burst can supplement movement, enable sudden changes in direction, or extend jumps. A Boost Pack burst meets the movement requirement of the [Charge](/docs/free-srd/character-creation/abilities/#charge) ability and similar effects. Use of the Boost Pack, or any action paired with its burst, does not provoke Opportunity Attacks. Each use requires 1 supply roll.
+
+Cannot be worn alongside backpacks, Signal Masts, or other Back slot equipment.
+{{% /details %}}
+
 {{% details "Comp Jack" %}}
 ### Comp Jack
 
@@ -207,6 +261,18 @@ Successfully downloaded encrypted data will still need to be decrypted once retr
 Mimics encrypted com signals and life signs of a human. Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 1hr.
 {{% /details %}}
 
+{{% details "Fuel Cells" %}}
+### Fuel Cells
+
+Standardized pressurized canisters of combustible or propellant material. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at fuel depots and outfitters but cannot be recharged in the field.
+
+| Size | Supply | Description |
+| --- | --- | --- |
+| Small | 1d12 | --Cr — 1lb — Compact hand-sized canister |
+| Medium | 2d12 | --Cr — 4lbs — Cylindrical tank, roughly the size of a large water bottle |
+| Large | 4d12 | --Cr — 20lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Full-size pressurized cylinder |
+{{% /details %}}
+
 {{% details "Grapple-Line Launcher" %}}
 ### Grapple-Line Launcher
 
@@ -229,6 +295,24 @@ A box-shaped device that creates a standard gravity field in a 10ft radius in ze
 *--Cr — 5lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] — Legs*
 
 A pair of leg actuators that increase jump capabilities. Adds +10ft to horizontal and vertical jump capabilities under normal gravity. Requires 1 supply roll per use.
+{{% /details %}}
+
+{{% details "Jump Pack" %}}
+### Jump Pack
+
+*--Cr — 25lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
+
+A backpack-sized dual-propulsion unit that launches the user vertically up to 25ft or in a controlled horizontal arc reaching up to 10ft off the ground over a maximum distance of 30ft. With a well-timed burst it can also reduce up to 100ft of falling damage to zero. Costs 2 AP per activation. Each use requires 2 supply rolls.
+
+Cannot be worn alongside backpacks, Signal Masts, or other Back slot equipment.
+{{% /details %}}
+
+{{% details "Mag Boots" %}}
+### Mag Boots
+
+*--Cr — 2lbs — Legs/Feet*
+
+Boots equipped with calibrated electromagnets that anchor the wearer to ferromagnetic surfaces in low or zero gravity environments. A built-in manual release prevents accidental engagement. The magnets are tuned to allow normal walking and running while active. While active, the wearer takes a -1 penalty to AGI.
 {{% /details %}}
 
 {{% details "Mag Cuffs" %}}

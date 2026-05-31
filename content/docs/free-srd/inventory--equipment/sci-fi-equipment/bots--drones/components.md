@@ -48,8 +48,8 @@ Bot Parts do not have their own VIT — they rely on their host. A Bot Part is d
 | [Relay Node](#relay-node) | Neck | Internal | Sync into a shared sensor network |
 | [Repair Subroutine](#repair-subroutine) | Belt | External | Self-repair 1 VIT per long rest |
 | [Servo Boost Legs](#servo-boost-legs) | Legs/Feet | External | +10ft speed, +5ft jump while powered |
-| [Signal Mast, Heavy](#signal-mast-heavy) | Back | External | Increases com range to planetary |
-| [Signal Mast, Retractable](#signal-mast-retractable) | Neck | Internal | Increases com range |
+| [Signal Mast, Heavy](#signal-mast-heavy) | Back | External | Increases com range to 500 miles |
+| [Signal Mast, Retractable](#signal-mast-retractable) | Neck | Internal | Increases com range to 20 miles |
 | [Stabilizer Gyros](#stabilizer-gyros) | Legs/Feet | Internal | Resist knockdown, no falling damage under 20ft |
 | [Subdermal Plating](#subdermal-plating) | Chest | Internal | +1 DEF, no slot conflict |
 | [Targeting Array](#targeting-array) | Head | Internal | +1 ranged ATK, limited daily uses |
@@ -208,7 +208,7 @@ Occupies the Legs/Feet slot for other equipment.
 
 *–Cr — 1lb — Neck — Internal*
 
-A retractable antenna and signal booster. The host's standard com range is doubled under normal conditions, and the host can transmit and receive on any open or shared encrypted frequency at that range. Draws negligible power from the host battery.
+A retractable antenna and signal booster. The host's com devices have their range increased to 20 miles under normal conditions, and the host can transmit and receive on any open or shared encrypted frequency at that range. Draws negligible power from the host battery.
 
 Any character using the [Companion Bot](../../character-creation/abilities/#companion-bot) ability who has a Signal Mast, Retractable installed on their companion can issue commands and receive updates at its full range.
 
@@ -218,7 +218,7 @@ Does not occupy the Neck slot for other equipment.
 
 *–Cr — 15lbs — Back — External*
 
-A larger version of the Signal Mast, Retractable that improves the host's standard com range to planetary. The host can transmit and receive on any open or shared encrypted frequency, however, the increased range causes a draw on the host's primary battery source. Each activation requires one supply roll of the host's primary power source and lasts for six hours.
+A larger version of the Signal Mast, Retractable that increases the host's com device range to 500 miles. The host can transmit and receive on any open or shared encrypted frequency at that range, however the increased range causes a draw on the host's primary battery source. Each activation requires one supply roll of the host's primary power source and lasts for six hours.
 
 Any character using the [Companion Bot](../../character-creation/abilities/#companion-bot) ability who has a Signal Mast, Heavy installed on their companion can issue commands and receive updates at its full range.
 

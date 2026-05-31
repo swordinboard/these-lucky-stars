@@ -132,7 +132,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.
 
-*Move — (2 AP)* — {{% include "/snippets/move" %}}
+{{% include "/snippets/move" %}}
 
 **Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/opportunity-attack" %}}
 
@@ -158,11 +158,9 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-**Stealth** — 
+**Stealth** — {{% include "/snippets/stealth" %}}
 
-{{% include "/snippets/stealth" %}}
-
-**Step* *(1 AP)* — {{% include "/snippets/step" %}}
+{{% include "/snippets/step" %}}
 
 **Use Cover** *(1 AP or as part of a Move)* — Shifting cover types can be done as part of a Move action or for 1 AP if staying in place. Cover type depends on how much of the defender is visible to the attacker, and whether the attack can penetrate the obstacle.
 

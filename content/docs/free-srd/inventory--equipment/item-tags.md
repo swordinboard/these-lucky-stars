@@ -19,6 +19,7 @@ Many items have tags to quickly identify common features and use requirements. T
 - [Bulky](#bulky)
 - [Concealable](#concealable)
 - [Firing Modes](#firing-modes)
+- [Fuel Cell [___]](#fuel-cell)
 - [Injector](#injector)
 - [Long Reload](#long-reload)
 - [Pressurized](#pressurized)
@@ -113,6 +114,18 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 **Semi-auto:** The most versatile firing mode, capable of applying to the widest range of abilities. Each attack requires one supply roll.
 
 **Single Shot:** A slow but precise firing mode best for long range engagements. Each attack lowers the supply/ammo die by one size.
+{{% /details %}}
+
+{{% details "Fuel Cell [___]" %}}
+### Fuel Cell
+
+*Fuel Cell [size]*
+
+Requires a [standardized fuel cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells) of the listed size to operate. Fuel cells are pressurized containers of combustible or propellant material used in propulsion systems, heat-based tools, and combustion equipment. Most items with this tag require a single supply roll per use.
+
+**Swapping:** A depleted fuel cell can be swapped for a fresh one for 2 AP.
+
+**Not interchangeable with batteries:** Fuel Cell equipment cannot be powered by standard battery cores, and vice versa, without significant modification.
 {{% /details %}}
 
 {{% details "Injector" %}}

@@ -47,8 +47,10 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Long Performance](#long-performance) | Use General Spectacle for multiple rounds. |
 | [Kit Trap](#kit-trap) | Use your tool kit to make difficult terrain. |
 | - [Fast Kit Trap](#fast-kit-trap) | Kit Trap uses less AP. |
+| [Leg Shot](#leg-shot) | Ranged attack at minor disadvantage to apply Crippled on hit. |
 | [Martial Supremacy](#martial-supremacy) | Reroll a decision die during unarmed trip, disarm, or grapple. |
 | [Outburst](#outburst) | Interrupt enemies mid action. |
+| [Patient Shot](#patient-shot) | Bonus damage and advantage if stationary and untargeted since last turn. |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
 | [Rage](#rage) | Enter an enraged state for a short duration. |
@@ -87,14 +89,19 @@ If an ability has requirements that must be met before it can be selected, they 
 | [Tech Armor](#tech-armor) | Install and remove upgrades and components without risk of damage. |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. |
 | - [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. |
+| [Ghost Protocol](#ghost-protocol) | Remotely access a hacked system via linked comp jack. |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
+| [Salvage](#salvage) | Refill a supply die from mechanical wreckage. |
+| [Signal Intelligence](#signal-intelligence) | Intercept unencrypted communications with a comp jack. |
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
 | Name | Description |
 |------|-------------|
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
+| [Overcharge](#overcharge) | Push a battery weapon beyond rated output for bonus damage. |
+| [Power Main Tap](#power-main-tap) | Tap a large power source to rapidly recharge a battery. |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
 {{% /tab %}}
 {{< /tabs >}}
@@ -369,6 +376,14 @@ This ability requires a tool kit with at least 1d4 of supplies, however it requi
 The movement of your charge can now pass over/under obstacles and through difficult terrain.
 {{% /details %}}
 
+{{% details "Leg Shot" %}}
+### Leg Shot
+
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a ranged weapon, DEX 2, Level 3*
+
+For 3 AP, while using a ranged weapon with which you have weapon proficiency, you may make a ranged attack at a minor disadvantage. On a successful hit, the target gains the [Crippled condition](/docs/free-srd/core-rules/wounds--conditions/#crippled) in addition to taking normal damage. This condition lasts 1d4 rounds.
+{{% /details %}}
+
 {{% details "Line of Fire" %}}
 ### Line of Fire
 
@@ -418,6 +433,14 @@ While using the Suppressing Fire ability and a full-auto heavy weapon that you h
 You know how to take particularly distracting actions at just the right time. By doing so, you may force a character's attention to shift to you, interrupting actions or abilities and breaking focus. 2/day for 3 AP you may choose a target that can see and hear you within 20ft and perform a series of targeted actions to briefly throw off their focus. (i.e. threatening or suggestive behavior, loud banging, "HEY YOU!"). Your opponent must succeed on a target 10 WILL distraction save in order to remain focused. This can be used as an Opportunity action to interrupt abilities and actions as they happen.
 
 You cannot use this ability if you have not acted in initiative or if you are restrained or otherwise incapacitated. However, this ability can be used an as Opportunity action any time that you have the AP available.
+{{% /details %}}
+
+{{% details "Patient Shot" %}}
+### Patient Shot
+
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes) weapon, WILL 2, Level 3*
+
+If you did not move on your turn and have not been targeted by an attack or other distracting effect since your last turn — regardless of whether it succeeded — your next ranged attack made with a Single Shot weapon you are proficient with gains a minor advantage. If the attack succeeds, roll the weapon's normal damage die twice and take the higher result.
 {{% /details %}}
 
 {{% details "Powerful Rage" %}}
@@ -633,6 +656,14 @@ You may designate one drone or robot under your control, whose base level is no 
 *Normal: Repairs to most automated machines require the tech kit with supplies and a successful target 12 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
 {{% /details %}}
 
+{{% details "Ghost Protocol" %}}
+### Ghost Protocol
+
+*[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, KNO 2, Level 5*
+
+After successfully accessing a system using your comp jack, you may leave a passive process running on the terminal to maintain a link. While within 300ft of the linked terminal, you may access and interact with the system remotely as if physically present. Each remote action requires one supply roll against the comp jack. The link ends if the comp jack is used for an unrelated action, the terminal is directly accessed by another user, or the comp jack leaves range or loses power.
+{{% /details %}}
+
 {{% details "Opensaysame" %}}
 ### Opensaysame
 
@@ -647,6 +678,22 @@ Some doors require your special touch. 1/day as long as you have at least one lu
 *[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, [General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, DEX 2, KNO 2*
 
 By lowering the supply of your tech kit by two die sizes, you can build a makeshift comp jack. Unlike a normal comp jack, a rigged comp jack has a supply of 1d8 before it burns out and becomes useless. Building a rigged comp jack takes a total of 20 AP that can be spent over multiple rounds even if interrupted.
+{{% /details %}}
+
+{{% details "Salvage" %}}
+### Salvage
+
+*[Repair Kit](/docs/free-srd/character-creation/proficiencies/#repair-kit) Proficiency*
+
+You are able to salvage usable materials from mechanical wreckage using the repair kit. For 10 AP you may attempt to refill one die size of a Repair Kit or Tech Kit from wreckage such as a broken drone, vehicle, or computer terminal. Each attempt has a 50% chance of success. You may only attempt this ability once per piece of wreckage — what counts as a single piece is up to GM discretion, though larger items such as vehicles may allow for multiple attempts on different sections. This ability's AP cost may be spread over multiple turns.
+{{% /details %}}
+
+{{% details "Signal Intelligence" %}}
+### Signal Intelligence
+
+*[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, KNO 1*
+
+You are trained in signal interception and analysis. Using a comp jack, you may listen to unencrypted communications within the comp jack's effective range, either by monitoring actively or passively scanning for specific keywords or topics. Setting up the comp jack for this purpose costs 3 AP and runs for 1d4+1 rounds per supply roll. Intercepted communications can be displayed on the comp jack's screen or relayed through an audio output if available.
 {{% /details %}}
 
 {{% details "Special Encouragement" %}}
@@ -681,6 +728,22 @@ You can easily turn battery cores into explosives. Doing so requires a use of th
 ### Battery Saver
 
 You manage to squeeze just a bit more out of battery cores. You can re-roll a failed supply roll once per day.
+{{% /details %}}
+
+{{% details "Overcharge" %}}
+### Overcharge
+
+*[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 2, Level 3*
+
+2/day you may push a battery-powered weapon beyond its rated output. This ability must be declared at the start of an attack, before decision dice are rolled. If the attack succeeds, roll one of the weapon's current battery supply dice as bonus damage — that die then drops one size. If the weapon has multiple supply dice, choose which to roll and lower.
+{{% /details %}}
+
+{{% details "Power Main Tap" %}}
+### Power Main Tap
+
+*[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 3, Level 5*
+
+Using a tech kit and supplies, you may attempt to tap into a large power source — such as a ship reactor, generator, or grid terminal — to rapidly recharge one standard battery. This requires 10 AP, a target 12 KNO check, and one supply roll. On a success, the battery recharges 1 die size per minute, but *its maximum charge is permanently lowered by one die size.* On a failure, the attempt fails and the supplies are wasted.
 {{% /details %}}
 
 {{% details "Swift Custom Battery" %}}
