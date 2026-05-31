@@ -22,6 +22,9 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ## Equipment
 
+### Communications
+{{% include "/snippets/coms" %}}
+
 ### Energy Shields
 {{% include "/snippets/energy-shields" %}}
 
@@ -32,7 +35,11 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ## Computer Systems
 
-Most characters in sci-fi settings will interact with computer systems at some point. Navigating simple systems is considered common knowledge. Secured systems require more work — they may be encrypted, require physical keys, or fight back. Accessing a secured system requires the matching key or code, or a [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack) and some technical know-how.
+Computer systems can be accessed from dedicated terminals. Most characters in sci-fi settings will interact with computer systems at some point. Navigating simple systems is considered common knowledge. Secured systems require more work — they may be encrypted, require physical keys, or fight back. Accessing a secured system requires the matching key or code, or a [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack) and some technical know-how.
+
+### Networks
+
+Networks are formed by a series of linked devices, primarily communication devices. Most networks are put in place to facilitate ease of communication and information sharing. For purposes of encyption, networks use the same security and interaction rules as computer systems, but the actions can be performed by connecting a comp jack to any connected device within range in place of a terminal. networks with Security level 0 are usually known as public networks and can be connected to freely. Secured networks need access keys to be connected to, or to be accessed with the comp jack.
 
 ### System Level
 
@@ -69,9 +76,9 @@ A failed Bypass automatically triggers the countermeasure.
 
 **Access** *(2 or 4 AP)* — Required to use a secured system. Using the matching key or code costs 2 AP. Using a comp jack costs 4 AP and requires a KNO roll with a target equal to the system's security base target. If using a comp jack, this action can be split across turns as long as it is not interrupted — the KNO roll is made on the turn the action completes. Once accessed, the system can be used freely until locked out or reset.
 
-**Command** *(1+ AP)* — Use hardware or software commands available on the system. Entering a command typically costs 1 AP; more complex commands may require additional AP or time.
+**Command** *(1+ AP)* — Use hardware or software commands available on the system. Entering a command typically costs 1 AP; more complex commands may require additional AP or time. This could be turning on/off connected lights, connecting to a communication network, or beginning a download.
 
-**Search** *(2 AP)* — Search the system for specific information. Requires an INS check, typically target 9, though information-dense systems may have a higher target.
+**Search** *(2 AP)* — Search the system for specific information. Requires an INS check, typically target 9, though information-dense systems may have a higher target. If attempting to access specific files on a computer system they must usually be found using the search action before they can be viewed or downloaded.
 
 ### Security Countermeasures
 
@@ -111,8 +118,3 @@ Countermeasures are an optional security layer that can be added to most systems
 
 **Terminal** — Single-use per access point. Triggered by AI upon detecting an unauthorized user. Causes an electrical overcharge that destroys the terminal and deals minor burn damage and 1 VIT loss to the user. Cannot be avoided or deactivated with a Bypass, but the harm can be dodged with a successful target 12 DEX check.
 
----
-
-## Communications
-
-{{% include "/snippets/coms" %}}

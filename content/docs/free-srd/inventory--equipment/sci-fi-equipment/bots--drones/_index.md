@@ -4,6 +4,7 @@ description: "Robots and the rules that affect them -- companion bots and drones
 weight: 10
 ---
 
+{{% include "/snippets/wip-announcement" %}}
 ## Bots & Drones
 
 Many civilizations rely on robots to aid in space exploration as well as services and manufacturing at home. This page provides a list of the most common models available.

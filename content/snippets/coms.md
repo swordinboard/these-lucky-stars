@@ -2,16 +2,4 @@
 headless: true
 ---
 
-Communications devices connect to other devices either directly or through relay networks. A **direct connection** links two devices within range of each other — no infrastructure required, useful in remote areas or environments without network coverage. A **network connection** routes through relay nodes such as towers, satellites, or space stations, and can extend a device's effective range far beyond what it could reach on its own. Devices only need to be within range of the nearest relay node, not the destination.
-
-Relay networks vary in coverage and availability — well-developed systems have extensive infrastructure, while frontier or hostile environments may have none.
-
-Devices are rated by **encryption level**. Higher encryption is harder to intercept and decode but may limit compatibility with some public networks.
-
-| Range Tier | Effective Range |
-| --- | --- |
-| Local | Up to 1 mile |
-| Long Range | Up to 500 miles |
-| Orbital | Planet surface to orbit and moons |
-| System | Within a solar system |
-| Inter-cluster | Between star systems — requires large dedicated relay infrastructure |
+Communication devices — also refered to as coms or com devices — are able to connect to other com devices within range directly or through networks. A *direct connection* links two or more devices devices within range of each other — no infrastructure required, useful in remote areas or environments without broad network coverage. A *network connection* routes through relay nodes such as towers, satellites, or space stations, and can extend a device's effective range far beyond what it could reach on its own to other devices connected to the network. When using a network, devices only need to be within range of the nearest relay node, not the destination device. Relay networks vary in coverage and availability — well-developed systems have extensive infrastructure, while frontier or hostile environments may have none. Devices are encrypted using the same security protocols as computers. See [computer interactions](/docs/free-srd/core-rules/sci-fi-additions/#computer-systems) for more on infiltrating computer systems and networks.

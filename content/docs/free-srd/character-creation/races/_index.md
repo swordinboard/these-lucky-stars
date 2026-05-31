@@ -5,7 +5,9 @@ weight: 10
 bookToC: false
 ---
 
-> [!Warning]
+{{% include "/snippets/wip-announcement.md" %}}
+
+> [!CAUTION]
 > This page temporarily shows future races added as an example of how it will fill out going forward. Released version will be reduced to active races only.
 
 ## Races

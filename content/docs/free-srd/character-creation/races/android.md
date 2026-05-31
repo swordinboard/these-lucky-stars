@@ -5,6 +5,7 @@ weight: 30
 bookHidden: true
 ---
 
+{{% include "/snippets/wip-announcement.md" %}}
 ## Android
 <!-- basic android race -->
 

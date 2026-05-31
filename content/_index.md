@@ -14,8 +14,13 @@ Get started with the [Free SRD](/docs/free-srd) learn the system and start playi
 Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 
 > [!WARNING]
-> **Latest 5/23/26 Changes**
-> - [Playable Races](docs/free-srd/character-creation/races) introduced to character creation. Includes core Human Star-touched variant, Androids, Reptilians, and Zeta Greys.
+> **Latest 5/31/26 Changes**
+> - [Computer Interaction Rules](/docs/free-srd/core-rules/sci-fi-additions/#computer-systems)
+> - More Sci-Fi Equipment: [Communication devices](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#communication-devices), jump and boost packs, fuel cells, mag boots.
+> - More Abilities: Salvage, Ghost Protocol, Leg Shot, Patient Shot.
+> - Preview pages for [Playable Races](/docs/free-srd/character-creation/races) introduced to character creation. Includes core Human Star-touched variant, Androids, Reptilians, and Zeta Greys.
+> - Preview page for [Vehicle Rules](/docs/free-srd/core-rules/vehicle-rules)
+> - Preview pages for [Robots and Drones](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones)
 >
 > **5/7/26 Changes**
 > - Character features balancing audit and new additions. Update preview with change notes posted to [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)

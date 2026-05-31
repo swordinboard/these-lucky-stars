@@ -13,7 +13,7 @@ weight: 2
 
 ---
 
-## Communications
+## Communication Devices
 
 {{% include "/snippets/coms" %}}
 
@@ -33,6 +33,7 @@ weight: 2
 Headsets are popular items that connect to a communication device and allow hands-free operation of the device. Styles vary, but all include a headphone (either in or over ear) and a microphone.
 
 Occupy the head slot and cannot comfrotably be worn with a helmet, requiring a com unit be built in to the helmet itslef. See [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) for the helmet-mounted upgrade.
+
 {{% /details %}}
 
 {{% details "Long Range Coms" %}}
@@ -236,9 +237,9 @@ Cannot be worn alongside backpacks, Signal Masts, or other Back slot equipment.
 {{% details "Comp Jack" %}}
 ### Comp Jack
 
-*--Cr — 1lb — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 1lb — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 
-A common but complex tool used to interact with computer systems at virtually any connected terminal. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. All function generally the same way, they plugged in or hardwired in, then use a screen to access different functions. Comp jacks can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack).
+A common but complex tool used to interact with computer systems at virtually any connected terminal, as well as hack into communication networks. Sometimes called a "deck" or "slicer" in hacker circles. They come in many styles, and many are personally crafted to improve familiarity. All function generally the same way: the comp jack is first plugged into a terminal, then a built in screen is used to access different functions. Comp jacks can only be used by those with the [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack). Standard comp jacks use a single small standard battery and have no form of audio input or output. Upgraded comp jacks may be found with extra functionality.
 {{% /details %}}
 
 {{% details "Data Spike" %}}

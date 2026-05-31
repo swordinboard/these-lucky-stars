@@ -5,6 +5,7 @@ weight: 30
 bookHidden: true
 ---
 
+{{% include "/snippets/wip-announcement.md" %}}
 ## Star-touched Human
 
 The other races generally regard humans as the luckiest species in existence, nothing else explains how they've fought each other so long and made it this far.
