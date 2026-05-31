@@ -78,6 +78,6 @@ The following extends the Common Injuries table in [Wounds & Conditions](/docs/f
 
 ---
 
-## Exteme Environments
+## Extreme Environments
 **Sci-Fi Module Addition**
 {{% include "/snippets/extreme-environments" %}}

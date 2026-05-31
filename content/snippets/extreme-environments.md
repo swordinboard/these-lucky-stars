@@ -2,16 +2,13 @@
 headless: true
 ---
 
-## Extreme Environments
-*Sci-Fi Module Additon*
-
 The core [Environmental Effects](/docs/free-srd/core-rules/environmental-effects/) rules cover weather and conditions that wear characters down over time. Extreme environments — the surface of a volcanic moon, the vacuum of space, the ruins of a breached reactor — skip the slow buildup entirely. In these instances, at the end of each exposure interval an unprotected character suffers **1 VIT loss**. No FORT check is made — the environment is beyond what the body can resist.
 
 The GM sets the interval based on proximity and intensity: **1 round** for direct contact or close proximity, **1 minute** for ambient exposure, or longer for low-level hazards like residual radiation.
 
-Wounds are applied normally when VIT thresholds are met. When VIT reaches 0 the, rules for lethal damahe often apply.
+Wounds are applied normally when VIT thresholds are met. When VIT reaches 0 rules for lethal damage apply.
 
-*Resistance* — Extreme and exposure effects bypasses partial resistance. Full resistance is immune to exposure effects, and halves extreme damage. Howevever, resistance can be bypassed if both an extreme exposure event and a damaging event of the same type occure.In practice, this means characters using special heat shielded suits to protect themselves on a volcanic moon would be protected from the extreme exposure, but if lava erupted below them they would still be subject to damage. [Damage Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) for more on resistances.
+*Resistance* — Extreme and exposure effects bypasses partial resistance. Full resistance is immune to exposure effects, and halves extreme damage. Howevever, resistance can be bypassed if both an extreme exposure event and a damaging event of the same type occure. In practice, this means characters using special heat shielded suits to protect themselves on a volcanic moon would be protected from the extreme exposure, but if lava erupted below them they would still be subject to damage. [Damage Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) for more on resistances.
 
 ---
 

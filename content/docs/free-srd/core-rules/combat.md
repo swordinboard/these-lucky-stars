@@ -132,19 +132,15 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.
 
-*Move — (2 AP)*
+*Move — (2 AP)* — {{% include "/snippets/move" %}}
 
-{{% include "/snippets/move" %}}
-
-**Opportunity Attack** *(1 AP — Opportunity Action)*
-
-{{% include "/snippets/opportunity-attack" %}}
+**Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/opportunity-attack" %}}
 
 **Disarm** *(3 AP)* — Attempt to disarm an opponent with a melee weapon you are proficient with. Make a standard attack roll; if successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon.
 
 **Draw a Weapon** *(1–3 AP)* — Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed weapon costs 3 AP.
 
-*Grapple — (2 AP)*
+**Grapple** *(2 AP)*
 
 {{% include "/snippets/grapple" %}}
 
@@ -162,19 +158,17 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-*Stealth*
+**Stealth** — 
 
 {{% include "/snippets/stealth" %}}
 
-*Step — (1 AP)*
-
-{{% include "/snippets/step" %}}
+**Step* *(1 AP)* — {{% include "/snippets/step" %}}
 
 **Use Cover** *(1 AP or as part of a Move)* — Shifting cover types can be done as part of a Move action or for 1 AP if staying in place. Cover type depends on how much of the defender is visible to the attacker, and whether the attack can penetrate the obstacle.
 
-> **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half is hidden from view.
+> **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half the defender's body is hidden from view.
 >
-> **Full Cover** — The defender's entire body is behind an impenetrable object. Attackers must bypass or destroy the cover to land a hit. A character behind full cover cannot declare attacks until they move to at least partial cover.
+> **Full Cover** — The defender's entire body is behind an impenetrable object. Attackers must bypass or destroy the cover to land a hit. Full cover typically works both ways; a character behind full cover cannot declare attacks against those on the opposite side of full cover until they move to at least partial cover.
 
 ---
 
