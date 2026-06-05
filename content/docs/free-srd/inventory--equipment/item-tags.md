@@ -19,7 +19,7 @@ Many items have tags to quickly identify common features and use requirements. T
 - [Bulky](#bulky)
 - [Concealable](#concealable)
 - [Firing Modes](#firing-modes)
-- [Fuel Cell [___]](#fuel-cell)
+- [Fuel Cell](#fuel-cell)
 - [Injector](#injector)
 - [Long Reload](#long-reload)
 - [Pressurized](#pressurized)
@@ -79,11 +79,11 @@ Regardless of type, ammo weighs 3lbs per ammo die.
 
 *Battery [size]*
 
-Requires a [standard battery core](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores) of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack).
+Requires a [standard battery core](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores) of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack). Weight and price of these items do not include a battery.
 
-**Equipping for Use:** Each slot can hold dispensers for 12 micro batteries, 6 small batteries, or 3 medium batteries. A single large battery can only be equipped to the back. Industrial batteries cannot be equipped.
+**Equipping for Use:** Batteries can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set]().
 
-**Reloading:** Depleted batteries can quickly be swapped out with a fresh one for 2 AP if equipped to the back, belt, chest, or legs. This is the same action as a standard reload if performed with a weapon.
+**Reloading:** Depleted batteries can quickly be swapped out with a fresh one for 2 AP. This is the same action as a standard reload if performed with a weapon.
 {{% /details %}}
 
 {{% details "Belt Fed" %}}
@@ -113,19 +113,19 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 
 **Semi-auto:** The most versatile firing mode, capable of applying to the widest range of abilities. Each attack requires one supply roll.
 
-**Single Shot:** A slow but precise firing mode best for long range engagements. Each attack lowers the supply/ammo die by one size.
+**Single Shot:** A slow but precise firing mode best for long range engagements. Single Shot weapons hold less ammo than othwr weapons. Each attack lowers the supply/ammo die by one size.
 {{% /details %}}
 
 {{% details "Fuel Cell [___]" %}}
 ### Fuel Cell
 
-*Fuel Cell [size]*
+*Fuel Cell*
 
-Requires a [standardized fuel cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells) of the listed size to operate. Fuel cells are pressurized containers of combustible or propellant material used in propulsion systems, heat-based tools, and combustion equipment. Most items with this tag require a single supply roll per use.
+Requires a [standardized fuel cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells) to operate. Fuel cells are pressurized containers of combustible  propellant used in propulsion systems, heat-based tools, and combustion equipment. Most items with this tag require a single supply roll per use.
 
-**Swapping:** A depleted fuel cell can be swapped for a fresh one for 2 AP.
+**Equipping for Use:** Fuel cells can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set]().
 
-**Not interchangeable with batteries:** Fuel Cell equipment cannot be powered by standard battery cores, and vice versa, without significant modification.
+**Reloading:** A depleted fuel cell can be swapped for a fresh one for 2 AP. This is the same action as a standard reload if performed with a weapon.
 {{% /details %}}
 
 {{% details "Injector" %}}
@@ -149,11 +149,9 @@ Pressurized suits are capable of withstanding the vacuum of space, but provide n
 {{% details "Power Source" %}}
 ### Power Source
 
-Items with the Power Source tag have a built-in primary power supply that drives all of their systems. Most commonly found on automated machines — robots, drones, and Androids — these items can accept different types of primary power supply, including [standardized battery cores](#battery) and [reactor cores](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores).
+Items with the Power Source tag have a built-in primary power supply that drives all of their systems. Most commonly found on automated machines — robots, drones, and Androids — these items accept electrical power sources including [standardized battery cores](#battery) and [reactor cores](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores).
 
-Components and other equipment with the Power Source tag draw from their host's primary power supply rather than a dedicated battery. Supply rolls for these components are made against the primary power source's current supply die.
-
-Items with the Power Source tag can have their power supply swapped or modified with a Tech Kit.
+Components and other equipment with the Power Source tag draw from their host's primary power supply rather than a dedicated battery unless specified otherwise. Supply rolls for these components are made against the primary power source's current supply die. If a backup is installed it is only used if the primary source is unavailable.
 {{% /details %}}
 
 {{% details "Rounds Reload" %}}
@@ -162,14 +160,14 @@ Items with the Power Source tag can have their power supply swapped or modified 
 These weapons can be topped off up to max capacity for 1 AP as long as the weapon is not empty. Doing so allows you to adjust ammo die sizes of Ballistic weapons during combat by combining and rearranging them.
 
 > [!TIP]
-> 1d4 remains in Sasha's revolver, and she has 1d6 of ammo equipped to her chest. For 1 AP she can move all of this ammo to her revolver to increase the die size to a 1d8.
+> Example — 1d4 remains in Sasha's revolver, and she has 1d6 of ammo equipped to her chest. For 1 AP she can move all of this ammo to her revolver to increase the die size to a 1d8.
 
 {{% /details %}}
 
 {{% details "Space Suit" %}}
 ### Space Suit
 
-All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. All space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
+All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. Unless specified otherwise all space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
 {{% /details %}}
 
 {{% details "Throwable [___]" %}}

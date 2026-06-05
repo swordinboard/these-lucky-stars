@@ -162,8 +162,8 @@ A treated waterproof bag used to protect contents from rain, submersion, and moi
 
 *--Price — 1lbs*
 
-A set of pouches designed for holding various forms of ammunition. Holds a max of three ammo die worth of ammunition. Allows weapons to be reloaded normally, whether using ballistic ammunition, batteries, or another form or ammo, without requiring additional AP to retrieve ammo.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set. 
+A set of pouches designed for holding various forms of ammunition. Holds a max of four ammo or supply dice. Allows weapons to be reloaded normally, whether using ballistic ammunition, batteries, or another form or ammo, without requiring additional AP to retrieve ammo.
+Pouch sets can share a body slot with one other item, such as a weapon or handheld device.
 
 *Equip slot:* Chest, Belt, or Legs
 
@@ -172,7 +172,7 @@ Pouch sets can share a body slot with one other equipped item, provided that ite
 *--Price — 1lb*
 
 A set of small pouches that allows quick access to small weightless items such as coins, keys, herbs, or medical supplies. Can store up to 8 weightless items, allowing them to be equipped to the same body slot. Stored items can be retrieved for 1 AP.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set. 
+Pouch sets can share a body slot with one other item, such as a weapon or handheld device.
 
 **Equip slot:** Chest, Belt, or Legs
 
@@ -181,7 +181,7 @@ Pouch sets can share a body slot with one other equipped item, provided that ite
 *--Price — 1lbs*
 
 A standard set of medium pouches that allows quick access to most small items. Can store up to four handheld-sized items, each weighing no more than 5lbs. Stored items can be retrived for 1 AP.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set.
+Pouch sets can share a body slot with one other item, such as a weapon or handheld device.
 
 **Equip slot:** Chest, Belt, or Legs
 {{% /details %}}

@@ -47,7 +47,11 @@ The GM may grant [advantage or disadvantage](/docs/free-srd/core-rules/basics/#a
 
 *Type of Attack* — Melee attacks and ranged attacks may face different advantages and disadvantages. It is up to the GM to use their best judgment when determining if the type of attack should give advantage or disadvantage.
 
-*Cover* — For defenders of ranged attacks, solid cover is critical. To use an object as cover it must provide a solid barrier between the attacker and defender and cover at least half of the defender. Cover grants the defender a bonus to their roll. Abilities and proficiencies can further increase the effectiveness of using cover.
+*Cover* — For defenders of ranged attacks, solid cover is critical. Any object that an attack cannot penetrate can be used as cover. There are two forms of cover:
+- *Partial cover* acts as a partial barrier between the attacker and defender and covers at least half of the defender from sight. Partial cover grants the defender a minor advantage to their roll.
+- *Full cover* acts as a complete barrier between the attacker and defender, fully blockong line of sight and preventing potential attackers from makong firect attacks against the defender without means of penetrating or circumventing the barrier.
+Use of cover is automatic based on a the prositions of the attacker and defender. In some cases an object can provide full cover if a character ducks behind it. This shift can be done as part of a move action or for 1 AP if staying in place.
+Abilities and proficiencies can further increase the effectiveness of using cover.
 
 *Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both attacker and defender being blinded simply results in no change, as both combatants are equally disadvantaged.
 
@@ -100,16 +104,16 @@ Damage types include: Physical, Mental, Toxin, Burn, Cold, Shock, Radiation, Son
 
 **Exposure Damage** — Damage that is unavoidable and sustained over time is considered exposure damage. Most sources of exposure damage are from the environment. Exposure damage leads to attribute checks, and often causes conditions and VIT loss.
 
-**Extreme Damage** — If a damage source is considered outside the typical realm of survivability for a living creature, it is considered extreme damage. Extreme damage and extreme exposure exist primarily to overcome or alter how resistances interact with those damage sources. Most extreme sources come from things much larger than the defender or highly inhospitable environments.
+**Extreme Damage** — If a damage source is considered outside the typical realm of survivability for a living creature, it should be labeled as extreme. Extreme damage and extreme exposure exist primarily to overcome or alter how resistances interact with those damage sources. Most extreme sources come from things much larger than the defender or highly inhospitable environments.
 
 ### Damage Resistance and Weakness
 
-**Partial Resistance [÷2]** — Normal damage of this type is halved. Extreme damage and exposure bypass partial resistance.
+**Partial Resistance [÷2]** — Normal damage of this type is halved. Exposure damage and any extreme damage bypass partial resistance.
 
-**Full Resistance [×0 or ÷2]** — Normal damage of this type is reduced to zero. Extreme damage of this type is halved. Exposure effects, including extreme exposure effects, of this type are ignored. New sources of normal damage during extreme exposure may bypass full resistance at the GM's discretion; usually resulting in taking half damage unless it is being sustained often, at which point the full damage may be taken. The combination of direct damage and exposure damage is often too much to bear in any situation.
+**Full Resistance [×0 or ÷2]** — Normal damage of this type is reduced to zero. Extreme damage of this type is halved. Exposure effects of this type, including extreme exposure effects, are ignored. New sources of normal damage during extreme exposure bypass full resistance at the GM's discretion; usually resulting in taking half damage unless it is being sustained often, at which point the full damage may be taken. The combination of direct damage and exposure damage is often too much to bear in any situation.
 
 **Weakness [×2]** — Normal and extreme damage of this type is doubled. Attribute checks made to resist effects of this type are made at a major disadvantage (including those from exposure).
-
+<!-- revisit and split: partial resistance, full resistance, exposure resistance seperate -->
 ---
 
 ## Applying Damage
@@ -162,11 +166,8 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 {{% include "/snippets/step" %}}
 
-**Use Cover** *(1 AP or as part of a Move)* — Shifting cover types can be done as part of a Move action or for 1 AP if staying in place. Cover type depends on how much of the defender is visible to the attacker, and whether the attack can penetrate the obstacle.
-
-> **Partial Cover** — At least half the defender's body is behind a solid, impenetrable object, or at least half the defender's body is hidden from view.
->
-> **Full Cover** — The defender's entire body is behind an impenetrable object. Attackers must bypass or destroy the cover to land a hit. Full cover typically works both ways; a character behind full cover cannot declare attacks against those on the opposite side of full cover until they move to at least partial cover.
+**Use Cover** *(1 AP or as part of a Move)* — Shifting cover types can be done as part of a Move action or for 1 AP if staying in place. Cover type depends on how much of the defender is visible to the attacker, and whether the attack can penetrate the barrier.
+<!-- possibly shift cover to snippets -->
 
 ---
 

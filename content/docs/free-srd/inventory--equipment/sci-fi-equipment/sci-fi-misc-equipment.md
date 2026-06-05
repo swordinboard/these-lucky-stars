@@ -227,9 +227,9 @@ Cannot be applied to a Reptilian using its Single Shift, as the membrane interfe
 {{% details "Boost Pack" %}}
 ### Boost Pack
 
-*--Cr — 20lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
+*--Cr — 20lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
 
-A backpack-sized single-propulsion unit that delivers short directional bursts. For 1 AP the user can push themselves 10ft in any direction. This burst can supplement movement, enable sudden changes in direction, or extend jumps. A Boost Pack burst meets the movement requirement of the [Charge](/docs/free-srd/character-creation/abilities/#charge) ability and similar effects. Use of the Boost Pack, or any action paired with its burst, does not provoke Opportunity Attacks. Each use requires 1 supply roll.
+A backpack-sized single-propulsion unit that delivers short directional bursts. For 1 AP the user can push themselves 10ft in any direction. This burst can supplement movement, enable sudden changes in direction, or extend jumps. A Boost Pack burst meets the movement requirement of  [Charge](/docs/free-srd/character-creation/abilities/#charge) and similar  abilities. Use of the Boost Pack does not provoke Opportunity Attacks. Each use requires 1 supply roll.
 
 Cannot be worn alongside backpacks, Signal Masts, or other Back slot equipment.
 {{% /details %}}
@@ -247,12 +247,11 @@ A common but complex tool used to interact with computer systems at virtually an
 
 *--Cr — 0lbs — Single Use*
 
-A disposable high-speed data extraction USB storage device used to rapidly download data. Large or complicated files may take longer to download, but most items can be downloaded in 1d4+2 rounds.
-A data spike can be used to download encrypted files, but there is a 20% chance of failure for each level of encryption.
+A disposable high-speed data extraction USB storage device used to rapidly download data by cutting it into packets. Dowloading onto a data spike takes 1d4+2 rounds.
 
 To use, simply pull up the data you would like to download on a computer/terminal and insert the USB. To retrieve, plug the USB into the desired computer or terminal and the data will be downloaded to it at the same rate it was loaded onto the data spike. The data spike will then be useless, please recycle appropriately.
 
-Successfully downloaded encrypted data will still need to be decrypted once retrieved.
+A data spike can be used to download encrypted files, but there is a 10% chance of failure for each level of encryption, and the data must be decrypted after being loaded onto a new device.
 {{% /details %}}
 
 {{% details "Decoy Beacon" %}}
@@ -263,16 +262,19 @@ Successfully downloaded encrypted data will still need to be decrypted once retr
 Mimics encrypted com signals and life signs of a human. Costs 1 AP to activate. Requires 1 supply roll per activation; each activation lasts 1hr.
 {{% /details %}}
 
-{{% details "Fuel Cells" %}}
+{{% details "Fuel Cell" %}}
 ### Fuel Cells
 
-Standardized pressurized canisters of combustible or propellant material. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at fuel depots and outfitters but cannot be recharged in the field.
+Standardized pressurized canisters of combustible propellant. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at designated fuel depots and but cannot be recharged in the field. Unlike batteries, items requiring a fuel cell can accept any size tank due to the shared nozzle and fitting size.
 
 | Size | Supply | Description |
 | --- | --- | --- |
-| Small | 1d12 | --Cr — 1lb — Compact hand-sized canister |
-| Medium | 2d12 | --Cr — 4lbs — Cylindrical tank, roughly the size of a large water bottle |
-| Large | 4d12 | --Cr — 20lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Full-size pressurized cylinder |
+| Small | 1d12 | --Cr — 2lb — Compact 5in x 2in cylinder canister |
+| Medium | 2d12 | --Cr — 6lbs — Common 10in x 3in cylinder, the size of a hand torch tank |
+| Large | 4d12 | --Cr — 18lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Large 20in x 5in cylinder |
+
+Broken fuel cells explode violently, dealing damage to all adjacent spaces equal to twice their remaining supply, and causing minor burns to those who suffer any amount of VIT loss from this damage
+<!-- update when item damage rules are added -->
 {{% /details %}}
 
 {{% details "Grapple-Line Launcher" %}}
@@ -302,7 +304,7 @@ A pair of leg actuators that increase jump capabilities. Adds +10ft to horizonta
 {{% details "Jump Pack" %}}
 ### Jump Pack
 
-*--Cr — 25lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) [Medium] — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
+*--Cr — 25lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell) — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
 
 A backpack-sized dual-propulsion unit that launches the user vertically up to 25ft or in a controlled horizontal arc reaching up to 10ft off the ground over a maximum distance of 30ft. With a well-timed burst it can also reduce up to 100ft of falling damage to zero. Costs 2 AP per activation. Each use requires 2 supply rolls.
 

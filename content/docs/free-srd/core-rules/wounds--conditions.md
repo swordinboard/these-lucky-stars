@@ -38,7 +38,7 @@ Major wounds are serious injuries that demand more time and skill to treat. A dr
 
 ***The loss of a character's final VIT point from a lethal attack or other damaging effect always delivers a Major Wound.***
 
-*Healing* — Dressing a major wound requires supplies from the medic kit and a target 12 KNO check for 8 AP. Once dressed, a major wound heals in 1d4+2 days.
+*Healing* — Dressing a major wound requires supplies from the medic kit and a target 12 KNO check for 8 AP. Once dressed, a major wound heals in 2d4+2 days. When healed, the wound and any remaining associated conditions are removed.
 
 ### Narrative Healing
 
@@ -134,7 +134,7 @@ While this is by no means a definitive list, the following chart provides exampl
 | Struck on the head (physical) | Contusion, Laceration, Fracture | Bleeding, Confused, Shaken |
 | Set on fire, struck with flaming weapon (burn) | Burn | Shaken |
 | Electrocuted (shock) | Burn | Shaken |
-| Toxic fumes (toxin) | — | Asphyxiating, Sick, Fatigued |
+| Toxic fumes (toxin) | — | Asphyxiating, Shaken, Sick |
 
 ---
 
@@ -150,7 +150,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 |---|---|---|
 | [Asphyxiating](#asphyxiating) | FORT checks each turn or fall unconscious — 1 VIT/round if unconscious | Until able to breathe |
 | [Bleeding](#bleeding) | Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks | Until wound is dressed |
-| [Confused](#confused) | -2 Mental Attributes, -1 AP/round, +1 Stress | 2d6 rounds |
+| [Confused](#confused) | -2 KNO, INS, and CHA, -1 AP/round, +1 Stress | 2d6 rounds |
 | [Crippled](#crippled) Δ | All speeds -10, +1 Stress if using 3+ AP | Until wound is healed |
 | [Dying](#dying) Δ | FORT check each turn (starts at 3, +1/round) — failure or damage means death | Until healed, or death |
 | [Fatigued](#fatigued) Δ | -2 STR, AGI, and DEX, -2 AP/round | Until rested |
@@ -219,7 +219,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 *Duration* — Until healed, or death.
 
-*Healing* — The dying condition can be removed by another character with a use of the Medic Kit and a successful target 10 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
+*Healing* — The dying condition can be removed (usually by another character) with a successful target 10 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
 
 {{% /details %}}
 
