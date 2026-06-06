@@ -11,7 +11,7 @@ Components are devices designed for installation in automated machines (Androids
 
 ## Installation
 
-Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](../../character-creation/abilities/#tech-armor) ability applies to components.
+Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](/docs/free-srd/character-creation/abilities/#tech-armor) ability applies to components.
 
 Regardless of being an internal or external component, a body slot can hold only one component at a time. Whether an installed component also prevents the use of other equipment — such as backpacks, pouche sets, or bracers — depends on whether the install is **internal** or **external**:
 
@@ -87,9 +87,9 @@ Occupies the Arms slot for other equipment.
 
 *–Cr — 2lbs — Chest — Internal*
 
-An internal crash foam reservoir and deployment system. When the host enters the Dying condition, the system automatically deploys for 0 AP, functioning identically to a [Crash Foam Canister](../sci-fi-misc-equipment/#crash-foam-canister) — halting FORT check progression without restoring VIT. The host remains unconscious at 0 VIT until properly repaired.
+An internal crash foam reservoir and deployment system. When the host enters the Dying condition, the system automatically deploys for 0 AP, functioning identically to a [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) — halting FORT check progression without restoring VIT. The host remains unconscious at 0 VIT until properly repaired.
 
-The system holds 1 use and can be restocked with a [Crash Foam Canister](../sci-fi-misc-equipment/#crash-foam-canister) for 4 AP, no check required.
+The system holds 1 use and can be restocked with a [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) for 4 AP, no check required.
 
 Does not occupy the Chest slot for other equipment.
 {{% /details %}}
@@ -97,7 +97,7 @@ Does not occupy the Chest slot for other equipment.
 {{% details "Backup Power Cell" %}}
 ### Backup Power Cell
 
-*–Cr — 6lbs — Belt — External — [Battery](../item-tags/#battery) [Medium]*
+*–Cr — 6lbs — Belt — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
 
 A secondary medium battery housing. While installed, switching which battery is actively powering the host costs 2 AP — the equivalent of flipping a circuit switch. Physically removing or replacing either battery still costs the standard 8 AP.
 
@@ -107,11 +107,13 @@ Occupies the Belt slot for other equipment.
 {{% details "Heavy Wrist Laser" %}}
 ### Heavy Wrist Laser
 
-*–Cr — 5lbs — 20pts — (10) 90ft — Arms — External — [Battery](../item-tags/#battery) [Medium] (dedicated), [Single Shot](../item-tags/#firing-modes), [Burn](../item-tags/#burn)* *Damage Type: Burn*
+*–Cr — 5lbs — 20pts — (10) 90ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
-A larger laser emitter that runs along the length of the host's forearm. Functions as a [Laser Rifle](../sci-fi-weapons/#laser-rifle) and can benefit from a Laser Rifle [Weapon Proficiency](../../character-creation/proficiencies/#weapon). Minimum range of 10ft.
+*Damage Type: Burn*
 
-Unlike a standard laser rifle, the Heavy Wrist Laser is mounted and does not carry the [Two-Handed](../item-tags/#two-handed) tag. The host's free hand can be used normally during fire.
+A larger laser emitter that runs along the length of the host's forearm. Functions as a [Laser Rifle](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle) and can benefit from a Laser Rifle [Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon). Minimum range of 10ft.
+
+Unlike a standard laser rifle, the Heavy Wrist Laser is mounted and does not carry the [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed) tag. The host's free hand can be used normally during fire.
 
 Occupies the Arms slot for other equipment.
 {{% /details %}}
@@ -119,9 +121,9 @@ Occupies the Arms slot for other equipment.
 {{% details "Improved Cooling System" %}}
 ### Improved Cooling System
 
-*–Cr — 5lbs — Back — External — [Battery](../item-tags/#battery) [Small] (dedicated)*
+*–Cr — 5lbs — Back — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated)*
 
-Secondary external heat exchangers and coolant lines. The host gains [partial resistance](../../core-rules/health/#damage-resistance-and-weakness) to burn damage and ignores the effects of high-heat environments.
+Secondary external heat exchangers and coolant lines. The host gains [partial damage resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to burn damage and [full damage resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to high-heat environments.
 
 Occupies the Back slot for other equipment.
 {{% /details %}}
@@ -131,7 +133,7 @@ Occupies the Back slot for other equipment.
 
 *–Cr — 2lbs — Hands — Internal*
 
-A retractable interface built into the host's fingertip or palm. Functions as a standard [Comp Jack](../sci-fi-misc-equipment/#comp-jack) however no longer requires two hands to operate. Requires [Comp Jack proficiency](../../character-creation/proficiencies/#comp-jack) to use.
+A retractable interface built into the host's fingertip or palm. Functions as a standard [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack) however no longer requires two hands to operate. Requires [Comp Jack proficiency](/docs/free-srd/character-creation/proficiencies/#comp-jack) to use.
 
 Does not occupy the Hands slot for other equipment.
 {{% /details %}}
@@ -211,7 +213,7 @@ Occupies the Legs/Feet slot for other equipment.
 
 A retractable antenna and signal booster. The host's com devices have their range increased to 20 miles under normal conditions, and the host can transmit and receive on any open or shared encrypted frequency at that range. Draws negligible power from the host battery.
 
-Any character using the [Companion Bot](../../character-creation/abilities/#companion-bot) ability who has a Signal Mast, Retractable installed on their companion can issue commands and receive updates at its full range.
+Any character using the [Companion Bot](/docs/free-srd/character-creation/abilities/#companion-bot) ability who has a Signal Mast, Retractable installed on their companion can issue commands and receive updates at its full range.
 
 Does not occupy the Neck slot for other equipment.
 
@@ -221,7 +223,7 @@ Does not occupy the Neck slot for other equipment.
 
 A larger version of the Signal Mast, Retractable that increases the host's com device range to 500 miles. The host can transmit and receive on any open or shared encrypted frequency at that range, however the increased range causes a draw on the host's primary battery source. Each activation requires one supply roll of the host's primary power source and lasts for six hours.
 
-Any character using the [Companion Bot](../../character-creation/abilities/#companion-bot) ability who has a Signal Mast, Heavy installed on their companion can issue commands and receive updates at its full range.
+Any character using the [Companion Bot](/docs/free-srd/character-creation/abilities/#companion-bot) ability who has a Signal Mast, Heavy installed on their companion can issue commands and receive updates at its full range.
 
 Occupies the Back slot for other equipment.
 {{% /details %}}
@@ -261,9 +263,11 @@ Does not occupy the Head slot or HUD subslot for other equipment, however, the e
 {{% details "Wrist Laser" %}}
 ### Wrist Laser
 
-*–Cr — 2lbs — 18pts — 60ft — Arms — External — [Battery](../item-tags/#battery) [Small] (dedicated), [Single Shot](../item-tags/#firing-modes), [Burn](../item-tags/#burn)* *Damage Type: Burn*
+*–Cr — 2lbs — 18pts — 60ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
-A compact laser emitter mounted to the host's forearm. Fires in a fixed forward position from the wrist, leaving the hands free. Functions as a [Laser Pistol](../sci-fi-weapons/#laser-pistol) and can benefit from a Laser Pistol [Weapon Proficiency](../../character-creation/proficiencies/#weapon).
+*Damage Type: Burn*
+
+A compact laser emitter mounted to the host's forearm. Fires in a fixed forward position from the wrist, leaving the hands free. Functions as a [Laser Pistol](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol) and can benefit from a Laser Pistol [Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon).
 
 Occupies the Arm slot for other equipment. Aiming the Wrist Laser requires the same body posture as aiming a pistol — abilities and effects that prevent pistol use also prevent Wrist Laser use.
 {{% /details %}}

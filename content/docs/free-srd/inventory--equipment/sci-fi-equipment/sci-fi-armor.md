@@ -77,7 +77,7 @@ Similar to the combat vest but lighter and with a lower profile.
 {{% details "Padded Flight Suit" %}}
 ### Padded Flight Suit
 
-*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Burn*
+*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn*
 
 A padded version of a basic flight suit offering a bit more protection than a standard coverall.
 {{% /details %}}
@@ -142,7 +142,7 @@ A variation of the padded flight suit designed for tactical use.
 {{% details "Ultraweave Evosuit" %}}
 ### Ultraweave Evosuit
 
-*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness): Sonic, Toxin*
+*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn, Cold, Toxin*
 
 *Upgrades: [Coms Unit](#coms-unit)*
 
@@ -208,9 +208,9 @@ A passive HUD that grants a minor advantage to detect or notice hazardous terrai
 {{% details "Coms Unit" %}}
 ### Coms Unit
 
-*--Cr — 0lbs — Lvl 2 Encryption — Head [Coms]*
+*--Cr — 0lbs — Head [Coms]*
 
-Encrypted helmet-mounted radio with a range of up to 1 mile. Connects directly to other Coms Unit-equipped devices or to nearby relay network nodes. Takes up the Head [Coms] subslot.
+Helmet-mounted communication device capable of direct device-to-device communication or network connection up to 1 mile. Connects to local public or private networks where available. Takes up the Head [Coms] subslot.
 {{% /details %}}
 
 {{% details "MeBN HUD" %}}

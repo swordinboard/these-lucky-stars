@@ -183,10 +183,8 @@ Electronic tools, surveillance devices, and field gadgets for hacking, mobility,
 | [Bioskin Veil](#bioskin-veil) | Creates a near-perfect disguise. |
 | [Boost Pack](#boost-pack) | 10ft directional burst for 1 AP; does not provoke Opportunity Attacks. |
 | [Comp Jack](#comp-jack) | Required for interfacing with computer systems. |
-| [Data Ripper [Level X]](#data-ripper-level-x) | Forceful AI-assisted data extraction. |
 | [Data Spike](#data-spike) | Disposable high-speed USB data extraction device. |
 | [Decoy Beacon](#decoy-beacon) | Mimics com signals and life signs for 1hr. |
-| [Friction Gloves](#friction-gloves-by-altoa-research) | +10 climb speed, +4 to climb checks. |
 | [Fuel Cells](#fuel-cells) | Pressurized propellant canisters in small, medium, and large sizes. |
 | [Grapple-Line Launcher](#grapple-line-launcher) | Magnetic grappling hook. |
 | [Gravity Anchor](#gravity-anchor) | 10ft gravity field, 10 min per roll. |

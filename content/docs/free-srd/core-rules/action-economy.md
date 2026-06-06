@@ -86,8 +86,6 @@ Move and Step are the two primary movement actions. Both are Standard Actions, a
 
 {{% include "/snippets/speed-tiers" %}}
 
-<!-- maybe we add an example of how a characters speed tier is determined by their previous turn,s movement -->
-
 {{% include "/snippets/speed-tiers-chart" %}}
 
 ### Difficult Terrain and Obstacles

@@ -28,11 +28,11 @@ Each type of environemtnal effect has its own exposure concequences tied to thes
 
 High and low temperature are the most common environmental threats and sources of exposure damage.
 
-*Appropriate protection* — A full resistance to the appropriate damage type (burn or cold), or protective items such as warm clothing, shade and water, or shelter — can reduce or eliminate the need for checks entirely. The GM may also shorten the interval or raise the target as conditions worsen.
+*Appropriate protection* — Full exposure resistance to the appropriate damage type (burn or cold), or protective items such as warm clothing, shade and water, or shelter — can reduce or eliminate the need for checks entirely. The GM may also shorten the interval or raise the target as conditions worsen.
 
 **Exposure** — At the end of each exposure interval, an unprotected character makes a FORT check:
 
-- **First Failure** — The character gains the [fatigued condition](/docs/fres-srd/core-rules/wounds--conditions/#fatigued). A character who is already fatigued from any source skips this step as if suffering fron their second failure.
+- **First Failure** — The character gains the [fatigued condition](/docs/free-srd/core-rules/wounds--conditions/#fatigued). A character who is already fatigued from any source skips this step as if suffering fron their second failure.
 - **Second Failure** — The character suffers a **minor burn wound**. Cold injuries such as frostbite are treated mechanically as burns for all purposes.
 - **Third and Subsequent Failures** — The character suffers **1 VIT loss** from each failure and the GM may worsen untreated wounds to major if the situation calls for it.
 
@@ -50,7 +50,7 @@ Mild airborne irritants such as thin smoke, airborne particulates, or foul air p
 
 **Exposure** — At the end of each exposure interval, an unprotected character makes a FORT check:
 
-- **First Failure** — The character gains the [shaken]() condition brought on by coughing fits.
+- **First Failure** — The character gains the [shaken](/docs/free-srd/core-rules/wounds--conditions/#shaken) condition brought on by coughing fits.
 - **Second Failure** — The character gains the **sick** condition for as long as the character is exposed and 1d4 rounds after.
 - **Third and Subsequent Failures** — The character suffers **1 VIT loss** from each subsequent failure.
 
@@ -70,7 +70,7 @@ When both sides of an opposed roll are equally affected by visibility, no change
 
 *Weather and Terrain* — Heavy storms may combine visibility penalties with difficult terrain (reducing movement speed) and may interrupt multi-turn actions. Characters on exposed or elevated terrain during a storm may need to make AGI checks to keep their footing.
 
-It is worth noting thay the rules for visibility and terrain are not a separate set of rules — they are immersive applications of the existing advantage, disadvantage, and multi-turn action interruption rules found in [Health & Combat](/docs/free-srd/core-rules/health--combat/).
+It is worth noting thay the rules for visibility and terrain are not a separate set of rules — they are immersive applications of the existing advantage, disadvantage, and multi-turn action interruption rules found in [Combat](/docs/free-srd/core-rules/combat/).
 
 > [!TIP]
 > **Example:** A smoke grenade fills a corridor. Attackers firing into the smoke suffer major disadvantage. Two characters fighting in melee inside the smoke are both equally blinded — their opposed rolls are unchanged, but a third character sneaking up on either of them could make a surprise attack.

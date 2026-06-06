@@ -206,6 +206,7 @@ Your melee and ranged attacks with two weapons are more difficult to defend agai
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 3*
 
 You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 max DEF per weapon.
+
 This ability can be taken a second time to increase the bonus provided by each weapon to +2 max DEF.
 {{% /details %}}
 
@@ -226,6 +227,7 @@ You can take this ability two additional times, each increasing the number of us
 *[Student](#student), INT 2*
 
 Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher.
+
 This ability can be selected a second time to be applied to a second Student ability.
 {{% /details %}}
 
@@ -235,7 +237,8 @@ This ability can be selected a second time to be applied to a second Student abi
 *[Rage](#rage)*
 
 Your Rage ability's duration is increased by two rounds.
-This ability can be selected multiple times.
+
+This ability can be selected multiple times, each time increasing the duration by two rounds.
 {{% /details %}}
 
 {{% details "Extra Attack" %}}
@@ -483,6 +486,7 @@ When wielding two semi-auto ranged weapons with which you are proficient, you ma
 *Level 3*
 
 2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration/focus or a mental attribute roll (unless required by a related ability), cannot ready an action, and take a -2 penalty to CHA. You may end this ability early at any time on your turn by spending 2 AP.
+
 This ability can be selected multiple times, each increasing the number of uses per day by +2, to a maximum of 8/day.
 {{% /details %}}
 
@@ -575,7 +579,11 @@ When performing a [Focus Attack](#focus-attack), gain an ATK bonus equal to your
 
 *DEX 2, Level 3*
 
-Add 1d6 of bonus damage to successful surprise attacks. This ability can be selected multiple times, each time adding an additional d6, to a maximum of half your character level. This bonus does not apply to unarmed attacks without the [Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency.
+Add 1d6 of bonus damage to successful surprise attacks.
+
+This bonus does not apply to unarmed attacks without the [Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency.
+
+This ability can be selected multiple times, each time adding an additional d6, to a maximum of half your character level.
 {{% /details %}}
 
 ---
@@ -585,7 +593,9 @@ Add 1d6 of bonus damage to successful surprise attacks. This ability can be sele
 {{% details "Adaptive Luck" %}}
 ### Adaptive Luck
 
-You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses. This ability can be selected multiple times, each time increasing the daily usage by +1, to a maximum of 3/day.
+You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses.
+
+This ability can be selected multiple times, each time increasing the daily usage by +1, to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Bonus Luck" %}}
@@ -593,7 +603,9 @@ You know just when to push your luck. 1/day you may spend two Luck points to use
 
 *At least one other ability in the Luck category, per selection*
 
-Gain one additional Luck point. This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat (selections of this feat do not count.)
+Gain one additional Luck point.
+
+This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat (selections of this feat do not count.)
 {{% /details %}}
 
 {{% details "Friend of Fortune" %}}
@@ -669,7 +681,9 @@ After successfully accessing a system using your comp jack, you may leave a pass
 
 *[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency*
 
-Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice). This ability can be selected up to three times to increase the usage, to a maximum of 3/day.
+Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice).
+
+This ability can be selected up to three times to increase the usage, to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Rigged Comp Jack" %}}

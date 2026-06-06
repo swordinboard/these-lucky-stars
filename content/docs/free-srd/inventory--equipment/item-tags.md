@@ -70,7 +70,7 @@ Regardless of type, ammo weighs 3lbs per ammo die.
 > Fred is carrying a fully loaded heavy pistol, a rifle loaded with 1d8 ammo, and 3d8 of ammo equipped to his chest. Since his rifle can carry a max d12 ammo, he may choose to combine some of his ammo dice outside of combat by combining one of his d8 with the d8 loaded into his rifle, maxing it out to a d12 and leaving him with 1d4 and 2d8 equipped to his chest. He combines 1d4 and 1d8 into 1d10 to free up space for more ammo, but he cannot load the 1d10 into his pistol, which has a max capacity of 1d8.
 > Larry, Fred's accomplice, thinks all this worry about max ammo is silly. He also carries all the same equipment as Fred, but chooses to keep all his ammo dice at a comfortable d8 so that he can reload either of his guns with any of his ammo dice even if they take up a bit more space.
 
-#### Sci-Fi Additions
+**Sci-Fi Additions**
 {{% include "/snippets/sci-fi-add-ballistic" %}}
 {{% /details %}}
 
@@ -81,7 +81,7 @@ Regardless of type, ammo weighs 3lbs per ammo die.
 
 Requires a [standard battery core](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores) of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack). Weight and price of these items do not include a battery.
 
-**Equipping for Use:** Batteries can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set]().
+**Equipping for Use:** Batteries can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set](/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-ammo).
 
 **Reloading:** Depleted batteries can quickly be swapped out with a fresh one for 2 AP. This is the same action as a standard reload if performed with a weapon.
 {{% /details %}}
@@ -123,7 +123,7 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 
 Requires a [standardized fuel cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells) to operate. Fuel cells are pressurized containers of combustible  propellant used in propulsion systems, heat-based tools, and combustion equipment. Most items with this tag require a single supply roll per use.
 
-**Equipping for Use:** Fuel cells can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set]().
+**Equipping for Use:** Fuel cells can be equipped to the legs, belt, or chest body slots using the [Ammo Pouch Set](/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-ammo).
 
 **Reloading:** A depleted fuel cell can be swapped for a fresh one for 2 AP. This is the same action as a standard reload if performed with a weapon.
 {{% /details %}}
@@ -143,7 +143,7 @@ The normal reload for these weapons requires 3 AP rather than 2.
 {{% details "Pressurized" %}}
 ### Pressurized
 
-Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against other harsh environmental conditions. These full-body suits include a helmet. Most often used in controlled low-oxygen environments.
+Pressurized suits are capable of withstanding the vacuum of space, but provide no protection against other harsh environmental conditions. These full-body suits include a helmet. Often used in controlled low-oxygen environments.
 {{% /details %}}
 
 {{% details "Power Source" %}}
@@ -167,8 +167,12 @@ These weapons can be topped off up to max capacity for 1 AP as long as the weapo
 {{% details "Space Suit" %}}
 ### Space Suit
 
-All Space Suits have the [Bulky](#bulky) and [Pressurized](#pressurized) tags. Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. Unless specified otherwise all space suits include a helmet with integrated local coms, a 1hr micro oxygen tank, offer [full resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to radiation and toxin, and [partial resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) to cold and burn.
-{{% /details %}}
+Space suits are pressurized suits designed to withstand harsh environments and the hazards of space. Unless specified otherwise all space suits include the following:
+- The [Bulky](#bulky) and [Pressurized](#pressurized) tags.
+- A helmet with an integrated [coms unit]()
+- A 1hr micro oxygen tank (takes up not body slot)
+- [full exposure resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to radiation and toxin
+- [partial exposure resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to cold and burn
 
 {{% details "Throwable [___]" %}}
 ### Throwable
