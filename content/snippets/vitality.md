@@ -12,14 +12,14 @@ In combat, VIT represents the number of solid blows a character can take before 
 
 An attack inflicts a [wound](/docs/free-srd/core-rules/wounds--conditions/) on the defender if it:
 
-- Dealt 2 or more VIT damage, or
+- Causes 2 or more VIT loss, or
 - Caused the defender to reach 0 VIT.
 
 The GM determines the appropriate wound severity based on the attack and circumstances.
 
 **Reaching 0 VIT**
 
-When a character's VIT reaches 0, the attacker decides whether the final blow was lethal or non-lethal. If the damage came from an environmental effect or other non-character source, the GM makes the decision.
+When a character's VIT reaches 0, the attacker decides whether the final blow was lethal or non-lethal. If the VIT loss came from an environmental effect or other non-player character source, the GM makes the decision.
 
 - A **lethal blow** applies the [dying condition](/docs/free-srd/core-rules/wounds--conditions/#conditions) and a [major wound](/docs/free-srd/core-rules/wounds--conditions/#major-wounds).
 - A **non-lethal blow** applies the [unconscious condition](/docs/free-srd/core-rules/wounds--conditions/conditions) and a minor wound — usually a contusion to the head.
@@ -27,5 +27,5 @@ When a character's VIT reaches 0, the attacker decides whether the final blow wa
 **VIT Recovery**
 
 - One point of VIT is recovered with a full day's rest.
-- VIT damage cannot reduce a character below 0.
+- VIT loss cannot reduce a character below 0.
 - Max VIT is affected by any changes to a character's FORT.

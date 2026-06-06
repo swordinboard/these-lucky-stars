@@ -79,7 +79,7 @@ Making a surprise attack counts as a special attack action, but requires no addi
 
 ## Damage
 
-> **DAMAGE = (Damage Dice + Attribute Used in Attack + Modifiers) × Resistance**
+> **DEF DAMAGE = (Damage Dice + Attribute Used in Attack + Modifiers) × Resistance**
 
 ### Damage Dice
 
@@ -88,7 +88,7 @@ Making a surprise attack counts as a special attack action, but requires no addi
 ### Damage Modifiers
 
 - The attribute used to make the attack roll is added to the damage total.
-- Unarmed attacks deal −3 damage before damage resistance.
+- Unarmed attacks and attacks deal −3 damage before weakness/resistance.
 - Minimum damage from most attacks is **1** unless a resistance determines otherwise.
 - Equipment and character features may also provide damage modifiers.
 
@@ -100,20 +100,28 @@ Damage types include: Physical, Mental, Toxin, Burn, Cold, Shock, Radiation, Son
 
 ### Damage Sources
 
-**Normal Damage** — Damage that comes from a direct source such as an attack or a trap is considered normal damage and is applied to the character's DEF before potential VIT loss. If there is an action responsible for the damage or if the damage could have been dodged or physically avoided, it is most likely normal damage.
+**Normal Damage** — Damage that comes from a direct source such as an attack or a trap is considered normal damage and is applied to the character's DEF before potential VIT loss. If there is an action responsible for the damage or if the damage could have been dodged or physically avoided it is most likely normal damage.
 
-**Exposure Damage** — Damage that is unavoidable and sustained over time is considered exposure damage. Most sources of exposure damage are from the environment. Exposure damage leads to attribute checks, and often causes conditions and VIT loss.
+**Exposure Damage** — Damage that is unavoidable and sustained over time is considered exposure damage. Most sources of exposure damage are from the environment. Exposure damage is not calculated and applied to DEF, instead it leads to attribute checks and often causes conditions and VIT loss.
 
-**Extreme Damage** — If a damage source is considered outside the typical realm of survivability for a living creature, it should be labeled as extreme. Extreme damage and extreme exposure exist primarily to overcome or alter how resistances interact with those damage sources. Most extreme sources come from things much larger than the defender or highly inhospitable environments.
+**Extreme Damage** — If a damage source is considered outside the typical realm of survivability for a living creature it should be labeled as extreme, this applied to both normal damage and exposure damage. The extreme label exists to overcome or alter how resistances interact with those damage sources. Most extreme sources come from things much larger than the defender or from highly inhospitable environments.
 
 ### Damage Resistance and Weakness
 
-**Partial Resistance [÷2]** — Normal damage of this type is halved. Exposure damage and any extreme damage bypass partial resistance.
+**Partial Damage Resistance (PDR)** — Applies to normal damage. Normal damage of this type is halved (minimum 1).
+Exteme damage of this type is unaffected.
 
-**Full Resistance [×0 or ÷2]** — Normal damage of this type is reduced to zero. Extreme damage of this type is halved. Exposure effects of this type, including extreme exposure effects, are ignored. New sources of normal damage during extreme exposure bypass full resistance at the GM's discretion; usually resulting in taking half damage unless it is being sustained often, at which point the full damage may be taken. The combination of direct damage and exposure damage is often too much to bear in any situation.
+**Full Damage Resistance (FDR)** — Applies to normal damage. Normal damage of this type is reduced to 0.
+Extreme damage of this type still poses a risk, but the damage is halved (minimum 1).
 
-**Weakness [×2]** — Normal and extreme damage of this type is doubled. Attribute checks made to resist effects of this type are made at a major disadvantage (including those from exposure).
-<!-- revisit and split: partial resistance, full resistance, exposure resistance seperate -->
+**Partial Exposure Resistance (PER)** — Applies to exposure damage. The exposure interval for exposure damage of this type is doubled.
+Extreme exposure of this type is unaffected.
+
+**Full Exposure Resistance (FER)** — Applies to exposure damage. Ignore effects resulting from this type of exposure. 
+Extreme damage still poses a risk, but the exposure interval for extreme exposure of this type is doubled.
+
+**Weakness** — Normal and extreme damage of this type is doubled. Attribute checks made to resist effects of this type are made at a major disadvantage (including those from exposure).
+<!-- compile a list of all refetences to resistancw abd reapply updated rules -->
 ---
 
 ## Applying Damage
@@ -123,7 +131,6 @@ Damage types include: Physical, Mental, Toxin, Burn, Cold, Shock, Radiation, Son
 A damaged character's DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends. See the [Defense](/docs/free-srd/core-rules/health/#defense) section under Health for complete DEF reset rules.
 
 An attack that deals 2 or more VIT damage or reduces the defender to 0 VIT inflicts a wound. See [Vitality](/docs/free-srd/core-rules/health/#vitality) under Health for wound triggers, reaching 0 VIT, and VIT recovery.
-
 ---
 
 ## Actions in Combat
