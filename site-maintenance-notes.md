@@ -101,10 +101,8 @@ Any URL change requires a redirect in `netlify.toml` to avoid 404s in Google Sea
 
 ## Content Consistency
 
-### Page title / h2 convention
-The Book theme does **not** display the front matter `title` as a visible heading on desktop
-(it only appears in the mobile header). Because of this, every page must open with an h2
-that matches the page title exactly — this h2 acts as the visible heading on desktop.
+### Page title / h1 convention
+The Book theme does **not** display the front matter `title` as a visible heading on desktop (it only appears in the mobile header). Because of this, every page must open with an h1 that matches the page title exactly — this h1 acts as the visible heading on desktop.
 
 ```markdown
 ---
@@ -116,9 +114,9 @@ title: "Combat"
 Page content starts here...
 ```
 
-- The h2 must match the `title` field exactly
+- The h1 must match the `title` field exactly
 - This applies to all content pages **and** section `_index.md` files that have body content
-- Do not use a different h2 (e.g. "In This Section") — it will appear as the page heading on desktop
+- Do not use a different h1 (e.g. "In This Section") — it will appear as the page heading on desktop
 
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
