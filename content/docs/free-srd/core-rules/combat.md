@@ -155,7 +155,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/opportunity-attack" %}}
 
-**Disarm** *(3 AP)* — Attempt to disarm an opponent with a melee weapon you are proficient with. Make a standard attack roll; if successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon.
+**Disarm** *(3 AP)* — Attempt to disarm an opponent that is holding a weapon. Make a standard attack roll; if successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon in a random adjacent space. If the defender is using a [two-handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed) weapon or wielding a [versatile](/docs/free-srd/inventory--equipment/item-tags/#versatile) weapon with two hands they gain a major advantage on the STR check to maintain a grip on their weapon.
 
 **Draw a Weapon** *(1–3 AP)* — Drawing an equipped weapon or picking one up that is within your reach costs 1 AP. Drawing a concealed weapon costs 3 AP.
 
@@ -163,7 +163,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 {{% include "/snippets/grapple" %}}
 
-**Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item rather than the opponent. See the Equipment section for rules on damaged and broken gear.
+**Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item's DEF rather than to the opponent. See the Equipment section for rules on damaged and broken gear.
 
 **Stand** *(1 AP)* — Stand from prone. May provoke an Opportunity Attack.
 
