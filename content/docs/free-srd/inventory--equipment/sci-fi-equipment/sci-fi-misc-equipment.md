@@ -338,7 +338,7 @@ A powerful handheld direct contact laser cutter and welder suitable for small to
 
 *--Cr — 2lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] — Belt*
 
-A belt lined with projectors that, once activated, create a sheet-like protective energy shield over the user. The shield protects from 10 points of damage for up to 3 rounds. Costs 1 AP to activate. There is a required cooldown period of 2d4 rounds between activations. Requires 2 supply rolls when activated. Takes up the belt body slot.
+A belt lined with projectors that, once activated, create a sheet-like protective energy shield over the user. The shield provides a 10 point temporary DEF pool for up to 3 rounds. Costs 1 AP to activate. There is a required cooldown period of 2d4 rounds between activations. Requires 2 supply rolls when activated. Takes up the belt body slot.
 
 **Energy Shields**
 {{% include "/snippets/energy-shields" %}}
@@ -347,9 +347,9 @@ A belt lined with projectors that, once activated, create a sheet-like protectiv
 {{% details "Reactor Cores" %}}
 ### Reactor Cores
 
-Self-sustaining power reactors for automated machines and high-drain equipment. Unlike standard battery cores, reactor cores are not interchangeable with standard battery slots without modification — adapting a [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) item to accept a reactor core requires a Tech Kit, a target 14 KNO check, and 1 hour of work.
+Self-sustaining power reactors for automated machines and high-drain equipment. Unlike standard battery cores, reactor cores are not interchangeable with standard battery slots without modification — adapting a [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) item to accept a reactor core requires a Tech Kit, a target 14 KNO check, and 1 hour of work, and the same to reverse back to accepting batteries.
 
-Reactor cores slowly regenerate their supply — a depleted die recovers one size after 6 hours in Rest Mode. They cannot be used with the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability.
+Reactor cores slowly regenerate their supply — a depleted die recovers one size after 6 hours in Rest Mode. They cannot be used with the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability, and have more safety measures in place to prevent dangerous breakdown than standard batteries.
 
 | Size | Physical Size | Common Charge | Description |
 |------|--------------|---------------|-------------|
@@ -383,7 +383,7 @@ Does not alter visual appearance in any way.
 
 *--Cr — 4lbs — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
 
-Once activated, creates a spherical energy shield with a 20ft radius that protects from 30 points of damage for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
+Once activated, creates a spherical energy shield with a 20ft radius and provides a 40 point temorary DEF pool for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
 
 **Energy Shields**
 {{% include "/snippets/energy-shields" %}}

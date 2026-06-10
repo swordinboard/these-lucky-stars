@@ -17,10 +17,7 @@ draft: true
 > Used for general callouts within content
 
 > [!WARNING]
-> Used for minor announcments
+> Used for contwnt status announcments
 
 > [!CAUTION]
-> Used for content status annaouncments
-
-> [!DANGER]
-> Used for site status announcements
+> Used for site status annaouncments
