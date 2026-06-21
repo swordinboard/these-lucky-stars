@@ -173,6 +173,7 @@ Space suits are pressurized suits designed to withstand harsh environments and t
 - A 1hr micro oxygen tank (takes up not body slot)
 - [full exposure resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to radiation and toxin
 - [partial exposure resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) to cold and burn
+{{% /details %}}
 
 {{% details "Throwable [___]" %}}
 ### Throwable
