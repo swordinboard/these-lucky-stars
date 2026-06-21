@@ -176,7 +176,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 ### Defensive Actions
 
-**Brace** *(2 AP)* —  For 2 AP you may brace yourself to gain a minor advantage on DEF checks and FORT checks that would result in taking any form of normal damage (damage that is applied to DEF). Taking any other action after the Brace action ends this affect.
+**Brace** *(2 AP)* —  For 2 AP you may brace yourself to gain a minor advantage on DEF checks and FORT checks that would result in taking any form of normal damage (damage that is applied to DEF). Taking any other action after the Brace action ends the affect immediately.
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
