@@ -109,7 +109,7 @@ The Book theme does **not** display the front matter `title` as a visible headin
 title: "Combat"
 ---
 
-## Combat
+# Combat
 
 Page content starts here...
 ```

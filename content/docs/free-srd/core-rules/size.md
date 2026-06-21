@@ -18,7 +18,7 @@ Size influences characters along three separate paths:
 
 - **Attribute modifiers** — Larger characters gain STR and lose AGI; smaller characters lose STR and gain AGI. This represents raw physical capability.
 - **Stat modifiers** — Grapple and Stealth receive flat modifiers on top of any changes caused by the attribute shifts. These represent how size physically affects handling and visibility, independent of strength or agility. Larger characters are harder to hide and more commanding in a grapple; smaller characters are the opposite.
-- **Combat geometry** — Size determines how much space a character occupies on the battlefield, their normal melee reach, and the damage dice used when they attack or are attacked.
+- **Combat & geometry** — Size determines how much space a character occupies on the battlefield, their normal melee reach, and the damage dice used when they attack or are attacked.
 
 ---
 
@@ -26,21 +26,23 @@ Size influences characters along three separate paths:
 
 | | Tiny | Small | Medium | Large | Huge |
 |---|---|---|---|---|---|
-| **Expected Height** | < 1 ft | 1–3 ft | 3–9 ft | 9–18 ft | > 18 ft |
-| **Space Occupied** | Can enter occupied spaces | ½ space (2.5ft square) | 1 space (5ft square) | 4-spaces (10ft square) | 9-spaces (15ft square) |
+| **Expected Height** | < 2 ft | 2-4 ft | 4–8 ft | 8–16 ft | > 16 ft |
+| **Space Occupied** | ¼ space (2.5ft square) | 1 space (5ft square) | 1 space (5ft square) | 4-spaces (10ft square) | 9-spaces (15ft square) |
 | **Normal Melee Reach** | Occupied space only | 1 space (5ft) | 1 space (5ft) | 2 spaces (10ft) | 3 spaces (15ft) |
 | **STR Modifier** | −4 | −2 | — | +2 | +4 |
 | **AGI Modifier** | +4 | +2 | — | −2 | −4 |
 | **Grapple Modifier** | −4 | −2 | — | +2 | +4 |
 | **Stealth Modifier** | +4 | +2 | — | −2 | −4 |
 
-**Shared spaces:** Two Small creatures can occupy the same space during combat without facing penalties. Tiny creatures can occupy a space in a similar same way, and must occupy the same space as their opponent when making melee attacks. The number of tiny creatures that may enter a space is left to GM discresion. Tiny creatures ability to climb, fly, or otherwise swarm an opponent may allow a large number of them to enter an occupied space.
+**Occupied spaces:** Smaller creatures can pass through spaces occupied by allies and enemies that are two sizes larger than them (still provoking opportunity attacks). Characters of similar size cannot pass through enemy spaces, but can pass through allies.
+Tiny creatures can remain in spaces occupied by enemies, and must occupy the same space as their opponent when making melee attacks. The number of tiny creatures that may enter a space is left to GM discresion. Tiny creature's ability to climb, fly, or otherwise swarm an opponent may allow a several of them to enter an occupied space.
+A single tiny creature does not occupy a large enough space to prevent a larger creature from passing through a 5ft space, but multiple tiny creatures in the same space may.
 
 ---
 
 ## Size in Combat
 
-Size affects combat in three specific ways:
+Size affects combat directly though damage, reach, and action modifiers
 
 **Damage dice.** {{% include "/snippets/damage-dice" %}}
 

@@ -27,6 +27,10 @@ Players choose a race or species from the Races available to their GM's setting.
 
 Unlike many systems that use a class system to define different character roles and determine special abilities, These Lucky Stars is classless and leaves full creative power to the players. Even so, to help hone in on your character it is often helpful to define a character by archetype. Choose a short description that presents an overview of the character. Some examples: “Sneaky Pirate,” “Stalwart Defender,” “Lucky Pilot,” “Fire Mage,” “Tired Librarian,” “Gibbering Warrior,” “Reluctant Manager,” "Retiring Officer." This title will not be referenced otherwise during character creation or level up, but it will provide the party and GM with a general sense of your character. As you play and level up, this archetype may change. When in doubt, look to your selected character features for inspiration.
 
+## Character Race
+
+<!-- need entry -->
+
 ## Character Features
 
 There are three types of character features: traits, proficiencies, and abilities.

@@ -10,4 +10,6 @@ Base damage dice are determined by the size of the attacker relative to the defe
 | Same size or ±1 size | 1d8 |
 | Two or more sizes larger | 1d12 |
 
-Attack rolls that beat the target by 10 or more gain an additional damage die. See [Size](/docs/free-srd/core-rules/size/) for the full size chart and how size affects combat through various modifiers.
+**Bonus Dice** — Attack rolls that beat the target by 10 or more gain an additional damage die.
+
+**Extreme Damage** — Damage from attacks made by creatures *two or more sizes larger* than the target is treated as [extreme](/docs/free-srd/core-rules/combat/#damage-sources) damage, and causes an automatic 1 VIT loss per damage die after damage is resolved.
