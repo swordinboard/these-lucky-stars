@@ -18,7 +18,9 @@ Many items have tags to quickly identify common features and use requirements. T
 - [Belt Fed](#belt-fed)
 - [Bulky](#bulky)
 - [Concealable](#concealable)
+- [Durable](#durable)
 - [Firing Modes](#firing-modes)
+- [Fragile](#fragile)
 - [Fuel Cell](#fuel-cell)
 - [Injector](#injector)
 - [Long Reload](#long-reload)
@@ -104,6 +106,16 @@ Bulky items are awkward to carry and count toward a character's max bulky item c
 These compact weapons are easier to hide on your person.
 {{% /details %}}
 
+{{% details "Durable" %}}
+### Durable
+
+Items with the Durable tag have a maximum VIT of 4 rather than the standard 3. They can absorb more punishment before breaking and spend longer in a fully functional state.
+
+**Special Applications:**
+- Armor with the Durable tag has a 50% chance not to degrade in condition when the wearer suffers a major wound from damage.
+- Shields with the Durable tag increase their max supply by 1 die size.
+{{% /details %}}
+
 {{% details "Firing Modes" %}}
 ### Firing Modes
 
@@ -114,6 +126,16 @@ A weapon's firing mode determines what abilities can be used with it and how qui
 **Semi-auto:** The most versatile firing mode, capable of applying to the widest range of abilities. Each attack requires one supply roll.
 
 **Single Shot:** A slow but precise firing mode best for long range engagements. Single Shot weapons hold less ammo than othwr weapons. Each attack lowers the supply/ammo die by one size.
+{{% /details %}}
+
+{{% details "Fragile" %}}
+### Fragile
+
+Items with the Fragile tag have a maximum VIT of 2 rather than the standard 3. They reach their broken state faster and have only one damaged threshold before failing entirely.
+
+**Special Applications:**
+- Armor with the Fragile tag also degrades in condition when the wearer suffers a minor wound from damage.
+- Shields with the Fragile tag also decrease their max supply by 1 die size.
 {{% /details %}}
 
 {{% details "Fuel Cell [___]" %}}

@@ -18,4 +18,5 @@ bookToC: false
 - [Wounds & Conditions](wounds--conditions/)
 - [Environmental Effects](environmental-effects/)
 - [Vehicle Rules](vehicle-rules/)
+- [Damaged & Broken Gear](damaged--broken-gear/)
 - [Sci-Fi Additions](sci-fi-additions/)

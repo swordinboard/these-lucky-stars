@@ -133,15 +133,14 @@ Extreme exposure still poses a risk, but the exposure interval for extreme expos
 
 **Weakness** — Normal and extreme damage of this type is doubled. Attribute checks made to resist effects of this type are made at a major disadvantage (including those from exposure).
 
----
-
-## Applying Damage
+### Applying Damage
 
 {{% include "/snippets/health-loop" %}}
 
 A damaged character's DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends. See the [Defense](/docs/free-srd/core-rules/health/#defense) section under Health for complete DEF reset rules.
 
 An attack that deals 2 or more VIT damage or reduces the defender to 0 VIT inflicts a wound. See [Vitality](/docs/free-srd/core-rules/health/#vitality) under Health for wound triggers, reaching 0 VIT, and VIT recovery.
+
 ---
 
 ## Actions in Combat
@@ -180,7 +179,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-**Stealth** — {{% include "/snippets/stealth" %}}
+{{% include "/snippets/stealth" %}}
 
 {{% include "/snippets/step" %}}
 
