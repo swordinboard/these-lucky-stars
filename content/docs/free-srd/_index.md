@@ -8,7 +8,7 @@ bookToC: false
 
 {{% include "/snippets/announcement" %}}
 
-## Free SRD
+# Free SRD
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 

@@ -6,8 +6,9 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement.md" %}}
-## Android
+# Android
 <!-- basic android race -->
+<!-- include a note about using standard character health systme rather than that of objects -->
 
 ## Features
 
@@ -27,7 +28,7 @@ Androids function much like people do in that they require rest. During a long r
 An Android's power source can be replaced for 8 AP by the Android or another character. If this action is interrupted the Android immediately falls into Dead Battery mode. If a [Backup Power Cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#backup-power-cell) component is installed, the Android may switch to it for 2 AP.
 
 **Dead Battery** — *Automated Machine Condition*
-
+<!-- may need to move this section or put into a snippet -->
 If an Android's or other automated machine's primary power source is fully depleted at any time, they immediately shut down and are considered unconscious for all purposes. Attacks against a machine in Dead Battery gain advantage and count as surprise attacks. For Androids, all memory since the last successful Rest Mode session is lost upon entering Dead Battery.
 
 *Ending Dead Battery:* Replace or sufficiently recharge the primary power source.

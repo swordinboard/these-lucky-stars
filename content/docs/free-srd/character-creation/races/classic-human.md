@@ -6,7 +6,7 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement.md" %}}
-## Classic Human
+# Classic Human
 <!-- note about the classic human trope -->
 
 ## Features

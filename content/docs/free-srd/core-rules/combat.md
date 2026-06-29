@@ -4,7 +4,7 @@ description: "How fights are resolved in These Lucky Stars — initiative, attac
 weight: 60
 ---
 
-## Combat
+# Combat
 
 This page covers how fights are resolved in These Lucky Stars — from initiative to damage to the full catalog of combat actions. For how Action Points, action types, and movement work, see [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/). For how damage interacts with a character's health, see [Health](/docs/free-srd/core-rules/health/).
 

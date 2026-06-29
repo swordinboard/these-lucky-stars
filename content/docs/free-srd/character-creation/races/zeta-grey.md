@@ -6,7 +6,7 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement.md" %}}
-## Zeta Grey
+# Zeta Grey
 <!-- Combo little green men and Greys -->
 
 ### Features

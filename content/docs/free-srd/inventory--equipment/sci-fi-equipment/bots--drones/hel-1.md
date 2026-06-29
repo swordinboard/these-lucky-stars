@@ -5,6 +5,6 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement" %}}
-## HEL-1
+# HEL-1
 
 A small flying drone designed for aerial reconnaissance and light operations.

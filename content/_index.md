@@ -5,7 +5,7 @@ bookToC: false
 
 {{% include "/snippets/announcement" %}}
 
-## Welcome!
+# Welcome!
 
 Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
 

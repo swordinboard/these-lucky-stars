@@ -5,6 +5,6 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement" %}}
-## TRK-A
+# TRK-A
 
 A small and reliable robot platform suited for a variety of field and support roles.

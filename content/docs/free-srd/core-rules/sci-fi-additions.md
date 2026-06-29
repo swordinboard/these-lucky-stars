@@ -4,7 +4,7 @@ description: "Sci-fi module additions to the core rules: ballistic weapons in ze
 weight: 90
 ---
 
-## Sci-Fi Additions
+# Sci-Fi Additions
 
 This page is the central home for sci-fi specific rules that extend or modify the core rules. Many of these rules are also referenced in context elsewhere in the SRD — on equipment pages, in combat, and in environmental rules — to avoid forcing page-switching mid-session. They are collected here for easy reference.
 
@@ -39,7 +39,7 @@ Computer systems can be accessed from dedicated terminals. Most characters in sc
 
 ### Networks
 
-Networks are formed by a series of linked devices, primarily communication devices. Most networks are put in place to facilitate ease of communication and information sharing. For purposes of encyption, networks use the same security and interaction rules as computer systems, but the actions can be performed by connecting a comp jack to any connected device within range in place of a terminal. networks with Security level 0 are usually known as public networks and can be connected to freely. Secured networks need access keys to be connected to, or to be accessed with the comp jack.
+Networks are formed by a series of linked devices, primarily communication devices. Most networks are put in place to facilitate ease of communication and information sharing. For purposes of encyption, networks use the same security and interaction rules as computer systems, but the actions can be performed by connecting a comp jack to any connected device within range in place of a terminal. Networks with Security level 0 are usually known as public networks and can be connected to freely. Secured networks need access keys to be connected to, or to be accessed with the comp jack.
 
 ### System Level
 
@@ -68,10 +68,8 @@ Actions are typically performed in the following order:
 **Analyze** *(1 AP)* — Requires a comp jack and a target 6 KNO roll. Reveals the system's security level and any countermeasures it has. Recommended before attempting to access any secured system.
 
 **Bypass** *(3 AP)* — Requires a comp jack and a KNO roll with a target equal to the system's security base target +3. Allows a countermeasure to be deactivated or avoided before it can trigger.
-
-- A *deactivated* countermeasure cannot trigger again until specifically reactivated via another Bypass action.
-- An *avoided* countermeasure has its trigger temporarily disabled until the end of the user's next turn, then returns to normal. Countermeasures avoided this way may require repeated Bypass actions to prevent triggering.
-
+- A *deactivated* countermeasure cannot be triggered until it is specifically reactivated in the system with another bypass action.
+- An *avoided* countermeasure's trigger mechanism is temporarily disabled for a number of rounds as determined by the user, then it returns to normal function. triggers can be deactivated for a number of rounds equal to *the user's KNO +3.* This is useful for stealth and subterfuge, however, may lead to multiple bypass actions to prevent their trigger. Countermeasures avoided this way may require repeated Bypass actions to prevent triggering.
 A failed Bypass automatically triggers the countermeasure.
 
 **Access** *(2 or 4 AP)* — Required to use a secured system. Using the matching key or code costs 2 AP. Using a comp jack costs 4 AP and requires a KNO roll with a target equal to the system's security base target. If using a comp jack, this action can be split across turns as long as it is not interrupted — the KNO roll is made on the turn the action completes. Once accessed, the system can be used freely until locked out or reset.
@@ -82,7 +80,7 @@ A failed Bypass automatically triggers the countermeasure.
 
 ### Security Countermeasures
 
-Countermeasures are an optional security layer that can be added to most systems. Unless there are obvious physical signs — such as visible automated weapons — countermeasures are undetectable without an Analyze action. Each countermeasure has a **trigger**, a **reset**, and an **effect**.
+Countermeasures are an optional security layer that can be added to most systems. Unless there are obvious physical signs — such as visible automated weapons — countermeasures are undetectable without an Analyze action. Each countermeasure will have a **trigger**, a **reset**, and an **effect**.
 
 #### Triggers
 
@@ -117,4 +115,3 @@ Countermeasures are an optional security layer that can be added to most systems
 **Log** — Tracks all actions taken in the system. If accessed by comp jack, the user's jack signature is recorded. Logs can be avoided on a per-action basis with a new Bypass for each action, but cannot be fully deactivated without removing the log file — which may itself create suspicion.
 
 **Terminal** — Single-use per access point. Triggered by AI upon detecting an unauthorized user. Causes an electrical overcharge that destroys the terminal and deals minor burn damage and 1 VIT loss to the user. Cannot be avoided or deactivated with a Bypass, but the harm can be dodged with a successful target 12 DEX check.
-

@@ -6,7 +6,7 @@ bookHidden: true
 ---
 
 {{% include "/snippets/wip-announcement.md" %}}
-## Reptilian
+# Reptilian
 <!-- classic reptilan race -->
 
 ### Features
