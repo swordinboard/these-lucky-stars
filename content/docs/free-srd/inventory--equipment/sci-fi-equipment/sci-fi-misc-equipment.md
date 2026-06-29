@@ -271,8 +271,7 @@ Standardized pressurized canisters of combustible propellant. Used in propulsion
 | Medium | 2d12 | --Cr — 6lbs — Common 10in x 3in cylinder, the size of a hand torch tank |
 | Large | 4d12 | --Cr — 18lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Large 20in x 5in cylinder |
 
-Broken fuel cells explode violently, dealing damage to all adjacent spaces equal to twice their remaining supply, and causing minor burns to those who suffer any amount of VIT loss from this damage
-<!-- update when item damage rules are added -->
+A fuel cell that reaches the [Broken](/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions) condition explodes violently, dealing damage to all adjacent spaces equal to twice its remaining supply, and causing minor burns to those who suffer any amount of VIT loss from this damage.
 {{% /details %}}
 
 {{% details "Grapple-Line Launcher" %}}
@@ -328,7 +327,7 @@ A pair of electric handcuffs that pair with a wrist-mounted controller. The magn
 {{% details "Mini Laser Cutter" %}}
 ### Mini Laser Cutter
 
-*--Cr — 1lb — 18pts — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
+*--Cr — 1lb — 4 Object DEF — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium]*
 
 A powerful handheld direct contact laser cutter and welder suitable for small to medium projects on most metals. Cut depth can be dialed in to a max of 6in. Requires 1 supply roll per use.
 {{% /details %}}

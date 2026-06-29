@@ -1,6 +1,6 @@
 ---
 title: "Equipment Overview"
-description: "Common equipment terms for These Lucky Stars — how price, weight, damage thresholds, range, and item tags work across all modules."
+description: "Common equipment terms for These Lucky Stars — how price, weight, Object DEF, range, and item tags work across all modules."
 weight: 1
 ---
 
@@ -8,12 +8,12 @@ weight: 1
 
 ### Sci Fi
 
-- [Armor](/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-armor/)
-- [Kits](/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-kits/)
-- [Medical Supplies](/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-items--equipment/#medical-supplies)
-- [Survival Equipment](/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-items--equipment/#survival-equipment/)
-- [Tech & Gadgets](/docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-items--equipment/#tech--gadgets/)
-- [Weapons](//docs/free-srd/inventory-equipment/sci-fi-equipment/sci-fi-weapons/)
+- [Armor](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/)
+- [Kits](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/)
+- [Medical Supplies](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#medical-supplies)
+- [Survival Equipment](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#survival-equipment)
+- [Tech & Gadgets](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#tech--gadgets)
+- [Weapons](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/)
 
 ## Common Equipment Terms
 
@@ -28,9 +28,15 @@ The standard price for a new piece of equipment.
 
 The total weight of an item. (If an item is considered a bulky item, it will have the bulky tag.)
 
-### Damage Threshold
+### Object DEF
 
-The amount of direct damage a piece of protective gear can take before receiving the damaged item condition.
+An item's own structural resistance, used when the item is targeted directly — such as with the [Shatter](/docs/free-srd/core-rules/combat/#aggressive-actions) action — or otherwise takes direct damage. See [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for how Object DEF and VIT work.
+
+Armor normally degrades through a separate process tied to the wearer's wounds rather than direct damage — see [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items). Its listed Object DEF is a fallback for edge cases where armor is attacked directly while unworn or otherwise not protecting a wearer.
+
+### DEF Bonus
+
+Added to the wearer's DEF score while equipped.
 
 ### Range
 
@@ -39,4 +45,4 @@ Some weapons and upgrades have a minimum range. These are written in parenthesis
 
 ### Tags
 
-Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary. You can find a complete list of item tags [here](/docs/free-srd/inventory-and-equipment/item-tags).
+Many pieces of equipment have tags to quickly identify common features and use requirements. These tags will be described at the end of each item list. The tag "Special" is used when that piece of equipment has details out of the ordinary. You can find a complete list of item tags [here](/docs/free-srd/inventory--equipment/item-tags/).

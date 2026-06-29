@@ -4,14 +4,15 @@ description: "Armor for the sci-fi module in These Lucky Stars — from light co
 weight: 2
 ---
 
-## Sci-Fi Armor
+# Sci-Fi Armor
 
-Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX penalty based on how restrictive it is. Some armor includes built-in upgrades or special properties.
+Armor provides a DEF Bonus and an Object DEF value, at the cost of an AGI/DEX penalty based on how restrictive it is. Some armor includes built-in upgrades or special properties.
 
 **DEF Bonus** — Added to the wearer's DEF score.
+**Object DEF** — The armor's own structural DEF, used as a fallback if the armor is attacked directly rather than degraded through the wearer's wounds. See [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items).
 **AGI/DEX Penalty** — Applied to AGI and DEX. Bulkier armor restricts movement more.
 
-### Armor
+## Armor
 
 {{< tabs >}}
 {{% tab "Light Armor" %}}
@@ -36,12 +37,12 @@ Armor provides a DEF bonus and a damage threshold, at the cost of an AGI/DEX pen
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Light Armor
+### Light Armor
 
 {{% details "Basic P-Suit" %}}
-### Basic P-Suit
+#### Basic P-Suit
 
-*--Cr — +2 DEF — -1 AGI/DEX — 20lbs — 20pts — [Pressurized](/docs/free-srd/inventory--equipment/item-tags/#pressurized)*
+*--Cr — +2 DEF Bonus — -1 AGI/DEX — 20lbs — 8 Object DEF — [Pressurized](/docs/free-srd/inventory--equipment/item-tags/#pressurized)*
 
 *Upgrades: [Coms Unit](#coms-unit), 1hr Oxygen Microtank*
 
@@ -49,9 +50,9 @@ A basic unarmored pressure suit providing the bare minimum for work in environme
 {{% /details %}}
 
 {{% details "Classic Evosuit" %}}
-### Classic Evosuit
+#### Classic Evosuit
 
-*--Cr — +3 DEF — -1 AGI/DEX — 20lbs — 20pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+*--Cr — +3 DEF Bonus — -1 AGI/DEX — 20lbs — 8 Object DEF — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades: [Coms Unit](#coms-unit)*
 
@@ -59,33 +60,33 @@ The lightest and cheapest of the Evosuit lineup, mass manufactured in staggering
 {{% /details %}}
 
 {{% details "Combat Vest" %}}
-### Combat Vest
+#### Combat Vest
 
-*--Cr — +3 DEF — -0 AGI/DEX — 18lbs — 25pts*
+*--Cr — +3 DEF Bonus — -0 AGI/DEX — 18lbs — 8 Object DEF*
 
 A simple, effective, tried and true ballistic vest.
 {{% /details %}}
 
 {{% details "Light Combat Vest" %}}
-### Light Combat Vest
+#### Light Combat Vest
 
-*--Cr — +2 DEF — -0 AGI/DEX — 12lbs — 15pts — [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
+*--Cr — +2 DEF Bonus — -0 AGI/DEX — 12lbs — 8 Object DEF — [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
 
 Similar to the combat vest but lighter and with a lower profile.
 {{% /details %}}
 
 {{% details "Padded Flight Suit" %}}
-### Padded Flight Suit
+#### Padded Flight Suit
 
-*--Cr — +1 DEF — -0 AGI/DEX — 10lbs — 15pts — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn*
+*--Cr — +1 DEF Bonus — -0 AGI/DEX — 10lbs — 8 Object DEF — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn*
 
 A padded version of a basic flight suit offering a bit more protection than a standard coverall.
 {{% /details %}}
 
 {{% details "Scav Gear" %}}
-### Scav Gear
+#### Scav Gear
 
-*--Cr — +2 DEF — -0 AGI/DEX — 15lbs — 15pts*
+*--Cr — +2 DEF Bonus — -0 AGI/DEX — 15lbs — 8 Object DEF*
 
 *Special: Gain an additional body slot (chest, back, or belt), +50 max carry weight*
 
@@ -93,19 +94,19 @@ Scavengers throughout the galaxy have found many ways to carry everything all at
 {{% /details %}}
 
 {{% details "Site Safety Gear" %}}
-### Site Safety Gear
+#### Site Safety Gear
 
-*--Cr — +1 DEF — -0 AGI/DEX — 4lbs — 10pts*
+*--Cr — +1 DEF Bonus — -0 AGI/DEX — 4lbs — 8 Object DEF*
 
 The most basic gear approved by all corporate health and safety groups.
 {{% /details %}}
 
-#### Heavy Armor
+### Heavy Armor
 
 {{% details "Combat Evosuit" %}}
-### Combat Evosuit
+#### Combat Evosuit
 
-*--Cr — +5 DEF — -1 AGI/DEX — 50lbs — 40pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+*--Cr — +5 DEF Bonus — -1 AGI/DEX — 50lbs — 14 Object DEF — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades: [Targeting HUD](#targeting-hud), [Emergency Shank](#emergency-shank)*
 
@@ -113,16 +114,17 @@ A more durable version of the Classic Evosuit, intended for tactical use.
 {{% /details %}}
 
 {{% details "Enforcer Armor" %}}
-### Enforcer Armor
+#### Enforcer Armor
 
-*--Cr — +5 DEF — -1 AGI/DEX — 20lbs — 40pts*
+*--Cr — +5 DEF Bonus — -1 AGI/DEX — 20lbs — 14 Object DEF*
 
 A no-frills armor set often used by private security details.
 {{% /details %}}
 
 {{% details "EVA Suit" %}}
-### EVA Suit
-*--Cr — +6 DEF — -2 AGI/DEX — 200lbs — 80pts — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+#### EVA Suit
+
+*--Cr — +6 DEF Bonus — -2 AGI/DEX — 200lbs — 14 Object DEF — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades:[Coms Unit](#coms-unit), [SAFER Unit](#safer-unit)*
 
@@ -130,9 +132,9 @@ An early model multi-layered space suit designed primarily for maintenance space
 {{% /details %}}
 
 {{% details "Security Flight Suit" %}}
-### Security Flight Suit
+#### Security Flight Suit
 
-*--Cr — +4 DEF — -1 AGI/DEX — 12lbs — 20pts*
+*--Cr — +4 DEF Bonus — -1 AGI/DEX — 12lbs — 14 Object DEF*
 
 *Upgrades: [Coms Unit](#coms-unit)*
 
@@ -140,9 +142,9 @@ A variation of the padded flight suit designed for tactical use.
 {{% /details %}}
 
 {{% details "Ultraweave Evosuit" %}}
-### Ultraweave Evosuit
+#### Ultraweave Evosuit
 
-*--Cr — +7 DEF — -1 AGI/DEX — 35lbs — 55pts — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn, Cold, Toxin*
+*--Cr — +7 DEF Bonus — -1 AGI/DEX — 35lbs — 14 Object DEF — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) — [Partial Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness): Burn, Cold, Toxin*
 
 *Upgrades: [Coms Unit](#coms-unit)*
 
@@ -151,7 +153,7 @@ The most advanced Evosuit available, using a state of the art multilayered high 
 
 ---
 
-### Armor Upgrades
+## Armor Upgrades
 
 {{< tabs >}}
 {{% tab "Armor Upgrades" %}}
@@ -168,10 +170,10 @@ The most advanced Evosuit available, using a state of the art multilayered high 
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Armor Upgrades
+### Armor Upgrades
 
 {{% details "Auto-Injector" %}}
-### Auto-Injector
+#### Auto-Injector
 
 *--Cr — 0lbs — Neck*
 
@@ -179,34 +181,34 @@ Automatically administers a preloaded medication for 0 AP when sufficient trauma
 {{% /details %}}
 
 {{% details "Chameleon Unit" %}}
-### Chameleon Unit
+#### Chameleon Unit
 
-*--Cr — 12lbs — 20pts — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery) — Back*
+*--Cr — 12lbs — 14 Object DEF — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery) — Back*
 
 An active camouflage system that alters the appearance of an armor according to its surroundings. Costs 2 AP to activate and lasts 2d4 rounds. Provides a minor advantage to stealth checks to remain unseen. The system utilizes a backpack and series of low density projector arrays, both of which must be integrated ginto the armor. Takes up the back body slot. Runs on a medium battery, and requires one supply roll per activation.
 {{% /details %}}
 
 {{% details "Emergency Shank" %}}
-### Emergency Shank
+#### Emergency Shank
 
-*--Cr — 1lbs — 20pts — Arm*
+*--Cr — 1lbs — 6 Object DEF — Arm*
 
 Attaches to a wrist. Can be fired once at normal range (15ft) or used as a melee weapon once extended (1 AP). Tales up the arms body slot.
 {{% /details %}}
 
 {{% details "Hazard HUD" %}}
-### Hazard HUD
+#### Hazard HUD
 
 *--Cr — 0lbs — Lvl 1 Encryption — Head [HUD]*
 
 A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type.
 
-#### Heads Up Display (HUD)
+##### Heads Up Display (HUD)
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
 {{% details "Coms Unit" %}}
-### Coms Unit
+#### Coms Unit
 
 *--Cr — 0lbs — Head [Coms]*
 
@@ -214,18 +216,18 @@ Helmet-mounted communication device capable of direct device-to-device communica
 {{% /details %}}
 
 {{% details "MeBN HUD" %}}
-### MeBN HUD
+#### MeBN HUD
 
 *--Cr — 0lbs — Lvl 1 Encryption — Head [HUD]*
 
 A passive HUD that compares facial IDs to contracts on the Mark'em Bounty Network. Must have line of sight on a target within 30ft to make an accurate reading. Can be tricked by changes in appearance or lack of description/ID in the contract. Displays information related to any bounty placed on matching IDs — does not guarantee a match, further investigation may be needed.
 
-#### Heads Up Display (HUD)
+##### Heads Up Display (HUD)
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
 {{% details "SAFER Unit" %}}
-### SAFER Unit
+#### SAFER Unit
 
 *--Cr — 40lbs — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
 
@@ -235,12 +237,34 @@ An early model propulsion unit for navigating in 0 gravity when separated from t
 {{% /details %}}
 
 {{% details "Targeting HUD" %}}
-### Targeting HUD
+#### Targeting HUD
 
 *--Cr — 0lbs — Lvl 1 Encryption — Head [HUD]*
 
 Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made against that target. Displays a reticle that remains locked on until deactivated, the signal is disrupted, the target is destroyed, or line of sight is lost for one full round. Attacks made against a target you are not locked on to while the HUD is active on another target are at a disadvantage. Deactivating the display costs 1 AP.
 
-#### Heads Up Display (HUD)
+##### Heads Up Display (HUD)
 {{% include "/snippets/huds" %}}
+{{% /details %}}
+
+---
+
+## Shields
+
+{{< tabs >}}
+{{% tab "Shields" %}}
+| Name | Notes |
+|---|---|
+| [Ballistic Shield](#ballistic-shield) | Hand. Partial cover while active. 1d12 Supply Die. |
+{{% /tab %}}
+{{< /tabs >}}
+
+{{% details "Ballistic Shield" %}}
+### Ballistic Shield
+
+*--Cr — 8lbs — Hand — 1d12 Supply Die*
+
+A rigid composite-paneled shield designed to absorb solid hits in melee and at range. While equipped and used to defend, the wielder gains partial cover against attacks from the front. Each time the wielder's DEF is depleted while defending with the shield, make a supply roll. See [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items) for how a shield's supply die relates to its Damaged and Broken conditions, and how the Shatter action interacts with shields.
+
+Occupies the Hand slot. Cannot be used while wielding a two-handed weapon.
 {{% /details %}}

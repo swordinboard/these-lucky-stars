@@ -165,7 +165,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 {{% include "/snippets/grapple" %}}
 
-**Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item's DEF rather than to the opponent. See the Equipment section for rules on damaged and broken gear.
+**Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item's DEF rather than to the opponent. See [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for rules on damaged and broken gear.
 
 **Stand** *(1 AP)* — Stand from prone. May provoke an Opportunity Attack.
 
@@ -192,5 +192,6 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 - [Health](/docs/free-srd/core-rules/health/) — the two-layer health system, how DEF and VIT interact with damage.
 - [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/) — Action Points, action types, movement rules, and Speed Tiers.
 - [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) — wound severities, condition effects, and recovery.
+- [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) — targeting objects, the Shatter action, and item DEF/VIT.
 - [Size](/docs/free-srd/core-rules/size/) — how size affects damage dice, reach, and space occupied.
 - [Environmental Effects](/docs/free-srd/core-rules/environmental-effects/) — hazards, exposure, and environmental damage sources.

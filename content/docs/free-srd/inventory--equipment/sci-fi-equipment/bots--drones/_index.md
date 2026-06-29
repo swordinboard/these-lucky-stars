@@ -17,6 +17,8 @@ There is a distinction to be made between *robots, drones, and Androids* that pr
 
 **Androids** are the most advanced automated machine with a humanoid chassis and an advanced AI that has, through unknown means, achieved sentience. Androids are both sapient and sentient. They display high level problem solving and critical thinking abilities alongside emotional perception and feeling, deep social bonding, and self-awareness. Unlike drones and bots Androids are not bound by master protocols, they act independently and of their own free will. For more on Androids, see the playable race entry [here](/docs/free-srd/character-creation/races/android).
 
+Drones, bots, and Androids all use the standard character DEF/VIT rules rather than the [object durability rules](/docs/free-srd/core-rules/damaged--broken-gear/#object-durability) — they take wounds and conditions and are repaired like a character rather than broken like an object.
+
 ## Drone Platforms
 - [HEL-1](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1) — A small flying drone
 - [T00L](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l) — A sturdy and adaptable assistant

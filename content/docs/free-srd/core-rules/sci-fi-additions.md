@@ -6,7 +6,7 @@ weight: 90
 
 # Sci-Fi Additions
 
-This page is the central home for sci-fi specific rules that extend or modify the core rules. Many of these rules are also referenced in context elsewhere in the SRD — on equipment pages, in combat, and in environmental rules — to avoid forcing page-switching mid-session. They are collected here for easy reference.
+This page is the central home for sci-fi specific rules that extend or modify the core rules. Many of these rules are also referenced in context elsewhere in the SRD — on equipment pages, in combat, and in environmental rules — to avoid forcing page-switching mid-session. They are collected here for easy reference as a whole.
 
 ---
 

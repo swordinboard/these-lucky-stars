@@ -91,9 +91,11 @@ The DEF of a material is determined by its composition and thickness. Use the ta
 | Fuel cells                              | 6   |
 | Micro, small, and medium batteries      | 8   |
 | Most ranged weapons                     | 8   |
+| Light armor                             | 8   |
 | Medium melee weapons                    | 10  |
 | Basic doors, furniture                  | 14  |
 | Large and industrial batteries          | 14  |
+| Heavy armor                             | 14  |
 | Two-handed weapons, polearms and staffs | 16  |
 | Reinforced doors                        | 35  |
 
@@ -101,9 +103,9 @@ The DEF of a material is determined by its composition and thickness. Use the ta
 
 ## Breaking Defensive Items
 
-**Armor** — Because armor is designed to take a beating, armor typically cannot be broken or damaged through normal wear and use. Instead equipped armor degrades in condition whenever the wearer suffers a major wound. Normal armor becomes *Damaged* when the wearer suffers a major wound, and Damaged armor becomes *Broken* in the same manner (VIT is adjusted accordingly for each condition). *Damaged* armor functions as normal but visibly shows its near-broken condition. *Broken* armor provides no DEF bonus. Armor cannot be targeted by the Shatter action.
+**Armor** — Because armor is designed to take a beating, armor typically cannot be broken or damaged through normal wear and use. Instead equipped armor degrades in condition whenever the wearer suffers a major wound. Normal armor becomes *Damaged* when the wearer suffers a major wound, and Damaged armor becomes *Broken* in the same manner (VIT is adjusted accordingly for each condition). *Damaged* armor functions as normal but visibly shows its near-broken condition. *Broken* armor provides no DEF bonus. Armor cannot be targeted by the Shatter action, except where a specific weapon or effect states otherwise.
 
-**Shields** — Similar to armor, shields are designed to absorb damage and take a beating. Shields use supply dice before deteriorating in condition through use. A supply roll is made each time the wielder's DEF is depleted from damage while using a shield to defend themselves. Shield use is automatic when equipped, even if the wielder has not yet acted in initiative. When a shield reaches a supply of 1d4 it is *Damaged.* When its supply is depleted it is *Broken.* *Damaged* shields function as normal, but visibly show their near-broken condition and take more work to repair. *Broken* shields cannot be used to defend oneself and are best discarded until repairs can be made. Shields can be targeted by the Shatter action. If successful, rather than dealing damage directly, the shield's supply die size is automatically lowered by one and half of the total damage is transferred to the defender as normal.
+**Shields** — Similar to armor, shields (such as a [Ballistic Shield](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield)) are designed to absorb damage and take a beating. Shields use supply dice before deteriorating in condition through use. A supply roll is made each time the wielder's DEF is depleted from damage while using a shield to defend themselves. Shield use is automatic when equipped, even if the wielder has not yet acted in initiative. When a shield reaches a supply of 1d4 it is *Damaged.* When its supply is depleted it is *Broken.* *Damaged* shields function as normal, but visibly show their near-broken condition and take more work to repair. *Broken* shields cannot be used to defend oneself and are best discarded until repairs can be made. Shields can be targeted by the Shatter action. If successful, rather than dealing damage directly, the shield's supply die size is automatically lowered by one and half of the total damage is transferred to the defender as normal.
 
 ---
 

@@ -8,7 +8,8 @@ bookHidden: true
 {{% include "/snippets/wip-announcement.md" %}}
 # Android
 <!-- basic android race -->
-<!-- include a note about using standard character health systme rather than that of objects -->
+
+An Android uses the standard character DEF/VIT rules, not the [object durability rules](/docs/free-srd/core-rules/damaged--broken-gear/#object-durability) — they are a playable character, not an object to be broken.
 
 ## Features
 

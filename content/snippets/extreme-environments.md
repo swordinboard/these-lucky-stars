@@ -8,7 +8,7 @@ The GM sets the interval based on proximity and intensity: **1 round** for direc
 
 Wounds are applied normally when VIT thresholds are met. When VIT reaches 0 rules for lethal damage apply.
 
-*Resistance* — Extreme and exposure effects bypasses partial resistance. Full resistance provides immunity to exposure effects and halves extreme damage, providing ample protection as long as further damage is avoided. *Full Resistance can be bypassed if both an extreme exposure event and a damaging event of the same type occure.* In practice, this means characters using special heat shielded suits to protect themselves on a volcanic moon would be protected from the extreme exposure, but if lava erupted below them they would still be subject to damage and take half. See [Damage Resistance](/docs/free-srd/core-rules/health--combat/#damage-resistance-and-weakness) for more on resistances.
+*Resistance* — Extreme and exposure effects bypasses partial resistance. Full resistance provides immunity to exposure effects and halves extreme damage, providing ample protection as long as further damage is avoided. *Full Resistance can be bypassed if both an extreme exposure event and a damaging event of the same type occure.* In practice, this means characters using special heat shielded suits to protect themselves on a volcanic moon would be protected from the extreme exposure, but if lava erupted below them they would still be subject to damage and take half. See [Damage Resistance](/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness) for more on resistances.
 
 ---
 

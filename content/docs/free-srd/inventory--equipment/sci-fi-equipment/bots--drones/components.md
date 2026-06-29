@@ -45,14 +45,15 @@ Bot Parts do not have their own VIT — they rely on their host. A Bot Part is d
 | [Internal Comp Jack](#internal-comp-jack) | Hands | Internal | Comp Jack without occupying hands |
 | [Manipulator Override](#manipulator-override) | Hands | External | +2 DEX for fine motor tasks while powered |
 | [Optical Suite](#optical-suite) | Head [HUD] | Internal | Low-light, thermal, zoom |
-| [Reinforced Chassis Plating](#reinforced-chassis-plating) | Chest | External | +3 DEF |
+| [Reinforced Chassis Plating](#reinforced-chassis-plating) | Chest | External | +3 DEF Bonus |
 | [Relay Node](#relay-node) | Neck | Internal | Sync into a shared sensor network |
 | [Repair Subroutine](#repair-subroutine) | Belt | External | Self-repair 1 VIT per long rest |
 | [Servo Boost Legs](#servo-boost-legs) | Legs/Feet | External | +10ft speed, +5ft jump while powered |
+| [Shield Mount](#shield-mount) | Arms | External | Partial cover while active. 1d12 Supply Die |
 | [Signal Mast, Heavy](#signal-mast-heavy) | Back | External | Increases com range to 500 miles |
 | [Signal Mast, Retractable](#signal-mast-retractable) | Neck | Internal | Increases com range to 20 miles |
 | [Stabilizer Gyros](#stabilizer-gyros) | Legs/Feet | Internal | Resist knockdown, no falling damage under 20ft |
-| [Subdermal Plating](#subdermal-plating) | Chest | Internal | +1 DEF, no slot conflict |
+| [Subdermal Plating](#subdermal-plating) | Chest | Internal | +1 DEF Bonus, no slot conflict |
 | [Targeting Array](#targeting-array) | Head | Internal | +1 ranged ATK, limited daily uses |
 | [Wrist Laser](#wrist-laser) | Arms | External | Mounted laser pistol equivalent |
 
@@ -107,7 +108,7 @@ Occupies the Belt slot for other equipment.
 {{% details "Heavy Wrist Laser" %}}
 ### Heavy Wrist Laser
 
-*–Cr — 5lbs — 20pts — (10) 90ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
+*–Cr — 5lbs — 8 Object DEF — (10) 90ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
 *Damage Type: Burn*
 
@@ -165,7 +166,7 @@ Does not occupy the Head slot or HUD subslot for other equipment.
 
 *–Cr — 8lbs — Chest — External*
 
-Heavy plating bonded to the host's frame. Grants +3 DEF. Adds 20lbs to the host regardless of body slot rules.
+Heavy plating bonded to the host's frame. Grants +3 DEF Bonus. Adds 20lbs to the host regardless of body slot rules.
 
 Occupies the Chest slot for other equipmeny.
 {{% /details %}}
@@ -206,6 +207,17 @@ Reinforced leg actuators that allow for an overcharge to increase the host's spe
 Occupies the Legs/Feet slot for other equipment.
 {{% /details %}}
 
+{{% details "Shield Mount" %}}
+### Shield Mount
+
+*–Cr — 8lbs — Arms — External — 1d12 Supply Die*
+
+A mounted ballistic shield plate that deploys along the host's forearm, granting +3 DEF to the wielder. Each time the host's DEF is depleted while defending with the shield deployed, make a supply roll. See [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items) for how the shield's supply die relates to its Damaged and Broken conditions, and how the Shatter action interacts with it.
+<!-- possibly move the shield details to a snippet to be inlcuded in equipemtn descriptionsor sections similar to other item  rule snippets -->
+
+Occupies the Arms slot for other equipment.
+{{% /details %}}
+
 {{% details "Signal Masts" %}}
 ### Signal Mast, Retractable
 
@@ -243,7 +255,7 @@ Does not occupy the Legs/Feet slot for other equipment.
 
 *–Cr — 3lbs — Chest — Internal*
 
-Lighter armor woven into the host's frame beneath the chassis. Grants +1 DEF. Does not occupy the chest slot and can be worn under armor or other chest equipment.
+Lighter armor woven into the host's frame beneath the chassis. Grants +1 DEF Bonus. Does not occupy the chest slot and can be worn under armor or other chest equipment.
 
 Does not occupy the Chest slot for other equipment.
 {{% /details %}}
@@ -263,7 +275,7 @@ Does not occupy the Head slot or HUD subslot for other equipment, however, the e
 {{% details "Wrist Laser" %}}
 ### Wrist Laser
 
-*–Cr — 2lbs — 18pts — 60ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
+*–Cr — 2lbs — 8 Object DEF — 60ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
 *Damage Type: Burn*
 
