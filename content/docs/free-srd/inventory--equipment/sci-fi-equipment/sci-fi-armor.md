@@ -203,7 +203,7 @@ Attaches to a wrist. Can be fired once at normal range (15ft) or used as a melee
 
 A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type.
 
-##### Heads Up Display (HUD)
+**Heads Up Display (HUD)**
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
@@ -222,7 +222,7 @@ Helmet-mounted communication device capable of direct device-to-device communica
 
 A passive HUD that compares facial IDs to contracts on the Mark'em Bounty Network. Must have line of sight on a target within 30ft to make an accurate reading. Can be tricked by changes in appearance or lack of description/ID in the contract. Displays information related to any bounty placed on matching IDs — does not guarantee a match, further investigation may be needed.
 
-##### Heads Up Display (HUD)
+**Heads Up Display (HUD)**
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
@@ -243,7 +243,7 @@ An early model propulsion unit for navigating in 0 gravity when separated from t
 
 Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made against that target. Displays a reticle that remains locked on until deactivated, the signal is disrupted, the target is destroyed, or line of sight is lost for one full round. Attacks made against a target you are not locked on to while the HUD is active on another target are at a disadvantage. Deactivating the display costs 1 AP.
 
-##### Heads Up Display (HUD)
+**Heads Up Display (HUD)**
 {{% include "/snippets/huds" %}}
 {{% /details %}}
 
@@ -255,7 +255,7 @@ Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made
 {{% tab "Shields" %}}
 | Name | Notes |
 |---|---|
-| [Ballistic Shield](#ballistic-shield) | Hand. Partial cover while active. 1d12 Supply Die. |
+| [Ballistic Shield](#ballistic-shield) | Grants minor advantage while defending. 1d12 Supply Die. |
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -264,7 +264,7 @@ Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made
 
 *--Cr — 8lbs — Hand — 1d12 Supply Die*
 
-A rigid composite-paneled shield designed to absorb solid hits in melee and at range. While equipped and used to defend, the wielder gains partial cover against attacks from the front. Each time the wielder's DEF is depleted while defending with the shield, make a supply roll. See [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items) for how a shield's supply die relates to its Damaged and Broken conditions, and how the Shatter action interacts with shields.
+A rigid composite-paneled shield designed to absorb solid hits in melee and at range. While equipped and used to defend, the wielder gains a minor advantage on rolls made to defend from attacks. Each time the wielder's DEF reaches 0 while defending with the shield, make a supply roll. See [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items) for how a shield's supply die relates to its Damaged and Broken conditions, and how the Shatter action interacts with shields.
 
-Occupies the Hand slot. Cannot be used while wielding a two-handed weapon.
+Occupies the Hand slot, and costs 3 AP to equip or unequip. Cannot be used while wielding a two-handed weapon.
 {{% /details %}}
