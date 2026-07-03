@@ -213,6 +213,9 @@ A passive HUD that grants a minor advantage to detect or notice hazardous terrai
 *--Cr — 0lbs — Head [Coms]*
 
 Helmet-mounted communication device capable of direct device-to-device communication or network connection up to 1 mile. Connects to local public or private networks where available. Takes up the Head [Coms] subslot.
+
+**Communication Device**
+{{% include "/snippets/coms" %}}
 {{% /details %}}
 
 {{% details "MeBN HUD" %}}
@@ -251,20 +254,34 @@ Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made
 
 ## Shields
 
-{{< tabs >}}
-{{% tab "Shields" %}}
+{{% include "/snippets/shields" %}}
+
+{{% include "/snippets/shields-damage" %}}
+
+See [Damaged and Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for more on object damage and conditions.
+
 | Name | Notes |
 |---|---|
-| [Ballistic Shield](#ballistic-shield) | Grants minor advantage while defending. 1d12 Supply Die. |
-{{% /tab %}}
-{{< /tabs >}}
+| [Ballistic Shield](#ballistic-shield) | +3 DEF, 1d12 Supply |
+| [Collapsible Shield](#collapsible-shield) | +2 DEF 1d8 Supply |
 
 {{% details "Ballistic Shield" %}}
 ### Ballistic Shield
 
-*--Cr — 8lbs — Hand — 1d12 Supply Die*
+*--Cr — 8lbs — 1d12 Supply*
 
-A rigid composite-paneled shield designed to absorb solid hits in melee and at range. While equipped and used to defend, the wielder gains a minor advantage on rolls made to defend from attacks. Each time the wielder's DEF reaches 0 while defending with the shield, make a supply roll. See [Breaking Defensive Items](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items) for how a shield's supply die relates to its Damaged and Broken conditions, and how the Shatter action interacts with shields.
+A rigid composite-paneled shield designed to absorb melee and ranged attacks. While equipped and used to defend, the wielder gains +3 DEF. Each time the wielder's DEF reaches 0 while defending with the shield, make a supply roll. 
 
-Occupies the Hand slot, and costs 3 AP to equip or unequip. Cannot be used while wielding a two-handed weapon.
+Attatches to the forearm, and costs 4 AP to equip or unequip. Cannot be used while wielding a two-handed weapon. Does not occupy a body slot.
 {{% /details %}}
+
+{{% details "Collapsible Shield" %}}
+### Collapsible Shield
+
+*--Cr — 5lbs — Arms — 1d8 Supply*
+
+A wrist-mounted device that deploys a sturdy fan-like circular shield when activated. Depoying and storing the shield costs 1 AP.
+
+Attatches to the forearms and fills the arm slot. Costs 4 AP to equip or unequip. Can be used alongside a two-handed weapon, but causes attacks with two-handed weapons to be made at a disadvantage while the shield is deployed.
+{{% /details %}}
+ 
