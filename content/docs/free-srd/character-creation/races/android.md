@@ -8,6 +8,7 @@ bookHidden: true
 {{% include "/snippets/wip-announcement.md" %}}
 # Android
 <!-- basic android race -->
+While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids were built with all the freedoms of a true individual in mind. Their frames differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 
 
 An Android uses the standard character DEF/VIT rules, not the [object durability rules](/docs/free-srd/core-rules/damaged--broken-gear/#object-durability) — they are a playable character, not an object to be broken.
 
@@ -15,9 +16,9 @@ An Android uses the standard character DEF/VIT rules, not the [object durability
 
 **Robot Chassis** — An Android's chassis is tough and built to last, offering a range of benefits at the cost of natural healing:
  - +2 FORT
- - Immune to asphyxiation and sickness. All other wounds and conditions remain possibilities through similar effect. For example, a bleeding robot leaks its coolant or lubricant, a Stressed robot suffers from circuitry issues.
- - Wounds require a Repair or Tech Kit to fix (in this case either works regardless of scale) rather than a Medical Kit, and take twice as long to fix due to the lack of natural healing processes. Methods and targets remain the same and features that apply to the use of the Med Kit do not carry their benefit when working on an Android.
- - Medical items designed for organic creatures — med kits, injectors, pain suppressants, and similar — have no effect on Androids. See [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) for an Android-specific field stabilization option.
+ - Immune to asphyxiation and sickness. All other wounds and conditions remain possibilities through similar effect. For example, a bleeding Android leaks its coolant or lubricant, a Stressed Android suffers from circuitry issues.
+ - Wounds require a Repair or Tech Kit to fix (in this case either works regardless of scale) rather than a Medical Kit, and take twice as much AP to fix due to the lack of natural healing processes. Methods and targets remain the same. Features that apply to the use of the Med Kit do not carry their benefit when working on an Android.
+ - Medical items designed for organic creatures — med kits, injectors, pain suppressants, and similar — have no effect on Androids but some alternatives exist. See [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) for an Android-specific field stabilization option.
  - Androids are subject to the [Dying](/docs/free-srd/core-rules/wounds--conditions/#dying) condition when they lose their last VIT point to lethal damage, the same as organic characters. [Dead Battery](#dead-battery) is a separate condition caused by power depletion — the two are independent.
 
 **Upgradable** — Each body slot of an Android can have components installed. Installed components may allow other equipment to be used in those body slots, details are provided per component.

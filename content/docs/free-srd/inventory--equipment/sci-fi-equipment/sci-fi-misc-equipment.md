@@ -66,7 +66,7 @@ Consumable medical items for field treatment, injury response, and condition man
 | [Pain Suppressant Injector](#pain-suppressant-injector) | Variable dosage. Suppresses condition effects temporarily. |
 | [Vitaboost Injector](#vitaboost-injector) | Single use. Heals 1 VIT or attribute damage. |
 
-{{% details "Altoa Radiation Antidote 5 (ARA-5)" %}}
+{{% details "Analgesic Radiation Antidote 5 (ARA-5)" %}}
 ### Analgesic Radiation Antidote 5 (ARA-5)
 
 *--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
@@ -119,6 +119,7 @@ Gear for enduring hostile environments, signaling for rescue, and sustaining lif
 | [Emergency Beacon](#emergency-beacon) | Sends a distress signal across a star system for 72hrs. |
 | [Emergency Oxygen Mask](#emergency-oxygen-mask) | 30 minutes of clean oxygen. |
 | [Field Ration](#field-ration) | One day of nutrients for one person. |
+| [Portable Heater](#portable-heater) | Heats a small area. |
 | [Portable Water Purifier](#portable-water-purifier) | Purifies up to 5 gallons per supply roll. |
 | [Solar Array Pack](#solar-array-pack) | Charges micro through large batteries via solar. |
 | [Survival Tent](#survival-tent) | Pressurized 10×10ft shelter for four. |
@@ -146,6 +147,13 @@ A sealable full face mask that provides 30 minutes of oxygen via a built-in sing
 
 Vacuum-sealed ration paste providing one day of nutrients and water for one person. Cardboard-like flavors vary.
 {{% /details %}}
+
+{{% details "Portable Heater" %}}
+### Portable Heater
+
+*--Cr — 10lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)*
+
+A small football-sized heater easily carried in a backpack or sachel that rapidly provides heat in cold environments. Must be set on the ground to deploy, requires one supply roll upon activation, and another every hour the heater remains active. Can heat a 10ft radius in an open space, or a 30x30 room if reasonably sealed. Also provides dim light in a 10ft radius.
 
 {{% details "Portable Water Purifier" %}}
 ### Portable Water Purifier
@@ -263,7 +271,8 @@ Mimics encrypted com signals and life signs of a human. Costs 1 AP to activate. 
 {{% details "Fuel Cell" %}}
 ### Fuel Cells
 
-Standardized pressurized canisters of combustible propellant. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at designated fuel depots and but cannot be recharged in the field. Unlike batteries, items requiring a fuel cell can accept any size tank due to the shared nozzle and fitting size.
+Standardized pressurized canisters of combustible propellant. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at designated fuel depots and but cannot be recharged in the field.
+Unlike batteries items requiring a fuel cell can accept any size due to the shared nozzle and fitting. Most equipment that is fitted with a large fuel cell inherits the Bulky and Two-Handed tags due to the increased size when appropriate.
 
 | Size | Supply | Description |
 | --- | --- | --- |
@@ -346,9 +355,11 @@ A belt lined with projectors that, once activated, create a sheet-like protectiv
 {{% details "Reactor Cores" %}}
 ### Reactor Cores
 
-Self-sustaining power reactors for automated machines and high-drain equipment. Unlike standard battery cores, reactor cores are not interchangeable with standard battery slots without modification — adapting a [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) item to accept a reactor core requires a Tech Kit, a target 14 KNO check, and 1 hour of work, and the same to reverse back to accepting batteries.
+Self-sustaining power reactors for automated machines and high-drain equipment. Can be used in any item with the  [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) tag. Items with the [Battery](/docs/free-srd/intentory--equipmemtlitem-tags/#battery) tag can be modified to accept reactor core of the same size by using the Tech Kit with supplies, 1hr of work, and succeeding on a target 14 KNO check. The same process is used to revert the change.
 
-Reactor cores slowly regenerate their supply — a depleted die recovers one size after 6 hours in Rest Mode. They cannot be used with the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability, and have more safety measures in place to prevent dangerous breakdown than standard batteries.
+Reloading a weapon equipped with a reactor core uses the same AP as a standard reload of its type as if it were a battery, and benefits from the same abilities excluding the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability. Reactor Cores have more safety measures in place to prevent dangerous breakdown than standard batteries.
+
+Reactor cores slowly regenerate their supply — a depleted die recovers one size after 6 hours in Rest Mode, or by being disconnected for 6hrs if item has no Rest Mode. A Reactor Core cannot regain more than 1 die size in a 24hr period in this manner.
 
 | Size | Physical Size | Common Charge | Description |
 |------|--------------|---------------|-------------|
@@ -400,5 +411,5 @@ Batteries are available in standard sizes that cannot be interchanged without mo
 | Small | 1d12 | 75Cr — 0.5lbs — 3×1in cylinder |
 | Medium | 2d12 | 200Cr — 2lbs — 8×4in cylinder |
 | Large | 4d12 | 600Cr — 50lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — 1ft cube with a handle recessed in the top. A similar size to modern car batteries. |
-| Industrial | 6d12 | 1500Cr — 120lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — 4×1×1ft, essentially four large batteries stacked together with recessed carry handles near the ends. |
+| Industrial | 6d12 | 1500Cr — 100lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — 4×1×1ft, essentially four large batteries stacked together with recessed carry handles near the ends. |
 {{% /details %}}

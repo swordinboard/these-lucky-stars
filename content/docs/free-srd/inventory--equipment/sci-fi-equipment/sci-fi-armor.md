@@ -6,11 +6,9 @@ weight: 2
 
 # Sci-Fi Armor
 
-Armor provides a DEF Bonus and an Object DEF value, at the cost of an AGI/DEX penalty based on how restrictive it is. Some armor includes built-in upgrades or special properties.
+{{% include "/snippets/armor" %}}
 
-**DEF Bonus** — Added to the wearer's DEF score.
-**Object DEF** — The armor's own structural DEF, used as a fallback if the armor is attacked directly rather than degraded through the wearer's wounds. See [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items).
-**AGI/DEX Penalty** — Applied to AGI and DEX. Bulkier armor restricts movement more.
+{{% include "/snippets/armor-damage" %}}
 
 ## Armor
 
@@ -18,22 +16,22 @@ Armor provides a DEF Bonus and an Object DEF value, at the cost of an AGI/DEX pe
 {{% tab "Light Armor" %}}
 | Name | Notes |
 |---|---|
-| [Basic P-Suit](#basic-p-suit) | Pressurized. 1hr oxygen. Minimum protection for airless environments. |
-| [Classic Evosuit](#classic-evosuit) | Space suit. Popular among pilots and hazardous atmosphere workers. |
-| [Combat Vest](#combat-vest) | Simple, effective protective vest. No AGI/DEX penalty. |
+| [Basic P-Suit](#basic-p-suit) | Minimum protection for airless environments. |
+| [Classic Evosuit](#classic-evosuit) | Advances space suit popular among pilots and hazardous atmosphere workers. |
+| [Combat Vest](#combat-vest) | Simple protective vest. No AGI/DEX penalty. |
 | [Light Combat Vest](#light-combat-vest) | Concealable. Lower profile version of the combat vest. |
-| [Padded Flight Suit](#padded-flight-suit) | Partial Resistance: Burn. More protection than a standard coverall. |
+| [Padded Flight Suit](#padded-flight-suit) | Offers greater protection than a standard coverall. |
 | [Scav Gear](#scav-gear) | Grants an extra body slot and +50 max carry weight. |
 | [Site Safety Gear](#site-safety-gear) | Basic corporate-approved protective gear. |
 {{% /tab %}}
 {{% tab "Heavy Armor" %}}
 | Name | Notes |
 |---|---|
-| [Combat Evosuit](#combat-evosuit) | Space suit. Targeting HUD. Designed for tactical use. |
+| [Combat Evosuit](#combat-evosuit) | Advanced space suit designed for tactical use. |
 | [Enforcer Armor](#enforcer-armor) | No-frills armor favored by private security. |
-| [EVA Suit](#eva-suit) | An early model space suit well equipped but bulky. |
+| [EVA Suit](#eva-suit) | An early model space suit, well equipped but bulky. |
 | [Security Flight Suit](#security-flight-suit) | Tactical variation of the padded flight suit. |
-| [Ultraweave Evosuit](#ultraweave-evosuit) | Space suit. Partial Resistance: Sonic, Toxin. Most advanced Evosuit available. |
+| [Ultraweave Evosuit](#ultraweave-evosuit) | Most advanced Evosuit available. |
 {{% /tab %}}
 {{< /tabs >}}
 
