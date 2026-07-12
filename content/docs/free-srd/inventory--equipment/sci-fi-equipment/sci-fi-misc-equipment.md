@@ -33,7 +33,6 @@ weight: 2
 Headsets are popular items that connect to a communication device and allow hands-free operation of the device. Styles vary, but all include a headphone (either in or over ear) and a microphone.
 
 Occupy the head slot and cannot comfrotably be worn with a helmet, requiring a com unit be built in to the helmet itslef. See [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) for the helmet-mounted upgrade.
-
 {{% /details %}}
 
 {{% details "Long Range Coms" %}}
@@ -154,6 +153,7 @@ Vacuum-sealed ration paste providing one day of nutrients and water for one pers
 *--Cr — 10lbs — [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)*
 
 A small football-sized heater easily carried in a backpack or sachel that rapidly provides heat in cold environments. Must be set on the ground to deploy, requires one supply roll upon activation, and another every hour the heater remains active. Can heat a 10ft radius in an open space, or a 30x30 room if reasonably sealed. Also provides dim light in a 10ft radius.
+{{% /details %}}
 
 {{% details "Portable Water Purifier" %}}
 ### Portable Water Purifier
@@ -350,6 +350,7 @@ A belt lined with projectors that, once activated, create a sheet-like protectiv
 
 **Energy Shields**
 {{% include "/snippets/energy-shields" %}}
+
 {{% /details %}}
 
 {{% details "Reactor Cores" %}}
@@ -397,6 +398,7 @@ Once activated, creates a spherical energy shield with a 20ft radius and provide
 
 **Energy Shields**
 {{% include "/snippets/energy-shields" %}}
+
 {{% /details %}}
 
 {{% details "Standardized Battery Cores" %}}
