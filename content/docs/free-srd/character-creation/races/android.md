@@ -8,7 +8,7 @@ bookHidden: true
 {{% include "/snippets/wip-announcement.md" %}}
 # Android
 <!-- basic android race -->
-While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids were built with all the freedoms of a true individual in mind. Their frames differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 
+While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids are built with all the freedoms of a true individual in mind. Their appearance can differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 
 
 An Android uses the standard character DEF/VIT rules, not the [object durability rules](/docs/free-srd/core-rules/damaged--broken-gear/#object-durability) — they are a playable character, not an object to be broken.
 
@@ -21,7 +21,7 @@ An Android uses the standard character DEF/VIT rules, not the [object durability
  - Medical items designed for organic creatures — med kits, injectors, pain suppressants, and similar — have no effect on Androids but some alternatives exist. See [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) for an Android-specific field stabilization option.
  - Androids are subject to the [Dying](/docs/free-srd/core-rules/wounds--conditions/#dying) condition when they lose their last VIT point to lethal damage, the same as organic characters. [Dead Battery](#dead-battery) is a separate condition caused by power depletion — the two are independent.
 
-**Upgradable** — Each body slot of an Android can have components installed. Installed components may allow other equipment to be used in those body slots, details are provided per component.
+**Upgradable** — Each body slot of an Android can have components installed. Installed components may prevent the use of other equipment, details are provided per component.
 
 **Power Source** — Like other machines, Androids require a power source. A Medium [Battery] is built into their chest chassis, powering all functions of the Android. An Android's power source is upgradeable with [components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components).
 
