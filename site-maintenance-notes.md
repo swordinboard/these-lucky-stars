@@ -128,6 +128,29 @@ Page content starts here...
 
 ---
 
+## Multi-Site Setup: mosaic.theseluckystars.com
+
+This repo hosts **two independent Netlify sites**, not one:
+
+| Site | Repo root | Netlify base directory | Domain |
+|---|---|---|---|
+| Main site (Hugo) | `/` | (none) | `theseluckystars.com` |
+| Galaxy map prototype | `/mosaic` | `mosaic` | `mosaic.theseluckystars.com` |
+
+- The `mosaic/` site is plain static HTML/CSS/JS (no build step) with its **own**
+  `mosaic/netlify.toml` — its headers/CSP are independent of the root `netlify.toml` and do
+  not inherit from it. If the mosaic prototype starts loading external resources (fonts,
+  scripts, embeds), update `mosaic/netlify.toml`'s CSP directly, following the same
+  directive-matching table above.
+- Changes under `mosaic/` do not affect the main site's Hugo build, and vice versa — the two
+  builds are fully isolated by Netlify's base-directory setting.
+- The mosaic site's production branch was initially set to `mosaic-prototype` (not `main`)
+  while the prototype is unfinished. Switch it to `main` only once the galaxy map is ready
+  to go live, and treat that switch (plus any related DNS/domain change) as a live-site change
+  requiring confirmation.
+
+---
+
 ## Sitemap Health
 
 Current known noise exclusions (already handled):

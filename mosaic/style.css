@@ -1,0 +1,51 @@
+:root {
+    --body-background: #433a40;
+    --body-font-color: #e9e9e9;
+    --accent: #d27f27;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--body-background);
+    color: var(--body-font-color);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.home-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+#galaxy-map {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    background: #000000;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
