@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "clusters": [
+    {
+      "id": "cluster-verge",
+      "name": "The Verge",
+      "type": "frontier region",
+      "description": "A sparse scattering of systems at the galactic rim.",
+      "detail": [
+        "Settled late and loosely governed, the Verge is where fortunes are made and lost fast.",
+        "Pirate activity is common along its outer routes."
+      ],
+      "position": { "x": 180, "y": 260 }
+    },
+    {
+      "id": "cluster-hearth",
+      "name": "Hearth Cluster",
+      "type": "core region",
+      "description": "Densely populated, heavily patrolled core systems.",
+      "detail": ["Seat of the old Compact government."],
+      "position": { "x": 620, "y": 340 }
+    },
+    {
+      "id": "cluster-drift",
+      "name": "The Drift",
+      "type": "isolated region",
+      "description": "A single lonely system, cut off from the trade lanes.",
+      "detail": ["No known routes connect the Drift to the rest of the galaxy."],
+      "position": { "x": 400, "y": 80 }
+    }
+  ],
+  "systems": [
+    {
+      "id": "system-anchor",
+      "clusterId": "cluster-verge",
+      "name": "Anchor",
+      "type": "yellow dwarf",
+      "description": "A quiet trading waypoint.",
+      "detail": ["Home to the Anchor Station relay."],
+      "position": { "x": 100, "y": 150 }
+    },
+    {
+      "id": "system-kestrel",
+      "clusterId": "cluster-verge",
+      "name": "Kestrel",
+      "type": "binary",
+      "description": "Twin stars, one habitable moon.",
+      "detail": ["Contested mining claims between two corporations."],
+      "position": { "x": 340, "y": 220 }
+    },
+    {
+      "id": "system-oberon",
+      "clusterId": "cluster-verge",
+      "name": "Oberon",
+      "type": "orange dwarf",
+      "description": "A quiet system on the edge of Verge space.",
+      "detail": ["Rarely visited outside of supply runs."],
+      "position": { "x": 220, "y": 340 }
+    },
+    {
+      "id": "system-hearthhome",
+      "clusterId": "cluster-hearth",
+      "name": "Hearthhome",
+      "type": "yellow dwarf",
+      "description": "Capital system of the Compact.",
+      "detail": ["Seat of government, heavily fortified."],
+      "position": { "x": 200, "y": 200 }
+    },
+    {
+      "id": "system-lowlight",
+      "clusterId": "cluster-hearth",
+      "name": "Lowlight",
+      "type": "red dwarf",
+      "description": "A dim system used for shipyards and drydocks.",
+      "detail": ["Most Compact naval vessels are built here."],
+      "position": { "x": 380, "y": 260 }
+    },
+    {
+      "id": "system-solitude",
+      "clusterId": "cluster-drift",
+      "name": "Solitude",
+      "type": "white dwarf",
+      "description": "The only system in the Drift.",
+      "detail": ["Believed to be the remnant of an older, larger system."],
+      "position": { "x": 200, "y": 200 }
+    }
+  ],
+  "bodies": [
+    {
+      "id": "body-anchor-i",
+      "systemId": "system-anchor",
+      "name": "Anchor I",
+      "type": "rocky planet",
+      "description": "Barren, mined out.",
+      "detail": ["Automated mining rigs still operate here unattended."],
+      "position": { "x": 80, "y": 300 }
+    },
+    {
+      "id": "body-anchor-station",
+      "systemId": "system-anchor",
+      "name": "Anchor Station",
+      "type": "settlement",
+      "description": "A relay and trade hub.",
+      "detail": ["Population ~4,000. Neutral ground for Verge traders."],
+      "position": { "x": 220, "y": 300 }
+    },
+    {
+      "id": "body-kestrel-ii",
+      "systemId": "system-kestrel",
+      "name": "Kestrel II",
+      "type": "gas giant",
+      "description": "Ringed gas giant, mining platforms in orbit.",
+      "detail": ["Site of the corporate mining dispute."],
+      "position": { "x": 150, "y": 260 }
+    },
+    {
+      "id": "body-oberon-prime",
+      "systemId": "system-oberon",
+      "name": "Oberon Prime",
+      "type": "rocky planet",
+      "description": "A small colony world.",
+      "detail": ["Population ~800, mostly farmers."],
+      "position": { "x": 100, "y": 200 }
+    },
+    {
+      "id": "body-oberon-moon",
+      "systemId": "system-oberon",
+      "name": "Oberon Moon",
+      "type": "satellite",
+      "description": "A tracking and relay satellite.",
+      "detail": ["Automated, unmanned."],
+      "position": { "x": 260, "y": 240 }
+    },
+    {
+      "id": "body-hearthhome-capital",
+      "systemId": "system-hearthhome",
+      "name": "Hearthhome Capital",
+      "type": "settlement",
+      "description": "Seat of the Compact government.",
+      "detail": ["Population ~2 million."],
+      "position": { "x": 180, "y": 150 }
+    },
+    {
+      "id": "body-hearthhome-shipyard",
+      "systemId": "system-hearthhome",
+      "name": "Hearthhome Shipyard",
+      "type": "orbital station",
+      "description": "Primary naval shipyard.",
+      "detail": ["Home port of the Compact fleet."],
+      "position": { "x": 320, "y": 180 }
+    },
+    {
+      "id": "body-lowlight-outpost",
+      "systemId": "system-lowlight",
+      "name": "Lowlight Outpost",
+      "type": "settlement",
+      "description": "A drydock and repair outpost.",
+      "detail": ["Small permanent crew, mostly engineers."],
+      "position": { "x": 200, "y": 200 }
+    },
+    {
+      "id": "body-solitude-wreck",
+      "systemId": "system-solitude",
+      "name": "The Wreck",
+      "type": "derelict",
+      "description": "The remains of a long-abandoned station.",
+      "detail": ["No known survivors. Origin unknown."],
+      "position": { "x": 200, "y": 200 }
+    }
+  ],
+  "clusterRoutes": [
+    { "from": "cluster-verge", "to": "cluster-hearth", "label": "Compact Trunk Line", "type": "trade" }
+  ],
+  "systemRoutes": [
+    { "from": "system-anchor", "to": "system-kestrel", "label": "Anchor-Kestrel Run", "type": "trade" },
+    { "from": "system-anchor", "to": "system-oberon", "label": "Anchor-Oberon Run", "type": "trade" },
+    { "from": "system-hearthhome", "to": "system-lowlight", "label": "Fleet Supply Line", "type": "military" }
+  ],
+  "bodyRoutes": [
+    { "from": "body-anchor-i", "to": "body-anchor-station", "type": "shuttle" },
+    { "from": "body-oberon-prime", "to": "body-oberon-moon", "type": "shuttle" },
+    { "from": "body-hearthhome-capital", "to": "body-hearthhome-shipyard", "type": "shuttle" }
+  ]
+}
