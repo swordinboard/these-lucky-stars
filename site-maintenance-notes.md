@@ -132,10 +132,10 @@ Page content starts here...
 
 This repo hosts **two independent Netlify sites**, not one:
 
-| Site | Repo root | Netlify base directory | Domain |
-|---|---|---|---|
-| Main site (Hugo) | `/` | (none) | `theseluckystars.com` |
-| Galaxy map prototype | `/mosaic` | `mosaic` | `mosaic.theseluckystars.com` |
+| Site | Netlify project name | Repo root | Netlify base directory | Domain |
+|---|---|---|---|---|
+| Main site (Hugo) | `these-lucky-stars` | `/` | (none) | `theseluckystars.com` |
+| Galaxy map prototype | `mosaic-theseluckystars` | `/mosaic` | `mosaic` | `mosaic.theseluckystars.com` (pending) |
 
 - The `mosaic/` site is plain static HTML/CSS/JS (no build step) with its **own**
   `mosaic/netlify.toml` — its headers/CSP are independent of the root `netlify.toml` and do
