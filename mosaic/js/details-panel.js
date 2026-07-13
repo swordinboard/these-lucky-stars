@@ -2,13 +2,25 @@ import { getById } from './data.js';
 import { drillInto, deselect } from './state.js';
 
 const DRILL_LABEL = { cluster: 'View systems →', system: 'View bodies →' };
+const PLACEHOLDER_TEXT = {
+    cluster: 'Select a sector to view details.',
+    system: 'Select a system to view details.',
+    body: 'Select a body to view details.',
+};
 
 export function renderDetailsPanel(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
 
     const entity = state.selectedId ? getById(state.selectedId) : null;
-    el.classList.toggle('open', Boolean(entity));
-    if (!entity) return;
+    el.classList.toggle('expanded', Boolean(entity));
+
+    if (!entity) {
+        const placeholder = document.createElement('p');
+        placeholder.className = 'details-placeholder';
+        placeholder.textContent = PLACEHOLDER_TEXT[state.level];
+        el.appendChild(placeholder);
+        return;
+    }
 
     const closeButton = document.createElement('button');
     closeButton.type = 'button';

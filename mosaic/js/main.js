@@ -4,8 +4,10 @@ import { renderLevel } from './render.js';
 import { renderBreadcrumb } from './breadcrumb.js';
 import { renderDetailsPanel } from './details-panel.js';
 import { createPanZoom } from './panzoom.js';
+import { initSidebar } from './sidebar.js';
 
 async function main() {
+    initSidebar();
     await loadGalaxy();
 
     const svg = document.getElementById('galaxy-map');

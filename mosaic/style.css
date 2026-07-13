@@ -16,24 +16,75 @@ html, body {
 
 body {
     margin: 0;
+    height: 100dvh;
+    overflow: hidden;
     background: var(--body-background);
     color: var(--body-font-color);
     font-family: Arial, sans-serif;
-    padding: 16px;
     display: flex;
     flex-direction: column;
 }
 
-.home-link {
-    display: inline-block;
-    margin-bottom: 8px;
-    color: var(--accent);
-    text-decoration: none;
-    font-size: 0.9em;
+.icon-button {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    cursor: pointer;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    line-height: 1;
 }
 
-.home-link:hover {
-    text-decoration: underline;
+/* --- Header --- */
+
+.app-header {
+    flex-shrink: 0;
+    background: var(--body-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--body-font-color);
+}
+
+.hamburger-icon {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+}
+
+.hamburger-icon::before {
+    top: -6px;
+}
+
+.hamburger-icon::after {
+    top: 6px;
 }
 
 .breadcrumb {
@@ -41,8 +92,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 12px;
-    font-size: 0.95em;
+    padding: 0 12px 10px;
+    font-size: 0.9em;
 }
 
 .breadcrumb-link {
@@ -64,21 +115,21 @@ body {
 }
 
 .breadcrumb-sep {
-    color: var(--gray-500, #808080);
+    color: #808080;
 }
 
-.map-wrap {
+/* --- Map area (full-bleed) --- */
+
+.map-area {
     flex: 1;
-    display: flex;
-    gap: 16px;
     min-height: 0;
+    display: flex;
 }
 
 .galaxy-map {
     flex: 1;
     width: 100%;
     background: #000000;
-    border-radius: 8px;
     touch-action: none;
     cursor: grab;
 }
@@ -105,29 +156,49 @@ body {
     user-select: none;
 }
 
+/* Cluster level renders as large "sector" zones instead of small nodes */
+.node-cluster circle {
+    fill: url(#sector-glow);
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    stroke-opacity: 0.7;
+}
+
+.node-cluster .node-label {
+    font-size: 18px;
+    font-weight: 700;
+    fill: #ffffff;
+}
+
 .route-line {
     stroke: rgba(233, 233, 233, 0.35);
     stroke-width: 1.5;
 }
 
+/* --- Details panel (always docked at the bottom) --- */
+
 .details-panel {
-    width: 320px;
+    position: relative;
     flex-shrink: 0;
     background: var(--panel-background);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 16px;
+    border-top: 1px solid var(--border-color);
+    padding: 12px 16px;
     overflow-y: auto;
-    display: none;
-    position: relative;
 }
 
-.details-panel.open {
-    display: block;
+.details-panel.expanded {
+    max-height: 42vh;
+}
+
+.details-placeholder {
+    margin: 0;
+    padding: 6px 0;
+    text-align: center;
+    color: rgba(233, 233, 233, 0.6);
 }
 
 .details-panel h2 {
-    margin-top: 0;
+    margin: 0 0 4px;
     padding-right: 24px;
 }
 
@@ -136,7 +207,7 @@ body {
     font-size: 0.85em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-top: -8px;
+    margin: 0 0 8px;
 }
 
 .details-extra {
@@ -146,7 +217,7 @@ body {
 
 .details-close {
     position: absolute;
-    top: 12px;
+    top: 8px;
     right: 12px;
     background: none;
     border: none;
@@ -165,21 +236,58 @@ body {
     font: inherit;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
-@media (max-width: 720px) {
-    .map-wrap {
-        flex-direction: column;
-    }
+/* --- Sidebar nav --- */
 
-    .details-panel {
-        width: auto;
-        max-height: 45vh;
-        order: 2;
-    }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(80vw, 300px);
+    background: var(--panel-background);
+    border-right: 1px solid var(--border-color);
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    z-index: 20;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-    .galaxy-map {
-        min-height: 45vh;
-    }
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+}
+
+.sidebar-overlay[hidden] {
+    display: none;
 }
