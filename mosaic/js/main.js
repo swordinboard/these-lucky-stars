@@ -7,6 +7,9 @@ import { renderBreadcrumb } from './breadcrumb.js';
 import { renderDetailsPanel } from './details-panel.js';
 import { createPanZoom } from './panzoom.js';
 import { initSidebar } from './sidebar.js';
+import { renderStarfield, setStarfieldOffset } from './starfield.js';
+
+const STARFIELD_PARALLAX_FACTOR = 0.18;
 
 async function main() {
     initSidebar();
@@ -28,6 +31,9 @@ async function main() {
         onDoubleTap(nodeId) {
             const entity = getById(nodeId);
             if (entity && entity.kind !== 'location') drillInto(entity);
+        },
+        onChange({ x, y }) {
+            setStarfieldOffset(x * STARFIELD_PARALLAX_FACTOR, y * STARFIELD_PARALLAX_FACTOR);
         },
     });
     let lastFitKey = null;
@@ -55,6 +61,7 @@ async function main() {
 
         if (fitKey !== lastFitKey) {
             lastFitKey = fitKey;
+            renderStarfield(fitKey || 'galaxy');
             if (bounds) {
                 if (fitMode === 'horizontal') panZoom.fitHorizontal(bounds, 0);
                 else panZoom.fitToBounds(bounds);

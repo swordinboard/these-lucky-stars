@@ -1,5 +1,5 @@
 import { getById } from './data.js';
-import { drillInto, deselect } from './state.js';
+import { drillInto, deselect, openWriteup } from './state.js';
 
 const DRILL_LABEL = {
     cluster: 'View systems →',
@@ -10,6 +10,7 @@ const DRILL_LABEL = {
     station: 'View locations →',
     misc: 'View locations →',
     moon: 'View locations →',
+    location: 'Read more →',
 };
 const PLACEHOLDER_TEXT = {
     cluster: 'Select a sector to view details.',
@@ -19,8 +20,10 @@ const PLACEHOLDER_TEXT = {
 };
 
 // Locations get a full-page "writeup" treatment (they're where the actual
-// lore/setting text lives), everything else keeps the small docked-footer
-// popup. Since the panel switches from in-flow to `position: fixed` for the
+// lore/setting text lives), but only once explicitly opened (double-tap/
+// double-click, or the "Read more →" button) — a single tap/click just
+// selects it like any other kind, showing the compact docked-footer preview.
+// Since the panel switches from in-flow to `position: fixed` for the
 // full-page state, a plain class toggle can't animate smoothly (position
 // isn't interpolable) — so entry is staged across two frames: apply the
 // off-screen "entering" position first, force a layout flush, then swap to
@@ -45,9 +48,9 @@ export function renderDetailsPanel(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
 
     const entity = state.selectedId ? getById(state.selectedId) : null;
-    const isLocation = Boolean(entity) && entity.kind === 'location';
+    const isOpenWriteup = Boolean(entity) && entity.kind === 'location' && state.openLocationId === state.selectedId;
 
-    if (isLocation) {
+    if (isOpenWriteup) {
         enterFullPage(el);
     } else {
         exitFullPage(el);
@@ -90,12 +93,15 @@ export function renderDetailsPanel(el, state) {
         el.appendChild(p);
     }
 
-    if (DRILL_LABEL[entity.kind]) {
+    if (DRILL_LABEL[entity.kind] && !isOpenWriteup) {
         const drillButton = document.createElement('button');
         drillButton.type = 'button';
         drillButton.className = 'details-drill';
         drillButton.textContent = DRILL_LABEL[entity.kind];
-        drillButton.addEventListener('click', () => drillInto(entity));
+        drillButton.addEventListener('click', () => {
+            if (entity.kind === 'location') openWriteup(entity.id);
+            else drillInto(entity);
+        });
         el.appendChild(drillButton);
     }
 }

@@ -22,7 +22,7 @@ function clampScale(k) {
 // click events — tap/double-tap detection happens here instead, keyed by
 // each node's stable data-id (not DOM element identity, since selecting a
 // node triggers a full re-render that replaces the DOM node it was on).
-export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
+export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange } = {}) {
     const transform = { x: 0, y: 0, k: 1 };
     const pointers = new Map();
     let dragStart = null;
@@ -45,6 +45,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
             transform.y = fixedY;
         }
         viewportEl.setAttribute('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
+        onChange && onChange(transform);
     }
 
     function svgPoint(evt) {

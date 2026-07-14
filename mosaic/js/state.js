@@ -6,6 +6,7 @@ const state = {
     systemId: null,
     planetId: null,
     selectedId: null,
+    openLocationId: null,
 };
 
 const listeners = [];
@@ -55,6 +56,7 @@ export function drillInto(entity) {
         return;
     }
     state.selectedId = null;
+    state.openLocationId = null;
     updateHash();
     notify();
 }
@@ -72,17 +74,31 @@ export function goUp(toLevel) {
         state.planetId = null;
     }
     state.selectedId = null;
+    state.openLocationId = null;
     updateHash();
     notify();
 }
 
 export function select(id) {
     state.selectedId = id;
+    state.openLocationId = null;
     notify();
 }
 
 export function deselect() {
     state.selectedId = null;
+    state.openLocationId = null;
+    notify();
+}
+
+export function openWriteup(id) {
+    state.selectedId = id;
+    state.openLocationId = id;
+    notify();
+}
+
+export function closeWriteup() {
+    state.openLocationId = null;
     notify();
 }
 
@@ -95,6 +111,7 @@ export function syncFromHash() {
     state.systemId = null;
     state.planetId = null;
     state.selectedId = null;
+    state.openLocationId = null;
 
     for (const id of ids) {
         const entity = getById(id);
