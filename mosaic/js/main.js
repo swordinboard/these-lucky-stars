@@ -69,6 +69,21 @@ async function main() {
             fitMode = 'horizontal';
         }
 
+        // Render everything that can change the map's available screen space
+        // (footer height, location drawer) before fitToBounds/fitHorizontal
+        // measure the SVG's rect below — otherwise the very first fit (before
+        // the footer has ever rendered its placeholder text) measures a
+        // taller-than-final rect, since an empty footer takes less vertical
+        // space than a populated one, producing a slightly too-large scale
+        // that clips content flush against whichever edge fills in afterward.
+        const isLocationLevel = state.level === 'location';
+        locationListEl.classList.toggle('open', isLocationLevel);
+        locationBackdropEl.classList.toggle('open', isLocationLevel);
+        if (isLocationLevel) renderLocationList(locationListEl, state);
+
+        renderBreadcrumb(breadcrumbEl, state);
+        renderDetailsPanel(detailsEl, state);
+
         if (fitKey !== lastFitKey) {
             lastFitKey = fitKey;
             renderStarfield(fitKey || 'galaxy');
@@ -77,14 +92,6 @@ async function main() {
                 else panZoom.fitToBounds(bounds);
             }
         }
-
-        const isLocationLevel = state.level === 'location';
-        locationListEl.classList.toggle('open', isLocationLevel);
-        locationBackdropEl.classList.toggle('open', isLocationLevel);
-        if (isLocationLevel) renderLocationList(locationListEl, state);
-
-        renderBreadcrumb(breadcrumbEl, state);
-        renderDetailsPanel(detailsEl, state);
     });
 
     syncFromHash();

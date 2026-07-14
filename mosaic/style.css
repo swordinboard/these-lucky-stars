@@ -219,6 +219,12 @@ body {
     stroke-width: 1.5;
 }
 
+/* An FTL connection the source notes describe as unconfirmed/unclear gets a
+   dashed line instead of solid, to visually flag the uncertainty on the map. */
+.route-line--uncertain {
+    stroke-dasharray: 4 4;
+}
+
 /* --- Orrery (orbital level) --- */
 
 .star {

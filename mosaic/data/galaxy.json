@@ -27,6 +27,129 @@
       "description": "A single lonely system, cut off from the trade lanes.",
       "detail": ["No known routes connect the Drift to the rest of the galaxy."],
       "position": { "x": 400, "y": 80 }
+    },
+    {
+      "id": "cluster-alpha",
+      "name": "Alpha Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 1092, "y": 3700 }
+    },
+    {
+      "id": "cluster-beta",
+      "name": "Beta Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 1092, "y": 4420 }
+    },
+    {
+      "id": "cluster-danswai",
+      "name": "Danswai Cloud",
+      "type": "star cloud",
+      "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
+      "detail": [],
+      "position": { "x": 1382, "y": 1380 }
+    },
+    {
+      "id": "cluster-fold",
+      "name": "Fold Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 2980, "y": 3780 }
+    },
+    {
+      "id": "cluster-forrow",
+      "name": "Forrow Cluster",
+      "type": "cluster",
+      "description": "The home cluster of Hravia. Their homeworld was destroyed by an unrecorded cause, referred to only as \"XXXX\" in surviving accounts.",
+      "detail": [],
+      "position": { "x": 2364, "y": 900 }
+    },
+    {
+      "id": "cluster-hart",
+      "name": "Hart Cloud",
+      "type": "star cloud",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 2364, "y": 2240 }
+    },
+    {
+      "id": "cluster-hope",
+      "name": "Hope Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 1700, "y": 2980 }
+    },
+    {
+      "id": "cluster-lee",
+      "name": "Lee Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 2980, "y": 2980 }
+    },
+    {
+      "id": "cluster-nor",
+      "name": "Nor Cluster",
+      "type": "cluster",
+      "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
+      "detail": [],
+      "position": { "x": 2364, "y": 1580 }
+    },
+    {
+      "id": "cluster-pistil",
+      "name": "Pistil Cluster",
+      "type": "cluster",
+      "description": "The mysterious home cluster of Vusiea. Few have ventured here.",
+      "detail": [
+        "Star systems: 3 known, 2 speculated.",
+        "Access from Danswai Cloud is limited and the route is not well charted."
+      ],
+      "position": { "x": 420, "y": 1380 }
+    },
+    {
+      "id": "cluster-teegarden",
+      "name": "Teegarden Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Affiliated with SolPAC."],
+      "position": { "x": 1092, "y": 2260 }
+    },
+    {
+      "id": "cluster-weisman",
+      "name": "Weisman Cloud",
+      "type": "star cloud",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": [],
+      "position": { "x": 440, "y": 2980 }
+    },
+    {
+      "id": "cluster-morrison",
+      "name": "Morrison Cluster",
+      "type": "cluster",
+      "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
+      "detail": ["Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
+      "position": { "x": 2340, "y": 2980 }
+    },
+    {
+      "id": "cluster-local",
+      "name": "Local Cluster",
+      "type": "cluster",
+      "description": "All systems under SolPAC control.",
+      "detail": [],
+      "position": { "x": 1092, "y": 2980 }
+    },
+    {
+      "id": "cluster-homestead",
+      "name": "Homestead Cluster",
+      "type": "cluster",
+      "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
+      "detail": [],
+      "position": { "x": 3580, "y": 2980 }
     }
   ],
   "systems": [
@@ -83,10 +206,140 @@
       "description": "The only system in the Drift.",
       "detail": ["Believed to be the remnant of an older, larger system."],
       "position": { "x": 200, "y": 200 }
+    },
+    {
+      "id": "system-sol",
+      "clusterId": "cluster-local",
+      "name": "Sol System",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 150, "y": 200 }
+    },
+    {
+      "id": "system-alpha-centuri",
+      "clusterId": "cluster-local",
+      "name": "Alpha Centuri",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 350, "y": 200 }
+    },
+    {
+      "id": "system-barnards-star",
+      "clusterId": "cluster-local",
+      "name": "Barnard's Star",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 550, "y": 200 }
+    },
+    {
+      "id": "system-wolf",
+      "clusterId": "cluster-local",
+      "name": "Wolf",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 750, "y": 200 }
+    },
+    {
+      "id": "system-lalande",
+      "clusterId": "cluster-local",
+      "name": "Lalande",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 950, "y": 200 }
+    },
+    {
+      "id": "system-huntington",
+      "clusterId": "cluster-morrison",
+      "name": "Huntington",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 150, "y": 200 }
+    },
+    {
+      "id": "system-priapus",
+      "clusterId": "cluster-morrison",
+      "name": "Priapus",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 350, "y": 200 }
+    },
+    {
+      "id": "system-ngozi",
+      "clusterId": "cluster-morrison",
+      "name": "Ngozi",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 550, "y": 200 }
+    },
+    {
+      "id": "system-zuni",
+      "clusterId": "cluster-morrison",
+      "name": "Zuni",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 750, "y": 200 }
+    },
+    {
+      "id": "system-iris",
+      "clusterId": "cluster-homestead",
+      "name": "Iris",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 200, "y": 200 }
+    },
+    {
+      "id": "system-veranda",
+      "clusterId": "cluster-homestead",
+      "name": "Veranda",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 450, "y": 200 }
+    },
+    {
+      "id": "system-thalla",
+      "clusterId": "cluster-forrow",
+      "name": "Thalla",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 300, "y": 200 }
     }
   ],
   "clusterRoutes": [
-    { "from": "cluster-verge", "to": "cluster-hearth", "label": "Compact Trunk Line", "type": "trade" }
+    { "from": "cluster-verge", "to": "cluster-hearth", "label": "Compact Trunk Line", "type": "trade" },
+    { "from": "cluster-morrison", "to": "cluster-hart", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-lee", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-fold", "label": "4", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-hope", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-morrison", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-hart", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-fold", "label": "4", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-teegarden", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-alpha", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-alpha", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-alpha", "to": "cluster-beta", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-nor", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-forrow", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-danswai", "to": "cluster-forrow", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-danswai", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-teegarden", "to": "cluster-danswai", "label": "4", "type": "ftl lane" },
+    { "from": "cluster-pistil", "to": "cluster-danswai", "label": "?", "type": "ftl lane", "uncertain": true },
+    { "from": "cluster-local", "to": "cluster-weisman", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-teegarden", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-hart", "label": "3", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-homestead", "label": "2", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-homestead", "label": "2", "type": "ftl lane" }
   ],
   "systemRoutes": [
     { "from": "system-anchor", "to": "system-kestrel", "label": "Anchor-Kestrel Run", "type": "trade" },

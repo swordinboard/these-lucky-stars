@@ -68,7 +68,7 @@ export function renderLevel(viewportEl, state) {
         line.setAttribute('y1', from.position.y);
         line.setAttribute('x2', to.position.x);
         line.setAttribute('y2', to.position.y);
-        line.setAttribute('class', 'route-line');
+        line.setAttribute('class', route.uncertain ? 'route-line route-line--uncertain' : 'route-line');
 
         if (route.label) {
             const title = document.createElementNS(SVG_NS, 'title');
