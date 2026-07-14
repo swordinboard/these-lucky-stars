@@ -18,11 +18,41 @@ const PLACEHOLDER_TEXT = {
     location: 'Select a location to view details.',
 };
 
+// Locations get a full-page "writeup" treatment (they're where the actual
+// lore/setting text lives), everything else keeps the small docked-footer
+// popup. Since the panel switches from in-flow to `position: fixed` for the
+// full-page state, a plain class toggle can't animate smoothly (position
+// isn't interpolable) — so entry is staged across two frames: apply the
+// off-screen "entering" position first, force a layout flush, then swap to
+// the "shown" position on the next frame so the transform transition has a
+// real start and end state to animate between.
+function enterFullPage(el) {
+    if (el.classList.contains('full')) return;
+    el.classList.remove('expanded');
+    el.classList.add('full-entering');
+    void el.offsetHeight;
+    requestAnimationFrame(() => {
+        el.classList.remove('full-entering');
+        el.classList.add('full');
+    });
+}
+
+function exitFullPage(el) {
+    el.classList.remove('full', 'full-entering');
+}
+
 export function renderDetailsPanel(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
 
     const entity = state.selectedId ? getById(state.selectedId) : null;
-    el.classList.toggle('expanded', Boolean(entity));
+    const isLocation = Boolean(entity) && entity.kind === 'location';
+
+    if (isLocation) {
+        enterFullPage(el);
+    } else {
+        exitFullPage(el);
+        el.classList.toggle('expanded', Boolean(entity));
+    }
 
     if (!entity) {
         const placeholder = document.createElement('p');

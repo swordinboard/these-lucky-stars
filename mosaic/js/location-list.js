@@ -1,5 +1,5 @@
 import { getById, moonsOf, locationsOf } from './data.js';
-import { select } from './state.js';
+import { select, goUp } from './state.js';
 import { createIcon } from './icons.js';
 
 const DEFAULT_ICON = { surface: 'surface', moon: 'moon', orbit: 'satellite' };
@@ -44,20 +44,41 @@ export function renderLocationList(listEl, state) {
     const locations = locationsOf(state.planetId);
     const moons = moonsOf(state.planetId);
 
+    const header = document.createElement('div');
+    header.className = 'location-list-header';
+
+    const title = document.createElement('h2');
+    title.textContent = planet.name;
+    header.appendChild(title);
+
+    const closeButton = document.createElement('button');
+    closeButton.type = 'button';
+    closeButton.className = 'location-list-close';
+    closeButton.textContent = '×';
+    closeButton.setAttribute('aria-label', 'Close locations');
+    closeButton.addEventListener('click', () => goUp('orbital'));
+    header.appendChild(closeButton);
+
+    listEl.appendChild(header);
+
+    const body = document.createElement('div');
+    body.className = 'location-list-body';
+    listEl.appendChild(body);
+
     const surface = locations.filter((loc) => loc.locatedAt.kind === 'surface');
     const orbit = locations.filter((loc) => loc.locatedAt.kind === 'orbit');
 
-    renderSection(listEl, `On ${planet.name}`, surface);
+    renderSection(body, `On ${planet.name}`, surface);
     for (const moon of moons) {
         const moonLocations = locations.filter((loc) => loc.locatedAt.kind === 'moon' && loc.locatedAt.moonId === moon.id);
-        renderSection(listEl, `On ${moon.name}`, moonLocations);
+        renderSection(body, `On ${moon.name}`, moonLocations);
     }
-    renderSection(listEl, 'In Orbit', orbit);
+    renderSection(body, 'In Orbit', orbit);
 
-    if (!listEl.firstChild) {
+    if (!body.firstChild) {
         const empty = document.createElement('p');
         empty.className = 'location-empty';
         empty.textContent = 'No known locations here yet.';
-        listEl.appendChild(empty);
+        body.appendChild(empty);
     }
 }

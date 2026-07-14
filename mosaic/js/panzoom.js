@@ -29,8 +29,21 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
     let pinchDistance = null;
     let singleGesture = null;
     let lastTap = { time: 0, id: null };
+    let constraints = null;
 
+    // When constraints are set (the orrery's "star locked left, side-scroll"
+    // mode), clamp every transform change here rather than special-casing
+    // drag/zoom — apply() is the single place all transform mutations funnel
+    // through, so the lock stays correct regardless of what caused the change.
     function apply() {
+        if (constraints) {
+            const { gutter, trailingMargin, contentMinX, contentMaxX, rectWidth, fixedY } = constraints;
+            const maxX = gutter - contentMinX * transform.k;
+            const minXRaw = rectWidth - trailingMargin - contentMaxX * transform.k;
+            const minX = Math.min(minXRaw, maxX);
+            transform.x = Math.min(maxX, Math.max(minX, transform.x));
+            transform.y = fixedY;
+        }
         viewportEl.setAttribute('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
     }
 
@@ -131,6 +144,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
 
     return {
         fitToBounds(bounds) {
+            constraints = null;
             const rect = svgEl.getBoundingClientRect();
             const width = Math.max(bounds.maxX - bounds.minX, 1) + FIT_PADDING * 2;
             const height = Math.max(bounds.maxY - bounds.minY, 1) + FIT_PADDING * 2;
@@ -142,6 +156,33 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
             transform.x = rect.width / 2 - scale * centerX;
             transform.y = rect.height / 2 - scale * centerY;
             apply();
+        },
+
+        // Orrery mode: fit to height only (not width), constrain panning to
+        // horizontal side-scroll between `gutter` and the last body — zoom
+        // still works freely. Returns { fixedY } so the caller can position
+        // a separately-drawn, non-panned star anchor at the same baseline.
+        fitHorizontal(bounds, gutter) {
+            const rect = svgEl.getBoundingClientRect();
+            const height = Math.max(bounds.maxY - bounds.minY, 1) + FIT_PADDING * 2;
+            const scale = clampScale(rect.height / height);
+            const trailingMargin = 60;
+
+            transform.k = scale;
+            const fixedY = rect.height / 2 - scale * ((bounds.minY + bounds.maxY) / 2);
+            constraints = {
+                gutter,
+                trailingMargin,
+                contentMinX: bounds.minX,
+                contentMaxX: bounds.maxX,
+                rectWidth: rect.width,
+                fixedY,
+            };
+            transform.x = gutter - bounds.minX * scale;
+            transform.y = fixedY;
+            apply();
+
+            return { fixedY };
         },
     };
 }
