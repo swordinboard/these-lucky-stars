@@ -9,7 +9,10 @@ export function renderBreadcrumb(el, state) {
         crumbs.push({ label: getById(state.clusterId).name, level: 'system' });
     }
     if (state.systemId) {
-        crumbs.push({ label: getById(state.systemId).name, level: 'body' });
+        crumbs.push({ label: getById(state.systemId).name, level: 'orbital' });
+    }
+    if (state.planetId) {
+        crumbs.push({ label: getById(state.planetId).name, level: 'location' });
     }
 
     crumbs.forEach((crumb, index) => {

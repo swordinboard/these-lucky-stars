@@ -1,7 +1,7 @@
-import { clusters, systemsOf, bodiesOf, clusterRoutes, systemRoutesWithin, bodyRoutesWithin } from './data.js';
+import { clusters, systemsOf, clusterRoutes, systemRoutesWithin } from './data.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
-const NODE_RADIUS = { system: 16, body: 12 };
+const SYSTEM_NODE_RADIUS = 16;
 const MIN_SECTOR_RADIUS = 60;
 const MAX_SECTOR_RADIUS = 200;
 
@@ -9,10 +9,7 @@ function entitiesAndRoutesFor(state) {
     if (state.level === 'cluster') {
         return { entities: clusters(), routes: clusterRoutes() };
     }
-    if (state.level === 'system') {
-        return { entities: systemsOf(state.clusterId), routes: systemRoutesWithin(state.clusterId) };
-    }
-    return { entities: bodiesOf(state.systemId), routes: bodyRoutesWithin(state.systemId) };
+    return { entities: systemsOf(state.clusterId), routes: systemRoutesWithin(state.clusterId) };
 }
 
 function nearestNeighborDistance(entities) {
@@ -55,7 +52,7 @@ export function renderLevel(viewportEl, state) {
     const { entities, routes } = entitiesAndRoutesFor(state);
     const byId = new Map(entities.map((entity) => [entity.id, entity]));
     const isSectorView = state.level === 'cluster';
-    const radius = isSectorView ? sectorRadiusFor(entities) : NODE_RADIUS[state.level === 'system' ? 'system' : 'body'];
+    const radius = isSectorView ? sectorRadiusFor(entities) : SYSTEM_NODE_RADIUS;
 
     const edgeGroup = document.createElementNS(SVG_NS, 'g');
     edgeGroup.setAttribute('class', 'edges');

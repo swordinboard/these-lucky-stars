@@ -1,11 +1,21 @@
 import { getById } from './data.js';
 import { drillInto, deselect } from './state.js';
 
-const DRILL_LABEL = { cluster: 'View systems →', system: 'View bodies →' };
+const DRILL_LABEL = {
+    cluster: 'View systems →',
+    system: 'View orbital bodies →',
+    planet: 'View locations →',
+    asteroidField: 'View locations →',
+    satellite: 'View locations →',
+    station: 'View locations →',
+    misc: 'View locations →',
+    moon: 'View locations →',
+};
 const PLACEHOLDER_TEXT = {
     cluster: 'Select a sector to view details.',
     system: 'Select a system to view details.',
-    body: 'Select a body to view details.',
+    orbital: 'Select an object to view details.',
+    location: 'Select a location to view details.',
 };
 
 export function renderDetailsPanel(el, state) {

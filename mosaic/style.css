@@ -134,6 +134,10 @@ body {
     cursor: grab;
 }
 
+.galaxy-map[hidden] {
+    display: none;
+}
+
 .node {
     cursor: pointer;
 }
@@ -142,10 +146,6 @@ body {
     fill: var(--accent);
     stroke: #ffffff;
     stroke-width: 1.5;
-}
-
-.node-body circle {
-    fill: #9fb4d6;
 }
 
 .node-label {
@@ -173,6 +173,126 @@ body {
 .route-line {
     stroke: rgba(233, 233, 233, 0.35);
     stroke-width: 1.5;
+}
+
+/* --- Orrery (orbital level) --- */
+
+.star {
+    fill: #ffe9c4;
+    stroke: none;
+}
+
+.node-planet circle {
+    fill: #d9a066;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+}
+
+.ring {
+    fill: none;
+    stroke: rgba(233, 233, 233, 0.6);
+    stroke-width: 2;
+}
+
+.node-asteroidField circle {
+    fill: #9a9a9a;
+    stroke: none;
+}
+
+.node-moon circle {
+    fill: #b9b9c8;
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+.node-moon .node-label {
+    font-size: 10px;
+}
+
+.drop-line {
+    stroke: rgba(233, 233, 233, 0.35);
+    stroke-width: 1;
+}
+
+.indicator-dot {
+    fill: var(--accent);
+}
+
+.icon {
+    fill: var(--body-font-color);
+    stroke: none;
+    overflow: visible;
+}
+
+.icon line {
+    stroke: var(--body-font-color);
+    stroke-width: 1.5;
+}
+
+.icon .icon-stroke {
+    fill: none;
+    stroke: var(--body-font-color);
+    stroke-width: 1.5;
+}
+
+/* --- Location list (leaf level, plain HTML, no pan/zoom) --- */
+
+.location-list {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 16px;
+    background: #000000;
+}
+
+.location-list[hidden] {
+    display: none;
+}
+
+.location-section {
+    margin-bottom: 20px;
+}
+
+.location-section h3 {
+    margin: 0 0 8px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.location-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.location-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--panel-background);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.location-row:hover {
+    border-color: var(--accent);
+}
+
+.location-empty {
+    color: rgba(233, 233, 233, 0.6);
+    text-align: center;
+    margin-top: 24px;
 }
 
 /* --- Details panel (always docked at the bottom) --- */

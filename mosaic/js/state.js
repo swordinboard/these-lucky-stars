@@ -1,9 +1,10 @@
-import { getById } from './data.js';
+import { getById, ORBITAL_KINDS } from './data.js';
 
 const state = {
     level: 'cluster',
     clusterId: null,
     systemId: null,
+    planetId: null,
     selectedId: null,
 };
 
@@ -14,9 +15,15 @@ function notify() {
 }
 
 function updateHash() {
-    const parts = [state.clusterId, state.systemId].filter(Boolean);
+    const parts = [state.clusterId, state.systemId, state.planetId].filter(Boolean);
     const next = parts.length ? `#${parts.join('/')}` : '';
     if (location.hash !== next) history.pushState(null, '', next || location.pathname);
+}
+
+function locationStateFor(orbitalId) {
+    const orbital = getById(orbitalId);
+    const system = getById(orbital.systemId);
+    return { clusterId: system.clusterId, systemId: orbital.systemId, planetId: orbital.id };
 }
 
 export function subscribe(listener) {
@@ -32,10 +39,18 @@ export function drillInto(entity) {
         state.level = 'system';
         state.clusterId = entity.id;
         state.systemId = null;
+        state.planetId = null;
     } else if (entity.kind === 'system') {
-        state.level = 'body';
+        state.level = 'orbital';
         state.clusterId = entity.clusterId;
         state.systemId = entity.id;
+        state.planetId = null;
+    } else if (ORBITAL_KINDS.has(entity.kind)) {
+        state.level = 'location';
+        Object.assign(state, locationStateFor(entity.id));
+    } else if (entity.kind === 'moon') {
+        state.level = 'location';
+        Object.assign(state, locationStateFor(entity.planetId));
     } else {
         return;
     }
@@ -49,8 +64,12 @@ export function goUp(toLevel) {
     if (toLevel === 'cluster') {
         state.clusterId = null;
         state.systemId = null;
+        state.planetId = null;
     } else if (toLevel === 'system') {
         state.systemId = null;
+        state.planetId = null;
+    } else if (toLevel === 'orbital') {
+        state.planetId = null;
     }
     state.selectedId = null;
     updateHash();
@@ -74,6 +93,7 @@ export function syncFromHash() {
     state.level = 'cluster';
     state.clusterId = null;
     state.systemId = null;
+    state.planetId = null;
     state.selectedId = null;
 
     for (const id of ids) {
@@ -83,9 +103,12 @@ export function syncFromHash() {
             state.level = 'system';
             state.clusterId = entity.id;
         } else if (entity.kind === 'system') {
-            state.level = 'body';
+            state.level = 'orbital';
             state.clusterId = entity.clusterId;
             state.systemId = entity.id;
+        } else if (ORBITAL_KINDS.has(entity.kind)) {
+            state.level = 'location';
+            Object.assign(state, locationStateFor(entity.id));
         }
     }
 

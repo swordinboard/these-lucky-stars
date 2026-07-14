@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "clusters": [
     {
       "id": "cluster-verge",
@@ -85,89 +85,6 @@
       "position": { "x": 200, "y": 200 }
     }
   ],
-  "bodies": [
-    {
-      "id": "body-anchor-i",
-      "systemId": "system-anchor",
-      "name": "Anchor I",
-      "type": "rocky planet",
-      "description": "Barren, mined out.",
-      "detail": ["Automated mining rigs still operate here unattended."],
-      "position": { "x": 80, "y": 300 }
-    },
-    {
-      "id": "body-anchor-station",
-      "systemId": "system-anchor",
-      "name": "Anchor Station",
-      "type": "settlement",
-      "description": "A relay and trade hub.",
-      "detail": ["Population ~4,000. Neutral ground for Verge traders."],
-      "position": { "x": 220, "y": 300 }
-    },
-    {
-      "id": "body-kestrel-ii",
-      "systemId": "system-kestrel",
-      "name": "Kestrel II",
-      "type": "gas giant",
-      "description": "Ringed gas giant, mining platforms in orbit.",
-      "detail": ["Site of the corporate mining dispute."],
-      "position": { "x": 150, "y": 260 }
-    },
-    {
-      "id": "body-oberon-prime",
-      "systemId": "system-oberon",
-      "name": "Oberon Prime",
-      "type": "rocky planet",
-      "description": "A small colony world.",
-      "detail": ["Population ~800, mostly farmers."],
-      "position": { "x": 100, "y": 200 }
-    },
-    {
-      "id": "body-oberon-moon",
-      "systemId": "system-oberon",
-      "name": "Oberon Moon",
-      "type": "satellite",
-      "description": "A tracking and relay satellite.",
-      "detail": ["Automated, unmanned."],
-      "position": { "x": 260, "y": 240 }
-    },
-    {
-      "id": "body-hearthhome-capital",
-      "systemId": "system-hearthhome",
-      "name": "Hearthhome Capital",
-      "type": "settlement",
-      "description": "Seat of the Compact government.",
-      "detail": ["Population ~2 million."],
-      "position": { "x": 180, "y": 150 }
-    },
-    {
-      "id": "body-hearthhome-shipyard",
-      "systemId": "system-hearthhome",
-      "name": "Hearthhome Shipyard",
-      "type": "orbital station",
-      "description": "Primary naval shipyard.",
-      "detail": ["Home port of the Compact fleet."],
-      "position": { "x": 320, "y": 180 }
-    },
-    {
-      "id": "body-lowlight-outpost",
-      "systemId": "system-lowlight",
-      "name": "Lowlight Outpost",
-      "type": "settlement",
-      "description": "A drydock and repair outpost.",
-      "detail": ["Small permanent crew, mostly engineers."],
-      "position": { "x": 200, "y": 200 }
-    },
-    {
-      "id": "body-solitude-wreck",
-      "systemId": "system-solitude",
-      "name": "The Wreck",
-      "type": "derelict",
-      "description": "The remains of a long-abandoned station.",
-      "detail": ["No known survivors. Origin unknown."],
-      "position": { "x": 200, "y": 200 }
-    }
-  ],
   "clusterRoutes": [
     { "from": "cluster-verge", "to": "cluster-hearth", "label": "Compact Trunk Line", "type": "trade" }
   ],
@@ -176,9 +93,219 @@
     { "from": "system-anchor", "to": "system-oberon", "label": "Anchor-Oberon Run", "type": "trade" },
     { "from": "system-hearthhome", "to": "system-lowlight", "label": "Fleet Supply Line", "type": "military" }
   ],
-  "bodyRoutes": [
-    { "from": "body-anchor-i", "to": "body-anchor-station", "type": "shuttle" },
-    { "from": "body-oberon-prime", "to": "body-oberon-moon", "type": "shuttle" },
-    { "from": "body-hearthhome-capital", "to": "body-hearthhome-shipyard", "type": "shuttle" }
+  "orbitalBodies": [
+    {
+      "id": "orb-anchor-i",
+      "systemId": "system-anchor",
+      "name": "Anchor I",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "description": "Barren, mined out.",
+      "detail": ["Automated mining rigs still operate here unattended."]
+    },
+    {
+      "id": "orb-anchor-station",
+      "systemId": "system-anchor",
+      "name": "Anchor Station",
+      "type": "settlement",
+      "bodyType": "station",
+      "orbitOrder": 2,
+      "description": "A relay and trade hub.",
+      "detail": ["Population ~4,000. Neutral ground for Verge traders."]
+    },
+    {
+      "id": "orb-kestrel-i",
+      "systemId": "system-kestrel",
+      "name": "Kestrel I",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "orbitOrder": 1,
+      "description": "A scorched inner world.",
+      "detail": ["Too close to the twin stars for permanent habitation."]
+    },
+    {
+      "id": "orb-kestrel-ii",
+      "systemId": "system-kestrel",
+      "name": "Kestrel II",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "ring": { "tilt": 18, "style": "debris" },
+      "orbitOrder": 2,
+      "description": "Ringed gas giant, mining platforms in orbit.",
+      "detail": ["Site of the corporate mining dispute."]
+    },
+    {
+      "id": "orb-kestrel-belt",
+      "systemId": "system-kestrel",
+      "name": "Tor Belt",
+      "type": "asteroid field",
+      "bodyType": "asteroidField",
+      "orbitOrder": 3,
+      "description": "A scattered band of rock and ice.",
+      "detail": ["Claimed but never fully surveyed."]
+    },
+    {
+      "id": "orb-kestrel-relay",
+      "systemId": "system-kestrel",
+      "name": "Kestrel Relay",
+      "type": "relay station",
+      "bodyType": "station",
+      "orbitOrder": 4,
+      "description": "An independent relay station between the belt and open space.",
+      "detail": ["Operated jointly by both mining corporations."]
+    },
+    {
+      "id": "orb-kestrel-probe",
+      "systemId": "system-kestrel",
+      "name": "Watcher Probe",
+      "type": "survey satellite",
+      "bodyType": "satellite",
+      "orbitOrder": 5,
+      "description": "An automated survey probe holding station at the system's edge.",
+      "detail": ["Broadcasts telemetry to Anchor Station."]
+    },
+    {
+      "id": "orb-kestrel-marker",
+      "systemId": "system-kestrel",
+      "name": "Boundary Marker",
+      "type": "navigation marker",
+      "bodyType": "misc",
+      "orbitOrder": 6,
+      "description": "A derelict nav beacon of unknown origin.",
+      "detail": ["Its transponder still cycles a dead corporate ID."]
+    },
+    {
+      "id": "orb-oberon-prime",
+      "systemId": "system-oberon",
+      "name": "Oberon Prime",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "description": "A small colony world.",
+      "detail": ["Population ~800, mostly farmers."]
+    },
+    {
+      "id": "orb-hearthhome-capital",
+      "systemId": "system-hearthhome",
+      "name": "Hearthhome Capital",
+      "type": "settlement",
+      "bodyType": "planet",
+      "scale": "large",
+      "orbitOrder": 1,
+      "description": "Seat of the Compact government.",
+      "detail": ["Population ~2 million."]
+    },
+    {
+      "id": "orb-lowlight-outpost",
+      "systemId": "system-lowlight",
+      "name": "Lowlight Outpost",
+      "type": "drydock outpost",
+      "bodyType": "station",
+      "orbitOrder": 1,
+      "description": "A drydock and repair outpost.",
+      "detail": ["Small permanent crew, mostly engineers."]
+    },
+    {
+      "id": "orb-solitude-wreck",
+      "systemId": "system-solitude",
+      "name": "The Wreck",
+      "type": "derelict station",
+      "bodyType": "station",
+      "orbitOrder": 1,
+      "description": "The remains of a long-abandoned station.",
+      "detail": ["No known survivors. Origin unknown."]
+    }
+  ],
+  "moons": [
+    {
+      "id": "moon-kestrel-ii-tor",
+      "planetId": "orb-kestrel-ii",
+      "order": 0,
+      "name": "Tor",
+      "type": "rocky moon",
+      "description": "Kestrel II's largest moon, tidally locked.",
+      "detail": ["Home to the corporate mining camp."]
+    },
+    {
+      "id": "moon-kestrel-ii-vash",
+      "planetId": "orb-kestrel-ii",
+      "order": 1,
+      "name": "Vash",
+      "type": "icy moon",
+      "description": "A small, airless moon with no permanent presence.",
+      "detail": ["Occasionally used as a fuel depot by passing miners."]
+    },
+    {
+      "id": "moon-oberon-moon",
+      "planetId": "orb-oberon-prime",
+      "order": 0,
+      "name": "Oberon Moon",
+      "type": "relay moon",
+      "description": "A tracking and relay satellite in permanent orbit around Oberon Prime.",
+      "detail": ["Automated, unmanned."]
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc-kestrel-ii-outpost",
+      "planetId": "orb-kestrel-ii",
+      "name": "Stormline Outpost",
+      "type": "surface outpost",
+      "description": "A pressurized platform anchored in the upper cloud deck.",
+      "detail": ["Crew rotates every 40 days."],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-tor-camp",
+      "planetId": "orb-kestrel-ii",
+      "name": "Tor Camp",
+      "type": "mining camp",
+      "description": "The corporate mining camp on Tor's surface.",
+      "detail": ["Staffed year-round by contract miners."],
+      "locatedAt": { "kind": "moon", "moonId": "moon-kestrel-ii-tor" }
+    },
+    {
+      "id": "loc-kestrel-ii-mine",
+      "planetId": "orb-kestrel-ii",
+      "name": "Cloud Mine Platform",
+      "type": "mining rig",
+      "description": "Harvests gas from Kestrel II's ring band.",
+      "detail": ["Site of the corporate mining dispute."],
+      "locatedAt": { "kind": "orbit" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-tor-belt-gate",
+      "planetId": "orb-kestrel-belt",
+      "name": "Starfold Gate",
+      "type": "jump gate",
+      "description": "A gate marking the edge of charted space.",
+      "detail": ["Gateway to unsurveyed systems beyond the Verge."],
+      "locatedAt": { "kind": "orbit" }
+    },
+    {
+      "id": "loc-hearthhome-shipyard",
+      "planetId": "orb-hearthhome-capital",
+      "name": "Hearthhome Shipyard",
+      "type": "orbital station",
+      "description": "Primary naval shipyard.",
+      "detail": ["Home port of the Compact fleet."],
+      "locatedAt": { "kind": "orbit" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-solitude-tether",
+      "planetId": "orb-solitude-wreck",
+      "name": "Salvage Tether",
+      "type": "salvage access point",
+      "description": "A jury-rigged airlock tether left by the last salvage team.",
+      "detail": ["No one has returned to check on it."],
+      "locatedAt": { "kind": "orbit" }
+    }
   ]
 }
