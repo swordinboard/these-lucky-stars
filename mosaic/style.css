@@ -306,10 +306,26 @@ circle.hit-area {
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform 0.25s ease;
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
 }
 
 .location-list.open {
     transform: translateX(0);
+}
+
+.location-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.location-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.location-list::-webkit-scrollbar-thumb {
+    background: var(--screen-glow);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.5);
 }
 
 .location-list-backdrop {
@@ -603,3 +619,38 @@ circle.hit-area {
 .hud-corner--tr { top: 0; right: 0; }
 .hud-corner--bl { bottom: 0; left: 0; }
 .hud-corner--br { bottom: 0; right: 0; }
+
+/* --- Orbital rail: a visual scrollbar along the map's top edge, shown only
+   in the orrery's horizontally-locked side-scroll mode (main.js toggles
+   `.visible` — it stays hidden for the freely-2D-pannable cluster/system
+   maps). The thumb's left/width track the same transform math panzoom.js
+   already computes for clamping, so it always reflects genuine scroll
+   position/range rather than an approximation. --- */
+.orbital-scrollbar {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    right: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(111, 224, 255, 0.12);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 6;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.orbital-scrollbar.visible {
+    opacity: 1;
+}
+
+.orbital-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background: var(--screen-glow);
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.7);
+    transition: left 0.05s linear, width 0.05s linear;
+}

@@ -37,6 +37,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     // drag/zoom — apply() is the single place all transform mutations funnel
     // through, so the lock stays correct regardless of what caused the change.
     function apply() {
+        let scrollExtent = null;
         if (constraints) {
             const { gutter, trailingMargin, contentMinX, contentMaxX, rectWidth, fixedY } = constraints;
             const maxX = gutter - contentMinX * transform.k;
@@ -44,9 +45,25 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
             const minX = Math.min(minXRaw, maxX);
             transform.x = Math.min(maxX, Math.max(minX, transform.x));
             transform.y = fixedY;
+
+            // Total pixel span the content sweeps through while scrolling
+            // start-to-end, including the viewport-width "window" itself —
+            // the standard denominator for scrollbar-thumb math. When there's
+            // nothing to scroll (content narrower than the viewport), maxX
+            // collapses to minX and the thumb should just fill the track.
+            const totalRange = maxX - minX + rectWidth;
+            if (totalRange <= 0 || maxX <= minX) {
+                scrollExtent = { start: 0, end: 1 };
+            } else {
+                const windowStart = maxX - transform.x;
+                scrollExtent = {
+                    start: windowStart / totalRange,
+                    end: (windowStart + rectWidth) / totalRange,
+                };
+            }
         }
         viewportEl.setAttribute('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
-        onChange && onChange(transform);
+        onChange && onChange(transform, scrollExtent);
     }
 
     function svgPoint(evt) {

@@ -21,6 +21,8 @@ async function main() {
     const locationBackdropEl = document.getElementById('location-list-backdrop');
     const breadcrumbEl = document.getElementById('breadcrumb');
     const detailsEl = document.getElementById('details-panel');
+    const scrollbarEl = document.getElementById('orbital-scrollbar');
+    const scrollbarThumbEl = document.getElementById('orbital-scrollbar-thumb');
 
     locationBackdropEl.addEventListener('click', () => goUp('orbital'));
 
@@ -32,8 +34,16 @@ async function main() {
             const entity = getById(nodeId);
             if (entity && entity.kind !== 'location') drillInto(entity);
         },
-        onChange({ x, y }) {
+        onChange({ x, y }, scrollExtent) {
             setStarfieldOffset(x * STARFIELD_PARALLAX_FACTOR, y * STARFIELD_PARALLAX_FACTOR);
+            // Only the orrery is a horizontally-locked side-scroller — the
+            // cluster/system maps pan freely in both axes, so the rail only
+            // makes sense (and only appears) here.
+            scrollbarEl.classList.toggle('visible', Boolean(scrollExtent));
+            if (scrollExtent) {
+                scrollbarThumbEl.style.left = `${scrollExtent.start * 100}%`;
+                scrollbarThumbEl.style.width = `${(scrollExtent.end - scrollExtent.start) * 100}%`;
+            }
         },
     });
     let lastFitKey = null;
