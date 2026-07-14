@@ -159,9 +159,11 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
         },
 
         // Orrery mode: fit to height only (not width), constrain panning to
-        // horizontal side-scroll between `gutter` and the last body — zoom
-        // still works freely. Returns { fixedY } so the caller can position
-        // a separately-drawn, non-panned star anchor at the same baseline.
+        // horizontal side-scroll — content can never scroll past showing
+        // `gutter` aligned to `bounds.minX` (e.g. the star's center docked at
+        // the screen edge), but is free to scroll further to reveal distant
+        // bodies, letting that reference point scroll fully off-screen.
+        // Zoom still works freely.
         fitHorizontal(bounds, gutter) {
             const rect = svgEl.getBoundingClientRect();
             const height = Math.max(bounds.maxY - bounds.minY, 1) + FIT_PADDING * 2;
@@ -181,8 +183,6 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap } = {}) {
             transform.x = gutter - bounds.minX * scale;
             transform.y = fixedY;
             apply();
-
-            return { fixedY };
         },
     };
 }

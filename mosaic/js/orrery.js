@@ -3,16 +3,14 @@ import { createIcon } from './icons.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
-// The star is drawn in a separate, non-panned anchor group (see
-// renderStarAnchor) rather than inside the pannable content — that's what
-// makes it stay genuinely "locked" to the left edge while the rest of the
-// system scrolls past it, instead of scrolling away itself once you pan far
-// enough. CONTENT_GUTTER is where the pan/zoom controller aligns the first
-// body on screen, leaving room for the separately-drawn star to its left.
-export const STAR_RADIUS = 50;
-export const STAR_SCREEN_X = 40;
-export const CONTENT_GUTTER = 150;
-
+// The star sits at content-x 0, non-interactive, drawn as part of the normal
+// pannable content (not a separate fixed element) — panzoom.js clamps
+// transform.x so its center can never scroll past screen-x 0 (no revealing
+// empty space before it), while panning toward distant bodies is free to
+// scroll it fully off-screen, same as any other content.
+const STAR_X = 0;
+const STAR_RADIUS = 50;
+const FIRST_BODY_OFFSET = 140;
 const ORBIT_SPACING = 130;
 const BASELINE_Y = 0;
 
@@ -24,6 +22,7 @@ const MOON_ROW_Y = 60;
 const MOON_GAP = 34;
 const INDICATOR_ROW_Y = 95;
 const INDICATOR_RADIUS = 3;
+const INDICATOR_GAP = 10;
 
 function el(tag, attrs) {
     const node = document.createElementNS(SVG_NS, tag);
@@ -69,20 +68,20 @@ function drawLabel(group, text, y) {
 // a tap landing in the "gap" hit nothing. A transparent (not `fill: none`)
 // circle sized to the node's full extent, inserted as the first child,
 // gives every node a reliable, generously-sized hit target without changing
-// how it looks.
+// how it looks (see the `!important` on `.hit-area` in style.css — plain
+// specificity isn't enough to keep it invisible against `.node circle` etc).
 function addHitArea(group, radius) {
     group.insertBefore(el('circle', { class: 'hit-area', cx: 0, cy: 0, r: radius + 4 }), group.firstChild);
 }
 
-// One dot per location (not one dot regardless of count), fanned out
-// horizontally so the count at a glance hints at how much is there.
+// One dot per location (not one dot regardless of count), stacked
+// vertically below the drop-line so the count reads at a glance.
 function drawIndicatorDots(group, x, fromY, count) {
     if (!count) return;
-    const gap = 10;
-    const startX = x - ((count - 1) * gap) / 2;
-    group.appendChild(el('line', { class: 'drop-line', x1: x, y1: fromY, x2: x, y2: INDICATOR_ROW_Y }));
+    const lastY = INDICATOR_ROW_Y + (count - 1) * INDICATOR_GAP;
+    group.appendChild(el('line', { class: 'drop-line', x1: x, y1: fromY, x2: x, y2: lastY }));
     for (let i = 0; i < count; i++) {
-        group.appendChild(el('circle', { class: 'indicator-dot', cx: startX + i * gap, cy: INDICATOR_ROW_Y, r: INDICATOR_RADIUS }));
+        group.appendChild(el('circle', { class: 'indicator-dot', cx: x, cy: INDICATOR_ROW_Y + i * INDICATOR_GAP, r: INDICATOR_RADIUS }));
     }
 }
 
@@ -143,32 +142,24 @@ function drawMoons(viewportEl, body, x, radius, ownLocations) {
     });
 }
 
-// Drawn once into a fixed (non-transformed) sibling group of the pannable
-// viewport, positioned by main.js at (STAR_SCREEN_X, fixedY) after fitting —
-// this is what keeps it visually pinned regardless of pan/zoom.
-export function renderStarAnchor(starEl) {
-    while (starEl.firstChild) starEl.removeChild(starEl.firstChild);
-    starEl.appendChild(
-        el('path', {
-            class: 'star',
-            d: `M 0 ${-STAR_RADIUS} A ${STAR_RADIUS} ${STAR_RADIUS} 0 0 1 0 ${STAR_RADIUS} Z`,
-        }),
-    );
-}
-
 export function renderOrrery(viewportEl, state) {
     while (viewportEl.firstChild) viewportEl.removeChild(viewportEl.firstChild);
 
     const bodies = orbitalBodiesOf(state.systemId);
 
-    let maxX = 0;
-    let maxRadius = 0;
+    const star = el('path', {
+        class: 'star',
+        d: `M ${STAR_X} ${BASELINE_Y - STAR_RADIUS} A ${STAR_RADIUS} ${STAR_RADIUS} 0 0 1 ${STAR_X} ${BASELINE_Y + STAR_RADIUS} Z`,
+    });
+    viewportEl.appendChild(star);
+
+    let maxX = STAR_X;
+    let maxRadius = STAR_RADIUS;
 
     bodies.forEach((body, index) => {
-        const x = index * ORBIT_SPACING;
+        const x = STAR_X + FIRST_BODY_OFFSET + index * ORBIT_SPACING;
         const radius = radiusFor(body);
         maxX = Math.max(maxX, x + radius);
-        maxRadius = Math.max(maxRadius, radius);
 
         const group = el('g', {
             class: `node node-${body.bodyType}`,
@@ -203,7 +194,7 @@ export function renderOrrery(viewportEl, state) {
     });
 
     return {
-        minX: -20,
+        minX: STAR_X,
         maxX: maxX + 50,
         minY: BASELINE_Y - maxRadius - 40,
         maxY: INDICATOR_ROW_Y + 40,

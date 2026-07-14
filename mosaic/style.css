@@ -121,6 +121,7 @@ body {
 /* --- Map area (full-bleed) --- */
 
 .map-area {
+    position: relative;
     flex: 1;
     min-height: 0;
     display: flex;
@@ -219,10 +220,13 @@ body {
 /* Invisible, generously-sized hit target — SVG shapes with `fill: none`
    (an unfilled ring, a stroke-only icon circle) don't register clicks in
    their "empty" interior, and scattered asteroid dots leave gaps between
-   them. A transparent (not `none`) fill still counts for hit-testing. */
-.hit-area {
-    fill: transparent;
-    stroke: none;
+   them. A transparent (not `none`) fill still counts for hit-testing.
+   `!important` is deliberate here: this class's whole job is to defeat the
+   more specific `.node circle` / `.node-planet circle` / etc. rules that
+   would otherwise paint it with the node's normal fill color. */
+circle.hit-area {
+    fill: transparent !important;
+    stroke: none !important;
 }
 
 .icon {
@@ -242,32 +246,31 @@ body {
     stroke-width: 1.5;
 }
 
-/* --- Location list: slides in as a drawer over the (still-visible) orrery,
-   rather than replacing it --- */
+/* --- Location list: slides in from the right, scoped to the map area (which
+   already sits exactly between the header and footer) so both stay visible
+   and usable while it's open, rather than covering the whole screen --- */
 
 .location-list {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    top: 0;
     right: 0;
     bottom: 0;
-    height: 70dvh;
-    max-height: 70dvh;
+    width: min(420px, 90vw);
     background: #000000;
-    border-top: 1px solid var(--border-color);
-    border-radius: 16px 16px 0 0;
-    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.4);
+    border-left: 1px solid var(--border-color);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4);
     z-index: 20;
     overflow-y: auto;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: transform 0.25s ease;
 }
 
 .location-list.open {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .location-list-backdrop {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 18;
