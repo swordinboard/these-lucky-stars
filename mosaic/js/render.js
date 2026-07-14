@@ -4,6 +4,14 @@ const SVG_NS = 'http://www.w3.org/2000/svg';
 const SYSTEM_NODE_RADIUS = 16;
 const MIN_SECTOR_RADIUS = 60;
 const MAX_SECTOR_RADIUS = 200;
+const CLOUD_RADIUS_FACTOR = 1.4;
+
+// Star clouds render larger than ordinary clusters/sectors to visually set
+// them apart, similar to how differently-sized bodies are distinguished in
+// the orrery view.
+function radiusFor(entity, baseRadius) {
+    return entity.type === 'star cloud' ? baseRadius * CLOUD_RADIUS_FACTOR : baseRadius;
+}
 
 function entitiesAndRoutesFor(state) {
     if (state.level === 'cluster') {
@@ -35,15 +43,19 @@ function sectorRadiusFor(entities) {
     return Math.min(MAX_SECTOR_RADIUS, Math.max(MIN_SECTOR_RADIUS, nearest * 0.45));
 }
 
-function boundsOf(entities, radius) {
-    const xs = entities.map((entity) => entity.position.x);
-    const ys = entities.map((entity) => entity.position.y);
-    return {
-        minX: Math.min(...xs) - radius,
-        maxX: Math.max(...xs) + radius,
-        minY: Math.min(...ys) - radius,
-        maxY: Math.max(...ys) + radius,
-    };
+function boundsOf(entities, radiusForEntity) {
+    let minX = Infinity;
+    let maxX = -Infinity;
+    let minY = Infinity;
+    let maxY = -Infinity;
+    for (const entity of entities) {
+        const r = radiusForEntity(entity);
+        minX = Math.min(minX, entity.position.x - r);
+        maxX = Math.max(maxX, entity.position.x + r);
+        minY = Math.min(minY, entity.position.y - r);
+        maxY = Math.max(maxY, entity.position.y + r);
+    }
+    return { minX, maxX, minY, maxY };
 }
 
 export function renderLevel(viewportEl, state) {
@@ -89,8 +101,10 @@ export function renderLevel(viewportEl, state) {
         g.setAttribute('transform', `translate(${entity.position.x},${entity.position.y})`);
         g.setAttribute('data-id', entity.id);
 
+        const r = isSectorView ? radiusFor(entity, radius) : radius;
+
         const circle = document.createElementNS(SVG_NS, 'circle');
-        circle.setAttribute('r', radius);
+        circle.setAttribute('r', r);
         g.appendChild(circle);
 
         const label = document.createElementNS(SVG_NS, 'text');
@@ -99,7 +113,7 @@ export function renderLevel(viewportEl, state) {
             label.setAttribute('y', '6');
             label.setAttribute('dominant-baseline', 'middle');
         } else {
-            label.setAttribute('y', radius + 16);
+            label.setAttribute('y', r + 16);
         }
         label.textContent = entity.name;
         g.appendChild(label);
@@ -107,5 +121,7 @@ export function renderLevel(viewportEl, state) {
         nodeGroup.appendChild(g);
     }
 
-    return entities.length ? boundsOf(entities, radius) : null;
+    return entities.length
+        ? boundsOf(entities, (entity) => (isSectorView ? radiusFor(entity, radius) : radius))
+        : null;
 }

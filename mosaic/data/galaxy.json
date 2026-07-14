@@ -34,7 +34,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 1092, "y": 3700 }
+      "position": { "x": 1419, "y": 2340 }
     },
     {
       "id": "cluster-beta",
@@ -42,7 +42,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 1092, "y": 4420 }
+      "position": { "x": 1419, "y": 2736 }
     },
     {
       "id": "cluster-danswai",
@@ -50,7 +50,7 @@
       "type": "star cloud",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
       "detail": [],
-      "position": { "x": 1382, "y": 1380 }
+      "position": { "x": 1579, "y": 1064 }
     },
     {
       "id": "cluster-fold",
@@ -58,7 +58,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 2980, "y": 3780 }
+      "position": { "x": 2458, "y": 2384 }
     },
     {
       "id": "cluster-forrow",
@@ -66,7 +66,7 @@
       "type": "cluster",
       "description": "The home cluster of Hravia. Their homeworld was destroyed by an unrecorded cause, referred to only as \"XXXX\" in surviving accounts.",
       "detail": [],
-      "position": { "x": 2364, "y": 900 }
+      "position": { "x": 2119, "y": 800 }
     },
     {
       "id": "cluster-hart",
@@ -74,7 +74,7 @@
       "type": "star cloud",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 2364, "y": 2240 }
+      "position": { "x": 2119, "y": 1537 }
     },
     {
       "id": "cluster-hope",
@@ -82,7 +82,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 1700, "y": 2980 }
+      "position": { "x": 1754, "y": 1944 }
     },
     {
       "id": "cluster-lee",
@@ -90,7 +90,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 2980, "y": 2980 }
+      "position": { "x": 2458, "y": 1944 }
     },
     {
       "id": "cluster-nor",
@@ -98,7 +98,7 @@
       "type": "cluster",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
       "detail": [],
-      "position": { "x": 2364, "y": 1580 }
+      "position": { "x": 2119, "y": 1174 }
     },
     {
       "id": "cluster-pistil",
@@ -109,7 +109,7 @@
         "Star systems: 3 known, 2 speculated.",
         "Access from Danswai Cloud is limited and the route is not well charted."
       ],
-      "position": { "x": 420, "y": 1380 }
+      "position": { "x": 1050, "y": 1064 }
     },
     {
       "id": "cluster-teegarden",
@@ -117,7 +117,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Affiliated with SolPAC."],
-      "position": { "x": 1092, "y": 2260 }
+      "position": { "x": 1419, "y": 1548 }
     },
     {
       "id": "cluster-weisman",
@@ -125,7 +125,7 @@
       "type": "star cloud",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 440, "y": 2980 }
+      "position": { "x": 1061, "y": 1944 }
     },
     {
       "id": "cluster-morrison",
@@ -133,7 +133,7 @@
       "type": "cluster",
       "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
       "detail": ["Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
-      "position": { "x": 2340, "y": 2980 }
+      "position": { "x": 2106, "y": 1944 }
     },
     {
       "id": "cluster-local",
@@ -141,7 +141,7 @@
       "type": "cluster",
       "description": "All systems under SolPAC control.",
       "detail": [],
-      "position": { "x": 1092, "y": 2980 }
+      "position": { "x": 1419, "y": 1944 }
     },
     {
       "id": "cluster-homestead",
@@ -149,7 +149,7 @@
       "type": "cluster",
       "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
       "detail": [],
-      "position": { "x": 3580, "y": 2980 }
+      "position": { "x": 2788, "y": 1944 }
     }
   ],
   "systems": [
