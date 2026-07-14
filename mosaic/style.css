@@ -439,6 +439,12 @@ circle.hit-area {
     padding: 12px 16px;
     padding-top: 20px;
     overflow-y: auto;
+    /* A real length here (not the default `none`) is required for the
+       max-height transition below to actually interpolate — `none` isn't a
+       length, so a transition between it and `.expanded`'s 42vh can't be
+       animated at all and just snaps instantly regardless of duration. This
+       is sized to comfortably fit the one-line placeholder text at rest. */
+    max-height: 84px;
     transition: max-height var(--drawer-duration) var(--drawer-easing);
 }
 

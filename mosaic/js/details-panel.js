@@ -41,26 +41,58 @@ function exitFullPage(el) {
     el.classList.remove('full', 'full-entering');
 }
 
-export function renderDetailsPanel(el, state) {
+let cancelPendingCollapse = null;
+
+function showPlaceholder(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
+    const placeholder = document.createElement('p');
+    placeholder.className = 'details-placeholder';
+    placeholder.textContent = PLACEHOLDER_TEXT[state.level];
+    el.appendChild(placeholder);
+}
+
+export function renderDetailsPanel(el, state) {
+    if (cancelPendingCollapse) {
+        cancelPendingCollapse();
+        cancelPendingCollapse = null;
+    }
 
     const entity = state.selectedId ? getById(state.selectedId) : null;
     const isFullPage = Boolean(entity) && entity.kind === 'location';
+    const wasExpanded = el.classList.contains('expanded');
 
     if (isFullPage) {
         enterFullPage(el);
+    } else if (entity) {
+        exitFullPage(el);
+        el.classList.add('expanded');
+    } else if (wasExpanded) {
+        // Closing from the compact preview: the max-height shrink is only
+        // visible while there's still enough content to be clipped by it —
+        // swapping straight to the single-line placeholder text would make
+        // the box's natural height drop below the shrinking max-height
+        // instantly, so the collapse would look instant no matter how slow
+        // the transition is. Leave the outgoing content in place until the
+        // shrink finishes, then swap it for the placeholder.
+        exitFullPage(el);
+        el.classList.remove('expanded');
+        const onEnd = (evt) => {
+            if (evt.target !== el || evt.propertyName !== 'max-height') return;
+            el.removeEventListener('transitionend', onEnd);
+            cancelPendingCollapse = null;
+            showPlaceholder(el, state);
+        };
+        el.addEventListener('transitionend', onEnd);
+        cancelPendingCollapse = () => el.removeEventListener('transitionend', onEnd);
+        return;
     } else {
         exitFullPage(el);
-        el.classList.toggle('expanded', Boolean(entity));
-    }
-
-    if (!entity) {
-        const placeholder = document.createElement('p');
-        placeholder.className = 'details-placeholder';
-        placeholder.textContent = PLACEHOLDER_TEXT[state.level];
-        el.appendChild(placeholder);
+        el.classList.remove('expanded');
+        showPlaceholder(el, state);
         return;
     }
+
+    while (el.firstChild) el.removeChild(el.firstChild);
 
     const closeButton = document.createElement('button');
     closeButton.type = 'button';
