@@ -30,6 +30,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     let singleGesture = null;
     let lastTap = { time: 0, id: null };
     let constraints = null;
+    let suppressGhostClickUntil = 0;
 
     // When constraints are set (the orrery's "star locked left, side-scroll"
     // mode), clamp every transform change here rather than special-casing
@@ -63,6 +64,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     }
 
     function onPointerDown(evt) {
+        evt.preventDefault();
         svgEl.setPointerCapture(evt.pointerId);
         const point = svgPoint(evt);
         pointers.set(evt.pointerId, point);
@@ -103,6 +105,7 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     }
 
     function onPointerEnd(evt) {
+        evt.preventDefault();
         if (singleGesture && singleGesture.pointerId === evt.pointerId) {
             const finalPoint = pointers.get(evt.pointerId) || svgPoint(evt);
             const moved = distance(finalPoint, { x: singleGesture.startX, y: singleGesture.startY });
@@ -110,6 +113,17 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
             if (moved < TAP_MOVE_THRESHOLD && singleGesture.nodeId) {
                 const now = Date.now();
                 if (now - lastTap.time < DOUBLE_TAP_MS && lastTap.id === singleGesture.nodeId) {
+                    // Chromium still dispatches a synthesized compatibility
+                    // 'click' after touch input even though pointerdown/up
+                    // above call preventDefault(). That ghost click re-hit-
+                    // tests the DOM a few ms after this handler returns, so
+                    // if onDoubleTap just revealed a new interactive overlay
+                    // (e.g. the location drawer's backdrop), the ghost click
+                    // can land on it and immediately undo what the double-tap
+                    // opened. Swallow the very next click within a window far
+                    // shorter than any real human input can chain, to eat
+                    // that ghost click specifically.
+                    if (evt.pointerType === 'touch') suppressGhostClickUntil = Date.now() + 100;
                     onDoubleTap && onDoubleTap(singleGesture.nodeId);
                     lastTap = { time: 0, id: null };
                 } else {
@@ -142,6 +156,13 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     svgEl.addEventListener('pointerup', onPointerEnd);
     svgEl.addEventListener('pointercancel', onPointerEnd);
     svgEl.addEventListener('wheel', onWheel, { passive: false });
+    document.addEventListener('click', (evt) => {
+        if (Date.now() < suppressGhostClickUntil) {
+            suppressGhostClickUntil = 0;
+            evt.preventDefault();
+            evt.stopPropagation();
+        }
+    }, true);
 
     return {
         fitToBounds(bounds) {

@@ -1,5 +1,5 @@
 import { getById, moonsOf, locationsOf } from './data.js';
-import { select, goUp, openWriteup } from './state.js';
+import { select, goUp } from './state.js';
 import { createIcon } from './icons.js';
 
 const DEFAULT_ICON = { surface: 'surface', moon: 'moon', orbit: 'satellite' };
@@ -28,12 +28,7 @@ function renderSection(container, title, entries) {
         label.textContent = location.name;
         button.appendChild(label);
 
-        // Same single-tap-select / double-tap-commit pattern used for the
-        // orrery nodes. These are plain DOM buttons (never under
-        // setPointerCapture), so native dblclick fires reliably here without
-        // needing the custom tap-timing logic panzoom.js uses for SVG nodes.
         button.addEventListener('click', () => select(location.id));
-        button.addEventListener('dblclick', () => openWriteup(location.id));
         item.appendChild(button);
         list.appendChild(item);
     }

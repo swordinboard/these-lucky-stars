@@ -1,5 +1,5 @@
 import { getById } from './data.js';
-import { drillInto, deselect, openWriteup } from './state.js';
+import { drillInto, deselect } from './state.js';
 
 const DRILL_LABEL = {
     cluster: 'View systems →',
@@ -10,7 +10,6 @@ const DRILL_LABEL = {
     station: 'View locations →',
     misc: 'View locations →',
     moon: 'View locations →',
-    location: 'Read more →',
 };
 const PLACEHOLDER_TEXT = {
     cluster: 'Select a sector to view details.',
@@ -20,11 +19,9 @@ const PLACEHOLDER_TEXT = {
 };
 
 // Locations get a full-page "writeup" treatment (they're where the actual
-// lore/setting text lives), but only once explicitly opened (double-tap/
-// double-click, or the "Read more →" button) — a single tap/click just
-// selects it like any other kind, showing the compact docked-footer preview.
-// Since the panel switches from in-flow to `position: fixed` for the
-// full-page state, a plain class toggle can't animate smoothly (position
+// lore/setting text lives); every other kind gets the compact docked-footer
+// preview. Since the panel switches from in-flow to `position: fixed` for
+// the full-page state, a plain class toggle can't animate smoothly (position
 // isn't interpolable) — so entry is staged across two frames: apply the
 // off-screen "entering" position first, force a layout flush, then swap to
 // the "shown" position on the next frame so the transform transition has a
@@ -48,9 +45,9 @@ export function renderDetailsPanel(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
 
     const entity = state.selectedId ? getById(state.selectedId) : null;
-    const isOpenWriteup = Boolean(entity) && entity.kind === 'location' && state.openLocationId === state.selectedId;
+    const isFullPage = Boolean(entity) && entity.kind === 'location';
 
-    if (isOpenWriteup) {
+    if (isFullPage) {
         enterFullPage(el);
     } else {
         exitFullPage(el);
@@ -93,15 +90,12 @@ export function renderDetailsPanel(el, state) {
         el.appendChild(p);
     }
 
-    if (DRILL_LABEL[entity.kind] && !isOpenWriteup) {
+    if (DRILL_LABEL[entity.kind]) {
         const drillButton = document.createElement('button');
         drillButton.type = 'button';
         drillButton.className = 'details-drill';
         drillButton.textContent = DRILL_LABEL[entity.kind];
-        drillButton.addEventListener('click', () => {
-            if (entity.kind === 'location') openWriteup(entity.id);
-            else drillInto(entity);
-        });
+        drillButton.addEventListener('click', () => drillInto(entity));
         el.appendChild(drillButton);
     }
 }
