@@ -17,11 +17,14 @@ const CLOUD_ROTATION_RANGE = 18;
 // seeded per cluster id (reusing the same deterministic-but-varied PRNG
 // pattern used for the asteroid field and starfield) so each cloud looks a
 // little different from the others without being random on every reload.
+// A cluster can override the seeded rotation with an explicit `cloudRotation`
+// (degrees) in the data when a specific orientation is wanted.
 function cloudShape(entity, baseRadius) {
     const rand = mulberry32(hashStringToSeed(entity.id));
     const aspectX = CLOUD_ASPECT_X_RANGE[0] + rand() * (CLOUD_ASPECT_X_RANGE[1] - CLOUD_ASPECT_X_RANGE[0]);
     const aspectY = CLOUD_ASPECT_Y_RANGE[0] + rand() * (CLOUD_ASPECT_Y_RANGE[1] - CLOUD_ASPECT_Y_RANGE[0]);
-    const rotation = (rand() * 2 - 1) * CLOUD_ROTATION_RANGE;
+    const seededRotation = (rand() * 2 - 1) * CLOUD_ROTATION_RANGE;
+    const rotation = entity.cloudRotation ?? seededRotation;
     const r = baseRadius * CLOUD_RADIUS_FACTOR;
     return { rx: r * aspectX, ry: r * aspectY, rotation };
 }

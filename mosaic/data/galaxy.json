@@ -42,7 +42,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 1489, "y": 2692 }
+      "position": { "x": 1449, "y": 2565 }
     },
     {
       "id": "cluster-danswai",
@@ -85,7 +85,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
-      "position": { "x": 1827, "y": 1920 }
+      "position": { "x": 1757, "y": 1850 }
     },
     {
       "id": "cluster-lee",
@@ -128,6 +128,7 @@
       "name": "Weisman Cloud",
       "type": "star cloud",
       "accent": "teal",
+      "cloudRotation": 88,
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": [],
       "position": { "x": 986, "y": 2036 }
@@ -138,7 +139,7 @@
       "type": "cluster",
       "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
       "detail": ["Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
-      "position": { "x": 2081, "y": 1867 }
+      "position": { "x": 2081, "y": 1967 }
     },
     {
       "id": "cluster-local",
