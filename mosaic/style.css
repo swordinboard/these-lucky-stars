@@ -3,6 +3,7 @@
     --accent: #d27f27;
     --accent-teal: #45c9a8;
     --accent-violet: #b073e0;
+    --accent-blue: #5a8fd6;
     --border-color: #292360;
 
     --space-black: #05070d;
@@ -226,6 +227,12 @@ body {
 .node-cluster[data-accent="violet"] ellipse {
     fill: url(#sector-glow-violet);
     stroke: var(--accent-violet);
+}
+
+.node-cluster[data-accent="blue"] circle,
+.node-cluster[data-accent="blue"] ellipse {
+    fill: url(#sector-glow-blue);
+    stroke: var(--accent-blue);
 }
 
 .node-cluster .node-label {

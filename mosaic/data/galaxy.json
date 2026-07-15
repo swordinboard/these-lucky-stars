@@ -119,6 +119,7 @@
       "id": "cluster-teegarden",
       "name": "Teegarden Cluster",
       "type": "cluster",
+      "accent": "blue",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Affiliated with SolPAC."],
       "position": { "x": 1495, "y": 1488 }
@@ -145,6 +146,7 @@
       "id": "cluster-local",
       "name": "Local Cluster",
       "type": "cluster",
+      "accent": "blue",
       "description": "All systems under SolPAC control.",
       "detail": [],
       "position": { "x": 1494, "y": 1931 }
