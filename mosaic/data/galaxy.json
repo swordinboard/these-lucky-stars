@@ -570,7 +570,7 @@
       "hazard": "gas-giant",
       "orbitOrder": 7,
       "description": "The largest planet in the solar system.",
-      "detail": ["Its Great Red Spot is a storm larger than Earth that has raged for centuries.", "Has no solid surface to land on."]
+      "detail": ["Its Great Red Spot is a storm larger than Earth that has raged for centuries.", "Has no solid surface to land on.", "Beyond its four largest (Galilean) moons, around 90 more, much smaller moons are known."]
     },
     {
       "id": "orb-sol-saturn",
@@ -583,7 +583,7 @@
       "ring": { "tilt": 20, "style": "ice" },
       "orbitOrder": 8,
       "description": "Famous for its prominent ring system.",
-      "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on."]
+      "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on.", "Beyond Titan and Enceladus, well over 100 more, much smaller moons are known."]
     },
     {
       "id": "orb-sol-uranus",
@@ -595,7 +595,7 @@
       "hazard": "ice-giant",
       "orbitOrder": 9,
       "description": "An ice giant that rotates almost completely on its side.",
-      "detail": ["Its axis is tilted roughly 98 degrees, likely the result of an ancient collision.", "Has no solid surface to land on."]
+      "detail": ["Its axis is tilted roughly 98 degrees, likely the result of an ancient collision.", "Has no solid surface to land on.", "Beyond its five major moons, around 20 more, much smaller moons are known."]
     },
     {
       "id": "orb-sol-neptune",
@@ -607,7 +607,7 @@
       "hazard": "ice-giant",
       "orbitOrder": 10,
       "description": "The most distant planet from the Sun, and the windiest.",
-      "detail": ["Wind speeds can exceed 2,000 km/h, the fastest recorded in the solar system.", "Has no solid surface to land on."]
+      "detail": ["Wind speeds can exceed 2,000 km/h, the fastest recorded in the solar system.", "Has no solid surface to land on.", "Beyond Triton, around 15 more, much smaller moons are known."]
     },
     {
       "id": "orb-sol-pluto",
@@ -619,7 +619,7 @@
       "hazard": "extreme-cold",
       "orbitOrder": 11,
       "description": "A distant dwarf planet in the Kuiper Belt.",
-      "detail": ["Reclassified from a full planet in 2006, but still commonly counted among the Sun's family of worlds.", "Average surface temperature hovers around -240°C, among the coldest in the solar system."]
+      "detail": ["Reclassified from a full planet in 2006, but still commonly counted among the Sun's family of worlds.", "Average surface temperature hovers around -240°C, among the coldest in the solar system.", "Beyond Charon, four much smaller moons are known: Styx, Nix, Kerberos, and Hydra."]
     },
     {
       "id": "orb-chaq",
@@ -733,6 +733,150 @@
       "name": "Guy 4",
       "type": "icy moon",
       "description": "An icy rock with pure H2O deposits.",
+      "detail": []
+    },
+    {
+      "id": "moon-earth-moon",
+      "planetId": "orb-sol-earth",
+      "order": 0,
+      "name": "Moon",
+      "type": "rocky moon",
+      "description": "Earth's only natural satellite.",
+      "detail": []
+    },
+    {
+      "id": "moon-mars-phobos",
+      "planetId": "orb-sol-mars",
+      "order": 0,
+      "name": "Phobos",
+      "type": "rocky moon",
+      "description": "The larger and closer of Mars's two moons.",
+      "detail": ["Slowly spiraling inward; expected to eventually break apart or crash into Mars."]
+    },
+    {
+      "id": "moon-mars-deimos",
+      "planetId": "orb-sol-mars",
+      "order": 1,
+      "name": "Deimos",
+      "type": "rocky moon",
+      "description": "The smaller and more distant of Mars's two moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-io",
+      "planetId": "orb-sol-jupiter",
+      "order": 0,
+      "name": "Io",
+      "type": "volcanic moon",
+      "description": "The most volcanically active body in the solar system.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-europa",
+      "planetId": "orb-sol-jupiter",
+      "order": 1,
+      "name": "Europa",
+      "type": "icy moon",
+      "description": "An icy moon believed to hide a liquid water ocean beneath its surface.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-ganymede",
+      "planetId": "orb-sol-jupiter",
+      "order": 2,
+      "name": "Ganymede",
+      "type": "icy moon",
+      "description": "The largest moon in the solar system, bigger than the planet Mercury.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-callisto",
+      "planetId": "orb-sol-jupiter",
+      "order": 3,
+      "name": "Callisto",
+      "type": "icy moon",
+      "description": "One of the most heavily cratered bodies in the solar system.",
+      "detail": []
+    },
+    {
+      "id": "moon-saturn-titan",
+      "planetId": "orb-sol-saturn",
+      "order": 0,
+      "name": "Titan",
+      "type": "icy moon",
+      "description": "Saturn's largest moon, and the only moon in the solar system with a dense atmosphere.",
+      "detail": ["Has liquid lakes and seas on its surface, though of methane and ethane rather than water."]
+    },
+    {
+      "id": "moon-saturn-enceladus",
+      "planetId": "orb-sol-saturn",
+      "order": 1,
+      "name": "Enceladus",
+      "type": "icy moon",
+      "description": "An icy moon with geysers venting water vapor from a subsurface ocean near its south pole.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-miranda",
+      "planetId": "orb-sol-uranus",
+      "order": 0,
+      "name": "Miranda",
+      "type": "icy moon",
+      "description": "The smallest and innermost of Uranus's five major moons, with a dramatically varied, patchwork surface.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-ariel",
+      "planetId": "orb-sol-uranus",
+      "order": 1,
+      "name": "Ariel",
+      "type": "icy moon",
+      "description": "The brightest of Uranus's major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-umbriel",
+      "planetId": "orb-sol-uranus",
+      "order": 2,
+      "name": "Umbriel",
+      "type": "icy moon",
+      "description": "The darkest of Uranus's major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-titania",
+      "planetId": "orb-sol-uranus",
+      "order": 3,
+      "name": "Titania",
+      "type": "icy moon",
+      "description": "The largest moon of Uranus.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-oberon",
+      "planetId": "orb-sol-uranus",
+      "order": 4,
+      "name": "Oberon",
+      "type": "icy moon",
+      "description": "The outermost of Uranus's five major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-neptune-triton",
+      "planetId": "orb-sol-neptune",
+      "order": 0,
+      "name": "Triton",
+      "type": "icy moon",
+      "description": "Neptune's largest moon, orbiting backwards relative to Neptune's rotation.",
+      "detail": ["Likely a captured Kuiper Belt object rather than a moon formed alongside Neptune."]
+    },
+    {
+      "id": "moon-pluto-charon",
+      "planetId": "orb-sol-pluto",
+      "order": 0,
+      "name": "Charon",
+      "type": "icy moon",
+      "description": "Pluto's largest moon, so large relative to Pluto that the two orbit a point in space between them.",
       "detail": []
     }
   ],
