@@ -995,10 +995,10 @@
       "detail": []
     },
     {
-      "id": "moon-g33uy-dune",
+      "id": "moon-g33uy-karst",
       "planetId": "orb-g33uy",
       "order": 1,
-      "name": "Dune",
+      "name": "Karst",
       "type": "desert moon",
       "description": "A small desert moon with a breathable atmosphere.",
       "detail": []
