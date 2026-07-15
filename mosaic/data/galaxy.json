@@ -267,7 +267,7 @@
       "clusterId": "cluster-morrison",
       "name": "Huntington",
       "type": "star system",
-      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "description": "A tri-star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
       "detail": [],
       "position": { "x": 150, "y": 220 }
     },
@@ -276,7 +276,7 @@
       "clusterId": "cluster-morrison",
       "name": "Priapus",
       "type": "star system",
-      "description": "Home to the planets Chaq and Lyon.",
+      "description": "Home to the planets Chaq and Lyon, the volcanic world Gibil, and three largely uncharted gas and ice giants.",
       "detail": [],
       "position": { "x": 380, "y": 150 }
     },
@@ -285,7 +285,7 @@
       "clusterId": "cluster-morrison",
       "name": "Ngozi",
       "type": "star system",
-      "description": "Home to Gaia, a wetland world settled by the Future Settlers League.",
+      "description": "Home to Gaia, a wetland world settled by the Future Settlers League, alongside the ocean world Nautilus and the gas/ice giants G-Z0XL and G-X4T6.",
       "detail": [],
       "position": { "x": 560, "y": 290 }
     },
@@ -294,7 +294,7 @@
       "clusterId": "cluster-morrison",
       "name": "Zuni",
       "type": "star system",
-      "description": "Home to the gas giant G-33UY and the planet Taishan.",
+      "description": "A double star system home to the gas giant G-33UY and the planet Taishan.",
       "detail": [],
       "position": { "x": 760, "y": 180 }
     },
@@ -628,17 +628,6 @@
       "detail": ["Reclassified from a full planet in 2006, but still commonly counted among the Sun's family of worlds.", "Average surface temperature hovers around -240°C, among the coldest in the solar system.", "Beyond Charon, four much smaller moons are known: Styx, Nix, Kerberos, and Hydra."]
     },
     {
-      "id": "orb-chaq",
-      "systemId": "system-priapus",
-      "name": "Chaq",
-      "type": "rocky planet",
-      "bodyType": "planet",
-      "scale": "medium",
-      "orbitOrder": 1,
-      "description": "Home to Chaq Madee, a desert island settlement where the sun never sets.",
-      "detail": []
-    },
-    {
       "id": "orb-lyon",
       "systemId": "system-priapus",
       "name": "Lyon",
@@ -646,8 +635,77 @@
       "bodyType": "planet",
       "scale": "medium",
       "hazard": "extreme-cold",
-      "orbitOrder": 2,
+      "orbitOrder": 1,
       "description": "A cold planet, home to the CC Primary Relay MC-134 station.",
+      "detail": []
+    },
+    {
+      "id": "orb-gibil",
+      "systemId": "system-priapus",
+      "name": "Gibil",
+      "type": "volcanic planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 2,
+      "description": "A volcanic world with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "orb-g21t5",
+      "systemId": "system-priapus",
+      "name": "G-21T5",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 3,
+      "description": "A gas giant with roughly 25 moons, including the volcanic Small Drake and Big Drake.",
+      "detail": []
+    },
+    {
+      "id": "orb-chaq",
+      "systemId": "system-priapus",
+      "name": "Chaq",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 4,
+      "description": "Home to Chaq Madee, a desert island settlement where the sun never sets.",
+      "detail": []
+    },
+    {
+      "id": "orb-g8zsw",
+      "systemId": "system-priapus",
+      "name": "G-8ZSW",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 5,
+      "description": "An ice giant with roughly 50 moons.",
+      "detail": ["A small ocean moon and a small ice-and-rock moon have been catalogued, though neither is yet formally named."]
+    },
+    {
+      "id": "orb-g9qrj",
+      "systemId": "system-priapus",
+      "name": "G-9QRJ",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 6,
+      "description": "An ice giant with roughly 25 moons, none yet catalogued in detail.",
+      "detail": []
+    },
+    {
+      "id": "orb-nautilus",
+      "systemId": "system-ngozi",
+      "name": "Nautilus",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "description": "A world of sand and water, with a breathable atmosphere.",
       "detail": []
     },
     {
@@ -657,8 +715,33 @@
       "type": "rocky planet",
       "bodyType": "planet",
       "scale": "medium",
-      "orbitOrder": 1,
+      "orbitOrder": 2,
       "description": "A world of sprawling wetlands, settled by the Future Settlers League.",
+      "detail": []
+    },
+    {
+      "id": "orb-gz0xl",
+      "systemId": "system-ngozi",
+      "name": "G-Z0XL",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 12, "style": "dust" },
+      "orbitOrder": 3,
+      "description": "A gas giant with roughly 150 moons and a tight ring of dust.",
+      "detail": ["A handful of small jungle, volcanic, and rocky moons have been catalogued, though none are yet formally named."]
+    },
+    {
+      "id": "orb-gx4t6",
+      "systemId": "system-ngozi",
+      "name": "G-X4T6",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 4,
+      "description": "An ice giant with roughly 50 moons, including the jungle moon Balboa.",
       "detail": []
     },
     {
@@ -684,6 +767,41 @@
       "orbitOrder": 2,
       "description": "A gas giant with layered rings of ice and five known moons.",
       "detail": ["Beyond its named moon, four smaller unnamed moons orbit it: two small rocky moons with no atmosphere, a small desert moon with a breathable atmosphere, and a small volcanic moon with a thin atmosphere."]
+    },
+    {
+      "id": "orb-ghx6t",
+      "systemId": "system-huntington",
+      "name": "G-HX6T",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 25, "style": "dust" },
+      "orbitOrder": 1,
+      "description": "A gas giant with roughly 150 moons and a partial ring of dust.",
+      "detail": ["Two small rocky moons have been catalogued, though neither is yet formally named."]
+    },
+    {
+      "id": "orb-gskhy",
+      "systemId": "system-huntington",
+      "name": "G-SKHY",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 2,
+      "description": "A gas giant with roughly 50 moons, including the icy moon Fannif.",
+      "detail": ["A small rocky moon and a small sandy moon have also been catalogued, though neither is yet formally named."]
+    },
+    {
+      "id": "orb-relay-d2155",
+      "systemId": "system-huntington",
+      "name": "Relay D2155",
+      "type": "derelict relay station",
+      "bodyType": "station",
+      "orbitOrder": 3,
+      "description": "An abandoned Galac-Tech station originally used to develop the MOC-L.",
+      "detail": ["Once hosted communication relays and cargo transfers.", "Its communication relays are still active, handling a small portion of the Morrison Cluster's overflow traffic."]
     }
   ],
   "moons": [
@@ -715,6 +833,24 @@
       "detail": ["Automated, unmanned."]
     },
     {
+      "id": "moon-nautilus-orca",
+      "planetId": "orb-nautilus",
+      "order": 0,
+      "name": "Orca",
+      "type": "ocean moon",
+      "description": "A medium moon covered in toxic oceans.",
+      "detail": []
+    },
+    {
+      "id": "moon-nautilus-shellus",
+      "planetId": "orb-nautilus",
+      "order": 1,
+      "name": "Shellus",
+      "type": "rocky moon",
+      "description": "A small, sandy moon with no atmosphere.",
+      "detail": []
+    },
+    {
       "id": "moon-gaia-sirrah",
       "planetId": "orb-gaia",
       "order": 0,
@@ -733,12 +869,66 @@
       "detail": []
     },
     {
+      "id": "moon-gx4t6-balboa",
+      "planetId": "orb-gx4t6",
+      "order": 0,
+      "name": "Balboa",
+      "type": "jungle moon",
+      "description": "A small moon with a thick atmosphere and dense jungle cover, unusual for an ice giant's moon.",
+      "detail": []
+    },
+    {
+      "id": "moon-lyon-pike",
+      "planetId": "orb-lyon",
+      "order": 0,
+      "name": "Pike",
+      "type": "rocky moon",
+      "description": "A small, rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g21t5-small-drake",
+      "planetId": "orb-g21t5",
+      "order": 0,
+      "name": "Small Drake",
+      "type": "volcanic moon",
+      "description": "A small volcanic moon with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g21t5-big-drake",
+      "planetId": "orb-g21t5",
+      "order": 1,
+      "name": "Big Drake",
+      "type": "volcanic moon",
+      "description": "A medium volcanic moon with no atmosphere, larger than its neighbor Small Drake.",
+      "detail": []
+    },
+    {
+      "id": "moon-taishan-taizou",
+      "planetId": "orb-taishan",
+      "order": 0,
+      "name": "Taizou",
+      "type": "rocky moon",
+      "description": "A medium rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
       "id": "moon-g33uy-guy4",
       "planetId": "orb-g33uy",
       "order": 0,
       "name": "Guy 4",
       "type": "icy moon",
       "description": "An icy rock with pure H2O deposits.",
+      "detail": []
+    },
+    {
+      "id": "moon-gskhy-fannif",
+      "planetId": "orb-gskhy",
+      "order": 0,
+      "name": "Fannif",
+      "type": "icy moon",
+      "description": "A medium moon of mixed ice and rock, with a thin atmosphere.",
       "detail": []
     },
     {
@@ -956,6 +1146,15 @@
       "locatedAt": { "kind": "surface" }
     },
     {
+      "id": "loc-chaq-permafreeze",
+      "planetId": "orb-chaq",
+      "name": "Permafreeze",
+      "type": "frozen region",
+      "description": "The sunless side of Chaq, covered in floating permafrost.",
+      "detail": [],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
       "id": "loc-lyon-cc-relay",
       "planetId": "orb-lyon",
       "name": "CC Primary Relay MC-134",
@@ -963,6 +1162,36 @@
       "description": "A large relay station on Lyon's northern ice cap that handles much of the Morrison Cluster's inter-cluster network communication.",
       "detail": ["Operated by Capital Communications."],
       "locatedAt": { "kind": "surface" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-g21t5-recycling-hq",
+      "planetId": "orb-g21t5",
+      "name": "Re-sourced Recycling HQ",
+      "type": "transfer station",
+      "description": "An orbital transfer station that collects material from Small Drake and shuttles it to recycling and waste-processing plants on the surface.",
+      "detail": [],
+      "locatedAt": { "kind": "moon", "moonId": "moon-g21t5-small-drake" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-gz0xl-rs-vineless",
+      "planetId": "orb-gz0xl",
+      "name": "RS Vineless",
+      "type": "research station",
+      "description": "An abandoned Altoa Research facility that studied invasive plant life carried across G-Z0XL's moons.",
+      "detail": [],
+      "locatedAt": { "kind": "orbit" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-ghx6t-brady-station",
+      "planetId": "orb-ghx6t",
+      "name": "Brady Station",
+      "type": "mining station",
+      "description": "An active mining station in orbit around G-HX6T.",
+      "detail": [],
+      "locatedAt": { "kind": "orbit" },
       "icon": "station"
     },
     {
