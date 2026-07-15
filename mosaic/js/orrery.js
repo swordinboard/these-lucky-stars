@@ -19,11 +19,18 @@ const PLANET_RADIUS = { small: 10, medium: 18, large: 28 };
 const ICON_HALF = 12;
 const ASTEROID_RADIUS = 24;
 const MOON_RADIUS = 8;
-const MOON_ROW_Y = 60;
+// Moons alternate between two drop heights rather than sitting in one flat
+// row, so neighboring names don't line up at the same height and can pass
+// each other instead of colliding when a system has several moons.
+const MOON_ROW_Y = 50;
+const MOON_ROW_STAGGER = 45;
 const MOON_GAP = 34;
-const INDICATOR_ROW_Y = 95;
+const INDICATOR_ROW_Y = 130;
 const INDICATOR_RADIUS = 3;
 const INDICATOR_GAP = 10;
+const RING_RX_FACTOR = 1.55;
+const RING_RY_FACTOR = 0.5;
+const RING_BAND_GROWTH = 0.12;
 
 function el(tag, attrs) {
     const node = document.createElementNS(SVG_NS, tag);
@@ -37,10 +44,25 @@ function radiusFor(body) {
     return ICON_HALF;
 }
 
+// A semi-transparent backing behind each label (rather than none at all)
+// keeps a drop-line that happens to pass behind a name — likely now that
+// moons stagger across two rows — from looking like it stops dead at the
+// text; the line still shows through faintly instead of being interrupted.
+// Requires `group` to already be attached under the live SVG so getBBox()
+// reflects real layout, not a detached (zero-sized) fragment.
 function drawLabel(group, text, y) {
     const label = el('text', { class: 'node-label', y });
     label.textContent = text;
     group.appendChild(label);
+    const bbox = label.getBBox();
+    const bg = el('rect', {
+        class: 'node-label-bg',
+        x: bbox.x - 3,
+        y: bbox.y - 1,
+        width: bbox.width + 6,
+        height: bbox.height + 2,
+    });
+    group.insertBefore(bg, label);
 }
 
 // Clicking a node was unreliable for ringed planets, asteroid fields, and
@@ -84,17 +106,35 @@ function drawAsteroidField(group, body) {
     }
 }
 
+// A planet's `ring.bands` (default 1) draws that many concentric ellipses
+// instead of one, for planets whose rings are prominent enough to show as
+// several distinct bands (e.g. Saturn) rather than a single line. Band 0
+// always matches the original single-ring proportions exactly, so existing
+// ringed bodies that don't set `bands` are unaffected.
+function outerRingRadius(radius, ring) {
+    const bands = ring.bands || 1;
+    return radius * RING_RX_FACTOR * (1 + (bands - 1) * RING_BAND_GROWTH);
+}
+
 function drawPlanet(group, body, radius) {
     if (body.ring) {
-        const ring = el('ellipse', {
-            class: 'ring',
-            cx: 0,
-            cy: 0,
-            rx: radius * 1.55,
-            ry: radius * 0.5,
-            transform: `rotate(${body.ring.tilt})`,
-        });
-        group.appendChild(ring);
+        const bands = body.ring.bands || 1;
+        for (let i = 0; i < bands; i++) {
+            const growth = 1 + i * RING_BAND_GROWTH;
+            const ring = el('ellipse', {
+                class: 'ring',
+                cx: 0,
+                cy: 0,
+                rx: radius * RING_RX_FACTOR * growth,
+                ry: radius * RING_RY_FACTOR * growth,
+                transform: `rotate(${body.ring.tilt})`,
+            });
+            // Alternating opacity suggests the gaps between real ring
+            // bands (e.g. Saturn's Cassini Division) without needing a
+            // dedicated CSS class per band.
+            if (bands > 1) ring.setAttribute('stroke-opacity', i % 2 === 0 ? '0.6' : '0.35');
+            group.appendChild(ring);
+        }
     }
     group.appendChild(el('circle', { cx: 0, cy: 0, r: radius }));
 }
@@ -107,19 +147,22 @@ function drawMoons(viewportEl, body, x, radius, ownLocations) {
 
     moons.forEach((moon, index) => {
         const moonX = x + startOffset + index * MOON_GAP;
+        const rowY = MOON_ROW_Y + (index % 2) * MOON_ROW_STAGGER;
 
         viewportEl.appendChild(
-            el('line', { class: 'drop-line', x1: x, y1: radius, x2: moonX, y2: MOON_ROW_Y - MOON_RADIUS }),
+            el('line', { class: 'drop-line', x1: x, y1: radius, x2: moonX, y2: rowY - MOON_RADIUS }),
         );
 
-        const moonGroup = el('g', { class: 'node node-moon', 'data-id': moon.id, transform: `translate(${moonX},${MOON_ROW_Y})` });
+        // Attached to the live viewport before its children are added, so
+        // drawLabel()'s getBBox() call reflects real rendered layout.
+        const moonGroup = el('g', { class: 'node node-moon', 'data-id': moon.id, transform: `translate(${moonX},${rowY})` });
+        viewportEl.appendChild(moonGroup);
         moonGroup.appendChild(el('circle', { cx: 0, cy: 0, r: MOON_RADIUS }));
         drawLabel(moonGroup, moon.name, MOON_RADIUS + 14);
         addHitArea(moonGroup, MOON_RADIUS);
-        viewportEl.appendChild(moonGroup);
 
         const moonLocations = ownLocations.filter((loc) => loc.locatedAt.kind === 'moon' && loc.locatedAt.moonId === moon.id);
-        drawIndicatorDots(viewportEl, moonX, MOON_ROW_Y + MOON_RADIUS, moonLocations.length);
+        drawIndicatorDots(viewportEl, moonX, rowY + MOON_RADIUS, moonLocations.length);
     });
 }
 
@@ -148,12 +191,15 @@ export function renderOrrery(viewportEl, state) {
             transform: `translate(${x},${BASELINE_Y})`,
         });
         if (body.hazard) group.setAttribute('data-hazard', body.hazard);
+        // Attached to the live viewport before its children are added, so
+        // drawLabel()'s getBBox() call reflects real rendered layout.
+        viewportEl.appendChild(group);
 
         let hitRadius = radius;
 
         if (body.bodyType === 'planet') {
             drawPlanet(group, body, radius);
-            if (body.ring) hitRadius = Math.max(hitRadius, radius * 1.55);
+            if (body.ring) hitRadius = Math.max(hitRadius, outerRingRadius(radius, body.ring));
         } else if (body.bodyType === 'asteroidField') {
             drawAsteroidField(group, body);
         } else {
@@ -165,7 +211,6 @@ export function renderOrrery(viewportEl, state) {
 
         drawLabel(group, body.name, -(radius + 10));
         addHitArea(group, hitRadius);
-        viewportEl.appendChild(group);
         maxRadius = Math.max(maxRadius, hitRadius);
 
         const ownLocations = locationsOf(body.id);

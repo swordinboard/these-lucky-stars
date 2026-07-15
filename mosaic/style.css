@@ -221,6 +221,14 @@ body {
     user-select: none;
 }
 
+/* Sits behind a label (see orrery.js's drawLabel) so a drop-line passing
+   near a name reads as continuing faintly behind it rather than stopping
+   abruptly at the text. */
+.node-label-bg {
+    fill: var(--glass-bg);
+    pointer-events: none;
+}
+
 /* Cluster level renders as large "sector" zones instead of small nodes.
    Star clouds render as an <ellipse> instead of a <circle> (see render.js)
    for an oblong, nebula-like silhouette, so both shapes share this base

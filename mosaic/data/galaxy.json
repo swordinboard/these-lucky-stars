@@ -580,9 +580,9 @@
       "bodyType": "planet",
       "scale": "large",
       "hazard": "gas-giant",
-      "ring": { "tilt": 20, "style": "ice" },
+      "ring": { "tilt": 20, "style": "ice", "bands": 5 },
       "orbitOrder": 8,
-      "description": "Famous for its prominent ring system.",
+      "description": "Famous for its wide, prominent ring system.",
       "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on.", "Beyond Titan and Enceladus, well over 100 more, much smaller moons are known."]
     },
     {
@@ -593,9 +593,15 @@
       "bodyType": "planet",
       "scale": "large",
       "hazard": "ice-giant",
+      "ring": { "tilt": 82, "style": "dark", "bands": 2 },
       "orbitOrder": 9,
       "description": "An ice giant that rotates almost completely on its side.",
-      "detail": ["Its axis is tilted roughly 98 degrees, likely the result of an ancient collision.", "Has no solid surface to land on.", "Beyond its five major moons, around 20 more, much smaller moons are known."]
+      "detail": [
+        "Its axis is tilted roughly 98 degrees, likely the result of an ancient collision — its ring system, aligned with its equator, is tilted right along with it, standing almost on end compared to Saturn's rings.",
+        "Has a faint ring system of its own: narrower and much darker than Saturn's, discovered in 1977 and not directly photographed until decades later.",
+        "Has no solid surface to land on.",
+        "Beyond its five major moons, around 20 more, much smaller moons are known."
+      ]
     },
     {
       "id": "orb-sol-neptune",
