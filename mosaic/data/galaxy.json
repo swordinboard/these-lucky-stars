@@ -531,7 +531,7 @@
       "name": "ISS Initiative",
       "type": "independent space station",
       "bodyType": "station",
-      "orbitOrder": 4,
+      "orbitOrder": 8,
       "description": "The largest known space station, and the largest transfer station in the Local Cluster.",
       "detail": [
         "Before Hrava accelerator technology was adopted, it served as humanity's only means of FTL travel; now it's a sprawling spaceport city.",
@@ -546,7 +546,7 @@
       "type": "rocky planet",
       "bodyType": "planet",
       "scale": "small",
-      "orbitOrder": 5,
+      "orbitOrder": 4,
       "description": "A cold desert world, home to the largest volcano and canyon system in the solar system.",
       "detail": ["Olympus Mons stands nearly three times the height of Mount Everest.", "Valles Marineris stretches roughly the width of the continental United States."]
     },
@@ -556,7 +556,7 @@
       "name": "Asteroid Belt",
       "type": "asteroid belt",
       "bodyType": "asteroidField",
-      "orbitOrder": 6,
+      "orbitOrder": 5,
       "description": "A ring of rocky debris between Mars and Jupiter.",
       "detail": ["Likely material that never coalesced into a planet, kept stirred up by Jupiter's gravity."]
     },
@@ -568,7 +568,7 @@
       "bodyType": "planet",
       "scale": "large",
       "hazard": "gas-giant",
-      "orbitOrder": 7,
+      "orbitOrder": 6,
       "description": "The largest planet in the solar system.",
       "detail": ["Its Great Red Spot is a storm larger than Earth that has raged for centuries.", "Has no solid surface to land on.", "Beyond its four largest (Galilean) moons, around 90 more, much smaller moons are known."]
     },
@@ -581,7 +581,7 @@
       "scale": "large",
       "hazard": "gas-giant",
       "ring": { "tilt": 20, "style": "ice", "bands": 5 },
-      "orbitOrder": 8,
+      "orbitOrder": 7,
       "description": "Famous for its wide, prominent ring system.",
       "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on.", "Beyond Titan and Enceladus, well over 100 more, much smaller moons are known."]
     },
