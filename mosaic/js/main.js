@@ -23,6 +23,7 @@ async function main() {
     const detailsEl = document.getElementById('details-panel');
     const scrollbarEl = document.getElementById('orbital-scrollbar');
     const scrollbarThumbEl = document.getElementById('orbital-scrollbar-thumb');
+    const mapEmptyEl = document.getElementById('map-empty-state');
 
     locationBackdropEl.addEventListener('click', () => goUp('orbital'));
 
@@ -68,6 +69,8 @@ async function main() {
             fitKey = `orbital:${state.systemId}`;
             fitMode = 'horizontal';
         }
+
+        mapEmptyEl.hidden = !(state.level === 'system' && bounds === null);
 
         // Render everything that can change the map's available screen space
         // (footer height, location drawer) before fitToBounds/fitHorizontal

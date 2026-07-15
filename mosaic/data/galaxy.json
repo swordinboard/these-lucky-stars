@@ -7,6 +7,7 @@
       "type": "frontier region",
       "description": "A sparse scattering of systems at the galactic rim.",
       "detail": [
+        "Star systems: 3 known.",
         "Settled late and loosely governed, the Verge is where fortunes are made and lost fast.",
         "Pirate activity is common along its outer routes."
       ],
@@ -17,7 +18,7 @@
       "name": "Hearth Cluster",
       "type": "core region",
       "description": "Densely populated, heavily patrolled core systems.",
-      "detail": ["Seat of the old Compact government."],
+      "detail": ["Star systems: 2 known.", "Seat of the old Compact government."],
       "position": { "x": 620, "y": 340 }
     },
     {
@@ -25,7 +26,7 @@
       "name": "The Drift",
       "type": "isolated region",
       "description": "A single lonely system, cut off from the trade lanes.",
-      "detail": ["No known routes connect the Drift to the rest of the galaxy."],
+      "detail": ["Star systems: 1 known.", "No known routes connect the Drift to the rest of the galaxy."],
       "position": { "x": 400, "y": 80 }
     },
     {
@@ -33,7 +34,7 @@
       "name": "Alpha Cluster",
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 1367, "y": 2308 }
     },
     {
@@ -41,7 +42,7 @@
       "name": "Beta Cluster",
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 1449, "y": 2565 }
     },
     {
@@ -50,7 +51,7 @@
       "type": "star cloud",
       "accent": "teal",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 1515, "y": 1133 }
     },
     {
@@ -58,7 +59,7 @@
       "name": "Fold Cluster",
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 2386, "y": 2392 }
     },
     {
@@ -67,7 +68,7 @@
       "type": "cluster",
       "accent": "violet",
       "description": "The home cluster of Hravia. Their homeworld was destroyed by an unrecorded cause, referred to only as \"XXXX\" in surviving accounts.",
-      "detail": [],
+      "detail": ["Star systems: 1 known."],
       "position": { "x": 2032, "y": 860 }
     },
     {
@@ -76,7 +77,7 @@
       "type": "star cloud",
       "accent": "teal",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 2077, "y": 1486 }
     },
     {
@@ -84,7 +85,7 @@
       "name": "Hope Cluster",
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 1757, "y": 1850 }
     },
     {
@@ -92,7 +93,7 @@
       "name": "Lee Cluster",
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 2468, "y": 1907 }
     },
     {
@@ -100,7 +101,7 @@
       "name": "Nor Cluster",
       "type": "cluster",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 2182, "y": 1211 }
     },
     {
@@ -121,7 +122,7 @@
       "type": "cluster",
       "accent": "blue",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": ["Affiliated with SolPAC."],
+      "detail": ["Star systems: No data available.", "Affiliated with SolPAC."],
       "position": { "x": 1495, "y": 1488 }
     },
     {
@@ -131,7 +132,7 @@
       "accent": "teal",
       "cloudRotation": 88,
       "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": [],
+      "detail": ["Star systems: No data available."],
       "position": { "x": 986, "y": 2036 }
     },
     {
@@ -139,7 +140,7 @@
       "name": "Morrison Cluster",
       "type": "cluster",
       "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
-      "detail": ["Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
+      "detail": ["Star systems: 4 known.", "Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
       "position": { "x": 2081, "y": 1967 }
     },
     {
@@ -148,7 +149,7 @@
       "type": "cluster",
       "accent": "blue",
       "description": "All systems under SolPAC control.",
-      "detail": [],
+      "detail": ["Star systems: 5 known."],
       "position": { "x": 1494, "y": 1931 }
     },
     {
@@ -157,7 +158,7 @@
       "type": "cluster",
       "accent": "violet",
       "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
-      "detail": [],
+      "detail": ["Star systems: 2 known."],
       "position": { "x": 2847, "y": 1901 }
     }
   ],

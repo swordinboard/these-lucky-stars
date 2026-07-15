@@ -1,4 +1,4 @@
-import { getById } from './data.js';
+import { getById, systemsOf } from './data.js';
 import { drillInto, deselect } from './state.js';
 
 const DRILL_LABEL = {
@@ -43,11 +43,20 @@ function exitFullPage(el) {
 
 let cancelPendingCollapse = null;
 
+// A cluster with no known systems yet has nothing to "select" at the system
+// level, so the usual "Select a system..." prompt would be misleading there.
+function placeholderTextFor(state) {
+    if (state.level === 'system' && systemsOf(state.clusterId).length === 0) {
+        return 'No Data Available';
+    }
+    return PLACEHOLDER_TEXT[state.level];
+}
+
 function showPlaceholder(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
     const placeholder = document.createElement('p');
     placeholder.className = 'details-placeholder';
-    placeholder.textContent = PLACEHOLDER_TEXT[state.level];
+    placeholder.textContent = placeholderTextFor(state);
     el.appendChild(placeholder);
 }
 
