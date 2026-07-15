@@ -285,6 +285,22 @@ body {
     stroke: none;
 }
 
+.star[data-star-type="yellow dwarf"] {
+    fill: #ffe9c4;
+}
+
+.star[data-star-type="orange dwarf"] {
+    fill: #ffb877;
+}
+
+.star[data-star-type="red dwarf"] {
+    fill: #ff8a5c;
+}
+
+.star[data-star-type="white dwarf"] {
+    fill: #f2f6ff;
+}
+
 .node-planet circle {
     fill: #d9a066;
     stroke: #ffffff;

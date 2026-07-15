@@ -176,9 +176,10 @@
       "id": "system-kestrel",
       "clusterId": "cluster-verge",
       "name": "Kestrel",
-      "type": "binary",
+      "type": "binary star system",
+      "stars": [{ "type": "yellow dwarf" }, { "type": "red dwarf" }],
       "description": "Twin stars, one habitable moon.",
-      "detail": ["Contested mining claims between two corporations."],
+      "detail": ["Contested mining claims between two corporations.", "A yellow dwarf and a smaller red dwarf orbit close together."],
       "position": { "x": 340, "y": 220 }
     },
     {
@@ -230,9 +231,10 @@
       "id": "system-alpha-centuri",
       "clusterId": "cluster-local",
       "name": "Alpha Centuri",
-      "type": "trinary star system",
+      "type": "binary star system",
+      "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
       "description": "The nearest star system to Sol, roughly 4.37 light-years away.",
-      "detail": [],
+      "detail": ["Its yellow dwarf and orange dwarf orbit closely as a binary pair; Sol's actual nearest star, the red dwarf Proxima Centauri, is a much more distant companion not counted here."],
       "position": { "x": 664, "y": 460 }
     },
     {
@@ -266,9 +268,10 @@
       "id": "system-huntington",
       "clusterId": "cluster-morrison",
       "name": "Huntington",
-      "type": "star system",
-      "description": "A tri-star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
-      "detail": [],
+      "type": "binary star system",
+      "stars": [{ "type": "orange dwarf" }, { "type": "white dwarf" }],
+      "description": "A binary star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
+      "detail": ["Its two stars, Alpha and Beta, are known locally by those names; Beta is a white dwarf, the dim remnant of a star that burned out long ago."],
       "position": { "x": 150, "y": 220 }
     },
     {
@@ -293,9 +296,10 @@
       "id": "system-zuni",
       "clusterId": "cluster-morrison",
       "name": "Zuni",
-      "type": "star system",
+      "type": "binary star system",
+      "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
       "description": "A double star system home to the gas giant G-33UY and the planet Taishan.",
-      "detail": [],
+      "detail": ["Its two stars are known locally as Zuni Major, a yellow dwarf, and Zuni Minor, a smaller orange dwarf."],
       "position": { "x": 760, "y": 180 }
     },
     {

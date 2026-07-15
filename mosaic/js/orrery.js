@@ -1,4 +1,4 @@
-import { orbitalBodiesOf, moonsOf, locationsOf } from './data.js';
+import { orbitalBodiesOf, moonsOf, locationsOf, getById } from './data.js';
 import { createIcon } from './icons.js';
 import { hashStringToSeed, mulberry32 } from './random.js';
 
@@ -11,6 +11,14 @@ const SVG_NS = 'http://www.w3.org/2000/svg';
 // scroll it fully off-screen, same as any other content.
 const STAR_X = 0;
 const STAR_RADIUS = 50;
+// Real stellar size ordering (main-sequence dwarfs shrink cooler-to-hotter,
+// white dwarfs are stellar remnants far smaller than any of them) — used to
+// size a system's star(s); an unlisted/generic type falls back to STAR_RADIUS.
+const STAR_RADIUS_BY_TYPE = { 'yellow dwarf': 50, 'orange dwarf': 42, 'red dwarf': 34, 'white dwarf': 24 };
+// A second star in a binary system is drawn at this offset from the first so
+// the two half-discs partially overlap rather than sitting fully apart.
+const COMPANION_OFFSET_X = 14;
+const COMPANION_OFFSET_Y = 34;
 const FIRST_BODY_OFFSET = 140;
 const ORBIT_SPACING = 130;
 const BASELINE_Y = 0;
@@ -44,6 +52,21 @@ function radiusFor(body) {
     if (body.bodyType === 'planet') return PLANET_RADIUS[body.scale] || PLANET_RADIUS.medium;
     if (body.bodyType === 'asteroidField') return ASTEROID_RADIUS;
     return ICON_HALF;
+}
+
+// Draws one star as a half-disc (see the STAR_X comment above) at (x, y).
+// A `type` matching STAR_RADIUS_BY_TYPE sizes and colors it accordingly
+// (see the `.star[data-star-type]` rules in style.css); otherwise it falls
+// back to the default radius/fill, unchanged from before stars had types.
+function drawStar(viewportEl, x, y, type) {
+    const radius = STAR_RADIUS_BY_TYPE[type] || STAR_RADIUS;
+    const star = el('path', {
+        class: 'star',
+        d: `M ${x} ${y - radius} A ${radius} ${radius} 0 0 1 ${x} ${y + radius} Z`,
+    });
+    if (type) star.setAttribute('data-star-type', type);
+    viewportEl.appendChild(star);
+    return radius;
 }
 
 // A semi-transparent backing behind each label (rather than none at all)
@@ -193,14 +216,17 @@ export function renderOrrery(viewportEl, state) {
 
     const bodies = orbitalBodiesOf(state.systemId);
 
-    const star = el('path', {
-        class: 'star',
-        d: `M ${STAR_X} ${BASELINE_Y - STAR_RADIUS} A ${STAR_RADIUS} ${STAR_RADIUS} 0 0 1 ${STAR_X} ${BASELINE_Y + STAR_RADIUS} Z`,
-    });
-    viewportEl.appendChild(star);
+    const system = getById(state.systemId);
+    const stars = system.stars || [{ type: system.type }];
+    const primaryRadius = drawStar(viewportEl, STAR_X, BASELINE_Y, stars[0].type);
+    let starExtent = primaryRadius;
+    if (stars[1]) {
+        const companionRadius = drawStar(viewportEl, STAR_X + COMPANION_OFFSET_X, BASELINE_Y + COMPANION_OFFSET_Y, stars[1].type);
+        starExtent = Math.max(starExtent, COMPANION_OFFSET_Y + companionRadius);
+    }
 
     let maxX = STAR_X;
-    let maxRadius = STAR_RADIUS;
+    let maxRadius = starExtent;
     let maxIndicatorStartY = INDICATOR_ROW_Y;
 
     bodies.forEach((body, index) => {
