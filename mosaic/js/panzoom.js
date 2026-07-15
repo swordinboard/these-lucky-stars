@@ -3,6 +3,11 @@ const MAX_SCALE = 4;
 const FIT_PADDING = 80;
 const TAP_MOVE_THRESHOLD = 10;
 const DOUBLE_TAP_MS = 350;
+// The orrery's horizontal-lock mode also allows a little vertical drag, up to
+// this many screen px above/below the centered rest position — mainly so a
+// selection's details footer expanding over the bottom of the map (mobile)
+// can be nudged back into view, rather than being unreachably cut off.
+const VERTICAL_PAN_BUFFER = 160;
 
 function midpoint(a, b) {
     return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
@@ -39,12 +44,12 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
     function apply() {
         let scrollExtent = null;
         if (constraints) {
-            const { gutter, trailingMargin, contentMinX, contentMaxX, rectWidth, fixedY } = constraints;
+            const { gutter, trailingMargin, contentMinX, contentMaxX, rectWidth, minY, maxY } = constraints;
             const maxX = gutter - contentMinX * transform.k;
             const minXRaw = rectWidth - trailingMargin - contentMaxX * transform.k;
             const minX = Math.min(minXRaw, maxX);
             transform.x = Math.min(maxX, Math.max(minX, transform.x));
-            transform.y = fixedY;
+            transform.y = Math.min(maxY, Math.max(minY, transform.y));
 
             // Total pixel span the content sweeps through while scrolling
             // start-to-end, including the viewport-width "window" itself —
@@ -202,7 +207,9 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
         // `gutter` aligned to `bounds.minX` (e.g. the star's center docked at
         // the screen edge), but is free to scroll further to reveal distant
         // bodies, letting that reference point scroll fully off-screen.
-        // Zoom still works freely.
+        // Vertically it opens centered, with a small, equal buffer of drag
+        // slack above and below (VERTICAL_PAN_BUFFER) rather than being
+        // completely fixed. Zoom still works freely.
         fitHorizontal(bounds, gutter) {
             const rect = svgEl.getBoundingClientRect();
             const height = Math.max(bounds.maxY - bounds.minY, 1) + FIT_PADDING * 2;
@@ -210,17 +217,18 @@ export function createPanZoom(svgEl, viewportEl, { onTap, onDoubleTap, onChange 
             const trailingMargin = 60;
 
             transform.k = scale;
-            const fixedY = rect.height / 2 - scale * ((bounds.minY + bounds.maxY) / 2);
+            const centerY = rect.height / 2 - scale * ((bounds.minY + bounds.maxY) / 2);
             constraints = {
                 gutter,
                 trailingMargin,
                 contentMinX: bounds.minX,
                 contentMaxX: bounds.maxX,
                 rectWidth: rect.width,
-                fixedY,
+                minY: centerY - VERTICAL_PAN_BUFFER,
+                maxY: centerY + VERTICAL_PAN_BUFFER,
             };
             transform.x = gutter - bounds.minX * scale;
-            transform.y = fixedY;
+            transform.y = centerY;
             apply();
         },
     };
