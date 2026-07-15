@@ -682,8 +682,8 @@
       "scale": "large",
       "hazard": "ice-giant",
       "orbitOrder": 5,
-      "description": "An ice giant with roughly 50 moons.",
-      "detail": ["A small ocean moon and a small ice-and-rock moon have been catalogued, though neither is yet formally named."]
+      "description": "An ice giant with roughly 50 moons, including the ocean moon Cove and the icy moon Rime.",
+      "detail": []
     },
     {
       "id": "orb-g9qrj",
@@ -729,8 +729,8 @@
       "hazard": "gas-giant",
       "ring": { "tilt": 12, "style": "dust" },
       "orbitOrder": 3,
-      "description": "A gas giant with roughly 150 moons and a tight ring of dust.",
-      "detail": ["A handful of small jungle, volcanic, and rocky moons have been catalogued, though none are yet formally named."]
+      "description": "A gas giant with roughly 150 moons and a tight ring of dust, five of which are named.",
+      "detail": []
     },
     {
       "id": "orb-gx4t6",
@@ -765,8 +765,8 @@
       "hazard": "gas-giant",
       "ring": { "tilt": 15, "style": "ice" },
       "orbitOrder": 2,
-      "description": "A gas giant with layered rings of ice and five known moons.",
-      "detail": ["Beyond its named moon, four smaller unnamed moons orbit it: two small rocky moons with no atmosphere, a small desert moon with a breathable atmosphere, and a small volcanic moon with a thin atmosphere."]
+      "description": "A gas giant with layered rings of ice and three known moons.",
+      "detail": []
     },
     {
       "id": "orb-ghx6t",
@@ -778,8 +778,8 @@
       "hazard": "gas-giant",
       "ring": { "tilt": 25, "style": "dust" },
       "orbitOrder": 1,
-      "description": "A gas giant with roughly 150 moons and a partial ring of dust.",
-      "detail": ["Two small rocky moons have been catalogued, though neither is yet formally named."]
+      "description": "A gas giant with roughly 150 moons and a partial ring of dust, including the rocky moon Flint.",
+      "detail": []
     },
     {
       "id": "orb-gskhy",
@@ -791,7 +791,7 @@
       "hazard": "gas-giant",
       "orbitOrder": 2,
       "description": "A gas giant with roughly 50 moons, including the icy moon Fannif.",
-      "detail": ["A small rocky moon and a small sandy moon have also been catalogued, though neither is yet formally named."]
+      "detail": []
     },
     {
       "id": "orb-relay-d2155",
@@ -878,6 +878,78 @@
       "detail": []
     },
     {
+      "id": "moon-gz0xl-kelver",
+      "planetId": "orb-gz0xl",
+      "order": 0,
+      "name": "Kelver",
+      "type": "jungle moon",
+      "description": "A medium jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-thrum",
+      "planetId": "orb-gz0xl",
+      "order": 1,
+      "name": "Thrum",
+      "type": "jungle moon",
+      "description": "A medium jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-yarrow",
+      "planetId": "orb-gz0xl",
+      "order": 2,
+      "name": "Yarrow",
+      "type": "jungle moon",
+      "description": "A small jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-cindra",
+      "planetId": "orb-gz0xl",
+      "order": 3,
+      "name": "Cindra",
+      "type": "volcanic moon",
+      "description": "A small volcanic moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-molt",
+      "planetId": "orb-gz0xl",
+      "order": 4,
+      "name": "Molt",
+      "type": "rocky moon",
+      "description": "A small rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g8zsw-cove",
+      "planetId": "orb-g8zsw",
+      "order": 0,
+      "name": "Cove",
+      "type": "ocean moon",
+      "description": "A small ocean moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g8zsw-rime",
+      "planetId": "orb-g8zsw",
+      "order": 1,
+      "name": "Rime",
+      "type": "icy moon",
+      "description": "A small moon of ice and rock, with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-ghx6t-flint",
+      "planetId": "orb-ghx6t",
+      "order": 0,
+      "name": "Flint",
+      "type": "rocky moon",
+      "description": "A small rocky moon with no atmosphere.",
+      "detail": []
+    },
+    {
       "id": "moon-lyon-pike",
       "planetId": "orb-lyon",
       "order": 0,
@@ -920,6 +992,24 @@
       "name": "Guy 4",
       "type": "icy moon",
       "description": "An icy rock with pure H2O deposits.",
+      "detail": []
+    },
+    {
+      "id": "moon-g33uy-dune",
+      "planetId": "orb-g33uy",
+      "order": 1,
+      "name": "Dune",
+      "type": "desert moon",
+      "description": "A small desert moon with a breathable atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g33uy-scree",
+      "planetId": "orb-g33uy",
+      "order": 2,
+      "name": "Scree",
+      "type": "rocky moon",
+      "description": "A small rocky moon with no atmosphere.",
       "detail": []
     },
     {
