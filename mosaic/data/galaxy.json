@@ -526,7 +526,7 @@
       "bodyType": "planet",
       "scale": "medium",
       "orbitOrder": 3,
-      "description": "The only known planet to support life.",
+      "description": "Humanity's homeworld, one of countless life-bearing worlds across the galaxy.",
       "detail": ["Liquid water covers roughly 70% of its surface."]
     },
     {
@@ -1296,8 +1296,7 @@
       "description": "A small dome settlement that uses heated domes and tunnels to protect it from Guy 4's frozen landscape.",
       "detail": [
         "Collects and refines pure H2O for export, shipping water, hydrogen fuel, and oxygen through the Drop and Go Network.",
-        "Home to an independent system com relay.",
-        "Factory Freeze: the fuel cell charging center suffered a breach and critical damage several months ago. The settlement lacks the resources to repair it, needing a shipment of wire, sensors, and industrial pressure tank parts — no loaned shipment has come through yet due to the mixture of parts required."
+        "Home to an independent system com relay."
       ],
       "locatedAt": { "kind": "moon", "moonId": "moon-g33uy-guy4" }
     },
@@ -1309,8 +1308,7 @@
       "description": "The first mine on Guy 4, and the economic lifeline for Fountain during its founding years.",
       "detail": [
         "Retired after twenty years of service, following a series of minor cave-ins that raised structural concerns.",
-        "Equipment can still be found in its tunnels, particularly ones cut off entirely by collapses.",
-        "The Prisoners Group once crashed an escape pod into a collapsed section and took refuge in a small safe room, before being rescued by Ryker and another miner from Fountain."
+        "Equipment can still be found in its tunnels, particularly ones cut off entirely by collapses."
       ],
       "locatedAt": { "kind": "moon", "moonId": "moon-g33uy-guy4" }
     },
@@ -1360,8 +1358,7 @@
       "type": "outpost",
       "description": "A former research warehouse turned into a small compound.",
       "detail": [
-        "Its structures and landing space have been kept in very good condition despite their surroundings.",
-        "Outlaws squatting here were cleared out by the Passengers Group."
+        "Its structures and landing space have been kept in very good condition despite their surroundings."
       ],
       "locatedAt": { "kind": "surface" }
     },
@@ -1372,8 +1369,8 @@
       "type": "open city",
       "description": "The largest city in the Morrison Cluster, built in the valley where Taishan's first settlement began.",
       "detail": [
-        "Feng Chenyue is credited with its official founding, and served as its first mayor.",
-        "Has a spaceport, but no orbital station."
+        "Feng Chenyue is credited with its official founding, and served as its first mayor. A large statue of her likeness is located in Founder's Plaza, a conversion of the original spaceport.",
+        "Pearl Valley's spaceport has a small orbital station linked with it that organizes out of system traffic."
       ],
       "locatedAt": { "kind": "surface" }
     }
