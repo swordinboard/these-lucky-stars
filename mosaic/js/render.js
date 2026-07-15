@@ -1,16 +1,39 @@
 import { clusters, systemsOf, clusterRoutes, systemRoutesWithin } from './data.js';
+import { hashStringToSeed, mulberry32 } from './random.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const SYSTEM_NODE_RADIUS = 16;
 const MIN_SECTOR_RADIUS = 60;
 const MAX_SECTOR_RADIUS = 200;
-const CLOUD_RADIUS_FACTOR = 1.4;
+const CLOUD_RADIUS_FACTOR = 1.45;
+const CLOUD_ASPECT_X_RANGE = [1.05, 1.3];
+const CLOUD_ASPECT_Y_RANGE = [0.75, 0.9];
+const CLOUD_ROTATION_RANGE = 18;
 
-// Star clouds render larger than ordinary clusters/sectors to visually set
-// them apart, similar to how differently-sized bodies are distinguished in
-// the orrery view.
-function radiusFor(entity, baseRadius) {
-    return entity.type === 'star cloud' ? baseRadius * CLOUD_RADIUS_FACTOR : baseRadius;
+// Star clouds render larger than ordinary clusters/sectors, and as an oblong
+// (elongated, slightly rotated) ellipse rather than a circle, to visually
+// set them apart — similar to how differently-sized/shaped bodies are
+// distinguished in the orrery view. The exact aspect ratio and rotation are
+// seeded per cluster id (reusing the same deterministic-but-varied PRNG
+// pattern used for the asteroid field and starfield) so each cloud looks a
+// little different from the others without being random on every reload.
+function cloudShape(entity, baseRadius) {
+    const rand = mulberry32(hashStringToSeed(entity.id));
+    const aspectX = CLOUD_ASPECT_X_RANGE[0] + rand() * (CLOUD_ASPECT_X_RANGE[1] - CLOUD_ASPECT_X_RANGE[0]);
+    const aspectY = CLOUD_ASPECT_Y_RANGE[0] + rand() * (CLOUD_ASPECT_Y_RANGE[1] - CLOUD_ASPECT_Y_RANGE[0]);
+    const rotation = (rand() * 2 - 1) * CLOUD_ROTATION_RANGE;
+    const r = baseRadius * CLOUD_RADIUS_FACTOR;
+    return { rx: r * aspectX, ry: r * aspectY, rotation };
+}
+
+// A single scalar "how far from center does this entity's shape extend"
+// value, used for the auto-fit bounds — conservative (the ellipse's longer
+// semi-axis) since a rotated ellipse always fits within a circle of that
+// radius, regardless of which way it's actually rotated.
+function boundingRadiusFor(entity, baseRadius) {
+    if (entity.type !== 'star cloud') return baseRadius;
+    const { rx, ry } = cloudShape(entity, baseRadius);
+    return Math.max(rx, ry);
 }
 
 function entitiesAndRoutesFor(state) {
@@ -100,12 +123,23 @@ export function renderLevel(viewportEl, state) {
         g.setAttribute('class', `node node-${entity.kind}`);
         g.setAttribute('transform', `translate(${entity.position.x},${entity.position.y})`);
         g.setAttribute('data-id', entity.id);
+        if (entity.accent) g.setAttribute('data-accent', entity.accent);
 
-        const r = isSectorView ? radiusFor(entity, radius) : radius;
-
-        const circle = document.createElementNS(SVG_NS, 'circle');
-        circle.setAttribute('r', r);
-        g.appendChild(circle);
+        // Clouds only ever appear in the sector view, which always centers
+        // its labels (see below) rather than offsetting by shape size, so
+        // there's no need to track a label offset for the ellipse case.
+        if (isSectorView && entity.type === 'star cloud') {
+            const { rx, ry, rotation } = cloudShape(entity, radius);
+            const ellipse = document.createElementNS(SVG_NS, 'ellipse');
+            ellipse.setAttribute('rx', rx);
+            ellipse.setAttribute('ry', ry);
+            ellipse.setAttribute('transform', `rotate(${rotation})`);
+            g.appendChild(ellipse);
+        } else {
+            const circle = document.createElementNS(SVG_NS, 'circle');
+            circle.setAttribute('r', radius);
+            g.appendChild(circle);
+        }
 
         const label = document.createElementNS(SVG_NS, 'text');
         label.setAttribute('class', 'node-label');
@@ -113,7 +147,7 @@ export function renderLevel(viewportEl, state) {
             label.setAttribute('y', '6');
             label.setAttribute('dominant-baseline', 'middle');
         } else {
-            label.setAttribute('y', r + 16);
+            label.setAttribute('y', radius + 16);
         }
         label.textContent = entity.name;
         g.appendChild(label);
@@ -122,6 +156,6 @@ export function renderLevel(viewportEl, state) {
     }
 
     return entities.length
-        ? boundsOf(entities, (entity) => (isSectorView ? radiusFor(entity, radius) : radius))
+        ? boundsOf(entities, (entity) => (isSectorView ? boundingRadiusFor(entity, radius) : radius))
         : null;
 }
