@@ -488,18 +488,135 @@
       "detail": ["No known survivors. Origin unknown."]
     },
     {
+      "id": "orb-sol-mercury",
+      "systemId": "system-sol",
+      "name": "Mercury",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "hazard": "extreme-heat",
+      "orbitOrder": 1,
+      "description": "The smallest planet in the solar system, and the closest to the Sun.",
+      "detail": ["Daytime temperatures top 400°C, but with no atmosphere to hold heat, nights plunge to nearly -180°C."]
+    },
+    {
+      "id": "orb-sol-venus",
+      "systemId": "system-sol",
+      "name": "Venus",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-heat",
+      "orbitOrder": 2,
+      "description": "The hottest planet in the solar system, hotter even than Mercury.",
+      "detail": ["A runaway greenhouse effect traps heat under thick clouds of sulfuric acid, driving surface temperatures above 460°C."]
+    },
+    {
+      "id": "orb-sol-earth",
+      "systemId": "system-sol",
+      "name": "Earth",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 3,
+      "description": "The only known planet to support life.",
+      "detail": ["Liquid water covers roughly 70% of its surface."]
+    },
+    {
       "id": "orb-sol-iss-initiative",
       "systemId": "system-sol",
       "name": "ISS Initiative",
       "type": "independent space station",
       "bodyType": "station",
-      "orbitOrder": 1,
+      "orbitOrder": 4,
       "description": "The largest known space station, and the largest transfer station in the Local Cluster.",
       "detail": [
         "Before Hrava accelerator technology was adopted, it served as humanity's only means of FTL travel; now it's a sprawling spaceport city.",
         "Home to roughly 15,000 permanent residents, though it relies entirely on imported resources.",
         "Its rental spaces, transfer capacity, and enterprise market provide most of the financial support that keeps the station running."
       ]
+    },
+    {
+      "id": "orb-sol-mars",
+      "systemId": "system-sol",
+      "name": "Mars",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "orbitOrder": 5,
+      "description": "A cold desert world, home to the largest volcano and canyon system in the solar system.",
+      "detail": ["Olympus Mons stands nearly three times the height of Mount Everest.", "Valles Marineris stretches roughly the width of the continental United States."]
+    },
+    {
+      "id": "orb-sol-asteroid-belt",
+      "systemId": "system-sol",
+      "name": "Asteroid Belt",
+      "type": "asteroid belt",
+      "bodyType": "asteroidField",
+      "orbitOrder": 6,
+      "description": "A ring of rocky debris between Mars and Jupiter.",
+      "detail": ["Likely material that never coalesced into a planet, kept stirred up by Jupiter's gravity."]
+    },
+    {
+      "id": "orb-sol-jupiter",
+      "systemId": "system-sol",
+      "name": "Jupiter",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 7,
+      "description": "The largest planet in the solar system.",
+      "detail": ["Its Great Red Spot is a storm larger than Earth that has raged for centuries.", "Has no solid surface to land on."]
+    },
+    {
+      "id": "orb-sol-saturn",
+      "systemId": "system-sol",
+      "name": "Saturn",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 20, "style": "ice" },
+      "orbitOrder": 8,
+      "description": "Famous for its prominent ring system.",
+      "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on."]
+    },
+    {
+      "id": "orb-sol-uranus",
+      "systemId": "system-sol",
+      "name": "Uranus",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 9,
+      "description": "An ice giant that rotates almost completely on its side.",
+      "detail": ["Its axis is tilted roughly 98 degrees, likely the result of an ancient collision.", "Has no solid surface to land on."]
+    },
+    {
+      "id": "orb-sol-neptune",
+      "systemId": "system-sol",
+      "name": "Neptune",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 10,
+      "description": "The most distant planet from the Sun, and the windiest.",
+      "detail": ["Wind speeds can exceed 2,000 km/h, the fastest recorded in the solar system.", "Has no solid surface to land on."]
+    },
+    {
+      "id": "orb-sol-pluto",
+      "systemId": "system-sol",
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "hazard": "extreme-cold",
+      "orbitOrder": 11,
+      "description": "A distant dwarf planet in the Kuiper Belt.",
+      "detail": ["Reclassified from a full planet in 2006, but still commonly counted among the Sun's family of worlds.", "Average surface temperature hovers around -240°C, among the coldest in the solar system."]
     }
   ],
   "moons": [

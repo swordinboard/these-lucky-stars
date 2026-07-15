@@ -147,6 +147,7 @@ export function renderOrrery(viewportEl, state) {
             'data-id': body.id,
             transform: `translate(${x},${BASELINE_Y})`,
         });
+        if (body.hazard) group.setAttribute('data-hazard', body.hazard);
 
         let hitRadius = radius;
 

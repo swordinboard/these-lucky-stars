@@ -283,6 +283,25 @@ body {
     stroke-width: 1.5;
 }
 
+/* A planet's `hazard` field flags it as not traversable (gas/ice giant) or
+   physically extreme (heat/cold), given a distinct fill to read at a glance
+   alongside the default rocky-planet tan. */
+.node-planet[data-hazard="gas-giant"] circle {
+    fill: #c77b2e;
+}
+
+.node-planet[data-hazard="ice-giant"] circle {
+    fill: #4a90d9;
+}
+
+.node-planet[data-hazard="extreme-heat"] circle {
+    fill: #e0523a;
+}
+
+.node-planet[data-hazard="extreme-cold"] circle {
+    fill: #9fd8e8;
+}
+
 .ring {
     fill: none;
     stroke: rgba(233, 233, 233, 0.6);
