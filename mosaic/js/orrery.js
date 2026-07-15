@@ -19,9 +19,10 @@ const PLANET_RADIUS = { small: 10, medium: 18, large: 28 };
 const ICON_HALF = 12;
 const ASTEROID_RADIUS = 24;
 const MOON_RADIUS = 8;
-// Moons alternate between two drop heights rather than sitting in one flat
-// row, so neighboring names don't line up at the same height and can pass
-// each other instead of colliding when a system has several moons.
+// Moons split across two rows by distance (closer half up top, farther half
+// below, see drawMoons) rather than sitting in one flat row, so neighboring
+// names don't line up at the same height and collide when a system has
+// several moons.
 const MOON_ROW_Y = 50;
 const MOON_ROW_STAGGER = 45;
 const MOON_GAP = 34;
@@ -143,26 +144,41 @@ function drawMoons(viewportEl, body, x, radius, ownLocations) {
     const moons = moonsOf(body.id);
     if (!moons.length) return;
 
-    const startOffset = -((moons.length - 1) * MOON_GAP) / 2;
+    // moonsOf() already sorts closest-to-farthest. The closer half goes in
+    // the upper row and the farther half in the lower row, each row still
+    // running left to right by increasing distance. Both rows are spread
+    // across the same total width regardless of how many moons land in
+    // them, so a row with fewer moons gets proportionally more breathing
+    // room between names instead of the flat, cramped single-row spacing
+    // that used to cause overlapping names.
+    const totalWidth = (moons.length - 1) * MOON_GAP;
+    const half = Math.ceil(moons.length / 2);
+    const rows = [moons.slice(0, half), moons.slice(half)];
 
-    moons.forEach((moon, index) => {
-        const moonX = x + startOffset + index * MOON_GAP;
-        const rowY = MOON_ROW_Y + (index % 2) * MOON_ROW_STAGGER;
+    rows.forEach((rowMoons, rowIndex) => {
+        if (!rowMoons.length) return;
+        const rowY = MOON_ROW_Y + rowIndex * MOON_ROW_STAGGER;
+        const itemGap = rowMoons.length > 1 ? totalWidth / (rowMoons.length - 1) : 0;
+        const rowOffset = -((rowMoons.length - 1) * itemGap) / 2;
 
-        viewportEl.appendChild(
-            el('line', { class: 'drop-line', x1: x, y1: radius, x2: moonX, y2: rowY - MOON_RADIUS }),
-        );
+        rowMoons.forEach((moon, i) => {
+            const moonX = x + rowOffset + i * itemGap;
 
-        // Attached to the live viewport before its children are added, so
-        // drawLabel()'s getBBox() call reflects real rendered layout.
-        const moonGroup = el('g', { class: 'node node-moon', 'data-id': moon.id, transform: `translate(${moonX},${rowY})` });
-        viewportEl.appendChild(moonGroup);
-        moonGroup.appendChild(el('circle', { cx: 0, cy: 0, r: MOON_RADIUS }));
-        drawLabel(moonGroup, moon.name, MOON_RADIUS + 14);
-        addHitArea(moonGroup, MOON_RADIUS);
+            viewportEl.appendChild(
+                el('line', { class: 'drop-line', x1: x, y1: radius, x2: moonX, y2: rowY - MOON_RADIUS }),
+            );
 
-        const moonLocations = ownLocations.filter((loc) => loc.locatedAt.kind === 'moon' && loc.locatedAt.moonId === moon.id);
-        drawIndicatorDots(viewportEl, moonX, rowY + MOON_RADIUS, moonLocations.length);
+            // Attached to the live viewport before its children are added, so
+            // drawLabel()'s getBBox() call reflects real rendered layout.
+            const moonGroup = el('g', { class: 'node node-moon', 'data-id': moon.id, transform: `translate(${moonX},${rowY})` });
+            viewportEl.appendChild(moonGroup);
+            moonGroup.appendChild(el('circle', { cx: 0, cy: 0, r: MOON_RADIUS }));
+            drawLabel(moonGroup, moon.name, MOON_RADIUS + 14);
+            addHitArea(moonGroup, MOON_RADIUS);
+
+            const moonLocations = ownLocations.filter((loc) => loc.locatedAt.kind === 'moon' && loc.locatedAt.moonId === moon.id);
+            drawIndicatorDots(viewportEl, moonX, rowY + MOON_RADIUS, moonLocations.length);
+        });
     });
 }
 

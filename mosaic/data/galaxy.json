@@ -807,7 +807,7 @@
     {
       "id": "moon-saturn-titan",
       "planetId": "orb-sol-saturn",
-      "order": 0,
+      "order": 1,
       "name": "Titan",
       "type": "icy moon",
       "description": "Saturn's largest moon, and the only moon in the solar system with a dense atmosphere.",
@@ -816,7 +816,7 @@
     {
       "id": "moon-saturn-enceladus",
       "planetId": "orb-sol-saturn",
-      "order": 1,
+      "order": 0,
       "name": "Enceladus",
       "type": "icy moon",
       "description": "An icy moon with geysers venting water vapor from a subsurface ocean near its south pole.",
