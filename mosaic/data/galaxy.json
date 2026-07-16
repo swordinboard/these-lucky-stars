@@ -102,10 +102,10 @@
       "name": "Weisman Cloud",
       "type": "star cloud",
       "accent": "teal",
-      "cloudRotation": 88,
+      "cloudRotation": -34,
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 986, "y": 2036 }
+      "position": { "x": 1129, "y": 1883 }
     },
     {
       "id": "cluster-morrison",

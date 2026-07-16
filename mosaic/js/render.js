@@ -10,21 +10,25 @@ const CLOUD_ASPECT_X_RANGE = [1.05, 1.3];
 const CLOUD_ASPECT_Y_RANGE = [0.75, 0.9];
 const CLOUD_ROTATION_RANGE = 18;
 
-// A big, soft galaxy silhouette behind the cluster-level map only — a
-// top-down (face-on) view of a lenticular galaxy: a bright, roughly-circular
-// bulge at its center, a broader soft disc around that, and a faint outer
-// halo reaching well past the charted clusters so no corner of the map is
-// left flat black. Lenticular galaxies read as smooth and featureless from
-// above (no spiral arms), so all three layers share the same center and a
-// gentle, near-circular shape rather than the arms/streaks of a spiral. The
-// center sits on Danswai Cloud, roughly the middle of the charted clusters,
-// with a slight shared rotation for a touch of organic asymmetry (see
-// FORMATTING.md's "skewed over symmetric" note).
-const GALAXY_CENTER = { cx: 1515, cy: 1133 };
-const GALAXY_ROTATION = 8;
-const GALAXY_HALO = { ...GALAXY_CENTER, rx: 2100, ry: 1850, rotation: GALAXY_ROTATION };
-const GALAXY_DISC = { ...GALAXY_CENTER, rx: 1300, ry: 1120, rotation: GALAXY_ROTATION };
-const GALAXY_BULGE = { ...GALAXY_CENTER, rx: 300, ry: 260, rotation: GALAXY_ROTATION };
+// A big, soft galaxy silhouette behind the cluster-level map only. Rather
+// than one single epicenter, each star-cloud cluster gets its own "flare up"
+// (a soft disc plus a brighter bulge at its core) — Danswai Cloud's is the
+// largest/brightest, Hart's and Weisman's are smaller secondary ones — so the
+// backdrop reads as an irregular galaxy's uneven, layered glow instead of a
+// single tidy hotspot. A faint shared ambient halo sits underneath all of
+// them, reaching well past the charted clusters so no corner of the map is
+// left flat black. On top of that, clusters with their own accent color get
+// a soft, low-opacity patch of that same color behind them, so the accent
+// hues already used for their nodes bleed gently into the backdrop and tie
+// the whole map together rather than sitting on a flat, uniform wash.
+const GALAXY_HALO = { cx: 1515, cy: 1133, rx: 2100, ry: 1850, rotation: 8 };
+
+const FLARE_SIZES = {
+    primary: { disc: { rx: 1300, ry: 1120 }, bulge: { rx: 300, ry: 260 } },
+    secondary: { disc: { rx: 760, ry: 640 }, bulge: { rx: 170, ry: 145 } },
+};
+
+const ACCENT_PATCH_RADIUS = 300;
 
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
@@ -37,13 +41,42 @@ function galaxyEllipse(className, shape) {
     return ellipse;
 }
 
+// A cloud's flare shares its rotation with its own rendered ellipse (see
+// cloudShape below) so the glow reads as coming from that shape rather than
+// sitting arbitrarily behind it. The radius argument only affects size, not
+// rotation, so it's safe to call this before the sector radius is known.
+function flareShapesFor(entity) {
+    const size = entity.id === 'cluster-danswai' ? FLARE_SIZES.primary : FLARE_SIZES.secondary;
+    const { rotation } = cloudShape(entity, 1);
+    const { x: cx, y: cy } = entity.position;
+    return {
+        disc: { cx, cy, rotation, rx: size.disc.rx, ry: size.disc.ry },
+        bulge: { cx, cy, rotation, rx: size.bulge.rx, ry: size.bulge.ry },
+    };
+}
+
+function accentPatchShapeFor(entity) {
+    const { x: cx, y: cy } = entity.position;
+    return { cx, cy, rx: ACCENT_PATCH_RADIUS, ry: ACCENT_PATCH_RADIUS, rotation: 0 };
+}
+
 function renderGalaxyBackdrop(viewportEl) {
     const group = document.createElementNS(SVG_NS, 'g');
     group.setAttribute('class', 'galaxy-backdrop');
 
     group.appendChild(galaxyEllipse('galaxy-halo', GALAXY_HALO));
-    group.appendChild(galaxyEllipse('galaxy-disc', GALAXY_DISC));
-    group.appendChild(galaxyEllipse('galaxy-bulge', GALAXY_BULGE));
+
+    for (const entity of clusters()) {
+        if (!entity.accent) continue;
+        group.appendChild(galaxyEllipse(`galaxy-accent-patch galaxy-accent-${entity.accent}`, accentPatchShapeFor(entity)));
+    }
+
+    for (const entity of clusters()) {
+        if (entity.type !== 'star cloud') continue;
+        const { disc, bulge } = flareShapesFor(entity);
+        group.appendChild(galaxyEllipse('galaxy-disc', disc));
+        group.appendChild(galaxyEllipse('galaxy-bulge', bulge));
+    }
 
     viewportEl.appendChild(group);
 }
