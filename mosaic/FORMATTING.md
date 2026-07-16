@@ -1,7 +1,8 @@
 # Formatting notes
 
-Conventions for the orrery/system view (`js/orrery.js`), kept here so layout
-decisions stay consistent as more body types, moons, and rings get added.
+Conventions for the map views (`js/orrery.js`, `js/render.js`), kept here so
+layout decisions stay consistent as more body types, moons, rings, and
+clusters get added.
 
 ## Grow down, not out
 
@@ -41,3 +42,25 @@ Ringed planets, asteroid fields, and icon-based bodies have visible shapes
 full visual footprint. Every node gets a transparent `.hit-area` circle
 (`addHitArea`), inserted as its first child, sized to the node's full
 extent so taps land reliably without changing how the node looks.
+
+## Cluster/system layouts: skewed over symmetric
+
+When positioning a cluster's systems (or a system's planets, at that level
+of the map) to avoid crossing route lines, prefer an organic, randomly
+skewed arrangement over a perfectly regular one (a regular polygon, an
+evenly-spaced hub-and-spoke). A route graph is usually satisfiable by more
+than one crossing-free layout — pick irregular positions/angles within that
+solution space rather than the tidiest symmetric one. Two concrete reasons,
+not just taste:
+
+- A perfectly regular hub-and-spoke can put two "opposite" nodes and the
+  hub in a near-straight line, so a chord edge between those opposite nodes
+  rides right through the hub's own node circle (see Beta Cluster's
+  Corrigan, and the jittered angles used to avoid it). Skewing breaks this
+  without changing the topology.
+- It simply reads as more natural for a starfield — real star positions
+  aren't on a grid or a regular polygon.
+
+Still verify the result is actually crossing-free (and clears every node
+by a safe margin) before committing to it; skewed is a preference among
+valid layouts, not a reason to skip checking.
