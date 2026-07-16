@@ -30,83 +30,6 @@ const FLARE_SIZES = {
 
 const ACCENT_PATCH_RADIUS = 300;
 
-// A decorative color streak — a soft, wavy ribbon that swings between Pistil
-// Cluster and Local Cluster by way of Teegarden, swooping up over the top of
-// Danswai Cloud along the way. It's built from the same cluster data as
-// everything else (only the swoop's peak has no cluster of its own to anchor
-// to, so it's placed a fixed distance above Danswai), and its color runs
-// through each accented cluster's own hue — violet at Pistil, teal as it
-// crosses Danswai, blue by the time it reaches Teegarden and Local — so it
-// visually threads them together rather than reading as a separate layer.
-const COLOR_STREAK_IDS = ['cluster-pistil', 'cluster-danswai', 'cluster-teegarden', 'cluster-local'];
-const COLOR_STREAK_SWOOP_HEIGHT = 220;
-const COLOR_STREAK_BOW_WIDTH = 130;
-const COLOR_STREAK_GRADIENT_ID = 'galaxy-streak-gradient';
-const COLOR_STREAK_STOPS = [
-    { offset: '0%', color: '#b073e0' },
-    { offset: '45%', color: '#45c9a8' },
-    { offset: '100%', color: '#5a8fd6' },
-];
-
-function clusterById(id) {
-    return clusters().find((entity) => entity.id === id);
-}
-
-// Converts a handful of waypoints into one smooth curve (a Catmull-Rom spline
-// expressed as cubic beziers) so the streak reads as a single flowing wave
-// rather than a straight-edged connect-the-dots line.
-function smoothPathThrough(points) {
-    const padded = [points[0], ...points, points[points.length - 1]];
-    let d = `M ${padded[1].x},${padded[1].y}`;
-    for (let i = 1; i < padded.length - 2; i++) {
-        const [p0, p1, p2, p3] = [padded[i - 1], padded[i], padded[i + 1], padded[i + 2]];
-        const cp1 = { x: p1.x + (p2.x - p0.x) / 6, y: p1.y + (p2.y - p0.y) / 6 };
-        const cp2 = { x: p2.x - (p3.x - p1.x) / 6, y: p2.y - (p3.y - p1.y) / 6 };
-        d += ` C ${cp1.x},${cp1.y} ${cp2.x},${cp2.y} ${p2.x},${p2.y}`;
-    }
-    return d;
-}
-
-function colorStreakPoints() {
-    const [pistil, danswai, teegarden, local] = COLOR_STREAK_IDS.map((id) => clusterById(id).position);
-    const swoop = { x: danswai.x, y: danswai.y - COLOR_STREAK_SWOOP_HEIGHT };
-    // Bows toward Weisman Cloud on its way down to Local, so the streak reads
-    // as one continuous wave rather than straightening out for its last leg.
-    const bow = { x: (teegarden.x + local.x) / 2 - COLOR_STREAK_BOW_WIDTH, y: (teegarden.y + local.y) / 2 };
-    return [pistil, swoop, teegarden, bow, local];
-}
-
-function colorStreakGradient(points) {
-    const gradient = document.createElementNS(SVG_NS, 'linearGradient');
-    gradient.setAttribute('id', COLOR_STREAK_GRADIENT_ID);
-    gradient.setAttribute('gradientUnits', 'userSpaceOnUse');
-    gradient.setAttribute('x1', points[0].x);
-    gradient.setAttribute('y1', points[0].y);
-    gradient.setAttribute('x2', points[points.length - 1].x);
-    gradient.setAttribute('y2', points[points.length - 1].y);
-    for (const { offset, color } of COLOR_STREAK_STOPS) {
-        const stop = document.createElementNS(SVG_NS, 'stop');
-        stop.setAttribute('offset', offset);
-        stop.setAttribute('stop-color', color);
-        gradient.appendChild(stop);
-    }
-    return gradient;
-}
-
-function renderColorStreak(group) {
-    const points = colorStreakPoints();
-
-    const defs = document.createElementNS(SVG_NS, 'defs');
-    defs.appendChild(colorStreakGradient(points));
-    group.appendChild(defs);
-
-    const path = document.createElementNS(SVG_NS, 'path');
-    path.setAttribute('class', 'galaxy-color-streak');
-    path.setAttribute('d', smoothPathThrough(points));
-    path.setAttribute('stroke', `url(#${COLOR_STREAK_GRADIENT_ID})`);
-    group.appendChild(path);
-}
-
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
     ellipse.setAttribute('class', className);
@@ -154,8 +77,6 @@ function renderGalaxyBackdrop(viewportEl) {
         group.appendChild(galaxyEllipse('galaxy-disc', disc));
         group.appendChild(galaxyEllipse('galaxy-bulge', bulge));
     }
-
-    renderColorStreak(group);
 
     viewportEl.appendChild(group);
 }
