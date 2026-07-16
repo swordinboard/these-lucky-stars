@@ -248,6 +248,10 @@ body {
     fill: url(#galaxy-arm-glow);
 }
 
+.galaxy-backdrop .galaxy-nucleus {
+    fill: url(#galaxy-nucleus-glow);
+}
+
 /* Cluster level renders as large "sector" zones instead of small nodes.
    Star clouds render as an <ellipse> instead of a <circle> (see render.js)
    for an oblong, nebula-like silhouette, so both shapes share this base

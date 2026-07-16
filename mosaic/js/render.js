@@ -12,41 +12,39 @@ const CLOUD_ROTATION_RANGE = 18;
 
 // A big, soft galaxy silhouette behind the cluster-level map only (see
 // FORMATTING.md's "skewed over symmetric" note — the same organic-over-tidy
-// preference applies here). One large lenticular "core" plus a couple of
-// smaller offset "arm" blobs at different rotations reads as one irregular
-// galaxy shape rather than a plain ellipse. The core sits up and to the left
-// of the charted clusters (see their bounding box), so the clusters occupy
-// one edge of the disc rather than its dead center — implying this is a
-// corner of a much larger galaxy, not the whole of it.
-const GALAXY_CORE = { cx: 700, cy: 500, rx: 1800, ry: 600, rotation: -20 };
+// preference applies here). A bright, small "nucleus" hotspot sits inside a
+// large lenticular "core" glow, plus a few smaller offset "arm" blobs at
+// different rotations, so it reads as one irregular galaxy shape (bright
+// center, fading structured arms) rather than a plain ellipse. The core sits
+// up and to the left of the charted clusters (see their bounding box), so
+// the clusters occupy one edge of the disc rather than its dead center —
+// implying this is a corner of a much larger galaxy, not the whole of it.
+const GALAXY_NUCLEUS = { cx: 700, cy: 500, rx: 260, ry: 110, rotation: -20 };
+const GALAXY_CORE = { cx: 700, cy: 500, rx: 2000, ry: 640, rotation: -20 };
 const GALAXY_ARMS = [
-    { cx: 1400, cy: 1300, rx: 900, ry: 280, rotation: 15 },
-    { cx: 2000, cy: 900, rx: 700, ry: 220, rotation: -35 },
+    { cx: 1400, cy: 1300, rx: 950, ry: 300, rotation: 15 },
+    { cx: 2000, cy: 900, rx: 750, ry: 240, rotation: -35 },
+    { cx: 1050, cy: 950, rx: 650, ry: 200, rotation: 40 },
 ];
+
+function galaxyEllipse(className, shape) {
+    const ellipse = document.createElementNS(SVG_NS, 'ellipse');
+    ellipse.setAttribute('class', className);
+    ellipse.setAttribute('cx', shape.cx);
+    ellipse.setAttribute('cy', shape.cy);
+    ellipse.setAttribute('rx', shape.rx);
+    ellipse.setAttribute('ry', shape.ry);
+    ellipse.setAttribute('transform', `rotate(${shape.rotation} ${shape.cx} ${shape.cy})`);
+    return ellipse;
+}
 
 function renderGalaxyBackdrop(viewportEl) {
     const group = document.createElementNS(SVG_NS, 'g');
     group.setAttribute('class', 'galaxy-backdrop');
 
-    const core = document.createElementNS(SVG_NS, 'ellipse');
-    core.setAttribute('class', 'galaxy-core');
-    core.setAttribute('cx', GALAXY_CORE.cx);
-    core.setAttribute('cy', GALAXY_CORE.cy);
-    core.setAttribute('rx', GALAXY_CORE.rx);
-    core.setAttribute('ry', GALAXY_CORE.ry);
-    core.setAttribute('transform', `rotate(${GALAXY_CORE.rotation} ${GALAXY_CORE.cx} ${GALAXY_CORE.cy})`);
-    group.appendChild(core);
-
-    for (const arm of GALAXY_ARMS) {
-        const ellipse = document.createElementNS(SVG_NS, 'ellipse');
-        ellipse.setAttribute('class', 'galaxy-arm');
-        ellipse.setAttribute('cx', arm.cx);
-        ellipse.setAttribute('cy', arm.cy);
-        ellipse.setAttribute('rx', arm.rx);
-        ellipse.setAttribute('ry', arm.ry);
-        ellipse.setAttribute('transform', `rotate(${arm.rotation} ${arm.cx} ${arm.cy})`);
-        group.appendChild(ellipse);
-    }
+    group.appendChild(galaxyEllipse('galaxy-core', GALAXY_CORE));
+    for (const arm of GALAXY_ARMS) group.appendChild(galaxyEllipse('galaxy-arm', arm));
+    group.appendChild(galaxyEllipse('galaxy-nucleus', GALAXY_NUCLEUS));
 
     viewportEl.appendChild(group);
 }
