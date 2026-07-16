@@ -10,23 +10,21 @@ const CLOUD_ASPECT_X_RANGE = [1.05, 1.3];
 const CLOUD_ASPECT_Y_RANGE = [0.75, 0.9];
 const CLOUD_ROTATION_RANGE = 18;
 
-// A big, soft galaxy silhouette behind the cluster-level map only (see
-// FORMATTING.md's "skewed over symmetric" note — the same organic-over-tidy
-// preference applies here). A bright, small "nucleus" hotspot sits inside a
-// large lenticular "core" glow, plus a few smaller offset "arm" blobs at
-// different rotations, so it reads as one irregular galaxy shape (bright
-// center, fading structured arms) rather than a plain ellipse. The core is
-// centered on Danswai Cloud (roughly the middle of the charted clusters), so
-// the whole field reads as sitting within/around the galaxy's bright hub
-// rather than off in a corner of it. The nucleus sits a bit lower than the
-// core's own center, so the brightest point isn't dead-center either.
-const GALAXY_NUCLEUS = { cx: 1515, cy: 1220, rx: 260, ry: 110, rotation: -20 };
-const GALAXY_CORE = { cx: 1515, cy: 1133, rx: 2000, ry: 640, rotation: -20 };
-const GALAXY_ARMS = [
-    { cx: 2215, cy: 1933, rx: 950, ry: 300, rotation: 15 },
-    { cx: 2815, cy: 1533, rx: 750, ry: 240, rotation: -35 },
-    { cx: 1865, cy: 1583, rx: 650, ry: 200, rotation: 40 },
-];
+// A big, soft galaxy silhouette behind the cluster-level map only — a
+// top-down (face-on) view of a lenticular galaxy: a bright, roughly-circular
+// bulge at its center, a broader soft disc around that, and a faint outer
+// halo reaching well past the charted clusters so no corner of the map is
+// left flat black. Lenticular galaxies read as smooth and featureless from
+// above (no spiral arms), so all three layers share the same center and a
+// gentle, near-circular shape rather than the arms/streaks of a spiral. The
+// center sits on Danswai Cloud, roughly the middle of the charted clusters,
+// with a slight shared rotation for a touch of organic asymmetry (see
+// FORMATTING.md's "skewed over symmetric" note).
+const GALAXY_CENTER = { cx: 1515, cy: 1133 };
+const GALAXY_ROTATION = 8;
+const GALAXY_HALO = { ...GALAXY_CENTER, rx: 2100, ry: 1850, rotation: GALAXY_ROTATION };
+const GALAXY_DISC = { ...GALAXY_CENTER, rx: 1300, ry: 1120, rotation: GALAXY_ROTATION };
+const GALAXY_BULGE = { ...GALAXY_CENTER, rx: 300, ry: 260, rotation: GALAXY_ROTATION };
 
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
@@ -43,9 +41,9 @@ function renderGalaxyBackdrop(viewportEl) {
     const group = document.createElementNS(SVG_NS, 'g');
     group.setAttribute('class', 'galaxy-backdrop');
 
-    group.appendChild(galaxyEllipse('galaxy-core', GALAXY_CORE));
-    for (const arm of GALAXY_ARMS) group.appendChild(galaxyEllipse('galaxy-arm', arm));
-    group.appendChild(galaxyEllipse('galaxy-nucleus', GALAXY_NUCLEUS));
+    group.appendChild(galaxyEllipse('galaxy-halo', GALAXY_HALO));
+    group.appendChild(galaxyEllipse('galaxy-disc', GALAXY_DISC));
+    group.appendChild(galaxyEllipse('galaxy-bulge', GALAXY_BULGE));
 
     viewportEl.appendChild(group);
 }
