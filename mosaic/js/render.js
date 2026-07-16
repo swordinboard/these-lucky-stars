@@ -18,9 +18,14 @@ const CLOUD_ROTATION_RANGE = 18;
 // single tidy hotspot. A faint shared ambient halo sits underneath all of
 // them, reaching well past the charted clusters so no corner of the map is
 // left flat black. On top of that, clusters with their own accent color get
-// a soft, low-opacity patch of that same color behind them, so the accent
-// hues already used for their nodes bleed gently into the backdrop and tie
-// the whole map together rather than sitting on a flat, uniform wash.
+// a loose, painterly puff of that same color behind them (several soft,
+// randomly-offset blobs rather than one crisp circle, like dabs of a soft
+// brush), so the accent hues already used for their nodes bleed into the
+// backdrop as an organic, hand-painted-looking wash. A scattered layer of
+// small bright specks sits above that wash — a second, denser starfield
+// living in the map's own coordinate space (unlike the CSS starfield, which
+// is fixed to the screen), so it pans and zooms with the clusters and gives
+// the nebula clouds a sense of depth.
 const GALAXY_HALO = { cx: 1515, cy: 1133, rx: 2100, ry: 1850, rotation: 8 };
 
 const FLARE_SIZES = {
@@ -28,7 +33,13 @@ const FLARE_SIZES = {
     secondary: { disc: { rx: 760, ry: 640 }, bulge: { rx: 170, ry: 145 } },
 };
 
-const ACCENT_PATCH_RADIUS = 300;
+const ACCENT_PUFF_COUNT = 4;
+const ACCENT_PUFF_RADIUS_RANGE = [200, 420];
+const ACCENT_PUFF_OFFSET_RANGE = 260;
+
+const MAP_STAR_COUNT = 160;
+const MAP_STAR_RADIUS_RANGE = [1, 2.8];
+const MAP_STAR_OPACITY_RANGE = [0.25, 0.75];
 
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
@@ -55,9 +66,44 @@ function flareShapesFor(entity) {
     };
 }
 
-function accentPatchShapeFor(entity) {
-    const { x: cx, y: cy } = entity.position;
-    return { cx, cy, rx: ACCENT_PATCH_RADIUS, ry: ACCENT_PATCH_RADIUS, rotation: 0 };
+// A handful of soft, randomly-offset blobs around the cluster's own position
+// rather than one clean circle, so the color reads as a loose painted puff.
+// Seeded per cluster id so it's stable across renders.
+function accentPuffShapesFor(entity) {
+    const rand = mulberry32(hashStringToSeed(`${entity.id}-puff`));
+    const puffs = [];
+    for (let i = 0; i < ACCENT_PUFF_COUNT; i++) {
+        const angle = rand() * Math.PI * 2;
+        const dist = rand() * ACCENT_PUFF_OFFSET_RANGE;
+        const r = ACCENT_PUFF_RADIUS_RANGE[0] + rand() * (ACCENT_PUFF_RADIUS_RANGE[1] - ACCENT_PUFF_RADIUS_RANGE[0]);
+        puffs.push({
+            cx: entity.position.x + Math.cos(angle) * dist,
+            cy: entity.position.y + Math.sin(angle) * dist,
+            rx: r,
+            ry: r * (0.7 + rand() * 0.3),
+            rotation: rand() * 360,
+        });
+    }
+    return puffs;
+}
+
+// A second, denser starfield scattered across the galaxy silhouette itself
+// (in map coordinates, so it pans/zooms with the clusters) rather than the
+// screen-fixed CSS starfield, for a bit of parallax depth behind the nebula
+// colors. Distributed over an ellipse roughly matching the halo's reach.
+function renderMapStarfield(group) {
+    const rand = mulberry32(hashStringToSeed('galaxy-map-starfield'));
+    for (let i = 0; i < MAP_STAR_COUNT; i++) {
+        const angle = rand() * Math.PI * 2;
+        const dist = Math.sqrt(rand());
+        const star = document.createElementNS(SVG_NS, 'circle');
+        star.setAttribute('class', 'galaxy-star-speck');
+        star.setAttribute('cx', GALAXY_HALO.cx + Math.cos(angle) * dist * GALAXY_HALO.rx);
+        star.setAttribute('cy', GALAXY_HALO.cy + Math.sin(angle) * dist * GALAXY_HALO.ry);
+        star.setAttribute('r', (MAP_STAR_RADIUS_RANGE[0] + rand() * (MAP_STAR_RADIUS_RANGE[1] - MAP_STAR_RADIUS_RANGE[0])).toFixed(2));
+        star.setAttribute('opacity', (MAP_STAR_OPACITY_RANGE[0] + rand() * (MAP_STAR_OPACITY_RANGE[1] - MAP_STAR_OPACITY_RANGE[0])).toFixed(2));
+        group.appendChild(star);
+    }
 }
 
 function renderGalaxyBackdrop(viewportEl) {
@@ -66,10 +112,17 @@ function renderGalaxyBackdrop(viewportEl) {
 
     group.appendChild(galaxyEllipse('galaxy-halo', GALAXY_HALO));
 
+    const puffGroup = document.createElementNS(SVG_NS, 'g');
+    puffGroup.setAttribute('class', 'galaxy-accent-puffs');
     for (const entity of clusters()) {
         if (!entity.accent) continue;
-        group.appendChild(galaxyEllipse(`galaxy-accent-patch galaxy-accent-${entity.accent}`, accentPatchShapeFor(entity)));
+        for (const shape of accentPuffShapesFor(entity)) {
+            puffGroup.appendChild(galaxyEllipse(`galaxy-accent-patch galaxy-accent-${entity.accent}`, shape));
+        }
     }
+    group.appendChild(puffGroup);
+
+    renderMapStarfield(group);
 
     for (const entity of clusters()) {
         if (entity.type !== 'star cloud') continue;
