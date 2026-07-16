@@ -15,16 +15,17 @@ const CLOUD_ROTATION_RANGE = 18;
 // preference applies here). A bright, small "nucleus" hotspot sits inside a
 // large lenticular "core" glow, plus a few smaller offset "arm" blobs at
 // different rotations, so it reads as one irregular galaxy shape (bright
-// center, fading structured arms) rather than a plain ellipse. The core sits
-// up and to the left of the charted clusters (see their bounding box), so
-// the clusters occupy one edge of the disc rather than its dead center —
-// implying this is a corner of a much larger galaxy, not the whole of it.
-const GALAXY_NUCLEUS = { cx: 700, cy: 500, rx: 260, ry: 110, rotation: -20 };
-const GALAXY_CORE = { cx: 700, cy: 500, rx: 2000, ry: 640, rotation: -20 };
+// center, fading structured arms) rather than a plain ellipse. The core is
+// centered on Danswai Cloud (roughly the middle of the charted clusters), so
+// the whole field reads as sitting within/around the galaxy's bright hub
+// rather than off in a corner of it. The nucleus sits a bit lower than the
+// core's own center, so the brightest point isn't dead-center either.
+const GALAXY_NUCLEUS = { cx: 1515, cy: 1220, rx: 260, ry: 110, rotation: -20 };
+const GALAXY_CORE = { cx: 1515, cy: 1133, rx: 2000, ry: 640, rotation: -20 };
 const GALAXY_ARMS = [
-    { cx: 1400, cy: 1300, rx: 950, ry: 300, rotation: 15 },
-    { cx: 2000, cy: 900, rx: 750, ry: 240, rotation: -35 },
-    { cx: 1050, cy: 950, rx: 650, ry: 200, rotation: 40 },
+    { cx: 2215, cy: 1933, rx: 950, ry: 300, rotation: 15 },
+    { cx: 2815, cy: 1533, rx: 750, ry: 240, rotation: -35 },
+    { cx: 1865, cy: 1583, rx: 650, ry: 200, rotation: 40 },
 ];
 
 function galaxyEllipse(className, shape) {
