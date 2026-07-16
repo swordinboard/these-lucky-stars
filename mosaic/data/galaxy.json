@@ -159,7 +159,7 @@
       "accent": "violet",
       "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
       "detail": ["Star systems: 2 known."],
-      "position": { "x": 2809, "y": 1238 }
+      "position": { "x": 2526, "y": 1481 }
     }
   ],
   "systems": [
@@ -234,7 +234,7 @@
       "type": "binary star system",
       "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
       "description": "The nearest star system to Sol, roughly 4.37 light-years away.",
-      "detail": ["Its yellow dwarf and orange dwarf orbit closely as a binary pair; Sol's actual nearest star, the red dwarf Proxima Centauri, is a much more distant companion not counted here."],
+      "detail": ["Its yellow dwarf and orange dwarf orbit closely as a binary pair; Sol's actual nearest star, the red dwarf Proxima Centauri, is a much more distant companion not counted here.", "Proxima Centauri hosts its own rocky planet, Proxima b, sitting within its habitable zone."],
       "position": { "x": 664, "y": 460 }
     },
     {
@@ -243,7 +243,7 @@
       "name": "Barnard's Star",
       "type": "red dwarf",
       "description": "A red dwarf roughly 5.96 light-years from Sol, and one of the closest stars to it.",
-      "detail": [],
+      "detail": ["Home to a candidate super-Earth, Barnard's Star b, discovered in 2018."],
       "position": { "x": 418, "y": 624 }
     },
     {
@@ -252,7 +252,7 @@
       "name": "Wolf",
       "type": "red dwarf",
       "description": "Wolf 359, a faint red dwarf roughly 7.86 light-years from Sol.",
-      "detail": [],
+      "detail": ["Despite decades of searching, no planets have been confirmed around it — its frequent, violent flares make detection unusually difficult."],
       "position": { "x": 205, "y": 292 }
     },
     {
@@ -261,7 +261,7 @@
       "name": "Lalande",
       "type": "red dwarf",
       "description": "Lalande 21185, a red dwarf roughly 8.31 light-years from Sol.",
-      "detail": [],
+      "detail": ["Its closest neighbor, Wolf 359, sits only about 4 light-years away — closer to it than to any other system in this cluster.", "Home to a confirmed super-Earth, Lalande 21185 b, on a tight 13-day orbit."],
       "position": { "x": 558, "y": 73 }
     },
     {
@@ -362,6 +362,7 @@
     { "from": "system-sol", "to": "system-barnards-star", "label": "5.96 ly", "type": "ftl lane" },
     { "from": "system-sol", "to": "system-wolf", "label": "7.86 ly", "type": "ftl lane" },
     { "from": "system-sol", "to": "system-lalande", "label": "8.31 ly", "type": "ftl lane" },
+    { "from": "system-wolf", "to": "system-lalande", "label": "4.07 ly", "type": "ftl lane" },
     { "from": "system-huntington", "to": "system-priapus", "type": "trade" },
     { "from": "system-huntington", "to": "system-zuni", "type": "trade" },
     { "from": "system-priapus", "to": "system-ngozi", "type": "trade" },
@@ -370,6 +371,41 @@
     { "from": "system-iris", "to": "system-veranda", "type": "trade" }
   ],
   "orbitalBodies": [
+    {
+      "id": "orb-proxima-b",
+      "systemId": "system-alpha-centuri",
+      "name": "Proxima b",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "description": "A rocky planet orbiting Proxima Centauri, the binary pair's much more distant third companion; sits within its habitable zone, though true surface conditions remain unknown.",
+      "detail": ["Roughly 1.07 times Earth's mass, discovered via radial velocity in 2016.", "Proxima Centauri's frequent, powerful flares may strip away any atmosphere it has."]
+    },
+    {
+      "id": "orb-barnards-star-b",
+      "systemId": "system-barnards-star",
+      "name": "Barnard's Star b",
+      "type": "super-Earth",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-cold",
+      "orbitOrder": 1,
+      "description": "A super-Earth candidate orbiting just outside Barnard's Star's habitable zone — likely too cold to hold liquid water on its surface.",
+      "detail": ["Roughly 3.2 times Earth's mass, detected via radial velocity in 2018.", "Orbits its dim red dwarf star once every 233 days."]
+    },
+    {
+      "id": "orb-lalande-b",
+      "systemId": "system-lalande",
+      "name": "Lalande 21185 b",
+      "type": "super-Earth",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-heat",
+      "orbitOrder": 1,
+      "description": "A super-Earth on a tight, roughly 13-day orbit around Lalande 21185, confirmed after decades of disputed detections.",
+      "detail": ["Roughly 3 times Earth's mass, confirmed in 2021 from combined radial-velocity data.", "Orbits far too close to its star for any reasonable chance of habitability."]
+    },
     {
       "id": "orb-anchor-i",
       "systemId": "system-anchor",
