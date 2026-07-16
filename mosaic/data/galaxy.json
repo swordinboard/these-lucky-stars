@@ -272,7 +272,7 @@
       "stars": [{ "type": "orange dwarf" }, { "type": "white dwarf" }],
       "description": "A binary star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
       "detail": ["Its two stars, Alpha and Beta, are known locally by those names; Beta is a white dwarf, the dim remnant of a star that burned out long ago."],
-      "position": { "x": 150, "y": 220 }
+      "position": { "x": 280, "y": 120 }
     },
     {
       "id": "system-priapus",
@@ -281,7 +281,7 @@
       "type": "star system",
       "description": "Home to the planets Chaq and Lyon, the volcanic world Gibil, and three largely uncharted gas and ice giants.",
       "detail": [],
-      "position": { "x": 380, "y": 150 }
+      "position": { "x": 620, "y": 90 }
     },
     {
       "id": "system-ngozi",
@@ -290,7 +290,7 @@
       "type": "star system",
       "description": "Home to Gaia, a wetland world settled by the Future Settlers League, alongside the ocean world Nautilus and the gas/ice giants G-Z0XL and G-X4T6.",
       "detail": [],
-      "position": { "x": 560, "y": 290 }
+      "position": { "x": 650, "y": 340 }
     },
     {
       "id": "system-zuni",
@@ -300,7 +300,7 @@
       "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
       "description": "A double star system home to the gas giant G-33UY and the planet Taishan.",
       "detail": ["Its two stars are known locally as Zuni Major, a yellow dwarf, and Zuni Minor, a smaller orange dwarf."],
-      "position": { "x": 760, "y": 180 }
+      "position": { "x": 260, "y": 360 }
     },
     {
       "id": "system-iris",
@@ -358,12 +358,12 @@
   "systemRoutes": [
     { "from": "system-anchor", "to": "system-kestrel", "label": "Anchor-Kestrel Run", "type": "trade" },
     { "from": "system-anchor", "to": "system-oberon", "label": "Anchor-Oberon Run", "type": "trade" },
-    { "from": "system-hearthhome", "to": "system-lowlight", "label": "Fleet Supply Line", "type": "military" },
     { "from": "system-sol", "to": "system-alpha-centuri", "label": "4.37 ly", "type": "ftl lane" },
     { "from": "system-sol", "to": "system-barnards-star", "label": "5.96 ly", "type": "ftl lane" },
     { "from": "system-sol", "to": "system-wolf", "label": "7.86 ly", "type": "ftl lane" },
     { "from": "system-sol", "to": "system-lalande", "label": "8.31 ly", "type": "ftl lane" },
     { "from": "system-huntington", "to": "system-priapus", "type": "trade" },
+    { "from": "system-huntington", "to": "system-zuni", "type": "trade" },
     { "from": "system-priapus", "to": "system-ngozi", "type": "trade" },
     { "from": "system-ngozi", "to": "system-zuni", "type": "trade" }
   ],
