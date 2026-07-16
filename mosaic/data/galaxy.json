@@ -33,16 +33,16 @@
       "id": "cluster-alpha",
       "name": "Alpha Cluster",
       "type": "cluster",
-      "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": ["Star systems: No data available."],
+      "description": "A quiet, lifeless cluster with no known habitable worlds.",
+      "detail": ["Star systems: 4 known."],
       "position": { "x": 1367, "y": 2308 }
     },
     {
       "id": "cluster-beta",
       "name": "Beta Cluster",
       "type": "cluster",
-      "description": "Details pending — known only by name and its FTL lane connections so far.",
-      "detail": ["Star systems: No data available."],
+      "description": "A quiet, lifeless cluster with no known habitable worlds.",
+      "detail": ["Star systems: 5 known."],
       "position": { "x": 1449, "y": 2565 }
     },
     {
@@ -328,7 +328,16 @@
       "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
       "detail": [],
       "position": { "x": 300, "y": 200 }
-    }
+    },
+    { "id": "system-talvern", "clusterId": "cluster-alpha", "name": "Talvern", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 400, "y": 280 } },
+    { "id": "system-ustrid", "clusterId": "cluster-alpha", "name": "Ustrid", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two ice giants and a scattered asteroid belt.", "detail": [], "position": { "x": 400, "y": 148 } },
+    { "id": "system-grivane", "clusterId": "cluster-alpha", "name": "Grivane", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 514, "y": 346 } },
+    { "id": "system-lundstrom", "clusterId": "cluster-alpha", "name": "Lundstrom", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by two barren worlds and a gas giant.", "detail": [], "position": { "x": 286, "y": 346 } },
+    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 400, "y": 280 } },
+    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 400, "y": 140 } },
+    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 535, "y": 316 } },
+    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 273, "y": 221 } },
+    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 352, "y": 412 } }
   ],
   "clusterRoutes": [
     { "from": "cluster-verge", "to": "cluster-hearth", "label": "Compact Trunk Line", "type": "trade" },
@@ -368,9 +377,38 @@
     { "from": "system-priapus", "to": "system-ngozi", "type": "trade" },
     { "from": "system-priapus", "to": "system-zuni", "type": "trade" },
     { "from": "system-ngozi", "to": "system-zuni", "type": "trade" },
-    { "from": "system-iris", "to": "system-veranda", "type": "trade" }
+    { "from": "system-iris", "to": "system-veranda", "type": "trade" },
+    { "from": "system-talvern", "to": "system-ustrid", "type": "ftl lane" },
+    { "from": "system-talvern", "to": "system-grivane", "type": "ftl lane" },
+    { "from": "system-talvern", "to": "system-lundstrom", "type": "ftl lane" },
+    { "from": "system-ustrid", "to": "system-grivane", "type": "ftl lane" },
+    { "from": "system-ustrid", "to": "system-lundstrom", "type": "ftl lane" },
+    { "from": "system-grivane", "to": "system-lundstrom", "type": "ftl lane" },
+    { "from": "system-corrigan", "to": "system-harrowick", "type": "ftl lane" },
+    { "from": "system-corrigan", "to": "system-bramsk", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-harrowick", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-bramsk", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-bramsk", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-nabren", "type": "ftl lane" },
+    { "from": "system-bramsk", "to": "system-nabren", "type": "ftl lane" }
   ],
   "orbitalBodies": [
+    { "id": "orb-pertash-belt", "systemId": "system-talvern", "name": "Pertash Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 1, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-halcost", "systemId": "system-ustrid", "name": "Halcost", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 1, "description": "An ice giant with roughly 29 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-mirsk", "systemId": "system-ustrid", "name": "Mirsk", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 2, "description": "An ice giant with roughly 71 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-thornix-belt", "systemId": "system-ustrid", "name": "Thornix Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 3, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-ferrin-belt", "systemId": "system-grivane", "name": "Ferrin Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 1, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-kelmyr", "systemId": "system-lundstrom", "name": "Kelmyr", "type": "rocky planet", "bodyType": "planet", "scale": "small", "hazard": "extreme-cold", "orbitOrder": 1, "description": "A frozen rocky world locked in permanent ice.", "detail": [] },
+    { "id": "orb-feldis", "systemId": "system-lundstrom", "name": "Feldis", "type": "gas giant", "bodyType": "planet", "scale": "large", "hazard": "gas-giant", "orbitOrder": 2, "description": "A gas giant with roughly 159 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-odessyn", "systemId": "system-lundstrom", "name": "Odessyn", "type": "rocky planet", "bodyType": "planet", "scale": "small", "hazard": "extreme-heat", "orbitOrder": 3, "description": "A scorched rocky world, far too hot to support life.", "detail": [] },
+    { "id": "orb-jastrun", "systemId": "system-corrigan", "name": "Jastrun", "type": "gas giant", "bodyType": "planet", "scale": "large", "hazard": "gas-giant", "orbitOrder": 1, "description": "A gas giant with roughly 142 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-ingvar", "systemId": "system-casimund", "name": "Ingvar", "type": "rocky planet", "bodyType": "planet", "scale": "small", "orbitOrder": 1, "description": "A barren rocky world with no atmosphere.", "detail": [] },
+    { "id": "orb-junnar", "systemId": "system-casimund", "name": "Junnar", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "orbitOrder": 2, "description": "A barren rocky world with no atmosphere.", "detail": [] },
+    { "id": "orb-driscol", "systemId": "system-casimund", "name": "Driscol", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 3, "description": "An ice giant with roughly 57 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-kavrel", "systemId": "system-harrowick", "name": "Kavrel", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "hazard": "extreme-heat", "orbitOrder": 1, "description": "A scorched rocky world, far too hot to support life.", "detail": [] },
+    { "id": "orb-verrow", "systemId": "system-bramsk", "name": "Verrow", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "hazard": "extreme-cold", "orbitOrder": 1, "description": "A frozen rocky world locked in permanent ice.", "detail": [] },
+    { "id": "orb-baltrun", "systemId": "system-nabren", "name": "Baltrun", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 1, "description": "An ice giant with roughly 100 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-solmere-belt", "systemId": "system-nabren", "name": "Solmere Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 2, "description": "A scattered belt of rocky debris.", "detail": [] },
     {
       "id": "orb-proxima-b",
       "systemId": "system-alpha-centuri",
