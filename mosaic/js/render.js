@@ -37,9 +37,19 @@ const ACCENT_PUFF_COUNT = 4;
 const ACCENT_PUFF_RADIUS_RANGE = [200, 420];
 const ACCENT_PUFF_OFFSET_RANGE = 260;
 
+// A third color wash with no cluster of its own to anchor to — a warm rust
+// tone washed over the Lee/Fold/Morrison corner of the map (bottom-right),
+// centered on their rough midpoint, so that corner isn't left as a plain
+// amber-on-amber stretch next to the violet and blue washes elsewhere.
+const RUST_WASH = { id: 'galaxy-rust-wash', position: { x: 2312, y: 2089 } };
+
 const MAP_STAR_COUNT = 160;
-const MAP_STAR_RADIUS_RANGE = [1, 2.8];
-const MAP_STAR_OPACITY_RANGE = [0.25, 0.75];
+// Sized in map-data units, which get scaled down a lot by the cluster view's
+// fit-to-screen zoom (roughly 0.1-0.3x at the default fit) — small enough to
+// read as screen-space "specks" like the CSS starfield despite living in map
+// coordinates, not literal 1-3px circles which would be sub-pixel here.
+const MAP_STAR_RADIUS_RANGE = [6, 14];
+const MAP_STAR_OPACITY_RANGE = [0.3, 0.8];
 
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
@@ -66,19 +76,20 @@ function flareShapesFor(entity) {
     };
 }
 
-// A handful of soft, randomly-offset blobs around the cluster's own position
-// rather than one clean circle, so the color reads as a loose painted puff.
-// Seeded per cluster id so it's stable across renders.
-function accentPuffShapesFor(entity) {
-    const rand = mulberry32(hashStringToSeed(`${entity.id}-puff`));
+// A handful of soft, randomly-offset blobs around a position rather than one
+// clean circle, so the color reads as a loose painted puff. Seeded per id so
+// it's stable across renders — used both for a cluster's own accent (seeded
+// by cluster id) and for the standalone rust wash (seeded by its own id).
+function accentPuffShapesFor(seedId, position) {
+    const rand = mulberry32(hashStringToSeed(`${seedId}-puff`));
     const puffs = [];
     for (let i = 0; i < ACCENT_PUFF_COUNT; i++) {
         const angle = rand() * Math.PI * 2;
         const dist = rand() * ACCENT_PUFF_OFFSET_RANGE;
         const r = ACCENT_PUFF_RADIUS_RANGE[0] + rand() * (ACCENT_PUFF_RADIUS_RANGE[1] - ACCENT_PUFF_RADIUS_RANGE[0]);
         puffs.push({
-            cx: entity.position.x + Math.cos(angle) * dist,
-            cy: entity.position.y + Math.sin(angle) * dist,
+            cx: position.x + Math.cos(angle) * dist,
+            cy: position.y + Math.sin(angle) * dist,
             rx: r,
             ry: r * (0.7 + rand() * 0.3),
             rotation: rand() * 360,
@@ -116,9 +127,12 @@ function renderGalaxyBackdrop(viewportEl) {
     puffGroup.setAttribute('class', 'galaxy-accent-puffs');
     for (const entity of clusters()) {
         if (!entity.accent) continue;
-        for (const shape of accentPuffShapesFor(entity)) {
+        for (const shape of accentPuffShapesFor(entity.id, entity.position)) {
             puffGroup.appendChild(galaxyEllipse(`galaxy-accent-patch galaxy-accent-${entity.accent}`, shape));
         }
+    }
+    for (const shape of accentPuffShapesFor(RUST_WASH.id, RUST_WASH.position)) {
+        puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
     group.appendChild(puffGroup);
 

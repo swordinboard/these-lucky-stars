@@ -250,10 +250,6 @@ body {
     fill: url(#galaxy-bulge-glow);
 }
 
-.galaxy-backdrop .galaxy-accent-puffs {
-    filter: url(#galaxy-puff-blur);
-}
-
 .galaxy-backdrop .galaxy-accent-teal {
     fill: url(#galaxy-accent-teal-glow);
 }
@@ -264,6 +260,10 @@ body {
 
 .galaxy-backdrop .galaxy-accent-blue {
     fill: url(#galaxy-accent-blue-glow);
+}
+
+.galaxy-backdrop .galaxy-accent-rust {
+    fill: url(#galaxy-accent-rust-glow);
 }
 
 .galaxy-backdrop .galaxy-star-speck {
