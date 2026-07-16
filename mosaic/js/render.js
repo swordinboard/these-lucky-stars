@@ -43,13 +43,27 @@ const ACCENT_PUFF_OFFSET_RANGE = 260;
 // amber-on-amber stretch next to the violet and blue washes elsewhere.
 const RUST_WASH = { id: 'galaxy-rust-wash', position: { x: 2312, y: 2089 } };
 
-const MAP_STAR_COUNT = 160;
-// Sized in map-data units, which get scaled down a lot by the cluster view's
-// fit-to-screen zoom (roughly 0.1-0.3x at the default fit) — small enough to
-// read as screen-space "specks" like the CSS starfield despite living in map
-// coordinates, not literal 1-3px circles which would be sub-pixel here.
-const MAP_STAR_RADIUS_RANGE = [6, 14];
-const MAP_STAR_OPACITY_RANGE = [0.3, 0.8];
+// A second, smaller rust patch fanning out from Alpha/Beta toward Weisman
+// Cloud, so the wash reaches that corner too rather than stopping at Lee/Fold.
+const RUST_WASH_ALPHA_BETA_ID = 'galaxy-rust-wash-alpha-beta';
+const RUST_WASH_ALPHA_BETA_SPREAD = Math.PI; // half-circle arc, biased toward Weisman
+
+// Stars cluster densely around the brightest points on the map — the star
+// clouds' own flares — and thin out with distance, rather than scattering
+// evenly over the whole halo. Weights roughly follow each flare's own
+// brightness (Danswai's primary flare draws the most, Hart/Weisman's
+// smaller secondary flares draw less).
+const MAP_STAR_TOTAL = 160;
+const MAP_STAR_CENTERS = [
+    { id: 'cluster-danswai', weight: 0.45, maxDist: 1300 },
+    { id: 'cluster-hart', weight: 0.3, maxDist: 800 },
+    { id: 'cluster-weisman', weight: 0.25, maxDist: 800 },
+];
+const MAP_STAR_FAN_POWER = 2.4; // >1 biases samples toward the center (dense core, sparse tail)
+// Tiny — sized in map-data units, which get scaled down a lot by the cluster
+// view's fit-to-screen zoom (roughly 0.1-0.3x at the default fit).
+const MAP_STAR_RADIUS_RANGE = [3, 6.5];
+const MAP_STAR_OPACITY_RANGE = [0.25, 0.65];
 
 function galaxyEllipse(className, shape) {
     const ellipse = document.createElementNS(SVG_NS, 'ellipse');
@@ -76,15 +90,24 @@ function flareShapesFor(entity) {
     };
 }
 
+function clusterPosition(id) {
+    return clusters().find((entity) => entity.id === id).position;
+}
+
 // A handful of soft, randomly-offset blobs around a position rather than one
 // clean circle, so the color reads as a loose painted puff. Seeded per id so
 // it's stable across renders — used both for a cluster's own accent (seeded
-// by cluster id) and for the standalone rust wash (seeded by its own id).
-function accentPuffShapesFor(seedId, position) {
+// by cluster id) and for the standalone rust washes (seeded by their own id).
+// By default the blobs scatter in every direction; passing angleCenter (with
+// a narrower angleSpread) instead biases them toward one side, for a puff
+// that "fans" toward something rather than surrounding its anchor evenly.
+function accentPuffShapesFor(seedId, position, { angleCenter = null, angleSpread = Math.PI * 2 } = {}) {
     const rand = mulberry32(hashStringToSeed(`${seedId}-puff`));
     const puffs = [];
     for (let i = 0; i < ACCENT_PUFF_COUNT; i++) {
-        const angle = rand() * Math.PI * 2;
+        const angle = angleCenter === null
+            ? rand() * Math.PI * 2
+            : angleCenter + (rand() - 0.5) * angleSpread;
         const dist = rand() * ACCENT_PUFF_OFFSET_RANGE;
         const r = ACCENT_PUFF_RADIUS_RANGE[0] + rand() * (ACCENT_PUFF_RADIUS_RANGE[1] - ACCENT_PUFF_RADIUS_RANGE[0]);
         puffs.push({
@@ -101,19 +124,25 @@ function accentPuffShapesFor(seedId, position) {
 // A second, denser starfield scattered across the galaxy silhouette itself
 // (in map coordinates, so it pans/zooms with the clusters) rather than the
 // screen-fixed CSS starfield, for a bit of parallax depth behind the nebula
-// colors. Distributed over an ellipse roughly matching the halo's reach.
+// colors. Stars fan out from each star cloud's own flare — the brightest
+// points on the map — rather than spreading evenly, so they read as thrown
+// off those bright cores instead of a uniform haze.
 function renderMapStarfield(group) {
     const rand = mulberry32(hashStringToSeed('galaxy-map-starfield'));
-    for (let i = 0; i < MAP_STAR_COUNT; i++) {
-        const angle = rand() * Math.PI * 2;
-        const dist = Math.sqrt(rand());
-        const star = document.createElementNS(SVG_NS, 'circle');
-        star.setAttribute('class', 'galaxy-star-speck');
-        star.setAttribute('cx', GALAXY_HALO.cx + Math.cos(angle) * dist * GALAXY_HALO.rx);
-        star.setAttribute('cy', GALAXY_HALO.cy + Math.sin(angle) * dist * GALAXY_HALO.ry);
-        star.setAttribute('r', (MAP_STAR_RADIUS_RANGE[0] + rand() * (MAP_STAR_RADIUS_RANGE[1] - MAP_STAR_RADIUS_RANGE[0])).toFixed(2));
-        star.setAttribute('opacity', (MAP_STAR_OPACITY_RANGE[0] + rand() * (MAP_STAR_OPACITY_RANGE[1] - MAP_STAR_OPACITY_RANGE[0])).toFixed(2));
-        group.appendChild(star);
+    for (const center of MAP_STAR_CENTERS) {
+        const position = clusterPosition(center.id);
+        const count = Math.round(MAP_STAR_TOTAL * center.weight);
+        for (let i = 0; i < count; i++) {
+            const angle = rand() * Math.PI * 2;
+            const dist = Math.pow(rand(), MAP_STAR_FAN_POWER) * center.maxDist;
+            const star = document.createElementNS(SVG_NS, 'circle');
+            star.setAttribute('class', 'galaxy-star-speck');
+            star.setAttribute('cx', (position.x + Math.cos(angle) * dist).toFixed(1));
+            star.setAttribute('cy', (position.y + Math.sin(angle) * dist).toFixed(1));
+            star.setAttribute('r', (MAP_STAR_RADIUS_RANGE[0] + rand() * (MAP_STAR_RADIUS_RANGE[1] - MAP_STAR_RADIUS_RANGE[0])).toFixed(2));
+            star.setAttribute('opacity', (MAP_STAR_OPACITY_RANGE[0] + rand() * (MAP_STAR_OPACITY_RANGE[1] - MAP_STAR_OPACITY_RANGE[0])).toFixed(2));
+            group.appendChild(star);
+        }
     }
 }
 
@@ -132,6 +161,16 @@ function renderGalaxyBackdrop(viewportEl) {
         }
     }
     for (const shape of accentPuffShapesFor(RUST_WASH.id, RUST_WASH.position)) {
+        puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
+    }
+
+    const alphaPos = clusterPosition('cluster-alpha');
+    const betaPos = clusterPosition('cluster-beta');
+    const alphaBetaMid = { x: (alphaPos.x + betaPos.x) / 2, y: (alphaPos.y + betaPos.y) / 2 };
+    const weismanPos = clusterPosition('cluster-weisman');
+    const fanAngle = Math.atan2(weismanPos.y - alphaBetaMid.y, weismanPos.x - alphaBetaMid.x);
+    const fanOptions = { angleCenter: fanAngle, angleSpread: RUST_WASH_ALPHA_BETA_SPREAD };
+    for (const shape of accentPuffShapesFor(RUST_WASH_ALPHA_BETA_ID, alphaBetaMid, fanOptions)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
     group.appendChild(puffGroup);
