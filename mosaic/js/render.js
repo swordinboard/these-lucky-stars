@@ -10,6 +10,47 @@ const CLOUD_ASPECT_X_RANGE = [1.05, 1.3];
 const CLOUD_ASPECT_Y_RANGE = [0.75, 0.9];
 const CLOUD_ROTATION_RANGE = 18;
 
+// A big, soft galaxy silhouette behind the cluster-level map only (see
+// FORMATTING.md's "skewed over symmetric" note — the same organic-over-tidy
+// preference applies here). One large lenticular "core" plus a couple of
+// smaller offset "arm" blobs at different rotations reads as one irregular
+// galaxy shape rather than a plain ellipse. The core sits up and to the left
+// of the charted clusters (see their bounding box), so the clusters occupy
+// one edge of the disc rather than its dead center — implying this is a
+// corner of a much larger galaxy, not the whole of it.
+const GALAXY_CORE = { cx: 700, cy: 500, rx: 1800, ry: 600, rotation: -20 };
+const GALAXY_ARMS = [
+    { cx: 1400, cy: 1300, rx: 900, ry: 280, rotation: 15 },
+    { cx: 2000, cy: 900, rx: 700, ry: 220, rotation: -35 },
+];
+
+function renderGalaxyBackdrop(viewportEl) {
+    const group = document.createElementNS(SVG_NS, 'g');
+    group.setAttribute('class', 'galaxy-backdrop');
+
+    const core = document.createElementNS(SVG_NS, 'ellipse');
+    core.setAttribute('class', 'galaxy-core');
+    core.setAttribute('cx', GALAXY_CORE.cx);
+    core.setAttribute('cy', GALAXY_CORE.cy);
+    core.setAttribute('rx', GALAXY_CORE.rx);
+    core.setAttribute('ry', GALAXY_CORE.ry);
+    core.setAttribute('transform', `rotate(${GALAXY_CORE.rotation} ${GALAXY_CORE.cx} ${GALAXY_CORE.cy})`);
+    group.appendChild(core);
+
+    for (const arm of GALAXY_ARMS) {
+        const ellipse = document.createElementNS(SVG_NS, 'ellipse');
+        ellipse.setAttribute('class', 'galaxy-arm');
+        ellipse.setAttribute('cx', arm.cx);
+        ellipse.setAttribute('cy', arm.cy);
+        ellipse.setAttribute('rx', arm.rx);
+        ellipse.setAttribute('ry', arm.ry);
+        ellipse.setAttribute('transform', `rotate(${arm.rotation} ${arm.cx} ${arm.cy})`);
+        group.appendChild(ellipse);
+    }
+
+    viewportEl.appendChild(group);
+}
+
 // Star clouds render larger than ordinary clusters/sectors, and as an oblong
 // (elongated, slightly rotated) ellipse rather than a circle, to visually
 // set them apart — similar to how differently-sized/shaped bodies are
@@ -86,6 +127,8 @@ function boundsOf(entities, radiusForEntity) {
 
 export function renderLevel(viewportEl, state) {
     while (viewportEl.firstChild) viewportEl.removeChild(viewportEl.firstChild);
+
+    if (state.level === 'cluster') renderGalaxyBackdrop(viewportEl);
 
     const { entities, routes } = entitiesAndRoutesFor(state);
     const byId = new Map(entities.map((entity) => [entity.id, entity]));

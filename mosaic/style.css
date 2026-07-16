@@ -229,6 +229,25 @@ body {
     pointer-events: none;
 }
 
+/* A big, soft galaxy silhouette behind the cluster-level map (see
+   renderGalaxyBackdrop in render.js) — a lenticular core plus a couple of
+   offset "arm" blobs so it reads as one irregular galaxy shape rather than
+   a plain ellipse. Sized and positioned so the charted clusters sit toward
+   one edge of it, like a corner of a much larger galaxy. Non-interactive
+   and low-opacity so it stays a backdrop, never competing with the actual
+   sector nodes for attention. */
+.galaxy-backdrop {
+    pointer-events: none;
+}
+
+.galaxy-backdrop .galaxy-core {
+    fill: url(#galaxy-core-glow);
+}
+
+.galaxy-backdrop .galaxy-arm {
+    fill: url(#galaxy-arm-glow);
+}
+
 /* Cluster level renders as large "sector" zones instead of small nodes.
    Star clouds render as an <ellipse> instead of a <circle> (see render.js)
    for an oblong, nebula-like silhouette, so both shapes share this base
