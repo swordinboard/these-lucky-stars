@@ -189,7 +189,7 @@
       "stars": [{ "type": "orange dwarf" }, { "type": "white dwarf" }],
       "description": "A binary star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
       "detail": ["Its two stars, Alpha and Beta, are known locally by those names; Beta is a white dwarf, the dim remnant of a star that burned out long ago."],
-      "position": { "x": 680, "y": 360 }
+      "position": { "x": 175, "y": 332 }
     },
     {
       "id": "system-priapus",
@@ -198,7 +198,7 @@
       "type": "star system",
       "description": "Home to the planets Chaq and Lyon, the volcanic world Gibil, and three largely uncharted gas and ice giants.",
       "detail": [],
-      "position": { "x": 610, "y": 80 }
+      "position": { "x": 236, "y": 193 }
     },
     {
       "id": "system-ngozi",
@@ -207,7 +207,7 @@
       "type": "star system",
       "description": "Home to Gaia, a wetland world settled by the Future Settlers League, alongside the ocean world Nautilus and the gas/ice giants G-Z0XL and G-X4T6.",
       "detail": [],
-      "position": { "x": 200, "y": 170 }
+      "position": { "x": 210, "y": 80 }
     },
     {
       "id": "system-zuni",
@@ -217,7 +217,7 @@
       "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
       "description": "A double star system home to the gas giant G-33UY and the planet Taishan.",
       "detail": ["Its two stars are known locally as Zuni Major, a yellow dwarf, and Zuni Minor, a smaller orange dwarf."],
-      "position": { "x": 455, "y": 500 }
+      "position": { "x": 80, "y": 103 }
     },
     {
       "id": "system-iris",
@@ -235,7 +235,7 @@
       "type": "star system",
       "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
       "detail": [],
-      "position": { "x": 80, "y": 80 }
+      "position": { "x": 22, "y": 22 }
     },
     {
       "id": "system-thalla",
@@ -246,15 +246,15 @@
       "detail": [],
       "position": { "x": 300, "y": 200 }
     },
-    { "id": "system-talvern", "clusterId": "cluster-alpha", "name": "Talvern", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 353, "y": 139 } },
-    { "id": "system-ustrid", "clusterId": "cluster-alpha", "name": "Ustrid", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two ice giants and a scattered asteroid belt.", "detail": [], "position": { "x": 610, "y": 218 } },
-    { "id": "system-grivane", "clusterId": "cluster-alpha", "name": "Grivane", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 178, "y": 282 } },
-    { "id": "system-lundstrom", "clusterId": "cluster-alpha", "name": "Lundstrom", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by two barren worlds and a gas giant.", "detail": [], "position": { "x": 368, "y": 500 } },
-    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 400, "y": 320 } },
-    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 400, "y": 140 } },
-    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 535, "y": 316 } },
-    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 273, "y": 221 } },
-    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 352, "y": 412 } }
+    { "id": "system-talvern", "clusterId": "cluster-alpha", "name": "Talvern", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 80, "y": 192 } },
+    { "id": "system-ustrid", "clusterId": "cluster-alpha", "name": "Ustrid", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two ice giants and a scattered asteroid belt.", "detail": [], "position": { "x": 170, "y": 80 } },
+    { "id": "system-grivane", "clusterId": "cluster-alpha", "name": "Grivane", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 128, "y": 390 } },
+    { "id": "system-lundstrom", "clusterId": "cluster-alpha", "name": "Lundstrom", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by two barren worlds and a gas giant.", "detail": [], "position": { "x": 245, "y": 163 } },
+    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 80, "y": 194 } },
+    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 377, "y": 223 } },
+    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 249, "y": 214 } },
+    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 247, "y": 80 } },
+    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 148, "y": 148 } }
   ],
   "clusterRoutes": [
     { "from": "cluster-morrison", "to": "cluster-hart", "label": "3", "type": "ftl lane" },
@@ -291,7 +291,7 @@
     { "from": "system-priapus", "to": "system-ngozi", "label": "2.9 ly", "type": "trade" },
     { "from": "system-priapus", "to": "system-zuni", "label": "4.5 ly", "type": "trade" },
     { "from": "system-ngozi", "to": "system-zuni", "label": "3.3 ly", "type": "trade" },
-    { "from": "system-iris", "to": "system-veranda", "label": "2.1 ly", "type": "trade" },
+    { "from": "system-iris", "to": "system-veranda", "label": "6.3 ly", "type": "trade" },
     { "from": "system-talvern", "to": "system-ustrid", "label": "3.6 ly", "type": "ftl lane" },
     { "from": "system-talvern", "to": "system-grivane", "label": "5.1 ly", "type": "ftl lane" },
     { "from": "system-talvern", "to": "system-lundstrom", "label": "4.2 ly", "type": "ftl lane" },
