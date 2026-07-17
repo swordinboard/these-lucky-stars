@@ -53,7 +53,7 @@ const RUST_WASH_ALPHA_BETA_SPREAD = Math.PI; // half-circle arc, biased toward W
 // evenly over the whole halo. Weights roughly follow each flare's own
 // brightness (Danswai's primary flare draws the most, Hart/Weisman's
 // smaller secondary flares draw less).
-const MAP_STAR_TOTAL = 160;
+const MAP_STAR_TOTAL = 480;
 const MAP_STAR_CENTERS = [
     { id: 'cluster-danswai', weight: 0.45, maxDist: 1300 },
     { id: 'cluster-hart', weight: 0.3, maxDist: 800 },
@@ -62,7 +62,7 @@ const MAP_STAR_CENTERS = [
 const MAP_STAR_FAN_POWER = 2.4; // >1 biases samples toward the center (dense core, sparse tail)
 // Tiny — sized in map-data units, which get scaled down a lot by the cluster
 // view's fit-to-screen zoom (roughly 0.1-0.3x at the default fit).
-const MAP_STAR_RADIUS_RANGE = [3, 6.5];
+const MAP_STAR_RADIUS_RANGE = [2.1, 4.55];
 const MAP_STAR_OPACITY_RANGE = [0.25, 0.65];
 
 function galaxyEllipse(className, shape) {
