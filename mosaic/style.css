@@ -662,6 +662,12 @@ circle.hit-area {
     font-size: 0.9em;
 }
 
+.details-distance {
+    color: rgba(233, 233, 233, 0.55);
+    font-size: 0.85em;
+    margin: -6px 0 8px;
+}
+
 .details-close {
     position: absolute;
     top: 8px;

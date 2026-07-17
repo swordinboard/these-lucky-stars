@@ -120,6 +120,13 @@ export function renderDetailsPanel(el, state) {
     type.textContent = entity.type;
     el.appendChild(type);
 
+    if (typeof entity.distanceAu === 'number') {
+        const distance = document.createElement('p');
+        distance.className = 'details-distance';
+        distance.textContent = `${entity.distanceAu} AU from its star`;
+        el.appendChild(distance);
+    }
+
     const description = document.createElement('p');
     description.textContent = entity.description;
     el.appendChild(description);
