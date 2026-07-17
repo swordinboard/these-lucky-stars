@@ -280,8 +280,8 @@ body {
 .node-cluster ellipse {
     fill: url(#sector-glow);
     stroke: var(--accent);
-    stroke-width: 1.5;
-    stroke-opacity: 0.7;
+    stroke-width: 2;
+    stroke-opacity: 0.85;
 }
 
 .node-cluster[data-accent="teal"] circle,
@@ -311,6 +311,16 @@ body {
 .route-line {
     stroke: rgba(233, 233, 233, 0.35);
     stroke-width: 1.5;
+}
+
+/* The galaxy-level map sits over a much busier, colorful backdrop than the
+   plain-black system view, so its routes and sector outlines need a bit more
+   contrast to keep from getting lost in it. Scoped to the cluster level via
+   the galaxy backdrop's sibling .edges group, so the plain system-level
+   routes stay at their original, subtler weight. */
+.galaxy-backdrop ~ .edges .route-line {
+    stroke: rgba(233, 233, 233, 0.55);
+    stroke-width: 2;
 }
 
 /* An FTL connection the source notes describe as unconfirmed/unclear gets a
