@@ -7,7 +7,7 @@
       "type": "cluster",
       "description": "A quiet, lifeless cluster with no known habitable worlds.",
       "detail": ["Star systems: 4 known."],
-      "position": { "x": 1247, "y": 2219 }
+      "position": { "x": 1767, "y": 1400 }
     },
     {
       "id": "cluster-beta",
@@ -15,7 +15,7 @@
       "type": "cluster",
       "description": "A quiet, lifeless cluster with no known habitable worlds.",
       "detail": ["Star systems: 5 known."],
-      "position": { "x": 1392, "y": 2436 }
+      "position": { "x": 1839, "y": 1137 }
     },
     {
       "id": "cluster-danswai",
@@ -24,7 +24,7 @@
       "accent": "teal",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 1756, "y": 1116 }
+      "position": { "x": 655, "y": 1743 }
     },
     {
       "id": "cluster-fold",
@@ -32,7 +32,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 2762, "y": 2513 }
+      "position": { "x": 854, "y": 150 }
     },
     {
       "id": "cluster-forrow",
@@ -41,7 +41,7 @@
       "accent": "violet",
       "description": "The home cluster of Hravia. Their homeworld was destroyed by an unrecorded cause, referred to only as \"XXXX\" in surviving accounts.",
       "detail": ["Star systems: 1 known."],
-      "position": { "x": 2248, "y": 945 }
+      "position": { "x": 150, "y": 1627 }
     },
     {
       "id": "cluster-hart",
@@ -50,7 +50,7 @@
       "accent": "teal",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 2026, "y": 1577 }
+      "position": { "x": 686, "y": 1277 }
     },
     {
       "id": "cluster-hope",
@@ -58,7 +58,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 1785, "y": 1677 }
+      "position": { "x": 944, "y": 1383 }
     },
     {
       "id": "cluster-lee",
@@ -66,7 +66,7 @@
       "type": "cluster",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 2510, "y": 1771 }
+      "position": { "x": 530, "y": 746 }
     },
     {
       "id": "cluster-nor",
@@ -74,7 +74,7 @@
       "type": "cluster",
       "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 2010, "y": 1054 }
+      "position": { "x": 370, "y": 1532 }
     },
     {
       "id": "cluster-pistil",
@@ -86,7 +86,7 @@
         "Star systems: 3 speculated.",
         "Access from Danswai Cloud is limited and the route is not well charted."
       ],
-      "position": { "x": 1090, "y": 1157 }
+      "position": { "x": 1160, "y": 2267 }
     },
     {
       "id": "cluster-teegarden",
@@ -95,17 +95,17 @@
       "accent": "blue",
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available.", "Affiliated with SolPAC."],
-      "position": { "x": 1296, "y": 1750 }
+      "position": { "x": 1335, "y": 1702 }
     },
     {
       "id": "cluster-weisman",
       "name": "Weisman Cloud",
       "type": "star cloud",
       "accent": "teal",
-      "cloudRotation": -34,
+      "cloudRotation": -3,
       "description": "Details pending — known only by name and its FTL lane connections so far.",
       "detail": ["Star systems: No data available."],
-      "position": { "x": 1383, "y": 1996 }
+      "position": { "x": 1519, "y": 1607 }
     },
     {
       "id": "cluster-morrison",
@@ -113,7 +113,7 @@
       "type": "cluster",
       "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
       "detail": ["Star systems: 4 known.", "Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
-      "position": { "x": 2100, "y": 2094 }
+      "position": { "x": 995, "y": 799 }
     },
     {
       "id": "cluster-local",
@@ -122,7 +122,7 @@
       "accent": "blue",
       "description": "All systems under SolPAC control.",
       "detail": ["Star systems: 5 known."],
-      "position": { "x": 1553, "y": 1798 }
+      "position": { "x": 1270, "y": 1418 }
     },
     {
       "id": "cluster-homestead",
@@ -131,7 +131,7 @@
       "accent": "violet",
       "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
       "detail": ["Star systems: 2 known."],
-      "position": { "x": 2273, "y": 1660 }
+      "position": { "x": 495, "y": 1132 }
     }
   ],
   "systems": [
@@ -257,28 +257,28 @@
     { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 148, "y": 148 } }
   ],
   "clusterRoutes": [
-    { "from": "cluster-morrison", "to": "cluster-hart", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-morrison", "to": "cluster-lee", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-lee", "to": "cluster-fold", "label": "156.8 ly", "type": "ftl lane" },
-    { "from": "cluster-local", "to": "cluster-hope", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-hope", "to": "cluster-morrison", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-hope", "to": "cluster-hart", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-morrison", "to": "cluster-fold", "label": "156.8 ly", "type": "ftl lane" },
-    { "from": "cluster-local", "to": "cluster-teegarden", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-local", "to": "cluster-alpha", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-weisman", "to": "cluster-alpha", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-alpha", "to": "cluster-beta", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-hart", "to": "cluster-nor", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-nor", "to": "cluster-forrow", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-danswai", "to": "cluster-forrow", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-nor", "to": "cluster-danswai", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-teegarden", "to": "cluster-danswai", "label": "156.8 ly", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-hart", "label": "110.3 ly", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-lee", "label": "84.6 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-fold", "label": "142.7 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-hope", "label": "46.4 ly", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-morrison", "label": "114.4 ly", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-hart", "label": "55.9 ly", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-fold", "label": "181.4 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-teegarden", "label": "43.6 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-alpha", "label": "101.2 ly", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-alpha", "label": "42.4 ly", "type": "ftl lane" },
+    { "from": "cluster-alpha", "to": "cluster-beta", "label": "46.3 ly", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-nor", "label": "104.7 ly", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-forrow", "label": "42.3 ly", "type": "ftl lane" },
+    { "from": "cluster-danswai", "to": "cluster-forrow", "label": "91.9 ly", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-danswai", "label": "55.3 ly", "type": "ftl lane" },
+    { "from": "cluster-teegarden", "to": "cluster-danswai", "label": "159.6 ly", "type": "ftl lane" },
     { "from": "cluster-pistil", "to": "cluster-danswai", "label": "?", "type": "ftl lane", "uncertain": true },
-    { "from": "cluster-local", "to": "cluster-weisman", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-weisman", "to": "cluster-teegarden", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-lee", "to": "cluster-hart", "label": "104.5 ly", "type": "ftl lane" },
-    { "from": "cluster-hart", "to": "cluster-homestead", "label": "52.2 ly", "type": "ftl lane" },
-    { "from": "cluster-lee", "to": "cluster-homestead", "label": "52.2 ly", "type": "ftl lane" }
+    { "from": "cluster-local", "to": "cluster-weisman", "label": "46.4 ly", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-teegarden", "label": "54.1 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-hart", "label": "117.4 ly", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-homestead", "label": "41.9 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-homestead", "label": "58.6 ly", "type": "ftl lane" }
   ],
   "systemRoutes": [
     { "from": "system-sol", "to": "system-alpha-centuri", "label": "4.37 ly", "type": "ftl lane" },

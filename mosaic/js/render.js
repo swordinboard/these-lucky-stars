@@ -38,16 +38,20 @@ function backdropScale() {
     return nearestNeighborDistance(clusters()) / BACKDROP_REFERENCE_SPACING;
 }
 
-const GALAXY_HALO_SIZE = { rx: 2100, ry: 1850, rotation: 8 };
+// All wash sizes below are 15% larger than their originally-tuned values
+// (2100/1850, 1300/1120, 300/260, 760/640, 170/145, [200,420], 260) — bumped
+// up per request, on top of whatever backdropScale() applies for the
+// current layout.
+const GALAXY_HALO_SIZE = { rx: 2415, ry: 2127.5, rotation: 8 };
 
 const FLARE_SIZES = {
-    primary: { disc: { rx: 1300, ry: 1120 }, bulge: { rx: 300, ry: 260 } },
-    secondary: { disc: { rx: 760, ry: 640 }, bulge: { rx: 170, ry: 145 } },
+    primary: { disc: { rx: 1495, ry: 1288 }, bulge: { rx: 345, ry: 299 } },
+    secondary: { disc: { rx: 874, ry: 736 }, bulge: { rx: 195.5, ry: 166.75 } },
 };
 
 const ACCENT_PUFF_COUNT = 4;
-const ACCENT_PUFF_RADIUS_RANGE = [200, 420];
-const ACCENT_PUFF_OFFSET_RANGE = 260;
+const ACCENT_PUFF_RADIUS_RANGE = [230, 483];
+const ACCENT_PUFF_OFFSET_RANGE = 299;
 
 // A third color wash with no cluster of its own to anchor to — a warm rust
 // tone washed over the Lee/Fold/Morrison corner of the map (bottom-right),
