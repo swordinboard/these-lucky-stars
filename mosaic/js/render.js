@@ -26,7 +26,19 @@ const CLOUD_ROTATION_RANGE = 18;
 // living in the map's own coordinate space (unlike the CSS starfield, which
 // is fixed to the screen), so it pans and zooms with the clusters and gives
 // the nebula clouds a sense of depth.
-const GALAXY_HALO = { cx: 1515, cy: 1133, rx: 2100, ry: 1850, rotation: 8 };
+//
+// Every size below was tuned by eye against one specific cluster layout.
+// Rather than fixed pixel values, they're all scaled at render time by
+// backdropScale() (see below), so repositioning the clusters — or laying
+// them out at a different px-per-lightyear scale entirely — grows or
+// shrinks the whole backdrop to match instead of requiring a re-tune.
+const BACKDROP_REFERENCE_SPACING = 269.8; // clusters' nearest-neighbor spacing when these sizes were tuned
+
+function backdropScale() {
+    return nearestNeighborDistance(clusters()) / BACKDROP_REFERENCE_SPACING;
+}
+
+const GALAXY_HALO_SIZE = { rx: 2100, ry: 1850, rotation: 8 };
 
 const FLARE_SIZES = {
     primary: { disc: { rx: 1300, ry: 1120 }, bulge: { rx: 300, ry: 260 } },
@@ -39,9 +51,11 @@ const ACCENT_PUFF_OFFSET_RANGE = 260;
 
 // A third color wash with no cluster of its own to anchor to — a warm rust
 // tone washed over the Lee/Fold/Morrison corner of the map (bottom-right),
-// centered on their rough midpoint, so that corner isn't left as a plain
-// amber-on-amber stretch next to the violet and blue washes elsewhere.
-const RUST_WASH = { id: 'galaxy-rust-wash', position: { x: 2312, y: 2089 } };
+// centered on their live midpoint (recomputed from those clusters' actual
+// positions), so that corner isn't left as a plain amber-on-amber stretch
+// next to the violet and blue washes elsewhere.
+const RUST_WASH_ID = 'galaxy-rust-wash';
+const RUST_WASH_CLUSTER_IDS = ['cluster-lee', 'cluster-fold', 'cluster-morrison'];
 
 // A second, smaller rust patch fanning out from Alpha/Beta toward Weisman
 // Cloud, so the wash reaches that corner too rather than stopping at Lee/Fold.
@@ -80,18 +94,26 @@ function galaxyEllipse(className, shape) {
 // cloudShape below) so the glow reads as coming from that shape rather than
 // sitting arbitrarily behind it. The radius argument only affects size, not
 // rotation, so it's safe to call this before the sector radius is known.
-function flareShapesFor(entity) {
+function flareShapesFor(entity, scale) {
     const size = entity.id === 'cluster-danswai' ? FLARE_SIZES.primary : FLARE_SIZES.secondary;
     const { rotation } = cloudShape(entity, 1);
     const { x: cx, y: cy } = entity.position;
     return {
-        disc: { cx, cy, rotation, rx: size.disc.rx, ry: size.disc.ry },
-        bulge: { cx, cy, rotation, rx: size.bulge.rx, ry: size.bulge.ry },
+        disc: { cx, cy, rotation, rx: size.disc.rx * scale, ry: size.disc.ry * scale },
+        bulge: { cx, cy, rotation, rx: size.bulge.rx * scale, ry: size.bulge.ry * scale },
     };
 }
 
 function clusterPosition(id) {
     return clusters().find((entity) => entity.id === id).position;
+}
+
+function centroidOf(ids) {
+    const positions = ids.map(clusterPosition);
+    return {
+        x: positions.reduce((sum, p) => sum + p.x, 0) / positions.length,
+        y: positions.reduce((sum, p) => sum + p.y, 0) / positions.length,
+    };
 }
 
 // A handful of soft, randomly-offset blobs around a position rather than one
@@ -101,15 +123,15 @@ function clusterPosition(id) {
 // By default the blobs scatter in every direction; passing angleCenter (with
 // a narrower angleSpread) instead biases them toward one side, for a puff
 // that "fans" toward something rather than surrounding its anchor evenly.
-function accentPuffShapesFor(seedId, position, { angleCenter = null, angleSpread = Math.PI * 2 } = {}) {
+function accentPuffShapesFor(seedId, position, scale, { angleCenter = null, angleSpread = Math.PI * 2 } = {}) {
     const rand = mulberry32(hashStringToSeed(`${seedId}-puff`));
     const puffs = [];
     for (let i = 0; i < ACCENT_PUFF_COUNT; i++) {
         const angle = angleCenter === null
             ? rand() * Math.PI * 2
             : angleCenter + (rand() - 0.5) * angleSpread;
-        const dist = rand() * ACCENT_PUFF_OFFSET_RANGE;
-        const r = ACCENT_PUFF_RADIUS_RANGE[0] + rand() * (ACCENT_PUFF_RADIUS_RANGE[1] - ACCENT_PUFF_RADIUS_RANGE[0]);
+        const dist = rand() * ACCENT_PUFF_OFFSET_RANGE * scale;
+        const r = (ACCENT_PUFF_RADIUS_RANGE[0] + rand() * (ACCENT_PUFF_RADIUS_RANGE[1] - ACCENT_PUFF_RADIUS_RANGE[0])) * scale;
         puffs.push({
             cx: position.x + Math.cos(angle) * dist,
             cy: position.y + Math.sin(angle) * dist,
@@ -127,19 +149,20 @@ function accentPuffShapesFor(seedId, position, { angleCenter = null, angleSpread
 // colors. Stars fan out from each star cloud's own flare — the brightest
 // points on the map — rather than spreading evenly, so they read as thrown
 // off those bright cores instead of a uniform haze.
-function renderMapStarfield(group) {
+function renderMapStarfield(group, scale) {
     const rand = mulberry32(hashStringToSeed('galaxy-map-starfield'));
     for (const center of MAP_STAR_CENTERS) {
         const position = clusterPosition(center.id);
         const count = Math.round(MAP_STAR_TOTAL * center.weight);
+        const maxDist = center.maxDist * scale;
         for (let i = 0; i < count; i++) {
             const angle = rand() * Math.PI * 2;
-            const dist = Math.pow(rand(), MAP_STAR_FAN_POWER) * center.maxDist;
+            const dist = Math.pow(rand(), MAP_STAR_FAN_POWER) * maxDist;
             const star = document.createElementNS(SVG_NS, 'circle');
             star.setAttribute('class', 'galaxy-star-speck');
             star.setAttribute('cx', (position.x + Math.cos(angle) * dist).toFixed(1));
             star.setAttribute('cy', (position.y + Math.sin(angle) * dist).toFixed(1));
-            star.setAttribute('r', (MAP_STAR_RADIUS_RANGE[0] + rand() * (MAP_STAR_RADIUS_RANGE[1] - MAP_STAR_RADIUS_RANGE[0])).toFixed(2));
+            star.setAttribute('r', ((MAP_STAR_RADIUS_RANGE[0] + rand() * (MAP_STAR_RADIUS_RANGE[1] - MAP_STAR_RADIUS_RANGE[0])) * scale).toFixed(2));
             star.setAttribute('opacity', (MAP_STAR_OPACITY_RANGE[0] + rand() * (MAP_STAR_OPACITY_RANGE[1] - MAP_STAR_OPACITY_RANGE[0])).toFixed(2));
             group.appendChild(star);
         }
@@ -150,36 +173,44 @@ function renderGalaxyBackdrop(viewportEl) {
     const group = document.createElementNS(SVG_NS, 'g');
     group.setAttribute('class', 'galaxy-backdrop');
 
-    group.appendChild(galaxyEllipse('galaxy-halo', GALAXY_HALO));
+    const scale = backdropScale();
+    const danswaiPos = clusterPosition('cluster-danswai');
+    const halo = {
+        cx: danswaiPos.x,
+        cy: danswaiPos.y,
+        rx: GALAXY_HALO_SIZE.rx * scale,
+        ry: GALAXY_HALO_SIZE.ry * scale,
+        rotation: GALAXY_HALO_SIZE.rotation,
+    };
+    group.appendChild(galaxyEllipse('galaxy-halo', halo));
 
     const puffGroup = document.createElementNS(SVG_NS, 'g');
     puffGroup.setAttribute('class', 'galaxy-accent-puffs');
     for (const entity of clusters()) {
         if (!entity.accent) continue;
-        for (const shape of accentPuffShapesFor(entity.id, entity.position)) {
+        for (const shape of accentPuffShapesFor(entity.id, entity.position, scale)) {
             puffGroup.appendChild(galaxyEllipse(`galaxy-accent-patch galaxy-accent-${entity.accent}`, shape));
         }
     }
-    for (const shape of accentPuffShapesFor(RUST_WASH.id, RUST_WASH.position)) {
+    const rustWashPosition = centroidOf(RUST_WASH_CLUSTER_IDS);
+    for (const shape of accentPuffShapesFor(RUST_WASH_ID, rustWashPosition, scale)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
 
-    const alphaPos = clusterPosition('cluster-alpha');
-    const betaPos = clusterPosition('cluster-beta');
-    const alphaBetaMid = { x: (alphaPos.x + betaPos.x) / 2, y: (alphaPos.y + betaPos.y) / 2 };
+    const alphaBetaMid = centroidOf(['cluster-alpha', 'cluster-beta']);
     const weismanPos = clusterPosition('cluster-weisman');
     const fanAngle = Math.atan2(weismanPos.y - alphaBetaMid.y, weismanPos.x - alphaBetaMid.x);
     const fanOptions = { angleCenter: fanAngle, angleSpread: RUST_WASH_ALPHA_BETA_SPREAD };
-    for (const shape of accentPuffShapesFor(RUST_WASH_ALPHA_BETA_ID, alphaBetaMid, fanOptions)) {
+    for (const shape of accentPuffShapesFor(RUST_WASH_ALPHA_BETA_ID, alphaBetaMid, scale, fanOptions)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
     group.appendChild(puffGroup);
 
-    renderMapStarfield(group);
+    renderMapStarfield(group, scale);
 
     for (const entity of clusters()) {
         if (entity.type !== 'star cloud') continue;
-        const { disc, bulge } = flareShapesFor(entity);
+        const { disc, bulge } = flareShapesFor(entity, scale);
         group.appendChild(galaxyEllipse('galaxy-disc', disc));
         group.appendChild(galaxyEllipse('galaxy-bulge', bulge));
     }
