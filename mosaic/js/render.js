@@ -246,6 +246,32 @@ function sectorRadiusFor(entities) {
     return Math.min(MAX_SECTOR_RADIUS, Math.max(MIN_SECTOR_RADIUS, nearest * 0.45));
 }
 
+const ROUTE_LABEL_OFFSET = 10;
+
+// A route's distance label, laid parallel to its line rather than relying on
+// a hover tooltip (title elements never surface on touch screens). Sits at
+// the line's midpoint, nudged perpendicular so it doesn't sit directly on
+// top of the stroke, and rotated to follow the line's own angle — flipped
+// 180° when that would render the text upside-down, so it always reads
+// left-to-right regardless of which end "from"/"to" happen to be.
+function routeLabelElement(route, from, to) {
+    const dx = to.position.x - from.position.x;
+    const dy = to.position.y - from.position.y;
+    const length = Math.hypot(dx, dy) || 1;
+    let angle = Math.atan2(dy, dx) * (180 / Math.PI);
+    if (angle > 90 || angle < -90) angle += 180;
+    const midX = (from.position.x + to.position.x) / 2 + (-dy / length) * ROUTE_LABEL_OFFSET;
+    const midY = (from.position.y + to.position.y) / 2 + (dx / length) * ROUTE_LABEL_OFFSET;
+
+    const text = document.createElementNS(SVG_NS, 'text');
+    text.setAttribute('class', 'route-label');
+    text.setAttribute('x', midX);
+    text.setAttribute('y', midY);
+    text.setAttribute('transform', `rotate(${angle.toFixed(2)} ${midX} ${midY})`);
+    text.textContent = route.label;
+    return text;
+}
+
 function boundsOf(entities, radiusForEntity) {
     let minX = Infinity;
     let maxX = -Infinity;
@@ -275,6 +301,9 @@ export function renderLevel(viewportEl, state) {
     edgeGroup.setAttribute('class', 'edges');
     viewportEl.appendChild(edgeGroup);
 
+    const labelGroup = document.createElementNS(SVG_NS, 'g');
+    labelGroup.setAttribute('class', 'route-labels');
+
     for (const route of routes) {
         const from = byId.get(route.from);
         const to = byId.get(route.to);
@@ -291,10 +320,16 @@ export function renderLevel(viewportEl, state) {
             const title = document.createElementNS(SVG_NS, 'title');
             title.textContent = route.label;
             line.appendChild(title);
+            labelGroup.appendChild(routeLabelElement(route, from, to));
         }
 
         edgeGroup.appendChild(line);
     }
+
+    // A separate group appended after all the lines, so a label always sits
+    // above every route line (including ones it doesn't belong to) rather
+    // than getting drawn over by whichever line happens to come later.
+    viewportEl.appendChild(labelGroup);
 
     const nodeGroup = document.createElementNS(SVG_NS, 'g');
     nodeGroup.setAttribute('class', 'nodes');

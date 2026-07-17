@@ -329,6 +329,29 @@ body {
     stroke-dasharray: 4 4;
 }
 
+/* A route's distance, laid out parallel to its line (see routeLabelElement
+   in render.js) rather than only in a hover tooltip — tooltips never surface
+   on touch screens, so this is the only way mobile users see it at all.
+   Matches the route line's own color/opacity so it reads as part of the
+   line rather than a competing label. */
+.route-label {
+    fill: rgba(233, 233, 233, 0.35);
+    /* Matches .node-label's size — text sits in the same zoomed/panned SVG
+       space as the node names, so it needs to match their scale to read as
+       anything more than a speck, not a screen-space pixel size. */
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    user-select: none;
+}
+
+.galaxy-backdrop ~ .route-labels .route-label {
+    fill: rgba(233, 233, 233, 0.55);
+    /* Matches .node-cluster .node-label's larger size, for the same reason. */
+    font-size: 22px;
+}
+
 /* --- Orrery (orbital level) --- */
 
 .star {
