@@ -961,6 +961,29 @@ circle.hit-area {
     color: var(--accent);
 }
 
+.travel-accuracy-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.travel-accuracy-input {
+    flex: 1;
+    accent-color: var(--accent);
+}
+
+.travel-accuracy-value {
+    min-width: 3.5em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.travel-accuracy-hint {
+    margin: 0;
+    font-size: 0.8em;
+    color: rgba(233, 233, 233, 0.55);
+}
+
 .travel-field-selected {
     display: flex;
     align-items: center;

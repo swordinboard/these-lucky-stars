@@ -318,3 +318,48 @@ export function formatDurationFull(days) {
     if (hours > 0) parts.push(`${hours} hr`);
     return parts.join(' ');
 }
+
+// The plotted route's distance/time are exact under the CA/FTL model, but a
+// traveler's own instruments aren't always dialed in that precisely — an
+// "accuracy" setting under 100% widens the whole route into a range instead
+// of one exact figure. 100% = 0 margin (the exact figures); accuracy scales
+// linearly down to a fully-doubled spread (0%-200% of the true value) at the
+// bottom of the dial. Applied per-leg (not just to the totals) so a leg's
+// low/high distance and its low/high time stay physically consistent with
+// each other (time is re-derived from the scaled distance via travelTimeDays,
+// not scaled independently).
+export function marginForAccuracy(accuracy) {
+    const clamped = Math.max(0, Math.min(100, accuracy));
+    return (100 - clamped) / 100;
+}
+
+export function applyAccuracy(plan, accuracy) {
+    if (!plan.ok) return plan;
+    const margin = marginForAccuracy(accuracy);
+
+    const legs = plan.legs.map((leg) => {
+        const lowLy = leg.distanceLy * (1 - margin);
+        const highLy = leg.distanceLy * (1 + margin);
+        return {
+            ...leg,
+            lowLy,
+            highLy,
+            lowAu: leg.distanceAu != null ? leg.distanceAu * (1 - margin) : null,
+            highAu: leg.distanceAu != null ? leg.distanceAu * (1 + margin) : null,
+            lowDays: travelTimeDays(lowLy),
+            highDays: travelTimeDays(highLy),
+        };
+    });
+
+    return {
+        ...plan,
+        margin,
+        legs,
+        lowLy: legs.reduce((sum, leg) => sum + leg.lowLy, 0),
+        highLy: legs.reduce((sum, leg) => sum + leg.highLy, 0),
+        lowDays: legs.reduce((sum, leg) => sum + leg.lowDays, 0),
+        highDays: legs.reduce((sum, leg) => sum + leg.highDays, 0),
+        lowAu: plan.totalAu > 0 ? plan.totalAu * (1 - margin) : 0,
+        highAu: plan.totalAu > 0 ? plan.totalAu * (1 + margin) : 0,
+    };
+}

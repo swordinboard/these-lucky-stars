@@ -2,11 +2,13 @@ import { getById } from './data.js';
 import { renderLevel } from './render.js';
 import { raisePanel } from './panel-stack.js';
 import {
-    planRoute, describeEntity, travelSearchIndex, formatDistance, formatDuration, formatDurationFull, isTravelable,
+    planRoute, applyAccuracy, describeEntity, travelSearchIndex,
+    formatDistance, formatDuration, formatDurationFull, isTravelable,
 } from './travel.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const MAX_RESULTS = 8;
+const DEFAULT_ACCURACY = 100;
 const LEVEL_LABEL = { local: 'Local approach', system: 'System lane', cluster: 'Interstellar lane' };
 const REASON_MESSAGE = {
     same: 'Choose two different locations to plot a route.',
@@ -20,8 +22,25 @@ let fromField = null;
 let toField = null;
 let submitButton = null;
 let resultsEl = null;
+let accuracyInput = null;
+let accuracyValueLabel = null;
 let openFlag = false;
 let onToggleCallback = null;
+let lastPlan = null;
+
+function currentAccuracy() {
+    return Number(accuracyInput.value);
+}
+
+function distanceText(lowLy, highLy, lowAu, highAu) {
+    if (lowLy === highLy) return formatDistance(lowLy, lowAu);
+    return `${formatDistance(lowLy, lowAu)} – ${formatDistance(highLy, highAu)}`;
+}
+
+function durationText(lowDays, highDays, formatFn) {
+    if (lowDays === highDays) return formatFn(lowDays);
+    return `${formatFn(lowDays)} – ${formatFn(highDays)}`;
+}
 
 function near(a, b) {
     return Math.abs(a - b) < 0.5;
@@ -111,17 +130,19 @@ function buildPreviews(plan) {
     return previews;
 }
 
-function renderResults(plan) {
+function renderResults(basePlan) {
     while (resultsEl.firstChild) resultsEl.removeChild(resultsEl.firstChild);
     resultsEl.hidden = false;
 
-    if (!plan.ok) {
+    if (!basePlan.ok) {
         const error = document.createElement('p');
         error.className = 'travel-error';
-        error.textContent = REASON_MESSAGE[plan.reason] || REASON_MESSAGE.invalid;
+        error.textContent = REASON_MESSAGE[basePlan.reason] || REASON_MESSAGE.invalid;
         resultsEl.appendChild(error);
         return;
     }
+
+    const plan = applyAccuracy(basePlan, currentAccuracy());
 
     const summary = document.createElement('div');
     summary.className = 'travel-summary';
@@ -131,7 +152,7 @@ function renderResults(plan) {
     distanceStat.innerHTML = '<span class="travel-stat-label">Total distance</span>';
     const distanceValue = document.createElement('span');
     distanceValue.className = 'travel-stat-value';
-    distanceValue.textContent = formatDistance(plan.totalLy, plan.totalAu);
+    distanceValue.textContent = distanceText(plan.lowLy, plan.highLy, plan.lowAu, plan.highAu);
     distanceStat.appendChild(distanceValue);
     summary.appendChild(distanceStat);
 
@@ -140,7 +161,7 @@ function renderResults(plan) {
     timeStat.innerHTML = '<span class="travel-stat-label">Travel time</span>';
     const timeValue = document.createElement('span');
     timeValue.className = 'travel-stat-value';
-    timeValue.textContent = formatDurationFull(plan.totalDays);
+    timeValue.textContent = durationText(plan.lowDays, plan.highDays, formatDurationFull);
     timeStat.appendChild(timeValue);
     summary.appendChild(timeStat);
 
@@ -165,7 +186,9 @@ function renderResults(plan) {
 
         const meta = document.createElement('span');
         meta.className = 'travel-leg-meta';
-        meta.textContent = `${LEVEL_LABEL[leg.level] || leg.level} · ${formatDistance(leg.distanceLy, leg.distanceAu)} · ${formatDuration(leg.timeDays)}`;
+        const distancePart = distanceText(leg.lowLy, leg.highLy, leg.lowAu, leg.highAu);
+        const timePart = durationText(leg.lowDays, leg.highDays, formatDuration);
+        meta.textContent = `${LEVEL_LABEL[leg.level] || leg.level} · ${distancePart} · ${timePart}`;
         li.appendChild(meta);
 
         legList.appendChild(li);
@@ -176,6 +199,7 @@ function renderResults(plan) {
 }
 
 function clearResults() {
+    lastPlan = null;
     while (resultsEl.firstChild) resultsEl.removeChild(resultsEl.firstChild);
     resultsEl.hidden = true;
 }
@@ -293,6 +317,11 @@ function createField(labelText) {
     };
 }
 
+function resetAccuracy() {
+    accuracyInput.value = String(DEFAULT_ACCURACY);
+    accuracyValueLabel.textContent = `${DEFAULT_ACCURACY}%`;
+}
+
 function open() {
     raisePanel(panelEl);
     panelEl.classList.add('open');
@@ -314,6 +343,7 @@ export function openTravelPanelWithDestination(entity) {
     toField.setEntity(entity);
     fromField.clear();
     clearResults();
+    resetAccuracy();
     updateSubmitState();
     open();
     fromField.focus();
@@ -323,6 +353,7 @@ export function openTravelPanelBlank() {
     toField.clear();
     fromField.clear();
     clearResults();
+    resetAccuracy();
     updateSubmitState();
     open();
     toField.focus();
@@ -374,14 +405,44 @@ export function initTravelPanel(onToggle) {
     fromField = createField('From');
     body.appendChild(fromField.el);
 
+    const accuracyField = document.createElement('div');
+    accuracyField.className = 'travel-field travel-accuracy';
+    const accuracyLabel = document.createElement('label');
+    accuracyLabel.textContent = 'Accuracy';
+    accuracyField.appendChild(accuracyLabel);
+    const accuracyRow = document.createElement('div');
+    accuracyRow.className = 'travel-accuracy-row';
+    accuracyInput = document.createElement('input');
+    accuracyInput.type = 'range';
+    accuracyInput.min = '0';
+    accuracyInput.max = '100';
+    accuracyInput.step = '1';
+    accuracyInput.value = String(DEFAULT_ACCURACY);
+    accuracyInput.className = 'travel-accuracy-input';
+    accuracyValueLabel = document.createElement('span');
+    accuracyValueLabel.className = 'travel-accuracy-value';
+    accuracyValueLabel.textContent = `${DEFAULT_ACCURACY}%`;
+    accuracyInput.addEventListener('input', () => {
+        accuracyValueLabel.textContent = `${currentAccuracy()}%`;
+        if (lastPlan) renderResults(lastPlan);
+    });
+    accuracyRow.appendChild(accuracyInput);
+    accuracyRow.appendChild(accuracyValueLabel);
+    accuracyField.appendChild(accuracyRow);
+    const accuracyHint = document.createElement('p');
+    accuracyHint.className = 'travel-accuracy-hint';
+    accuracyHint.textContent = 'Below 100%, distance and time show as an estimated range instead of an exact figure.';
+    accuracyField.appendChild(accuracyHint);
+    body.appendChild(accuracyField);
+
     submitButton = document.createElement('button');
     submitButton.type = 'button';
     submitButton.className = 'travel-submit';
     submitButton.textContent = 'Plot Route';
     submitButton.disabled = true;
     submitButton.addEventListener('click', () => {
-        const plan = planRoute(fromField.getEntity(), toField.getEntity());
-        renderResults(plan);
+        lastPlan = planRoute(fromField.getEntity(), toField.getEntity());
+        renderResults(lastPlan);
     });
     body.appendChild(submitButton);
 
