@@ -66,6 +66,11 @@ const RUST_WASH_CLUSTER_IDS = ['cluster-lee', 'cluster-fold', 'cluster-morrison'
 const RUST_WASH_ALPHA_BETA_ID = 'galaxy-rust-wash-alpha-beta';
 const RUST_WASH_ALPHA_BETA_SPREAD = Math.PI; // half-circle arc, biased toward Weisman
 
+// A third rust patch anchored on Caleph, fanning toward Nor Cluster so the
+// wash reads as reaching nearly to Nor without actually touching it.
+const RUST_WASH_CALEPH_ID = 'galaxy-rust-wash-caleph';
+const RUST_WASH_CALEPH_SPREAD = Math.PI * 0.7; // narrower arc, tightly biased toward Nor
+
 // Stars cluster densely around the brightest points on the map — the star
 // clouds' own flares — and thin out with distance, rather than scattering
 // evenly over the whole halo. Weights roughly follow each flare's own
@@ -206,6 +211,14 @@ function renderGalaxyBackdrop(viewportEl) {
     const fanAngle = Math.atan2(weismanPos.y - alphaBetaMid.y, weismanPos.x - alphaBetaMid.x);
     const fanOptions = { angleCenter: fanAngle, angleSpread: RUST_WASH_ALPHA_BETA_SPREAD };
     for (const shape of accentPuffShapesFor(RUST_WASH_ALPHA_BETA_ID, alphaBetaMid, scale, fanOptions)) {
+        puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
+    }
+
+    const calephPos = clusterPosition('cluster-caleph');
+    const norPos = clusterPosition('cluster-nor');
+    const calephFanAngle = Math.atan2(norPos.y - calephPos.y, norPos.x - calephPos.x);
+    const calephFanOptions = { angleCenter: calephFanAngle, angleSpread: RUST_WASH_CALEPH_SPREAD };
+    for (const shape of accentPuffShapesFor(RUST_WASH_CALEPH_ID, calephPos, scale, calephFanOptions)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
     group.appendChild(puffGroup);
