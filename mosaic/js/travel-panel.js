@@ -323,10 +323,6 @@ function createField(labelText) {
             entity = null;
             showSearch();
         },
-        focus() {
-            if (entity) return;
-            input.focus();
-        },
     };
 }
 
@@ -352,6 +348,12 @@ export function closeTravelPanel() {
     openFlag = false;
 }
 
+// Deliberately does NOT auto-focus either search input — doing so
+// immediately pops the on-screen keyboard on mobile the instant the panel
+// opens, before the user has asked for it (and before the panel has even
+// finished its width transition), which was also implicated in a mobile
+// layout glitch where the keyboard's viewport resize left the details
+// footer overlapping the panel instead of sitting cleanly below it.
 export function openTravelPanelWithDestination(entity) {
     toField.setEntity(entity);
     fromField.clear();
@@ -359,7 +361,6 @@ export function openTravelPanelWithDestination(entity) {
     resetAccuracy();
     updateSubmitState();
     open();
-    fromField.focus();
 }
 
 export function openTravelPanelBlank() {
@@ -369,7 +370,6 @@ export function openTravelPanelBlank() {
     resetAccuracy();
     updateSubmitState();
     open();
-    toField.focus();
 }
 
 // Called on every map tap (alongside the normal select()/details-panel
