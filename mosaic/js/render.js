@@ -77,6 +77,13 @@ const RUST_WASH_CALEPH_SPREAD = Math.PI * 0.7; // narrower arc, tightly biased t
 const RUST_WASH_MORRISON_HOPE_ID = 'galaxy-rust-wash-morrison-hope';
 const RUST_WASH_MORRISON_HOPE_SPREAD = Math.PI; // half-circle arc, biased toward Lee/Fold/Morrison
 
+// A teal wash fanning off Lee Cluster's top-left corner, toward Hart Cloud,
+// so it blends into Hart's existing teal glow rather than sitting isolated.
+// Lee itself carries a matching violet accent (see the accent puff loop
+// below), so this corner reads as a teal-into-violet blend.
+const LEE_TEAL_WASH_ID = 'galaxy-wash-lee-teal';
+const LEE_TEAL_WASH_SPREAD = Math.PI * 0.8; // wide arc, biased toward Hart's top-left direction
+
 // Stars cluster densely around the brightest points on the map — the star
 // clouds' own flares — and thin out with distance, rather than scattering
 // evenly over the whole halo. Weights roughly follow each flare's own
@@ -236,6 +243,14 @@ function renderGalaxyBackdrop(viewportEl) {
     const calephFanOptions = { angleCenter: calephFanAngle, angleSpread: RUST_WASH_CALEPH_SPREAD };
     for (const shape of accentPuffShapesFor(RUST_WASH_CALEPH_ID, calephPos, scale, calephFanOptions)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
+    }
+
+    const leePos = clusterPosition('cluster-lee');
+    const leeHartPos = clusterPosition('cluster-hart');
+    const leeTealFanAngle = Math.atan2(leeHartPos.y - leePos.y, leeHartPos.x - leePos.x);
+    const leeTealFanOptions = { angleCenter: leeTealFanAngle, angleSpread: LEE_TEAL_WASH_SPREAD };
+    for (const shape of accentPuffShapesFor(LEE_TEAL_WASH_ID, leePos, scale, leeTealFanOptions)) {
+        puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-teal', shape));
     }
     group.appendChild(puffGroup);
 
