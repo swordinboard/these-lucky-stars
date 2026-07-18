@@ -33,6 +33,13 @@ html, body {
 
 body {
     margin: 0;
+    /* 100vh first as a fallback for browsers/webviews with quirky dvh
+       support (100dvh overrides it wherever it's actually supported) —
+       without a definite body height, the header/map-area/footer flex
+       column has nothing solid to size against, and a flex item relying on
+       stretch (like the travel panel) can end up sized by its own content
+       instead of the available space, overflowing into the footer below. */
+    height: 100vh;
     height: 100dvh;
     overflow: hidden;
     background-color: var(--space-black);
@@ -175,11 +182,18 @@ body {
     flex: 1;
     min-height: 0;
     display: flex;
+    /* Defensive clip: if a row child's height ever fails to resolve against
+       this flex row (a stale/quirky dvh chain, etc.) and it grows taller
+       than the available space based on its own content instead, this
+       keeps that overflow from bleeding down into the footer below rather
+       than just being invisible/cut off within its own box. */
+    overflow: hidden;
 }
 
 .galaxy-map {
     flex: 1;
     width: 100%;
+    min-height: 0;
     background: transparent;
     touch-action: none;
     cursor: grab;
@@ -955,6 +969,9 @@ circle.hit-area {
 
 .travel-panel {
     flex: 0 0 auto;
+    align-self: stretch;
+    height: 100%;
+    min-height: 0;
     width: 0;
     overflow: hidden;
     background: var(--glass-bg);
