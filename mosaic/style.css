@@ -703,6 +703,13 @@ circle.hit-area {
     cursor: pointer;
 }
 
+.details-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
 .details-drill {
     background: var(--accent);
     color: #1b1b1b;
@@ -712,7 +719,6 @@ circle.hit-area {
     font: inherit;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 8px;
 }
 
 /* --- Sidebar nav --- */
@@ -757,6 +763,21 @@ circle.hit-area {
 }
 
 .sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent);
+    font: inherit;
+    font-size: 1.05em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar-link-button:hover {
     text-decoration: underline;
 }
 
@@ -839,4 +860,330 @@ circle.hit-area {
     background: var(--screen-glow);
     box-shadow: 0 0 6px rgba(111, 224, 255, 0.7);
     transition: left 0.05s linear, width 0.05s linear;
+}
+
+/* --- Travel panel: unlike .location-list (an overlay drawer with a
+   click-blocking backdrop), this one is a real flex sibling of the map that
+   grows from width 0 — so opening it actually shrinks the map's own
+   available area (and panzoom.js's next fit reflows around that), keeping
+   every node reachable to click instead of letting the panel bury some of
+   them under an overlay. The map stays live and interactive right up to the
+   panel's edge, since tapping a system/planet/moon there autofills the "To"
+   field (see notifyTravelMapSelection in travel-panel.js). The fixed-width
+   inner wrapper keeps the header/fields/results from reflowing as the outer
+   width animates — they just get revealed/clipped by the overflow. */
+
+.travel-panel {
+    flex: 0 0 auto;
+    width: 0;
+    overflow: hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 0 solid var(--glass-border);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    transition: width var(--drawer-duration) var(--drawer-easing);
+}
+
+.travel-panel.open {
+    width: min(520px, 92vw);
+    border-left-width: 1px;
+}
+
+.travel-panel-inner {
+    width: min(520px, 92vw);
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
+}
+
+.travel-panel-inner::-webkit-scrollbar {
+    width: 8px;
+}
+
+.travel-panel-inner::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.travel-panel-inner::-webkit-scrollbar-thumb {
+    background: var(--screen-glow);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.5);
+}
+
+.travel-panel-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--glass-border);
+    z-index: 1;
+}
+
+.travel-panel-header h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.travel-panel-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.travel-panel-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.travel-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-field > label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-field-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-field-selected[hidden] {
+    display: none;
+}
+
+.travel-field-selected-name {
+    flex: 1;
+}
+
+.travel-field-change {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.85em;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.travel-field-change:hover {
+    text-decoration: underline;
+}
+
+.travel-field-search {
+    position: relative;
+}
+
+.travel-field-input {
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+}
+
+.travel-field-input:focus {
+    outline: 1px solid var(--screen-glow);
+    outline-offset: 1px;
+}
+
+.travel-field-results {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+    background: var(--chrome-navy);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.travel-field-results button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font: inherit;
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.travel-field-results button:hover {
+    background: rgba(111, 224, 255, 0.12);
+}
+
+.travel-submit {
+    background: var(--accent);
+    color: #1b1b1b;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.travel-submit:disabled {
+    background: var(--chrome-navy-light);
+    color: rgba(233, 233, 233, 0.5);
+    cursor: not-allowed;
+}
+
+.travel-results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.travel-results[hidden] {
+    display: none;
+}
+
+.travel-summary {
+    display: flex;
+    gap: 12px;
+}
+
+.travel-stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-stat-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-stat-value {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.travel-legs {
+    list-style: none;
+    counter-reset: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-leg {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-leg-route {
+    font-weight: bold;
+}
+
+.travel-leg-meta {
+    font-size: 0.85em;
+    color: rgba(233, 233, 233, 0.65);
+}
+
+.travel-error {
+    color: #e0523a;
+}
+
+.travel-previews {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.travel-preview {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.travel-preview-title {
+    margin: 0 0 8px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-preview-map {
+    display: block;
+    width: 100%;
+    height: 180px;
+}
+
+.travel-preview-empty {
+    margin: 0;
+    color: rgba(233, 233, 233, 0.6);
+    font-size: 0.9em;
+}
+
+/* !important is deliberate here (matching the precedent set by .hit-area
+   above): these previews reuse the exact same renderer as the live map, so
+   a highlighted node/line has to outrank whichever more-specific rule that
+   renderer already applied — a cluster's own accent color, or the bolder
+   galaxy-level route-line weight — rather than losing to it. */
+.travel-route-node circle,
+.travel-route-node ellipse {
+    stroke: var(--screen-glow) !important;
+    stroke-width: 3 !important;
+    filter: drop-shadow(0 0 4px var(--screen-glow));
+}
+
+.travel-route-line {
+    stroke: var(--screen-glow) !important;
+    stroke-width: 2.5 !important;
+    filter: drop-shadow(0 0 3px var(--screen-glow));
 }

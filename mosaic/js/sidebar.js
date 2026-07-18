@@ -1,3 +1,5 @@
+let closeSidebarImpl = () => {};
+
 export function initSidebar() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('sidebar-overlay');
@@ -18,7 +20,13 @@ export function initSidebar() {
         openButton.setAttribute('aria-expanded', 'false');
     }
 
+    closeSidebarImpl = close;
+
     openButton.addEventListener('click', open);
     closeButton.addEventListener('click', close);
     overlay.addEventListener('click', close);
+}
+
+export function closeSidebar() {
+    closeSidebarImpl();
 }

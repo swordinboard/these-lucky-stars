@@ -51,7 +51,30 @@ export function clusterRoutes() {
     return raw.clusterRoutes;
 }
 
+export function allSystemRoutes() {
+    return raw.systemRoutes;
+}
+
 export function systemRoutesWithin(clusterId) {
     const ids = new Set(systemsOf(clusterId).map((system) => system.id));
     return raw.systemRoutes.filter((route) => ids.has(route.from) && ids.has(route.to));
+}
+
+// Flat lists of every entity of a given kind, for building a travel search
+// index across the whole galaxy (as opposed to the other accessors above,
+// which are all scoped to one cluster/system/planet at a time).
+export function allSystems() {
+    return raw.systems.map((system) => byId.get(system.id));
+}
+
+export function allOrbitalBodies() {
+    return raw.orbitalBodies.map((body) => byId.get(body.id));
+}
+
+export function allMoons() {
+    return raw.moons.map((moon) => byId.get(moon.id));
+}
+
+export function allLocations() {
+    return raw.locations.map((location) => byId.get(location.id));
 }

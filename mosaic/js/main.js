@@ -6,8 +6,9 @@ import { renderLocationList } from './location-list.js';
 import { renderBreadcrumb } from './breadcrumb.js';
 import { renderDetailsPanel } from './details-panel.js';
 import { createPanZoom } from './panzoom.js';
-import { initSidebar } from './sidebar.js';
+import { initSidebar, closeSidebar } from './sidebar.js';
 import { renderStarfield, setStarfieldOffset } from './starfield.js';
+import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection } from './travel-panel.js';
 
 const STARFIELD_PARALLAX_FACTOR = 0.18;
 
@@ -24,12 +25,18 @@ async function main() {
     const scrollbarEl = document.getElementById('orbital-scrollbar');
     const scrollbarThumbEl = document.getElementById('orbital-scrollbar-thumb');
     const mapEmptyEl = document.getElementById('map-empty-state');
+    const sidebarTravelButton = document.getElementById('sidebar-travel');
 
     locationBackdropEl.addEventListener('click', () => goUp('orbital'));
+    sidebarTravelButton.addEventListener('click', () => {
+        closeSidebar();
+        openTravelPanelBlank();
+    });
 
     const panZoom = createPanZoom(svg, viewport, {
         onTap(nodeId) {
             select(nodeId);
+            notifyTravelMapSelection(nodeId);
         },
         onDoubleTap(nodeId) {
             const entity = getById(nodeId);
@@ -48,6 +55,16 @@ async function main() {
         },
     });
     let lastFitKey = null;
+    let lastBounds = null;
+    let lastFitMode = 'free';
+
+    function applyFit() {
+        if (!lastBounds) return;
+        if (lastFitMode === 'horizontal') panZoom.fitHorizontal(lastBounds, 0);
+        else panZoom.fitToBounds(lastBounds);
+    }
+
+    initTravelPanel(applyFit);
 
     subscribe((state) => {
         let bounds = null;
@@ -70,6 +87,9 @@ async function main() {
             fitMode = 'horizontal';
         }
 
+        lastBounds = bounds;
+        lastFitMode = fitMode;
+
         mapEmptyEl.hidden = !(state.level === 'system' && bounds === null);
 
         // Render everything that can change the map's available screen space
@@ -90,10 +110,7 @@ async function main() {
         if (fitKey !== lastFitKey) {
             lastFitKey = fitKey;
             renderStarfield(fitKey || 'galaxy');
-            if (bounds) {
-                if (fitMode === 'horizontal') panZoom.fitHorizontal(bounds, 0);
-                else panZoom.fitToBounds(bounds);
-            }
+            applyFit();
         }
     });
 

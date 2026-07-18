@@ -1,5 +1,7 @@
 import { getById, systemsOf } from './data.js';
 import { drillInto, deselect } from './state.js';
+import { openTravelPanelWithDestination } from './travel-panel.js';
+import { isTravelable } from './travel.js';
 
 const DRILL_LABEL = {
     cluster: 'View systems →',
@@ -138,12 +140,28 @@ export function renderDetailsPanel(el, state) {
         el.appendChild(p);
     }
 
-    if (DRILL_LABEL[entity.kind]) {
-        const drillButton = document.createElement('button');
-        drillButton.type = 'button';
-        drillButton.className = 'details-drill';
-        drillButton.textContent = DRILL_LABEL[entity.kind];
-        drillButton.addEventListener('click', () => drillInto(entity));
-        el.appendChild(drillButton);
+    if (DRILL_LABEL[entity.kind] || isTravelable(entity)) {
+        const actions = document.createElement('div');
+        actions.className = 'details-actions';
+
+        if (DRILL_LABEL[entity.kind]) {
+            const drillButton = document.createElement('button');
+            drillButton.type = 'button';
+            drillButton.className = 'details-drill';
+            drillButton.textContent = DRILL_LABEL[entity.kind];
+            drillButton.addEventListener('click', () => drillInto(entity));
+            actions.appendChild(drillButton);
+        }
+
+        if (isTravelable(entity)) {
+            const travelButton = document.createElement('button');
+            travelButton.type = 'button';
+            travelButton.className = 'details-drill';
+            travelButton.textContent = 'Begin Travel →';
+            travelButton.addEventListener('click', () => openTravelPanelWithDestination(entity));
+            actions.appendChild(travelButton);
+        }
+
+        el.appendChild(actions);
     }
 }
