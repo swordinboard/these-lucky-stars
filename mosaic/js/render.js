@@ -93,7 +93,7 @@ const LEE_TEAL_WASH_SPREAD = Math.PI * 0.8; // wide arc, biased toward Hart's to
 const MAP_STAR_TOTAL = 480;
 const MAP_STAR_CENTERS = [
     { id: 'cluster-danswai', weight: 0.45, maxDist: 1300 },
-    { id: 'cluster-hart', weight: 0.45, maxDist: 1200 },
+    { id: 'cluster-hart', weight: 0.5625, maxDist: 1500 },
     { id: 'cluster-weisman', weight: 0.25, maxDist: 800 },
 ];
 const MAP_STAR_FAN_POWER = 2.4; // >1 biases samples toward the center (dense core, sparse tail)
