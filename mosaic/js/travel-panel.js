@@ -1,7 +1,8 @@
 import { getById } from './data.js';
 import { renderLevel } from './render.js';
+import { raisePanel } from './panel-stack.js';
 import {
-    planRoute, describeEntity, travelSearchIndex, formatDistance, formatDuration, isTravelable,
+    planRoute, describeEntity, travelSearchIndex, formatDistance, formatDuration, formatDurationFull, isTravelable,
 } from './travel.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -139,7 +140,7 @@ function renderResults(plan) {
     timeStat.innerHTML = '<span class="travel-stat-label">Travel time</span>';
     const timeValue = document.createElement('span');
     timeValue.className = 'travel-stat-value';
-    timeValue.textContent = plan.totalDays > 0 ? formatDuration(plan.totalDays) : 'Effectively instant';
+    timeValue.textContent = formatDurationFull(plan.totalDays);
     timeStat.appendChild(timeValue);
     summary.appendChild(timeStat);
 
@@ -293,6 +294,7 @@ function createField(labelText) {
 }
 
 function open() {
+    raisePanel(panelEl);
     panelEl.classList.add('open');
     panelEl.setAttribute('aria-hidden', 'false');
     openFlag = true;

@@ -9,6 +9,7 @@ import { createPanZoom } from './panzoom.js';
 import { initSidebar, closeSidebar } from './sidebar.js';
 import { renderStarfield, setStarfieldOffset } from './starfield.js';
 import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection } from './travel-panel.js';
+import { raisePanel } from './panel-stack.js';
 
 const STARFIELD_PARALLAX_FACTOR = 0.18;
 
@@ -57,6 +58,7 @@ async function main() {
     let lastFitKey = null;
     let lastBounds = null;
     let lastFitMode = 'free';
+    let wasLocationLevel = false;
 
     function applyFit() {
         if (!lastBounds) return;
@@ -100,6 +102,8 @@ async function main() {
         // space than a populated one, producing a slightly too-large scale
         // that clips content flush against whichever edge fills in afterward.
         const isLocationLevel = state.level === 'location';
+        if (isLocationLevel && !wasLocationLevel) raisePanel(locationListEl, locationBackdropEl);
+        wasLocationLevel = isLocationLevel;
         locationListEl.classList.toggle('open', isLocationLevel);
         locationBackdropEl.classList.toggle('open', isLocationLevel);
         if (isLocationLevel) renderLocationList(locationListEl, state);

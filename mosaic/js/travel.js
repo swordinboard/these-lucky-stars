@@ -275,3 +275,46 @@ export function formatDuration(days) {
     if (days < 365.25) return `${(days / 30.4368).toFixed(1)} months`;
     return `${(days / DAYS_PER_YEAR).toFixed(1)} years`;
 }
+
+const DAYS_PER_MONTH = 30.4368;
+
+// The full door-to-door total, broken down into every unit down to whole
+// hours (years/months/days/hours, skipping any that are zero) rather than
+// rounded to a single unit like formatDuration — so a multi-month trip
+// reads as "6 mo 5 d 14 hr" instead of losing everything past "6.2 months".
+export function formatDurationFull(days) {
+    if (!(days > 0)) return 'Effectively instant';
+
+    let totalMinutes = Math.round(days * 24 * 60);
+    if (totalMinutes < 60) return `${totalMinutes} min`;
+
+    let totalHours = Math.round(totalMinutes / 60);
+    if (totalHours < 24) return `${totalHours} hr`;
+
+    let remainingDays = totalHours / 24;
+    let years = Math.floor(remainingDays / DAYS_PER_YEAR);
+    remainingDays -= years * DAYS_PER_YEAR;
+    let months = Math.floor(remainingDays / DAYS_PER_MONTH);
+    remainingDays -= months * DAYS_PER_MONTH;
+    let wholeDays = Math.floor(remainingDays);
+    let hours = Math.round((remainingDays - wholeDays) * 24);
+    if (hours === 24) {
+        hours = 0;
+        wholeDays += 1;
+    }
+    if (wholeDays >= DAYS_PER_MONTH) {
+        wholeDays -= Math.floor(DAYS_PER_MONTH);
+        months += 1;
+    }
+    if (months >= 12) {
+        months -= 12;
+        years += 1;
+    }
+
+    const parts = [];
+    if (years > 0) parts.push(`${years} yr`);
+    if (months > 0) parts.push(`${months} mo`);
+    if (wholeDays > 0) parts.push(`${wholeDays} d`);
+    if (hours > 0) parts.push(`${hours} hr`);
+    return parts.join(' ');
+}

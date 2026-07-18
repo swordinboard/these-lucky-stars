@@ -2,6 +2,7 @@ import { getById, systemsOf } from './data.js';
 import { drillInto, deselect } from './state.js';
 import { openTravelPanelWithDestination } from './travel-panel.js';
 import { isTravelable } from './travel.js';
+import { raisePanel } from './panel-stack.js';
 
 const DRILL_LABEL = {
     cluster: 'View systems →',
@@ -30,6 +31,7 @@ const PLACEHOLDER_TEXT = {
 // real start and end state to animate between.
 function enterFullPage(el) {
     if (el.classList.contains('full')) return;
+    raisePanel(el);
     el.classList.remove('expanded');
     el.classList.add('full-entering');
     void el.offsetHeight;

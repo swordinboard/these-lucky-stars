@@ -1,3 +1,5 @@
+import { raisePanel } from './panel-stack.js';
+
 let closeSidebarImpl = () => {};
 
 export function initSidebar() {
@@ -7,6 +9,7 @@ export function initSidebar() {
     const closeButton = document.getElementById('sidebar-close');
 
     function open() {
+        raisePanel(sidebar, overlay);
         sidebar.classList.add('open');
         sidebar.setAttribute('aria-hidden', 'false');
         overlay.hidden = false;
