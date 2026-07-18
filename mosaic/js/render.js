@@ -97,7 +97,7 @@ const MAP_STAR_CENTERS = [
     { id: 'cluster-danswai', weight: 0.45, maxDist: 1300 },
     { id: 'cluster-hart', weight: 0.3, maxDist: 800 },
     { id: 'cluster-weisman', weight: 0.25, maxDist: 800 },
-    { id: 'cluster-morrison', weight: 0.3, maxDist: 1200 },
+    { id: 'cluster-morrison', weight: 0.21, maxDist: 1200 },
 ];
 const MAP_STAR_FAN_POWER = 2.4; // >1 biases samples toward the center (dense core, sparse tail)
 // Tiny — sized in map-data units, which get scaled down a lot by the cluster
