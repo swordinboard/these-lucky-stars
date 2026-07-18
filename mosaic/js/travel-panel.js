@@ -336,6 +336,12 @@ function open() {
     panelEl.classList.add('open');
     panelEl.setAttribute('aria-hidden', 'false');
     openFlag = true;
+    // Fired immediately (not just on transitionend) so anything that only
+    // cares about open/closed state — like collapsing the docked details
+    // footer to free up room — updates right away instead of waiting out
+    // the width transition. The map refit, which does need the transition's
+    // final size, still waits for the transitionend listener below.
+    onToggleCallback?.();
 }
 
 export function isOpen() {
@@ -346,6 +352,7 @@ export function closeTravelPanel() {
     panelEl.classList.remove('open');
     panelEl.setAttribute('aria-hidden', 'true');
     openFlag = false;
+    onToggleCallback?.();
 }
 
 // Deliberately does NOT auto-focus either search input — doing so

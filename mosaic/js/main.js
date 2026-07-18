@@ -8,7 +8,7 @@ import { renderDetailsPanel } from './details-panel.js';
 import { createPanZoom } from './panzoom.js';
 import { initSidebar, closeSidebar } from './sidebar.js';
 import { renderStarfield, setStarfieldOffset } from './starfield.js';
-import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection } from './travel-panel.js';
+import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection, isOpen as isTravelPanelOpen } from './travel-panel.js';
 import { initAboutPanel, openAboutPanel } from './about-panel.js';
 import { raisePanel } from './panel-stack.js';
 
@@ -66,6 +66,7 @@ async function main() {
     let lastBounds = null;
     let lastFitMode = 'free';
     let wasLocationLevel = false;
+    let latestState = null;
 
     function applyFit() {
         if (!lastBounds) return;
@@ -73,9 +74,35 @@ async function main() {
         else panZoom.fitToBounds(lastBounds);
     }
 
-    initTravelPanel(applyFit);
+    // The travel panel and the docked details footer both compete for
+    // vertical space on a phone screen — showing an entity's compact
+    // preview (description, drill/travel buttons) underneath an already-open
+    // travel panel squeezes the panel down to the point where its own
+    // fields get clipped short instead of laid out comfortably. So while the
+    // travel panel is open, the compact footer collapses to its placeholder
+    // (as if nothing were selected) — the button that opened the panel has
+    // already done its job, and a live map tap still autofills "To"
+    // independently of this, via notifyTravelMapSelection. A location's
+    // full-page view is exempt: it has its own dedicated screen (not the
+    // docked footer), and the travel panel is meant to stack on top of it
+    // rather than replace it (see panel-stack.js).
+    function renderDetailsForCurrentState() {
+        if (!latestState) return;
+        const selectedEntity = latestState.selectedId ? getById(latestState.selectedId) : null;
+        const suppressForTravel = isTravelPanelOpen() && selectedEntity && selectedEntity.kind !== 'location';
+        const state = suppressForTravel ? { ...latestState, selectedId: null } : latestState;
+        renderDetailsPanel(detailsEl, state);
+    }
+
+    function onTravelPanelToggle() {
+        applyFit();
+        renderDetailsForCurrentState();
+    }
+
+    initTravelPanel(onTravelPanelToggle);
 
     subscribe((state) => {
+        latestState = state;
         let bounds = null;
         let fitKey = null;
         let fitMode = 'free';
@@ -116,7 +143,7 @@ async function main() {
         if (isLocationLevel) renderLocationList(locationListEl, state);
 
         renderBreadcrumb(breadcrumbEl, state);
-        renderDetailsPanel(detailsEl, state);
+        renderDetailsForCurrentState();
 
         if (fitKey !== lastFitKey) {
             lastFitKey = fitKey;
