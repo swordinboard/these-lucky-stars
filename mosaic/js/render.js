@@ -71,6 +71,12 @@ const RUST_WASH_ALPHA_BETA_SPREAD = Math.PI; // half-circle arc, biased toward W
 const RUST_WASH_CALEPH_ID = 'galaxy-rust-wash-caleph';
 const RUST_WASH_CALEPH_SPREAD = Math.PI * 0.7; // narrower arc, tightly biased toward Nor
 
+// A fourth rust patch anchored between Morrison and Hope, fanning back toward
+// the Lee/Fold/Morrison wash so the two blend into one irregular shape rather
+// than reading as a single clean ellipse over that corner.
+const RUST_WASH_MORRISON_HOPE_ID = 'galaxy-rust-wash-morrison-hope';
+const RUST_WASH_MORRISON_HOPE_SPREAD = Math.PI; // half-circle arc, biased toward Lee/Fold/Morrison
+
 // Stars cluster densely around the brightest points on the map — the star
 // clouds' own flares — and thin out with distance, rather than scattering
 // evenly over the whole halo. Weights roughly follow each flare's own
@@ -203,6 +209,16 @@ function renderGalaxyBackdrop(viewportEl) {
     }
     const rustWashPosition = centroidOf(RUST_WASH_CLUSTER_IDS);
     for (const shape of accentPuffShapesFor(RUST_WASH_ID, rustWashPosition, scale)) {
+        puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
+    }
+
+    const morrisonHopeMid = centroidOf(['cluster-morrison', 'cluster-hope']);
+    const morrisonHopeFanAngle = Math.atan2(
+        rustWashPosition.y - morrisonHopeMid.y,
+        rustWashPosition.x - morrisonHopeMid.x,
+    );
+    const morrisonHopeFanOptions = { angleCenter: morrisonHopeFanAngle, angleSpread: RUST_WASH_MORRISON_HOPE_SPREAD };
+    for (const shape of accentPuffShapesFor(RUST_WASH_MORRISON_HOPE_ID, morrisonHopeMid, scale, morrisonHopeFanOptions)) {
         puffGroup.appendChild(galaxyEllipse('galaxy-accent-patch galaxy-accent-rust', shape));
     }
 
