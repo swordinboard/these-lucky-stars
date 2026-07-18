@@ -87,17 +87,14 @@ const LEE_TEAL_WASH_SPREAD = Math.PI * 0.8; // wide arc, biased toward Hart's to
 // Stars cluster densely around the brightest points on the map — the star
 // clouds' own flares — and thin out with distance, rather than scattering
 // evenly over the whole halo. Weights roughly follow each flare's own
-// brightness (Danswai's primary flare draws the most, Hart/Weisman's
-// smaller secondary flares draw less). Danswai's large maxDist already lets
-// its scatter reach past the color washes into the empty top-right corner;
-// Morrison gets the same treatment (despite having no flare of its own) to
-// fill the equivalent blank space in the bottom-left corner.
+// brightness (Danswai's primary flare draws the most, Hart's boosted weight
+// and reach fill more of the bottom-left corner as a side effect, Weisman's
+// smaller secondary flare draws least).
 const MAP_STAR_TOTAL = 480;
 const MAP_STAR_CENTERS = [
     { id: 'cluster-danswai', weight: 0.45, maxDist: 1300 },
-    { id: 'cluster-hart', weight: 0.3, maxDist: 800 },
+    { id: 'cluster-hart', weight: 0.45, maxDist: 1200 },
     { id: 'cluster-weisman', weight: 0.25, maxDist: 800 },
-    { id: 'cluster-morrison', weight: 0.21, maxDist: 1200 },
 ];
 const MAP_STAR_FAN_POWER = 2.4; // >1 biases samples toward the center (dense core, sparse tail)
 // Tiny — sized in map-data units, which get scaled down a lot by the cluster
