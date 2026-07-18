@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mosaic Galaxy — These Lucky Stars</title>
+    <title>NaviGo Compact 2 — These Lucky Stars</title>
     <meta name="description" content="Interactive galaxy map for These Lucky Stars.">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
             <button id="menu-button" class="icon-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
                 <span class="hamburger-icon" aria-hidden="true"></span>
             </button>
-            <h1 class="site-title">Mosaic Galaxy</h1>
+            <h1 class="site-title">NaviGo Compact 2</h1>
         </div>
         <div id="breadcrumb" class="breadcrumb"></div>
     </header>
@@ -97,6 +97,9 @@
         <div id="map-empty-state" class="map-empty-state" hidden>No Data Available</div>
 
         <div id="travel-panel" class="travel-panel" aria-hidden="true"></div>
+
+        <div id="about-panel-backdrop" class="about-panel-backdrop"></div>
+        <div id="about-panel" class="about-panel" aria-hidden="true"></div>
     </main>
 
     <footer id="details-panel" class="details-panel"></footer>
@@ -105,6 +108,7 @@
         <button id="sidebar-close" class="icon-button" type="button" aria-label="Close menu">×</button>
         <ul class="sidebar-links">
             <li><button id="sidebar-travel" class="sidebar-link-button" type="button">Plot a Route</button></li>
+            <li><button id="sidebar-about" class="sidebar-link-button" type="button">About</button></li>
             <li><a href="https://theseluckystars.com">TLS Home</a></li>
         </ul>
     </nav>

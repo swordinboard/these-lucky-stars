@@ -4,6 +4,7 @@ import { raisePanel } from './panel-stack.js';
 import {
     planRoute, applyAccuracy, describeEntity, travelSearchIndex,
     formatDistance, formatDuration, formatDurationFull, isTravelable,
+    DEFAULT_CA_G, DEFAULT_MAX_CRUISE_C,
 } from './travel.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -24,12 +25,24 @@ let submitButton = null;
 let resultsEl = null;
 let accuracyInput = null;
 let accuracyValueLabel = null;
+let caInput = null;
+let cruiseInput = null;
 let openFlag = false;
 let onToggleCallback = null;
 let lastPlan = null;
 
 function currentAccuracy() {
     return Number(accuracyInput.value);
+}
+
+function currentCaG() {
+    const value = Number(caInput.value);
+    return value > 0 ? value : DEFAULT_CA_G;
+}
+
+function currentMaxCruiseC() {
+    const value = Number(cruiseInput.value);
+    return value > 0 ? value : DEFAULT_MAX_CRUISE_C;
 }
 
 function distanceText(lowLy, highLy, lowAu, highAu) {
@@ -431,9 +444,70 @@ export function initTravelPanel(onToggle) {
     accuracyField.appendChild(accuracyRow);
     const accuracyHint = document.createElement('p');
     accuracyHint.className = 'travel-accuracy-hint';
-    accuracyHint.textContent = 'Below 100%, distance and time show as an estimated range instead of an exact figure.';
+    accuracyHint.textContent = 'Below 100%, distance and time show as a range from the charted figure up to that much longer.';
     accuracyField.appendChild(accuracyHint);
     body.appendChild(accuracyField);
+
+    const advancedToggle = document.createElement('button');
+    advancedToggle.type = 'button';
+    advancedToggle.className = 'travel-advanced-toggle';
+    advancedToggle.textContent = 'Advanced options ▾';
+    body.appendChild(advancedToggle);
+
+    const advancedBody = document.createElement('div');
+    advancedBody.className = 'travel-advanced-body';
+    advancedBody.hidden = true;
+    body.appendChild(advancedBody);
+
+    advancedToggle.addEventListener('click', () => {
+        advancedBody.hidden = !advancedBody.hidden;
+        advancedToggle.textContent = advancedBody.hidden ? 'Advanced options ▾' : 'Advanced options ▴';
+    });
+
+    const caField = document.createElement('div');
+    caField.className = 'travel-field';
+    const caLabel = document.createElement('label');
+    caLabel.textContent = 'Constant acceleration (g)';
+    caField.appendChild(caLabel);
+    caInput = document.createElement('input');
+    caInput.type = 'number';
+    caInput.min = '1';
+    caInput.step = '10';
+    caInput.value = String(DEFAULT_CA_G);
+    caInput.className = 'travel-advanced-input';
+    caInput.addEventListener('input', () => {
+        if (lastPlan) {
+            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
+            renderResults(lastPlan);
+        }
+    });
+    caField.appendChild(caInput);
+    advancedBody.appendChild(caField);
+
+    const cruiseField = document.createElement('div');
+    cruiseField.className = 'travel-field';
+    const cruiseLabel = document.createElement('label');
+    cruiseLabel.textContent = 'Max cruise speed (c)';
+    cruiseField.appendChild(cruiseLabel);
+    cruiseInput = document.createElement('input');
+    cruiseInput.type = 'number';
+    cruiseInput.min = '1';
+    cruiseInput.step = '1';
+    cruiseInput.value = String(DEFAULT_MAX_CRUISE_C);
+    cruiseInput.className = 'travel-advanced-input';
+    cruiseInput.addEventListener('input', () => {
+        if (lastPlan) {
+            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
+            renderResults(lastPlan);
+        }
+    });
+    cruiseField.appendChild(cruiseInput);
+    advancedBody.appendChild(cruiseField);
+
+    const advancedHint = document.createElement('p');
+    advancedHint.className = 'travel-accuracy-hint';
+    advancedHint.textContent = "Your vessel's own constant-acceleration and cruise ratings — the setting's standard is 5300g / 209c.";
+    advancedBody.appendChild(advancedHint);
 
     submitButton = document.createElement('button');
     submitButton.type = 'button';
@@ -441,7 +515,7 @@ export function initTravelPanel(onToggle) {
     submitButton.textContent = 'Plot Route';
     submitButton.disabled = true;
     submitButton.addEventListener('click', () => {
-        lastPlan = planRoute(fromField.getEntity(), toField.getEntity());
+        lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
         renderResults(lastPlan);
     });
     body.appendChild(submitButton);

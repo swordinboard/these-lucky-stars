@@ -4,7 +4,7 @@ import { goUp } from './state.js';
 export function renderBreadcrumb(el, state) {
     while (el.firstChild) el.removeChild(el.firstChild);
 
-    const crumbs = [{ label: 'Galaxy', level: 'cluster' }];
+    const crumbs = [{ label: 'Mosaic Galaxy', level: 'cluster' }];
     if (state.clusterId) {
         crumbs.push({ label: getById(state.clusterId).name, level: 'system' });
     }

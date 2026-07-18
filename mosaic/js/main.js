@@ -9,12 +9,14 @@ import { createPanZoom } from './panzoom.js';
 import { initSidebar, closeSidebar } from './sidebar.js';
 import { renderStarfield, setStarfieldOffset } from './starfield.js';
 import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection } from './travel-panel.js';
+import { initAboutPanel, openAboutPanel } from './about-panel.js';
 import { raisePanel } from './panel-stack.js';
 
 const STARFIELD_PARALLAX_FACTOR = 0.18;
 
 async function main() {
     initSidebar();
+    initAboutPanel();
     await loadGalaxy();
 
     const svg = document.getElementById('galaxy-map');
@@ -27,11 +29,16 @@ async function main() {
     const scrollbarThumbEl = document.getElementById('orbital-scrollbar-thumb');
     const mapEmptyEl = document.getElementById('map-empty-state');
     const sidebarTravelButton = document.getElementById('sidebar-travel');
+    const sidebarAboutButton = document.getElementById('sidebar-about');
 
     locationBackdropEl.addEventListener('click', () => goUp('orbital'));
     sidebarTravelButton.addEventListener('click', () => {
         closeSidebar();
         openTravelPanelBlank();
+    });
+    sidebarAboutButton.addEventListener('click', () => {
+        closeSidebar();
+        openAboutPanel();
     });
 
     const panZoom = createPanZoom(svg, viewport, {

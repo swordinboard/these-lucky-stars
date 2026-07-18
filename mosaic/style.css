@@ -595,6 +595,86 @@ circle.hit-area {
     margin-top: 24px;
 }
 
+/* --- About panel: a read-only info drawer, styled like .location-list
+   (overlay + click-to-close backdrop) since — unlike the travel panel — it
+   never needs the map to stay interactive underneath it. --- */
+
+.about-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(480px, 90vw);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 1px solid var(--glass-border);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform var(--drawer-duration) var(--drawer-easing);
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
+}
+
+.about-panel.open {
+    transform: translateX(0);
+}
+
+.about-panel-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.about-panel-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about-panel-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px 0;
+    background: var(--glass-bg);
+}
+
+.about-panel-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.about-panel-body {
+    padding: 4px 20px 24px;
+}
+
+.about-panel-body h1 {
+    margin: 0 0 4px;
+    font-size: 1.4em;
+}
+
+.about-panel-body h3 {
+    margin: 0 0 20px;
+    font-weight: normal;
+    color: rgba(233, 233, 233, 0.7);
+    font-size: 1em;
+}
+
+.about-panel-body p {
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
 /* --- Details panel (always docked at the bottom) --- */
 
 .details-panel {
@@ -982,6 +1062,50 @@ circle.hit-area {
     margin: 0;
     font-size: 0.8em;
     color: rgba(233, 233, 233, 0.55);
+}
+
+.travel-advanced-toggle {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.travel-advanced-toggle:hover {
+    text-decoration: underline;
+}
+
+.travel-advanced-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+}
+
+.travel-advanced-body[hidden] {
+    display: none;
+}
+
+.travel-advanced-input {
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+}
+
+.travel-advanced-input:focus {
+    outline: 1px solid var(--screen-glow);
+    outline-offset: 1px;
 }
 
 .travel-field-selected {

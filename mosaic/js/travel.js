@@ -12,22 +12,49 @@ export function isTravelable(entity) {
     return Boolean(entity) && TRAVEL_KINDS.has(entity.kind);
 }
 
-// The CA/FTL travel model established for this setting: a symmetric
-// accelerate-decelerate profile that covers the setting's canonical 8 ly
-// "long jump" in 28 days (T = 2*sqrt(D/a), so a is fixed by those two
-// numbers). FTL is the travel mode; constant acceleration and inertial
+// The CA/FTL travel model established for this setting: accelerate at a
+// constant rate, cruise at a capped max speed once reached, then decelerate
+// symmetrically. FTL is the travel mode; constant acceleration and inertial
 // dampeners are just the in-universe explanation of how crews survive it —
 // so the same formula applies uniformly whether a leg is a many-lightyear
-// interstellar lane or a short in-system AU hop.
-const CA_REFERENCE_DISTANCE_LY = 8;
-const CA_REFERENCE_DAYS = 28;
+// interstellar lane or a short in-system AU hop. The defaults reproduce the
+// setting's canonical reference jump (8 ly in 28 days, ~209c handoff speed)
+// almost exactly, and are also this tool's "advanced options" defaults —
+// a vessel with a different CA/cruise rating plugs in its own numbers.
+export const DEFAULT_CA_G = 5300;
+export const DEFAULT_MAX_CRUISE_C = 209;
 const DAYS_PER_YEAR = 365.25;
-const CA_ACCEL_LY_PER_YEAR2 = (4 * CA_REFERENCE_DISTANCE_LY) / (CA_REFERENCE_DAYS / DAYS_PER_YEAR) ** 2;
+// 1 standard gravity (g), converted to ly/year^2 (ly and the Julian year
+// both taken at their standard definitions) — how far a constant 1g
+// acceleration lets a vessel's speed climb per year, in multiples of c.
+const G_IN_LY_PER_YEAR2 = 1.032133;
 export const AU_PER_LY = 63241.077;
 
-export function travelTimeDays(distanceLy) {
+// Distance (ly) covered while accelerating from a standstill to vmax (ly/yr,
+// i.e. multiples of c) at a constant rate `accel` (ly/yr^2): the standard
+// d = v^2 / (2a) kinematics.
+function accelDistance(vmax, accel) {
+    return (vmax * vmax) / (2 * accel);
+}
+
+// Full accelerate/(optionally cruise)/decelerate transit time, in years, for
+// a straight-line distance under constant-acceleration travel with a capped
+// cruise speed. Short hops never reach vmax (a plain symmetric triangle,
+// T = 2*sqrt(D/a)); longer ones accelerate to vmax, cruise at it for
+// whatever distance is left, then decelerate — the standard trapezoidal
+// velocity-profile kinematics.
+function transitYears(distanceLy, accel, vmax) {
+    const dAccel = accelDistance(vmax, accel);
+    if (distanceLy <= 2 * dAccel) return 2 * Math.sqrt(distanceLy / accel);
+    const tAccel = vmax / accel;
+    const tCruise = (distanceLy - 2 * dAccel) / vmax;
+    return 2 * tAccel + tCruise;
+}
+
+export function travelTimeDays(distanceLy, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C) {
     if (!(distanceLy > 0)) return 0;
-    const years = 2 * Math.sqrt(distanceLy / CA_ACCEL_LY_PER_YEAR2);
+    const accel = caG * G_IN_LY_PER_YEAR2; // g -> ly/year^2
+    const years = transitYears(distanceLy, accel, maxCruiseC);
     return years * DAYS_PER_YEAR;
 }
 
@@ -167,10 +194,14 @@ function keyName(key) {
 // a local AU-scale hop out of the origin body (if any), the interstellar
 // lane path between the two systems (which may cross several systems
 // and/or clusters), and a local AU-scale hop into the destination body.
+// `caG`/`maxCruiseC` are the vessel's own constant-acceleration and cruise
+// ratings (the "advanced options"); every leg's time is computed under the
+// same pair, and both are carried on the returned plan so a later accuracy
+// re-render uses the identical assumptions the route was plotted with.
 // Returns { ok:false, reason } when the entities can't be resolved or no
 // lane connects their systems; otherwise { ok:true, legs, totalLy,
 // totalDays, clusterIds, systemIdsByCluster, originSystem, destSystem }.
-export function planRoute(fromEntity, toEntity) {
+export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C) {
     if (!fromEntity || !toEntity) return { ok: false, reason: 'incomplete' };
     if (fromEntity.id === toEntity.id) return { ok: false, reason: 'same' };
 
@@ -194,7 +225,7 @@ export function planRoute(fromEntity, toEntity) {
             level: 'local',
             distanceAu: fromPoint.localAu,
             distanceLy: localFromLy,
-            timeDays: travelTimeDays(localFromLy),
+            timeDays: travelTimeDays(localFromLy, caG, maxCruiseC),
         });
     }
 
@@ -220,7 +251,7 @@ export function planRoute(fromEntity, toEntity) {
                 level: leg.kind,
                 distanceAu: null,
                 distanceLy: leg.distanceLy,
-                timeDays: travelTimeDays(leg.distanceLy),
+                timeDays: travelTimeDays(leg.distanceLy, caG, maxCruiseC),
             });
         }
     }
@@ -235,7 +266,7 @@ export function planRoute(fromEntity, toEntity) {
             level: 'local',
             distanceAu: toPoint.localAu,
             distanceLy: localToLy,
-            timeDays: travelTimeDays(localToLy),
+            timeDays: travelTimeDays(localToLy, caG, maxCruiseC),
         });
     }
 
@@ -256,6 +287,8 @@ export function planRoute(fromEntity, toEntity) {
         totalAu,
         clusterIds: [...clusterIds],
         systemIdsByCluster,
+        caG,
+        maxCruiseC,
     };
 }
 
@@ -322,12 +355,14 @@ export function formatDurationFull(days) {
 // The plotted route's distance/time are exact under the CA/FTL model, but a
 // traveler's own instruments aren't always dialed in that precisely — an
 // "accuracy" setting under 100% widens the whole route into a range instead
-// of one exact figure. 100% = 0 margin (the exact figures); accuracy scales
-// linearly down to a fully-doubled spread (0%-200% of the true value) at the
-// bottom of the dial. Applied per-leg (not just to the totals) so a leg's
-// low/high distance and its low/high time stay physically consistent with
-// each other (time is re-derived from the scaled distance via travelTimeDays,
-// not scaled independently).
+// of one exact figure. The exact figure is always the LOW end of the range
+// (conditions are never better than the charted distance/time, only worse);
+// 100% accuracy means 0 margin, so low === high === the exact figure, and
+// accuracy scales linearly down to a fully-doubled high end (up to +100%
+// longer) at the bottom of the dial. Applied per-leg (not just to the
+// totals) so a leg's low/high distance and its low/high time stay physically
+// consistent with each other (time is re-derived from the scaled distance
+// via travelTimeDays, not scaled independently).
 export function marginForAccuracy(accuracy) {
     const clamped = Math.max(0, Math.min(100, accuracy));
     return (100 - clamped) / 100;
@@ -338,16 +373,16 @@ export function applyAccuracy(plan, accuracy) {
     const margin = marginForAccuracy(accuracy);
 
     const legs = plan.legs.map((leg) => {
-        const lowLy = leg.distanceLy * (1 - margin);
+        const lowLy = leg.distanceLy;
         const highLy = leg.distanceLy * (1 + margin);
         return {
             ...leg,
             lowLy,
             highLy,
-            lowAu: leg.distanceAu != null ? leg.distanceAu * (1 - margin) : null,
+            lowAu: leg.distanceAu,
             highAu: leg.distanceAu != null ? leg.distanceAu * (1 + margin) : null,
-            lowDays: travelTimeDays(lowLy),
-            highDays: travelTimeDays(highLy),
+            lowDays: leg.timeDays,
+            highDays: travelTimeDays(highLy, plan.caG, plan.maxCruiseC),
         };
     });
 
@@ -359,7 +394,7 @@ export function applyAccuracy(plan, accuracy) {
         highLy: legs.reduce((sum, leg) => sum + leg.highLy, 0),
         lowDays: legs.reduce((sum, leg) => sum + leg.lowDays, 0),
         highDays: legs.reduce((sum, leg) => sum + leg.highDays, 0),
-        lowAu: plan.totalAu > 0 ? plan.totalAu * (1 - margin) : 0,
+        lowAu: plan.totalAu,
         highAu: plan.totalAu > 0 ? plan.totalAu * (1 + margin) : 0,
     };
 }
