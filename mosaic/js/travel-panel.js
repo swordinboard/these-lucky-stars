@@ -425,6 +425,22 @@ export function initTravelPanel(onToggle) {
     fromField = createField('From');
     body.appendChild(fromField.el);
 
+    const advancedToggle = document.createElement('button');
+    advancedToggle.type = 'button';
+    advancedToggle.className = 'travel-advanced-toggle';
+    advancedToggle.textContent = 'Advanced options ▾';
+    body.appendChild(advancedToggle);
+
+    const advancedBody = document.createElement('div');
+    advancedBody.className = 'travel-advanced-body';
+    advancedBody.hidden = true;
+    body.appendChild(advancedBody);
+
+    advancedToggle.addEventListener('click', () => {
+        advancedBody.hidden = !advancedBody.hidden;
+        advancedToggle.textContent = advancedBody.hidden ? 'Advanced options ▾' : 'Advanced options ▴';
+    });
+
     const accuracyField = document.createElement('div');
     accuracyField.className = 'travel-field travel-accuracy';
     const accuracyLabel = document.createElement('label');
@@ -453,23 +469,7 @@ export function initTravelPanel(onToggle) {
     accuracyHint.className = 'travel-accuracy-hint';
     accuracyHint.textContent = 'Below 100%, distance and time show as a range from the charted figure up to that much longer.';
     accuracyField.appendChild(accuracyHint);
-    body.appendChild(accuracyField);
-
-    const advancedToggle = document.createElement('button');
-    advancedToggle.type = 'button';
-    advancedToggle.className = 'travel-advanced-toggle';
-    advancedToggle.textContent = 'Advanced options ▾';
-    body.appendChild(advancedToggle);
-
-    const advancedBody = document.createElement('div');
-    advancedBody.className = 'travel-advanced-body';
-    advancedBody.hidden = true;
-    body.appendChild(advancedBody);
-
-    advancedToggle.addEventListener('click', () => {
-        advancedBody.hidden = !advancedBody.hidden;
-        advancedToggle.textContent = advancedBody.hidden ? 'Advanced options ▾' : 'Advanced options ▴';
-    });
+    advancedBody.appendChild(accuracyField);
 
     const caField = document.createElement('div');
     caField.className = 'travel-field';
