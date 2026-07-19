@@ -170,7 +170,7 @@
       "name": "Barnard's Star",
       "type": "red dwarf",
       "description": "A red dwarf roughly 5.96 light-years from Sol, and one of the closest stars to it.",
-      "detail": ["Home to a candidate super-Earth, Barnard's Star b, discovered in 2018."],
+      "detail": ["Home to a candidate super-Earth, Barnard's Star b."],
       "position": { "x": 418, "y": 624 }
     },
     {
@@ -344,7 +344,7 @@
       "orbitOrder": 1,
       "distanceAu": 0.05,
       "description": "A rocky planet orbiting Proxima Centauri, the binary pair's much more distant third companion; sits within its habitable zone, though true surface conditions remain unknown.",
-      "detail": ["Roughly 1.07 times Earth's mass, discovered via radial velocity in 2016.", "Proxima Centauri's frequent, powerful flares may strip away any atmosphere it has."]
+      "detail": ["Roughly 1.07 times Earth's mass.", "Proxima Centauri's frequent, powerful flares may strip away any atmosphere it has."]
     },
     {
       "id": "orb-barnards-star-b",
@@ -357,7 +357,7 @@
       "orbitOrder": 1,
       "distanceAu": 0.4,
       "description": "A super-Earth candidate orbiting just outside Barnard's Star's habitable zone — likely too cold to hold liquid water on its surface.",
-      "detail": ["Roughly 3.2 times Earth's mass, detected via radial velocity in 2018.", "Orbits its dim red dwarf star once every 233 days."]
+      "detail": ["Roughly 3.2 times Earth's mass.", "Orbits its dim red dwarf star once every 233 days."]
     },
     {
       "id": "orb-lalande-b",
@@ -369,8 +369,8 @@
       "hazard": "extreme-heat",
       "orbitOrder": 1,
       "distanceAu": 0.08,
-      "description": "A super-Earth on a tight, roughly 13-day orbit around Lalande 21185, confirmed after decades of disputed detections.",
-      "detail": ["Roughly 3 times Earth's mass, confirmed in 2021 from combined radial-velocity data.", "Orbits far too close to its star for any reasonable chance of habitability."]
+      "description": "A super-Earth on a tight, roughly 13-day orbit around Lalande 21185.",
+      "detail": ["Roughly 3 times Earth's mass.", "Orbits far too close to its star for any reasonable chance of habitability."]
     },
     {
       "id": "orb-sol-mercury",
@@ -489,7 +489,7 @@
       "description": "An ice giant that rotates almost completely on its side.",
       "detail": [
         "Its axis is tilted roughly 98 degrees, likely the result of an ancient collision — its ring system, aligned with its equator, is tilted right along with it, standing almost on end compared to Saturn's rings.",
-        "Has a faint ring system of its own: narrower and much darker than Saturn's, discovered in 1977 and not directly photographed until decades later.",
+        "Has a faint ring system of its own: narrower and much darker than Saturn's.",
         "Has no solid surface to land on.",
         "Beyond its five major moons, around 20 more, much smaller moons are known."
       ]
