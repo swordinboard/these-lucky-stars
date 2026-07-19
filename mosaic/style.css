@@ -1158,6 +1158,42 @@ circle.hit-area {
     text-decoration: underline;
 }
 
+.travel-waypoint-list {
+    list-style: none;
+    counter-reset: waypoint;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-waypoint-list:not(:empty) {
+    margin-bottom: 10px;
+}
+
+.travel-waypoint-row {
+    counter-increment: waypoint;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.travel-waypoint-row::before {
+    content: counter(waypoint) '.';
+    flex-shrink: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.travel-waypoint-name {
+    flex: 1;
+}
+
 .travel-field-search {
     position: relative;
 }

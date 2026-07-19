@@ -13,7 +13,7 @@ const DEFAULT_ACCURACY = 100;
 const LEVEL_LABEL = { local: 'Local approach', system: 'System lane', cluster: 'Interstellar lane' };
 const REASON_MESSAGE = {
     same: 'Choose two different locations to plot a route.',
-    unreachable: 'No charted FTL lane connects these two yet.',
+    unreachable: 'No charted FTL lane connects this route’s stops yet.',
     invalid: 'Could not resolve one of those locations.',
     incomplete: 'Choose both a "From" and a "To" location.',
 };
@@ -21,6 +21,7 @@ const REASON_MESSAGE = {
 let panelEl = null;
 let fromField = null;
 let toField = null;
+let waypointField = null;
 let submitButton = null;
 let resultsEl = null;
 let accuracyInput = null;
@@ -28,6 +29,7 @@ let accuracyValueLabel = null;
 let caInput = null;
 let cruiseInput = null;
 let openFlag = false;
+let routeEditExpanded = false;
 let onToggleCallback = null;
 let lastPlan = null;
 
@@ -123,7 +125,7 @@ function buildPreviews(plan) {
     const clusterPairs = plan.rawLegs.filter((leg) => leg.kind === 'cluster').map((leg) => [leg.from.split(':')[1], leg.to.split(':')[1]]);
     previews.appendChild(buildPreviewSvg({ level: 'cluster' }, plan.clusterIds, clusterPairs, 'Galaxy route'));
 
-    const distinctClusters = [...new Set([plan.originSystem.clusterId, plan.destSystem.clusterId])];
+    const distinctClusters = [...new Set([plan.originSystem.clusterId, plan.destSystem.clusterId, ...plan.systemIdsByCluster.keys()])];
     for (const clusterId of distinctClusters) {
         const systemIds = new Set(plan.systemIdsByCluster.get(clusterId) || []);
         if (plan.originSystem.clusterId === clusterId) systemIds.add(plan.originSystem.id);
@@ -326,6 +328,114 @@ function createField(labelText) {
     };
 }
 
+// An ordered, multi-entity variant of createField for the "Edit Route"
+// waypoint list: instead of one selected/search slot, it's a running list
+// (each with its own remove button) plus a search box that always stays in
+// "add another" mode. Order matters — it's the order the route is forced
+// to pass through, origin first to destination last.
+function createWaypointList(onChange) {
+    const wrap = document.createElement('div');
+    wrap.className = 'travel-field travel-waypoints';
+
+    const label = document.createElement('label');
+    label.textContent = 'Route through (optional)';
+    wrap.appendChild(label);
+
+    const list = document.createElement('ol');
+    list.className = 'travel-waypoint-list';
+    wrap.appendChild(list);
+
+    const searchWrap = document.createElement('div');
+    searchWrap.className = 'travel-field-search';
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'travel-field-input';
+    input.placeholder = 'Add a system, planet, moon, or location…';
+    searchWrap.appendChild(input);
+    const resultsList = document.createElement('ul');
+    resultsList.className = 'travel-field-results';
+    resultsList.hidden = true;
+    searchWrap.appendChild(resultsList);
+    wrap.appendChild(searchWrap);
+
+    let waypoints = [];
+
+    function renderWaypoints() {
+        while (list.firstChild) list.removeChild(list.firstChild);
+        waypoints.forEach((entity, index) => {
+            const li = document.createElement('li');
+            li.className = 'travel-waypoint-row';
+
+            const name = document.createElement('span');
+            name.className = 'travel-waypoint-name';
+            name.textContent = describeEntity(entity);
+            li.appendChild(name);
+
+            const removeButton = document.createElement('button');
+            removeButton.type = 'button';
+            removeButton.className = 'travel-field-change';
+            removeButton.textContent = 'Remove';
+            removeButton.setAttribute('aria-label', `Remove ${entity.name} from the route`);
+            removeButton.addEventListener('click', () => {
+                waypoints.splice(index, 1);
+                renderWaypoints();
+                onChange?.();
+            });
+            li.appendChild(removeButton);
+
+            list.appendChild(li);
+        });
+    }
+
+    function renderMatches(query) {
+        while (resultsList.firstChild) resultsList.removeChild(resultsList.firstChild);
+        const q = query.trim().toLowerCase();
+        if (!q) {
+            resultsList.hidden = true;
+            return;
+        }
+        const matches = travelSearchIndex().filter((candidate) => candidate.name.toLowerCase().includes(q)).slice(0, MAX_RESULTS);
+        resultsList.hidden = matches.length === 0;
+        for (const match of matches) {
+            const li = document.createElement('li');
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = describeEntity(match);
+            button.addEventListener('mousedown', (evt) => evt.preventDefault());
+            button.addEventListener('click', () => {
+                waypoints.push(match);
+                renderWaypoints();
+                input.value = '';
+                resultsList.hidden = true;
+                onChange?.();
+            });
+            li.appendChild(button);
+            resultsList.appendChild(li);
+        }
+    }
+
+    input.addEventListener('input', () => renderMatches(input.value));
+    input.addEventListener('blur', () => {
+        setTimeout(() => { resultsList.hidden = true; }, 150);
+    });
+    input.addEventListener('focus', () => renderMatches(input.value));
+
+    return {
+        el: wrap,
+        getWaypoints: () => waypoints,
+        clear() {
+            waypoints = [];
+            renderWaypoints();
+            input.value = '';
+            resultsList.hidden = true;
+        },
+        addWaypoint(entity) {
+            waypoints.push(entity);
+            renderWaypoints();
+        },
+    };
+}
+
 function resetAccuracy() {
     accuracyInput.value = String(DEFAULT_ACCURACY);
     accuracyValueLabel.textContent = `${DEFAULT_ACCURACY}%`;
@@ -364,6 +474,7 @@ function closeTravelPanel() {
 export function openTravelPanelWithDestination(entity) {
     toField.setEntity(entity);
     fromField.clear();
+    waypointField.clear();
     clearResults();
     resetAccuracy();
     updateSubmitState();
@@ -373,6 +484,7 @@ export function openTravelPanelWithDestination(entity) {
 export function openTravelPanelBlank() {
     toField.clear();
     fromField.clear();
+    waypointField.clear();
     clearResults();
     resetAccuracy();
     updateSubmitState();
@@ -380,14 +492,21 @@ export function openTravelPanelBlank() {
 }
 
 // Called on every map tap (alongside the normal select()/details-panel
-// flow, which keeps working exactly as before) — while the travel panel is
-// open, tapping a travelable node on the map is a shortcut for typing it
-// into the "To" search field.
+// flow, which keeps working exactly as before). Normally a shortcut for
+// typing the tapped entity into the "To" search field; while the "Edit
+// Route" section is expanded, it instead appends the tap as the next
+// waypoint, so building a forced route can be done straight from the map
+// instead of only by searching.
 export function notifyTravelMapSelection(entityId) {
     if (!openFlag) return;
     const entity = getById(entityId);
     if (!isTravelable(entity)) return;
-    toField.setEntity(entity);
+    if (routeEditExpanded) {
+        waypointField.addWaypoint(entity);
+        clearResults();
+    } else {
+        toField.setEntity(entity);
+    }
 }
 
 export function initTravelPanel(onToggle) {
@@ -424,6 +543,31 @@ export function initTravelPanel(onToggle) {
 
     fromField = createField('From');
     body.appendChild(fromField.el);
+
+    const routeEditToggle = document.createElement('button');
+    routeEditToggle.type = 'button';
+    routeEditToggle.className = 'travel-advanced-toggle';
+    routeEditToggle.textContent = 'Edit Route ▾';
+    body.appendChild(routeEditToggle);
+
+    const routeEditBody = document.createElement('div');
+    routeEditBody.className = 'travel-advanced-body';
+    routeEditBody.hidden = true;
+    body.appendChild(routeEditBody);
+
+    routeEditToggle.addEventListener('click', () => {
+        routeEditBody.hidden = !routeEditBody.hidden;
+        routeEditExpanded = !routeEditBody.hidden;
+        routeEditToggle.textContent = routeEditBody.hidden ? 'Edit Route ▾' : 'Edit Route ▴';
+    });
+
+    waypointField = createWaypointList(() => clearResults());
+    routeEditBody.appendChild(waypointField.el);
+
+    const routeEditHint = document.createElement('p');
+    routeEditHint.className = 'travel-accuracy-hint';
+    routeEditHint.textContent = 'Force the route through one or more stops, in order, instead of the most direct path — you can also tap the map to add a stop while this is open.';
+    routeEditBody.appendChild(routeEditHint);
 
     const advancedToggle = document.createElement('button');
     advancedToggle.type = 'button';
@@ -484,7 +628,7 @@ export function initTravelPanel(onToggle) {
     caInput.className = 'travel-advanced-input';
     caInput.addEventListener('input', () => {
         if (lastPlan) {
-            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
+            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC(), waypointField.getWaypoints());
             renderResults(lastPlan);
         }
     });
@@ -504,7 +648,7 @@ export function initTravelPanel(onToggle) {
     cruiseInput.className = 'travel-advanced-input';
     cruiseInput.addEventListener('input', () => {
         if (lastPlan) {
-            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
+            lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC(), waypointField.getWaypoints());
             renderResults(lastPlan);
         }
     });
@@ -522,7 +666,7 @@ export function initTravelPanel(onToggle) {
     submitButton.textContent = 'Plot Route';
     submitButton.disabled = true;
     submitButton.addEventListener('click', () => {
-        lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC());
+        lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC(), waypointField.getWaypoints());
         renderResults(lastPlan);
     });
     body.appendChild(submitButton);

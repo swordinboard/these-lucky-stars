@@ -138,6 +138,33 @@ function buildGraph() {
     return adj;
 }
 
+// A single cluster's own system-routes subgraph, with no cluster-hub node
+// at all. Needed because the free system<->cluster edges above are only
+// meant to model "reach your own cluster's outer lane for free" — but
+// since every system in a cluster connects to that SAME hub node for free,
+// Dijkstra over the full graph treats the hub as a free teleport between
+// any two systems in that cluster too, completely bypassing their real
+// charted system-route distances. That never came up before waypoints
+// existed (every route's start/end were either the same system or in
+// different clusters), but a route segment between two stops that happen
+// to share a cluster needs to be solved on this cluster-only subgraph
+// instead, so it actually uses the real distances.
+function buildClusterOnlyGraph(clusterId) {
+    const adj = new Map();
+    const addEdge = (a, b, dist) => {
+        if (!adj.has(a)) adj.set(a, []);
+        if (!adj.has(b)) adj.set(b, []);
+        adj.get(a).push({ to: b, dist, kind: 'system' });
+        adj.get(b).push({ to: a, dist, kind: 'system' });
+    };
+    for (const route of systemRoutesWithin(clusterId)) {
+        const dist = parseLy(route.label);
+        if (dist == null) continue;
+        addEdge(`system:${route.from}`, `system:${route.to}`, dist);
+    }
+    return adj;
+}
+
 // Plain Dijkstra over the combined graph — comfortably small (a few dozen
 // nodes), so an O(V^2) scan for the next node needs no priority queue.
 function shortestPath(adj, startKey, endKey) {
@@ -194,14 +221,22 @@ function keyName(key) {
 // a local AU-scale hop out of the origin body (if any), the interstellar
 // lane path between the two systems (which may cross several systems
 // and/or clusters), and a local AU-scale hop into the destination body.
+// `waypoints` (optional, in order) forces the route through each one's
+// system in turn rather than taking the single shortest path — each
+// consecutive pair of stops (origin -> waypoint 1 -> ... -> destination)
+// gets its own shortest-path segment, concatenated into one route, so a
+// waypoint can legitimately make the overall trip longer than the direct
+// path; that's the point of specifying one. A waypoint only pins down
+// which system the route passes through, not a local AU-scale detour out
+// to the specific body itself — only the true origin/destination get that.
 // `caG`/`maxCruiseC` are the vessel's own constant-acceleration and cruise
 // ratings (the "advanced options"); every leg's time is computed under the
 // same pair, and both are carried on the returned plan so a later accuracy
 // re-render uses the identical assumptions the route was plotted with.
 // Returns { ok:false, reason } when the entities can't be resolved or no
-// lane connects their systems; otherwise { ok:true, legs, totalLy,
+// lane connects consecutive stops; otherwise { ok:true, legs, totalLy,
 // totalDays, clusterIds, systemIdsByCluster, originSystem, destSystem }.
-export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C) {
+export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C, waypoints = []) {
     if (!fromEntity || !toEntity) return { ok: false, reason: 'incomplete' };
     if (fromEntity.id === toEntity.id) return { ok: false, reason: 'same' };
 
@@ -212,9 +247,30 @@ export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC =
     const originSystem = getById(fromPoint.systemId);
     const destSystem = getById(toPoint.systemId);
 
+    const waypointSystems = [];
+    for (const waypoint of waypoints) {
+        const point = resolveEndpoint(waypoint);
+        if (!point) continue;
+        waypointSystems.push(getById(point.systemId));
+    }
+
+    const stopSystems = [originSystem, ...waypointSystems, destSystem];
     const adj = buildGraph();
-    const path = shortestPath(adj, `system:${originSystem.id}`, `system:${destSystem.id}`);
-    if (!path) return { ok: false, reason: 'unreachable' };
+    const clusterOnlyGraphs = new Map();
+    const rawLegs = [];
+    for (let i = 0; i < stopSystems.length - 1; i++) {
+        const a = stopSystems[i];
+        const b = stopSystems[i + 1];
+        let path;
+        if (a.clusterId === b.clusterId) {
+            if (!clusterOnlyGraphs.has(a.clusterId)) clusterOnlyGraphs.set(a.clusterId, buildClusterOnlyGraph(a.clusterId));
+            path = shortestPath(clusterOnlyGraphs.get(a.clusterId), `system:${a.id}`, `system:${b.id}`);
+        } else {
+            path = shortestPath(adj, `system:${a.id}`, `system:${b.id}`);
+        }
+        if (!path) return { ok: false, reason: 'unreachable' };
+        rawLegs.push(...path.legs);
+    }
 
     const legs = [];
     const localFromLy = fromPoint.localAu / AU_PER_LY;
@@ -231,7 +287,7 @@ export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC =
 
     const clusterIds = new Set();
     const systemIdsByCluster = new Map();
-    for (const leg of path.legs) {
+    for (const leg of rawLegs) {
         if (leg.kind === 'cluster') {
             clusterIds.add(leg.from.split(':')[1]);
             clusterIds.add(leg.to.split(':')[1]);
@@ -281,7 +337,7 @@ export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC =
         originSystem,
         destSystem,
         legs,
-        rawLegs: path.legs,
+        rawLegs,
         totalLy,
         totalDays,
         totalAu,
