@@ -264,7 +264,7 @@
     { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 377, "y": 223 } },
     { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 249, "y": 214 } },
     { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 247, "y": 80 } },
-    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 148, "y": 148 } }
+    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 204, "y": 164 } }
   ],
   "clusterRoutes": [
     { "from": "cluster-morrison", "to": "cluster-hart", "label": "113.3 ly", "type": "ftl lane" },
