@@ -513,7 +513,7 @@ export function initTravelPanel(onToggle) {
 
     const advancedHint = document.createElement('p');
     advancedHint.className = 'travel-accuracy-hint';
-    advancedHint.textContent = "Your vessel's own constant-acceleration and cruise ratings — the setting's standard is 5300g / 209c.";
+    advancedHint.textContent = "Your vessel's own constant-acceleration and cruise ratings — the setting's standard is 5300g / 200c.";
     advancedBody.appendChild(advancedHint);
 
     submitButton = document.createElement('button');

@@ -17,12 +17,12 @@ export function isTravelable(entity) {
 // symmetrically. FTL is the travel mode; constant acceleration and inertial
 // dampeners are just the in-universe explanation of how crews survive it —
 // so the same formula applies uniformly whether a leg is a many-lightyear
-// interstellar lane or a short in-system AU hop. The defaults reproduce the
-// setting's canonical reference jump (8 ly in 28 days, ~209c handoff speed)
-// almost exactly, and are also this tool's "advanced options" defaults —
-// a vessel with a different CA/cruise rating plugs in its own numbers.
+// interstellar lane or a short in-system AU hop. 5300g / 200c is the
+// setting's standard vessel rating, and this tool's "advanced options"
+// defaults — a vessel with a different CA/cruise rating plugs in its own
+// numbers.
 export const DEFAULT_CA_G = 5300;
-export const DEFAULT_MAX_CRUISE_C = 209;
+export const DEFAULT_MAX_CRUISE_C = 200;
 const DAYS_PER_YEAR = 365.25;
 // 1 standard gravity (g), converted to ly/year^2 (ly and the Julian year
 // both taken at their standard definitions) — how far a constant 1g
