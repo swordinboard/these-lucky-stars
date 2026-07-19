@@ -260,11 +260,11 @@
     { "id": "system-ustrid", "clusterId": "cluster-alpha", "name": "Ustrid", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two ice giants and a scattered asteroid belt.", "detail": [], "position": { "x": 170, "y": 80 } },
     { "id": "system-grivane", "clusterId": "cluster-alpha", "name": "Grivane", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 128, "y": 390 } },
     { "id": "system-lundstrom", "clusterId": "cluster-alpha", "name": "Lundstrom", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by two barren worlds and a gas giant.", "detail": [], "position": { "x": 245, "y": 163 } },
-    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 80, "y": 194 } },
-    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 377, "y": 223 } },
-    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 249, "y": 214 } },
-    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 247, "y": 80 } },
-    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 204, "y": 164 } }
+    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 42, "y": 199 } },
+    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 413, "y": 235 } },
+    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 253, "y": 224 } },
+    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 251, "y": 56 } },
+    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 197, "y": 161 } }
   ],
   "clusterRoutes": [
     { "from": "cluster-morrison", "to": "cluster-hart", "label": "113.3 ly", "type": "ftl lane" },
@@ -309,13 +309,13 @@
     { "from": "system-talvern", "to": "system-lundstrom", "label": "4.2 ly", "type": "ftl lane" },
     { "from": "system-ustrid", "to": "system-lundstrom", "label": "2.8 ly", "type": "ftl lane" },
     { "from": "system-grivane", "to": "system-lundstrom", "label": "6.4 ly", "type": "ftl lane" },
-    { "from": "system-corrigan", "to": "system-harrowick", "label": "4.0 ly", "type": "ftl lane" },
-    { "from": "system-corrigan", "to": "system-bramsk", "label": "5.5 ly", "type": "ftl lane" },
-    { "from": "system-casimund", "to": "system-harrowick", "label": "3.2 ly", "type": "ftl lane" },
-    { "from": "system-casimund", "to": "system-bramsk", "label": "6.1 ly", "type": "ftl lane" },
-    { "from": "system-harrowick", "to": "system-bramsk", "label": "2.6 ly", "type": "ftl lane" },
-    { "from": "system-harrowick", "to": "system-nabren", "label": "4.8 ly", "type": "ftl lane" },
-    { "from": "system-bramsk", "to": "system-nabren", "label": "3.9 ly", "type": "ftl lane" }
+    { "from": "system-corrigan", "to": "system-harrowick", "label": "5.0 ly", "type": "ftl lane" },
+    { "from": "system-corrigan", "to": "system-bramsk", "label": "6.9 ly", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-harrowick", "label": "4.0 ly", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-bramsk", "label": "7.6 ly", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-bramsk", "label": "3.2 ly", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-nabren", "label": "6.0 ly", "type": "ftl lane" },
+    { "from": "system-bramsk", "to": "system-nabren", "label": "4.9 ly", "type": "ftl lane" }
   ],
   "orbitalBodies": [
     { "id": "orb-pertash-belt", "systemId": "system-talvern", "name": "Pertash Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 1, "distanceAu": 2.2, "description": "A scattered belt of rocky debris.", "detail": [] },
