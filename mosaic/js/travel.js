@@ -96,12 +96,22 @@ export function describeEntity(entity) {
         const system = planet ? getById(planet.systemId) : null;
         return `${entity.name} — ${planet ? planet.name : '?'}${system ? `, ${system.name}` : ''}`;
     }
+    if (entity.kind === 'cluster') return `${entity.name} — cluster`;
     return entity.name;
 }
 
 // Every entity a traveler could search for, across the whole galaxy.
 export function travelSearchIndex() {
     return [...allSystems(), ...allOrbitalBodies(), ...allMoons(), ...allLocations()];
+}
+
+// The same, plus clusters — used only for the "Edit Route" waypoint search.
+// A cluster is never a real To/From destination (a sector is a zone, not a
+// specific place to arrive at), but forcing a route to pass through a whole
+// cluster without pinning down a specific system in it is a reasonable
+// thing to ask for, so waypoints get the wider list.
+export function waypointSearchIndex() {
+    return [...clusters(), ...travelSearchIndex()];
 }
 
 // Builds one combined graph out of the two route networks in the data,
@@ -217,18 +227,31 @@ function keyName(key) {
     return entity ? entity.name : id;
 }
 
+// A waypoint stop is either a specific system (resolved the same way as a
+// real origin/destination) or, since a cluster can be forced as a waypoint
+// too, the cluster itself — routed to/from its cluster-graph node directly
+// rather than any particular system inside it.
+function resolveWaypointStop(entity) {
+    if (entity.kind === 'cluster') return { key: `cluster:${entity.id}`, clusterId: entity.id };
+    const point = resolveEndpoint(entity);
+    if (!point) return null;
+    const system = getById(point.systemId);
+    return { key: `system:${system.id}`, clusterId: system.clusterId };
+}
+
 // Plans a full door-to-door route between any two travelable entities:
 // a local AU-scale hop out of the origin body (if any), the interstellar
 // lane path between the two systems (which may cross several systems
 // and/or clusters), and a local AU-scale hop into the destination body.
 // `waypoints` (optional, in order) forces the route through each one's
-// system in turn rather than taking the single shortest path — each
-// consecutive pair of stops (origin -> waypoint 1 -> ... -> destination)
-// gets its own shortest-path segment, concatenated into one route, so a
-// waypoint can legitimately make the overall trip longer than the direct
-// path; that's the point of specifying one. A waypoint only pins down
-// which system the route passes through, not a local AU-scale detour out
-// to the specific body itself — only the true origin/destination get that.
+// system (or, for a cluster waypoint, the cluster itself) in turn rather
+// than taking the single shortest path — each consecutive pair of stops
+// (origin -> waypoint 1 -> ... -> destination) gets its own shortest-path
+// segment, concatenated into one route, so a waypoint can legitimately
+// make the overall trip longer than the direct path; that's the point of
+// specifying one. A waypoint only pins down which system/cluster the route
+// passes through, not a local AU-scale detour out to the specific body
+// itself — only the true origin/destination get that.
 // `caG`/`maxCruiseC` are the vessel's own constant-acceleration and cruise
 // ratings (the "advanced options"); every leg's time is computed under the
 // same pair, and both are carried on the returned plan so a later accuracy
@@ -247,26 +270,33 @@ export function planRoute(fromEntity, toEntity, caG = DEFAULT_CA_G, maxCruiseC =
     const originSystem = getById(fromPoint.systemId);
     const destSystem = getById(toPoint.systemId);
 
-    const waypointSystems = [];
+    const waypointStops = [];
     for (const waypoint of waypoints) {
-        const point = resolveEndpoint(waypoint);
-        if (!point) continue;
-        waypointSystems.push(getById(point.systemId));
+        const stop = resolveWaypointStop(waypoint);
+        if (stop) waypointStops.push(stop);
     }
 
-    const stopSystems = [originSystem, ...waypointSystems, destSystem];
+    const stops = [
+        { key: `system:${originSystem.id}`, clusterId: originSystem.clusterId },
+        ...waypointStops,
+        { key: `system:${destSystem.id}`, clusterId: destSystem.clusterId },
+    ];
     const adj = buildGraph();
     const clusterOnlyGraphs = new Map();
     const rawLegs = [];
-    for (let i = 0; i < stopSystems.length - 1; i++) {
-        const a = stopSystems[i];
-        const b = stopSystems[i + 1];
+    for (let i = 0; i < stops.length - 1; i++) {
+        const a = stops[i];
+        const b = stops[i + 1];
+        // The cluster-only-subgraph fix only applies between two SYSTEM
+        // stops sharing a cluster — a cluster-type stop already terminates
+        // its segment right at that cluster's own hub node, so there's no
+        // same-hub-shortcut bug to route around for it.
         let path;
-        if (a.clusterId === b.clusterId) {
+        if (a.key.startsWith('system:') && b.key.startsWith('system:') && a.clusterId === b.clusterId) {
             if (!clusterOnlyGraphs.has(a.clusterId)) clusterOnlyGraphs.set(a.clusterId, buildClusterOnlyGraph(a.clusterId));
-            path = shortestPath(clusterOnlyGraphs.get(a.clusterId), `system:${a.id}`, `system:${b.id}`);
+            path = shortestPath(clusterOnlyGraphs.get(a.clusterId), a.key, b.key);
         } else {
-            path = shortestPath(adj, `system:${a.id}`, `system:${b.id}`);
+            path = shortestPath(adj, a.key, b.key);
         }
         if (!path) return { ok: false, reason: 'unreachable' };
         rawLegs.push(...path.legs);

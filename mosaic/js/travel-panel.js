@@ -2,7 +2,7 @@ import { getById } from './data.js';
 import { renderLevel } from './render.js';
 import { raisePanel } from './panel-stack.js';
 import {
-    planRoute, applyAccuracy, describeEntity, travelSearchIndex,
+    planRoute, applyAccuracy, describeEntity, travelSearchIndex, waypointSearchIndex,
     formatDistance, formatDuration, formatDurationFull, isTravelable,
     DEFAULT_CA_G, DEFAULT_MAX_CRUISE_C,
 } from './travel.js';
@@ -350,7 +350,7 @@ function createWaypointList(onChange) {
     const input = document.createElement('input');
     input.type = 'text';
     input.className = 'travel-field-input';
-    input.placeholder = 'Add a system, planet, moon, or location…';
+    input.placeholder = 'Add a cluster, system, planet, moon, or location…';
     searchWrap.appendChild(input);
     const resultsList = document.createElement('ul');
     resultsList.className = 'travel-field-results';
@@ -394,7 +394,7 @@ function createWaypointList(onChange) {
             resultsList.hidden = true;
             return;
         }
-        const matches = travelSearchIndex().filter((candidate) => candidate.name.toLowerCase().includes(q)).slice(0, MAX_RESULTS);
+        const matches = waypointSearchIndex().filter((candidate) => candidate.name.toLowerCase().includes(q)).slice(0, MAX_RESULTS);
         resultsList.hidden = matches.length === 0;
         for (const match of matches) {
             const li = document.createElement('li');
@@ -500,11 +500,13 @@ export function openTravelPanelBlank() {
 export function notifyTravelMapSelection(entityId) {
     if (!openFlag) return;
     const entity = getById(entityId);
-    if (!isTravelable(entity)) return;
+    if (!entity) return;
     if (routeEditExpanded) {
+        if (entity.kind !== 'cluster' && !isTravelable(entity)) return;
         waypointField.addWaypoint(entity);
         clearResults();
     } else {
+        if (!isTravelable(entity)) return;
         toField.setEntity(entity);
     }
 }
