@@ -7,6 +7,7 @@ import { renderBreadcrumb } from './breadcrumb.js';
 import { renderDetailsPanel } from './details-panel.js';
 import { createPanZoom } from './panzoom.js';
 import { initSidebar, closeSidebar } from './sidebar.js';
+import { initNavSearch } from './nav-search.js';
 import { renderStarfield, setStarfieldOffset } from './starfield.js';
 import { initTravelPanel, openTravelPanelBlank, notifyTravelMapSelection, isOpen as isTravelPanelOpen } from './travel-panel.js';
 import { initAboutPanel, openAboutPanel } from './about-panel.js';
@@ -16,6 +17,7 @@ const STARFIELD_PARALLAX_FACTOR = 0.18;
 
 async function main() {
     initSidebar();
+    initNavSearch();
     initAboutPanel();
     await loadGalaxy();
 

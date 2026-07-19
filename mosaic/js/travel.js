@@ -105,11 +105,12 @@ export function travelSearchIndex() {
     return [...allSystems(), ...allOrbitalBodies(), ...allMoons(), ...allLocations()];
 }
 
-// The same, plus clusters — used only for the "Edit Route" waypoint search.
-// A cluster is never a real To/From destination (a sector is a zone, not a
-// specific place to arrive at), but forcing a route to pass through a whole
-// cluster without pinning down a specific system in it is a reasonable
-// thing to ask for, so waypoints get the wider list.
+// The same, plus clusters — every entity in the galaxy, searchable. Used by
+// the "Edit Route" waypoint search (a cluster is never a real To/From
+// destination — a sector is a zone, not a specific place to arrive at — but
+// forcing a route through a whole cluster without pinning down a specific
+// system in it is a reasonable thing to ask for) and by the nav search
+// (which needs every kind, since a cluster is a valid thing to jump to).
 export function waypointSearchIndex() {
     return [...clusters(), ...travelSearchIndex()];
 }
