@@ -103,10 +103,14 @@ The DEF of a material is determined by its composition and thickness. Use the ta
 
 ## Breaking Defensive Items
 
-**Armor** — Because armor is designed to take a beating, armor typically cannot be broken or damaged through normal wear and use.
+### Armor
+
+Because armor is designed to take a beating, armor typically cannot be broken or damaged through normal wear and use.
 {{% include "/snippets/armor-damage" %}}
 
-**Shields** — Similar to armor, shields (such as a [Ballistic Shield](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield)) are designed to absorb damage and take a beating.
+### Shields
+
+Similar to armor, shields (such as a [Ballistic Shield](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield)) are designed to absorb damage and take a beating.
 {{% include "/snippets/shields-damage" %}}
 
 ---

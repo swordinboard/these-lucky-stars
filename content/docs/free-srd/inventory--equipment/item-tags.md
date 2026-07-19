@@ -43,7 +43,7 @@ A highly engineered fabric originally developed to accommodate dramatic changes 
 
 This tag can be applied to most clothing items, armors, and space suits. Typically, the amount of "hard parts" an article has the more expensive it is to make with Adaptive Mesh layers, increasing the price significantly for armors and space suits.
 
-*Lore* Adaptive Mesh was first developed by Zeta Grey engineers to accommodate their resize ability, particularly while wearing space suits. Adaptive Mesh items are rare outside of Zeta Grey enclaves, and are priced accordingly.
+*Lore* Adaptive Mesh was first developed by Zeta Grey engineers to accommodate their resize ability, particularly while wearing space suits. Adaptive Mesh items are rare outside of Zeta Grey enclaves, and are often priced accordingly.
 {{% /details %}}
 
 {{% details "Arcing" %}}
