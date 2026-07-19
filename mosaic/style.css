@@ -1343,10 +1343,39 @@ circle.hit-area {
 }
 
 .travel-preview {
+    position: relative;
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid var(--glass-border);
     border-radius: 6px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.travel-preview:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.travel-preview-expand {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.45);
+    color: var(--accent);
+    font-size: 0.85em;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.travel-preview:hover .travel-preview-expand,
+.travel-preview:focus-visible .travel-preview-expand {
+    opacity: 1;
 }
 
 .travel-preview-title {
@@ -1367,6 +1396,85 @@ circle.hit-area {
     margin: 0;
     color: rgba(233, 233, 233, 0.6);
     font-size: 0.9em;
+}
+
+/* --- Route preview lightbox: tapping any small preview map above reopens
+   the same fitted vector map (a clone of its <svg>, highlights and all)
+   much larger and centered, since the docked panel is narrow — especially
+   on mobile — and 180px isn't enough to make out route detail. --- */
+
+.preview-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.preview-lightbox-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.preview-lightbox {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: min(720px, 92vw);
+    height: min(640px, 88vh);
+    display: flex;
+    flex-direction: column;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(111, 224, 255, 0.15);
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.94);
+    transition: opacity var(--drawer-duration) var(--drawer-easing), transform var(--drawer-duration) var(--drawer-easing);
+}
+
+.preview-lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.preview-lightbox-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.preview-lightbox-title {
+    margin: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.preview-lightbox-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.preview-lightbox-map {
+    display: block;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
 }
 
 /* !important is deliberate here (matching the precedent set by .hit-area

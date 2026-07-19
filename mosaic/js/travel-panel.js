@@ -32,6 +32,8 @@ let openFlag = false;
 let routeEditExpanded = false;
 let onToggleCallback = null;
 let lastPlan = null;
+let lightboxEl = null;
+let lightboxBackdropEl = null;
 
 function currentAccuracy() {
     return Number(accuracyInput.value);
@@ -61,14 +63,65 @@ function near(a, b) {
     return Math.abs(a - b) < 0.5;
 }
 
+// The small previews are the same fitted vector map regardless of size,
+// so "expanding" one just means cloning its (already-highlighted) <svg>
+// into a big centered overlay rather than re-rendering anything.
+function openPreviewLightbox(title, svg) {
+    raisePanel(lightboxEl, lightboxBackdropEl);
+    while (lightboxEl.firstChild) lightboxEl.removeChild(lightboxEl.firstChild);
+
+    const header = document.createElement('div');
+    header.className = 'preview-lightbox-header';
+    const heading = document.createElement('p');
+    heading.className = 'preview-lightbox-title';
+    heading.textContent = title;
+    header.appendChild(heading);
+    const closeButton = document.createElement('button');
+    closeButton.type = 'button';
+    closeButton.className = 'preview-lightbox-close';
+    closeButton.textContent = '×';
+    closeButton.setAttribute('aria-label', 'Close enlarged route view');
+    closeButton.addEventListener('click', () => closePreviewLightbox());
+    header.appendChild(closeButton);
+    lightboxEl.appendChild(header);
+
+    const clone = svg.cloneNode(true);
+    clone.setAttribute('class', 'preview-lightbox-map');
+    lightboxEl.appendChild(clone);
+
+    lightboxEl.classList.add('open');
+    lightboxEl.setAttribute('aria-hidden', 'false');
+    lightboxBackdropEl.classList.add('open');
+}
+
+function closePreviewLightbox() {
+    lightboxEl.classList.remove('open');
+    lightboxEl.setAttribute('aria-hidden', 'true');
+    lightboxBackdropEl.classList.remove('open');
+}
+
+function initPreviewLightbox() {
+    lightboxEl = document.getElementById('preview-lightbox');
+    lightboxBackdropEl = document.getElementById('preview-lightbox-backdrop');
+    lightboxBackdropEl.addEventListener('click', () => closePreviewLightbox());
+    document.addEventListener('keydown', (evt) => {
+        if (evt.key === 'Escape' && lightboxEl.classList.contains('open')) closePreviewLightbox();
+    });
+}
+
 // A small, non-interactive re-render of an existing map level (galaxy or a
 // single cluster's systems), reusing renderLevel exactly as the live map
 // does, then overlaying highlight classes on the specific nodes/lines this
 // route passes through. Not wired to panzoom — it just fits a viewBox to
-// its own bounds once, since it never needs to pan or zoom.
+// its own bounds once, since it never needs to pan or zoom. The whole card
+// doubles as a tap target that opens the same map bigger, since the fitted
+// size here is comfortably small on narrow screens.
 function buildPreviewSvg(state, highlightNodeIds, highlightPairs, title) {
     const wrap = document.createElement('div');
     wrap.className = 'travel-preview';
+    wrap.setAttribute('role', 'button');
+    wrap.setAttribute('tabindex', '0');
+    wrap.setAttribute('aria-label', `Enlarge ${title}`);
 
     const heading = document.createElement('p');
     heading.className = 'travel-preview-title';
@@ -82,6 +135,9 @@ function buildPreviewSvg(state, highlightNodeIds, highlightPairs, title) {
 
     const bounds = renderLevel(g, state);
     if (!bounds) {
+        wrap.removeAttribute('role');
+        wrap.removeAttribute('tabindex');
+        wrap.removeAttribute('aria-label');
         const empty = document.createElement('p');
         empty.className = 'travel-preview-empty';
         empty.textContent = 'No data available for this leg.';
@@ -114,7 +170,20 @@ function buildPreviewSvg(state, highlightNodeIds, highlightPairs, title) {
         }
     }
 
+    const expandHint = document.createElement('span');
+    expandHint.className = 'travel-preview-expand';
+    expandHint.setAttribute('aria-hidden', 'true');
+    expandHint.textContent = '⤢';
+    wrap.appendChild(expandHint);
+
     wrap.appendChild(svg);
+    wrap.addEventListener('click', () => openPreviewLightbox(title, svg));
+    wrap.addEventListener('keydown', (evt) => {
+        if (evt.key === 'Enter' || evt.key === ' ') {
+            evt.preventDefault();
+            openPreviewLightbox(title, svg);
+        }
+    });
     return wrap;
 }
 
@@ -514,6 +583,7 @@ export function notifyTravelMapSelection(entityId) {
 export function initTravelPanel(onToggle) {
     panelEl = document.getElementById('travel-panel');
     onToggleCallback = onToggle || null;
+    initPreviewLightbox();
     panelEl.addEventListener('transitionend', (evt) => {
         if (evt.propertyName === 'width' && evt.target === panelEl) onToggleCallback?.();
     });
