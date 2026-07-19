@@ -51,10 +51,6 @@ export function clusterRoutes() {
     return raw.clusterRoutes;
 }
 
-export function allSystemRoutes() {
-    return raw.systemRoutes;
-}
-
 export function systemRoutesWithin(clusterId) {
     const ids = new Set(systemsOf(clusterId).map((system) => system.id));
     return raw.systemRoutes.filter((route) => ids.has(route.from) && ids.has(route.to));

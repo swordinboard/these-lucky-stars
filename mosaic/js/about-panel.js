@@ -9,25 +9,18 @@ const ABOUT_PARAGRAPHS = [
 
 let panelEl = null;
 let backdropEl = null;
-let openFlag = false;
-
-export function isAboutOpen() {
-    return openFlag;
-}
 
 export function openAboutPanel() {
     raisePanel(panelEl, backdropEl);
     panelEl.classList.add('open');
     panelEl.setAttribute('aria-hidden', 'false');
     backdropEl.classList.add('open');
-    openFlag = true;
 }
 
-export function closeAboutPanel() {
+function closeAboutPanel() {
     panelEl.classList.remove('open');
     panelEl.setAttribute('aria-hidden', 'true');
     backdropEl.classList.remove('open');
-    openFlag = false;
 }
 
 export function initAboutPanel() {

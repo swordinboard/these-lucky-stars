@@ -348,7 +348,7 @@ export function isOpen() {
     return openFlag;
 }
 
-export function closeTravelPanel() {
+function closeTravelPanel() {
     panelEl.classList.remove('open');
     panelEl.setAttribute('aria-hidden', 'true');
     openFlag = false;

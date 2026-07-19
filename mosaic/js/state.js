@@ -30,10 +30,6 @@ export function subscribe(listener) {
     listeners.push(listener);
 }
 
-export function getState() {
-    return state;
-}
-
 export function drillInto(entity) {
     if (entity.kind === 'cluster') {
         state.level = 'system';

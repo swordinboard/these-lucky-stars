@@ -6,7 +6,7 @@ import {
 // Every entity kind a traveler can actually book a trip to/from — every
 // selectable kind except 'cluster' itself (a sector is a zone, not a
 // destination) — mirrors "star system, orbital body, or location".
-export const TRAVEL_KINDS = new Set(['system', 'moon', 'location', ...ORBITAL_KINDS]);
+const TRAVEL_KINDS = new Set(['system', 'moon', 'location', ...ORBITAL_KINDS]);
 
 export function isTravelable(entity) {
     return Boolean(entity) && TRAVEL_KINDS.has(entity.kind);
@@ -28,7 +28,7 @@ const DAYS_PER_YEAR = 365.25;
 // both taken at their standard definitions) — how far a constant 1g
 // acceleration lets a vessel's speed climb per year, in multiples of c.
 const G_IN_LY_PER_YEAR2 = 1.032133;
-export const AU_PER_LY = 63241.077;
+const AU_PER_LY = 63241.077;
 
 // Distance (ly) covered while accelerating from a standstill to vmax (ly/yr,
 // i.e. multiples of c) at a constant rate `accel` (ly/yr^2): the standard
@@ -51,7 +51,7 @@ function transitYears(distanceLy, accel, vmax) {
     return 2 * tAccel + tCruise;
 }
 
-export function travelTimeDays(distanceLy, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C) {
+function travelTimeDays(distanceLy, caG = DEFAULT_CA_G, maxCruiseC = DEFAULT_MAX_CRUISE_C) {
     if (!(distanceLy > 0)) return 0;
     const accel = caG * G_IN_LY_PER_YEAR2; // g -> ly/year^2
     const years = transitYears(distanceLy, accel, maxCruiseC);
@@ -67,7 +67,7 @@ function parseLy(label) {
 // (in AU) from that system's star" — systems themselves sit at the star
 // (0 AU); orbital bodies use their own distanceAu; moons and locations don't
 // carry their own distance, so they inherit the planet they orbit/sit on.
-export function resolveEndpoint(entity) {
+function resolveEndpoint(entity) {
     if (entity.kind === 'system') return { systemId: entity.id, localAu: 0 };
     if (ORBITAL_KINDS.has(entity.kind)) return { systemId: entity.systemId, localAu: entity.distanceAu ?? 0 };
     if (entity.kind === 'moon' || entity.kind === 'location') {
@@ -363,7 +363,7 @@ export function formatDurationFull(days) {
 // totals) so a leg's low/high distance and its low/high time stay physically
 // consistent with each other (time is re-derived from the scaled distance
 // via travelTimeDays, not scaled independently).
-export function marginForAccuracy(accuracy) {
+function marginForAccuracy(accuracy) {
     const clamped = Math.max(0, Math.min(100, accuracy));
     return (100 - clamped) / 100;
 }
