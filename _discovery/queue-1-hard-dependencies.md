@@ -21,6 +21,8 @@ strongest dependency candidates in the corpus — but auto-including whole chain
 (Tis But a Scratch pulls Defender, Just Winded, Just Grazed, Tough…) is a real
 size cost. Decide the policy once, here.
 
+<!-- these should be dependencies -->
+
 75 edges.
 
 | Source | Target | Where | Note |
@@ -110,6 +112,8 @@ covers all 82 edges — e.g. "tags are dependencies" or "the builder always
 bundles the item-tags glossary when any equipment is selected" (which would
 downgrade these to reference).
 
+<!-- these are references. not forced, but noted as a whole during flight check "Missing Item Tags Glossary referenced X times" -->
+
 82 edges.
 
 | Target tag block | Sources citing it |
@@ -136,6 +140,8 @@ Each suspected individually; the target defines machinery (a chart, a die
 procedure, a defined term) without which the source block doesn't resolve.
 Includes implicit dependencies where the prose relies on a mechanism *without
 linking to it* (marked "implicit — no link in text").
+
+<!-- these feel like references. -->
 
 29 edges.
 
@@ -176,6 +182,8 @@ linking to it* (marked "implicit — no link in text").
 Component/item blocks whose rules text is literally "functions as X"
 (Wrist Laser → Laser Pistol, etc.). Without the target, the block has no rules.
 
+<!-- mak3 references, not forced -->
+
 5 edges.
 
 | Source | Target | Where | Note |
@@ -191,6 +199,8 @@ Component/item blocks whose rules text is literally "functions as X"
 "Cannot be combined with" pairs. Not auto-include candidates in the usual sense,
 but the builder needs to know about the pair for validation; queued so a human
 decides how these are represented.
+
+<!-- oh these can both be included as normal regardless of eachother. that text being referenced is for character creatiin on a gameplay level and does not apply in any structural, site, or pdf builder sense. no reference or dependancy needed -->
 
 2 edges.
 
