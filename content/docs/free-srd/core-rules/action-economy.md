@@ -70,10 +70,8 @@ Movement is the most common action a character takes during any scene — in com
 
 Move and Step are the two primary movement actions. Both are Standard Actions, and both are also listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog for reference during play.
 
-*Move*
 {{% include "/snippets/move" %}}
 
-*Step*
 {{% include "snippets/step" %}}
 
 ### Speed
@@ -87,8 +85,6 @@ Move and Step are the two primary movement actions. Both are Standard Actions, a
 #### Speed Tiers
 
 {{% include "/snippets/speed-tiers" %}}
-
-<!-- maybe we add an example of how a characters speed tier is determined by their previous turn,s movement -->
 
 {{% include "/snippets/speed-tiers-chart" %}}
 

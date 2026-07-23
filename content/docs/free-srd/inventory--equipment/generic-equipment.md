@@ -162,8 +162,8 @@ A treated waterproof bag used to protect contents from rain, submersion, and moi
 
 *--Price — 1lbs*
 
-A set of pouches designed for holding various forms of ammunition. Holds a max of three ammo die worth of ammunition. Allows weapons to be reloaded normally, whether using ballistic ammunition, batteries, or another form or ammo, without requiring additional AP to retrieve ammo.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set. 
+A set of pouches designed for holding various forms of ammunition. Holds a max of four ammo/supply dice. Allows weapons to be reloaded normally, whether using ballistic ammunition, batteries, or another form or ammo, without requiring additional AP to retrieve ammo.
+Pouch sets can share a body slot with the holster for one additional item, such as an equipped weapon or handheld device.
 
 *Equip slot:* Chest, Belt, or Legs
 
@@ -172,7 +172,7 @@ Pouch sets can share a body slot with one other equipped item, provided that ite
 *--Price — 1lb*
 
 A set of small pouches that allows quick access to small weightless items such as coins, keys, herbs, or medical supplies. Can store up to 8 weightless items, allowing them to be equipped to the same body slot. Stored items can be retrieved for 1 AP.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set. 
+Pouch sets can share a body slot with the holster for one additional item, such as an equipped weapon or handheld device.
 
 **Equip slot:** Chest, Belt, or Legs
 
@@ -181,7 +181,7 @@ Pouch sets can share a body slot with one other equipped item, provided that ite
 *--Price — 1lbs*
 
 A standard set of medium pouches that allows quick access to most small items. Can store up to four handheld-sized items, each weighing no more than 5lbs. Stored items can be retrived for 1 AP.
-Pouch sets can share a body slot with one other equipped item, provided that item is not another pouch set.
+Pouch sets can share a body slot with the holster for one additional item, such as an equipped weapon or handheld device.
 
 **Equip slot:** Chest, Belt, or Legs
 {{% /details %}}
@@ -458,7 +458,7 @@ General purpose tools and equipment for problem-solving in the field. For task-s
 | [Manacles / Restraints](#manacles--restraints) | Metal restraints for binding a creature's wrists. |
 | [Parchment / Paper Sheets (5)](#parchment--paper-sheets-5) | Writing surfaces. Pack of five sheets. |
 | [Pitons / Climbing Spikes (6)](#pitons--climbing-spikes-6) | Metal spikes hammered into surfaces for climbing. |
-| [Sewing Kit](#sewing-kit) | Needle, thread, and patches for basic repairs to fabric and leather. |
+| [Sewing Set](#sewing-set) | Needle, thread, and patches for basic repairs to fabric and leather. |
 | [Shovel](#shovel--entrenching-tool) | For digging. |
 | [Whetstone](#whetstone) | Sharpens and maintains edged weapons. |
 
@@ -534,12 +534,12 @@ A set of six metal spikes designed to be hammered into rock, wood, or ice to cre
 
 {{% /details %}}
 
-{{% details "Sewing Kit" %}}
-### Sewing Kit
+{{% details "Sewing Set" %}}
+### Sewing Set
 
-*--Price — 0lbs*
+*--Price — 2lbs*
 
-A small pouch containing needles, thread, and a few patches of cloth and leather. Sufficient for basic repairs to clothing, bags, tents, and similar fabric or leather items.
+A medium sized pouch containing needles, thread, pins, buttons, and a few patches of cloth and leather. Sufficient for basic repairs to clothing, bags, tents, and similar fabric or leather items.
 
 {{% /details %}}
 

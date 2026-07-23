@@ -38,7 +38,7 @@ Major wounds are serious injuries that demand more time and skill to treat. A dr
 
 ***The loss of a character's final VIT point from a lethal attack or other damaging effect always delivers a Major Wound.***
 
-*Healing* — Dressing a major wound requires supplies from the medic kit and a target 12 KNO check for 8 AP. Once dressed, a major wound heals in 1d4+2 days.
+*Healing* — Dressing a major wound requires supplies from the medic kit and a target 12 KNO check for 8 AP. Once dressed, a major wound heals in 2d4+2 days. When healed, the wound and any remaining associated conditions are removed.
 
 ### Narrative Healing
 
@@ -134,7 +134,7 @@ While this is by no means a definitive list, the following chart provides exampl
 | Struck on the head (physical) | Contusion, Laceration, Fracture | Bleeding, Confused, Shaken |
 | Set on fire, struck with flaming weapon (burn) | Burn | Shaken |
 | Electrocuted (shock) | Burn | Shaken |
-| Toxic fumes (toxin) | — | Asphyxiating, Sick, Fatigued |
+| Toxic fumes (toxin) | — | Asphyxiating, Shaken, Sick |
 
 ---
 
@@ -150,7 +150,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 |---|---|---|
 | [Asphyxiating](#asphyxiating) | FORT checks each turn or fall unconscious — 1 VIT/round if unconscious | Until able to breathe |
 | [Bleeding](#bleeding) | Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks | Until wound is dressed |
-| [Confused](#confused) | -2 Mental Attributes, -1 AP/round, +1 Stress | 2d6 rounds |
+| [Confused](#confused) | -2 KNO, INS, and CHA, -1 AP/round, +1 Stress | 2d6 rounds |
 | [Crippled](#crippled) Δ | All speeds -10, +1 Stress if using 3+ AP | Until wound is healed |
 | [Dying](#dying) Δ | FORT check each turn (starts at 3, +1/round) — failure or damage means death | Until healed, or death |
 | [Fatigued](#fatigued) Δ | -2 STR, AGI, and DEX, -2 AP/round | Until rested |
@@ -215,11 +215,11 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 ### Dying Δ
 
-*Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. A dying character immediately falls unconscious and must succeed on a FORT check immediately as well as at the beginning of each subsequent turn. The target begins at 3 and increases by +1 after each success. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a disadvantage.
+*Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. A dying character immediately falls unconscious (as the condition) and must succeed on a FORT check immediately as well as at the beginning of each of their following turns. The target begins at 3 and increases by +1 after each success. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a disadvantage.
 
 *Duration* — Until healed, or death.
 
-*Healing* — The dying condition can be removed by another character with a use of the Medic Kit and a successful target 10 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
+*Healing* — The dying condition can be removed (usually by another character) with a successful target 10 KNO roll by stablizing the patient. If it is removed in this way, the character recovers 1 VIT. Other wounds and conditions must be healed separately.
 
 {{% /details %}}
 
@@ -283,7 +283,7 @@ When caused by external restraints, the specific limitations depend on the type 
 
 *Duration* — Penalties to decision rolls and DEF last for 1d4+1 rounds unless specified. Stress from the shaken condition lasts until rested and can be accumulated from multiple instances.
 
-*Healing* — While the penalties from shaken last only a few rounds, the stesss accumulated is only healed with a rest.
+*Healing* — While the penalties from shaken last only a few rounds, the stress accumulated is only healed with a rest.
 
 {{% /details %}}
 
@@ -313,8 +313,8 @@ When caused by external restraints, the specific limitations depend on the type 
 
 ### Unconscious Δ
 
-*Effect* — Occurs when a character loses consciousness. Nothing works, body or mind. All attreibutes are considered 0 until the character regains consciousness, and they cannot take any actions. Unconsciousness can happen from a variety of effects, including attribute or VIT damage.
-Unconscious charactwrs with 0 VIT who take further VIT damage gain the dying condition.
+*Effect* — Occurs when a character loses consciousness. Nothing works, body or mind. All attributes are considered 0 until the character regains consciousness, and they cannot take any actions. Unconsciousness can happen from a variety of effects, including attribute or VIT damage.
+Unconscious characters with 0 VIT who take further VIT damage gain the dying condition.
 Attacks against unconscious characters gain advantage and count as surprise attacks.
 
 *Duration/Healing* — Cause specific. If at 0 VIT, unconsciousness lasts until at least 1 VIT is restored. Unconscious characters with VIT remaining can be woken up by another for 2 AP.

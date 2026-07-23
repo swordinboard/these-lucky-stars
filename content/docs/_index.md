@@ -5,7 +5,7 @@ bookCollapseSection: true
 bookToC: false
 ---
 
-## These Lucky Stars
+# These Lucky Stars
 
 - [Free SRD](free-srd/) — Core rules, character creation, and equipment
 - [Downloads](downloads/) — Printable PDFs

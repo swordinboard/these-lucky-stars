@@ -4,6 +4,7 @@ description: "Licensing for These Lucky Stars — core rules under CC BY-NC-SA 4
 weight: 100
 bookToC: false
 ---
+# Legal Information
 
 ## Core Rules License
 

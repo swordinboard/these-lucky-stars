@@ -12,3 +12,4 @@ bookToC: false
 - [Sci-Fi Armor](sci-fi-armor/)
 - [Sci-Fi Tool Kits](sci-fi-kits/)
 - [Sci-Fi Misc Equipment](sci-fi-misc-equipment/)
+- [Sci-Fi Robots and Drones](bots--drones/)

@@ -20,12 +20,12 @@ After pulling a theme update, **always diff these overridden files** before depl
 
 | Our file | Theme original | What we changed |
 |---|---|---|
-| `layouts/partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
-| `layouts/partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
+| `layouts/_partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
+| `layouts/_partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
 
 **How to diff:**
 ```
-git diff themes/hugo-book/layouts/_partials/docs/menu-filetree.html layouts/partials/docs/menu-filetree.html
+diff themes/hugo-book/layouts/_partials/docs/menu-filetree.html layouts/_partials/docs/menu-filetree.html
 ```
 
 ---
@@ -101,28 +101,26 @@ Any URL change requires a redirect in `netlify.toml` to avoid 404s in Google Sea
 
 ## Content Consistency
 
-### Page title / h2 convention
-The Book theme does **not** display the front matter `title` as a visible heading on desktop
-(it only appears in the mobile header). Because of this, every page must open with an h2
-that matches the page title exactly — this h2 acts as the visible heading on desktop.
+### Page title / h1 convention
+The Book theme does **not** display the front matter `title` as a visible heading on desktop (it only appears in the mobile header). Because of this, every page must open with an h1 that matches the page title exactly — this h1 acts as the visible heading on desktop.
 
 ```markdown
 ---
 title: "Combat"
 ---
 
-## Combat
+# Combat
 
 Page content starts here...
 ```
 
-- The h2 must match the `title` field exactly
+- The h1 must match the `title` field exactly
 - This applies to all content pages **and** section `_index.md` files that have body content
-- Do not use a different h2 (e.g. "In This Section") — it will appear as the page heading on desktop
+- Do not use a different h1 (e.g. "In This Section") — it will appear as the page heading on desktop
 
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
-- Shortcodes available: `download-card`, `include`, `quickref`, `roadmap` (see `layouts/shortcodes/`)
+- Shortcodes available: `download-card`, `include`, `quickref`, `roadmap`, `columns` (see `layouts/_shortcodes/`)
 - Snippet includes: `{{% include "/snippets/filename" %}}` — source files in `content/snippets/`, none are published
 - `content/snippets/_index.md` has `build: render: never` cascading to all children — do not remove this
 

@@ -1,7 +1,7 @@
 ---
 title: Abilities
 description: "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others."
-weight: 3
+weight: 30
 ---
 
 # Abilities
@@ -47,8 +47,10 @@ If an ability has requirements that must be met before it can be selected, they 
 | - [Long Performance](#long-performance) | Use General Spectacle for multiple rounds. |
 | [Kit Trap](#kit-trap) | Use your tool kit to make difficult terrain. |
 | - [Fast Kit Trap](#fast-kit-trap) | Kit Trap uses less AP. |
+| [Leg Shot](#leg-shot) | Ranged attack at minor disadvantage to apply Crippled on hit. |
 | [Martial Supremacy](#martial-supremacy) | Reroll a decision die during unarmed trip, disarm, or grapple. |
 | [Outburst](#outburst) | Interrupt enemies mid action. |
+| [Patient Shot](#patient-shot) | Bonus damage and advantage if stationary and untargeted since last turn. |
 | [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
 | [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
 | [Rage](#rage) | Enter an enraged state for a short duration. |
@@ -84,17 +86,22 @@ If an ability has requirements that must be met before it can be selected, they 
 {{% tab "Sci-Fi General" %}}
 | Name | Description |
 |------|-------------|
-| [Armorer](#armorer) | Install and remove upgrades without risk of damage. |
+| [Tech Armor](#tech-armor) | Install and remove upgrades and components without risk of damage. |
 | [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. |
 | - [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. |
+| [Ghost Protocol](#ghost-protocol) | Remotely access a hacked system via linked comp jack. |
 | [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
 | [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
+| [Salvage](#salvage) | Refill a supply die from mechanical wreckage. |
+| [Signal Intelligence](#signal-intelligence) | Intercept unencrypted communications with a comp jack. |
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
 | Name | Description |
 |------|-------------|
 | [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
 | [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
+| [Overcharge](#overcharge) | Push a battery weapon beyond rated output for bonus damage. |
+| [Power Main Tap](#power-main-tap) | Tap a large power source to rapidly recharge a battery. |
 | [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
 {{% /tab %}}
 {{< /tabs >}}
@@ -199,6 +206,7 @@ Your melee and ranged attacks with two weapons are more difficult to defend agai
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 3*
 
 You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 max DEF per weapon.
+
 This ability can be taken a second time to increase the bonus provided by each weapon to +2 max DEF.
 {{% /details %}}
 
@@ -219,6 +227,7 @@ You can take this ability two additional times, each increasing the number of us
 *[Student](#student), INT 2*
 
 Choose one of the topics selected by your Student ability. When applying the Student ability using that topic, add your INT bonus rather than the +1 bonus provided, whichever is higher.
+
 This ability can be selected a second time to be applied to a second Student ability.
 {{% /details %}}
 
@@ -228,7 +237,8 @@ This ability can be selected a second time to be applied to a second Student abi
 *[Rage](#rage)*
 
 Your Rage ability's duration is increased by two rounds.
-This ability can be selected multiple times.
+
+This ability can be selected multiple times, each time increasing the duration by two rounds.
 {{% /details %}}
 
 {{% details "Extra Attack" %}}
@@ -369,6 +379,14 @@ This ability requires a tool kit with at least 1d4 of supplies, however it requi
 The movement of your charge can now pass over/under obstacles and through difficult terrain.
 {{% /details %}}
 
+{{% details "Leg Shot" %}}
+### Leg Shot
+
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a ranged weapon, DEX 2, Level 3*
+
+For 3 AP, while using a ranged weapon with which you have weapon proficiency, you may make a ranged attack at a minor disadvantage. On a successful hit, the target gains the [Crippled condition](/docs/free-srd/core-rules/wounds--conditions/#crippled) in addition to taking normal damage. This condition lasts 1d4 rounds.
+{{% /details %}}
+
 {{% details "Line of Fire" %}}
 ### Line of Fire
 
@@ -420,6 +438,14 @@ You know how to take particularly distracting actions at just the right time. By
 You cannot use this ability if you have not acted in initiative or if you are restrained or otherwise incapacitated. However, this ability can be used an as Opportunity action any time that you have the AP available.
 {{% /details %}}
 
+{{% details "Patient Shot" %}}
+### Patient Shot
+
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon) with a [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes) weapon, WILL 2, Level 3*
+
+If you did not move on your turn and have not been targeted by an attack or other distracting effect since your last turn — regardless of whether it succeeded — your next ranged attack made with a Single Shot weapon you are proficient with gains a minor advantage. If the attack succeeds, roll the weapon's normal damage die twice and take the higher result.
+{{% /details %}}
+
 {{% details "Powerful Rage" %}}
 ### Powerful Rage
 
@@ -460,6 +486,7 @@ When wielding two semi-auto ranged weapons with which you are proficient, you ma
 *Level 3*
 
 2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT for four rounds. While in this state, you cannot take any action that requires concentration/focus or a mental attribute roll (unless required by a related ability), cannot ready an action, and take a -2 penalty to CHA. You may end this ability early at any time on your turn by spending 2 AP.
+
 This ability can be selected multiple times, each increasing the number of uses per day by +2, to a maximum of 8/day.
 {{% /details %}}
 
@@ -552,7 +579,11 @@ When performing a [Focus Attack](#focus-attack), gain an ATK bonus equal to your
 
 *DEX 2, Level 3*
 
-Add 1d6 of bonus damage to successful surprise attacks. This ability can be selected multiple times, each time adding an additional d6, to a maximum of half your character level. This bonus does not apply to unarmed attacks without the [Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency.
+Add 1d6 of bonus damage to successful surprise attacks.
+
+This bonus does not apply to unarmed attacks without the [Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency.
+
+This ability can be selected multiple times, each time adding an additional d6, to a maximum of half your character level.
 {{% /details %}}
 
 ---
@@ -562,7 +593,9 @@ Add 1d6 of bonus damage to successful surprise attacks. This ability can be sele
 {{% details "Adaptive Luck" %}}
 ### Adaptive Luck
 
-You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses. This ability can be selected multiple times, each time increasing the daily usage by +1, to a maximum of 3/day.
+You know just when to push your luck. 1/day you may spend two Luck points to use an ability that has no remaining uses.
+
+This ability can be selected multiple times, each time increasing the daily usage by +1, to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Bonus Luck" %}}
@@ -570,7 +603,9 @@ You know just when to push your luck. 1/day you may spend two Luck points to use
 
 *At least one other ability in the Luck category, per selection*
 
-Gain one additional Luck point. This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat (selections of this feat do not count.)
+Gain one additional Luck point.
+
+This ability can be selected multiple times, however, you must have a different ability in the Luck category for each selection of this feat (selections of this feat do not count.)
 {{% /details %}}
 
 {{% details "Friend of Fortune" %}}
@@ -613,14 +648,14 @@ You may spend 2 Luck points to ignore all effects of an attack that does not dea
 
 ## Sci-Fi General
 
-{{% details "Armorer" %}}
-### Armorer
+{{% details "Tech Armor" %}}
+### Tech Armor
 
 *[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency*
 
-You can add and remove electronic weapon and armor upgrades using the tech kit or repair kit without risk of damaging the upgrade. Each upgrade takes 30 minutes to install and calibrate, and half as much time to remove.
+You can add and remove electronic weapon and armor upgrades, as well as [components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components), using the tech kit or repair kit without risk of damaging them. Each takes 30 minutes to install and calibrate, and half as much time to remove.
 
-*Normal: Upgrades require tech kit, a target 12 KNO or DEX roll, and take 1hr to install or remove. If the roll is failed, the upgrade takes 1d4 damage and 3d20 minutes is wasted.*
+*Normal: Upgrades require a tech kit, a target 12 KNO roll, and take 1hr to install or remove — on a failed roll the upgrade takes 1d4 damage and 3d20 minutes is wasted. Components follow the same process; on a failed roll the component takes 1d4 damage and 1d4 supplies are wasted.*
 {{% /details %}}
 
 {{% details "Companion Bot" %}}
@@ -628,9 +663,17 @@ You can add and remove electronic weapon and armor upgrades using the tech kit o
 
 *[General Robotics](/docs/free-srd/character-creation/proficiencies/#general-robotics) Proficiency, Level 3*
 
-You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and the use of a tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. The target for all repairs you make to your companion drone are lowered by one step. You are always able to understand your companion drone and communicate with it via normal speech. Unlike other drones it does not cost any AP to command your companion drone, the two of you act in sync.
+You may designate one drone or robot under your control, whose base level is no greater than ½ your own, as your companion. Doing so takes one full day of tinkering and the use of a tech kit with supplies. Companion bots may use their owner's KNO and INS in place of their own, whichever is higher. You gain a minor advantage to all rolls made to repair your companion due to your familiarity. You are always able to understand your companion and communicate with it via normal speech. Unlike commanding other automated machines, it does not cost any AP to command your companion, the two of you act in sync.
 
-*Normal: Repairs to most drones require the tech kit with supplies and a successful target 15 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
+*Normal: Repairs to most automated machines require the tech kit with supplies and a successful target 12 KNO check. It takes one hour to repair one VIT, condition, or wound individually. Repairing multiple VIT/conditions/wounds requires additional KNO rolls and time for each. Many Drones and robots must be commanded to take actions for 1 AP per command.*
+{{% /details %}}
+
+{{% details "Ghost Protocol" %}}
+### Ghost Protocol
+
+*[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, KNO 2, Level 5*
+
+After successfully accessing a system using your comp jack, you may leave a passive process running on the terminal to maintain a link. While within 300ft of the linked terminal, you may access and interact with the system remotely as if physically present. Each remote action requires one supply roll against the comp jack. The link ends if the comp jack is used for an unrelated action, the terminal is directly accessed by another user, or the comp jack leaves range or loses power.
 {{% /details %}}
 
 {{% details "Opensaysame" %}}
@@ -638,7 +681,9 @@ You may designate one drone or robot under your control, whose base level is no 
 
 *[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency*
 
-Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice). This ability can be selected up to three times to increase the usage, to a maximum of 3/day.
+Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice).
+
+This ability can be selected up to three times to increase the usage, to a maximum of 3/day.
 {{% /details %}}
 
 {{% details "Rigged Comp Jack" %}}
@@ -647,6 +692,22 @@ Some doors require your special touch. 1/day as long as you have at least one lu
 *[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, [General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, DEX 2, KNO 2*
 
 By lowering the supply of your tech kit by two die sizes, you can build a makeshift comp jack. Unlike a normal comp jack, a rigged comp jack has a supply of 1d8 before it burns out and becomes useless. Building a rigged comp jack takes a total of 20 AP that can be spent over multiple rounds even if interrupted.
+{{% /details %}}
+
+{{% details "Salvage" %}}
+### Salvage
+
+*[Repair Kit](/docs/free-srd/character-creation/proficiencies/#repair-kit) Proficiency*
+
+You are able to salvage usable materials from mechanical wreckage using the repair kit. For 10 AP you may attempt to refill one die size of a Repair Kit or Tech Kit from wreckage such as a broken drone, vehicle, or computer terminal. Each attempt has a 50% chance of success. You may only attempt this ability once per piece of wreckage — what counts as a single piece is up to GM discretion, though larger items such as vehicles may allow for multiple attempts on different sections. This ability's AP cost may be spread over multiple turns.
+{{% /details %}}
+
+{{% details "Signal Intelligence" %}}
+### Signal Intelligence
+
+*[Comp Jack](/docs/free-srd/character-creation/proficiencies/#comp-jack) Proficiency, KNO 1*
+
+You are trained in signal interception and analysis. Using a comp jack, you may scan for communications within the comp jack's effective range, either by monitoring for specific keywords or topics. The comp jack must be connected to a communication device to use this ability. Setting up the comp jack for this purpose costs 3 AP and the scan runs for 1d6+1 rounds per supply roll (using the comp jack's battery). Intercepted communications can be displayed on the comp jack's screen or played through the communication device. Only unencrypted messages or signals are revealed through the scan.
 {{% /details %}}
 
 {{% details "Special Encouragement" %}}
@@ -681,6 +742,22 @@ You can easily turn battery cores into explosives. Doing so requires a use of th
 ### Battery Saver
 
 You manage to squeeze just a bit more out of battery cores. You can re-roll a failed supply roll once per day.
+{{% /details %}}
+
+{{% details "Overcharge" %}}
+### Overcharge
+
+*[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 2, Level 3*
+
+2/day you may push a battery-powered weapon beyond its rated output. This ability must be declared at the start of an attack, before decision dice are rolled. If the attack succeeds, roll one of the weapon's current battery supply dice as bonus damage — that die then drops one size. If the weapon has multiple supply dice, choose which to roll and lower.
+{{% /details %}}
+
+{{% details "Power Main Tap" %}}
+### Power Main Tap
+
+*[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 3, Level 5*
+
+Using a tech kit and supplies, you may attempt to tap into a large power source — such as a ship reactor, generator, or grid terminal — to rapidly recharge one standard battery. This requires 10 AP, a target 12 KNO check, and one supply roll. On a success, the battery recharges 1 die size per minute, but *its maximum charge is permanently lowered by one die size.* On a failure, the attempt fails and the supplies are wasted.
 {{% /details %}}
 
 {{% details "Swift Custom Battery" %}}

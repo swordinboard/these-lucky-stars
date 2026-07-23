@@ -9,6 +9,7 @@ bookToC: false
 ## Character Creation
 
 - [Character Creation Overview](character-creation-overview/)
+- [Races](races/)
 - [Proficiencies](proficiencies/)
 - [Abilities](abilities/)
 - [Traits](traits/)

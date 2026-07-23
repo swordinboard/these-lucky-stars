@@ -5,7 +5,7 @@ weight: 97
 bookToC: false
 ---
 
-## Development Team
+# Development Team
 
 **Anthony DiRuzza — Lead Designer, Publisher** — Core system development, website development. Published by [Sword in Board Workshop](https://swordinboard.com).
 

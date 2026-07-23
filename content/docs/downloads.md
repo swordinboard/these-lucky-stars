@@ -5,7 +5,7 @@ weight: 30
 bookToC: false
 ---
 
-## Downloads
+# Downloads
 
 Printable PDF resources for These Lucky Stars. Click any card to open the PDF. Free to download as part of the SRD.
 

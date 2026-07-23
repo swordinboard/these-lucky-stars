@@ -8,21 +8,19 @@ bookToC: false
 
 {{% include "/snippets/announcement" %}}
 
-## Free SRD
+# Free SRD
 
 These Lucky Stars is a tabletop roleplaying game built for dynamic play balancing detail and speed.
 
-The system is built in a series of starter modules intended to help GMs build specific settings. Each starter module is intended to cover a range of related settings and allow the GM to set the dial to exactly where they want. Good examples of this can be seen in the Sci-Fi armor list -which includes a modern EVA space suit alongside futuristic Evosuits- as well as the Sci-Fi weapons list -which includes modern ballistic weapons alongside futuristic laser weapons.
+The system is built in a series of starter modules intended to help GMs build specific settings. Each starter module is intended to cover a range of related settings and allow the GM to set the dial to exactly where they want. Good examples of this can be seen in the Sci-Fi armor list — which includes a modern EVA space suit alongside futuristic Evosuits.
 
-[**The Basics**](/docs/free-srd/core-rules/basics)
-Get to know key terms, the 2d6 resolution system, and general rules of play.
+## Where to Start
+If you're new here, especially as a GM, you might start with [the Basics](/docs/free-srd/core-rules/basics). Get to know key terms, the 2d6 resolution system, and general rules of play. Some players prefer to jump right into [character creation](/docs/free-srd/core-rules/character-creation/character-creation-overview). If that is the case, suggested reading has been added to that page to provide some direction when questions arise.
 
-[**Eight Attributes**](/docs/free-srd/core-rules/attributes)
-Four physical (Strength, Agility, Dexterity, Fortitude) and four mental (Knowledge, Insight, Charisma, Will).
+## System Features
+These Lucky Stars is a classess rules moderate RPG featuring a 2d6 resolution system and [eight attributes](/docs/free-srd/core-rules/attributes). A full array of derrived [stats](/docs/free-srd/core-rules/stats) help to guide play and reflect changes in combat; no flat AC or standard HP pool. In additona a meta Luck mechanic enhances player agency and choice with a special bonus without guarantees.
 
-[**Dynamic Stats**](/docs/free-srd/core-rules/stats)
-Dynamic stats evolve with play and reflect changes in combat; no flat AC or standard HP pool. The Luck mechanic enhances player agency and choice with a special bonus.
-
+<!-- more editing still below, revisit -->
 [**Flexible Character Creation**](/docs/free-srd/character-creation/character-creation-overview)
 Build your character with traits, proficiencies, and abilities - no rigid classes. Come up with an archetype and build it yourself or with the whole table. Characters can move in any direction as play evolves. 
 
@@ -40,4 +38,4 @@ The system aims to:
 All core mechanics are free and will remain free forever. The System Reference Document (SRD) contains everything you need to play and has been made accessible via this documentation site. Licensing information can be found [here](/docs/legal).
 
 ## What's Coming
-Complete These Lucky Stars setting modules will include expanded character options, full equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns. See the [roadmap](/docs/roadmap) for the latest on what's to come.
+Complete These Lucky Stars setting modules will include expanded character options, equipment catalogs, vehicles, creatures, setting lore, and adventures. This premium content will be available through future crowdfunding campaigns. See the [roadmap](/docs/roadmap) for the latest on what's to come.

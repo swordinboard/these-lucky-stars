@@ -10,7 +10,7 @@ Defense is the first layer of a character's health. It represents a character's 
 
 A character's DEF stays damaged until one of the following happens:
 
-- They take a point of VIT damage. DEF resets to max as part of the same resolution.
+- DEF reaches 0, upon which it is automatically reset after resolving VIT loss if any.
 - They spend an action in combat to reset their DEF.
 - Combat ends, or the GM otherwise rules they are safe from immediate threat — usually when the character gains total cover, is hidden from all opponents, or the scene resolves.
 
