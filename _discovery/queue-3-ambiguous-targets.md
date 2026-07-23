@@ -1,0 +1,77 @@
+# Queue 3 — Ambiguous / unresolvable targets
+
+Cross-references whose target is not an addressable block — because the URL is
+broken, the anchor doesn't exist, or the target was never written. **The edge
+cannot be typed until the target is resolved by a human.** All of these carry
+`queued: true` in `edges.json` with target `unresolved:<url>`.
+
+These are also, incidentally, the site's broken links. Fixing them is Phase 2+
+work — recorded here, not fixed.
+
+## Systemic finding 1 — the Δ anchors
+
+Condition headings marked with Δ (`### Crippled Δ`) render with the Δ in the
+anchor: the real anchor is `#crippled-δ`, not `#crippled` (verified against
+goldmark's renderer). **Every** `#crippled`, `#dying`, `#fatigued`,
+`#immobilized`, `#restrained`, `#sick`, `#unconscious` link on the site is
+therefore broken — including the condition summary table on the Wounds &
+Conditions page itself. Affected conditions: Crippled, Dying, Fatigued,
+Immobilized, Restrained, Sick, Unconscious.
+
+## Systemic finding 2 — `prone` does not exist
+
+Three links point at a `#prone` condition on the Wounds & Conditions page, and
+several rules (Stand action, Trip, Improved Bash, vehicle rules) use "prone" as
+a defined state — **but no Prone condition is defined anywhere in the corpus.**
+This is a missing block, not a bad link.
+
+## Full list
+
+| Where | URL as written | Class | Likely intent |
+|---|---|---|---|
+| content/docs/free-srd/_index.md:18 | `/docs/free-srd/core-rules/character-creation/character-creation-overview` | broken-page-path | Wrong path — character-creation is not under core-rules. Intended the chargen page/section. |
+| content/docs/free-srd/character-creation/abilities.md:38 | `#extra-dual-attack` | broken-anchor | Ability was renamed Swift Dual Attack (#swift-dual-attack); table link kept the old anchor. |
+| content/docs/free-srd/character-creation/abilities.md:387 | `/docs/free-srd/core-rules/wounds--conditions/#crippled` | broken-anchor | Δ anchor: real anchor is #crippled-δ. Intended `conditions/crippled`. |
+| content/docs/free-srd/character-creation/character-creation-overview.md:26 | `/docs/free-srd/core-rules/character-creation/races` | broken-page-path | Wrong path — character-creation is not under core-rules. Intended the chargen page/section. |
+| content/docs/free-srd/character-creation/races/android.md:22 | `/docs/free-srd/core-rules/wounds--conditions/#dying` | broken-anchor | Δ anchor: real anchor is #dying-δ. Intended `conditions/dying`. |
+| content/docs/free-srd/character-creation/races/android.md:22 | `#dead-battery` | broken-anchor | Dead Battery is bold text on the Android page, not a heading — no anchor exists. The section itself is flagged for relocation (Queue 2). |
+| content/docs/free-srd/core-rules/action-economy.md:93 | `docs/free-srd/core-rules/the-basics/#target-numbers` | broken-page-path | Wrong slug (page is `basics`) — and two of these also lack the leading slash. Intended `basics/supply-rolls` / `basics/target-numbers` / `basics/advantage`. |
+| content/docs/free-srd/core-rules/action-economy.md:93 | `docs/free-srd/core-rules/the-basics/#advantage` | broken-page-path | Wrong slug (page is `basics`) — and two of these also lack the leading slash. Intended `basics/supply-rolls` / `basics/target-numbers` / `basics/advantage`. |
+| content/docs/free-srd/core-rules/attributes.md:45 | `/docs/free-srd/core-rules/wounds--conditions/#crippled` | broken-anchor | Δ anchor: real anchor is #crippled-δ. Intended `conditions/crippled`. |
+| content/docs/free-srd/core-rules/attributes.md:47 | `/docs/free-srd/core-rules/wounds--conditions/#unconscious` | broken-anchor | Δ anchor: real anchor is #unconscious-δ. Intended `conditions/unconscious`. |
+| content/docs/free-srd/core-rules/environmental-effects.md:35 | `/docs/free-srd/core-rules/wounds--conditions/#fatigued` | broken-anchor | Δ anchor: real anchor is #fatigued-δ. Intended `conditions/fatigued`. |
+| content/docs/free-srd/core-rules/vehicle-rules.md:70 | `#imapct--overrun` | broken-anchor | Typo for #impact--overrun; intended `vehicles/impact-and-overrun`. |
+| content/docs/free-srd/core-rules/vehicle-rules.md:83 | `/docs/free-srd/core-rules/wounds--conditions/#prone` | broken-anchor | No Prone condition exists anywhere — missing block (see systemic finding 2). |
+| content/docs/free-srd/core-rules/vehicle-rules.md:84 | `/docs/free-srd/core-rules/wounds--conditions/#prone` | broken-anchor | No Prone condition exists anywhere — missing block (see systemic finding 2). |
+| content/docs/free-srd/core-rules/vehicle-rules.md:112 | `/docs/free-srd/core-rules/wounds--conditions/#prone` | broken-anchor | No Prone condition exists anywhere — missing block (see systemic finding 2). |
+| content/docs/free-srd/core-rules/vehicle-rules.md:120 | `/docs/free-srd/core-rules/attributes/#agility` | broken-anchor | Attribute headings include the abbreviation: real anchor #agility-agi. Intended `attributes/physical-attributes`. |
+| content/docs/free-srd/core-rules/vehicle-rules.md:120 | `/docs/free-srd/core-rules/attributes/#dexterity` | broken-anchor | Real anchor #dexterity-dex. Intended `attributes/physical-attributes`. |
+| content/docs/free-srd/core-rules/vehicle-rules.md:165 | `/docs/free-srd/core-rules/attributes/#fortitude` | broken-anchor | Real anchor #fortitude-fort. Intended `attributes/physical-attributes`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:154 | `#crippled` | broken-anchor | Δ anchor: real anchor is #crippled-δ. Intended `conditions/crippled`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:155 | `#dying` | broken-anchor | Δ anchor: real anchor is #dying-δ. Intended `conditions/dying`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:156 | `#fatigued` | broken-anchor | Δ anchor: real anchor is #fatigued-δ. Intended `conditions/fatigued`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:158 | `#immobilized` | broken-anchor | Δ anchor: real anchor is #immobilized-δ. Intended `conditions/immobilized`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:162 | `#sick` | broken-anchor | Δ anchor: real anchor is #sick-δ. Intended `conditions/sick`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:164 | `#unconscious` | broken-anchor | Δ anchor: real anchor is #unconscious-δ. Intended `conditions/unconscious`. |
+| content/docs/free-srd/core-rules/wounds--conditions.md:262 | `/docs/free-srd/combat/#grapple` | broken-page-path | Missing core-rules segment; intended `combat/grapple`. |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:30 | `#sturdy-boots` | broken-anchor | Item heading is 'Reinforced Boots' (#reinforced-boots); table link uses the old name. |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:276 | `#antitoxin--antidote` | broken-anchor | Heading is 'Antitoxin' (#antitoxin). |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:345 | `#compass` | broken-anchor | Heading is 'Compass / Navigational Tool' (#compass--navigational-tool). |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:449 | `/docs/free-srd/inventory--equipment/tool-kits/` | broken-page-path | No such page. Kits live at sci-fi-equipment/sci-fi-kits (module-specific); a generic tool-kits page apparently doesn't exist yet — is one planned? |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:462 | `#shovel--entrenching-tool` | broken-anchor | Heading is 'Shovel' (#shovel). |
+| content/docs/free-srd/inventory--equipment/generic-equipment.md:504 | `/docs/free-srd/inventory--equipment/item-tags/bulky` | broken-page-path | Missing `#` — should be `item-tags/#bulky`; intended `item-tags/bulky` block. |
+| content/docs/free-srd/inventory--equipment/item-tags.md:61 | `/docs/free-srd/the-basics/#supply-rolls` | broken-page-path | Wrong slug (page is `basics`) — and two of these also lack the leading slash. Intended `basics/supply-rolls` / `basics/target-numbers` / `basics/advantage`. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md:28 | `/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hakr` | broken-page-path | File is `trk-a.md`; intended `bots/trk-a`. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md:178 | `/docs/free-srd/inventory--equipment/medical-supplies/#altoa-radiation-antidote-5-ara-5` | broken-page-path | Wrong path AND wrong anchor: intended `sci-fi-equipment/ara-5` (sci-fi-misc-equipment#analgesic-radiation-antidote-5-ara-5). |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md:178 | `/docs/free-srd/inventory--equipment/medical-supplies/#pain-suppressant` | broken-page-path | Wrong path and anchor: intended `sci-fi-equipment/pain-suppressant-injector`. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md:178 | `/docs/free-srd/inventory--equipment/medical-supplies/#vitaboost-injection` | broken-page-path | Wrong path and anchor: intended `sci-fi-equipment/vitaboost-injector`. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md:9 | `#communications` | broken-anchor | Page mini-TOC: heading is 'Communication Devices' (#communication-devices). |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md:359 | `/docs/free-srd/intentory--equipmemtlitem-tags/#battery` | broken-page-path | Mangled URL; intended `item-tags/battery`. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md:130 | `/docs/free-srd/inventory--equipment/item-tags/#burn` | broken-anchor | Burn is a damage type, not an item tag — no such block. Should this be `combat/damage-types`, or is a Burn weapon-tag planned? |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md:159 | `/docs/free-srd/inventory--equipment/item-tags/#burn` | broken-anchor | Burn is a damage type, not an item tag — no such block. Should this be `combat/damage-types`, or is a Burn weapon-tag planned? |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md:177 | `/docs/free-srd/inventory--equipment/item-tags/#shock` | broken-anchor | Shock is a damage type, not an item tag — no such block. Same question as #burn. |
+| content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md:300 | `/docs/free-srd/inventory--equipment/item-tags/#shock` | broken-anchor | Shock is a damage type, not an item tag — no such block. Same question as #burn. |
+| content/snippets/medical-item-medkit-note.md:5 | `/docs/core-rul3s/wounds--conditions/#wounds` | broken-page-path | Typo for `core-rules`; intended target `wounds/wounds` (#wounds). |
+| content/snippets/primary-speed.md:11 | `/docs/free-srd/core-rules/action-economy/#speed-modes` | broken-anchor | No such anchor; the Modes list in the speed-descriptors snippet is bold text, not a heading. Intended `movement/speed-descriptors`. |
+| content/snippets/primary-speed.md:11 | `/docs/free-srd/core-rules/action-economy/#maneuverability` | broken-anchor | Same — Maneuverability is bold text inside `movement/speed-descriptors`, not a heading. |
+| content/snippets/vitality.md:25 | `/docs/free-srd/core-rules/wounds--conditions/conditions` | broken-page-path | Missing `#`; intended `conditions/overview` (#conditions). |
