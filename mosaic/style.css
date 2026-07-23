@@ -1,0 +1,1496 @@
+:root {
+    --body-font-color: #e9e9e9;
+    --accent: #d27f27;
+    --accent-teal: #45c9a8;
+    --accent-violet: #b073e0;
+    --accent-blue: #5a8fd6;
+
+    --space-black: #05070d;
+    --chrome-navy: #141b33;
+    --chrome-navy-light: #4a5578;
+    --screen-glow: #6fe0ff;
+    --glass-bg: rgba(10, 14, 26, 0.55);
+    --glass-border: rgba(111, 224, 255, 0.28);
+
+    --bezel-left: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 16'%3E%3Cpolygon points='0,0 26,0 40,8 26,16 0,16' fill='%23141b33'/%3E%3C/svg%3E");
+    --bezel-right: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 16'%3E%3Cpolygon points='40,0 14,0 0,8 14,16 40,16' fill='%23141b33'/%3E%3C/svg%3E");
+
+    /* Shared timing for every drawer/panel/nav open-close animation (location
+       list, sidebar, details panel), so they all read as one consistent
+       motion instead of a mix of speeds. */
+    --drawer-duration: 0.35s;
+    --drawer-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /* 100vh first as a fallback for browsers/webviews with quirky dvh
+       support (100dvh overrides it wherever it's actually supported) —
+       without a definite body height, the header/map-area/footer flex
+       column has nothing solid to size against, and a flex item relying on
+       stretch (like the travel panel) can end up sized by its own content
+       instead of the available space, overflowing into the footer below. */
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: var(--space-black);
+    /* background-image is set by mosaic/js/starfield.js (randomized per
+       page, shifted for parallax on pan) — this is just the static base
+       the JS-generated layers sit on top of. */
+    background-size: 260px 260px;
+    background-repeat: repeat;
+    color: var(--body-font-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    cursor: pointer;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+/* --- Header --- */
+
+/* Bezel bar: chamfered wing end-caps + dashed "slat" lines, evoking a
+   physical device frame. Shared shape for header (bottom edge) and footer
+   (top edge) via ::before/::after on each. */
+.app-header,
+.details-panel {
+    --bezel-slats:
+        repeating-linear-gradient(to right, var(--chrome-navy-light) 0 30px, transparent 30px 42px);
+}
+
+.app-header {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(111, 224, 255, 0.1);
+    padding-bottom: 16px;
+}
+
+.app-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 16px;
+    pointer-events: none;
+    background-color: var(--chrome-navy);
+    background-image: var(--bezel-left), var(--bezel-right), var(--bezel-slats), var(--bezel-slats);
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x;
+    background-position: left center, right center, center 35%, center 65%;
+    background-size: 40px 16px, 40px 16px, auto 1px, auto 1px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--body-font-color);
+}
+
+.hamburger-icon {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+}
+
+.hamburger-icon::before {
+    top: -6px;
+}
+
+.hamburger-icon::after {
+    top: 6px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 12px 10px;
+    font-size: 0.9em;
+}
+
+.breadcrumb-link {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-current {
+    color: var(--body-font-color);
+    padding: 4px;
+}
+
+.breadcrumb-sep {
+    color: #808080;
+}
+
+/* --- Map area (full-bleed) --- */
+
+.map-area {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    /* Defensive clip: if a row child's height ever fails to resolve against
+       this flex row (a stale/quirky dvh chain, etc.) and it grows taller
+       than the available space based on its own content instead, this
+       keeps that overflow from bleeding down into the footer below rather
+       than just being invisible/cut off within its own box. */
+    overflow: hidden;
+}
+
+.galaxy-map {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    background: transparent;
+    touch-action: none;
+    cursor: grab;
+}
+
+/* Shown over the map canvas when a cluster has no known systems yet — an
+   empty pannable canvas alone reads as broken rather than "nothing here". */
+.map-empty-state {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(233, 233, 233, 0.6);
+    font-size: 1.1em;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.map-empty-state[hidden] {
+    display: none;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: var(--accent);
+    stroke: #ffffff;
+    stroke-width: 1.5;
+}
+
+.node-label {
+    fill: var(--body-font-color);
+    font-size: 14px;
+    text-anchor: middle;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Sits behind a label (see orrery.js's drawLabel) so a drop-line passing
+   near a name reads as continuing faintly behind it rather than stopping
+   abruptly at the text. */
+.node-label-bg {
+    fill: var(--glass-bg);
+    pointer-events: none;
+}
+
+/* A big, soft, top-down galaxy silhouette behind the cluster-level map (see
+   renderGalaxyBackdrop in render.js) — a bright bulge, a broader disc, and a
+   faint outer halo, all sharing one center on Danswai Cloud. Non-interactive
+   and low-opacity so it stays a backdrop, never competing with the actual
+   sector nodes for attention. */
+.galaxy-backdrop {
+    pointer-events: none;
+}
+
+.galaxy-backdrop .galaxy-halo {
+    fill: url(#galaxy-halo-glow);
+}
+
+.galaxy-backdrop .galaxy-disc {
+    fill: url(#galaxy-disc-glow);
+}
+
+.galaxy-backdrop .galaxy-bulge {
+    fill: url(#galaxy-bulge-glow);
+}
+
+.galaxy-backdrop .galaxy-accent-teal {
+    fill: url(#galaxy-accent-teal-glow);
+}
+
+.galaxy-backdrop .galaxy-accent-violet {
+    fill: url(#galaxy-accent-violet-glow);
+}
+
+.galaxy-backdrop .galaxy-accent-blue {
+    fill: url(#galaxy-accent-blue-glow);
+}
+
+.galaxy-backdrop .galaxy-accent-rust {
+    fill: url(#galaxy-accent-rust-glow);
+}
+
+.galaxy-backdrop .galaxy-star-speck {
+    fill: #ffffff;
+}
+
+/* Cluster level renders as large "sector" zones instead of small nodes.
+   Star clouds render as an <ellipse> instead of a <circle> (see render.js)
+   for an oblong, nebula-like silhouette, so both shapes share this base
+   styling. A few clusters carry a `data-accent` attribute (from the data's
+   optional `accent` field) for a bit of nebula-inspired color variety
+   instead of every sector reading as identical amber. */
+.node-cluster circle,
+.node-cluster ellipse {
+    fill: url(#sector-glow);
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-opacity: 0.85;
+}
+
+.node-cluster[data-accent="teal"] circle,
+.node-cluster[data-accent="teal"] ellipse {
+    fill: url(#sector-glow-teal);
+    stroke: var(--accent-teal);
+}
+
+.node-cluster[data-accent="violet"] circle,
+.node-cluster[data-accent="violet"] ellipse {
+    fill: url(#sector-glow-violet);
+    stroke: var(--accent-violet);
+}
+
+.node-cluster[data-accent="blue"] circle,
+.node-cluster[data-accent="blue"] ellipse {
+    fill: url(#sector-glow-blue);
+    stroke: var(--accent-blue);
+}
+
+.node-cluster .node-label {
+    font-size: 22px;
+    font-weight: 700;
+    fill: #ffffff;
+}
+
+.route-line {
+    stroke: rgba(233, 233, 233, 0.35);
+    stroke-width: 1.5;
+}
+
+/* The galaxy-level map sits over a much busier, colorful backdrop than the
+   plain-black system view, so its routes and sector outlines need a bit more
+   contrast to keep from getting lost in it. Scoped to the cluster level via
+   the galaxy backdrop's sibling .edges group, so the plain system-level
+   routes stay at their original, subtler weight. */
+.galaxy-backdrop ~ .edges .route-line {
+    stroke: rgba(233, 233, 233, 0.55);
+    stroke-width: 2;
+}
+
+/* An FTL connection the source notes describe as unconfirmed/unclear gets a
+   dashed line instead of solid, to visually flag the uncertainty on the map. */
+.route-line--uncertain {
+    stroke-dasharray: 4 4;
+}
+
+/* A route's distance, laid out parallel to its line (see routeLabelElement
+   in render.js) rather than only in a hover tooltip — tooltips never surface
+   on touch screens, so this is the only way mobile users see it at all.
+   Matches the route line's own color/opacity so it reads as part of the
+   line rather than a competing label. */
+.route-label {
+    fill: rgba(233, 233, 233, 0.35);
+    /* Matches .node-label's size — text sits in the same zoomed/panned SVG
+       space as the node names, so it needs to match their scale to read as
+       anything more than a speck, not a screen-space pixel size. */
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    user-select: none;
+}
+
+.galaxy-backdrop ~ .route-labels .route-label {
+    fill: rgba(233, 233, 233, 0.55);
+    /* Matches .node-cluster .node-label's larger size, for the same reason. */
+    font-size: 22px;
+}
+
+/* --- Orrery (orbital level) --- */
+
+.star {
+    fill: #ffe9c4;
+    stroke: none;
+}
+
+.star[data-star-type="yellow dwarf"] {
+    fill: #ffe9c4;
+}
+
+.star[data-star-type="orange dwarf"] {
+    fill: #ffb877;
+}
+
+.star[data-star-type="red dwarf"] {
+    fill: #ff8a5c;
+}
+
+.star[data-star-type="white dwarf"] {
+    fill: #f2f6ff;
+}
+
+.node-planet circle {
+    fill: #d9a066;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+}
+
+/* A planet's `hazard` field flags it as not traversable (gas/ice giant) or
+   physically extreme (heat/cold), given a distinct fill to read at a glance
+   alongside the default rocky-planet tan. */
+.node-planet[data-hazard="gas-giant"] circle {
+    fill: #c77b2e;
+}
+
+.node-planet[data-hazard="ice-giant"] circle {
+    fill: #4a90d9;
+}
+
+.node-planet[data-hazard="extreme-heat"] circle {
+    fill: #e0523a;
+}
+
+.node-planet[data-hazard="extreme-cold"] circle {
+    fill: #9fd8e8;
+}
+
+.ring {
+    fill: none;
+    stroke: rgba(233, 233, 233, 0.6);
+    stroke-width: 2;
+}
+
+.node-asteroidField circle {
+    fill: #9a9a9a;
+    stroke: none;
+}
+
+.node-moon circle {
+    fill: #b9b9c8;
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+.node-moon .node-label {
+    font-size: 10px;
+}
+
+.drop-line {
+    stroke: rgba(233, 233, 233, 0.35);
+    stroke-width: 1;
+    pointer-events: none;
+}
+
+.indicator-dot {
+    fill: var(--accent);
+    pointer-events: none;
+}
+
+/* Invisible, generously-sized hit target — SVG shapes with `fill: none`
+   (an unfilled ring, a stroke-only icon circle) don't register clicks in
+   their "empty" interior, and scattered asteroid dots leave gaps between
+   them. A transparent (not `none`) fill still counts for hit-testing.
+   `!important` is deliberate here: this class's whole job is to defeat the
+   more specific `.node circle` / `.node-planet circle` / etc. rules that
+   would otherwise paint it with the node's normal fill color. */
+circle.hit-area {
+    fill: transparent !important;
+    stroke: none !important;
+}
+
+.icon {
+    fill: var(--body-font-color);
+    stroke: none;
+    overflow: visible;
+}
+
+.icon line {
+    stroke: var(--body-font-color);
+    stroke-width: 1.5;
+}
+
+.icon .icon-stroke {
+    fill: none;
+    stroke: var(--body-font-color);
+    stroke-width: 1.5;
+}
+
+/* --- Location list: slides in from the right, scoped to the map area (which
+   already sits exactly between the header and footer) so both stay visible
+   and usable while it's open, rather than covering the whole screen --- */
+
+.location-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(420px, 90vw);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 1px solid var(--glass-border);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    z-index: 20;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform var(--drawer-duration) var(--drawer-easing);
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
+}
+
+.location-list.open {
+    transform: translateX(0);
+}
+
+.location-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.location-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.location-list::-webkit-scrollbar-thumb {
+    background: var(--screen-glow);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.5);
+}
+
+.location-list-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 18;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.location-list-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.location-list-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.location-list-header h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.location-list-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.location-list-body {
+    padding: 16px;
+}
+
+.location-section {
+    margin-bottom: 20px;
+}
+
+.location-section h3 {
+    margin: 0 0 8px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.location-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.location-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.location-row:hover {
+    border-color: var(--accent);
+}
+
+.location-empty {
+    color: rgba(233, 233, 233, 0.6);
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* --- About panel: a read-only info drawer, styled like .location-list
+   (overlay + click-to-close backdrop) since — unlike the travel panel — it
+   never needs the map to stay interactive underneath it. --- */
+
+.about-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(480px, 90vw);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 1px solid var(--glass-border);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform var(--drawer-duration) var(--drawer-easing);
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
+}
+
+.about-panel.open {
+    transform: translateX(0);
+}
+
+.about-panel-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.about-panel-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about-panel-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px 0;
+    background: var(--glass-bg);
+}
+
+.about-panel-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.about-panel-body {
+    padding: 4px 20px 24px;
+}
+
+.about-panel-body h1 {
+    margin: 0 0 4px;
+    font-size: 1.4em;
+}
+
+.about-panel-body h3 {
+    margin: 0 0 20px;
+    font-weight: normal;
+    color: rgba(233, 233, 233, 0.7);
+    font-size: 1em;
+}
+
+.about-panel-body p {
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+/* --- Details panel (always docked at the bottom) --- */
+
+.details-panel {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(111, 224, 255, 0.1);
+    padding: 12px 16px;
+    padding-top: 20px;
+    overflow-y: auto;
+    /* A real length here (not the default `none`) is required for the
+       max-height transition below to actually interpolate — `none` isn't a
+       length, so a transition between it and `.expanded`'s 42vh can't be
+       animated at all and just snaps instantly regardless of duration. This
+       is sized to comfortably fit the one-line placeholder text at rest. */
+    max-height: 84px;
+    transition: max-height var(--drawer-duration) var(--drawer-easing);
+}
+
+.details-panel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 16px;
+    pointer-events: none;
+    background-color: var(--chrome-navy);
+    background-image: var(--bezel-left), var(--bezel-right), var(--bezel-slats), var(--bezel-slats);
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x;
+    background-position: left center, right center, center 35%, center 65%;
+    background-size: 40px 16px, 40px 16px, auto 1px, auto 1px;
+}
+
+.details-panel.expanded {
+    max-height: 42vh;
+}
+
+/* Locations get a full-page "writeup" treatment. Staged across two classes
+   (see details-panel.js) so the slide-up actually animates instead of
+   jumping straight to fixed positioning. */
+.details-panel.full-entering,
+.details-panel.full {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    max-height: none;
+    height: 100dvh;
+    border-radius: 0;
+    padding: 28px 20px 20px;
+    transition: transform var(--drawer-duration) var(--drawer-easing), opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.details-panel.full-entering {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.details-panel.full {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.details-placeholder {
+    margin: 0;
+    padding: 6px 0;
+    text-align: center;
+    color: rgba(233, 233, 233, 0.6);
+}
+
+.details-panel h2 {
+    margin: 0 0 4px;
+    padding-right: 24px;
+}
+
+.details-type {
+    color: var(--accent);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px;
+}
+
+.details-extra {
+    color: rgba(233, 233, 233, 0.8);
+    font-size: 0.9em;
+}
+
+.details-distance {
+    color: rgba(233, 233, 233, 0.55);
+    font-size: 0.85em;
+    margin: -6px 0 8px;
+}
+
+.details-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.details-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.details-drill {
+    background: var(--accent);
+    color: #1b1b1b;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Sidebar nav --- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(80vw, 300px);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-right: 1px solid var(--glass-border);
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform var(--drawer-duration) var(--drawer-easing);
+    z-index: 20;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent);
+    font: inherit;
+    font-size: 1.05em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar-link-button:hover {
+    text-decoration: underline;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+}
+
+.sidebar-overlay[hidden] {
+    display: none;
+}
+
+/* --- Map screen HUD frame: translucent corner-bracket overlay, purely
+   decorative, never intercepts pan/zoom/tap. Four independent fixed-size
+   brackets (not one stretched SVG) so the corner dots stay circular instead
+   of distorting into ellipses on a wide/short or narrow/tall map area. --- */
+
+.hud-frame {
+    position: absolute;
+    inset: 10px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.hud-corner {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 4px var(--screen-glow));
+}
+
+.hud-corner path {
+    fill: none;
+    stroke: var(--screen-glow);
+    stroke-width: 1.5;
+}
+
+.hud-corner circle {
+    fill: var(--screen-glow);
+}
+
+.hud-corner--tl { top: 0; left: 0; }
+.hud-corner--tr { top: 0; right: 0; }
+.hud-corner--bl { bottom: 0; left: 0; }
+.hud-corner--br { bottom: 0; right: 0; }
+
+/* --- Orbital rail: a visual scrollbar along the map's top edge, shown only
+   in the orrery's horizontally-locked side-scroll mode (main.js toggles
+   `.visible` — it stays hidden for the freely-2D-pannable cluster/system
+   maps). The thumb's left/width track the same transform math panzoom.js
+   already computes for clamping, so it always reflects genuine scroll
+   position/range rather than an approximation. --- */
+.orbital-scrollbar {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    right: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(111, 224, 255, 0.12);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 6;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.orbital-scrollbar.visible {
+    opacity: 1;
+}
+
+.orbital-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background: var(--screen-glow);
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.7);
+    transition: left 0.05s linear, width 0.05s linear;
+}
+
+/* --- Travel panel: unlike .location-list (an overlay drawer with a
+   click-blocking backdrop), this one is a real flex sibling of the map that
+   grows from width 0 — so opening it actually shrinks the map's own
+   available area (and panzoom.js's next fit reflows around that), keeping
+   every node reachable to click instead of letting the panel bury some of
+   them under an overlay. The map stays live and interactive right up to the
+   panel's edge, since tapping a system/planet/moon there autofills the "To"
+   field (see notifyTravelMapSelection in travel-panel.js). The fixed-width
+   inner wrapper keeps the header/fields/results from reflowing as the outer
+   width animates — they just get revealed/clipped by the overflow. */
+
+.travel-panel {
+    flex: 0 0 auto;
+    align-self: stretch;
+    height: 100%;
+    min-height: 0;
+    width: 0;
+    overflow: hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 0 solid var(--glass-border);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(111, 224, 255, 0.1);
+    transition: width var(--drawer-duration) var(--drawer-easing);
+}
+
+.travel-panel.open {
+    width: min(520px, 92vw);
+    border-left-width: 1px;
+}
+
+.travel-panel-inner {
+    width: min(520px, 92vw);
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--screen-glow) transparent;
+}
+
+.travel-panel-inner::-webkit-scrollbar {
+    width: 8px;
+}
+
+.travel-panel-inner::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.travel-panel-inner::-webkit-scrollbar-thumb {
+    background: var(--screen-glow);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(111, 224, 255, 0.5);
+}
+
+.travel-panel-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--glass-border);
+    z-index: 1;
+}
+
+.travel-panel-header h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.travel-panel-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.travel-panel-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.travel-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-field > label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-accuracy-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.travel-accuracy-input {
+    flex: 1;
+    accent-color: var(--accent);
+}
+
+.travel-accuracy-value {
+    min-width: 3.5em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.travel-accuracy-hint {
+    margin: 0;
+    font-size: 0.8em;
+    color: rgba(233, 233, 233, 0.55);
+}
+
+.travel-advanced-toggle {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.travel-advanced-toggle:hover {
+    text-decoration: underline;
+}
+
+.travel-advanced-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+}
+
+.travel-advanced-body[hidden] {
+    display: none;
+}
+
+.travel-advanced-input {
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+}
+
+.travel-advanced-input:focus {
+    outline: 1px solid var(--screen-glow);
+    outline-offset: 1px;
+}
+
+.travel-field-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-field-selected[hidden] {
+    display: none;
+}
+
+.travel-field-selected-name {
+    flex: 1;
+}
+
+.travel-field-change {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.85em;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.travel-field-change:hover {
+    text-decoration: underline;
+}
+
+.travel-waypoint-list {
+    list-style: none;
+    counter-reset: waypoint;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-waypoint-list:not(:empty) {
+    margin-bottom: 10px;
+}
+
+.travel-waypoint-row {
+    counter-increment: waypoint;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.travel-waypoint-row::before {
+    content: counter(waypoint) '.';
+    flex-shrink: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.travel-waypoint-name {
+    flex: 1;
+}
+
+.travel-field-search {
+    position: relative;
+}
+
+.travel-field-input {
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--body-font-color);
+    font: inherit;
+}
+
+.travel-field-input:focus {
+    outline: 1px solid var(--screen-glow);
+    outline-offset: 1px;
+}
+
+.travel-field-results {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+    background: var(--chrome-navy);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.travel-field-results button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font: inherit;
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.travel-field-results button:hover {
+    background: rgba(111, 224, 255, 0.12);
+}
+
+.travel-submit {
+    background: var(--accent);
+    color: #1b1b1b;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.travel-submit:disabled {
+    background: var(--chrome-navy-light);
+    color: rgba(233, 233, 233, 0.5);
+    cursor: not-allowed;
+}
+
+.travel-results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.travel-results[hidden] {
+    display: none;
+}
+
+.travel-summary {
+    display: flex;
+    gap: 12px;
+}
+
+.travel-stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-stat-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-stat-value {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.travel-legs {
+    list-style: none;
+    counter-reset: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.travel-leg {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.travel-leg-route {
+    font-weight: bold;
+}
+
+.travel-leg-meta {
+    font-size: 0.85em;
+    color: rgba(233, 233, 233, 0.65);
+}
+
+.travel-error {
+    color: #e0523a;
+}
+
+.travel-previews {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.travel-preview {
+    position: relative;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.travel-preview:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.travel-preview-expand {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.45);
+    color: var(--accent);
+    font-size: 0.85em;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.travel-preview:hover .travel-preview-expand,
+.travel-preview:focus-visible .travel-preview-expand {
+    opacity: 1;
+}
+
+.travel-preview-title {
+    margin: 0 0 8px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.travel-preview-map {
+    display: block;
+    width: 100%;
+    height: 180px;
+}
+
+.travel-preview-empty {
+    margin: 0;
+    color: rgba(233, 233, 233, 0.6);
+    font-size: 0.9em;
+}
+
+/* --- Route preview lightbox: tapping any small preview map above reopens
+   the same fitted vector map (a clone of its <svg>, highlights and all)
+   much larger and centered, since the docked panel is narrow — especially
+   on mobile — and 180px isn't enough to make out route detail. --- */
+
+.preview-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--drawer-duration) var(--drawer-easing);
+}
+
+.preview-lightbox-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.preview-lightbox {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: min(720px, 92vw);
+    height: min(640px, 88vh);
+    display: flex;
+    flex-direction: column;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(111, 224, 255, 0.15);
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.94);
+    transition: opacity var(--drawer-duration) var(--drawer-easing), transform var(--drawer-duration) var(--drawer-easing);
+}
+
+.preview-lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.preview-lightbox-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.preview-lightbox-title {
+    margin: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.preview-lightbox-close {
+    background: none;
+    border: none;
+    color: var(--body-font-color);
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.preview-lightbox-map {
+    display: block;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+}
+
+/* !important is deliberate here (matching the precedent set by .hit-area
+   above): these previews reuse the exact same renderer as the live map, so
+   a highlighted node/line has to outrank whichever more-specific rule that
+   renderer already applied — a cluster's own accent color, or the bolder
+   galaxy-level route-line weight — rather than losing to it. */
+.travel-route-node circle,
+.travel-route-node ellipse {
+    stroke: var(--screen-glow) !important;
+    stroke-width: 3 !important;
+    filter: drop-shadow(0 0 4px var(--screen-glow));
+}
+
+.travel-route-line {
+    stroke: var(--screen-glow) !important;
+    stroke-width: 2.5 !important;
+    filter: drop-shadow(0 0 3px var(--screen-glow));
+}

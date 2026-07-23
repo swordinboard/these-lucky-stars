@@ -1,0 +1,1199 @@
+{
+  "schemaVersion": 2,
+  "clusters": [
+    {
+      "id": "cluster-alpha",
+      "name": "Alpha Cluster",
+      "type": "cluster",
+      "description": "A quiet, lifeless cluster with no known habitable worlds.",
+      "detail": ["Star systems: 4 known."],
+      "position": { "x": 222, "y": 912 }
+    },
+    {
+      "id": "cluster-beta",
+      "name": "Beta Cluster",
+      "type": "cluster",
+      "description": "A quiet, lifeless cluster with no known habitable worlds.",
+      "detail": ["Star systems: 5 known."],
+      "position": { "x": 150, "y": 1175 }
+    },
+    {
+      "id": "cluster-danswai",
+      "name": "Danswai Cloud",
+      "type": "star cloud",
+      "accent": "teal",
+      "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1333, "y": 565 }
+    },
+    {
+      "id": "cluster-fold",
+      "name": "Fold Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1135, "y": 2162 }
+    },
+    {
+      "id": "cluster-forrow",
+      "name": "Forrow Cluster",
+      "type": "cluster",
+      "accent": "violet",
+      "description": "The home cluster of Hravia. Their homeworld was destroyed by an unrecorded cause, referred to only as \"XXXX\" in surviving accounts.",
+      "detail": ["Star systems: 1 known."],
+      "position": { "x": 1747, "y": 813 }
+    },
+    {
+      "id": "cluster-hart",
+      "name": "Hart Cloud",
+      "type": "star cloud",
+      "accent": "teal",
+      "cloudRotation": 123,
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1304, "y": 1039 }
+    },
+    {
+      "id": "cluster-hope",
+      "name": "Hope Cluster",
+      "type": "cluster",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1045, "y": 929 }
+    },
+    {
+      "id": "cluster-lee",
+      "name": "Lee Cluster",
+      "type": "cluster",
+      "accent": "violet",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1459, "y": 1566 }
+    },
+    {
+      "id": "cluster-nor",
+      "name": "Nor Cluster",
+      "type": "cluster",
+      "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1567, "y": 872 }
+    },
+    {
+      "id": "cluster-caleph",
+      "name": "Caleph Cluster",
+      "type": "cluster",
+      "description": "Unrecorded — known only by name and its FTL connections to neighboring clusters.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 1557, "y": 487 }
+    },
+    {
+      "id": "cluster-pistil",
+      "name": "Pistil Cluster",
+      "type": "cluster",
+      "accent": "violet",
+      "description": "The mysterious home cluster of Vusiea. Few have ventured here.",
+      "detail": [
+        "Star systems: 3 speculated.",
+        "Access from Danswai Cloud is limited and the route is not well charted."
+      ],
+      "position": { "x": 930, "y": 150 }
+    },
+    {
+      "id": "cluster-teegarden",
+      "name": "Teegarden Cluster",
+      "type": "cluster",
+      "accent": "blue",
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available.", "Affiliated with SolPAC."],
+      "position": { "x": 722, "y": 606 }
+    },
+    {
+      "id": "cluster-weisman",
+      "name": "Weisman Cloud",
+      "type": "star cloud",
+      "accent": "teal",
+      "cloudRotation": 72,
+      "description": "Details pending — known only by name and its FTL lane connections so far.",
+      "detail": ["Star systems: No data available."],
+      "position": { "x": 469, "y": 700 }
+    },
+    {
+      "id": "cluster-morrison",
+      "name": "Morrison Cluster",
+      "type": "cluster",
+      "description": "A neutral cluster with occupied Future Settlers League (FSL) settlements, strategic SolPAC interests, and Iris Federation (IF) research outposts.",
+      "detail": ["Star systems: 4 known.", "Part of a secondary FTL Lane that connects the Local and Homestead clusters."],
+      "position": { "x": 994, "y": 1513 }
+    },
+    {
+      "id": "cluster-local",
+      "name": "Local Cluster",
+      "type": "cluster",
+      "accent": "blue",
+      "description": "All systems under SolPAC control.",
+      "detail": ["Star systems: 5 known."],
+      "position": { "x": 719, "y": 894 }
+    },
+    {
+      "id": "cluster-homestead",
+      "name": "Homestead Cluster",
+      "type": "cluster",
+      "accent": "violet",
+      "description": "All systems are under Iris Federation (IF) control, excluding the MACE-controlled Veranda system.",
+      "detail": ["Star systems: 2 known."],
+      "position": { "x": 1510, "y": 1213 }
+    }
+  ],
+  "systems": [
+    {
+      "id": "system-sol",
+      "clusterId": "cluster-local",
+      "name": "Sol System",
+      "type": "yellow dwarf",
+      "description": "Humanity's home system and the capital of SolPAC.",
+      "detail": [],
+      "position": { "x": 500, "y": 400 }
+    },
+    {
+      "id": "system-alpha-centuri",
+      "clusterId": "cluster-local",
+      "name": "Alpha Centuri",
+      "type": "binary star system",
+      "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
+      "description": "The nearest star system to Sol, roughly 4.37 light-years away.",
+      "detail": ["Its yellow dwarf and orange dwarf orbit closely as a binary pair; Sol's actual nearest star, the red dwarf Proxima Centauri, is a much more distant companion not counted here.", "Proxima Centauri hosts its own rocky planet, Proxima b, sitting within its habitable zone."],
+      "position": { "x": 664, "y": 460 }
+    },
+    {
+      "id": "system-barnards-star",
+      "clusterId": "cluster-local",
+      "name": "Barnard's Star",
+      "type": "red dwarf",
+      "description": "A red dwarf roughly 5.96 light-years from Sol, and one of the closest stars to it.",
+      "detail": ["Home to a candidate super-Earth, Barnard's Star b."],
+      "position": { "x": 418, "y": 624 }
+    },
+    {
+      "id": "system-wolf",
+      "clusterId": "cluster-local",
+      "name": "Wolf",
+      "type": "red dwarf",
+      "description": "Wolf 359, a faint red dwarf roughly 7.86 light-years from Sol.",
+      "detail": ["Despite decades of searching, no planets have been confirmed around it — its frequent, violent flares make detection unusually difficult."],
+      "position": { "x": 205, "y": 292 }
+    },
+    {
+      "id": "system-lalande",
+      "clusterId": "cluster-local",
+      "name": "Lalande",
+      "type": "red dwarf",
+      "description": "Lalande 21185, a red dwarf roughly 8.31 light-years from Sol.",
+      "detail": ["Its closest neighbor, Wolf 359, sits only about 4 light-years away — closer to it than to any other system in this cluster.", "Home to a confirmed super-Earth, Lalande 21185 b, on a tight 13-day orbit."],
+      "position": { "x": 558, "y": 73 }
+    },
+    {
+      "id": "system-huntington",
+      "clusterId": "cluster-morrison",
+      "name": "Huntington",
+      "type": "binary star system",
+      "stars": [{ "type": "orange dwarf" }, { "type": "white dwarf" }],
+      "description": "A binary star system home to the gas giants G-HX6T and G-SKHY, and the abandoned relay station Relay D2155.",
+      "detail": ["Its two stars, Alpha and Beta, are known locally by those names; Beta is a white dwarf, the dim remnant of a star that burned out long ago."],
+      "position": { "x": 175, "y": 332 }
+    },
+    {
+      "id": "system-priapus",
+      "clusterId": "cluster-morrison",
+      "name": "Priapus",
+      "type": "star system",
+      "description": "Home to the planets Chaq and Lyon, the volcanic world Gibil, and three largely uncharted gas and ice giants.",
+      "detail": [],
+      "position": { "x": 236, "y": 193 }
+    },
+    {
+      "id": "system-ngozi",
+      "clusterId": "cluster-morrison",
+      "name": "Ngozi",
+      "type": "star system",
+      "description": "Home to Gaia, a wetland world settled by the Future Settlers League, alongside the ocean world Nautilus and the gas/ice giants G-Z0XL and G-X4T6.",
+      "detail": [],
+      "position": { "x": 210, "y": 80 }
+    },
+    {
+      "id": "system-zuni",
+      "clusterId": "cluster-morrison",
+      "name": "Zuni",
+      "type": "binary star system",
+      "stars": [{ "type": "yellow dwarf" }, { "type": "orange dwarf" }],
+      "description": "A double star system home to the gas giant G-33UY and the planet Taishan.",
+      "detail": ["Its two stars are known locally as Zuni Major, a yellow dwarf, and Zuni Minor, a smaller orange dwarf."],
+      "position": { "x": 80, "y": 103 }
+    },
+    {
+      "id": "system-iris",
+      "clusterId": "cluster-homestead",
+      "name": "Iris",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 200, "y": 200 }
+    },
+    {
+      "id": "system-veranda",
+      "clusterId": "cluster-homestead",
+      "name": "Veranda",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 22, "y": 22 }
+    },
+    {
+      "id": "system-thalla",
+      "clusterId": "cluster-forrow",
+      "name": "Thalla",
+      "type": "star system",
+      "description": "Named in the cluster's notes; no further orbital detail has been recorded yet.",
+      "detail": [],
+      "position": { "x": 300, "y": 200 }
+    },
+    { "id": "system-talvern", "clusterId": "cluster-alpha", "name": "Talvern", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 80, "y": 192 } },
+    { "id": "system-ustrid", "clusterId": "cluster-alpha", "name": "Ustrid", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two ice giants and a scattered asteroid belt.", "detail": [], "position": { "x": 170, "y": 80 } },
+    { "id": "system-grivane", "clusterId": "cluster-alpha", "name": "Grivane", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a scattered asteroid belt.", "detail": [], "position": { "x": 128, "y": 390 } },
+    { "id": "system-lundstrom", "clusterId": "cluster-alpha", "name": "Lundstrom", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by two barren worlds and a gas giant.", "detail": [], "position": { "x": 245, "y": 163 } },
+    { "id": "system-corrigan", "clusterId": "cluster-beta", "name": "Corrigan", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by a gas giant.", "detail": [], "position": { "x": 42, "y": 199 } },
+    { "id": "system-casimund", "clusterId": "cluster-beta", "name": "Casimund", "type": "orange dwarf", "description": "An orange dwarf system with no known life, marked only by two barren worlds and an ice giant.", "detail": [], "position": { "x": 413, "y": 235 } },
+    { "id": "system-harrowick", "clusterId": "cluster-beta", "name": "Harrowick", "type": "yellow dwarf", "description": "A yellow dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 253, "y": 224 } },
+    { "id": "system-bramsk", "clusterId": "cluster-beta", "name": "Bramsk", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by a barren world.", "detail": [], "position": { "x": 251, "y": 56 } },
+    { "id": "system-nabren", "clusterId": "cluster-beta", "name": "Nabren", "type": "red dwarf", "description": "A red dwarf system with no known life, marked only by an ice giant and a scattered asteroid belt.", "detail": [], "position": { "x": 197, "y": 161 } }
+  ],
+  "clusterRoutes": [
+    { "from": "cluster-morrison", "to": "cluster-hart", "label": "113.3 ly", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-lee", "label": "93.6 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-fold", "label": "135.7 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-hope", "label": "65.6 ly", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-morrison", "label": "117.2 ly", "type": "ftl lane" },
+    { "from": "cluster-hope", "to": "cluster-hart", "label": "56.3 ly", "type": "ftl lane" },
+    { "from": "cluster-morrison", "to": "cluster-fold", "label": "132.8 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-teegarden", "label": "57.6 ly", "type": "ftl lane" },
+    { "from": "cluster-local", "to": "cluster-alpha", "label": "99.5 ly", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-alpha", "label": "65.1 ly", "type": "ftl lane" },
+    { "from": "cluster-alpha", "to": "cluster-beta", "label": "54.5 ly", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-nor", "label": "62.3 ly", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-forrow", "label": "37.9 ly", "type": "ftl lane" },
+    { "from": "cluster-danswai", "to": "cluster-forrow", "label": "96.5 ly", "type": "ftl lane" },
+    { "from": "cluster-nor", "to": "cluster-danswai", "label": "77.2 ly", "type": "ftl lane" },
+    { "from": "cluster-teegarden", "to": "cluster-danswai", "label": "122.5 ly", "type": "ftl lane" },
+    { "from": "cluster-pistil", "to": "cluster-danswai", "label": "?", "type": "ftl lane", "uncertain": true },
+    { "from": "cluster-local", "to": "cluster-weisman", "label": "63.3 ly", "type": "ftl lane" },
+    { "from": "cluster-weisman", "to": "cluster-teegarden", "label": "54.0 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-hart", "label": "109.9 ly", "type": "ftl lane" },
+    { "from": "cluster-hart", "to": "cluster-homestead", "label": "53.9 ly", "type": "ftl lane" },
+    { "from": "cluster-lee", "to": "cluster-homestead", "label": "71.3 ly", "type": "ftl lane" },
+    { "from": "cluster-caleph", "to": "cluster-forrow", "label": "75.5 ly", "type": "ftl lane" },
+    { "from": "cluster-caleph", "to": "cluster-danswai", "label": "47.4 ly", "type": "ftl lane" }
+  ],
+  "systemRoutes": [
+    { "from": "system-sol", "to": "system-alpha-centuri", "label": "4.37 ly", "type": "ftl lane" },
+    { "from": "system-sol", "to": "system-barnards-star", "label": "5.96 ly", "type": "ftl lane" },
+    { "from": "system-sol", "to": "system-wolf", "label": "7.86 ly", "type": "ftl lane" },
+    { "from": "system-sol", "to": "system-lalande", "label": "8.31 ly", "type": "ftl lane" },
+    { "from": "system-wolf", "to": "system-lalande", "label": "4.07 ly", "type": "ftl lane" },
+    { "from": "system-huntington", "to": "system-priapus", "label": "3.8 ly", "type": "trade" },
+    { "from": "system-huntington", "to": "system-zuni", "label": "6.2 ly", "type": "trade" },
+    { "from": "system-priapus", "to": "system-ngozi", "label": "2.9 ly", "type": "trade" },
+    { "from": "system-priapus", "to": "system-zuni", "label": "4.5 ly", "type": "trade" },
+    { "from": "system-ngozi", "to": "system-zuni", "label": "3.3 ly", "type": "trade" },
+    { "from": "system-iris", "to": "system-veranda", "label": "6.3 ly", "type": "trade" },
+    { "from": "system-talvern", "to": "system-ustrid", "label": "3.6 ly", "type": "ftl lane" },
+    { "from": "system-talvern", "to": "system-grivane", "label": "5.1 ly", "type": "ftl lane" },
+    { "from": "system-talvern", "to": "system-lundstrom", "label": "4.2 ly", "type": "ftl lane" },
+    { "from": "system-ustrid", "to": "system-lundstrom", "label": "2.8 ly", "type": "ftl lane" },
+    { "from": "system-grivane", "to": "system-lundstrom", "label": "6.4 ly", "type": "ftl lane" },
+    { "from": "system-corrigan", "to": "system-harrowick", "label": "5.0 ly", "type": "ftl lane" },
+    { "from": "system-corrigan", "to": "system-bramsk", "label": "6.9 ly", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-harrowick", "label": "4.0 ly", "type": "ftl lane" },
+    { "from": "system-casimund", "to": "system-bramsk", "label": "7.6 ly", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-bramsk", "label": "3.2 ly", "type": "ftl lane" },
+    { "from": "system-harrowick", "to": "system-nabren", "label": "6.0 ly", "type": "ftl lane" },
+    { "from": "system-bramsk", "to": "system-nabren", "label": "4.9 ly", "type": "ftl lane" }
+  ],
+  "orbitalBodies": [
+    { "id": "orb-pertash-belt", "systemId": "system-talvern", "name": "Pertash Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 1, "distanceAu": 2.2, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-halcost", "systemId": "system-ustrid", "name": "Halcost", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 1, "distanceAu": 4.0, "description": "An ice giant with roughly 29 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-mirsk", "systemId": "system-ustrid", "name": "Mirsk", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 2, "distanceAu": 6.5, "description": "An ice giant with roughly 71 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-thornix-belt", "systemId": "system-ustrid", "name": "Thornix Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 3, "distanceAu": 9.0, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-ferrin-belt", "systemId": "system-grivane", "name": "Ferrin Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 1, "distanceAu": 2.0, "description": "A scattered belt of rocky debris.", "detail": [] },
+    { "id": "orb-kelmyr", "systemId": "system-lundstrom", "name": "Kelmyr", "type": "rocky planet", "bodyType": "planet", "scale": "small", "hazard": "extreme-cold", "orbitOrder": 1, "distanceAu": 0.6, "description": "A frozen rocky world locked in permanent ice.", "detail": [] },
+    { "id": "orb-feldis", "systemId": "system-lundstrom", "name": "Feldis", "type": "gas giant", "bodyType": "planet", "scale": "large", "hazard": "gas-giant", "orbitOrder": 2, "distanceAu": 3.0, "description": "A gas giant with roughly 159 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-odessyn", "systemId": "system-lundstrom", "name": "Odessyn", "type": "rocky planet", "bodyType": "planet", "scale": "small", "hazard": "extreme-heat", "orbitOrder": 3, "distanceAu": 6.0, "description": "A scorched rocky world, far too hot to support life.", "detail": [] },
+    { "id": "orb-jastrun", "systemId": "system-corrigan", "name": "Jastrun", "type": "gas giant", "bodyType": "planet", "scale": "large", "hazard": "gas-giant", "orbitOrder": 1, "distanceAu": 3.5, "description": "A gas giant with roughly 142 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-ingvar", "systemId": "system-casimund", "name": "Ingvar", "type": "rocky planet", "bodyType": "planet", "scale": "small", "orbitOrder": 1, "distanceAu": 0.5, "description": "A barren rocky world with no atmosphere.", "detail": [] },
+    { "id": "orb-junnar", "systemId": "system-casimund", "name": "Junnar", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "orbitOrder": 2, "distanceAu": 0.9, "description": "A barren rocky world with no atmosphere.", "detail": [] },
+    { "id": "orb-driscol", "systemId": "system-casimund", "name": "Driscol", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 3, "distanceAu": 3.8, "description": "An ice giant with roughly 57 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-kavrel", "systemId": "system-harrowick", "name": "Kavrel", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "hazard": "extreme-heat", "orbitOrder": 1, "distanceAu": 0.4, "description": "A scorched rocky world, far too hot to support life.", "detail": [] },
+    { "id": "orb-verrow", "systemId": "system-bramsk", "name": "Verrow", "type": "rocky planet", "bodyType": "planet", "scale": "medium", "hazard": "extreme-cold", "orbitOrder": 1, "distanceAu": 1.8, "description": "A frozen rocky world locked in permanent ice.", "detail": [] },
+    { "id": "orb-baltrun", "systemId": "system-nabren", "name": "Baltrun", "type": "ice giant", "bodyType": "planet", "scale": "large", "hazard": "ice-giant", "orbitOrder": 1, "distanceAu": 4.2, "description": "An ice giant with roughly 100 moons, none yet catalogued.", "detail": [] },
+    { "id": "orb-solmere-belt", "systemId": "system-nabren", "name": "Solmere Belt", "type": "asteroid belt", "bodyType": "asteroidField", "orbitOrder": 2, "distanceAu": 7.0, "description": "A scattered belt of rocky debris.", "detail": [] },
+    {
+      "id": "orb-proxima-b",
+      "systemId": "system-alpha-centuri",
+      "name": "Proxima b",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "distanceAu": 0.05,
+      "description": "A rocky planet orbiting Proxima Centauri, the binary pair's much more distant third companion; sits within its habitable zone, though true surface conditions remain unknown.",
+      "detail": ["Roughly 1.07 times Earth's mass.", "Proxima Centauri's frequent, powerful flares may strip away any atmosphere it has."]
+    },
+    {
+      "id": "orb-barnards-star-b",
+      "systemId": "system-barnards-star",
+      "name": "Barnard's Star b",
+      "type": "super-Earth",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-cold",
+      "orbitOrder": 1,
+      "distanceAu": 0.4,
+      "description": "A super-Earth candidate orbiting just outside Barnard's Star's habitable zone — likely too cold to hold liquid water on its surface.",
+      "detail": ["Roughly 3.2 times Earth's mass.", "Orbits its dim red dwarf star once every 233 days."]
+    },
+    {
+      "id": "orb-lalande-b",
+      "systemId": "system-lalande",
+      "name": "Lalande 21185 b",
+      "type": "super-Earth",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-heat",
+      "orbitOrder": 1,
+      "distanceAu": 0.08,
+      "description": "A super-Earth on a tight, roughly 13-day orbit around Lalande 21185.",
+      "detail": ["Roughly 3 times Earth's mass.", "Orbits far too close to its star for any reasonable chance of habitability."]
+    },
+    {
+      "id": "orb-sol-mercury",
+      "systemId": "system-sol",
+      "name": "Mercury",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "hazard": "extreme-heat",
+      "orbitOrder": 1,
+      "distanceAu": 0.39,
+      "description": "The smallest planet in the solar system, and the closest to the Sun.",
+      "detail": ["Daytime temperatures top 400°C, but with no atmosphere to hold heat, nights plunge to nearly -180°C."]
+    },
+    {
+      "id": "orb-sol-venus",
+      "systemId": "system-sol",
+      "name": "Venus",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-heat",
+      "orbitOrder": 2,
+      "distanceAu": 0.72,
+      "description": "The hottest planet in the solar system, hotter even than Mercury.",
+      "detail": ["A runaway greenhouse effect traps heat under thick clouds of sulfuric acid, driving surface temperatures above 460°C."]
+    },
+    {
+      "id": "orb-sol-earth",
+      "systemId": "system-sol",
+      "name": "Earth",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 3,
+      "distanceAu": 1.0,
+      "description": "Humanity's homeworld, one of countless life-bearing worlds across the galaxy.",
+      "detail": ["Liquid water covers roughly 70% of its surface."]
+    },
+    {
+      "id": "orb-sol-iss-initiative",
+      "systemId": "system-sol",
+      "name": "ISS Initiative",
+      "type": "independent space station",
+      "bodyType": "station",
+      "orbitOrder": 8,
+      "distanceAu": 1.0,
+      "description": "The largest known space station, and the largest transfer station in the Local Cluster.",
+      "detail": [
+        "Before Hrava accelerator technology was adopted, it served as humanity's only means of FTL travel; now it's a sprawling spaceport city.",
+        "Home to roughly 15,000 permanent residents, though it relies entirely on imported resources.",
+        "Its rental spaces, transfer capacity, and enterprise market provide most of the financial support that keeps the station running."
+      ]
+    },
+    {
+      "id": "orb-sol-mars",
+      "systemId": "system-sol",
+      "name": "Mars",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "orbitOrder": 4,
+      "distanceAu": 1.52,
+      "description": "A cold desert world, home to the largest volcano and canyon system in the solar system.",
+      "detail": ["Olympus Mons stands nearly three times the height of Mount Everest.", "Valles Marineris stretches roughly the width of the continental United States."]
+    },
+    {
+      "id": "orb-sol-asteroid-belt",
+      "systemId": "system-sol",
+      "name": "Asteroid Belt",
+      "type": "asteroid belt",
+      "bodyType": "asteroidField",
+      "orbitOrder": 5,
+      "distanceAu": 2.7,
+      "description": "A ring of rocky debris between Mars and Jupiter.",
+      "detail": ["Likely material that never coalesced into a planet, kept stirred up by Jupiter's gravity."]
+    },
+    {
+      "id": "orb-sol-jupiter",
+      "systemId": "system-sol",
+      "name": "Jupiter",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 6,
+      "distanceAu": 5.2,
+      "description": "The largest planet in the solar system.",
+      "detail": ["Its Great Red Spot is a storm larger than Earth that has raged for centuries.", "Has no solid surface to land on.", "Beyond its four largest (Galilean) moons, around 90 more, much smaller moons are known."]
+    },
+    {
+      "id": "orb-sol-saturn",
+      "systemId": "system-sol",
+      "name": "Saturn",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 20, "style": "ice", "bands": 5 },
+      "orbitOrder": 7,
+      "distanceAu": 9.5,
+      "description": "Famous for its wide, prominent ring system.",
+      "detail": ["The rings are made almost entirely of ice particles, ranging from dust-sized grains to boulders.", "Has no solid surface to land on.", "Beyond Titan and Enceladus, well over 100 more, much smaller moons are known."]
+    },
+    {
+      "id": "orb-sol-uranus",
+      "systemId": "system-sol",
+      "name": "Uranus",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "ring": { "tilt": 82, "style": "dark", "bands": 2 },
+      "orbitOrder": 9,
+      "distanceAu": 19.2,
+      "description": "An ice giant that rotates almost completely on its side.",
+      "detail": [
+        "Its axis is tilted roughly 98 degrees, likely the result of an ancient collision — its ring system, aligned with its equator, is tilted right along with it, standing almost on end compared to Saturn's rings.",
+        "Has a faint ring system of its own: narrower and much darker than Saturn's.",
+        "Has no solid surface to land on.",
+        "Beyond its five major moons, around 20 more, much smaller moons are known."
+      ]
+    },
+    {
+      "id": "orb-sol-neptune",
+      "systemId": "system-sol",
+      "name": "Neptune",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 10,
+      "distanceAu": 30.1,
+      "description": "The most distant planet from the Sun, and the windiest.",
+      "detail": ["Wind speeds can exceed 2,000 km/h, the fastest recorded in the solar system.", "Has no solid surface to land on.", "Beyond Triton, around 15 more, much smaller moons are known."]
+    },
+    {
+      "id": "orb-sol-pluto",
+      "systemId": "system-sol",
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "bodyType": "planet",
+      "scale": "small",
+      "hazard": "extreme-cold",
+      "orbitOrder": 11,
+      "distanceAu": 39.5,
+      "description": "A distant dwarf planet in the Kuiper Belt.",
+      "detail": ["Reclassified from a full planet in 2006, but still commonly counted among the Sun's family of worlds.", "Average surface temperature hovers around -240°C, among the coldest in the solar system.", "Beyond Charon, four much smaller moons are known: Styx, Nix, Kerberos, and Hydra."]
+    },
+    {
+      "id": "orb-lyon",
+      "systemId": "system-priapus",
+      "name": "Lyon",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "hazard": "extreme-cold",
+      "orbitOrder": 1,
+      "distanceAu": 0.5,
+      "description": "A cold planet, home to the CC Primary Relay MC-134 station.",
+      "detail": []
+    },
+    {
+      "id": "orb-gibil",
+      "systemId": "system-priapus",
+      "name": "Gibil",
+      "type": "volcanic planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 2,
+      "distanceAu": 0.9,
+      "description": "A volcanic world with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "orb-g21t5",
+      "systemId": "system-priapus",
+      "name": "G-21T5",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 3,
+      "distanceAu": 1.6,
+      "description": "A gas giant with roughly 25 moons, including the volcanic Small Drake and Big Drake.",
+      "detail": []
+    },
+    {
+      "id": "orb-chaq",
+      "systemId": "system-priapus",
+      "name": "Chaq",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 4,
+      "distanceAu": 2.6,
+      "description": "Home to Chaq Madee, a desert island settlement where the sun never sets.",
+      "detail": []
+    },
+    {
+      "id": "orb-g8zsw",
+      "systemId": "system-priapus",
+      "name": "G-8ZSW",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 5,
+      "distanceAu": 4.5,
+      "description": "An ice giant with roughly 50 moons, including the ocean moon Cove and the icy moon Rime.",
+      "detail": []
+    },
+    {
+      "id": "orb-g9qrj",
+      "systemId": "system-priapus",
+      "name": "G-9QRJ",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 6,
+      "distanceAu": 7.5,
+      "description": "An ice giant with roughly 25 moons, none yet catalogued in detail.",
+      "detail": []
+    },
+    {
+      "id": "orb-nautilus",
+      "systemId": "system-ngozi",
+      "name": "Nautilus",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "distanceAu": 0.6,
+      "description": "A world of sand and water, with a breathable atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "orb-gaia",
+      "systemId": "system-ngozi",
+      "name": "Gaia",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 2,
+      "distanceAu": 1.1,
+      "description": "A world of sprawling wetlands, settled by the Future Settlers League.",
+      "detail": []
+    },
+    {
+      "id": "orb-gz0xl",
+      "systemId": "system-ngozi",
+      "name": "G-Z0XL",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 12, "style": "dust" },
+      "orbitOrder": 3,
+      "distanceAu": 2.4,
+      "description": "A gas giant with roughly 150 moons and a tight ring of dust, five of which are named.",
+      "detail": []
+    },
+    {
+      "id": "orb-gx4t6",
+      "systemId": "system-ngozi",
+      "name": "G-X4T6",
+      "type": "ice giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "ice-giant",
+      "orbitOrder": 4,
+      "distanceAu": 4.8,
+      "description": "An ice giant with roughly 50 moons, including the jungle moon Balboa.",
+      "detail": []
+    },
+    {
+      "id": "orb-taishan",
+      "systemId": "system-zuni",
+      "name": "Taishan",
+      "type": "rocky planet",
+      "bodyType": "planet",
+      "scale": "medium",
+      "orbitOrder": 1,
+      "distanceAu": 0.8,
+      "description": "Home to Pearl Valley, the largest city in the Morrison Cluster; no further detail has been recorded yet.",
+      "detail": []
+    },
+    {
+      "id": "orb-g33uy",
+      "systemId": "system-zuni",
+      "name": "G-33UY",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 15, "style": "ice" },
+      "orbitOrder": 2,
+      "distanceAu": 3.2,
+      "description": "A gas giant with layered rings of ice and three known moons.",
+      "detail": []
+    },
+    {
+      "id": "orb-ghx6t",
+      "systemId": "system-huntington",
+      "name": "G-HX6T",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "ring": { "tilt": 25, "style": "dust" },
+      "orbitOrder": 1,
+      "distanceAu": 2.0,
+      "description": "A gas giant with roughly 150 moons and a partial ring of dust, including the rocky moon Flint.",
+      "detail": []
+    },
+    {
+      "id": "orb-gskhy",
+      "systemId": "system-huntington",
+      "name": "G-SKHY",
+      "type": "gas giant",
+      "bodyType": "planet",
+      "scale": "large",
+      "hazard": "gas-giant",
+      "orbitOrder": 2,
+      "distanceAu": 4.0,
+      "description": "A gas giant with roughly 50 moons, including the icy moon Fannif.",
+      "detail": []
+    },
+    {
+      "id": "orb-relay-d2155",
+      "systemId": "system-huntington",
+      "name": "Relay D2155",
+      "type": "derelict relay station",
+      "bodyType": "station",
+      "orbitOrder": 3,
+      "distanceAu": 6.5,
+      "description": "An abandoned Galac-Tech station originally used to develop the MOC-L.",
+      "detail": ["Once hosted communication relays and cargo transfers.", "Its communication relays are still active, handling a small portion of the Morrison Cluster's overflow traffic."]
+    }
+  ],
+  "moons": [
+    {
+      "id": "moon-nautilus-orca",
+      "planetId": "orb-nautilus",
+      "order": 0,
+      "name": "Orca",
+      "type": "ocean moon",
+      "description": "A medium moon covered in toxic oceans.",
+      "detail": []
+    },
+    {
+      "id": "moon-nautilus-shellus",
+      "planetId": "orb-nautilus",
+      "order": 1,
+      "name": "Shellus",
+      "type": "rocky moon",
+      "description": "A small, sandy moon with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gaia-sirrah",
+      "planetId": "orb-gaia",
+      "order": 0,
+      "name": "Sirrah",
+      "type": "moon",
+      "description": "Named in Gaia's notes; no further detail has been recorded yet.",
+      "detail": []
+    },
+    {
+      "id": "moon-gaia-ada",
+      "planetId": "orb-gaia",
+      "order": 1,
+      "name": "Ada",
+      "type": "moon",
+      "description": "Named in Gaia's notes; no further detail has been recorded yet.",
+      "detail": []
+    },
+    {
+      "id": "moon-gx4t6-balboa",
+      "planetId": "orb-gx4t6",
+      "order": 0,
+      "name": "Balboa",
+      "type": "jungle moon",
+      "description": "A small moon with a thick atmosphere and dense jungle cover, unusual for an ice giant's moon.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-kelver",
+      "planetId": "orb-gz0xl",
+      "order": 0,
+      "name": "Kelver",
+      "type": "jungle moon",
+      "description": "A medium jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-thrum",
+      "planetId": "orb-gz0xl",
+      "order": 1,
+      "name": "Thrum",
+      "type": "jungle moon",
+      "description": "A medium jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-yarrow",
+      "planetId": "orb-gz0xl",
+      "order": 2,
+      "name": "Yarrow",
+      "type": "jungle moon",
+      "description": "A small jungle moon with a toxic atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-cindra",
+      "planetId": "orb-gz0xl",
+      "order": 3,
+      "name": "Cindra",
+      "type": "volcanic moon",
+      "description": "A small volcanic moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gz0xl-molt",
+      "planetId": "orb-gz0xl",
+      "order": 4,
+      "name": "Molt",
+      "type": "rocky moon",
+      "description": "A small rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g8zsw-cove",
+      "planetId": "orb-g8zsw",
+      "order": 0,
+      "name": "Cove",
+      "type": "ocean moon",
+      "description": "A small ocean moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g8zsw-rime",
+      "planetId": "orb-g8zsw",
+      "order": 1,
+      "name": "Rime",
+      "type": "icy moon",
+      "description": "A small moon of ice and rock, with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-ghx6t-flint",
+      "planetId": "orb-ghx6t",
+      "order": 0,
+      "name": "Flint",
+      "type": "rocky moon",
+      "description": "A small rocky moon with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-lyon-pike",
+      "planetId": "orb-lyon",
+      "order": 0,
+      "name": "Pike",
+      "type": "rocky moon",
+      "description": "A small, rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g21t5-small-drake",
+      "planetId": "orb-g21t5",
+      "order": 0,
+      "name": "Small Drake",
+      "type": "volcanic moon",
+      "description": "A small volcanic moon with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g21t5-big-drake",
+      "planetId": "orb-g21t5",
+      "order": 1,
+      "name": "Big Drake",
+      "type": "volcanic moon",
+      "description": "A medium volcanic moon with no atmosphere, larger than its neighbor Small Drake.",
+      "detail": []
+    },
+    {
+      "id": "moon-taishan-taizou",
+      "planetId": "orb-taishan",
+      "order": 0,
+      "name": "Taizou",
+      "type": "rocky moon",
+      "description": "A medium rocky moon with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g33uy-guy4",
+      "planetId": "orb-g33uy",
+      "order": 0,
+      "name": "Guy 4",
+      "type": "icy moon",
+      "description": "An icy rock with pure H2O deposits.",
+      "detail": []
+    },
+    {
+      "id": "moon-g33uy-karst",
+      "planetId": "orb-g33uy",
+      "order": 1,
+      "name": "Karst",
+      "type": "desert moon",
+      "description": "A small desert moon with a breathable atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-g33uy-scree",
+      "planetId": "orb-g33uy",
+      "order": 2,
+      "name": "Scree",
+      "type": "rocky moon",
+      "description": "A small rocky moon with no atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-gskhy-fannif",
+      "planetId": "orb-gskhy",
+      "order": 0,
+      "name": "Fannif",
+      "type": "icy moon",
+      "description": "A medium moon of mixed ice and rock, with a thin atmosphere.",
+      "detail": []
+    },
+    {
+      "id": "moon-earth-moon",
+      "planetId": "orb-sol-earth",
+      "order": 0,
+      "name": "Moon",
+      "type": "rocky moon",
+      "description": "Earth's only natural satellite.",
+      "detail": []
+    },
+    {
+      "id": "moon-mars-phobos",
+      "planetId": "orb-sol-mars",
+      "order": 0,
+      "name": "Phobos",
+      "type": "rocky moon",
+      "description": "The larger and closer of Mars's two moons.",
+      "detail": ["Slowly spiraling inward; expected to eventually break apart or crash into Mars."]
+    },
+    {
+      "id": "moon-mars-deimos",
+      "planetId": "orb-sol-mars",
+      "order": 1,
+      "name": "Deimos",
+      "type": "rocky moon",
+      "description": "The smaller and more distant of Mars's two moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-io",
+      "planetId": "orb-sol-jupiter",
+      "order": 0,
+      "name": "Io",
+      "type": "volcanic moon",
+      "description": "The most volcanically active body in the solar system.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-europa",
+      "planetId": "orb-sol-jupiter",
+      "order": 1,
+      "name": "Europa",
+      "type": "icy moon",
+      "description": "An icy moon believed to hide a liquid water ocean beneath its surface.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-ganymede",
+      "planetId": "orb-sol-jupiter",
+      "order": 2,
+      "name": "Ganymede",
+      "type": "icy moon",
+      "description": "The largest moon in the solar system, bigger than the planet Mercury.",
+      "detail": []
+    },
+    {
+      "id": "moon-jupiter-callisto",
+      "planetId": "orb-sol-jupiter",
+      "order": 3,
+      "name": "Callisto",
+      "type": "icy moon",
+      "description": "One of the most heavily cratered bodies in the solar system.",
+      "detail": []
+    },
+    {
+      "id": "moon-saturn-titan",
+      "planetId": "orb-sol-saturn",
+      "order": 1,
+      "name": "Titan",
+      "type": "icy moon",
+      "description": "Saturn's largest moon, and the only moon in the solar system with a dense atmosphere.",
+      "detail": ["Has liquid lakes and seas on its surface, though of methane and ethane rather than water."]
+    },
+    {
+      "id": "moon-saturn-enceladus",
+      "planetId": "orb-sol-saturn",
+      "order": 0,
+      "name": "Enceladus",
+      "type": "icy moon",
+      "description": "An icy moon with geysers venting water vapor from a subsurface ocean near its south pole.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-miranda",
+      "planetId": "orb-sol-uranus",
+      "order": 0,
+      "name": "Miranda",
+      "type": "icy moon",
+      "description": "The smallest and innermost of Uranus's five major moons, with a dramatically varied, patchwork surface.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-ariel",
+      "planetId": "orb-sol-uranus",
+      "order": 1,
+      "name": "Ariel",
+      "type": "icy moon",
+      "description": "The brightest of Uranus's major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-umbriel",
+      "planetId": "orb-sol-uranus",
+      "order": 2,
+      "name": "Umbriel",
+      "type": "icy moon",
+      "description": "The darkest of Uranus's major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-titania",
+      "planetId": "orb-sol-uranus",
+      "order": 3,
+      "name": "Titania",
+      "type": "icy moon",
+      "description": "The largest moon of Uranus.",
+      "detail": []
+    },
+    {
+      "id": "moon-uranus-oberon",
+      "planetId": "orb-sol-uranus",
+      "order": 4,
+      "name": "Oberon",
+      "type": "icy moon",
+      "description": "The outermost of Uranus's five major moons.",
+      "detail": []
+    },
+    {
+      "id": "moon-neptune-triton",
+      "planetId": "orb-sol-neptune",
+      "order": 0,
+      "name": "Triton",
+      "type": "icy moon",
+      "description": "Neptune's largest moon, orbiting backwards relative to Neptune's rotation.",
+      "detail": ["Likely a captured Kuiper Belt object rather than a moon formed alongside Neptune."]
+    },
+    {
+      "id": "moon-pluto-charon",
+      "planetId": "orb-sol-pluto",
+      "order": 0,
+      "name": "Charon",
+      "type": "icy moon",
+      "description": "Pluto's largest moon, so large relative to Pluto that the two orbit a point in space between them.",
+      "detail": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc-chaq-madee",
+      "planetId": "orb-chaq",
+      "name": "Chaq Madee",
+      "type": "island",
+      "description": "A large desert island formed at the \"eye\" of Chaq, where the sun never sets.",
+      "detail": [
+        "Its semi-tropical coast is lined with settlements and surrounded by a large salty ocean; its climate and composition are much like Earth's.",
+        "Settled by the Future Settlers League."
+      ],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-chaq-permafreeze",
+      "planetId": "orb-chaq",
+      "name": "Permafreeze",
+      "type": "frozen region",
+      "description": "The sunless side of Chaq, covered in floating permafrost.",
+      "detail": [],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-lyon-cc-relay",
+      "planetId": "orb-lyon",
+      "name": "CC Primary Relay MC-134",
+      "type": "relay station",
+      "description": "A large relay station on Lyon's northern ice cap that handles much of the Morrison Cluster's inter-cluster network communication.",
+      "detail": ["Operated by Capital Communications."],
+      "locatedAt": { "kind": "surface" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-g21t5-recycling-hq",
+      "planetId": "orb-g21t5",
+      "name": "Re-sourced Recycling HQ",
+      "type": "transfer station",
+      "description": "An orbital transfer station that collects material from Small Drake and shuttles it to recycling and waste-processing plants on the surface.",
+      "detail": [],
+      "locatedAt": { "kind": "moon", "moonId": "moon-g21t5-small-drake" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-gz0xl-rs-vineless",
+      "planetId": "orb-gz0xl",
+      "name": "RS Vineless",
+      "type": "research station",
+      "description": "An abandoned Altoa Research facility that studied invasive plant life carried across G-Z0XL's moons.",
+      "detail": [],
+      "locatedAt": { "kind": "orbit" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-ghx6t-brady-station",
+      "planetId": "orb-ghx6t",
+      "name": "Brady Station",
+      "type": "mining station",
+      "description": "An active mining station in orbit around G-HX6T.",
+      "detail": [],
+      "locatedAt": { "kind": "orbit" },
+      "icon": "station"
+    },
+    {
+      "id": "loc-g33uy-fountain",
+      "planetId": "orb-g33uy",
+      "name": "Fountain",
+      "type": "small dome settlement",
+      "description": "A small dome settlement that uses heated domes and tunnels to protect it from Guy 4's frozen landscape.",
+      "detail": [
+        "Collects and refines pure H2O for export, shipping water, hydrogen fuel, and oxygen through the Drop and Go Network.",
+        "Home to an independent system com relay."
+      ],
+      "locatedAt": { "kind": "moon", "moonId": "moon-g33uy-guy4" }
+    },
+    {
+      "id": "loc-g33uy-old-melt",
+      "planetId": "orb-g33uy",
+      "name": "Old Melt",
+      "type": "retired mine",
+      "description": "The first mine on Guy 4, and the economic lifeline for Fountain during its founding years.",
+      "detail": [
+        "Retired after twenty years of service, following a series of minor cave-ins that raised structural concerns.",
+        "Equipment can still be found in its tunnels, particularly ones cut off entirely by collapses."
+      ],
+      "locatedAt": { "kind": "moon", "moonId": "moon-g33uy-guy4" }
+    },
+    {
+      "id": "loc-g33uy-snowed-inn",
+      "planetId": "orb-g33uy",
+      "name": "Snowed Inn",
+      "type": "inn",
+      "description": "A standard inn in Fountain catering to the settlement's few travelers.",
+      "detail": [
+        "Owned and operated by Larry for at least ten years.",
+        "Offers standard room stays with optional meals, off-moon travel arrangements, and public network terminals."
+      ],
+      "locatedAt": { "kind": "moon", "moonId": "moon-g33uy-guy4" }
+    },
+    {
+      "id": "loc-gaia-whitefish-harbor",
+      "planetId": "orb-gaia",
+      "name": "Whitefish Harbor",
+      "type": "settlement",
+      "description": "Named in Gaia's notes; no further detail has been recorded yet.",
+      "detail": [],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-gaia-peaty-planes",
+      "planetId": "orb-gaia",
+      "name": "Peaty Planes",
+      "type": "wetland region",
+      "description": "Named in Gaia's notes; no further detail has been recorded yet.",
+      "detail": [],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-gaia-dredge-river",
+      "planetId": "orb-gaia",
+      "name": "Dredge River",
+      "type": "river",
+      "description": "Named in Gaia's notes; no further detail has been recorded yet.",
+      "detail": [],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-gaia-outlaw-compound",
+      "planetId": "orb-gaia",
+      "name": "Outlaw Compound",
+      "type": "outpost",
+      "description": "A former research warehouse turned into a small compound.",
+      "detail": [
+        "Its structures and landing space have been kept in very good condition despite their surroundings."
+      ],
+      "locatedAt": { "kind": "surface" }
+    },
+    {
+      "id": "loc-taishan-pearl-valley",
+      "planetId": "orb-taishan",
+      "name": "Pearl Valley",
+      "type": "open city",
+      "description": "The largest city in the Morrison Cluster, built in the valley where Taishan's first settlement began.",
+      "detail": [
+        "Feng Chenyue is credited with its official founding, and served as its first mayor. A large statue of her likeness is located in Founder's Plaza, a conversion of the original spaceport.",
+        "Pearl Valley's spaceport has a small orbital station linked with it that organizes out of system traffic."
+      ],
+      "locatedAt": { "kind": "surface" }
+    }
+  ]
+}
