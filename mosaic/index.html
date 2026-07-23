@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NaviGo Compact 2 — These Lucky Stars</title>
+    <meta name="description" content="Interactive galaxy map for These Lucky Stars.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="topbar">
+            <button id="menu-button" class="icon-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+                <span class="hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <h1 class="site-title">NaviGo Compact 2</h1>
+        </div>
+        <div id="breadcrumb" class="breadcrumb"></div>
+    </header>
+
+    <main class="map-area">
+        <svg id="galaxy-map" class="galaxy-map">
+            <defs>
+                <radialGradient id="sector-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#d27f27" stop-opacity="0.55" />
+                    <stop offset="70%" stop-color="#d27f27" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#d27f27" stop-opacity="0.05" />
+                </radialGradient>
+                <radialGradient id="sector-glow-teal" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#45c9a8" stop-opacity="0.55" />
+                    <stop offset="70%" stop-color="#45c9a8" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#45c9a8" stop-opacity="0.05" />
+                </radialGradient>
+                <radialGradient id="sector-glow-violet" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#b073e0" stop-opacity="0.55" />
+                    <stop offset="70%" stop-color="#b073e0" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#b073e0" stop-opacity="0.05" />
+                </radialGradient>
+                <radialGradient id="sector-glow-blue" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#5a8fd6" stop-opacity="0.55" />
+                    <stop offset="70%" stop-color="#5a8fd6" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#5a8fd6" stop-opacity="0.05" />
+                </radialGradient>
+                <radialGradient id="galaxy-bulge-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#fffaf0" stop-opacity="0.55" />
+                    <stop offset="35%" stop-color="#ffedc2" stop-opacity="0.28" />
+                    <stop offset="100%" stop-color="#ffedc2" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-disc-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.22" />
+                    <stop offset="45%" stop-color="#ffe4b8" stop-opacity="0.11" />
+                    <stop offset="100%" stop-color="#ffe4b8" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-halo-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#bcd4ff" stop-opacity="0.14" />
+                    <stop offset="55%" stop-color="#9db8f2" stop-opacity="0.07" />
+                    <stop offset="100%" stop-color="#9db8f2" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-accent-teal-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#45c9a8" stop-opacity="0.22" />
+                    <stop offset="55%" stop-color="#45c9a8" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#45c9a8" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-accent-violet-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#b073e0" stop-opacity="0.22" />
+                    <stop offset="55%" stop-color="#b073e0" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#b073e0" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-accent-blue-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#5a8fd6" stop-opacity="0.22" />
+                    <stop offset="55%" stop-color="#5a8fd6" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#5a8fd6" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="galaxy-accent-rust-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#c1652c" stop-opacity="0.22" />
+                    <stop offset="55%" stop-color="#c1652c" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#c1652c" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+            <g id="viewport"></g>
+        </svg>
+
+        <div class="hud-frame" aria-hidden="true">
+            <svg class="hud-corner hud-corner--tl" viewBox="0 0 20 20"><path d="M2,10 L2,2 L10,2" /><circle cx="2" cy="2" r="1.6" /></svg>
+            <svg class="hud-corner hud-corner--tr" viewBox="0 0 20 20"><path d="M10,2 L18,2 L18,10" /><circle cx="18" cy="2" r="1.6" /></svg>
+            <svg class="hud-corner hud-corner--bl" viewBox="0 0 20 20"><path d="M2,10 L2,18 L10,18" /><circle cx="2" cy="18" r="1.6" /></svg>
+            <svg class="hud-corner hud-corner--br" viewBox="0 0 20 20"><path d="M18,10 L18,18 L10,18" /><circle cx="18" cy="18" r="1.6" /></svg>
+        </div>
+
+        <div id="orbital-scrollbar" class="orbital-scrollbar" aria-hidden="true">
+            <div id="orbital-scrollbar-thumb" class="orbital-scrollbar-thumb"></div>
+        </div>
+
+        <div id="location-list-backdrop" class="location-list-backdrop"></div>
+        <div id="location-list" class="location-list"></div>
+
+        <div id="map-empty-state" class="map-empty-state" hidden>No Data Available</div>
+
+        <div id="travel-panel" class="travel-panel" aria-hidden="true"></div>
+
+        <div id="about-panel-backdrop" class="about-panel-backdrop"></div>
+        <div id="about-panel" class="about-panel" aria-hidden="true"></div>
+
+        <div id="preview-lightbox-backdrop" class="preview-lightbox-backdrop"></div>
+        <div id="preview-lightbox" class="preview-lightbox" aria-hidden="true"></div>
+    </main>
+
+    <footer id="details-panel" class="details-panel"></footer>
+
+    <nav id="sidebar" class="sidebar" aria-hidden="true">
+        <button id="sidebar-close" class="icon-button" type="button" aria-label="Close menu">×</button>
+        <div id="nav-search" class="nav-search"></div>
+        <ul class="sidebar-links">
+            <li><button id="sidebar-travel" class="sidebar-link-button" type="button">Plot a Route</button></li>
+            <li><button id="sidebar-about" class="sidebar-link-button" type="button">About</button></li>
+            <li><a href="https://theseluckystars.com">TLS Home</a></li>
+        </ul>
+    </nav>
+    <div id="sidebar-overlay" class="sidebar-overlay" hidden></div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
