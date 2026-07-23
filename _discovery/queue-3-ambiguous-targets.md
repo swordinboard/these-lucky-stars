@@ -18,12 +18,16 @@ therefore broken — including the condition summary table on the Wounds &
 Conditions page itself. Affected conditions: Crippled, Dying, Fatigued,
 Immobilized, Restrained, Sick, Unconscious.
 
+<!-- The ∆ desognates an advantage or disadvantage during combat, this will need another way to be referenced for those conditions (and doesnt need to be in the heading/anchor space, that was chosen becuas eit was easy to reference) and the comment about it in Combat will need to be uodated to match. -->
+
 ## Systemic finding 2 — `prone` does not exist
 
 Three links point at a `#prone` condition on the Wounds & Conditions page, and
 several rules (Stand action, Trip, Improved Bash, vehicle rules) use "prone" as
 a defined state — **but no Prone condition is defined anywhere in the corpus.**
 This is a missing block, not a bad link.
+
+<!-- need to make a prone condition: Characters that are layig upon the ground are Prone. Prone characters can only move at half speed, and are at a disadvantage when maming melee attacks outside of a grapple. Attacks made by adjacent enemy that targets a prone character gains a minor advantage. -->
 
 ## Full list
 

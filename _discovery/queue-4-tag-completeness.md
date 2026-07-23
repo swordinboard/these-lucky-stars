@@ -19,6 +19,8 @@ Things to scan for specifically:
   share the tag. If the builder treats `luck` as one pull, the stat block rides
   along with the ability list. Confirm that's wanted.
 
+<!-- as a note, blocks can have more than one setting tag (core, sci fi, fantasy). it will be less common, but it makes sense for some things. -->
+
 
 ## `ability` — 76 blocks
 
@@ -75,6 +77,7 @@ Things to scan for specifically:
 ## `computers` — 1 blocks
 
 `sci-fi/computer-systems`
+ <!-- add festures and equipment that has to do with the comp jack -->
 
 ## `condition` — 14 blocks
 
@@ -83,6 +86,8 @@ Things to scan for specifically:
 ## `conditions` — 14 blocks
 
 `conditions/asphyxiating`, `conditions/bleeding`, `conditions/confused`, `conditions/crippled`, `conditions/dying`, `conditions/fatigued`, `conditions/frightened`, `conditions/immobilized`, `conditions/pinned`, `conditions/restrained`, `conditions/shaken`, `conditions/sick`, `conditions/stressed`, `conditions/unconscious`
+
+<!-- consitions and conditoon tag feel redudntant -->
 
 ## `containers` — 9 blocks
 
@@ -144,6 +149,8 @@ Things to scan for specifically:
 
 `site/license`
 
+<!-- i would argue tjis can be excluded from scope and all pdfs get a liscene page built in, a cover option, and a toc option -->
+
 ## `light-armor` — 7 blocks
 
 `sci-fi-equipment/basic-p-suit`, `sci-fi-equipment/classic-evosuit`, `sci-fi-equipment/combat-vest`, `sci-fi-equipment/light-combat-vest`, `sci-fi-equipment/padded-flight-suit`, `sci-fi-equipment/scav-gear`, `sci-fi-equipment/site-safety-gear`
@@ -195,6 +202,8 @@ Things to scan for specifically:
 ## `racial` — 1 blocks
 
 `traits/racial-traits`
+
+<!-- i think this block may be obsolete since the races addition, may need to check that it references the correct ruleset and ooints to the races section and not to racial traits that no longer exist -->
 
 ## `ranged-upgrade` — 7 blocks
 
@@ -267,3 +276,6 @@ Things to scan for specifically:
 ## `wounds` — 7 blocks
 
 `wounds/burn`, `wounds/contusion`, `wounds/dislocation`, `wounds/fracture`, `wounds/laceration`, `wounds/puncture`, `wounds/sprain`
+
+
+<!-- lets add a rnaged weapon tag and a melee weapon tag -->
