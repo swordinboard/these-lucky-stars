@@ -214,6 +214,24 @@ function buildPreviews(plan) {
     return previews;
 }
 
+// After a successful plot, the results (legs, previews) land below the
+// "Plot Route" button — easy to miss if the panel is already scrolled down
+// past it (e.g. the advanced/edit-route dropdowns were left open) since
+// nothing on screen visibly changes. Scrolling the button up to sit right
+// under the panel's sticky header both reveals the new results and, even
+// when they were already in view, doubles as motion confirming the plot
+// actually happened.
+function scrollSubmitIntoView() {
+    const container = panelEl.querySelector('.travel-panel-inner');
+    const header = panelEl.querySelector('.travel-panel-header');
+    if (!container || !submitButton) return;
+    const containerRect = container.getBoundingClientRect();
+    const buttonRect = submitButton.getBoundingClientRect();
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    const delta = buttonRect.top - containerRect.top - headerHeight;
+    container.scrollBy({ top: delta, behavior: 'smooth' });
+}
+
 function renderResults(basePlan) {
     while (resultsEl.firstChild) resultsEl.removeChild(resultsEl.firstChild);
     resultsEl.hidden = false;
@@ -740,6 +758,7 @@ export function initTravelPanel(onToggle) {
     submitButton.addEventListener('click', () => {
         lastPlan = planRoute(fromField.getEntity(), toField.getEntity(), currentCaG(), currentMaxCruiseC(), waypointField.getWaypoints());
         renderResults(lastPlan);
+        if (lastPlan.ok) scrollSubmitIntoView();
     });
     body.appendChild(submitButton);
 
