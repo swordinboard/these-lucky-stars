@@ -79,6 +79,11 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 
 {{% include "/snippets/vehicles/collision-damage" %}}
 
+<!--
+> **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.
+
+> **Example** — A size 4 truck moving at a Fast speed collides head-on with a size 2 car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
+
 ## Mounts
 
 {{% include "/snippets/vehicles/mounts" %}}

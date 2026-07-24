@@ -78,6 +78,69 @@ computing heading anchors, mis-deriving the `Restrained [___]` anchor
 correct — only the tooling's anchor map was off — but it's now fixed so
 `data/edges.json` resolves that reference cleanly.
 
+## CORRECTION — content loss found and fixed after Wave 5
+
+**Wave 5's "0 broken links / nothing lost" claim was not fully sound.** Two
+verification gaps let a real regression through, both now closed:
+
+1. `verify.py` compares *composed markdown source*. Source was identical — but
+   markdown that is byte-identical can still **render** differently once it is
+   split across `include` boundaries. Source equivalence is necessary, not
+   sufficient.
+2. The Wave 5 rendered-HTML link scan used quoted-attribute regexes
+   (`href="…"`), but `hugo --minify` strips those quotes. It therefore matched
+   nothing and reported zero broken links trivially — a false pass.
+
+**What was actually lost:** the entire **Mounts** section of Vehicle Rules —
+the `## Mounts` heading plus every mount rule (equipment-vs-allies, mount
+features, unwilling mounts, mounts and impact/overrun, sudden stops) — rendered
+in the pre-transform baseline but silently vanished from the built site after
+extraction. Roughly 30 text segments.
+
+**Root cause (a bug class, not a one-off):** an HTML comment at the *end* of a
+snippet. `{{% include %}}` re-parses the snippet's rendered output as markdown;
+a trailing comment opens an HTML block that swallows the page content following
+the include. The parked/commented-out collision examples had ridden along into
+`snippets/vehicles/collision-damage.md` during extraction.
+
+**Fix:** the parked examples were moved back to the page frame
+(`vehicle-rules.md`, their baseline location), preserved verbatim and still
+hidden. Mounts renders again. `components/shield-mount.md` also contains a
+comment but is safe — it sits mid-snippet with content after it, inside a
+`details` wrapper.
+
+**New guards (in `_discovery/tools/`):**
+- `rendercheck.py` — compares **rendered visible text** of two builds per page.
+  This is the real no-loss check; run it against a baseline build after any
+  structural change.
+- `linkcheck.py` — broken link/anchor scan with quote-optional regexes, so it
+  works on minified HTML.
+- `snippetlint.py` — fails if any snippet ends with an HTML comment.
+
+**Post-fix state:** rendered-text diff vs the pre-transform baseline shows only
+the intended changes (Δ heading removal, Prone addition, the pouch/bandage and
+signal-mast splits, and the deliberately dropped table columns below). Every
+piece of underlying content was individually confirmed still present on the
+rendered pages. `linkcheck` and `snippetlint` both pass clean.
+
+## Simplified multi-column catalog tables
+
+The two remaining multi-column tables were reduced to Name + blurb, per ruling,
+and now render from frontmatter like the rest:
+
+- **Components** quick reference — dropped `Slot` and `Install`.
+- **Kits** table (inside the `kit-supplies` block) — dropped `Cost` and `Wt`.
+
+No data was lost: every dropped value is stated in each item's own entry (e.g.
+`*–Cr — 0lbs — Head — Internal*`, `*200Cr — 12lbs — Bulky*`), verified on the
+rendered pages. The kits table also proves the `catalog` shortcode works inside
+an included snippet.
+
+**Data conflict this surfaced:** the components table listed **Backup Power
+Cell** as slot `Back`, while the block says `Belt` (twice — stat line and body).
+Dropping the column resolves it to the block's value, `Belt`. Flagged in case
+`Back` was the intended rule.
+
 ## Single-sourced catalog tables (`catalog` shortcode)
 
 The quick-reference tables no longer hand-type the summary text — they render

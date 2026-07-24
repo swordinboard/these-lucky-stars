@@ -45,9 +45,5 @@ Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-
 
 > **Example** — A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
 
-<!--
-> **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.
-
-> **Example** — A size 4 truck moving at a Fast speed collides head-on with a size 2 car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
 
 ---
