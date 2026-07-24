@@ -141,7 +141,7 @@
   "url": "#unremarkable",
   "text": "Unremarkable",
   "file": "content/snippets/traits/particularly-attractive.md",
-  "line": 14,
+  "line": 15,
   "class": "exclusivity",
   "note": "ruled inert: gameplay-level exclusivity, no builder semantics"
  },
@@ -152,7 +152,7 @@
   "url": "#particularly-attractive",
   "text": "Particularly Attractive",
   "file": "content/snippets/traits/unremarkable.md",
-  "line": 14,
+  "line": 15,
   "class": "exclusivity",
   "note": "ruled inert: gameplay-level exclusivity, no builder semantics"
  },
@@ -163,8 +163,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
   "file": "content/snippets/components/automatic-crash-foam-system.md",
-  "line": 16,
-  "class": "functions-as"
+  "line": 17
  },
  {
   "source": "components/automatic-crash-foam-system",
@@ -173,8 +172,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
   "file": "content/snippets/components/automatic-crash-foam-system.md",
-  "line": 18,
-  "class": "functions-as"
+  "line": 19
  },
  {
   "source": "components/backup-power-cell",
@@ -183,7 +181,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/components/backup-power-cell.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -193,7 +191,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/components/heavy-wrist-laser.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -203,7 +201,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/components/heavy-wrist-laser.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -213,8 +211,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle",
   "text": "Laser Rifle",
   "file": "content/snippets/components/heavy-wrist-laser.md",
-  "line": 18,
-  "class": "functions-as"
+  "line": 19
  },
  {
   "source": "components/heavy-wrist-laser",
@@ -223,7 +220,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/components/heavy-wrist-laser.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "components/heavy-wrist-laser",
@@ -232,7 +229,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/components/heavy-wrist-laser.md",
-  "line": 20,
+  "line": 21,
   "class": "tag-definition"
  },
  {
@@ -242,7 +239,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/components/improved-cooling-system.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -252,7 +249,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "partial damage resistance",
   "file": "content/snippets/components/improved-cooling-system.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "components/improved-cooling-system",
@@ -261,7 +258,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "full damage resistance",
   "file": "content/snippets/components/improved-cooling-system.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "components/installation",
@@ -279,8 +276,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
   "file": "content/snippets/components/internal-comp-jack.md",
-  "line": 16,
-  "class": "functions-as"
+  "line": 17
  },
  {
   "source": "components/internal-comp-jack",
@@ -289,7 +285,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
   "text": "Comp Jack proficiency",
   "file": "content/snippets/components/internal-comp-jack.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "components/power-sources",
@@ -308,7 +304,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items",
   "text": "Breaking Defensive Items",
   "file": "content/snippets/components/shield-mount.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "components/signal-mast-heavy",
@@ -317,7 +313,7 @@
   "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
   "text": "Companion Bot",
   "file": "content/snippets/components/signal-mast-heavy.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "components/signal-mast-retractable",
@@ -326,7 +322,7 @@
   "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
   "text": "Companion Bot",
   "file": "content/snippets/components/signal-mast-retractable.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "components/wrist-laser",
@@ -335,7 +331,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/components/wrist-laser.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -345,7 +341,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/components/wrist-laser.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -355,8 +351,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol",
   "text": "Laser Pistol",
   "file": "content/snippets/components/wrist-laser.md",
-  "line": 18,
-  "class": "functions-as"
+  "line": 19
  },
  {
   "source": "components/wrist-laser",
@@ -365,7 +360,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/components/wrist-laser.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "sci-fi/communications",
@@ -518,8 +513,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/combat/opportunity-attack.md",
-  "line": 12,
-  "class": "mechanism"
+  "line": 12
  },
  {
   "source": "combat/opportunity-attack",
@@ -726,7 +720,7 @@
   "url": "/docs/free-srd/core-rules/stats/#grapple",
   "text": "Grapple",
   "file": "content/snippets/conditions/pinned.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "generic-equipment/bandages-large",
@@ -735,7 +729,7 @@
   "url": "/snippets/equipment/medkit-note",
   "text": null,
   "file": "content/snippets/generic-equipment/bandages-large.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "generic-equipment/bandages-small",
@@ -744,7 +738,7 @@
   "url": "/snippets/equipment/medkit-note",
   "text": null,
   "file": "content/snippets/generic-equipment/bandages-small.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "generic-equipment/barrel",
@@ -753,7 +747,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/generic-equipment/barrel.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -763,7 +757,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/generic-equipment/crate.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -773,7 +767,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
   "text": "Throwable",
   "file": "content/snippets/generic-equipment/grappling-hook.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -783,7 +777,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/generic-equipment/lockable-chest.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -793,7 +787,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/generic-equipment/long-crowbar.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -803,7 +797,7 @@
   "url": "/snippets/equipment/medkit-note",
   "text": null,
   "file": "content/snippets/generic-equipment/splint-materials.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "generic-equipment/tent-4-person",
@@ -812,7 +806,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/generic-equipment/tent-4-person.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -840,8 +834,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#major-wounds",
   "text": "major wound",
   "file": "content/snippets/stats/vitality.md",
-  "line": 31,
-  "class": "mechanism"
+  "line": 31
  },
  {
   "source": "stats/vitality",
@@ -1075,7 +1068,7 @@
   "url": "/docs/free-srd/character-creation/abilities/#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/proficiencies/improved-ability.md",
-  "line": 18
+  "line": 20
  },
  {
   "source": "proficiencies/licensed-instincts",
@@ -1084,7 +1077,7 @@
   "url": "#vehicle",
   "text": "Vehicle",
   "file": "content/snippets/proficiencies/licensed-instincts.md",
-  "line": 17,
+  "line": 19,
   "class": "prerequisite"
  },
  {
@@ -1094,7 +1087,7 @@
   "url": "#medic-training",
   "text": "Medic Training",
   "file": "content/snippets/proficiencies/medical-instincts.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -1104,7 +1097,7 @@
   "url": "#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/proficiencies/weapon.md",
-  "line": 18
+  "line": 20
  },
  {
   "source": "item-tags/ballistic",
@@ -1149,8 +1142,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
   "text": "standard battery core",
   "file": "content/snippets/item-tags/battery.md",
-  "line": 16,
-  "class": "mechanism"
+  "line": 16
  },
  {
   "source": "item-tags/battery",
@@ -1195,8 +1187,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
   "text": "reactor cores",
   "file": "content/snippets/item-tags/power-source.md",
-  "line": 14,
-  "class": "mechanism"
+  "line": 14
  },
  {
   "source": "item-tags/space-suit",
@@ -1214,8 +1205,7 @@
   "url": "#pressurized",
   "text": "Pressurized",
   "file": "content/snippets/item-tags/space-suit.md",
-  "line": 15,
-  "class": "mechanism"
+  "line": 15
  },
  {
   "source": "item-tags/space-suit",
@@ -1224,8 +1214,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/item-tags/space-suit.md",
-  "line": 16,
-  "class": "mechanism"
+  "line": 16
  },
  {
   "source": "item-tags/space-suit",
@@ -1252,7 +1241,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
   "text": "Injector",
   "file": "content/snippets/sci-fi-equipment/ara-5.md",
-  "line": 14,
+  "line": 16,
   "class": "tag-definition"
  },
  {
@@ -1262,7 +1251,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
   "text": "ARA-5",
   "file": "content/snippets/sci-fi-equipment/auto-injector.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/auto-injector",
@@ -1271,7 +1260,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
   "text": "Pain Suppressant",
   "file": "content/snippets/sci-fi-equipment/auto-injector.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/auto-injector",
@@ -1280,7 +1269,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
   "text": "Vitaboost",
   "file": "content/snippets/sci-fi-equipment/auto-injector.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/auto-pistol",
@@ -1289,7 +1278,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Full-Auto",
   "file": "content/snippets/sci-fi-equipment/auto-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1299,7 +1288,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
   "text": "Concealable",
   "file": "content/snippets/sci-fi-equipment/auto-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1309,7 +1298,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/b-e-kit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1319,7 +1308,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#pressurized",
   "text": "Pressurized",
   "file": "content/snippets/sci-fi-equipment/basic-p-suit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1329,17 +1318,7 @@
   "url": "#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/basic-p-suit.md",
-  "line": 16
- },
- {
-  "source": "sci-fi-equipment/battery-cores",
-  "target": "item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/sci-fi-equipment/battery-cores.md",
-  "line": 22,
-  "class": "tag-definition"
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/battery-cores",
@@ -1349,6 +1328,16 @@
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/battery-cores.md",
   "line": 23,
+  "class": "tag-definition"
+ },
+ {
+  "source": "sci-fi-equipment/battery-cores",
+  "target": "item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/sci-fi-equipment/battery-cores.md",
+  "line": 24,
   "class": "tag-definition"
  },
  {
@@ -1358,7 +1347,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/bio-scanner.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1368,7 +1357,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
   "text": "Fuel Cell",
   "file": "content/snippets/sci-fi-equipment/boost-pack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1378,7 +1367,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/boost-pack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1388,7 +1377,7 @@
   "url": "/docs/free-srd/character-creation/abilities/#charge",
   "text": "Charge",
   "file": "content/snippets/sci-fi-equipment/boost-pack.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/classic-evosuit",
@@ -1397,7 +1386,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "Space Suit",
   "file": "content/snippets/sci-fi-equipment/classic-evosuit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1407,7 +1396,7 @@
   "url": "#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/classic-evosuit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/combat-evosuit",
@@ -1416,7 +1405,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "Space Suit",
   "file": "content/snippets/sci-fi-equipment/combat-evosuit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1426,7 +1415,7 @@
   "url": "#targeting-hud",
   "text": "Targeting HUD",
   "file": "content/snippets/sci-fi-equipment/combat-evosuit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/combat-evosuit",
@@ -1435,7 +1424,7 @@
   "url": "#emergency-shank",
   "text": "Emergency Shank",
   "file": "content/snippets/sci-fi-equipment/combat-evosuit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/comp-jack",
@@ -1444,7 +1433,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/comp-jack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1454,7 +1443,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/comp-jack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1464,8 +1453,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
   "text": "Comp Jack proficiency",
   "file": "content/snippets/sci-fi-equipment/comp-jack.md",
-  "line": 16,
-  "class": "mechanism"
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/compact-rifle",
@@ -1474,7 +1462,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Full-Auto",
   "file": "content/snippets/sci-fi-equipment/compact-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1484,7 +1472,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/compact-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1494,7 +1482,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/coms-headset.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "sci-fi-equipment/coms-unit",
@@ -1503,7 +1491,7 @@
   "url": "/snippets/sci-fi/communications",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/coms-unit.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/decoy-beacon",
@@ -1512,7 +1500,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/decoy-beacon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1522,7 +1510,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
   "text": "Ballistic",
   "file": "content/snippets/sci-fi-equipment/drum-magazines.md",
-  "line": 15,
+  "line": 16,
   "class": "tag-definition"
  },
  {
@@ -1532,7 +1520,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
   "text": "Throwable",
   "file": "content/snippets/sci-fi-equipment/emergency-hatchet.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1542,7 +1530,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "Space Suit",
   "file": "content/snippets/sci-fi-equipment/eva-suit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1552,7 +1540,7 @@
   "url": "#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/eva-suit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/eva-suit",
@@ -1561,7 +1549,7 @@
   "url": "#safer-unit",
   "text": "SAFER Unit",
   "file": "content/snippets/sci-fi-equipment/eva-suit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/eva-suit",
@@ -1570,7 +1558,7 @@
   "url": "#safer-unit",
   "text": "SAFER unit",
   "file": "content/snippets/sci-fi-equipment/eva-suit.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "sci-fi-equipment/fuel-cells",
@@ -1579,7 +1567,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/fuel-cells.md",
-  "line": 21,
+  "line": 22,
   "class": "tag-definition"
  },
  {
@@ -1589,7 +1577,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions",
   "text": "Broken",
   "file": "content/snippets/sci-fi-equipment/fuel-cells.md",
-  "line": 23
+  "line": 24
  },
  {
   "source": "sci-fi-equipment/grapple-line-launcher",
@@ -1598,7 +1586,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/grapple-line-launcher.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1608,7 +1596,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/grapple-line-launcher.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1618,7 +1606,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/gravity-anchor.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1628,7 +1616,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/gravity-anchor.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1638,7 +1626,7 @@
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/hazard-hud.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/heavy-pistol",
@@ -1647,7 +1635,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/sci-fi-equipment/heavy-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1657,7 +1645,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Full-Auto",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1667,7 +1655,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1677,7 +1665,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#belt-fed",
   "text": "Belt Fed",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1687,7 +1675,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#long-reload",
   "text": "Long Reload",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1697,7 +1685,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1707,7 +1695,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/jump-boosters.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1717,7 +1705,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
   "text": "Fuel Cell",
   "file": "content/snippets/sci-fi-equipment/jump-pack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1727,53 +1715,8 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/jump-pack.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
- },
- {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "sci-fi-equipment/b-e-kit",
-  "type": "reference",
-  "url": "#be-kit",
-  "text": "B&E Kit",
-  "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
-  "line": 20
- },
- {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "sci-fi-equipment/disguise-kit",
-  "type": "reference",
-  "url": "#disguise-kit",
-  "text": "Disguise Kit",
-  "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
-  "line": 21
- },
- {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "sci-fi-equipment/medical-kit",
-  "type": "reference",
-  "url": "#medical-kit",
-  "text": "Medical Kit",
-  "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
-  "line": 22
- },
- {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "sci-fi-equipment/repair-kit",
-  "type": "reference",
-  "url": "#repair-kit",
-  "text": "Repair Kit",
-  "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
-  "line": 23
- },
- {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "sci-fi-equipment/tech-kit",
-  "type": "reference",
-  "url": "#tech-kit",
-  "text": "Tech Kit",
-  "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
-  "line": 24
  },
  {
   "source": "sci-fi-equipment/knuckle-taser",
@@ -1782,7 +1725,7 @@
   "url": "#shock-charger",
   "text": "Shock Charger",
   "file": "content/snippets/sci-fi-equipment/knuckle-taser.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/laser-pistol",
@@ -1791,7 +1734,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/sci-fi-equipment/laser-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1801,7 +1744,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-types",
   "text": "Burn",
   "file": "content/snippets/sci-fi-equipment/laser-pistol.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "sci-fi-equipment/laser-rifle",
@@ -1810,7 +1753,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1820,7 +1763,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-types",
   "text": "Burn",
   "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "sci-fi-equipment/laser-rifle",
@@ -1829,7 +1772,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1839,7 +1782,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
   "text": "Concealable",
   "file": "content/snippets/sci-fi-equipment/light-combat-vest.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1849,7 +1792,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Semi-Auto",
   "file": "content/snippets/sci-fi-equipment/light-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1859,7 +1802,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
   "text": "Concealable",
   "file": "content/snippets/sci-fi-equipment/light-pistol.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1869,7 +1812,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/sci-fi-equipment/long-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1879,7 +1822,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/long-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1889,7 +1832,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/long-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1899,7 +1842,7 @@
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/mebn-hud.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/mini-laser-cutter",
@@ -1908,7 +1851,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/mini-laser-cutter.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1918,7 +1861,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "Partial Damage Resistance",
   "file": "content/snippets/sci-fi-equipment/padded-flight-suit.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "sci-fi-equipment/pain-suppressant-injector",
@@ -1927,7 +1870,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
   "text": "Injector",
   "file": "content/snippets/sci-fi-equipment/pain-suppressant-injector.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1937,7 +1880,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/personal-shield.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1947,7 +1890,7 @@
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/personal-shield.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/portable-heater",
@@ -1956,7 +1899,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
   "text": "Fuel Cell",
   "file": "content/snippets/sci-fi-equipment/portable-heater.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1966,7 +1909,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/portable-water-purifier.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1976,7 +1919,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
   "text": "Power Source",
   "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1986,7 +1929,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -1996,17 +1939,7 @@
   "url": "/docs/free-srd/character-creation/abilities/#battery-saboteur",
   "text": "Battery Saboteur",
   "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
-  "line": 16
- },
- {
-  "source": "sci-fi-equipment/reactor-cores",
-  "target": "item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
-  "line": 23,
-  "class": "tag-definition"
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/reactor-cores",
@@ -2019,13 +1952,23 @@
   "class": "tag-definition"
  },
  {
+  "source": "sci-fi-equipment/reactor-cores",
+  "target": "item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
+  "line": 25,
+  "class": "tag-definition"
+ },
+ {
   "source": "sci-fi-equipment/recoil-compensation-system",
   "target": "item-tags/ballistic",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
   "text": "Ballistic",
   "file": "content/snippets/sci-fi-equipment/recoil-compensation-system.md",
-  "line": 15,
+  "line": 16,
   "class": "tag-definition"
  },
  {
@@ -2035,7 +1978,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/remote-detonator.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2045,7 +1988,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/repair-kit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2055,7 +1998,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/ripper-blade.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2065,7 +2008,7 @@
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Shatter",
   "file": "content/snippets/sci-fi-equipment/ripper-blade.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "sci-fi-equipment/safer-unit",
@@ -2074,7 +2017,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/safer-unit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2084,7 +2027,7 @@
   "url": "#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/security-flight-suit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/shock-baton",
@@ -2093,7 +2036,7 @@
   "url": "#shock-charger",
   "text": "Shock Charger",
   "file": "content/snippets/sci-fi-equipment/shock-baton.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/shock-charger",
@@ -2102,7 +2045,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-types",
   "text": "Shock",
   "file": "content/snippets/sci-fi-equipment/shock-charger.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "sci-fi-equipment/shock-rifle",
@@ -2111,7 +2054,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2121,7 +2064,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
   "text": "Arcing",
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2131,7 +2074,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-types",
   "text": "Shock",
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "sci-fi-equipment/shock-rifle",
@@ -2140,7 +2083,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2150,7 +2093,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/signature-spoofer.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2160,7 +2103,7 @@
   "url": "#data-spike",
   "text": "Data Spike",
   "file": "content/snippets/sci-fi-equipment/signature-spoofer.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/squad-shield",
@@ -2169,7 +2112,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/sci-fi-equipment/squad-shield.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2179,7 +2122,7 @@
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/squad-shield.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/standard-issue-knife",
@@ -2188,7 +2131,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
   "text": "Concealable",
   "file": "content/snippets/sci-fi-equipment/standard-issue-knife.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2198,7 +2141,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
   "text": "Throwable",
   "file": "content/snippets/sci-fi-equipment/standard-issue-knife.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2208,7 +2151,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Semi-Auto",
   "file": "content/snippets/sci-fi-equipment/standard-issue-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2218,7 +2161,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/sci-fi-equipment/standard-issue-rifle.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2228,7 +2171,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/sci-fi-equipment/survival-tent.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2238,7 +2181,7 @@
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/targeting-hud.md",
-  "line": 19
+  "line": 20
  },
  {
   "source": "sci-fi-equipment/ultraweave-evosuit",
@@ -2247,7 +2190,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "Space Suit",
   "file": "content/snippets/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2257,7 +2200,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "Partial Damage Resistance",
   "file": "content/snippets/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 14
+  "line": 15
  },
  {
   "source": "sci-fi-equipment/ultraweave-evosuit",
@@ -2266,7 +2209,7 @@
   "url": "#coms-unit",
   "text": "Coms Unit",
   "file": "content/snippets/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/vitaboost-injector",
@@ -2275,7 +2218,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
   "text": "Injector",
   "file": "content/snippets/sci-fi-equipment/vitaboost-injector.md",
-  "line": 14,
+  "line": 15,
   "class": "tag-definition"
  },
  {
@@ -2285,7 +2228,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
   "text": "Throwable",
   "file": "content/snippets/sci-fi-equipment/weighted-core.md",
-  "line": 17,
+  "line": 18,
   "class": "tag-definition"
  },
  {
@@ -2304,7 +2247,7 @@
   "url": "#charge",
   "text": "Charge",
   "file": "content/snippets/abilities/agile-charge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2314,7 +2257,7 @@
   "url": "#charge",
   "text": "Charge",
   "file": "content/snippets/abilities/bash.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2324,7 +2267,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/battery-saboteur.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2334,7 +2277,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
   "text": "General Robotics",
   "file": "content/snippets/abilities/companion-bot.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2344,7 +2287,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/controlled-suppressing-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2354,7 +2297,7 @@
   "url": "#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/abilities/controlled-suppressing-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2364,7 +2307,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#be-kit",
   "text": "B&E Kit",
   "file": "content/snippets/abilities/dead-drop.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2374,7 +2317,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/dual-attack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2384,7 +2327,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/dual-defense.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2394,7 +2337,7 @@
   "url": "#dual-attack",
   "text": "Dual Attack",
   "file": "content/snippets/abilities/dual-defense.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2404,7 +2347,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/dual-strike.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2414,7 +2357,7 @@
   "url": "#dual-attack",
   "text": "Dual Attack",
   "file": "content/snippets/abilities/dual-strike.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2424,7 +2367,7 @@
   "url": "#student",
   "text": "Student",
   "file": "content/snippets/abilities/expert.md",
-  "line": 17,
+  "line": 19,
   "class": "prerequisite"
  },
  {
@@ -2434,7 +2377,7 @@
   "url": "#rage",
   "text": "Rage",
   "file": "content/snippets/abilities/extended-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2444,7 +2387,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/extra-attack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2454,7 +2397,7 @@
   "url": "#rage",
   "text": "Rage",
   "file": "content/snippets/abilities/fearless-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2464,7 +2407,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#medic-training",
   "text": "Medic Training",
   "file": "content/snippets/abilities/field-medic.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2474,7 +2417,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#medic-training",
   "text": "Medic Training",
   "file": "content/snippets/abilities/field-patch.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2484,7 +2427,7 @@
   "url": "/docs/free-srd/character-creation/traits/#tough",
   "text": "Tough",
   "file": "content/snippets/abilities/friend-in-need.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2494,7 +2437,7 @@
   "url": "/docs/free-srd/character-creation/traits/#lucky",
   "text": "Lucky",
   "file": "content/snippets/abilities/friend-of-fortune.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2504,7 +2447,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
   "text": "Comp Jack",
   "file": "content/snippets/abilities/ghost-protocol.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2514,7 +2457,7 @@
   "url": "#charge",
   "text": "Charge",
   "file": "content/snippets/abilities/improved-bash.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2524,7 +2467,7 @@
   "url": "#bash",
   "text": "Bash",
   "file": "content/snippets/abilities/improved-bash.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2534,7 +2477,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/improved-suppressing-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2544,7 +2487,7 @@
   "url": "#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/abilities/improved-suppressing-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2554,7 +2497,7 @@
   "url": "/docs/free-srd/character-creation/traits/#unshakable",
   "text": "Unshakable",
   "file": "content/snippets/abilities/indomitable-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2564,7 +2507,7 @@
   "url": "#rage",
   "text": "Rage",
   "file": "content/snippets/abilities/indomitable-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2574,7 +2517,7 @@
   "url": "#fearless-rage",
   "text": "Fearless Rage",
   "file": "content/snippets/abilities/indomitable-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2584,7 +2527,7 @@
   "url": "#defender",
   "text": "Defender",
   "file": "content/snippets/abilities/just-grazed.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2594,7 +2537,7 @@
   "url": "#defender",
   "text": "Defender",
   "file": "content/snippets/abilities/just-winded.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2604,7 +2547,7 @@
   "url": "#charge",
   "text": "Charge",
   "file": "content/snippets/abilities/leaping-charge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2614,7 +2557,7 @@
   "url": "#agile-charge",
   "text": "Agile Charge",
   "file": "content/snippets/abilities/leaping-charge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2624,7 +2567,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/leg-shot.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2634,7 +2577,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#crippled",
   "text": "Crippled condition",
   "file": "content/snippets/abilities/leg-shot.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "abilities/line-of-fire",
@@ -2643,7 +2586,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/line-of-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2653,7 +2596,7 @@
   "url": "#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/abilities/line-of-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2663,7 +2606,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/abilities/martial-supremacy.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2673,7 +2616,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/abilities/momentum-dodge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2683,7 +2626,7 @@
   "url": "#agile-dodge",
   "text": "Agile Dodge",
   "file": "content/snippets/abilities/momentum-dodge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2693,7 +2636,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/opensaysame.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2703,7 +2646,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/oppressive-suppression.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2713,7 +2656,7 @@
   "url": "#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/abilities/oppressive-suppression.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2723,7 +2666,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/overcharge.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2733,7 +2676,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/patient-shot.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2743,7 +2686,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
   "file": "content/snippets/abilities/patient-shot.md",
-  "line": 15
+  "line": 16
  },
  {
   "source": "abilities/power-main-tap",
@@ -2752,7 +2695,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/power-main-tap.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2762,7 +2705,7 @@
   "url": "#rage",
   "text": "Rage",
   "file": "content/snippets/abilities/powerful-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2772,7 +2715,7 @@
   "url": "#focus-attack",
   "text": "Focus Attack",
   "file": "content/snippets/abilities/precise-focus.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2782,7 +2725,7 @@
   "url": "#focus-in",
   "text": "Focus In",
   "file": "content/snippets/abilities/precise-focus.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2792,7 +2735,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/quick-firing.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2802,7 +2745,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
   "text": "Comp Jack",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2812,7 +2755,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2822,7 +2765,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#repair-kit",
   "text": "Repair Kit",
   "file": "content/snippets/abilities/salvage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2832,7 +2775,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
   "text": "Comp Jack",
   "file": "content/snippets/abilities/signal-intelligence.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2842,7 +2785,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/abilities/slip-strike.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2852,7 +2795,7 @@
   "url": "#agile-dodge",
   "text": "Agile Dodge",
   "file": "content/snippets/abilities/slip-strike.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2862,7 +2805,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
   "text": "General Robotics",
   "file": "content/snippets/abilities/special-encouragement.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2872,7 +2815,7 @@
   "url": "#companion-bot",
   "text": "Companion Bot",
   "file": "content/snippets/abilities/special-encouragement.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2882,7 +2825,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/suppressing-fire.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2892,7 +2835,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/swift-custom-battery.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2902,7 +2845,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/abilities/swift-dual-attack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2912,7 +2855,7 @@
   "url": "#dual-attack",
   "text": "Dual Attack",
   "file": "content/snippets/abilities/swift-dual-attack.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2922,7 +2865,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/tech-armor.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2932,7 +2875,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components",
   "text": "components",
   "file": "content/snippets/abilities/tech-armor.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "abilities/the-look",
@@ -2941,7 +2884,7 @@
   "url": "/docs/free-srd/character-creation/traits/#particularly-attractive",
   "text": "Particularly Attractive",
   "file": "content/snippets/abilities/the-look.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2951,7 +2894,7 @@
   "url": "/docs/free-srd/character-creation/traits/#tough",
   "text": "Tough",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2961,7 +2904,7 @@
   "url": "#defender",
   "text": "Defender",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2971,7 +2914,7 @@
   "url": "#just-winded",
   "text": "Just Winded",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2981,7 +2924,7 @@
   "url": "#just-grazed",
   "text": "Just Grazed",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -2991,7 +2934,7 @@
   "url": "/docs/free-srd/character-creation/traits/#tough",
   "text": "Tough",
   "file": "content/snippets/abilities/true-defender.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3001,7 +2944,7 @@
   "url": "#defender",
   "text": "Defender",
   "file": "content/snippets/abilities/true-defender.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3011,7 +2954,7 @@
   "url": "#friend-in-need",
   "text": "Friend in Need",
   "file": "content/snippets/abilities/true-defender.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3021,7 +2964,7 @@
   "url": "/docs/free-srd/character-creation/traits/#intimidating",
   "text": "Intimidating",
   "file": "content/snippets/abilities/unsettling-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3031,7 +2974,7 @@
   "url": "#rage",
   "text": "Rage",
   "file": "content/snippets/abilities/unsettling-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3041,7 +2984,7 @@
   "url": "#powerful-rage",
   "text": "Powerful Rage",
   "file": "content/snippets/abilities/unsettling-rage.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3051,7 +2994,7 @@
   "url": "#vital-strike",
   "text": "Vital Strike",
   "file": "content/snippets/abilities/vital-focus.md",
-  "line": 15,
+  "line": 16,
   "class": "prerequisite"
  },
  {
@@ -3061,7 +3004,7 @@
   "url": "#focus-attack",
   "text": "Focus Attack",
   "file": "content/snippets/abilities/vital-focus.md",
-  "line": 17
+  "line": 18
  },
  {
   "source": "abilities/vital-strike",
@@ -3070,7 +3013,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "text": "Martial Training",
   "file": "content/snippets/abilities/vital-strike.md",
-  "line": 18
+  "line": 19
  },
  {
   "source": "attributes/attribute-values",
@@ -3641,339 +3584,6 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/face-wrap",
-  "type": "reference",
-  "url": "#face-wrap",
-  "text": "Face Wrap",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 27
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/heavy-cloak",
-  "type": "reference",
-  "url": "#heavy-cloak",
-  "text": "Heavy Cloak",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 28
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/rain-poncho",
-  "type": "reference",
-  "url": "#rain-poncho",
-  "text": "Rain Poncho",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 29
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/reinforced-boots",
-  "type": "reference",
-  "url": "#reinforced-boots",
-  "text": "Reinforced Boots",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/wide-brim-hat",
-  "type": "reference",
-  "url": "#wide-brim-hat",
-  "text": "Wide-Brim Hat",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/work-gloves",
-  "type": "reference",
-  "url": "#work-gloves",
-  "text": "Work Gloves",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/backpack",
-  "type": "reference",
-  "url": "#backpack",
-  "text": "Backpack",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 78
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/barrel",
-  "type": "reference",
-  "url": "#barrel",
-  "text": "Barrel",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 79
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/lockable-chest",
-  "type": "reference",
-  "url": "#chest-lockable",
-  "text": "Chest, Lockable",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 80
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/crate",
-  "type": "reference",
-  "url": "#crate",
-  "text": "Crate",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 81
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/dry-sack",
-  "type": "reference",
-  "url": "#dry-sack",
-  "text": "Dry Sack",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 82
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/pouch-set-ammo",
-  "type": "reference",
-  "url": "#pouch-set-ammo",
-  "text": "Pouch Set, Ammo",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 83
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/pouch-set-small",
-  "type": "reference",
-  "url": "#pouch-set-small",
-  "text": "Pouch Set, Small",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 84
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/pouch-set-standard",
-  "type": "reference",
-  "url": "#pouch-set-standard",
-  "text": "Pouch Set, Standard",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 85
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/quiver",
-  "type": "reference",
-  "url": "#quiver--bolt-case",
-  "text": "Quiver / Bolt Case",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 86
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/saddlebags",
-  "type": "reference",
-  "url": "#saddlebags",
-  "text": "Saddlebags",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 87
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/satchel",
-  "type": "reference",
-  "url": "#satchel",
-  "text": "Satchel",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 88
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/candle",
-  "type": "reference",
-  "url": "#candle",
-  "text": "Candle",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 164
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/fuel-oil-flask",
-  "type": "reference",
-  "url": "#fuel--oil-flask",
-  "text": "Fuel / Oil Flask",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 165
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/oil-lantern",
-  "type": "reference",
-  "url": "#oil-lantern",
-  "text": "Oil Lantern",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 166
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/torch",
-  "type": "reference",
-  "url": "#torch",
-  "text": "Torch",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 167
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/antiseptic-poultice",
-  "type": "reference",
-  "url": "#antiseptic-poultice",
-  "text": "Antiseptic Poultice",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 201
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/antitoxin",
-  "type": "reference",
-  "url": "#antitoxin",
-  "text": "Antitoxin",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 202
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/bandages-large",
-  "type": "reference",
-  "url": "#bandages-large",
-  "text": "Bandages, Large",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 203
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/bandages-small",
-  "type": "reference",
-  "url": "#bandages-small",
-  "text": "Bandages, Small",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 204
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/restorative-tonic",
-  "type": "reference",
-  "url": "#restorative-tonic",
-  "text": "Restorative Tonic",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 205
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/splint-materials",
-  "type": "reference",
-  "url": "#splint-materials",
-  "text": "Splint Materials",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 206
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/bedroll",
-  "type": "reference",
-  "url": "#bedroll",
-  "text": "Bedroll",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 252
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/compass",
-  "type": "reference",
-  "url": "#compass--navigational-tool",
-  "text": "Compass",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 253
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/field-ration",
-  "type": "reference",
-  "url": "#field-ration",
-  "text": "Field Ration",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 254
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/fire-starter",
-  "type": "reference",
-  "url": "#fire-starter",
-  "text": "Fire-Starter",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 255
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/rope-50ft",
-  "type": "reference",
-  "url": "#rope-50ft",
-  "text": "Rope, 50ft",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 256
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/signal-mirror",
-  "type": "reference",
-  "url": "#signal-mirror",
-  "text": "Signal Mirror",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 257
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/signal-whistle",
-  "type": "reference",
-  "url": "#signal-whistle",
-  "text": "Signal Whistle",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 258
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/tent-2-person",
-  "type": "reference",
-  "url": "#tent-2-person",
-  "text": "Tent, 2-Person",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 259
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/tent-4-person",
-  "type": "reference",
-  "url": "#tent-4-person",
-  "text": "Tent, 4-Person",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 260
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/waterskin",
-  "type": "reference",
-  "url": "#waterskin--canteen",
-  "text": "Waterskin / Canteen",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 261
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
   "target": "unresolved:/docs/free-srd/inventory--equipment/tool-kits/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/tool-kits/",
@@ -3982,204 +3592,6 @@
   "line": 327,
   "class": "known-broken",
   "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/chain-10ft",
-  "type": "reference",
-  "url": "#chain-10ft",
-  "text": "Chain, 10ft",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 331
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/chalk-sticks",
-  "type": "reference",
-  "url": "#chalk--charcoal-sticks",
-  "text": "Chalk / Charcoal Sticks",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 332
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/grappling-hook",
-  "type": "reference",
-  "url": "#grappling-hook",
-  "text": "Grappling Hook",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 333
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/ink-writing-instrument",
-  "type": "reference",
-  "url": "#ink--writing-instrument",
-  "text": "Ink & Writing Instrument",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 334
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/long-crowbar",
-  "type": "reference",
-  "url": "#long-crowbar",
-  "text": "Long Crowbar",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 335
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/manacles",
-  "type": "reference",
-  "url": "#manacles--restraints",
-  "text": "Manacles / Restraints",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 336
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/parchment-sheets",
-  "type": "reference",
-  "url": "#parchment--paper-sheets-5",
-  "text": "Parchment / Paper Sheets (5)",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 337
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/pitons",
-  "type": "reference",
-  "url": "#pitons--climbing-spikes-6",
-  "text": "Pitons / Climbing Spikes (6)",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 338
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/sewing-set",
-  "type": "reference",
-  "url": "#sewing-set",
-  "text": "Sewing Set",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 339
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/shovel",
-  "type": "reference",
-  "url": "#shovel",
-  "text": "Shovel",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 340
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/whetstone",
-  "type": "reference",
-  "url": "#whetstone",
-  "text": "Whetstone",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 341
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/animal-feed",
-  "type": "reference",
-  "url": "#animal-feed-1-day",
-  "text": "Animal Feed (1 day)",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 417
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/twine",
-  "type": "reference",
-  "url": "#ball-of-twine--string",
-  "text": "Ball of Twine / String",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 418
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/blank-book-journal",
-  "type": "reference",
-  "url": "#blank-book--journal",
-  "text": "Blank Book / Journal",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 419
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/block-of-soap",
-  "type": "reference",
-  "url": "#block-of-soap",
-  "text": "Block of Soap",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 420
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/common-alcohol-flask",
-  "type": "reference",
-  "url": "#common-alcohol-flask",
-  "text": "Common Alcohol, Flask",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 421
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/bag-of-salt",
-  "type": "reference",
-  "url": "#bag-of-salt",
-  "text": "Bag of Salt",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 422
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/iron-spikes",
-  "type": "reference",
-  "url": "#iron-spikes-10",
-  "text": "Iron Spikes (10)",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 423
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/small-bell",
-  "type": "reference",
-  "url": "#small-bell",
-  "text": "Small Bell",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 424
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/candle-wax-block",
-  "type": "reference",
-  "url": "#candle-wax-block",
-  "text": "Candle Wax Block",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 425
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/coil-of-wire",
-  "type": "reference",
-  "url": "#coil-of-wire",
-  "text": "Coil of Wire",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 426
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "generic-equipment/wooden-stakes",
-  "type": "reference",
-  "url": "#wooden-stakes-6",
-  "text": "Wooden Stakes (6)",
-  "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 427
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
@@ -5110,210 +4522,12 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/basic-p-suit",
-  "type": "reference",
-  "url": "#basic-p-suit",
-  "text": "Basic P-Suit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/classic-evosuit",
-  "type": "reference",
-  "url": "#classic-evosuit",
-  "text": "Classic Evosuit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/combat-vest",
-  "type": "reference",
-  "url": "#combat-vest",
-  "text": "Combat Vest",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/light-combat-vest",
-  "type": "reference",
-  "url": "#light-combat-vest",
-  "text": "Light Combat Vest",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/padded-flight-suit",
-  "type": "reference",
-  "url": "#padded-flight-suit",
-  "text": "Padded Flight Suit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/scav-gear",
-  "type": "reference",
-  "url": "#scav-gear",
-  "text": "Scav Gear",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 24
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/site-safety-gear",
-  "type": "reference",
-  "url": "#site-safety-gear",
-  "text": "Site Safety Gear",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 25
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/combat-evosuit",
-  "type": "reference",
-  "url": "#combat-evosuit",
-  "text": "Combat Evosuit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/enforcer-armor",
-  "type": "reference",
-  "url": "#enforcer-armor",
-  "text": "Enforcer Armor",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/eva-suit",
-  "type": "reference",
-  "url": "#eva-suit",
-  "text": "EVA Suit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/security-flight-suit",
-  "type": "reference",
-  "url": "#security-flight-suit",
-  "text": "Security Flight Suit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/ultraweave-evosuit",
-  "type": "reference",
-  "url": "#ultraweave-evosuit",
-  "text": "Ultraweave Evosuit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 34
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/auto-injector",
-  "type": "reference",
-  "url": "#auto-injector",
-  "text": "Auto-Injector",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 122
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/chameleon-unit",
-  "type": "reference",
-  "url": "#chameleon-unit",
-  "text": "Chameleon Unit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 123
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/emergency-shank",
-  "type": "reference",
-  "url": "#emergency-shank",
-  "text": "Emergency Shank",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 124
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/hazard-hud",
-  "type": "reference",
-  "url": "#hazard-hud",
-  "text": "Hazard HUD",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 125
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 126
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/mebn-hud",
-  "type": "reference",
-  "url": "#mebn-hud",
-  "text": "MeBN HUD",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 127
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/safer-unit",
-  "type": "reference",
-  "url": "#safer-unit",
-  "text": "SAFER Unit",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 128
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/targeting-hud",
-  "type": "reference",
-  "url": "#targeting-hud",
-  "text": "Targeting HUD",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 129
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "target": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged and Broken Gear",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 191
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/ballistic-shield",
-  "type": "reference",
-  "url": "#ballistic-shield",
-  "text": "Ballistic Shield",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 195
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "sci-fi-equipment/collapsible-shield",
-  "type": "reference",
-  "url": "#collapsible-shield",
-  "text": "Collapsible Shield",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "line": 196
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
@@ -5641,327 +4855,12 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/coms-headset",
-  "type": "reference",
-  "url": "#coms-headset",
-  "text": "Coms Headset",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/long-range-coms",
-  "type": "reference",
-  "url": "#long-range-coms",
-  "text": "Long Range Coms",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/mobile-phone",
-  "type": "reference",
-  "url": "#mobile-phone",
-  "text": "Mobile Phone",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 24
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
   "target": "sci-fi-equipment/coms-unit",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
   "text": "Coms Unit",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 26
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/ara-5",
-  "type": "reference",
-  "url": "#analgesic-radiation-antidote-5-ara-5",
-  "text": "ARA-5",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 54
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/crash-foam-canister",
-  "type": "reference",
-  "url": "#crash-foam-canister",
-  "text": "Crash Foam Canister",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 55
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/emergency-trauma-patch",
-  "type": "reference",
-  "url": "#emergency-trauma-patch",
-  "text": "Emergency Trauma Patch",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 56
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/pain-suppressant-injector",
-  "type": "reference",
-  "url": "#pain-suppressant-injector",
-  "text": "Pain Suppressant Injector",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 57
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/vitaboost-injector",
-  "type": "reference",
-  "url": "#vitaboost-injector",
-  "text": "Vitaboost Injector",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 58
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/emergency-beacon",
-  "type": "reference",
-  "url": "#emergency-beacon",
-  "text": "Emergency Beacon",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 98
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/emergency-oxygen-mask",
-  "type": "reference",
-  "url": "#emergency-oxygen-mask",
-  "text": "Emergency Oxygen Mask",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 99
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/field-ration",
-  "type": "reference",
-  "url": "#field-ration",
-  "text": "Field Ration",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 100
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/portable-heater",
-  "type": "reference",
-  "url": "#portable-heater",
-  "text": "Portable Heater",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 101
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/portable-water-purifier",
-  "type": "reference",
-  "url": "#portable-water-purifier",
-  "text": "Portable Water Purifier",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 102
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/solar-array-pack",
-  "type": "reference",
-  "url": "#solar-array-pack",
-  "text": "Solar Array Pack",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 103
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/survival-tent",
-  "type": "reference",
-  "url": "#survival-tent",
-  "text": "Survival Tent",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 104
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/bio-scanner",
-  "type": "reference",
-  "url": "#bio-scanner",
-  "text": "Bio Scanner",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 156
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/bioskin-veil",
-  "type": "reference",
-  "url": "#bioskin-veil",
-  "text": "Bioskin Veil",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 157
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/boost-pack",
-  "type": "reference",
-  "url": "#boost-pack",
-  "text": "Boost Pack",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 158
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/comp-jack",
-  "type": "reference",
-  "url": "#comp-jack",
-  "text": "Comp Jack",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 159
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/data-spike",
-  "type": "reference",
-  "url": "#data-spike",
-  "text": "Data Spike",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 160
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/decoy-beacon",
-  "type": "reference",
-  "url": "#decoy-beacon",
-  "text": "Decoy Beacon",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 161
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/fuel-cells",
-  "type": "reference",
-  "url": "#fuel-cells",
-  "text": "Fuel Cells",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 162
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/grapple-line-launcher",
-  "type": "reference",
-  "url": "#grapple-line-launcher",
-  "text": "Grapple-Line Launcher",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 163
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/gravity-anchor",
-  "type": "reference",
-  "url": "#gravity-anchor",
-  "text": "Gravity Anchor",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 164
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/jump-boosters",
-  "type": "reference",
-  "url": "#jump-boosters",
-  "text": "Jump Boosters",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 165
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/jump-pack",
-  "type": "reference",
-  "url": "#jump-pack",
-  "text": "Jump Pack",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 166
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/mag-boots",
-  "type": "reference",
-  "url": "#mag-boots",
-  "text": "Mag Boots",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 167
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/mag-cuffs",
-  "type": "reference",
-  "url": "#mag-cuffs",
-  "text": "Mag Cuffs",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 168
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/mini-laser-cutter",
-  "type": "reference",
-  "url": "#mini-laser-cutter",
-  "text": "Mini Laser Cutter",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 169
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/personal-shield",
-  "type": "reference",
-  "url": "#personal-shield",
-  "text": "Personal Shield",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 170
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/reactor-cores",
-  "type": "reference",
-  "url": "#reactor-cores",
-  "text": "Reactor Cores",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 171
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/remote-detonator",
-  "type": "reference",
-  "url": "#remote-detonator",
-  "text": "Remote Detonator",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 172
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/signature-spoofer",
-  "type": "reference",
-  "url": "#signature-spoofer",
-  "text": "Signature Spoofer",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 173
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/squad-shield",
-  "type": "reference",
-  "url": "#squad-shield",
-  "text": "Squad Shield",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 174
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "sci-fi-equipment/battery-cores",
-  "type": "reference",
-  "url": "#standardized-battery-cores",
-  "text": "Standardized Battery Cores",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "line": 175
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
@@ -6290,222 +5189,6 @@
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
   "target": "sci-fi-equipment/knuckle-taser",
-  "type": "reference",
-  "url": "#knuckle-taser",
-  "text": "Knuckle Taser",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 15
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/standard-issue-knife",
-  "type": "reference",
-  "url": "#standard-issue-knife",
-  "text": "Standard Issue Knife",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 16
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/emergency-hatchet",
-  "type": "reference",
-  "url": "#emergency-hatchet",
-  "text": "Emergency Hatchet",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/ripper-blade",
-  "type": "reference",
-  "url": "#ripper-blade",
-  "text": "Ripper Blade",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/shock-baton",
-  "type": "reference",
-  "url": "#shock-baton",
-  "text": "Shock Baton",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/auto-pistol",
-  "type": "reference",
-  "url": "#auto-pistol",
-  "text": "Auto Pistol",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 69
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/heavy-pistol",
-  "type": "reference",
-  "url": "#heavy-pistol",
-  "text": "Heavy Pistol",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 70
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/laser-pistol",
-  "type": "reference",
-  "url": "#laser-pistol",
-  "text": "Laser Pistol",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 71
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/light-pistol",
-  "type": "reference",
-  "url": "#light-pistol",
-  "text": "Light Pistol",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 72
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/compact-rifle",
-  "type": "reference",
-  "url": "#compact-rifle",
-  "text": "Compact Rifle",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 77
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/laser-rifle",
-  "type": "reference",
-  "url": "#laser-rifle",
-  "text": "Laser Rifle",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 78
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/long-rifle",
-  "type": "reference",
-  "url": "#long-rifle",
-  "text": "Long Rifle",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 79
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/shock-rifle",
-  "type": "reference",
-  "url": "#shock-rifle",
-  "text": "Shock Rifle",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 80
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/standard-issue-rifle",
-  "type": "reference",
-  "url": "#standard-issue-rifle",
-  "text": "Standard Issue Rifle",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 81
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/heavy-rotary-cannon",
-  "type": "reference",
-  "url": "#heavy-rotary-cannon",
-  "text": "Heavy Rotary Cannon",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 86
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/bipod",
-  "type": "reference",
-  "url": "#bipod",
-  "text": "Bipod",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 164
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/drum-magazines",
-  "type": "reference",
-  "url": "#drum-magazines",
-  "text": "Drum Magazines",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 165
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/extended-barrel",
-  "type": "reference",
-  "url": "#extended-barrel",
-  "text": "Extended Barrel",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 166
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/forward-assault-shield",
-  "type": "reference",
-  "url": "#forward-assault-shield",
-  "text": "Forward Assault Shield",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 167
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/overcharge-chamber",
-  "type": "reference",
-  "url": "#overcharge-chamber",
-  "text": "Overcharge Chamber",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 168
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/recoil-compensation-system",
-  "type": "reference",
-  "url": "#recoil-compensation-system",
-  "text": "Recoil Compensation System",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 169
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/reflex-sight",
-  "type": "reference",
-  "url": "#reflex-sight",
-  "text": "Reflex Sight",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 170
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/shock-charger",
-  "type": "reference",
-  "url": "#shock-charger",
-  "text": "Shock Charger",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 175
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/weighted-core",
-  "type": "reference",
-  "url": "#weighted-core",
-  "text": "Weighted Core",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
-  "line": 176
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "sci-fi-equipment/knuckle-taser",
   "type": "include",
   "url": "/snippets/sci-fi-equipment/knuckle-taser",
   "text": null,
@@ -6781,186 +5464,6 @@
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
   "line": 13
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/audio-processor",
-  "type": "reference",
-  "url": "#audio-processor",
-  "text": "Audio Processor",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/augmented-arm-actuators",
-  "type": "reference",
-  "url": "#augmented-arm-actuators",
-  "text": "Augmented Arm Actuators",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/automatic-crash-foam-system",
-  "type": "reference",
-  "url": "#automatic-crash-foam-system",
-  "text": "Automatic Crash Foam System",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/backup-power-cell",
-  "type": "reference",
-  "url": "#backup-power-cell",
-  "text": "Backup Power Cell",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/heavy-wrist-laser",
-  "type": "reference",
-  "url": "#heavy-wrist-laser",
-  "text": "Heavy Wrist Laser",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 34
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/improved-cooling-system",
-  "type": "reference",
-  "url": "#improved-cooling-system",
-  "text": "Improved Cooling System",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 35
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/internal-comp-jack",
-  "type": "reference",
-  "url": "#internal-comp-jack",
-  "text": "Internal Comp Jack",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 36
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/manipulator-override",
-  "type": "reference",
-  "url": "#manipulator-override",
-  "text": "Manipulator Override",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 37
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/optical-suite",
-  "type": "reference",
-  "url": "#optical-suite",
-  "text": "Optical Suite",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 38
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/reinforced-chassis-plating",
-  "type": "reference",
-  "url": "#reinforced-chassis-plating",
-  "text": "Reinforced Chassis Plating",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 39
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/relay-node",
-  "type": "reference",
-  "url": "#relay-node",
-  "text": "Relay Node",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 40
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/repair-subroutine",
-  "type": "reference",
-  "url": "#repair-subroutine",
-  "text": "Repair Subroutine",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 41
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/servo-boost-legs",
-  "type": "reference",
-  "url": "#servo-boost-legs",
-  "text": "Servo Boost Legs",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 42
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/shield-mount",
-  "type": "reference",
-  "url": "#shield-mount",
-  "text": "Shield Mount",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 43
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/signal-mast-heavy",
-  "type": "reference",
-  "url": "#signal-mast-heavy",
-  "text": "Signal Mast, Heavy",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 44
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/signal-mast-retractable",
-  "type": "reference",
-  "url": "#signal-mast-retractable",
-  "text": "Signal Mast, Retractable",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 45
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/stabilizer-gyros",
-  "type": "reference",
-  "url": "#stabilizer-gyros",
-  "text": "Stabilizer Gyros",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 46
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/subdermal-plating",
-  "type": "reference",
-  "url": "#subdermal-plating",
-  "text": "Subdermal Plating",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 47
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/targeting-array",
-  "type": "reference",
-  "url": "#targeting-array",
-  "text": "Targeting Array",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 48
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/wrist-laser",
-  "type": "reference",
-  "url": "#wrist-laser",
-  "text": "Wrist Laser",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 49
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -7354,7 +5857,7 @@
   "target": "page:/docs/free-srd/core-rules/stats/#action-points",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#action-points",
-  "text": "Stats \u2014 Action Points",
+  "text": "Stats — Action Points",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
   "line": 81
  },
@@ -7363,7 +5866,7 @@
   "target": "page:/docs/free-srd/core-rules/stats/#speed",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#speed",
-  "text": "Stats \u2014 Speed",
+  "text": "Stats — Speed",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
   "line": 81
  },
@@ -8254,7 +6757,7 @@
   "target": "page:/docs/free-srd/core-rules/stats/#grapple",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#grapple",
-  "text": "Stats \u2014 Grapple",
+  "text": "Stats — Grapple",
   "file": "content/docs/free-srd/core-rules/size.md",
   "line": 64
  },
@@ -8263,7 +6766,7 @@
   "target": "page:/docs/free-srd/core-rules/stats/#stealth",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#stealth",
-  "text": "Stats \u2014 Stealth",
+  "text": "Stats — Stealth",
   "file": "content/docs/free-srd/core-rules/size.md",
   "line": 64
  },
@@ -8272,7 +6775,7 @@
   "target": "combat/damage",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#damage-dice",
-  "text": "Combat \u2014 Damage Dice",
+  "text": "Combat — Damage Dice",
   "file": "content/docs/free-srd/core-rules/size.md",
   "line": 65
  },
@@ -8598,7 +7101,7 @@
   "url": "/snippets/vehicles/mounts",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 84
+  "line": 89
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8941,654 +7444,6 @@
   "text": "Traits",
   "file": "content/docs/free-srd/character-creation/_index.md",
   "line": 15
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/agile-dodge",
-  "type": "reference",
-  "url": "#agile-dodge",
-  "text": "Agile Dodge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 15
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/momentum-dodge",
-  "type": "reference",
-  "url": "#momentum-dodge",
-  "text": "Momentum Dodge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 16
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/slip-strike",
-  "type": "reference",
-  "url": "#slip-strike",
-  "text": "Slip Strike",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bolster",
-  "type": "reference",
-  "url": "#bolster",
-  "text": "Bolster",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 18
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/charge",
-  "type": "reference",
-  "url": "#charge",
-  "text": "Charge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/agile-charge",
-  "type": "reference",
-  "url": "#agile-charge",
-  "text": "Agile Charge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/leaping-charge",
-  "type": "reference",
-  "url": "#leaping-charge",
-  "text": "Leaping Charge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bash",
-  "type": "reference",
-  "url": "#bash",
-  "text": "Bash",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/improved-bash",
-  "type": "reference",
-  "url": "#improved-bash",
-  "text": "Improved Bash",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/coordinated-strike",
-  "type": "reference",
-  "url": "#coordinated-strike",
-  "text": "Coordinated Strike",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 24
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/danger-reflex",
-  "type": "reference",
-  "url": "#danger-reflex",
-  "text": "Danger Reflex",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 25
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dead-drop",
-  "type": "reference",
-  "url": "#dead-drop",
-  "text": "Dead Drop",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 26
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/defender",
-  "type": "reference",
-  "url": "#defender",
-  "text": "Defender",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 27
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/just-grazed",
-  "type": "reference",
-  "url": "#just-grazed",
-  "text": "Just Grazed",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 28
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/just-winded",
-  "type": "reference",
-  "url": "#just-winded",
-  "text": "Just Winded",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 29
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/true-defender",
-  "type": "reference",
-  "url": "#true-defender",
-  "text": "True Defender",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-attack",
-  "type": "reference",
-  "url": "#dual-attack",
-  "text": "Dual Attack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-defense",
-  "type": "reference",
-  "url": "#dual-defense",
-  "text": "Dual Defense",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-strike",
-  "type": "reference",
-  "url": "#dual-strike",
-  "text": "Dual Strike",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/swift-dual-attack",
-  "type": "reference",
-  "url": "#swift-dual-attack",
-  "text": "Swift Dual Attack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 34
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/extra-attack",
-  "type": "reference",
-  "url": "#extra-attack",
-  "text": "Extra Attack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 35
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/field-medic",
-  "type": "reference",
-  "url": "#field-medic",
-  "text": "Field Medic",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 36
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/field-patch",
-  "type": "reference",
-  "url": "#field-patch",
-  "text": "Field Patch",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 37
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/focus-attack",
-  "type": "reference",
-  "url": "#focus-attack",
-  "text": "Focus Attack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 38
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/precise-focus",
-  "type": "reference",
-  "url": "#precise-focus",
-  "text": "Precise Focus",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 39
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/focus-in",
-  "type": "reference",
-  "url": "#focus-in",
-  "text": "Focus In",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 40
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/friend-in-need",
-  "type": "reference",
-  "url": "#friend-in-need",
-  "text": "Friend in Need",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 41
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/general-spectacle",
-  "type": "reference",
-  "url": "#general-spectacle",
-  "text": "General Spectacle",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 42
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/long-performance",
-  "type": "reference",
-  "url": "#long-performance",
-  "text": "Long Performance",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 43
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/kit-trap",
-  "type": "reference",
-  "url": "#kit-trap",
-  "text": "Kit Trap",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 44
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/fast-kit-trap",
-  "type": "reference",
-  "url": "#fast-kit-trap",
-  "text": "Fast Kit Trap",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 45
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/leg-shot",
-  "type": "reference",
-  "url": "#leg-shot",
-  "text": "Leg Shot",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 46
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/martial-supremacy",
-  "type": "reference",
-  "url": "#martial-supremacy",
-  "text": "Martial Supremacy",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 47
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/outburst",
-  "type": "reference",
-  "url": "#outburst",
-  "text": "Outburst",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 48
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/patient-shot",
-  "type": "reference",
-  "url": "#patient-shot",
-  "text": "Patient Shot",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 49
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/quick-draw",
-  "type": "reference",
-  "url": "#quick-draw",
-  "text": "Quick Draw",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 50
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/quick-firing",
-  "type": "reference",
-  "url": "#quick-firing",
-  "text": "Quick Firing",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 51
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rage",
-  "type": "reference",
-  "url": "#rage",
-  "text": "Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 52
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/extended-rage",
-  "type": "reference",
-  "url": "#extended-rage",
-  "text": "Extended Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 53
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/fearless-rage",
-  "type": "reference",
-  "url": "#fearless-rage",
-  "text": "Fearless Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 54
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/indomitable-rage",
-  "type": "reference",
-  "url": "#indomitable-rage",
-  "text": "Indomitable Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 55
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/powerful-rage",
-  "type": "reference",
-  "url": "#powerful-rage",
-  "text": "Powerful Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 56
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/unsettling-rage",
-  "type": "reference",
-  "url": "#unsettling-rage",
-  "text": "Unsettling Rage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 57
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rally",
-  "type": "reference",
-  "url": "#rally",
-  "text": "Rally",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 58
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/reckless-attack",
-  "type": "reference",
-  "url": "#reckless-attack",
-  "text": "Reckless Attack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 59
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/suppressing-fire",
-  "type": "reference",
-  "url": "#suppressing-fire",
-  "text": "Suppressing Fire",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 62
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/controlled-suppressing-fire",
-  "type": "reference",
-  "url": "#controlled-suppressing-fire",
-  "text": "Controlled Suppressing Fire",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 63
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/improved-suppressing-fire",
-  "type": "reference",
-  "url": "#improved-suppressing-fire",
-  "text": "Improved Suppressing Fire",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 64
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/line-of-fire",
-  "type": "reference",
-  "url": "#line-of-fire",
-  "text": "Line of Fire",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 65
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/oppressive-suppression",
-  "type": "reference",
-  "url": "#oppressive-suppression",
-  "text": "Oppressive Suppression",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 66
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/the-look",
-  "type": "reference",
-  "url": "#the-look",
-  "text": "The Look",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 67
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/vital-strike",
-  "type": "reference",
-  "url": "#vital-strike",
-  "text": "Vital Strike",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 68
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/vital-focus",
-  "type": "reference",
-  "url": "#vital-focus",
-  "text": "Vital Focus",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 69
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/adaptive-luck",
-  "type": "reference",
-  "url": "#adaptive-luck",
-  "text": "Adaptive Luck",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 74
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bonus-luck",
-  "type": "reference",
-  "url": "#bonus-luck",
-  "text": "Bonus Luck",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 75
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/friend-of-fortune",
-  "type": "reference",
-  "url": "#friend-of-fortune",
-  "text": "Friend of Fortune",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 76
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/lucky-strike",
-  "type": "reference",
-  "url": "#lucky-strike",
-  "text": "Lucky Strike",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 77
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/medical-marvel",
-  "type": "reference",
-  "url": "#medical-marvel",
-  "text": "Medical Marvel",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 78
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/tis-but-a-scratch",
-  "type": "reference",
-  "url": "#tis-but-a-scratch",
-  "text": "Tis But a Scratch",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 80
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/tech-armor",
-  "type": "reference",
-  "url": "#tech-armor",
-  "text": "Tech Armor",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 85
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/companion-bot",
-  "type": "reference",
-  "url": "#companion-bot",
-  "text": "Companion Bot",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 86
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/special-encouragement",
-  "type": "reference",
-  "url": "#special-encouragement",
-  "text": "Special Encouragement",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 87
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/ghost-protocol",
-  "type": "reference",
-  "url": "#ghost-protocol",
-  "text": "Ghost Protocol",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 88
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/opensaysame",
-  "type": "reference",
-  "url": "#opensaysame",
-  "text": "Opensaysame",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 89
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rigged-comp-jack",
-  "type": "reference",
-  "url": "#rigged-comp-jack",
-  "text": "Rigged Comp Jack",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 90
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/salvage",
-  "type": "reference",
-  "url": "#salvage",
-  "text": "Salvage",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 91
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/signal-intelligence",
-  "type": "reference",
-  "url": "#signal-intelligence",
-  "text": "Signal Intelligence",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 92
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/battery-saboteur",
-  "type": "reference",
-  "url": "#battery-saboteur",
-  "text": "Battery Saboteur",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 97
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/battery-saver",
-  "type": "reference",
-  "url": "#battery-saver",
-  "text": "Battery Saver",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 98
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/overcharge",
-  "type": "reference",
-  "url": "#overcharge",
-  "text": "Overcharge",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 99
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/power-main-tap",
-  "type": "reference",
-  "url": "#power-main-tap",
-  "text": "Power Main Tap",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 100
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/swift-custom-battery",
-  "type": "reference",
-  "url": "#swift-custom-battery",
-  "text": "Swift Custom Battery",
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 101
  },
  {
   "source": "page:/docs/free-srd/character-creation/abilities/",
@@ -10447,105 +8302,6 @@
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/b-e-kit",
-  "type": "reference",
-  "url": "#be-kit",
-  "text": "B&E Kit",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 16
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/disguise-kit",
-  "type": "reference",
-  "url": "#disguise-kit",
-  "text": "Disguise Kit",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/martial-training",
-  "type": "reference",
-  "url": "#martial-training",
-  "text": "Martial Training",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/medic-training",
-  "type": "reference",
-  "url": "#medic-training",
-  "text": "Medic Training",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/medical-instincts",
-  "type": "reference",
-  "url": "#medical-instincts",
-  "text": "Medical Instincts",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/negotiation-training",
-  "type": "reference",
-  "url": "#negotiation-training",
-  "text": "Negotiation Training",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/repair-kit",
-  "type": "reference",
-  "url": "#repair-kit",
-  "text": "Repair Kit",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/survival-training",
-  "type": "reference",
-  "url": "#survival-training",
-  "text": "Survival Training",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 25
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/comp-jack",
-  "type": "reference",
-  "url": "#comp-jack",
-  "text": "Comp Jack",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/general-robotics",
-  "type": "reference",
-  "url": "#general-robotics",
-  "text": "General Robotics",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 34
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/general-technology",
-  "type": "reference",
-  "url": "#general-technology",
-  "text": "General Technology",
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 35
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
   "target": "proficiencies/overview",
   "type": "include",
   "url": "/snippets/proficiencies/overview",
@@ -10705,177 +8461,6 @@
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies.md",
   "line": 145
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/alert",
-  "type": "reference",
-  "url": "#alert",
-  "text": "Alert",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 18
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/composed",
-  "type": "reference",
-  "url": "#composed",
-  "text": "Composed",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/diplomatic",
-  "type": "reference",
-  "url": "#diplomatic",
-  "text": "Diplomatic",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/hot-headed",
-  "type": "reference",
-  "url": "#hot-headed",
-  "text": "Hot-Headed",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/intimidating",
-  "type": "reference",
-  "url": "#intimidating",
-  "text": "Intimidating",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/lucky",
-  "type": "reference",
-  "url": "#lucky",
-  "text": "Lucky",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/mentally-sound",
-  "type": "reference",
-  "url": "#mentally-sound",
-  "text": "Mentally Sound",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 24
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/particularly-attractive",
-  "type": "reference",
-  "url": "#particularly-attractive",
-  "text": "Particularly Attractive",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 25
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/picture-of-health",
-  "type": "reference",
-  "url": "#picture-of-health",
-  "text": "Picture of Health",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 26
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/sly",
-  "type": "reference",
-  "url": "#sly",
-  "text": "Sly",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 27
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/sneaky",
-  "type": "reference",
-  "url": "#sneaky",
-  "text": "Sneaky",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 28
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/stubborn",
-  "type": "reference",
-  "url": "#stubborn",
-  "text": "Stubborn",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 29
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/tough",
-  "type": "reference",
-  "url": "#tough",
-  "text": "Tough",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/unremarkable",
-  "type": "reference",
-  "url": "#unremarkable",
-  "text": "Unremarkable",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/unshakable",
-  "type": "reference",
-  "url": "#unshakable",
-  "text": "Unshakable",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/well-connected",
-  "type": "reference",
-  "url": "#well-connected",
-  "text": "Well-Connected",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/inter-planet-traveler",
-  "type": "reference",
-  "url": "#inter-planet-traveler",
-  "text": "Inter-Planet Traveler",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 38
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/scrap-hauler",
-  "type": "reference",
-  "url": "#scrap-hauler",
-  "text": "Scrap Hauler",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 39
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/space-adept",
-  "type": "reference",
-  "url": "#space-adept",
-  "text": "Space Adept",
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 40
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -11145,8 +8730,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
   "text": "Dying",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 28,
-  "class": "mechanism"
+  "line": 28
  },
  {
   "source": "races/android",
@@ -11238,7 +8822,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "FORT-interval mechanism defined in Exposure Intervals; this block only lists consequences (implicit \u2014 no link in text; ruled reference)"
+  "note": "FORT-interval mechanism defined in Exposure Intervals; this block only lists consequences (implicit — no link in text; ruled reference)"
  },
  {
   "source": "environment/toxic-atmosphere",
@@ -11249,7 +8833,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Same interval mechanism dependency (implicit \u2014 no link in text; ruled reference)"
+  "note": "Same interval mechanism dependency (implicit — no link in text; ruled reference)"
  },
  {
   "source": "objects/conditions",
@@ -11260,7 +8844,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "The three conditions are VIT thresholds defined by Object Durability (implicit \u2014 no link in text; ruled reference)"
+  "note": "The three conditions are VIT thresholds defined by Object Durability (implicit — no link in text; ruled reference)"
  },
  {
   "source": "objects/armor-degradation",
@@ -11271,7 +8855,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Uses Damaged/Broken as defined terms (implicit \u2014 no link in text; ruled reference)"
+  "note": "Uses Damaged/Broken as defined terms (implicit — no link in text; ruled reference)"
  },
  {
   "source": "objects/shield-degradation",
@@ -11282,7 +8866,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Uses Damaged/Broken as defined terms (implicit \u2014 no link in text; ruled reference)"
+  "note": "Uses Damaged/Broken as defined terms (implicit — no link in text; ruled reference)"
  },
  {
   "source": "objects/shield-degradation",
@@ -11293,7 +8877,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Shield wear runs on supply dice (implicit \u2014 no link in text; ruled reference)"
+  "note": "Shield wear runs on supply dice (implicit — no link in text; ruled reference)"
  },
  {
   "source": "vehicles/boarding-and-bailing",
@@ -11304,7 +8888,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Targets are 6 + speed modifier from the chart (implicit \u2014 no link in text; ruled reference)"
+  "note": "Targets are 6 + speed modifier from the chart (implicit — no link in text; ruled reference)"
  },
  {
   "source": "vehicles/collision-damage",
@@ -11315,7 +8899,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Formula uses the chart's speed modifier (implicit \u2014 no link in text; ruled reference)"
+  "note": "Formula uses the chart's speed modifier (implicit — no link in text; ruled reference)"
  },
  {
   "source": "vehicles/impact-and-overrun",
@@ -11326,7 +8910,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Failure outcomes resolve via collision damage (implicit \u2014 no link in text; ruled reference)"
+  "note": "Failure outcomes resolve via collision damage (implicit — no link in text; ruled reference)"
  },
  {
   "source": "vehicles/mounts",
@@ -11337,7 +8921,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Sudden Stops deals collision damage (implicit \u2014 no link in text; ruled reference)"
+  "note": "Sudden Stops deals collision damage (implicit — no link in text; ruled reference)"
  },
  {
   "source": "health/applying-damage",
@@ -11348,7 +8932,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "The loop is defined in terms of DEF (implicit \u2014 no link in text; ruled reference)"
+  "note": "The loop is defined in terms of DEF (implicit — no link in text; ruled reference)"
  },
  {
   "source": "health/applying-damage",
@@ -11359,7 +8943,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "The loop is defined in terms of VIT (implicit \u2014 no link in text; ruled reference)"
+  "note": "The loop is defined in terms of VIT (implicit — no link in text; ruled reference)"
  },
  {
   "source": "combat/damage-dice",
@@ -11370,7 +8954,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Dice determined by attacker/defender size comparison (implicit \u2014 no link in text; ruled reference)"
+  "note": "Dice determined by attacker/defender size comparison (implicit — no link in text; ruled reference)"
  },
  {
   "source": "sci-fi-equipment/kit-supplies",
@@ -11381,7 +8965,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Kit supplies run on supply dice (implicit \u2014 no link in text; ruled reference)"
+  "note": "Kit supplies run on supply dice (implicit — no link in text; ruled reference)"
  },
  {
   "source": "conditions/stressed",
@@ -11392,7 +8976,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Trigger defined by Stress Threshold (implicit \u2014 no link in text; ruled reference)"
+  "note": "Trigger defined by Stress Threshold (implicit — no link in text; ruled reference)"
  },
  {
   "source": "conditions/dying",
@@ -11403,7 +8987,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Dying character 'immediately falls unconscious (as the condition)' (implicit \u2014 no link in text; ruled reference)"
+  "note": "Dying character 'immediately falls unconscious (as the condition)' (implicit — no link in text; ruled reference)"
  },
  {
   "source": "sci-fi/energy-shields",
@@ -11414,7 +8998,7 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Temporary DEF pool concept extends DEF (implicit \u2014 no link in text; ruled reference)"
+  "note": "Temporary DEF pool concept extends DEF (implicit — no link in text; ruled reference)"
  },
  {
   "source": "stats/luck",
@@ -11425,6 +9009,6 @@
   "text": null,
   "file": null,
   "line": null,
-  "note": "Stressed disables Luck (implicit \u2014 no link in text; ruled reference)"
+  "note": "Stressed disables Luck (implicit — no link in text; ruled reference)"
  }
 ]

@@ -1,0 +1,368 @@
+#!/usr/bin/env python3
+"""
+builddata.py — regenerate data/blocks.json and data/edges.json from the repo.
+
+Reads the content tree ONLY (block frontmatter + {{% include %}} composition +
+markdown links), so the canonical data can always be rebuilt from a fresh clone.
+Run it after any structural content change (new/moved/renamed blocks, edited
+links, edited frontmatter).
+
+    python3 _discovery/tools/builddata.py           # rewrite data/*.json
+    python3 _discovery/tools/builddata.py --check   # fail if data/ is stale
+
+Source of truth = the markdown files. `reference` is the authored frontmatter
+value (originally seeded from inbound-edge count); `in_degree` is recomputed
+each run. `flags` and `notes` are curation metadata with no frontmatter home,
+so they are carried forward from the existing data/blocks.json by block id.
+"""
+import json, os, re, sys, collections
+
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CONTENT = os.path.join(REPO, "content")
+
+# ---------------------------------------------------------------- parsing ---
+inc_re = re.compile(r'\{\{[<%]\s*include\s+"([^"]+)"')
+link_re = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
+heading_re = re.compile(r"^(#{1,6})\s+(.*)$")
+catalog_re = re.compile(r"\{\{<\s*catalog\b")
+
+
+def hugo_anchor(text):
+    """Mirror goldmark's autoHeadingID (underscores kept, unicode kept)."""
+    t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text.strip())
+    t = re.sub(r"[*`]", "", t).lower()
+    out = []
+    for ch in t:
+        if ch.isalnum() or ch == "_":
+            out.append(ch)
+        elif ch in " -\t":
+            out.append("-")
+    return "".join(out)
+
+
+def parse(path):
+    """-> dict(frontmatter, headings, includes, links) for one markdown file."""
+    raw = open(os.path.join(REPO, path)).read()
+    fm, body = {}, raw
+    if raw.startswith("---"):
+        end = raw.index("\n---", 3)
+        for line in raw[4:end].split("\n"):
+            m = re.match(r"^([a-zA-Z_]+):\s*(.*)$", line)
+            if not m:
+                continue
+            k, v = m.group(1), m.group(2).strip()
+            if v.startswith("[") and v.endswith("]"):
+                v = [x.strip().strip('"') for x in v[1:-1].split(",") if x.strip()]
+            elif v.startswith('"') and v.endswith('"'):
+                v = v[1:-1].replace('\\"', '"')
+            elif v in ("true", "false"):
+                v = v == "true"
+            fm[k] = v
+        body = raw[end + 4:]
+    lines = body.split("\n")
+    offset = raw[: len(raw) - len(body)].count("\n")
+    headings, seen = [], {}
+    for i, line in enumerate(lines, 1):
+        m = heading_re.match(line)
+        if m:
+            a = hugo_anchor(m.group(2))
+            if a in seen:
+                seen[a] += 1
+                a = f"{a}-{seen[a]}"
+            else:
+                seen[a] = 0
+            headings.append({"line": i + offset, "level": len(m.group(1)),
+                             "text": m.group(2).strip(), "anchor": a})
+    includes, links = [], []
+    for i, line in enumerate(lines, 1):
+        for m in inc_re.finditer(line):
+            includes.append({"line": i + offset, "target": m.group(1)})
+        for m in link_re.finditer(line):
+            links.append({"line": i + offset, "text": m.group(1), "url": m.group(2)})
+    return {"fm": fm, "headings": headings, "includes": includes,
+            "links": links, "body": body}
+
+
+PAGES = {}
+for dirpath, _dirs, files in os.walk(CONTENT):
+    for fn in sorted(files):
+        if fn.endswith(".md"):
+            p = os.path.relpath(os.path.join(dirpath, fn), REPO)
+            PAGES[p] = parse(p)
+
+SNIPPETS = {p: p[len("content/snippets/"):-3] for p in PAGES
+            if p.startswith("content/snippets/") and not p.endswith("_index.md")}
+DOCS = [p for p in PAGES if not p.startswith("content/snippets/")]
+
+
+def url_for(path):
+    p = path[len("content"):]
+    return p[: -len("_index.md")] if p.endswith("/_index.md") else p[:-3] + "/"
+
+
+PAGE_BY_URL = {url_for(p): p for p in DOCS}
+
+
+def norm_target(t):
+    t = t if t.startswith("/") else "/" + t
+    return t[:-3] if t.endswith(".md") else t
+
+
+def includes_of(path, seen=None):
+    """Snippet ids pulled into a file, recursively, in document order."""
+    seen = seen if seen is not None else set()
+    out = []
+    for inc in PAGES[path]["includes"]:
+        sp = "content" + norm_target(inc["target"]) + ".md"
+        sid = SNIPPETS.get(sp)
+        if sid and sid not in seen:
+            seen.add(sid)
+            out.append(sid)
+            out += includes_of(sp, seen)
+    return out
+
+
+# also treat {{< catalog >}} body lines as block references (they name block ids)
+def catalog_ids(path):
+    out, inside = [], False
+    for line in PAGES[path]["body"].split("\n"):
+        s = line.strip()
+        if catalog_re.match(s):
+            inside = True
+            continue
+        if s.startswith("{{< /catalog"):
+            inside = False
+            continue
+        if inside and s:
+            out.append(re.sub(r"^-+\s+", "", s))
+    return out
+
+
+# ----------------------------------------------------------------- blocks ---
+prev = {}
+prev_path = os.path.join(REPO, "data/blocks.json")
+if os.path.exists(prev_path):
+    prev = {b["id"]: b for b in json.load(open(prev_path))}
+
+blocks = {}
+for path, P in PAGES.items():
+    bid = P["fm"].get("id")
+    if not bid:
+        continue
+    is_snip = path.startswith("content/snippets/")
+    b = {
+        "id": bid,
+        "title": P["fm"].get("title", ""),
+        "home": "snippet" if is_snip else "page",
+        "file": path,
+        "anchor": None,   # resolved below
+        "category": P["fm"].get("category", []),
+        "type": P["fm"].get("type", "rule"),
+        "tier": P["fm"].get("tier", "core"),
+        "tags": P["fm"].get("tags", []),
+        "reference": P["fm"].get("reference", "low"),
+        "flags": prev.get(bid, {}).get("flags", []),
+        "notes": prev.get(bid, {}).get("notes", ""),
+        "selectable": P["fm"].get("selectable", True),
+    }
+    for k in ("summary", "label", "variant_group", "excluded", "requires"):
+        if k in P["fm"]:
+            b[k] = P["fm"][k]
+    blocks[bid] = b
+
+# where each block is displayed (all host pages, in site order)
+for dp in sorted(DOCS):
+    for sid in includes_of(dp):
+        if sid in blocks:
+            blocks[sid].setdefault("pages", [])
+            if dp not in blocks[sid]["pages"]:
+                blocks[sid]["pages"].append(dp)
+for bid, b in blocks.items():
+    if b["home"] == "page":
+        b["pages"] = [b["file"]]
+    b.setdefault("pages", [])
+    b["source_page"] = b["pages"][0] if b["pages"] else None
+
+# anchor resolution:
+#  * details-wrapped block -> its own first heading (that heading IS the block title)
+#  * section block -> the host-page heading immediately above its include
+for bid, b in blocks.items():
+    hs = PAGES[b["file"]]["headings"]
+    if hs and hugo_anchor(b["title"]) == hs[0]["anchor"]:
+        b["anchor"] = hs[0]["anchor"]
+        continue
+    if b["home"] == "page":
+        b["anchor"] = hs[0]["anchor"] if hs else None
+        continue
+    if not b["pages"]:
+        b["anchor"] = hs[0]["anchor"] if hs else None
+        continue
+    host = b["pages"][0]
+    incs = [i for i in PAGES[host]["includes"]
+            if SNIPPETS.get("content" + norm_target(i["target"]) + ".md") == bid]
+    if not incs:
+        continue
+    line = incs[0]["line"]
+    above = [h for h in PAGES[host]["headings"] if h["line"] < line]
+    b["anchor"] = above[-1]["anchor"] if above else (hs[0]["anchor"] if hs else None)
+
+# ------------------------------------------------------- anchor resolution ---
+PAGE_BLOCK = {b["file"]: bid for bid, b in blocks.items() if b["home"] == "page"}
+ANCHORS = {}
+for dp in DOCS:
+    m = {}
+    for h in PAGES[dp]["headings"]:
+        m.setdefault(h["anchor"], PAGE_BLOCK.get(dp))
+    for sid in includes_of(dp):
+        for h in PAGES["content/snippets/" + sid + ".md"]["headings"]:
+            if m.get(h["anchor"]) is None:
+                m[h["anchor"]] = sid
+    # catalog-generated rows create anchors owned by the listed blocks
+    for cid in catalog_ids(dp):
+        if cid in blocks and blocks[cid]["anchor"]:
+            m.setdefault(blocks[cid]["anchor"], cid)
+    ANCHORS[dp] = m
+
+HOSTS = collections.defaultdict(list)
+for dp in DOCS:
+    for sid in includes_of(dp):
+        HOSTS[sid].append(dp)
+
+MENTION_PREFIX = ("http://", "https://", "mailto:", "/digitalcharactersheet",
+                  "/attributeconverter", "/planetnamegenerator", "/pdfs/", "/images/")
+MENTION_PAGES = {"/docs/downloads/", "/docs/roadmap/", "/docs/legal/",
+                 "/docs/contributors/", "/docs/appinstall/", "/docs/free-srd/", "/docs/"}
+FEATURE_NS = ("abilities/", "proficiencies/", "traits/")
+EQUIP_NS = ("generic-equipment/", "sci-fi-equipment/", "components/", "equipment/")
+
+# implicit dependencies: real rule couplings with no link in the prose.
+IMPLICIT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                       "implicit-edges.json")))
+
+
+def source_of(path):
+    if path.startswith("content/snippets/"):
+        return SNIPPETS.get(path)
+    return PAGE_BLOCK.get(path) or f"page:{url_for(path)}"
+
+
+edges = []
+for path, P in PAGES.items():
+    if path == "content/snippets/_index.md":
+        continue
+    src = source_of(path)
+    hosts = [path] if not path.startswith("content/snippets/") else HOSTS.get(SNIPPETS.get(path, ""), [])
+    for lk in P["links"]:
+        url = lk["url"]
+        e = {"source": src, "target": None, "type": "reference",
+             "url": url, "text": lk["text"], "file": path, "line": lk["line"]}
+        if url.startswith(MENTION_PREFIX):
+            e.update(target=f"external:{url}", type="mention")
+            edges.append(e)
+            continue
+        pathpart, frag = (url.split("#", 1) + [None])[:2] if "#" in url else (url, None)
+        tpage = None
+        if pathpart == "":
+            for hp in hosts:
+                if frag in ANCHORS.get(hp, {}):
+                    tgt = ANCHORS[hp][frag] or f"page:{url_for(hp)}#{frag}"
+                    e["target"] = tgt
+                    break
+            if e["target"] is None:
+                e.update(target=f"unresolved:{url}")
+                e["class"] = "broken-anchor"
+                edges.append(e)
+                continue
+        else:
+            if not pathpart.startswith("/"):
+                pathpart = (url_for(path) + pathpart) if not path.startswith("content/snippets/") else "/" + pathpart
+            if not pathpart.endswith("/"):
+                pathpart += "/"
+            if pathpart in MENTION_PAGES:
+                e.update(target=f"page:{pathpart}", type="mention")
+                edges.append(e)
+                continue
+            tpage = PAGE_BY_URL.get(pathpart)
+            if tpage is None:
+                e.update(target=f"unresolved:{url}")
+                e["class"] = "known-broken"
+                e["note"] = "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+                edges.append(e)
+                continue
+            if frag:
+                if frag not in ANCHORS[tpage]:
+                    e.update(target=f"unresolved:{url}")
+                    e["class"] = "broken-anchor"
+                    edges.append(e)
+                    continue
+                e["target"] = ANCHORS[tpage][frag] or f"page:{url_for(tpage)}#{frag}"
+            else:
+                e["target"] = PAGE_BLOCK.get(tpage, f"page:{url_for(tpage)}")
+        # ---- edge typing (rulings from the Phase 1 queues) ----
+        pair = (e["source"], e["target"])
+        raw_line = open(os.path.join(REPO, path)).read().split("\n")[lk["line"] - 1].strip()
+        if pair in (("traits/particularly-attractive", "traits/unremarkable"),
+                    ("traits/unremarkable", "traits/particularly-attractive")):
+            e.update(type="mention")
+            e["class"] = "exclusivity"
+            e["note"] = "ruled inert: gameplay-level exclusivity, no builder semantics"
+        elif (str(e["source"]).startswith(FEATURE_NS) and str(e["target"]).startswith(FEATURE_NS)
+              and raw_line.startswith("*") and not raw_line.startswith("**") and raw_line.endswith("*")):
+            e.update(type="dependency")
+            e["class"] = "prerequisite"
+        elif str(e["source"]).startswith(EQUIP_NS) and str(e["target"]).startswith("item-tags/"):
+            e["class"] = "tag-definition"
+        edges.append(e)
+    for inc in P["includes"]:
+        sid = SNIPPETS.get("content" + norm_target(inc["target"]) + ".md")
+        edges.append({"source": src, "target": sid or f"unresolved:{inc['target']}",
+                      "type": "include", "url": inc["target"], "text": None,
+                      "file": path, "line": inc["line"]})
+
+for ie in IMPLICIT:
+    edges.append({"source": ie["source"], "target": ie["target"], "type": "reference",
+                  "class": ie.get("class", "mechanism"), "url": None, "text": None,
+                  "file": None, "line": None, "note": ie.get("note", "")})
+
+# requires + reference rating
+for e in edges:
+    if e["type"] == "dependency" and e["source"] in blocks:
+        blocks[e["source"]].setdefault("requires", [])
+        if e["target"] not in blocks[e["source"]]["requires"]:
+            blocks[e["source"]]["requires"].append(e["target"])
+indeg = collections.Counter(e["target"] for e in edges
+                            if e["target"] in blocks and not str(e["source"]).startswith("page:"))
+for bid, b in blocks.items():
+    b["in_degree"] = indeg[bid]   # computed; `reference` stays the authored frontmatter value
+
+ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "category", "type",
+         "tier", "reference", "in_degree", "tags", "flags", "notes", "selectable",
+         "summary", "label", "requires", "variant_group", "excluded"]
+out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
+
+# ------------------------------------------------------------------ write ---
+def dump(o):
+    return json.dumps(o, indent=1, ensure_ascii=False)
+
+
+bp, ep = os.path.join(REPO, "data/blocks.json"), os.path.join(REPO, "data/edges.json")
+if "--check" in sys.argv:
+    stale = []
+    for p, new in ((bp, out_blocks), (ep, edges)):
+        cur = json.load(open(p)) if os.path.exists(p) else None
+        if cur != json.loads(dump(new)):
+            stale.append(os.path.basename(p))
+    if stale:
+        print(f"STALE: {', '.join(stale)} — run: python3 _discovery/tools/builddata.py")
+        sys.exit(1)
+    print(f"data/ is current ({len(out_blocks)} blocks, {len(edges)} edges)")
+    sys.exit(0)
+
+os.makedirs(os.path.join(REPO, "data"), exist_ok=True)
+open(bp, "w").write(dump(out_blocks) + "\n")
+open(ep, "w").write(dump(edges) + "\n")
+types = collections.Counter(e["type"] for e in edges)
+unres = [e for e in edges if str(e["target"]).startswith("unresolved:")]
+print(f"wrote data/blocks.json ({len(out_blocks)} blocks) and data/edges.json ({len(edges)} edges)")
+print(f"  edge types: {dict(types)}")
+print(f"  unresolved: {len(unres)}" + (f" -> {[e['url'] for e in unres]}" if unres else ""))

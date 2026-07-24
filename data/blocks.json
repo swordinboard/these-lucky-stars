@@ -5,6 +5,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/adaptive-luck.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "adaptive-luck",
   "category": [
    "core"
@@ -29,6 +32,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/agile-charge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "agile-charge",
   "category": [
    "core"
@@ -45,10 +51,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Charge no longer requires a straight line.",
   "requires": [
    "abilities/charge"
-  ],
-  "summary": "Charge no longer requires a straight line."
+  ]
  },
  {
   "id": "abilities/agile-dodge",
@@ -56,6 +62,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/agile-dodge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "agile-dodge",
   "category": [
    "core"
@@ -80,6 +89,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/bash.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "bash",
   "category": [
    "core"
@@ -96,10 +108,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Shove an opponent at the end of a charge.",
   "requires": [
    "abilities/charge"
-  ],
-  "summary": "Shove an opponent at the end of a charge."
+  ]
  },
  {
   "id": "abilities/battery-saboteur",
@@ -107,6 +119,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/battery-saboteur.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "battery-saboteur",
   "category": [
    "sci-fi"
@@ -123,10 +138,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Turn battery cores into explosives.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Turn battery cores into explosives."
+  ]
  },
  {
   "id": "abilities/battery-saver",
@@ -134,6 +149,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/battery-saver.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "battery-saver",
   "category": [
    "sci-fi"
@@ -158,6 +176,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/bolster.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "bolster",
   "category": [
    "core"
@@ -182,6 +203,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/bonus-luck.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "bonus-luck",
   "category": [
    "core"
@@ -206,6 +230,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/charge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "charge",
   "category": [
    "core"
@@ -230,6 +257,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/companion-bot.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "companion-bot",
   "category": [
    "sci-fi"
@@ -246,10 +276,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Designate a drone or robot as your companion.",
   "requires": [
    "proficiencies/general-robotics"
-  ],
-  "summary": "Designate a drone or robot as your companion."
+  ]
  },
  {
   "id": "abilities/controlled-suppressing-fire",
@@ -257,6 +287,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/controlled-suppressing-fire.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "controlled-suppressing-fire",
   "category": [
    "core"
@@ -273,11 +306,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Conserve ammo during suppressive fire.",
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ],
-  "summary": "Conserve ammo during suppressive fire."
+  ]
  },
  {
   "id": "abilities/coordinated-strike",
@@ -285,6 +318,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/coordinated-strike.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "coordinated-strike",
   "category": [
    "core"
@@ -301,7 +337,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Designate a target \u2014 the next ally to attack it gains advantage."
+  "summary": "Designate a target — the next ally to attack it gains advantage."
  },
  {
   "id": "abilities/danger-reflex",
@@ -309,6 +345,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/danger-reflex.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "danger-reflex",
   "category": [
    "core"
@@ -333,6 +372,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/dead-drop.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "dead-drop",
   "category": [
    "core"
@@ -349,10 +391,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Quickly hide a small object in a room or vehicle using your B&E kit.",
   "requires": [
    "proficiencies/b-e-kit"
-  ],
-  "summary": "Quickly hide a small object in a room or vehicle using your B&E kit."
+  ]
  },
  {
   "id": "abilities/defender",
@@ -360,6 +402,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/defender.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "defender",
   "category": [
    "core"
@@ -384,6 +429,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/dual-attack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "dual-attack",
   "category": [
    "core"
@@ -400,10 +448,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "ATK bonus when attacking with two weapons.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "ATK bonus when attacking with two weapons."
+  ]
  },
  {
   "id": "abilities/dual-defense",
@@ -411,6 +459,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/dual-defense.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "dual-defense",
   "category": [
    "core"
@@ -427,11 +478,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Gain DEF when wielding multiple melee weapons.",
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ],
-  "summary": "Gain DEF when wielding multiple melee weapons."
+  ]
  },
  {
   "id": "abilities/dual-strike",
@@ -439,6 +490,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/dual-strike.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "dual-strike",
   "category": [
    "core"
@@ -455,11 +509,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Increase damage die with dual attack.",
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ],
-  "summary": "Increase damage die with dual attack."
+  ]
  },
  {
   "id": "abilities/expert",
@@ -467,6 +521,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/expert.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "expert",
   "category": [
    "core"
@@ -483,11 +540,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Improve the Student bonus for a chosen topic.",
+  "label": "Expert [___]",
   "requires": [
    "abilities/student"
-  ],
-  "summary": "Improve the Student bonus for a chosen topic.",
-  "label": "Expert [___]"
+  ]
  },
  {
   "id": "abilities/extended-rage",
@@ -495,6 +552,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/extended-rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "extended-rage",
   "category": [
    "core"
@@ -511,10 +571,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Increase Rage duration by two rounds.",
   "requires": [
    "abilities/rage"
-  ],
-  "summary": "Increase Rage duration by two rounds."
+  ]
  },
  {
   "id": "abilities/extra-attack",
@@ -522,6 +582,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/extra-attack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "extra-attack",
   "category": [
    "core"
@@ -538,10 +601,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Make two standard attacks per round.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "Make two standard attacks per round."
+  ]
  },
  {
   "id": "abilities/fast-kit-trap",
@@ -549,6 +612,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/fast-kit-trap.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "fast-kit-trap",
   "category": [
    "core"
@@ -573,6 +639,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/fearless-rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "fearless-rage",
   "category": [
    "core"
@@ -589,10 +658,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Resisting fear while raging.",
   "requires": [
    "abilities/rage"
-  ],
-  "summary": "Resisting fear while raging."
+  ]
  },
  {
   "id": "abilities/field-medic",
@@ -600,6 +669,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/field-medic.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "field-medic",
   "category": [
    "core"
@@ -616,10 +688,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Use a med kit to stabilize or treat wounds as a 2 AP action.",
   "requires": [
    "proficiencies/medic-training"
-  ],
-  "summary": "Use a med kit to stabilize or treat wounds as a 2 AP action."
+  ]
  },
  {
   "id": "abilities/field-patch",
@@ -627,6 +699,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/field-patch.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "field-patch",
   "category": [
    "core"
@@ -643,10 +718,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Stabilize a dying ally without a med kit.",
   "requires": [
    "proficiencies/medic-training"
-  ],
-  "summary": "Stabilize a dying ally without a med kit."
+  ]
  },
  {
   "id": "abilities/focus-attack",
@@ -654,6 +729,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/focus-attack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "focus-attack",
   "category": [
    "core"
@@ -678,6 +756,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/focus-in.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "focus-in",
   "category": [
    "core"
@@ -702,6 +783,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/friend-in-need.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "friend-in-need",
   "category": [
    "core"
@@ -718,10 +802,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Sacrifice your DEF to protect an adjacent ally.",
   "requires": [
    "traits/tough"
-  ],
-  "summary": "Sacrifice your DEF to protect an adjacent ally."
+  ]
  },
  {
   "id": "abilities/friend-of-fortune",
@@ -729,6 +813,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/friend-of-fortune.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "friend-of-fortune",
   "category": [
    "core"
@@ -745,10 +832,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Allies near you may regain spent Luck.",
   "requires": [
    "traits/lucky"
-  ],
-  "summary": "Allies near you may regain spent Luck."
+  ]
  },
  {
   "id": "abilities/general-spectacle",
@@ -756,6 +843,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/general-spectacle.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "general-spectacle",
   "category": [
    "core"
@@ -780,6 +870,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/ghost-protocol.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "ghost-protocol",
   "category": [
    "sci-fi"
@@ -797,10 +890,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Remotely access a hacked system via linked comp jack.",
   "requires": [
    "proficiencies/comp-jack"
-  ],
-  "summary": "Remotely access a hacked system via linked comp jack."
+  ]
  },
  {
   "id": "abilities/improved-bash",
@@ -808,6 +901,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/improved-bash.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "improved-bash",
   "category": [
    "core"
@@ -824,11 +920,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Increased displacement and knockdown from Bash.",
   "requires": [
    "abilities/charge",
    "abilities/bash"
-  ],
-  "summary": "Increased displacement and knockdown from Bash."
+  ]
  },
  {
   "id": "abilities/improved-suppressing-fire",
@@ -836,6 +932,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/improved-suppressing-fire.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "improved-suppressing-fire",
   "category": [
    "core"
@@ -852,11 +951,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Increase WILL target or stress from suppression.",
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ],
-  "summary": "Increase WILL target or stress from suppression."
+  ]
  },
  {
   "id": "abilities/indomitable-rage",
@@ -864,6 +963,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/indomitable-rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "indomitable-rage",
   "category": [
    "core"
@@ -880,12 +982,12 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Immune to fear and distraction while raging.",
   "requires": [
    "traits/unshakable",
    "abilities/rage",
    "abilities/fearless-rage"
-  ],
-  "summary": "Immune to fear and distraction while raging."
+  ]
  },
  {
   "id": "abilities/just-grazed",
@@ -893,6 +995,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/just-grazed.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "just-grazed",
   "category": [
    "core"
@@ -909,10 +1014,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Negate a wound or condition from a ranged attack.",
   "requires": [
    "abilities/defender"
-  ],
-  "summary": "Negate a wound or condition from a ranged attack."
+  ]
  },
  {
   "id": "abilities/just-winded",
@@ -920,6 +1025,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/just-winded.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "just-winded",
   "category": [
    "core"
@@ -936,10 +1044,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Negate a wound or condition from a melee attack.",
   "requires": [
    "abilities/defender"
-  ],
-  "summary": "Negate a wound or condition from a melee attack."
+  ]
  },
  {
   "id": "abilities/kit-trap",
@@ -947,6 +1055,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/kit-trap.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "kit-trap",
   "category": [
    "core"
@@ -971,6 +1082,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/leaping-charge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "leaping-charge",
   "category": [
    "core"
@@ -987,11 +1101,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Charge can pass through difficult terrain.",
   "requires": [
    "abilities/charge",
    "abilities/agile-charge"
-  ],
-  "summary": "Charge can pass through difficult terrain."
+  ]
  },
  {
   "id": "abilities/leg-shot",
@@ -999,6 +1113,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/leg-shot.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "leg-shot",
   "category": [
    "core"
@@ -1015,10 +1132,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Ranged attack at minor disadvantage to apply Crippled on hit.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "Ranged attack at minor disadvantage to apply Crippled on hit."
+  ]
  },
  {
   "id": "abilities/line-of-fire",
@@ -1026,6 +1143,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/line-of-fire.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "line-of-fire",
   "category": [
    "core"
@@ -1042,11 +1162,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Change suppression area to a line.",
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ],
-  "summary": "Change suppression area to a line."
+  ]
  },
  {
   "id": "abilities/long-performance",
@@ -1054,6 +1174,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/long-performance.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "long-performance",
   "category": [
    "core"
@@ -1078,6 +1201,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/lucky-strike.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "lucky-strike",
   "category": [
    "core"
@@ -1102,6 +1228,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/martial-supremacy.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "martial-supremacy",
   "category": [
    "core"
@@ -1118,10 +1247,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Reroll a decision die during unarmed trip, disarm, or grapple.",
   "requires": [
    "proficiencies/martial-training"
-  ],
-  "summary": "Reroll a decision die during unarmed trip, disarm, or grapple."
+  ]
  },
  {
   "id": "abilities/medical-marvel",
@@ -1129,6 +1258,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/medical-marvel.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "medical-marvel",
   "category": [
    "core"
@@ -1153,6 +1285,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/momentum-dodge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "momentum-dodge",
   "category": [
    "core"
@@ -1169,11 +1304,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Swap spaces with your attacker using Agile Dodge.",
   "requires": [
    "proficiencies/martial-training",
    "abilities/agile-dodge"
-  ],
-  "summary": "Swap spaces with your attacker using Agile Dodge."
+  ]
  },
  {
   "id": "abilities/natural-gift",
@@ -1181,6 +1316,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/natural-gift.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "natural-gift",
   "category": [
    "core"
@@ -1206,6 +1344,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/opensaysame.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "opensaysame",
   "category": [
    "sci-fi"
@@ -1222,10 +1363,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Break a door panel to guarantee it opens or closes.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Break a door panel to guarantee it opens or closes."
+  ]
  },
  {
   "id": "abilities/oppressive-suppression",
@@ -1233,6 +1374,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/oppressive-suppression.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "oppressive-suppression",
   "category": [
    "core"
@@ -1249,11 +1393,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Expand suppression to six non-adjacent squares.",
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ],
-  "summary": "Expand suppression to six non-adjacent squares."
+  ]
  },
  {
   "id": "abilities/outburst",
@@ -1261,6 +1405,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/outburst.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "outburst",
   "category": [
    "core"
@@ -1285,6 +1432,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/overcharge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "overcharge",
   "category": [
    "sci-fi"
@@ -1301,10 +1451,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Push a battery weapon beyond rated output for bonus damage.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Push a battery weapon beyond rated output for bonus damage."
+  ]
  },
  {
   "id": "abilities/overview",
@@ -1312,6 +1462,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/overview.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "abilities",
   "category": [
    "core"
@@ -1334,6 +1487,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/patient-shot.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "patient-shot",
   "category": [
    "core"
@@ -1350,10 +1506,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Bonus damage and advantage if stationary and untargeted since last turn.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "Bonus damage and advantage if stationary and untargeted since last turn."
+  ]
  },
  {
   "id": "abilities/power-main-tap",
@@ -1361,6 +1517,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/power-main-tap.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "power-main-tap",
   "category": [
    "sci-fi"
@@ -1377,10 +1536,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Tap a large power source to rapidly recharge a battery.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Tap a large power source to rapidly recharge a battery."
+  ]
  },
  {
   "id": "abilities/powerful-rage",
@@ -1388,6 +1547,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/powerful-rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "powerful-rage",
   "category": [
    "core"
@@ -1404,10 +1566,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Spend two uses for +4 STR +4 FORT.",
   "requires": [
    "abilities/rage"
-  ],
-  "summary": "Spend two uses for +4 STR +4 FORT."
+  ]
  },
  {
   "id": "abilities/precise-focus",
@@ -1415,6 +1577,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/precise-focus.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "precise-focus",
   "category": [
    "core"
@@ -1431,11 +1596,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Triple normal range for Focus abilities.",
   "requires": [
    "abilities/focus-attack",
    "abilities/focus-in"
-  ],
-  "summary": "Triple normal range for Focus abilities."
+  ]
  },
  {
   "id": "abilities/quick-draw",
@@ -1443,6 +1608,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/quick-draw.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "quick-draw",
   "category": [
    "core"
@@ -1467,6 +1635,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/quick-firing.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "quick-firing",
   "category": [
    "core"
@@ -1483,10 +1654,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Use two semi-auto pistols for full-auto abilities.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "Use two semi-auto pistols for full-auto abilities."
+  ]
  },
  {
   "id": "abilities/rage",
@@ -1494,6 +1665,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "rage",
   "category": [
    "core"
@@ -1518,6 +1692,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/rally.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "rally",
   "category": [
    "core"
@@ -1542,6 +1719,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/reckless-attack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "reckless-attack",
   "category": [
    "core"
@@ -1566,6 +1746,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "rigged-comp-jack",
   "category": [
    "sci-fi"
@@ -1583,11 +1766,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Build a makeshift comp jack from tech kit supplies.",
   "requires": [
    "proficiencies/comp-jack",
    "proficiencies/general-technology"
-  ],
-  "summary": "Build a makeshift comp jack from tech kit supplies."
+  ]
  },
  {
   "id": "abilities/salvage",
@@ -1595,6 +1778,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/salvage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "salvage",
   "category": [
    "sci-fi"
@@ -1611,10 +1797,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Refill a supply die from mechanical wreckage.",
   "requires": [
    "proficiencies/repair-kit"
-  ],
-  "summary": "Refill a supply die from mechanical wreckage."
+  ]
  },
  {
   "id": "abilities/signal-intelligence",
@@ -1622,6 +1808,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/signal-intelligence.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "signal-intelligence",
   "category": [
    "sci-fi"
@@ -1639,10 +1828,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Intercept unencrypted communications with a comp jack.",
   "requires": [
    "proficiencies/comp-jack"
-  ],
-  "summary": "Intercept unencrypted communications with a comp jack."
+  ]
  },
  {
   "id": "abilities/slip-strike",
@@ -1650,6 +1839,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/slip-strike.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "slip-strike",
   "category": [
    "core"
@@ -1666,11 +1858,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Make a melee attack during Agile Dodge or Momentum Dodge movement.",
   "requires": [
    "proficiencies/martial-training",
    "abilities/agile-dodge"
-  ],
-  "summary": "Make a melee attack during Agile Dodge or Momentum Dodge movement."
+  ]
  },
  {
   "id": "abilities/special-encouragement",
@@ -1678,6 +1870,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/special-encouragement.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "special-encouragement",
   "category": [
    "sci-fi"
@@ -1694,11 +1889,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Quickly repair your companion for no supplies.",
   "requires": [
    "proficiencies/general-robotics",
    "abilities/companion-bot"
-  ],
-  "summary": "Quickly repair your companion for no supplies."
+  ]
  },
  {
   "id": "abilities/student",
@@ -1706,6 +1901,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/student.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "student",
   "category": [
    "core"
@@ -1731,6 +1929,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/suppressing-fire.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "suppressing-fire",
   "category": [
    "core"
@@ -1747,10 +1948,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Pin enemies in an area with automatic fire.",
   "requires": [
    "proficiencies/weapon"
-  ],
-  "summary": "Pin enemies in an area with automatic fire."
+  ]
  },
  {
   "id": "abilities/swift-custom-battery",
@@ -1758,6 +1959,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/swift-custom-battery.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "swift-custom-battery",
   "category": [
    "sci-fi"
@@ -1774,10 +1978,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Quickly install mismatched batteries.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Quickly install mismatched batteries."
+  ]
  },
  {
   "id": "abilities/swift-dual-attack",
@@ -1785,6 +1989,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/swift-dual-attack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "swift-dual-attack",
   "category": [
    "core"
@@ -1801,11 +2008,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Dual Attack ability costs 2 AP instead of 4.",
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ],
-  "summary": "Dual Attack ability costs 2 AP instead of 4."
+  ]
  },
  {
   "id": "abilities/tech-armor",
@@ -1813,6 +2020,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/tech-armor.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "tech-armor",
   "category": [
    "sci-fi"
@@ -1829,10 +2039,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Install and remove upgrades and components without risk of damage.",
   "requires": [
    "proficiencies/general-technology"
-  ],
-  "summary": "Install and remove upgrades and components without risk of damage."
+  ]
  },
  {
   "id": "abilities/the-look",
@@ -1840,6 +2050,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/the-look.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "the-look",
   "category": [
    "core"
@@ -1856,10 +2069,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Lock eyes to gain advantage on your next roll against them.",
   "requires": [
    "traits/particularly-attractive"
-  ],
-  "summary": "Lock eyes to gain advantage on your next roll against them."
+  ]
  },
  {
   "id": "abilities/tis-but-a-scratch",
@@ -1867,6 +2080,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "tis-but-a-scratch",
   "category": [
    "core"
@@ -1883,13 +2099,13 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Spend Luck to fully negate an attack.",
   "requires": [
    "traits/tough",
    "abilities/defender",
    "abilities/just-winded",
    "abilities/just-grazed"
-  ],
-  "summary": "Spend Luck to fully negate an attack."
+  ]
  },
  {
   "id": "abilities/true-defender",
@@ -1897,6 +2113,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/true-defender.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "true-defender",
   "category": [
    "core"
@@ -1913,12 +2132,12 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Use Defender on behalf of an ally.",
   "requires": [
    "traits/tough",
    "abilities/defender",
    "abilities/friend-in-need"
-  ],
-  "summary": "Use Defender on behalf of an ally."
+  ]
  },
  {
   "id": "abilities/unsettling-rage",
@@ -1926,6 +2145,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/unsettling-rage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "unsettling-rage",
   "category": [
    "core"
@@ -1942,12 +2164,12 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Intimidate a nearby opponent when activating Rage.",
   "requires": [
    "traits/intimidating",
    "abilities/rage",
    "abilities/powerful-rage"
-  ],
-  "summary": "Intimidate a nearby opponent when activating Rage."
+  ]
  },
  {
   "id": "abilities/vital-focus",
@@ -1955,6 +2177,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/vital-focus.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "vital-focus",
   "category": [
    "core"
@@ -1971,10 +2196,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Add Vital Strike dice to Focus Attack rolls.",
   "requires": [
    "abilities/vital-strike"
-  ],
-  "summary": "Add Vital Strike dice to Focus Attack rolls."
+  ]
  },
  {
   "id": "abilities/vital-strike",
@@ -1982,6 +2207,9 @@
   "home": "snippet",
   "file": "content/snippets/abilities/vital-strike.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
   "anchor": "vital-strike",
   "category": [
    "core"
@@ -2006,6 +2234,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/action-types.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "action-types",
   "category": [
    "core"
@@ -2027,6 +2258,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/difficult-terrain.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "difficult-terrain-and-obstacles",
   "category": [
    "core"
@@ -2047,8 +2281,12 @@
   "title": "Move",
   "home": "snippet",
   "file": "content/snippets/actions/move.md",
-  "source_page": "content/snippets/actions/move.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "movement-actions",
   "category": [
    "core"
   ],
@@ -2070,6 +2308,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/multi-turn-actions.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "multi-turn-actions",
   "category": [
    "core"
@@ -2091,6 +2332,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/opportunity-actions.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "opportunity-actions",
   "category": [
    "core"
@@ -2112,6 +2356,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/reactions.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "reactions",
   "category": [
    "core"
@@ -2133,6 +2380,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/readied-actions.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "readied-actions",
   "category": [
    "core"
@@ -2154,6 +2404,9 @@
   "home": "snippet",
   "file": "content/snippets/actions/standard-actions.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
   "anchor": "standard-actions",
   "category": [
    "core"
@@ -2174,8 +2427,12 @@
   "title": "Step",
   "home": "snippet",
   "file": "content/snippets/actions/step.md",
-  "source_page": "content/snippets/actions/step.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "movement-actions",
   "category": [
    "core"
   ],
@@ -2197,6 +2454,9 @@
   "home": "snippet",
   "file": "content/snippets/attributes/attribute-values.md",
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/attributes.md"
+  ],
   "anchor": "attribute-values",
   "category": [
    "core"
@@ -2218,6 +2478,9 @@
   "home": "snippet",
   "file": "content/snippets/attributes/determining-attributes.md",
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/attributes.md"
+  ],
   "anchor": "two-ways-to-determine-attributes",
   "category": [
    "core"
@@ -2239,6 +2502,9 @@
   "home": "snippet",
   "file": "content/snippets/attributes/mental-attributes.md",
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/attributes.md"
+  ],
   "anchor": "mental-attributes",
   "category": [
    "core"
@@ -2260,6 +2526,9 @@
   "home": "snippet",
   "file": "content/snippets/attributes/overview.md",
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/attributes.md"
+  ],
   "anchor": "attributes",
   "category": [
    "core"
@@ -2281,6 +2550,9 @@
   "home": "snippet",
   "file": "content/snippets/attributes/physical-attributes.md",
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/attributes.md"
+  ],
   "anchor": "physical-attributes",
   "category": [
    "core"
@@ -2302,6 +2574,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/advantage.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "advantage",
   "category": [
    "core"
@@ -2323,6 +2598,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/contested-rolls.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "contested-rolls",
   "category": [
    "core"
@@ -2344,6 +2622,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/d100-or-percentage.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "d100-or-percentage",
   "category": [
    "core"
@@ -2365,6 +2646,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/decision-rolls.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "decision-rolls---the-primary-mechanic",
   "category": [
    "core"
@@ -2386,6 +2670,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/key-terms.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "key-terms",
   "category": [
    "core"
@@ -2407,6 +2694,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/resolving-a-tie.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "resolving-a-tie",
   "category": [
    "core"
@@ -2428,6 +2718,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/success-and-failure.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "success-and-failure",
   "category": [
    "core"
@@ -2449,6 +2742,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/supply-rolls.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "supply-rolls",
   "category": [
    "core"
@@ -2470,6 +2766,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/target-numbers.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "target-numbers",
   "category": [
    "core"
@@ -2491,6 +2790,9 @@
   "home": "snippet",
   "file": "content/snippets/basics/the-rounding-rule.md",
   "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
   "anchor": "the-rounding-rule",
   "category": [
    "core"
@@ -2512,6 +2814,9 @@
   "home": "snippet",
   "file": "content/snippets/bots/automated-machines.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md"
+  ],
   "anchor": "bots--drones",
   "category": [
    "sci-fi"
@@ -2534,7 +2839,10 @@
   "home": "page",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md"
+  ],
+  "anchor": "bal",
   "category": [
    "sci-fi"
   ],
@@ -2557,7 +2865,10 @@
   "home": "page",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md"
+  ],
+  "anchor": "hel-1",
   "category": [
    "sci-fi"
   ],
@@ -2580,7 +2891,10 @@
   "home": "page",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md"
+  ],
+  "anchor": "t00l",
   "category": [
    "sci-fi"
   ],
@@ -2602,7 +2916,10 @@
   "home": "page",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md"
+  ],
+  "anchor": "trk-a",
   "category": [
    "sci-fi"
   ],
@@ -2624,7 +2941,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/character-creation-overview.md",
   "source_page": "content/docs/free-srd/character-creation/character-creation-overview.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/character-creation-overview.md"
+  ],
+  "anchor": "character-creation",
   "category": [
    "core"
   ],
@@ -2645,6 +2965,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/actions-in-combat.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "actions-in-combat",
   "category": [
    "core"
@@ -2666,6 +2989,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/attacking-and-defending.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "attacking-and-defending",
   "category": [
    "core"
@@ -2687,7 +3013,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/brace.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "defensive-actions",
   "category": [
    "core"
   ],
@@ -2710,6 +3039,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/combat-basics.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "combat-basics",
   "category": [
    "core"
@@ -2731,6 +3063,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/cover.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "cover",
   "category": [
    "core"
@@ -2752,6 +3087,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/damage.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "damage",
   "category": [
    "core"
@@ -2772,7 +3110,11 @@
   "title": "Damage Dice",
   "home": "snippet",
   "file": "content/snippets/combat/damage-dice.md",
-  "source_page": "content/snippets/combat/damage-dice.md",
+  "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md",
+   "content/docs/free-srd/core-rules/size.md"
+  ],
   "anchor": null,
   "category": [
    "core"
@@ -2795,6 +3137,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/damage-resistance.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "damage-resistance-and-weakness",
   "category": [
    "core"
@@ -2816,6 +3161,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/damage-sources.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "damage-sources",
   "category": [
    "core"
@@ -2837,7 +3185,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/disarm.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -2860,7 +3211,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/draw-a-weapon.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -2882,8 +3236,12 @@
   "title": "Grapple",
   "home": "snippet",
   "file": "content/snippets/combat/grapple.md",
-  "source_page": "content/snippets/combat/grapple.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -2904,8 +3262,12 @@
   "title": "Initiative",
   "home": "snippet",
   "file": "content/snippets/combat/initiative.md",
-  "source_page": "content/snippets/combat/initiative.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "initiative",
   "category": [
    "core"
   ],
@@ -2926,8 +3288,12 @@
   "title": "Opportunity Attack",
   "home": "snippet",
   "file": "content/snippets/combat/opportunity-attack.md",
-  "source_page": "content/snippets/combat/opportunity-attack.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "opportunity-attack",
   "category": [
    "core"
   ],
@@ -2949,7 +3315,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/shatter.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -2972,7 +3341,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/stand.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -2995,7 +3367,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/standard-attack.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -3017,8 +3392,12 @@
   "title": "Stealth",
   "home": "snippet",
   "file": "content/snippets/combat/stealth.md",
-  "source_page": "content/snippets/combat/stealth.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "defensive-actions",
   "category": [
    "core"
   ],
@@ -3040,6 +3419,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/steps-to-an-attack.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "steps-to-an-attack",
   "category": [
    "core"
@@ -3061,6 +3443,9 @@
   "home": "snippet",
   "file": "content/snippets/combat/surprise-attacks.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
   "anchor": "surprise-attacks",
   "category": [
    "core"
@@ -3082,7 +3467,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/trip.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -3105,7 +3493,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/unarmed-attack.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "aggressive-actions",
   "category": [
    "core"
   ],
@@ -3128,7 +3519,10 @@
   "home": "snippet",
   "file": "content/snippets/combat/use-cover.md",
   "source_page": "content/docs/free-srd/core-rules/combat.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "anchor": "defensive-actions",
   "category": [
    "core"
   ],
@@ -3151,6 +3545,9 @@
   "home": "snippet",
   "file": "content/snippets/components/audio-processor.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "audio-processor",
   "category": [
    "sci-fi"
@@ -3175,6 +3572,9 @@
   "home": "snippet",
   "file": "content/snippets/components/augmented-arm-actuators.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "augmented-arm-actuators",
   "category": [
    "sci-fi"
@@ -3199,6 +3599,9 @@
   "home": "snippet",
   "file": "content/snippets/components/automatic-crash-foam-system.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "automatic-crash-foam-system",
   "category": [
    "sci-fi"
@@ -3223,6 +3626,9 @@
   "home": "snippet",
   "file": "content/snippets/components/backup-power-cell.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "backup-power-cell",
   "category": [
    "sci-fi"
@@ -3247,6 +3653,9 @@
   "home": "snippet",
   "file": "content/snippets/components/damage-and-wounds.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "damage-and-wounds",
   "category": [
    "sci-fi"
@@ -3269,6 +3678,9 @@
   "home": "snippet",
   "file": "content/snippets/components/heavy-wrist-laser.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "heavy-wrist-laser",
   "category": [
    "sci-fi"
@@ -3293,6 +3705,9 @@
   "home": "snippet",
   "file": "content/snippets/components/improved-cooling-system.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "improved-cooling-system",
   "category": [
    "sci-fi"
@@ -3317,6 +3732,9 @@
   "home": "snippet",
   "file": "content/snippets/components/installation.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "installation",
   "category": [
    "sci-fi"
@@ -3339,6 +3757,9 @@
   "home": "snippet",
   "file": "content/snippets/components/internal-comp-jack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "internal-comp-jack",
   "category": [
    "sci-fi"
@@ -3364,6 +3785,9 @@
   "home": "snippet",
   "file": "content/snippets/components/manipulator-override.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "manipulator-override",
   "category": [
    "sci-fi"
@@ -3388,6 +3812,9 @@
   "home": "snippet",
   "file": "content/snippets/components/optical-suite.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "optical-suite",
   "category": [
    "sci-fi"
@@ -3412,6 +3839,9 @@
   "home": "snippet",
   "file": "content/snippets/components/overview.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "components",
   "category": [
    "sci-fi"
@@ -3434,6 +3864,9 @@
   "home": "snippet",
   "file": "content/snippets/components/power-sources.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "power-sources-and-batteries",
   "category": [
    "sci-fi"
@@ -3456,6 +3889,9 @@
   "home": "snippet",
   "file": "content/snippets/components/reinforced-chassis-plating.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "reinforced-chassis-plating",
   "category": [
    "sci-fi"
@@ -3480,6 +3916,9 @@
   "home": "snippet",
   "file": "content/snippets/components/relay-node.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "relay-node",
   "category": [
    "sci-fi"
@@ -3504,6 +3943,9 @@
   "home": "snippet",
   "file": "content/snippets/components/repair-subroutine.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "repair-subroutine",
   "category": [
    "sci-fi"
@@ -3528,6 +3970,9 @@
   "home": "snippet",
   "file": "content/snippets/components/servo-boost-legs.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "servo-boost-legs",
   "category": [
    "sci-fi"
@@ -3552,6 +3997,9 @@
   "home": "snippet",
   "file": "content/snippets/components/shield-mount.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "shield-mount",
   "category": [
    "sci-fi"
@@ -3576,6 +4024,9 @@
   "home": "snippet",
   "file": "content/snippets/components/signal-mast-heavy.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "signal-mast-heavy",
   "category": [
    "sci-fi"
@@ -3602,6 +4053,9 @@
   "home": "snippet",
   "file": "content/snippets/components/signal-mast-retractable.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "signal-mast-retractable",
   "category": [
    "sci-fi"
@@ -3628,6 +4082,9 @@
   "home": "snippet",
   "file": "content/snippets/components/stabilizer-gyros.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "stabilizer-gyros",
   "category": [
    "sci-fi"
@@ -3652,6 +4109,9 @@
   "home": "snippet",
   "file": "content/snippets/components/subdermal-plating.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "subdermal-plating",
   "category": [
    "sci-fi"
@@ -3676,6 +4136,9 @@
   "home": "snippet",
   "file": "content/snippets/components/targeting-array.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "targeting-array",
   "category": [
    "sci-fi"
@@ -3700,6 +4163,9 @@
   "home": "snippet",
   "file": "content/snippets/components/wrist-laser.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
   "anchor": "wrist-laser",
   "category": [
    "sci-fi"
@@ -3724,6 +4190,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/asphyxiating.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "asphyxiating",
   "category": [
    "core"
@@ -3738,7 +4207,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "FORT checks each turn or fall unconscious \u2014 1 VIT/round if unconscious"
+  "summary": "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious"
  },
  {
   "id": "conditions/bleeding",
@@ -3746,6 +4215,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/bleeding.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "bleeding",
   "category": [
    "core"
@@ -3760,7 +4232,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Blood die at end of turn \u2014 3 or lower deals 1 VIT, die shrinks"
+  "summary": "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks"
  },
  {
   "id": "conditions/confused",
@@ -3768,6 +4240,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/confused.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "confused",
   "category": [
    "core"
@@ -3790,6 +4265,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/crippled.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "crippled",
   "category": [
    "core"
@@ -3812,8 +4290,11 @@
   "title": "Dead Battery",
   "home": "snippet",
   "file": "content/snippets/conditions/dead-battery.md",
-  "source_page": "content/snippets/conditions/dead-battery.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/character-creation/races/android.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/races/android.md"
+  ],
+  "anchor": "dead-battery",
   "category": [
    "sci-fi"
   ],
@@ -3836,6 +4317,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/dying.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "dying",
   "category": [
    "core"
@@ -3851,7 +4335,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "FORT check each turn (starts at 3, +1/round) \u2014 failure or damage means death"
+  "summary": "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
  },
  {
   "id": "conditions/fatigued",
@@ -3859,6 +4343,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/fatigued.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "fatigued",
   "category": [
    "core"
@@ -3882,6 +4369,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/frightened.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "frightened",
   "category": [
    "core"
@@ -3904,6 +4394,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/immobilized.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "immobilized",
   "category": [
    "core"
@@ -3919,7 +4412,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Cannot take physical actions \u2014 DEX and AGI treated as null"
+  "summary": "Cannot take physical actions — DEX and AGI treated as null"
  },
  {
   "id": "conditions/overview",
@@ -3927,6 +4420,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/overview.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "conditions",
   "category": [
    "core"
@@ -3946,6 +4442,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/pinned.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "pinned",
   "category": [
    "core"
@@ -3968,6 +4467,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/prone.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "prone",
   "category": [
    "core"
@@ -3983,7 +4485,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Half speed, disadvantage on melee attacks \u2014 adjacent attackers gain minor advantage"
+  "summary": "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
  },
  {
   "id": "conditions/restrained",
@@ -3991,7 +4493,10 @@
   "home": "snippet",
   "file": "content/snippets/conditions/restrained.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "anchor": "restrained-",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "anchor": "restrained-___",
   "category": [
    "core"
   ],
@@ -4006,7 +4511,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Physical actions limited \u2014 affected limb unusable"
+  "summary": "Physical actions limited — affected limb unusable"
  },
  {
   "id": "conditions/shaken",
@@ -4014,6 +4519,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/shaken.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "shaken",
   "category": [
    "core"
@@ -4036,6 +4544,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/sick.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "sick",
   "category": [
    "core"
@@ -4059,6 +4570,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/stressed.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "stressed",
   "category": [
    "core"
@@ -4081,6 +4595,9 @@
   "home": "snippet",
   "file": "content/snippets/conditions/unconscious.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "unconscious",
   "category": [
    "core"
@@ -4096,7 +4613,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Cannot take any actions \u2014 attackers gain advantage and surprise"
+  "summary": "Cannot take any actions — attackers gain advantage and surprise"
  },
  {
   "id": "core-rules/size",
@@ -4104,7 +4621,10 @@
   "home": "page",
   "file": "content/docs/free-srd/core-rules/size.md",
   "source_page": "content/docs/free-srd/core-rules/size.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "anchor": "size",
   "category": [
    "core"
   ],
@@ -4127,6 +4647,9 @@
   "home": "snippet",
   "file": "content/snippets/environment/environmental-effects.md",
   "source_page": "content/docs/free-srd/core-rules/environmental-effects.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/environmental-effects.md"
+  ],
   "anchor": "environmental-effects",
   "category": [
    "core"
@@ -4147,8 +4670,12 @@
   "title": "Extreme Environments",
   "home": "snippet",
   "file": "content/snippets/environment/extreme-environments.md",
-  "source_page": "content/snippets/environment/extreme-environments.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/environmental-effects.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/environmental-effects.md",
+   "content/docs/free-srd/core-rules/sci-fi-additions.md"
+  ],
+  "anchor": "extreme-environments",
   "category": [
    "sci-fi"
   ],
@@ -4169,8 +4696,11 @@
   "title": "Armor Basics",
   "home": "snippet",
   "file": "content/snippets/equipment/armor-basics.md",
-  "source_page": "content/snippets/equipment/armor-basics.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "anchor": "sci-fi-armor",
   "category": [
    "core"
   ],
@@ -4192,6 +4722,9 @@
   "home": "snippet",
   "file": "content/snippets/equipment/common-terms.md",
   "source_page": "content/docs/free-srd/inventory--equipment/equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/equipment.md"
+  ],
   "anchor": "common-equipment-terms",
   "category": [
    "core"
@@ -4212,7 +4745,10 @@
   "title": "Medkit Note",
   "home": "snippet",
   "file": "content/snippets/equipment/medkit-note.md",
-  "source_page": "content/snippets/equipment/medkit-note.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": null,
   "category": [
    "core"
@@ -4234,8 +4770,11 @@
   "title": "Shields Basics",
   "home": "snippet",
   "file": "content/snippets/equipment/shields-basics.md",
-  "source_page": "content/snippets/equipment/shields-basics.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "anchor": "shields",
   "category": [
    "core"
   ],
@@ -4257,6 +4796,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/animal-feed.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "animal-feed-1-day",
   "category": [
    "core"
@@ -4281,6 +4823,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/antiseptic-poultice.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "antiseptic-poultice",
   "category": [
    "core"
@@ -4305,6 +4850,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/antitoxin.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "antitoxin",
   "category": [
    "core"
@@ -4329,6 +4877,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/backpack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "backpack",
   "category": [
    "core"
@@ -4353,6 +4904,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/bag-of-salt.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "bag-of-salt",
   "category": [
    "core"
@@ -4377,6 +4931,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/bandages-large.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "bandages-large",
   "category": [
    "core"
@@ -4403,6 +4960,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/bandages-small.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "bandages-small",
   "category": [
    "core"
@@ -4429,6 +4989,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/barrel.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "barrel",
   "category": [
    "core"
@@ -4453,6 +5016,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/bedroll.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "bedroll",
   "category": [
    "core"
@@ -4477,6 +5043,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/blank-book-journal.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "blank-book--journal",
   "category": [
    "core"
@@ -4501,6 +5070,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/block-of-soap.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "block-of-soap",
   "category": [
    "core"
@@ -4525,6 +5097,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/candle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "candle",
   "category": [
    "core"
@@ -4549,6 +5124,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/candle-wax-block.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "candle-wax-block",
   "category": [
    "core"
@@ -4573,6 +5151,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/chain-10ft.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "chain-10ft",
   "category": [
    "core"
@@ -4597,6 +5178,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/chalk-sticks.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "chalk--charcoal-sticks",
   "category": [
    "core"
@@ -4621,6 +5205,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/coil-of-wire.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "coil-of-wire",
   "category": [
    "core"
@@ -4645,6 +5232,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/common-alcohol-flask.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "common-alcohol-flask",
   "category": [
    "core"
@@ -4669,6 +5259,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/compass.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "compass--navigational-tool",
   "category": [
    "core"
@@ -4694,6 +5287,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/crate.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "crate",
   "category": [
    "core"
@@ -4718,6 +5314,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/dry-sack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "dry-sack",
   "category": [
    "core"
@@ -4742,6 +5341,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/face-wrap.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "face-wrap",
   "category": [
    "core"
@@ -4766,6 +5368,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/field-ration.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "field-ration",
   "category": [
    "core"
@@ -4782,8 +5387,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "variant_group": "field-ration",
-  "summary": "One day of food for one person."
+  "summary": "One day of food for one person.",
+  "variant_group": "field-ration"
  },
  {
   "id": "generic-equipment/fire-starter",
@@ -4791,6 +5396,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/fire-starter.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "fire-starter",
   "category": [
    "core"
@@ -4815,6 +5423,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/fuel-oil-flask.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "fuel--oil-flask",
   "category": [
    "core"
@@ -4839,6 +5450,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/grappling-hook.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "grappling-hook",
   "category": [
    "core"
@@ -4863,6 +5477,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/heavy-cloak.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "heavy-cloak",
   "category": [
    "core"
@@ -4887,6 +5504,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/ink-writing-instrument.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "ink--writing-instrument",
   "category": [
    "core"
@@ -4911,6 +5531,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/iron-spikes.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "iron-spikes-10",
   "category": [
    "core"
@@ -4935,6 +5558,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/lockable-chest.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "chest-lockable",
   "category": [
    "core"
@@ -4959,6 +5585,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/long-crowbar.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "long-crowbar",
   "category": [
    "core"
@@ -4983,6 +5612,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/manacles.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "manacles--restraints",
   "category": [
    "core"
@@ -5007,6 +5639,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/oil-lantern.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "oil-lantern",
   "category": [
    "core"
@@ -5031,6 +5666,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/parchment-sheets.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "parchment--paper-sheets-5",
   "category": [
    "core"
@@ -5055,6 +5693,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/pitons.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "pitons--climbing-spikes-6",
   "category": [
    "core"
@@ -5079,6 +5720,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/pouch-set-ammo.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "pouch-set-ammo",
   "category": [
    "core"
@@ -5105,6 +5749,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/pouch-set-small.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "pouch-set-small",
   "category": [
    "core"
@@ -5131,6 +5778,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/pouch-set-standard.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "pouch-set-standard",
   "category": [
    "core"
@@ -5158,6 +5808,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/quiver.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "quiver--bolt-case",
   "category": [
    "core"
@@ -5182,6 +5835,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/rain-poncho.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "rain-poncho",
   "category": [
    "core"
@@ -5206,6 +5862,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/reinforced-boots.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "reinforced-boots",
   "category": [
    "core"
@@ -5230,6 +5889,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/restorative-tonic.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "restorative-tonic",
   "category": [
    "core"
@@ -5254,6 +5916,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/rope-50ft.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "rope-50ft",
   "category": [
    "core"
@@ -5278,6 +5943,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/saddlebags.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "saddlebags",
   "category": [
    "core"
@@ -5302,6 +5970,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/satchel.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "satchel",
   "category": [
    "core"
@@ -5326,6 +5997,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/sewing-set.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "sewing-set",
   "category": [
    "core"
@@ -5350,6 +6024,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/shovel.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "shovel",
   "category": [
    "core"
@@ -5374,6 +6051,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/signal-mirror.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "signal-mirror",
   "category": [
    "core"
@@ -5398,6 +6078,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/signal-whistle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "signal-whistle",
   "category": [
    "core"
@@ -5422,6 +6105,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/small-bell.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "small-bell",
   "category": [
    "core"
@@ -5446,6 +6132,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/splint-materials.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "splint-materials",
   "category": [
    "core"
@@ -5470,6 +6159,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/tent-2-person.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "tent-2-person",
   "category": [
    "core"
@@ -5494,6 +6186,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/tent-4-person.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "tent-4-person",
   "category": [
    "core"
@@ -5518,6 +6213,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/torch.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "torch",
   "category": [
    "core"
@@ -5542,6 +6240,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/twine.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "ball-of-twine--string",
   "category": [
    "core"
@@ -5566,6 +6267,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/waterskin.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "waterskin--canteen",
   "category": [
    "core"
@@ -5590,6 +6294,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/whetstone.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "whetstone",
   "category": [
    "core"
@@ -5614,6 +6321,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/wide-brim-hat.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "wide-brim-hat",
   "category": [
    "core"
@@ -5638,6 +6348,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/wooden-stakes.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "wooden-stakes-6",
   "category": [
    "core"
@@ -5662,6 +6375,9 @@
   "home": "snippet",
   "file": "content/snippets/generic-equipment/work-gloves.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
   "anchor": "work-gloves",
   "category": [
    "core"
@@ -5685,8 +6401,12 @@
   "title": "Applying Damage",
   "home": "snippet",
   "file": "content/snippets/health/applying-damage.md",
-  "source_page": "content/snippets/health/applying-damage.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/combat.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/combat.md",
+   "content/docs/free-srd/core-rules/health.md"
+  ],
+  "anchor": "applying-damage",
   "category": [
    "core"
   ],
@@ -5709,6 +6429,9 @@
   "home": "snippet",
   "file": "content/snippets/health/overview.md",
   "source_page": "content/docs/free-srd/core-rules/health.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/health.md"
+  ],
   "anchor": "health",
   "category": [
    "core"
@@ -5730,6 +6453,9 @@
   "home": "snippet",
   "file": "content/snippets/inventory/body-slots.md",
   "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/inventory.md"
+  ],
   "anchor": "equipment-body-slots",
   "category": [
    "core"
@@ -5751,6 +6477,9 @@
   "home": "snippet",
   "file": "content/snippets/inventory/carry-limits.md",
   "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/inventory.md"
+  ],
   "anchor": "inventory-management",
   "category": [
    "core"
@@ -5772,6 +6501,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/adaptive-mesh.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "adaptive-mesh",
   "category": [
    "core"
@@ -5793,6 +6525,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/arcing.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "arcing",
   "category": [
    "core"
@@ -5814,6 +6549,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/ballistic.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "ballistic",
   "category": [
    "core"
@@ -5835,6 +6573,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/battery.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "battery",
   "category": [
    "core"
@@ -5856,6 +6597,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/belt-fed.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "belt-fed",
   "category": [
    "core"
@@ -5877,6 +6621,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/bulky.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "bulky",
   "category": [
    "core"
@@ -5898,6 +6645,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/concealable.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "concealable",
   "category": [
    "core"
@@ -5919,6 +6669,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/durable.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "durable",
   "category": [
    "core"
@@ -5940,6 +6693,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/firing-modes.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "firing-modes",
   "category": [
    "core"
@@ -5961,6 +6717,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/fragile.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "fragile",
   "category": [
    "core"
@@ -5982,6 +6741,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/fuel-cells.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "fuel-cell",
   "category": [
    "core"
@@ -6003,6 +6765,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/injector.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "injector",
   "category": [
    "core"
@@ -6024,6 +6789,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/long-reload.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "long-reload",
   "category": [
    "core"
@@ -6045,6 +6813,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/power-source.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "power-source",
   "category": [
    "core"
@@ -6066,6 +6837,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/pressurized.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "pressurized",
   "category": [
    "core"
@@ -6087,6 +6861,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/rounds-reload.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "rounds-reload",
   "category": [
    "core"
@@ -6108,6 +6885,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/space-suit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "space-suit",
   "category": [
    "core"
@@ -6129,6 +6909,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/throwable.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "throwable",
   "category": [
    "core"
@@ -6150,6 +6933,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/two-handed.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "two-handed",
   "category": [
    "core"
@@ -6171,6 +6957,9 @@
   "home": "snippet",
   "file": "content/snippets/item-tags/versatile.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
   "anchor": "versatile",
   "category": [
    "core"
@@ -6191,8 +6980,12 @@
   "title": "Primary Speed",
   "home": "snippet",
   "file": "content/snippets/movement/primary-speed.md",
-  "source_page": "content/snippets/movement/primary-speed.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "speed",
   "category": [
    "core"
   ],
@@ -6213,8 +7006,13 @@
   "title": "Speed Descriptors",
   "home": "snippet",
   "file": "content/snippets/movement/speed-descriptors.md",
-  "source_page": "content/snippets/movement/speed-descriptors.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/stats.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "anchor": "speed-descriptors",
   "category": [
    "core"
   ],
@@ -6234,8 +7032,13 @@
   "title": "Speed Tiers",
   "home": "snippet",
   "file": "content/snippets/movement/speed-tiers.md",
-  "source_page": "content/snippets/movement/speed-tiers.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/stats.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "anchor": "speed-tiers",
   "category": [
    "core"
   ],
@@ -6255,8 +7058,13 @@
   "title": "Speed Tiers Chart",
   "home": "snippet",
   "file": "content/snippets/movement/speed-tiers-chart.md",
-  "source_page": "content/snippets/movement/speed-tiers-chart.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/stats.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "anchor": "speed-tiers",
   "category": [
    "core"
   ],
@@ -6276,8 +7084,12 @@
   "title": "Armor Degradation",
   "home": "snippet",
   "file": "content/snippets/objects/armor-degradation.md",
-  "source_page": "content/snippets/objects/armor-degradation.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "anchor": "armor",
   "category": [
    "core"
   ],
@@ -6299,6 +7111,9 @@
   "home": "snippet",
   "file": "content/snippets/objects/conditions.md",
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
   "anchor": "object-conditions",
   "category": [
    "core"
@@ -6320,6 +7135,9 @@
   "home": "snippet",
   "file": "content/snippets/objects/durability.md",
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
   "anchor": "object-durability",
   "category": [
    "core"
@@ -6341,6 +7159,9 @@
   "home": "snippet",
   "file": "content/snippets/objects/material-def.md",
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
   "anchor": "material-def",
   "category": [
    "core"
@@ -6362,6 +7183,9 @@
   "home": "snippet",
   "file": "content/snippets/objects/overview.md",
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
   "anchor": "damaged--broken-gear",
   "category": [
    "core"
@@ -6382,8 +7206,12 @@
   "title": "Shield Degradation",
   "home": "snippet",
   "file": "content/snippets/objects/shield-degradation.md",
-  "source_page": "content/snippets/objects/shield-degradation.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "anchor": "shields",
   "category": [
    "core"
   ],
@@ -6405,6 +7233,9 @@
   "home": "snippet",
   "file": "content/snippets/objects/targeting-objects.md",
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
   "anchor": "targeting-objects",
   "category": [
    "core"
@@ -6426,6 +7257,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/armor.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "armor",
   "category": [
    "core"
@@ -6450,6 +7284,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/b-e-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "be-kit",
   "category": [
    "core"
@@ -6473,6 +7310,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "comp-jack",
   "category": [
    "sci-fi"
@@ -6497,6 +7337,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/disguise-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "disguise-kit",
   "category": [
    "core"
@@ -6520,6 +7363,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/general-robotics.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "general-robotics",
   "category": [
    "sci-fi"
@@ -6543,6 +7389,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/general-technology.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "general-technology",
   "category": [
    "sci-fi"
@@ -6566,6 +7415,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/improved-ability.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "improved-ability",
   "category": [
    "core"
@@ -6590,6 +7442,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/licensed-instincts.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "licensed-instincts",
   "category": [
    "core"
@@ -6605,11 +7460,11 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Add INS bonus to Vehicle Proficiency rolls.",
+  "label": "Licensed Instincts [___]",
   "requires": [
    "proficiencies/vehicle"
-  ],
-  "summary": "Add INS bonus to Vehicle Proficiency rolls.",
-  "label": "Licensed Instincts [___]"
+  ]
  },
  {
   "id": "proficiencies/martial-training",
@@ -6617,6 +7472,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/martial-training.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "martial-training",
   "category": [
    "core"
@@ -6640,6 +7498,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/medic-training.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "medic-training",
   "category": [
    "core"
@@ -6663,6 +7524,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/medical-instincts.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "medical-instincts",
   "category": [
    "core"
@@ -6678,10 +7542,10 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "summary": "Add INS to Medic Training rolls.",
   "requires": [
    "proficiencies/medic-training"
-  ],
-  "summary": "Add INS to Medic Training rolls."
+  ]
  },
  {
   "id": "proficiencies/negotiation-training",
@@ -6689,6 +7553,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/negotiation-training.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "negotiation-training",
   "category": [
    "core"
@@ -6712,6 +7579,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/overview.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "proficiencies",
   "category": [
    "core"
@@ -6734,6 +7604,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/repair-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "repair-kit",
   "category": [
    "core"
@@ -6757,6 +7630,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/research.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "research",
   "category": [
    "core"
@@ -6781,6 +7657,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/survival-training.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "survival-training",
   "category": [
    "core"
@@ -6804,6 +7683,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/vehicle.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "vehicle",
   "category": [
    "core"
@@ -6828,6 +7710,9 @@
   "home": "snippet",
   "file": "content/snippets/proficiencies/weapon.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
   "anchor": "weapon",
   "category": [
    "core"
@@ -6852,7 +7737,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "source_page": "content/docs/free-srd/character-creation/races/android.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/android.md"
+  ],
+  "anchor": "android",
   "category": [
    "sci-fi"
   ],
@@ -6875,7 +7763,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/classic-human.md",
   "source_page": "content/docs/free-srd/character-creation/races/classic-human.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/classic-human.md"
+  ],
+  "anchor": "classic-human",
   "category": [
    "core"
   ],
@@ -6897,7 +7788,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
   "source_page": "content/docs/free-srd/character-creation/races/_index.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/_index.md"
+  ],
+  "anchor": "races",
   "category": [
    "core"
   ],
@@ -6919,7 +7813,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/reptilian.md",
   "source_page": "content/docs/free-srd/character-creation/races/reptilian.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/reptilian.md"
+  ],
+  "anchor": "reptilian",
   "category": [
    "sci-fi"
   ],
@@ -6942,7 +7839,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/star-touched-human.md",
   "source_page": "content/docs/free-srd/character-creation/races/star-touched-human.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/star-touched-human.md"
+  ],
+  "anchor": "star-touched-human",
   "category": [
    "sci-fi"
   ],
@@ -6965,7 +7865,10 @@
   "home": "page",
   "file": "content/docs/free-srd/character-creation/races/zeta-grey.md",
   "source_page": "content/docs/free-srd/character-creation/races/zeta-grey.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/free-srd/character-creation/races/zeta-grey.md"
+  ],
+  "anchor": "zeta-grey",
   "category": [
    "sci-fi"
   ],
@@ -6988,6 +7891,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/ara-5.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "analgesic-radiation-antidote-5-ara-5",
   "category": [
    "sci-fi"
@@ -7013,6 +7919,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/auto-injector.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "auto-injector",
   "category": [
    "sci-fi"
@@ -7038,6 +7947,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/auto-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "auto-pistol",
   "category": [
    "sci-fi"
@@ -7064,6 +7976,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/b-e-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "be-kit",
   "category": [
    "sci-fi"
@@ -7071,7 +7986,7 @@
   "type": "equipment",
   "tier": "module",
   "reference": "low",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "equipment",
    "sci-fi",
@@ -7088,6 +8003,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/ballistic-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "ballistic-shield",
   "category": [
    "sci-fi"
@@ -7112,6 +8030,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/basic-p-suit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "basic-p-suit",
   "category": [
    "sci-fi"
@@ -7137,6 +8058,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/battery-cores.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "standardized-battery-cores",
   "category": [
    "sci-fi"
@@ -7161,6 +8085,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/bio-scanner.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "bio-scanner",
   "category": [
    "sci-fi"
@@ -7185,6 +8112,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/bioskin-veil.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "bioskin-veil",
   "category": [
    "sci-fi"
@@ -7209,6 +8139,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/bipod.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "bipod",
   "category": [
    "sci-fi"
@@ -7234,6 +8167,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/boost-pack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "boost-pack",
   "category": [
    "sci-fi"
@@ -7258,6 +8194,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/chameleon-unit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "chameleon-unit",
   "category": [
    "sci-fi"
@@ -7283,6 +8222,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/classic-evosuit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "classic-evosuit",
   "category": [
    "sci-fi"
@@ -7308,6 +8250,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/collapsible-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "collapsible-shield",
   "category": [
    "sci-fi"
@@ -7332,6 +8277,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/combat-evosuit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "combat-evosuit",
   "category": [
    "sci-fi"
@@ -7357,6 +8305,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/combat-vest.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "combat-vest",
   "category": [
    "sci-fi"
@@ -7382,6 +8333,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/comp-jack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "comp-jack",
   "category": [
    "sci-fi"
@@ -7407,6 +8361,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/compact-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "compact-rifle",
   "category": [
    "sci-fi"
@@ -7433,6 +8390,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/coms-headset.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "coms-headset",
   "category": [
    "sci-fi"
@@ -7457,6 +8417,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/coms-unit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "coms-unit",
   "category": [
    "sci-fi"
@@ -7482,6 +8445,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/crash-foam-canister.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "crash-foam-canister",
   "category": [
    "sci-fi"
@@ -7506,6 +8472,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/data-spike.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "data-spike",
   "category": [
    "sci-fi"
@@ -7531,6 +8500,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/decoy-beacon.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "decoy-beacon",
   "category": [
    "sci-fi"
@@ -7555,6 +8527,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/disguise-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "disguise-kit",
   "category": [
    "sci-fi"
@@ -7562,7 +8537,7 @@
   "type": "equipment",
   "tier": "module",
   "reference": "low",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "equipment",
    "sci-fi",
@@ -7579,6 +8554,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/drum-magazines.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "drum-magazines",
   "category": [
    "sci-fi"
@@ -7604,6 +8582,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/emergency-beacon.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "emergency-beacon",
   "category": [
    "sci-fi"
@@ -7628,6 +8609,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/emergency-hatchet.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "emergency-hatchet",
   "category": [
    "sci-fi"
@@ -7654,6 +8638,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/emergency-oxygen-mask.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "emergency-oxygen-mask",
   "category": [
    "sci-fi"
@@ -7678,6 +8665,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/emergency-shank.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "emergency-shank",
   "category": [
    "sci-fi"
@@ -7703,6 +8693,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/emergency-trauma-patch.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "emergency-trauma-patch",
   "category": [
    "sci-fi"
@@ -7727,6 +8720,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/enforcer-armor.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "enforcer-armor",
   "category": [
    "sci-fi"
@@ -7752,6 +8748,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/eva-suit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "eva-suit",
   "category": [
    "sci-fi"
@@ -7777,6 +8776,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/extended-barrel.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "extended-barrel",
   "category": [
    "sci-fi"
@@ -7802,6 +8804,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/field-ration.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "field-ration",
   "category": [
    "sci-fi"
@@ -7818,8 +8823,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "variant_group": "field-ration",
-  "summary": "One day of nutrients for one person."
+  "summary": "One day of nutrients for one person.",
+  "variant_group": "field-ration"
  },
  {
   "id": "sci-fi-equipment/forward-assault-shield",
@@ -7827,6 +8832,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/forward-assault-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "forward-assault-shield",
   "category": [
    "sci-fi"
@@ -7852,6 +8860,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/fuel-cells.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "fuel-cells",
   "category": [
    "sci-fi"
@@ -7876,6 +8887,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/grapple-line-launcher.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "grapple-line-launcher",
   "category": [
    "sci-fi"
@@ -7900,6 +8914,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/gravity-anchor.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "gravity-anchor",
   "category": [
    "sci-fi"
@@ -7924,6 +8941,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/hazard-hud.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "hazard-hud",
   "category": [
    "sci-fi"
@@ -7949,6 +8969,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/heavy-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "heavy-pistol",
   "category": [
    "sci-fi"
@@ -7975,6 +8998,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/heavy-rotary-cannon.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "heavy-rotary-cannon",
   "category": [
    "sci-fi"
@@ -8001,6 +9027,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/jump-boosters.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "jump-boosters",
   "category": [
    "sci-fi"
@@ -8025,6 +9054,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/jump-pack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "jump-pack",
   "category": [
    "sci-fi"
@@ -8049,6 +9081,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/kit-supplies.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "sci-fi-tool-kits",
   "category": [
    "sci-fi"
@@ -8072,6 +9107,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/knuckle-taser.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "knuckle-taser",
   "category": [
    "sci-fi"
@@ -8098,6 +9136,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/laser-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "laser-pistol",
   "category": [
    "sci-fi"
@@ -8124,6 +9165,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "laser-rifle",
   "category": [
    "sci-fi"
@@ -8150,6 +9194,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/light-combat-vest.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "light-combat-vest",
   "category": [
    "sci-fi"
@@ -8175,6 +9222,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/light-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "light-pistol",
   "category": [
    "sci-fi"
@@ -8201,6 +9251,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/long-range-coms.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "long-range-coms",
   "category": [
    "sci-fi"
@@ -8225,6 +9278,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/long-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "long-rifle",
   "category": [
    "sci-fi"
@@ -8251,6 +9307,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/mag-boots.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "mag-boots",
   "category": [
    "sci-fi"
@@ -8275,6 +9334,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/mag-cuffs.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "mag-cuffs",
   "category": [
    "sci-fi"
@@ -8299,6 +9361,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/mebn-hud.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "mebn-hud",
   "category": [
    "sci-fi"
@@ -8324,6 +9389,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/medical-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "medical-kit",
   "category": [
    "sci-fi"
@@ -8331,7 +9399,7 @@
   "type": "equipment",
   "tier": "module",
   "reference": "low",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "equipment",
    "sci-fi",
@@ -8348,6 +9416,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/mini-laser-cutter.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "mini-laser-cutter",
   "category": [
    "sci-fi"
@@ -8372,6 +9443,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/mobile-phone.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "mobile-phone",
   "category": [
    "sci-fi"
@@ -8396,6 +9470,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/overcharge-chamber.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "overcharge-chamber",
   "category": [
    "sci-fi"
@@ -8421,6 +9498,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/padded-flight-suit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "padded-flight-suit",
   "category": [
    "sci-fi"
@@ -8446,6 +9526,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/pain-suppressant-injector.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "pain-suppressant-injector",
   "category": [
    "sci-fi"
@@ -8470,6 +9553,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/personal-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "personal-shield",
   "category": [
    "sci-fi"
@@ -8494,6 +9580,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/portable-heater.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "portable-heater",
   "category": [
    "sci-fi"
@@ -8518,6 +9607,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/portable-water-purifier.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "portable-water-purifier",
   "category": [
    "sci-fi"
@@ -8542,6 +9634,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "reactor-cores",
   "category": [
    "sci-fi"
@@ -8566,6 +9661,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/recoil-compensation-system.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "recoil-compensation-system",
   "category": [
    "sci-fi"
@@ -8591,6 +9689,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/reflex-sight.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "reflex-sight",
   "category": [
    "sci-fi"
@@ -8616,6 +9717,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/remote-detonator.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "remote-detonator",
   "category": [
    "sci-fi"
@@ -8640,6 +9744,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/repair-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "repair-kit",
   "category": [
    "sci-fi"
@@ -8647,7 +9754,7 @@
   "type": "equipment",
   "tier": "module",
   "reference": "low",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "equipment",
    "sci-fi",
@@ -8664,6 +9771,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/ripper-blade.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "ripper-blade",
   "category": [
    "sci-fi"
@@ -8690,6 +9800,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/safer-unit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "safer-unit",
   "category": [
    "sci-fi"
@@ -8715,6 +9828,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/scav-gear.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "scav-gear",
   "category": [
    "sci-fi"
@@ -8740,6 +9856,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/security-flight-suit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "security-flight-suit",
   "category": [
    "sci-fi"
@@ -8765,6 +9884,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/shock-baton.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "shock-baton",
   "category": [
    "sci-fi"
@@ -8791,6 +9913,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/shock-charger.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "shock-charger",
   "category": [
    "sci-fi"
@@ -8816,6 +9941,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "shock-rifle",
   "category": [
    "sci-fi"
@@ -8842,6 +9970,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/signature-spoofer.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "signature-spoofer",
   "category": [
    "sci-fi"
@@ -8866,6 +9997,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/site-safety-gear.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "site-safety-gear",
   "category": [
    "sci-fi"
@@ -8891,6 +10025,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/solar-array-pack.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "solar-array-pack",
   "category": [
    "sci-fi"
@@ -8915,6 +10052,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/squad-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "squad-shield",
   "category": [
    "sci-fi"
@@ -8939,6 +10079,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/standard-issue-knife.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "standard-issue-knife",
   "category": [
    "sci-fi"
@@ -8965,6 +10108,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/standard-issue-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "standard-issue-rifle",
   "category": [
    "sci-fi"
@@ -8991,6 +10137,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/survival-tent.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "survival-tent",
   "category": [
    "sci-fi"
@@ -9007,7 +10156,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Pressurized 10\u00d710ft shelter for four."
+  "summary": "Pressurized 10×10ft shelter for four."
  },
  {
   "id": "sci-fi-equipment/targeting-hud",
@@ -9015,6 +10164,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/targeting-hud.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "targeting-hud",
   "category": [
    "sci-fi"
@@ -9040,6 +10192,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/tech-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
   "anchor": "tech-kit",
   "category": [
    "sci-fi"
@@ -9047,7 +10202,7 @@
   "type": "equipment",
   "tier": "module",
   "reference": "low",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "equipment",
    "sci-fi",
@@ -9064,6 +10219,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/ultraweave-evosuit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
   "anchor": "ultraweave-evosuit",
   "category": [
    "sci-fi"
@@ -9089,6 +10247,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/vitaboost-injector.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
   "anchor": "vitaboost-injector",
   "category": [
    "sci-fi"
@@ -9113,6 +10274,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/weighted-core.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
   "anchor": "weighted-core",
   "category": [
    "sci-fi"
@@ -9137,8 +10301,12 @@
   "title": "Ballistics In Space",
   "home": "snippet",
   "file": "content/snippets/sci-fi/ballistics-in-space.md",
-  "source_page": "content/snippets/sci-fi/ballistics-in-space.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "anchor": "ballistic-weapons-in-space",
   "category": [
    "sci-fi"
   ],
@@ -9159,8 +10327,13 @@
   "title": "Communications",
   "home": "snippet",
   "file": "content/snippets/sci-fi/communications.md",
-  "source_page": "content/snippets/sci-fi/communications.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "anchor": "communications",
   "category": [
    "sci-fi"
   ],
@@ -9182,6 +10355,9 @@
   "home": "snippet",
   "file": "content/snippets/sci-fi/computer-systems.md",
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md"
+  ],
   "anchor": "computer-systems",
   "category": [
    "sci-fi"
@@ -9203,8 +10379,12 @@
   "title": "Energy Shields",
   "home": "snippet",
   "file": "content/snippets/sci-fi/energy-shields.md",
-  "source_page": "content/snippets/sci-fi/energy-shields.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "anchor": "energy-shields",
   "category": [
    "sci-fi"
   ],
@@ -9226,8 +10406,12 @@
   "title": "Huds",
   "home": "snippet",
   "file": "content/snippets/sci-fi/huds.md",
-  "source_page": "content/snippets/sci-fi/huds.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "anchor": "heads-up-displays-huds",
   "category": [
    "sci-fi"
   ],
@@ -9248,7 +10432,11 @@
   "title": "Announcement",
   "home": "snippet",
   "file": "content/snippets/site/announcement.md",
-  "source_page": "content/snippets/site/announcement.md",
+  "source_page": "content/_index.md",
+  "pages": [
+   "content/_index.md",
+   "content/docs/free-srd/_index.md"
+  ],
   "anchor": null,
   "category": [
    "core"
@@ -9273,7 +10461,10 @@
   "home": "page",
   "file": "content/docs/legal.md",
   "source_page": "content/docs/legal.md",
-  "anchor": null,
+  "pages": [
+   "content/docs/legal.md"
+  ],
+  "anchor": "legal-information",
   "category": [
    "core"
   ],
@@ -9285,7 +10476,7 @@
    "legal"
   ],
   "flags": [
-   "excluded: excluded from builder corpus per ruling \u2014 builder gets built-in license/cover/ToC"
+   "excluded: excluded from builder corpus per ruling — builder gets built-in license/cover/ToC"
   ],
   "notes": "",
   "selectable": true,
@@ -9296,7 +10487,22 @@
   "title": "Wip Announcement",
   "home": "snippet",
   "file": "content/snippets/site/wip-announcement.md",
-  "source_page": "content/snippets/site/wip-announcement.md",
+  "source_page": "content/docs/free-srd/character-creation/races/_index.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/races/_index.md",
+   "content/docs/free-srd/character-creation/races/android.md",
+   "content/docs/free-srd/character-creation/races/classic-human.md",
+   "content/docs/free-srd/character-creation/races/reptilian.md",
+   "content/docs/free-srd/character-creation/races/star-touched-human.md",
+   "content/docs/free-srd/character-creation/races/zeta-grey.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md"
+  ],
   "anchor": null,
   "category": [
    "core"
@@ -9320,8 +10526,12 @@
   "title": "Action Points",
   "home": "snippet",
   "file": "content/snippets/stats/action-points.md",
-  "source_page": "content/snippets/stats/action-points.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "action-points",
   "category": [
    "core"
   ],
@@ -9343,6 +10553,9 @@
   "home": "snippet",
   "file": "content/snippets/stats/attack.md",
   "source_page": "content/docs/free-srd/core-rules/stats.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
   "anchor": "attack",
   "category": [
    "core"
@@ -9363,8 +10576,12 @@
   "title": "Defense",
   "home": "snippet",
   "file": "content/snippets/stats/defense.md",
-  "source_page": "content/snippets/stats/defense.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/health.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/health.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "defense",
   "category": [
    "core"
   ],
@@ -9386,6 +10603,9 @@
   "home": "snippet",
   "file": "content/snippets/stats/luck.md",
   "source_page": "content/docs/free-srd/core-rules/stats.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
   "anchor": "luck",
   "category": [
    "core"
@@ -9408,6 +10628,9 @@
   "home": "snippet",
   "file": "content/snippets/stats/stress-threshold.md",
   "source_page": "content/docs/free-srd/core-rules/stats.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
   "anchor": "stress-threshold",
   "category": [
    "core"
@@ -9428,8 +10651,12 @@
   "title": "Vitality",
   "home": "snippet",
   "file": "content/snippets/stats/vitality.md",
-  "source_page": "content/snippets/stats/vitality.md",
-  "anchor": null,
+  "source_page": "content/docs/free-srd/core-rules/health.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/health.md",
+   "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "anchor": "vitality",
   "category": [
    "core"
   ],
@@ -9451,6 +10678,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/alert.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "alert",
   "category": [
    "core"
@@ -9474,6 +10704,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/composed.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "composed",
   "category": [
    "core"
@@ -9497,6 +10730,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/diplomatic.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "diplomatic",
   "category": [
    "core"
@@ -9520,6 +10756,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/hot-headed.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "hot-headed",
   "category": [
    "core"
@@ -9543,6 +10782,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/inter-planet-traveler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "inter-planet-traveler",
   "category": [
    "sci-fi"
@@ -9566,6 +10808,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/intimidating.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "intimidating",
   "category": [
    "core"
@@ -9589,6 +10834,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/lucky.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "lucky",
   "category": [
    "core"
@@ -9612,6 +10860,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/mentally-sound.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "mentally-sound",
   "category": [
    "core"
@@ -9635,6 +10886,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/overview.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "traits",
   "category": [
    "core"
@@ -9657,6 +10911,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/particularly-attractive.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "particularly-attractive",
   "category": [
    "core"
@@ -9680,6 +10937,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/picture-of-health.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "picture-of-health",
   "category": [
    "core"
@@ -9703,6 +10963,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/racial-traits.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "racial-traits",
   "category": [
    "core"
@@ -9728,6 +10991,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/scrap-hauler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "scrap-hauler",
   "category": [
    "sci-fi"
@@ -9751,6 +11017,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/sly.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "sly",
   "category": [
    "core"
@@ -9774,6 +11043,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/sneaky.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "sneaky",
   "category": [
    "core"
@@ -9797,6 +11069,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/space-adept.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "space-adept",
   "category": [
    "sci-fi"
@@ -9820,6 +11095,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/stubborn.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "stubborn",
   "category": [
    "core"
@@ -9843,6 +11121,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/tough.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "tough",
   "category": [
    "core"
@@ -9866,6 +11147,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/unremarkable.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "unremarkable",
   "category": [
    "core"
@@ -9889,6 +11173,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/unshakable.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "unshakable",
   "category": [
    "core"
@@ -9912,6 +11199,9 @@
   "home": "snippet",
   "file": "content/snippets/traits/well-connected.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
   "anchor": "well-connected",
   "category": [
    "core"
@@ -9935,6 +11225,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/boarding-and-bailing.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "boarding--bailing",
   "category": [
    "core"
@@ -9957,6 +11250,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/collision-damage.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "collision-damage",
   "category": [
    "core"
@@ -9979,6 +11275,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/cover-from-vehicles.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "cover-from-vehicles",
   "category": [
    "core"
@@ -10001,6 +11300,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/drive.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "drive",
   "category": [
    "core"
@@ -10023,6 +11325,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/ignition.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "ignition",
   "category": [
    "core"
@@ -10045,6 +11350,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/impact-and-overrun.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "impact--overrun",
   "category": [
    "core"
@@ -10067,6 +11375,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/initiative-and-occupants.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "initiative--occupants",
   "category": [
    "core"
@@ -10089,6 +11400,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/mounts.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "mounts",
   "category": [
    "core"
@@ -10111,6 +11425,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/overview.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "vehicle-rules",
   "category": [
    "core"
@@ -10133,6 +11450,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/vehicle-actions.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "vehicle-actions",
   "category": [
    "core"
@@ -10155,6 +11475,9 @@
   "home": "snippet",
   "file": "content/snippets/vehicles/vehicle-size.md",
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
   "anchor": "vehicle-size",
   "category": [
    "core"
@@ -10177,6 +11500,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/burn.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "burn",
   "category": [
    "core"
@@ -10199,6 +11525,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/common-injuries.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "common-injuries",
   "category": [
    "core"
@@ -10218,6 +11547,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/contusion.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "contusion",
   "category": [
    "core"
@@ -10240,6 +11572,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/dislocation.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "dislocation",
   "category": [
    "core"
@@ -10262,6 +11597,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/fracture.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "fracture",
   "category": [
    "core"
@@ -10276,7 +11614,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Shaken, +1 Stress \u2014 may add Bleeding, Crippled, or Confused"
+  "summary": "Shaken, +1 Stress — may add Bleeding, Crippled, or Confused"
  },
  {
   "id": "wounds/laceration",
@@ -10284,6 +11622,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/laceration.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "laceration",
   "category": [
    "core"
@@ -10306,6 +11647,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/overview.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "wounds--conditions",
   "category": [
    "core"
@@ -10325,6 +11669,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/puncture.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "puncture",
   "category": [
    "core"
@@ -10347,6 +11694,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/sprain.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "sprain",
   "category": [
    "core"
@@ -10369,6 +11719,9 @@
   "home": "snippet",
   "file": "content/snippets/wounds/wounds.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
   "anchor": "wounds",
   "category": [
    "core"
