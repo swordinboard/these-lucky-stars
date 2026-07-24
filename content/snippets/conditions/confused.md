@@ -1,0 +1,9 @@
+---
+headless: true
+---
+
+### Confused
+
+*Effect* — The mind is scrambled and hard to focus. This can be caused by mind-altering effects or being struck on the head. -2 KNO, INS, and CHA, -1 AP per round, +1 Stress.
+
+*Duration* — 2d6 rounds if not specified.

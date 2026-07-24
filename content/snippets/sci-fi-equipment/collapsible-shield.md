@@ -1,0 +1,11 @@
+---
+headless: true
+---
+
+### Collapsible Shield
+
+*--Cr — 5lbs — Arms — 1d8 Supply*
+
+A wrist-mounted device that deploys a sturdy fan-like circular shield when activated. Depoying and storing the shield costs 1 AP.
+
+Attatches to the forearms and fills the arm slot. Costs 4 AP to equip or unequip. Can be used alongside a two-handed weapon, but causes attacks with two-handed weapons to be made at a disadvantage while the shield is deployed.

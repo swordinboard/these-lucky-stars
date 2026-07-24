@@ -1,0 +1,9 @@
+---
+headless: true
+---
+
+### Mag Boots
+
+*--Cr — 2lbs — Legs/Feet*
+
+Boots equipped with calibrated electromagnets that anchor the wearer to ferromagnetic surfaces in low or zero gravity environments. A built-in manual release prevents accidental engagement. The magnets are tuned to allow normal walking and running while active. While active, the wearer takes a -1 penalty to AGI.

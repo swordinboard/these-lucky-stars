@@ -1,0 +1,9 @@
+---
+headless: true
+---
+
+### General Robotics
+
+*KNO 2*
+
+You have been trained in the maintenance and repair of various robotic parts and models. Drones and robots under your control gain +1 Vitality.

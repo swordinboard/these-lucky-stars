@@ -6,14 +6,10 @@ weight: 10
 
 # Traits
 
-Traits are descriptors of your character. They represent a part of their personality or physique. Traits are selected at level 1 and cannot be selected multiple times.
-
-Some traits are followed by labels written in [brackets]. These traits are part of optional lists that GMs may make available. A character cannot have more than one trait with the same label.
+{{% include "/snippets/traits/overview" %}}
 
 ## Racial Traits
-*[Racial]*
-
-Racial Traits are an optional set of traits used when more than one sentient species occupies the setting. A Game Master may choose not to include racial traits if the players are not given a choice between races in the selected setting, usually meaning all players are human. GMs may allow the selection of an additional trait in place of a racial trait in such situations.
+{{% include "/snippets/traits/racial-traits" %}}
 
 {{< tabs >}}
 {{% tab "Core" %}}
@@ -50,103 +46,99 @@ Racial Traits are an optional set of traits used when more than one sentient spe
 ## Core
 
 {{% details "Alert" %}}
-### Alert
 
-You have particularly keen senses. Gain +4 Initiative.
+{{% include "/snippets/traits/alert" %}}
+
 {{% /details %}}
 
 {{% details "Composed" %}}
-### Composed
 
-The first time you fail a WILL check each session, you may re-roll one decision die and use the higher result.
+{{% include "/snippets/traits/composed" %}}
+
 {{% /details %}}
 
 {{% details "Diplomatic" %}}
-### Diplomatic
 
-You understand other's needs and intentions well. Gain a +2 bonus on rolls made to persuade another.
+{{% include "/snippets/traits/diplomatic" %}}
+
 {{% /details %}}
 
 {{% details "Hot-Headed" %}}
-### Hot-Headed
 
-The first time you take VIT damage each session, you gain a temporary +2 AP to be used before the end of your next turn.
+{{% include "/snippets/traits/hot-headed" %}}
+
 {{% /details %}}
 
 {{% details "Intimidating" %}}
-### Intimidating
 
-You are an imposing individual, whether in attitude or stature. Gain a +2 bonus on rolls made to intimidate others.
+{{% include "/snippets/traits/intimidating" %}}
+
 {{% /details %}}
 
 {{% details "Lucky" %}}
-### Lucky
 
-You are luckier than others. Gain a bonus to Luck equal to ¼ your level to a maximum of 4 (rounded down, minimum 1).
+{{% include "/snippets/traits/lucky" %}}
+
 {{% /details %}}
 
 {{% details "Mentally Sound" %}}
-### Mentally Sound
 
-Your therapist wonders what you pay them for. Gain a +1 bonus to max Stress Threshold.
+{{% include "/snippets/traits/mentally-sound" %}}
+
 {{% /details %}}
 
 {{% details "Particularly Attractive" %}}
-### Particularly Attractive
 
-**Cannot be combined with the [Unremarkable](#unremarkable) trait.**
+{{% include "/snippets/traits/particularly-attractive" %}}
 
-I guess nobody can argue: *Someone* thinks this character is particularly good looking. Gain +2 to rolls made to persuade someone who finds you attractive (GM discretion, results may vary).
 {{% /details %}}
 
 {{% details "Picture of Health" %}}
-### Picture of Health
 
-You've definitely kept up with your doctor appointments. Gain a +1 bonus to VIT.
+{{% include "/snippets/traits/picture-of-health" %}}
+
 {{% /details %}}
 
 {{% details "Sly" %}}
-### Sly
 
-You don't have a tell, or maybe just barely. Gain a +2 bonus on rolls when deceiving others verbally.
+{{% include "/snippets/traits/sly" %}}
+
 {{% /details %}}
 
 {{% details "Sneaky" %}}
-### Sneaky
 
-You are very good at remaining unnoticed. Gain a +2 bonus on stealth rolls.
+{{% include "/snippets/traits/sneaky" %}}
+
 {{% /details %}}
 
 {{% details "Stubborn" %}}
-### Stubborn
 
-Your ideas are your own and nobody will change your mind. Gain a +2 bonus when making rolls to avoid manipulation or deception.
+{{% include "/snippets/traits/stubborn" %}}
+
 {{% /details %}}
 
 {{% details "Tough" %}}
-### Tough
 
-You are tougher than the rest. Gain a max DEF bonus equal to ¼ your level (rounded down, minimum 1).
+{{% include "/snippets/traits/tough" %}}
+
 {{% /details %}}
 
 {{% details "Unremarkable" %}}
-### Unremarkable
 
-**Cannot be combined with the [Particularly Attractive](#particularly-attractive) trait.**
+{{% include "/snippets/traits/unremarkable" %}}
 
-Some would consider you the most average of Joes. There is simply nothing that stands out about you. Gain a +2 bonus on rolls to blend into a crowd or otherwise visually hide your identity.
 {{% /details %}}
 
 {{% details "Unshakable" %}}
-### Unshakable
 
-No jump scare will frighten you, you were surprised that's all. Gain a +2 bonus when rolling WILL checks against fear and distraction effects.
+{{% include "/snippets/traits/unshakable" %}}
+
 {{% /details %}}
 
 {{% details "Well-Connected" %}}
-### Well-Connected
 
-Once per session, you may declare a contact in the current location (provided you have not already done so at that location). The GM determines what they know and how helpful they'll be. Results may vary.
+{{% include "/snippets/traits/well-connected" %}}
+
 {{% /details %}}
 
 ---
@@ -154,19 +146,19 @@ Once per session, you may declare a contact in the current location (provided yo
 ## Sci-Fi
 
 {{% details "Inter-Planet Traveler" %}}
-### Inter-Planet Traveler
 
-Your immune system has benefited from a great deal of traveling between planets. Gain a +2 bonus when rolling FORT against disease and infections.
+{{% include "/snippets/traits/inter-planet-traveler" %}}
+
 {{% /details %}}
 
 {{% details "Scrap Hauler" %}}
-### Scrap Hauler
 
-You are accustomed to carrying heavy loads in different environments. Each point of strength adds an additional +5lbs to your max carry weight, and you can carry one additional bulky item (max +20lbs and +1 bulky item).
+{{% include "/snippets/traits/scrap-hauler" %}}
+
 {{% /details %}}
 
 {{% details "Space Adept" %}}
-### Space Adept
 
-You are accustomed to moving through zero and low-gravity environments. Gain a +2 bonus to AGI checks to safely move in zero and low gravity environments.
+{{% include "/snippets/traits/space-adept" %}}
+
 {{% /details %}}

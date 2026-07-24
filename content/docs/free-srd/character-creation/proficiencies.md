@@ -6,13 +6,7 @@ weight: 20
 
 ## Proficiencies
 
-Proficiencies are things for which your character has received training or otherwise become particularly skilled at. Most are related to the use of items. Certain actions cannot be attempted at all without the appropriate tool/item and proficiency.
-
-Sometimes an additional selection needs to be made, such as a type of weapon or armor. This selection is made at the time of selecting the proficiency and is usually written in [brackets] beside the proficiency name.
-
-If a proficiency has requirements that must be met before it can be selected, they are written in italics.
-
----
+{{% include "/snippets/proficiencies/overview" %}}
 
 {{< tabs >}}
 {{% tab "Core" %}}
@@ -47,118 +41,87 @@ If a proficiency has requirements that must be met before it can be selected, th
 ## Core
 
 {{% details "Armor" %}}
-### Armor
 
-**Armor [___]**
+{{% include "/snippets/proficiencies/armor" %}}
 
-You have been trained in the use of a selected armor type. Gain a +1 max DEF bonus while using the selected armor type.
-This proficiency may be selected multiple times to improve different armors or taken up to three times on a single armor providing a max +3 bonus.
-
-[Heavy, Light]
 {{% /details %}}
 
 {{% details "B&E Kit" %}}
-### B&E Kit
 
-You have been trained in the use of the B&E kit. Gain a +2 bonus when attempting to unlock locks and disable traps while using the B&E kit.
+{{% include "/snippets/proficiencies/b-e-kit" %}}
+
 {{% /details %}}
 
 {{% details "Disguise Kit" %}}
-### Disguise Kit
 
-You have been trained in the use of the disguise kit. Gain a +2 bonus when altering a character's appearance while using the disguise kit.
+{{% include "/snippets/proficiencies/disguise-kit" %}}
+
 {{% /details %}}
 
 {{% details "Improved Ability" %}}
-### Improved Ability
 
-**Improved Ability [___]**
+{{% include "/snippets/proficiencies/improved-ability" %}}
 
-*Level 4*
-
-Select an ability that forces an opponent to make an uncontested target roll (i.e. [Suppressing Fire](/docs/free-srd/character-creation/abilities/#suppressing-fire)). Increase the target of the selected ability by +1. This proficiency may be selected multiple times; it may be applied to the same ability up to three times for a total target increase of +3, or may be applied to a new ability any number of times.
 {{% /details %}}
 
 {{% details "Licensed Instincts" %}}
-### Licensed Instincts
 
-**Licensed Instincts [____]**
+{{% include "/snippets/proficiencies/licensed-instincts" %}}
 
-*[Vehicle](#vehicle) Proficiency, KNO 2, INS 1*
-
-Select a vehicle type for which you have Vehicle Proficiency. Add your INS bonus to rolls to pilot/drive/ride the selected type of vehicle.
-This proficiency may be selected multiple times, each time applying to a new type of vehicle you have Vehicle Proficiency with.
 {{% /details %}}
 
 {{% details "Martial Training" %}}
-### Martial Training
 
-You have been trained to be as deadly without a weapon as you are when armed with one. Your unarmed attacks no longer take a -3 penalty, and may be used when making an attack of opportunity.
+{{% include "/snippets/proficiencies/martial-training" %}}
+
 {{% /details %}}
 
 {{% details "Medic Training" %}}
-### Medic Training
 
-*KNO 1*
+{{% include "/snippets/proficiencies/medic-training" %}}
 
-You have been trained in the use of medicine and medical equipment. Gain a +2 bonus when using the medical kit to heal damage or stabilize/remove wounds and conditions.
 {{% /details %}}
 
 {{% details "Medical Instincts" %}}
-### Medical Instincts
 
-*[Medic Training](#medic-training) proficiency, KNO 1*
+{{% include "/snippets/proficiencies/medical-instincts" %}}
 
-Your experience with medicine and trauma care benefits from your instincts. Add your INS bonus to rolls that benefit from your Medic Training proficiency.
 {{% /details %}}
 
 {{% details "Negotiation Training" %}}
-### Negotiation Training
 
-You have been trained in negotiation and conflict resolution. Gain a +2 bonus on rolls made to negotiate terms, broker deals, or de-escalate conflict.
+{{% include "/snippets/proficiencies/negotiation-training" %}}
+
 {{% /details %}}
 
 {{% details "Repair Kit" %}}
-### Repair Kit
 
-*KNO 1*
+{{% include "/snippets/proficiencies/repair-kit" %}}
 
-You have been trained in the use of the repair kit. Gain a +2 bonus when using the repair kit to fix or alter equipment, vehicles, and structures.
 {{% /details %}}
 
 {{% details "Research" %}}
-### Research
 
-**Research [___]**
+{{% include "/snippets/proficiencies/research" %}}
 
-Select a field of study (medicine, history, engineering, geography, etc.). Gain a +2 bonus on KNO checks related to that field. This proficiency may be selected multiple times, each time selecting a new field.
 {{% /details %}}
 
 {{% details "Survival Training" %}}
-### Survival Training
 
-You have been trained in wilderness and field survival. Gain a +2 bonus on rolls made to navigate, forage, track, or endure harsh environments.
+{{% include "/snippets/proficiencies/survival-training" %}}
+
 {{% /details %}}
 
 {{% details "Vehicle" %}}
-### Vehicle
 
-**Vehicle [____]**
+{{% include "/snippets/proficiencies/vehicle" %}}
 
-You are familiar with a type of vehicle. Gain a +1 bonus to rolls made to pilot/drive/ride the selected type of vehicle.
-This proficiency can be taken multiple times, each time applying to a new type of vehicle.
 {{% /details %}}
 
 {{% details "Weapon" %}}
-### Weapon
 
-**Weapon [___]**
+{{% include "/snippets/proficiencies/weapon" %}}
 
-You have specialized training in the use of a selected weapon type. Gain a +1 ATK bonus while using the selected weapon.
-This proficiency may be selected multiple times to improve different weapons, or taken up to three times on a single weapon for a max +3 bonus.
-Unarmed attacks can also gain Weapon Proficiency, but only if you have the [Martial Training](#martial-training) proficiency.
-
-[Pistol, Rifle, Heavy Ranged, Light Melee, Medium Melee, Polearms & Staffs, Two Handed Melee]
 {{% /details %}}
 
 ---
@@ -166,25 +129,19 @@ Unarmed attacks can also gain Weapon Proficiency, but only if you have the [Mart
 ## Sci-Fi
 
 {{% details "Comp Jack" %}}
-### Comp Jack
 
-*KNO 1*
+{{% include "/snippets/proficiencies/comp-jack" %}}
 
-You have specialized training in computer systems and how to hack them with the comp jack - also called a cyberdeck or slicer - allowing you to interact with encrypted computer systems from most terminals.
 {{% /details %}}
 
 {{% details "General Robotics" %}}
-### General Robotics
 
-*KNO 2*
+{{% include "/snippets/proficiencies/general-robotics" %}}
 
-You have been trained in the maintenance and repair of various robotic parts and models. Drones and robots under your control gain +1 Vitality.
 {{% /details %}}
 
 {{% details "General Technology" %}}
-### General Technology
 
-*KNO 1*
+{{% include "/snippets/proficiencies/general-technology" %}}
 
-You are familiar with small circuitry, wiring, and soldering. Gain a +2 bonus when repairing or hardwiring equipment, drones/robots, and other electrical components, while using the tech kit.
 {{% /details %}}

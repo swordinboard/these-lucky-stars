@@ -1,0 +1,11 @@
+---
+headless: true
+---
+
+### Extended Rage
+
+*[Rage](#rage)*
+
+Your Rage ability's duration is increased by two rounds.
+
+This ability can be selected multiple times, each time increasing the duration by two rounds.
