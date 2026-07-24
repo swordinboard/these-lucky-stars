@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, medical]
+summary: "Single use. Closes lacerations and punctures. Works on Evosuits."
 headless: true
 ---
 

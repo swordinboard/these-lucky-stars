@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition]
+summary: "-2 INS, +1 Stress"
 headless: true
 ---
 

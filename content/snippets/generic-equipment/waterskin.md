@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "Carries up to half a gallon of liquid."
 headless: true
 ---
 

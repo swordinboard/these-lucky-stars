@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: medium
 tags: [equipment, generic, containers]
+summary: "Holds ammunition for use during combat."
 headless: true
 ---
 

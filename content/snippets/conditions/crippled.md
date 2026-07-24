@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: medium
 tags: [condition, attacker-advantage]
+summary: "All speeds -10, +1 Stress if using 3+ AP"
 headless: true
 ---
 

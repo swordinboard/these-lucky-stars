@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, light-armor]
+summary: "Minimum protection for airless environments."
 headless: true
 ---
 

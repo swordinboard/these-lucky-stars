@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, communications]
+summary: "1 mile range. Connects to local networks."
 headless: true
 ---
 

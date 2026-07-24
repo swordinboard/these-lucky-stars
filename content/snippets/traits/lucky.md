@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "Bonus to max Luck."
 headless: true
 ---
 

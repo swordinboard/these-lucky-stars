@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, general, computers]
+summary: "Intercept unencrypted communications with a comp jack."
 requires: [proficiencies/comp-jack]
 headless: true
 ---

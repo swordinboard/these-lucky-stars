@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
+summary: "Pistols, Rifles. +20ft normal range."
 headless: true
 ---
 

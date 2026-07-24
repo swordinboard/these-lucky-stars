@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [proficiency, core]
+summary: "Add INS to Medic Training rolls."
 requires: [proficiencies/medic-training]
 headless: true
 ---

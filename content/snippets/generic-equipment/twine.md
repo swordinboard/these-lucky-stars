@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, trade-goods]
+summary: "100ft of light cord."
 headless: true
 ---
 

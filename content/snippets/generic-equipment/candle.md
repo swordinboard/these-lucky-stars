@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, light-sources]
+summary: "8hr burn. 5ft bright light, 10ft dim light."
 headless: true
 ---
 

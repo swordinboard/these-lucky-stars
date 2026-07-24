@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, general, computers]
+summary: "Build a makeshift comp jack from tech kit supplies."
 requires: [proficiencies/comp-jack, proficiencies/general-technology]
 headless: true
 ---

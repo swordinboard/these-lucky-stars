@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
 headless: true
 ---
 

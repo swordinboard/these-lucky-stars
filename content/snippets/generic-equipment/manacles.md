@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, tools]
+summary: "Metal restraints for binding a creature's wrists."
 headless: true
 ---
 

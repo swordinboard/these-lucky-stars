@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, tools]
+summary: "Attaches to rope. Throwable [30ft]."
 headless: true
 ---
 

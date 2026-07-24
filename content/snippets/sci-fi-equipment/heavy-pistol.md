@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
+summary: "Ballistic. Single shot. 50ft range."
 headless: true
 ---
 

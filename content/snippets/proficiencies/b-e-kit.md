@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [proficiency, core]
+summary: "Trained in the use of the B&E kit."
 headless: true
 ---
 

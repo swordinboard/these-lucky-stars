@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: high
 tags: [proficiency, core]
+summary: "Trained to fight unarmed as effectively as armed."
 headless: true
 ---
 

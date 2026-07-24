@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [proficiency, core]
+summary: "+2 bonus on KNO checks related to a chosen field of study."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, survival]
+summary: "Sends a distress signal across a star system for 72hrs."
 headless: true
 ---
 

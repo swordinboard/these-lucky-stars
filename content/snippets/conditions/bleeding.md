@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition]
+summary: "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks"
 headless: true
 ---
 

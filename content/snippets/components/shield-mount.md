@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "Partial cover while active. 1d12 Supply Die"
 headless: true
 ---
 

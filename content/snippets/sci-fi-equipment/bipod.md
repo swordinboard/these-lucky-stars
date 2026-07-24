@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
+summary: "Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range."
 headless: true
 ---
 

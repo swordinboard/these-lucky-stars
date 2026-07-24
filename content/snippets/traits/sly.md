@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "+2 to deception rolls."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Change suppression area to a line."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
 headless: true
 ---

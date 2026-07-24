@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "General purpose rope. Supports up to 500lbs."
 headless: true
 ---
 

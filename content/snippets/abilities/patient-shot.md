@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Bonus damage and advantage if stationary and untargeted since last turn."
 requires: [proficiencies/weapon]
 headless: true
 ---

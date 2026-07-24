@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, general, computers]
+summary: "Remotely access a hacked system via linked comp jack."
 requires: [proficiencies/comp-jack]
 headless: true
 ---

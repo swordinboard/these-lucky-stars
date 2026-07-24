@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "Aids in maintaining direction of travel."
 headless: true
 ---
 

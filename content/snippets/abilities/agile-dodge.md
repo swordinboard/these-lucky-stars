@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [ability, core, general]
+summary: "Immediate 5ft step when an opponent misses a melee attack against you."
 headless: true
 ---
 

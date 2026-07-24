@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [ability, core, general]
+summary: "Double your DEF against a melee attack."
 headless: true
 ---
 

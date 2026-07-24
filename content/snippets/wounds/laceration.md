@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [wound-type]
+summary: "Bleeding"
 headless: true
 ---
 

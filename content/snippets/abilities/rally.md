@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Grant a temporary 1 AP to an ally within 30ft who can hear you."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [trait, core]
+summary: "+2 to persuasion rolls with someone who finds you attractive."
 headless: true
 ---
 

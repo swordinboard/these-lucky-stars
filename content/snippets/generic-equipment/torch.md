@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, light-sources]
+summary: "1hr burn. Single use."
 headless: true
 ---
 

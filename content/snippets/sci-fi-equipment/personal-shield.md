@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "10pts protection for up to 3 rounds."
 headless: true
 ---
 

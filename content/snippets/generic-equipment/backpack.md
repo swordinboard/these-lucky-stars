@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, containers]
+summary: "+20 max carry weight."
 headless: true
 ---
 

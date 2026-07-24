@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: medium
 tags: [ability, sci-fi, general]
+summary: "Designate a drone or robot as your companion."
 requires: [proficiencies/general-robotics]
 headless: true
 ---

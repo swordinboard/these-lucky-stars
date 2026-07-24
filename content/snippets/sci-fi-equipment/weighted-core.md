@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, melee-upgrade]
+summary: "Medium melee, polearms, two-handed. +3 damage. Loses throwable tag."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Kit Trap uses less AP."
 headless: true
 ---
 

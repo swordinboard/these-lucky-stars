@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, shield]
+summary: "+3 DEF, 1d12 Supply"
 headless: true
 ---
 

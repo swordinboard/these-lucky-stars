@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
+summary: "Neck slot. Auto-administers a preloaded injector on trauma."
 headless: true
 ---
 

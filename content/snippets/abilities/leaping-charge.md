@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Charge can pass through difficult terrain."
 requires: [abilities/charge, abilities/agile-charge]
 headless: true
 ---

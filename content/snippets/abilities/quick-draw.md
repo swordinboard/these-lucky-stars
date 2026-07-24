@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Draw an equipped weapon for no AP."
 headless: true
 ---
 

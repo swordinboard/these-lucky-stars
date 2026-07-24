@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, clothing]
+summary: "Keeps the wearer dry. Covers equipped gear."
 headless: true
 ---
 

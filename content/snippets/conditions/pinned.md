@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition]
+summary: "Only physical action is to escape the pin"
 headless: true
 ---
 

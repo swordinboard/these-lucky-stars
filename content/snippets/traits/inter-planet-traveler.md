@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [trait, sci-fi]
+summary: "Immune system hardened by travel between planets."
 headless: true
 ---
 

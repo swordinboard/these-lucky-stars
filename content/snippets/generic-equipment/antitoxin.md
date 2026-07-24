@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, medical]
+summary: "Removes or reduces toxin-based conditions."
 headless: true
 ---
 

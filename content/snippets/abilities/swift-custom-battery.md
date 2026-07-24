@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, battery]
+summary: "Quickly install mismatched batteries."
 requires: [proficiencies/general-technology]
 headless: true
 ---

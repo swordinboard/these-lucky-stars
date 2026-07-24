@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Dual Attack ability costs 2 AP instead of 4."
 requires: [proficiencies/weapon, abilities/dual-attack]
 headless: true
 ---

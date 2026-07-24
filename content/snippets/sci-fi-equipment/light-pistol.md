@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
+summary: "Ballistic. Semi-auto. Concealable. 30ft range."
 headless: true
 ---
 

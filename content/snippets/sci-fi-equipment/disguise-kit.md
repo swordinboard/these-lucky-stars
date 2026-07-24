@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, kit]
+summary: "Alters appearance, applies camouflage."
 headless: true
 ---
 

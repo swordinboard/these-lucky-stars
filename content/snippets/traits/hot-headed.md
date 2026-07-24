@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "Gain temporary +2 AP the first time you take VIT damage each session."
 headless: true
 ---
 

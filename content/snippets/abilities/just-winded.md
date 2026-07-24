@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Negate a wound or condition from a melee attack."
 requires: [abilities/defender]
 headless: true
 ---

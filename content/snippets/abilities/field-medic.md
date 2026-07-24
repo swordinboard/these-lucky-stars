@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Use a med kit to stabilize or treat wounds as a 2 AP action."
 requires: [proficiencies/medic-training]
 headless: true
 ---

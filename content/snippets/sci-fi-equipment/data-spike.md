@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech, computers]
+summary: "Disposable high-speed USB data extraction device."
 headless: true
 ---
 

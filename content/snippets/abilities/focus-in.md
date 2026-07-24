@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Overwatch a line with ranged attacks of opportunity."
 headless: true
 ---
 

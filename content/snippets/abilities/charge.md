@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [ability, core, general]
+summary: "Rush an enemy for a powerful melee attack."
 headless: true
 ---
 

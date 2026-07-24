@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
+summary: "Ballistic. Semi-auto. Two-handed. 40ft range."
 headless: true
 ---
 

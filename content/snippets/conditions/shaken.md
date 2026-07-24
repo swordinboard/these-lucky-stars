@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: medium
 tags: [condition]
+summary: "-1 to all decision rolls, -2 max DEF, +1 Stress"
 headless: true
 ---
 

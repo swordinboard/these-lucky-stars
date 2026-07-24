@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, trade-goods]
+summary: "Cleaning agent. Multiple uses per block."
 headless: true
 ---
 

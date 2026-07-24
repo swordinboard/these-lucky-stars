@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "Mounted laser rifle equivalent"
 headless: true
 ---
 

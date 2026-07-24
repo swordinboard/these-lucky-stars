@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, containers]
+summary: "Bulky. Secure storage for valuables."
 headless: true
 ---
 

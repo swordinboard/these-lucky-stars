@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "+2 STR for physical tasks while powered"
 headless: true
 ---
 

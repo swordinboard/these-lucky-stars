@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, heavy-armor]
+summary: "An early model space suit, well equipped but bulky."
 headless: true
 ---
 

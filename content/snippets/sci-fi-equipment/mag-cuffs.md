@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "Encrypted magnetic handcuffs with wrist controller."
 headless: true
 ---
 

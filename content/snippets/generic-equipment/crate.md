@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, containers]
+summary: "General purpose bulk storage."
 headless: true
 ---
 

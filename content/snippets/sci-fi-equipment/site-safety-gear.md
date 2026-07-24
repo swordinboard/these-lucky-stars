@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, light-armor]
+summary: "Basic corporate-approved protective gear."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, light-sources]
+summary: "4hrs per fuel flask. Can be hooded. 30ft bright, 30ft dim."
 headless: true
 ---
 

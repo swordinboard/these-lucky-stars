@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, trade-goods]
+summary: "Sharpened wooden stakes for tents, traps, or other uses."
 headless: true
 ---
 

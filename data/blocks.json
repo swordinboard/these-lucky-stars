@@ -20,7 +20,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Spend Luck to reuse an exhausted ability."
  },
  {
   "id": "abilities/agile-charge",
@@ -46,7 +47,8 @@
   "selectable": true,
   "requires": [
    "abilities/charge"
-  ]
+  ],
+  "summary": "Charge no longer requires a straight line."
  },
  {
   "id": "abilities/agile-dodge",
@@ -69,7 +71,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Immediate 5ft step when an opponent misses a melee attack against you."
  },
  {
   "id": "abilities/bash",
@@ -95,7 +98,8 @@
   "selectable": true,
   "requires": [
    "abilities/charge"
-  ]
+  ],
+  "summary": "Shove an opponent at the end of a charge."
  },
  {
   "id": "abilities/battery-saboteur",
@@ -121,7 +125,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Turn battery cores into explosives."
  },
  {
   "id": "abilities/battery-saver",
@@ -144,7 +149,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Re-roll a failed supply roll once per day."
  },
  {
   "id": "abilities/bolster",
@@ -167,7 +173,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Once per combat, up to 3 allies within 30ft gain +1 to all rolls until end of their next turn."
  },
  {
   "id": "abilities/bonus-luck",
@@ -190,7 +197,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Gain one additional Luck point."
  },
  {
   "id": "abilities/charge",
@@ -213,7 +221,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Rush an enemy for a powerful melee attack."
  },
  {
   "id": "abilities/companion-bot",
@@ -239,7 +248,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-robotics"
-  ]
+  ],
+  "summary": "Designate a drone or robot as your companion."
  },
  {
   "id": "abilities/controlled-suppressing-fire",
@@ -266,7 +276,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ]
+  ],
+  "summary": "Conserve ammo during suppressive fire."
  },
  {
   "id": "abilities/coordinated-strike",
@@ -289,7 +300,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Designate a target \u2014 the next ally to attack it gains advantage."
  },
  {
   "id": "abilities/danger-reflex",
@@ -312,7 +324,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Advantage on AGI/DEX checks against effects of a triggered trap."
  },
  {
   "id": "abilities/dead-drop",
@@ -338,7 +351,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/b-e-kit"
-  ]
+  ],
+  "summary": "Quickly hide a small object in a room or vehicle using your B&E kit."
  },
  {
   "id": "abilities/defender",
@@ -361,7 +375,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Double your DEF against a melee attack."
  },
  {
   "id": "abilities/dual-attack",
@@ -387,7 +402,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "ATK bonus when attacking with two weapons."
  },
  {
   "id": "abilities/dual-defense",
@@ -414,7 +430,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ]
+  ],
+  "summary": "Gain DEF when wielding multiple melee weapons."
  },
  {
   "id": "abilities/dual-strike",
@@ -441,7 +458,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ]
+  ],
+  "summary": "Increase damage die with dual attack."
  },
  {
   "id": "abilities/expert",
@@ -467,7 +485,8 @@
   "selectable": true,
   "requires": [
    "abilities/student"
-  ]
+  ],
+  "summary": "Improve the Student bonus for a chosen topic."
  },
  {
   "id": "abilities/extended-rage",
@@ -493,7 +512,8 @@
   "selectable": true,
   "requires": [
    "abilities/rage"
-  ]
+  ],
+  "summary": "Increase Rage duration by two rounds."
  },
  {
   "id": "abilities/extra-attack",
@@ -519,7 +539,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "Make two standard attacks per round."
  },
  {
   "id": "abilities/fast-kit-trap",
@@ -542,7 +563,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Kit Trap uses less AP."
  },
  {
   "id": "abilities/fearless-rage",
@@ -568,7 +590,8 @@
   "selectable": true,
   "requires": [
    "abilities/rage"
-  ]
+  ],
+  "summary": "Resisting fear while raging."
  },
  {
   "id": "abilities/field-medic",
@@ -594,7 +617,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/medic-training"
-  ]
+  ],
+  "summary": "Use a med kit to stabilize or treat wounds as a 2 AP action."
  },
  {
   "id": "abilities/field-patch",
@@ -620,7 +644,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/medic-training"
-  ]
+  ],
+  "summary": "Stabilize a dying ally without a med kit."
  },
  {
   "id": "abilities/focus-attack",
@@ -643,7 +668,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Focus on an opponent to gain advantage."
  },
  {
   "id": "abilities/focus-in",
@@ -666,7 +692,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Overwatch a line with ranged attacks of opportunity."
  },
  {
   "id": "abilities/friend-in-need",
@@ -692,7 +719,8 @@
   "selectable": true,
   "requires": [
    "traits/tough"
-  ]
+  ],
+  "summary": "Sacrifice your DEF to protect an adjacent ally."
  },
  {
   "id": "abilities/friend-of-fortune",
@@ -718,7 +746,8 @@
   "selectable": true,
   "requires": [
    "traits/lucky"
-  ]
+  ],
+  "summary": "Allies near you may regain spent Luck."
  },
  {
   "id": "abilities/general-spectacle",
@@ -741,7 +770,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cause a Stress with a distraction."
  },
  {
   "id": "abilities/ghost-protocol",
@@ -768,7 +798,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/comp-jack"
-  ]
+  ],
+  "summary": "Remotely access a hacked system via linked comp jack."
  },
  {
   "id": "abilities/improved-bash",
@@ -795,7 +826,8 @@
   "requires": [
    "abilities/charge",
    "abilities/bash"
-  ]
+  ],
+  "summary": "Increased displacement and knockdown from Bash."
  },
  {
   "id": "abilities/improved-suppressing-fire",
@@ -822,7 +854,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ]
+  ],
+  "summary": "Increase WILL target or stress from suppression."
  },
  {
   "id": "abilities/indomitable-rage",
@@ -850,7 +883,8 @@
    "traits/unshakable",
    "abilities/rage",
    "abilities/fearless-rage"
-  ]
+  ],
+  "summary": "Immune to fear and distraction while raging."
  },
  {
   "id": "abilities/just-grazed",
@@ -876,7 +910,8 @@
   "selectable": true,
   "requires": [
    "abilities/defender"
-  ]
+  ],
+  "summary": "Negate a wound or condition from a ranged attack."
  },
  {
   "id": "abilities/just-winded",
@@ -902,7 +937,8 @@
   "selectable": true,
   "requires": [
    "abilities/defender"
-  ]
+  ],
+  "summary": "Negate a wound or condition from a melee attack."
  },
  {
   "id": "abilities/kit-trap",
@@ -925,7 +961,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Use your tool kit to make difficult terrain."
  },
  {
   "id": "abilities/leaping-charge",
@@ -952,7 +989,8 @@
   "requires": [
    "abilities/charge",
    "abilities/agile-charge"
-  ]
+  ],
+  "summary": "Charge can pass through difficult terrain."
  },
  {
   "id": "abilities/leg-shot",
@@ -978,7 +1016,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "Ranged attack at minor disadvantage to apply Crippled on hit."
  },
  {
   "id": "abilities/line-of-fire",
@@ -1005,7 +1044,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ]
+  ],
+  "summary": "Change suppression area to a line."
  },
  {
   "id": "abilities/long-performance",
@@ -1028,7 +1068,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Use General Spectacle for multiple rounds."
  },
  {
   "id": "abilities/lucky-strike",
@@ -1051,7 +1092,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Increase Luck die to d6 on attack rolls."
  },
  {
   "id": "abilities/martial-supremacy",
@@ -1077,7 +1119,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/martial-training"
-  ]
+  ],
+  "summary": "Reroll a decision die during unarmed trip, disarm, or grapple."
  },
  {
   "id": "abilities/medical-marvel",
@@ -1100,7 +1143,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heal a condition or wound by spending Luck."
  },
  {
   "id": "abilities/momentum-dodge",
@@ -1127,7 +1171,8 @@
   "requires": [
    "proficiencies/martial-training",
    "abilities/agile-dodge"
-  ]
+  ],
+  "summary": "Swap spaces with your attacker using Agile Dodge."
  },
  {
   "id": "abilities/natural-gift",
@@ -1150,7 +1195,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Increase Luck die to d6 for a chosen attribute."
  },
  {
   "id": "abilities/opensaysame",
@@ -1176,7 +1222,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Break a door panel to guarantee it opens or closes."
  },
  {
   "id": "abilities/oppressive-suppression",
@@ -1203,7 +1250,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/suppressing-fire"
-  ]
+  ],
+  "summary": "Expand suppression to six non-adjacent squares."
  },
  {
   "id": "abilities/outburst",
@@ -1226,7 +1274,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Interrupt enemies mid action."
  },
  {
   "id": "abilities/overcharge",
@@ -1252,7 +1301,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Push a battery weapon beyond rated output for bonus damage."
  },
  {
   "id": "abilities/overview",
@@ -1300,7 +1350,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "Bonus damage and advantage if stationary and untargeted since last turn."
  },
  {
   "id": "abilities/power-main-tap",
@@ -1326,7 +1377,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Tap a large power source to rapidly recharge a battery."
  },
  {
   "id": "abilities/powerful-rage",
@@ -1352,7 +1404,8 @@
   "selectable": true,
   "requires": [
    "abilities/rage"
-  ]
+  ],
+  "summary": "Spend two uses for +4 STR +4 FORT."
  },
  {
   "id": "abilities/precise-focus",
@@ -1379,7 +1432,8 @@
   "requires": [
    "abilities/focus-attack",
    "abilities/focus-in"
-  ]
+  ],
+  "summary": "Triple normal range for Focus abilities."
  },
  {
   "id": "abilities/quick-draw",
@@ -1402,7 +1456,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Draw an equipped weapon for no AP."
  },
  {
   "id": "abilities/quick-firing",
@@ -1428,7 +1483,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "Use two semi-auto pistols for full-auto abilities."
  },
  {
   "id": "abilities/rage",
@@ -1451,7 +1507,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Enter an enraged state for a short duration."
  },
  {
   "id": "abilities/rally",
@@ -1474,7 +1531,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Grant a temporary 1 AP to an ally within 30ft who can hear you."
  },
  {
   "id": "abilities/reckless-attack",
@@ -1497,7 +1555,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trade DEF for ATK and DMG on melee attacks."
  },
  {
   "id": "abilities/rigged-comp-jack",
@@ -1525,7 +1584,8 @@
   "requires": [
    "proficiencies/comp-jack",
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Build a makeshift comp jack from tech kit supplies."
  },
  {
   "id": "abilities/salvage",
@@ -1551,7 +1611,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/repair-kit"
-  ]
+  ],
+  "summary": "Refill a supply die from mechanical wreckage."
  },
  {
   "id": "abilities/signal-intelligence",
@@ -1578,7 +1639,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/comp-jack"
-  ]
+  ],
+  "summary": "Intercept unencrypted communications with a comp jack."
  },
  {
   "id": "abilities/slip-strike",
@@ -1605,7 +1667,8 @@
   "requires": [
    "proficiencies/martial-training",
    "abilities/agile-dodge"
-  ]
+  ],
+  "summary": "Make a melee attack during Agile Dodge or Momentum Dodge movement."
  },
  {
   "id": "abilities/special-encouragement",
@@ -1632,7 +1695,8 @@
   "requires": [
    "proficiencies/general-robotics",
    "abilities/companion-bot"
-  ]
+  ],
+  "summary": "Quickly repair your companion for no supplies."
  },
  {
   "id": "abilities/student",
@@ -1655,7 +1719,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Gain a bonus by applying knowledge of a topic."
  },
  {
   "id": "abilities/suppressing-fire",
@@ -1681,7 +1746,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/weapon"
-  ]
+  ],
+  "summary": "Pin enemies in an area with automatic fire."
  },
  {
   "id": "abilities/swift-custom-battery",
@@ -1707,7 +1773,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Quickly install mismatched batteries."
  },
  {
   "id": "abilities/swift-dual-attack",
@@ -1734,7 +1801,8 @@
   "requires": [
    "proficiencies/weapon",
    "abilities/dual-attack"
-  ]
+  ],
+  "summary": "Dual Attack ability costs 2 AP instead of 4."
  },
  {
   "id": "abilities/tech-armor",
@@ -1760,7 +1828,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/general-technology"
-  ]
+  ],
+  "summary": "Install and remove upgrades and components without risk of damage."
  },
  {
   "id": "abilities/the-look",
@@ -1786,7 +1855,8 @@
   "selectable": true,
   "requires": [
    "traits/particularly-attractive"
-  ]
+  ],
+  "summary": "Lock eyes to gain advantage on your next roll against them."
  },
  {
   "id": "abilities/tis-but-a-scratch",
@@ -1815,7 +1885,8 @@
    "abilities/defender",
    "abilities/just-winded",
    "abilities/just-grazed"
-  ]
+  ],
+  "summary": "Spend Luck to fully negate an attack."
  },
  {
   "id": "abilities/true-defender",
@@ -1843,7 +1914,8 @@
    "traits/tough",
    "abilities/defender",
    "abilities/friend-in-need"
-  ]
+  ],
+  "summary": "Use Defender on behalf of an ally."
  },
  {
   "id": "abilities/unsettling-rage",
@@ -1871,7 +1943,8 @@
    "traits/intimidating",
    "abilities/rage",
    "abilities/powerful-rage"
-  ]
+  ],
+  "summary": "Intimidate a nearby opponent when activating Rage."
  },
  {
   "id": "abilities/vital-focus",
@@ -1897,7 +1970,8 @@
   "selectable": true,
   "requires": [
    "abilities/vital-strike"
-  ]
+  ],
+  "summary": "Add Vital Strike dice to Focus Attack rolls."
  },
  {
   "id": "abilities/vital-strike",
@@ -1920,7 +1994,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Add bonus damage to surprise attacks."
  },
  {
   "id": "actions/action-types",
@@ -3088,7 +3163,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Advantage on hearing-based INS, filter functions"
  },
  {
   "id": "components/augmented-arm-actuators",
@@ -3111,7 +3187,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 STR for physical tasks while powered"
  },
  {
   "id": "components/automatic-crash-foam-system",
@@ -3134,7 +3211,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Auto-deploys on Dying; 1 use, 4 AP to restock"
  },
  {
   "id": "components/backup-power-cell",
@@ -3157,7 +3235,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Secondary Medium battery housing"
  },
  {
   "id": "components/damage-and-wounds",
@@ -3202,7 +3281,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Mounted laser rifle equivalent"
  },
  {
   "id": "components/improved-cooling-system",
@@ -3225,7 +3305,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Resist burn, ignore heat environmental effects"
  },
  {
   "id": "components/installation",
@@ -3271,7 +3352,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Comp Jack without occupying hands"
  },
  {
   "id": "components/manipulator-override",
@@ -3294,7 +3376,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 DEX for fine motor tasks while powered"
  },
  {
   "id": "components/optical-suite",
@@ -3317,7 +3400,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Low-light, thermal, zoom"
  },
  {
   "id": "components/overview",
@@ -3384,7 +3468,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+3 DEF Bonus"
  },
  {
   "id": "components/relay-node",
@@ -3407,7 +3492,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Sync into a shared sensor network"
  },
  {
   "id": "components/repair-subroutine",
@@ -3430,7 +3516,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Self-repair 1 VIT per long rest"
  },
  {
   "id": "components/servo-boost-legs",
@@ -3453,7 +3540,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+10ft speed, +5ft jump while powered"
  },
  {
   "id": "components/shield-mount",
@@ -3476,7 +3564,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Partial cover while active. 1d12 Supply Die"
  },
  {
   "id": "components/signal-mast-heavy",
@@ -3501,7 +3590,8 @@
    "split-from: Signal Masts"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Increases com range to 500 miles"
  },
  {
   "id": "components/signal-mast-retractable",
@@ -3526,7 +3616,8 @@
    "split-from: Signal Masts"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Increases com range to 20 miles"
  },
  {
   "id": "components/stabilizer-gyros",
@@ -3549,7 +3640,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Resist knockdown, no falling damage under 20ft"
  },
  {
   "id": "components/subdermal-plating",
@@ -3572,7 +3664,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+1 DEF Bonus, no slot conflict"
  },
  {
   "id": "components/targeting-array",
@@ -3595,7 +3688,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+1 ranged ATK, limited daily uses"
  },
  {
   "id": "components/wrist-laser",
@@ -3618,7 +3712,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Mounted laser pistol equivalent"
  },
  {
   "id": "conditions/asphyxiating",
@@ -3639,7 +3734,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "FORT checks each turn or fall unconscious \u2014 1 VIT/round if unconscious"
  },
  {
   "id": "conditions/bleeding",
@@ -3660,7 +3756,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Blood die at end of turn \u2014 3 or lower deals 1 VIT, die shrinks"
  },
  {
   "id": "conditions/confused",
@@ -3681,7 +3778,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress"
  },
  {
   "id": "conditions/crippled",
@@ -3703,7 +3801,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All speeds -10, +1 Stress if using 3+ AP"
  },
  {
   "id": "conditions/dead-battery",
@@ -3748,7 +3847,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "FORT check each turn (starts at 3, +1/round) \u2014 failure or damage means death"
  },
  {
   "id": "conditions/fatigued",
@@ -3770,7 +3870,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "-2 STR, AGI, and DEX, -2 AP/round"
  },
  {
   "id": "conditions/frightened",
@@ -3791,7 +3892,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "-2 INS, +1 Stress"
  },
  {
   "id": "conditions/immobilized",
@@ -3813,7 +3915,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cannot take physical actions \u2014 DEX and AGI treated as null"
  },
  {
   "id": "conditions/overview",
@@ -3853,7 +3956,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Only physical action is to escape the pin"
  },
  {
   "id": "conditions/prone",
@@ -3875,7 +3979,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Half speed, disadvantage on melee attacks \u2014 adjacent attackers gain minor advantage"
  },
  {
   "id": "conditions/restrained",
@@ -3897,7 +4002,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Physical actions limited \u2014 affected limb unusable"
  },
  {
   "id": "conditions/shaken",
@@ -3918,7 +4024,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "-1 to all decision rolls, -2 max DEF, +1 Stress"
  },
  {
   "id": "conditions/sick",
@@ -3940,7 +4047,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
  },
  {
   "id": "conditions/stressed",
@@ -3961,7 +4069,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cannot use Luck, -1 to all decision rolls per point over threshold"
  },
  {
   "id": "conditions/unconscious",
@@ -3983,7 +4092,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cannot take any actions \u2014 attackers gain advantage and surprise"
  },
  {
   "id": "core-rules/size",
@@ -4159,7 +4269,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "One day of feed for one mount or pack animal."
  },
  {
   "id": "generic-equipment/antiseptic-poultice",
@@ -4182,7 +4293,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Prevents infection and aids wound recovery."
  },
  {
   "id": "generic-equipment/antitoxin",
@@ -4205,7 +4317,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Removes or reduces toxin-based conditions."
  },
  {
   "id": "generic-equipment/backpack",
@@ -4228,7 +4341,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+20 max carry weight."
  },
  {
   "id": "generic-equipment/bag-of-salt",
@@ -4251,7 +4365,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Preserves food, seasons meals, and has various utility uses."
  },
  {
   "id": "generic-equipment/bandages-large",
@@ -4276,7 +4391,8 @@
    "split-from: Bandages"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Closes and covers major wounds."
  },
  {
   "id": "generic-equipment/bandages-small",
@@ -4301,7 +4417,8 @@
    "split-from: Bandages"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Closes and covers minor wounds."
  },
  {
   "id": "generic-equipment/barrel",
@@ -4324,7 +4441,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Holds up to 30 gallons of liquid or dry goods."
  },
  {
   "id": "generic-equipment/bedroll",
@@ -4347,7 +4465,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Basic sleeping gear. Packs down for travel."
  },
  {
   "id": "generic-equipment/blank-book-journal",
@@ -4370,7 +4489,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bound book with approximately 100 blank pages."
  },
  {
   "id": "generic-equipment/block-of-soap",
@@ -4393,7 +4513,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cleaning agent. Multiple uses per block."
  },
  {
   "id": "generic-equipment/candle",
@@ -4416,7 +4537,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "8hr burn. 5ft bright light, 10ft dim light."
  },
  {
   "id": "generic-equipment/candle-wax-block",
@@ -4439,7 +4561,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Waterproofing, sealing, and lubricating."
  },
  {
   "id": "generic-equipment/chain-10ft",
@@ -4462,7 +4585,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heavy duty restraint and utility chain."
  },
  {
   "id": "generic-equipment/chalk-sticks",
@@ -4485,7 +4609,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "For marking surfaces, writing, and sketching."
  },
  {
   "id": "generic-equipment/coil-of-wire",
@@ -4508,7 +4633,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "25ft of thin metal wire for snares, repairs, and binding."
  },
  {
   "id": "generic-equipment/common-alcohol-flask",
@@ -4531,7 +4657,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Cheap liquor. Also useful as a disinfectant and solvent."
  },
  {
   "id": "generic-equipment/compass",
@@ -4554,7 +4681,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Aids in maintaining direction of travel."
  },
  {
   "id": "generic-equipment/crate",
@@ -4577,7 +4705,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "General purpose bulk storage."
  },
  {
   "id": "generic-equipment/dry-sack",
@@ -4600,7 +4729,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Waterproof bag for protecting contents from moisture."
  },
  {
   "id": "generic-equipment/face-wrap",
@@ -4623,7 +4753,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Protects against dust, sand, and mild airborne hazards."
  },
  {
   "id": "generic-equipment/field-ration",
@@ -4647,7 +4778,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "variant_group": "field-ration"
+  "variant_group": "field-ration",
+  "summary": "One day of food for one person."
  },
  {
   "id": "generic-equipment/fire-starter",
@@ -4670,7 +4802,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Flint & steel or equivalent. Reliably starts fires."
  },
  {
   "id": "generic-equipment/fuel-oil-flask",
@@ -4693,7 +4826,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Refuels a lantern for 4hrs. Flammable."
  },
  {
   "id": "generic-equipment/grappling-hook",
@@ -4716,7 +4850,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Attaches to rope. Throwable [30ft]."
  },
  {
   "id": "generic-equipment/heavy-cloak",
@@ -4739,7 +4874,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Partial protection from cold and rain. Covers equipped gear."
  },
  {
   "id": "generic-equipment/ink-writing-instrument",
@@ -4762,7 +4898,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "For writing on parchment, paper, or similar surfaces."
  },
  {
   "id": "generic-equipment/iron-spikes",
@@ -4785,7 +4922,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "For securing things that need nailing down."
  },
  {
   "id": "generic-equipment/lockable-chest",
@@ -4808,7 +4946,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bulky. Secure storage for valuables."
  },
  {
   "id": "generic-equipment/long-crowbar",
@@ -4831,7 +4970,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 bonus to STR checks for prying and leverage."
  },
  {
   "id": "generic-equipment/manacles",
@@ -4854,7 +4994,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Metal restraints for binding a creature's wrists."
  },
  {
   "id": "generic-equipment/oil-lantern",
@@ -4877,7 +5018,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "4hrs per fuel flask. Can be hooded. 30ft bright, 30ft dim."
  },
  {
   "id": "generic-equipment/parchment-sheets",
@@ -4900,7 +5042,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Writing surfaces. Pack of five sheets."
  },
  {
   "id": "generic-equipment/pitons",
@@ -4923,7 +5066,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Metal spikes hammered into surfaces for climbing."
  },
  {
   "id": "generic-equipment/pouch-set-ammo",
@@ -4948,7 +5092,8 @@
    "split-from: Pouch Sets"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Holds ammunition for use during combat."
  },
  {
   "id": "generic-equipment/pouch-set-small",
@@ -4973,7 +5118,8 @@
    "split-from: Pouch Sets"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Holds small items for quick access."
  },
  {
   "id": "generic-equipment/pouch-set-standard",
@@ -4998,7 +5144,8 @@
    "split-from: Pouch Sets"
   ],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Holds most handheld items for quick access."
  },
  {
   "id": "generic-equipment/quiver",
@@ -5021,7 +5168,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Holds ranged weapon ammunition."
  },
  {
   "id": "generic-equipment/rain-poncho",
@@ -5044,7 +5192,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Keeps the wearer dry. Covers equipped gear."
  },
  {
   "id": "generic-equipment/reinforced-boots",
@@ -5067,7 +5216,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Provides improved footing on rough terrain."
  },
  {
   "id": "generic-equipment/restorative-tonic",
@@ -5090,7 +5240,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heals 1 VIT or attribute damage."
  },
  {
   "id": "generic-equipment/rope-50ft",
@@ -5113,7 +5264,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "General purpose rope. Supports up to 500lbs."
  },
  {
   "id": "generic-equipment/saddlebags",
@@ -5136,7 +5288,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Pair of bags designed for a mount. +60 max carry weight for the mount."
  },
  {
   "id": "generic-equipment/satchel",
@@ -5159,7 +5312,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "A mid-sized bag for documents or light supplies."
  },
  {
   "id": "generic-equipment/sewing-set",
@@ -5182,7 +5336,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Needle, thread, and patches for basic repairs to fabric and leather."
  },
  {
   "id": "generic-equipment/shovel",
@@ -5205,7 +5360,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "For digging."
  },
  {
   "id": "generic-equipment/signal-mirror",
@@ -5228,7 +5384,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Reflects light to signal over long distances in daylight."
  },
  {
   "id": "generic-equipment/signal-whistle",
@@ -5251,7 +5408,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Audible up to half a mile in open terrain."
  },
  {
   "id": "generic-equipment/small-bell",
@@ -5274,7 +5432,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "A tiny bell useful as a simple alarm or signal device."
  },
  {
   "id": "generic-equipment/splint-materials",
@@ -5297,7 +5456,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Stabilizes broken or fractured limbs."
  },
  {
   "id": "generic-equipment/tent-2-person",
@@ -5320,7 +5480,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Basic shelter for two."
  },
  {
   "id": "generic-equipment/tent-4-person",
@@ -5343,7 +5504,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bulky. Shelter for four with room for gear."
  },
  {
   "id": "generic-equipment/torch",
@@ -5366,7 +5528,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "1hr burn. Single use."
  },
  {
   "id": "generic-equipment/twine",
@@ -5389,7 +5552,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "100ft of light cord."
  },
  {
   "id": "generic-equipment/waterskin",
@@ -5412,7 +5576,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Carries up to half a gallon of liquid."
  },
  {
   "id": "generic-equipment/whetstone",
@@ -5435,7 +5600,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Sharpens and maintains edged weapons."
  },
  {
   "id": "generic-equipment/wide-brim-hat",
@@ -5458,7 +5624,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Minor protectiob from sun and light rain."
  },
  {
   "id": "generic-equipment/wooden-stakes",
@@ -5481,7 +5648,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Sharpened wooden stakes for tents, traps, or other uses."
  },
  {
   "id": "generic-equipment/work-gloves",
@@ -5504,7 +5672,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Protects hands during labor and rough handling."
  },
  {
   "id": "health/applying-damage",
@@ -6266,7 +6435,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of a selected armor type."
  },
  {
   "id": "proficiencies/b-e-kit",
@@ -6288,7 +6458,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of the B&E kit."
  },
  {
   "id": "proficiencies/comp-jack",
@@ -6311,7 +6482,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Specialized training in computer systems and the comp jack."
  },
  {
   "id": "proficiencies/disguise-kit",
@@ -6333,7 +6505,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of the disguise kit."
  },
  {
   "id": "proficiencies/general-robotics",
@@ -6355,7 +6528,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in maintenance and repair of robotic parts and models."
  },
  {
   "id": "proficiencies/general-technology",
@@ -6377,7 +6551,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of the Tech Kit."
  },
  {
   "id": "proficiencies/improved-ability",
@@ -6399,7 +6574,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Special training with a particular ability."
  },
  {
   "id": "proficiencies/licensed-instincts",
@@ -6424,7 +6600,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/vehicle"
-  ]
+  ],
+  "summary": "Add INS bonus to Vehicle Proficiency rolls."
  },
  {
   "id": "proficiencies/martial-training",
@@ -6446,7 +6623,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained to fight unarmed as effectively as armed."
  },
  {
   "id": "proficiencies/medic-training",
@@ -6468,7 +6646,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of the med kit."
  },
  {
   "id": "proficiencies/medical-instincts",
@@ -6493,7 +6672,8 @@
   "selectable": true,
   "requires": [
    "proficiencies/medic-training"
-  ]
+  ],
+  "summary": "Add INS to Medic Training rolls."
  },
  {
   "id": "proficiencies/negotiation-training",
@@ -6515,7 +6695,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 bonus on rolls to negotiate, broker deals, or de-escalate conflict."
  },
  {
   "id": "proficiencies/overview",
@@ -6559,7 +6740,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Trained in the use of the repair kit."
  },
  {
   "id": "proficiencies/research",
@@ -6581,7 +6763,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 bonus on KNO checks related to a chosen field of study."
  },
  {
   "id": "proficiencies/survival-training",
@@ -6603,7 +6786,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 bonus on rolls to navigate, forage, track, or endure harsh environments."
  },
  {
   "id": "proficiencies/vehicle",
@@ -6625,7 +6809,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Familiar with a type of vehicle."
  },
  {
   "id": "proficiencies/weapon",
@@ -6647,7 +6832,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Specialized training with a selected weapon type."
  },
  {
   "id": "races/android",
@@ -6806,7 +6992,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Single use. Removes radiation wounds and conditions within 1hr."
  },
  {
   "id": "sci-fi-equipment/auto-injector",
@@ -6830,7 +7017,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Neck slot. Auto-administers a preloaded injector on trauma."
  },
  {
   "id": "sci-fi-equipment/auto-pistol",
@@ -6855,7 +7043,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Full-auto. Concealable. 20ft range."
  },
  {
   "id": "sci-fi-equipment/b-e-kit",
@@ -6878,7 +7067,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bulky. Locks, traps, bypass tools."
  },
  {
   "id": "sci-fi-equipment/ballistic-shield",
@@ -6901,7 +7091,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+3 DEF, 1d12 Supply"
  },
  {
   "id": "sci-fi-equipment/basic-p-suit",
@@ -6925,7 +7116,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Minimum protection for airless environments."
  },
  {
   "id": "sci-fi-equipment/battery-cores",
@@ -6948,7 +7140,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Portable power available in multiple sizes."
  },
  {
   "id": "sci-fi-equipment/bio-scanner",
@@ -6971,7 +7164,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Scans organic matter. 2 AP, 5ft range."
  },
  {
   "id": "sci-fi-equipment/bioskin-veil",
@@ -6994,7 +7188,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Creates a near-perfect disguise."
  },
  {
   "id": "sci-fi-equipment/bipod",
@@ -7018,7 +7213,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range."
  },
  {
   "id": "sci-fi-equipment/boost-pack",
@@ -7041,7 +7237,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "10ft directional burst for 1 AP; does not provoke Opportunity Attacks."
  },
  {
   "id": "sci-fi-equipment/chameleon-unit",
@@ -7065,7 +7262,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Active camouflage system."
  },
  {
   "id": "sci-fi-equipment/classic-evosuit",
@@ -7089,7 +7287,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Advances space suit popular among pilots and hazardous atmosphere workers."
  },
  {
   "id": "sci-fi-equipment/collapsible-shield",
@@ -7112,7 +7311,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 DEF 1d8 Supply"
  },
  {
   "id": "sci-fi-equipment/combat-evosuit",
@@ -7136,7 +7336,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Advanced space suit designed for tactical use."
  },
  {
   "id": "sci-fi-equipment/combat-vest",
@@ -7160,7 +7361,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Simple protective vest. No AGI/DEX penalty."
  },
  {
   "id": "sci-fi-equipment/comp-jack",
@@ -7184,7 +7386,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Required for interfacing with computer systems."
  },
  {
   "id": "sci-fi-equipment/compact-rifle",
@@ -7209,7 +7412,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Full-auto. Two-handed. 30ft range."
  },
  {
   "id": "sci-fi-equipment/coms-headset",
@@ -7232,7 +7436,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Wireless connection for com devices."
  },
  {
   "id": "sci-fi-equipment/coms-unit",
@@ -7256,7 +7461,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Head [Coms]. Encrypted radio, 1 mile range."
  },
  {
   "id": "sci-fi-equipment/crash-foam-canister",
@@ -7279,7 +7485,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Single use. Stabilizes a Dying Android or automated machine."
  },
  {
   "id": "sci-fi-equipment/data-spike",
@@ -7303,7 +7510,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Disposable high-speed USB data extraction device."
  },
  {
   "id": "sci-fi-equipment/decoy-beacon",
@@ -7326,7 +7534,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Mimics com signals and life signs for 1hr."
  },
  {
   "id": "sci-fi-equipment/disguise-kit",
@@ -7349,7 +7558,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Alters appearance, applies camouflage."
  },
  {
   "id": "sci-fi-equipment/drum-magazines",
@@ -7373,7 +7583,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All ballistic. Increased ammo die size."
  },
  {
   "id": "sci-fi-equipment/emergency-beacon",
@@ -7396,7 +7607,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Sends a distress signal across a star system for 72hrs."
  },
  {
   "id": "sci-fi-equipment/emergency-hatchet",
@@ -7421,7 +7633,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Throwable [20ft]."
  },
  {
   "id": "sci-fi-equipment/emergency-oxygen-mask",
@@ -7444,7 +7657,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "30 minutes of clean oxygen."
  },
  {
   "id": "sci-fi-equipment/emergency-shank",
@@ -7468,7 +7682,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Arm slot. Single-use ranged or melee weapon."
  },
  {
   "id": "sci-fi-equipment/emergency-trauma-patch",
@@ -7491,7 +7706,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Single use. Closes lacerations and punctures. Works on Evosuits."
  },
  {
   "id": "sci-fi-equipment/enforcer-armor",
@@ -7515,7 +7731,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "No-frills armor favored by private security."
  },
  {
   "id": "sci-fi-equipment/eva-suit",
@@ -7539,7 +7756,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "An early model space suit, well equipped but bulky."
  },
  {
   "id": "sci-fi-equipment/extended-barrel",
@@ -7563,7 +7781,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Pistols, Rifles. +20ft normal range."
  },
  {
   "id": "sci-fi-equipment/field-ration",
@@ -7587,7 +7806,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "variant_group": "field-ration"
+  "variant_group": "field-ration",
+  "summary": "One day of nutrients for one person."
  },
  {
   "id": "sci-fi-equipment/forward-assault-shield",
@@ -7611,7 +7831,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heavy Ranged. Partial cover, -1 attack while active."
  },
  {
   "id": "sci-fi-equipment/fuel-cells",
@@ -7634,7 +7855,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Pressurized propellant canisters in small, medium, and large sizes."
  },
  {
   "id": "sci-fi-equipment/grapple-line-launcher",
@@ -7657,7 +7879,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Magnetic grappling hook."
  },
  {
   "id": "sci-fi-equipment/gravity-anchor",
@@ -7680,7 +7903,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "10ft gravity field, 10 min per roll."
  },
  {
   "id": "sci-fi-equipment/hazard-hud",
@@ -7704,7 +7928,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Helmet [HUD]. Lowers hazard detection checks within 10ft."
  },
  {
   "id": "sci-fi-equipment/heavy-pistol",
@@ -7729,7 +7954,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Single shot. 50ft range."
  },
  {
   "id": "sci-fi-equipment/heavy-rotary-cannon",
@@ -7754,7 +7980,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range."
  },
  {
   "id": "sci-fi-equipment/jump-boosters",
@@ -7777,7 +8004,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+10ft to horizontal and vertical jump."
  },
  {
   "id": "sci-fi-equipment/jump-pack",
@@ -7800,7 +8028,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Vertical launch up to 25ft or controlled arc; reduces fall damage."
  },
  {
   "id": "sci-fi-equipment/kit-supplies",
@@ -7848,7 +8077,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Hand slot. Built in shock charger for a shocking punch."
  },
  {
   "id": "sci-fi-equipment/laser-pistol",
@@ -7873,7 +8103,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Battery [small]. Single shot. Burn. 60ft range."
  },
  {
   "id": "sci-fi-equipment/laser-rifle",
@@ -7898,7 +8129,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range."
  },
  {
   "id": "sci-fi-equipment/light-combat-vest",
@@ -7922,7 +8154,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Concealable. Lower profile version of the combat vest."
  },
  {
   "id": "sci-fi-equipment/light-pistol",
@@ -7947,7 +8180,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Semi-auto. Concealable. 30ft range."
  },
  {
   "id": "sci-fi-equipment/long-range-coms",
@@ -7970,7 +8204,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "500 mile range. Connects to local networks."
  },
  {
   "id": "sci-fi-equipment/long-rifle",
@@ -7995,7 +8230,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range."
  },
  {
   "id": "sci-fi-equipment/mag-boots",
@@ -8018,7 +8254,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
  },
  {
   "id": "sci-fi-equipment/mag-cuffs",
@@ -8041,7 +8278,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Encrypted magnetic handcuffs with wrist controller."
  },
  {
   "id": "sci-fi-equipment/mebn-hud",
@@ -8065,7 +8303,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
  },
  {
   "id": "sci-fi-equipment/medical-kit",
@@ -8088,7 +8327,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heals wounds and conditions."
  },
  {
   "id": "sci-fi-equipment/mini-laser-cutter",
@@ -8111,7 +8351,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Direct contact laser cutter/welder."
  },
  {
   "id": "sci-fi-equipment/mobile-phone",
@@ -8134,7 +8375,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "1 mile range. Connects to local networks."
  },
  {
   "id": "sci-fi-equipment/overcharge-chamber",
@@ -8158,7 +8400,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All battery ranged. 3/day increase a damage die by one size."
  },
  {
   "id": "sci-fi-equipment/padded-flight-suit",
@@ -8182,7 +8425,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Offers greater protection than a standard coverall."
  },
  {
   "id": "sci-fi-equipment/pain-suppressant-injector",
@@ -8205,7 +8449,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Variable dosage. Suppresses condition effects temporarily."
  },
  {
   "id": "sci-fi-equipment/personal-shield",
@@ -8228,7 +8473,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "10pts protection for up to 3 rounds."
  },
  {
   "id": "sci-fi-equipment/portable-heater",
@@ -8251,7 +8497,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Heats a small area."
  },
  {
   "id": "sci-fi-equipment/portable-water-purifier",
@@ -8274,7 +8521,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Purifies up to 5 gallons per supply roll."
  },
  {
   "id": "sci-fi-equipment/reactor-cores",
@@ -8297,7 +8545,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Self-charging power cores for automated machines."
  },
  {
   "id": "sci-fi-equipment/recoil-compensation-system",
@@ -8321,7 +8570,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All ballistic. +1 attack, negates zero-g knockback."
  },
  {
   "id": "sci-fi-equipment/reflex-sight",
@@ -8345,7 +8595,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All ranged. +2 to attacks at normal range."
  },
  {
   "id": "sci-fi-equipment/remote-detonator",
@@ -8368,7 +8619,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Detonates rigged explosives or systems."
  },
  {
   "id": "sci-fi-equipment/repair-kit",
@@ -8391,7 +8643,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bulky. Machinery, vehicles, structures."
  },
  {
   "id": "sci-fi-equipment/ripper-blade",
@@ -8416,7 +8669,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Two-handed. Deals +5 shatter damage to armor."
  },
  {
   "id": "sci-fi-equipment/safer-unit",
@@ -8440,7 +8694,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Back. A propulsion unit for navigating in zero gravity."
  },
  {
   "id": "sci-fi-equipment/scav-gear",
@@ -8464,7 +8719,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Grants an extra body slot and +50 max carry weight."
  },
  {
   "id": "sci-fi-equipment/security-flight-suit",
@@ -8488,7 +8744,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Tactical variation of the padded flight suit."
  },
  {
   "id": "sci-fi-equipment/shock-baton",
@@ -8513,7 +8770,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Built in shock charger."
  },
  {
   "id": "sci-fi-equipment/shock-charger",
@@ -8537,7 +8795,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "All melee. +2 damage, changes type to shock. FORT check or lose 1 AP."
  },
  {
   "id": "sci-fi-equipment/shock-rifle",
@@ -8562,7 +8821,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
  },
  {
   "id": "sci-fi-equipment/signature-spoofer",
@@ -8585,7 +8845,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Emits a false bio-signature to scanners."
  },
  {
   "id": "sci-fi-equipment/site-safety-gear",
@@ -8609,7 +8870,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Basic corporate-approved protective gear."
  },
  {
   "id": "sci-fi-equipment/solar-array-pack",
@@ -8632,7 +8894,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Charges micro through large batteries via solar."
  },
  {
   "id": "sci-fi-equipment/squad-shield",
@@ -8655,7 +8918,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "30pts protection, 20ft radius, up to 6 rounds."
  },
  {
   "id": "sci-fi-equipment/standard-issue-knife",
@@ -8680,7 +8944,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Concealable. Throwable [10ft]."
  },
  {
   "id": "sci-fi-equipment/standard-issue-rifle",
@@ -8705,7 +8970,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Ballistic. Semi-auto. Two-handed. 40ft range."
  },
  {
   "id": "sci-fi-equipment/survival-tent",
@@ -8728,7 +8994,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Pressurized 10\u00d710ft shelter for four."
  },
  {
   "id": "sci-fi-equipment/targeting-hud",
@@ -8752,7 +9019,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Helmet [HUD]. Lock on to lower target number for ranged attacks."
  },
  {
   "id": "sci-fi-equipment/tech-kit",
@@ -8775,7 +9043,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Electronic components and equipment."
  },
  {
   "id": "sci-fi-equipment/ultraweave-evosuit",
@@ -8799,7 +9068,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Most advanced Evosuit available."
  },
  {
   "id": "sci-fi-equipment/vitaboost-injector",
@@ -8822,7 +9092,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Single use. Heals 1 VIT or attribute damage."
  },
  {
   "id": "sci-fi-equipment/weighted-core",
@@ -8846,7 +9117,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Medium melee, polearms, two-handed. +3 damage. Loses throwable tag."
  },
  {
   "id": "sci-fi/ballistics-in-space",
@@ -9181,7 +9453,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+4 to initiative."
  },
  {
   "id": "traits/composed",
@@ -9203,7 +9476,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Re-roll one decision die after your first failed WILL check each session."
  },
  {
   "id": "traits/diplomatic",
@@ -9225,7 +9499,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 to persuasion rolls."
  },
  {
   "id": "traits/hot-headed",
@@ -9247,7 +9522,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Gain temporary +2 AP the first time you take VIT damage each session."
  },
  {
   "id": "traits/inter-planet-traveler",
@@ -9269,7 +9545,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Immune system hardened by travel between planets."
  },
  {
   "id": "traits/intimidating",
@@ -9291,7 +9568,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 to intimidation rolls."
  },
  {
   "id": "traits/lucky",
@@ -9313,7 +9591,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bonus to max Luck."
  },
  {
   "id": "traits/mentally-sound",
@@ -9335,7 +9614,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+1 bonus to max Stress Threshold."
  },
  {
   "id": "traits/overview",
@@ -9379,7 +9659,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 to persuasion rolls with someone who finds you attractive."
  },
  {
   "id": "traits/picture-of-health",
@@ -9401,7 +9682,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+1 bonus to VIT."
  },
  {
   "id": "traits/racial-traits",
@@ -9448,7 +9730,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Accustomed to carrying heavy loads in different environments."
  },
  {
   "id": "traits/sly",
@@ -9470,7 +9753,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 to deception rolls."
  },
  {
   "id": "traits/sneaky",
@@ -9492,7 +9776,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 to stealth rolls."
  },
  {
   "id": "traits/space-adept",
@@ -9514,7 +9799,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Accustomed to zero and low-gravity environments."
  },
  {
   "id": "traits/stubborn",
@@ -9536,7 +9822,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Resist manipulation and deception."
  },
  {
   "id": "traits/tough",
@@ -9558,7 +9845,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "DEF bonus."
  },
  {
   "id": "traits/unremarkable",
@@ -9580,7 +9868,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+2 bonus to blend into a crowd or visually hide your identity."
  },
  {
   "id": "traits/unshakable",
@@ -9602,7 +9891,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Resistant to fear and distraction."
  },
  {
   "id": "traits/well-connected",
@@ -9624,7 +9914,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Declare a contact once per session in your current location."
  },
  {
   "id": "vehicles/boarding-and-bailing",
@@ -9887,7 +10178,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "+1 Stress until dressed"
  },
  {
   "id": "wounds/common-injuries",
@@ -9927,7 +10219,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Crippled"
  },
  {
   "id": "wounds/dislocation",
@@ -9948,7 +10241,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Crippled or Restrained"
  },
  {
   "id": "wounds/fracture",
@@ -9969,7 +10263,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Shaken, +1 Stress \u2014 may add Bleeding, Crippled, or Confused"
  },
  {
   "id": "wounds/laceration",
@@ -9990,7 +10285,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bleeding"
  },
  {
   "id": "wounds/overview",
@@ -10030,7 +10326,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Bleeding"
  },
  {
   "id": "wounds/sprain",
@@ -10051,7 +10348,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "summary": "Crippled or Restrained"
  },
  {
   "id": "wounds/wounds",

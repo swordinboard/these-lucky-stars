@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, light-armor]
+summary: "Offers greater protection than a standard coverall."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "Resistant to fear and distraction."
 headless: true
 ---
 

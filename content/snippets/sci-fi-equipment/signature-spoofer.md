@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "Emits a false bio-signature to scanners."
 headless: true
 ---
 

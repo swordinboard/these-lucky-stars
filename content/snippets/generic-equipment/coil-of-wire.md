@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, trade-goods]
+summary: "25ft of thin metal wire for snares, repairs, and binding."
 headless: true
 ---
 

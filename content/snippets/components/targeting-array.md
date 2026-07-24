@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "+1 ranged ATK, limited daily uses"
 headless: true
 ---
 

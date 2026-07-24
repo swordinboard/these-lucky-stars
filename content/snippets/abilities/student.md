@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Gain a bonus by applying knowledge of a topic."
 headless: true
 ---
 

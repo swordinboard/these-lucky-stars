@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: medium
 tags: [condition, attacker-advantage]
+summary: "-2 STR, AGI, and DEX, -2 AP/round"
 headless: true
 ---
 

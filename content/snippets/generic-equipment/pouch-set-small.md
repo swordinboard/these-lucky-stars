@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, containers]
+summary: "Holds small items for quick access."
 headless: true
 ---
 

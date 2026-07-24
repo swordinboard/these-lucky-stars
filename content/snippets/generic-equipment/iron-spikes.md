@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, trade-goods]
+summary: "For securing things that need nailing down."
 headless: true
 ---
 

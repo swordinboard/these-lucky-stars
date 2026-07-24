@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, survival]
+summary: "Charges micro through large batteries via solar."
 headless: true
 ---
 

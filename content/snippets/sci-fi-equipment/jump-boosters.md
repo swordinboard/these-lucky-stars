@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "+10ft to horizontal and vertical jump."
 headless: true
 ---
 

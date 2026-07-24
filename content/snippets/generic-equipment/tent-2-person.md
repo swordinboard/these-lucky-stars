@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "Basic shelter for two."
 headless: true
 ---
 

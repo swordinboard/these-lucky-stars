@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition]
+summary: "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious"
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [proficiency, core]
+summary: "Trained in the use of the med kit."
 headless: true
 ---
 

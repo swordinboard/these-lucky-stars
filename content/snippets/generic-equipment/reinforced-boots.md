@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, clothing]
+summary: "Provides improved footing on rough terrain."
 headless: true
 ---
 

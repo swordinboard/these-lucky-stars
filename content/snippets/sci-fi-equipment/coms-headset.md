@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, communications]
+summary: "Wireless connection for com devices."
 headless: true
 ---
 

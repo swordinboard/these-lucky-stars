@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
+summary: "Throwable [20ft]."
 headless: true
 ---
 

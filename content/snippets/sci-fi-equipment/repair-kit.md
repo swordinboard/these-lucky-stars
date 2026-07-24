@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, kit]
+summary: "Bulky. Machinery, vehicles, structures."
 headless: true
 ---
 

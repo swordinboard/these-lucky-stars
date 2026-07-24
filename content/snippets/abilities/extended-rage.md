@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Increase Rage duration by two rounds."
 requires: [abilities/rage]
 headless: true
 ---

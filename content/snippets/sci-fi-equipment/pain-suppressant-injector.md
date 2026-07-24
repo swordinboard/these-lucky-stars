@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, medical]
+summary: "Variable dosage. Suppresses condition effects temporarily."
 headless: true
 ---
 

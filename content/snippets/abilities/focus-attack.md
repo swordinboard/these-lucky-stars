@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [ability, core, general]
+summary: "Focus on an opponent to gain advantage."
 headless: true
 ---
 

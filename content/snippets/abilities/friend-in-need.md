@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Sacrifice your DEF to protect an adjacent ally."
 requires: [traits/tough]
 headless: true
 ---

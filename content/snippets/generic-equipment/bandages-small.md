@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, medical]
+summary: "Closes and covers minor wounds."
 headless: true
 ---
 

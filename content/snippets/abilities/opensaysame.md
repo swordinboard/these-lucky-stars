@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, general]
+summary: "Break a door panel to guarantee it opens or closes."
 requires: [proficiencies/general-technology]
 headless: true
 ---

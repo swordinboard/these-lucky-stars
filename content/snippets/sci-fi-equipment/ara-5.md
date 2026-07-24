@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, medical]
+summary: "Single use. Removes radiation wounds and conditions within 1hr."
 headless: true
 ---
 

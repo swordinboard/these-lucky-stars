@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, battery]
+summary: "Push a battery weapon beyond rated output for bonus damage."
 requires: [proficiencies/general-technology]
 headless: true
 ---

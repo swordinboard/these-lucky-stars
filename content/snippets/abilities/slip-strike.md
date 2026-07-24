@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Make a melee attack during Agile Dodge or Momentum Dodge movement."
 requires: [proficiencies/martial-training, abilities/agile-dodge]
 headless: true
 ---

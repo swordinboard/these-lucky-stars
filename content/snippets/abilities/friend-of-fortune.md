@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, luck]
+summary: "Allies near you may regain spent Luck."
 requires: [traits/lucky]
 headless: true
 ---

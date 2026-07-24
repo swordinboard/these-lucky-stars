@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition]
+summary: "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress"
 headless: true
 ---
 

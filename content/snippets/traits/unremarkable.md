@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "+2 bonus to blend into a crowd or visually hide your identity."
 headless: true
 ---
 

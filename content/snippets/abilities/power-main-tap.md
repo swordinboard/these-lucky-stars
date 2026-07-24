@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [ability, sci-fi, battery]
+summary: "Tap a large power source to rapidly recharge a battery."
 requires: [proficiencies/general-technology]
 headless: true
 ---

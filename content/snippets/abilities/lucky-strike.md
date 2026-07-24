@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, luck]
+summary: "Increase Luck die to d6 on attack rolls."
 headless: true
 ---
 

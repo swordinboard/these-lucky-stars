@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "10ft gravity field, 10 min per roll."
 headless: true
 ---
 

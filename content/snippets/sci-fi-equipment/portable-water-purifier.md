@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, survival]
+summary: "Purifies up to 5 gallons per supply roll."
 headless: true
 ---
 

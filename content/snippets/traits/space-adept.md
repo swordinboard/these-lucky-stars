@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: low
 tags: [trait, sci-fi]
+summary: "Accustomed to zero and low-gravity environments."
 headless: true
 ---
 

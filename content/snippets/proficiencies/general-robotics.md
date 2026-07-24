@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: medium
 tags: [proficiency, sci-fi]
+summary: "Trained in maintenance and repair of robotic parts and models."
 headless: true
 ---
 

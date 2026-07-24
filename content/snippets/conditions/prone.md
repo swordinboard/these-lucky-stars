@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: medium
 tags: [condition, attacker-advantage]
+summary: "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
 headless: true
 ---
 

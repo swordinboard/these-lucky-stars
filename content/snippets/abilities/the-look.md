@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Lock eyes to gain advantage on your next roll against them."
 requires: [traits/particularly-attractive]
 headless: true
 ---

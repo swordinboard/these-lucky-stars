@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
+summary: "Helmet [HUD]. Lock on to lower target number for ranged attacks."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Gain DEF when wielding multiple melee weapons."
 requires: [proficiencies/weapon, abilities/dual-attack]
 headless: true
 ---

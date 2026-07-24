@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [proficiency, core]
+summary: "Special training with a particular ability."
 headless: true
 ---
 

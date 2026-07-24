@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "Auto-deploys on Dying; 1 use, 4 AP to restock"
 headless: true
 ---
 

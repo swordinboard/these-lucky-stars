@@ -6,6 +6,7 @@ type: rule
 tier: core
 reference: low
 tags: [condition, attacker-advantage]
+summary: "Physical actions limited — affected limb unusable"
 headless: true
 ---
 

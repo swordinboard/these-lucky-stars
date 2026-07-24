@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Stabilize a dying ally without a med kit."
 requires: [proficiencies/medic-training]
 headless: true
 ---

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "Resist manipulation and deception."
 headless: true
 ---
 

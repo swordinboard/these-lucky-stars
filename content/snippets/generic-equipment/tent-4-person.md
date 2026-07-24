@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "Bulky. Shelter for four with room for gear."
 headless: true
 ---
 

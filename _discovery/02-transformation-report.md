@@ -43,12 +43,40 @@ Phase 1 record.
 
 - **Blocks: 438** (423 snippets, 15 page-as-block). All frontmatter parses;
   IDs unique; every snippet is included on at least one page (zero orphans).
-- **Edges: 1,186** — 685 `reference`, 469 `include` (composition), 75
+- **Edges: 1,246** — 685 `reference`, 469 `include` (composition), 75
   `dependency` (feature prerequisites, per ruling — mirrored as `requires:` in
   52 blocks' frontmatter), 17 `mention` (incl. the 2 exclusivity pairs ruled
   inert). Zero queued.
 - **Broken links remaining: exactly 1**, by design — the `tool-kits/` pointer
   in generic-equipment (a generic kits page is planned; see below).
+
+## Builder groundwork (post-Wave-5, additive)
+
+Two data additions were made to support the Phase 4 builder's list-generation,
+both derived and additive (no rules text touched; composed page bodies remain
+byte-identical to baseline):
+
+- **`summary:` on 298 catalog blocks.** Each ability/proficiency/trait/item
+  block now carries its own one-line summary, harvested from the shell-page
+  quick-reference tables (where those one-liners previously lived, divorced from
+  the block). The summary column is picked by table header
+  (Description / Notes / Effect Summary), so the conditions table contributes
+  its Effect column, not Duration. This lets the builder regenerate a
+  quick-reference list for *any* selection instead of relying on the static
+  page tables. Harvester: `_discovery/tools/harvest.py`. Source of truth is the
+  block frontmatter; `data/blocks.json` mirrors it.
+- **Reference-table audit result: no stranded tables.** Every data table is
+  either inside a block or is a *projection* over blocks (e.g. the Wound Types
+  table links to the wound-type blocks). So the builder's two synthesis modes
+  cover everything: full-section pages render their chrome tables as-authored;
+  block-mode selections regenerate the projection tables from the picked set +
+  `summary`. No tables need promoting to standalone blocks to prevent loss.
+
+Also fixed here: `extract.py` was stripping `_` as markdown emphasis when
+computing heading anchors, mis-deriving the `Restrained [___]` anchor
+(`restrained-` instead of the real `restrained-___`). The live site was always
+correct — only the tooling's anchor map was off — but it's now fixed so
+`data/edges.json` resolves that reference cleanly.
 
 ## Frontmatter schema (as written)
 

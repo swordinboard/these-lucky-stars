@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Cause a Stress with a distraction."
 headless: true
 ---
 

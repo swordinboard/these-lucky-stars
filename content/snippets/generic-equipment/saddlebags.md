@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, containers]
+summary: "Pair of bags designed for a mount. +60 max carry weight for the mount."
 headless: true
 ---
 

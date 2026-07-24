@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
+summary: "Heavy Ranged. Partial cover, -1 attack while active."
 headless: true
 ---
 

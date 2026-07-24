@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, light-sources]
+summary: "Refuels a lantern for 4hrs. Flammable."
 headless: true
 ---
 

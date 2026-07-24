@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, light-armor]
+summary: "Simple protective vest. No AGI/DEX penalty."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "+2 to stealth rolls."
 headless: true
 ---
 

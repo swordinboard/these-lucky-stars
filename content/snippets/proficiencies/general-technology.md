@@ -6,6 +6,7 @@ type: feature
 tier: module
 reference: high
 tags: [proficiency, sci-fi]
+summary: "Trained in the use of the Tech Kit."
 headless: true
 ---
 

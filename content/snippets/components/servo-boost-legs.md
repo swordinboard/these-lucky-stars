@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "+10ft speed, +5ft jump while powered"
 headless: true
 ---
 

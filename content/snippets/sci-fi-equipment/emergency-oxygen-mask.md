@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, survival]
+summary: "30 minutes of clean oxygen."
 headless: true
 ---
 

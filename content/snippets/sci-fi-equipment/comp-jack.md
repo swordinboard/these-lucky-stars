@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: medium
 tags: [equipment, sci-fi, tech, computers]
+summary: "Required for interfacing with computer systems."
 headless: true
 ---
 

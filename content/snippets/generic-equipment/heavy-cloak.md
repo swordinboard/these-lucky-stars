@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, clothing]
+summary: "Partial protection from cold and rain. Covers equipped gear."
 headless: true
 ---
 

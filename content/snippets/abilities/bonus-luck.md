@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, luck]
+summary: "Gain one additional Luck point."
 headless: true
 ---
 

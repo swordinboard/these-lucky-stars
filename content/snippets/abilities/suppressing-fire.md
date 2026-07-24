@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: medium
 tags: [ability, core, general]
+summary: "Pin enemies in an area with automatic fire."
 requires: [proficiencies/weapon]
 headless: true
 ---

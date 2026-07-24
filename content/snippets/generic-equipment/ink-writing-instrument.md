@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, tools]
+summary: "For writing on parchment, paper, or similar surfaces."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Make two standard attacks per round."
 requires: [proficiencies/weapon]
 headless: true
 ---

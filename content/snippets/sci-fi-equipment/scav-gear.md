@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, armor, light-armor]
+summary: "Grants an extra body slot and +50 max carry weight."
 headless: true
 ---
 

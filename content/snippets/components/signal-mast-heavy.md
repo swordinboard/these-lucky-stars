@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "Increases com range to 500 miles"
 headless: true
 ---
 

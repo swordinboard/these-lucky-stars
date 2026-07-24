@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, component]
+summary: "Self-repair 1 VIT per long rest"
 headless: true
 ---
 

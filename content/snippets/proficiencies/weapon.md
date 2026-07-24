@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: high
 tags: [proficiency, core]
+summary: "Specialized training with a selected weapon type."
 headless: true
 ---
 

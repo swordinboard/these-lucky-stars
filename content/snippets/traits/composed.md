@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [trait, core]
+summary: "Re-roll one decision die after your first failed WILL check each session."
 headless: true
 ---
 

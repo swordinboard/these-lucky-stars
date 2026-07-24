@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Resisting fear while raging."
 requires: [abilities/rage]
 headless: true
 ---

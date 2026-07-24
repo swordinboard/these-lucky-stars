@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Increase WILL target or stress from suppression."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
 headless: true
 ---

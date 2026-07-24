@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, tools]
+summary: "Needle, thread, and patches for basic repairs to fabric and leather."
 headless: true
 ---
 

@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Add bonus damage to surprise attacks."
 headless: true
 ---
 

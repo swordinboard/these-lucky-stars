@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Designate a target — the next ally to attack it gains advantage."
 headless: true
 ---
 

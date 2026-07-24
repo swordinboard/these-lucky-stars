@@ -6,6 +6,7 @@ type: equipment
 tier: module
 reference: low
 tags: [equipment, sci-fi, tech]
+summary: "Scans organic matter. 2 AP, 5ft range."
 headless: true
 ---
 

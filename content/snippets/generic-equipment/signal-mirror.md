@@ -6,6 +6,7 @@ type: equipment
 tier: core
 reference: low
 tags: [equipment, generic, survival]
+summary: "Reflects light to signal over long distances in daylight."
 headless: true
 ---
 

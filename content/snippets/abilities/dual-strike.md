@@ -6,6 +6,7 @@ type: feature
 tier: core
 reference: low
 tags: [ability, core, general]
+summary: "Increase damage die with dual attack."
 requires: [proficiencies/weapon, abilities/dual-attack]
 headless: true
 ---

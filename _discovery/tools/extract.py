@@ -14,7 +14,7 @@ def hugo_anchor(text):
     t = text.strip()
     # strip inline markdown emphasis/brackets
     t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
-    t = re.sub(r"[*_`]", "", t)
+    t = re.sub(r"[*\x60]", "", t)  # strip *, backtick emphasis; keep _ (goldmark keeps it)
     t = t.lower()
     out = []
     for ch in t:
