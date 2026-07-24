@@ -5,7 +5,7 @@ weight: 30
 bookHidden: true
 ---
 
-{{% include "/snippets/wip-announcement.md" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 # Zeta Grey
 <!-- Combo little green men and Greys -->
 Whether cruising the stars in UFOs, bartending in the sketchiest part of an industrial wasteland, or running a ranch sporting a cowboy hat, Zeta Greys are often known for their intellignece and adaptability.

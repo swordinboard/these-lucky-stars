@@ -4,7 +4,7 @@ description: "TRK-A — a small and reliable robot platform for These Lucky Star
 bookHidden: true
 ---
 
-{{% include "/snippets/wip-announcement" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 # TRK-A
 
 A small and reliable robot platform suited for a variety of field and support roles.

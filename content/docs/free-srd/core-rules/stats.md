@@ -17,27 +17,27 @@ Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page
 
 ### Initiative
 
-{{% include "/snippets/initiative" %}}
+{{% include "/snippets/combat/initiative" %}}
 
 ### Action Points
 
-{{% include "/snippets/action-points" %}}
+{{% include "/snippets/stats/action-points" %}}
 
 Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features. See [Action Economy](/docs/free-srd/core-rules/action-economy/#action-types) for the full breakdown of action types (Standard, Opportunity, and Reaction).
 
 ### Speed
 
-{{% include "/snippets/primary-speed" %}}
+{{% include "/snippets/movement/primary-speed" %}}
 
 **Speed Modes**
 
-{{% include "/snippets/speed-descriptors" %}}
+{{% include "/snippets/movement/speed-descriptors" %}}
 
 **Speed Tiers**
 
-{{% include "/snippets/speed-tiers" %}}
+{{% include "/snippets/movement/speed-tiers" %}}
 
-{{% include "/snippets/speed-tiers-chart" %}}
+{{% include "/snippets/movement/speed-tiers-chart" %}}
 
 ---
 
@@ -45,11 +45,11 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 ### Defense
 
-{{% include "/snippets/defense" %}}
+{{% include "/snippets/stats/defense" %}}
 
 ### Vitality
 
-{{% include "/snippets/vitality" %}}
+{{% include "/snippets/stats/vitality" %}}
 
 ### Wounds & Conditions
 
@@ -90,11 +90,11 @@ Each player works their way down the table and compares their attributes to the 
 
 ### Grapple
 
-{{% include "/snippets/grapple" %}}
+{{% include "/snippets/combat/grapple" %}}
 
 ### Stealth
 
-{{% include "/snippets/stealth" %}}
+{{% include "/snippets/combat/stealth" %}}
 
 ### Attack
 

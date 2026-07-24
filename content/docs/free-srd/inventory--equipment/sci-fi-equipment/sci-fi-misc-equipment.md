@@ -15,7 +15,7 @@ weight: 2
 
 ## Communication Devices
 
-{{% include "/snippets/coms" %}}
+{{% include "/snippets/sci-fi/communications" %}}
 
 | Item | Notes |
 |------|-------|
@@ -349,7 +349,7 @@ A powerful handheld direct contact laser cutter and welder suitable for small to
 A belt lined with projectors that, once activated, create a sheet-like protective energy shield over the user. The shield provides a 10 point temporary DEF pool for up to 3 rounds. Costs 1 AP to activate. There is a required cooldown period of 2d4 rounds between activations. Requires 2 supply rolls when activated. Takes up the belt body slot.
 
 **Energy Shields**
-{{% include "/snippets/energy-shields" %}}
+{{% include "/snippets/sci-fi/energy-shields" %}}
 
 {{% /details %}}
 
@@ -397,7 +397,7 @@ Does not alter visual appearance in any way.
 Once activated, creates a spherical energy shield with a 20ft radius and provides a 40 point temorary DEF pool for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
 
 **Energy Shields**
-{{% include "/snippets/energy-shields" %}}
+{{% include "/snippets/sci-fi/energy-shields" %}}
 
 {{% /details %}}
 

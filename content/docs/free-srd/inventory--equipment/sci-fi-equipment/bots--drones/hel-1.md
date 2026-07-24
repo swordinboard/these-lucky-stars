@@ -4,7 +4,7 @@ description: "HEL-1 — a small flying drone for These Lucky Stars sci-fi settin
 bookHidden: true
 ---
 
-{{% include "/snippets/wip-announcement" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 # HEL-1
 
 A small flying drone designed for aerial reconnaissance and light operations.

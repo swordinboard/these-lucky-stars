@@ -4,7 +4,7 @@ description: "Rules for vehicles and mounts in These Lucky Stars — driving, bo
 weight: 84
 ---
 
-{{% include "/snippets/wip-announcement" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 ## Vehicle Rules
 
 These rules govern how vehicles and their occupants interact with characters on foot during combat. They supplement the standard [combat rules](/docs/free-srd/core-rules/combat/) — unless otherwise stated here, all normal combat rules apply.
@@ -37,18 +37,18 @@ Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers a
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
 {{% details "Speed Tiers" %}}
-{{% include "/snippets/speed-tiers-chart" %}}
+{{% include "/snippets/movement/speed-tiers-chart" %}}
 
 **Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed):**
 
-{{% include "/snippets/speed-tiers" %}}
+{{% include "/snippets/movement/speed-tiers" %}}
 {{% /details %}}
 
 {{% details "Modes & Maneuverability" %}}
 **Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed)**
 #### Modes & Maneuverability
 
-{{% include "/snippets/speed-descriptors" %}}
+{{% include "/snippets/movement/speed-descriptors" %}}
 {{% /details %}}
 ---
 

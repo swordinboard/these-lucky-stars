@@ -79,4 +79,4 @@ It is worth noting thay the rules for visibility and terrain are not a separate 
 
 ## Extreme Environments
 **Sci-Fi Module Addition**
-{{% include "/snippets/extreme-environments" %}}
+{{% include "/snippets/environment/extreme-environments" %}}

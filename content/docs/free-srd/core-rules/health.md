@@ -12,19 +12,19 @@ These Lucky Stars uses a two-layer health system. The first layer, **Defense (DE
 
 ## Defense
 
-{{% include "/snippets/defense" %}}
+{{% include "/snippets/stats/defense" %}}
 
 ---
 
 ## Vitality
 
-{{% include "/snippets/vitality" %}}
+{{% include "/snippets/stats/vitality" %}}
 
 ---
 
 ## Applying Damage
 
-{{% include "/snippets/health-loop" %}}
+{{% include "/snippets/health/applying-damage" %}}
 
 For how damage totals are calculated — damage dice, modifiers, resistance, and damage types — see [Combat](/docs/free-srd/core-rules/combat/#damage).
 

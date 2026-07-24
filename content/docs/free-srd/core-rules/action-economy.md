@@ -12,7 +12,7 @@ This page covers how a character spends their time and effort during a round of 
 
 ## Action Points
 
-{{% include "/snippets/action-points" %}}
+{{% include "/snippets/stats/action-points" %}}
 
 Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features.
 
@@ -50,7 +50,7 @@ Each Opportunity Action defines its own AP cost, trigger condition, and resultin
 
 #### Opportunity Attack
 
-{{% include "/snippets/opportunity-attack" %}}
+{{% include "/snippets/combat/opportunity-attack" %}}
 
 ### Reactions
 
@@ -70,23 +70,23 @@ Movement is the most common action a character takes during any scene — in com
 
 Move and Step are the two primary movement actions. Both are Standard Actions, and both are also listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog for reference during play.
 
-{{% include "/snippets/move" %}}
+{{% include "/snippets/actions/move" %}}
 
-{{% include "snippets/step" %}}
+{{% include "/snippets/actions/step" %}}
 
 ### Speed
 
-{{% include "/snippets/primary-speed" %}}
+{{% include "/snippets/movement/primary-speed" %}}
 
 #### Speed Descriptors
 
-{{% include "/snippets/speed-descriptors" %}}
+{{% include "/snippets/movement/speed-descriptors" %}}
 
 #### Speed Tiers
 
-{{% include "/snippets/speed-tiers" %}}
+{{% include "/snippets/movement/speed-tiers" %}}
 
-{{% include "/snippets/speed-tiers-chart" %}}
+{{% include "/snippets/movement/speed-tiers-chart" %}}
 
 ### Difficult Terrain and Obstacles
 

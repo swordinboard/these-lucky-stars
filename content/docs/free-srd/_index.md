@@ -6,7 +6,7 @@ bookCollapseSection: false
 bookToC: false
 ---
 
-{{% include "/snippets/announcement" %}}
+{{% include "/snippets/site/announcement" %}}
 
 # Free SRD
 

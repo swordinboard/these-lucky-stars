@@ -6,9 +6,9 @@ weight: 2
 
 # Sci-Fi Armor
 
-{{% include "/snippets/armor" %}}
+{{% include "/snippets/equipment/armor-basics" %}}
 
-{{% include "/snippets/armor-damage" %}}
+{{% include "/snippets/objects/armor-degradation" %}}
 
 ## Armor
 
@@ -202,7 +202,7 @@ Attaches to a wrist. Can be fired once at normal range (15ft) or used as a melee
 A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type.
 
 **Heads Up Display (HUD)**
-{{% include "/snippets/huds" %}}
+{{% include "/snippets/sci-fi/huds" %}}
 {{% /details %}}
 
 {{% details "Coms Unit" %}}
@@ -213,7 +213,7 @@ A passive HUD that grants a minor advantage to detect or notice hazardous terrai
 Helmet-mounted communication device capable of direct device-to-device communication or network connection up to 1 mile. Connects to local public or private networks where available. Takes up the Head [Coms] subslot.
 
 **Communication Device**
-{{% include "/snippets/coms" %}}
+{{% include "/snippets/sci-fi/communications" %}}
 {{% /details %}}
 
 {{% details "MeBN HUD" %}}
@@ -224,7 +224,7 @@ Helmet-mounted communication device capable of direct device-to-device communica
 A passive HUD that compares facial IDs to contracts on the Mark'em Bounty Network. Must have line of sight on a target within 30ft to make an accurate reading. Can be tricked by changes in appearance or lack of description/ID in the contract. Displays information related to any bounty placed on matching IDs — does not guarantee a match, further investigation may be needed.
 
 **Heads Up Display (HUD)**
-{{% include "/snippets/huds" %}}
+{{% include "/snippets/sci-fi/huds" %}}
 {{% /details %}}
 
 {{% details "SAFER Unit" %}}
@@ -245,16 +245,16 @@ An early model propulsion unit for navigating in 0 gravity when separated from t
 Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made against that target. Displays a reticle that remains locked on until deactivated, the signal is disrupted, the target is destroyed, or line of sight is lost for one full round. Attacks made against a target you are not locked on to while the HUD is active on another target are at a disadvantage. Deactivating the display costs 1 AP.
 
 **Heads Up Display (HUD)**
-{{% include "/snippets/huds" %}}
+{{% include "/snippets/sci-fi/huds" %}}
 {{% /details %}}
 
 ---
 
 ## Shields
 
-{{% include "/snippets/shields" %}}
+{{% include "/snippets/equipment/shields-basics" %}}
 
-{{% include "/snippets/shields-damage" %}}
+{{% include "/snippets/objects/shield-degradation" %}}
 
 See [Damaged and Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for more on object damage and conditions.
 

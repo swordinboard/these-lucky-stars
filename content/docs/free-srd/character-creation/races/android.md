@@ -5,7 +5,7 @@ weight: 30
 bookHidden: true
 ---
 
-{{% include "/snippets/wip-announcement.md" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 # Android
 <!-- basic android race -->
 While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids are built with all the freedoms of a true individual in mind. Their appearance can differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 

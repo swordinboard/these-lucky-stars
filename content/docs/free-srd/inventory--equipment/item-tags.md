@@ -73,7 +73,7 @@ Regardless of type, ammo weighs 3lbs per ammo die.
 > Larry, Fred's accomplice, thinks all this worry about max ammo is silly. He also carries all the same equipment as Fred, but chooses to keep all his ammo dice at a comfortable d8 so that he can reload either of his guns with any of his ammo dice even if they take up a bit more space.
 
 **Sci-Fi Additions**
-{{% include "/snippets/sci-fi-add-ballistic" %}}
+{{% include "/snippets/sci-fi/ballistics-in-space" %}}
 {{% /details %}}
 
 {{% details "Battery [___]" %}}

@@ -303,14 +303,14 @@ A prepared oral remedy that counteracts common poisons and toxins. If administer
 *--Price — 0lbs*
 
 Clean cloth strips to be used to remove the bleeding condition while dressing one major puncture or laceration. Can be divided into two small bandages.
-{{% include "/snippets/medical-item-medkit-note" %}}
+{{% include "/snippets/equipment/medkit-note" %}}
 
 ### Bandages, Small
 
 *--Price — 0lbs*
 
 Clean cloth strips to be used to remove the bleeding condition while dressing one minor puncture or laceration.
-{{% include "/snippets/medical-item-medkit-note" %}}
+{{% include "/snippets/equipment/medkit-note" %}}
 
 {{% /details %}}
 
@@ -329,7 +329,7 @@ A potent restorative mixture, consumed orally in a single serving. Heals 1 VIT o
 *--Price — 1lb*
 
 Rigid strips of wood, metal, or bone along with binding wraps. Used to immobilize and stabilize one broken or fractured limb, preventing further injury during travel.
-{{% include "/snippets/medical-item-medkit-note" %}}
+{{% include "/snippets/equipment/medkit-note" %}}
 
 {{% /details %}}
 

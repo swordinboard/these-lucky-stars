@@ -5,7 +5,7 @@ weight: 30
 bookHidden: true
 ---
 
-{{% include "/snippets/wip-announcement.md" %}}
+{{% include "/snippets/site/wip-announcement" %}}
 # Reptilian
 <!-- classic reptilan race -->
 Somewhere from the outer reaches come a race of shapeshifting Reptilians, bent on corruption and subturfuge. Or maybe they're just really, really shy. A classic sci-fi race, popular among politicians, salesmen, and others of similar motivations.

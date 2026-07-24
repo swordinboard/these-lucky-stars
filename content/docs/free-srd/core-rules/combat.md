@@ -21,7 +21,7 @@ This page covers how fights are resolved in These Lucky Stars — from initiativ
 
 ## Initiative
 
-{{% include "/snippets/initiative" %}}
+{{% include "/snippets/combat/initiative" %}}
 
 ---
 
@@ -92,7 +92,7 @@ Making a surprise attack counts as a special attack action, but requires no addi
 
 ### Damage Dice
 
-{{% include "/snippets/damage-dice" %}}
+{{% include "/snippets/combat/damage-dice" %}}
 
 ### Damage Modifiers
 
@@ -135,7 +135,7 @@ Extreme exposure still poses a risk, but the exposure interval for extreme expos
 
 ### Applying Damage
 
-{{% include "/snippets/health-loop" %}}
+{{% include "/snippets/health/applying-damage" %}}
 
 A damaged character's DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends. See the [Defense](/docs/free-srd/core-rules/health/#defense) section under Health for complete DEF reset rules.
 
@@ -153,9 +153,9 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.
 
-{{% include "/snippets/move" %}}
+{{% include "/snippets/actions/move" %}}
 
-**Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/opportunity-attack" %}}
+**Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/combat/opportunity-attack" %}}
 
 **Disarm** *(3 AP)* — Attempt to disarm an opponent that is holding a weapon. Make a standard attack roll; if successful, instead of dealing damage make contested STR rolls. Success causes the opponent to drop their weapon in a random adjacent space. If the defender is using a [two-handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed) weapon or wielding a [versatile](/docs/free-srd/inventory--equipment/item-tags/#versatile) weapon with two hands they gain a major advantage on the STR check to maintain a grip on their weapon.
 
@@ -163,7 +163,7 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Grapple** *(2 AP)*
 
-{{% include "/snippets/grapple" %}}
+{{% include "/snippets/combat/grapple" %}}
 
 **Shatter** *(3 AP)* — Attempt to break an item held or worn by an opponent. Make a standard attack roll; if successful, deal damage to the item's DEF rather than to the opponent. See [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for rules on damaged and broken gear.
 
@@ -179,9 +179,9 @@ Actions in combat are organized by their tactical role: **Aggressive Actions** a
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-{{% include "/snippets/stealth" %}}
+{{% include "/snippets/combat/stealth" %}}
 
-{{% include "/snippets/step" %}}
+{{% include "/snippets/actions/step" %}}
 
 **Use Cover** A character can shift into or between cover types as part of a Move action, or for 1 AP if staying in place. See [Cover](#cover) for definitions. 
 

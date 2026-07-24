@@ -3,7 +3,7 @@ title: "Welcome!"
 bookToC: false
 ---
 
-{{% include "/snippets/announcement" %}}
+{{% include "/snippets/site/announcement" %}}
 
 # Welcome!
 

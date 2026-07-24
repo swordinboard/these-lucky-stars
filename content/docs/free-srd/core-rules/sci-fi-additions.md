@@ -13,23 +13,23 @@ This page is the central home for sci-fi specific rules that extend or modify th
 ## Combat & Environment
 
 ### Ballistic Weapons In Space
-{{% include "/snippets/sci-fi-add-ballistic" %}}
+{{% include "/snippets/sci-fi/ballistics-in-space" %}}
 
 ### Extreme Environments
-{{% include "/snippets/extreme-environments" %}}
+{{% include "/snippets/environment/extreme-environments" %}}
 
 ---
 
 ## Equipment
 
 ### Communications
-{{% include "/snippets/coms" %}}
+{{% include "/snippets/sci-fi/communications" %}}
 
 ### Energy Shields
-{{% include "/snippets/energy-shields" %}}
+{{% include "/snippets/sci-fi/energy-shields" %}}
 
 ### Heads Up Displays (HUDs)
-{{% include "/snippets/huds" %}}
+{{% include "/snippets/sci-fi/huds" %}}
 
 ---
 
