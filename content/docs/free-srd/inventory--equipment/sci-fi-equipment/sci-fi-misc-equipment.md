@@ -6,7 +6,7 @@ weight: 2
 
 ## Sci-Fi Miscellaneous Equipment
 
-- [Communications](#communications)
+- [Communications](#communication-devices)
 - [Medical Supplies](#medical-supplies)
 - [Survival Equipment](#survival-equipment)
 - [Tech & Gadgets](#tech--gadgets)
@@ -356,7 +356,7 @@ A belt lined with projectors that, once activated, create a sheet-like protectiv
 {{% details "Reactor Cores" %}}
 ### Reactor Cores
 
-Self-sustaining power reactors for automated machines and high-drain equipment. Can be used in any item with the  [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) tag. Items with the [Battery](/docs/free-srd/intentory--equipmemtlitem-tags/#battery) tag can be modified to accept reactor core of the same size by using the Tech Kit with supplies, 1hr of work, and succeeding on a target 14 KNO check. The same process is used to revert the change.
+Self-sustaining power reactors for automated machines and high-drain equipment. Can be used in any item with the  [Power Source](/docs/free-srd/inventory--equipment/item-tags/#power-source) tag. Items with the [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) tag can be modified to accept reactor core of the same size by using the Tech Kit with supplies, 1hr of work, and succeeding on a target 14 KNO check. The same process is used to revert the change.
 
 Reloading a weapon equipped with a reactor core uses the same AP as a standard reload of its type as if it were a battery, and benefits from the same abilities excluding the [Battery Saboteur](/docs/free-srd/character-creation/abilities/#battery-saboteur) ability. Reactor Cores have more safety measures in place to prevent dangerous breakdown than standard batteries.
 

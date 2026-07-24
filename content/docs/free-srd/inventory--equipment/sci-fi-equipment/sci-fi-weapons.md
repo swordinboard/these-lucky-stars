@@ -127,7 +127,7 @@ A hard-hitting single shot sidearm with notable stopping power and effective ran
 {{% details "Laser Pistol" %}}
 ### Laser Pistol
 
-*--Cr — 1lbs — 8 Object DEF — 60ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn)*
+*--Cr — 1lbs — 8 Object DEF — 60ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/core-rules/combat/#damage-types)*
 *Damage Type: Burn*
 
 A compact energy sidearm with excellent range for its size.
@@ -156,7 +156,7 @@ A lightweight automatic rifle optimized for maneuverability in tight spaces.
 {{% details "Laser Rifle" %}}
 ### Laser Rifle
 
-*--Cr — 12lbs — 8 Object DEF — (10) 90ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 12lbs — 8 Object DEF — (10) 90ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/core-rules/combat/#damage-types), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Burn*
 
 A long-range energy rifle capable of precise shots at extended distances. Minimum range of 10ft.
@@ -174,7 +174,7 @@ A heavy precision rifle designed for long-range engagements. Bulky and slow to m
 {{% details "Shock Rifle" %}}
 ### Shock Rifle
 
-*--Cr — 6lbs — 8 Object DEF — 20ft — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr — 6lbs — 8 Object DEF — 20ft — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/core-rules/combat/#damage-types), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Shock*
 
 An energy rifle that fires arcing electrical bolts capable of jumping between nearby targets.
@@ -297,7 +297,7 @@ A holographic sight that improves target acquisition. Grants +2 to attacks made 
 *--Cr — 1lbs*
 *Compatibility: All Melee Weapons*
 
-Adds +1 damage to attacks and changes the damage type to [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock). On a successful hit, the target must succeed on a target 6 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
+Adds +1 damage to attacks and changes the damage type to [Shock](/docs/free-srd/core-rules/combat/#damage-types). On a successful hit, the target must succeed on a target 6 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
 {{% /details %}}
 
 {{% details "Weighted Core" %}}

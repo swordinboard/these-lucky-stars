@@ -144,7 +144,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 *Conditions and Stress* — Many conditions cause a character to accumulate Stress. Stress accumulated from conditions is not healed or reset by removing a condition unless specified.
 
-*Conditions and Combat* — Conditions that often grant an advantage to attackers are marked with Δ.
+*Conditions and Combat* — Conditions that often grant an advantage to attackers are marked with Δ in the table below and on their labels.
 
 | Condition | Effect Summary | Duration |
 |---|---|---|
@@ -157,7 +157,8 @@ Conditions alter how your character is able to act. Most provide penalties or so
 | [Frightened](#frightened) | -2 INS, +1 Stress | Until removed from cause |
 | [Immobilized](#immobilized) Δ | Cannot take physical actions — DEX and AGI treated as null | Cause specific |
 | [Pinned](#pinned) | Only physical action is to escape the pin | See Grapple |
-| [Restrained [___]](#restrained) Δ | Physical actions limited — affected limb unusable | Until cause is removed |
+| [Prone](#prone) Δ | Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage | Until standing |
+| [Restrained [___]](#restrained-___) Δ | Physical actions limited — affected limb unusable | Until cause is removed |
 | [Shaken](#shaken) | -1 to all decision rolls, -2 max DEF, +1 Stress | 1d4+1 rounds |
 | [Sick](#sick) Δ | 2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress | 1d4 rounds |
 | [Stressed](#stressed) | Cannot use Luck, -1 to all decision rolls per point over threshold | Until stress drops below threshold |
@@ -201,7 +202,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 {{% details "Crippled Δ" %}}
 
-### Crippled Δ
+### Crippled
 
 *Effect* — Usually a result of injury to the lower body or general physical trauma. All speeds reduced by -10. Anytime your character uses 3 or more AP they gain +1 Stress. A crippled character's movement is visibly impaired — they limp, stagger, or drag themselves along.
 
@@ -213,7 +214,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 {{% details "Dying Δ" %}}
 
-### Dying Δ
+### Dying
 
 *Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. A dying character immediately falls unconscious (as the condition) and must succeed on a FORT check immediately as well as at the beginning of each of their following turns. The target begins at 3 and increases by +1 after each success. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a disadvantage.
 
@@ -225,7 +226,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 {{% details "Fatigued Δ" %}}
 
-### Fatigued Δ
+### Fatigued
 
 *Effect* — The body is tired and actions become sluggish and more difficult to perform. -2 to STR, AGI, and DEX, -2 AP per round.
 
@@ -247,7 +248,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 {{% details "Immobilized Δ" %}}
 
-### Immobilized Δ
+### Immobilized
 
 *Effect* — The body is completely unable to move. Though not unconscious, an immobilized character cannot take any physical actions. DEX and AGI are treated as null, attackers gain advantage and may make surprise attacks even if they normally would not be able to.
 
@@ -259,13 +260,23 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 ### Pinned
 
-*Effect* — Usually the result of engaging in a grapple. The only physical action available is to attempt to break or escape the pin. See [Grapple](/docs/free-srd/combat/#grapple) for details.
+*Effect* — Usually the result of engaging in a grapple. The only physical action available is to attempt to break or escape the pin. See [Grapple](/docs/free-srd/core-rules/stats/#grapple) for details.
+
+{{% /details %}}
+
+{{% details "Prone Δ" %}}
+
+### Prone
+
+*Effect* — Characters that are lying upon the ground are Prone. Prone characters can only move at half speed, and are at a disadvantage when making melee attacks outside of a grapple. Attacks made by an adjacent enemy that target a prone character gain a minor advantage.
+
+*Duration/Healing* — Until the character stands, usually with the Stand action.
 
 {{% /details %}}
 
 {{% details "Restrained [___] Δ" %}}
 
-### Restrained [___] Δ
+### Restrained [___]
 
 *Effect* — The restrained condition limits physical actions involving the affected body part. It can be caused by external restraints (rope, cuffs, bindings) or by wounds (dislocations, severe sprains) that render a limb unusable. The label in brackets identifies what is restrained — for example, Restrained [Left Arm] or Restrained [Legs].
 
@@ -289,7 +300,7 @@ When caused by external restraints, the specific limitations depend on the type 
 
 {{% details "Sick Δ" %}}
 
-### Sick Δ
+### Sick
 
 *Effect* — Occurs when a character witnesses or engages in something particularly disgusting or disturbing, by upset stomach, poisoning, or general discomfort and grossness. Using 2 or more AP per round requires success on a target 10 FORT check. Failure causes the character to fall to their knees retching for 1d4-1 rounds (min 1) and gain +1 Stress. During these rounds, attackers gain advantage. Stress can be gained multiple times from a single sick condition.
 
@@ -311,7 +322,7 @@ When caused by external restraints, the specific limitations depend on the type 
 
 {{% details "Unconscious Δ" %}}
 
-### Unconscious Δ
+### Unconscious
 
 *Effect* — Occurs when a character loses consciousness. Nothing works, body or mind. All attributes are considered 0 until the character regains consciousness, and they cannot take any actions. Unconsciousness can happen from a variety of effects, including attribute or VIT damage.
 Unconscious characters with 0 VIT who take further VIT damage gain the dying condition.

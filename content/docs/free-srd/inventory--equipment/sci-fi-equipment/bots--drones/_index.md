@@ -25,5 +25,5 @@ Drones, bots, and Androids all use the standard character DEF/VIT rules rather t
 - [BAL](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2) — A fast-rolling recon drone
 
 ## Robot Platforms
-- [TRK-A](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hakr) — A small and reliable platform
+- [TRK-A](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a) — A small and reliable platform
 - *(TBD)* — A full size humanoid robot for seamless integration

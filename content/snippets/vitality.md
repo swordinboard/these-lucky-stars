@@ -22,7 +22,7 @@ The GM determines the appropriate wound severity based on the attack and circums
 When a character's VIT reaches 0, the attacker decides whether the final blow was lethal or non-lethal. If the VIT loss came from an environmental effect or other non-player character source, the GM makes the decision.
 
 - A **lethal blow** applies the [dying condition](/docs/free-srd/core-rules/wounds--conditions/#conditions) and a [major wound](/docs/free-srd/core-rules/wounds--conditions/#major-wounds).
-- A **non-lethal blow** applies the [unconscious condition](/docs/free-srd/core-rules/wounds--conditions/conditions) and a minor wound — usually a contusion to the head.
+- A **non-lethal blow** applies the [unconscious condition](/docs/free-srd/core-rules/wounds--conditions/#conditions) and a minor wound — usually a contusion to the head.
 
 **VIT Recovery**
 

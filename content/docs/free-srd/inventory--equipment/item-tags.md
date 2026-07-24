@@ -58,7 +58,7 @@ Successful attacks made with these weapons also affect one random combatant adja
 *Ballistic [type, max ammo]*
 
 Ballistic weapons use ballistic ammunition (ammo). To keep things simple, most weapons with the Ballistic tag use interchangeable ammo. If the tag is followed by a term in brackets, only that ammo type can be used.
-Ammo is tracked using [supply dice](/docs/free-srd/the-basics/#supply-rolls), often referred to in this case as ammo dice. The max size of a weapon's ammo die is also written in the brackets following the Ballistic tag. The weapon's [firing mode](#firing-modes) determines when a supply roll is needed.
+Ammo is tracked using [supply dice](/docs/free-srd/core-rules/basics/#supply-rolls), often referred to in this case as ammo dice. The max size of a weapon's ammo die is also written in the brackets following the Ballistic tag. The weapon's [firing mode](#firing-modes) determines when a supply roll is needed.
 
 Regardless of type, ammo weighs 3lbs per ammo die.
 

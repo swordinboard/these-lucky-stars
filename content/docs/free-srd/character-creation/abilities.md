@@ -35,7 +35,7 @@ If an ability has requirements that must be met before it can be selected, they 
 | [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. |
 | - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. |
 | - [Dual Strike](#dual-strike) | Increase damage die with dual attack. |
-| - [Swift Dual Attack](#extra-dual-attack) | Dual Attack ability costs 2 AP instead of 4. |
+| - [Swift Dual Attack](#swift-dual-attack) | Dual Attack ability costs 2 AP instead of 4. |
 | [Extra Attack](#extra-attack) | Make two standard attacks per round. |
 | [Field Medic](#field-medic) | Use a med kit to stabilize or treat wounds as a 2 AP action. |
 | [Field Patch](#field-patch) | Stabilize a dying ally without a med kit. |

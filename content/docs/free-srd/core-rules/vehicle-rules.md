@@ -39,7 +39,7 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 {{% details "Speed Tiers" %}}
 {{% include "/snippets/speed-tiers-chart" %}}
 
-**Direct From Action Economy](/docs/free-srd/core-rules/action-economy/#speed):**
+**Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed):**
 
 {{% include "/snippets/speed-tiers" %}}
 {{% /details %}}
@@ -67,7 +67,7 @@ Many vehicles must be turned on before they can be driven or piloted. Some requi
 
  This action and its checks may be refered to as Drive, Pilot, or Ride depending on the vehicle or mount being used. It is used to direct or command the vehicle or mount's movement during one's turn similar to a Move action.
 
-**Path** — The driver spends 3 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. This path can pass through occupies spaces, however it risks a [collision](#imapct--overrun). A single Drive action can move uo to *double* a vehicle's Speed, as if combining teo Move actions into one. Howrver, acceleration must be considered when determining the total travel distance one can cover in a singke round. and acceleratioj only applies once per Drive action.
+**Path** — The driver spends 3 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. This path can pass through occupies spaces, however it risks a [collision](#impact--overrun). A single Drive action can move uo to *double* a vehicle's Speed, as if combining teo Move actions into one. Howrver, acceleration must be considered when determining the total travel distance one can cover in a singke round. and acceleratioj only applies once per Drive action.
 
 **Drive Checks** — Success may need to be determined based on the complexity of the path, requiring Drive checks for tight turns — typically those close to or morw than 90° — sudden accelerations or decelerations, or other difficult maneuvers at the GM's discression. The driver must have the appropriate vehicle proficiency to drive without penalty — an *untrained driver suffers disadvantage on all checks related to operating the vehicle* (including [mounts](#mounts)).
 
@@ -117,7 +117,7 @@ A creature eligible to dodge makes an *AGI check against the vehicle's speed and
 
 If a creature, object, or other obstacle unexpectedly enters the driver's declared path mid-movement — through a [Readied Action](/docs/free-srd/core-rules/action-economy/#readied-actions), sudden visibility, another character's movement, or any other circumstance the driver did not anticipate — the driver makes a check to react.
 
-The GM selects the appropriate check based on the vehicle type and situation. Common choices are [AGI](/docs/free-srd/core-rules/attributes/#agility) (for mounts, motorcycles, and vehicles requiring whole-body control), [DEX](/docs/free-srd/core-rules/attributes/#dexterity) (for cars, trucks, and vehicles requiring precise steering). The driver's vehicle proficiency and any relevant abilities (such as Licensed Instincts) apply to this check.
+The GM selects the appropriate check based on the vehicle type and situation. Common choices are [AGI](/docs/free-srd/core-rules/attributes/#agility-agi) (for mounts, motorcycles, and vehicles requiring whole-body control), [DEX](/docs/free-srd/core-rules/attributes/#dexterity-dex) (for cars, trucks, and vehicles requiring precise steering). The driver's vehicle proficiency and any relevant abilities (such as Licensed Instincts) apply to this check.
 
 > Target to Avoid Collision = 6 + the vehicle's Speed modifier + the vehicle's maneuverability rating
 
@@ -162,7 +162,7 @@ The striking vehicle takes **collision damage** from an impact/overrun **only** 
 
 #### Collision & Occupants
 
-Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude) check** to brace against an impact — on a success, the occupant takes half damage.
+Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude-fort) check** to brace against an impact — on a success, the occupant takes half damage.
 
 > Target to Brace = 6 + Speed modifier
 

@@ -27,7 +27,7 @@ Non-armor wearables offering utility, environmental protection, or convenience. 
 | [Face Wrap](#face-wrap) | Protects against dust, sand, and mild airborne hazards. |
 | [Heavy Cloak](#heavy-cloak) | Partial protection from cold and rain. Covers equipped gear. |
 | [Rain Poncho](#rain-poncho) | Keeps the wearer dry. Covers equipped gear. |
-| [Reinforced Boots](#sturdy-boots) | Provides improved footing on rough terrain. |
+| [Reinforced Boots](#reinforced-boots) | Provides improved footing on rough terrain. |
 | [Wide-Brim Hat](#wide-brim-hat) | Minor protectiob from sun and light rain. |
 | [Work Gloves](#work-gloves) | Protects hands during labor and rough handling. |
 
@@ -273,7 +273,7 @@ Consumable medical items for field treatment, injury response, and condition man
 | Item | Notes |
 |------|-------|
 | [Antiseptic Poultice](#antiseptic-poultice) | Prevents infection and aids wound recovery. |
-| [Antitoxin](#antitoxin--antidote) | Removes or reduces toxin-based conditions. |
+| [Antitoxin](#antitoxin) | Removes or reduces toxin-based conditions. |
 | [Bandages, Large](#bandages-large) | Closes and covers major wounds.
 | [Bandages, Small](#bandages-small) | Closes and covers minor wounds. |
 | [Restorative Tonic](#restorative-tonic) | Heals 1 VIT or attribute damage. |
@@ -342,7 +342,7 @@ Gear for enduring hostile environments, sustaining life in the field, and naviga
 | Item | Notes |
 |------|-------|
 | [Bedroll](#bedroll) | Basic sleeping gear. Packs down for travel. |
-| [Compass](#compass) | Aids in maintaining direction of travel. |
+| [Compass](#compass--navigational-tool) | Aids in maintaining direction of travel. |
 | [Field Ration](#field-ration) | One day of food for one person. |
 | [Fire-Starter](#fire-starter) | Flint & steel or equivalent. Reliably starts fires. |
 | [Rope, 50ft](#rope-50ft) | General purpose rope. Supports up to 500lbs. |
@@ -459,7 +459,7 @@ General purpose tools and equipment for problem-solving in the field. For task-s
 | [Parchment / Paper Sheets (5)](#parchment--paper-sheets-5) | Writing surfaces. Pack of five sheets. |
 | [Pitons / Climbing Spikes (6)](#pitons--climbing-spikes-6) | Metal spikes hammered into surfaces for climbing. |
 | [Sewing Set](#sewing-set) | Needle, thread, and patches for basic repairs to fabric and leather. |
-| [Shovel](#shovel--entrenching-tool) | For digging. |
+| [Shovel](#shovel) | For digging. |
 | [Whetstone](#whetstone) | Sharpens and maintains edged weapons. |
 
 {{% details "Chain, 10ft" %}}
@@ -501,7 +501,7 @@ A small pot of ink and a quill, brush, stylus, or a pen appropriate to the setti
 {{% details "Long Crowbar" %}}
 ### Long Crowbar
 
-*--Price — 3lbs, [Bulky](/docs/free-srd/inventory--equipment/item-tags/bulky)*
+*--Price — 3lbs, [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
 
 A three foot long metal bar with a flat hooked end, designed for prying. Grants a +2 bonus to STR checks when used for leverage, such as forcing open doors, lids, or jammed mechanisms. Can be usesd as an improvised physical medium melee weapon.
 
