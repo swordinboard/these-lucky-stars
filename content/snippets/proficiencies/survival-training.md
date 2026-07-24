@@ -1,4 +1,11 @@
 ---
+title: "Survival Training"
+id: proficiencies/survival-training
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Initiative"
+id: combat/initiative
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat, stats]
 headless: true
 ---
 

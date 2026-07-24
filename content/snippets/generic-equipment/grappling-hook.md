@@ -1,4 +1,11 @@
 ---
+title: "Grappling Hook"
+id: generic-equipment/grappling-hook
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

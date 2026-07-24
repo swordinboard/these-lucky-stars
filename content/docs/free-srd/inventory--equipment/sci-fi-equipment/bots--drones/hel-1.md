@@ -2,6 +2,12 @@
 title: "HEL-1"
 description: "HEL-1 — a small flying drone for These Lucky Stars sci-fi settings"
 bookHidden: true
+id: bots/hel-1
+category: [sci-fi]
+type: creature
+tier: module
+reference: low
+tags: [bots, drones, wip]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

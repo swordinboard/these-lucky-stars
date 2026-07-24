@@ -1,4 +1,12 @@
 ---
+title: "The Look"
+id: abilities/the-look
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [traits/particularly-attractive]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Scav Gear"
+id: sci-fi-equipment/scav-gear
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, light-armor]
 headless: true
 ---
 

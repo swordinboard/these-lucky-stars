@@ -1,4 +1,11 @@
 ---
+title: "Laser Rifle"
+id: sci-fi-equipment/laser-rifle
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 headless: true
 ---
 

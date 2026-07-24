@@ -1,4 +1,11 @@
 ---
+title: "Contusion"
+id: wounds/contusion
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [wound-type]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Jump Boosters"
+id: sci-fi-equipment/jump-boosters
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

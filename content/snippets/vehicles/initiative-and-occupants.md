@@ -1,4 +1,11 @@
 ---
+title: "Initiative & Occupants"
+id: vehicles/initiative-and-occupants
+category: [core]
+type: rule
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

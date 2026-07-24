@@ -1,4 +1,11 @@
 ---
+title: "Dying"
+id: conditions/dying
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

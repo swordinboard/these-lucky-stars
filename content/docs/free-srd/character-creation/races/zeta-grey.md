@@ -3,6 +3,12 @@ title: "Zeta Grey"
 description: "Introducing the Zeta Grey — A classic sci-fi race known for their many cryptic encounters and high intelligence."
 weight: 30
 bookHidden: true
+id: races/zeta-grey
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [races, sci-fi, wip]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

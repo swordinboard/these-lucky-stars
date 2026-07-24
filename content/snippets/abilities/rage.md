@@ -1,4 +1,11 @@
 ---
+title: "Rage"
+id: abilities/rage
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
 headless: true
 ---
 

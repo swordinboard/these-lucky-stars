@@ -1,4 +1,11 @@
 ---
+title: "Iron Spikes (10)"
+id: generic-equipment/iron-spikes
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

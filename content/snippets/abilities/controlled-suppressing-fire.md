@@ -1,4 +1,12 @@
 ---
+title: "Controlled Suppressing Fire"
+id: abilities/controlled-suppressing-fire
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/weapon, abilities/suppressing-fire]
 headless: true
 ---
 

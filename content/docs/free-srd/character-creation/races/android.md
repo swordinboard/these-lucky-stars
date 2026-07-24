@@ -3,6 +3,12 @@ title: "Android"
 description: "Introducing the Android — liberated robots able to act and think independently"
 weight: 30
 bookHidden: true
+id: races/android
+category: [sci-fi]
+type: feature
+tier: module
+reference: medium
+tags: [races, sci-fi, wip]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

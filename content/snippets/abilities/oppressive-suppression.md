@@ -1,4 +1,12 @@
 ---
+title: "Oppressive Suppression"
+id: abilities/oppressive-suppression
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/weapon, abilities/suppressing-fire]
 headless: true
 ---
 

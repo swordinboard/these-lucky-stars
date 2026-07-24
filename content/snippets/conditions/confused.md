@@ -1,4 +1,11 @@
 ---
+title: "Confused"
+id: conditions/confused
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Padded Flight Suit"
+id: sci-fi-equipment/padded-flight-suit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, light-armor]
 headless: true
 ---
 

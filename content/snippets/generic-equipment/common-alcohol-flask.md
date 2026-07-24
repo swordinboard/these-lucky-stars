@@ -1,4 +1,11 @@
 ---
+title: "Common Alcohol, Flask"
+id: generic-equipment/common-alcohol-flask
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

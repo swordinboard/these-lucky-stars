@@ -1,4 +1,11 @@
 ---
+title: "Mental Attributes"
+id: attributes/mental-attributes
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [attributes]
 headless: true
 ---
 

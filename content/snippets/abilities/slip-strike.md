@@ -1,4 +1,12 @@
 ---
+title: "Slip Strike"
+id: abilities/slip-strike
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/martial-training, abilities/agile-dodge]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Dead Battery"
+id: conditions/dead-battery
+category: [sci-fi]
+type: rule
+tier: module
+reference: medium
+tags: [condition, sci-fi, bots]
 headless: true
 ---
 

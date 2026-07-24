@@ -1,4 +1,12 @@
 ---
+title: "Field Ration"
+id: sci-fi-equipment/field-ration
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, survival]
+variant_group: field-ration
 headless: true
 ---
 

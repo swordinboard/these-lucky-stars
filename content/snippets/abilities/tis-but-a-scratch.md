@@ -1,4 +1,12 @@
 ---
+title: "Tis But a Scratch"
+id: abilities/tis-but-a-scratch
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, luck]
+requires: [traits/tough, abilities/defender, abilities/just-winded, abilities/just-grazed]
 headless: true
 ---
 

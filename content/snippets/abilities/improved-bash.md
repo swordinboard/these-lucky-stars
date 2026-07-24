@@ -1,4 +1,12 @@
 ---
+title: "Improved Bash"
+id: abilities/improved-bash
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [abilities/charge, abilities/bash]
 headless: true
 ---
 

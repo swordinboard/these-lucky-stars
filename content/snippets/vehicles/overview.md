@@ -1,4 +1,11 @@
 ---
+title: "Vehicle Rules"
+id: vehicles/overview
+category: [core]
+type: reference
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

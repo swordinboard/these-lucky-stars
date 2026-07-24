@@ -1,4 +1,11 @@
 ---
+title: "Concealable"
+id: item-tags/concealable
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Arcing"
+id: item-tags/arcing
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [item-tag]
 headless: true
 ---
 

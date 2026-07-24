@@ -1,4 +1,11 @@
 ---
+title: "Jump Pack"
+id: sci-fi-equipment/jump-pack
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

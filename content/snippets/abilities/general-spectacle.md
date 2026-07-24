@@ -1,4 +1,11 @@
 ---
+title: "General Spectacle"
+id: abilities/general-spectacle
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
 headless: true
 ---
 

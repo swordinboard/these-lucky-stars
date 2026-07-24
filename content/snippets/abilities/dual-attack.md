@@ -1,4 +1,12 @@
 ---
+title: "Dual Attack"
+id: abilities/dual-attack
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
+requires: [proficiencies/weapon]
 headless: true
 ---
 

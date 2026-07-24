@@ -1,4 +1,11 @@
 ---
+title: "Heavy Rotary Cannon"
+id: sci-fi-equipment/heavy-rotary-cannon
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, heavy-ranged, ranged-weapon]
 headless: true
 ---
 

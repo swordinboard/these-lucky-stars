@@ -1,4 +1,11 @@
 ---
+title: "Weighted Core"
+id: sci-fi-equipment/weighted-core
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, melee-upgrade]
 headless: true
 ---
 

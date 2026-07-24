@@ -1,4 +1,11 @@
 ---
+title: "Focus Attack"
+id: abilities/focus-attack
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
 headless: true
 ---
 

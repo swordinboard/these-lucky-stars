@@ -1,4 +1,11 @@
 ---
+title: "Unshakable"
+id: traits/unshakable
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [trait, core]
 headless: true
 ---
 

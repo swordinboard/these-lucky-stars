@@ -1,4 +1,11 @@
 ---
+title: "Compass / Navigational Tool"
+id: generic-equipment/compass
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

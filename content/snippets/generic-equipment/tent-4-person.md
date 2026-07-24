@@ -1,4 +1,11 @@
 ---
+title: "Tent, 4-Person"
+id: generic-equipment/tent-4-person
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

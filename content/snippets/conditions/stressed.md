@@ -1,4 +1,11 @@
 ---
+title: "Stressed"
+id: conditions/stressed
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition]
 headless: true
 ---
 

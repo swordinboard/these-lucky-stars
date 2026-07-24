@@ -1,4 +1,11 @@
 ---
+title: "Oil Lantern"
+id: generic-equipment/oil-lantern
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, light-sources]
 headless: true
 ---
 

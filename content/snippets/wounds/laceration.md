@@ -1,4 +1,11 @@
 ---
+title: "Laceration"
+id: wounds/laceration
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [wound-type]
 headless: true
 ---
 

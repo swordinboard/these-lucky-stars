@@ -1,4 +1,11 @@
 ---
+title: "Stress Threshold"
+id: stats/stress-threshold
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [stats]
 headless: true
 ---
 

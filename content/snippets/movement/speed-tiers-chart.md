@@ -1,4 +1,11 @@
 ---
+title: "Speed Tiers Chart"
+id: movement/speed-tiers-chart
+category: [core]
+type: reference
+tier: core
+reference: medium
+tags: [movement]
 headless: true
 ---
 

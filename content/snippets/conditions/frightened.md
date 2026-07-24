@@ -1,4 +1,11 @@
 ---
+title: "Frightened"
+id: conditions/frightened
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition]
 headless: true
 ---
 

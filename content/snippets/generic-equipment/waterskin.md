@@ -1,4 +1,11 @@
 ---
+title: "Waterskin / Canteen"
+id: generic-equipment/waterskin
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

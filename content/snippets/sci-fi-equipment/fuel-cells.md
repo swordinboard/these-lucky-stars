@@ -1,4 +1,11 @@
 ---
+title: "Fuel Cells"
+id: sci-fi-equipment/fuel-cells
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

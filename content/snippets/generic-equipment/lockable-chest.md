@@ -1,4 +1,11 @@
 ---
+title: "Chest, Lockable"
+id: generic-equipment/lockable-chest
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, containers]
 headless: true
 ---
 

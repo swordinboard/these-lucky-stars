@@ -1,4 +1,11 @@
 ---
+title: "Coms Headset"
+id: sci-fi-equipment/coms-headset
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, communications]
 headless: true
 ---
 

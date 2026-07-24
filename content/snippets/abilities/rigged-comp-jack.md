@@ -1,4 +1,12 @@
 ---
+title: "Rigged Comp Jack"
+id: abilities/rigged-comp-jack
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, general, computers]
+requires: [proficiencies/comp-jack, proficiencies/general-technology]
 headless: true
 ---
 

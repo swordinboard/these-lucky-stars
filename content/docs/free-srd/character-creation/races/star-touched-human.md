@@ -3,6 +3,12 @@ title: "Star-touched Human"
 description: "Introducing the Star-Touched Human — Without a doubt the luckiest species in the galaxy"
 weight: 30
 bookHidden: true
+id: races/star-touched-human
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [races, sci-fi, wip]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

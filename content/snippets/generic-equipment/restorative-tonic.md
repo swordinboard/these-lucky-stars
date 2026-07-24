@@ -1,4 +1,11 @@
 ---
+title: "Restorative Tonic"
+id: generic-equipment/restorative-tonic
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, medical]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Sewing Set"
+id: generic-equipment/sewing-set
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

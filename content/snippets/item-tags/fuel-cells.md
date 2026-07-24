@@ -1,4 +1,11 @@
 ---
+title: "Fuel Cell"
+id: item-tags/fuel-cells
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

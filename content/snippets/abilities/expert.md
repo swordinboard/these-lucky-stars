@@ -1,4 +1,12 @@
 ---
+title: "Expert"
+id: abilities/expert
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [abilities/student]
 headless: true
 ---
 

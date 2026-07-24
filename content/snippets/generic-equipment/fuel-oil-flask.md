@@ -1,4 +1,11 @@
 ---
+title: "Fuel / Oil Flask"
+id: generic-equipment/fuel-oil-flask
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, light-sources]
 headless: true
 ---
 

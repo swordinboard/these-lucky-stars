@@ -1,4 +1,11 @@
 ---
+title: "Pinned"
+id: conditions/pinned
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition]
 headless: true
 ---
 

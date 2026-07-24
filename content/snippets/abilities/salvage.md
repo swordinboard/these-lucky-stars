@@ -1,4 +1,12 @@
 ---
+title: "Salvage"
+id: abilities/salvage
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, general]
+requires: [proficiencies/repair-kit]
 headless: true
 ---
 

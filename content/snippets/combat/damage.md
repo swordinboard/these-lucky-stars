@@ -1,4 +1,11 @@
 ---
+title: "Damage"
+id: combat/damage
+category: [core]
+type: rule
+tier: core
+reference: high
+tags: [combat]
 headless: true
 ---
 

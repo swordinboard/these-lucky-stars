@@ -1,4 +1,11 @@
 ---
+title: "Emergency Oxygen Mask"
+id: sci-fi-equipment/emergency-oxygen-mask
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, survival]
 headless: true
 ---
 

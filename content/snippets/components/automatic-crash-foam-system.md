@@ -1,4 +1,11 @@
 ---
+title: "Automatic Crash Foam System"
+id: components/automatic-crash-foam-system
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

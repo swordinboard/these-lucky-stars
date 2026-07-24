@@ -1,4 +1,11 @@
 ---
+title: "Bleeding"
+id: conditions/bleeding
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition]
 headless: true
 ---
 

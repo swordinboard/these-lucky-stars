@@ -1,4 +1,11 @@
 ---
+title: "Bandages, Small"
+id: generic-equipment/bandages-small
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, medical]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Bulky"
+id: item-tags/bulky
+category: [core]
+type: rule
+tier: core
+reference: high
+tags: [item-tag]
 headless: true
 ---
 

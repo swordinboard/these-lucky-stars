@@ -1,4 +1,11 @@
 ---
+title: "Gravity Anchor"
+id: sci-fi-equipment/gravity-anchor
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

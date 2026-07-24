@@ -1,4 +1,11 @@
 ---
+title: "Lucky Strike"
+id: abilities/lucky-strike
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, luck]
 headless: true
 ---
 

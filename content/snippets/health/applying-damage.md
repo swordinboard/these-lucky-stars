@@ -1,4 +1,11 @@
 ---
+title: "Applying Damage"
+id: health/applying-damage
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [health, combat, damage]
 headless: true
 ---
 

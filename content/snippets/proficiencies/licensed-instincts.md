@@ -1,4 +1,12 @@
 ---
+title: "Licensed Instincts"
+id: proficiencies/licensed-instincts
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
+requires: [proficiencies/vehicle]
 headless: true
 ---
 

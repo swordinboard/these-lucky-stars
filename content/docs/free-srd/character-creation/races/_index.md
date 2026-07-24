@@ -3,6 +3,12 @@ title: "Races"
 description: "The various Races available for player characters in These Lucky Stars"
 weight: 10
 bookToC: false
+id: races/overview
+category: [core]
+type: reference
+tier: core
+reference: medium
+tags: [races, character-creation]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

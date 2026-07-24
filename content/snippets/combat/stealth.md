@@ -1,4 +1,11 @@
 ---
+title: "Stealth"
+id: combat/stealth
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat, stats]
 headless: true
 ---
 

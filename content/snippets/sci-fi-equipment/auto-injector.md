@@ -1,4 +1,11 @@
 ---
+title: "Auto-Injector"
+id: sci-fi-equipment/auto-injector
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, armor-upgrade]
 headless: true
 ---
 

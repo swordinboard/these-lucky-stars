@@ -1,4 +1,11 @@
 ---
+title: "Huds"
+id: sci-fi/huds
+category: [sci-fi]
+type: rule
+tier: module
+reference: medium
+tags: [sci-fi, equipment]
 headless: true
 ---
 

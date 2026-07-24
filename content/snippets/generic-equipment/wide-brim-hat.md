@@ -1,4 +1,11 @@
 ---
+title: "Wide-Brim Hat"
+id: generic-equipment/wide-brim-hat
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, clothing]
 headless: true
 ---
 

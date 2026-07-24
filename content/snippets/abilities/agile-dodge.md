@@ -1,4 +1,11 @@
 ---
+title: "Agile Dodge"
+id: abilities/agile-dodge
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
 headless: true
 ---
 

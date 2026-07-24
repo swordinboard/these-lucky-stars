@@ -1,4 +1,11 @@
 ---
+title: "Bioskin Veil"
+id: sci-fi-equipment/bioskin-veil
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

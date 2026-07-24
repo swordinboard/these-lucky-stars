@@ -1,4 +1,11 @@
 ---
+title: "Fatigued"
+id: conditions/fatigued
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

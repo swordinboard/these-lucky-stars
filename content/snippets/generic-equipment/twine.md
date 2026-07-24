@@ -1,4 +1,11 @@
 ---
+title: "Ball of Twine / String"
+id: generic-equipment/twine
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

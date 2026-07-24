@@ -1,4 +1,11 @@
 ---
+title: "Armor Basics"
+id: equipment/armor-basics
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [equipment, armor]
 headless: true
 ---
 

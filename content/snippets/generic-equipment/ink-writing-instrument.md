@@ -1,4 +1,11 @@
 ---
+title: "Ink & Writing Instrument"
+id: generic-equipment/ink-writing-instrument
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

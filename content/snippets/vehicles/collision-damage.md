@@ -1,4 +1,11 @@
 ---
+title: "Collision Damage"
+id: vehicles/collision-damage
+category: [core]
+type: rule
+tier: supplement
+reference: medium
+tags: [vehicles, wip]
 headless: true
 ---
 

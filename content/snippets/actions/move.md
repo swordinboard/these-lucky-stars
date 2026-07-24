@@ -1,4 +1,11 @@
 ---
+title: "Move"
+id: actions/move
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [actions, movement]
 headless: true
 ---
 

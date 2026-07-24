@@ -1,4 +1,11 @@
 ---
+title: "Injector"
+id: item-tags/injector
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

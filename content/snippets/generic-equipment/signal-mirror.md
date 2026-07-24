@@ -1,4 +1,11 @@
 ---
+title: "Signal Mirror"
+id: generic-equipment/signal-mirror
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

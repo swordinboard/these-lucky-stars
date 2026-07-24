@@ -1,4 +1,11 @@
 ---
+title: "Surprise Attacks"
+id: combat/surprise-attacks
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat]
 headless: true
 ---
 

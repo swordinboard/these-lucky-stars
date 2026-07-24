@@ -1,4 +1,11 @@
 ---
+title: "Light Pistol"
+id: sci-fi-equipment/light-pistol
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 headless: true
 ---
 

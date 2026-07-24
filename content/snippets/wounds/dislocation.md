@@ -1,4 +1,11 @@
 ---
+title: "Dislocation"
+id: wounds/dislocation
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [wound-type]
 headless: true
 ---
 

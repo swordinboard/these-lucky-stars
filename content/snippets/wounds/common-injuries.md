@@ -1,4 +1,11 @@
 ---
+title: "Common Injuries"
+id: wounds/common-injuries
+category: [core]
+type: reference
+tier: core
+reference: low
+tags: []
 headless: true
 ---
 

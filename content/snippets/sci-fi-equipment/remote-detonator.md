@@ -1,4 +1,11 @@
 ---
+title: "Remote Detonator"
+id: sci-fi-equipment/remote-detonator
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

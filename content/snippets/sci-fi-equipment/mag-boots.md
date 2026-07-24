@@ -1,4 +1,11 @@
 ---
+title: "Mag Boots"
+id: sci-fi-equipment/mag-boots
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

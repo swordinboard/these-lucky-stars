@@ -1,4 +1,11 @@
 ---
+title: "Coil of Wire"
+id: generic-equipment/coil-of-wire
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

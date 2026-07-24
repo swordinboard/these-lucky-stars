@@ -1,4 +1,11 @@
 ---
+title: "Damage Dice"
+id: combat/damage-dice
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [combat, damage]
 headless: true
 ---
 

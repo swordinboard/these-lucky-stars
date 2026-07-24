@@ -1,4 +1,11 @@
 ---
+title: "Signature Spoofer"
+id: sci-fi-equipment/signature-spoofer
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

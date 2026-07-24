@@ -1,4 +1,11 @@
 ---
+title: "Defender"
+id: abilities/defender
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
 headless: true
 ---
 

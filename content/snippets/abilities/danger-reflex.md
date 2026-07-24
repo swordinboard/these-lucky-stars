@@ -1,4 +1,11 @@
 ---
+title: "Danger Reflex"
+id: abilities/danger-reflex
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
 headless: true
 ---
 

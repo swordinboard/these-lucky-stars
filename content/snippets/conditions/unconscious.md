@@ -1,4 +1,11 @@
 ---
+title: "Unconscious"
+id: conditions/unconscious
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

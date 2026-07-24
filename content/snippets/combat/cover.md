@@ -1,4 +1,11 @@
 ---
+title: "Cover"
+id: combat/cover
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat]
 headless: true
 ---
 

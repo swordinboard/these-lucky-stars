@@ -1,4 +1,11 @@
 ---
+title: "Hot-Headed"
+id: traits/hot-headed
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [trait, core]
 headless: true
 ---
 

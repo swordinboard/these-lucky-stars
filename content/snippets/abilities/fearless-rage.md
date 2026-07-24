@@ -1,4 +1,12 @@
 ---
+title: "Fearless Rage"
+id: abilities/fearless-rage
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [abilities/rage]
 headless: true
 ---
 

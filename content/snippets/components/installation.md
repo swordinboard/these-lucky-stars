@@ -1,4 +1,11 @@
 ---
+title: "Installation"
+id: components/installation
+category: [sci-fi]
+type: rule
+tier: module
+reference: low
+tags: [component, sci-fi]
 headless: true
 ---
 

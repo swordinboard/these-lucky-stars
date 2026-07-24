@@ -1,4 +1,12 @@
 ---
+title: "Bash"
+id: abilities/bash
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [abilities/charge]
 headless: true
 ---
 

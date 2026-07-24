@@ -1,4 +1,11 @@
 ---
+title: "Damage and Wounds"
+id: components/damage-and-wounds
+category: [sci-fi]
+type: rule
+tier: module
+reference: low
+tags: [component, sci-fi]
 headless: true
 ---
 

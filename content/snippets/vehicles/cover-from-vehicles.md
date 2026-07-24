@@ -1,4 +1,11 @@
 ---
+title: "Cover from Vehicles"
+id: vehicles/cover-from-vehicles
+category: [core]
+type: rule
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

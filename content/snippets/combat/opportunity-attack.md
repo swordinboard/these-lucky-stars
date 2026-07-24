@@ -1,4 +1,11 @@
 ---
+title: "Opportunity Attack"
+id: combat/opportunity-attack
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat, actions]
 headless: true
 ---
 

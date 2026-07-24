@@ -1,4 +1,12 @@
 ---
+title: "Friend in Need"
+id: abilities/friend-in-need
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [traits/tough]
 headless: true
 ---
 

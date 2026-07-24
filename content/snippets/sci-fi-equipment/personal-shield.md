@@ -1,4 +1,11 @@
 ---
+title: "Personal Shield"
+id: sci-fi-equipment/personal-shield
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

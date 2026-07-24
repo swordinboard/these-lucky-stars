@@ -1,4 +1,11 @@
 ---
+title: "Reinforced Boots"
+id: generic-equipment/reinforced-boots
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, clothing]
 headless: true
 ---
 

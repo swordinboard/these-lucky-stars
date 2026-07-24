@@ -1,4 +1,11 @@
 ---
+title: "Space Suit"
+id: item-tags/space-suit
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

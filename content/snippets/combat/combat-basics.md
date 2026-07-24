@@ -1,4 +1,11 @@
 ---
+title: "Combat Basics"
+id: combat/combat-basics
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat]
 headless: true
 ---
 

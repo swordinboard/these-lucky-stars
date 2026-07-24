@@ -1,4 +1,11 @@
 ---
+title: "Long Crowbar"
+id: generic-equipment/long-crowbar
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

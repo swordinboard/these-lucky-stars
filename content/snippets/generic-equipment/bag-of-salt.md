@@ -1,4 +1,11 @@
 ---
+title: "Bag of Salt"
+id: generic-equipment/bag-of-salt
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

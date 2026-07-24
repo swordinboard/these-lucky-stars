@@ -1,4 +1,11 @@
 ---
+title: "Object Conditions"
+id: objects/conditions
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [objects]
 headless: true
 ---
 

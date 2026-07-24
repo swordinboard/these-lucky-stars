@@ -1,4 +1,11 @@
 ---
+title: "Overcharge Chamber"
+id: sci-fi-equipment/overcharge-chamber
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 headless: true
 ---
 

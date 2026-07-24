@@ -1,4 +1,12 @@
 ---
+title: "Companion Bot"
+id: abilities/companion-bot
+category: [sci-fi]
+type: feature
+tier: module
+reference: medium
+tags: [ability, sci-fi, general]
+requires: [proficiencies/general-robotics]
 headless: true
 ---
 

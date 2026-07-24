@@ -1,4 +1,11 @@
 ---
+title: "Combat Evosuit"
+id: sci-fi-equipment/combat-evosuit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, heavy-armor]
 headless: true
 ---
 

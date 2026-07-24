@@ -1,4 +1,11 @@
 ---
+title: "Targeting Array"
+id: components/targeting-array
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

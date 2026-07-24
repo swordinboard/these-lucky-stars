@@ -1,4 +1,11 @@
 ---
+title: "Battery Saver"
+id: abilities/battery-saver
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, battery]
 headless: true
 ---
 

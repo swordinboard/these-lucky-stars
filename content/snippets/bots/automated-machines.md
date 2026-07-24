@@ -1,4 +1,11 @@
 ---
+title: "Bots & Drones"
+id: bots/automated-machines
+category: [sci-fi]
+type: rule
+tier: module
+reference: low
+tags: [bots, sci-fi]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Repair Kit"
+id: sci-fi-equipment/repair-kit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, kit]
 headless: true
 ---
 

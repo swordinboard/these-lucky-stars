@@ -1,4 +1,13 @@
 ---
+title: "Wip Announcement"
+id: site/wip-announcement
+category: [core]
+type: reference
+tier: core
+reference: high
+tags: [site-chrome]
+selectable: false
+excluded: true
 headless: true
 ---
 

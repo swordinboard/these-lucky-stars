@@ -1,4 +1,11 @@
 ---
+title: "Reckless Attack"
+id: abilities/reckless-attack
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
 headless: true
 ---
 

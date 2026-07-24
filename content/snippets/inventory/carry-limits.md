@@ -1,4 +1,11 @@
 ---
+title: "Inventory Management"
+id: inventory/carry-limits
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [inventory]
 headless: true
 ---
 

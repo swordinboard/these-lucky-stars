@@ -2,6 +2,12 @@
 title: "Size"
 description: "How size works in These Lucky Stars — attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge."
 weight: 27
+id: core-rules/size
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [size, combat, stats]
 ---
 
 ## Size

@@ -1,4 +1,11 @@
 ---
+title: "Crippled"
+id: conditions/crippled
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

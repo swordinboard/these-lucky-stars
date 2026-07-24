@@ -1,4 +1,11 @@
 ---
+title: "Heavy Cloak"
+id: generic-equipment/heavy-cloak
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, clothing]
 headless: true
 ---
 

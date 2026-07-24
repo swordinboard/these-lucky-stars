@@ -1,4 +1,11 @@
 ---
+title: "Research"
+id: proficiencies/research
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
 headless: true
 ---
 

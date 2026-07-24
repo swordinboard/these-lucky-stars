@@ -3,6 +3,12 @@ title: "Classic Human"
 description: "Introducing the Classic Human — the most adaptable and widespread species in most settings."
 weight: 30
 bookHidden: true
+id: races/classic-human
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [races, core]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

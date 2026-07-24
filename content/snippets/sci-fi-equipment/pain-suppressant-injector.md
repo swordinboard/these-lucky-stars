@@ -1,4 +1,11 @@
 ---
+title: "Pain Suppressant Injector"
+id: sci-fi-equipment/pain-suppressant-injector
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, medical]
 headless: true
 ---
 

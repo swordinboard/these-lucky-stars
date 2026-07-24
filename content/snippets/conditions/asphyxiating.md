@@ -1,4 +1,11 @@
 ---
+title: "Asphyxiating"
+id: conditions/asphyxiating
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition]
 headless: true
 ---
 

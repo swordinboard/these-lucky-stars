@@ -1,4 +1,11 @@
 ---
+title: "Impact & Overrun"
+id: vehicles/impact-and-overrun
+category: [core]
+type: rule
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

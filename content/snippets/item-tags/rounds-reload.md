@@ -1,4 +1,11 @@
 ---
+title: "Rounds Reload"
+id: item-tags/rounds-reload
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [item-tag]
 headless: true
 ---
 

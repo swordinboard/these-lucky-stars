@@ -1,4 +1,12 @@
 ---
+title: "Field Patch"
+id: abilities/field-patch
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/medic-training]
 headless: true
 ---
 

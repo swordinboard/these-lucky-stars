@@ -1,4 +1,11 @@
 ---
+title: "Standardized Battery Cores"
+id: sci-fi-equipment/battery-cores
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

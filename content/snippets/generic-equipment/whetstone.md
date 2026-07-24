@@ -1,4 +1,11 @@
 ---
+title: "Whetstone"
+id: generic-equipment/whetstone
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

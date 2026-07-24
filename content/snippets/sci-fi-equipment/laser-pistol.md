@@ -1,4 +1,11 @@
 ---
+title: "Laser Pistol"
+id: sci-fi-equipment/laser-pistol
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 headless: true
 ---
 

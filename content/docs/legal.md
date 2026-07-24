@@ -3,6 +3,13 @@ title: "Legal Information"
 description: "Licensing for These Lucky Stars — core rules under CC BY-NC-SA 4.0. What you can use, adapt, and share."
 weight: 100
 bookToC: false
+id: site/license
+category: [core]
+type: reference
+tier: core
+reference: low
+tags: [legal]
+excluded: true
 ---
 # Legal Information
 

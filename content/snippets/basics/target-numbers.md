@@ -1,4 +1,11 @@
 ---
+title: "Target Numbers"
+id: basics/target-numbers
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [basics]
 headless: true
 ---
 

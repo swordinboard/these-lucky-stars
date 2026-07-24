@@ -1,4 +1,11 @@
 ---
+title: "Emergency Beacon"
+id: sci-fi-equipment/emergency-beacon
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, survival]
 headless: true
 ---
 

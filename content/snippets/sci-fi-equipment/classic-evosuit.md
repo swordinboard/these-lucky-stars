@@ -1,4 +1,11 @@
 ---
+title: "Classic Evosuit"
+id: sci-fi-equipment/classic-evosuit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, light-armor]
 headless: true
 ---
 

@@ -1,4 +1,12 @@
 ---
+title: "Special Encouragement"
+id: abilities/special-encouragement
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, general]
+requires: [proficiencies/general-robotics, abilities/companion-bot]
 headless: true
 ---
 

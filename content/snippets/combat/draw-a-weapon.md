@@ -1,4 +1,11 @@
 ---
+title: "Draw a Weapon"
+id: combat/draw-a-weapon
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat, action, aggressive]
 headless: true
 ---
 

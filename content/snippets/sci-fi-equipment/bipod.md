@@ -1,4 +1,11 @@
 ---
+title: "Bipod"
+id: sci-fi-equipment/bipod
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 headless: true
 ---
 

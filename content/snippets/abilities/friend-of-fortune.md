@@ -1,4 +1,12 @@
 ---
+title: "Friend of Fortune"
+id: abilities/friend-of-fortune
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, luck]
+requires: [traits/lucky]
 headless: true
 ---
 

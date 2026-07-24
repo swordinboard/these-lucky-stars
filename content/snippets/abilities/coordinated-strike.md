@@ -1,4 +1,11 @@
 ---
+title: "Coordinated Strike"
+id: abilities/coordinated-strike
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
 headless: true
 ---
 

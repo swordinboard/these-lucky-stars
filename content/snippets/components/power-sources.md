@@ -1,4 +1,11 @@
 ---
+title: "Power Sources and batteries"
+id: components/power-sources
+category: [sci-fi]
+type: rule
+tier: module
+reference: low
+tags: [component, sci-fi]
 headless: true
 ---
 

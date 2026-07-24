@@ -1,4 +1,11 @@
 ---
+title: "EVA Suit"
+id: sci-fi-equipment/eva-suit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, heavy-armor]
 headless: true
 ---
 

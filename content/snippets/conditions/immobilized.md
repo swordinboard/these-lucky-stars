@@ -1,4 +1,11 @@
 ---
+title: "Immobilized"
+id: conditions/immobilized
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

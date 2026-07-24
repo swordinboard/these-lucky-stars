@@ -1,4 +1,11 @@
 ---
+title: "Torch"
+id: generic-equipment/torch
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, light-sources]
 headless: true
 ---
 

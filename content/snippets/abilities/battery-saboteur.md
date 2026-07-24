@@ -1,4 +1,12 @@
 ---
+title: "Battery Saboteur"
+id: abilities/battery-saboteur
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, battery]
+requires: [proficiencies/general-technology]
 headless: true
 ---
 

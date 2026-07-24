@@ -1,4 +1,11 @@
 ---
+title: "Shields Basics"
+id: equipment/shields-basics
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [equipment, shield]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Fire-Starter"
+id: generic-equipment/fire-starter
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

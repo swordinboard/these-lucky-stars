@@ -1,4 +1,12 @@
 ---
+title: "Overcharge"
+id: abilities/overcharge
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, battery]
+requires: [proficiencies/general-technology]
 headless: true
 ---
 

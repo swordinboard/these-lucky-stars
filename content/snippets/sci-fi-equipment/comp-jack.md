@@ -1,4 +1,11 @@
 ---
+title: "Comp Jack"
+id: sci-fi-equipment/comp-jack
+category: [sci-fi]
+type: equipment
+tier: module
+reference: medium
+tags: [equipment, sci-fi, tech, computers]
 headless: true
 ---
 

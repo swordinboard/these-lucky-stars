@@ -1,4 +1,11 @@
 ---
+title: "Splint Materials"
+id: generic-equipment/splint-materials
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, medical]
 headless: true
 ---
 

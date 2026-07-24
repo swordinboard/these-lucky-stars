@@ -1,4 +1,11 @@
 ---
+title: "Candle"
+id: generic-equipment/candle
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, light-sources]
 headless: true
 ---
 

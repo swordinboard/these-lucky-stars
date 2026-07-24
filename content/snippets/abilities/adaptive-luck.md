@@ -1,4 +1,11 @@
 ---
+title: "Adaptive Luck"
+id: abilities/adaptive-luck
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, luck]
 headless: true
 ---
 

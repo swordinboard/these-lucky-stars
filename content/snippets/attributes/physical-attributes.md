@@ -1,4 +1,11 @@
 ---
+title: "Physical Attributes"
+id: attributes/physical-attributes
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [attributes]
 headless: true
 ---
 

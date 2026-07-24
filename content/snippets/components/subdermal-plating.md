@@ -1,4 +1,11 @@
 ---
+title: "Subdermal Plating"
+id: components/subdermal-plating
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

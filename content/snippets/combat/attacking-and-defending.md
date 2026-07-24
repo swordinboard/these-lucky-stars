@@ -1,4 +1,11 @@
 ---
+title: "Attacking and Defending"
+id: combat/attacking-and-defending
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat]
 headless: true
 ---
 

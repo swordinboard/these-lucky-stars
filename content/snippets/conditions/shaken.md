@@ -1,4 +1,11 @@
 ---
+title: "Shaken"
+id: conditions/shaken
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition]
 headless: true
 ---
 

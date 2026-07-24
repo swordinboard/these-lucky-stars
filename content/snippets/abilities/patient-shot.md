@@ -1,4 +1,12 @@
 ---
+title: "Patient Shot"
+id: abilities/patient-shot
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/weapon]
 headless: true
 ---
 

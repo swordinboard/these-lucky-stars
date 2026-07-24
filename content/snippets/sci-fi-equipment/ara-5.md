@@ -1,4 +1,11 @@
 ---
+title: "Analgesic Radiation Antidote 5 (ARA-5)"
+id: sci-fi-equipment/ara-5
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, medical]
 headless: true
 ---
 

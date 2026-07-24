@@ -1,4 +1,11 @@
 ---
+title: "Pressurized"
+id: item-tags/pressurized
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

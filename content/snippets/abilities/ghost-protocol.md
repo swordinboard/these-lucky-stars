@@ -1,4 +1,12 @@
 ---
+title: "Ghost Protocol"
+id: abilities/ghost-protocol
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, general, computers]
+requires: [proficiencies/comp-jack]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Drive"
+id: vehicles/drive
+category: [core]
+type: rule
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

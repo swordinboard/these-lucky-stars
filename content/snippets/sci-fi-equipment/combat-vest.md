@@ -1,4 +1,11 @@
 ---
+title: "Combat Vest"
+id: sci-fi-equipment/combat-vest
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, light-armor]
 headless: true
 ---
 

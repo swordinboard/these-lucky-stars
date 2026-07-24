@@ -1,4 +1,12 @@
 ---
+title: "Suppressing Fire"
+id: abilities/suppressing-fire
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [ability, core, general]
+requires: [proficiencies/weapon]
 headless: true
 ---
 

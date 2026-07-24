@@ -1,4 +1,11 @@
 ---
+title: "Abilities"
+id: abilities/overview
+category: [core]
+type: reference
+tier: core
+reference: low
+tags: [ability, character-creation]
 headless: true
 ---
 

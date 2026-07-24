@@ -1,4 +1,11 @@
 ---
+title: "D100 or Percentage"
+id: basics/d100-or-percentage
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [basics]
 headless: true
 ---
 

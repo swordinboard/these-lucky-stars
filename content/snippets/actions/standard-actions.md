@@ -1,4 +1,11 @@
 ---
+title: "Standard Actions"
+id: actions/standard-actions
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [actions]
 headless: true
 ---
 

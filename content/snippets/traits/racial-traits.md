@@ -1,4 +1,11 @@
 ---
+title: "Racial Traits"
+id: traits/racial-traits
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [character-creation, racial, trait]
 headless: true
 ---
 

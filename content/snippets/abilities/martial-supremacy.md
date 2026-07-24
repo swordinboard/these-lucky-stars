@@ -1,4 +1,12 @@
 ---
+title: "Martial Supremacy"
+id: abilities/martial-supremacy
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/martial-training]
 headless: true
 ---
 

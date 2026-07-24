@@ -1,4 +1,11 @@
 ---
+title: "Long Range Coms"
+id: sci-fi-equipment/long-range-coms
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, communications]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Pouch Set, Small"
+id: generic-equipment/pouch-set-small
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, containers]
 headless: true
 ---
 

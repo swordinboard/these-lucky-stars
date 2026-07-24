@@ -1,4 +1,11 @@
 ---
+title: "Pitons / Climbing Spikes (6)"
+id: generic-equipment/pitons
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

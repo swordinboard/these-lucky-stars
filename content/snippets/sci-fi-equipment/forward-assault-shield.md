@@ -1,4 +1,11 @@
 ---
+title: "Forward Assault Shield"
+id: sci-fi-equipment/forward-assault-shield
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 headless: true
 ---
 

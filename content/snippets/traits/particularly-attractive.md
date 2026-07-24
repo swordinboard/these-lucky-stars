@@ -1,4 +1,11 @@
 ---
+title: "Particularly Attractive"
+id: traits/particularly-attractive
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [trait, core]
 headless: true
 ---
 

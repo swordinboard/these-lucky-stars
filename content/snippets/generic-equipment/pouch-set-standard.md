@@ -1,4 +1,11 @@
 ---
+title: "Pouch Set, standard"
+id: generic-equipment/pouch-set-standard
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, containers]
 headless: true
 ---
 

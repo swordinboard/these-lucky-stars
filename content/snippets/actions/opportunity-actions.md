@@ -1,4 +1,11 @@
 ---
+title: "Opportunity Actions"
+id: actions/opportunity-actions
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [actions]
 headless: true
 ---
 

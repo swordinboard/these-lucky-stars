@@ -1,4 +1,11 @@
 ---
+title: "Emergency Hatchet"
+id: sci-fi-equipment/emergency-hatchet
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Antitoxin"
+id: generic-equipment/antitoxin
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, medical]
 headless: true
 ---
 

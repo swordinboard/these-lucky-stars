@@ -1,4 +1,11 @@
 ---
+title: "Mag Cuffs"
+id: sci-fi-equipment/mag-cuffs
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

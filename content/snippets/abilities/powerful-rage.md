@@ -1,4 +1,12 @@
 ---
+title: "Powerful Rage"
+id: abilities/powerful-rage
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [abilities/rage]
 headless: true
 ---
 

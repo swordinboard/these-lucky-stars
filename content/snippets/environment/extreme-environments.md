@@ -1,4 +1,11 @@
 ---
+title: "Extreme Environments"
+id: environment/extreme-environments
+category: [sci-fi]
+type: rule
+tier: module
+reference: low
+tags: [environment, sci-fi]
 headless: true
 ---
 

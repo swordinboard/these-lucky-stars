@@ -1,4 +1,11 @@
 ---
+title: "Satchel"
+id: generic-equipment/satchel
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, containers]
 headless: true
 ---
 

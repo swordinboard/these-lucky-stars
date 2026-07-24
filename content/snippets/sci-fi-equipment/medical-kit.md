@@ -1,4 +1,11 @@
 ---
+title: "Medical Kit"
+id: sci-fi-equipment/medical-kit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, kit]
 headless: true
 ---
 

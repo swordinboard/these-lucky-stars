@@ -1,4 +1,11 @@
 ---
+title: "Compact Rifle"
+id: sci-fi-equipment/compact-rifle
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 headless: true
 ---
 

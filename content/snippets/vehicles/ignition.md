@@ -1,4 +1,11 @@
 ---
+title: "Ignition"
+id: vehicles/ignition
+category: [core]
+type: rule
+tier: supplement
+reference: low
+tags: [vehicles, wip]
 headless: true
 ---
 

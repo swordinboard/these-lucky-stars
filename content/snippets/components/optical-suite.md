@@ -1,4 +1,11 @@
 ---
+title: "Optical Suite"
+id: components/optical-suite
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

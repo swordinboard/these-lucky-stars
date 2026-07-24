@@ -1,4 +1,11 @@
 ---
+title: "Squad Shield"
+id: sci-fi-equipment/squad-shield
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

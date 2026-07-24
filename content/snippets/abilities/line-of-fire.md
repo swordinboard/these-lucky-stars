@@ -1,4 +1,12 @@
 ---
+title: "Line of Fire"
+id: abilities/line-of-fire
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [ability, core, general]
+requires: [proficiencies/weapon, abilities/suppressing-fire]
 headless: true
 ---
 

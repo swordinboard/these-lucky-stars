@@ -1,4 +1,11 @@
 ---
+title: "Crash Foam Canister"
+id: sci-fi-equipment/crash-foam-canister
+category: [sci-fi]
+type: equipment
+tier: module
+reference: medium
+tags: [equipment, sci-fi, medical]
 headless: true
 ---
 

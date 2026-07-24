@@ -1,4 +1,11 @@
 ---
+title: "Sick"
+id: conditions/sick
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Restrained [___]"
+id: conditions/restrained
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

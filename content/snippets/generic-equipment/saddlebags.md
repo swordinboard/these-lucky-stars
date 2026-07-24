@@ -1,4 +1,11 @@
 ---
+title: "Saddlebags"
+id: generic-equipment/saddlebags
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, containers]
 headless: true
 ---
 

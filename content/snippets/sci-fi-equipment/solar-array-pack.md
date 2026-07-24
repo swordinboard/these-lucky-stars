@@ -1,4 +1,11 @@
 ---
+title: "Solar Array Pack"
+id: sci-fi-equipment/solar-array-pack
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, survival]
 headless: true
 ---
 

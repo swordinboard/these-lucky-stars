@@ -1,4 +1,11 @@
 ---
+title: "Signal Whistle"
+id: generic-equipment/signal-whistle
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, survival]
 headless: true
 ---
 

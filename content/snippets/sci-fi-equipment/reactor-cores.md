@@ -1,4 +1,11 @@
 ---
+title: "Reactor Cores"
+id: sci-fi-equipment/reactor-cores
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

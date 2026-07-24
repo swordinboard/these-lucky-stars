@@ -1,4 +1,11 @@
 ---
+title: "Sly"
+id: traits/sly
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [trait, core]
 headless: true
 ---
 

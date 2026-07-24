@@ -1,4 +1,11 @@
 ---
+title: "Chalk / Charcoal Sticks"
+id: generic-equipment/chalk-sticks
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

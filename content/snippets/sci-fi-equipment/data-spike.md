@@ -1,4 +1,11 @@
 ---
+title: "Data Spike"
+id: sci-fi-equipment/data-spike
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech, computers]
 headless: true
 ---
 

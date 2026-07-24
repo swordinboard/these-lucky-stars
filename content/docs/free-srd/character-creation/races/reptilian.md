@@ -3,6 +3,12 @@ title: "Reptilian"
 description: "Introducing the Reptilian — A classic sci-fi race of conspiracy and subterfuge"
 weight: 30
 bookHidden: true
+id: races/reptilian
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [races, sci-fi, wip]
 ---
 
 {{% include "/snippets/site/wip-announcement" %}}

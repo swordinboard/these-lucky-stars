@@ -1,4 +1,11 @@
 ---
+title: "Face Wrap"
+id: generic-equipment/face-wrap
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, clothing]
 headless: true
 ---
 

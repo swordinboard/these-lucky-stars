@@ -1,4 +1,11 @@
 ---
+title: "Pouch Set, Ammo"
+id: generic-equipment/pouch-set-ammo
+category: [core]
+type: equipment
+tier: core
+reference: medium
+tags: [equipment, generic, containers]
 headless: true
 ---
 

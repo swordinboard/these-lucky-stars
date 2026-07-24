@@ -1,4 +1,11 @@
 ---
+title: "Tough"
+id: traits/tough
+category: [core]
+type: feature
+tier: core
+reference: medium
+tags: [trait, core]
 headless: true
 ---
 

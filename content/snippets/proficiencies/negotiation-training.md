@@ -1,4 +1,11 @@
 ---
+title: "Negotiation Training"
+id: proficiencies/negotiation-training
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
 headless: true
 ---
 

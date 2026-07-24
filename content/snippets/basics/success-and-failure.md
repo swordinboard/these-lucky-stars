@@ -1,4 +1,11 @@
 ---
+title: "Success and Failure"
+id: basics/success-and-failure
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [basics]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Hazard HUD"
+id: sci-fi-equipment/hazard-hud
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, armor-upgrade]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "General Robotics"
+id: proficiencies/general-robotics
+category: [sci-fi]
+type: feature
+tier: module
+reference: medium
+tags: [proficiency, sci-fi]
 headless: true
 ---
 

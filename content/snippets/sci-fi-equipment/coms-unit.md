@@ -1,4 +1,11 @@
 ---
+title: "Coms Unit"
+id: sci-fi-equipment/coms-unit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: high
+tags: [equipment, sci-fi, upgrade, armor-upgrade]
 headless: true
 ---
 

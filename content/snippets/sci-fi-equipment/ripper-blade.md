@@ -1,4 +1,11 @@
 ---
+title: "Ripper Blade"
+id: sci-fi-equipment/ripper-blade
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 headless: true
 ---
 

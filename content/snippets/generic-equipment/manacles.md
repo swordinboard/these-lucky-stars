@@ -1,4 +1,11 @@
 ---
+title: "Manacles / Restraints"
+id: generic-equipment/manacles
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, tools]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Weapon"
+id: proficiencies/weapon
+category: [core]
+type: feature
+tier: core
+reference: high
+tags: [proficiency, core]
 headless: true
 ---
 

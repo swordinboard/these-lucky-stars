@@ -1,4 +1,11 @@
 ---
+title: "Space Adept"
+id: traits/space-adept
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [trait, sci-fi]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Blank Book / Journal"
+id: generic-equipment/blank-book-journal
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, trade-goods]
 headless: true
 ---
 

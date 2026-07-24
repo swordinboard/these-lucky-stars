@@ -1,4 +1,11 @@
 ---
+title: "Decoy Beacon"
+id: sci-fi-equipment/decoy-beacon
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

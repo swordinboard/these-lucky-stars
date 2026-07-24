@@ -1,4 +1,11 @@
 ---
+title: "Adaptive Mesh"
+id: item-tags/adaptive-mesh
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [item-tag]
 headless: true
 ---
 

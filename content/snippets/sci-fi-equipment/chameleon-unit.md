@@ -1,4 +1,11 @@
 ---
+title: "Chameleon Unit"
+id: sci-fi-equipment/chameleon-unit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, upgrade, armor-upgrade]
 headless: true
 ---
 

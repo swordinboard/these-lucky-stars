@@ -1,4 +1,11 @@
 ---
+title: "Prone"
+id: conditions/prone
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [condition, attacker-advantage]
 headless: true
 ---
 

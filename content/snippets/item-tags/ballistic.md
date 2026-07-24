@@ -1,4 +1,11 @@
 ---
+title: "Ballistic"
+id: item-tags/ballistic
+category: [core]
+type: rule
+tier: core
+reference: medium
+tags: [item-tag]
 headless: true
 ---
 

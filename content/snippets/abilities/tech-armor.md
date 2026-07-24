@@ -1,4 +1,12 @@
 ---
+title: "Tech Armor"
+id: abilities/tech-armor
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, general]
+requires: [proficiencies/general-technology]
 headless: true
 ---
 

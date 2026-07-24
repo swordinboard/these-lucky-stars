@@ -1,4 +1,11 @@
 ---
+title: "Disguise Kit"
+id: proficiencies/disguise-kit
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
 headless: true
 ---
 

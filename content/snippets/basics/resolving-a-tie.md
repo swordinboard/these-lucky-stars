@@ -1,4 +1,11 @@
 ---
+title: "Resolving a Tie"
+id: basics/resolving-a-tie
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [basics]
 headless: true
 ---
 

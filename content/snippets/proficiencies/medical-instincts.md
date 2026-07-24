@@ -1,4 +1,12 @@
 ---
+title: "Medical Instincts"
+id: proficiencies/medical-instincts
+category: [core]
+type: feature
+tier: core
+reference: low
+tags: [proficiency, core]
+requires: [proficiencies/medic-training]
 headless: true
 ---
 

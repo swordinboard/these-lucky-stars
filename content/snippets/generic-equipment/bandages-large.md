@@ -1,4 +1,11 @@
 ---
+title: "Bandages, Large"
+id: generic-equipment/bandages-large
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, medical]
 headless: true
 ---
 

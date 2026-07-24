@@ -1,4 +1,11 @@
 ---
+title: "Bio Scanner"
+id: sci-fi-equipment/bio-scanner
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, tech]
 headless: true
 ---
 

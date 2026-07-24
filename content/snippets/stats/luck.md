@@ -1,4 +1,11 @@
 ---
+title: "Luck"
+id: stats/luck
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [luck, stats]
 headless: true
 ---
 

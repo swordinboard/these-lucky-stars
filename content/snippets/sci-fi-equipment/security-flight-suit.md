@@ -1,4 +1,11 @@
 ---
+title: "Security Flight Suit"
+id: sci-fi-equipment/security-flight-suit
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, armor, heavy-armor]
 headless: true
 ---
 

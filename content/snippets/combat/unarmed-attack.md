@@ -1,4 +1,11 @@
 ---
+title: "Unarmed Attack"
+id: combat/unarmed-attack
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [combat, action, aggressive]
 headless: true
 ---
 

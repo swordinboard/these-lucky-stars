@@ -1,4 +1,11 @@
 ---
+title: "Readied Actions"
+id: actions/readied-actions
+category: [core]
+type: rule
+tier: core
+reference: low
+tags: [actions]
 headless: true
 ---
 

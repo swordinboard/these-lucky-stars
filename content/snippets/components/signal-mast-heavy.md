@@ -1,4 +1,11 @@
 ---
+title: "Signal Mast, Heavy"
+id: components/signal-mast-heavy
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

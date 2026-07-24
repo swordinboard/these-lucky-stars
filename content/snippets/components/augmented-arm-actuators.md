@@ -1,4 +1,11 @@
 ---
+title: "Augmented Arm Actuators"
+id: components/augmented-arm-actuators
+category: [sci-fi]
+type: equipment
+tier: module
+reference: low
+tags: [equipment, sci-fi, component]
 headless: true
 ---
 

@@ -1,4 +1,11 @@
 ---
+title: "Rain Poncho"
+id: generic-equipment/rain-poncho
+category: [core]
+type: equipment
+tier: core
+reference: low
+tags: [equipment, generic, clothing]
 headless: true
 ---
 

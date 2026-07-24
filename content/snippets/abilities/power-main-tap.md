@@ -1,4 +1,12 @@
 ---
+title: "Power Main Tap"
+id: abilities/power-main-tap
+category: [sci-fi]
+type: feature
+tier: module
+reference: low
+tags: [ability, sci-fi, battery]
+requires: [proficiencies/general-technology]
 headless: true
 ---
 
