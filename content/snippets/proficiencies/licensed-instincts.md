@@ -1,5 +1,6 @@
 ---
 title: "Licensed Instincts"
+label: "Licensed Instincts [___]"
 id: proficiencies/licensed-instincts
 category: [core]
 type: feature

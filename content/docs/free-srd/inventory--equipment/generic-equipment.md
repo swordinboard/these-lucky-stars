@@ -22,14 +22,14 @@ Thisnpage containts setting-agnostic items available in most times and settings.
 
 Non-armor wearables offering utility, environmental protection, or convenience. These items do not provide a DEF bonus.
 
-| Item | Notes |
-|------|-------|
-| [Face Wrap](#face-wrap) | Protects against dust, sand, and mild airborne hazards. |
-| [Heavy Cloak](#heavy-cloak) | Partial protection from cold and rain. Covers equipped gear. |
-| [Rain Poncho](#rain-poncho) | Keeps the wearer dry. Covers equipped gear. |
-| [Reinforced Boots](#reinforced-boots) | Provides improved footing on rough terrain. |
-| [Wide-Brim Hat](#wide-brim-hat) | Minor protectiob from sun and light rain. |
-| [Work Gloves](#work-gloves) | Protects hands during labor and rough handling. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/face-wrap
+generic-equipment/heavy-cloak
+generic-equipment/rain-poncho
+generic-equipment/reinforced-boots
+generic-equipment/wide-brim-hat
+generic-equipment/work-gloves
+{{< /catalog >}}
 
 {{% details "Face Wrap" %}}
 
@@ -73,19 +73,19 @@ Non-armor wearables offering utility, environmental protection, or convenience. 
 
 Items used to carry, organize, and protect gear.
 
-| Item | Notes |
-|------|-------|
-| [Backpack](#backpack) | +20 max carry weight. |
-| [Barrel](#barrel) | Holds up to 30 gallons of liquid or dry goods. |
-| [Chest, Lockable](#chest-lockable) | Bulky. Secure storage for valuables. |
-| [Crate](#crate) | General purpose bulk storage. |
-| [Dry Sack](#dry-sack) | Waterproof bag for protecting contents from moisture. |
-| [Pouch Set, Ammo](#pouch-set-ammo) | Holds ammunition for use during combat. |
-| [Pouch Set, Small](#pouch-set-small) | Holds small items for quick access. |
-| [Pouch Set, Standard](#pouch-set-standard) | Holds most handheld items for quick access. |
-| [Quiver / Bolt Case](#quiver--bolt-case) | Holds ranged weapon ammunition. |
-| [Saddlebags](#saddlebags) | Pair of bags designed for a mount. +60 max carry weight for the mount. |
-| [Satchel](#satchel) | A mid-sized bag for documents or light supplies. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/backpack
+generic-equipment/barrel
+generic-equipment/lockable-chest
+generic-equipment/crate
+generic-equipment/dry-sack
+generic-equipment/pouch-set-ammo
+generic-equipment/pouch-set-small
+generic-equipment/pouch-set-standard
+generic-equipment/quiver
+generic-equipment/saddlebags
+generic-equipment/satchel
+{{< /catalog >}}
 
 {{% details "Backpack" %}}
 
@@ -159,12 +159,12 @@ Items used to carry, organize, and protect gear.
 
 Portable sources of illumination. Unless noted otherwise, light sources illuminate a 20ft radius of bright light and an additional 20ft of dim light beyond that.
 
-| Item | Notes |
-|------|-------|
-| [Candle](#candle) | 8hr burn. 5ft bright light, 10ft dim light. |
-| [Fuel / Oil Flask](#fuel--oil-flask) | Refuels a lantern for 4hrs. Flammable. |
-| [Oil Lantern](#oil-lantern) | 4hrs per fuel flask. Can be hooded. 30ft bright, 30ft dim. |
-| [Torch](#torch) | 1hr burn. Single use. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/candle
+generic-equipment/fuel-oil-flask
+generic-equipment/oil-lantern
+generic-equipment/torch
+{{< /catalog >}}
 
 {{% details "Candle" %}}
 
@@ -196,14 +196,14 @@ Portable sources of illumination. Unless noted otherwise, light sources illumina
 
 Consumable medical items for field treatment, injury response, and condition management. Setting modules introduce more advanced medical options.
 
-| Item | Notes |
-|------|-------|
-| [Antiseptic Poultice](#antiseptic-poultice) | Prevents infection and aids wound recovery. |
-| [Antitoxin](#antitoxin) | Removes or reduces toxin-based conditions. |
-| [Bandages, Large](#bandages-large) | Closes and covers major wounds.
-| [Bandages, Small](#bandages-small) | Closes and covers minor wounds. |
-| [Restorative Tonic](#restorative-tonic) | Heals 1 VIT or attribute damage. |
-| [Splint Materials](#splint-materials) | Stabilizes broken or fractured limbs. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/antiseptic-poultice
+generic-equipment/antitoxin
+generic-equipment/bandages-large
+generic-equipment/bandages-small
+generic-equipment/restorative-tonic
+generic-equipment/splint-materials
+{{< /catalog >}}
 
 {{% details "Antiseptic Poultice" %}}
 
@@ -247,18 +247,18 @@ Consumable medical items for field treatment, injury response, and condition man
 
 Gear for enduring hostile environments, sustaining life in the field, and navigating the wilderness.
 
-| Item | Notes |
-|------|-------|
-| [Bedroll](#bedroll) | Basic sleeping gear. Packs down for travel. |
-| [Compass](#compass--navigational-tool) | Aids in maintaining direction of travel. |
-| [Field Ration](#field-ration) | One day of food for one person. |
-| [Fire-Starter](#fire-starter) | Flint & steel or equivalent. Reliably starts fires. |
-| [Rope, 50ft](#rope-50ft) | General purpose rope. Supports up to 500lbs. |
-| [Signal Mirror](#signal-mirror) | Reflects light to signal over long distances in daylight. |
-| [Signal Whistle](#signal-whistle) | Audible up to half a mile in open terrain. |
-| [Tent, 2-Person](#tent-2-person) | Basic shelter for two. |
-| [Tent, 4-Person](#tent-4-person) | Bulky. Shelter for four with room for gear. |
-| [Waterskin / Canteen](#waterskin--canteen) | Carries up to half a gallon of liquid. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/bedroll
+generic-equipment/compass
+generic-equipment/field-ration
+generic-equipment/fire-starter
+generic-equipment/rope-50ft
+generic-equipment/signal-mirror
+generic-equipment/signal-whistle
+generic-equipment/tent-2-person
+generic-equipment/tent-4-person
+generic-equipment/waterskin
+{{< /catalog >}}
 
 {{% details "Bedroll" %}}
 
@@ -326,19 +326,19 @@ Gear for enduring hostile environments, sustaining life in the field, and naviga
 
 General purpose tools and equipment for problem-solving in the field. For task-specific tool collections, see [Tool Kits](/docs/free-srd/inventory--equipment/tool-kits/).
 
-| Item | Notes |
-|------|-------|
-| [Chain, 10ft](#chain-10ft) | Heavy duty restraint and utility chain. |
-| [Chalk / Charcoal Sticks](#chalk--charcoal-sticks) | For marking surfaces, writing, and sketching. |
-| [Grappling Hook](#grappling-hook) | Attaches to rope. Throwable [30ft]. |
-| [Ink & Writing Instrument](#ink--writing-instrument) | For writing on parchment, paper, or similar surfaces. |
-| [Long Crowbar](#long-crowbar) | +2 bonus to STR checks for prying and leverage. |
-| [Manacles / Restraints](#manacles--restraints) | Metal restraints for binding a creature's wrists. |
-| [Parchment / Paper Sheets (5)](#parchment--paper-sheets-5) | Writing surfaces. Pack of five sheets. |
-| [Pitons / Climbing Spikes (6)](#pitons--climbing-spikes-6) | Metal spikes hammered into surfaces for climbing. |
-| [Sewing Set](#sewing-set) | Needle, thread, and patches for basic repairs to fabric and leather. |
-| [Shovel](#shovel) | For digging. |
-| [Whetstone](#whetstone) | Sharpens and maintains edged weapons. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/chain-10ft
+generic-equipment/chalk-sticks
+generic-equipment/grappling-hook
+generic-equipment/ink-writing-instrument
+generic-equipment/long-crowbar
+generic-equipment/manacles
+generic-equipment/parchment-sheets
+generic-equipment/pitons
+generic-equipment/sewing-set
+generic-equipment/shovel
+generic-equipment/whetstone
+{{< /catalog >}}
 
 {{% details "Chain, 10ft" %}}
 
@@ -412,19 +412,19 @@ General purpose tools and equipment for problem-solving in the field. For task-s
 
 Common items that are useful in the field and frequently traded. Many of these serve double duty as practical tools and barter goods.
 
-| Item | Notes |
-|------|-------|
-| [Animal Feed (1 day)](#animal-feed-1-day) | One day of feed for one mount or pack animal. |
-| [Ball of Twine / String](#ball-of-twine--string) | 100ft of light cord. |
-| [Blank Book / Journal](#blank-book--journal) | Bound book with approximately 100 blank pages. |
-| [Block of Soap](#block-of-soap) | Cleaning agent. Multiple uses per block. |
-| [Common Alcohol, Flask](#common-alcohol-flask) | Cheap liquor. Also useful as a disinfectant and solvent. |
-| [Bag of Salt](#bag-of-salt) | Preserves food, seasons meals, and has various utility uses. |
-| [Iron Spikes (10)](#iron-spikes-10) | For securing things that need nailing down. |
-| [Small Bell](#small-bell) | A tiny bell useful as a simple alarm or signal device. |
-| [Candle Wax Block](#candle-wax-block) | Waterproofing, sealing, and lubricating. |
-| [Coil of Wire](#coil-of-wire) | 25ft of thin metal wire for snares, repairs, and binding. |
-| [Wooden Stakes (6)](#wooden-stakes-6) | Sharpened wooden stakes for tents, traps, or other uses. |
+{{< catalog header="Item|Notes" >}}
+generic-equipment/animal-feed
+generic-equipment/twine
+generic-equipment/blank-book-journal
+generic-equipment/block-of-soap
+generic-equipment/common-alcohol-flask
+generic-equipment/bag-of-salt
+generic-equipment/iron-spikes
+generic-equipment/small-bell
+generic-equipment/candle-wax-block
+generic-equipment/coil-of-wire
+generic-equipment/wooden-stakes
+{{< /catalog >}}
 
 {{% details "Animal Feed (1 day)" %}}
 

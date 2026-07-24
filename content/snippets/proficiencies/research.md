@@ -1,5 +1,6 @@
 ---
 title: "Research"
+label: "Research [___]"
 id: proficiencies/research
 category: [core]
 type: feature

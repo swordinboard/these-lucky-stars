@@ -1,5 +1,6 @@
 ---
 title: "Compass / Navigational Tool"
+label: "Compass"
 id: generic-equipment/compass
 category: [core]
 type: equipment

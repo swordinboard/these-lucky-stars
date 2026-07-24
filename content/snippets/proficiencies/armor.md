@@ -1,5 +1,6 @@
 ---
 title: "Armor"
+label: "Armor [___]"
 id: proficiencies/armor
 category: [core]
 type: feature

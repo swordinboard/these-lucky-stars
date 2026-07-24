@@ -1,5 +1,6 @@
 ---
 title: "Vehicle"
+label: "Vehicle [___]"
 id: proficiencies/vehicle
 category: [core]
 type: feature

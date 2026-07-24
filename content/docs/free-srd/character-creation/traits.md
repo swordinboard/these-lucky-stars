@@ -13,31 +13,31 @@ weight: 10
 
 {{< tabs >}}
 {{% tab "Core" %}}
-| Name | Description |
-|------|-------------|
-| [Alert](#alert) | +4 to initiative. |
-| [Composed](#composed) | Re-roll one decision die after your first failed WILL check each session. |
-| [Diplomatic](#diplomatic) | +2 to persuasion rolls. |
-| [Hot-Headed](#hot-headed) | Gain temporary +2 AP the first time you take VIT damage each session. |
-| [Intimidating](#intimidating) | +2 to intimidation rolls. |
-| [Lucky](#lucky) | Bonus to max Luck. |
-| [Mentally Sound](#mentally-sound) | +1 bonus to max Stress Threshold. |
-| [Particularly Attractive](#particularly-attractive) | +2 to persuasion rolls with someone who finds you attractive. |
-| [Picture of Health](#picture-of-health) | +1 bonus to VIT. |
-| [Sly](#sly) | +2 to deception rolls. |
-| [Sneaky](#sneaky) | +2 to stealth rolls. |
-| [Stubborn](#stubborn) | Resist manipulation and deception. |
-| [Tough](#tough) | DEF bonus. |
-| [Unremarkable](#unremarkable) | +2 bonus to blend into a crowd or visually hide your identity. |
-| [Unshakable](#unshakable) | Resistant to fear and distraction. |
-| [Well-Connected](#well-connected) | Declare a contact once per session in your current location. |
+{{< catalog header="Name|Description" >}}
+traits/alert
+traits/composed
+traits/diplomatic
+traits/hot-headed
+traits/intimidating
+traits/lucky
+traits/mentally-sound
+traits/particularly-attractive
+traits/picture-of-health
+traits/sly
+traits/sneaky
+traits/stubborn
+traits/tough
+traits/unremarkable
+traits/unshakable
+traits/well-connected
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Sci-Fi" %}}
-| Name | Description |
-|------|-------------|
-| [Inter-Planet Traveler](#inter-planet-traveler) | Immune system hardened by travel between planets. |
-| [Scrap Hauler](#scrap-hauler) | Accustomed to carrying heavy loads in different environments. |
-| [Space Adept](#space-adept) | Accustomed to zero and low-gravity environments. |
+{{< catalog header="Name|Description" >}}
+traits/inter-planet-traveler
+traits/scrap-hauler
+traits/space-adept
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 

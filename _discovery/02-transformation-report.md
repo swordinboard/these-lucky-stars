@@ -78,6 +78,46 @@ computing heading anchors, mis-deriving the `Restrained [___]` anchor
 correct — only the tooling's anchor map was off — but it's now fixed so
 `data/edges.json` resolves that reference cleanly.
 
+## Single-sourced catalog tables (`catalog` shortcode)
+
+The quick-reference tables no longer hand-type the summary text — they render
+it from each block's frontmatter, so a summary is edited in exactly one place
+(the block snippet) and the table follows.
+
+- **`layouts/_shortcodes/catalog.html`** takes a newline list of block IDs
+  (with `- ` / `-- ` marking sub-entries) and renders the table, pulling
+  `title` (or `label`), `summary`, and the on-page anchor (`anchorize title`)
+  from each block. `summary` is run through inline markdown so typography
+  (curly quotes, dashes) matches the rest of the page.
+- **`label:`** frontmatter was added to 12 blocks whose table display name
+  differs from their heading title — the `[___]` selection markers
+  (`Weapon [___]`, `Student [___]`…) and short forms (`ARA-5`). The heading/
+  anchor still come from `title`; `label` is display-only. Single-sourced like
+  `summary`.
+- **30 tables across 7 pages converted** (abilities, proficiencies, traits,
+  generic-equipment, sci-fi-weapons, sci-fi-armor, sci-fi-misc-equipment).
+  Verified: rendered rows are semantically identical to the pre-conversion
+  build — same names, links, summaries, order, and parent/child indentation
+  (0 mismatches across 267 rows).
+- **Converter:** `_discovery/tools/tablesync.py` (drives the rewrite from the
+  existing rows so order/hierarchy are exact; also captures the labels).
+
+**Not converted (flagged):** multi-column catalog tables need extra frontmatter
+fields before they can be single-sourced — the **components** quick-reference
+(Component | Slot | Install | Notes) and the **kits** table (Kit | Cost | Wt |
+Notes, which lives inside the `kit-supplies` block). The item-tags page uses a
+`four-col` link list, not a table, so it has no summary column to source.
+
+**Verification note:** because these 7 pages replaced table *markdown* with a
+shortcode, `verify.py` (which diffs composed markdown source against the
+pre-transform baseline) will now legitimately report their table regions as
+changed. That is by design — the correct check for these pages is
+rendered-HTML equivalence (done above), not source equivalence.
+
+**Source typo surfaced:** the Pouch Set, Standard block heading reads
+"standard" (lowercase); the label preserves the correct "Standard" display.
+Minor — noted for the Phase 3 content pass.
+
 ## Frontmatter schema (as written)
 
 ```yaml
@@ -88,6 +128,8 @@ type: feature             # rule | feature | equipment | creature | reference
 tier: core                # core | supplement | module
 reference: medium         # high | medium | low, computed from inbound edges
 tags: [ability, core, general]
+summary: "Enter an enraged state for a short duration."  # quick-ref one-liner
+label: "Student [___]"    # catalog display name when it differs from title
 selectable: false         # only on note/chrome blocks (default true, omitted)
 excluded: true            # only on corpus-excluded blocks (announcements, license)
 requires: [abilities/charge]        # feature prerequisites (builder auto-include)

@@ -486,7 +486,8 @@
   "requires": [
    "abilities/student"
   ],
-  "summary": "Improve the Student bonus for a chosen topic."
+  "summary": "Improve the Student bonus for a chosen topic.",
+  "label": "Expert [___]"
  },
  {
   "id": "abilities/extended-rage",
@@ -1196,7 +1197,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Increase Luck die to d6 for a chosen attribute."
+  "summary": "Increase Luck die to d6 for a chosen attribute.",
+  "label": "Natural Gift [___]"
  },
  {
   "id": "abilities/opensaysame",
@@ -1720,7 +1722,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Gain a bonus by applying knowledge of a topic."
+  "summary": "Gain a bonus by applying knowledge of a topic.",
+  "label": "Student [___]"
  },
  {
   "id": "abilities/suppressing-fire",
@@ -4682,7 +4685,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Aids in maintaining direction of travel."
+  "summary": "Aids in maintaining direction of travel.",
+  "label": "Compass"
  },
  {
   "id": "generic-equipment/crate",
@@ -5145,7 +5149,8 @@
   ],
   "notes": "",
   "selectable": true,
-  "summary": "Holds most handheld items for quick access."
+  "summary": "Holds most handheld items for quick access.",
+  "label": "Pouch Set, Standard"
  },
  {
   "id": "generic-equipment/quiver",
@@ -6436,7 +6441,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Trained in the use of a selected armor type."
+  "summary": "Trained in the use of a selected armor type.",
+  "label": "Armor [___]"
  },
  {
   "id": "proficiencies/b-e-kit",
@@ -6575,7 +6581,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Special training with a particular ability."
+  "summary": "Special training with a particular ability.",
+  "label": "Improved Ability [___]"
  },
  {
   "id": "proficiencies/licensed-instincts",
@@ -6601,7 +6608,8 @@
   "requires": [
    "proficiencies/vehicle"
   ],
-  "summary": "Add INS bonus to Vehicle Proficiency rolls."
+  "summary": "Add INS bonus to Vehicle Proficiency rolls.",
+  "label": "Licensed Instincts [___]"
  },
  {
   "id": "proficiencies/martial-training",
@@ -6764,7 +6772,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "+2 bonus on KNO checks related to a chosen field of study."
+  "summary": "+2 bonus on KNO checks related to a chosen field of study.",
+  "label": "Research [___]"
  },
  {
   "id": "proficiencies/survival-training",
@@ -6810,7 +6819,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Familiar with a type of vehicle."
+  "summary": "Familiar with a type of vehicle.",
+  "label": "Vehicle [___]"
  },
  {
   "id": "proficiencies/weapon",
@@ -6833,7 +6843,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Specialized training with a selected weapon type."
+  "summary": "Specialized training with a selected weapon type.",
+  "label": "Weapon [___]"
  },
  {
   "id": "races/android",
@@ -6993,7 +7004,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Single use. Removes radiation wounds and conditions within 1hr."
+  "summary": "Single use. Removes radiation wounds and conditions within 1hr.",
+  "label": "ARA-5"
  },
  {
   "id": "sci-fi-equipment/auto-injector",

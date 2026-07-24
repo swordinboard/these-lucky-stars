@@ -10,17 +10,17 @@ weight: 2
 
 {{< tabs >}}
 {{% tab "Light Melee Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Knuckle Taser](#knuckle-taser) | Hand slot. Built in shock charger for a shocking punch. |
-| [Standard Issue Knife](#standard-issue-knife) | Concealable. Throwable [10ft]. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/knuckle-taser
+sci-fi-equipment/standard-issue-knife
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Medium Melee Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Emergency Hatchet](#emergency-hatchet) | Throwable [20ft]. |
-| [Ripper Blade](#ripper-blade) | Two-handed. Deals +5 shatter damage to armor. |
-| [Shock Baton](#shock-baton) | Built in shock charger. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/emergency-hatchet
+sci-fi-equipment/ripper-blade
+sci-fi-equipment/shock-baton
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -64,26 +64,26 @@ weight: 2
 
 {{< tabs >}}
 {{% tab "Pistols" %}}
-| Name | Notes |
-|---|---|
-| [Auto Pistol](#auto-pistol) | Ballistic. Full-auto. Concealable. 20ft range. |
-| [Heavy Pistol](#heavy-pistol) | Ballistic. Single shot. 50ft range. |
-| [Laser Pistol](#laser-pistol) | Battery [small]. Single shot. Burn. 60ft range. |
-| [Light Pistol](#light-pistol) | Ballistic. Semi-auto. Concealable. 30ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/auto-pistol
+sci-fi-equipment/heavy-pistol
+sci-fi-equipment/laser-pistol
+sci-fi-equipment/light-pistol
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Rifles" %}}
-| Name | Notes |
-|---|---|
-| [Compact Rifle](#compact-rifle) | Ballistic. Full-auto. Two-handed. 30ft range. |
-| [Laser Rifle](#laser-rifle) | Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range. |
-| [Long Rifle](#long-rifle) | Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range. |
-| [Shock Rifle](#shock-rifle) | Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range. |
-| [Standard Issue Rifle](#standard-issue-rifle) | Ballistic. Semi-auto. Two-handed. 40ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/compact-rifle
+sci-fi-equipment/laser-rifle
+sci-fi-equipment/long-rifle
+sci-fi-equipment/shock-rifle
+sci-fi-equipment/standard-issue-rifle
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Heavy Ranged Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Heavy Rotary Cannon](#heavy-rotary-cannon) | Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/heavy-rotary-cannon
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -159,21 +159,21 @@ weight: 2
 
 {{< tabs >}}
 {{% tab "Ranged Weapon Upgrades" %}}
-| Upgrade | Notes |
-|---|---|
-| [Bipod](#bipod) | Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range. |
-| [Drum Magazines](#drum-magazines) | All ballistic. Increased ammo die size. |
-| [Extended Barrel](#extended-barrel) | Pistols, Rifles. +20ft normal range. |
-| [Forward Assault Shield](#forward-assault-shield) | Heavy Ranged. Partial cover, -1 attack while active. |
-| [Overcharge Chamber](#overcharge-chamber) | All battery ranged. 3/day increase a damage die by one size. |
-| [Recoil Compensation System](#recoil-compensation-system) | All ballistic. +1 attack, negates zero-g knockback. |
-| [Reflex Sight](#reflex-sight) | All ranged. +2 to attacks at normal range. |
+{{< catalog header="Upgrade|Notes" >}}
+sci-fi-equipment/bipod
+sci-fi-equipment/drum-magazines
+sci-fi-equipment/extended-barrel
+sci-fi-equipment/forward-assault-shield
+sci-fi-equipment/overcharge-chamber
+sci-fi-equipment/recoil-compensation-system
+sci-fi-equipment/reflex-sight
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Melee Weapon Upgrades" %}}
-| Upgrade | Notes |
-|---|---|
-| [Shock Charger](#shock-charger) | All melee. +2 damage, changes type to shock. FORT check or lose 1 AP. |
-| [Weighted Core](#weighted-core) | Medium melee, polearms, two-handed. +3 damage. Loses throwable tag. |
+{{< catalog header="Upgrade|Notes" >}}
+sci-fi-equipment/shock-charger
+sci-fi-equipment/weighted-core
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 

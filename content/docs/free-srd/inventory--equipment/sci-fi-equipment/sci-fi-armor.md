@@ -14,24 +14,24 @@ weight: 2
 
 {{< tabs >}}
 {{% tab "Light Armor" %}}
-| Name | Notes |
-|---|---|
-| [Basic P-Suit](#basic-p-suit) | Minimum protection for airless environments. |
-| [Classic Evosuit](#classic-evosuit) | Advances space suit popular among pilots and hazardous atmosphere workers. |
-| [Combat Vest](#combat-vest) | Simple protective vest. No AGI/DEX penalty. |
-| [Light Combat Vest](#light-combat-vest) | Concealable. Lower profile version of the combat vest. |
-| [Padded Flight Suit](#padded-flight-suit) | Offers greater protection than a standard coverall. |
-| [Scav Gear](#scav-gear) | Grants an extra body slot and +50 max carry weight. |
-| [Site Safety Gear](#site-safety-gear) | Basic corporate-approved protective gear. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/basic-p-suit
+sci-fi-equipment/classic-evosuit
+sci-fi-equipment/combat-vest
+sci-fi-equipment/light-combat-vest
+sci-fi-equipment/padded-flight-suit
+sci-fi-equipment/scav-gear
+sci-fi-equipment/site-safety-gear
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Heavy Armor" %}}
-| Name | Notes |
-|---|---|
-| [Combat Evosuit](#combat-evosuit) | Advanced space suit designed for tactical use. |
-| [Enforcer Armor](#enforcer-armor) | No-frills armor favored by private security. |
-| [EVA Suit](#eva-suit) | An early model space suit, well equipped but bulky. |
-| [Security Flight Suit](#security-flight-suit) | Tactical variation of the padded flight suit. |
-| [Ultraweave Evosuit](#ultraweave-evosuit) | Most advanced Evosuit available. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/combat-evosuit
+sci-fi-equipment/enforcer-armor
+sci-fi-equipment/eva-suit
+sci-fi-equipment/security-flight-suit
+sci-fi-equipment/ultraweave-evosuit
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -117,16 +117,16 @@ weight: 2
 
 {{< tabs >}}
 {{% tab "Armor Upgrades" %}}
-| Upgrade | Notes |
-|---|---|
-| [Auto-Injector](#auto-injector) | Neck slot. Auto-administers a preloaded injector on trauma. |
-| [Chameleon Unit](#chameleon-unit) | Active camouflage system. |
-| [Emergency Shank](#emergency-shank) | Arm slot. Single-use ranged or melee weapon. |
-| [Hazard HUD](#hazard-hud) | Helmet [HUD]. Lowers hazard detection checks within 10ft. |
-| [Coms Unit](#coms-unit) | Head [Coms]. Encrypted radio, 1 mile range. |
-| [MeBN HUD](#mebn-hud) | Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network. |
-| [SAFER Unit](#safer-unit) | Back. A propulsion unit for navigating in zero gravity. |
-| [Targeting HUD](#targeting-hud) | Helmet [HUD]. Lock on to lower target number for ranged attacks. |
+{{< catalog header="Upgrade|Notes" >}}
+sci-fi-equipment/auto-injector
+sci-fi-equipment/chameleon-unit
+sci-fi-equipment/emergency-shank
+sci-fi-equipment/hazard-hud
+sci-fi-equipment/coms-unit
+sci-fi-equipment/mebn-hud
+sci-fi-equipment/safer-unit
+sci-fi-equipment/targeting-hud
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -190,10 +190,10 @@ weight: 2
 
 See [Damaged and Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for more on object damage and conditions.
 
-| Name | Notes |
-|---|---|
-| [Ballistic Shield](#ballistic-shield) | +3 DEF, 1d12 Supply |
-| [Collapsible Shield](#collapsible-shield) | +2 DEF 1d8 Supply |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/ballistic-shield
+sci-fi-equipment/collapsible-shield
+{{< /catalog >}}
 
 {{% details "Ballistic Shield" %}}
 

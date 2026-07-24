@@ -1,5 +1,6 @@
 ---
 title: "Student"
+label: "Student [___]"
 id: abilities/student
 category: [core]
 type: feature

@@ -1,0 +1,34 @@
+{{- /*
+  catalog — render a quick-reference table from block frontmatter.
+  The summary text lives ONLY on each block snippet (its `summary:` field);
+  this shortcode reads it, so tables never duplicate the one-liner.
+
+  Usage (inner text = one block ID per line; `- ` / `-- ` mark sub-entries):
+    {{< catalog header="Name|Description" >}}
+    abilities/agile-dodge
+    - abilities/momentum-dodge
+    -- abilities/slip-strike
+    {{< /catalog >}}
+*/ -}}
+{{- $header := .Get "header" | default "Name|Notes" -}}
+{{- $cols := split $header "|" -}}
+<table>
+<thead><tr>{{ range $cols }}<th>{{ trim . " " }}</th>{{ end }}</tr></thead>
+<tbody>
+{{- range (split (trim .Inner "\r\n") "\n") -}}
+  {{- $line := trim . " \t" -}}
+  {{- if $line -}}
+    {{- $prefix := "" -}}
+    {{- if hasPrefix $line "-- " -}}{{ $prefix = "– " }}{{ $line = strings.TrimPrefix "-- " $line -}}
+    {{- else if hasPrefix $line "- " -}}{{ $prefix = "- " }}{{ $line = strings.TrimPrefix "- " $line -}}{{- end -}}
+    {{- $id := trim $line " \t" -}}
+    {{- $p := site.GetPage (printf "/snippets/%s" $id) -}}
+    {{- if $p -}}
+<tr><td>{{ $prefix }}<a href="#{{ anchorize $p.Params.title }}">{{ $p.Params.label | default $p.Params.title }}</a></td><td>{{ with $p.Params.summary }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td></tr>
+    {{- else -}}
+<tr><td>{{ $prefix }}{{ $id }}</td><td><strong>MISSING BLOCK: {{ $id }}</strong></td></tr>
+    {{- end -}}
+  {{- end -}}
+{{- end }}
+</tbody>
+</table>

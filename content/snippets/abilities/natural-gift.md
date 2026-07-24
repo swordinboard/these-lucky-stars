@@ -1,5 +1,6 @@
 ---
 title: "Natural Gift"
+label: "Natural Gift [___]"
 id: abilities/natural-gift
 category: [core]
 type: feature

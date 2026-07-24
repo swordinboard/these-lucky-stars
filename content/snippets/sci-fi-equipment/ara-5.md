@@ -1,5 +1,6 @@
 ---
 title: "Analgesic Radiation Antidote 5 (ARA-5)"
+label: "ARA-5"
 id: sci-fi-equipment/ara-5
 category: [sci-fi]
 type: equipment

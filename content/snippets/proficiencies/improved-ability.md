@@ -1,5 +1,6 @@
 ---
 title: "Improved Ability"
+label: "Improved Ability [___]"
 id: proficiencies/improved-ability
 category: [core]
 type: feature

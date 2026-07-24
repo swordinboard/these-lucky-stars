@@ -10,95 +10,95 @@ weight: 30
 
 {{< tabs >}}
 {{% tab "Core General" %}}
-| Name | Description |
-|------|-------------|
-| [Agile Dodge](#agile-dodge) | Immediate 5ft step when an opponent misses a melee attack against you. |
-| - [Momentum Dodge](#momentum-dodge) | Swap spaces with your attacker using Agile Dodge. |
-| -- [Slip Strike](#slip-strike) | Make a melee attack during Agile Dodge or Momentum Dodge movement. |
-| [Bolster](#bolster) | Once per combat, up to 3 allies within 30ft gain +1 to all rolls until end of their next turn. |
-| [Charge](#charge) | Rush an enemy for a powerful melee attack. |
-| - [Agile Charge](#agile-charge) | Charge no longer requires a straight line. |
-| -- [Leaping Charge](#leaping-charge) | Charge can pass through difficult terrain. |
-| - [Bash](#bash) | Shove an opponent at the end of a charge. |
-| -- [Improved Bash](#improved-bash) | Increased displacement and knockdown from Bash. |
-| [Coordinated Strike](#coordinated-strike) | Designate a target — the next ally to attack it gains advantage. |
-| [Danger Reflex](#danger-reflex) | Advantage on AGI/DEX checks against effects of a triggered trap. |
-| [Dead Drop](#dead-drop) | Quickly hide a small object in a room or vehicle using your B&E kit. |
-| [Defender](#defender) | Double your DEF against a melee attack. |
-| - [Just Grazed](#just-grazed) | Negate a wound or condition from a ranged attack. |
-| - [Just Winded](#just-winded) | Negate a wound or condition from a melee attack. |
-| - [True Defender](#true-defender) | Use Defender on behalf of an ally. |
-| [Dual Attack](#dual-attack) | ATK bonus when attacking with two weapons. |
-| - [Dual Defense](#dual-defense) | Gain DEF when wielding multiple melee weapons. |
-| - [Dual Strike](#dual-strike) | Increase damage die with dual attack. |
-| - [Swift Dual Attack](#swift-dual-attack) | Dual Attack ability costs 2 AP instead of 4. |
-| [Extra Attack](#extra-attack) | Make two standard attacks per round. |
-| [Field Medic](#field-medic) | Use a med kit to stabilize or treat wounds as a 2 AP action. |
-| [Field Patch](#field-patch) | Stabilize a dying ally without a med kit. |
-| [Focus Attack](#focus-attack) | Focus on an opponent to gain advantage. |
-| - [Precise Focus](#precise-focus) | Triple normal range for Focus abilities. |
-| [Focus In](#focus-in) | Overwatch a line with ranged attacks of opportunity. |
-| [Friend in Need](#friend-in-need) | Sacrifice your DEF to protect an adjacent ally. |
-| [General Spectacle](#general-spectacle) | Cause a Stress with a distraction. |
-| - [Long Performance](#long-performance) | Use General Spectacle for multiple rounds. |
-| [Kit Trap](#kit-trap) | Use your tool kit to make difficult terrain. |
-| - [Fast Kit Trap](#fast-kit-trap) | Kit Trap uses less AP. |
-| [Leg Shot](#leg-shot) | Ranged attack at minor disadvantage to apply Crippled on hit. |
-| [Martial Supremacy](#martial-supremacy) | Reroll a decision die during unarmed trip, disarm, or grapple. |
-| [Outburst](#outburst) | Interrupt enemies mid action. |
-| [Patient Shot](#patient-shot) | Bonus damage and advantage if stationary and untargeted since last turn. |
-| [Quick Draw](#quick-draw) | Draw an equipped weapon for no AP. |
-| [Quick Firing](#quick-firing) | Use two semi-auto pistols for full-auto abilities. |
-| [Rage](#rage) | Enter an enraged state for a short duration. |
-| - [Extended Rage](#extended-rage) | Increase Rage duration by two rounds. |
-| - [Fearless Rage](#fearless-rage) | Resisting fear while raging. |
-| -- [Indomitable Rage](#indomitable-rage) | Immune to fear and distraction while raging. |
-| - [Powerful Rage](#powerful-rage) | Spend two uses for +4 STR +4 FORT. |
-| -- [Unsettling Rage](#unsettling-rage) | Intimidate a nearby opponent when activating Rage. |
-| [Rally](#rally) | Grant a temporary 1 AP to an ally within 30ft who can hear you. |
-| [Reckless Attack](#reckless-attack) | Trade DEF for ATK and DMG on melee attacks. |
-| [Student [___]](#student) | Gain a bonus by applying knowledge of a topic. |
-| - [Expert [___]](#expert) | Improve the Student bonus for a chosen topic. |
-| [Suppressing Fire](#suppressing-fire) | Pin enemies in an area with automatic fire. |
-| - [Controlled Suppressing Fire](#controlled-suppressing-fire) | Conserve ammo during suppressive fire. |
-| - [Improved Suppressing Fire](#improved-suppressing-fire) | Increase WILL target or stress from suppression. |
-| - [Line of Fire](#line-of-fire) | Change suppression area to a line. |
-| - [Oppressive Suppression](#oppressive-suppression) | Expand suppression to six non-adjacent squares. |
-| [The Look](#the-look) | Lock eyes to gain advantage on your next roll against them. |
-| [Vital Strike](#vital-strike) | Add bonus damage to surprise attacks. |
-| - [Vital Focus](#vital-focus) | Add Vital Strike dice to Focus Attack rolls. |
+{{< catalog header="Name|Description" >}}
+abilities/agile-dodge
+- abilities/momentum-dodge
+-- abilities/slip-strike
+abilities/bolster
+abilities/charge
+- abilities/agile-charge
+-- abilities/leaping-charge
+- abilities/bash
+-- abilities/improved-bash
+abilities/coordinated-strike
+abilities/danger-reflex
+abilities/dead-drop
+abilities/defender
+- abilities/just-grazed
+- abilities/just-winded
+- abilities/true-defender
+abilities/dual-attack
+- abilities/dual-defense
+- abilities/dual-strike
+- abilities/swift-dual-attack
+abilities/extra-attack
+abilities/field-medic
+abilities/field-patch
+abilities/focus-attack
+- abilities/precise-focus
+abilities/focus-in
+abilities/friend-in-need
+abilities/general-spectacle
+- abilities/long-performance
+abilities/kit-trap
+- abilities/fast-kit-trap
+abilities/leg-shot
+abilities/martial-supremacy
+abilities/outburst
+abilities/patient-shot
+abilities/quick-draw
+abilities/quick-firing
+abilities/rage
+- abilities/extended-rage
+- abilities/fearless-rage
+-- abilities/indomitable-rage
+- abilities/powerful-rage
+-- abilities/unsettling-rage
+abilities/rally
+abilities/reckless-attack
+abilities/student
+- abilities/expert
+abilities/suppressing-fire
+- abilities/controlled-suppressing-fire
+- abilities/improved-suppressing-fire
+- abilities/line-of-fire
+- abilities/oppressive-suppression
+abilities/the-look
+abilities/vital-strike
+- abilities/vital-focus
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Core Luck" %}}
-| Name | Description |
-|------|-------------|
-| [Adaptive Luck](#adaptive-luck) | Spend Luck to reuse an exhausted ability. |
-| [Bonus Luck](#bonus-luck) | Gain one additional Luck point. |
-| [Friend of Fortune](#friend-of-fortune) | Allies near you may regain spent Luck. |
-| [Lucky Strike](#lucky-strike) | Increase Luck die to d6 on attack rolls. |
-| [Medical Marvel](#medical-marvel) | Heal a condition or wound by spending Luck. |
-| [Natural Gift [___]](#natural-gift) | Increase Luck die to d6 for a chosen attribute. |
-| [Tis But a Scratch](#tis-but-a-scratch) | Spend Luck to fully negate an attack. |
+{{< catalog header="Name|Description" >}}
+abilities/adaptive-luck
+abilities/bonus-luck
+abilities/friend-of-fortune
+abilities/lucky-strike
+abilities/medical-marvel
+abilities/natural-gift
+abilities/tis-but-a-scratch
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Sci-Fi General" %}}
-| Name | Description |
-|------|-------------|
-| [Tech Armor](#tech-armor) | Install and remove upgrades and components without risk of damage. |
-| [Companion Bot](#companion-bot) | Designate a drone or robot as your companion. |
-| - [Special Encouragement](#special-encouragement) | Quickly repair your companion for no supplies. |
-| [Ghost Protocol](#ghost-protocol) | Remotely access a hacked system via linked comp jack. |
-| [Opensaysame](#opensaysame) | Break a door panel to guarantee it opens or closes. |
-| [Rigged Comp Jack](#rigged-comp-jack) | Build a makeshift comp jack from tech kit supplies. |
-| [Salvage](#salvage) | Refill a supply die from mechanical wreckage. |
-| [Signal Intelligence](#signal-intelligence) | Intercept unencrypted communications with a comp jack. |
+{{< catalog header="Name|Description" >}}
+abilities/tech-armor
+abilities/companion-bot
+- abilities/special-encouragement
+abilities/ghost-protocol
+abilities/opensaysame
+abilities/rigged-comp-jack
+abilities/salvage
+abilities/signal-intelligence
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
-| Name | Description |
-|------|-------------|
-| [Battery Saboteur](#battery-saboteur) | Turn battery cores into explosives. |
-| [Battery Saver](#battery-saver) | Re-roll a failed supply roll once per day. |
-| [Overcharge](#overcharge) | Push a battery weapon beyond rated output for bonus damage. |
-| [Power Main Tap](#power-main-tap) | Tap a large power source to rapidly recharge a battery. |
-| [Swift Custom Battery](#swift-custom-battery) | Quickly install mismatched batteries. |
+{{< catalog header="Name|Description" >}}
+abilities/battery-saboteur
+abilities/battery-saver
+abilities/overcharge
+abilities/power-main-tap
+abilities/swift-custom-battery
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 

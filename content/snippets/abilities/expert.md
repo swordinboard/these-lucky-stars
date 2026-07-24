@@ -1,5 +1,6 @@
 ---
 title: "Expert"
+label: "Expert [___]"
 id: abilities/expert
 category: [core]
 type: feature

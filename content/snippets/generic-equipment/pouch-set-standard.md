@@ -1,5 +1,6 @@
 ---
 title: "Pouch Set, standard"
+label: "Pouch Set, Standard"
 id: generic-equipment/pouch-set-standard
 category: [core]
 type: equipment
