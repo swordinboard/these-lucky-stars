@@ -2,9 +2,8 @@
 title: Components
 description: "Installable components for robots, drones, and Androids"
 weight: 50
+wip: true
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 # Components
 
 {{% include "/snippets/components/overview" %}}

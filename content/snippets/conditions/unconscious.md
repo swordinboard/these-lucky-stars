@@ -5,7 +5,7 @@ category: [core]
 type: rule
 tier: core
 reference: medium
-tags: [condition, attacker-advantage]
+tags: [condition]
 summary: "Cannot take any actions — attackers gain advantage and surprise"
 headless: true
 ---

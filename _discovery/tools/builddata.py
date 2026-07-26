@@ -4,6 +4,7 @@ builddata.py — regenerate data/blocks.json and data/edges.json from the repo.
 
 Reads the content tree ONLY (block frontmatter + {{% include %}} composition +
 markdown links), so the canonical data can always be rebuilt from a fresh clone.
+Writes data/blocks.json, data/edges.json and data/related.json.
 Run it after any structural content change (new/moved/renamed blocks, edited
 links, edited frontmatter).
 
@@ -183,6 +184,16 @@ for bid, b in blocks.items():
     b.setdefault("pages", [])
     b["source_page"] = b["pages"][0] if b["pages"] else None
 
+# work-in-progress status, computed so the builder has ONE field to filter on.
+# A block is wip if its own frontmatter says so, if it carries the `wip` tag, or
+# if every page that displays it is `wip: true` (a snippet shown on both a
+# finished and an unfinished page is not itself unfinished).
+for bid, b in blocks.items():
+    own = bool(PAGES[b["file"]]["fm"].get("wip")) or "wip" in b["tags"]
+    hosts = [p for p in b["pages"] if p != b["file"]]
+    inherited = bool(hosts) and all(PAGES[p]["fm"].get("wip") for p in hosts)
+    b["wip"] = own or inherited
+
 # anchor resolution:
 #  * details-wrapped block -> its own first heading (that heading IS the block title)
 #  * section block -> the host-page heading immediately above its include
@@ -336,9 +347,54 @@ for bid, b in blocks.items():
     b["in_degree"] = indeg[bid]   # computed; `reference` stays the authored frontmatter value
 
 ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "category", "type",
-         "tier", "reference", "in_degree", "tags", "flags", "notes", "selectable",
+         "tier", "reference", "in_degree", "tags", "flags", "notes", "selectable", "wip",
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
+
+# ---------------------------------------------------------------- related ---
+# Page-level "Related" lists, derived from the edge graph, for {{< related >}}.
+# A page is related to another when blocks displayed on one reference blocks
+# homed on the other, in EITHER direction — being linked-to is as informative as
+# linking-out. Outbound counts double because it reflects this page's own prose.
+blocks_on = collections.defaultdict(set)
+for bid, b in blocks.items():
+    for p in b["pages"]:
+        blocks_on[p].add(bid)
+
+
+def blurb(page):
+    """Short blurb from a page description: the part after the SEO lead-in."""
+    d = PAGES[page]["fm"].get("description", "")
+    if not isinstance(d, str):
+        return ""
+    tail = d.split(" — ", 1)
+    return (tail[1] if len(tail) > 1 else d).strip().rstrip(".")
+
+
+related = {}
+for page in sorted(DOCS):
+    mine = blocks_on.get(page, set())
+    if not mine:
+        continue
+    out, inn, via = collections.Counter(), collections.Counter(), collections.defaultdict(set)
+    for e in edges:
+        if e["type"] not in ("reference", "dependency"):
+            continue
+        src, tgt = blocks.get(e["source"]), blocks.get(e["target"])
+        if e["source"] in mine and tgt and tgt["source_page"] not in (None, page):
+            out[tgt["source_page"]] += 1
+            via[tgt["source_page"]].add(e["target"])
+        if e["target"] in mine and src and src["source_page"] not in (None, page):
+            inn[src["source_page"]] += 1
+            via[src["source_page"]].add(e["source"])
+    items = []
+    for tp in sorted(set(out) | set(inn), key=lambda p: (-(out[p] * 2 + inn[p]), p)):
+        items.append({"page": tp, "url": url_for(tp),
+                      "title": PAGES[tp]["fm"].get("title", ""),
+                      "blurb": blurb(tp), "out": out[tp], "in": inn[tp],
+                      "via": sorted(via[tp])})
+    if items:
+        related[page] = items
 
 # ------------------------------------------------------------------ write ---
 def dump(o):
@@ -346,23 +402,26 @@ def dump(o):
 
 
 bp, ep = os.path.join(REPO, "data/blocks.json"), os.path.join(REPO, "data/edges.json")
+rp = os.path.join(REPO, "data/related.json")
 if "--check" in sys.argv:
     stale = []
-    for p, new in ((bp, out_blocks), (ep, edges)):
+    for p, new in ((bp, out_blocks), (ep, edges), (rp, related)):
         cur = json.load(open(p)) if os.path.exists(p) else None
         if cur != json.loads(dump(new)):
             stale.append(os.path.basename(p))
     if stale:
         print(f"STALE: {', '.join(stale)} — run: python3 _discovery/tools/builddata.py")
         sys.exit(1)
-    print(f"data/ is current ({len(out_blocks)} blocks, {len(edges)} edges)")
+    print(f"data/ is current ({len(out_blocks)} blocks, {len(edges)} edges, {len(related)} related lists)")
     sys.exit(0)
 
 os.makedirs(os.path.join(REPO, "data"), exist_ok=True)
 open(bp, "w").write(dump(out_blocks) + "\n")
 open(ep, "w").write(dump(edges) + "\n")
+open(rp, "w").write(dump(related) + "\n")
 types = collections.Counter(e["type"] for e in edges)
 unres = [e for e in edges if str(e["target"]).startswith("unresolved:")]
 print(f"wrote data/blocks.json ({len(out_blocks)} blocks) and data/edges.json ({len(edges)} edges)")
 print(f"  edge types: {dict(types)}")
+print(f"  related lists: {len(related)} pages")
 print(f"  unresolved: {len(unres)}" + (f" -> {[e['url'] for e in unres]}" if unres else ""))

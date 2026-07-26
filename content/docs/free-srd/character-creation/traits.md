@@ -1,15 +1,12 @@
 ---
 title: Traits
 description: "Traits in These Lucky Stars represent who your character is — personality, physique, and background. Selected at level 1 and chosen once."
-weight: 10
+weight: 40
 ---
 
 # Traits
 
 {{% include "/snippets/traits/overview" %}}
-
-## Racial Traits
-{{% include "/snippets/traits/racial-traits" %}}
 
 {{< tabs >}}
 {{% tab "Core" %}}

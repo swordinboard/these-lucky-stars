@@ -1,0 +1,1467 @@
+{
+ "content/docs/free-srd/character-creation/abilities.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 33,
+   "in": 1,
+   "via": [
+    "proficiencies/b-e-kit",
+    "proficiencies/comp-jack",
+    "proficiencies/general-robotics",
+    "proficiencies/general-technology",
+    "proficiencies/improved-ability",
+    "proficiencies/martial-training",
+    "proficiencies/medic-training",
+    "proficiencies/repair-kit",
+    "proficiencies/weapon"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/traits.md",
+   "url": "/docs/free-srd/character-creation/traits/",
+   "title": "Traits",
+   "blurb": "personality, physique, and background. Selected at level 1 and chosen once",
+   "out": 7,
+   "in": 0,
+   "via": [
+    "traits/intimidating",
+    "traits/lucky",
+    "traits/particularly-attractive",
+    "traits/tough",
+    "traits/unshakable"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "components/installation",
+    "components/signal-mast-heavy",
+    "components/signal-mast-retractable"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "conditions/crippled"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "item-tags/firing-modes"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "sci-fi-equipment/boost-pack",
+    "sci-fi-equipment/reactor-cores"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/character-creation-overview.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "races/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/proficiencies.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 1,
+   "in": 33,
+   "via": [
+    "abilities/battery-saboteur",
+    "abilities/companion-bot",
+    "abilities/controlled-suppressing-fire",
+    "abilities/dead-drop",
+    "abilities/dual-attack",
+    "abilities/dual-defense",
+    "abilities/dual-strike",
+    "abilities/extra-attack",
+    "abilities/field-medic",
+    "abilities/field-patch",
+    "abilities/ghost-protocol",
+    "abilities/improved-suppressing-fire",
+    "abilities/leg-shot",
+    "abilities/line-of-fire",
+    "abilities/martial-supremacy",
+    "abilities/momentum-dodge",
+    "abilities/opensaysame",
+    "abilities/oppressive-suppression",
+    "abilities/overcharge",
+    "abilities/patient-shot",
+    "abilities/power-main-tap",
+    "abilities/quick-firing",
+    "abilities/rigged-comp-jack",
+    "abilities/salvage",
+    "abilities/signal-intelligence",
+    "abilities/slip-strike",
+    "abilities/special-encouragement",
+    "abilities/suppressing-fire",
+    "abilities/swift-custom-battery",
+    "abilities/swift-dual-attack",
+    "abilities/tech-armor",
+    "abilities/vital-strike"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "components/heavy-wrist-laser",
+    "components/internal-comp-jack",
+    "components/wrist-laser"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/action-economy.md",
+   "url": "/docs/free-srd/core-rules/action-economy/",
+   "title": "Action Economy",
+   "blurb": "action types, opportunity attacks, reactions, movement, speed tiers, and the tactical choices behind managing your action pool",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "combat/opportunity-attack"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "combat/unarmed-attack"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi-equipment/comp-jack"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/_index.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/character-creation-overview.md",
+   "url": "/docs/free-srd/character-creation/character-creation-overview/",
+   "title": "Character Creation Overview",
+   "blurb": "attributes, stats, traits, proficiencies, and abilities — plus how leveling up works",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "chargen/overview"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/android"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/classic-human.md",
+   "url": "/docs/free-srd/character-creation/races/classic-human/",
+   "title": "Classic Human",
+   "blurb": "the most adaptable and widespread species in most settings",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/classic-human"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/reptilian.md",
+   "url": "/docs/free-srd/character-creation/races/reptilian/",
+   "title": "Reptilian",
+   "blurb": "A classic sci-fi race of conspiracy and subterfuge",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/reptilian"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/star-touched-human.md",
+   "url": "/docs/free-srd/character-creation/races/star-touched-human/",
+   "title": "Star-touched Human",
+   "blurb": "Without a doubt the luckiest species in the galaxy",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/star-touched-human"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/zeta-grey.md",
+   "url": "/docs/free-srd/character-creation/races/zeta-grey/",
+   "title": "Zeta Grey",
+   "blurb": "A classic sci-fi race known for their many cryptic encounters and high intelligence",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/zeta-grey"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/action-economy.md",
+   "url": "/docs/free-srd/core-rules/action-economy/",
+   "title": "Action Economy",
+   "blurb": "action types, opportunity attacks, reactions, movement, speed tiers, and the tactical choices behind managing your action pool",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "movement/primary-speed"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/android.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "conditions/dying"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "components/backup-power-cell"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/crash-foam-canister"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/overview"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+   "title": "Bots & Drones",
+   "blurb": "Robots and the rules that affect them -- companion bots and drones for These Lucky Stars sci-fi settings",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "bots/automated-machines"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/classic-human.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/reptilian.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/star-touched-human.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/races/zeta-grey.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/traits.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 0,
+   "in": 7,
+   "via": [
+    "abilities/friend-in-need",
+    "abilities/friend-of-fortune",
+    "abilities/indomitable-rage",
+    "abilities/the-look",
+    "abilities/tis-but-a-scratch",
+    "abilities/true-defender",
+    "abilities/unsettling-rage"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/action-economy.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "proficiencies/martial-training"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/overview"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "core-rules/size"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "url": "/docs/free-srd/core-rules/vehicle-rules/",
+   "title": "Vehicle Rules",
+   "blurb": "driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "vehicles/boarding-and-bailing",
+    "vehicles/collision-damage"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/attributes.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "conditions/crippled",
+    "conditions/unconscious"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "url": "/docs/free-srd/core-rules/vehicle-rules/",
+   "title": "Vehicle Rules",
+   "blurb": "driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "vehicles/collision-damage",
+    "vehicles/impact-and-overrun"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "core-rules/size"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/basics.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
+   "title": "Damaged & Broken Gear",
+   "blurb": "Rules for damaging and destroying objects, equipment, and structures in These Lucky Stars",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "objects/shield-degradation",
+    "objects/targeting-objects"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
+   "title": "Sci-Fi Tool Kits",
+   "blurb": "specialized kits for repair, medicine, hacking, and other technical tasks, with supply dice and use rules",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi-equipment/kit-supplies"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/combat.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 3,
+   "in": 1,
+   "via": [
+    "core-rules/size"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "proficiencies/martial-training"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/health.md",
+   "url": "/docs/free-srd/core-rules/health/",
+   "title": "Health",
+   "blurb": "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "stats/defense",
+    "stats/vitality"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "item-tags/two-handed",
+    "item-tags/versatile"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "url": "/docs/free-srd/core-rules/vehicle-rules/",
+   "title": "Vehicle Rules",
+   "blurb": "driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "vehicles/collision-damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+   "title": "Sci-Fi Weapons",
+   "blurb": "energy weapons, ballistics, and more, with range, tags, and special rules",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi-equipment/shock-charger"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/damaged--broken-gear.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/basics.md",
+   "url": "/docs/free-srd/core-rules/basics/",
+   "title": "The Basics",
+   "blurb": "decision rolls, exploding dice, advantage and disadvantage, supply rolls, and the core mechanics that run the whole system",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "basics/supply-rolls",
+    "basics/target-numbers"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "item-tags/durable",
+    "item-tags/fragile"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/environmental-effects.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "conditions/fatigued",
+    "conditions/shaken"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "item-tags/pressurized",
+    "item-tags/space-suit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+   "title": "Sci-Fi Armor",
+   "blurb": "from light combat suits to EVA suits and space-rated gear, with stats and tags for each",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/eva-suit",
+    "sci-fi-equipment/hazard-hud"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/health.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "health/applying-damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "wounds/wounds"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "url": "/docs/free-srd/core-rules/sci-fi-additions/",
+   "title": "Sci-Fi Additions",
+   "blurb": "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, extreme environments, energy shields, HUDs, and computer systems",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi/energy-shields"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/sci-fi-additions.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "item-tags/pressurized",
+    "item-tags/space-suit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+   "title": "Sci-Fi Armor",
+   "blurb": "from light combat suits to EVA suits and space-rated gear, with stats and tags for each",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/eva-suit",
+    "sci-fi-equipment/hazard-hud"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/health.md",
+   "url": "/docs/free-srd/core-rules/health/",
+   "title": "Health",
+   "blurb": "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "stats/defense"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/comp-jack"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/size.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 1,
+   "in": 3,
+   "via": [
+    "combat/damage",
+    "combat/damage-dice",
+    "combat/grapple",
+    "combat/stealth"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/action-economy.md",
+   "url": "/docs/free-srd/core-rules/action-economy/",
+   "title": "Action Economy",
+   "blurb": "action types, opportunity attacks, reactions, movement, speed tiers, and the tactical choices behind managing your action pool",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "movement/speed-descriptors"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/attributes.md",
+   "url": "/docs/free-srd/core-rules/attributes/",
+   "title": "Attributes",
+   "blurb": "STR, AGI, DEX, FORT, KNO, INS, CHA, and WILL — and how to generate them",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "attributes/overview"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/stats.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "core-rules/size"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 2,
+   "in": 1,
+   "via": [
+    "conditions/stressed",
+    "wounds/wounds"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/overview"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "health/applying-damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "url": "/docs/free-srd/core-rules/vehicle-rules/",
+   "title": "Vehicle Rules",
+   "blurb": "driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "vehicles/boarding-and-bailing",
+    "vehicles/collision-damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "url": "/docs/free-srd/core-rules/sci-fi-additions/",
+   "title": "Sci-Fi Additions",
+   "blurb": "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, extreme environments, energy shields, HUDs, and computer systems",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi/energy-shields"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/vehicle-rules.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/attributes.md",
+   "url": "/docs/free-srd/core-rules/attributes/",
+   "title": "Attributes",
+   "blurb": "STR, AGI, DEX, FORT, KNO, INS, CHA, and WILL — and how to generate them",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "attributes/physical-attributes"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/wounds--conditions.md",
+   "url": "/docs/free-srd/core-rules/wounds--conditions/",
+   "title": "Wounds & Conditions",
+   "blurb": "from minor lacerations to the dying condition — and how to treat them",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "conditions/prone"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/action-economy.md",
+   "url": "/docs/free-srd/core-rules/action-economy/",
+   "title": "Action Economy",
+   "blurb": "action types, opportunity attacks, reactions, movement, speed tiers, and the tactical choices behind managing your action pool",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "movement/speed-tiers-chart"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "combat/damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "core-rules/size"
+   ]
+  }
+ ],
+ "content/docs/free-srd/core-rules/wounds--conditions.md": [
+  {
+   "page": "content/docs/free-srd/core-rules/stats.md",
+   "url": "/docs/free-srd/core-rules/stats/",
+   "title": "Stats",
+   "blurb": "what they do and how to calculate them",
+   "out": 1,
+   "in": 1,
+   "via": [
+    "stats/luck",
+    "stats/stress-threshold"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+   "url": "/docs/free-srd/core-rules/vehicle-rules/",
+   "title": "Vehicle Rules",
+   "blurb": "driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "vehicles/boarding-and-bailing",
+    "vehicles/impact-and-overrun"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/attributes.md",
+   "url": "/docs/free-srd/core-rules/attributes/",
+   "title": "Attributes",
+   "blurb": "STR, AGI, DEX, FORT, KNO, INS, CHA, and WILL — and how to generate them",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "attributes/attribute-values"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/environmental-effects.md",
+   "url": "/docs/free-srd/core-rules/environmental-effects/",
+   "title": "Environmental Effects",
+   "blurb": "this page covers both",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "environment/environmental-effects"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "abilities/leg-shot"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/android"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/health.md",
+   "url": "/docs/free-srd/core-rules/health/",
+   "title": "Health",
+   "blurb": "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "stats/vitality"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/generic-equipment.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 6,
+   "in": 3,
+   "via": [
+    "item-tags/ballistic",
+    "item-tags/battery",
+    "item-tags/bulky",
+    "item-tags/fuel-cells",
+    "item-tags/throwable"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/item-tags.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 3,
+   "in": 31,
+   "via": [
+    "sci-fi-equipment/ara-5",
+    "sci-fi-equipment/battery-cores",
+    "sci-fi-equipment/bio-scanner",
+    "sci-fi-equipment/boost-pack",
+    "sci-fi-equipment/comp-jack",
+    "sci-fi-equipment/decoy-beacon",
+    "sci-fi-equipment/fuel-cells",
+    "sci-fi-equipment/grapple-line-launcher",
+    "sci-fi-equipment/gravity-anchor",
+    "sci-fi-equipment/jump-boosters",
+    "sci-fi-equipment/jump-pack",
+    "sci-fi-equipment/mini-laser-cutter",
+    "sci-fi-equipment/pain-suppressant-injector",
+    "sci-fi-equipment/personal-shield",
+    "sci-fi-equipment/portable-heater",
+    "sci-fi-equipment/portable-water-purifier",
+    "sci-fi-equipment/reactor-cores",
+    "sci-fi-equipment/remote-detonator",
+    "sci-fi-equipment/signature-spoofer",
+    "sci-fi-equipment/squad-shield",
+    "sci-fi-equipment/survival-tent",
+    "sci-fi-equipment/vitaboost-injector"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+   "title": "Sci-Fi Weapons",
+   "blurb": "energy weapons, ballistics, and more, with range, tags, and special rules",
+   "out": 0,
+   "in": 30,
+   "via": [
+    "sci-fi-equipment/auto-pistol",
+    "sci-fi-equipment/compact-rifle",
+    "sci-fi-equipment/drum-magazines",
+    "sci-fi-equipment/emergency-hatchet",
+    "sci-fi-equipment/heavy-pistol",
+    "sci-fi-equipment/heavy-rotary-cannon",
+    "sci-fi-equipment/laser-pistol",
+    "sci-fi-equipment/laser-rifle",
+    "sci-fi-equipment/light-pistol",
+    "sci-fi-equipment/long-rifle",
+    "sci-fi-equipment/recoil-compensation-system",
+    "sci-fi-equipment/ripper-blade",
+    "sci-fi-equipment/shock-rifle",
+    "sci-fi-equipment/standard-issue-knife",
+    "sci-fi-equipment/standard-issue-rifle",
+    "sci-fi-equipment/weighted-core"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/generic-equipment/",
+   "title": "Generic Equipment",
+   "blurb": "Setting-agnostic gear for These Lucky Stars: tools, survival supplies, medkits, containers, light sources, and general utility items usable across any module",
+   "out": 3,
+   "in": 6,
+   "via": [
+    "generic-equipment/barrel",
+    "generic-equipment/crate",
+    "generic-equipment/grappling-hook",
+    "generic-equipment/lockable-chest",
+    "generic-equipment/long-crowbar",
+    "generic-equipment/pouch-set-ammo",
+    "generic-equipment/tent-4-person"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+   "title": "Sci-Fi Armor",
+   "blurb": "from light combat suits to EVA suits and space-rated gear, with stats and tags for each",
+   "out": 1,
+   "in": 7,
+   "via": [
+    "sci-fi-equipment/basic-p-suit",
+    "sci-fi-equipment/classic-evosuit",
+    "sci-fi-equipment/combat-evosuit",
+    "sci-fi-equipment/coms-unit",
+    "sci-fi-equipment/eva-suit",
+    "sci-fi-equipment/light-combat-vest",
+    "sci-fi-equipment/safer-unit",
+    "sci-fi-equipment/ultraweave-evosuit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 8,
+   "via": [
+    "components/backup-power-cell",
+    "components/heavy-wrist-laser",
+    "components/improved-cooling-system",
+    "components/power-sources",
+    "components/wrist-laser"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "combat/disarm"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
+   "title": "Damaged & Broken Gear",
+   "blurb": "Rules for damaging and destroying objects, equipment, and structures in These Lucky Stars",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "objects/durability"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/environmental-effects.md",
+   "url": "/docs/free-srd/core-rules/environmental-effects/",
+   "title": "Environmental Effects",
+   "blurb": "this page covers both",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "environment/extreme-environments"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
+   "title": "Sci-Fi Tool Kits",
+   "blurb": "specialized kits for repair, medicine, hacking, and other technical tasks, with supply dice and use rules",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "sci-fi-equipment/b-e-kit",
+    "sci-fi-equipment/repair-kit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "abilities/patient-shot"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/android"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 8,
+   "in": 0,
+   "via": [
+    "item-tags/battery",
+    "item-tags/firing-modes",
+    "item-tags/power-source",
+    "item-tags/two-handed"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "abilities/companion-bot",
+    "abilities/tech-armor"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "proficiencies/comp-jack",
+    "proficiencies/weapon"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/comp-jack",
+    "sci-fi-equipment/crash-foam-canister"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+   "title": "Sci-Fi Weapons",
+   "blurb": "energy weapons, ballistics, and more, with range, tags, and special rules",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "sci-fi-equipment/laser-pistol",
+    "sci-fi-equipment/laser-rifle"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/android"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 7,
+   "in": 1,
+   "via": [
+    "item-tags/bulky",
+    "item-tags/concealable",
+    "item-tags/pressurized",
+    "item-tags/space-suit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 3,
+   "in": 1,
+   "via": [
+    "sci-fi-equipment/ara-5",
+    "sci-fi-equipment/coms-headset",
+    "sci-fi-equipment/pain-suppressant-injector",
+    "sci-fi-equipment/vitaboost-injector"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
+   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
+   "title": "Damaged & Broken Gear",
+   "blurb": "Rules for damaging and destroying objects, equipment, and structures in These Lucky Stars",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "objects/conditions"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/basics.md",
+   "url": "/docs/free-srd/core-rules/basics/",
+   "title": "The Basics",
+   "blurb": "decision rolls, exploding dice, advantage and disadvantage, supply rolls, and the core mechanics that run the whole system",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "basics/supply-rolls"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/environmental-effects.md",
+   "url": "/docs/free-srd/core-rules/environmental-effects/",
+   "title": "Environmental Effects",
+   "blurb": "this page covers both",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "environment/extreme-environments"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "item-tags/bulky"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/basics.md",
+   "url": "/docs/free-srd/core-rules/basics/",
+   "title": "The Basics",
+   "blurb": "decision rolls, exploding dice, advantage and disadvantage, supply rolls, and the core mechanics that run the whole system",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "basics/supply-rolls"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 31,
+   "in": 3,
+   "via": [
+    "item-tags/battery",
+    "item-tags/bulky",
+    "item-tags/fuel-cells",
+    "item-tags/injector",
+    "item-tags/power-source",
+    "item-tags/two-handed"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+   "title": "Sci-Fi Armor",
+   "blurb": "from light combat suits to EVA suits and space-rated gear, with stats and tags for each",
+   "out": 1,
+   "in": 3,
+   "via": [
+    "sci-fi-equipment/auto-injector",
+    "sci-fi-equipment/coms-unit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "abilities/battery-saboteur",
+    "abilities/charge"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "components/automatic-crash-foam-system",
+    "components/internal-comp-jack"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "proficiencies/comp-jack"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/health.md",
+   "url": "/docs/free-srd/core-rules/health/",
+   "title": "Health",
+   "blurb": "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "stats/defense"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "races/android"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "url": "/docs/free-srd/core-rules/sci-fi-additions/",
+   "title": "Sci-Fi Additions",
+   "blurb": "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, extreme environments, energy shields, HUDs, and computer systems",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "sci-fi/computer-systems"
+   ]
+  }
+ ],
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md": [
+  {
+   "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "url": "/docs/free-srd/inventory--equipment/item-tags/",
+   "title": "Item Tags",
+   "blurb": "the shorthand identifiers attached to equipment that describe use requirements, special properties, and restrictions",
+   "out": 30,
+   "in": 0,
+   "via": [
+    "item-tags/arcing",
+    "item-tags/ballistic",
+    "item-tags/belt-fed",
+    "item-tags/bulky",
+    "item-tags/concealable",
+    "item-tags/firing-modes",
+    "item-tags/long-reload",
+    "item-tags/throwable",
+    "item-tags/two-handed"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/combat.md",
+   "url": "/docs/free-srd/core-rules/combat/",
+   "title": "Combat",
+   "blurb": "initiative, attack and defense rolls, damage types, resistance, surprise attacks, and the full combat action catalog",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "combat/damage"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 2,
+   "via": [
+    "components/heavy-wrist-laser",
+    "components/wrist-laser"
+   ]
+  }
+ ]
+}

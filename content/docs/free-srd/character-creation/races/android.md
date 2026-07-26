@@ -3,15 +3,14 @@ title: "Android"
 description: "Introducing the Android — liberated robots able to act and think independently"
 weight: 30
 bookHidden: true
+wip: true
 id: races/android
 category: [sci-fi]
 type: feature
 tier: module
 reference: medium
-tags: [races, sci-fi, wip]
+tags: [races, sci-fi]
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 # Android
 <!-- basic android race -->
 While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids are built with all the freedoms of a true individual in mind. Their appearance can differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 

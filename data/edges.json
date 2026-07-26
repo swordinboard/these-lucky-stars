@@ -864,6 +864,15 @@
   "line": 18
  },
  {
+  "source": "movement/primary-speed",
+  "target": "races/overview",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/races/",
+  "text": "race",
+  "file": "content/snippets/movement/primary-speed.md",
+  "line": 18
+ },
+ {
   "source": "movement/speed-descriptors",
   "target": "core-rules/size",
   "type": "reference",
@@ -1738,15 +1747,6 @@
   "class": "tag-definition"
  },
  {
-  "source": "sci-fi-equipment/laser-pistol",
-  "target": "combat/damage",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-types",
-  "text": "Burn",
-  "file": "content/snippets/sci-fi-equipment/laser-pistol.md",
-  "line": 15
- },
- {
   "source": "sci-fi-equipment/laser-rifle",
   "target": "item-tags/firing-modes",
   "type": "reference",
@@ -1755,15 +1755,6 @@
   "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
   "line": 15,
   "class": "tag-definition"
- },
- {
-  "source": "sci-fi-equipment/laser-rifle",
-  "target": "combat/damage",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-types",
-  "text": "Burn",
-  "file": "content/snippets/sci-fi-equipment/laser-rifle.md",
-  "line": 15
  },
  {
   "source": "sci-fi-equipment/laser-rifle",
@@ -2066,15 +2057,6 @@
   "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
   "line": 15,
   "class": "tag-definition"
- },
- {
-  "source": "sci-fi-equipment/shock-rifle",
-  "target": "combat/damage",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-types",
-  "text": "Shock",
-  "file": "content/snippets/sci-fi-equipment/shock-rifle.md",
-  "line": 15
  },
  {
   "source": "sci-fi-equipment/shock-rifle",
@@ -5409,7 +5391,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1",
   "text": "HEL-1",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 13
+  "line": 12
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
@@ -5418,7 +5400,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l",
   "text": "T00L",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 14
+  "line": 13
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
@@ -5427,7 +5409,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2",
   "text": "BAL",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 15
+  "line": 14
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
@@ -5436,16 +5418,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a",
   "text": "TRK-A",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 18
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 7
+  "line": 17
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
@@ -5454,25 +5427,7 @@
   "url": "/snippets/bots/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 10
- },
- {
-  "source": "bots/bal",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
-  "line": 13
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 7
+  "line": 9
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5481,7 +5436,7 @@
   "url": "/snippets/components/overview",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 10
+  "line": 9
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5490,7 +5445,7 @@
   "url": "/snippets/components/installation",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 14
+  "line": 13
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5499,7 +5454,7 @@
   "url": "/snippets/components/power-sources",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 18
+  "line": 17
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5508,7 +5463,7 @@
   "url": "/snippets/components/damage-and-wounds",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 23
+  "line": 22
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5517,7 +5472,7 @@
   "url": "/snippets/components/audio-processor",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 57
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5526,7 +5481,7 @@
   "url": "/snippets/components/augmented-arm-actuators",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 63
+  "line": 62
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5535,7 +5490,7 @@
   "url": "/snippets/components/automatic-crash-foam-system",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 69
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5544,7 +5499,7 @@
   "url": "/snippets/components/backup-power-cell",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 75
+  "line": 74
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5553,7 +5508,7 @@
   "url": "/snippets/components/heavy-wrist-laser",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 81
+  "line": 80
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5562,7 +5517,7 @@
   "url": "/snippets/components/improved-cooling-system",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 87
+  "line": 86
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5571,7 +5526,7 @@
   "url": "/snippets/components/internal-comp-jack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 93
+  "line": 92
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5580,7 +5535,7 @@
   "url": "/snippets/components/manipulator-override",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 99
+  "line": 98
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5589,7 +5544,7 @@
   "url": "/snippets/components/optical-suite",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 105
+  "line": 104
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5598,7 +5553,7 @@
   "url": "/snippets/components/reinforced-chassis-plating",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 111
+  "line": 110
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5607,7 +5562,7 @@
   "url": "/snippets/components/relay-node",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 117
+  "line": 116
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5616,7 +5571,7 @@
   "url": "/snippets/components/repair-subroutine",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 123
+  "line": 122
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5625,7 +5580,7 @@
   "url": "/snippets/components/servo-boost-legs",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 129
+  "line": 128
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5634,7 +5589,7 @@
   "url": "/snippets/components/shield-mount",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 135
+  "line": 134
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5643,7 +5598,7 @@
   "url": "/snippets/components/signal-mast-retractable",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 141
+  "line": 140
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5652,7 +5607,7 @@
   "url": "/snippets/components/signal-mast-heavy",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 147
+  "line": 146
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5661,7 +5616,7 @@
   "url": "/snippets/components/stabilizer-gyros",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 153
+  "line": 152
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5670,7 +5625,7 @@
   "url": "/snippets/components/subdermal-plating",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 159
+  "line": 158
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5679,7 +5634,7 @@
   "url": "/snippets/components/targeting-array",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 165
+  "line": 164
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
@@ -5688,34 +5643,7 @@
   "url": "/snippets/components/wrist-laser",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 171
- },
- {
-  "source": "bots/hel-1",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
-  "line": 13
- },
- {
-  "source": "bots/t00l",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
-  "line": 13
- },
- {
-  "source": "bots/trk-a",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
-  "line": 13
+  "line": 170
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
@@ -6948,34 +6876,7 @@
   "url": "/docs/free-srd/core-rules/stats/#speed",
   "text": "Stats",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#speed",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#speed",
-  "text": "Action Economy",
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 37
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#speed",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#speed",
-  "text": "Action Economy",
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 43
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 7
+  "line": 18
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -6984,7 +6885,7 @@
   "url": "/snippets/vehicles/overview",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 10
+  "line": 9
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -6993,7 +6894,7 @@
   "url": "/snippets/vehicles/vehicle-size",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 14
+  "line": 13
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7002,7 +6903,7 @@
   "url": "/snippets/movement/speed-tiers-chart",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 35
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7011,7 +6912,7 @@
   "url": "/snippets/movement/speed-tiers",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 39
+  "line": 36
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7020,7 +6921,7 @@
   "url": "/snippets/movement/speed-descriptors",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 46
+  "line": 42
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7029,7 +6930,7 @@
   "url": "/snippets/vehicles/vehicle-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 52
+  "line": 48
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7038,7 +6939,7 @@
   "url": "/snippets/vehicles/ignition",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 56
+  "line": 52
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7047,7 +6948,7 @@
   "url": "/snippets/vehicles/drive",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 60
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7056,7 +6957,7 @@
   "url": "/snippets/vehicles/boarding-and-bailing",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 64
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7065,7 +6966,7 @@
   "url": "/snippets/vehicles/initiative-and-occupants",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 68
+  "line": 64
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7074,7 +6975,7 @@
   "url": "/snippets/vehicles/cover-from-vehicles",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 72
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7083,7 +6984,7 @@
   "url": "/snippets/vehicles/impact-and-overrun",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 76
+  "line": 72
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7092,7 +6993,7 @@
   "url": "/snippets/vehicles/collision-damage",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 80
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -7101,7 +7002,7 @@
   "url": "/snippets/vehicles/mounts",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 89
+  "line": 85
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8473,21 +8374,12 @@
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
-  "target": "traits/racial-traits",
-  "type": "include",
-  "url": "/snippets/traits/racial-traits",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 12
- },
- {
-  "source": "page:/docs/free-srd/character-creation/traits/",
   "target": "traits/alert",
   "type": "include",
   "url": "/snippets/traits/alert",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 50
+  "line": 47
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8496,7 +8388,7 @@
   "url": "/snippets/traits/composed",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 56
+  "line": 53
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8505,7 +8397,7 @@
   "url": "/snippets/traits/diplomatic",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 62
+  "line": 59
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8514,7 +8406,7 @@
   "url": "/snippets/traits/hot-headed",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 68
+  "line": 65
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8523,7 +8415,7 @@
   "url": "/snippets/traits/intimidating",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 74
+  "line": 71
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8532,7 +8424,7 @@
   "url": "/snippets/traits/lucky",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 80
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8541,7 +8433,7 @@
   "url": "/snippets/traits/mentally-sound",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 86
+  "line": 83
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8550,7 +8442,7 @@
   "url": "/snippets/traits/particularly-attractive",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 92
+  "line": 89
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8559,7 +8451,7 @@
   "url": "/snippets/traits/picture-of-health",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 98
+  "line": 95
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8568,7 +8460,7 @@
   "url": "/snippets/traits/sly",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 104
+  "line": 101
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8577,7 +8469,7 @@
   "url": "/snippets/traits/sneaky",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 110
+  "line": 107
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8586,7 +8478,7 @@
   "url": "/snippets/traits/stubborn",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 116
+  "line": 113
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8595,7 +8487,7 @@
   "url": "/snippets/traits/tough",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 122
+  "line": 119
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8604,7 +8496,7 @@
   "url": "/snippets/traits/unremarkable",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 128
+  "line": 125
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8613,7 +8505,7 @@
   "url": "/snippets/traits/unshakable",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 134
+  "line": 131
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8622,7 +8514,7 @@
   "url": "/snippets/traits/well-connected",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 140
+  "line": 137
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8631,7 +8523,7 @@
   "url": "/snippets/traits/inter-planet-traveler",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 150
+  "line": 147
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8640,7 +8532,7 @@
   "url": "/snippets/traits/scrap-hauler",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 156
+  "line": 153
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -8649,7 +8541,7 @@
   "url": "/snippets/traits/space-adept",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 162
+  "line": 159
  },
  {
   "source": "races/overview",
@@ -8658,7 +8550,7 @@
   "url": "/docs/free-srd/character-creation/races/classic-human",
   "text": "Classic Human",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 25
+  "line": 24
  },
  {
   "source": "races/overview",
@@ -8667,7 +8559,7 @@
   "url": "/docs/free-srd/character-creation/races/android",
   "text": "Android",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 29
+  "line": 28
  },
  {
   "source": "races/overview",
@@ -8676,7 +8568,7 @@
   "url": "/docs/free-srd/character-creation/races/star-touched-human",
   "text": "Human, Star-touched",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 30
+  "line": 29
  },
  {
   "source": "races/overview",
@@ -8685,7 +8577,7 @@
   "url": "/docs/free-srd/character-creation/races/reptilian",
   "text": "Reptilian",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 31
+  "line": 30
  },
  {
   "source": "races/overview",
@@ -8694,16 +8586,7 @@
   "url": "/docs/free-srd/character-creation/races/zeta-grey",
   "text": "Zeta Grey",
   "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 32
- },
- {
-  "source": "races/overview",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/_index.md",
-  "line": 14
+  "line": 31
  },
  {
   "source": "races/android",
@@ -8712,7 +8595,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
   "text": "object durability rules",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 19
+  "line": 18
  },
  {
   "source": "races/android",
@@ -8721,7 +8604,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 27
+  "line": 26
  },
  {
   "source": "races/android",
@@ -8730,7 +8613,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
   "text": "Dying",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 28
+  "line": 27
  },
  {
   "source": "races/android",
@@ -8739,7 +8622,7 @@
   "url": "#dead-battery",
   "text": "Dead Battery",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 28
+  "line": 27
  },
  {
   "source": "races/android",
@@ -8748,7 +8631,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components",
   "text": "components",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 32
+  "line": 31
  },
  {
   "source": "races/android",
@@ -8757,16 +8640,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#backup-power-cell",
   "text": "Backup Power Cell",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 36
- },
- {
-  "source": "races/android",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 14
+  "line": 35
  },
  {
   "source": "races/android",
@@ -8775,43 +8649,7 @@
   "url": "/snippets/conditions/dead-battery",
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 38
- },
- {
-  "source": "races/classic-human",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/classic-human.md",
-  "line": 14
- },
- {
-  "source": "races/reptilian",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/reptilian.md",
-  "line": 14
- },
- {
-  "source": "races/star-touched-human",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/star-touched-human.md",
-  "line": 14
- },
- {
-  "source": "races/zeta-grey",
-  "target": "site/wip-announcement",
-  "type": "include",
-  "url": "/snippets/site/wip-announcement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/races/zeta-grey.md",
-  "line": 14
+  "line": 37
  },
  {
   "source": "environment/heat-and-cold",

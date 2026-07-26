@@ -2,9 +2,8 @@
 title: "Vehicle Rules"
 description: "Rules for vehicles and mounts in These Lucky Stars — driving, boarding, initiative, cover, collision damage, speed tiers, and how mounts differ from mechanical vehicles."
 weight: 84
+wip: true
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 ## Vehicle Rules
 
 {{% include "/snippets/vehicles/overview" %}}
@@ -34,13 +33,10 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 {{% details "Speed Tiers" %}}
 {{% include "/snippets/movement/speed-tiers-chart" %}}
 
-**Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed):**
-
 {{% include "/snippets/movement/speed-tiers" %}}
 {{% /details %}}
 
 {{% details "Modes & Maneuverability" %}}
-**Direct from [Action Economy](/docs/free-srd/core-rules/action-economy/#speed)**
 #### Modes & Maneuverability
 
 {{% include "/snippets/movement/speed-descriptors" %}}
@@ -87,3 +83,7 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 ## Mounts
 
 {{% include "/snippets/vehicles/mounts" %}}
+
+## Related
+
+{{< related >}}

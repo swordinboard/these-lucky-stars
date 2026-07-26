@@ -96,19 +96,19 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Crippled Δ" %}}
+{{% details "Crippled" %}}
 
 {{% include "/snippets/conditions/crippled" %}}
 
 {{% /details %}}
 
-{{% details "Dying Δ" %}}
+{{% details "Dying" %}}
 
 {{% include "/snippets/conditions/dying" %}}
 
 {{% /details %}}
 
-{{% details "Fatigued Δ" %}}
+{{% details "Fatigued" %}}
 
 {{% include "/snippets/conditions/fatigued" %}}
 
@@ -120,7 +120,7 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Immobilized Δ" %}}
+{{% details "Immobilized" %}}
 
 {{% include "/snippets/conditions/immobilized" %}}
 
@@ -132,13 +132,13 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Prone Δ" %}}
+{{% details "Prone" %}}
 
 {{% include "/snippets/conditions/prone" %}}
 
 {{% /details %}}
 
-{{% details "Restrained [___] Δ" %}}
+{{% details "Restrained [___]" %}}
 
 {{% include "/snippets/conditions/restrained" %}}
 
@@ -150,7 +150,7 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Sick Δ" %}}
+{{% details "Sick" %}}
 
 {{% include "/snippets/conditions/sick" %}}
 
@@ -162,7 +162,7 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Unconscious Δ" %}}
+{{% details "Unconscious" %}}
 
 {{% include "/snippets/conditions/unconscious" %}}
 

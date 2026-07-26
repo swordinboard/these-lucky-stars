@@ -5,10 +5,21 @@ import re,sys,os,glob,html,collections
 A,B=sys.argv[1],sys.argv[2]
 def text(f):
     h=open(f,encoding="utf-8").read()
-    i=h.find("<article"); 
-    if i<0: return []
-    art=h[i:h.find("</article>",i)]
-    art=re.sub(r"<(script|style|nav|aside)[^>]*>.*?</\1>","",art,flags=re.S)
+    # Whole page-body region, not just <article>: content injected by the
+    # docs/inject/content-before|after partials (e.g. the wip: true notice)
+    # renders outside the article and must still count as page content.
+    # NB: minified HTML drops the quotes around single-word class values, so
+    # match both `class="book-page"` and `class=book-page`.
+    m=re.search(r'class="?[^">]*\bbook-page\b',h)
+    i=m.start() if m else -1
+    m=re.search(r'class="?[^">]*\bbook-footer\b',h[i:]) if i>=0 else None
+    j=i+m.start() if m else -1
+    if i<0 or j<0:
+        i=h.find("<article")
+        if i<0: return []
+        j=h.find("</article>",i)
+    art=h[i:j]
+    art=re.sub(r"<(script|style|nav|aside|header)[^>]*>.*?</\1>","",art,flags=re.S)
     t=html.unescape(re.sub(r"<[^>]+>"," ",art))
     # sentence-ish tokens
     return [s.strip() for s in re.split(r"[\n.]+",re.sub(r"\s+"," ",t)) if len(s.strip())>25]

@@ -5,7 +5,7 @@ category: [core]
 type: rule
 tier: supplement
 reference: low
-tags: [vehicles, wip]
+tags: [vehicles]
 headless: true
 ---
 

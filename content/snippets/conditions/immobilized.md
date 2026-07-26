@@ -5,7 +5,7 @@ category: [core]
 type: rule
 tier: core
 reference: low
-tags: [condition, attacker-advantage]
+tags: [condition]
 summary: "Cannot take physical actions — DEX and AGI treated as null"
 headless: true
 ---

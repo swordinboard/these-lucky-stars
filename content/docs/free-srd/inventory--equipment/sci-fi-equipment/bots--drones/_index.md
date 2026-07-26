@@ -2,9 +2,8 @@
 title: "Bots & Drones"
 description: "Robots and the rules that affect them -- companion bots and drones for These Lucky Stars sci-fi settings"
 weight: 10
+wip: true
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 # Bots & Drones
 
 {{% include "/snippets/bots/automated-machines" %}}

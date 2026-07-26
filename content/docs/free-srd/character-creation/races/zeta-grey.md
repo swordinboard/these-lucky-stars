@@ -3,15 +3,14 @@ title: "Zeta Grey"
 description: "Introducing the Zeta Grey — A classic sci-fi race known for their many cryptic encounters and high intelligence."
 weight: 30
 bookHidden: true
+wip: true
 id: races/zeta-grey
 category: [sci-fi]
 type: feature
 tier: module
 reference: low
-tags: [races, sci-fi, wip]
+tags: [races, sci-fi]
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 # Zeta Grey
 <!-- Combo little green men and Greys -->
 Whether cruising the stars in UFOs, bartending in the sketchiest part of an industrial wasteland, or running a ranch sporting a cowboy hat, Zeta Greys are often known for their intellignece and adaptability.

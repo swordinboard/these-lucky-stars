@@ -255,3 +255,91 @@ pages and I don't want to move them twice.
   silently) are in `site-maintenance-notes.md`.
 
 <!-- be sure to follow through with any if these when required -->
+
+---
+
+# Resolutions applied
+
+Worked from your annotations above. Verified with
+`./_discovery/tools/check.sh 9ee0dd2` — build clean, 0 broken links, 21 rendered
+text differences, all of them intentional and listed below.
+
+## Done
+
+| Item | Your call | What changed |
+|---|---|---|
+| **A2** | wip is one toggle | `wip: true` frontmatter on 13 pages. Banner now injected by `layouts/_partials/docs/inject/content-before.html`; the `snippets/site/wip-announcement` block is deleted. Each block gets a computed `wip` boolean in `blocks.json` for the builder. The redundant `wip` *tag* was removed from 19 files — verified the same 47 blocks are flagged before and after. WIP pages stay searchable; the banner boilerplate no longer pollutes the index (13 matches → 0). `bookHidden` untouched. |
+| **A1 (part)** | extreme environments is core | `environment/extreme-environments` is now `category: [core]`, `tier: core`, no `sci-fi` tag. Still displayed on both Environmental Effects and Sci-Fi Additions. |
+| **A3 bug 1** | — | `traits.md` moved from `weight: 10` (tied with Races) to `40`, which also makes the nav match your hand-written reading order: Overview, Races, Proficiencies, Abilities, Traits. |
+| **B6** | typo | `Pouch Set, standard` → `Standard` in title and heading; the now-redundant `label:` dropped. Anchor unchanged. |
+| **B7** | pull it | Confirmed **no trait anywhere carries a `[Racial]` label** and nothing is tagged `racial` — it was fully orphaned. `snippets/traits/racial-traits.md` and its heading are removed; the Primary Speed sentence that pointed at "the character's Racial Traits" now points at [Races]. Full removed text is in the git history at `9ee0dd2` and quoted below. |
+| **B10** | strip it | `[Burn]`/`[Shock]` removed from the tag lists of Laser Pistol, Laser Rifle, Shock Rifle. Each keeps its own `*Damage Type:*` line, so nothing is lost. |
+| **C1** | Δ is dysfunctional, state it in the descriptions | `attacker-advantage` tag removed from all 8 conditions, and **Δ is now gone from the site entirely** — the explainer line, the 8 summary-table rows and the 8 `details` labels. |
+| **D / E2** | generate and see how it feels | New `{{< related >}}` shortcode + `data/related.json`. Wired onto Vehicle Rules, which also loses its two inline *"Direct from Action Economy"* framings. |
+| **E3** | — | `_discovery/04-phase3-worksheets.md` — tag membership, orphans, implicit edges, Related comparison. Regenerate with `worksheets.py`. |
+
+### Removed text, for the record (B7)
+
+> *[Racial]*
+>
+> Racial Traits are an optional set of traits used when more than one sentient
+> species occupies the setting. A Game Master may choose not to include racial
+> traits if the players are not given a choice between races in the selected
+> setting, usually meaning all players are human. GMs may allow the selection of
+> an additional trait in place of a racial trait in such situations.
+
+## Three sentences I had to write — please check the wording
+
+Four conditions already stated the attacker advantage in their own text
+(Immobilized, Prone, Sick, Unconscious) and Dying inherits it by falling
+unconscious. Three did not, so removing Δ would have dropped the rule entirely.
+I wrote these, and added the same to their `summary` so the table still shows it:
+
+- **Crippled** — "Attackers gain advantage against a crippled character."
+- **Fatigued** — "Attackers gain advantage against a fatigued character."
+- **Restrained** — "Attackers gain advantage against a restrained character when
+  the restrained body part would otherwise help them evade or defend."
+
+Restrained is the one I am least sure of: blanket advantage felt wrong for
+Restrained [Left Arm], so I qualified it. Prone and Sick are also narrower than
+blanket advantage (adjacent attackers only; only while retching). If you want one
+uniform rule instead, this is the moment to say so.
+
+**Dying** is the other loose end: it grants advantage only by way of "immediately
+falls unconscious (as the condition)". Its table row does not mention it. Left as
+is — say the word if it should be explicit.
+
+## Held back deliberately
+
+- **A1 module separation (hybrid)** — agreed, but it moves page URLs and needs
+  redirects, so it wants its own pass with a move map you can read first. It is
+  the next thing I would do.
+- **A4 generated section lists** — you said wait until nav settles. Waiting.
+- **B8** — Android is a playable race, noted; "sci-fi creatures and NPCs" is a nav
+  move, so it rides with A1.
+- **B9 tool-kits** — you will write it later. `linkcheck.py` still excludes it.
+- **The other five `## Related` sections** — *not* converted. The generated list
+  is materially different from the hand-written ones, and mostly worse: for
+  Damaged & Broken Gear it would drop Health, Combat and Wounds & Conditions and
+  add The Basics. The hand-written lists point where a reader *should* go; the
+  graph only sees where the prose happens to link. Side-by-side comparison is in
+  `04-phase3-worksheets.md` — convert per page, or leave them.
+- **B1–B5** — untouched rules calls, still open.
+
+## Worth knowing
+
+- **Nothing in the corpus is unreachable.** All 320 blocks with `in_degree: 0`
+  are still listed in a `{{< catalog >}}` or linked from page prose. The orphan
+  worksheet is therefore narrowed to the 82 rule/reference blocks, where a
+  missing cross-link is actually plausible.
+- **`rendercheck.py` had a blind spot**, now fixed: it only read inside
+  `<article>`, so content injected by a theme hook (the wip banner) looked
+  deleted, and it matched `class="…"` with quotes that Hugo's minifier strips.
+  Same failure mode as the old link scanner. It was reporting 73 differences; the
+  true number was 21.
+- **Classic Human** carries the WIP banner but is the core race and was never
+  tagged `wip`. I preserved current behaviour (`wip: true`) rather than guess.
+  One line to flip if that banner was a leftover.
+- `conditions/overview` still has a **hand-written** 3-column table. `catalog`
+  only emits two columns, so it could not be converted; its rows and the blocks'
+  `summary` values have to be kept in step by hand for now.

@@ -5,7 +5,7 @@ category: [core]
 type: rule
 tier: core
 reference: low
-tags: [condition, attacker-advantage]
+tags: [condition]
 summary: "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
 headless: true
 ---

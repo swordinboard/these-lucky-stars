@@ -1,0 +1,23 @@
+{{/*
+  {{< related >}}          — all related pages
+  {{< related limit="4" >}} — top N
+
+  Renders the page's Related list from data/related.json, which builddata.py
+  derives from the edge graph: pages whose blocks reference this page's blocks,
+  or are referenced by them. Ordered by strength (outbound counts double).
+
+  Put a markdown `## Related` heading above the call so the section still shows
+  up in the table of contents; this emits only the list. Nothing is emitted when
+  the page has no related pages, so only use it where data/related.json has an
+  entry — `python3 _discovery/tools/builddata.py` prints the count.
+*/}}
+{{- $key := printf "content/%s" .Page.File.Path -}}
+{{- $items := index site.Data.related $key -}}
+{{- with .Get "limit" -}}{{- $items = first (int .) $items -}}{{- end -}}
+{{- with $items }}
+<ul>
+{{- range . }}
+  <li><a href="{{ .url }}">{{ .title }}</a>{{ with .blurb }} — {{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</li>
+{{- end }}
+</ul>
+{{- end -}}

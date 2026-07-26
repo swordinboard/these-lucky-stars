@@ -1,6 +1,5 @@
 ---
-title: "Pouch Set, standard"
-label: "Pouch Set, Standard"
+title: "Pouch Set, Standard"
 id: generic-equipment/pouch-set-standard
 category: [core]
 type: equipment
@@ -11,7 +10,7 @@ summary: "Holds most handheld items for quick access."
 headless: true
 ---
 
-### Pouch Set, standard
+### Pouch Set, Standard
 
 *--Price — 1lbs*
 

@@ -24,6 +24,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Spend Luck to reuse an exhausted ability."
  },
  {
@@ -51,6 +52,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Charge no longer requires a straight line.",
   "requires": [
    "abilities/charge"
@@ -81,6 +83,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Immediate 5ft step when an opponent misses a melee attack against you."
  },
  {
@@ -108,6 +111,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Shove an opponent at the end of a charge.",
   "requires": [
    "abilities/charge"
@@ -138,6 +142,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Turn battery cores into explosives.",
   "requires": [
    "proficiencies/general-technology"
@@ -168,6 +173,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Re-roll a failed supply roll once per day."
  },
  {
@@ -195,6 +201,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Once per combat, up to 3 allies within 30ft gain +1 to all rolls until end of their next turn."
  },
  {
@@ -222,6 +229,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Gain one additional Luck point."
  },
  {
@@ -249,6 +257,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Rush an enemy for a powerful melee attack."
  },
  {
@@ -276,6 +285,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Designate a drone or robot as your companion.",
   "requires": [
    "proficiencies/general-robotics"
@@ -306,6 +316,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Conserve ammo during suppressive fire.",
   "requires": [
    "proficiencies/weapon",
@@ -337,6 +348,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Designate a target — the next ally to attack it gains advantage."
  },
  {
@@ -364,6 +376,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Advantage on AGI/DEX checks against effects of a triggered trap."
  },
  {
@@ -391,6 +404,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Quickly hide a small object in a room or vehicle using your B&E kit.",
   "requires": [
    "proficiencies/b-e-kit"
@@ -421,6 +435,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Double your DEF against a melee attack."
  },
  {
@@ -448,6 +463,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "ATK bonus when attacking with two weapons.",
   "requires": [
    "proficiencies/weapon"
@@ -478,6 +494,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Gain DEF when wielding multiple melee weapons.",
   "requires": [
    "proficiencies/weapon",
@@ -509,6 +526,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increase damage die with dual attack.",
   "requires": [
    "proficiencies/weapon",
@@ -540,6 +558,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Improve the Student bonus for a chosen topic.",
   "label": "Expert [___]",
   "requires": [
@@ -571,6 +590,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increase Rage duration by two rounds.",
   "requires": [
    "abilities/rage"
@@ -601,6 +621,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Make two standard attacks per round.",
   "requires": [
    "proficiencies/weapon"
@@ -631,6 +652,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Kit Trap uses less AP."
  },
  {
@@ -658,6 +680,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Resisting fear while raging.",
   "requires": [
    "abilities/rage"
@@ -688,6 +711,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Use a med kit to stabilize or treat wounds as a 2 AP action.",
   "requires": [
    "proficiencies/medic-training"
@@ -718,6 +742,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Stabilize a dying ally without a med kit.",
   "requires": [
    "proficiencies/medic-training"
@@ -748,6 +773,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Focus on an opponent to gain advantage."
  },
  {
@@ -775,6 +801,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Overwatch a line with ranged attacks of opportunity."
  },
  {
@@ -802,6 +829,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Sacrifice your DEF to protect an adjacent ally.",
   "requires": [
    "traits/tough"
@@ -832,6 +860,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Allies near you may regain spent Luck.",
   "requires": [
    "traits/lucky"
@@ -862,6 +891,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cause a Stress with a distraction."
  },
  {
@@ -890,6 +920,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Remotely access a hacked system via linked comp jack.",
   "requires": [
    "proficiencies/comp-jack"
@@ -920,6 +951,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increased displacement and knockdown from Bash.",
   "requires": [
    "abilities/charge",
@@ -951,6 +983,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increase WILL target or stress from suppression.",
   "requires": [
    "proficiencies/weapon",
@@ -982,6 +1015,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Immune to fear and distraction while raging.",
   "requires": [
    "traits/unshakable",
@@ -1014,6 +1048,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Negate a wound or condition from a ranged attack.",
   "requires": [
    "abilities/defender"
@@ -1044,6 +1079,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Negate a wound or condition from a melee attack.",
   "requires": [
    "abilities/defender"
@@ -1074,6 +1110,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Use your tool kit to make difficult terrain."
  },
  {
@@ -1101,6 +1138,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Charge can pass through difficult terrain.",
   "requires": [
    "abilities/charge",
@@ -1132,6 +1170,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ranged attack at minor disadvantage to apply Crippled on hit.",
   "requires": [
    "proficiencies/weapon"
@@ -1162,6 +1201,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Change suppression area to a line.",
   "requires": [
    "proficiencies/weapon",
@@ -1193,6 +1233,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Use General Spectacle for multiple rounds."
  },
  {
@@ -1220,6 +1261,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increase Luck die to d6 on attack rolls."
  },
  {
@@ -1247,6 +1289,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Reroll a decision die during unarmed trip, disarm, or grapple.",
   "requires": [
    "proficiencies/martial-training"
@@ -1277,6 +1320,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heal a condition or wound by spending Luck."
  },
  {
@@ -1304,6 +1348,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Swap spaces with your attacker using Agile Dodge.",
   "requires": [
    "proficiencies/martial-training",
@@ -1335,6 +1380,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Increase Luck die to d6 for a chosen attribute.",
   "label": "Natural Gift [___]"
  },
@@ -1363,6 +1409,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Break a door panel to guarantee it opens or closes.",
   "requires": [
    "proficiencies/general-technology"
@@ -1393,6 +1440,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Expand suppression to six non-adjacent squares.",
   "requires": [
    "proficiencies/weapon",
@@ -1424,6 +1472,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Interrupt enemies mid action."
  },
  {
@@ -1451,6 +1500,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Push a battery weapon beyond rated output for bonus damage.",
   "requires": [
    "proficiencies/general-technology"
@@ -1479,7 +1529,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "abilities/patient-shot",
@@ -1506,6 +1557,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bonus damage and advantage if stationary and untargeted since last turn.",
   "requires": [
    "proficiencies/weapon"
@@ -1536,6 +1588,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Tap a large power source to rapidly recharge a battery.",
   "requires": [
    "proficiencies/general-technology"
@@ -1566,6 +1619,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Spend two uses for +4 STR +4 FORT.",
   "requires": [
    "abilities/rage"
@@ -1596,6 +1650,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Triple normal range for Focus abilities.",
   "requires": [
    "abilities/focus-attack",
@@ -1627,6 +1682,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Draw an equipped weapon for no AP."
  },
  {
@@ -1654,6 +1710,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Use two semi-auto pistols for full-auto abilities.",
   "requires": [
    "proficiencies/weapon"
@@ -1684,6 +1741,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Enter an enraged state for a short duration."
  },
  {
@@ -1711,6 +1769,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Grant a temporary 1 AP to an ally within 30ft who can hear you."
  },
  {
@@ -1738,6 +1797,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trade DEF for ATK and DMG on melee attacks."
  },
  {
@@ -1766,6 +1826,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Build a makeshift comp jack from tech kit supplies.",
   "requires": [
    "proficiencies/comp-jack",
@@ -1797,6 +1858,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Refill a supply die from mechanical wreckage.",
   "requires": [
    "proficiencies/repair-kit"
@@ -1828,6 +1890,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Intercept unencrypted communications with a comp jack.",
   "requires": [
    "proficiencies/comp-jack"
@@ -1858,6 +1921,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Make a melee attack during Agile Dodge or Momentum Dodge movement.",
   "requires": [
    "proficiencies/martial-training",
@@ -1889,6 +1953,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Quickly repair your companion for no supplies.",
   "requires": [
    "proficiencies/general-robotics",
@@ -1920,6 +1985,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Gain a bonus by applying knowledge of a topic.",
   "label": "Student [___]"
  },
@@ -1948,6 +2014,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Pin enemies in an area with automatic fire.",
   "requires": [
    "proficiencies/weapon"
@@ -1978,6 +2045,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Quickly install mismatched batteries.",
   "requires": [
    "proficiencies/general-technology"
@@ -2008,6 +2076,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Dual Attack ability costs 2 AP instead of 4.",
   "requires": [
    "proficiencies/weapon",
@@ -2039,6 +2108,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Install and remove upgrades and components without risk of damage.",
   "requires": [
    "proficiencies/general-technology"
@@ -2069,6 +2139,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Lock eyes to gain advantage on your next roll against them.",
   "requires": [
    "traits/particularly-attractive"
@@ -2099,6 +2170,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Spend Luck to fully negate an attack.",
   "requires": [
    "traits/tough",
@@ -2132,6 +2204,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Use Defender on behalf of an ally.",
   "requires": [
    "traits/tough",
@@ -2164,6 +2237,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Intimidate a nearby opponent when activating Rage.",
   "requires": [
    "traits/intimidating",
@@ -2196,6 +2270,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Add Vital Strike dice to Focus Attack rolls.",
   "requires": [
    "abilities/vital-strike"
@@ -2226,6 +2301,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Add bonus damage to surprise attacks."
  },
  {
@@ -2250,7 +2326,8 @@
   ],
   "flags": [],
   "notes": "The three-category framing paragraph.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/difficult-terrain",
@@ -2274,7 +2351,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/move",
@@ -2300,7 +2378,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/multi-turn-actions",
@@ -2324,7 +2403,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/opportunity-actions",
@@ -2348,7 +2428,8 @@
   ],
   "flags": [],
   "notes": "Framing rules for opportunity actions; the Opportunity Attack itself is already the combat/opportunity-attack snippet.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/reactions",
@@ -2372,7 +2453,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/readied-actions",
@@ -2396,7 +2478,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/standard-actions",
@@ -2420,7 +2503,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "actions/step",
@@ -2446,7 +2530,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "attributes/attribute-values",
@@ -2470,7 +2555,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "attributes/determining-attributes",
@@ -2494,7 +2580,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "attributes/mental-attributes",
@@ -2518,7 +2605,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "attributes/overview",
@@ -2542,7 +2630,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "attributes/physical-attributes",
@@ -2566,7 +2655,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/advantage",
@@ -2590,7 +2680,8 @@
   ],
   "flags": [],
   "notes": "Includes Gaining Advantage, GM notes, and contested-roll guidance.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/contested-rolls",
@@ -2614,7 +2705,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/d100-or-percentage",
@@ -2638,7 +2730,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/decision-rolls",
@@ -2662,7 +2755,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/key-terms",
@@ -2686,7 +2780,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/resolving-a-tie",
@@ -2710,7 +2805,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/success-and-failure",
@@ -2734,7 +2830,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/supply-rolls",
@@ -2758,7 +2855,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/target-numbers",
@@ -2782,7 +2880,8 @@
   ],
   "flags": [],
   "notes": "Includes the difficulty guide table and the four task-band descriptions.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "basics/the-rounding-rule",
@@ -2806,7 +2905,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "bots/automated-machines",
@@ -2831,7 +2931,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "bots/bal",
@@ -2852,12 +2953,12 @@
   "in_degree": 0,
   "tags": [
    "bots",
-   "drones",
-   "wip"
+   "drones"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "bots/hel-1",
@@ -2878,12 +2979,12 @@
   "in_degree": 0,
   "tags": [
    "bots",
-   "drones",
-   "wip"
+   "drones"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "bots/t00l",
@@ -2903,12 +3004,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "bots",
-   "wip"
+   "bots"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "bots/trk-a",
@@ -2928,12 +3029,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "bots",
-   "wip"
+   "bots"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "chargen/overview",
@@ -2957,7 +3058,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/actions-in-combat",
@@ -2981,7 +3083,8 @@
   ],
   "flags": [],
   "notes": "Aggressive/defensive classification intro; its own block so action blocks can reference it.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/attacking-and-defending",
@@ -3005,7 +3108,8 @@
   ],
   "flags": [],
   "notes": "Merged: The Attack Roll + Advantage and Disadvantage in Combat (per ruling).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/brace",
@@ -3031,7 +3135,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/combat-basics",
@@ -3055,7 +3160,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/cover",
@@ -3079,7 +3185,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/damage",
@@ -3097,13 +3204,14 @@
   "type": "rule",
   "tier": "core",
   "reference": "high",
-  "in_degree": 6,
+  "in_degree": 3,
   "tags": [
    "combat"
   ],
   "flags": [],
   "notes": "Merged: formula + damage dice (via snippet include) + modifiers + types (per ruling).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/damage-dice",
@@ -3129,7 +3237,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/damage-resistance",
@@ -3153,7 +3262,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/damage-sources",
@@ -3177,7 +3287,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/disarm",
@@ -3203,7 +3314,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/draw-a-weapon",
@@ -3229,7 +3341,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/grapple",
@@ -3255,7 +3368,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/initiative",
@@ -3281,7 +3395,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/opportunity-attack",
@@ -3307,7 +3422,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/shatter",
@@ -3333,7 +3449,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/stand",
@@ -3359,7 +3476,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/standard-attack",
@@ -3385,7 +3503,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/stealth",
@@ -3411,7 +3530,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/steps-to-an-attack",
@@ -3435,7 +3555,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/surprise-attacks",
@@ -3459,7 +3580,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/trip",
@@ -3485,7 +3607,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/unarmed-attack",
@@ -3511,7 +3634,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "combat/use-cover",
@@ -3537,7 +3661,8 @@
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "components/audio-processor",
@@ -3564,6 +3689,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Advantage on hearing-based INS, filter functions"
  },
  {
@@ -3591,6 +3717,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+2 STR for physical tasks while powered"
  },
  {
@@ -3618,6 +3745,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Auto-deploys on Dying; 1 use, 4 AP to restock"
  },
  {
@@ -3645,6 +3773,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Secondary Medium battery housing"
  },
  {
@@ -3670,7 +3799,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "components/heavy-wrist-laser",
@@ -3697,6 +3827,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Mounted laser rifle equivalent"
  },
  {
@@ -3724,6 +3855,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Resist burn, ignore heat environmental effects"
  },
  {
@@ -3749,7 +3881,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "components/internal-comp-jack",
@@ -3777,6 +3910,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Comp Jack without occupying hands"
  },
  {
@@ -3804,6 +3938,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+2 DEX for fine motor tasks while powered"
  },
  {
@@ -3831,6 +3966,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Low-light, thermal, zoom"
  },
  {
@@ -3856,7 +3992,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "components/power-sources",
@@ -3881,7 +4018,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "components/reinforced-chassis-plating",
@@ -3908,6 +4046,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+3 DEF Bonus"
  },
  {
@@ -3935,6 +4074,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Sync into a shared sensor network"
  },
  {
@@ -3962,6 +4102,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Self-repair 1 VIT per long rest"
  },
  {
@@ -3989,6 +4130,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+10ft speed, +5ft jump while powered"
  },
  {
@@ -4016,6 +4158,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Partial cover while active. 1d12 Supply Die"
  },
  {
@@ -4045,6 +4188,7 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Increases com range to 500 miles"
  },
  {
@@ -4074,6 +4218,7 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Increases com range to 20 miles"
  },
  {
@@ -4101,6 +4246,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Resist knockdown, no falling damage under 20ft"
  },
  {
@@ -4128,6 +4274,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+1 DEF Bonus, no slot conflict"
  },
  {
@@ -4155,6 +4302,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "+1 ranged ATK, limited daily uses"
  },
  {
@@ -4182,6 +4330,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": true,
   "summary": "Mounted laser pistol equivalent"
  },
  {
@@ -4207,6 +4356,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious"
  },
  {
@@ -4232,6 +4382,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks"
  },
  {
@@ -4257,6 +4408,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress"
  },
  {
@@ -4277,13 +4429,13 @@
   "reference": "medium",
   "in_degree": 3,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "All speeds -10, +1 Stress if using 3+ AP"
+  "wip": false,
+  "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain advantage"
  },
  {
   "id": "conditions/dead-battery",
@@ -4309,7 +4461,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "conditions/dying",
@@ -4329,12 +4482,12 @@
   "reference": "medium",
   "in_degree": 2,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
  },
  {
@@ -4355,13 +4508,13 @@
   "reference": "medium",
   "in_degree": 2,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "-2 STR, AGI, and DEX, -2 AP/round"
+  "wip": false,
+  "summary": "-2 STR, AGI, and DEX, -2 AP/round — attackers gain advantage"
  },
  {
   "id": "conditions/frightened",
@@ -4386,6 +4539,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "-2 INS, +1 Stress"
  },
  {
@@ -4406,12 +4560,12 @@
   "reference": "low",
   "in_degree": 1,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cannot take physical actions — DEX and AGI treated as null"
  },
  {
@@ -4434,7 +4588,8 @@
   "tags": [],
   "flags": [],
   "notes": "Condition framing + summary table.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "conditions/pinned",
@@ -4459,6 +4614,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Only physical action is to escape the pin"
  },
  {
@@ -4479,12 +4635,12 @@
   "reference": "medium",
   "in_degree": 4,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
  },
  {
@@ -4505,13 +4661,13 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
-  "summary": "Physical actions limited — affected limb unusable"
+  "wip": false,
+  "summary": "Physical actions limited — affected limb unusable, attackers gain advantage"
  },
  {
   "id": "conditions/shaken",
@@ -4536,6 +4692,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "-1 to all decision rolls, -2 max DEF, +1 Stress"
  },
  {
@@ -4556,12 +4713,12 @@
   "reference": "low",
   "in_degree": 1,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
  },
  {
@@ -4587,6 +4744,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cannot use Luck, -1 to all decision rolls per point over threshold"
  },
  {
@@ -4607,12 +4765,12 @@
   "reference": "medium",
   "in_degree": 3,
   "tags": [
-   "condition",
-   "attacker-advantage"
+   "condition"
   ],
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cannot take any actions — attackers gain advantage and surprise"
  },
  {
@@ -4639,7 +4797,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "environment/environmental-effects",
@@ -4663,7 +4822,8 @@
   ],
   "flags": [],
   "notes": "Single block per ruling: exposure intervals, heat & cold, toxic atmosphere, visibility.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "environment/extreme-environments",
@@ -4677,19 +4837,19 @@
   ],
   "anchor": "extreme-environments",
   "category": [
-   "sci-fi"
+   "core"
   ],
   "type": "rule",
-  "tier": "module",
+  "tier": "core",
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "environment",
-   "sci-fi"
+   "environment"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "equipment/armor-basics",
@@ -4714,7 +4874,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "equipment/common-terms",
@@ -4738,7 +4899,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "equipment/medkit-note",
@@ -4763,7 +4925,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": false
+  "selectable": false,
+  "wip": false
  },
  {
   "id": "equipment/shields-basics",
@@ -4788,7 +4951,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "generic-equipment/animal-feed",
@@ -4815,6 +4979,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "One day of feed for one mount or pack animal."
  },
  {
@@ -4842,6 +5007,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Prevents infection and aids wound recovery."
  },
  {
@@ -4869,6 +5035,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Removes or reduces toxin-based conditions."
  },
  {
@@ -4896,6 +5063,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+20 max carry weight."
  },
  {
@@ -4923,6 +5091,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Preserves food, seasons meals, and has various utility uses."
  },
  {
@@ -4952,6 +5121,7 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Closes and covers major wounds."
  },
  {
@@ -4981,6 +5151,7 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Closes and covers minor wounds."
  },
  {
@@ -5008,6 +5179,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Holds up to 30 gallons of liquid or dry goods."
  },
  {
@@ -5035,6 +5207,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Basic sleeping gear. Packs down for travel."
  },
  {
@@ -5062,6 +5235,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bound book with approximately 100 blank pages."
  },
  {
@@ -5089,6 +5263,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cleaning agent. Multiple uses per block."
  },
  {
@@ -5116,6 +5291,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "8hr burn. 5ft bright light, 10ft dim light."
  },
  {
@@ -5143,6 +5319,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Waterproofing, sealing, and lubricating."
  },
  {
@@ -5170,6 +5347,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heavy duty restraint and utility chain."
  },
  {
@@ -5197,6 +5375,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "For marking surfaces, writing, and sketching."
  },
  {
@@ -5224,6 +5403,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "25ft of thin metal wire for snares, repairs, and binding."
  },
  {
@@ -5251,6 +5431,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Cheap liquor. Also useful as a disinfectant and solvent."
  },
  {
@@ -5278,6 +5459,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Aids in maintaining direction of travel.",
   "label": "Compass"
  },
@@ -5306,6 +5488,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "General purpose bulk storage."
  },
  {
@@ -5333,6 +5516,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Waterproof bag for protecting contents from moisture."
  },
  {
@@ -5360,6 +5544,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Protects against dust, sand, and mild airborne hazards."
  },
  {
@@ -5387,6 +5572,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "One day of food for one person.",
   "variant_group": "field-ration"
  },
@@ -5415,6 +5601,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Flint & steel or equivalent. Reliably starts fires."
  },
  {
@@ -5442,6 +5629,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Refuels a lantern for 4hrs. Flammable."
  },
  {
@@ -5469,6 +5657,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Attaches to rope. Throwable [30ft]."
  },
  {
@@ -5496,6 +5685,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Partial protection from cold and rain. Covers equipped gear."
  },
  {
@@ -5523,6 +5713,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "For writing on parchment, paper, or similar surfaces."
  },
  {
@@ -5550,6 +5741,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "For securing things that need nailing down."
  },
  {
@@ -5577,6 +5769,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bulky. Secure storage for valuables."
  },
  {
@@ -5604,6 +5797,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 bonus to STR checks for prying and leverage."
  },
  {
@@ -5631,6 +5825,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Metal restraints for binding a creature's wrists."
  },
  {
@@ -5658,6 +5853,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "4hrs per fuel flask. Can be hooded. 30ft bright, 30ft dim."
  },
  {
@@ -5685,6 +5881,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Writing surfaces. Pack of five sheets."
  },
  {
@@ -5712,6 +5909,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Metal spikes hammered into surfaces for climbing."
  },
  {
@@ -5741,6 +5939,7 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Holds ammunition for use during combat."
  },
  {
@@ -5770,11 +5969,12 @@
   ],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Holds small items for quick access."
  },
  {
   "id": "generic-equipment/pouch-set-standard",
-  "title": "Pouch Set, standard",
+  "title": "Pouch Set, Standard",
   "home": "snippet",
   "file": "content/snippets/generic-equipment/pouch-set-standard.md",
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
@@ -5799,8 +5999,8 @@
   ],
   "notes": "",
   "selectable": true,
-  "summary": "Holds most handheld items for quick access.",
-  "label": "Pouch Set, Standard"
+  "wip": false,
+  "summary": "Holds most handheld items for quick access."
  },
  {
   "id": "generic-equipment/quiver",
@@ -5827,6 +6027,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Holds ranged weapon ammunition."
  },
  {
@@ -5854,6 +6055,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Keeps the wearer dry. Covers equipped gear."
  },
  {
@@ -5881,6 +6083,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Provides improved footing on rough terrain."
  },
  {
@@ -5908,6 +6111,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heals 1 VIT or attribute damage."
  },
  {
@@ -5935,6 +6139,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "General purpose rope. Supports up to 500lbs."
  },
  {
@@ -5962,6 +6167,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Pair of bags designed for a mount. +60 max carry weight for the mount."
  },
  {
@@ -5989,6 +6195,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "A mid-sized bag for documents or light supplies."
  },
  {
@@ -6016,6 +6223,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Needle, thread, and patches for basic repairs to fabric and leather."
  },
  {
@@ -6043,6 +6251,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "For digging."
  },
  {
@@ -6070,6 +6279,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Reflects light to signal over long distances in daylight."
  },
  {
@@ -6097,6 +6307,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Audible up to half a mile in open terrain."
  },
  {
@@ -6124,6 +6335,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "A tiny bell useful as a simple alarm or signal device."
  },
  {
@@ -6151,6 +6363,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Stabilizes broken or fractured limbs."
  },
  {
@@ -6178,6 +6391,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Basic shelter for two."
  },
  {
@@ -6205,6 +6419,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bulky. Shelter for four with room for gear."
  },
  {
@@ -6232,6 +6447,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "1hr burn. Single use."
  },
  {
@@ -6259,6 +6475,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "100ft of light cord."
  },
  {
@@ -6286,6 +6503,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Carries up to half a gallon of liquid."
  },
  {
@@ -6313,6 +6531,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Sharpens and maintains edged weapons."
  },
  {
@@ -6340,6 +6559,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Minor protectiob from sun and light rain."
  },
  {
@@ -6367,6 +6587,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Sharpened wooden stakes for tents, traps, or other uses."
  },
  {
@@ -6394,6 +6615,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Protects hands during labor and rough handling."
  },
  {
@@ -6421,7 +6643,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "health/overview",
@@ -6445,7 +6668,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "inventory/body-slots",
@@ -6469,7 +6693,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "inventory/carry-limits",
@@ -6493,7 +6718,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/adaptive-mesh",
@@ -6517,7 +6743,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/arcing",
@@ -6541,7 +6768,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/ballistic",
@@ -6565,7 +6793,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/battery",
@@ -6589,7 +6818,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/belt-fed",
@@ -6613,7 +6843,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/bulky",
@@ -6637,7 +6868,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/concealable",
@@ -6661,7 +6893,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/durable",
@@ -6685,7 +6918,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/firing-modes",
@@ -6709,7 +6943,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/fragile",
@@ -6733,7 +6968,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/fuel-cells",
@@ -6757,7 +6993,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/injector",
@@ -6781,7 +7018,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/long-reload",
@@ -6805,7 +7043,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/power-source",
@@ -6829,7 +7068,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/pressurized",
@@ -6853,7 +7093,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/rounds-reload",
@@ -6877,7 +7118,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/space-suit",
@@ -6901,7 +7143,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/throwable",
@@ -6925,7 +7168,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/two-handed",
@@ -6949,7 +7193,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "item-tags/versatile",
@@ -6973,7 +7218,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "movement/primary-speed",
@@ -6999,7 +7245,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "movement/speed-descriptors",
@@ -7025,7 +7272,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "movement/speed-tiers",
@@ -7051,7 +7299,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "movement/speed-tiers-chart",
@@ -7077,7 +7326,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/armor-degradation",
@@ -7103,7 +7353,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/conditions",
@@ -7127,7 +7378,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/durability",
@@ -7151,7 +7403,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/material-def",
@@ -7175,7 +7428,8 @@
   ],
   "flags": [],
   "notes": "Reference tables (material DEF, common item DEF).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/overview",
@@ -7199,7 +7453,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/shield-degradation",
@@ -7225,7 +7480,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "objects/targeting-objects",
@@ -7249,7 +7505,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "proficiencies/armor",
@@ -7275,6 +7532,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of a selected armor type.",
   "label": "Armor [___]"
  },
@@ -7302,6 +7560,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of the B&E kit."
  },
  {
@@ -7329,6 +7588,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Specialized training in computer systems and the comp jack."
  },
  {
@@ -7355,6 +7615,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of the disguise kit."
  },
  {
@@ -7381,6 +7642,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in maintenance and repair of robotic parts and models."
  },
  {
@@ -7407,6 +7669,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of the Tech Kit."
  },
  {
@@ -7433,6 +7696,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Special training with a particular ability.",
   "label": "Improved Ability [___]"
  },
@@ -7460,6 +7724,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Add INS bonus to Vehicle Proficiency rolls.",
   "label": "Licensed Instincts [___]",
   "requires": [
@@ -7490,6 +7755,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained to fight unarmed as effectively as armed."
  },
  {
@@ -7516,6 +7782,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of the med kit."
  },
  {
@@ -7542,6 +7809,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Add INS to Medic Training rolls.",
   "requires": [
    "proficiencies/medic-training"
@@ -7571,6 +7839,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 bonus on rolls to negotiate, broker deals, or de-escalate conflict."
  },
  {
@@ -7596,7 +7865,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "proficiencies/repair-kit",
@@ -7622,6 +7892,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Trained in the use of the repair kit."
  },
  {
@@ -7648,6 +7919,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 bonus on KNO checks related to a chosen field of study.",
   "label": "Research [___]"
  },
@@ -7675,6 +7947,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 bonus on rolls to navigate, forage, track, or endure harsh environments."
  },
  {
@@ -7701,6 +7974,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Familiar with a type of vehicle.",
   "label": "Vehicle [___]"
  },
@@ -7728,6 +8002,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Specialized training with a selected weapon type.",
   "label": "Weapon [___]"
  },
@@ -7750,12 +8025,12 @@
   "in_degree": 2,
   "tags": [
    "races",
-   "sci-fi",
-   "wip"
+   "sci-fi"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "races/classic-human",
@@ -7780,7 +8055,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "races/overview",
@@ -7798,14 +8074,15 @@
   "type": "reference",
   "tier": "core",
   "reference": "medium",
-  "in_degree": 2,
+  "in_degree": 3,
   "tags": [
    "races",
    "character-creation"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "races/reptilian",
@@ -7826,12 +8103,12 @@
   "in_degree": 1,
   "tags": [
    "races",
-   "sci-fi",
-   "wip"
+   "sci-fi"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "races/star-touched-human",
@@ -7852,12 +8129,12 @@
   "in_degree": 1,
   "tags": [
    "races",
-   "sci-fi",
-   "wip"
+   "sci-fi"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "races/zeta-grey",
@@ -7878,12 +8155,12 @@
   "in_degree": 1,
   "tags": [
    "races",
-   "sci-fi",
-   "wip"
+   "sci-fi"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "sci-fi-equipment/ara-5",
@@ -7910,6 +8187,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Single use. Removes radiation wounds and conditions within 1hr.",
   "label": "ARA-5"
  },
@@ -7939,6 +8217,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Neck slot. Auto-administers a preloaded injector on trauma."
  },
  {
@@ -7968,6 +8247,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Full-auto. Concealable. 20ft range."
  },
  {
@@ -7995,6 +8275,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bulky. Locks, traps, bypass tools."
  },
  {
@@ -8022,6 +8303,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+3 DEF, 1d12 Supply"
  },
  {
@@ -8050,6 +8332,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Minimum protection for airless environments."
  },
  {
@@ -8077,6 +8360,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Portable power available in multiple sizes."
  },
  {
@@ -8104,6 +8388,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Scans organic matter. 2 AP, 5ft range."
  },
  {
@@ -8131,6 +8416,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Creates a near-perfect disguise."
  },
  {
@@ -8159,6 +8445,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range."
  },
  {
@@ -8186,6 +8473,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "10ft directional burst for 1 AP; does not provoke Opportunity Attacks."
  },
  {
@@ -8214,6 +8502,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Active camouflage system."
  },
  {
@@ -8242,6 +8531,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Advances space suit popular among pilots and hazardous atmosphere workers."
  },
  {
@@ -8269,6 +8559,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 DEF 1d8 Supply"
  },
  {
@@ -8297,6 +8588,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Advanced space suit designed for tactical use."
  },
  {
@@ -8325,6 +8617,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Simple protective vest. No AGI/DEX penalty."
  },
  {
@@ -8353,6 +8646,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Required for interfacing with computer systems."
  },
  {
@@ -8382,6 +8676,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Full-auto. Two-handed. 30ft range."
  },
  {
@@ -8409,6 +8704,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Wireless connection for com devices."
  },
  {
@@ -8437,6 +8733,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Head [Coms]. Encrypted radio, 1 mile range."
  },
  {
@@ -8464,6 +8761,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Single use. Stabilizes a Dying Android or automated machine."
  },
  {
@@ -8492,6 +8790,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Disposable high-speed USB data extraction device."
  },
  {
@@ -8519,6 +8818,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Mimics com signals and life signs for 1hr."
  },
  {
@@ -8546,6 +8846,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Alters appearance, applies camouflage."
  },
  {
@@ -8574,6 +8875,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "All ballistic. Increased ammo die size."
  },
  {
@@ -8601,6 +8903,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Sends a distress signal across a star system for 72hrs."
  },
  {
@@ -8630,6 +8933,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Throwable [20ft]."
  },
  {
@@ -8657,6 +8961,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "30 minutes of clean oxygen."
  },
  {
@@ -8685,6 +8990,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Arm slot. Single-use ranged or melee weapon."
  },
  {
@@ -8712,6 +9018,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Single use. Closes lacerations and punctures. Works on Evosuits."
  },
  {
@@ -8740,6 +9047,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "No-frills armor favored by private security."
  },
  {
@@ -8768,6 +9076,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "An early model space suit, well equipped but bulky."
  },
  {
@@ -8796,6 +9105,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Pistols, Rifles. +20ft normal range."
  },
  {
@@ -8823,6 +9133,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "One day of nutrients for one person.",
   "variant_group": "field-ration"
  },
@@ -8852,6 +9163,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heavy Ranged. Partial cover, -1 attack while active."
  },
  {
@@ -8879,6 +9191,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Pressurized propellant canisters in small, medium, and large sizes."
  },
  {
@@ -8906,6 +9219,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Magnetic grappling hook."
  },
  {
@@ -8933,6 +9247,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "10ft gravity field, 10 min per roll."
  },
  {
@@ -8961,6 +9276,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Helmet [HUD]. Lowers hazard detection checks within 10ft."
  },
  {
@@ -8990,6 +9306,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Single shot. 50ft range."
  },
  {
@@ -9019,6 +9336,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range."
  },
  {
@@ -9046,6 +9364,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+10ft to horizontal and vertical jump."
  },
  {
@@ -9073,6 +9392,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Vertical launch up to 25ft or controlled arc; reduces fall damage."
  },
  {
@@ -9099,7 +9419,8 @@
   ],
   "flags": [],
   "notes": "Kit supply mechanics (1d12 supply, refills, tools-only actions).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "sci-fi-equipment/knuckle-taser",
@@ -9128,6 +9449,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Hand slot. Built in shock charger for a shocking punch."
  },
  {
@@ -9157,6 +9479,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Battery [small]. Single shot. Burn. 60ft range."
  },
  {
@@ -9186,6 +9509,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range."
  },
  {
@@ -9214,6 +9538,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Concealable. Lower profile version of the combat vest."
  },
  {
@@ -9243,6 +9568,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Semi-auto. Concealable. 30ft range."
  },
  {
@@ -9270,6 +9596,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "500 mile range. Connects to local networks."
  },
  {
@@ -9299,6 +9626,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range."
  },
  {
@@ -9326,6 +9654,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
  },
  {
@@ -9353,6 +9682,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Encrypted magnetic handcuffs with wrist controller."
  },
  {
@@ -9381,6 +9711,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
  },
  {
@@ -9408,6 +9739,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heals wounds and conditions."
  },
  {
@@ -9435,6 +9767,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Direct contact laser cutter/welder."
  },
  {
@@ -9462,6 +9795,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "1 mile range. Connects to local networks."
  },
  {
@@ -9490,6 +9824,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "All battery ranged. 3/day increase a damage die by one size."
  },
  {
@@ -9518,6 +9853,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Offers greater protection than a standard coverall."
  },
  {
@@ -9545,6 +9881,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Variable dosage. Suppresses condition effects temporarily."
  },
  {
@@ -9572,6 +9909,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "10pts protection for up to 3 rounds."
  },
  {
@@ -9599,6 +9937,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Heats a small area."
  },
  {
@@ -9626,6 +9965,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Purifies up to 5 gallons per supply roll."
  },
  {
@@ -9653,6 +9993,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Self-charging power cores for automated machines."
  },
  {
@@ -9681,6 +10022,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "All ballistic. +1 attack, negates zero-g knockback."
  },
  {
@@ -9709,6 +10051,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "All ranged. +2 to attacks at normal range."
  },
  {
@@ -9736,6 +10079,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Detonates rigged explosives or systems."
  },
  {
@@ -9763,6 +10107,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bulky. Machinery, vehicles, structures."
  },
  {
@@ -9792,6 +10137,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Two-handed. Deals +5 shatter damage to armor."
  },
  {
@@ -9820,6 +10166,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Back. A propulsion unit for navigating in zero gravity."
  },
  {
@@ -9848,6 +10195,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Grants an extra body slot and +50 max carry weight."
  },
  {
@@ -9876,6 +10224,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Tactical variation of the padded flight suit."
  },
  {
@@ -9905,6 +10254,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Built in shock charger."
  },
  {
@@ -9933,6 +10283,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "All melee. +2 damage, changes type to shock. FORT check or lose 1 AP."
  },
  {
@@ -9962,6 +10313,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
  },
  {
@@ -9989,6 +10341,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Emits a false bio-signature to scanners."
  },
  {
@@ -10017,6 +10370,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Basic corporate-approved protective gear."
  },
  {
@@ -10044,6 +10398,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Charges micro through large batteries via solar."
  },
  {
@@ -10071,6 +10426,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "30pts protection, 20ft radius, up to 6 rounds."
  },
  {
@@ -10100,6 +10456,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Concealable. Throwable [10ft]."
  },
  {
@@ -10129,6 +10486,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Ballistic. Semi-auto. Two-handed. 40ft range."
  },
  {
@@ -10156,6 +10514,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Pressurized 10×10ft shelter for four."
  },
  {
@@ -10184,6 +10543,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Helmet [HUD]. Lock on to lower target number for ranged attacks."
  },
  {
@@ -10211,6 +10571,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Electronic components and equipment."
  },
  {
@@ -10239,6 +10600,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Most advanced Evosuit available."
  },
  {
@@ -10266,6 +10628,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Single use. Heals 1 VIT or attribute damage."
  },
  {
@@ -10294,6 +10657,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Medium melee, polearms, two-handed. +3 damage. Loses throwable tag."
  },
  {
@@ -10320,7 +10684,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "sci-fi/communications",
@@ -10347,7 +10712,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "sci-fi/computer-systems",
@@ -10372,7 +10738,8 @@
   ],
   "flags": [],
   "notes": "Networks, security levels, hacking actions, countermeasures as one unit.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "sci-fi/energy-shields",
@@ -10399,7 +10766,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "sci-fi/huds",
@@ -10425,7 +10793,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "site/announcement",
@@ -10453,6 +10822,7 @@
   ],
   "notes": "",
   "selectable": false,
+  "wip": false,
   "excluded": true
  },
  {
@@ -10480,45 +10850,7 @@
   ],
   "notes": "",
   "selectable": true,
-  "excluded": true
- },
- {
-  "id": "site/wip-announcement",
-  "title": "Wip Announcement",
-  "home": "snippet",
-  "file": "content/snippets/site/wip-announcement.md",
-  "source_page": "content/docs/free-srd/character-creation/races/_index.md",
-  "pages": [
-   "content/docs/free-srd/character-creation/races/_index.md",
-   "content/docs/free-srd/character-creation/races/android.md",
-   "content/docs/free-srd/character-creation/races/classic-human.md",
-   "content/docs/free-srd/character-creation/races/reptilian.md",
-   "content/docs/free-srd/character-creation/races/star-touched-human.md",
-   "content/docs/free-srd/character-creation/races/zeta-grey.md",
-   "content/docs/free-srd/core-rules/vehicle-rules.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md"
-  ],
-  "anchor": null,
-  "category": [
-   "core"
-  ],
-  "type": "reference",
-  "tier": "core",
-  "reference": "high",
-  "in_degree": 10,
-  "tags": [
-   "site-chrome"
-  ],
-  "flags": [
-   "excluded: site chrome, not a buildable block"
-  ],
-  "notes": "",
-  "selectable": false,
+  "wip": false,
   "excluded": true
  },
  {
@@ -10545,7 +10877,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "stats/attack",
@@ -10569,7 +10902,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "stats/defense",
@@ -10595,7 +10929,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "stats/luck",
@@ -10620,7 +10955,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "stats/stress-threshold",
@@ -10644,7 +10980,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "stats/vitality",
@@ -10670,7 +11007,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "traits/alert",
@@ -10696,6 +11034,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+4 to initiative."
  },
  {
@@ -10722,6 +11061,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Re-roll one decision die after your first failed WILL check each session."
  },
  {
@@ -10748,6 +11088,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 to persuasion rolls."
  },
  {
@@ -10774,6 +11115,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Gain temporary +2 AP the first time you take VIT damage each session."
  },
  {
@@ -10800,6 +11142,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Immune system hardened by travel between planets."
  },
  {
@@ -10826,6 +11169,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 to intimidation rolls."
  },
  {
@@ -10852,6 +11196,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bonus to max Luck."
  },
  {
@@ -10878,6 +11223,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+1 bonus to max Stress Threshold."
  },
  {
@@ -10903,7 +11249,8 @@
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "traits/particularly-attractive",
@@ -10929,6 +11276,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 to persuasion rolls with someone who finds you attractive."
  },
  {
@@ -10955,35 +11303,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+1 bonus to VIT."
- },
- {
-  "id": "traits/racial-traits",
-  "title": "Racial Traits",
-  "home": "snippet",
-  "file": "content/snippets/traits/racial-traits.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
-  "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
-  ],
-  "anchor": "racial-traits",
-  "category": [
-   "core"
-  ],
-  "type": "rule",
-  "tier": "core",
-  "reference": "low",
-  "in_degree": 0,
-  "tags": [
-   "character-creation",
-   "racial",
-   "trait"
-  ],
-  "flags": [
-   "needs-review: possibly obsolete since Races were added (per ruling note)"
-  ],
-  "notes": "The [Racial] label rule.",
-  "selectable": true
  },
  {
   "id": "traits/scrap-hauler",
@@ -11009,6 +11330,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Accustomed to carrying heavy loads in different environments."
  },
  {
@@ -11035,6 +11357,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 to deception rolls."
  },
  {
@@ -11061,6 +11384,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 to stealth rolls."
  },
  {
@@ -11087,6 +11411,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Accustomed to zero and low-gravity environments."
  },
  {
@@ -11113,6 +11438,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Resist manipulation and deception."
  },
  {
@@ -11139,6 +11465,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "DEF bonus."
  },
  {
@@ -11165,6 +11492,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+2 bonus to blend into a crowd or visually hide your identity."
  },
  {
@@ -11191,6 +11519,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Resistant to fear and distraction."
  },
  {
@@ -11217,6 +11546,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Declare a contact once per session in your current location."
  },
  {
@@ -11237,12 +11567,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/collision-damage",
@@ -11262,12 +11592,12 @@
   "reference": "medium",
   "in_degree": 2,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "Includes damage-to-vehicle and occupant brace rules.",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/cover-from-vehicles",
@@ -11287,12 +11617,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/drive",
@@ -11312,12 +11642,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/ignition",
@@ -11337,12 +11667,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/impact-and-overrun",
@@ -11362,12 +11692,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/initiative-and-occupants",
@@ -11387,12 +11717,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/mounts",
@@ -11412,12 +11742,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "Queue 5: could split into equipment-vs-ally / features / unwilling / impact / sudden stops.",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/overview",
@@ -11437,12 +11767,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/vehicle-actions",
@@ -11462,12 +11792,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "Intro + Driver Actions disadvantage rule.",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "vehicles/vehicle-size",
@@ -11487,12 +11817,12 @@
   "reference": "low",
   "in_degree": 0,
   "tags": [
-   "vehicles",
-   "wip"
+   "vehicles"
   ],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "wounds/burn",
@@ -11517,6 +11847,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "+1 Stress until dressed"
  },
  {
@@ -11539,7 +11870,8 @@
   "tags": [],
   "flags": [],
   "notes": "",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "wounds/contusion",
@@ -11564,6 +11896,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Crippled"
  },
  {
@@ -11589,6 +11922,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Crippled or Restrained"
  },
  {
@@ -11614,6 +11948,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Shaken, +1 Stress — may add Bleeding, Crippled, or Confused"
  },
  {
@@ -11639,6 +11974,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bleeding"
  },
  {
@@ -11661,7 +11997,8 @@
   "tags": [],
   "flags": [],
   "notes": "Intro; overlaps the stats-page summary (Queue 2 identity flag).",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  },
  {
   "id": "wounds/puncture",
@@ -11686,6 +12023,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Bleeding"
  },
  {
@@ -11711,6 +12049,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
+  "wip": false,
   "summary": "Crippled or Restrained"
  },
  {
@@ -11733,6 +12072,7 @@
   "tags": [],
   "flags": [],
   "notes": "Minor/major classification, dressing/healing rules, narrative healing.",
-  "selectable": true
+  "selectable": true,
+  "wip": false
  }
 ]

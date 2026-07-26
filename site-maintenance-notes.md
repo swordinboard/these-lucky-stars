@@ -119,9 +119,9 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
 4. **Anchors are generated from heading text, and keep unusual characters.**
    `### Crippled Δ` becomes `#crippled-δ`, not `#crippled`; underscores are kept
    (`Restrained [___]` → `#restrained-___`). Avoid decorative characters in
-   headings you intend to link to. If a marker is needed (like the Δ that flags
-   attacker-advantage conditions), put it in the summary table and the `details`
-   label, not in the heading.
+   headings you intend to link to. Marker glyphs are a dead end generally — the Δ
+   that used to flag attacker-advantage conditions broke seven anchor families,
+   and was retired in favour of each condition simply saying so in its own text.
 
 5. **Snippets are never published as pages.** `content/snippets/_index.md` sets
    `build: render: never` with a cascade — do not remove it.
@@ -154,11 +154,40 @@ each item's own entry.
 
 ---
 
-## Canonical data (`data/blocks.json`, `data/edges.json`)
+## Work-in-progress pages (`wip: true`)
+
+One frontmatter key marks a page unfinished:
+
+```yaml
+wip: true
+```
+
+Omit it and the page is finished — there is no `wip: false` to write. Setting it:
+
+1. **Renders the notice banner** above the page content. The banner text lives in
+   `layouts/_partials/docs/inject/content-before.html` and nowhere else — edit it
+   there. (It is injected by the theme's `content-before` hook, so it sits outside
+   `<article>`; that is why it no longer appears in the search index, which is an
+   improvement — it used to match 13 pages.)
+2. **Marks every block on the page `wip`** in `data/blocks.json`, so the PDF
+   builder can exclude unfinished rules. A snippet shown on both a finished and an
+   unfinished page is *not* marked wip.
+
+`wip` is deliberately **independent of `bookHidden`**. Hiding a page from the nav
+is an organisational choice (long pages that a list page links to instead); it
+says nothing about whether the content is finished. WIP pages stay indexed and
+searchable by design.
+
+There is no `wip` *tag* — it was removed as redundant once the flag was computed.
+
+---
+
+## Canonical data (`data/blocks.json`, `data/edges.json`, `data/related.json`)
 
 Generated from the content tree. Hugo loads `data/` automatically, so templates
 can read `site.Data.blocks`; the Phase 4 PDF builder is the main intended
-consumer. Nothing on the site reads them yet.
+consumer. The only thing the live site reads today is `related.json`, via the
+`related` shortcode.
 
 **Regenerate after any structural content change:**
 
@@ -168,6 +197,8 @@ python3 _discovery/tools/builddata.py
 
 - `blocks.json` — every block with its frontmatter, plus computed `anchor`,
   `pages` (every page it appears on), `in_degree`, and `source_page`.
+- `related.json` — per-page Related lists derived from the edge graph (see
+  below). Rebuilt with the other two.
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
   the target — feature prerequisites), `reference` (stands alone but points at
   the target; the builder surfaces it as a fillable hole), `mention` (inert,
@@ -176,6 +207,32 @@ python3 _discovery/tools/builddata.py
 `reference` in a block's frontmatter is **authored** — `builddata.py` reads it,
 it does not overwrite it. `in_degree` next to it is recomputed each run, so if
 the two disagree wildly that is a hint to re-rate the block by hand.
+
+---
+
+## Related sections (the `related` shortcode)
+
+```
+## Related
+
+{{< related >}}
+```
+
+Renders the page's Related list from `data/related.json`. Two pages are related
+when blocks on one reference blocks homed on the other, in either direction;
+outbound links count double in the ordering. Each row's blurb is the target
+page's `description`, minus the SEO lead-in.
+
+- Keep the markdown `## Related` heading in the page — the shortcode emits only
+  the list, so the heading still reaches the table of contents.
+- `{{< related limit="4" >}}` trims to the strongest N.
+- It renders **nothing** when the page has no entry in `related.json`, so only
+  place it where there is data. `builddata.py` prints how many pages have lists.
+
+**The generated list is not a drop-in replacement for a hand-written one.** The
+hand-written `## Related` lists on five core-rules pages encode where a reader
+*should* go next, which the graph cannot know — it only sees where the prose
+happens to link. `_discovery/04-phase3-worksheets.md` has the side-by-side.
 
 ---
 
@@ -190,6 +247,7 @@ Live, in `_discovery/tools/`:
 | `linkcheck.py` | Broken links/anchors on a built site: `linkcheck.py <build-dir>` |
 | `rendercheck.py` | Rendered-text diff between two builds: `rendercheck.py <old> <new>` |
 | `snippetlint.py` | Snippet authoring rules |
+| `worksheets.py` | Regenerate `_discovery/04-phase3-worksheets.md` (tags, orphans, implicit edges, Related comparison) |
 | `implicit-edges.json` | Hand-curated rule couplings that have no link in the prose (heat/cold needing exposure intervals, etc.) — edit this to add one |
 
 `_discovery/tools/archive/` holds the one-time Phase 1/2 transformation scripts.

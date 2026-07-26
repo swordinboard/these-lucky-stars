@@ -3,15 +3,14 @@ title: "Reptilian"
 description: "Introducing the Reptilian — A classic sci-fi race of conspiracy and subterfuge"
 weight: 30
 bookHidden: true
+wip: true
 id: races/reptilian
 category: [sci-fi]
 type: feature
 tier: module
 reference: low
-tags: [races, sci-fi, wip]
+tags: [races, sci-fi]
 ---
-
-{{% include "/snippets/site/wip-announcement" %}}
 # Reptilian
 <!-- classic reptilan race -->
 Somewhere from the outer reaches come a race of shapeshifting Reptilians, bent on corruption and subturfuge. Or maybe they're just really, really shy. A classic sci-fi race, popular among politicians, salesmen, and others of similar motivations.
