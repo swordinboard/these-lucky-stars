@@ -43,6 +43,8 @@ This decision determines the entire nav rebuild, so it comes first.
 *My lean: hybrid — core mechanics read better as one book, but catalogs are
 where module separation pays off.*
 
+<!-- i think that hybrid approach is the b3st bet. also, the extreme environments section diesnt technically need to be scifi, it 2as just written with that module sp3cifically in mind. it should probaboy be a regular core rule block. -->
+
 ### A2. WIP content policy
 
 **19 blocks are tagged `wip`:** all 11 Vehicle Rules blocks, 4 races
@@ -56,10 +58,14 @@ substantial but typo-heavy and you've said the style is unsettled.
 `bookHidden` until finished? Also: should `wip` become a *builder* exclusion
 (so a GM's PDF can't pull half-written rules), or stay purely informational?
 
+<!-- discussion answered in chat and work was started on this. -->
+
 ### A3. Nav order — and two live bugs to fix
 
 **Bug 1: weight collision.** `races/_index.md` and `traits.md` are both
 `weight: 10` inside Character Creation, so their relative order is undefined.
+
+<!-- i beleive the nav resorts to alphabetical when pages share a weight. --> 
 
 **Bug 2: hand-written lists disagree with nav order.** Each section `_index.md`
 has a manual bullet list that doesn't match the weights:
@@ -78,6 +84,8 @@ Also worth a look: `docs/free-srd/_index.md` is `weight: 20` while its siblings
 are Roadmap 10, Downloads 30, Legal 100 — so the SRD sits between Roadmap and
 Downloads at the top level. Intentional?
 
+<!-- last note about roadmap order is intentional -->
+
 ### A4. Section index lists: generate or hand-maintain?
 
 Those bullet lists on each section `_index.md` are **duplicated nav** — the same
@@ -87,6 +95,8 @@ drift again.
 
 **Decide:** generate them (recommended — same reasoning as the `catalog`
 shortcode), or keep hand-written for editorial control over blurbs?
+
+<!-- they should be generated, those pages are badically placeholders for accidental lands so i seldom actually see them or think to maintain. these will also change with the restructure, so this may be worth waiting on until we settle nav more permenantly -->
 
 ---
 
@@ -109,6 +119,8 @@ Flagged `needs-review`. It describes the `[Racial]` optional trait list, which
 predates the Races section. Does it still describe live rules, should it point at
 Races, or should it go?
 
+<!-- time to pull it. obsolete, check that there are no [racial] traits. but should be set for removal. -->
+
 ### B8. Robot / drone / Android consolidation
 
 Your words: *"the whole robot/drone/android thing is a mess and needs
@@ -118,7 +130,8 @@ simplification."* The pieces are now cleanly separated as blocks —
 content/structure call rather than an untangling job.
 
 **Decide:** is Android a playable race, a creature type, or both? That answer
-drives where those blocks live in the nav.
+drives where those blocks live in the nav. 
+<!-- android is a playable race. the whole bots/drones section probable belongs in a scifi creatures and npc section -->
 
 ### B9. The `tool-kits` hole
 
@@ -130,12 +143,16 @@ by name in `linkcheck.py`.
 page, or drop the sentence. (If you write the page, remove the exclusion from
 `linkcheck.py` so it stops being a blind spot.)
 
+<!-- we will write it but not this moment -->
+
 ### B10. Burn / Shock in weapon tag lists
 
 Three weapon stat lines list Burn/Shock alongside real item tags, redundant with
 their own `Damage Type:` line. The links now point at Combat → Damage Types.
 
 **Decide:** leave the redundancy, or strip Burn/Shock from the tag lists?
+
+<!-- strip it -->
 
 ---
 
@@ -151,6 +168,9 @@ you can scan for holes. Specific things to confirm:
   internal component, data spike, Ghost Protocol, Rigged Comp Jack, Signal
   Intelligence, Computer Systems). Right membership?
 - `attacker-advantage` — added to the 8 Δ conditions. Complete?
+
+<!-- i dont think we need this as a tag, it just needed to be stated in the descriptions somehow which i had originally done with the ∆, but that is clearky disfunctional. -->
+
 - `melee-weapon` / `ranged-weapon` — added to weapon blocks. Complete?
 - Blocks whose only tags are structural (`equipment, sci-fi`) and may need a
   functional tag to be findable in a tag-as-query pull.
@@ -178,14 +198,28 @@ Last, once structure is settled:
   (3 instances), which you've said you like less. Standardize on `## Related`?
   Note these could also be **generated from `data/edges.json`** rather than
   hand-written — the graph already knows what each page's blocks point at.
+
+<!-- lets generate and see how it feels -->
+
 - **Section landing pages** — do the module/section index pages need real
   orientation prose, or stay as link lists?
+
+<!-- ones that arent reached by nav stay link lists -->
+
 - **A "how this SRD is organized" note** — worth one short page explaining
   blocks/modules to readers, especially once the PDF builder ships.
+
+<!-- this could probably be added to tge free srd index or primary landing page -->
+
 - **Builder announcement** — the roadmap mentions the PDF builder; the site may
   want a placeholder page for it.
+
+<!-- not yet, will add when we have a beta -->
+
 - **`quickref` shortcode** — defined, unused, duplicates `details`. Delete the
   file or keep it parked?
+
+<!-- keep parked -->
 
 ---
 
@@ -204,6 +238,8 @@ If you want to just get moving, these are safe and I'd start here:
 Everything else waits on A1 (module separation), because that decision moves
 pages and I don't want to move them twice.
 
+<!-- good to go on these as well -->
+
 ---
 
 ## Reminders for Phase 3 work
@@ -217,3 +253,5 @@ pages and I don't want to move them twice.
   URL changes.
 - Snippet rules (no trailing HTML comment, heading levels travel, includes fail
   silently) are in `site-maintenance-notes.md`.
+
+<!-- be sure to follow through with any if these when required -->
