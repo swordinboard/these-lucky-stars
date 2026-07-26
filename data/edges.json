@@ -3394,6 +3394,78 @@
   "line": 9
  },
  {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/",
+  "text": "Sci-Fi Additions",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 29
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/character-creation/abilities/",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/abilities/",
+  "text": "Abilities",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 44
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+  "text": "Sci-Fi Weapons",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 62
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+  "text": "Sci-Fi Armor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 63
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
+  "text": "Sci-Fi Tool Kits",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 64
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+  "text": "Sci-Fi Misc Equipment",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 65
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "text": "Robots and Drones",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 66
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "text": "Bots & Drones",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 70
+ },
+ {
   "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/inventory/",
   "type": "reference",

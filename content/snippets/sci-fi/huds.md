@@ -1,5 +1,5 @@
 ---
-title: "Huds"
+title: "Heads Up Displays (HUDs)"
 id: sci-fi/huds
 category: [sci-fi]
 type: rule

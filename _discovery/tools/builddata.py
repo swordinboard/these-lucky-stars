@@ -199,7 +199,11 @@ for bid, b in blocks.items():
 #  * section block -> the host-page heading immediately above its include
 for bid, b in blocks.items():
     hs = PAGES[b["file"]]["headings"]
-    if hs and hugo_anchor(b["title"]) == hs[0]["anchor"]:
+    # owns_heading: the block's file opens with its own title. Section blocks do
+    # NOT — their heading lives on the host page, so anything re-assembling them
+    # elsewhere ({{< blockset >}}, the PDF builder) has to supply the heading.
+    b["owns_heading"] = bool(hs) and hugo_anchor(b["title"]) == hs[0]["anchor"]
+    if b["owns_heading"]:
         b["anchor"] = hs[0]["anchor"]
         continue
     if b["home"] == "page":
@@ -345,8 +349,14 @@ indeg = collections.Counter(e["target"] for e in edges
                             if e["target"] in blocks and not str(e["source"]).startswith("page:"))
 for bid, b in blocks.items():
     b["in_degree"] = indeg[bid]   # computed; `reference` stays the authored frontmatter value
+    # canonical link to where this block is read on the site
+    if b["source_page"]:
+        b["url"] = url_for(b["source_page"]) + (
+            f"#{b['anchor']}" if b["home"] == "snippet" and b["anchor"] else "")
+    else:
+        b["url"] = None
 
-ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "category", "type",
+ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "url", "owns_heading", "category", "type",
          "tier", "reference", "in_degree", "tags", "flags", "notes", "selectable", "wip",
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]

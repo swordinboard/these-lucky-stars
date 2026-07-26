@@ -199,6 +199,8 @@ python3 _discovery/tools/builddata.py
   `pages` (every page it appears on), `in_degree`, and `source_page`.
 - `related.json` — per-page Related lists derived from the edge graph (see
   below). Rebuilt with the other two.
+- Each block also carries a computed `url` (where it is read on the site) and
+  `owns_heading` (whether its own file supplies its heading).
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
   the target — feature prerequisites), `reference` (stands alone but points at
   the target; the builder surfaces it as a fillable hole), `mention` (inert,
@@ -207,6 +209,36 @@ python3 _discovery/tools/builddata.py
 `reference` in a block's frontmatter is **authored** — `builddata.py` reads it,
 it does not overwrite it. `in_degree` next to it is recomputed each run, so if
 the two disagree wildly that is a hint to re-rate the block by hand.
+
+---
+
+## Module pages (the `blockset` shortcode)
+
+```
+{{< blockset category="sci-fi" namespace="abilities" >}}
+{{< blockset category="sci-fi" type="rule" wip="exclude" order="id" level="4" >}}
+```
+
+Where `{{% include %}}` names **one** block, `blockset` names a **set** by
+property and renders every match in full from `data/blocks.json`. Filters
+(AND-ed): `category`, `namespace`, `type`, `tag`, `wip="exclude"`; plus `order`
+(`title` default, or `id`) and `level` (heading level for supplied headings,
+default 3). `excluded: true` blocks never render.
+
+This is how `sci-fi-module.md` is built. A new sci-fi ability appears there as
+soon as the block exists — there is no list to update.
+
+Two things it has to handle, and so will the PDF builder:
+
+- **Section blocks carry no heading of their own.** 105 blocks have
+  `owns_heading: false` in `blocks.json` — their heading lives on the host page.
+  Anything re-assembling blocks somewhere else must supply the heading or the
+  block arrives as anonymous prose.
+- **Page-homed blocks** (races, bot platforms) are linked rather than inlined —
+  they are whole pages, too big to repeat.
+
+Because it prints block titles, a wrong `title:` becomes visible here first.
+Titles should read as the name a *reader* sees, not as the id.
 
 ---
 

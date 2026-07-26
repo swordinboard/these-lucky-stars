@@ -1,5 +1,5 @@
 ---
-title: "Ballistics In Space"
+title: "Ballistic Weapons In Space"
 id: sci-fi/ballistics-in-space
 category: [sci-fi]
 type: rule

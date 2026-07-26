@@ -139,10 +139,6 @@
   status = 301
 
 # Removed or drafted-out pages → nearest valid parent
-[[redirects]]
-  from = "/docs/free-srd/sci-fi-module/"
-  to = "/docs/free-srd/"
-  status = 301
 
 [[redirects]]
   from = "/docs/ohnothoughts/"
