@@ -3,8 +3,6 @@ title: "Extended Rage"
 id: abilities/extended-rage
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Increase Rage duration by two rounds."
 requires: [abilities/rage]

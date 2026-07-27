@@ -3,8 +3,6 @@ title: "Advantage"
 id: basics/advantage
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [basics]
 headless: true
 ---

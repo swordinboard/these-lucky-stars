@@ -3,8 +3,6 @@ title: "Portable Heater"
 id: sci-fi-equipment/portable-heater
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, survival]
 summary: "Heats a small area."
 headless: true

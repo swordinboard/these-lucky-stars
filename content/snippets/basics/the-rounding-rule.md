@@ -3,8 +3,6 @@ title: "The Rounding Rule"
 id: basics/the-rounding-rule
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [basics]
 headless: true
 ---

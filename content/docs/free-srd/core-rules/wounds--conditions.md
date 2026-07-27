@@ -138,7 +138,7 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% /details %}}
 
-{{% details "Restrained [___]" %}}
+{{% details "Restrained" %}}
 
 {{% include "/snippets/conditions/restrained" %}}
 

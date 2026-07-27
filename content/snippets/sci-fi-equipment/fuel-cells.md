@@ -3,8 +3,6 @@ title: "Fuel Cells"
 id: sci-fi-equipment/fuel-cells
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Pressurized propellant canisters in small, medium, and large sizes."
 headless: true

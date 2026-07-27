@@ -3,8 +3,6 @@ title: "MeBN HUD"
 id: sci-fi-equipment/mebn-hud
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
 headless: true

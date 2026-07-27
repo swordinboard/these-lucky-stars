@@ -3,8 +3,6 @@ title: "Defense"
 id: stats/defense
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [stats, health]
 headless: true
 ---

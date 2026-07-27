@@ -3,8 +3,6 @@ title: "Tent, 2-Person"
 id: generic-equipment/tent-2-person
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "Basic shelter for two."
 headless: true

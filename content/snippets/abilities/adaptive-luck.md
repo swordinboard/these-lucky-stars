@@ -3,8 +3,6 @@ title: "Adaptive Luck"
 id: abilities/adaptive-luck
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, luck]
 summary: "Spend Luck to reuse an exhausted ability."
 headless: true

@@ -3,8 +3,6 @@ title: "Actions in Combat"
 id: combat/actions-in-combat
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat]
 headless: true
 ---

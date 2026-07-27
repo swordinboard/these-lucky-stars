@@ -3,8 +3,6 @@ title: "Momentum Dodge"
 id: abilities/momentum-dodge
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Swap spaces with your attacker using Agile Dodge."
 requires: [proficiencies/martial-training, abilities/agile-dodge]

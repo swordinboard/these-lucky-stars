@@ -7,8 +7,6 @@ wip: true
 id: races/android
 category: [sci-fi]
 type: feature
-tier: module
-reference: medium
 tags: [races, sci-fi]
 ---
 # Android

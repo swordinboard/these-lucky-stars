@@ -15,8 +15,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -45,8 +43,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -78,8 +74,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "ability",
@@ -108,8 +102,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -142,8 +134,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -176,8 +166,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -206,8 +194,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -236,8 +222,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -266,8 +250,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "ability",
@@ -297,8 +279,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "ability",
@@ -330,8 +310,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -364,8 +342,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -394,8 +370,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -424,8 +398,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -457,8 +429,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 4,
   "tags": [
    "ability",
@@ -487,8 +457,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "ability",
@@ -520,8 +488,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -554,8 +520,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -588,8 +552,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -601,7 +563,6 @@
   "selectable": true,
   "wip": false,
   "summary": "Improve the Student bonus for a chosen topic.",
-  "label": "Expert [___]",
   "requires": [
    "abilities/student"
   ]
@@ -622,8 +583,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -655,8 +614,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -688,8 +645,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -718,8 +673,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -751,8 +704,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -784,8 +735,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -817,8 +766,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "ability",
@@ -847,8 +794,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -877,8 +822,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -910,8 +853,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -943,8 +884,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -974,8 +913,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1008,8 +945,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1042,8 +977,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1076,8 +1009,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1111,8 +1042,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -1144,8 +1073,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -1177,8 +1104,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1207,8 +1132,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1241,8 +1164,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1274,8 +1195,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1308,8 +1227,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1338,8 +1255,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1368,8 +1283,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1401,8 +1314,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1431,8 +1342,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1465,8 +1374,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1477,8 +1384,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Increase Luck die to d6 for a chosen attribute.",
-  "label": "Natural Gift [___]"
+  "summary": "Increase Luck die to d6 for a chosen attribute."
  },
  {
   "id": "abilities/opensaysame",
@@ -1497,8 +1403,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1530,8 +1434,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1564,8 +1466,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1595,8 +1495,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1628,8 +1526,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1656,8 +1552,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1690,8 +1584,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1723,8 +1615,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -1756,8 +1646,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1790,8 +1678,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1820,8 +1706,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1853,8 +1737,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "ability",
@@ -1883,8 +1765,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1913,8 +1793,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1944,8 +1822,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -1980,8 +1856,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2014,8 +1888,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2048,8 +1920,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2083,8 +1953,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2117,8 +1985,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -2129,8 +1995,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Gain a bonus by applying knowledge of a topic.",
-  "label": "Student [___]"
+  "summary": "Gain a bonus by applying knowledge of a topic."
  },
  {
   "id": "abilities/suppressing-fire",
@@ -2148,8 +2013,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "ability",
@@ -2182,8 +2045,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2215,8 +2076,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2250,8 +2109,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -2283,8 +2140,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2316,8 +2171,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2352,8 +2205,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2387,8 +2238,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2422,8 +2271,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "ability",
@@ -2455,8 +2302,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "ability",
@@ -2485,8 +2330,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2512,8 +2355,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2540,8 +2381,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions",
@@ -2568,8 +2407,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2595,8 +2432,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2622,8 +2457,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2649,8 +2482,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2676,8 +2507,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions"
@@ -2704,8 +2533,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "actions",
@@ -2732,8 +2559,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "attributes"
@@ -2759,8 +2584,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "attributes"
@@ -2786,8 +2609,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "attributes"
@@ -2813,8 +2634,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "attributes"
@@ -2840,8 +2659,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "attributes"
@@ -2867,8 +2684,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -2894,8 +2709,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -2921,8 +2734,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -2948,8 +2759,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -2975,8 +2784,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -3002,8 +2809,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -3029,8 +2834,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -3056,8 +2859,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "basics"
@@ -3083,8 +2884,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "basics"
@@ -3110,8 +2909,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "basics"
@@ -3138,8 +2935,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "bots",
@@ -3166,8 +2961,6 @@
    "sci-fi"
   ],
   "type": "creature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "bots",
@@ -3194,8 +2987,6 @@
    "sci-fi"
   ],
   "type": "creature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "bots",
@@ -3222,8 +3013,6 @@
    "sci-fi"
   ],
   "type": "creature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "bots"
@@ -3249,8 +3038,6 @@
    "sci-fi"
   ],
   "type": "creature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "bots"
@@ -3276,8 +3063,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "character-creation"
@@ -3303,8 +3088,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3330,8 +3113,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3357,8 +3138,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3386,8 +3165,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3413,8 +3190,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3440,8 +3215,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 3,
   "tags": [
    "combat"
@@ -3468,8 +3241,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "combat",
@@ -3496,8 +3267,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3523,8 +3292,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3550,8 +3317,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3579,8 +3344,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3609,8 +3372,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3638,8 +3399,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3667,8 +3426,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3695,8 +3452,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3724,8 +3479,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3753,8 +3506,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3783,8 +3534,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3811,8 +3560,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3838,8 +3585,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat"
@@ -3865,8 +3610,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3894,8 +3637,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3923,8 +3664,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "combat",
@@ -3952,8 +3691,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -3982,8 +3719,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4012,8 +3747,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4042,8 +3775,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -4072,8 +3803,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "component",
@@ -4100,8 +3829,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4130,8 +3857,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4160,8 +3885,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "component",
@@ -4188,8 +3911,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4219,8 +3940,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4249,8 +3968,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4279,8 +3996,6 @@
    "sci-fi"
   ],
   "type": "reference",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "component",
@@ -4307,8 +4022,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "component",
@@ -4335,8 +4048,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4365,8 +4076,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4395,8 +4104,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4425,8 +4132,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4455,8 +4160,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4485,8 +4188,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4517,8 +4218,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4549,8 +4248,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4579,8 +4276,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4609,8 +4304,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4639,8 +4332,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -4669,8 +4360,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4697,8 +4386,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4725,8 +4412,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4753,8 +4438,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "condition"
@@ -4781,8 +4464,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "condition",
@@ -4810,8 +4491,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "condition"
@@ -4838,8 +4517,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "condition"
@@ -4866,8 +4543,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4894,8 +4569,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4922,8 +4595,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [],
   "flags": [],
@@ -4947,8 +4618,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -4975,8 +4644,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 4,
   "tags": [
    "condition"
@@ -4989,23 +4656,21 @@
  },
  {
   "id": "conditions/restrained",
-  "title": "Restrained [___]",
+  "title": "Restrained",
   "home": "snippet",
   "file": "content/snippets/conditions/restrained.md",
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
-  "anchor": "restrained-___",
-  "url": "/docs/free-srd/core-rules/wounds--conditions/#restrained-___",
+  "anchor": "restrained",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#restrained",
   "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -5031,8 +4696,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "condition"
@@ -5059,8 +4722,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "condition"
@@ -5087,8 +4748,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "condition"
@@ -5115,8 +4774,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "condition"
@@ -5143,8 +4800,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "size",
@@ -5172,8 +4827,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "environment"
@@ -5200,8 +4853,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "environment"
@@ -5227,8 +4878,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5255,8 +4904,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment"
@@ -5282,8 +4929,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "equipment",
@@ -5310,8 +4955,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5338,8 +4981,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5368,8 +5009,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5398,8 +5037,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5428,8 +5065,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5458,8 +5093,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5488,8 +5121,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5520,8 +5151,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5552,8 +5181,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5582,8 +5209,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5612,8 +5237,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5642,8 +5265,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5672,8 +5293,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5702,8 +5321,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5732,8 +5349,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5762,8 +5377,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5792,8 +5405,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5822,8 +5433,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5852,8 +5461,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5883,8 +5490,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5913,8 +5518,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5943,8 +5546,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -5973,8 +5574,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6004,8 +5603,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6034,8 +5631,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6064,8 +5659,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6094,8 +5687,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6124,8 +5715,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6154,8 +5743,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6184,8 +5771,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6214,8 +5799,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6244,8 +5827,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6274,8 +5855,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6304,8 +5883,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6334,8 +5911,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6364,8 +5939,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "equipment",
@@ -6396,8 +5969,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6428,8 +5999,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6460,8 +6029,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6490,8 +6057,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6520,8 +6085,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6550,8 +6113,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6580,8 +6141,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6610,8 +6169,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6640,8 +6197,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6670,8 +6225,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6700,8 +6253,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6730,8 +6281,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6760,8 +6309,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6790,8 +6337,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6820,8 +6365,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6850,8 +6393,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6880,8 +6421,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6910,8 +6449,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6940,8 +6477,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -6970,8 +6505,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -7000,8 +6533,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -7030,8 +6561,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -7060,8 +6589,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -7090,8 +6617,6 @@
    "core"
   ],
   "type": "equipment",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -7121,8 +6646,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "health",
@@ -7150,8 +6673,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "health"
@@ -7177,8 +6698,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "inventory"
@@ -7204,8 +6723,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "inventory"
@@ -7231,8 +6748,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "item-tag"
@@ -7258,8 +6773,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7285,8 +6798,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "item-tag"
@@ -7312,8 +6823,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 18,
   "tags": [
    "item-tag"
@@ -7339,8 +6848,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7366,8 +6873,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 20,
   "tags": [
    "item-tag"
@@ -7393,8 +6898,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 4,
   "tags": [
    "item-tag"
@@ -7420,8 +6923,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7447,8 +6948,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 14,
   "tags": [
    "item-tag"
@@ -7474,8 +6973,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7501,8 +6998,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "item-tag"
@@ -7528,8 +7023,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "item-tag"
@@ -7555,8 +7048,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7582,8 +7073,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "item-tag"
@@ -7609,8 +7098,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "item-tag"
@@ -7636,8 +7123,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "item-tag"
@@ -7663,8 +7148,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "item-tag"
@@ -7690,8 +7173,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 4,
   "tags": [
    "item-tag"
@@ -7717,8 +7198,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 11,
   "tags": [
    "item-tag"
@@ -7744,8 +7223,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "item-tag"
@@ -7772,8 +7249,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "movement",
@@ -7802,8 +7277,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "movement"
@@ -7831,8 +7304,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "movement"
@@ -7860,8 +7331,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "movement"
@@ -7888,8 +7357,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "objects",
@@ -7916,8 +7383,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "objects"
@@ -7943,8 +7408,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "objects"
@@ -7970,8 +7433,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "objects"
@@ -7997,8 +7458,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "objects"
@@ -8025,8 +7484,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "objects",
@@ -8053,8 +7510,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "objects"
@@ -8080,8 +7535,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8091,8 +7544,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Trained in the use of a selected armor type.",
-  "label": "Armor [___]"
+  "summary": "Trained in the use of a selected armor type."
  },
  {
   "id": "proficiencies/b-e-kit",
@@ -8110,8 +7562,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "proficiency",
@@ -8140,8 +7590,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 5,
   "tags": [
    "proficiency",
@@ -8170,8 +7618,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8200,8 +7646,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "proficiency",
@@ -8230,8 +7674,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "high",
   "in_degree": 7,
   "tags": [
    "proficiency",
@@ -8259,8 +7701,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8270,8 +7710,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Special training with a particular ability.",
-  "label": "Improved Ability [___]"
+  "summary": "Special training with a particular ability."
  },
  {
   "id": "proficiencies/licensed-instincts",
@@ -8289,8 +7728,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8301,7 +7738,6 @@
   "selectable": true,
   "wip": false,
   "summary": "Add INS bonus to Vehicle Proficiency rolls.",
-  "label": "Licensed Instincts [___]",
   "requires": [
    "proficiencies/vehicle"
   ]
@@ -8322,8 +7758,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 7,
   "tags": [
    "proficiency",
@@ -8351,8 +7785,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "proficiency",
@@ -8380,8 +7812,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8412,8 +7842,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8441,8 +7869,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "character-creation",
@@ -8469,8 +7895,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "proficiency",
@@ -8498,8 +7922,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8509,8 +7931,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "+2 bonus on KNO checks related to a chosen field of study.",
-  "label": "Research [___]"
+  "summary": "+2 bonus on KNO checks related to a chosen field of study."
  },
  {
   "id": "proficiencies/survival-training",
@@ -8528,8 +7949,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "proficiency",
@@ -8557,8 +7976,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "proficiency",
@@ -8568,8 +7985,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Familiar with a type of vehicle.",
-  "label": "Vehicle [___]"
+  "summary": "Familiar with a type of vehicle."
  },
  {
   "id": "proficiencies/weapon",
@@ -8587,8 +8003,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "high",
   "in_degree": 15,
   "tags": [
    "proficiency",
@@ -8598,8 +8012,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Specialized training with a selected weapon type.",
-  "label": "Weapon [___]"
+  "summary": "Specialized training with a selected weapon type."
  },
  {
   "id": "races/android",
@@ -8617,8 +8030,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "races",
@@ -8645,8 +8056,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "races",
@@ -8673,8 +8082,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "races",
@@ -8701,8 +8108,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "races",
@@ -8729,8 +8134,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "races",
@@ -8757,8 +8160,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "races",
@@ -8785,8 +8186,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -8816,8 +8215,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -8847,8 +8244,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -8879,8 +8274,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -8909,8 +8302,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -8939,8 +8330,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -8970,8 +8359,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9000,8 +8387,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9030,8 +8415,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9060,8 +8443,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9091,8 +8472,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9121,8 +8500,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9152,8 +8529,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9183,8 +8558,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9213,8 +8586,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9244,8 +8615,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9275,8 +8644,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "equipment",
@@ -9306,8 +8673,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9338,8 +8703,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9368,8 +8731,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "high",
   "in_degree": 7,
   "tags": [
    "equipment",
@@ -9399,8 +8760,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "equipment",
@@ -9429,8 +8788,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9460,8 +8817,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9490,8 +8845,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9520,8 +8873,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9551,8 +8902,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9581,8 +8930,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9613,8 +8960,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9643,8 +8988,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9674,8 +9017,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9704,8 +9045,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9735,8 +9074,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9766,8 +9103,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9797,8 +9132,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9828,8 +9161,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9859,8 +9190,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9889,8 +9218,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9919,8 +9246,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -9949,8 +9274,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -9980,8 +9303,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10012,8 +9333,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10044,8 +9363,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10074,8 +9391,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10104,8 +9419,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10133,8 +9446,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10165,8 +9476,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -10197,8 +9506,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -10229,8 +9536,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10260,8 +9565,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10292,8 +9595,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10322,8 +9623,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10354,8 +9653,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10384,8 +9681,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10414,8 +9709,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10445,8 +9738,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10475,8 +9766,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10505,8 +9794,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10535,8 +9822,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10566,8 +9851,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10597,8 +9880,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -10627,8 +9908,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10657,8 +9936,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10687,8 +9964,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10717,8 +9992,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -10747,8 +10020,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10778,8 +10049,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10809,8 +10078,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10839,8 +10106,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10869,8 +10134,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10901,8 +10164,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "equipment",
@@ -10932,8 +10193,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10963,8 +10222,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -10994,8 +10251,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11026,8 +10281,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "equipment",
@@ -11057,8 +10310,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11089,8 +10340,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11119,8 +10368,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11150,8 +10397,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11180,8 +10425,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11210,8 +10453,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11242,8 +10483,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11274,8 +10513,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11304,8 +10541,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -11335,8 +10570,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11365,8 +10598,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11396,8 +10627,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "equipment",
@@ -11426,8 +10655,6 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "equipment",
@@ -11459,8 +10686,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "sci-fi",
@@ -11490,8 +10715,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "sci-fi",
@@ -11519,8 +10742,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "computers",
@@ -11549,8 +10770,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "sci-fi",
@@ -11580,8 +10799,6 @@
    "sci-fi"
   ],
   "type": "rule",
-  "tier": "module",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "sci-fi",
@@ -11609,8 +10826,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "site-chrome"
@@ -11639,8 +10854,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "legal"
@@ -11670,8 +10883,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "stats",
@@ -11698,8 +10909,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "stats"
@@ -11726,8 +10935,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "stats",
@@ -11754,8 +10961,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "luck",
@@ -11782,8 +10987,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "stats"
@@ -11810,8 +11013,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "stats",
@@ -11838,8 +11039,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -11867,8 +11066,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -11896,8 +11093,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -11925,8 +11120,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -11955,8 +11148,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -11984,8 +11175,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "trait",
@@ -12013,8 +11202,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "trait",
@@ -12042,8 +11229,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12071,8 +11256,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "character-creation",
@@ -12099,8 +11282,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "trait",
@@ -12128,8 +11309,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12158,8 +11337,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12187,8 +11364,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12216,8 +11391,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12246,8 +11419,6 @@
    "sci-fi"
   ],
   "type": "feature",
-  "tier": "module",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12275,8 +11446,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12304,8 +11473,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "medium",
   "in_degree": 3,
   "tags": [
    "trait",
@@ -12333,8 +11500,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "trait",
@@ -12362,8 +11527,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [
    "trait",
@@ -12391,8 +11554,6 @@
    "core"
   ],
   "type": "feature",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "trait",
@@ -12420,8 +11581,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12447,8 +11606,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "medium",
   "in_degree": 2,
   "tags": [
    "vehicles"
@@ -12474,8 +11631,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12501,8 +11656,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12528,8 +11681,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12555,8 +11706,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12582,8 +11731,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12609,8 +11756,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12636,8 +11781,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12663,8 +11806,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12690,8 +11831,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "supplement",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "vehicles"
@@ -12717,8 +11856,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12745,8 +11882,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [],
   "flags": [],
@@ -12770,8 +11905,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12798,8 +11931,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12826,8 +11957,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12854,8 +11983,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12882,8 +12009,6 @@
    "core"
   ],
   "type": "reference",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [],
   "flags": [],
@@ -12907,8 +12032,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12935,8 +12058,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 0,
   "tags": [
    "wound-type"
@@ -12963,8 +12084,6 @@
    "core"
   ],
   "type": "rule",
-  "tier": "core",
-  "reference": "low",
   "in_degree": 1,
   "tags": [],
   "flags": [],

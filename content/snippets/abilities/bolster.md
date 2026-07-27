@@ -3,8 +3,6 @@ title: "Bolster"
 id: abilities/bolster
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Once per combat, up to 3 allies within 30ft gain +1 to all rolls until end of their next turn."
 headless: true

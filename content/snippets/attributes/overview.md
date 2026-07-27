@@ -3,8 +3,6 @@ title: "Attributes"
 id: attributes/overview
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [attributes]
 headless: true
 ---

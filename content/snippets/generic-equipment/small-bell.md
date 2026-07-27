@@ -3,8 +3,6 @@ title: "Small Bell"
 id: generic-equipment/small-bell
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, trade-goods]
 summary: "A tiny bell useful as a simple alarm or signal device."
 headless: true

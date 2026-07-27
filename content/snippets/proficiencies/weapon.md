@@ -1,11 +1,8 @@
 ---
 title: "Weapon"
-label: "Weapon [___]"
 id: proficiencies/weapon
 category: [core]
 type: feature
-tier: core
-reference: high
 tags: [proficiency, core]
 summary: "Specialized training with a selected weapon type."
 headless: true

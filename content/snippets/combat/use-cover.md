@@ -3,8 +3,6 @@ title: "Use Cover"
 id: combat/use-cover
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat, action, defensive]
 headless: true
 ---

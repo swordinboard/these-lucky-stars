@@ -3,8 +3,6 @@ title: "Mini Laser Cutter"
 id: sci-fi-equipment/mini-laser-cutter
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Direct contact laser cutter/welder."
 headless: true

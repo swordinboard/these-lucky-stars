@@ -3,8 +3,6 @@ title: "Contested Rolls"
 id: basics/contested-rolls
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [basics]
 headless: true
 ---

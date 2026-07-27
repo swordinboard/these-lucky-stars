@@ -3,8 +3,6 @@ title: "Action Points"
 id: stats/action-points
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [stats, actions]
 headless: true
 ---

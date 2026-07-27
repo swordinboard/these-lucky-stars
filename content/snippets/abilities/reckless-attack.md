@@ -3,8 +3,6 @@ title: "Reckless Attack"
 id: abilities/reckless-attack
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Trade DEF for ATK and DMG on melee attacks."
 headless: true

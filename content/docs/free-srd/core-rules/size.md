@@ -5,8 +5,6 @@ weight: 27
 id: core-rules/size
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [size, combat, stats]
 ---
 

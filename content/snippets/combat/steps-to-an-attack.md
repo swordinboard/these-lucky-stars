@@ -3,8 +3,6 @@ title: "Steps to an Attack"
 id: combat/steps-to-an-attack
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat]
 headless: true
 ---

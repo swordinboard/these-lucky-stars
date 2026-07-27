@@ -3,8 +3,6 @@ title: "Indomitable Rage"
 id: abilities/indomitable-rage
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Immune to fear and distraction while raging."
 requires: [traits/unshakable, abilities/rage, abilities/fearless-rage]

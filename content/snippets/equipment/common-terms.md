@@ -3,8 +3,6 @@ title: "Common Equipment Terms"
 id: equipment/common-terms
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [equipment]
 headless: true
 ---

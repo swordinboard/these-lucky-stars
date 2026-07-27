@@ -3,8 +3,6 @@ title: "Crippled"
 id: conditions/crippled
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [condition]
 summary: "All speeds -10, +1 Stress if using 3+ AP — attackers gain advantage"
 headless: true

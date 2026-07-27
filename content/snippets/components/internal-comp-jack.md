@@ -3,8 +3,6 @@ title: "Internal Comp Jack"
 id: components/internal-comp-jack
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component, computers]
 summary: "Comp Jack without occupying hands"
 headless: true

@@ -3,8 +3,6 @@ title: "Heavy Rotary Cannon"
 id: sci-fi-equipment/heavy-rotary-cannon
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, heavy-ranged, ranged-weapon]
 summary: "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range."
 headless: true

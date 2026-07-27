@@ -3,8 +3,6 @@ title: "Powerful Rage"
 id: abilities/powerful-rage
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Spend two uses for +4 STR +4 FORT."
 requires: [abilities/rage]

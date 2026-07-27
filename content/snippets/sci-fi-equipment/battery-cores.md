@@ -3,8 +3,6 @@ title: "Standardized Battery Cores"
 id: sci-fi-equipment/battery-cores
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Portable power available in multiple sizes."
 headless: true

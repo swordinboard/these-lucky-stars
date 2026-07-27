@@ -3,8 +3,6 @@ title: "Reflex Sight"
 id: sci-fi-equipment/reflex-sight
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ranged. +2 to attacks at normal range."
 headless: true

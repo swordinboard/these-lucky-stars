@@ -3,8 +3,6 @@ title: "Environmental Effects"
 id: environment/environmental-effects
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [environment]
 headless: true
 ---

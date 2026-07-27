@@ -3,8 +3,6 @@ title: "Firing Modes"
 id: item-tags/firing-modes
 category: [core]
 type: rule
-tier: core
-reference: high
 tags: [item-tag]
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "Manacles / Restraints"
 id: generic-equipment/manacles
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "Metal restraints for binding a creature's wrists."
 headless: true

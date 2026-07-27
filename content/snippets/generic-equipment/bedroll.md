@@ -3,8 +3,6 @@ title: "Bedroll"
 id: generic-equipment/bedroll
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "Basic sleeping gear. Packs down for travel."
 headless: true

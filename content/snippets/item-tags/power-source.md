@@ -3,8 +3,6 @@ title: "Power Source"
 id: item-tags/power-source
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [item-tag]
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "Communications"
 id: sci-fi/communications
 category: [sci-fi]
 type: rule
-tier: module
-reference: low
 tags: [sci-fi, equipment]
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "Shock Charger"
 id: sci-fi-equipment/shock-charger
 category: [sci-fi]
 type: equipment
-tier: module
-reference: medium
 tags: [equipment, sci-fi, upgrade, melee-upgrade]
 summary: "All melee. +2 damage, changes type to shock. FORT check or lose 1 AP."
 headless: true

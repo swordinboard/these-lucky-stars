@@ -3,8 +3,6 @@ title: "Bag of Salt"
 id: generic-equipment/bag-of-salt
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, trade-goods]
 summary: "Preserves food, seasons meals, and has various utility uses."
 headless: true

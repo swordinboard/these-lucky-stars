@@ -3,8 +3,6 @@ title: "Crash Foam Canister"
 id: sci-fi-equipment/crash-foam-canister
 category: [sci-fi]
 type: equipment
-tier: module
-reference: medium
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Stabilizes a Dying Android or automated machine."
 headless: true

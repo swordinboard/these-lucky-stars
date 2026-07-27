@@ -3,8 +3,6 @@ title: "Danger Reflex"
 id: abilities/danger-reflex
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Advantage on AGI/DEX checks against effects of a triggered trap."
 headless: true

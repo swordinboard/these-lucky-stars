@@ -3,8 +3,6 @@ title: "Two-Handed"
 id: item-tags/two-handed
 category: [core]
 type: rule
-tier: core
-reference: high
 tags: [item-tag]
 headless: true
 ---

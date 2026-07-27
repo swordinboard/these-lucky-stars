@@ -3,8 +3,6 @@ title: "Standard Attack"
 id: combat/standard-attack
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat, action, aggressive]
 headless: true
 ---

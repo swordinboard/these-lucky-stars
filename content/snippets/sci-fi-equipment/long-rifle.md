@@ -3,8 +3,6 @@ title: "Long Rifle"
 id: sci-fi-equipment/long-rifle
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range."
 headless: true

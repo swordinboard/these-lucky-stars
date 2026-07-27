@@ -3,8 +3,6 @@ title: "Suppressing Fire"
 id: abilities/suppressing-fire
 category: [core]
 type: feature
-tier: core
-reference: medium
 tags: [ability, core, general]
 summary: "Pin enemies in an area with automatic fire."
 requires: [proficiencies/weapon]

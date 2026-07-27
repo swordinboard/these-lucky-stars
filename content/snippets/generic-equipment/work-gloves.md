@@ -3,8 +3,6 @@ title: "Work Gloves"
 id: generic-equipment/work-gloves
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, clothing]
 summary: "Protects hands during labor and rough handling."
 headless: true

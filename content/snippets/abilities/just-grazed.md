@@ -3,8 +3,6 @@ title: "Just Grazed"
 id: abilities/just-grazed
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Negate a wound or condition from a ranged attack."
 requires: [abilities/defender]

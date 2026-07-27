@@ -3,8 +3,6 @@ title: "Enforcer Armor"
 id: sci-fi-equipment/enforcer-armor
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "No-frills armor favored by private security."
 headless: true

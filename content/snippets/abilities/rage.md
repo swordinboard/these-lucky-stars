@@ -3,8 +3,6 @@ title: "Rage"
 id: abilities/rage
 category: [core]
 type: feature
-tier: core
-reference: medium
 tags: [ability, core, general]
 summary: "Enter an enraged state for a short duration."
 headless: true

@@ -3,8 +3,6 @@ title: "Ultraweave Evosuit"
 id: sci-fi-equipment/ultraweave-evosuit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "Most advanced Evosuit available."
 headless: true

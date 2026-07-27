@@ -3,8 +3,6 @@ title: "Tent, 4-Person"
 id: generic-equipment/tent-4-person
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "Bulky. Shelter for four with room for gear."
 headless: true

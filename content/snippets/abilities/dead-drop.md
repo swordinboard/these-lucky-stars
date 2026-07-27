@@ -3,8 +3,6 @@ title: "Dead Drop"
 id: abilities/dead-drop
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Quickly hide a small object in a room or vehicle using your B&E kit."
 requires: [proficiencies/b-e-kit]

@@ -3,8 +3,6 @@ title: "Shock Rifle"
 id: sci-fi-equipment/shock-rifle
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
 headless: true

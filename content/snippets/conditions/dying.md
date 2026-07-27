@@ -3,8 +3,6 @@ title: "Dying"
 id: conditions/dying
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [condition]
 summary: "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
 headless: true

@@ -3,8 +3,6 @@ title: "Extreme Environments"
 id: environment/extreme-environments
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [environment]
 headless: true
 ---

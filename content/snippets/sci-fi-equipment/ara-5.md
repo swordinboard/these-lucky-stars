@@ -4,8 +4,6 @@ label: "ARA-5"
 id: sci-fi-equipment/ara-5
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Removes radiation wounds and conditions within 1hr."
 headless: true

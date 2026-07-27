@@ -3,8 +3,6 @@ title: "Dual Strike"
 id: abilities/dual-strike
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Increase damage die with dual attack."
 requires: [proficiencies/weapon, abilities/dual-attack]

@@ -3,8 +3,6 @@ title: "General Spectacle"
 id: abilities/general-spectacle
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Cause a Stress with a distraction."
 headless: true

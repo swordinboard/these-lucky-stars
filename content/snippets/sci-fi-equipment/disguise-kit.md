@@ -3,8 +3,6 @@ title: "Disguise Kit"
 id: sci-fi-equipment/disguise-kit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, kit]
 summary: "Alters appearance, applies camouflage."
 headless: true

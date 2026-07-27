@@ -3,8 +3,6 @@ title: "Speed Tiers"
 id: movement/speed-tiers
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [movement]
 headless: true
 ---

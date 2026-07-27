@@ -7,8 +7,6 @@ wip: true
 id: races/star-touched-human
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [races, sci-fi]
 ---
 # Star-touched Human

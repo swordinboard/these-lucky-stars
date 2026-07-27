@@ -3,8 +3,6 @@ title: "Signal Mast, Heavy"
 id: components/signal-mast-heavy
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component]
 summary: "Increases com range to 500 miles"
 headless: true

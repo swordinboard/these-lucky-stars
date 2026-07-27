@@ -3,8 +3,6 @@ title: "Unconscious"
 id: conditions/unconscious
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [condition]
 summary: "Cannot take any actions — attackers gain advantage and surprise"
 headless: true

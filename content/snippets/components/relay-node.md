@@ -3,8 +3,6 @@ title: "Relay Node"
 id: components/relay-node
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component]
 summary: "Sync into a shared sensor network"
 headless: true

@@ -3,8 +3,6 @@ title: "Field Ration"
 id: sci-fi-equipment/field-ration
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, survival]
 summary: "One day of nutrients for one person."
 variant_group: field-ration

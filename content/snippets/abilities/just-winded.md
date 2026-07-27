@@ -3,8 +3,6 @@ title: "Just Winded"
 id: abilities/just-winded
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Negate a wound or condition from a melee attack."
 requires: [abilities/defender]

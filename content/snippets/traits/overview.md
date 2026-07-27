@@ -3,8 +3,6 @@ title: "Traits"
 id: traits/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [character-creation, trait]
 headless: true
 ---

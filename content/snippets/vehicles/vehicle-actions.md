@@ -3,8 +3,6 @@ title: "Vehicle Actions"
 id: vehicles/vehicle-actions
 category: [core]
 type: rule
-tier: supplement
-reference: low
 tags: [vehicles]
 headless: true
 ---

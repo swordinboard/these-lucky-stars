@@ -3,8 +3,6 @@ title: "Compact Rifle"
 id: sci-fi-equipment/compact-rifle
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Ballistic. Full-auto. Two-handed. 30ft range."
 headless: true

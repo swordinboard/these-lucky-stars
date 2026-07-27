@@ -1,11 +1,8 @@
 ---
 title: "Natural Gift"
-label: "Natural Gift [___]"
 id: abilities/natural-gift
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, luck]
 summary: "Increase Luck die to d6 for a chosen attribute."
 headless: true

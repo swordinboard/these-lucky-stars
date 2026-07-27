@@ -3,8 +3,6 @@ title: "Medic Training"
 id: proficiencies/medic-training
 category: [core]
 type: feature
-tier: core
-reference: medium
 tags: [proficiency, core]
 summary: "Trained in the use of the med kit."
 headless: true

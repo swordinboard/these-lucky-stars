@@ -1,16 +1,14 @@
 ---
-title: "Restrained [___]"
+title: "Restrained"
 id: conditions/restrained
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [condition]
 summary: "Physical actions limited — affected limb unusable, attackers gain advantage"
 headless: true
 ---
 
-### Restrained [___]
+### Restrained
 
 *Effect* — The restrained condition limits physical actions involving the affected body part. It can be caused by external restraints (rope, cuffs, bindings) or by wounds (dislocations, severe sprains) that render a limb unusable. The label in brackets identifies what is restrained — for example, Restrained [Left Arm] or Restrained [Legs].
 

@@ -3,8 +3,6 @@ title: "Immobilized"
 id: conditions/immobilized
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [condition]
 summary: "Cannot take physical actions — DEX and AGI treated as null"
 headless: true

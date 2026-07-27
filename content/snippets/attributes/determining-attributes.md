@@ -3,8 +3,6 @@ title: "Two Ways to Determine Attributes"
 id: attributes/determining-attributes
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [attributes]
 headless: true
 ---

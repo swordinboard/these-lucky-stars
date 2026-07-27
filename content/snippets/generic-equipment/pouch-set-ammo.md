@@ -3,8 +3,6 @@ title: "Pouch Set, Ammo"
 id: generic-equipment/pouch-set-ammo
 category: [core]
 type: equipment
-tier: core
-reference: medium
 tags: [equipment, generic, containers]
 summary: "Holds ammunition for use during combat."
 headless: true

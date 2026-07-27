@@ -3,8 +3,6 @@ title: "Conditions"
 id: conditions/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: []
 headless: true
 ---
@@ -27,7 +25,7 @@ Conditions alter how your character is able to act. Most provide penalties or so
 | [Immobilized](#immobilized) | Cannot take physical actions — DEX and AGI treated as null | Cause specific |
 | [Pinned](#pinned) | Only physical action is to escape the pin | See Grapple |
 | [Prone](#prone) | Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage | Until standing |
-| [Restrained [___]](#restrained-___) | Physical actions limited — affected limb unusable, attackers gain advantage | Until cause is removed |
+| [Restrained](#restrained) | Physical actions limited — affected limb unusable, attackers gain advantage | Until cause is removed |
 | [Shaken](#shaken) | -1 to all decision rolls, -2 max DEF, +1 Stress | 1d4+1 rounds |
 | [Sick](#sick) | 2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress | 1d4 rounds |
 | [Stressed](#stressed) | Cannot use Luck, -1 to all decision rolls per point over threshold | Until stress drops below threshold |

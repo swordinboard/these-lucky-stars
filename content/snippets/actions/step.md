@@ -3,8 +3,6 @@ title: "Step"
 id: actions/step
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [actions, movement]
 headless: true
 ---

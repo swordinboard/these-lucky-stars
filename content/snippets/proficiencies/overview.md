@@ -3,8 +3,6 @@ title: "Proficiencies"
 id: proficiencies/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [character-creation, proficiency]
 headless: true
 ---

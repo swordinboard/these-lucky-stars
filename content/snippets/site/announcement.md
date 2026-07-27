@@ -3,8 +3,6 @@ title: "Announcement"
 id: site/announcement
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [site-chrome]
 selectable: false
 excluded: true

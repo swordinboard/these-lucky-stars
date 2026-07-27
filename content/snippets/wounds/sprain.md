@@ -3,8 +3,6 @@ title: "Sprain"
 id: wounds/sprain
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [wound-type]
 summary: "Crippled or Restrained"
 headless: true

@@ -3,8 +3,6 @@ title: "Picture of Health"
 id: traits/picture-of-health
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [trait, core]
 summary: "+1 bonus to VIT."
 headless: true

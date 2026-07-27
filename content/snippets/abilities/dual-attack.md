@@ -3,8 +3,6 @@ title: "Dual Attack"
 id: abilities/dual-attack
 category: [core]
 type: feature
-tier: core
-reference: medium
 tags: [ability, core, general]
 summary: "ATK bonus when attacking with two weapons."
 requires: [proficiencies/weapon]

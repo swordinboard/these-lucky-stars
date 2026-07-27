@@ -3,8 +3,6 @@ title: "Dry Sack"
 id: generic-equipment/dry-sack
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, containers]
 summary: "Waterproof bag for protecting contents from moisture."
 headless: true

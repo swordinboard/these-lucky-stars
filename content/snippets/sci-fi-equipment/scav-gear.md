@@ -3,8 +3,6 @@ title: "Scav Gear"
 id: sci-fi-equipment/scav-gear
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Grants an extra body slot and +50 max carry weight."
 headless: true

@@ -3,8 +3,6 @@ title: "Long Crowbar"
 id: generic-equipment/long-crowbar
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "+2 bonus to STR checks for prying and leverage."
 headless: true

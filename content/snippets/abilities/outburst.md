@@ -3,8 +3,6 @@ title: "Outburst"
 id: abilities/outburst
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Interrupt enemies mid action."
 headless: true

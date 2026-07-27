@@ -5,8 +5,6 @@ weight: 1
 id: chargen/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [character-creation]
 ---
 

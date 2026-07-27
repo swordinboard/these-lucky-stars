@@ -3,8 +3,6 @@ title: "Sewing Set"
 id: generic-equipment/sewing-set
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "Needle, thread, and patches for basic repairs to fabric and leather."
 headless: true

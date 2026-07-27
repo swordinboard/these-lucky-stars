@@ -3,8 +3,6 @@ title: "Whetstone"
 id: generic-equipment/whetstone
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "Sharpens and maintains edged weapons."
 headless: true

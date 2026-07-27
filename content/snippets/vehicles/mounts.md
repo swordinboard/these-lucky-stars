@@ -3,8 +3,6 @@ title: "Mounts"
 id: vehicles/mounts
 category: [core]
 type: rule
-tier: supplement
-reference: low
 tags: [vehicles]
 headless: true
 ---

@@ -6,8 +6,6 @@ bookToC: false
 id: site/license
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [legal]
 excluded: true
 ---

@@ -3,8 +3,6 @@ title: "Grapple"
 id: combat/grapple
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat, stats]
 headless: true
 ---

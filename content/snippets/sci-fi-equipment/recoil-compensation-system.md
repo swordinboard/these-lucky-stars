@@ -3,8 +3,6 @@ title: "Recoil Compensation System"
 id: sci-fi-equipment/recoil-compensation-system
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. +1 attack, negates zero-g knockback."
 headless: true

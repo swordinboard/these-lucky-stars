@@ -3,8 +3,6 @@ title: "Leg Shot"
 id: abilities/leg-shot
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Ranged attack at minor disadvantage to apply Crippled on hit."
 requires: [proficiencies/weapon]

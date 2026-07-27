@@ -6,8 +6,6 @@ wip: true
 id: bots/trk-a
 category: [sci-fi]
 type: creature
-tier: module
-reference: low
 tags: [bots]
 ---
 # TRK-A

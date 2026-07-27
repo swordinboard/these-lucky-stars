@@ -3,8 +3,6 @@ title: "Fatigued"
 id: conditions/fatigued
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [condition]
 summary: "-2 STR, AGI, and DEX, -2 AP/round — attackers gain advantage"
 headless: true

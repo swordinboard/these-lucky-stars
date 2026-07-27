@@ -3,8 +3,6 @@ title: "Long Reload"
 id: item-tags/long-reload
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [item-tag]
 headless: true
 ---

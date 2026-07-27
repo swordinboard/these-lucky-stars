@@ -3,8 +3,6 @@ title: "Candle Wax Block"
 id: generic-equipment/candle-wax-block
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, trade-goods]
 summary: "Waterproofing, sealing, and lubricating."
 headless: true

@@ -3,8 +3,6 @@ title: "Fire-Starter"
 id: generic-equipment/fire-starter
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "Flint & steel or equivalent. Reliably starts fires."
 headless: true

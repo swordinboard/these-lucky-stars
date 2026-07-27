@@ -3,8 +3,6 @@ title: "Brace"
 id: combat/brace
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat, action, defensive]
 headless: true
 ---

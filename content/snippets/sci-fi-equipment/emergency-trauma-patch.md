@@ -3,8 +3,6 @@ title: "Emergency Trauma Patch"
 id: sci-fi-equipment/emergency-trauma-patch
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Closes lacerations and punctures. Works on Evosuits."
 headless: true

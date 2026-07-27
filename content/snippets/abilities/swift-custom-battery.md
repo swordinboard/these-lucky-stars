@@ -3,8 +3,6 @@ title: "Swift Custom Battery"
 id: abilities/swift-custom-battery
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [ability, sci-fi, battery]
 summary: "Quickly install mismatched batteries."
 requires: [proficiencies/general-technology]

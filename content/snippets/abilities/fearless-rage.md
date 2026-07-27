@@ -3,8 +3,6 @@ title: "Fearless Rage"
 id: abilities/fearless-rage
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Resisting fear while raging."
 requires: [abilities/rage]

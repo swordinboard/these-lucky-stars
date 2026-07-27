@@ -3,8 +3,6 @@ title: "Decoy Beacon"
 id: sci-fi-equipment/decoy-beacon
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Mimics com signals and life signs for 1hr."
 headless: true

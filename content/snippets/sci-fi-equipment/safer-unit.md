@@ -3,8 +3,6 @@ title: "SAFER Unit"
 id: sci-fi-equipment/safer-unit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: medium
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Back. A propulsion unit for navigating in zero gravity."
 headless: true

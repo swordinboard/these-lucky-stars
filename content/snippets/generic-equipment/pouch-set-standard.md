@@ -3,8 +3,6 @@ title: "Pouch Set, Standard"
 id: generic-equipment/pouch-set-standard
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, containers]
 summary: "Holds most handheld items for quick access."
 headless: true

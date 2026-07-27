@@ -3,8 +3,6 @@ title: "Basic P-Suit"
 id: sci-fi-equipment/basic-p-suit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Minimum protection for airless environments."
 headless: true

@@ -3,8 +3,6 @@ title: "Primary Speed"
 id: movement/primary-speed
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [movement, stats]
 headless: true
 ---

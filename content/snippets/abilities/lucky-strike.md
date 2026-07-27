@@ -3,8 +3,6 @@ title: "Lucky Strike"
 id: abilities/lucky-strike
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, luck]
 summary: "Increase Luck die to d6 on attack rolls."
 headless: true

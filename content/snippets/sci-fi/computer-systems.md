@@ -3,8 +3,6 @@ title: "Computer Systems"
 id: sci-fi/computer-systems
 category: [sci-fi]
 type: rule
-tier: module
-reference: low
 tags: [computers, sci-fi]
 headless: true
 ---

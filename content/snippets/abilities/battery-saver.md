@@ -3,8 +3,6 @@ title: "Battery Saver"
 id: abilities/battery-saver
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [ability, sci-fi, battery]
 summary: "Re-roll a failed supply roll once per day."
 headless: true

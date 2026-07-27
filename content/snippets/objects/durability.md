@@ -3,8 +3,6 @@ title: "Object Durability"
 id: objects/durability
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [objects]
 headless: true
 ---

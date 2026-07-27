@@ -3,8 +3,6 @@ title: "Speed Descriptors"
 id: movement/speed-descriptors
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [movement]
 headless: true
 ---

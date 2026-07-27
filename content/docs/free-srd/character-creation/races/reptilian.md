@@ -7,8 +7,6 @@ wip: true
 id: races/reptilian
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [races, sci-fi]
 ---
 # Reptilian

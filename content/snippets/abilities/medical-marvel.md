@@ -3,8 +3,6 @@ title: "Medical Marvel"
 id: abilities/medical-marvel
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, luck]
 summary: "Heal a condition or wound by spending Luck."
 headless: true

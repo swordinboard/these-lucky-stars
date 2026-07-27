@@ -3,8 +3,6 @@ title: "Difficult Terrain and Obstacles"
 id: actions/difficult-terrain
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [actions]
 headless: true
 ---

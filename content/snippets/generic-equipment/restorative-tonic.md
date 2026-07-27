@@ -3,8 +3,6 @@ title: "Restorative Tonic"
 id: generic-equipment/restorative-tonic
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, medical]
 summary: "Heals 1 VIT or attribute damage."
 headless: true

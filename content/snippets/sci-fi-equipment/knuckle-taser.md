@@ -3,8 +3,6 @@ title: "Knuckle Taser"
 id: sci-fi-equipment/knuckle-taser
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, light-melee, melee-weapon]
 summary: "Hand slot. Built in shock charger for a shocking punch."
 headless: true

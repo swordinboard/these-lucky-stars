@@ -3,8 +3,6 @@ title: "Targeting Objects"
 id: objects/targeting-objects
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [objects]
 headless: true
 ---

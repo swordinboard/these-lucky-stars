@@ -7,8 +7,6 @@ wip: true
 id: races/overview
 category: [core]
 type: reference
-tier: core
-reference: medium
 tags: [races, character-creation]
 ---
 # Races

@@ -3,8 +3,6 @@ title: "Antiseptic Poultice"
 id: generic-equipment/antiseptic-poultice
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, medical]
 summary: "Prevents infection and aids wound recovery."
 headless: true

@@ -3,8 +3,6 @@ title: "Reactions"
 id: actions/reactions
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [actions]
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "Vitaboost Injector"
 id: sci-fi-equipment/vitaboost-injector
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Heals 1 VIT or attribute damage."
 headless: true

@@ -3,8 +3,6 @@ title: "Equipment Body Slots"
 id: inventory/body-slots
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [inventory]
 headless: true
 ---

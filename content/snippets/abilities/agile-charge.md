@@ -3,8 +3,6 @@ title: "Agile Charge"
 id: abilities/agile-charge
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Charge no longer requires a straight line."
 requires: [abilities/charge]

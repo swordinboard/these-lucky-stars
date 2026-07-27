@@ -3,8 +3,6 @@ title: "Material DEF"
 id: objects/material-def
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [objects]
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "True Defender"
 id: abilities/true-defender
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Use Defender on behalf of an ally."
 requires: [traits/tough, abilities/defender, abilities/friend-in-need]

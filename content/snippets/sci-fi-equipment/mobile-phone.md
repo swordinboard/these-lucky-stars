@@ -3,8 +3,6 @@ title: "Mobile Phone"
 id: sci-fi-equipment/mobile-phone
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, communications]
 summary: "1 mile range. Connects to local networks."
 headless: true

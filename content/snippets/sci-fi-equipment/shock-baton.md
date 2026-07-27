@@ -3,8 +3,6 @@ title: "Shock Baton"
 id: sci-fi-equipment/shock-baton
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Built in shock charger."
 headless: true

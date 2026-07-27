@@ -3,8 +3,6 @@ title: "Comp Jack"
 id: proficiencies/comp-jack
 category: [sci-fi]
 type: feature
-tier: module
-reference: medium
 tags: [proficiency, sci-fi, computers]
 summary: "Specialized training in computer systems and the comp jack."
 headless: true

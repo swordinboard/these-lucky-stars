@@ -3,8 +3,6 @@ title: "Chain, 10ft"
 id: generic-equipment/chain-10ft
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "Heavy duty restraint and utility chain."
 headless: true

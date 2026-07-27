@@ -3,8 +3,6 @@ title: "Damage Sources"
 id: combat/damage-sources
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat]
 headless: true
 ---

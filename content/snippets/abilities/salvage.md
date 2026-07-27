@@ -3,8 +3,6 @@ title: "Salvage"
 id: abilities/salvage
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [ability, sci-fi, general]
 summary: "Refill a supply die from mechanical wreckage."
 requires: [proficiencies/repair-kit]

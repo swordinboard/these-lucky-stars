@@ -3,8 +3,6 @@ title: "Action Types"
 id: actions/action-types
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [actions]
 headless: true
 ---

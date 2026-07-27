@@ -3,8 +3,6 @@ title: "Boarding & Bailing"
 id: vehicles/boarding-and-bailing
 category: [core]
 type: rule
-tier: supplement
-reference: low
 tags: [vehicles]
 headless: true
 ---

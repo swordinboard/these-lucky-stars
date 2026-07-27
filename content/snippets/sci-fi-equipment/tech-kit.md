@@ -3,8 +3,6 @@ title: "Tech Kit"
 id: sci-fi-equipment/tech-kit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, kit]
 summary: "Electronic components and equipment."
 headless: true

@@ -3,8 +3,6 @@ title: "Servo Boost Legs"
 id: components/servo-boost-legs
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component]
 summary: "+10ft speed, +5ft jump while powered"
 headless: true

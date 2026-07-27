@@ -3,8 +3,6 @@ title: "Repair Subroutine"
 id: components/repair-subroutine
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component]
 summary: "Self-repair 1 VIT per long rest"
 headless: true

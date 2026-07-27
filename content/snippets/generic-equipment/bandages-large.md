@@ -3,8 +3,6 @@ title: "Bandages, Large"
 id: generic-equipment/bandages-large
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, medical]
 summary: "Closes and covers major wounds."
 headless: true

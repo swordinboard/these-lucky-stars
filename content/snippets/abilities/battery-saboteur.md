@@ -3,8 +3,6 @@ title: "Battery Saboteur"
 id: abilities/battery-saboteur
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [ability, sci-fi, battery]
 summary: "Turn battery cores into explosives."
 requires: [proficiencies/general-technology]

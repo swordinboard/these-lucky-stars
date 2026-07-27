@@ -3,8 +3,6 @@ title: "Light Combat Vest"
 id: sci-fi-equipment/light-combat-vest
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Concealable. Lower profile version of the combat vest."
 headless: true

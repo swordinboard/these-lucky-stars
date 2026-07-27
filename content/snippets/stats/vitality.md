@@ -3,8 +3,6 @@ title: "Vitality"
 id: stats/vitality
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [stats, health]
 headless: true
 ---

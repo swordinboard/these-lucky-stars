@@ -3,8 +3,6 @@ title: "Grapple-Line Launcher"
 id: sci-fi-equipment/grapple-line-launcher
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Magnetic grappling hook."
 headless: true

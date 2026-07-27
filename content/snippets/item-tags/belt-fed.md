@@ -3,8 +3,6 @@ title: "Belt Fed"
 id: item-tags/belt-fed
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [item-tag]
 headless: true
 ---

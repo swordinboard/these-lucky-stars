@@ -3,8 +3,6 @@ title: "Medkit Note"
 id: equipment/medkit-note
 category: [core]
 type: reference
-tier: core
-reference: medium
 tags: [equipment, medical]
 selectable: false
 headless: true

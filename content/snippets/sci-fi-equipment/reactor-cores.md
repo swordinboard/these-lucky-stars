@@ -3,8 +3,6 @@ title: "Reactor Cores"
 id: sci-fi-equipment/reactor-cores
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Self-charging power cores for automated machines."
 headless: true

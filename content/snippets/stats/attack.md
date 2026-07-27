@@ -3,8 +3,6 @@ title: "Attack"
 id: stats/attack
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [stats]
 headless: true
 ---

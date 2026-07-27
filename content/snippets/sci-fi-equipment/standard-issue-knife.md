@@ -3,8 +3,6 @@ title: "Standard Issue Knife"
 id: sci-fi-equipment/standard-issue-knife
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, weapon, light-melee, melee-weapon]
 summary: "Concealable. Throwable [10ft]."
 headless: true

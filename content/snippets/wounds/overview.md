@@ -3,8 +3,6 @@ title: "Wounds & Conditions"
 id: wounds/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: []
 headless: true
 ---

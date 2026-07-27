@@ -3,8 +3,6 @@ title: "Jump Pack"
 id: sci-fi-equipment/jump-pack
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, tech]
 summary: "Vertical launch up to 25ft or controlled arc; reduces fall damage."
 headless: true

@@ -3,8 +3,6 @@ title: "Fast Kit Trap"
 id: abilities/fast-kit-trap
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Kit Trap uses less AP."
 headless: true

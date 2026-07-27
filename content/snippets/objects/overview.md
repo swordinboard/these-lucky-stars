@@ -3,8 +3,6 @@ title: "Damaged & Broken Gear"
 id: objects/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [objects]
 headless: true
 ---

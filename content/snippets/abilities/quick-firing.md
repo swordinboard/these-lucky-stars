@@ -3,8 +3,6 @@ title: "Quick Firing"
 id: abilities/quick-firing
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Use two semi-auto pistols for full-auto abilities."
 requires: [proficiencies/weapon]

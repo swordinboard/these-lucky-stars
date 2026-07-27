@@ -3,8 +3,6 @@ title: "Multi-Turn Actions"
 id: actions/multi-turn-actions
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [actions]
 headless: true
 ---

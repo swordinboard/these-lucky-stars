@@ -1,11 +1,8 @@
 ---
 title: "Expert"
-label: "Expert [___]"
 id: abilities/expert
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Improve the Student bonus for a chosen topic."
 requires: [abilities/student]

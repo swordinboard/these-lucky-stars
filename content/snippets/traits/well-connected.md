@@ -3,8 +3,6 @@ title: "Well-Connected"
 id: traits/well-connected
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [trait, core]
 summary: "Declare a contact once per session in your current location."
 headless: true

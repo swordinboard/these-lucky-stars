@@ -3,8 +3,6 @@ title: "Vehicle Size"
 id: vehicles/vehicle-size
 category: [core]
 type: rule
-tier: supplement
-reference: low
 tags: [vehicles]
 headless: true
 ---

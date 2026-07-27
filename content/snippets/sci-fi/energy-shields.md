@@ -3,8 +3,6 @@ title: "Energy Shields"
 id: sci-fi/energy-shields
 category: [sci-fi]
 type: rule
-tier: module
-reference: medium
 tags: [sci-fi, equipment, shield]
 headless: true
 ---

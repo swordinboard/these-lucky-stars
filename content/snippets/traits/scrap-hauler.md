@@ -3,8 +3,6 @@ title: "Scrap Hauler"
 id: traits/scrap-hauler
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [trait, sci-fi]
 summary: "Accustomed to carrying heavy loads in different environments."
 headless: true

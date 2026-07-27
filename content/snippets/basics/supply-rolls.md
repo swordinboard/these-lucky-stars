@@ -3,8 +3,6 @@ title: "Supply Rolls"
 id: basics/supply-rolls
 category: [core]
 type: rule
-tier: core
-reference: medium
 tags: [basics]
 headless: true
 ---

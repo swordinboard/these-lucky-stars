@@ -3,8 +3,6 @@ title: "Oppressive Suppression"
 id: abilities/oppressive-suppression
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Expand suppression to six non-adjacent squares."
 requires: [proficiencies/weapon, abilities/suppressing-fire]

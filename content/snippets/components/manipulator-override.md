@@ -3,8 +3,6 @@ title: "Manipulator Override"
 id: components/manipulator-override
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, component]
 summary: "+2 DEX for fine motor tasks while powered"
 headless: true

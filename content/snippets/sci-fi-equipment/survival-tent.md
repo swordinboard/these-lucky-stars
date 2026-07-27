@@ -3,8 +3,6 @@ title: "Survival Tent"
 id: sci-fi-equipment/survival-tent
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, survival]
 summary: "Pressurized 10×10ft shelter for four."
 headless: true

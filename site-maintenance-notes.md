@@ -76,12 +76,10 @@ Canonical machine-readable data lives in **`data/blocks.json`** and
 
 ```yaml
 title: "Rage"                 # the block's own heading text
-label: "Student [___]"        # optional: catalog display name when it differs from title
+label: "ARA-5"                # rare: a short name for tables when the title is unwieldy
 id: abilities/rage            # unique; matches the file path under content/snippets/
 category: [core]              # list: core | sci-fi | fantasy … (a block can be in several)
 type: feature                 # rule | feature | equipment | creature | reference
-tier: core                    # core | supplement | module
-reference: medium             # high | medium | low — how heavily other blocks point at it
 tags: [ability, core, general]  # drives tag-as-query pulls and the builder's grouping
 summary: "Enter an enraged state for a short duration."   # the quick-reference one-liner
 requires: [abilities/charge]  # feature prerequisites — the builder auto-includes these
@@ -92,7 +90,18 @@ headless: true                # required on snippets
 ```
 
 `summary` and `label` are **single-sourced** — the quick-reference tables are
-generated from them (see below), so edit them here and nowhere else.
+generated from them (see below), so edit them here and nowhere else. `label` is
+deliberately rare (2 blocks): it exists only for names too long for a table cell,
+like `Analgesic Radiation Antidote 5 (ARA-5)` → `ARA-5`. If a block needs a
+different display name for any other reason, fix the title instead.
+
+**`[___]` never goes in a title, a heading or an anchor.** It marks a choice the
+player makes (Weapon [___] → pick a weapon type), and it belongs in the block's
+body, where every one of those blocks already restates its name as
+`**Weapon [___]**`. In a heading it becomes part of the anchor
+(`#restrained-___`) and quietly breaks every link to it. Inside a table cell it
+is fine as long as it sits in the link *text* with a clean target:
+`[Battery [___]](#battery)`.
 
 ---
 
@@ -206,9 +215,12 @@ python3 _discovery/tools/builddata.py
   the target; the builder surfaces it as a fillable hole), `mention` (inert,
   outside the buildable corpus), `include` (composition: a page pulling a block).
 
-`reference` in a block's frontmatter is **authored** — `builddata.py` reads it,
-it does not overwrite it. `in_degree` next to it is recomputed each run, so if
-the two disagree wildly that is a hint to re-rate the block by hand.
+`in_degree` is the measure of how heavily a block is depended on, recomputed
+every run. There used to be an authored `reference` rating (high/medium/low)
+beside it and a `tier` (core/supplement/module); both were dropped. `reference`
+was a hand-kept copy of `in_degree`, and `tier` agreed with `category` on 425 of
+436 blocks — two fields that nearly always agree will eventually disagree by
+accident.
 
 ---
 

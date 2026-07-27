@@ -3,8 +3,6 @@ title: "Burn"
 id: wounds/burn
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [wound-type]
 summary: "+1 Stress until dressed"
 headless: true

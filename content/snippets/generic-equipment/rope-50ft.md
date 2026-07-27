@@ -3,8 +3,6 @@ title: "Rope, 50ft"
 id: generic-equipment/rope-50ft
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "General purpose rope. Supports up to 500lbs."
 headless: true

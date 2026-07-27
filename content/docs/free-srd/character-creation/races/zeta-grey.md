@@ -7,8 +7,6 @@ wip: true
 id: races/zeta-grey
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [races, sci-fi]
 ---
 # Zeta Grey

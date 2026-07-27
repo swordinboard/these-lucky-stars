@@ -3,8 +3,6 @@ title: "B&E Kit"
 id: sci-fi-equipment/b-e-kit
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, kit]
 summary: "Bulky. Locks, traps, bypass tools."
 headless: true

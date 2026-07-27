@@ -3,8 +3,6 @@ title: "Armor Degradation"
 id: objects/armor-degradation
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [objects, armor]
 headless: true
 ---

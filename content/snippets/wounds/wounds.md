@@ -3,8 +3,6 @@ title: "Wounds"
 id: wounds/wounds
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: []
 headless: true
 ---

@@ -3,8 +3,6 @@ title: "Shield Degradation"
 id: objects/shield-degradation
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [objects, shield]
 headless: true
 ---

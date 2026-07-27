@@ -3,8 +3,6 @@ title: "Battery"
 id: item-tags/battery
 category: [core]
 type: rule
-tier: core
-reference: high
 tags: [item-tag]
 headless: true
 ---

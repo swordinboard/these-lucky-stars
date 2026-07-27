@@ -3,8 +3,6 @@ title: "Drum Magazines"
 id: sci-fi-equipment/drum-magazines
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. Increased ammo die size."
 headless: true

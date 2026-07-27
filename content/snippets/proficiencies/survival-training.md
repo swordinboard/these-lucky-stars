@@ -3,8 +3,6 @@ title: "Survival Training"
 id: proficiencies/survival-training
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [proficiency, core]
 summary: "+2 bonus on rolls to navigate, forage, track, or endure harsh environments."
 headless: true

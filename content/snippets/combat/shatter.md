@@ -3,8 +3,6 @@ title: "Shatter"
 id: combat/shatter
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat, action, aggressive]
 headless: true
 ---

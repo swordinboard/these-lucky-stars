@@ -3,8 +3,6 @@ title: "Damage Resistance and Weakness"
 id: combat/damage-resistance
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [combat]
 headless: true
 ---

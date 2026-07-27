@@ -3,8 +3,6 @@ title: "Sci-Fi Tool Kits"
 id: sci-fi-equipment/kit-supplies
 category: [sci-fi]
 type: rule
-tier: module
-reference: low
 tags: [equipment, kit, sci-fi]
 headless: true
 ---

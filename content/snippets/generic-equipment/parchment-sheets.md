@@ -3,8 +3,6 @@ title: "Parchment / Paper Sheets (5)"
 id: generic-equipment/parchment-sheets
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, tools]
 summary: "Writing surfaces. Pack of five sheets."
 headless: true

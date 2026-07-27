@@ -3,8 +3,6 @@ title: "Precise Focus"
 id: abilities/precise-focus
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Triple normal range for Focus abilities."
 requires: [abilities/focus-attack, abilities/focus-in]

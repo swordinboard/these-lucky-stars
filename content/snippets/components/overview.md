@@ -3,8 +3,6 @@ title: "Components"
 id: components/overview
 category: [sci-fi]
 type: reference
-tier: module
-reference: low
 tags: [component, sci-fi]
 headless: true
 ---

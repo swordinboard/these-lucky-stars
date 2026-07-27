@@ -1,11 +1,8 @@
 ---
 title: "Licensed Instincts"
-label: "Licensed Instincts [___]"
 id: proficiencies/licensed-instincts
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [proficiency, core]
 summary: "Add INS bonus to Vehicle Proficiency rolls."
 requires: [proficiencies/vehicle]
@@ -14,7 +11,7 @@ headless: true
 
 ### Licensed Instincts
 
-**Licensed Instincts [____]**
+**Licensed Instincts [___]**
 
 *[Vehicle](#vehicle) Proficiency, KNO 2, INS 1*
 

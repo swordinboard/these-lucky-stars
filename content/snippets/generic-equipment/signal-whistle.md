@@ -3,8 +3,6 @@ title: "Signal Whistle"
 id: generic-equipment/signal-whistle
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "Audible up to half a mile in open terrain."
 headless: true

@@ -3,8 +3,6 @@ title: "Ballistic Weapons In Space"
 id: sci-fi/ballistics-in-space
 category: [sci-fi]
 type: rule
-tier: module
-reference: low
 tags: [sci-fi, combat]
 headless: true
 ---

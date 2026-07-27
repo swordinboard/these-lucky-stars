@@ -3,8 +3,6 @@ title: "Martial Supremacy"
 id: abilities/martial-supremacy
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Reroll a decision die during unarmed trip, disarm, or grapple."
 requires: [proficiencies/martial-training]

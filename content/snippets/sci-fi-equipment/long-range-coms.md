@@ -3,8 +3,6 @@ title: "Long Range Coms"
 id: sci-fi-equipment/long-range-coms
 category: [sci-fi]
 type: equipment
-tier: module
-reference: low
 tags: [equipment, sci-fi, communications]
 summary: "500 mile range. Connects to local networks."
 headless: true

@@ -11,10 +11,12 @@ links, edited frontmatter).
     python3 _discovery/tools/builddata.py           # rewrite data/*.json
     python3 _discovery/tools/builddata.py --check   # fail if data/ is stale
 
-Source of truth = the markdown files. `reference` is the authored frontmatter
-value (originally seeded from inbound-edge count); `in_degree` is recomputed
-each run. `flags` and `notes` are curation metadata with no frontmatter home,
-so they are carried forward from the existing data/blocks.json by block id.
+Source of truth = the markdown files. `in_degree` is recomputed each run and is
+the only measure of how heavily a block is depended on — the old authored
+`reference` rating was a hand-kept copy of it and has been dropped, along with
+`tier`, which duplicated `category`. `flags` and `notes` are curation metadata
+with no frontmatter home, so they are carried forward from the existing
+data/blocks.json by block id.
 """
 import json, os, re, sys, collections
 
@@ -191,9 +193,7 @@ for path, P in PAGES.items():
         "anchor": None,   # resolved below
         "category": P["fm"].get("category", []),
         "type": P["fm"].get("type", "rule"),
-        "tier": P["fm"].get("tier", "core"),
         "tags": P["fm"].get("tags", []),
-        "reference": P["fm"].get("reference", "low"),
         "flags": prev.get(bid, {}).get("flags", []),
         "notes": prev.get(bid, {}).get("notes", ""),
         "selectable": P["fm"].get("selectable", True),
@@ -391,7 +391,7 @@ for bid, b in blocks.items():
         b["url"] = None
 
 ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "url", "owns_heading", "category", "type",
-         "tier", "reference", "in_degree", "tags", "flags", "notes", "selectable", "wip",
+         "in_degree", "tags", "flags", "notes", "selectable", "wip",
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
 

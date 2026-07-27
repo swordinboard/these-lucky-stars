@@ -3,8 +3,6 @@ title: "Satchel"
 id: generic-equipment/satchel
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, containers]
 summary: "A mid-sized bag for documents or light supplies."
 headless: true

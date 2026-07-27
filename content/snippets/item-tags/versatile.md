@@ -3,8 +3,6 @@ title: "Versatile"
 id: item-tags/versatile
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [item-tag]
 headless: true
 ---

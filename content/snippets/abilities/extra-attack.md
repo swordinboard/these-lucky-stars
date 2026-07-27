@@ -3,8 +3,6 @@ title: "Extra Attack"
 id: abilities/extra-attack
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [ability, core, general]
 summary: "Make two standard attacks per round."
 requires: [proficiencies/weapon]

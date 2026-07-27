@@ -3,8 +3,6 @@ title: "Key Terms"
 id: basics/key-terms
 category: [core]
 type: rule
-tier: core
-reference: low
 tags: [basics]
 headless: true
 ---

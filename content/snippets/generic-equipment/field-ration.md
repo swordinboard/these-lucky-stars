@@ -3,8 +3,6 @@ title: "Field Ration"
 id: generic-equipment/field-ration
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, survival]
 summary: "One day of food for one person."
 variant_group: field-ration

@@ -7,8 +7,6 @@ wip: true
 id: races/classic-human
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [races, core]
 ---
 # Classic Human

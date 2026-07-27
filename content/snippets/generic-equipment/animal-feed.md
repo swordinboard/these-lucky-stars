@@ -3,8 +3,6 @@ title: "Animal Feed (1 day)"
 id: generic-equipment/animal-feed
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, trade-goods]
 summary: "One day of feed for one mount or pack animal."
 headless: true

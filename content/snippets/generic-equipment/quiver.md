@@ -3,8 +3,6 @@ title: "Quiver / Bolt Case"
 id: generic-equipment/quiver
 category: [core]
 type: equipment
-tier: core
-reference: low
 tags: [equipment, generic, containers]
 summary: "Holds ranged weapon ammunition."
 headless: true

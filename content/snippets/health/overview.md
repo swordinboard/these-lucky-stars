@@ -3,8 +3,6 @@ title: "Health"
 id: health/overview
 category: [core]
 type: reference
-tier: core
-reference: low
 tags: [health]
 headless: true
 ---

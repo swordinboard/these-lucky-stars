@@ -3,8 +3,6 @@ title: "Ghost Protocol"
 id: abilities/ghost-protocol
 category: [sci-fi]
 type: feature
-tier: module
-reference: low
 tags: [ability, sci-fi, general, computers]
 summary: "Remotely access a hacked system via linked comp jack."
 requires: [proficiencies/comp-jack]

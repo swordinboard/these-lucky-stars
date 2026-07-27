@@ -3,8 +3,6 @@ title: "B&E Kit"
 id: proficiencies/b-e-kit
 category: [core]
 type: feature
-tier: core
-reference: low
 tags: [proficiency, core]
 summary: "Trained in the use of the B&E kit."
 headless: true
