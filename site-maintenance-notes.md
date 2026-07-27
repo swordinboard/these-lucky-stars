@@ -164,6 +164,27 @@ abilities/agile-dodge
 {{< /catalog >}}
 ```
 
+**Or choose the rows by property** — for module hubs and any table that should
+pick up new blocks by itself:
+
+```
+{{< catalog category="sci-fi" namespace="abilities" header="Ability|Summary" />}}
+{{< catalog type="equipment" page="/docs/free-srd/.../sci-fi-weapons/" />}}
+```
+
+Same filters as `blockset` (`category`, `namespace`, `type`, `tag`, `page`,
+`wip="exclude"`, `order`). **Note the self-closing `/>}}`** — the hand-listed
+form uses inner text, so Hugo insists the property form closes itself.
+
+`page` takes a page URL and selects everything displayed there, which is how a
+hub lists "the weapons page" without re-tagging anything. Pair it with
+`type="equipment"` when the page also carries rules prose, or the table picks up
+section blocks that have no summary and renders blank cells.
+
+Links resolve per row: a block displayed on the current page gets `#anchor`, a
+block living elsewhere gets its full URL. So a hub can list blocks it does not
+render.
+
 - The body is a list of **block IDs**, one per line, in display order.
 - `- ` and `-- ` mark child / grandchild entries (rendered as `- ` and `– `).
 - Each row's name, link, and blurb come from that block's `label`/`title`,

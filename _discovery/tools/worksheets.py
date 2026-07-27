@@ -56,6 +56,32 @@ for t, members in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0])):
           + (f"  <sub>{', '.join(others)}</sub>" if others else "  <sub>(only tag)</sub>"))
     w("")
 
+w("### Blocks a quick-reference table would show with an empty cell")
+w("")
+w("`summary` is what the generated tables print. A selectable block without one")
+w("renders a blank cell on every catalog and module page that lists it.")
+w("")
+# what a table actually lists: selectable things, plus anything a generated
+# catalog points at (a rules-additions table lists rule blocks too)
+catalogued = {e["target"] for e in EDGES if e.get("class") == "catalog"}
+missing = [b for b in BLOCKS
+           if not b.get("summary") and not b.get("excluded")
+           and b.get("selectable", True)
+           and (b.get("type") in ("feature", "equipment", "creature")
+                or b["id"] in catalogued)]
+by_type = collections.defaultdict(list)
+for b in missing:
+    by_type[b["type"]].append(b)
+w(f"**{len(missing)} blocks**")
+w("")
+for t in sorted(by_type):
+    w(f"*{t}*")
+    w("")
+    for b in sorted(by_type[t], key=lambda b: b["id"]):
+        page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+        w(f"- `{b['id']}` — {b['title']}  <sub>{page}</sub>")
+    w("")
+
 w("### Blocks with only structural tags")
 w("")
 w("These carry no functional tag, so a tag-as-query pull (\"give me all the")
@@ -179,5 +205,5 @@ w("")
 path = D("_discovery/04-phase3-worksheets.md")
 open(path, "w").write("\n".join(out) + "\n")
 print(f"wrote {os.path.relpath(path, REPO)} ({len(out)} lines)")
-print(f"  {len(tags)} tags, {len(orphans)} orphans, {len(IMPLICIT)} implicit edges, "
-      f"{len(RELATED)} pages with related data")
+print(f"  {len(tags)} tags, {len(orphans)} orphans, {len(missing)} missing summaries, "
+      f"{len(IMPLICIT)} implicit edges, {len(RELATED)} pages with related data")

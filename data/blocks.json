@@ -8,6 +8,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "adaptive-luck",
   "url": "/docs/free-srd/character-creation/abilities/#adaptive-luck",
   "owns_heading": true,
@@ -35,6 +38,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "agile-charge",
   "url": "/docs/free-srd/character-creation/abilities/#agile-charge",
@@ -67,6 +73,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "agile-dodge",
   "url": "/docs/free-srd/character-creation/abilities/#agile-dodge",
   "owns_heading": true,
@@ -94,6 +103,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "bash",
   "url": "/docs/free-srd/character-creation/abilities/#bash",
@@ -124,8 +136,10 @@
   "file": "content/snippets/abilities/battery-saboteur.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "battery-saboteur",
   "url": "/docs/free-srd/character-creation/abilities/#battery-saboteur",
@@ -156,8 +170,10 @@
   "file": "content/snippets/abilities/battery-saver.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "battery-saver",
   "url": "/docs/free-srd/character-creation/abilities/#battery-saver",
@@ -187,6 +203,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "bolster",
   "url": "/docs/free-srd/character-creation/abilities/#bolster",
   "owns_heading": true,
@@ -214,6 +233,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "bonus-luck",
   "url": "/docs/free-srd/character-creation/abilities/#bonus-luck",
@@ -243,6 +265,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "charge",
   "url": "/docs/free-srd/character-creation/abilities/#charge",
   "owns_heading": true,
@@ -269,8 +294,10 @@
   "file": "content/snippets/abilities/companion-bot.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "companion-bot",
   "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
@@ -302,6 +329,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "controlled-suppressing-fire",
   "url": "/docs/free-srd/character-creation/abilities/#controlled-suppressing-fire",
@@ -335,6 +365,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "coordinated-strike",
   "url": "/docs/free-srd/character-creation/abilities/#coordinated-strike",
   "owns_heading": true,
@@ -363,6 +396,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "danger-reflex",
   "url": "/docs/free-srd/character-creation/abilities/#danger-reflex",
   "owns_heading": true,
@@ -390,6 +426,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "dead-drop",
   "url": "/docs/free-srd/character-creation/abilities/#dead-drop",
@@ -422,6 +461,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "defender",
   "url": "/docs/free-srd/character-creation/abilities/#defender",
   "owns_heading": true,
@@ -449,6 +491,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "dual-attack",
   "url": "/docs/free-srd/character-creation/abilities/#dual-attack",
@@ -480,6 +525,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "dual-defense",
   "url": "/docs/free-srd/character-creation/abilities/#dual-defense",
@@ -513,6 +561,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "dual-strike",
   "url": "/docs/free-srd/character-creation/abilities/#dual-strike",
   "owns_heading": true,
@@ -545,6 +596,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "expert",
   "url": "/docs/free-srd/character-creation/abilities/#expert",
   "owns_heading": true,
@@ -575,6 +629,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "extended-rage",
   "url": "/docs/free-srd/character-creation/abilities/#extended-rage",
@@ -607,6 +664,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "extra-attack",
   "url": "/docs/free-srd/character-creation/abilities/#extra-attack",
   "owns_heading": true,
@@ -638,6 +698,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "fast-kit-trap",
   "url": "/docs/free-srd/character-creation/abilities/#fast-kit-trap",
   "owns_heading": true,
@@ -665,6 +728,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "fearless-rage",
   "url": "/docs/free-srd/character-creation/abilities/#fearless-rage",
@@ -697,6 +763,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "field-medic",
   "url": "/docs/free-srd/character-creation/abilities/#field-medic",
   "owns_heading": true,
@@ -727,6 +796,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "field-patch",
   "url": "/docs/free-srd/character-creation/abilities/#field-patch",
@@ -759,6 +831,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "focus-attack",
   "url": "/docs/free-srd/character-creation/abilities/#focus-attack",
   "owns_heading": true,
@@ -787,6 +862,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "focus-in",
   "url": "/docs/free-srd/character-creation/abilities/#focus-in",
   "owns_heading": true,
@@ -814,6 +892,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "friend-in-need",
   "url": "/docs/free-srd/character-creation/abilities/#friend-in-need",
@@ -846,6 +927,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "friend-of-fortune",
   "url": "/docs/free-srd/character-creation/abilities/#friend-of-fortune",
   "owns_heading": true,
@@ -877,6 +961,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "general-spectacle",
   "url": "/docs/free-srd/character-creation/abilities/#general-spectacle",
   "owns_heading": true,
@@ -903,8 +990,10 @@
   "file": "content/snippets/abilities/ghost-protocol.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "ghost-protocol",
   "url": "/docs/free-srd/character-creation/abilities/#ghost-protocol",
@@ -938,6 +1027,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "improved-bash",
   "url": "/docs/free-srd/character-creation/abilities/#improved-bash",
   "owns_heading": true,
@@ -970,6 +1062,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "improved-suppressing-fire",
   "url": "/docs/free-srd/character-creation/abilities/#improved-suppressing-fire",
   "owns_heading": true,
@@ -1001,6 +1096,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "indomitable-rage",
   "url": "/docs/free-srd/character-creation/abilities/#indomitable-rage",
@@ -1035,6 +1133,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "just-grazed",
   "url": "/docs/free-srd/character-creation/abilities/#just-grazed",
   "owns_heading": true,
@@ -1065,6 +1166,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "just-winded",
   "url": "/docs/free-srd/character-creation/abilities/#just-winded",
@@ -1097,6 +1201,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "kit-trap",
   "url": "/docs/free-srd/character-creation/abilities/#kit-trap",
   "owns_heading": true,
@@ -1124,6 +1231,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "leaping-charge",
   "url": "/docs/free-srd/character-creation/abilities/#leaping-charge",
@@ -1157,6 +1267,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "leg-shot",
   "url": "/docs/free-srd/character-creation/abilities/#leg-shot",
   "owns_heading": true,
@@ -1187,6 +1300,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "line-of-fire",
   "url": "/docs/free-srd/character-creation/abilities/#line-of-fire",
@@ -1220,6 +1336,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "long-performance",
   "url": "/docs/free-srd/character-creation/abilities/#long-performance",
   "owns_heading": true,
@@ -1248,6 +1367,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "lucky-strike",
   "url": "/docs/free-srd/character-creation/abilities/#lucky-strike",
   "owns_heading": true,
@@ -1275,6 +1397,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "martial-supremacy",
   "url": "/docs/free-srd/character-creation/abilities/#martial-supremacy",
@@ -1307,6 +1432,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "medical-marvel",
   "url": "/docs/free-srd/character-creation/abilities/#medical-marvel",
   "owns_heading": true,
@@ -1334,6 +1462,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "momentum-dodge",
   "url": "/docs/free-srd/character-creation/abilities/#momentum-dodge",
@@ -1367,6 +1498,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "natural-gift",
   "url": "/docs/free-srd/character-creation/abilities/#natural-gift",
   "owns_heading": true,
@@ -1393,8 +1527,10 @@
   "file": "content/snippets/abilities/opensaysame.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "opensaysame",
   "url": "/docs/free-srd/character-creation/abilities/#opensaysame",
@@ -1426,6 +1562,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "oppressive-suppression",
   "url": "/docs/free-srd/character-creation/abilities/#oppressive-suppression",
@@ -1459,6 +1598,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "outburst",
   "url": "/docs/free-srd/character-creation/abilities/#outburst",
   "owns_heading": true,
@@ -1485,8 +1627,10 @@
   "file": "content/snippets/abilities/overcharge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "overcharge",
   "url": "/docs/free-srd/character-creation/abilities/#overcharge",
@@ -1519,6 +1663,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "abilities",
   "url": "/docs/free-srd/character-creation/abilities/#abilities",
   "owns_heading": false,
@@ -1544,6 +1691,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "patient-shot",
   "url": "/docs/free-srd/character-creation/abilities/#patient-shot",
@@ -1574,8 +1724,10 @@
   "file": "content/snippets/abilities/power-main-tap.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "power-main-tap",
   "url": "/docs/free-srd/character-creation/abilities/#power-main-tap",
@@ -1608,6 +1760,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "powerful-rage",
   "url": "/docs/free-srd/character-creation/abilities/#powerful-rage",
   "owns_heading": true,
@@ -1638,6 +1793,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "precise-focus",
   "url": "/docs/free-srd/character-creation/abilities/#precise-focus",
@@ -1671,6 +1829,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "quick-draw",
   "url": "/docs/free-srd/character-creation/abilities/#quick-draw",
   "owns_heading": true,
@@ -1698,6 +1859,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "quick-firing",
   "url": "/docs/free-srd/character-creation/abilities/#quick-firing",
@@ -1730,6 +1894,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "rage",
   "url": "/docs/free-srd/character-creation/abilities/#rage",
   "owns_heading": true,
@@ -1757,6 +1924,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "rally",
   "url": "/docs/free-srd/character-creation/abilities/#rally",
@@ -1786,6 +1956,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "reckless-attack",
   "url": "/docs/free-srd/character-creation/abilities/#reckless-attack",
   "owns_heading": true,
@@ -1812,8 +1985,10 @@
   "file": "content/snippets/abilities/rigged-comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "rigged-comp-jack",
   "url": "/docs/free-srd/character-creation/abilities/#rigged-comp-jack",
@@ -1846,8 +2021,10 @@
   "file": "content/snippets/abilities/salvage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "salvage",
   "url": "/docs/free-srd/character-creation/abilities/#salvage",
@@ -1878,8 +2055,10 @@
   "file": "content/snippets/abilities/signal-intelligence.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "signal-intelligence",
   "url": "/docs/free-srd/character-creation/abilities/#signal-intelligence",
@@ -1913,6 +2092,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "slip-strike",
   "url": "/docs/free-srd/character-creation/abilities/#slip-strike",
   "owns_heading": true,
@@ -1943,8 +2125,10 @@
   "file": "content/snippets/abilities/special-encouragement.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "special-encouragement",
   "url": "/docs/free-srd/character-creation/abilities/#special-encouragement",
@@ -1978,6 +2162,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "student",
   "url": "/docs/free-srd/character-creation/abilities/#student",
   "owns_heading": true,
@@ -2005,6 +2192,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "suppressing-fire",
   "url": "/docs/free-srd/character-creation/abilities/#suppressing-fire",
@@ -2035,8 +2225,10 @@
   "file": "content/snippets/abilities/swift-custom-battery.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "swift-custom-battery",
   "url": "/docs/free-srd/character-creation/abilities/#swift-custom-battery",
@@ -2069,6 +2261,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "swift-dual-attack",
   "url": "/docs/free-srd/character-creation/abilities/#swift-dual-attack",
   "owns_heading": true,
@@ -2099,8 +2294,10 @@
   "file": "content/snippets/abilities/tech-armor.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "tech-armor",
   "url": "/docs/free-srd/character-creation/abilities/#tech-armor",
@@ -2133,6 +2330,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "the-look",
   "url": "/docs/free-srd/character-creation/abilities/#the-look",
   "owns_heading": true,
@@ -2163,6 +2363,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "tis-but-a-scratch",
   "url": "/docs/free-srd/character-creation/abilities/#tis-but-a-scratch",
@@ -2198,6 +2401,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "true-defender",
   "url": "/docs/free-srd/character-creation/abilities/#true-defender",
   "owns_heading": true,
@@ -2230,6 +2436,9 @@
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
   ],
   "anchor": "unsettling-rage",
   "url": "/docs/free-srd/character-creation/abilities/#unsettling-rage",
@@ -2264,6 +2473,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "vital-focus",
   "url": "/docs/free-srd/character-creation/abilities/#vital-focus",
   "owns_heading": true,
@@ -2295,6 +2507,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/abilities.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/"
+  ],
   "anchor": "vital-strike",
   "url": "/docs/free-srd/character-creation/abilities/#vital-strike",
   "owns_heading": true,
@@ -2323,6 +2538,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
+  ],
   "anchor": "action-types",
   "url": "/docs/free-srd/core-rules/action-economy/#action-types",
   "owns_heading": false,
@@ -2347,6 +2565,9 @@
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
   ],
   "anchor": "difficult-terrain-and-obstacles",
   "url": "/docs/free-srd/core-rules/action-economy/#difficult-terrain-and-obstacles",
@@ -2374,6 +2595,10 @@
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "movement-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
   "owns_heading": false,
@@ -2400,6 +2625,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
+  ],
   "anchor": "multi-turn-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#multi-turn-actions",
   "owns_heading": false,
@@ -2424,6 +2652,9 @@
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
   ],
   "anchor": "opportunity-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#opportunity-actions",
@@ -2450,6 +2681,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
+  ],
   "anchor": "reactions",
   "url": "/docs/free-srd/core-rules/action-economy/#reactions",
   "owns_heading": false,
@@ -2475,6 +2709,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
+  ],
   "anchor": "readied-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#readied-actions",
   "owns_heading": false,
@@ -2499,6 +2736,9 @@
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
   ],
   "anchor": "standard-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#standard-actions",
@@ -2526,6 +2766,10 @@
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "movement-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
   "owns_heading": false,
@@ -2552,6 +2796,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/attributes.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/attributes/"
+  ],
   "anchor": "attribute-values",
   "url": "/docs/free-srd/core-rules/attributes/#attribute-values",
   "owns_heading": false,
@@ -2576,6 +2823,9 @@
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
   "pages": [
    "content/docs/free-srd/core-rules/attributes.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/attributes/"
   ],
   "anchor": "two-ways-to-determine-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#two-ways-to-determine-attributes",
@@ -2602,6 +2852,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/attributes.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/attributes/"
+  ],
   "anchor": "mental-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#mental-attributes",
   "owns_heading": false,
@@ -2626,6 +2879,9 @@
   "source_page": "content/docs/free-srd/core-rules/attributes.md",
   "pages": [
    "content/docs/free-srd/core-rules/attributes.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/attributes/"
   ],
   "anchor": "attributes",
   "url": "/docs/free-srd/core-rules/attributes/#attributes",
@@ -2652,6 +2908,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/attributes.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/attributes/"
+  ],
   "anchor": "physical-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#physical-attributes",
   "owns_heading": false,
@@ -2676,6 +2935,9 @@
   "source_page": "content/docs/free-srd/core-rules/basics.md",
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
   ],
   "anchor": "advantage",
   "url": "/docs/free-srd/core-rules/basics/#advantage",
@@ -2702,6 +2964,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
   "anchor": "contested-rolls",
   "url": "/docs/free-srd/core-rules/basics/#contested-rolls",
   "owns_heading": false,
@@ -2726,6 +2991,9 @@
   "source_page": "content/docs/free-srd/core-rules/basics.md",
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
   ],
   "anchor": "d100-or-percentage",
   "url": "/docs/free-srd/core-rules/basics/#d100-or-percentage",
@@ -2752,6 +3020,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
   "anchor": "decision-rolls---the-primary-mechanic",
   "url": "/docs/free-srd/core-rules/basics/#decision-rolls---the-primary-mechanic",
   "owns_heading": false,
@@ -2776,6 +3047,9 @@
   "source_page": "content/docs/free-srd/core-rules/basics.md",
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
   ],
   "anchor": "key-terms",
   "url": "/docs/free-srd/core-rules/basics/#key-terms",
@@ -2802,6 +3076,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
   "anchor": "resolving-a-tie",
   "url": "/docs/free-srd/core-rules/basics/#resolving-a-tie",
   "owns_heading": false,
@@ -2826,6 +3103,9 @@
   "source_page": "content/docs/free-srd/core-rules/basics.md",
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
   ],
   "anchor": "success-and-failure",
   "url": "/docs/free-srd/core-rules/basics/#success-and-failure",
@@ -2852,6 +3132,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
   "anchor": "supply-rolls",
   "url": "/docs/free-srd/core-rules/basics/#supply-rolls",
   "owns_heading": false,
@@ -2876,6 +3159,9 @@
   "source_page": "content/docs/free-srd/core-rules/basics.md",
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
   ],
   "anchor": "target-numbers",
   "url": "/docs/free-srd/core-rules/basics/#target-numbers",
@@ -2902,6 +3188,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/basics.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
   "anchor": "the-rounding-rule",
   "url": "/docs/free-srd/core-rules/basics/#the-rounding-rule",
   "owns_heading": false,
@@ -2925,8 +3214,10 @@
   "file": "content/snippets/bots/automated-machines.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
   "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/"
   ],
   "anchor": "bots--drones",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/#bots--drones",
@@ -2954,6 +3245,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2/"
+  ],
   "anchor": "bal",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2/",
   "owns_heading": true,
@@ -2979,6 +3273,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1/"
   ],
   "anchor": "hel-1",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1/",
@@ -3006,6 +3303,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l/"
+  ],
   "anchor": "t00l",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l/",
   "owns_heading": true,
@@ -3030,6 +3330,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a/"
   ],
   "anchor": "trk-a",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a/",
@@ -3056,6 +3359,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/character-creation-overview.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/character-creation-overview/"
+  ],
   "anchor": "character-creation",
   "url": "/docs/free-srd/character-creation/character-creation-overview/",
   "owns_heading": false,
@@ -3080,6 +3386,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "actions-in-combat",
   "url": "/docs/free-srd/core-rules/combat/#actions-in-combat",
@@ -3106,6 +3415,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "attacking-and-defending",
   "url": "/docs/free-srd/core-rules/combat/#attacking-and-defending",
   "owns_heading": false,
@@ -3130,6 +3442,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "defensive-actions",
   "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
@@ -3158,6 +3473,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "combat-basics",
   "url": "/docs/free-srd/core-rules/combat/#combat-basics",
   "owns_heading": false,
@@ -3183,6 +3501,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "cover",
   "url": "/docs/free-srd/core-rules/combat/#cover",
   "owns_heading": false,
@@ -3207,6 +3528,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "damage",
   "url": "/docs/free-srd/core-rules/combat/#damage",
@@ -3234,6 +3558,10 @@
    "content/docs/free-srd/core-rules/combat.md",
    "content/docs/free-srd/core-rules/size.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/",
+   "/docs/free-srd/core-rules/size/"
+  ],
   "anchor": null,
   "url": "/docs/free-srd/core-rules/combat/",
   "owns_heading": false,
@@ -3260,6 +3588,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "damage-resistance-and-weakness",
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "owns_heading": false,
@@ -3285,6 +3616,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "damage-sources",
   "url": "/docs/free-srd/core-rules/combat/#damage-sources",
   "owns_heading": false,
@@ -3309,6 +3643,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
@@ -3336,6 +3673,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
@@ -3365,6 +3705,10 @@
    "content/docs/free-srd/core-rules/combat.md",
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/",
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "owns_heading": false,
@@ -3391,6 +3735,10 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md",
    "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/",
+   "/docs/free-srd/core-rules/stats/"
   ],
   "anchor": "initiative",
   "url": "/docs/free-srd/core-rules/combat/#initiative",
@@ -3419,6 +3767,10 @@
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "opportunity-attack",
   "url": "/docs/free-srd/core-rules/action-economy/#opportunity-attack",
   "owns_heading": false,
@@ -3444,6 +3796,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
@@ -3472,6 +3827,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "owns_heading": false,
@@ -3498,6 +3856,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
@@ -3527,6 +3888,10 @@
    "content/docs/free-srd/core-rules/combat.md",
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/",
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "defensive-actions",
   "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
   "owns_heading": false,
@@ -3553,6 +3918,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "steps-to-an-attack",
   "url": "/docs/free-srd/core-rules/combat/#steps-to-an-attack",
   "owns_heading": false,
@@ -3578,6 +3946,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "surprise-attacks",
   "url": "/docs/free-srd/core-rules/combat/#surprise-attacks",
   "owns_heading": false,
@@ -3602,6 +3973,9 @@
   "source_page": "content/docs/free-srd/core-rules/combat.md",
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
   ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
@@ -3630,6 +4004,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "aggressive-actions",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "owns_heading": false,
@@ -3657,6 +4034,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/combat.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/"
+  ],
   "anchor": "defensive-actions",
   "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
   "owns_heading": false,
@@ -3683,6 +4063,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "audio-processor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#audio-processor",
@@ -3712,6 +4095,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "augmented-arm-actuators",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#augmented-arm-actuators",
   "owns_heading": true,
@@ -3739,6 +4125,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "automatic-crash-foam-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#automatic-crash-foam-system",
@@ -3768,6 +4157,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "backup-power-cell",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#backup-power-cell",
   "owns_heading": true,
@@ -3796,6 +4188,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "damage-and-wounds",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#damage-and-wounds",
   "owns_heading": false,
@@ -3821,6 +4216,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "heavy-wrist-laser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#heavy-wrist-laser",
@@ -3850,6 +4248,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "improved-cooling-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#improved-cooling-system",
   "owns_heading": true,
@@ -3878,6 +4279,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "installation",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#installation",
   "owns_heading": false,
@@ -3903,6 +4307,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "internal-comp-jack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#internal-comp-jack",
@@ -3933,6 +4340,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "manipulator-override",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#manipulator-override",
   "owns_heading": true,
@@ -3960,6 +4370,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "optical-suite",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#optical-suite",
@@ -3989,6 +4402,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "components",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#components",
   "owns_heading": false,
@@ -4015,6 +4431,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "power-sources-and-batteries",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#power-sources-and-batteries",
   "owns_heading": false,
@@ -4040,6 +4459,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "reinforced-chassis-plating",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#reinforced-chassis-plating",
@@ -4069,6 +4491,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "relay-node",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#relay-node",
   "owns_heading": true,
@@ -4096,6 +4521,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "repair-subroutine",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#repair-subroutine",
@@ -4125,6 +4553,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "servo-boost-legs",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#servo-boost-legs",
   "owns_heading": true,
@@ -4153,6 +4584,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "shield-mount",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#shield-mount",
   "owns_heading": true,
@@ -4180,6 +4614,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "signal-mast-heavy",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#signal-mast-heavy",
@@ -4211,6 +4648,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "signal-mast-retractable",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#signal-mast-retractable",
   "owns_heading": true,
@@ -4241,6 +4681,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "stabilizer-gyros",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#stabilizer-gyros",
   "owns_heading": true,
@@ -4268,6 +4711,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "subdermal-plating",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#subdermal-plating",
@@ -4297,6 +4743,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  ],
   "anchor": "targeting-array",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#targeting-array",
   "owns_heading": true,
@@ -4324,6 +4773,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
   ],
   "anchor": "wrist-laser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#wrist-laser",
@@ -4353,6 +4805,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "asphyxiating",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#asphyxiating",
   "owns_heading": true,
@@ -4378,6 +4833,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "bleeding",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#bleeding",
@@ -4405,6 +4863,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "confused",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#confused",
   "owns_heading": true,
@@ -4431,6 +4892,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "crippled",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#crippled",
   "owns_heading": true,
@@ -4456,6 +4920,9 @@
   "source_page": "content/docs/free-srd/character-creation/races/android.md",
   "pages": [
    "content/docs/free-srd/character-creation/races/android.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/android/"
   ],
   "anchor": "dead-battery",
   "url": "/docs/free-srd/character-creation/races/android/#dead-battery",
@@ -4484,6 +4951,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "dying",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
   "owns_heading": true,
@@ -4509,6 +4979,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "fatigued",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#fatigued",
@@ -4536,6 +5009,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "frightened",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#frightened",
   "owns_heading": true,
@@ -4561,6 +5037,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "immobilized",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#immobilized",
@@ -4588,6 +5067,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "conditions",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#conditions",
   "owns_heading": false,
@@ -4610,6 +5092,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "pinned",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#pinned",
@@ -4637,6 +5122,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "prone",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#prone",
   "owns_heading": true,
@@ -4662,6 +5150,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "restrained",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#restrained",
@@ -4689,6 +5180,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "shaken",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#shaken",
   "owns_heading": true,
@@ -4714,6 +5208,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "sick",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#sick",
@@ -4741,6 +5238,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "stressed",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#stressed",
   "owns_heading": true,
@@ -4767,6 +5267,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "unconscious",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#unconscious",
   "owns_heading": true,
@@ -4792,6 +5295,9 @@
   "source_page": "content/docs/free-srd/core-rules/size.md",
   "pages": [
    "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
   ],
   "anchor": "size",
   "url": "/docs/free-srd/core-rules/size/",
@@ -4820,6 +5326,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/environmental-effects.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/environmental-effects/"
+  ],
   "anchor": "environmental-effects",
   "url": "/docs/free-srd/core-rules/environmental-effects/#environmental-effects",
   "owns_heading": false,
@@ -4846,6 +5355,10 @@
    "content/docs/free-srd/core-rules/environmental-effects.md",
    "content/docs/free-srd/core-rules/sci-fi-additions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/environmental-effects/",
+   "/docs/free-srd/core-rules/sci-fi-additions/"
+  ],
   "anchor": "extreme-environments",
   "url": "/docs/free-srd/core-rules/environmental-effects/#extreme-environments",
   "owns_heading": false,
@@ -4870,6 +5383,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "sci-fi-armor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#sci-fi-armor",
@@ -4897,6 +5413,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/equipment/"
+  ],
   "anchor": "common-equipment-terms",
   "url": "/docs/free-srd/inventory--equipment/equipment/#common-equipment-terms",
   "owns_heading": false,
@@ -4921,6 +5440,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": null,
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/",
@@ -4948,6 +5470,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "shields",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#shields",
   "owns_heading": false,
@@ -4973,6 +5498,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "animal-feed-1-day",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#animal-feed-1-day",
@@ -5002,6 +5530,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "antiseptic-poultice",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#antiseptic-poultice",
   "owns_heading": true,
@@ -5029,6 +5560,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "antitoxin",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#antitoxin",
@@ -5058,6 +5592,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "backpack",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#backpack",
   "owns_heading": true,
@@ -5086,6 +5623,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "bag-of-salt",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bag-of-salt",
   "owns_heading": true,
@@ -5113,6 +5653,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "bandages-large",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bandages-large",
@@ -5144,6 +5687,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "bandages-small",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bandages-small",
   "owns_heading": true,
@@ -5174,6 +5720,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "barrel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#barrel",
   "owns_heading": true,
@@ -5201,6 +5750,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "bedroll",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bedroll",
@@ -5230,6 +5782,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "blank-book--journal",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#blank-book--journal",
   "owns_heading": true,
@@ -5257,6 +5812,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "block-of-soap",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#block-of-soap",
@@ -5286,6 +5844,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "candle",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#candle",
   "owns_heading": true,
@@ -5313,6 +5874,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "candle-wax-block",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#candle-wax-block",
@@ -5342,6 +5906,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "chain-10ft",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chain-10ft",
   "owns_heading": true,
@@ -5369,6 +5936,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "chalk--charcoal-sticks",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chalk--charcoal-sticks",
@@ -5398,6 +5968,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "coil-of-wire",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#coil-of-wire",
   "owns_heading": true,
@@ -5426,6 +5999,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "common-alcohol-flask",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#common-alcohol-flask",
   "owns_heading": true,
@@ -5453,6 +6029,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "compass--navigational-tool",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#compass--navigational-tool",
@@ -5483,6 +6062,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "crate",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#crate",
   "owns_heading": true,
@@ -5510,6 +6092,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "dry-sack",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#dry-sack",
@@ -5539,6 +6124,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "face-wrap",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#face-wrap",
   "owns_heading": true,
@@ -5566,6 +6154,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "field-ration",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#field-ration",
@@ -5596,6 +6187,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "fire-starter",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#fire-starter",
   "owns_heading": true,
@@ -5623,6 +6217,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "fuel--oil-flask",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#fuel--oil-flask",
@@ -5652,6 +6249,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "grappling-hook",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#grappling-hook",
   "owns_heading": true,
@@ -5679,6 +6279,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "heavy-cloak",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#heavy-cloak",
@@ -5708,6 +6311,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "ink--writing-instrument",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#ink--writing-instrument",
   "owns_heading": true,
@@ -5735,6 +6341,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "iron-spikes-10",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#iron-spikes-10",
@@ -5764,6 +6373,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "chest-lockable",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chest-lockable",
   "owns_heading": true,
@@ -5791,6 +6403,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "long-crowbar",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#long-crowbar",
@@ -5820,6 +6435,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "manacles--restraints",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#manacles--restraints",
   "owns_heading": true,
@@ -5847,6 +6465,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "oil-lantern",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#oil-lantern",
@@ -5876,6 +6497,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "parchment--paper-sheets-5",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#parchment--paper-sheets-5",
   "owns_heading": true,
@@ -5904,6 +6528,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "pitons--climbing-spikes-6",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pitons--climbing-spikes-6",
   "owns_heading": true,
@@ -5931,6 +6558,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "pouch-set-ammo",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-ammo",
@@ -5962,6 +6592,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "pouch-set-small",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-small",
   "owns_heading": true,
@@ -5991,6 +6624,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "pouch-set-standard",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-standard",
@@ -6022,6 +6658,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "quiver--bolt-case",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#quiver--bolt-case",
   "owns_heading": true,
@@ -6049,6 +6688,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "rain-poncho",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#rain-poncho",
@@ -6078,6 +6720,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "reinforced-boots",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#reinforced-boots",
   "owns_heading": true,
@@ -6105,6 +6750,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "restorative-tonic",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#restorative-tonic",
@@ -6134,6 +6782,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "rope-50ft",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#rope-50ft",
   "owns_heading": true,
@@ -6161,6 +6812,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "saddlebags",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#saddlebags",
@@ -6190,6 +6844,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "satchel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#satchel",
   "owns_heading": true,
@@ -6217,6 +6874,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "sewing-set",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#sewing-set",
@@ -6246,6 +6906,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "shovel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#shovel",
   "owns_heading": true,
@@ -6273,6 +6936,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "signal-mirror",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#signal-mirror",
@@ -6302,6 +6968,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "signal-whistle",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#signal-whistle",
   "owns_heading": true,
@@ -6329,6 +6998,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "small-bell",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#small-bell",
@@ -6358,6 +7030,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "splint-materials",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#splint-materials",
   "owns_heading": true,
@@ -6385,6 +7060,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "tent-2-person",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#tent-2-person",
@@ -6414,6 +7092,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "tent-4-person",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#tent-4-person",
   "owns_heading": true,
@@ -6441,6 +7122,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "torch",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#torch",
@@ -6470,6 +7154,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "ball-of-twine--string",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#ball-of-twine--string",
   "owns_heading": true,
@@ -6497,6 +7184,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "waterskin--canteen",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#waterskin--canteen",
@@ -6526,6 +7216,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "whetstone",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#whetstone",
   "owns_heading": true,
@@ -6553,6 +7246,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "wide-brim-hat",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#wide-brim-hat",
@@ -6582,6 +7278,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
+  ],
   "anchor": "wooden-stakes-6",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#wooden-stakes-6",
   "owns_heading": true,
@@ -6609,6 +7308,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/generic-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/generic-equipment/"
   ],
   "anchor": "work-gloves",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#work-gloves",
@@ -6639,6 +7341,10 @@
    "content/docs/free-srd/core-rules/combat.md",
    "content/docs/free-srd/core-rules/health.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/combat/",
+   "/docs/free-srd/core-rules/health/"
+  ],
   "anchor": "applying-damage",
   "url": "/docs/free-srd/core-rules/combat/#applying-damage",
   "owns_heading": false,
@@ -6666,6 +7372,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/health.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/health/"
+  ],
   "anchor": "health",
   "url": "/docs/free-srd/core-rules/health/#health",
   "owns_heading": false,
@@ -6690,6 +7399,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/inventory.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/inventory/"
   ],
   "anchor": "equipment-body-slots",
   "url": "/docs/free-srd/inventory--equipment/inventory/#equipment-body-slots",
@@ -6716,6 +7428,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/inventory.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/inventory/"
+  ],
   "anchor": "inventory-management",
   "url": "/docs/free-srd/inventory--equipment/inventory/#inventory-management",
   "owns_heading": false,
@@ -6740,6 +7455,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "adaptive-mesh",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#adaptive-mesh",
@@ -6766,6 +7484,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "arcing",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
   "owns_heading": true,
@@ -6790,6 +7511,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "ballistic",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
@@ -6816,6 +7540,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "battery",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "owns_heading": true,
@@ -6840,6 +7567,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "belt-fed",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#belt-fed",
@@ -6866,6 +7596,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "bulky",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "owns_heading": true,
@@ -6890,6 +7623,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "concealable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
@@ -6916,6 +7652,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "durable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "owns_heading": true,
@@ -6940,6 +7679,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "firing-modes",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
@@ -6966,6 +7708,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "fragile",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fragile",
   "owns_heading": true,
@@ -6990,6 +7735,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "fuel-cell",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
@@ -7016,6 +7764,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "injector",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
   "owns_heading": true,
@@ -7040,6 +7791,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "long-reload",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#long-reload",
@@ -7066,6 +7820,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "power-source",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
   "owns_heading": true,
@@ -7090,6 +7847,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "pressurized",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#pressurized",
@@ -7116,6 +7876,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "rounds-reload",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#rounds-reload",
   "owns_heading": true,
@@ -7140,6 +7903,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "space-suit",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
@@ -7166,6 +7932,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "throwable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
   "owns_heading": true,
@@ -7190,6 +7959,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "two-handed",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
@@ -7216,6 +7988,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/item-tags.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/item-tags/"
+  ],
   "anchor": "versatile",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#versatile",
   "owns_heading": true,
@@ -7241,6 +8016,10 @@
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/stats/"
   ],
   "anchor": "speed",
   "url": "/docs/free-srd/core-rules/action-economy/#speed",
@@ -7270,6 +8049,11 @@
    "content/docs/free-srd/core-rules/stats.md",
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/stats/",
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "speed-descriptors",
   "url": "/docs/free-srd/core-rules/action-economy/#speed-descriptors",
   "owns_heading": false,
@@ -7296,6 +8080,11 @@
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/stats.md",
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/stats/",
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "speed-tiers",
   "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
@@ -7324,6 +8113,11 @@
    "content/docs/free-srd/core-rules/stats.md",
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/stats/",
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "speed-tiers",
   "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
   "owns_heading": false,
@@ -7349,6 +8143,10 @@
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md",
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "armor",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#armor",
@@ -7376,6 +8174,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/"
+  ],
   "anchor": "object-conditions",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions",
   "owns_heading": false,
@@ -7400,6 +8201,9 @@
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/"
   ],
   "anchor": "object-durability",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
@@ -7426,6 +8230,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/"
+  ],
   "anchor": "material-def",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#material-def",
   "owns_heading": false,
@@ -7450,6 +8257,9 @@
   "source_page": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/"
   ],
   "anchor": "damaged--broken-gear",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#damaged--broken-gear",
@@ -7477,6 +8287,10 @@
    "content/docs/free-srd/core-rules/damaged--broken-gear.md",
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "shields",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#shields",
   "owns_heading": false,
@@ -7503,6 +8317,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/damaged--broken-gear.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/damaged--broken-gear/"
+  ],
   "anchor": "targeting-objects",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#targeting-objects",
   "owns_heading": false,
@@ -7527,6 +8344,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "armor",
   "url": "/docs/free-srd/character-creation/proficiencies/#armor",
@@ -7555,6 +8375,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "be-kit-proficiency",
   "url": "/docs/free-srd/character-creation/proficiencies/#be-kit-proficiency",
   "owns_heading": true,
@@ -7580,8 +8403,10 @@
   "file": "content/snippets/proficiencies/comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "comp-jack-proficiency",
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
@@ -7611,6 +8436,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "disguise-kit-proficiency",
   "url": "/docs/free-srd/character-creation/proficiencies/#disguise-kit-proficiency",
   "owns_heading": true,
@@ -7636,8 +8464,10 @@
   "file": "content/snippets/proficiencies/general-robotics.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "general-robotics",
   "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
@@ -7664,8 +8494,10 @@
   "file": "content/snippets/proficiencies/general-technology.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "general-technology",
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
@@ -7694,6 +8526,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "improved-ability",
   "url": "/docs/free-srd/character-creation/proficiencies/#improved-ability",
   "owns_heading": true,
@@ -7720,6 +8555,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "licensed-instincts",
   "url": "/docs/free-srd/character-creation/proficiencies/#licensed-instincts",
@@ -7751,6 +8589,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "martial-training",
   "url": "/docs/free-srd/character-creation/proficiencies/#martial-training",
   "owns_heading": true,
@@ -7778,6 +8619,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "medic-training",
   "url": "/docs/free-srd/character-creation/proficiencies/#medic-training",
   "owns_heading": true,
@@ -7804,6 +8648,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "medical-instincts",
   "url": "/docs/free-srd/character-creation/proficiencies/#medical-instincts",
@@ -7835,6 +8682,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "negotiation-training",
   "url": "/docs/free-srd/character-creation/proficiencies/#negotiation-training",
   "owns_heading": true,
@@ -7862,6 +8712,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "proficiencies",
   "url": "/docs/free-srd/character-creation/proficiencies/#proficiencies",
   "owns_heading": false,
@@ -7887,6 +8740,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "repair-kit-proficiency",
   "url": "/docs/free-srd/character-creation/proficiencies/#repair-kit-proficiency",
@@ -7915,6 +8771,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "research",
   "url": "/docs/free-srd/character-creation/proficiencies/#research",
   "owns_heading": true,
@@ -7941,6 +8800,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "survival-training",
   "url": "/docs/free-srd/character-creation/proficiencies/#survival-training",
@@ -7969,6 +8831,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
+  ],
   "anchor": "vehicle",
   "url": "/docs/free-srd/character-creation/proficiencies/#vehicle",
   "owns_heading": true,
@@ -7995,6 +8860,9 @@
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/proficiencies/"
   ],
   "anchor": "weapon",
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
@@ -8023,6 +8891,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/races/android.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/android/"
+  ],
   "anchor": "android",
   "url": "/docs/free-srd/character-creation/races/android/",
   "owns_heading": true,
@@ -8048,6 +8919,9 @@
   "source_page": "content/docs/free-srd/character-creation/races/classic-human.md",
   "pages": [
    "content/docs/free-srd/character-creation/races/classic-human.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/classic-human/"
   ],
   "anchor": "classic-human",
   "url": "/docs/free-srd/character-creation/races/classic-human/",
@@ -8075,6 +8949,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/races/_index.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/"
+  ],
   "anchor": "races",
   "url": "/docs/free-srd/character-creation/races/",
   "owns_heading": true,
@@ -8100,6 +8977,9 @@
   "source_page": "content/docs/free-srd/character-creation/races/reptilian.md",
   "pages": [
    "content/docs/free-srd/character-creation/races/reptilian.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/reptilian/"
   ],
   "anchor": "reptilian",
   "url": "/docs/free-srd/character-creation/races/reptilian/",
@@ -8127,6 +9007,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/races/star-touched-human.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/star-touched-human/"
+  ],
   "anchor": "star-touched-human",
   "url": "/docs/free-srd/character-creation/races/star-touched-human/",
   "owns_heading": true,
@@ -8153,6 +9036,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/races/zeta-grey.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/zeta-grey/"
+  ],
   "anchor": "zeta-grey",
   "url": "/docs/free-srd/character-creation/races/zeta-grey/",
   "owns_heading": true,
@@ -8178,6 +9064,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "analgesic-radiation-antidote-5-ara-5",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
@@ -8208,6 +9097,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "auto-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#auto-injector",
   "owns_heading": true,
@@ -8236,6 +9128,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "auto-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
@@ -8267,6 +9162,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "be-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#be-kit",
   "owns_heading": true,
@@ -8295,6 +9193,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "ballistic-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
   "owns_heading": true,
@@ -8322,6 +9223,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "basic-p-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#basic-p-suit",
@@ -8352,6 +9256,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "standardized-battery-cores",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
   "owns_heading": true,
@@ -8379,6 +9286,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "bio-scanner",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
@@ -8408,6 +9318,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "bioskin-veil",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bioskin-veil",
   "owns_heading": true,
@@ -8435,6 +9348,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "bipod",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#bipod",
@@ -8465,6 +9381,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "boost-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#boost-pack",
   "owns_heading": true,
@@ -8492,6 +9411,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "chameleon-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#chameleon-unit",
@@ -8522,6 +9444,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "classic-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#classic-evosuit",
   "owns_heading": true,
@@ -8551,6 +9476,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "collapsible-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#collapsible-shield",
   "owns_heading": true,
@@ -8578,6 +9506,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "combat-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-evosuit",
@@ -8608,6 +9539,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "combat-vest",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
   "owns_heading": true,
@@ -8637,6 +9571,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "comp-jack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "owns_heading": true,
@@ -8665,6 +9602,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "compact-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#compact-rifle",
@@ -8696,6 +9636,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "coms-headset",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
   "owns_heading": true,
@@ -8723,6 +9666,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "coms-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
@@ -8753,6 +9699,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "crash-foam-canister",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "owns_heading": true,
@@ -8780,6 +9729,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "data-spike",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#data-spike",
@@ -8810,6 +9762,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "decoy-beacon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#decoy-beacon",
   "owns_heading": true,
@@ -8838,6 +9793,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "disguise-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#disguise-kit",
   "owns_heading": true,
@@ -8865,6 +9823,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "drum-magazines",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#drum-magazines",
@@ -8895,6 +9856,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "emergency-beacon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-beacon",
   "owns_heading": true,
@@ -8922,6 +9886,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "emergency-hatchet",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#emergency-hatchet",
@@ -8953,6 +9920,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "emergency-oxygen-mask",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-oxygen-mask",
   "owns_heading": true,
@@ -8980,6 +9950,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "emergency-shank",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#emergency-shank",
@@ -9010,6 +9983,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "emergency-trauma-patch",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-trauma-patch",
   "owns_heading": true,
@@ -9037,6 +10013,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "enforcer-armor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#enforcer-armor",
@@ -9067,6 +10046,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "eva-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit",
   "owns_heading": true,
@@ -9095,6 +10077,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "extended-barrel",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#extended-barrel",
@@ -9125,6 +10110,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "field-ration",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#field-ration",
   "owns_heading": true,
@@ -9153,6 +10141,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "forward-assault-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#forward-assault-shield",
@@ -9183,6 +10174,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "fuel-cells",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells",
   "owns_heading": true,
@@ -9210,6 +10204,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "grapple-line-launcher",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#grapple-line-launcher",
@@ -9239,6 +10236,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "gravity-anchor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#gravity-anchor",
   "owns_heading": true,
@@ -9266,6 +10266,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "hazard-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud",
@@ -9295,6 +10298,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "heavy-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#heavy-pistol",
@@ -9326,6 +10332,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
+  ],
   "anchor": "heavy-rotary-cannon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#heavy-rotary-cannon",
   "owns_heading": true,
@@ -9356,6 +10365,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "jump-boosters",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-boosters",
   "owns_heading": true,
@@ -9383,6 +10395,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "jump-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-pack",
@@ -9412,6 +10427,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "sci-fi-tool-kits",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#sci-fi-tool-kits",
   "owns_heading": false,
@@ -9438,6 +10456,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "knuckle-taser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#knuckle-taser",
@@ -9469,6 +10490,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
+  ],
   "anchor": "laser-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol",
   "owns_heading": true,
@@ -9498,6 +10522,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "laser-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle",
@@ -9529,6 +10556,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "light-combat-vest",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#light-combat-vest",
   "owns_heading": true,
@@ -9557,6 +10587,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "light-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#light-pistol",
@@ -9588,6 +10621,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "long-range-coms",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#long-range-coms",
   "owns_heading": true,
@@ -9615,6 +10651,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "long-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#long-rifle",
@@ -9646,6 +10685,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "mag-boots",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-boots",
   "owns_heading": true,
@@ -9674,6 +10716,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "mag-cuffs",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-cuffs",
   "owns_heading": true,
@@ -9701,6 +10746,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "mebn-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#mebn-hud",
@@ -9731,6 +10779,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "medical-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#medical-kit",
   "owns_heading": true,
@@ -9758,6 +10809,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "mini-laser-cutter",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mini-laser-cutter",
@@ -9787,6 +10841,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "mobile-phone",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mobile-phone",
   "owns_heading": true,
@@ -9814,6 +10871,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "overcharge-chamber",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#overcharge-chamber",
@@ -9844,6 +10904,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "padded-flight-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#padded-flight-suit",
   "owns_heading": true,
@@ -9873,6 +10936,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "pain-suppressant-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
   "owns_heading": true,
@@ -9900,6 +10966,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "personal-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#personal-shield",
@@ -9929,6 +10998,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "portable-heater",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-heater",
   "owns_heading": true,
@@ -9956,6 +11028,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "portable-water-purifier",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-water-purifier",
@@ -9985,6 +11060,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "reactor-cores",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
   "owns_heading": true,
@@ -10012,6 +11090,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "recoil-compensation-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#recoil-compensation-system",
@@ -10042,6 +11123,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
+  ],
   "anchor": "reflex-sight",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#reflex-sight",
   "owns_heading": true,
@@ -10071,6 +11155,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "remote-detonator",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#remote-detonator",
   "owns_heading": true,
@@ -10099,6 +11186,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "repair-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#repair-kit",
   "owns_heading": true,
@@ -10126,6 +11216,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "ripper-blade",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#ripper-blade",
@@ -10157,6 +11250,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "safer-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#safer-unit",
   "owns_heading": true,
@@ -10185,6 +11281,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "scav-gear",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#scav-gear",
@@ -10215,6 +11314,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
   "anchor": "security-flight-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#security-flight-suit",
   "owns_heading": true,
@@ -10243,6 +11345,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "shock-baton",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
@@ -10274,6 +11379,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
+  ],
   "anchor": "shock-charger",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-charger",
   "owns_heading": true,
@@ -10302,6 +11410,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "shock-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-rifle",
@@ -10333,6 +11444,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "signature-spoofer",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#signature-spoofer",
   "owns_heading": true,
@@ -10360,6 +11474,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "site-safety-gear",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#site-safety-gear",
@@ -10390,6 +11507,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "solar-array-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#solar-array-pack",
   "owns_heading": true,
@@ -10418,6 +11538,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "squad-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#squad-shield",
   "owns_heading": true,
@@ -10445,6 +11568,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "standard-issue-knife",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#standard-issue-knife",
@@ -10476,6 +11602,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
+  ],
   "anchor": "standard-issue-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#standard-issue-rifle",
   "owns_heading": true,
@@ -10506,6 +11635,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "survival-tent",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#survival-tent",
   "owns_heading": true,
@@ -10533,6 +11665,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "targeting-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#targeting-hud",
@@ -10563,6 +11698,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
   "anchor": "tech-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#tech-kit",
   "owns_heading": true,
@@ -10590,6 +11728,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "ultraweave-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ultraweave-evosuit",
@@ -10620,6 +11761,9 @@
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
   "anchor": "vitaboost-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
   "owns_heading": true,
@@ -10647,6 +11791,9 @@
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "weighted-core",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#weighted-core",
@@ -10676,8 +11823,11 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/item-tags.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/inventory--equipment/item-tags.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/inventory--equipment/item-tags/"
   ],
   "anchor": "ballistic-weapons-in-space",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#ballistic-weapons-in-space",
@@ -10705,8 +11855,12 @@
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "communications",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#communications",
@@ -10732,8 +11886,10 @@
   "file": "content/snippets/sci-fi/computer-systems.md",
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
-   "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/core-rules/sci-fi-additions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/"
   ],
   "anchor": "computer-systems",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#computer-systems",
@@ -10760,8 +11916,11 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
   ],
   "anchor": "energy-shields",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields",
@@ -10789,8 +11948,11 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
   ],
   "anchor": "heads-up-displays-huds",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
@@ -10819,6 +11981,10 @@
    "content/_index.md",
    "content/docs/free-srd/_index.md"
   ],
+  "page_urls": [
+   "/",
+   "/docs/free-srd/"
+  ],
   "anchor": null,
   "url": "/",
   "owns_heading": false,
@@ -10846,6 +12012,9 @@
   "source_page": "content/docs/legal.md",
   "pages": [
    "content/docs/legal.md"
+  ],
+  "page_urls": [
+   "/docs/legal/"
   ],
   "anchor": "legal-information",
   "url": "/docs/legal/",
@@ -10876,6 +12045,10 @@
    "content/docs/free-srd/core-rules/action-economy.md",
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "action-points",
   "url": "/docs/free-srd/core-rules/action-economy/#action-points",
   "owns_heading": false,
@@ -10901,6 +12074,9 @@
   "source_page": "content/docs/free-srd/core-rules/stats.md",
   "pages": [
    "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/stats/"
   ],
   "anchor": "attack",
   "url": "/docs/free-srd/core-rules/stats/#attack",
@@ -10928,6 +12104,10 @@
    "content/docs/free-srd/core-rules/health.md",
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/health/",
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "defense",
   "url": "/docs/free-srd/core-rules/health/#defense",
   "owns_heading": false,
@@ -10953,6 +12133,9 @@
   "source_page": "content/docs/free-srd/core-rules/stats.md",
   "pages": [
    "content/docs/free-srd/core-rules/stats.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/stats/"
   ],
   "anchor": "luck",
   "url": "/docs/free-srd/core-rules/stats/#luck",
@@ -10980,6 +12163,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "stress-threshold",
   "url": "/docs/free-srd/core-rules/stats/#stress-threshold",
   "owns_heading": false,
@@ -11006,6 +12192,10 @@
    "content/docs/free-srd/core-rules/health.md",
    "content/docs/free-srd/core-rules/stats.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/health/",
+   "/docs/free-srd/core-rules/stats/"
+  ],
   "anchor": "vitality",
   "url": "/docs/free-srd/core-rules/health/#vitality",
   "owns_heading": false,
@@ -11031,6 +12221,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "alert",
   "url": "/docs/free-srd/character-creation/traits/#alert",
@@ -11059,6 +12252,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "composed",
   "url": "/docs/free-srd/character-creation/traits/#composed",
   "owns_heading": true,
@@ -11085,6 +12281,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "diplomatic",
   "url": "/docs/free-srd/character-creation/traits/#diplomatic",
@@ -11113,6 +12312,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "hot-headed",
   "url": "/docs/free-srd/character-creation/traits/#hot-headed",
   "owns_heading": true,
@@ -11138,8 +12340,10 @@
   "file": "content/snippets/traits/inter-planet-traveler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "inter-planet-traveler",
   "url": "/docs/free-srd/character-creation/traits/#inter-planet-traveler",
@@ -11168,6 +12372,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "intimidating",
   "url": "/docs/free-srd/character-creation/traits/#intimidating",
   "owns_heading": true,
@@ -11194,6 +12401,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "lucky",
   "url": "/docs/free-srd/character-creation/traits/#lucky",
@@ -11222,6 +12432,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "mentally-sound",
   "url": "/docs/free-srd/character-creation/traits/#mentally-sound",
   "owns_heading": true,
@@ -11249,6 +12462,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "traits",
   "url": "/docs/free-srd/character-creation/traits/#traits",
   "owns_heading": false,
@@ -11274,6 +12490,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "particularly-attractive",
   "url": "/docs/free-srd/character-creation/traits/#particularly-attractive",
@@ -11302,6 +12521,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "picture-of-health",
   "url": "/docs/free-srd/character-creation/traits/#picture-of-health",
   "owns_heading": true,
@@ -11327,8 +12549,10 @@
   "file": "content/snippets/traits/scrap-hauler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "scrap-hauler",
   "url": "/docs/free-srd/character-creation/traits/#scrap-hauler",
@@ -11357,6 +12581,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "sly",
   "url": "/docs/free-srd/character-creation/traits/#sly",
   "owns_heading": true,
@@ -11384,6 +12611,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "sneaky",
   "url": "/docs/free-srd/character-creation/traits/#sneaky",
   "owns_heading": true,
@@ -11409,8 +12639,10 @@
   "file": "content/snippets/traits/space-adept.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md",
-   "content/docs/free-srd/sci-fi-module.md"
+   "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "space-adept",
   "url": "/docs/free-srd/character-creation/traits/#space-adept",
@@ -11439,6 +12671,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "stubborn",
   "url": "/docs/free-srd/character-creation/traits/#stubborn",
   "owns_heading": true,
@@ -11465,6 +12700,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "tough",
   "url": "/docs/free-srd/character-creation/traits/#tough",
@@ -11493,6 +12731,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "unremarkable",
   "url": "/docs/free-srd/character-creation/traits/#unremarkable",
   "owns_heading": true,
@@ -11519,6 +12760,9 @@
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
   ],
   "anchor": "unshakable",
   "url": "/docs/free-srd/character-creation/traits/#unshakable",
@@ -11547,6 +12791,9 @@
   "pages": [
    "content/docs/free-srd/character-creation/traits.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/traits/"
+  ],
   "anchor": "well-connected",
   "url": "/docs/free-srd/character-creation/traits/#well-connected",
   "owns_heading": true,
@@ -11574,6 +12821,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "boarding--bailing",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "owns_heading": false,
@@ -11598,6 +12848,9 @@
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "collision-damage",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#collision-damage",
@@ -11624,6 +12877,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "cover-from-vehicles",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#cover-from-vehicles",
   "owns_heading": false,
@@ -11648,6 +12904,9 @@
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "drive",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#drive",
@@ -11674,6 +12933,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "ignition",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#ignition",
   "owns_heading": false,
@@ -11698,6 +12960,9 @@
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "impact--overrun",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#impact--overrun",
@@ -11724,6 +12989,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "initiative--occupants",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#initiative--occupants",
   "owns_heading": false,
@@ -11748,6 +13016,9 @@
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "mounts",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#mounts",
@@ -11774,6 +13045,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "vehicle-rules",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-rules",
   "owns_heading": false,
@@ -11798,6 +13072,9 @@
   "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "vehicle-actions",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-actions",
@@ -11824,6 +13101,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
   "anchor": "vehicle-size",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-size",
   "owns_heading": false,
@@ -11848,6 +13128,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "burn",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#burn",
@@ -11875,6 +13158,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "common-injuries",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#common-injuries",
   "owns_heading": false,
@@ -11897,6 +13183,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "contusion",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#contusion",
@@ -11924,6 +13213,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "dislocation",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dislocation",
   "owns_heading": true,
@@ -11949,6 +13241,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "fracture",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#fracture",
@@ -11976,6 +13271,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "laceration",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#laceration",
   "owns_heading": true,
@@ -12002,6 +13300,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "wounds--conditions",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#wounds--conditions",
   "owns_heading": false,
@@ -12024,6 +13325,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "puncture",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#puncture",
@@ -12051,6 +13355,9 @@
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
   ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
+  ],
   "anchor": "sprain",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#sprain",
   "owns_heading": true,
@@ -12076,6 +13383,9 @@
   "source_page": "content/docs/free-srd/core-rules/wounds--conditions.md",
   "pages": [
    "content/docs/free-srd/core-rules/wounds--conditions.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/wounds--conditions/"
   ],
   "anchor": "wounds",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#wounds",

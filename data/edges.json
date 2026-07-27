@@ -3413,57 +3413,39 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "page:/docs/free-srd/character-creation/abilities/",
-  "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/",
-  "text": "Abilities",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 44
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "text": "Sci-Fi Weapons",
+  "text": "Weapons",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 62
+  "line": 57
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "text": "Sci-Fi Armor",
+  "text": "Armor",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 63
+  "line": 61
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "text": "Sci-Fi Tool Kits",
+  "text": "Tool Kits",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 64
+  "line": 65
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "text": "Sci-Fi Misc Equipment",
+  "text": "Misc Equipment",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 65
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "text": "Robots and Drones",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 66
+  "line": 69
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3472,7 +3454,1396 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
   "text": "Bots & Drones",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 70
+  "line": 78
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+  "text": "Components",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 82
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi/ballistics-in-space",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ballistic Weapons In Space",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi/communications",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Communications",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi/computer-systems",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Computer Systems",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi/energy-shields",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Energy Shields",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi/huds",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Heads Up Displays (HUDs)",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "races/android",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Android",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "races/reptilian",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Reptilian",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "races/star-touched-human",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Star-touched Human",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "races/zeta-grey",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Zeta Grey",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/battery-saboteur",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Battery Saboteur",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/battery-saver",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Battery Saver",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/companion-bot",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Companion Bot",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/ghost-protocol",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ghost Protocol",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/opensaysame",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Opensaysame",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/overcharge",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Overcharge",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/power-main-tap",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Power Main Tap",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/rigged-comp-jack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Rigged Comp Jack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/salvage",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Salvage",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/signal-intelligence",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Signal Intelligence",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/special-encouragement",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Special Encouragement",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/swift-custom-battery",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Swift Custom Battery",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "abilities/tech-armor",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Tech Armor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "proficiencies/comp-jack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Comp Jack Proficiency",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "proficiencies/general-robotics",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "General Robotics",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "proficiencies/general-technology",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "General Technology",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "traits/inter-planet-traveler",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Inter-Planet Traveler",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "traits/scrap-hauler",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Scrap Hauler",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "traits/space-adept",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Space Adept",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/auto-pistol",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Auto Pistol",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/bipod",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Bipod",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/compact-rifle",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Compact Rifle",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/drum-magazines",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Drum Magazines",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/emergency-hatchet",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Emergency Hatchet",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/extended-barrel",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Extended Barrel",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/forward-assault-shield",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Forward Assault Shield",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/heavy-pistol",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Heavy Pistol",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/heavy-rotary-cannon",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Heavy Rotary Cannon",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/knuckle-taser",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Knuckle Taser",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/laser-pistol",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Laser Pistol",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/laser-rifle",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Laser Rifle",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/light-pistol",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Light Pistol",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/long-rifle",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Long Rifle",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/overcharge-chamber",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Overcharge Chamber",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/recoil-compensation-system",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Recoil Compensation System",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/reflex-sight",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Reflex Sight",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/ripper-blade",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ripper Blade",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/shock-baton",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Shock Baton",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/shock-charger",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Shock Charger",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/shock-rifle",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Shock Rifle",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/standard-issue-knife",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Standard Issue Knife",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/standard-issue-rifle",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Standard Issue Rifle",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/weighted-core",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Weighted Core",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/auto-injector",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Auto-Injector",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/ballistic-shield",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ballistic Shield",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/basic-p-suit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Basic P-Suit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/chameleon-unit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Chameleon Unit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/classic-evosuit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Classic Evosuit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/collapsible-shield",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Collapsible Shield",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/combat-evosuit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Combat Evosuit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/combat-vest",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Combat Vest",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/coms-unit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Coms Unit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/emergency-shank",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Emergency Shank",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/enforcer-armor",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Enforcer Armor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/eva-suit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "EVA Suit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/hazard-hud",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Hazard HUD",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/light-combat-vest",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Light Combat Vest",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/mebn-hud",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "MeBN HUD",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/padded-flight-suit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Padded Flight Suit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/safer-unit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "SAFER Unit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/scav-gear",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Scav Gear",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/security-flight-suit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Security Flight Suit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/site-safety-gear",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Site Safety Gear",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/targeting-hud",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Targeting HUD",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/ultraweave-evosuit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ultraweave Evosuit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/b-e-kit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "B&E Kit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/disguise-kit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Disguise Kit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/medical-kit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Medical Kit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/repair-kit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Repair Kit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/tech-kit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Tech Kit",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/ara-5",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Analgesic Radiation Antidote 5 (ARA-5)",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/battery-cores",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Standardized Battery Cores",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/bio-scanner",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Bio Scanner",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/bioskin-veil",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Bioskin Veil",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/boost-pack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Boost Pack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/comp-jack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Comp Jack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/coms-headset",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Coms Headset",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/crash-foam-canister",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Crash Foam Canister",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/data-spike",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Data Spike",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/decoy-beacon",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Decoy Beacon",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/emergency-beacon",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Emergency Beacon",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/emergency-oxygen-mask",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Emergency Oxygen Mask",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/emergency-trauma-patch",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Emergency Trauma Patch",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/field-ration",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Field Ration",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/fuel-cells",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Fuel Cells",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/grapple-line-launcher",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Grapple-Line Launcher",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/gravity-anchor",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Gravity Anchor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/jump-boosters",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Jump Boosters",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/jump-pack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Jump Pack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/long-range-coms",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Long Range Coms",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/mag-boots",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Mag Boots",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/mag-cuffs",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Mag Cuffs",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/mini-laser-cutter",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Mini Laser Cutter",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/mobile-phone",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Mobile Phone",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/pain-suppressant-injector",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Pain Suppressant Injector",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/personal-shield",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Personal Shield",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/portable-heater",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Portable Heater",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/portable-water-purifier",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Portable Water Purifier",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/reactor-cores",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Reactor Cores",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/remote-detonator",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Remote Detonator",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/signature-spoofer",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Signature Spoofer",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/solar-array-pack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Solar Array Pack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/squad-shield",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Squad Shield",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/survival-tent",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Survival Tent",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "sci-fi-equipment/vitaboost-injector",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Vitaboost Injector",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/bal",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "BAL",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/hel-1",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "HEL-1",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/t00l",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "T00L",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/trk-a",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "TRK-A",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/audio-processor",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Audio Processor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/augmented-arm-actuators",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Augmented Arm Actuators",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/automatic-crash-foam-system",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Automatic Crash Foam System",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/backup-power-cell",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Backup Power Cell",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/heavy-wrist-laser",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Heavy Wrist Laser",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/improved-cooling-system",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Improved Cooling System",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/internal-comp-jack",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Internal Comp Jack",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/manipulator-override",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Manipulator Override",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/optical-suite",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Optical Suite",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/reinforced-chassis-plating",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Reinforced Chassis Plating",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/relay-node",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Relay Node",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/repair-subroutine",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Repair Subroutine",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/servo-boost-legs",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Servo Boost Legs",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/shield-mount",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Shield Mount",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/signal-mast-heavy",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Signal Mast, Heavy",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/signal-mast-retractable",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Signal Mast, Retractable",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/stabilizer-gyros",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Stabilizer Gyros",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/subdermal-plating",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Subdermal Plating",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/targeting-array",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Targeting Array",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "components/wrist-laser",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Wrist Laser",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/",

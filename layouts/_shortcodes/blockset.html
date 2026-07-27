@@ -9,6 +9,7 @@
 
   Filters (all optional, combined with AND):
     category   — core | sci-fi | fantasy …  (matches the block's category list)
+    page       — a page URL; selects every block displayed on it
     namespace  — the part of the id before the slash: abilities, traits, sci-fi …
     type       — rule | feature | equipment | creature | reference
     tag        — any tag on the block
@@ -24,6 +25,7 @@
 {{- $blocks := site.Data.blocks -}}
 {{- with .Get "category" }}{{ $c := . }}{{ $blocks = where $blocks "category" "intersect" (slice $c) }}{{ end -}}
 {{- with .Get "type" }}{{ $blocks = where $blocks "type" . }}{{ end -}}
+{{- with .Get "page" }}{{ $u := . }}{{ $blocks = where $blocks "page_urls" "intersect" (slice $u) }}{{ end -}}
 {{- with .Get "tag" }}{{ $t := . }}{{ $blocks = where $blocks "tags" "intersect" (slice $t) }}{{ end -}}
 {{- with .Get "namespace" -}}
   {{- $ns := printf "%s/" . -}}

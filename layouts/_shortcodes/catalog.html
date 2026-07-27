@@ -3,31 +3,86 @@
   The summary text lives ONLY on each block snippet (its `summary:` field);
   this shortcode reads it, so tables never duplicate the one-liner.
 
-  Usage (inner text = one block ID per line; `- ` / `-- ` mark sub-entries):
-    {{< catalog header="Name|Description" >}}
-    abilities/agile-dodge
-    - abilities/momentum-dodge
-    -- abilities/slip-strike
-    {{< /catalog >}}
+  Two ways to choose the rows:
+
+  1. Hand-listed, in display order (`- ` / `-- ` mark sub-entries):
+
+       {{< catalog header="Name|Description" >}}
+       abilities/agile-dodge
+       - abilities/momentum-dodge
+       -- abilities/slip-strike
+       {{< /catalog >}}
+
+  2. By property, the same filters {{< blockset >}} uses — for module hubs and
+     any table that should pick up new blocks by itself:
+
+       {{< catalog category="sci-fi" namespace="abilities" header="Ability|Description" />}}
+
+     NOTE the self-closing `/>}}`. The hand-listed form has inner text, so
+     Hugo insists the property form closes itself.
+
+     Filters (AND-ed): category, namespace, type, tag, page, wip="exclude".
+    `page` takes a page URL and selects everything displayed there.
+     Order with order="title" (default) or order="id". Sub-entry prefixes are
+     only available in the hand-listed form.
+
+  Links resolve per row: a block displayed on THIS page gets a same-page
+  `#anchor`; a block that lives elsewhere gets its full URL from
+  data/blocks.json, so a hub can list blocks it does not itself render.
 */ -}}
 {{- $header := .Get "header" | default "Name|Notes" -}}
 {{- $cols := split $header "|" -}}
+{{- $key := printf "content/%s" .Page.File.Path -}}
+
+{{/* --- row selection --- */}}
+{{- $rows := slice -}}
+{{- $byProp := false -}}
+{{- range (slice "category" "namespace" "type" "tag" "wip" "page") -}}
+  {{- if $.Get . }}{{ $byProp = true }}{{ end -}}
+{{- end -}}
+
+{{- if $byProp -}}
+  {{- $sel := site.Data.blocks -}}
+  {{- with .Get "category" }}{{ $c := . }}{{ $sel = where $sel "category" "intersect" (slice $c) }}{{ end -}}
+  {{- with .Get "type" }}{{ $sel = where $sel "type" . }}{{ end -}}
+  {{- with .Get "page" }}{{ $u := . }}{{ $sel = where $sel "page_urls" "intersect" (slice $u) }}{{ end -}}
+  {{- with .Get "tag" }}{{ $t := . }}{{ $sel = where $sel "tags" "intersect" (slice $t) }}{{ end -}}
+  {{- with .Get "namespace" -}}
+    {{- $ns := printf "%s/" . -}}
+    {{- $keep := slice -}}
+    {{- range $sel }}{{ if hasPrefix .id $ns }}{{ $keep = $keep | append . }}{{ end }}{{ end -}}
+    {{- $sel = $keep -}}
+  {{- end -}}
+  {{- if eq (.Get "wip") "exclude" }}{{ $sel = where $sel "wip" "!=" true }}{{ end -}}
+  {{- $sel = where $sel "excluded" "!=" true -}}
+  {{- $sel = sort $sel (default "title" (.Get "order")) -}}
+  {{- range $sel }}{{ $rows = $rows | append (dict "prefix" "" "id" .id) }}{{ end -}}
+{{- else -}}
+  {{- range (split (trim .Inner "\r\n") "\n") -}}
+    {{- $line := trim . " \t" -}}
+    {{- if $line -}}
+      {{- $prefix := "" -}}
+      {{- if hasPrefix $line "-- " -}}{{ $prefix = "– " }}{{ $line = strings.TrimPrefix "-- " $line -}}
+      {{- else if hasPrefix $line "- " -}}{{ $prefix = "- " }}{{ $line = strings.TrimPrefix "- " $line -}}{{- end -}}
+      {{- $rows = $rows | append (dict "prefix" $prefix "id" (trim $line " \t")) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 <table>
 <thead><tr>{{ range $cols }}<th>{{ trim . " " }}</th>{{ end }}</tr></thead>
 <tbody>
-{{- range (split (trim .Inner "\r\n") "\n") -}}
-  {{- $line := trim . " \t" -}}
-  {{- if $line -}}
-    {{- $prefix := "" -}}
-    {{- if hasPrefix $line "-- " -}}{{ $prefix = "– " }}{{ $line = strings.TrimPrefix "-- " $line -}}
-    {{- else if hasPrefix $line "- " -}}{{ $prefix = "- " }}{{ $line = strings.TrimPrefix "- " $line -}}{{- end -}}
-    {{- $id := trim $line " \t" -}}
-    {{- $p := site.GetPage (printf "/snippets/%s" $id) -}}
-    {{- if $p -}}
-<tr><td>{{ $prefix }}<a href="#{{ anchorize $p.Params.title }}">{{ $p.Params.label | default $p.Params.title }}</a></td><td>{{ with $p.Params.summary }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td></tr>
-    {{- else -}}
+{{- range $rows -}}
+  {{- $id := .id -}}
+  {{- $prefix := .prefix -}}
+  {{- $match := where site.Data.blocks "id" $id -}}
+  {{- if $match -}}
+    {{- $b := index $match 0 -}}
+    {{- $href := $b.url -}}
+    {{- if in $b.pages $key }}{{ $href = printf "#%s" $b.anchor }}{{ end -}}
+<tr><td>{{ $prefix }}<a href="{{ $href }}">{{ $b.label | default $b.title }}</a></td><td>{{ with $b.summary }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td></tr>
+  {{- else -}}
 <tr><td>{{ $prefix }}{{ $id }}</td><td><strong>MISSING BLOCK: {{ $id }}</strong></td></tr>
-    {{- end -}}
   {{- end -}}
 {{- end }}
 </tbody>

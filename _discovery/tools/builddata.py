@@ -125,33 +125,60 @@ def includes_of(path, seen=None):
     return out
 
 
-blockset_re = re.compile(r"\{\{<\s*blockset([^>]*)>\}\}")
+blockset_re = re.compile(r"\{\{<\s*blockset([^>]*?)/?>\}\}")
+catalog_prop_re = re.compile(r"\{\{<\s*catalog([^>]*?)/>\}\}")
 param_re = re.compile(r'(\w+)="([^"]*)"')
+FILTERS = ("category", "namespace", "type", "tag", "page", "wip")
+
+
+def selected_by(call, blocks, snippets_only):
+    """Blocks a property-filtered shortcode call selects. Mirrors the templates —
+    if these drift apart, data/ stops describing what the site actually shows."""
+    p = dict(param_re.findall(call))
+    out = []
+    for bid, b in blocks.items():
+        if b.get("excluded"):
+            continue
+        if snippets_only and b["home"] != "snippet":
+            continue
+        if p.get("category") and p["category"] not in (b.get("category") or []):
+            continue
+        if p.get("type") and p["type"] != b.get("type"):
+            continue
+        if p.get("tag") and p["tag"] not in (b.get("tags") or []):
+            continue
+        if p.get("page") and p["page"] not in b.get("page_urls", []):
+            continue
+        if p.get("namespace") and not bid.startswith(p["namespace"] + "/"):
+            continue
+        if p.get("wip") == "exclude" and b.get("wip"):
+            continue
+        out.append(bid)
+    return out
 
 
 def blockset_ids(path, blocks):
-    """Block ids pulled onto a page by {{< blockset >}}, mirroring the shortcode.
+    """Block ids DISPLAYED on a page by {{< blockset >}}.
 
     Only snippet-homed blocks count as placed: the shortcode links page-homed
-    blocks (races, bot platforms) rather than inlining them, so they are not
-    displayed on the host page.
+    blocks (races, bot platforms) rather than inlining them.
     """
     out = []
     for call in blockset_re.findall(PAGES[path]["body"]):
-        p = dict(param_re.findall(call))
-        for bid, b in blocks.items():
-            if b.get("excluded") or b["home"] != "snippet":
-                continue
-            if p.get("category") and p["category"] not in (b.get("category") or []):
-                continue
-            if p.get("type") and p["type"] != b.get("type"):
-                continue
-            if p.get("tag") and p["tag"] not in (b.get("tags") or []):
-                continue
-            if p.get("namespace") and not bid.startswith(p["namespace"] + "/"):
-                continue
-            if p.get("wip") == "exclude" and b.get("wip"):
-                continue
+        for bid in selected_by(call, blocks, snippets_only=True):
+            if bid not in out:
+                out.append(bid)
+    return out
+
+
+def catalog_prop_ids(path, blocks):
+    """Block ids a page LINKS TO via a property-filtered {{< catalog ... />}}.
+    These are references, not placements — a table row is a link, not the block."""
+    out = []
+    for call in catalog_prop_re.findall(PAGES[path]["body"]):
+        if not any(f'{k}="' in call for k in FILTERS):
+            continue
+        for bid in selected_by(call, blocks, snippets_only=False):
             if bid not in out:
                 out.append(bid)
     return out
@@ -217,6 +244,10 @@ for bid, b in blocks.items():
         b["pages"] = [b["file"]]
     b.setdefault("pages", [])
     b["source_page"] = b["pages"][0] if b["pages"] else None
+    # every page URL this block is displayed on — lets a shortcode say "list what
+    # is on the weapons page" without re-tagging anything. Must exist before the
+    # edge pass, which evaluates page= filters.
+    b["page_urls"] = [url_for(p) for p in b["pages"]]
 
 # work-in-progress status, computed so the builder has ONE field to filter on.
 # A block is wip if its own frontmatter says so, if it carries the `wip` tag, or
@@ -367,6 +398,15 @@ for path, P in PAGES.items():
         edges.append({"source": src, "target": sid or f"unresolved:{inc['target']}",
                       "type": "include", "url": inc["target"], "text": None,
                       "file": path, "line": inc["line"]})
+    # A property-filtered {{< catalog ... />}} row is a link, not a placement, so
+    # it is a reference edge. Without this a hub built entirely from generated
+    # tables would look unconnected to everything it points at.
+    if path in DOCS:
+        for cid in catalog_prop_ids(path, blocks):
+            if cid in blocks:
+                edges.append({"source": src, "target": cid, "type": "reference",
+                              "class": "catalog", "url": None,
+                              "text": blocks[cid]["title"], "file": path, "line": None})
 
 for ie in IMPLICIT:
     edges.append({"source": ie["source"], "target": ie["target"], "type": "reference",
@@ -390,7 +430,7 @@ for bid, b in blocks.items():
     else:
         b["url"] = None
 
-ORDER = ["id", "title", "home", "file", "source_page", "pages", "anchor", "url", "owns_heading", "category", "type",
+ORDER = ["id", "title", "home", "file", "source_page", "pages", "page_urls", "anchor", "url", "owns_heading", "category", "type",
          "in_degree", "tags", "flags", "notes", "selectable", "wip",
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
@@ -418,13 +458,19 @@ def blurb(page):
 related = {}
 for page in sorted(DOCS):
     mine = blocks_on.get(page, set())
-    if not mine:
+    # a hub page displays no blocks of its own — its outbound edges are the ones
+    # its generated tables produce, sourced from the page rather than a block
+    page_src = source_of(page)
+    if not mine and page_src not in {e["source"] for e in edges}:
         continue
     out, inn, via = collections.Counter(), collections.Counter(), collections.defaultdict(set)
     for e in edges:
         if e["type"] not in ("reference", "dependency"):
             continue
         src, tgt = blocks.get(e["source"]), blocks.get(e["target"])
+        if e["source"] == page_src and tgt and tgt["source_page"] not in (None, page):
+            out[tgt["source_page"]] += 1
+            via[tgt["source_page"]].add(e["target"])
         if e["source"] in mine and tgt and tgt["source_page"] not in (None, page):
             out[tgt["source_page"]] += 1
             via[tgt["source_page"]].add(e["target"])
