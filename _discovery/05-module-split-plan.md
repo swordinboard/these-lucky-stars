@@ -56,8 +56,13 @@ identically; the shortcode is the prototype.
 
 `sci-fi-module.md` is no longer a draft stub. It now collects the module as a
 whole: rules additions, races, abilities, proficiencies, traits, bots, and links
-to the equipment catalogs. **45 blocks, none of them copies** — every entry is
-the same block rendered on its home page.
+to the equipment catalogs.
+
+**33 blocks: 25 rendered in full, 8 linked out** (races and bot platforms are
+whole pages, too big to inline). Of the 25, every one is also rendered on its
+home page — the same source file shown in two places, not a copy of the text.
+The site already worked this way: 23 blocks appeared on more than one page before
+this existed, and the speed rules appear on three.
 
 It is `wip: true`, so it carries the banner and the builder can exclude it while
 you settle the prose.

@@ -123,6 +123,38 @@ def includes_of(path, seen=None):
     return out
 
 
+blockset_re = re.compile(r"\{\{<\s*blockset([^>]*)>\}\}")
+param_re = re.compile(r'(\w+)="([^"]*)"')
+
+
+def blockset_ids(path, blocks):
+    """Block ids pulled onto a page by {{< blockset >}}, mirroring the shortcode.
+
+    Only snippet-homed blocks count as placed: the shortcode links page-homed
+    blocks (races, bot platforms) rather than inlining them, so they are not
+    displayed on the host page.
+    """
+    out = []
+    for call in blockset_re.findall(PAGES[path]["body"]):
+        p = dict(param_re.findall(call))
+        for bid, b in blocks.items():
+            if b.get("excluded") or b["home"] != "snippet":
+                continue
+            if p.get("category") and p["category"] not in (b.get("category") or []):
+                continue
+            if p.get("type") and p["type"] != b.get("type"):
+                continue
+            if p.get("tag") and p["tag"] not in (b.get("tags") or []):
+                continue
+            if p.get("namespace") and not bid.startswith(p["namespace"] + "/"):
+                continue
+            if p.get("wip") == "exclude" and b.get("wip"):
+                continue
+            if bid not in out:
+                out.append(bid)
+    return out
+
+
 # also treat {{< catalog >}} body lines as block references (they name block ids)
 def catalog_ids(path):
     out, inside = [], False
@@ -171,9 +203,11 @@ for path, P in PAGES.items():
             b[k] = P["fm"][k]
     blocks[bid] = b
 
-# where each block is displayed (all host pages, in site order)
+# where each block is displayed (all host pages, in site order).
+# Both composition mechanisms count: {{% include %}} names one block,
+# {{< blockset >}} selects a set — a block rendered by either is on that page.
 for dp in sorted(DOCS):
-    for sid in includes_of(dp):
+    for sid in includes_of(dp) + blockset_ids(dp, blocks):
         if sid in blocks:
             blocks[sid].setdefault("pages", [])
             if dp not in blocks[sid]["pages"]:

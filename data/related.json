@@ -1463,5 +1463,90 @@
     "components/wrist-laser"
    ]
   }
+ ],
+ "content/docs/free-srd/sci-fi-module.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 13,
+   "in": 0,
+   "via": [
+    "proficiencies/comp-jack",
+    "proficiencies/general-robotics",
+    "proficiencies/general-technology",
+    "proficiencies/repair-kit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 1,
+   "in": 13,
+   "via": [
+    "abilities/battery-saboteur",
+    "abilities/companion-bot",
+    "abilities/ghost-protocol",
+    "abilities/opensaysame",
+    "abilities/overcharge",
+    "abilities/power-main-tap",
+    "abilities/rigged-comp-jack",
+    "abilities/signal-intelligence",
+    "abilities/special-encouragement",
+    "abilities/swift-custom-battery",
+    "abilities/tech-armor"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 4,
+   "via": [
+    "components/installation",
+    "components/internal-comp-jack",
+    "components/signal-mast-heavy",
+    "components/signal-mast-retractable"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 1,
+   "in": 2,
+   "via": [
+    "sci-fi-equipment/comp-jack",
+    "sci-fi-equipment/reactor-cores"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/android"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/health.md",
+   "url": "/docs/free-srd/core-rules/health/",
+   "title": "Health",
+   "blurb": "These Lucky Stars' two-layer health system: Defense absorbs hits, Vitality tracks how many blows a character can take, and what happens when either hits zero",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "stats/defense"
+   ]
+  }
  ]
 }

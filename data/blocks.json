@@ -132,7 +132,8 @@
   "file": "content/snippets/abilities/battery-saboteur.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "battery-saboteur",
   "url": "/docs/free-srd/character-creation/abilities/#battery-saboteur",
@@ -165,7 +166,8 @@
   "file": "content/snippets/abilities/battery-saver.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "battery-saver",
   "url": "/docs/free-srd/character-creation/abilities/#battery-saver",
@@ -285,7 +287,8 @@
   "file": "content/snippets/abilities/companion-bot.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "companion-bot",
   "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
@@ -961,7 +964,8 @@
   "file": "content/snippets/abilities/ghost-protocol.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "ghost-protocol",
   "url": "/docs/free-srd/character-creation/abilities/#ghost-protocol",
@@ -1483,7 +1487,8 @@
   "file": "content/snippets/abilities/opensaysame.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "opensaysame",
   "url": "/docs/free-srd/character-creation/abilities/#opensaysame",
@@ -1580,7 +1585,8 @@
   "file": "content/snippets/abilities/overcharge.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "overcharge",
   "url": "/docs/free-srd/character-creation/abilities/#overcharge",
@@ -1674,7 +1680,8 @@
   "file": "content/snippets/abilities/power-main-tap.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "power-main-tap",
   "url": "/docs/free-srd/character-creation/abilities/#power-main-tap",
@@ -1927,7 +1934,8 @@
   "file": "content/snippets/abilities/rigged-comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "rigged-comp-jack",
   "url": "/docs/free-srd/character-creation/abilities/#rigged-comp-jack",
@@ -1962,7 +1970,8 @@
   "file": "content/snippets/abilities/salvage.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "salvage",
   "url": "/docs/free-srd/character-creation/abilities/#salvage",
@@ -1995,7 +2004,8 @@
   "file": "content/snippets/abilities/signal-intelligence.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "signal-intelligence",
   "url": "/docs/free-srd/character-creation/abilities/#signal-intelligence",
@@ -2063,7 +2073,8 @@
   "file": "content/snippets/abilities/special-encouragement.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "special-encouragement",
   "url": "/docs/free-srd/character-creation/abilities/#special-encouragement",
@@ -2161,7 +2172,8 @@
   "file": "content/snippets/abilities/swift-custom-battery.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "swift-custom-battery",
   "url": "/docs/free-srd/character-creation/abilities/#swift-custom-battery",
@@ -2228,7 +2240,8 @@
   "file": "content/snippets/abilities/tech-armor.md",
   "source_page": "content/docs/free-srd/character-creation/abilities.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "tech-armor",
   "url": "/docs/free-srd/character-creation/abilities/#tech-armor",
@@ -3115,7 +3128,8 @@
   "file": "content/snippets/bots/automated-machines.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
   "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "bots--drones",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/#bots--drones",
@@ -8116,7 +8130,8 @@
   "file": "content/snippets/proficiencies/comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "comp-jack",
   "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
@@ -8175,7 +8190,8 @@
   "file": "content/snippets/proficiencies/general-robotics.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "general-robotics",
   "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
@@ -8204,7 +8220,8 @@
   "file": "content/snippets/proficiencies/general-technology.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "general-technology",
   "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
@@ -11432,7 +11449,8 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/item-tags.md"
+   "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "ballistic-weapons-in-space",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#ballistic-weapons-in-space",
@@ -11462,7 +11480,8 @@
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "communications",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#communications",
@@ -11490,7 +11509,8 @@
   "file": "content/snippets/sci-fi/computer-systems.md",
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
-   "content/docs/free-srd/core-rules/sci-fi-additions.md"
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "computer-systems",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#computer-systems",
@@ -11519,7 +11539,8 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "energy-shields",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields",
@@ -11549,7 +11570,8 @@
   "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "pages": [
    "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "heads-up-displays-huds",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
@@ -11923,7 +11945,8 @@
   "file": "content/snippets/traits/inter-planet-traveler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "inter-planet-traveler",
   "url": "/docs/free-srd/character-creation/traits/#inter-planet-traveler",
@@ -12125,7 +12148,8 @@
   "file": "content/snippets/traits/scrap-hauler.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "scrap-hauler",
   "url": "/docs/free-srd/character-creation/traits/#scrap-hauler",
@@ -12212,7 +12236,8 @@
   "file": "content/snippets/traits/space-adept.md",
   "source_page": "content/docs/free-srd/character-creation/traits.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits.md",
+   "content/docs/free-srd/sci-fi-module.md"
   ],
   "anchor": "space-adept",
   "url": "/docs/free-srd/character-creation/traits/#space-adept",
