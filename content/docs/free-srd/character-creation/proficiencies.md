@@ -46,13 +46,13 @@ proficiencies/general-technology
 
 {{% /details %}}
 
-{{% details "B&E Kit" %}}
+{{% details "B&E Kit Proficiency" %}}
 
 {{% include "/snippets/proficiencies/b-e-kit" %}}
 
 {{% /details %}}
 
-{{% details "Disguise Kit" %}}
+{{% details "Disguise Kit Proficiency" %}}
 
 {{% include "/snippets/proficiencies/disguise-kit" %}}
 
@@ -94,7 +94,7 @@ proficiencies/general-technology
 
 {{% /details %}}
 
-{{% details "Repair Kit" %}}
+{{% details "Repair Kit Proficiency" %}}
 
 {{% include "/snippets/proficiencies/repair-kit" %}}
 
@@ -128,7 +128,7 @@ proficiencies/general-technology
 
 ## Sci-Fi
 
-{{% details "Comp Jack" %}}
+{{% details "Comp Jack Proficiency" %}}
 
 {{% include "/snippets/proficiencies/comp-jack" %}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Disguise Kit"
+title: "Disguise Kit Proficiency"
 id: proficiencies/disguise-kit
 category: [core]
 type: feature
@@ -8,6 +8,6 @@ summary: "Trained in the use of the disguise kit."
 headless: true
 ---
 
-### Disguise Kit
+### Disguise Kit Proficiency
 
 You have been trained in the use of the disguise kit. Gain a +2 bonus when altering a character's appearance while using the disguise kit.

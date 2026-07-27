@@ -229,7 +229,7 @@ that does not fit. Tag names are the query surface the PDF builder will use.
 - `components/targeting-array` — Targeting Array  <sub>equipment, component</sub>
 - `components/wrist-laser` — Wrist Laser  <sub>equipment, component</sub>
 - `conditions/dead-battery` — Dead Battery  <sub>condition, bots</sub>
-- `proficiencies/comp-jack` — Comp Jack  <sub>proficiency, computers</sub>
+- `proficiencies/comp-jack` — Comp Jack Proficiency  <sub>proficiency, computers</sub>
 - `proficiencies/general-robotics` — General Robotics  <sub>proficiency</sub>
 - `proficiencies/general-technology` — General Technology  <sub>proficiency</sub>
 - `races/android` — Android  <sub>races</sub>
@@ -397,15 +397,15 @@ that does not fit. Tag names are the query surface the PDF builder will use.
 - `abilities/vital-focus` — Vital Focus  <sub>ability, general</sub>
 - `abilities/vital-strike` — Vital Strike  <sub>ability, general</sub>
 - `proficiencies/armor` — Armor  <sub>proficiency</sub>
-- `proficiencies/b-e-kit` — B&E Kit  <sub>proficiency</sub>
-- `proficiencies/disguise-kit` — Disguise Kit  <sub>proficiency</sub>
+- `proficiencies/b-e-kit` — B&E Kit Proficiency  <sub>proficiency</sub>
+- `proficiencies/disguise-kit` — Disguise Kit Proficiency  <sub>proficiency</sub>
 - `proficiencies/improved-ability` — Improved Ability  <sub>proficiency</sub>
 - `proficiencies/licensed-instincts` — Licensed Instincts  <sub>proficiency</sub>
 - `proficiencies/martial-training` — Martial Training  <sub>proficiency</sub>
 - `proficiencies/medic-training` — Medic Training  <sub>proficiency</sub>
 - `proficiencies/medical-instincts` — Medical Instincts  <sub>proficiency</sub>
 - `proficiencies/negotiation-training` — Negotiation Training  <sub>proficiency</sub>
-- `proficiencies/repair-kit` — Repair Kit  <sub>proficiency</sub>
+- `proficiencies/repair-kit` — Repair Kit Proficiency  <sub>proficiency</sub>
 - `proficiencies/research` — Research  <sub>proficiency</sub>
 - `proficiencies/survival-training` — Survival Training  <sub>proficiency</sub>
 - `proficiencies/vehicle` — Vehicle  <sub>proficiency</sub>
@@ -763,9 +763,9 @@ that does not fit. Tag names are the query surface the PDF builder will use.
 ### `proficiency` — 18
 
 - `proficiencies/armor` — Armor  <sub>core</sub>
-- `proficiencies/b-e-kit` — B&E Kit  <sub>core</sub>
-- `proficiencies/comp-jack` — Comp Jack  <sub>sci-fi, computers</sub>
-- `proficiencies/disguise-kit` — Disguise Kit  <sub>core</sub>
+- `proficiencies/b-e-kit` — B&E Kit Proficiency  <sub>core</sub>
+- `proficiencies/comp-jack` — Comp Jack Proficiency  <sub>sci-fi, computers</sub>
+- `proficiencies/disguise-kit` — Disguise Kit Proficiency  <sub>core</sub>
 - `proficiencies/general-robotics` — General Robotics  <sub>sci-fi</sub>
 - `proficiencies/general-technology` — General Technology  <sub>sci-fi</sub>
 - `proficiencies/improved-ability` — Improved Ability  <sub>core</sub>
@@ -775,7 +775,7 @@ that does not fit. Tag names are the query surface the PDF builder will use.
 - `proficiencies/medical-instincts` — Medical Instincts  <sub>core</sub>
 - `proficiencies/negotiation-training` — Negotiation Training  <sub>core</sub>
 - `proficiencies/overview` — Proficiencies  <sub>character-creation</sub>
-- `proficiencies/repair-kit` — Repair Kit  <sub>core</sub>
+- `proficiencies/repair-kit` — Repair Kit Proficiency  <sub>core</sub>
 - `proficiencies/research` — Research  <sub>core</sub>
 - `proficiencies/survival-training` — Survival Training  <sub>core</sub>
 - `proficiencies/vehicle` — Vehicle  <sub>core</sub>
@@ -1029,7 +1029,7 @@ that does not fit. Tag names are the query surface the PDF builder will use.
 - `abilities/rigged-comp-jack` — Rigged Comp Jack  <sub>ability, sci-fi, general</sub>
 - `abilities/signal-intelligence` — Signal Intelligence  <sub>ability, sci-fi, general</sub>
 - `components/internal-comp-jack` — Internal Comp Jack  <sub>equipment, sci-fi, component</sub>
-- `proficiencies/comp-jack` — Comp Jack  <sub>proficiency, sci-fi</sub>
+- `proficiencies/comp-jack` — Comp Jack Proficiency  <sub>proficiency, sci-fi</sub>
 - `sci-fi-equipment/comp-jack` — Comp Jack  <sub>equipment, sci-fi, tech</sub>
 - `sci-fi-equipment/data-spike` — Data Spike  <sub>equipment, sci-fi, tech</sub>
 - `sci-fi/computer-systems` — Computer Systems  <sub>sci-fi</sub>

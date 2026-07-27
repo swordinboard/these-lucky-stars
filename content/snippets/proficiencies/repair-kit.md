@@ -1,5 +1,5 @@
 ---
-title: "Repair Kit"
+title: "Repair Kit Proficiency"
 id: proficiencies/repair-kit
 category: [core]
 type: feature
@@ -8,7 +8,7 @@ summary: "Trained in the use of the repair kit."
 headless: true
 ---
 
-### Repair Kit
+### Repair Kit Proficiency
 
 *KNO 1*
 

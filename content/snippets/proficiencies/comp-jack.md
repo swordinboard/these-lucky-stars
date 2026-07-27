@@ -1,5 +1,5 @@
 ---
-title: "Comp Jack"
+title: "Comp Jack Proficiency"
 id: proficiencies/comp-jack
 category: [sci-fi]
 type: feature
@@ -8,7 +8,7 @@ summary: "Specialized training in computer systems and the comp jack."
 headless: true
 ---
 
-### Comp Jack
+### Comp Jack Proficiency
 
 *KNO 1*
 

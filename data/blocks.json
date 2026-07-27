@@ -7548,15 +7548,15 @@
  },
  {
   "id": "proficiencies/b-e-kit",
-  "title": "B&E Kit",
+  "title": "B&E Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/b-e-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
-  "anchor": "be-kit",
-  "url": "/docs/free-srd/character-creation/proficiencies/#be-kit",
+  "anchor": "be-kit-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/#be-kit-proficiency",
   "owns_heading": true,
   "category": [
    "core"
@@ -7575,7 +7575,7 @@
  },
  {
   "id": "proficiencies/comp-jack",
-  "title": "Comp Jack",
+  "title": "Comp Jack Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/comp-jack.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
@@ -7583,8 +7583,8 @@
    "content/docs/free-srd/character-creation/proficiencies.md",
    "content/docs/free-srd/sci-fi-module.md"
   ],
-  "anchor": "comp-jack",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack",
+  "anchor": "comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -7604,15 +7604,15 @@
  },
  {
   "id": "proficiencies/disguise-kit",
-  "title": "Disguise Kit",
+  "title": "Disguise Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/disguise-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
-  "anchor": "disguise-kit",
-  "url": "/docs/free-srd/character-creation/proficiencies/#disguise-kit",
+  "anchor": "disguise-kit-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/#disguise-kit-proficiency",
   "owns_heading": true,
   "category": [
    "core"
@@ -7881,15 +7881,15 @@
  },
  {
   "id": "proficiencies/repair-kit",
-  "title": "Repair Kit",
+  "title": "Repair Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/repair-kit.md",
   "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
   "pages": [
    "content/docs/free-srd/character-creation/proficiencies.md"
   ],
-  "anchor": "repair-kit",
-  "url": "/docs/free-srd/character-creation/proficiencies/#repair-kit",
+  "anchor": "repair-kit-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/#repair-kit-proficiency",
   "owns_heading": true,
   "category": [
    "core"

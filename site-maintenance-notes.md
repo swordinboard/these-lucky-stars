@@ -95,6 +95,20 @@ deliberately rare (2 blocks): it exists only for names too long for a table cell
 like `Analgesic Radiation Antidote 5 (ARA-5)` → `ARA-5`. If a block needs a
 different display name for any other reason, fix the title instead.
 
+**Two blocks may not share a title on the same page** — Hugo silently appends
+`-1` to the second anchor, so a link that looked right yesterday lands in the
+wrong place. Across different pages a shared title is legal but still ambiguous
+for the PDF builder, which sees a flat list. Where a proficiency shared a name
+with the item it applies to, the proficiency carries the suffix:
+`Comp Jack Proficiency` (`#comp-jack-proficiency`) while the item stays
+`Comp Jack`. The prose convention already read that way — "Comp Jack Proficiency,
+KNO 1" — so the title now matches how the rule is spoken about.
+
+One deliberate duplicate remains: `generic-equipment/field-ration` and
+`sci-fi-equipment/field-ration` are the same item in two settings, tied together
+by `variant_group: field-ration`. They live on different pages, so no anchor
+collides.
+
 **`[___]` never goes in a title, a heading or an anchor.** It marks a choice the
 player makes (Weapon [___] → pick a weapon type), and it belongs in the block's
 body, where every one of those blocks already restates its name as
