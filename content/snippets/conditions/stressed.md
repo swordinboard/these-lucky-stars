@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Cannot use Luck, -1 to all decision rolls per point over threshold"
-headless: true
 ---
 
 ### Stressed

@@ -4,7 +4,6 @@ id: objects/overview
 category: [core]
 type: reference
 tags: [objects]
-headless: true
 ---
 
 Objects, equipment, and structures can be damaged and broken. This page covers how items are targeted by attacks, item conditions, how object durability works, and how common materials and items hold up under attack.

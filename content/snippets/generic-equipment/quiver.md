@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Holds ranged weapon ammunition."
-headless: true
 ---
 
 ### Quiver / Bolt Case

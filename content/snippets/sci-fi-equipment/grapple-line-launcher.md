@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Magnetic grappling hook."
-headless: true
 ---
 
 ### Grapple-Line Launcher

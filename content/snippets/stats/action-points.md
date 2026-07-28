@@ -4,7 +4,6 @@ id: stats/action-points
 category: [core]
 type: rule
 tags: [stats, actions]
-headless: true
 ---
 
 > **Action Points (AP) = 4 (Base) + Mods**

@@ -4,7 +4,6 @@ id: combat/attacking-and-defending
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 ### The Attack Roll: Opposed Rolls

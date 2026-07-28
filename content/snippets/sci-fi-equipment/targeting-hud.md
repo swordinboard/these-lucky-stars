@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Helmet [HUD]. Lock on to lower target number for ranged attacks."
-headless: true
 ---
 
 #### Targeting HUD

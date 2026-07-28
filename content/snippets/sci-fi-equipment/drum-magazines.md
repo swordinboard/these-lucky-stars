@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. Increased ammo die size."
-headless: true
 ---
 
 ### Drum Magazines

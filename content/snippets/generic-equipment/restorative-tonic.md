@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, medical]
 summary: "Heals 1 VIT or attribute damage."
-headless: true
 ---
 
 ### Restorative Tonic

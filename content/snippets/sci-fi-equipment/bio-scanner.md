@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Scans organic matter. 2 AP, 5ft range."
-headless: true
 ---
 
 ### Bio Scanner

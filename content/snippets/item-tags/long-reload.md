@@ -4,7 +4,6 @@ id: item-tags/long-reload
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Long Reload

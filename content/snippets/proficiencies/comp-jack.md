@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [proficiency, sci-fi, computers]
 summary: "Specialized training in computer systems and the comp jack."
-headless: true
 ---
 
 ### Comp Jack Proficiency

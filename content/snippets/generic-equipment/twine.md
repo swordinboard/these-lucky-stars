@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "100ft of light cord."
-headless: true
 ---
 
 ### Ball of Twine / String

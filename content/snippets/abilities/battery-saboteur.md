@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, battery]
 summary: "Turn battery cores into explosives."
 requires: [proficiencies/general-technology]
-headless: true
 ---
 
 ### Battery Saboteur

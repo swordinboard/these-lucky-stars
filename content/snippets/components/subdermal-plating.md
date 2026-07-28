@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "+1 DEF Bonus, no slot conflict"
-headless: true
 ---
 
 ### Subdermal Plating

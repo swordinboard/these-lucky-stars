@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Resist burn, ignore heat environmental effects"
-headless: true
 ---
 
 ### Improved Cooling System

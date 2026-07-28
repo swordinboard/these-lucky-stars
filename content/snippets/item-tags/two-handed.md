@@ -4,7 +4,6 @@ id: item-tags/two-handed
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Two-Handed

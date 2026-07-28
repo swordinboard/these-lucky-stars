@@ -4,7 +4,6 @@ id: combat/grapple
 category: [core]
 type: rule
 tags: [combat, stats]
-headless: true
 ---
 
 > **Grapple = STR + AGI + Mods**

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "+1 ranged ATK, limited daily uses"
-headless: true
 ---
 
 ### Targeting Array

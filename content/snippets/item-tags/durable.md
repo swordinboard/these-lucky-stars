@@ -4,7 +4,6 @@ id: item-tags/durable
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Durable

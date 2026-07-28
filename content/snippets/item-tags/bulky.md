@@ -4,7 +4,6 @@ id: item-tags/bulky
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Bulky

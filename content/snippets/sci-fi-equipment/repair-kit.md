@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, kit]
 summary: "Bulky. Machinery, vehicles, structures."
-headless: true
 ---
 
 ### Repair Kit

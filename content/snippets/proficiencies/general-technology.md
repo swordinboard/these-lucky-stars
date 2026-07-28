@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [proficiency, sci-fi]
 summary: "Trained in the use of the Tech Kit."
-headless: true
 ---
 
 ### General Technology

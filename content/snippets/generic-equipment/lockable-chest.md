@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Bulky. Secure storage for valuables."
-headless: true
 ---
 
 ### Chest, Lockable

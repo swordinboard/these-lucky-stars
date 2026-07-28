@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range."
-headless: true
 ---
 
 ### Long Rifle

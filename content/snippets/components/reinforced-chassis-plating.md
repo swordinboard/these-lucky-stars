@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "+3 DEF Bonus"
-headless: true
 ---
 
 ### Reinforced Chassis Plating

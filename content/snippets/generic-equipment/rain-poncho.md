@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Keeps the wearer dry. Covers equipped gear."
-headless: true
 ---
 
 ### Rain Poncho

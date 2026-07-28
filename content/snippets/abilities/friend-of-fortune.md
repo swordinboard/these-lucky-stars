@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, luck]
 summary: "Allies near you may regain spent Luck."
 requires: [traits/lucky]
-headless: true
 ---
 
 ### Friend of Fortune

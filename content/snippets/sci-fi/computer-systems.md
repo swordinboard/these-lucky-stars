@@ -5,7 +5,6 @@ category: [sci-fi]
 type: rule
 tags: [computers, sci-fi]
 summary: "Subsystem"
-headless: true
 ---
 
 Computer systems can be accessed from dedicated terminals. Most characters in sci-fi settings will interact with computer systems at some point. Navigating simple systems is considered common knowledge. Secured systems require more work — they may be encrypted, require physical keys, or fight back. Accessing a secured system requires the matching key or code, or a [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack) and some technical know-how.

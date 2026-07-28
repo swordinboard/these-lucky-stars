@@ -6,7 +6,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Aids in maintaining direction of travel."
-headless: true
 ---
 
 ### Compass / Navigational Tool

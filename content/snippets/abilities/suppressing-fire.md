@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Pin enemies in an area with automatic fire."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Suppressing Fire

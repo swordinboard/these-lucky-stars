@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "DEF bonus."
-headless: true
 ---
 
 ### Tough

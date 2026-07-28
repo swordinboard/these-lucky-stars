@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "-2 STR, AGI, and DEX, -2 AP/round"
-headless: true
 ---
 
 ### Fatigued

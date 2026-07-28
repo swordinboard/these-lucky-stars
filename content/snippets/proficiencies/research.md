@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "+2 bonus on KNO checks related to a chosen field of study."
-headless: true
 ---
 
 ### Research

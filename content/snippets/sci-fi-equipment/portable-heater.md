@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "Heats a small area."
-headless: true
 ---
 
 ### Portable Heater

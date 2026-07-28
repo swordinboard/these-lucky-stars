@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Writing surfaces. Pack of five sheets."
-headless: true
 ---
 
 ### Parchment / Paper Sheets (5)

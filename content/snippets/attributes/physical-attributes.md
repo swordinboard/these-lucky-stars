@@ -4,7 +4,6 @@ id: attributes/physical-attributes
 category: [core]
 type: rule
 tags: [attributes]
-headless: true
 ---
 
 #### Strength (STR)

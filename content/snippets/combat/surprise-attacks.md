@@ -4,7 +4,6 @@ id: combat/surprise-attacks
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 Characters who have not yet engaged in combat or who are otherwise unable to defend themselves are vulnerable to surprise attacks. When making a surprise attack, the attacker rolls normally, while the defender rolls only their decision dice (Luck may still be applied). This represents the attacker's opportunity to strike weak points, and the defender's lack of reaction.

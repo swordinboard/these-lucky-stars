@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "For digging."
-headless: true
 ---
 
 ### Shovel

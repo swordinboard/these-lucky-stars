@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Negate a wound or condition from a ranged attack."
 requires: [abilities/defender]
-headless: true
 ---
 
 ### Just Grazed

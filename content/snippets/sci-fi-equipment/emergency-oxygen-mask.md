@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "30 minutes of clean oxygen."
-headless: true
 ---
 
 ### Emergency Oxygen Mask

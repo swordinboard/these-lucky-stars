@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Waterproofing, sealing, and lubricating."
-headless: true
 ---
 
 ### Candle Wax Block

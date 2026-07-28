@@ -6,7 +6,6 @@ type: reference
 tags: [site-chrome]
 selectable: false
 excluded: true
-headless: true
 ---
 
 > [!DANGER]

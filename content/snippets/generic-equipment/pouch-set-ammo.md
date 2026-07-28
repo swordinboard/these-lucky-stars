@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Holds ammunition for use during combat."
-headless: true
 ---
 
 ### Pouch Set, Ammo

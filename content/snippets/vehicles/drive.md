@@ -4,7 +4,6 @@ id: vehicles/drive
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
  This action and its checks may be refered to as Drive, Pilot, or Ride depending on the vehicle or mount being used. It is used to direct or command the vehicle or mount's movement during one's turn similar to a Move action.

@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Pair of bags designed for a mount. +60 max carry weight for the mount."
-headless: true
 ---
 
 ### Saddlebags

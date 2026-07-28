@@ -4,7 +4,6 @@ id: combat/damage
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 > **DEF DAMAGE = Damage Dice + Attribute Used in Attack + Modifiers**

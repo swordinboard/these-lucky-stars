@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Focus on an opponent to gain advantage."
-headless: true
 ---
 
 ### Focus Attack

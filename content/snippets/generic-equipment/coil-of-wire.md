@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "25ft of thin metal wire for snares, repairs, and binding."
-headless: true
 ---
 
 ### Coil of Wire

@@ -4,7 +4,6 @@ id: health/applying-damage
 category: [core]
 type: rule
 tags: [health, combat, damage]
-headless: true
 ---
 
 Once total damage is calculated, it is dealt to the defender's current **Defense (DEF)**. When DEF reaches 0:

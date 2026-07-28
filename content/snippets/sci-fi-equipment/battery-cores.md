@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Portable power available in multiple sizes."
-headless: true
 ---
 
 ### Standardized Battery Cores

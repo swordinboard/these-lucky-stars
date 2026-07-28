@@ -4,7 +4,6 @@ id: stats/vitality
 category: [core]
 type: rule
 tags: [stats, health]
-headless: true
 ---
 
 > **Vitality (VIT) = ½ Level + ½ FORT + Mods (Total Rounded Down, Min 1)**

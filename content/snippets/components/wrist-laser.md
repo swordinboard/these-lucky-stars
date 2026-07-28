@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Mounted laser pistol equivalent"
-headless: true
 ---
 
 ### Wrist Laser

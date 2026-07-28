@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech, computers]
 summary: "Disposable high-speed USB data extraction device."
-headless: true
 ---
 
 ### Data Spike

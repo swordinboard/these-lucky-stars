@@ -4,7 +4,6 @@ id: basics/target-numbers
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 The target number of a normal decision roll should reflect the difficulty of the task being performed. Many common tasks have target numbers associated with them to help the Game Master best determine where a given target should begin, particularly during combat. Otherwise, it is up to the best judgment of the GM to determine the difficulty and target number. The table below provides a guide for determinging target numbers.

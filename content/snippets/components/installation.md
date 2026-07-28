@@ -4,7 +4,6 @@ id: components/installation
 category: [sci-fi]
 type: rule
 tags: [component, sci-fi]
-headless: true
 ---
 
 Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](/docs/free-srd/character-creation/abilities/sci-fi/#tech-armor) ability applies to components.

@@ -4,7 +4,6 @@ id: item-tags/space-suit
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Space Suit

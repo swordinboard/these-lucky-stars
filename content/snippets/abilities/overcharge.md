@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, battery]
 summary: "Push a battery weapon beyond rated output for bonus damage."
 requires: [proficiencies/general-technology]
-headless: true
 ---
 
 ### Overcharge

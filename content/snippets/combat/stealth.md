@@ -4,7 +4,6 @@ id: combat/stealth
 category: [core]
 type: rule
 tags: [combat, stats]
-headless: true
 ---
 
 **Stealth** — Like many other rolls, Stealth checks are made using different attributes based on the action being taken. Modifiers to Stealth are common from armor and character features.

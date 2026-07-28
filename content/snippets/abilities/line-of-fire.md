@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Change suppression area to a line."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
-headless: true
 ---
 
 ### Line of Fire

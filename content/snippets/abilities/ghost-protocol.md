@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general, computers]
 summary: "Remotely access a hacked system via linked comp jack."
 requires: [proficiencies/comp-jack]
-headless: true
 ---
 
 ### Ghost Protocol

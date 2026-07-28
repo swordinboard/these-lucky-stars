@@ -4,7 +4,6 @@ id: vehicles/boarding-and-bailing
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
 A character may attempt to board or bail from a moving vehicle for 2 AP, or as part of a [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action for no additional AP.

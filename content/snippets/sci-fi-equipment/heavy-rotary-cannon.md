@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, heavy-ranged, ranged-weapon]
 summary: "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range."
-headless: true
 ---
 
 ### Heavy Rotary Cannon

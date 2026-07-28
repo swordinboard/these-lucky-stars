@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "Pressurized 10×10ft shelter for four."
-headless: true
 ---
 
 ### Survival Tent

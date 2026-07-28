@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, light-melee, melee-weapon]
 summary: "Concealable. Throwable [10ft]."
-headless: true
 ---
 
 ### Standard Issue Knife

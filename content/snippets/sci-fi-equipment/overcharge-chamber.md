@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All battery ranged. 3/day increase a damage die by one size."
-headless: true
 ---
 
 ### Overcharge Chamber

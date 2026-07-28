@@ -6,7 +6,6 @@ type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "One day of nutrients for one person."
 variant_group: field-ration
-headless: true
 ---
 
 ### Field Ration

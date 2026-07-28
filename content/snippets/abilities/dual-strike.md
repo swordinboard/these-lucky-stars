@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Increase damage die with dual attack."
 requires: [proficiencies/weapon, abilities/dual-attack]
-headless: true
 ---
 
 ### Dual Strike

@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Kit Trap uses less AP."
-headless: true
 ---
 
 ### Fast Kit Trap

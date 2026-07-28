@@ -4,7 +4,6 @@ id: conditions/dead-battery
 category: [sci-fi]
 type: rule
 tags: [condition, sci-fi, bots]
-headless: true
 ---
 
 ### Dead Battery

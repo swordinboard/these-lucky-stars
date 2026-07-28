@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, luck]
 summary: "Spend Luck to reuse an exhausted ability."
-headless: true
 ---
 
 ### Adaptive Luck

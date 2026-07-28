@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 summary: "Battery [small]. Single shot. Burn. 60ft range."
-headless: true
 ---
 
 ### Laser Pistol

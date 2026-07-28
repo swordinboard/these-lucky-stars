@@ -4,7 +4,6 @@ id: objects/material-def
 category: [core]
 type: reference
 tags: [objects]
-headless: true
 ---
 
 The DEF of a material is determined by its composition and thickness. Use the tables below as a reference for estimating the DEF of objects. Objects made of many parts often have lower DEF due to the fragility of joints or the malleability of thin layers.

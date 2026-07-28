@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general]
 summary: "Refill a supply die from mechanical wreckage."
 requires: [proficiencies/repair-kit]
-headless: true
 ---
 
 ### Salvage

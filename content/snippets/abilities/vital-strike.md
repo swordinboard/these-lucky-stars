@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Add bonus damage to surprise attacks."
-headless: true
 ---
 
 ### Vital Strike

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, melee-upgrade]
 summary: "Medium melee, polearms, two-handed. +3 damage. Loses throwable tag."
-headless: true
 ---
 
 ### Weighted Core

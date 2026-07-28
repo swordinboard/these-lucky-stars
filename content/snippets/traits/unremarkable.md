@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+2 bonus to blend into a crowd or visually hide your identity."
-headless: true
 ---
 
 ### Unremarkable

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "An early model space suit, well equipped but bulky."
-headless: true
 ---
 
 #### EVA Suit

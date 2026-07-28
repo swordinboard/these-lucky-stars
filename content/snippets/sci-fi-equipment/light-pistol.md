@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 summary: "Ballistic. Semi-auto. Concealable. 30ft range."
-headless: true
 ---
 
 ### Light Pistol

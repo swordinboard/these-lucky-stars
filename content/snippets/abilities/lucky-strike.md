@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, luck]
 summary: "Increase Luck die to d6 on attack rolls."
-headless: true
 ---
 
 ### Lucky Strike

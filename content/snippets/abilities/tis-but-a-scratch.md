@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, luck]
 summary: "Spend Luck to fully negate an attack."
 requires: [traits/tough, abilities/defender, abilities/just-winded, abilities/just-grazed]
-headless: true
 ---
 
 ### Tis But a Scratch

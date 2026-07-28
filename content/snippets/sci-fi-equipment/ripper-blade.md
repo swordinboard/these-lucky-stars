@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Two-handed. Deals +5 shatter damage to armor."
-headless: true
 ---
 
 ### Ripper Blade

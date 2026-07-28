@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Secondary Medium battery housing"
-headless: true
 ---
 
 ### Backup Power Cell

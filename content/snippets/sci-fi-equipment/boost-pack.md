@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "10ft directional burst for 1 AP; does not provoke Opportunity Attacks."
-headless: true
 ---
 
 ### Boost Pack

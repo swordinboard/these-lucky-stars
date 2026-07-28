@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Heavy Ranged. Partial cover, -1 attack while active."
-headless: true
 ---
 
 ### Forward Assault Shield

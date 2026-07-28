@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Rush an enemy for a powerful melee attack."
-headless: true
 ---
 
 ### Charge

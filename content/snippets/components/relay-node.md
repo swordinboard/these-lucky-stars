@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Sync into a shared sensor network"
-headless: true
 ---
 
 ### Relay Node

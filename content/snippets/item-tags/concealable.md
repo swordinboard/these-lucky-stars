@@ -4,7 +4,6 @@ id: item-tags/concealable
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Concealable

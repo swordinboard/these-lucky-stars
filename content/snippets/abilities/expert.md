@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Improve the Student bonus for a chosen topic."
 requires: [abilities/student]
-headless: true
 ---
 
 ### Expert

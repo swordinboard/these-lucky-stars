@@ -86,8 +86,12 @@ requires: [abilities/charge]  # feature prerequisites — the builder auto-inclu
 variant_group: field-ration   # optional: setting variants that share an identity
 selectable: false             # optional: note/chrome blocks that ride along, never picked alone
 excluded: true                # optional: not part of the buildable corpus at all
-headless: true                # required on snippets
 ```
+
+Snippets need no `headless` key: `content/snippets/_index.md` sets
+`build: {render: never, list: never}` with a cascade, which is what actually
+stops them publishing. `headless: true` sat on 423 files doing nothing and has
+been removed.
 
 `summary` and `label` are **single-sourced** — the quick-reference tables are
 generated from them (see below), so edit them here and nowhere else. `label` is

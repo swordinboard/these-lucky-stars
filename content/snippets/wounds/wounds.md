@@ -4,7 +4,6 @@ id: wounds/wounds
 category: [core]
 type: rule
 tags: []
-headless: true
 ---
 
 Every wound is classified as either minor or major based on the severity of the injury. The wound type (burn, fracture, laceration, etc.) describes what happened and guides the GM in choosing appropriate conditions. Any wound type can be minor or major — a shallow cut is a minor laceration, while a deep gash that nicks an artery is a major one. Shaken can be added to any wound to increase severity.

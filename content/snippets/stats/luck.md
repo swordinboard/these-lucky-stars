@@ -4,7 +4,6 @@ id: stats/luck
 category: [core]
 type: rule
 tags: [luck, stats]
-headless: true
 ---
 
 > **= 3 + Party Attribute Modifiers + Mods (Min 1)**

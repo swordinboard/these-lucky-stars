@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, battery]
 summary: "Tap a large power source to rapidly recharge a battery."
 requires: [proficiencies/general-technology]
-headless: true
 ---
 
 ### Power Main Tap

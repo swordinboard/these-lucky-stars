@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Charge no longer requires a straight line."
 requires: [abilities/charge]
-headless: true
 ---
 
 ### Agile Charge

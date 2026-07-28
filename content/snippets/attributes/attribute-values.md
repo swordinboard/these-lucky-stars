@@ -4,7 +4,6 @@ id: attributes/attribute-values
 category: [core]
 type: rule
 tags: [attributes]
-headless: true
 ---
 
 **Maximum** attribute value before modifiers is 7.

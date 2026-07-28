@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Offers greater protection than a standard coverall."
-headless: true
 ---
 
 #### Padded Flight Suit

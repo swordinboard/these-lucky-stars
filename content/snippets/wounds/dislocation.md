@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [wound-type]
 summary: "Crippled or Restrained"
-headless: true
 ---
 
 ### Dislocation

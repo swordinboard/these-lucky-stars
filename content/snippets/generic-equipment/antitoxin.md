@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, medical]
 summary: "Removes or reduces toxin-based conditions."
-headless: true
 ---
 
 ### Antitoxin

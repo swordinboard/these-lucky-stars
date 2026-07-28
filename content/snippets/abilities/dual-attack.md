@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "ATK bonus when attacking with two weapons."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Dual Attack

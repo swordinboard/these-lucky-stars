@@ -4,7 +4,6 @@ id: attributes/determining-attributes
 category: [core]
 type: rule
 tags: [attributes]
-headless: true
 ---
 
 ### Roll Your Attributes - The Standard

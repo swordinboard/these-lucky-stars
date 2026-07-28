@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
-headless: true
 ---
 
 ### Mag Boots

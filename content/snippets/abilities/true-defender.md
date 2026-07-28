@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Use Defender on behalf of an ally."
 requires: [traits/tough, abilities/defender, abilities/friend-in-need]
-headless: true
 ---
 
 ### True Defender

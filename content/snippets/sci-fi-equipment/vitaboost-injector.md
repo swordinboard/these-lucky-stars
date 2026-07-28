@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Heals 1 VIT or attribute damage."
-headless: true
 ---
 
 ### Vitaboost Injector

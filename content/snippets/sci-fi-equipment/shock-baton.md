@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Built in shock charger."
-headless: true
 ---
 
 ### Shock Baton

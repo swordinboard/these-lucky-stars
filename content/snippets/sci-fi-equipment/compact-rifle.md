@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Ballistic. Full-auto. Two-handed. 30ft range."
-headless: true
 ---
 
 ### Compact Rifle

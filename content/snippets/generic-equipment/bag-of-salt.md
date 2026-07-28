@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Preserves food, seasons meals, and has various utility uses."
-headless: true
 ---
 
 ### Bag of Salt

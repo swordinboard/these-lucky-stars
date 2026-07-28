@@ -6,7 +6,6 @@ type: feature
 tags: [proficiency, core]
 summary: "Add INS to Medic Training rolls."
 requires: [proficiencies/medic-training]
-headless: true
 ---
 
 ### Medical Instincts

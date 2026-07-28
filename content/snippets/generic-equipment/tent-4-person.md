@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Bulky. Shelter for four with room for gear."
-headless: true
 ---
 
 ### Tent, 4-Person

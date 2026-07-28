@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, luck]
 summary: "Gain one additional Luck point."
-headless: true
 ---
 
 ### Bonus Luck

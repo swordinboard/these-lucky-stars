@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "A mid-sized bag for documents or light supplies."
-headless: true
 ---
 
 ### Satchel

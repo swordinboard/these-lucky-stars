@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general, computers]
 summary: "Build a makeshift comp jack from tech kit supplies."
 requires: [proficiencies/comp-jack, proficiencies/general-technology]
-headless: true
 ---
 
 ### Rigged Comp Jack

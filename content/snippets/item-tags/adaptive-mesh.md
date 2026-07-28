@@ -4,7 +4,6 @@ id: item-tags/adaptive-mesh
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Adaptive Mesh

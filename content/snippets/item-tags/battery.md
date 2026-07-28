@@ -4,7 +4,6 @@ id: item-tags/battery
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Battery

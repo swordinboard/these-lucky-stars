@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, kit]
 summary: "Heals wounds and conditions."
-headless: true
 ---
 
 ### Medical Kit

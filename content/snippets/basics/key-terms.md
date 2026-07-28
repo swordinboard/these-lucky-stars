@@ -4,7 +4,6 @@ id: basics/key-terms
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 **Game Master (GM)** – The person running the game. Responsible for creating the setting, describing scenarios, determining rolls and target numbers, lots of things.

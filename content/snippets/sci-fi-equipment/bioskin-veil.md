@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Creates a near-perfect disguise."
-headless: true
 ---
 
 ### Bioskin Veil

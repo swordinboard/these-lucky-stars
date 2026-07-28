@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Closes lacerations and punctures. Works on Evosuits."
-headless: true
 ---
 
 ### Emergency Trauma Patch

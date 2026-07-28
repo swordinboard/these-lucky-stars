@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Immune to fear and distraction while raging."
 requires: [traits/unshakable, abilities/rage, abilities/fearless-rage]
-headless: true
 ---
 
 ### Indomitable Rage

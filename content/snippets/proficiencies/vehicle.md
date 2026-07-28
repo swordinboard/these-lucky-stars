@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Familiar with a type of vehicle."
-headless: true
 ---
 
 ### Vehicle

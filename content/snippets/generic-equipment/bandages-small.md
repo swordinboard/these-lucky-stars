@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, medical]
 summary: "Closes and covers minor wounds."
-headless: true
 ---
 
 ### Bandages, Small

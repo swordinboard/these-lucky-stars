@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [wound-type]
 summary: "Crippled"
-headless: true
 ---
 
 ### Contusion

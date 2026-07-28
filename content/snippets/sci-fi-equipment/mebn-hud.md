@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
-headless: true
 ---
 
 #### MeBN HUD

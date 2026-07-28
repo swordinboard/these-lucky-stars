@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "-2 INS, +1 Stress"
-headless: true
 ---
 
 ### Frightened

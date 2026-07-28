@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Protects hands during labor and rough handling."
-headless: true
 ---
 
 ### Work Gloves

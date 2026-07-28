@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Cannot take physical actions — DEX and AGI treated as null"
-headless: true
 ---
 
 ### Immobilized

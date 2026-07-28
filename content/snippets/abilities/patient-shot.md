@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Bonus damage and advantage if stationary and untargeted since last turn."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Patient Shot

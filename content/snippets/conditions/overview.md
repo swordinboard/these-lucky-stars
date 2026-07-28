@@ -4,7 +4,6 @@ id: conditions/overview
 category: [core]
 type: reference
 tags: []
-headless: true
 ---
 
 Conditions alter how your character is able to act. Most provide penalties or some other negative effects. This is not a definitive list and you may find you have need of other conditions in your game. If so, it is best to handle each with common sense and consistency.

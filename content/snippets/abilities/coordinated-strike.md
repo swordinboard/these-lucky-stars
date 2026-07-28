@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Designate a target — the next ally to attack it gains advantage."
-headless: true
 ---
 
 ### Coordinated Strike

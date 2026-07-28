@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "For securing things that need nailing down."
-headless: true
 ---
 
 ### Iron Spikes (10)

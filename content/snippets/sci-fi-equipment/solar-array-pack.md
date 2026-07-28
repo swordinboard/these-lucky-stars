@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "Charges micro through large batteries via solar."
-headless: true
 ---
 
 ### Solar Array Pack

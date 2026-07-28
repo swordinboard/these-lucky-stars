@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech, computers]
 summary: "Required for interfacing with computer systems."
-headless: true
 ---
 
 ### Comp Jack

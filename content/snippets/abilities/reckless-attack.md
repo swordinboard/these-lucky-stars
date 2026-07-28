@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Trade DEF for ATK and DMG on melee attacks."
-headless: true
 ---
 
 ### Reckless Attack

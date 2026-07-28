@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Basic corporate-approved protective gear."
-headless: true
 ---
 
 #### Site Safety Gear

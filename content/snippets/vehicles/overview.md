@@ -4,7 +4,6 @@ id: vehicles/overview
 category: [core]
 type: reference
 tags: [vehicles]
-headless: true
 ---
 
 These rules govern how vehicles and their occupants interact with characters on foot during combat. They supplement the standard [combat rules](/docs/free-srd/core-rules/combat/) — unless otherwise stated here, all normal combat rules apply.

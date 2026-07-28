@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Helmet [HUD]. Lowers hazard detection checks within 10ft."
-headless: true
 ---
 
 #### Hazard HUD

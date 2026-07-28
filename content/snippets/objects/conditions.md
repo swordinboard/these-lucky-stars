@@ -4,7 +4,6 @@ id: objects/conditions
 category: [core]
 type: rule
 tags: [objects]
-headless: true
 ---
 
 An object's current VIT places it into one of three conditions. These are fully formed terms — use them directly at the table ("the door is Damaged," "the terminal is Broken") rather than reciting VIT totals.

@@ -4,7 +4,6 @@ id: vehicles/initiative-and-occupants
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
 Every character rolls [Initiative](/docs/free-srd/core-rules/stats/#initiative) individually, whether they are on foot, driving a vehicle, or a passenger inside one. There is no grouped initiative for vehicle occupants.

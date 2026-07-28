@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Negate a wound or condition from a melee attack."
 requires: [abilities/defender]
-headless: true
 ---
 
 ### Just Winded

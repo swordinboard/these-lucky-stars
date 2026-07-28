@@ -4,7 +4,6 @@ id: movement/speed-descriptors
 category: [core]
 type: rule
 tags: [movement]
-headless: true
 ---
 
 > **Format:**

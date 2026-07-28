@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, communications]
 summary: "500 mile range. Connects to local networks."
-headless: true
 ---
 
 ### Long Range Coms

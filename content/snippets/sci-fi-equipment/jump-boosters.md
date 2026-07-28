@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "+10ft to horizontal and vertical jump."
-headless: true
 ---
 
 ### Jump Boosters

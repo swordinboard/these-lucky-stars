@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, light-sources]
 summary: "4hrs per fuel flask. Can be hooded. 30ft bright, 30ft dim."
-headless: true
 ---
 
 ### Oil Lantern

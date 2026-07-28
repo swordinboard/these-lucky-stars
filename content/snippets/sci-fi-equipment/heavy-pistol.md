@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 summary: "Ballistic. Single shot. 50ft range."
-headless: true
 ---
 
 ### Heavy Pistol

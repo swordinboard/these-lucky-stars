@@ -4,7 +4,6 @@ id: combat/actions-in-combat
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 The following catalog lists the most common actions characters take during combat. All actions listed here are [Standard Actions](/docs/free-srd/core-rules/action-economy/#standard-actions) unless noted otherwise.

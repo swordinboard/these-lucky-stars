@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "A tiny bell useful as a simple alarm or signal device."
-headless: true
 ---
 
 ### Small Bell

@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Reflects light to signal over long distances in daylight."
-headless: true
 ---
 
 ### Signal Mirror

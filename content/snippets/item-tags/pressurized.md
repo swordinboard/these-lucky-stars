@@ -4,7 +4,6 @@ id: item-tags/pressurized
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Pressurized

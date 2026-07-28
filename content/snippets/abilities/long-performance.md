@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Use General Spectacle for multiple rounds."
-headless: true
 ---
 
 ### Long Performance

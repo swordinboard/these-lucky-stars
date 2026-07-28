@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Use your tool kit to make difficult terrain."
-headless: true
 ---
 
 ### Kit Trap

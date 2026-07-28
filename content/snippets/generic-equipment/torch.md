@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, light-sources]
 summary: "1hr burn. Single use."
-headless: true
 ---
 
 ### Torch

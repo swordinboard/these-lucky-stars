@@ -4,7 +4,6 @@ id: vehicles/collision-damage
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
 > Collision Damage = (1d6 per vehicle space) + Speed modifier

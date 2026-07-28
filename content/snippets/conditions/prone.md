@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
-headless: true
 ---
 
 ### Prone

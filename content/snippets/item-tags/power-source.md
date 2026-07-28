@@ -4,7 +4,6 @@ id: item-tags/power-source
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Power Source

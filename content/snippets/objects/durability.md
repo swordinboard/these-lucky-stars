@@ -4,7 +4,6 @@ id: objects/durability
 category: [core]
 type: rule
 tags: [objects]
-headless: true
 ---
 
 Objects use the same DEF and VIT system as characters with minor modifications.

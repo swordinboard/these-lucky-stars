@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Partial cover while active. 1d12 Supply Die"
-headless: true
 ---
 
 ### Shield Mount

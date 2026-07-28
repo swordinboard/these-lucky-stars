@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Increases com range to 20 miles"
-headless: true
 ---
 
 ### Signal Mast, Retractable

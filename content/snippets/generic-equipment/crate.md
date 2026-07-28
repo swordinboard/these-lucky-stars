@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "General purpose bulk storage."
-headless: true
 ---
 
 ### Crate

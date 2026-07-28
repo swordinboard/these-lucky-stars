@@ -4,7 +4,6 @@ id: attributes/overview
 category: [core]
 type: rule
 tags: [attributes]
-headless: true
 ---
 
 Attributes act as your primary stat block, they are the building blocks of your character and act as a base for their other stats. They are divided into two categories: Physical Attributes and Mental Attributes.

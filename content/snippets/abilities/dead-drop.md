@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Quickly hide a small object in a room or vehicle using your B&E kit."
 requires: [proficiencies/b-e-kit]
-headless: true
 ---
 
 ### Dead Drop

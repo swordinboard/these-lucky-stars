@@ -4,7 +4,6 @@ id: basics/supply-rolls
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 Supply rolls or supply dice are used to track inventory and conditions with a level of randomness. 

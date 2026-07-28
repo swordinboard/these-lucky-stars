@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Increase WILL target or stress from suppression."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
-headless: true
 ---
 
 ### Improved Suppressing Fire

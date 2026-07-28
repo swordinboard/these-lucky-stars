@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Back. A propulsion unit for navigating in zero gravity."
-headless: true
 ---
 
 #### SAFER Unit

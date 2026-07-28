@@ -4,7 +4,6 @@ id: actions/reactions
 category: [core]
 type: rule
 tags: [actions]
-headless: true
 ---
 
 Reactions are things a character's body does in response to what is happening around them. A reaction is not a chosen action — it is a consequence. Grabbing a ledge while falling, dodging a trap, bracing against a sudden blast, even defending against an attack: these are reactions.

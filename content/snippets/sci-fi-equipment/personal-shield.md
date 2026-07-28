@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "10pts protection for up to 3 rounds."
-headless: true
 ---
 
 ### Personal Shield

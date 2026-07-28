@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Interrupt enemies mid action."
-headless: true
 ---
 
 ### Outburst

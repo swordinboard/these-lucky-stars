@@ -4,7 +4,6 @@ id: components/power-sources
 category: [sci-fi]
 type: rule
 tags: [component, sci-fi]
-headless: true
 ---
 
 Automated Machines have built in [power sources](/docs/free-srd/inventory--equipment/item-tags/#power-source) which power passive functions and basic operation under normal conditions.

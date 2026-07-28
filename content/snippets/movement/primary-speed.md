@@ -4,7 +4,6 @@ id: movement/primary-speed
 category: [core]
 type: rule
 tags: [movement, stats]
-headless: true
 ---
 
 > **Primary Speed = 20 + 5 per +1 AGI Bonus or Flat −5 if AGI Penalty + Mods**

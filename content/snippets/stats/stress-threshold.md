@@ -4,7 +4,6 @@ id: stats/stress-threshold
 category: [core]
 type: rule
 tags: [stats]
-headless: true
 ---
 
 > **= ½ Level + ½ WILL + Mods (Total Rounded Down, Min 1)**

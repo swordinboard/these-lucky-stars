@@ -4,7 +4,6 @@ id: item-tags/ballistic
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ## Ballistic

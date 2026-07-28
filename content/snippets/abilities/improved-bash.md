@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Increased displacement and knockdown from Bash."
 requires: [abilities/charge, abilities/bash]
-headless: true
 ---
 
 ### Improved Bash

@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Reroll a decision die during unarmed trip, disarm, or grapple."
 requires: [proficiencies/martial-training]
-headless: true
 ---
 
 ### Martial Supremacy

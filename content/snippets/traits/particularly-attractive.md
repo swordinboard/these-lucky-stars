@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+2 to persuasion rolls with someone who finds you attractive."
-headless: true
 ---
 
 ### Particularly Attractive

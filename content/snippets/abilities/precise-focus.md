@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Triple normal range for Focus abilities."
 requires: [abilities/focus-attack, abilities/focus-in]
-headless: true
 ---
 
 ### Precise Focus

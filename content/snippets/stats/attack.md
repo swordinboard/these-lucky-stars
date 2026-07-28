@@ -4,7 +4,6 @@ id: stats/attack
 category: [core]
 type: rule
 tags: [stats]
-headless: true
 ---
 
 > **= STR or DEX + Mods**

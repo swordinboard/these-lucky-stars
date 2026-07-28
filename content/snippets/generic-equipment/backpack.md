@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "+20 max carry weight."
-headless: true
 ---
 
 ### Backpack

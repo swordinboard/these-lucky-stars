@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Use two semi-auto pistols for full-auto abilities."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Quick Firing

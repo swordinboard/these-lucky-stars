@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Resistant to fear and distraction."
-headless: true
 ---
 
 ### Unshakable

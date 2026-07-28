@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [trait, sci-fi]
 summary: "Immune system hardened by travel between planets."
-headless: true
 ---
 
 ### Inter-Planet Traveler

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, shield]
 summary: "+2 DEF 1d8 Supply"
-headless: true
 ---
 
 ### Collapsible Shield

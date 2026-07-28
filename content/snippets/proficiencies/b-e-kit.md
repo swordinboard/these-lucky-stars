@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Trained in the use of the B&E kit."
-headless: true
 ---
 
 ### B&E Kit Proficiency

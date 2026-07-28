@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "Most advanced Evosuit available."
-headless: true
 ---
 
 #### Ultraweave Evosuit

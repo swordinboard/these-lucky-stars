@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Advantage on AGI/DEX checks against effects of a triggered trap."
-headless: true
 ---
 
 ### Danger Reflex

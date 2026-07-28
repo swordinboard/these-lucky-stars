@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Resist manipulation and deception."
-headless: true
 ---
 
 ### Stubborn

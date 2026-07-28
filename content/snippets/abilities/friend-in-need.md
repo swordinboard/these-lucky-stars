@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Sacrifice your DEF to protect an adjacent ally."
 requires: [traits/tough]
-headless: true
 ---
 
 ### Friend in Need

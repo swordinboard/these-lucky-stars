@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "+2 bonus to STR checks for prying and leverage."
-headless: true
 ---
 
 ### Long Crowbar

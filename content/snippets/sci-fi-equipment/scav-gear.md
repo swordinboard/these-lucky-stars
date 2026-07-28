@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Grants an extra body slot and +50 max carry weight."
-headless: true
 ---
 
 #### Scav Gear

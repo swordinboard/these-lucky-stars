@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Conserve ammo during suppressive fire."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
-headless: true
 ---
 
 ### Controlled Suppressing Fire

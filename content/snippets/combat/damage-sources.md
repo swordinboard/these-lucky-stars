@@ -4,7 +4,6 @@ id: combat/damage-sources
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 **Normal Damage** — Damage that comes from a direct source such as an attack or a trap is considered normal damage and is applied to the character's DEF before potential VIT loss. If there is an action responsible for the damage or if the damage could have been dodged or physically avoided it is most likely normal damage.

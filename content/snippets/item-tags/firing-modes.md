@@ -4,7 +4,6 @@ id: item-tags/firing-modes
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Firing Modes

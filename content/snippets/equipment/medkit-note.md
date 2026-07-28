@@ -5,7 +5,6 @@ category: [core]
 type: reference
 tags: [equipment, medical]
 selectable: false
-headless: true
 ---
 
 > This is a single use item that can be used in place of a med kit, see the [wounds](/docs/free-srd/core-rules/wounds--conditions/#wounds) section for more details on dressing wounds.

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Throwable [20ft]."
-headless: true
 ---
 
 ### Emergency Hatchet

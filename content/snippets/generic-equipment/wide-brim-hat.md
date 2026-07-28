@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Minor protectiob from sun and light rain."
-headless: true
 ---
 
 ### Wide-Brim Hat

@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Protects against dust, sand, and mild airborne hazards."
-headless: true
 ---
 
 ### Face Wrap

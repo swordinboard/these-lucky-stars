@@ -4,7 +4,6 @@ id: proficiencies/overview
 category: [core]
 type: reference
 tags: [character-creation, proficiency]
-headless: true
 ---
 
 Proficiencies are things for which your character has received training or otherwise become particularly skilled at. Most are related to the use of items. Certain actions cannot be attempted at all without the appropriate tool/item and proficiency.

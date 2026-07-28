@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Flint & steel or equivalent. Reliably starts fires."
-headless: true
 ---
 
 ### Fire-Starter

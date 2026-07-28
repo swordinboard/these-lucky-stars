@@ -4,7 +4,6 @@ id: basics/success-and-failure
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 > [!NOTE]

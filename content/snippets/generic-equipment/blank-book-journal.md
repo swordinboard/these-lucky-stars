@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Bound book with approximately 100 blank pages."
-headless: true
 ---
 
 ### Blank Book / Journal

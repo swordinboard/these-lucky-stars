@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Bonus to max Luck."
-headless: true
 ---
 
 ### Lucky

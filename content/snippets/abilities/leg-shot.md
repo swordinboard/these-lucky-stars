@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Ranged attack at minor disadvantage to apply Crippled on hit."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Leg Shot

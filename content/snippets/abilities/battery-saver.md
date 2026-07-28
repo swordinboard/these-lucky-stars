@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [ability, sci-fi, battery]
 summary: "Re-roll a failed supply roll once per day."
-headless: true
 ---
 
 ### Battery Saver

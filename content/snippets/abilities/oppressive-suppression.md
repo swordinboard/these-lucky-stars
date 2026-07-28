@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Expand suppression to six non-adjacent squares."
 requires: [proficiencies/weapon, abilities/suppressing-fire]
-headless: true
 ---
 
 ### Oppressive Suppression

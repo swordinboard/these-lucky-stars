@@ -4,7 +4,6 @@ id: item-tags/rounds-reload
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Rounds Reload

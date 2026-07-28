@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Cleaning agent. Multiple uses per block."
-headless: true
 ---
 
 ### Block of Soap

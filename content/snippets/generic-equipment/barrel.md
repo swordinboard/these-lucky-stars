@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Holds up to 30 gallons of liquid or dry goods."
-headless: true
 ---
 
 ### Barrel

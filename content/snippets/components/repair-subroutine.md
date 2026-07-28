@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Self-repair 1 VIT per long rest"
-headless: true
 ---
 
 ### Repair Subroutine

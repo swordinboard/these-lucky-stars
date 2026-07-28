@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Minimum protection for airless environments."
-headless: true
 ---
 
 #### Basic P-Suit

@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Metal restraints for binding a creature's wrists."
-headless: true
 ---
 
 ### Manacles / Restraints

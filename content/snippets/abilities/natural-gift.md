@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, luck]
 summary: "Increase Luck die to d6 for a chosen attribute."
-headless: true
 ---
 
 ### Natural Gift

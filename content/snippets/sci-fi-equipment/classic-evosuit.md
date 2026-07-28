@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Advances space suit popular among pilots and hazardous atmosphere workers."
-headless: true
 ---
 
 #### Classic Evosuit

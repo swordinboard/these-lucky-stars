@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Arm slot. Single-use ranged or melee weapon."
-headless: true
 ---
 
 #### Emergency Shank

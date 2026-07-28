@@ -4,7 +4,6 @@ id: equipment/common-terms
 category: [core]
 type: rule
 tags: [equipment]
-headless: true
 ---
 
 ### Price

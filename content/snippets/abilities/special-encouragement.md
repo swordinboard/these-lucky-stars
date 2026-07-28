@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general]
 summary: "Quickly repair your companion for no supplies."
 requires: [proficiencies/general-robotics, abilities/companion-bot]
-headless: true
 ---
 
 ### Special Encouragement

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, medical]
 summary: "Variable dosage. Suppresses condition effects temporarily."
-headless: true
 ---
 
 ### Pain Suppressant Injector

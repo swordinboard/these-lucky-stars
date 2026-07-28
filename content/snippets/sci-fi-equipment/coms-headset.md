@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, communications]
 summary: "Wireless connection for com devices."
-headless: true
 ---
 
 ### Coms Headset

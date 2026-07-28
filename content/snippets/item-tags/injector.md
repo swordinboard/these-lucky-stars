@@ -4,7 +4,6 @@ id: item-tags/injector
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Injector

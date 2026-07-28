@@ -4,7 +4,6 @@ id: actions/step
 category: [core]
 type: rule
 tags: [actions, movement]
-headless: true
 ---
 
 **Step** *(1 AP)* — Once per round a character may spend 1 AP to move a single space (5 ft) at any point during their turn. A Step is a minor, deliberate adjustment rather than a full move — a careful reposition, a side-step, or a short deliberate movement.

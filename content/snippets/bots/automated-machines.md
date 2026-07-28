@@ -4,7 +4,6 @@ id: bots/automated-machines
 category: [sci-fi]
 type: rule
 tags: [bots, sci-fi]
-headless: true
 ---
 
 Many civilizations rely on robots to aid in space exploration as well as services and manufacturing at home. This page provides a list of the most common models available.

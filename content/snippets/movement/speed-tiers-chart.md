@@ -4,7 +4,6 @@ id: movement/speed-tiers-chart
 category: [core]
 type: reference
 tags: [movement]
-headless: true
 ---
 
 | Tier | Speed Range (ft/round) |  Approximate Speed | Examples | Modifier |

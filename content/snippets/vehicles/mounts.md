@@ -4,7 +4,6 @@ id: vehicles/mounts
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
 Mounts are a special type of vehicle. Because mounts are living creatures with their own attributes, features, and behavior, they follow slightly different rules from mechanical vehicles. This section gathers all mount-specific rules in one place.

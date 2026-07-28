@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, medical]
 summary: "Prevents infection and aids wound recovery."
-headless: true
 ---
 
 ### Antiseptic Poultice

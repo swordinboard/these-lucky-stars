@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Trained in the use of the disguise kit."
-headless: true
 ---
 
 ### Disguise Kit Proficiency

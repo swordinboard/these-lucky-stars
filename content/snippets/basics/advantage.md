@@ -4,7 +4,6 @@ id: basics/advantage
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 > [!NOTE]

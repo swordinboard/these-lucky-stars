@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Heavy duty restraint and utility chain."
-headless: true
 ---
 
 ### Chain, 10ft

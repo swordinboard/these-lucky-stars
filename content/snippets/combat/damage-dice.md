@@ -4,7 +4,6 @@ id: combat/damage-dice
 category: [core]
 type: rule
 tags: [combat, damage]
-headless: true
 ---
 
 Base damage dice are determined by the size of the attacker relative to the defender:

@@ -4,7 +4,6 @@ id: actions/opportunity-actions
 category: [core]
 type: rule
 tags: [actions]
-headless: true
 ---
 
 Opportunity Actions are actions taken on another character's turn in response to a specific trigger. Unlike Standard Actions, Opportunity Actions are not chosen freely — each one is granted by a specific source, such as the baseline *Opportunity Attack* available to all characters, or a character feature that defines its own opportunity action.

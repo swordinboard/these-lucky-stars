@@ -4,7 +4,6 @@ id: stats/defense
 category: [core]
 type: rule
 tags: [stats, health]
-headless: true
 ---
 
 > **Defense (DEF) = AGI Bonus + FORT Bonus + Mods (Min 1)**

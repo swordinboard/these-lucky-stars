@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Pressurized propellant canisters in small, medium, and large sizes."
-headless: true
 ---
 
 ### Fuel Cells

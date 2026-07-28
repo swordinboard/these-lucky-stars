@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "Tactical variation of the padded flight suit."
-headless: true
 ---
 
 #### Security Flight Suit

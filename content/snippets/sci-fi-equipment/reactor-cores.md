@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Self-charging power cores for automated machines."
-headless: true
 ---
 
 ### Reactor Cores

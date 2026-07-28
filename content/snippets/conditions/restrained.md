@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Physical actions limited — affected limb unusable"
-headless: true
 ---
 
 ### Restrained

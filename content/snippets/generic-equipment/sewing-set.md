@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Needle, thread, and patches for basic repairs to fabric and leather."
-headless: true
 ---
 
 ### Sewing Set

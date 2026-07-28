@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [proficiency, sci-fi]
 summary: "Trained in maintenance and repair of robotic parts and models."
-headless: true
 ---
 
 ### General Robotics

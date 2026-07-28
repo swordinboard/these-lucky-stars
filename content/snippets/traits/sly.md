@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+2 to deception rolls."
-headless: true
 ---
 
 ### Sly

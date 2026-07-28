@@ -4,7 +4,6 @@ id: item-tags/versatile
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Versatile

@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Overwatch a line with ranged attacks of opportunity."
-headless: true
 ---
 
 ### Focus In

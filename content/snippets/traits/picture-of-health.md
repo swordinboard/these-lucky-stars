@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+1 bonus to VIT."
-headless: true
 ---
 
 ### Picture of Health

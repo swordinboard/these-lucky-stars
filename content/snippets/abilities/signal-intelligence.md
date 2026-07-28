@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general, computers]
 summary: "Intercept unencrypted communications with a comp jack."
 requires: [proficiencies/comp-jack]
-headless: true
 ---
 
 ### Signal Intelligence

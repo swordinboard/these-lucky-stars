@@ -4,7 +4,6 @@ id: environment/extreme-environments
 category: [core]
 type: rule
 tags: [environment]
-headless: true
 ---
 
 The core [Environmental Effects](/docs/free-srd/core-rules/environmental-effects/) rules cover weather and conditions that wear characters down over time. Extreme environments — the surface of a volcanic moon, the vacuum of space, the ruins of a breached reactor — skip the slow buildup entirely. In these instances, at the end of each exposure interval an unprotected character suffers **1 VIT loss**. No FORT check is made — the environment is beyond what the body can resist.

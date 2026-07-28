@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "General purpose rope. Supports up to 500lbs."
-headless: true
 ---
 
 ### Rope, 50ft

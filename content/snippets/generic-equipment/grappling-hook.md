@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Attaches to rope. Throwable [30ft]."
-headless: true
 ---
 
 ### Grappling Hook

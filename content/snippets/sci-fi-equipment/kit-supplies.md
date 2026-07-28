@@ -4,7 +4,6 @@ id: sci-fi-equipment/kit-supplies
 category: [sci-fi]
 type: rule
 tags: [equipment, kit, sci-fi]
-headless: true
 ---
 
 Tool kits are pre-assembled collections of tools and supplies built for a specific type of task. Tool kit contents can vary based on setting, be sure to reference the appropriate kit description.

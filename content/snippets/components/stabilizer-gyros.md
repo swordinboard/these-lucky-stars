@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Resist knockdown, no falling damage under 20ft"
-headless: true
 ---
 
 ### Stabilizer Gyros

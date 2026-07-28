@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [wound-type]
 summary: "Shaken, +1 Stress — may add Bleeding, Crippled, or Confused"
-headless: true
 ---
 
 ### Fracture

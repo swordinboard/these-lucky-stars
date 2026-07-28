@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Provides improved footing on rough terrain."
-headless: true
 ---
 
 ### Reinforced Boots

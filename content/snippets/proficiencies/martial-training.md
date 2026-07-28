@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Trained to fight unarmed as effectively as armed."
-headless: true
 ---
 
 ### Martial Training

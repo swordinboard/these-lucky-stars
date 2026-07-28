@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, kit]
 summary: "Bulky. Locks, traps, bypass tools."
-headless: true
 ---
 
 ### B&E Kit

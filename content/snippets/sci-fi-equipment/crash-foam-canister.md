@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, medical]
 summary: "Single use. Stabilizes a Dying Android or automated machine."
-headless: true
 ---
 
 ### Crash Foam Canister

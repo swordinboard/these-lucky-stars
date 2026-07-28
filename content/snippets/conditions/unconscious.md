@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Cannot take any actions — attackers gain advantage and surprise"
-headless: true
 ---
 
 ### Unconscious

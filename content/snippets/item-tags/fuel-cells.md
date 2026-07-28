@@ -4,7 +4,6 @@ id: item-tags/fuel-cells
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Fuel Cell

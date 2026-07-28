@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Swap spaces with your attacker using Agile Dodge."
 requires: [proficiencies/martial-training, abilities/agile-dodge]
-headless: true
 ---
 
 ### Momentum Dodge

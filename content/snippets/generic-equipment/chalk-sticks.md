@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "For marking surfaces, writing, and sketching."
-headless: true
 ---
 
 ### Chalk / Charcoal Sticks

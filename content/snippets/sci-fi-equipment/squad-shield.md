@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "30pts protection, 20ft radius, up to 6 rounds."
-headless: true
 ---
 
 ### Squad Shield

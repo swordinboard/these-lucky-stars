@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Shove an opponent at the end of a charge."
 requires: [abilities/charge]
-headless: true
 ---
 
 ### Bash

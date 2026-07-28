@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
-headless: true
 ---
 
 ### Sick

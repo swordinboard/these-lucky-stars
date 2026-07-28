@@ -5,7 +5,6 @@ category: [sci-fi]
 type: rule
 tags: [sci-fi, combat]
 summary: "Rules addition"
-headless: true
 ---
 
 **Zero-Gravity Knockback:** Full-auto ballistic weapons fired in zero gravity enviroments push the user back at a rate of 5ft per round until they can steady themselves with a larger object.

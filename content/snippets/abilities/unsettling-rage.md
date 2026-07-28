@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Intimidate a nearby opponent when activating Rage."
 requires: [traits/intimidating, abilities/rage, abilities/powerful-rage]
-headless: true
 ---
 
 ### Unsettling Rage

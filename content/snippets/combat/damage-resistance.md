@@ -4,7 +4,6 @@ id: combat/damage-resistance
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 **Partial Damage Resistance (PDR)** — Applies to normal damage. Normal damage of this type is halved (minimum 1).

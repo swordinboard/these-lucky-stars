@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+2 to stealth rolls."
-headless: true
 ---
 
 ### Sneaky

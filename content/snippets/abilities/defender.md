@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Double your DEF against a melee attack."
-headless: true
 ---
 
 ### Defender

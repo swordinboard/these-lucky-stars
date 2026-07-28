@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Basic sleeping gear. Packs down for travel."
-headless: true
 ---
 
 ### Bedroll

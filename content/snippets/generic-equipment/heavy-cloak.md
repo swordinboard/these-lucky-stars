@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, clothing]
 summary: "Partial protection from cold and rain. Covers equipped gear."
-headless: true
 ---
 
 ### Heavy Cloak

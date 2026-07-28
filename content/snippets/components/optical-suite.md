@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "Low-light, thermal, zoom"
-headless: true
 ---
 
 ### Optical Suite

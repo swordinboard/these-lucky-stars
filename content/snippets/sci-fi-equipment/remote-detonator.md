@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Detonates rigged explosives or systems."
-headless: true
 ---
 
 ### Remote Detonator

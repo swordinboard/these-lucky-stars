@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Head [Coms]. Encrypted radio, 1 mile range."
-headless: true
 ---
 
 #### Coms Unit

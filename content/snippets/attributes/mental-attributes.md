@@ -4,7 +4,6 @@ id: attributes/mental-attributes
 category: [core]
 type: rule
 tags: [attributes]
-headless: true
 ---
 
 #### Knowledge (KNO)

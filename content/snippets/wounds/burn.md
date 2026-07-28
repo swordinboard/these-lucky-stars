@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [wound-type]
 summary: "+1 Stress until dressed"
-headless: true
 ---
 
 ### Burn

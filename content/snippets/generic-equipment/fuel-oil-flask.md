@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, light-sources]
 summary: "Refuels a lantern for 4hrs. Flammable."
-headless: true
 ---
 
 ### Fuel / Oil Flask

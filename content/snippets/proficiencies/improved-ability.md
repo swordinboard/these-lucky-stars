@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Special training with a particular ability."
-headless: true
 ---
 
 ### Improved Ability

@@ -6,7 +6,6 @@ type: feature
 tags: [ability, sci-fi, general]
 summary: "Designate a drone or robot as your companion."
 requires: [proficiencies/general-robotics]
-headless: true
 ---
 
 ### Companion Bot

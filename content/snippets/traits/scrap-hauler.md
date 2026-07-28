@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [trait, sci-fi]
 summary: "Accustomed to carrying heavy loads in different environments."
-headless: true
 ---
 
 ### Scrap Hauler

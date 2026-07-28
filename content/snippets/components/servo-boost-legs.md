@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
 summary: "+10ft speed, +5ft jump while powered"
-headless: true
 ---
 
 ### Servo Boost Legs

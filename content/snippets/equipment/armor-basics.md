@@ -4,7 +4,6 @@ id: equipment/armor-basics
 category: [core]
 type: rule
 tags: [equipment, armor]
-headless: true
 ---
 
 Armor provides a DEF Bonus at the cost of an AGI/DEX penalty, based on how restrictive it is. Some armors include built-in upgrades or special properties.

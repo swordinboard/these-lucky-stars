@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Mimics com signals and life signs for 1hr."
-headless: true
 ---
 
 ### Decoy Beacon

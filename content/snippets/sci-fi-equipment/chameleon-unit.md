@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Active camouflage system."
-headless: true
 ---
 
 #### Chameleon Unit

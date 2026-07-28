@@ -6,7 +6,6 @@ type: feature
 tags: [proficiency, core]
 summary: "Add INS bonus to Vehicle Proficiency rolls."
 requires: [proficiencies/vehicle]
-headless: true
 ---
 
 ### Licensed Instincts

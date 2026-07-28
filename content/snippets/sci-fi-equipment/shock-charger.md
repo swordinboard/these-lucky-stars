@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, melee-upgrade]
 summary: "All melee. +2 damage, changes type to shock. FORT check or lose 1 AP."
-headless: true
 ---
 
 ### Shock Charger

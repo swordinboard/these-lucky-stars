@@ -4,7 +4,6 @@ id: basics/decision-rolls
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 In most situations when determining the success or failure of an action the following mechanic will be used:

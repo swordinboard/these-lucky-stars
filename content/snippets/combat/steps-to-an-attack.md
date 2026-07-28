@@ -4,7 +4,6 @@ id: combat/steps-to-an-attack
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 1. Declare the attack and announce any relevant advantages or disadvantages. The GM will decide what applies.

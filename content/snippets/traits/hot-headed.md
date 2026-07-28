@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Gain temporary +2 AP the first time you take VIT damage each session."
-headless: true
 ---
 
 ### Hot-Headed

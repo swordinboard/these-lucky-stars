@@ -4,7 +4,6 @@ id: abilities/overview
 category: [core]
 type: reference
 tags: [ability, character-creation]
-headless: true
 ---
 
 Abilities are special actions your character can take. They have the most variance in usage and effects. Some provide new actions, others modify existing actions, and some provide passive bonuses. Certain abilities can be taken multiple times, improving upon the original effect or number of uses.

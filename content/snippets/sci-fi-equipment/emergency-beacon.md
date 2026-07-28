@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, survival]
 summary: "Sends a distress signal across a star system for 72hrs."
-headless: true
 ---
 
 ### Emergency Beacon

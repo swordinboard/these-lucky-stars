@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Sharpened wooden stakes for tents, traps, or other uses."
-headless: true
 ---
 
 ### Wooden Stakes (6)

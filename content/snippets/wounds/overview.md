@@ -4,7 +4,6 @@ id: wounds/overview
 category: [core]
 type: reference
 tags: []
-headless: true
 ---
 
 Wounds and conditions are most often associated with combat. Successful attacks will sometimes result in a wound or condition. When choosing a wound or condition that is the result of an attack, GMs must consider the type of attack being made, the type of damage being dealt, the combatants involved, and how far beyond the target the attack result was.

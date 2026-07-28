@@ -5,7 +5,6 @@ category: [sci-fi]
 type: feature
 tags: [trait, sci-fi]
 summary: "Accustomed to zero and low-gravity environments."
-headless: true
 ---
 
 ### Space Adept

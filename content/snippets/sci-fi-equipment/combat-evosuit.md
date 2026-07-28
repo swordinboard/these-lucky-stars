@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "Advanced space suit designed for tactical use."
-headless: true
 ---
 
 #### Combat Evosuit

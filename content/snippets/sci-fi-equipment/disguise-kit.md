@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, kit]
 summary: "Alters appearance, applies camouflage."
-headless: true
 ---
 
 ### Disguise Kit

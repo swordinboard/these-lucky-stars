@@ -4,7 +4,6 @@ id: combat/combat-basics
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 - Characters enter combat when one declares an aggressive action against another. Initiative is determined immediately upon declaring the action.

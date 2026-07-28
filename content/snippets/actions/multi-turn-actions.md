@@ -4,7 +4,6 @@ id: actions/multi-turn-actions
 category: [core]
 type: rule
 tags: [actions]
-headless: true
 ---
 
 Some actions require more time than a single round can provide. These actions are committed on the turn they begin and continue across multiple rounds or multiple characters, with AP paid over time.

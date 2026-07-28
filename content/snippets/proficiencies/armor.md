@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [proficiency, core]
 summary: "Trained in the use of a selected armor type."
-headless: true
 ---
 
 ### Armor

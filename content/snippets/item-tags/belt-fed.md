@@ -4,7 +4,6 @@ id: item-tags/belt-fed
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Belt Fed

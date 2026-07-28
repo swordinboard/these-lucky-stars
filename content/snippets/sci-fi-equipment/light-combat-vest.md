@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, light-armor]
 summary: "Concealable. Lower profile version of the combat vest."
-headless: true
 ---
 
 #### Light Combat Vest

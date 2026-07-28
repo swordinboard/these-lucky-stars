@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "+4 to initiative."
-headless: true
 ---
 
 ### Alert

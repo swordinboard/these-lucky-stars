@@ -5,7 +5,6 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Only physical action is to escape the pin"
-headless: true
 ---
 
 ### Pinned

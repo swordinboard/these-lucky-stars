@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. +1 attack, negates zero-g knockback."
-headless: true
 ---
 
 ### Recoil Compensation System

@@ -4,7 +4,6 @@ id: item-tags/arcing
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Arcing

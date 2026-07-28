@@ -4,7 +4,6 @@ id: inventory/body-slots
 category: [core]
 type: rule
 tags: [inventory]
-headless: true
 ---
 
 Items muat be equipped into a bbody slot to be used effectively. Only one piece of equipment can occupy a body slot at a time (with the exceptiob of subslots, see below).

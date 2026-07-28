@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "For writing on parchment, paper, or similar surfaces."
-headless: true
 ---
 
 ### Ink & Writing Instrument

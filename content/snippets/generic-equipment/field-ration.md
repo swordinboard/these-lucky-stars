@@ -6,7 +6,6 @@ type: equipment
 tags: [equipment, generic, survival]
 summary: "One day of food for one person."
 variant_group: field-ration
-headless: true
 ---
 
 ### Field Ration

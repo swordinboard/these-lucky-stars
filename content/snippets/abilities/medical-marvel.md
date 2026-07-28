@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, luck]
 summary: "Heal a condition or wound by spending Luck."
-headless: true
 ---
 
 ### Medical Marvel

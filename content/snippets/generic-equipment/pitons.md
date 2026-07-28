@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Metal spikes hammered into surfaces for climbing."
-headless: true
 ---
 
 ### Pitons / Climbing Spikes (6)

@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Vertical launch up to 25ft or controlled arc; reduces fall damage."
-headless: true
 ---
 
 ### Jump Pack

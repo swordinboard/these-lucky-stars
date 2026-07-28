@@ -4,7 +4,6 @@ id: vehicles/impact-and-overrun
 category: [core]
 type: rule
 tags: [vehicles]
-headless: true
 ---
 
 When a vehicle's path passes through a creature's space, the creature is in the vehicle's way. This is not an attack — it is a consequence of movement. The rules below resolve what happens, and who rolls what, based on whose intent created the situation.

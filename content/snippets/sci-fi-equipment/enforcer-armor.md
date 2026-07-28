@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "No-frills armor favored by private security."
-headless: true
 ---
 
 #### Enforcer Armor

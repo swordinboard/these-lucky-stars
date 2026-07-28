@@ -4,7 +4,6 @@ id: combat/initiative
 category: [core]
 type: rule
 tags: [combat, stats]
-headless: true
 ---
 
 > **Initiative = AGI + DEX + INS + Mods**

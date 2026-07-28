@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, kit]
 summary: "Electronic components and equipment."
-headless: true
 ---
 
 ### Tech Kit

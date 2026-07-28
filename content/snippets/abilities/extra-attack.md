@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Make two standard attacks per round."
 requires: [proficiencies/weapon]
-headless: true
 ---
 
 ### Extra Attack

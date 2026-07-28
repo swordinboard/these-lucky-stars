@@ -6,7 +6,6 @@ type: feature
 tags: [ability, core, general]
 summary: "Add Vital Strike dice to Focus Attack rolls."
 requires: [abilities/vital-strike]
-headless: true
 ---
 
 ### Vital Focus

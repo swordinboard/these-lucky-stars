@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Carries up to half a gallon of liquid."
-headless: true
 ---
 
 ### Waterskin / Canteen

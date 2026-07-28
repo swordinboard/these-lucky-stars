@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Direct contact laser cutter/welder."
-headless: true
 ---
 
 ### Mini Laser Cutter

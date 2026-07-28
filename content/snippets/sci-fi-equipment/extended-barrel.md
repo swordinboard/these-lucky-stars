@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Pistols, Rifles. +20ft normal range."
-headless: true
 ---
 
 ### Extended Barrel

@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Declare a contact once per session in your current location."
-headless: true
 ---
 
 ### Well-Connected

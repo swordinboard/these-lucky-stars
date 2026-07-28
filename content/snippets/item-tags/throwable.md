@@ -4,7 +4,6 @@ id: item-tags/throwable
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Throwable

@@ -4,7 +4,6 @@ id: item-tags/fragile
 category: [core]
 type: rule
 tags: [item-tag]
-headless: true
 ---
 
 ### Fragile

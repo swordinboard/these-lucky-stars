@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, containers]
 summary: "Holds most handheld items for quick access."
-headless: true
 ---
 
 ### Pouch Set, Standard

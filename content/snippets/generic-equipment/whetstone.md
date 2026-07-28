@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, tools]
 summary: "Sharpens and maintains edged weapons."
-headless: true
 ---
 
 ### Whetstone

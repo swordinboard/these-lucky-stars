@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
-headless: true
 ---
 
 ### Shock Rifle

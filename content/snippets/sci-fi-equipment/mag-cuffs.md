@@ -5,7 +5,6 @@ category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, tech]
 summary: "Encrypted magnetic handcuffs with wrist controller."
-headless: true
 ---
 
 ### Mag Cuffs

@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, survival]
 summary: "Basic shelter for two."
-headless: true
 ---
 
 ### Tent, 2-Person

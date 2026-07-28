@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Enter an enraged state for a short duration."
-headless: true
 ---
 
 ### Rage

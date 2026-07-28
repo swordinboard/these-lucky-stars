@@ -4,7 +4,6 @@ id: basics/the-rounding-rule
 category: [core]
 type: rule
 tags: [basics]
-headless: true
 ---
 
 Anytime you are faced with a fraction in the end result of a roll or series of rolls, round down. This only happens at the end, not in the middle of calculations.

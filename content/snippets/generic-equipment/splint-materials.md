@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, medical]
 summary: "Stabilizes broken or fractured limbs."
-headless: true
 ---
 
 ### Splint Materials

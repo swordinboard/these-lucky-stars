@@ -5,7 +5,6 @@ category: [core]
 type: equipment
 tags: [equipment, generic, trade-goods]
 summary: "Cheap liquor. Also useful as a disinfectant and solvent."
-headless: true
 ---
 
 ### Common Alcohol, Flask

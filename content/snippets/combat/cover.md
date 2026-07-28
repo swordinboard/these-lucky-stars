@@ -4,7 +4,6 @@ id: combat/cover
 category: [core]
 type: rule
 tags: [combat]
-headless: true
 ---
 
 Any solid object that an attack cannot penetrate can be used as cover. Cover type is determined by how much of the defender is visible to the attacker and whether the barrier can withstand the attack.

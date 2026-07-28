@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Draw an equipped weapon for no AP."
-headless: true
 ---
 
 ### Quick Draw

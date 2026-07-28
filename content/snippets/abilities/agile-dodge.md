@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Immediate 5ft step when an opponent misses a melee attack against you."
-headless: true
 ---
 
 ### Agile Dodge

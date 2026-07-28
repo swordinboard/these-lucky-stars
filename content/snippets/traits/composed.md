@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [trait, core]
 summary: "Re-roll one decision die after your first failed WILL check each session."
-headless: true
 ---
 
 ### Composed

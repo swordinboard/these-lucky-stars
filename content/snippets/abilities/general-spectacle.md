@@ -5,7 +5,6 @@ category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Cause a Stress with a distraction."
-headless: true
 ---
 
 ### General Spectacle
