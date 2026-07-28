@@ -4,6 +4,7 @@ id: sci-fi/huds
 category: [sci-fi]
 type: rule
 tags: [sci-fi, equipment]
+summary: "Item type"
 headless: true
 ---
 

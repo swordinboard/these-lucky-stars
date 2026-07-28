@@ -4,6 +4,7 @@ id: sci-fi/ballistics-in-space
 category: [sci-fi]
 type: rule
 tags: [sci-fi, combat]
+summary: "Rules addition"
 headless: true
 ---
 

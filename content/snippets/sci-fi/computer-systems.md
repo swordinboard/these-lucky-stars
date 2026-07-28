@@ -4,6 +4,7 @@ id: sci-fi/computer-systems
 category: [sci-fi]
 type: rule
 tags: [computers, sci-fi]
+summary: "Subsystem"
 headless: true
 ---
 

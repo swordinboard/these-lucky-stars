@@ -369,7 +369,7 @@
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#computer-systems",
   "text": "computer interactions",
   "file": "content/snippets/sci-fi/communications.md",
-  "line": 10
+  "line": 11
  },
  {
   "source": "sci-fi/computer-systems",
@@ -378,7 +378,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
   "file": "content/snippets/sci-fi/computer-systems.md",
-  "line": 10
+  "line": 11
  },
  {
   "source": "combat/actions-in-combat",
@@ -8463,7 +8463,7 @@
   "url": "#burn",
   "text": "Burn",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 21
+  "line": 22
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8472,7 +8472,7 @@
   "url": "#contusion",
   "text": "Contusion",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 22
+  "line": 23
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8481,7 +8481,7 @@
   "url": "#dislocation",
   "text": "Dislocation",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 23
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8490,7 +8490,7 @@
   "url": "#fracture",
   "text": "Fracture",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 24
+  "line": 25
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8499,7 +8499,7 @@
   "url": "#laceration",
   "text": "Laceration",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 25
+  "line": 26
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8508,7 +8508,7 @@
   "url": "#puncture",
   "text": "Puncture",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 26
+  "line": 27
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8517,7 +8517,7 @@
   "url": "#sprain",
   "text": "Sprain",
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 27
+  "line": 28
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8526,7 +8526,7 @@
   "url": "/snippets/wounds/overview",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 9
+  "line": 10
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8535,7 +8535,7 @@
   "url": "/snippets/wounds/wounds",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 13
+  "line": 14
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8544,7 +8544,7 @@
   "url": "/snippets/wounds/burn",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 31
+  "line": 32
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8553,7 +8553,7 @@
   "url": "/snippets/wounds/contusion",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 37
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8562,7 +8562,7 @@
   "url": "/snippets/wounds/dislocation",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 43
+  "line": 44
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8571,7 +8571,7 @@
   "url": "/snippets/wounds/fracture",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 49
+  "line": 50
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8580,7 +8580,7 @@
   "url": "/snippets/wounds/laceration",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 55
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8589,7 +8589,7 @@
   "url": "/snippets/wounds/puncture",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 61
+  "line": 62
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8598,7 +8598,7 @@
   "url": "/snippets/wounds/sprain",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 67
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8607,7 +8607,7 @@
   "url": "/snippets/wounds/common-injuries",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 75
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8616,7 +8616,7 @@
   "url": "/snippets/conditions/overview",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 79
+  "line": 80
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8625,7 +8625,7 @@
   "url": "/snippets/conditions/asphyxiating",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 83
+  "line": 84
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8634,7 +8634,7 @@
   "url": "/snippets/conditions/bleeding",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 89
+  "line": 90
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8643,7 +8643,7 @@
   "url": "/snippets/conditions/confused",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 95
+  "line": 96
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8652,7 +8652,7 @@
   "url": "/snippets/conditions/crippled",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 101
+  "line": 102
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8661,7 +8661,7 @@
   "url": "/snippets/conditions/dying",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 107
+  "line": 108
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8670,7 +8670,7 @@
   "url": "/snippets/conditions/fatigued",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 113
+  "line": 114
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8679,7 +8679,7 @@
   "url": "/snippets/conditions/frightened",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 119
+  "line": 120
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8688,7 +8688,7 @@
   "url": "/snippets/conditions/immobilized",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 125
+  "line": 126
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8697,7 +8697,7 @@
   "url": "/snippets/conditions/pinned",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 131
+  "line": 132
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8706,7 +8706,7 @@
   "url": "/snippets/conditions/prone",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 137
+  "line": 138
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8715,7 +8715,7 @@
   "url": "/snippets/conditions/restrained",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 143
+  "line": 144
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8724,7 +8724,7 @@
   "url": "/snippets/conditions/shaken",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 149
+  "line": 150
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8733,7 +8733,7 @@
   "url": "/snippets/conditions/sick",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 155
+  "line": 156
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8742,7 +8742,7 @@
   "url": "/snippets/conditions/stressed",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 161
+  "line": 162
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -8751,7 +8751,7 @@
   "url": "/snippets/conditions/unconscious",
   "text": null,
   "file": "content/docs/free-srd/core-rules/wounds--conditions.md",
-  "line": 167
+  "line": 168
  },
  {
   "source": "page:/docs/free-srd/character-creation/",

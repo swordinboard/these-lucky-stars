@@ -4822,7 +4822,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious"
  },
  {
@@ -4851,7 +4851,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks"
  },
  {
@@ -4880,7 +4880,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress"
  },
  {
@@ -4909,7 +4909,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain advantage"
  },
  {
@@ -4968,7 +4968,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
  },
  {
@@ -4997,8 +4997,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
-  "summary": "-2 STR, AGI, and DEX, -2 AP/round — attackers gain advantage"
+  "wip": true,
+  "summary": "-2 STR, AGI, and DEX, -2 AP/round"
  },
  {
   "id": "conditions/frightened",
@@ -5026,7 +5026,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "-2 INS, +1 Stress"
  },
  {
@@ -5055,7 +5055,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Cannot take physical actions — DEX and AGI treated as null"
  },
  {
@@ -5082,7 +5082,7 @@
   "flags": [],
   "notes": "Condition framing + summary table.",
   "selectable": true,
-  "wip": false
+  "wip": true
  },
  {
   "id": "conditions/pinned",
@@ -5110,7 +5110,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Only physical action is to escape the pin"
  },
  {
@@ -5139,7 +5139,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
  },
  {
@@ -5168,8 +5168,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
-  "summary": "Physical actions limited — affected limb unusable, attackers gain advantage"
+  "wip": true,
+  "summary": "Physical actions limited — affected limb unusable"
  },
  {
   "id": "conditions/shaken",
@@ -5197,7 +5197,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "-1 to all decision rolls, -2 max DEF, +1 Stress"
  },
  {
@@ -5226,7 +5226,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
  },
  {
@@ -5255,7 +5255,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Cannot use Luck, -1 to all decision rolls per point over threshold"
  },
  {
@@ -5284,7 +5284,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Cannot take any actions — attackers gain advantage and surprise"
  },
  {
@@ -11844,7 +11844,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "summary": "Rules addition"
  },
  {
   "id": "sci-fi/communications",
@@ -11877,7 +11878,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "summary": "Subsystem"
  },
  {
   "id": "sci-fi/computer-systems",
@@ -11906,7 +11908,8 @@
   "flags": [],
   "notes": "Networks, security levels, hacking actions, countermeasures as one unit.",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "summary": "Subsystem"
  },
  {
   "id": "sci-fi/energy-shields",
@@ -11938,7 +11941,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "summary": "Item type"
  },
  {
   "id": "sci-fi/huds",
@@ -11969,7 +11973,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "summary": "Item type"
  },
  {
   "id": "site/announcement",
@@ -13146,7 +13151,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "+1 Stress until dressed"
  },
  {
@@ -13173,7 +13178,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": true
  },
  {
   "id": "wounds/contusion",
@@ -13201,7 +13206,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Crippled"
  },
  {
@@ -13230,7 +13235,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Crippled or Restrained"
  },
  {
@@ -13259,7 +13264,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Shaken, +1 Stress — may add Bleeding, Crippled, or Confused"
  },
  {
@@ -13288,7 +13293,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Bleeding"
  },
  {
@@ -13315,7 +13320,7 @@
   "flags": [],
   "notes": "Intro; overlaps the stats-page summary (Queue 2 identity flag).",
   "selectable": true,
-  "wip": false
+  "wip": true
  },
  {
   "id": "wounds/puncture",
@@ -13343,7 +13348,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Bleeding"
  },
  {
@@ -13372,7 +13377,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Crippled or Restrained"
  },
  {
@@ -13399,6 +13404,6 @@
   "flags": [],
   "notes": "Minor/major classification, dressing/healing rules, narrative healing.",
   "selectable": true,
-  "wip": false
+  "wip": true
  }
 ]

@@ -4,6 +4,7 @@ id: sci-fi/energy-shields
 category: [sci-fi]
 type: rule
 tags: [sci-fi, equipment, shield]
+summary: "Item type"
 headless: true
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: "Sci-Fi Starter Module"
-description: "Everything the sci-fi starter module adds to These Lucky Stars — rules additions, character options, equipment catalogs, bots and drones — in one quick-reference sheet."
+title: "Sci-Fi Module"
+description: "Everything the sci-fi module adds to These Lucky Stars — rules additions, character options, equipment catalogs, bots and drones — in one quick-reference sheet."
 weight: 7
 wip: true
 bookToC: true
 ---
 
-# Sci-Fi Starter Module
+# Sci-Fi Module
 
 This page links to useful information specific to a sci-fi themed setting in a
 space environment, whether that be enterprising traders, ambitious space pirates,

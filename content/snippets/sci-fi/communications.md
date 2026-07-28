@@ -4,6 +4,7 @@ id: sci-fi/communications
 category: [sci-fi]
 type: rule
 tags: [sci-fi, equipment]
+summary: "Subsystem"
 headless: true
 ---
 

@@ -11,6 +11,6 @@ headless: true
 
 ### Field Ration
 
-*--Cr — 1lb*
+*--Cr — 1lb — setting variant*
 
 Vacuum-sealed ration paste providing one day of nutrients and water for one person. Cardboard-like flavors vary.
