@@ -1,0 +1,12 @@
+{{/* One linked block name. Same-page blocks get an #anchor, blocks living
+     elsewhere get their full URL from data/blocks.json.
+     Context: (dict "id" <block id> "key" <content/ path of the current page>) */}}
+{{- $match := where site.Data.blocks "id" .id -}}
+{{- if $match -}}
+  {{- $b := index $match 0 -}}
+  {{- $href := $b.url -}}
+  {{- if in $b.pages .key }}{{ $href = printf "#%s" $b.anchor }}{{ end -}}
+  <a href="{{ $href }}">{{ $b.label | default $b.title }}</a>
+{{- else -}}
+  <strong>MISSING BLOCK: {{ .id }}</strong>
+{{- end -}}

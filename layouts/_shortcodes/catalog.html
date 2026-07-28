@@ -74,19 +74,38 @@
 {{- end -}}
 
 {{- if eq (.Get "layout") "names" -}}
-{{/* compact index: linked names only, flowed into columns. For a long list
-     where the summaries make the chart longer than the entries themselves. */}}
-<ul class="block-index">
+{{/* Compact index: linked names only, flowed into columns, for lists where the
+     summary column makes the chart longer than the entries it points at.
+
+     Children are NESTED inside their parent's <li> rather than left flat, so
+     column flow can never orphan a sub-entry at the top of the next column away
+     from the entry it depends on. */}}
+{{- $families := slice -}}
+{{- $cur := dict -}}
 {{- range $rows -}}
-  {{- $match := where site.Data.blocks "id" .id -}}
-  {{- if $match -}}
-    {{- $b := index $match 0 -}}
-    {{- $href := $b.url -}}
-    {{- if in $b.pages $key }}{{ $href = printf "#%s" $b.anchor }}{{ end -}}
-<li{{ if .prefix }} class="sub"{{ end }}><a href="{{ $href }}">{{ $b.label | default $b.title }}</a></li>
+  {{- if eq .prefix "" -}}
+    {{- if $cur }}{{ $families = $families | append $cur }}{{ end -}}
+    {{- $cur = dict "row" . "kids" slice -}}
+  {{- else if $cur -}}
+    {{- $cur = merge $cur (dict "kids" ($cur.kids | append .)) -}}
   {{- else -}}
-<li><strong>MISSING BLOCK: {{ .id }}</strong></li>
+    {{- $cur = dict "row" . "kids" slice -}}
   {{- end -}}
+{{- end -}}
+{{- if $cur }}{{ $families = $families | append $cur }}{{ end -}}
+<ul class="block-index">
+{{- range $families }}
+  {{- $f := . }}
+  <li>
+    {{- partial "block-link" (dict "id" $f.row.id "key" $key) -}}
+    {{- if $f.kids }}
+    <ul>
+      {{- range $f.kids }}
+      <li{{ if eq .prefix "– " }} class="deep"{{ end }}>{{ partial "block-link" (dict "id" .id "key" $key) }}</li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </li>
 {{- end }}
 </ul>
 {{- else -}}

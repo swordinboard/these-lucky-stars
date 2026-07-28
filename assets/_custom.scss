@@ -277,18 +277,63 @@ html {
 }
 /* Compact block index — {{< catalog layout="names" />}}
    A long feature list reads better as scannable columns of names than as a
-   chart whose summary column makes it longer than the entries themselves. */
+   chart whose summary column makes it longer than the entries themselves.
+
+   Two columns on the narrowest screens rather than one: these are short names,
+   and a single column just recreates the long scroll the index exists to avoid.
+   Sub-entries are nested markup, so a family never splits across a column. */
 .markdown .block-index {
   list-style: none;
   margin: $padding-16 0;
   padding: 0;
-  columns: 4 11rem;
+  columns: 2;
   column-gap: $padding-16;
+  font-size: 0.85rem;
+  line-height: 1.4;
 
-  li {
-    break-inside: avoid;
-    padding: 0.1rem 0;
-    font-size: var(--font-size-small, 0.9rem);
+  > li {
+    break-inside: avoid;          // keep a parent with its children
+    page-break-inside: avoid;     // older engines
   }
-  li.sub { padding-inline-start: $padding-16; }
+
+  // hanging indent: a name that wraps continues under itself, not back at the
+  // dash — which otherwise reads as a new entry at a glance
+  li {
+    padding-block: 0.1rem;
+    padding-inline-start: 0.85em;
+    text-indent: -0.85em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-inline-start: $padding-8;
+  }
+  li.deep { margin-inline-start: $padding-8; }
+
+  // sub-entries read as dependent on the entry above them
+  ul li::before {
+    content: "";
+    display: inline-block;
+    width: $padding-4;
+    height: 1px;
+    vertical-align: middle;
+    margin-inline-end: $padding-4;
+    background: var(--gray-400, currentColor);
+    opacity: 0.5;
+  }
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+@media screen and (min-width: 40rem) {
+  .markdown .block-index { columns: 3; }
+}
+@media screen and (min-width: 60rem) {
+  .markdown .block-index { columns: 4; }
+}
+
+@media print {
+  .markdown .block-index { columns: 3; }
 }
