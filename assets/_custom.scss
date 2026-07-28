@@ -275,3 +275,20 @@ html {
 .download-card-link:hover .download-card-cta {
   color: #fff;
 }
+/* Compact block index — {{< catalog layout="names" />}}
+   A long feature list reads better as scannable columns of names than as a
+   chart whose summary column makes it longer than the entries themselves. */
+.markdown .block-index {
+  list-style: none;
+  margin: $padding-16 0;
+  padding: 0;
+  columns: 4 11rem;
+  column-gap: $padding-16;
+
+  li {
+    break-inside: avoid;
+    padding: 0.1rem 0;
+    font-size: var(--font-size-small, 0.9rem);
+  }
+  li.sub { padding-inline-start: $padding-16; }
+}

@@ -8,7 +8,7 @@ weight: 10
 
 {{< tabs >}}
 {{% tab "Sci-Fi General" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 abilities/tech-armor
 abilities/companion-bot
 - abilities/special-encouragement
@@ -20,7 +20,7 @@ abilities/signal-intelligence
 {{< /catalog >}}
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 abilities/battery-saboteur
 abilities/battery-saver
 abilities/overcharge

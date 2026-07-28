@@ -10,7 +10,7 @@ weight: 30
 
 {{< tabs >}}
 {{% tab "Core General" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 abilities/agile-dodge
 - abilities/momentum-dodge
 -- abilities/slip-strike
@@ -69,7 +69,7 @@ abilities/vital-strike
 {{< /catalog >}}
 {{% /tab %}}
 {{% tab "Core Luck" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 abilities/adaptive-luck
 abilities/bonus-luck
 abilities/friend-of-fortune

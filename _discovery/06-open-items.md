@@ -51,10 +51,11 @@ These would do visible damage on the live site.
 
 ## 4. Structure still on the table
 
-- [ ] **Races: split like the others?** Abilities, Proficiencies and Traits now
-      have a core page and a sci-fi child. Races has one index and six hidden
-      pages. Splitting it would finish the pattern; leaving it is defensible
-      since each race is already its own page.
+- [x] ~~Races: split like the others?~~ **Intentionally not split** — races have
+      a different setup, one page per race behind a hub.
+- [ ] **Page-per-feature (the wiki model).** Whether abilities/proficiencies/
+      traits each become their own page like races do. Measurements and the
+      argument are in the section below.
 - [ ] **Move 1 — sci-fi equipment under the module.** 6 pages, 36 links across 19
       files, 1 wildcard redirect. *Recommendation: do it when the other module
       catalogs go live, so it is one move instead of two.*
@@ -72,6 +73,34 @@ All in `_discovery/04-phase3-worksheets.md`; regenerate with `worksheets.py`.
       to, plus the 18 rule couplings that have no link in the prose.
 - [ ] **C3 — self-containment re-check.** Blocks have moved a lot since Queue 2;
       the ones most likely to lean on their old page context want a re-read.
+
+## 5b. Page-per-feature — the wiki question
+
+The reference for this is the d20 3.5 SRD feats index: every feature on its own
+page, one hub page listing them. Two separable ideas came out of it.
+
+**The compact index** is done and previewable: `{{< catalog layout="names" />}}`
+drops the summary column and flows linked names into columns. It is on both
+Abilities pages; Proficiencies and Traits still use tables, so the two styles can
+be compared directly.
+
+**A page per feature** is the bigger half, and the numbers argue for care:
+
+| | |
+|---|---|
+| Pages created | **114** (76 abilities, 18 proficiencies, 20 traits) |
+| Site page count | 59 → ~173 |
+| Inbound links to rewrite | 34, across 34 files |
+| Median block length | **46 words** |
+| Blocks under 40 words | **44 of 114** — `traits/alert` is 10 words |
+
+Races justify their own pages because artwork and lore are coming. A 10-word
+trait does not obviously want a page of its own, and a page that thin reads worse
+than a row in a list. The three namespaces may also deserve different answers:
+abilities are the longest and most numerous, traits the shortest.
+
+Nothing about this is blocked — the blocks are already separate files, so it is a
+relocation, not a rewrite. Worth deciding after the compact index is seen live.
 
 ## 6. Chrome
 

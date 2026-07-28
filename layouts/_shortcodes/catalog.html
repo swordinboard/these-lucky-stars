@@ -26,6 +26,10 @@
      Order with order="title" (default) or order="id". Sub-entry prefixes are
      only available in the hand-listed form.
 
+  layout="names" drops the summary column entirely and renders a compact
+  multi-column list of linked names — for indexes where the chart ends up longer
+  than the entries it points at.
+
   Links resolve per row: a block displayed on THIS page gets a same-page
   `#anchor`; a block that lives elsewhere gets its full URL from
   data/blocks.json, so a hub can list blocks it does not itself render.
@@ -69,6 +73,23 @@
   {{- end -}}
 {{- end -}}
 
+{{- if eq (.Get "layout") "names" -}}
+{{/* compact index: linked names only, flowed into columns. For a long list
+     where the summaries make the chart longer than the entries themselves. */}}
+<ul class="block-index">
+{{- range $rows -}}
+  {{- $match := where site.Data.blocks "id" .id -}}
+  {{- if $match -}}
+    {{- $b := index $match 0 -}}
+    {{- $href := $b.url -}}
+    {{- if in $b.pages $key }}{{ $href = printf "#%s" $b.anchor }}{{ end -}}
+<li{{ if .prefix }} class="sub"{{ end }}><a href="{{ $href }}">{{ $b.label | default $b.title }}</a></li>
+  {{- else -}}
+<li><strong>MISSING BLOCK: {{ .id }}</strong></li>
+  {{- end -}}
+{{- end }}
+</ul>
+{{- else -}}
 <table>
 <thead><tr>{{ range $cols }}<th>{{ trim . " " }}</th>{{ end }}</tr></thead>
 <tbody>
@@ -87,3 +108,4 @@
 {{- end }}
 </tbody>
 </table>
+{{- end -}}
