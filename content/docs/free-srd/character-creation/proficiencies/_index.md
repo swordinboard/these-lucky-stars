@@ -27,13 +27,6 @@ proficiencies/vehicle
 proficiencies/weapon
 {{< /catalog >}}
 {{% /tab %}}
-{{% tab "Sci-Fi" %}}
-{{< catalog header="Name|Description" >}}
-proficiencies/comp-jack
-proficiencies/general-robotics
-proficiencies/general-technology
-{{< /catalog >}}
-{{% /tab %}}
 {{< /tabs >}}
 
 ---
@@ -121,27 +114,5 @@ proficiencies/general-technology
 {{% details "Weapon" %}}
 
 {{% include "/snippets/proficiencies/weapon" %}}
-
-{{% /details %}}
-
----
-
-## Sci-Fi
-
-{{% details "Comp Jack Proficiency" %}}
-
-{{% include "/snippets/proficiencies/comp-jack" %}}
-
-{{% /details %}}
-
-{{% details "General Robotics" %}}
-
-{{% include "/snippets/proficiencies/general-robotics" %}}
-
-{{% /details %}}
-
-{{% details "General Technology" %}}
-
-{{% include "/snippets/proficiencies/general-technology" %}}
 
 {{% /details %}}

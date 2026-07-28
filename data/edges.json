@@ -264,7 +264,7 @@
   "source": "components/installation",
   "target": "abilities/tech-armor",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/#tech-armor",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#tech-armor",
   "text": "Tech Armor",
   "file": "content/snippets/components/installation.md",
   "line": 10
@@ -282,7 +282,7 @@
   "source": "components/internal-comp-jack",
   "target": "proficiencies/comp-jack",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
   "file": "content/snippets/components/internal-comp-jack.md",
   "line": 15
@@ -310,7 +310,7 @@
   "source": "components/signal-mast-heavy",
   "target": "abilities/companion-bot",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#companion-bot",
   "text": "Companion Bot",
   "file": "content/snippets/components/signal-mast-heavy.md",
   "line": 17
@@ -319,7 +319,7 @@
   "source": "components/signal-mast-retractable",
   "target": "abilities/companion-bot",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#companion-bot",
   "text": "Companion Bot",
   "file": "content/snippets/components/signal-mast-retractable.md",
   "line": 17
@@ -1468,7 +1468,7 @@
   "source": "sci-fi-equipment/comp-jack",
   "target": "proficiencies/comp-jack",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
   "file": "content/snippets/sci-fi-equipment/comp-jack.md",
   "line": 15
@@ -1936,7 +1936,7 @@
   "source": "sci-fi-equipment/reactor-cores",
   "target": "abilities/battery-saboteur",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/#battery-saboteur",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur",
   "text": "Battery Saboteur",
   "file": "content/snippets/sci-fi-equipment/reactor-cores.md",
   "line": 15
@@ -2255,7 +2255,7 @@
   "source": "abilities/battery-saboteur",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/battery-saboteur.md",
   "line": 14,
@@ -2265,7 +2265,7 @@
   "source": "abilities/companion-bot",
   "target": "proficiencies/general-robotics",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-robotics",
   "text": "General Robotics",
   "file": "content/snippets/abilities/companion-bot.md",
   "line": 14,
@@ -2435,7 +2435,7 @@
   "source": "abilities/ghost-protocol",
   "target": "proficiencies/comp-jack",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
   "file": "content/snippets/abilities/ghost-protocol.md",
   "line": 14,
@@ -2624,7 +2624,7 @@
   "source": "abilities/opensaysame",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/opensaysame.md",
   "line": 14,
@@ -2654,7 +2654,7 @@
   "source": "abilities/overcharge",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/overcharge.md",
   "line": 14,
@@ -2683,7 +2683,7 @@
   "source": "abilities/power-main-tap",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/power-main-tap.md",
   "line": 14,
@@ -2733,7 +2733,7 @@
   "source": "abilities/rigged-comp-jack",
   "target": "proficiencies/comp-jack",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
   "line": 14,
@@ -2743,7 +2743,7 @@
   "source": "abilities/rigged-comp-jack",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
   "line": 14,
@@ -2763,7 +2763,7 @@
   "source": "abilities/signal-intelligence",
   "target": "proficiencies/comp-jack",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
   "file": "content/snippets/abilities/signal-intelligence.md",
   "line": 14,
@@ -2793,7 +2793,7 @@
   "source": "abilities/special-encouragement",
   "target": "proficiencies/general-robotics",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-robotics",
   "text": "General Robotics",
   "file": "content/snippets/abilities/special-encouragement.md",
   "line": 14,
@@ -2823,7 +2823,7 @@
   "source": "abilities/swift-custom-battery",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/swift-custom-battery.md",
   "line": 14,
@@ -2853,7 +2853,7 @@
   "source": "abilities/tech-armor",
   "target": "proficiencies/general-technology",
   "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "text": "General Technology",
   "file": "content/snippets/abilities/tech-armor.md",
   "line": 14,
@@ -3401,6 +3401,60 @@
   "text": null,
   "file": "content/docs/free-srd/_index.md",
   "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/frontier--industry-module/",
+  "target": "page:/docs/free-srd/sci-fi-module/",
+  "type": "reference",
+  "url": "/docs/free-srd/sci-fi-module/",
+  "text": "Sci-Fi Module",
+  "file": "content/docs/free-srd/frontier--industry-module.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/frontier--industry-module/",
+  "target": "page:/docs/roadmap/",
+  "type": "mention",
+  "url": "/docs/roadmap",
+  "text": "roadmap",
+  "file": "content/docs/free-srd/frontier--industry-module.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/medieval-module/",
+  "target": "page:/docs/free-srd/sci-fi-module/",
+  "type": "reference",
+  "url": "/docs/free-srd/sci-fi-module/",
+  "text": "Sci-Fi Module",
+  "file": "content/docs/free-srd/medieval-module.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/medieval-module/",
+  "target": "page:/docs/roadmap/",
+  "type": "mention",
+  "url": "/docs/roadmap",
+  "text": "roadmap",
+  "file": "content/docs/free-srd/medieval-module.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/modern-module/",
+  "target": "page:/docs/free-srd/sci-fi-module/",
+  "type": "reference",
+  "url": "/docs/free-srd/sci-fi-module/",
+  "text": "Sci-Fi Module",
+  "file": "content/docs/free-srd/modern-module.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/modern-module/",
+  "target": "page:/docs/roadmap/",
+  "type": "mention",
+  "url": "/docs/roadmap",
+  "text": "roadmap",
+  "file": "content/docs/free-srd/modern-module.md",
+  "line": 17
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -8799,690 +8853,6 @@
   "line": 15
  },
  {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/overview",
-  "type": "include",
-  "url": "/snippets/abilities/overview",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 9
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/agile-charge",
-  "type": "include",
-  "url": "/snippets/abilities/agile-charge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 111
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/agile-dodge",
-  "type": "include",
-  "url": "/snippets/abilities/agile-dodge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 117
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bash",
-  "type": "include",
-  "url": "/snippets/abilities/bash",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 123
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bolster",
-  "type": "include",
-  "url": "/snippets/abilities/bolster",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 129
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/charge",
-  "type": "include",
-  "url": "/snippets/abilities/charge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 135
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/controlled-suppressing-fire",
-  "type": "include",
-  "url": "/snippets/abilities/controlled-suppressing-fire",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 141
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/coordinated-strike",
-  "type": "include",
-  "url": "/snippets/abilities/coordinated-strike",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 147
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/danger-reflex",
-  "type": "include",
-  "url": "/snippets/abilities/danger-reflex",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 153
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dead-drop",
-  "type": "include",
-  "url": "/snippets/abilities/dead-drop",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 159
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/defender",
-  "type": "include",
-  "url": "/snippets/abilities/defender",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 165
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-attack",
-  "type": "include",
-  "url": "/snippets/abilities/dual-attack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 171
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-defense",
-  "type": "include",
-  "url": "/snippets/abilities/dual-defense",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 177
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/dual-strike",
-  "type": "include",
-  "url": "/snippets/abilities/dual-strike",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 183
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/expert",
-  "type": "include",
-  "url": "/snippets/abilities/expert",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 189
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/extended-rage",
-  "type": "include",
-  "url": "/snippets/abilities/extended-rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 195
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/extra-attack",
-  "type": "include",
-  "url": "/snippets/abilities/extra-attack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 201
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/fast-kit-trap",
-  "type": "include",
-  "url": "/snippets/abilities/fast-kit-trap",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 207
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/fearless-rage",
-  "type": "include",
-  "url": "/snippets/abilities/fearless-rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 213
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/field-medic",
-  "type": "include",
-  "url": "/snippets/abilities/field-medic",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 219
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/field-patch",
-  "type": "include",
-  "url": "/snippets/abilities/field-patch",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 225
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/focus-attack",
-  "type": "include",
-  "url": "/snippets/abilities/focus-attack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 231
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/focus-in",
-  "type": "include",
-  "url": "/snippets/abilities/focus-in",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 237
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/friend-in-need",
-  "type": "include",
-  "url": "/snippets/abilities/friend-in-need",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 243
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/general-spectacle",
-  "type": "include",
-  "url": "/snippets/abilities/general-spectacle",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 249
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/improved-bash",
-  "type": "include",
-  "url": "/snippets/abilities/improved-bash",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 255
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/improved-suppressing-fire",
-  "type": "include",
-  "url": "/snippets/abilities/improved-suppressing-fire",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 261
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/indomitable-rage",
-  "type": "include",
-  "url": "/snippets/abilities/indomitable-rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 267
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/just-grazed",
-  "type": "include",
-  "url": "/snippets/abilities/just-grazed",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 273
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/just-winded",
-  "type": "include",
-  "url": "/snippets/abilities/just-winded",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 279
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/kit-trap",
-  "type": "include",
-  "url": "/snippets/abilities/kit-trap",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 285
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/leaping-charge",
-  "type": "include",
-  "url": "/snippets/abilities/leaping-charge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 291
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/leg-shot",
-  "type": "include",
-  "url": "/snippets/abilities/leg-shot",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 297
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/line-of-fire",
-  "type": "include",
-  "url": "/snippets/abilities/line-of-fire",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 303
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/long-performance",
-  "type": "include",
-  "url": "/snippets/abilities/long-performance",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 309
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/martial-supremacy",
-  "type": "include",
-  "url": "/snippets/abilities/martial-supremacy",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 315
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/momentum-dodge",
-  "type": "include",
-  "url": "/snippets/abilities/momentum-dodge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 321
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/oppressive-suppression",
-  "type": "include",
-  "url": "/snippets/abilities/oppressive-suppression",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 327
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/outburst",
-  "type": "include",
-  "url": "/snippets/abilities/outburst",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 333
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/patient-shot",
-  "type": "include",
-  "url": "/snippets/abilities/patient-shot",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 339
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/powerful-rage",
-  "type": "include",
-  "url": "/snippets/abilities/powerful-rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 345
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/precise-focus",
-  "type": "include",
-  "url": "/snippets/abilities/precise-focus",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 351
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/quick-draw",
-  "type": "include",
-  "url": "/snippets/abilities/quick-draw",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 357
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/quick-firing",
-  "type": "include",
-  "url": "/snippets/abilities/quick-firing",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 363
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rage",
-  "type": "include",
-  "url": "/snippets/abilities/rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 369
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rally",
-  "type": "include",
-  "url": "/snippets/abilities/rally",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 375
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/reckless-attack",
-  "type": "include",
-  "url": "/snippets/abilities/reckless-attack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 381
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/slip-strike",
-  "type": "include",
-  "url": "/snippets/abilities/slip-strike",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 387
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/student",
-  "type": "include",
-  "url": "/snippets/abilities/student",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 393
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/suppressing-fire",
-  "type": "include",
-  "url": "/snippets/abilities/suppressing-fire",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 399
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/swift-dual-attack",
-  "type": "include",
-  "url": "/snippets/abilities/swift-dual-attack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 405
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/the-look",
-  "type": "include",
-  "url": "/snippets/abilities/the-look",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 411
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/true-defender",
-  "type": "include",
-  "url": "/snippets/abilities/true-defender",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 417
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/unsettling-rage",
-  "type": "include",
-  "url": "/snippets/abilities/unsettling-rage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 423
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/vital-focus",
-  "type": "include",
-  "url": "/snippets/abilities/vital-focus",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 429
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/vital-strike",
-  "type": "include",
-  "url": "/snippets/abilities/vital-strike",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 435
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/adaptive-luck",
-  "type": "include",
-  "url": "/snippets/abilities/adaptive-luck",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 445
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/bonus-luck",
-  "type": "include",
-  "url": "/snippets/abilities/bonus-luck",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 451
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/friend-of-fortune",
-  "type": "include",
-  "url": "/snippets/abilities/friend-of-fortune",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 457
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/lucky-strike",
-  "type": "include",
-  "url": "/snippets/abilities/lucky-strike",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 463
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/medical-marvel",
-  "type": "include",
-  "url": "/snippets/abilities/medical-marvel",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 469
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/natural-gift",
-  "type": "include",
-  "url": "/snippets/abilities/natural-gift",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 475
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/tis-but-a-scratch",
-  "type": "include",
-  "url": "/snippets/abilities/tis-but-a-scratch",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 481
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/tech-armor",
-  "type": "include",
-  "url": "/snippets/abilities/tech-armor",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 491
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/companion-bot",
-  "type": "include",
-  "url": "/snippets/abilities/companion-bot",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 497
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/ghost-protocol",
-  "type": "include",
-  "url": "/snippets/abilities/ghost-protocol",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 503
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/opensaysame",
-  "type": "include",
-  "url": "/snippets/abilities/opensaysame",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 509
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/rigged-comp-jack",
-  "type": "include",
-  "url": "/snippets/abilities/rigged-comp-jack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 515
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/salvage",
-  "type": "include",
-  "url": "/snippets/abilities/salvage",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 521
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/signal-intelligence",
-  "type": "include",
-  "url": "/snippets/abilities/signal-intelligence",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 527
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/special-encouragement",
-  "type": "include",
-  "url": "/snippets/abilities/special-encouragement",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 533
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/battery-saboteur",
-  "type": "include",
-  "url": "/snippets/abilities/battery-saboteur",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 543
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/battery-saver",
-  "type": "include",
-  "url": "/snippets/abilities/battery-saver",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 549
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/overcharge",
-  "type": "include",
-  "url": "/snippets/abilities/overcharge",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 555
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/power-main-tap",
-  "type": "include",
-  "url": "/snippets/abilities/power-main-tap",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 561
- },
- {
-  "source": "page:/docs/free-srd/character-creation/abilities/",
-  "target": "abilities/swift-custom-battery",
-  "type": "include",
-  "url": "/snippets/abilities/swift-custom-battery",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/abilities.md",
-  "line": 567
- },
- {
   "source": "chargen/overview",
   "target": "page:/docs/free-srd/core-rules/basics/",
   "type": "reference",
@@ -9654,174 +9024,12 @@
   "line": 75
  },
  {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/overview",
-  "type": "include",
-  "url": "/snippets/proficiencies/overview",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 9
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/armor",
-  "type": "include",
-  "url": "/snippets/proficiencies/armor",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 45
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/b-e-kit",
-  "type": "include",
-  "url": "/snippets/proficiencies/b-e-kit",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 51
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/disguise-kit",
-  "type": "include",
-  "url": "/snippets/proficiencies/disguise-kit",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 57
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/improved-ability",
-  "type": "include",
-  "url": "/snippets/proficiencies/improved-ability",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 63
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/licensed-instincts",
-  "type": "include",
-  "url": "/snippets/proficiencies/licensed-instincts",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 69
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/martial-training",
-  "type": "include",
-  "url": "/snippets/proficiencies/martial-training",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 75
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/medic-training",
-  "type": "include",
-  "url": "/snippets/proficiencies/medic-training",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 81
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/medical-instincts",
-  "type": "include",
-  "url": "/snippets/proficiencies/medical-instincts",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 87
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/negotiation-training",
-  "type": "include",
-  "url": "/snippets/proficiencies/negotiation-training",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 93
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/repair-kit",
-  "type": "include",
-  "url": "/snippets/proficiencies/repair-kit",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 99
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/research",
-  "type": "include",
-  "url": "/snippets/proficiencies/research",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 105
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/survival-training",
-  "type": "include",
-  "url": "/snippets/proficiencies/survival-training",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 111
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/vehicle",
-  "type": "include",
-  "url": "/snippets/proficiencies/vehicle",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 117
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/weapon",
-  "type": "include",
-  "url": "/snippets/proficiencies/weapon",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 123
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/comp-jack",
-  "type": "include",
-  "url": "/snippets/proficiencies/comp-jack",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 133
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/general-robotics",
-  "type": "include",
-  "url": "/snippets/proficiencies/general-robotics",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 139
- },
- {
-  "source": "page:/docs/free-srd/character-creation/proficiencies/",
-  "target": "proficiencies/general-technology",
-  "type": "include",
-  "url": "/snippets/proficiencies/general-technology",
-  "text": null,
-  "file": "content/docs/free-srd/character-creation/proficiencies.md",
-  "line": 145
- },
- {
   "source": "page:/docs/free-srd/character-creation/traits/",
   "target": "traits/overview",
   "type": "include",
   "url": "/snippets/traits/overview",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
   "line": 9
  },
  {
@@ -9830,8 +9038,8 @@
   "type": "include",
   "url": "/snippets/traits/alert",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 47
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 40
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9839,8 +9047,8 @@
   "type": "include",
   "url": "/snippets/traits/composed",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 53
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9848,8 +9056,8 @@
   "type": "include",
   "url": "/snippets/traits/diplomatic",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 59
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 52
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9857,8 +9065,8 @@
   "type": "include",
   "url": "/snippets/traits/hot-headed",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 65
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 58
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9866,8 +9074,8 @@
   "type": "include",
   "url": "/snippets/traits/intimidating",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 71
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 64
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9875,8 +9083,8 @@
   "type": "include",
   "url": "/snippets/traits/lucky",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 77
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 70
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9884,8 +9092,8 @@
   "type": "include",
   "url": "/snippets/traits/mentally-sound",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 83
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9893,8 +9101,8 @@
   "type": "include",
   "url": "/snippets/traits/particularly-attractive",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 89
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 82
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9902,8 +9110,8 @@
   "type": "include",
   "url": "/snippets/traits/picture-of-health",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 95
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 88
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9911,8 +9119,8 @@
   "type": "include",
   "url": "/snippets/traits/sly",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 101
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 94
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9920,8 +9128,8 @@
   "type": "include",
   "url": "/snippets/traits/sneaky",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 107
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 100
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9929,8 +9137,8 @@
   "type": "include",
   "url": "/snippets/traits/stubborn",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 113
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 106
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9938,8 +9146,8 @@
   "type": "include",
   "url": "/snippets/traits/tough",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 119
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 112
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9947,8 +9155,8 @@
   "type": "include",
   "url": "/snippets/traits/unremarkable",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 125
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 118
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9956,8 +9164,8 @@
   "type": "include",
   "url": "/snippets/traits/unshakable",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 131
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 124
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9965,35 +9173,881 @@
   "type": "include",
   "url": "/snippets/traits/well-connected",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 137
+  "file": "content/docs/free-srd/character-creation/traits/_index.md",
+  "line": 130
  },
  {
-  "source": "page:/docs/free-srd/character-creation/traits/",
+  "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
   "target": "traits/inter-planet-traveler",
   "type": "include",
   "url": "/snippets/traits/inter-planet-traveler",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 147
+  "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
+  "line": 24
  },
  {
-  "source": "page:/docs/free-srd/character-creation/traits/",
+  "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
   "target": "traits/scrap-hauler",
   "type": "include",
   "url": "/snippets/traits/scrap-hauler",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 153
+  "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
+  "line": 30
  },
  {
-  "source": "page:/docs/free-srd/character-creation/traits/",
+  "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
   "target": "traits/space-adept",
   "type": "include",
   "url": "/snippets/traits/space-adept",
   "text": null,
-  "file": "content/docs/free-srd/character-creation/traits.md",
-  "line": 159
+  "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
+  "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/overview",
+  "type": "include",
+  "url": "/snippets/proficiencies/overview",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/armor",
+  "type": "include",
+  "url": "/snippets/proficiencies/armor",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 38
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/b-e-kit",
+  "type": "include",
+  "url": "/snippets/proficiencies/b-e-kit",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 44
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/disguise-kit",
+  "type": "include",
+  "url": "/snippets/proficiencies/disguise-kit",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 50
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/improved-ability",
+  "type": "include",
+  "url": "/snippets/proficiencies/improved-ability",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 56
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/licensed-instincts",
+  "type": "include",
+  "url": "/snippets/proficiencies/licensed-instincts",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 62
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/martial-training",
+  "type": "include",
+  "url": "/snippets/proficiencies/martial-training",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 68
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/medic-training",
+  "type": "include",
+  "url": "/snippets/proficiencies/medic-training",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 74
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/medical-instincts",
+  "type": "include",
+  "url": "/snippets/proficiencies/medical-instincts",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 80
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/negotiation-training",
+  "type": "include",
+  "url": "/snippets/proficiencies/negotiation-training",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 86
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/repair-kit",
+  "type": "include",
+  "url": "/snippets/proficiencies/repair-kit",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 92
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/research",
+  "type": "include",
+  "url": "/snippets/proficiencies/research",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 98
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/survival-training",
+  "type": "include",
+  "url": "/snippets/proficiencies/survival-training",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 104
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/vehicle",
+  "type": "include",
+  "url": "/snippets/proficiencies/vehicle",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 110
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/",
+  "target": "proficiencies/weapon",
+  "type": "include",
+  "url": "/snippets/proficiencies/weapon",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+  "line": 116
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
+  "target": "proficiencies/comp-jack",
+  "type": "include",
+  "url": "/snippets/proficiencies/comp-jack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+  "line": 24
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
+  "target": "proficiencies/general-robotics",
+  "type": "include",
+  "url": "/snippets/proficiencies/general-robotics",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+  "line": 30
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
+  "target": "proficiencies/general-technology",
+  "type": "include",
+  "url": "/snippets/proficiencies/general-technology",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+  "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/overview",
+  "type": "include",
+  "url": "/snippets/abilities/overview",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/agile-charge",
+  "type": "include",
+  "url": "/snippets/abilities/agile-charge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 90
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/agile-dodge",
+  "type": "include",
+  "url": "/snippets/abilities/agile-dodge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 96
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/bash",
+  "type": "include",
+  "url": "/snippets/abilities/bash",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 102
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/bolster",
+  "type": "include",
+  "url": "/snippets/abilities/bolster",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 108
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/charge",
+  "type": "include",
+  "url": "/snippets/abilities/charge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 114
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/controlled-suppressing-fire",
+  "type": "include",
+  "url": "/snippets/abilities/controlled-suppressing-fire",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 120
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/coordinated-strike",
+  "type": "include",
+  "url": "/snippets/abilities/coordinated-strike",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 126
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/danger-reflex",
+  "type": "include",
+  "url": "/snippets/abilities/danger-reflex",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 132
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/dead-drop",
+  "type": "include",
+  "url": "/snippets/abilities/dead-drop",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 138
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/defender",
+  "type": "include",
+  "url": "/snippets/abilities/defender",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 144
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/dual-attack",
+  "type": "include",
+  "url": "/snippets/abilities/dual-attack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 150
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/dual-defense",
+  "type": "include",
+  "url": "/snippets/abilities/dual-defense",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 156
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/dual-strike",
+  "type": "include",
+  "url": "/snippets/abilities/dual-strike",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 162
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/expert",
+  "type": "include",
+  "url": "/snippets/abilities/expert",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 168
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/extended-rage",
+  "type": "include",
+  "url": "/snippets/abilities/extended-rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 174
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/extra-attack",
+  "type": "include",
+  "url": "/snippets/abilities/extra-attack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 180
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/fast-kit-trap",
+  "type": "include",
+  "url": "/snippets/abilities/fast-kit-trap",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 186
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/fearless-rage",
+  "type": "include",
+  "url": "/snippets/abilities/fearless-rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 192
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/field-medic",
+  "type": "include",
+  "url": "/snippets/abilities/field-medic",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 198
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/field-patch",
+  "type": "include",
+  "url": "/snippets/abilities/field-patch",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 204
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/focus-attack",
+  "type": "include",
+  "url": "/snippets/abilities/focus-attack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 210
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/focus-in",
+  "type": "include",
+  "url": "/snippets/abilities/focus-in",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 216
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/friend-in-need",
+  "type": "include",
+  "url": "/snippets/abilities/friend-in-need",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 222
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/general-spectacle",
+  "type": "include",
+  "url": "/snippets/abilities/general-spectacle",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 228
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/improved-bash",
+  "type": "include",
+  "url": "/snippets/abilities/improved-bash",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 234
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/improved-suppressing-fire",
+  "type": "include",
+  "url": "/snippets/abilities/improved-suppressing-fire",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 240
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/indomitable-rage",
+  "type": "include",
+  "url": "/snippets/abilities/indomitable-rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 246
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/just-grazed",
+  "type": "include",
+  "url": "/snippets/abilities/just-grazed",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 252
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/just-winded",
+  "type": "include",
+  "url": "/snippets/abilities/just-winded",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 258
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/kit-trap",
+  "type": "include",
+  "url": "/snippets/abilities/kit-trap",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 264
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/leaping-charge",
+  "type": "include",
+  "url": "/snippets/abilities/leaping-charge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 270
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/leg-shot",
+  "type": "include",
+  "url": "/snippets/abilities/leg-shot",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 276
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/line-of-fire",
+  "type": "include",
+  "url": "/snippets/abilities/line-of-fire",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 282
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/long-performance",
+  "type": "include",
+  "url": "/snippets/abilities/long-performance",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 288
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/martial-supremacy",
+  "type": "include",
+  "url": "/snippets/abilities/martial-supremacy",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 294
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/momentum-dodge",
+  "type": "include",
+  "url": "/snippets/abilities/momentum-dodge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 300
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/oppressive-suppression",
+  "type": "include",
+  "url": "/snippets/abilities/oppressive-suppression",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 306
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/outburst",
+  "type": "include",
+  "url": "/snippets/abilities/outburst",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 312
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/patient-shot",
+  "type": "include",
+  "url": "/snippets/abilities/patient-shot",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 318
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/powerful-rage",
+  "type": "include",
+  "url": "/snippets/abilities/powerful-rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 324
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/precise-focus",
+  "type": "include",
+  "url": "/snippets/abilities/precise-focus",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 330
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/quick-draw",
+  "type": "include",
+  "url": "/snippets/abilities/quick-draw",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 336
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/quick-firing",
+  "type": "include",
+  "url": "/snippets/abilities/quick-firing",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 342
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/rage",
+  "type": "include",
+  "url": "/snippets/abilities/rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 348
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/rally",
+  "type": "include",
+  "url": "/snippets/abilities/rally",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 354
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/reckless-attack",
+  "type": "include",
+  "url": "/snippets/abilities/reckless-attack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 360
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/slip-strike",
+  "type": "include",
+  "url": "/snippets/abilities/slip-strike",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 366
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/student",
+  "type": "include",
+  "url": "/snippets/abilities/student",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 372
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/suppressing-fire",
+  "type": "include",
+  "url": "/snippets/abilities/suppressing-fire",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 378
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/swift-dual-attack",
+  "type": "include",
+  "url": "/snippets/abilities/swift-dual-attack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 384
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/the-look",
+  "type": "include",
+  "url": "/snippets/abilities/the-look",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 390
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/true-defender",
+  "type": "include",
+  "url": "/snippets/abilities/true-defender",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 396
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/unsettling-rage",
+  "type": "include",
+  "url": "/snippets/abilities/unsettling-rage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 402
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/vital-focus",
+  "type": "include",
+  "url": "/snippets/abilities/vital-focus",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 408
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/vital-strike",
+  "type": "include",
+  "url": "/snippets/abilities/vital-strike",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 414
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/adaptive-luck",
+  "type": "include",
+  "url": "/snippets/abilities/adaptive-luck",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 424
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/bonus-luck",
+  "type": "include",
+  "url": "/snippets/abilities/bonus-luck",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 430
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/friend-of-fortune",
+  "type": "include",
+  "url": "/snippets/abilities/friend-of-fortune",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 436
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/lucky-strike",
+  "type": "include",
+  "url": "/snippets/abilities/lucky-strike",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 442
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/medical-marvel",
+  "type": "include",
+  "url": "/snippets/abilities/medical-marvel",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 448
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/natural-gift",
+  "type": "include",
+  "url": "/snippets/abilities/natural-gift",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 454
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/",
+  "target": "abilities/tis-but-a-scratch",
+  "type": "include",
+  "url": "/snippets/abilities/tis-but-a-scratch",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/_index.md",
+  "line": 460
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/tech-armor",
+  "type": "include",
+  "url": "/snippets/abilities/tech-armor",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 38
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/companion-bot",
+  "type": "include",
+  "url": "/snippets/abilities/companion-bot",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 44
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/ghost-protocol",
+  "type": "include",
+  "url": "/snippets/abilities/ghost-protocol",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 50
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/opensaysame",
+  "type": "include",
+  "url": "/snippets/abilities/opensaysame",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 56
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/rigged-comp-jack",
+  "type": "include",
+  "url": "/snippets/abilities/rigged-comp-jack",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 62
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/salvage",
+  "type": "include",
+  "url": "/snippets/abilities/salvage",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 68
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/signal-intelligence",
+  "type": "include",
+  "url": "/snippets/abilities/signal-intelligence",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 74
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/special-encouragement",
+  "type": "include",
+  "url": "/snippets/abilities/special-encouragement",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 80
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/battery-saboteur",
+  "type": "include",
+  "url": "/snippets/abilities/battery-saboteur",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 90
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/battery-saver",
+  "type": "include",
+  "url": "/snippets/abilities/battery-saver",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 96
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/overcharge",
+  "type": "include",
+  "url": "/snippets/abilities/overcharge",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 102
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/power-main-tap",
+  "type": "include",
+  "url": "/snippets/abilities/power-main-tap",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 108
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
+  "target": "abilities/swift-custom-battery",
+  "type": "include",
+  "url": "/snippets/abilities/swift-custom-battery",
+  "text": null,
+  "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "line": 114
  },
  {
   "source": "races/overview",

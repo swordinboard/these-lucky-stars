@@ -29,13 +29,6 @@ traits/unshakable
 traits/well-connected
 {{< /catalog >}}
 {{% /tab %}}
-{{% tab "Sci-Fi" %}}
-{{< catalog header="Name|Description" >}}
-traits/inter-planet-traveler
-traits/scrap-hauler
-traits/space-adept
-{{< /catalog >}}
-{{% /tab %}}
 {{< /tabs >}}
 
 ---
@@ -135,27 +128,5 @@ traits/space-adept
 {{% details "Well-Connected" %}}
 
 {{% include "/snippets/traits/well-connected" %}}
-
-{{% /details %}}
-
----
-
-## Sci-Fi
-
-{{% details "Inter-Planet Traveler" %}}
-
-{{% include "/snippets/traits/inter-planet-traveler" %}}
-
-{{% /details %}}
-
-{{% details "Scrap Hauler" %}}
-
-{{% include "/snippets/traits/scrap-hauler" %}}
-
-{{% /details %}}
-
-{{% details "Space Adept" %}}
-
-{{% include "/snippets/traits/space-adept" %}}
 
 {{% /details %}}

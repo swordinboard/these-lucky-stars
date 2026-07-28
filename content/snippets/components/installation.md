@@ -7,7 +7,7 @@ tags: [component, sci-fi]
 headless: true
 ---
 
-Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](/docs/free-srd/character-creation/abilities/#tech-armor) ability applies to components.
+Installing or removing a component requires a Tech Kit, a target 12 KNO check, and 1 hour. On a failed check, the part takes 1d4 damage.. The [Tech Armor](/docs/free-srd/character-creation/abilities/sci-fi/#tech-armor) ability applies to components.
 
 Regardless of being an internal or external component, a body slot can hold only one component at a time. Whether an installed component also prevents the use of other equipment — such as backpacks, pouche sets, or bracers — depends on whether the install is **internal** or **external**:
 

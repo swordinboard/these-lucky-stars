@@ -60,28 +60,24 @@
    ]
   }
  ],
- "content/docs/free-srd/character-creation/abilities.md": [
+ "content/docs/free-srd/character-creation/abilities/_index.md": [
   {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
    "url": "/docs/free-srd/character-creation/proficiencies/",
    "title": "Proficiencies",
    "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
-   "out": 33,
+   "out": 20,
    "in": 1,
    "via": [
     "proficiencies/b-e-kit",
-    "proficiencies/comp-jack",
-    "proficiencies/general-robotics",
-    "proficiencies/general-technology",
     "proficiencies/improved-ability",
     "proficiencies/martial-training",
     "proficiencies/medic-training",
-    "proficiencies/repair-kit",
     "proficiencies/weapon"
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/traits.md",
+   "page": "content/docs/free-srd/character-creation/traits/_index.md",
    "url": "/docs/free-srd/character-creation/traits/",
    "title": "Traits",
    "blurb": "personality, physique, and background. Selected at level 1 and chosen once",
@@ -93,19 +89,6 @@
     "traits/particularly-attractive",
     "traits/tough",
     "traits/unshakable"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
-   "blurb": "Installable components for robots, drones, and Androids",
-   "out": 0,
-   "in": 3,
-   "via": [
-    "components/installation",
-    "components/signal-mast-heavy",
-    "components/signal-mast-retractable"
    ]
   },
   {
@@ -136,9 +119,58 @@
    "title": "Sci-Fi Misc Equipment",
    "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
    "out": 0,
-   "in": 2,
+   "in": 1,
    "via": [
-    "sci-fi-equipment/boost-pack",
+    "sci-fi-equipment/boost-pack"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/abilities/sci-fi.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/",
+   "title": "Sci-Fi Proficiencies",
+   "blurb": "The sci-fi proficiencies available to a character in a spacefaring setting",
+   "out": 12,
+   "in": 0,
+   "via": [
+    "proficiencies/comp-jack",
+    "proficiencies/general-robotics",
+    "proficiencies/general-technology"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 3,
+   "via": [
+    "components/installation",
+    "components/signal-mast-heavy",
+    "components/signal-mast-retractable"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "proficiencies/repair-kit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
+   "title": "Sci-Fi Misc Equipment",
+   "blurb": "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns",
+   "out": 0,
+   "in": 1,
+   "via": [
     "sci-fi-equipment/reactor-cores"
    ]
   }
@@ -156,17 +188,15 @@
    ]
   }
  ],
- "content/docs/free-srd/character-creation/proficiencies.md": [
+ "content/docs/free-srd/character-creation/proficiencies/_index.md": [
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
    "url": "/docs/free-srd/character-creation/abilities/",
    "title": "Abilities",
    "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
    "out": 1,
-   "in": 33,
+   "in": 20,
    "via": [
-    "abilities/battery-saboteur",
-    "abilities/companion-bot",
     "abilities/controlled-suppressing-fire",
     "abilities/dead-drop",
     "abilities/dual-attack",
@@ -175,27 +205,17 @@
     "abilities/extra-attack",
     "abilities/field-medic",
     "abilities/field-patch",
-    "abilities/ghost-protocol",
     "abilities/improved-suppressing-fire",
     "abilities/leg-shot",
     "abilities/line-of-fire",
     "abilities/martial-supremacy",
     "abilities/momentum-dodge",
-    "abilities/opensaysame",
     "abilities/oppressive-suppression",
-    "abilities/overcharge",
     "abilities/patient-shot",
-    "abilities/power-main-tap",
     "abilities/quick-firing",
-    "abilities/rigged-comp-jack",
-    "abilities/salvage",
-    "abilities/signal-intelligence",
     "abilities/slip-strike",
-    "abilities/special-encouragement",
     "abilities/suppressing-fire",
-    "abilities/swift-custom-battery",
     "abilities/swift-dual-attack",
-    "abilities/tech-armor",
     "abilities/vital-strike"
    ]
   },
@@ -205,11 +225,21 @@
    "title": "Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
-   "in": 3,
+   "in": 2,
    "via": [
     "components/heavy-wrist-laser",
-    "components/internal-comp-jack",
     "components/wrist-laser"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/abilities/sci-fi/",
+   "title": "Sci-Fi Abilities",
+   "blurb": "The sci-fi abilities available to a character in a spacefaring setting",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "abilities/salvage"
    ]
   },
   {
@@ -232,6 +262,40 @@
    "in": 1,
    "via": [
     "combat/unarmed-attack"
+   ]
+  }
+ ],
+ "content/docs/free-srd/character-creation/proficiencies/sci-fi.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/abilities/sci-fi/",
+   "title": "Sci-Fi Abilities",
+   "blurb": "The sci-fi abilities available to a character in a spacefaring setting",
+   "out": 0,
+   "in": 12,
+   "via": [
+    "abilities/battery-saboteur",
+    "abilities/companion-bot",
+    "abilities/ghost-protocol",
+    "abilities/opensaysame",
+    "abilities/overcharge",
+    "abilities/power-main-tap",
+    "abilities/rigged-comp-jack",
+    "abilities/signal-intelligence",
+    "abilities/special-encouragement",
+    "abilities/swift-custom-battery",
+    "abilities/tech-armor"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+   "title": "Components",
+   "blurb": "Installable components for robots, drones, and Androids",
+   "out": 0,
+   "in": 1,
+   "via": [
+    "components/internal-comp-jack"
    ]
   },
   {
@@ -434,9 +498,9 @@
    ]
   }
  ],
- "content/docs/free-srd/character-creation/traits.md": [
+ "content/docs/free-srd/character-creation/traits/_index.md": [
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
    "url": "/docs/free-srd/character-creation/abilities/",
    "title": "Abilities",
    "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
@@ -468,7 +532,7 @@
  ],
  "content/docs/free-srd/core-rules/action-economy.md": [
   {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
    "url": "/docs/free-srd/character-creation/proficiencies/",
    "title": "Proficiencies",
    "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
@@ -588,7 +652,7 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
    "url": "/docs/free-srd/character-creation/proficiencies/",
    "title": "Proficiencies",
    "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
@@ -1016,7 +1080,7 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
    "url": "/docs/free-srd/character-creation/abilities/",
    "title": "Abilities",
    "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
@@ -1221,7 +1285,7 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
    "url": "/docs/free-srd/character-creation/abilities/",
    "title": "Abilities",
    "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
@@ -1305,27 +1369,15 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
-   "url": "/docs/free-srd/character-creation/abilities/",
-   "title": "Abilities",
-   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/abilities/sci-fi/",
+   "title": "Sci-Fi Abilities",
+   "blurb": "The sci-fi abilities available to a character in a spacefaring setting",
    "out": 3,
    "in": 0,
    "via": [
     "abilities/companion-bot",
     "abilities/tech-armor"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
-   "url": "/docs/free-srd/character-creation/proficiencies/",
-   "title": "Proficiencies",
-   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
-   "out": 3,
-   "in": 0,
-   "via": [
-    "proficiencies/comp-jack",
-    "proficiencies/weapon"
    ]
   },
   {
@@ -1341,6 +1393,17 @@
    ]
   },
   {
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 2,
+   "in": 0,
+   "via": [
+    "proficiencies/weapon"
+   ]
+  },
+  {
    "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
    "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
    "title": "Sci-Fi Weapons",
@@ -1350,6 +1413,17 @@
    "via": [
     "sci-fi-equipment/laser-pistol",
     "sci-fi-equipment/laser-rifle"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/",
+   "title": "Sci-Fi Proficiencies",
+   "blurb": "The sci-fi proficiencies available to a character in a spacefaring setting",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "proficiencies/comp-jack"
    ]
   },
   {
@@ -1481,18 +1555,6 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
-   "url": "/docs/free-srd/character-creation/abilities/",
-   "title": "Abilities",
-   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
-   "out": 2,
-   "in": 0,
-   "via": [
-    "abilities/battery-saboteur",
-    "abilities/charge"
-   ]
-  },
-  {
    "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
    "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
    "title": "Components",
@@ -1505,10 +1567,32 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
-   "url": "/docs/free-srd/character-creation/proficiencies/",
-   "title": "Proficiencies",
-   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "abilities/charge"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/abilities/sci-fi/",
+   "title": "Sci-Fi Abilities",
+   "blurb": "The sci-fi abilities available to a character in a spacefaring setting",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "abilities/battery-saboteur"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/",
+   "title": "Sci-Fi Proficiencies",
+   "blurb": "The sci-fi proficiencies available to a character in a spacefaring setting",
    "out": 1,
    "in": 0,
    "via": [
@@ -1736,10 +1820,10 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/abilities.md",
-   "url": "/docs/free-srd/character-creation/abilities/",
-   "title": "Abilities",
-   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/abilities/sci-fi/",
+   "title": "Sci-Fi Abilities",
+   "blurb": "The sci-fi abilities available to a character in a spacefaring setting",
    "out": 13,
    "in": 0,
    "via": [
@@ -1789,10 +1873,10 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/proficiencies.md",
-   "url": "/docs/free-srd/character-creation/proficiencies/",
-   "title": "Proficiencies",
-   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/",
+   "title": "Sci-Fi Proficiencies",
+   "blurb": "The sci-fi proficiencies available to a character in a spacefaring setting",
    "out": 3,
    "in": 0,
    "via": [
@@ -1802,10 +1886,10 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/character-creation/traits.md",
-   "url": "/docs/free-srd/character-creation/traits/",
-   "title": "Traits",
-   "blurb": "personality, physique, and background. Selected at level 1 and chosen once",
+   "page": "content/docs/free-srd/character-creation/traits/sci-fi.md",
+   "url": "/docs/free-srd/character-creation/traits/sci-fi/",
+   "title": "Sci-Fi Traits",
+   "blurb": "The sci-fi traits available to a character in a spacefaring setting",
    "out": 3,
    "in": 0,
    "via": [

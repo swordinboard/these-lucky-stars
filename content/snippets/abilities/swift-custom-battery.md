@@ -11,7 +11,7 @@ headless: true
 
 ### Swift Custom Battery
 
-*[General Technology](/docs/free-srd/character-creation/proficiencies/#general-technology) Proficiency, KNO 3*
+*[General Technology](/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology) Proficiency, KNO 3*
 
 You can spend 4 AP and a use of the Tech Kit with supplies to install a battery of up to two sizes smaller or larger than required into a piece of equipment. Results of fit, placement, and object handling, may vary by combination.
 

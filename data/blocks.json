@@ -4,9 +4,9 @@
   "title": "Adaptive Luck",
   "home": "snippet",
   "file": "content/snippets/abilities/adaptive-luck.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -35,9 +35,9 @@
   "title": "Agile Charge",
   "home": "snippet",
   "file": "content/snippets/abilities/agile-charge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -69,9 +69,9 @@
   "title": "Agile Dodge",
   "home": "snippet",
   "file": "content/snippets/abilities/agile-dodge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -100,9 +100,9 @@
   "title": "Bash",
   "home": "snippet",
   "file": "content/snippets/abilities/bash.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -134,15 +134,15 @@
   "title": "Battery Saboteur",
   "home": "snippet",
   "file": "content/snippets/abilities/battery-saboteur.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "battery-saboteur",
-  "url": "/docs/free-srd/character-creation/abilities/#battery-saboteur",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -168,15 +168,15 @@
   "title": "Battery Saver",
   "home": "snippet",
   "file": "content/snippets/abilities/battery-saver.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "battery-saver",
-  "url": "/docs/free-srd/character-creation/abilities/#battery-saver",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saver",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -199,9 +199,9 @@
   "title": "Bolster",
   "home": "snippet",
   "file": "content/snippets/abilities/bolster.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -230,9 +230,9 @@
   "title": "Bonus Luck",
   "home": "snippet",
   "file": "content/snippets/abilities/bonus-luck.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -261,9 +261,9 @@
   "title": "Charge",
   "home": "snippet",
   "file": "content/snippets/abilities/charge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -292,15 +292,15 @@
   "title": "Companion Bot",
   "home": "snippet",
   "file": "content/snippets/abilities/companion-bot.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "companion-bot",
-  "url": "/docs/free-srd/character-creation/abilities/#companion-bot",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#companion-bot",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -326,9 +326,9 @@
   "title": "Controlled Suppressing Fire",
   "home": "snippet",
   "file": "content/snippets/abilities/controlled-suppressing-fire.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -361,9 +361,9 @@
   "title": "Coordinated Strike",
   "home": "snippet",
   "file": "content/snippets/abilities/coordinated-strike.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -392,9 +392,9 @@
   "title": "Danger Reflex",
   "home": "snippet",
   "file": "content/snippets/abilities/danger-reflex.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -423,9 +423,9 @@
   "title": "Dead Drop",
   "home": "snippet",
   "file": "content/snippets/abilities/dead-drop.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -457,9 +457,9 @@
   "title": "Defender",
   "home": "snippet",
   "file": "content/snippets/abilities/defender.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -488,9 +488,9 @@
   "title": "Dual Attack",
   "home": "snippet",
   "file": "content/snippets/abilities/dual-attack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -522,9 +522,9 @@
   "title": "Dual Defense",
   "home": "snippet",
   "file": "content/snippets/abilities/dual-defense.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -557,9 +557,9 @@
   "title": "Dual Strike",
   "home": "snippet",
   "file": "content/snippets/abilities/dual-strike.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -592,9 +592,9 @@
   "title": "Expert",
   "home": "snippet",
   "file": "content/snippets/abilities/expert.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -626,9 +626,9 @@
   "title": "Extended Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/extended-rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -660,9 +660,9 @@
   "title": "Extra Attack",
   "home": "snippet",
   "file": "content/snippets/abilities/extra-attack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -694,9 +694,9 @@
   "title": "Fast Kit Trap",
   "home": "snippet",
   "file": "content/snippets/abilities/fast-kit-trap.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -725,9 +725,9 @@
   "title": "Fearless Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/fearless-rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -759,9 +759,9 @@
   "title": "Field Medic",
   "home": "snippet",
   "file": "content/snippets/abilities/field-medic.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -793,9 +793,9 @@
   "title": "Field Patch",
   "home": "snippet",
   "file": "content/snippets/abilities/field-patch.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -827,9 +827,9 @@
   "title": "Focus Attack",
   "home": "snippet",
   "file": "content/snippets/abilities/focus-attack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -858,9 +858,9 @@
   "title": "Focus In",
   "home": "snippet",
   "file": "content/snippets/abilities/focus-in.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -889,9 +889,9 @@
   "title": "Friend in Need",
   "home": "snippet",
   "file": "content/snippets/abilities/friend-in-need.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -923,9 +923,9 @@
   "title": "Friend of Fortune",
   "home": "snippet",
   "file": "content/snippets/abilities/friend-of-fortune.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -957,9 +957,9 @@
   "title": "General Spectacle",
   "home": "snippet",
   "file": "content/snippets/abilities/general-spectacle.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -988,15 +988,15 @@
   "title": "Ghost Protocol",
   "home": "snippet",
   "file": "content/snippets/abilities/ghost-protocol.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "ghost-protocol",
-  "url": "/docs/free-srd/character-creation/abilities/#ghost-protocol",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#ghost-protocol",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -1023,9 +1023,9 @@
   "title": "Improved Bash",
   "home": "snippet",
   "file": "content/snippets/abilities/improved-bash.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1058,9 +1058,9 @@
   "title": "Improved Suppressing Fire",
   "home": "snippet",
   "file": "content/snippets/abilities/improved-suppressing-fire.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1093,9 +1093,9 @@
   "title": "Indomitable Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/indomitable-rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1129,9 +1129,9 @@
   "title": "Just Grazed",
   "home": "snippet",
   "file": "content/snippets/abilities/just-grazed.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1163,9 +1163,9 @@
   "title": "Just Winded",
   "home": "snippet",
   "file": "content/snippets/abilities/just-winded.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1197,9 +1197,9 @@
   "title": "Kit Trap",
   "home": "snippet",
   "file": "content/snippets/abilities/kit-trap.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1228,9 +1228,9 @@
   "title": "Leaping Charge",
   "home": "snippet",
   "file": "content/snippets/abilities/leaping-charge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1263,9 +1263,9 @@
   "title": "Leg Shot",
   "home": "snippet",
   "file": "content/snippets/abilities/leg-shot.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1297,9 +1297,9 @@
   "title": "Line of Fire",
   "home": "snippet",
   "file": "content/snippets/abilities/line-of-fire.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1332,9 +1332,9 @@
   "title": "Long Performance",
   "home": "snippet",
   "file": "content/snippets/abilities/long-performance.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1363,9 +1363,9 @@
   "title": "Lucky Strike",
   "home": "snippet",
   "file": "content/snippets/abilities/lucky-strike.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1394,9 +1394,9 @@
   "title": "Martial Supremacy",
   "home": "snippet",
   "file": "content/snippets/abilities/martial-supremacy.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1428,9 +1428,9 @@
   "title": "Medical Marvel",
   "home": "snippet",
   "file": "content/snippets/abilities/medical-marvel.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1459,9 +1459,9 @@
   "title": "Momentum Dodge",
   "home": "snippet",
   "file": "content/snippets/abilities/momentum-dodge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1494,9 +1494,9 @@
   "title": "Natural Gift",
   "home": "snippet",
   "file": "content/snippets/abilities/natural-gift.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1525,15 +1525,15 @@
   "title": "Opensaysame",
   "home": "snippet",
   "file": "content/snippets/abilities/opensaysame.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "opensaysame",
-  "url": "/docs/free-srd/character-creation/abilities/#opensaysame",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#opensaysame",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -1559,9 +1559,9 @@
   "title": "Oppressive Suppression",
   "home": "snippet",
   "file": "content/snippets/abilities/oppressive-suppression.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1594,9 +1594,9 @@
   "title": "Outburst",
   "home": "snippet",
   "file": "content/snippets/abilities/outburst.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1625,15 +1625,15 @@
   "title": "Overcharge",
   "home": "snippet",
   "file": "content/snippets/abilities/overcharge.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "overcharge",
-  "url": "/docs/free-srd/character-creation/abilities/#overcharge",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#overcharge",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -1659,9 +1659,9 @@
   "title": "Abilities",
   "home": "snippet",
   "file": "content/snippets/abilities/overview.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1688,9 +1688,9 @@
   "title": "Patient Shot",
   "home": "snippet",
   "file": "content/snippets/abilities/patient-shot.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1722,15 +1722,15 @@
   "title": "Power Main Tap",
   "home": "snippet",
   "file": "content/snippets/abilities/power-main-tap.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "power-main-tap",
-  "url": "/docs/free-srd/character-creation/abilities/#power-main-tap",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#power-main-tap",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -1756,9 +1756,9 @@
   "title": "Powerful Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/powerful-rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1790,9 +1790,9 @@
   "title": "Precise Focus",
   "home": "snippet",
   "file": "content/snippets/abilities/precise-focus.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1825,9 +1825,9 @@
   "title": "Quick Draw",
   "home": "snippet",
   "file": "content/snippets/abilities/quick-draw.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1856,9 +1856,9 @@
   "title": "Quick Firing",
   "home": "snippet",
   "file": "content/snippets/abilities/quick-firing.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1890,9 +1890,9 @@
   "title": "Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1921,9 +1921,9 @@
   "title": "Rally",
   "home": "snippet",
   "file": "content/snippets/abilities/rally.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1952,9 +1952,9 @@
   "title": "Reckless Attack",
   "home": "snippet",
   "file": "content/snippets/abilities/reckless-attack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -1983,15 +1983,15 @@
   "title": "Rigged Comp Jack",
   "home": "snippet",
   "file": "content/snippets/abilities/rigged-comp-jack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "rigged-comp-jack",
-  "url": "/docs/free-srd/character-creation/abilities/#rigged-comp-jack",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#rigged-comp-jack",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2019,15 +2019,15 @@
   "title": "Salvage",
   "home": "snippet",
   "file": "content/snippets/abilities/salvage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "salvage",
-  "url": "/docs/free-srd/character-creation/abilities/#salvage",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#salvage",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2053,15 +2053,15 @@
   "title": "Signal Intelligence",
   "home": "snippet",
   "file": "content/snippets/abilities/signal-intelligence.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "signal-intelligence",
-  "url": "/docs/free-srd/character-creation/abilities/#signal-intelligence",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#signal-intelligence",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2088,9 +2088,9 @@
   "title": "Slip Strike",
   "home": "snippet",
   "file": "content/snippets/abilities/slip-strike.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2123,15 +2123,15 @@
   "title": "Special Encouragement",
   "home": "snippet",
   "file": "content/snippets/abilities/special-encouragement.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "special-encouragement",
-  "url": "/docs/free-srd/character-creation/abilities/#special-encouragement",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#special-encouragement",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2158,9 +2158,9 @@
   "title": "Student",
   "home": "snippet",
   "file": "content/snippets/abilities/student.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2189,9 +2189,9 @@
   "title": "Suppressing Fire",
   "home": "snippet",
   "file": "content/snippets/abilities/suppressing-fire.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2223,15 +2223,15 @@
   "title": "Swift Custom Battery",
   "home": "snippet",
   "file": "content/snippets/abilities/swift-custom-battery.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "swift-custom-battery",
-  "url": "/docs/free-srd/character-creation/abilities/#swift-custom-battery",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#swift-custom-battery",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2257,9 +2257,9 @@
   "title": "Swift Dual Attack",
   "home": "snippet",
   "file": "content/snippets/abilities/swift-dual-attack.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2292,15 +2292,15 @@
   "title": "Tech Armor",
   "home": "snippet",
   "file": "content/snippets/abilities/tech-armor.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/abilities/"
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
   ],
   "anchor": "tech-armor",
-  "url": "/docs/free-srd/character-creation/abilities/#tech-armor",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#tech-armor",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -2326,9 +2326,9 @@
   "title": "The Look",
   "home": "snippet",
   "file": "content/snippets/abilities/the-look.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2360,9 +2360,9 @@
   "title": "Tis But a Scratch",
   "home": "snippet",
   "file": "content/snippets/abilities/tis-but-a-scratch.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2397,9 +2397,9 @@
   "title": "True Defender",
   "home": "snippet",
   "file": "content/snippets/abilities/true-defender.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2433,9 +2433,9 @@
   "title": "Unsettling Rage",
   "home": "snippet",
   "file": "content/snippets/abilities/unsettling-rage.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2469,9 +2469,9 @@
   "title": "Vital Focus",
   "home": "snippet",
   "file": "content/snippets/abilities/vital-focus.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -2503,9 +2503,9 @@
   "title": "Vital Strike",
   "home": "snippet",
   "file": "content/snippets/abilities/vital-strike.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/abilities.md"
+   "content/docs/free-srd/character-creation/abilities/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/abilities/"
@@ -8341,9 +8341,9 @@
   "title": "Armor",
   "home": "snippet",
   "file": "content/snippets/proficiencies/armor.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8371,9 +8371,9 @@
   "title": "B&E Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/b-e-kit.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8401,15 +8401,15 @@
   "title": "Comp Jack Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/comp-jack.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/proficiencies/"
+   "/docs/free-srd/character-creation/proficiencies/sci-fi/"
   ],
   "anchor": "comp-jack-proficiency",
-  "url": "/docs/free-srd/character-creation/proficiencies/#comp-jack-proficiency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -8432,9 +8432,9 @@
   "title": "Disguise Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/disguise-kit.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8462,15 +8462,15 @@
   "title": "General Robotics",
   "home": "snippet",
   "file": "content/snippets/proficiencies/general-robotics.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/proficiencies/"
+   "/docs/free-srd/character-creation/proficiencies/sci-fi/"
   ],
   "anchor": "general-robotics",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-robotics",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-robotics",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -8492,15 +8492,15 @@
   "title": "General Technology",
   "home": "snippet",
   "file": "content/snippets/proficiencies/general-technology.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/proficiencies/"
+   "/docs/free-srd/character-creation/proficiencies/sci-fi/"
   ],
   "anchor": "general-technology",
-  "url": "/docs/free-srd/character-creation/proficiencies/#general-technology",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -8522,9 +8522,9 @@
   "title": "Improved Ability",
   "home": "snippet",
   "file": "content/snippets/proficiencies/improved-ability.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8552,9 +8552,9 @@
   "title": "Licensed Instincts",
   "home": "snippet",
   "file": "content/snippets/proficiencies/licensed-instincts.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8585,9 +8585,9 @@
   "title": "Martial Training",
   "home": "snippet",
   "file": "content/snippets/proficiencies/martial-training.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8615,9 +8615,9 @@
   "title": "Medic Training",
   "home": "snippet",
   "file": "content/snippets/proficiencies/medic-training.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8645,9 +8645,9 @@
   "title": "Medical Instincts",
   "home": "snippet",
   "file": "content/snippets/proficiencies/medical-instincts.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8678,9 +8678,9 @@
   "title": "Negotiation Training",
   "home": "snippet",
   "file": "content/snippets/proficiencies/negotiation-training.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8708,9 +8708,9 @@
   "title": "Proficiencies",
   "home": "snippet",
   "file": "content/snippets/proficiencies/overview.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8737,9 +8737,9 @@
   "title": "Repair Kit Proficiency",
   "home": "snippet",
   "file": "content/snippets/proficiencies/repair-kit.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8767,9 +8767,9 @@
   "title": "Research",
   "home": "snippet",
   "file": "content/snippets/proficiencies/research.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8797,9 +8797,9 @@
   "title": "Survival Training",
   "home": "snippet",
   "file": "content/snippets/proficiencies/survival-training.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8827,9 +8827,9 @@
   "title": "Vehicle",
   "home": "snippet",
   "file": "content/snippets/proficiencies/vehicle.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -8857,9 +8857,9 @@
   "title": "Weapon",
   "home": "snippet",
   "file": "content/snippets/proficiencies/weapon.md",
-  "source_page": "content/docs/free-srd/character-creation/proficiencies.md",
+  "source_page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/proficiencies.md"
+   "content/docs/free-srd/character-creation/proficiencies/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/proficiencies/"
@@ -12223,9 +12223,9 @@
   "title": "Alert",
   "home": "snippet",
   "file": "content/snippets/traits/alert.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12253,9 +12253,9 @@
   "title": "Composed",
   "home": "snippet",
   "file": "content/snippets/traits/composed.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12283,9 +12283,9 @@
   "title": "Diplomatic",
   "home": "snippet",
   "file": "content/snippets/traits/diplomatic.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12313,9 +12313,9 @@
   "title": "Hot-Headed",
   "home": "snippet",
   "file": "content/snippets/traits/hot-headed.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12343,15 +12343,15 @@
   "title": "Inter-Planet Traveler",
   "home": "snippet",
   "file": "content/snippets/traits/inter-planet-traveler.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/traits/"
+   "/docs/free-srd/character-creation/traits/sci-fi/"
   ],
   "anchor": "inter-planet-traveler",
-  "url": "/docs/free-srd/character-creation/traits/#inter-planet-traveler",
+  "url": "/docs/free-srd/character-creation/traits/sci-fi/#inter-planet-traveler",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -12373,9 +12373,9 @@
   "title": "Intimidating",
   "home": "snippet",
   "file": "content/snippets/traits/intimidating.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12403,9 +12403,9 @@
   "title": "Lucky",
   "home": "snippet",
   "file": "content/snippets/traits/lucky.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12433,9 +12433,9 @@
   "title": "Mentally Sound",
   "home": "snippet",
   "file": "content/snippets/traits/mentally-sound.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12463,9 +12463,9 @@
   "title": "Traits",
   "home": "snippet",
   "file": "content/snippets/traits/overview.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12492,9 +12492,9 @@
   "title": "Particularly Attractive",
   "home": "snippet",
   "file": "content/snippets/traits/particularly-attractive.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12522,9 +12522,9 @@
   "title": "Picture of Health",
   "home": "snippet",
   "file": "content/snippets/traits/picture-of-health.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12552,15 +12552,15 @@
   "title": "Scrap Hauler",
   "home": "snippet",
   "file": "content/snippets/traits/scrap-hauler.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/traits/"
+   "/docs/free-srd/character-creation/traits/sci-fi/"
   ],
   "anchor": "scrap-hauler",
-  "url": "/docs/free-srd/character-creation/traits/#scrap-hauler",
+  "url": "/docs/free-srd/character-creation/traits/sci-fi/#scrap-hauler",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -12582,9 +12582,9 @@
   "title": "Sly",
   "home": "snippet",
   "file": "content/snippets/traits/sly.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12612,9 +12612,9 @@
   "title": "Sneaky",
   "home": "snippet",
   "file": "content/snippets/traits/sneaky.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12642,15 +12642,15 @@
   "title": "Space Adept",
   "home": "snippet",
   "file": "content/snippets/traits/space-adept.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/sci-fi.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/sci-fi.md"
   ],
   "page_urls": [
-   "/docs/free-srd/character-creation/traits/"
+   "/docs/free-srd/character-creation/traits/sci-fi/"
   ],
   "anchor": "space-adept",
-  "url": "/docs/free-srd/character-creation/traits/#space-adept",
+  "url": "/docs/free-srd/character-creation/traits/sci-fi/#space-adept",
   "owns_heading": true,
   "category": [
    "sci-fi"
@@ -12672,9 +12672,9 @@
   "title": "Stubborn",
   "home": "snippet",
   "file": "content/snippets/traits/stubborn.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12702,9 +12702,9 @@
   "title": "Tough",
   "home": "snippet",
   "file": "content/snippets/traits/tough.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12732,9 +12732,9 @@
   "title": "Unremarkable",
   "home": "snippet",
   "file": "content/snippets/traits/unremarkable.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12762,9 +12762,9 @@
   "title": "Unshakable",
   "home": "snippet",
   "file": "content/snippets/traits/unshakable.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
@@ -12792,9 +12792,9 @@
   "title": "Well-Connected",
   "home": "snippet",
   "file": "content/snippets/traits/well-connected.md",
-  "source_page": "content/docs/free-srd/character-creation/traits.md",
+  "source_page": "content/docs/free-srd/character-creation/traits/_index.md",
   "pages": [
-   "content/docs/free-srd/character-creation/traits.md"
+   "content/docs/free-srd/character-creation/traits/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/traits/"
