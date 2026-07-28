@@ -45,6 +45,7 @@
   "anchor": "agile-charge",
   "url": "/docs/free-srd/character-creation/abilities/#agile-charge",
   "owns_heading": true,
+  "listed_under": "abilities/charge",
   "category": [
    "core"
   ],
@@ -110,6 +111,7 @@
   "anchor": "bash",
   "url": "/docs/free-srd/character-creation/abilities/#bash",
   "owns_heading": true,
+  "listed_under": "abilities/charge",
   "category": [
    "core"
   ],
@@ -336,6 +338,7 @@
   "anchor": "controlled-suppressing-fire",
   "url": "/docs/free-srd/character-creation/abilities/#controlled-suppressing-fire",
   "owns_heading": true,
+  "listed_under": "abilities/suppressing-fire",
   "category": [
    "core"
   ],
@@ -532,6 +535,7 @@
   "anchor": "dual-defense",
   "url": "/docs/free-srd/character-creation/abilities/#dual-defense",
   "owns_heading": true,
+  "listed_under": "abilities/dual-attack",
   "category": [
    "core"
   ],
@@ -567,6 +571,7 @@
   "anchor": "dual-strike",
   "url": "/docs/free-srd/character-creation/abilities/#dual-strike",
   "owns_heading": true,
+  "listed_under": "abilities/dual-attack",
   "category": [
    "core"
   ],
@@ -602,6 +607,7 @@
   "anchor": "expert",
   "url": "/docs/free-srd/character-creation/abilities/#expert",
   "owns_heading": true,
+  "listed_under": "abilities/student",
   "category": [
    "core"
   ],
@@ -636,6 +642,7 @@
   "anchor": "extended-rage",
   "url": "/docs/free-srd/character-creation/abilities/#extended-rage",
   "owns_heading": true,
+  "listed_under": "abilities/rage",
   "category": [
    "core"
   ],
@@ -704,6 +711,7 @@
   "anchor": "fast-kit-trap",
   "url": "/docs/free-srd/character-creation/abilities/#fast-kit-trap",
   "owns_heading": true,
+  "listed_under": "abilities/kit-trap",
   "category": [
    "core"
   ],
@@ -735,6 +743,7 @@
   "anchor": "fearless-rage",
   "url": "/docs/free-srd/character-creation/abilities/#fearless-rage",
   "owns_heading": true,
+  "listed_under": "abilities/rage",
   "category": [
    "core"
   ],
@@ -1033,6 +1042,7 @@
   "anchor": "improved-bash",
   "url": "/docs/free-srd/character-creation/abilities/#improved-bash",
   "owns_heading": true,
+  "listed_under": "abilities/bash",
   "category": [
    "core"
   ],
@@ -1068,6 +1078,7 @@
   "anchor": "improved-suppressing-fire",
   "url": "/docs/free-srd/character-creation/abilities/#improved-suppressing-fire",
   "owns_heading": true,
+  "listed_under": "abilities/suppressing-fire",
   "category": [
    "core"
   ],
@@ -1103,6 +1114,7 @@
   "anchor": "indomitable-rage",
   "url": "/docs/free-srd/character-creation/abilities/#indomitable-rage",
   "owns_heading": true,
+  "listed_under": "abilities/fearless-rage",
   "category": [
    "core"
   ],
@@ -1139,6 +1151,7 @@
   "anchor": "just-grazed",
   "url": "/docs/free-srd/character-creation/abilities/#just-grazed",
   "owns_heading": true,
+  "listed_under": "abilities/defender",
   "category": [
    "core"
   ],
@@ -1173,6 +1186,7 @@
   "anchor": "just-winded",
   "url": "/docs/free-srd/character-creation/abilities/#just-winded",
   "owns_heading": true,
+  "listed_under": "abilities/defender",
   "category": [
    "core"
   ],
@@ -1238,6 +1252,7 @@
   "anchor": "leaping-charge",
   "url": "/docs/free-srd/character-creation/abilities/#leaping-charge",
   "owns_heading": true,
+  "listed_under": "abilities/agile-charge",
   "category": [
    "core"
   ],
@@ -1307,6 +1322,7 @@
   "anchor": "line-of-fire",
   "url": "/docs/free-srd/character-creation/abilities/#line-of-fire",
   "owns_heading": true,
+  "listed_under": "abilities/suppressing-fire",
   "category": [
    "core"
   ],
@@ -1342,6 +1358,7 @@
   "anchor": "long-performance",
   "url": "/docs/free-srd/character-creation/abilities/#long-performance",
   "owns_heading": true,
+  "listed_under": "abilities/general-spectacle",
   "category": [
    "core"
   ],
@@ -1469,6 +1486,7 @@
   "anchor": "momentum-dodge",
   "url": "/docs/free-srd/character-creation/abilities/#momentum-dodge",
   "owns_heading": true,
+  "listed_under": "abilities/agile-dodge",
   "category": [
    "core"
   ],
@@ -1569,6 +1587,7 @@
   "anchor": "oppressive-suppression",
   "url": "/docs/free-srd/character-creation/abilities/#oppressive-suppression",
   "owns_heading": true,
+  "listed_under": "abilities/suppressing-fire",
   "category": [
    "core"
   ],
@@ -1766,6 +1785,7 @@
   "anchor": "powerful-rage",
   "url": "/docs/free-srd/character-creation/abilities/#powerful-rage",
   "owns_heading": true,
+  "listed_under": "abilities/rage",
   "category": [
    "core"
   ],
@@ -1800,6 +1820,7 @@
   "anchor": "precise-focus",
   "url": "/docs/free-srd/character-creation/abilities/#precise-focus",
   "owns_heading": true,
+  "listed_under": "abilities/focus-attack",
   "category": [
    "core"
   ],
@@ -2098,6 +2119,7 @@
   "anchor": "slip-strike",
   "url": "/docs/free-srd/character-creation/abilities/#slip-strike",
   "owns_heading": true,
+  "listed_under": "abilities/momentum-dodge",
   "category": [
    "core"
   ],
@@ -2133,6 +2155,7 @@
   "anchor": "special-encouragement",
   "url": "/docs/free-srd/character-creation/abilities/sci-fi/#special-encouragement",
   "owns_heading": true,
+  "listed_under": "abilities/companion-bot",
   "category": [
    "sci-fi"
   ],
@@ -2267,6 +2290,7 @@
   "anchor": "swift-dual-attack",
   "url": "/docs/free-srd/character-creation/abilities/#swift-dual-attack",
   "owns_heading": true,
+  "listed_under": "abilities/dual-attack",
   "category": [
    "core"
   ],
@@ -2407,6 +2431,7 @@
   "anchor": "true-defender",
   "url": "/docs/free-srd/character-creation/abilities/#true-defender",
   "owns_heading": true,
+  "listed_under": "abilities/defender",
   "category": [
    "core"
   ],
@@ -2443,6 +2468,7 @@
   "anchor": "unsettling-rage",
   "url": "/docs/free-srd/character-creation/abilities/#unsettling-rage",
   "owns_heading": true,
+  "listed_under": "abilities/powerful-rage",
   "category": [
    "core"
   ],
@@ -2479,6 +2505,7 @@
   "anchor": "vital-focus",
   "url": "/docs/free-srd/character-creation/abilities/#vital-focus",
   "owns_heading": true,
+  "listed_under": "abilities/vital-strike",
   "category": [
    "core"
   ],
@@ -8562,6 +8589,7 @@
   "anchor": "licensed-instincts",
   "url": "/docs/free-srd/character-creation/proficiencies/#licensed-instincts",
   "owns_heading": true,
+  "listed_under": "proficiencies/vehicle",
   "category": [
    "core"
   ],
@@ -8655,6 +8683,7 @@
   "anchor": "medical-instincts",
   "url": "/docs/free-srd/character-creation/proficiencies/#medical-instincts",
   "owns_heading": true,
+  "listed_under": "proficiencies/medic-training",
   "category": [
    "core"
   ],

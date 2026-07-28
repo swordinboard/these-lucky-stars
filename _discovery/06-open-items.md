@@ -102,6 +102,26 @@ abilities are the longest and most numerous, traits the shortest.
 Nothing about this is blocked — the blocks are already separate files, so it is a
 relocation, not a rewrite. Worth deciding after the compact index is seen live.
 
+## 5c. Should `requires` be generated?
+
+Checked, not assumed: **all 52 features that carry `requires` hold exactly the
+feature links in their own prerequisite line** — no exceptions, once items and
+item tags are excluded per the rule that only features become requires.
+
+So the field is derivable today. Three ways to go:
+
+- **Keep it hand-written.** It stays authorable and reviewable in the block, and
+  `worksheets.py` §C4 now reports any drift from the line. Nothing breaks.
+- **Generate it** from the line's feature links, and drop it from frontmatter.
+  Removes one of the three manual jobs. Costs: the prerequisite line becomes
+  load-bearing markup — a link that loses its target silently changes the
+  builder's dependency data.
+- **Keep both and let the check enforce equality.** Belt and braces; the check
+  already exists.
+
+Not urgent. Worth deciding before the builder starts consuming `requires` in
+anger.
+
 ## 6. Chrome
 
 - [ ] **"How this SRD is organized"** — a short explanation of blocks and modules

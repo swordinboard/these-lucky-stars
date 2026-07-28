@@ -5,8 +5,8 @@ worksheets.py — regenerate the Phase 3 audit worksheets from data/.
     python3 _discovery/tools/worksheets.py
 
 Writes _discovery/04-phase3-worksheets.md: tag membership, orphaned blocks,
-implicit edges, and a hand-written-vs-generated comparison of the Related
-sections. Pure read + report; it never touches content. Re-run it after
+implicit edges, feature-prerequisite cross-checks, and a hand-written-vs-
+generated comparison of the Related sections. Pure read + report; it never touches content. Re-run it after
 `builddata.py` whenever you want a fresh review sheet.
 """
 import json, os, re, collections
@@ -151,6 +151,116 @@ w("| From | To | Why it is coupled |")
 w("|---|---|---|")
 for e in IMPLICIT:
     w(f"| `{e['source']}` | `{e['target']}` | {e.get('note','')} |")
+w("")
+w("---")
+w("")
+
+# ------------------------------------------------------- C4 feature prereqs ---
+w("## C4. Feature prerequisites — the three places they are written")
+w("")
+w("A feature's prerequisites are stated in three places, each doing a different")
+w("job. This section reports where they disagree, so drift surfaces instead of")
+w("sitting in the data.")
+w("")
+w("1. **The prerequisite line** in the block's own text — what a reader sees.")
+w("2. **`requires:`** in frontmatter — the mechanical rule the PDF builder obeys.")
+w("   By decision it holds *features only*: attributes, levels, items and")
+w("   category conditions (\"any tool kit\") stay prose.")
+w("3. **The index nesting** (`- ` / `-- ` in a catalog) — where a reader meets")
+w("   the entry. Recorded as `listed_under`.")
+w("")
+w("**2 and 3 are not the same thing and must not be merged.** Slip Strike is")
+w("listed under Momentum Dodge because it builds on that chain, but requires")
+w("Agile Dodge. Both are right.")
+w("")
+
+URL2ID = {}
+for bid, b in B.items():
+    if b.get("url"):
+        URL2ID[b["url"]] = bid
+    if b.get("anchor"):
+        URL2ID.setdefault("#" + b["anchor"], bid)
+
+
+def prereq_line(b):
+    try:
+        body = open(D(b["file"])).read().split("\n---", 1)[1]
+    except (OSError, IndexError):
+        return ""
+    for ln in body.split("\n"):
+        t = ln.strip()
+        if t.startswith("*") and t.endswith("*") and not t.startswith("**") and len(t) > 4:
+            return t.strip("*").strip()
+    return ""
+
+
+def derived_requires(b):
+    """What `requires` would be if generated from the prerequisite line."""
+    out = set()
+    for _, url in re.findall(r"\[([^\]]+)\]\(([^)]+)\)", prereq_line(b)):
+        hit = URL2ID.get(url)
+        if hit and B[hit]["type"] == "feature":
+            out.add(hit)
+    return out
+
+
+feats = [b for b in BLOCKS if b["type"] == "feature" and b["home"] == "snippet"]
+drift = [(b, sorted(set(b.get("requires") or []) - derived_requires(b)),
+             sorted(derived_requires(b) - set(b.get("requires") or [])))
+         for b in feats]
+drift = [d for d in drift if d[1] or d[2]]
+
+w("### `requires` against the prerequisite line")
+w("")
+if drift:
+    w(f"**{len(drift)} features disagree.** Either the line names a feature the")
+    w("frontmatter does not record, or the frontmatter records one the line does")
+    w("not mention.")
+    w("")
+    w("| Block | In `requires`, not linked in the line | Linked in the line, not in `requires` |")
+    w("|---|---|---|")
+    for b, missing, extra in drift:
+        w(f"| `{b['id']}` | {', '.join(f'`{m}`' for m in missing) or '—'} "
+          f"| {', '.join(f'`{e}`' for e in extra) or '—'} |")
+else:
+    w(f"**No disagreements** across {sum(1 for b in feats if b.get('requires'))} features "
+      "that carry `requires`.")
+    w("")
+    w("Every one is exactly the set of feature links in its own prerequisite line,")
+    w("which means `requires` is currently *derivable* rather than independent —")
+    w("worth knowing before deciding to keep maintaining it by hand.")
+w("")
+
+w("### `requires` against the index nesting")
+w("")
+w("Differences here are expected — the two answer different questions. Read it")
+w("as a review list, not an error list.")
+w("")
+nested = [b for b in BLOCKS if b.get("listed_under")]
+rows = []
+for b in nested:
+    req = set(b.get("requires") or [])
+    if b["listed_under"] in req:
+        continue
+    rows.append((b, req))
+w(f"{len(nested)} blocks are nested in an index; **{len(rows)}** are nested under")
+w("something they do not require.")
+w("")
+if rows:
+    w("| Block | Listed under | Actually requires |")
+    w("|---|---|---|")
+    for b, req in rows:
+        w(f"| `{b['id']}` | `{b['listed_under']}` | "
+          f"{', '.join(f'`{r}`' for r in sorted(req)) or '— nothing recorded —'} |")
+w("")
+
+crossns = 0
+for b in feats:
+    ns = b["id"].split("/")[0]
+    crossns += sum(1 for r in (b.get("requires") or []) if r.split("/")[0] != ns)
+w(f"Also worth remembering: **{crossns}** `requires` point at a feature in another")
+w("list (abilities depending on proficiencies or traits). No index tree can show")
+w("those, which is the other reason the nesting cannot be generated from them.")
 w("")
 w("---")
 w("")

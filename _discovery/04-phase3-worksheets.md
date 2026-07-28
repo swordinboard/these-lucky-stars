@@ -1447,6 +1447,51 @@ real in-text link.
 
 ---
 
+## C4. Feature prerequisites — the three places they are written
+
+A feature's prerequisites are stated in three places, each doing a different
+job. This section reports where they disagree, so drift surfaces instead of
+sitting in the data.
+
+1. **The prerequisite line** in the block's own text — what a reader sees.
+2. **`requires:`** in frontmatter — the mechanical rule the PDF builder obeys.
+   By decision it holds *features only*: attributes, levels, items and
+   category conditions ("any tool kit") stay prose.
+3. **The index nesting** (`- ` / `-- ` in a catalog) — where a reader meets
+   the entry. Recorded as `listed_under`.
+
+**2 and 3 are not the same thing and must not be merged.** Slip Strike is
+listed under Momentum Dodge because it builds on that chain, but requires
+Agile Dodge. Both are right.
+
+### `requires` against the prerequisite line
+
+**No disagreements** across 52 features that carry `requires`.
+
+Every one is exactly the set of feature links in its own prerequisite line,
+which means `requires` is currently *derivable* rather than independent —
+worth knowing before deciding to keep maintaining it by hand.
+
+### `requires` against the index nesting
+
+Differences here are expected — the two answer different questions. Read it
+as a review list, not an error list.
+
+29 blocks are nested in an index; **3** are nested under
+something they do not require.
+
+| Block | Listed under | Actually requires |
+|---|---|---|
+| `abilities/fast-kit-trap` | `abilities/kit-trap` | — nothing recorded — |
+| `abilities/long-performance` | `abilities/general-spectacle` | — nothing recorded — |
+| `abilities/slip-strike` | `abilities/momentum-dodge` | `abilities/agile-dodge`, `proficiencies/martial-training` |
+
+Also worth remembering: **39** `requires` point at a feature in another
+list (abilities depending on proficiencies or traits). No index tree can show
+those, which is the other reason the nesting cannot be generated from them.
+
+---
+
 ## D. Related sections — hand-written vs generated
 
 `{{< related >}}` renders the generated column. The hand-written lists carry

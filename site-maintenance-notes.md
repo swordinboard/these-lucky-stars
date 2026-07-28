@@ -99,6 +99,32 @@ deliberately rare (2 blocks): it exists only for names too long for a table cell
 like `Analgesic Radiation Antidote 5 (ARA-5)` → `ARA-5`. If a block needs a
 different display name for any other reason, fix the title instead.
 
+### Feature prerequisites are written in three places
+
+Each does a different job. Keep them separate; `worksheets.py` §C4 reports drift.
+
+| Where | Job | Maintained |
+|---|---|---|
+| The prerequisite line in the block's text | what a reader sees | by hand |
+| `requires:` in frontmatter | the mechanical rule the builder obeys | by hand |
+| `- ` / `-- ` indents in a catalog | where a reader meets the entry | by hand |
+
+`requires` holds **features only**. Attributes (`AGI 2`), levels (`Level 5`),
+items, and category conditions ("Proficiency with any tool kit", "one other
+Battery ability") stay in the prose line — they are conditions on a character,
+not blocks a PDF can contain. Battery Saboteur is the model: it records the one
+named proficiency and leaves "one other Battery ability" to the text.
+
+**The nesting is not the dependency graph.** Slip Strike is listed under
+Momentum Dodge because it builds on that chain, but requires Agile Dodge — both
+correct. And 39 `requires` point into a different list (abilities depending on
+proficiencies or traits), which no index tree can show. Generating either from
+the other would lose information.
+
+`requires` *is* currently derivable from the prerequisite line: all 52 are
+exactly the feature links in their own line. That makes generating it possible,
+which is a decision, not an obligation — see `06-open-items.md`.
+
 **Two blocks may not share a title on the same page** — Hugo silently appends
 `-1` to the second anchor, so a link that looked right yesterday lands in the
 wrong place. Across different pages a shared title is legal but still ambiguous

@@ -184,6 +184,37 @@ def catalog_prop_ids(path, blocks):
     return out
 
 
+def catalog_nesting(path):
+    """(child, parent) pairs asserted by the `- ` / `-- ` indents in a catalog.
+
+    This is a PRESENTATION relationship — where a reader meets an entry — and it
+    is deliberately not the same as `requires`, which is the mechanical rule.
+    Slip Strike is listed under Momentum Dodge but requires Agile Dodge; both
+    are correct. Recorded so the two can be compared, never merged.
+    """
+    out, inside, stack = [], False, {}
+    for line in PAGES[path]["body"].split("\n"):
+        s = line.strip()
+        if catalog_re.match(s):
+            inside, stack = True, {}
+            continue
+        if s.startswith("{{< /catalog"):
+            inside = False
+            continue
+        if not inside or not s:
+            continue
+        if s.startswith("-- "):
+            lvl, bid = 2, s[3:].strip()
+        elif s.startswith("- "):
+            lvl, bid = 1, s[2:].strip()
+        else:
+            lvl, bid = 0, s
+        stack[lvl] = bid
+        if lvl and stack.get(lvl - 1):
+            out.append((bid, stack[lvl - 1]))
+    return out
+
+
 # also treat {{< catalog >}} body lines as block references (they name block ids)
 def catalog_ids(path):
     out, inside = [], False
@@ -248,6 +279,12 @@ for bid, b in blocks.items():
     # is on the weapons page" without re-tagging anything. Must exist before the
     # edge pass, which evaluates page= filters.
     b["page_urls"] = [url_for(p) for p in b["pages"]]
+
+# where an index lists each block, if it lists it as a child of another
+for dp in DOCS:
+    for child, parent in catalog_nesting(dp):
+        if child in blocks and parent in blocks:
+            blocks[child]["listed_under"] = parent
 
 # work-in-progress status, computed so the builder has ONE field to filter on.
 # A block is wip if its own frontmatter says so, if it carries the `wip` tag, or
@@ -430,7 +467,7 @@ for bid, b in blocks.items():
     else:
         b["url"] = None
 
-ORDER = ["id", "title", "home", "file", "source_page", "pages", "page_urls", "anchor", "url", "owns_heading", "category", "type",
+ORDER = ["id", "title", "home", "file", "source_page", "pages", "page_urls", "anchor", "url", "owns_heading", "listed_under", "category", "type",
          "in_degree", "tags", "flags", "notes", "selectable", "wip",
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
