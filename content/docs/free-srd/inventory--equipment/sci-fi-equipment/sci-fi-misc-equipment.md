@@ -210,7 +210,7 @@ sci-fi-equipment/battery-cores
 
 {{% /details %}}
 
-{{% details "Fuel Cell" %}}
+{{% details "Fuel Cells" %}}
 
 {{% include "/snippets/sci-fi-equipment/fuel-cells" %}}
 

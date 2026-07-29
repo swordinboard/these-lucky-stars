@@ -4285,7 +4285,7 @@
   "type": "reference",
   "class": "catalog",
   "url": null,
-  "text": "B&E Kit",
+  "text": "Breaking and Entering Kit",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -5670,6 +5670,24 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/ballistic",
+  "type": "reference",
+  "url": "#ballistic",
+  "text": "Ballistic",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": 16
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/battery",
+  "type": "reference",
+  "url": "#battery",
+  "text": "Battery",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
   "target": "item-tags/belt-fed",
   "type": "reference",
   "url": "#belt-fed",
@@ -5784,6 +5802,15 @@
   "text": "Space Suit",
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "line": 30
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/throwable",
+  "type": "reference",
+  "url": "#throwable",
+  "text": "Throwable",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": 31
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",

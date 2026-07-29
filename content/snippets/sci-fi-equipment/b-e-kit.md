@@ -1,5 +1,5 @@
 ---
-title: "B&E Kit"
+title: "Breaking and Entering Kit"
 id: sci-fi-equipment/b-e-kit
 category: [sci-fi]
 type: equipment
@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, kit]
 summary: "Bulky. Locks, traps, bypass tools."
 ---
 
-### B&E Kit
+### Breaking and Entering Kit
 
 *200Cr — 12lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
 

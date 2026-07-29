@@ -148,21 +148,32 @@ case, nothing more.
 | A `{{% details "Name" %}}` label wrapping the include | 320 |
 
 The snippet headings have never drifted. The **details labels have — 10 of 320
-disagree with the block they wrap.** Two were plain bugs and are now fixed
-(`Sturdy Boots` → Reinforced Boots; `Fire-Startee` → Fire-Starter). The rest:
+disagreed with the block they wrap.** Two were plain bugs (`Sturdy Boots` →
+Reinforced Boots; `Fire-Startee` → Fire-Starter). Eight are now resolved and two
+are held pending review of the WIP page they sit on:
 
-- [ ] **8 remaining details labels disagree with their block's `title`.** Decide
-      which side is right in each case, then make them agree.
-      - `item-tags.md` ×4 — `Ballistic [___]`, `Battery [___]`, `Fuel Cell [___]`,
-        `Throwable [___]`. The `[___]` was stripped from titles and anchors but
-        survives in these labels. Deliberate, or leftovers?
-      - `sci-fi-kits.md:11` — label `Breaking and Entering Kit`, title `B&E Kit`.
-      - `sci-fi-misc-equipment.md:213` — `Fuel Cell` vs `Fuel Cells`.
-      - `vehicle-rules.md:33,39` — `Speed Tiers` vs `Speed Tiers Chart`, and
-        `Modes & Maneuverability` vs `Speed Descriptors`. **These two are exactly
-        the §8 "never rendered, never proofread" titles** — the label is what a
-        reader sees, the title is what the builder would print, and they say
-        different things.
+Six of the eight remaining are now resolved, by your call:
+
+- `item-tags.md` ×4 — `[___]` removed from the labels, and from the three
+  hand-written index links at the top of the page that still carried it. No
+  `[___]` remains anywhere outside snippet body prose, where it is the
+  deliberate fill-in-the-blank marker.
+- `sci-fi-kits.md` — the kit **displays its full name**: block title and heading
+  are now `Breaking and Entering Kit`. The anchor moved `#be-kit` →
+  `#breaking-and-entering-kit`; nothing hand-links it, and the two references
+  (the kit-supplies catalog and the Sci-Fi Module hub) are generated and
+  followed automatically. `B&E Kit` survives in prose and in the proficiency
+  name, which reads fine as an abbreviation of a name now stated in full.
+- `sci-fi-misc-equipment.md` — label is `Fuel Cells`, matching the item. The
+  singular `Fuel Cell` stays as the name of the *tag*, which is a different
+  block.
+
+- [ ] **2 label disagreements left, both on `vehicle-rules.md` (WIP, held for
+      review):** `Speed Tiers` vs title `Speed Tiers Chart`, and
+      `Modes & Maneuverability` vs title `Speed Descriptors`. **These are exactly
+      the §8 "never rendered, never proofread" titles** — the label is what a
+      reader sees, the title is what the builder would print, and they say
+      different things.
 
 **The narrower change, recommended over the full flip:**
 

@@ -13,8 +13,8 @@ Many items have tags to quickly identify common features and use requirements. T
 
 - [Adaptive Mesh](#adaptive-mesh)
 - [Arcing](#arcing)
-- [Ballistic [___]](#ballistic)
-- [Battery [___]](#battery)
+- [Ballistic](#ballistic)
+- [Battery](#battery)
 - [Belt Fed](#belt-fed)
 - [Bulky](#bulky)
 - [Concealable](#concealable)
@@ -28,7 +28,7 @@ Many items have tags to quickly identify common features and use requirements. T
 - [Power Source](#power-source)
 - [Rounds Reload](#rounds-reload)
 - [Space Suit](#space-suit)
-- [Throwable [___]](#throwable)
+- [Throwable](#throwable)
 - [Two-Handed](#two-handed)
 - [Versatile](#versatile)
 
@@ -48,13 +48,13 @@ Many items have tags to quickly identify common features and use requirements. T
 
 {{% /details %}}
 
-{{% details "Ballistic [___]" %}}
+{{% details "Ballistic" %}}
 
 {{% include "/snippets/item-tags/ballistic" %}}
 
 {{% /details %}}
 
-{{% details "Battery [___]" %}}
+{{% details "Battery" %}}
 
 {{% include "/snippets/item-tags/battery" %}}
 
@@ -96,7 +96,7 @@ Many items have tags to quickly identify common features and use requirements. T
 
 {{% /details %}}
 
-{{% details "Fuel Cell [___]" %}}
+{{% details "Fuel Cell" %}}
 
 {{% include "/snippets/item-tags/fuel-cells" %}}
 
@@ -138,7 +138,7 @@ Many items have tags to quickly identify common features and use requirements. T
 
 {{% /details %}}
 
-{{% details "Throwable [___]" %}}
+{{% details "Throwable" %}}
 
 {{% include "/snippets/item-tags/throwable" %}}
 

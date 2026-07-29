@@ -9190,7 +9190,7 @@
  },
  {
   "id": "sci-fi-equipment/b-e-kit",
-  "title": "B&E Kit",
+  "title": "Breaking and Entering Kit",
   "home": "snippet",
   "file": "content/snippets/sci-fi-equipment/b-e-kit.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
@@ -9200,8 +9200,8 @@
   "page_urls": [
    "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
   ],
-  "anchor": "be-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#be-kit",
+  "anchor": "breaking-and-entering-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#breaking-and-entering-kit",
   "owns_heading": true,
   "category": [
    "sci-fi"
