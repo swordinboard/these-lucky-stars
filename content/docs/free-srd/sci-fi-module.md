@@ -70,15 +70,17 @@ and environment context around them, on
 
 {{< catalog type="equipment" page="/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/" header="Item|Summary" />}}
 
+### [Bot Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/)
+
+{{< catalog type="equipment" category="sci-fi" namespace="components" header="Component|Summary" />}}
+
 ---
 
-## Bots & Drones
+## Creatures & NPCs
 
-Automated machines, the platforms built on them, and the components that go
-inside. Full rules on the [Bots & Drones](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/) page.
+The automated machines and the platforms built on them. Full rules on
+[Sci-Fi Creatures & NPCs](/docs/free-srd/creatures--npcs/sci-fi/). The parts that
+go *inside* a bot are equipment, and are listed under Bot Components above.
 
 {{< catalog type="creature" category="sci-fi" namespace="bots" header="Platform|Summary" />}}
 
-### [Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/)
-
-{{< catalog type="equipment" category="sci-fi" namespace="components" header="Component|Summary" />}}

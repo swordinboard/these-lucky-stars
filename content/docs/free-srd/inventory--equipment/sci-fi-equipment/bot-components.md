@@ -1,10 +1,10 @@
 ---
-title: Components
+title: "Bot Components"
 description: "Installable components for robots, drones, and Androids"
-weight: 50
+weight: 5
 wip: true
 ---
-# Components
+# Bot Components
 
 {{% include "/snippets/components/overview" %}}
 
@@ -49,7 +49,7 @@ components/wrist-laser
 
 ---
 
-## Components
+## Bot Components
 
 {{< blockdetails "components/audio-processor" >}}
 

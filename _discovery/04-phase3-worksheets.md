@@ -1289,10 +1289,10 @@ renders a blank cell on every catalog and module page that lists it.
 
 *creature*
 
-- `bots/bal` — BAL  <sub>inventory--equipment/sci-fi-equipment/bots--drones/b2.md</sub>
-- `bots/hel-1` — HEL-1  <sub>inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md</sub>
-- `bots/t00l` — T00L  <sub>inventory--equipment/sci-fi-equipment/bots--drones/t00l.md</sub>
-- `bots/trk-a` — TRK-A  <sub>inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md</sub>
+- `bots/bal` — BAL  <sub>creatures--npcs/sci-fi/b2.md</sub>
+- `bots/hel-1` — HEL-1  <sub>creatures--npcs/sci-fi/hel-1.md</sub>
+- `bots/t00l` — T00L  <sub>creatures--npcs/sci-fi/t00l.md</sub>
+- `bots/trk-a` — TRK-A  <sub>creatures--npcs/sci-fi/trk-a.md</sub>
 
 *feature*
 
@@ -1431,15 +1431,15 @@ Rule/reference blocks with no inbound prose link: **81**
 | `wounds/laceration` — Laceration | rule | core-rules/wounds--conditions.md |
 | `wounds/puncture` — Puncture | rule | core-rules/wounds--conditions.md |
 | `wounds/sprain` — Sprain | rule | core-rules/wounds--conditions.md |
+| `bots/automated-machines` — Bots & Drones | rule | creatures--npcs/sci-fi/_index.md |
 | `equipment/common-terms` — Common Equipment Terms | rule | inventory--equipment/equipment.md |
 | `inventory/body-slots` — Equipment Body Slots | rule | inventory--equipment/inventory.md |
 | `inventory/carry-limits` — Inventory Management | rule | inventory--equipment/inventory.md |
 | `item-tags/adaptive-mesh` — Adaptive Mesh | rule | inventory--equipment/item-tags.md |
 | `item-tags/rounds-reload` — Rounds Reload | rule | inventory--equipment/item-tags.md |
-| `bots/automated-machines` — Bots & Drones | rule | inventory--equipment/sci-fi-equipment/bots--drones/_index.md |
-| `components/damage-and-wounds` — Damage and Wounds | rule | inventory--equipment/sci-fi-equipment/bots--drones/components.md |
-| `components/installation` — Installation | rule | inventory--equipment/sci-fi-equipment/bots--drones/components.md |
-| `components/power-sources` — Power Sources and batteries | rule | inventory--equipment/sci-fi-equipment/bots--drones/components.md |
+| `components/damage-and-wounds` — Damage and Wounds | rule | inventory--equipment/sci-fi-equipment/bot-components.md |
+| `components/installation` — Installation | rule | inventory--equipment/sci-fi-equipment/bot-components.md |
+| `components/power-sources` — Power Sources and batteries | rule | inventory--equipment/sci-fi-equipment/bot-components.md |
 | `sci-fi-equipment/kit-supplies` — Sci-Fi Tool Kits | rule | inventory--equipment/sci-fi-equipment/sci-fi-kits.md |
 
 ### Implicit edges — rule couplings with no link in the prose
@@ -1644,12 +1644,12 @@ Free wins — these pages currently end with no Related section at all.
 - `_index.md` → Character Creation Overview
 - `character-creation/_index.md` → Character Creation Overview, Races
 - `character-creation/abilities/_index.md` → Proficiencies, Traits, Wounds & Conditions, Item Tags, Sci-Fi Misc Equipment
-- `character-creation/abilities/sci-fi.md` → Sci-Fi Proficiencies, Components, Proficiencies, Sci-Fi Misc Equipment
+- `character-creation/abilities/sci-fi.md` → Sci-Fi Proficiencies, Bot Components, Proficiencies, Sci-Fi Misc Equipment
 - `character-creation/character-creation-overview.md` → Races
-- `character-creation/proficiencies/_index.md` → Abilities, Components, Sci-Fi Abilities, Action Economy, Combat
-- `character-creation/proficiencies/sci-fi.md` → Sci-Fi Abilities, Components, Sci-Fi Misc Equipment
+- `character-creation/proficiencies/_index.md` → Abilities, Bot Components, Sci-Fi Abilities, Action Economy, Combat
+- `character-creation/proficiencies/sci-fi.md` → Sci-Fi Abilities, Bot Components, Sci-Fi Misc Equipment
 - `character-creation/races/_index.md` → Android, Classic Human, Reptilian, Star-touched Human, Zeta Grey, Character Creation Overview
-- `character-creation/races/android.md` → Wounds & Conditions, Components, Sci-Fi Misc Equipment, Races, Bots & Drones
+- `character-creation/races/android.md` → Wounds & Conditions, Bot Components, Sci-Fi Misc Equipment, Races, Sci-Fi Creatures & NPCs
 - `character-creation/races/classic-human.md` → Races
 - `character-creation/races/reptilian.md` → Races
 - `character-creation/races/star-touched-human.md` → Races
@@ -1663,14 +1663,14 @@ Free wins — these pages currently end with no Related section at all.
 - `core-rules/stats.md` → Size, Wounds & Conditions, Races, Combat, Vehicle Rules, Sci-Fi Additions
 - `core-rules/wounds--conditions.md` → Stats, Vehicle Rules, Attributes, Environmental Effects, Abilities, Android
 - `creatures--npcs/core/_index.md` → Races, Size
+- `creatures--npcs/sci-fi/_index.md` → Android, BAL, HEL-1, T00L, TRK-A
 - `inventory--equipment/generic-equipment.md` → Item Tags
-- `inventory--equipment/item-tags.md` → Sci-Fi Misc Equipment, Sci-Fi Weapons, Generic Equipment, Sci-Fi Armor, Components, Combat
-- `inventory--equipment/sci-fi-equipment/bots--drones/_index.md` → Android, BAL, HEL-1, T00L, TRK-A
-- `inventory--equipment/sci-fi-equipment/bots--drones/components.md` → Item Tags, Sci-Fi Abilities, Sci-Fi Misc Equipment, Proficiencies, Sci-Fi Weapons, Sci-Fi Proficiencies
+- `inventory--equipment/item-tags.md` → Sci-Fi Misc Equipment, Sci-Fi Weapons, Generic Equipment, Sci-Fi Armor, Bot Components, Combat
+- `inventory--equipment/sci-fi-equipment/bot-components.md` → Item Tags, Sci-Fi Abilities, Sci-Fi Misc Equipment, Proficiencies, Sci-Fi Weapons, Sci-Fi Proficiencies
 - `inventory--equipment/sci-fi-equipment/sci-fi-armor.md` → Item Tags, Sci-Fi Misc Equipment, Damaged & Broken Gear, The Basics, Environmental Effects
 - `inventory--equipment/sci-fi-equipment/sci-fi-kits.md` → Item Tags, The Basics
-- `inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md` → Item Tags, Sci-Fi Armor, Components, Abilities, Sci-Fi Abilities, Sci-Fi Proficiencies
-- `inventory--equipment/sci-fi-equipment/sci-fi-weapons.md` → Item Tags, Combat, Components
+- `inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md` → Item Tags, Sci-Fi Armor, Bot Components, Abilities, Sci-Fi Abilities, Sci-Fi Proficiencies
+- `inventory--equipment/sci-fi-equipment/sci-fi-weapons.md` → Item Tags, Combat, Bot Components
 - `inventory--equipment/tool-kits.md` → Proficiencies, Abilities
-- `sci-fi-module.md` → Sci-Fi Misc Equipment, Sci-Fi Weapons, Sci-Fi Armor, Components, Sci-Fi Abilities, Sci-Fi Additions
+- `sci-fi-module.md` → Sci-Fi Misc Equipment, Sci-Fi Weapons, Sci-Fi Armor, Bot Components, Sci-Fi Abilities, Sci-Fi Additions
 

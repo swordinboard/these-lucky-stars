@@ -12,9 +12,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 1,
    "in": 0,
@@ -140,9 +140,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 3,
@@ -220,9 +220,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 2,
@@ -288,9 +288,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 1,
@@ -402,9 +402,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 2,
    "in": 0,
@@ -435,10 +435,10 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-   "title": "Bots & Drones",
-   "blurb": "Robots and the rules that affect them -- companion bots and drones for These Lucky Stars sci-fi settings",
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/",
+   "title": "Sci-Fi Creatures & NPCs",
+   "blurb": "robot and drone platforms, with alien life and spacefaring opposition to come",
    "out": 0,
    "in": 1,
    "via": [
@@ -1137,6 +1137,63 @@
    ]
   }
  ],
+ "content/docs/free-srd/creatures--npcs/sci-fi/_index.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/android.md",
+   "url": "/docs/free-srd/character-creation/races/android/",
+   "title": "Android",
+   "blurb": "liberated robots able to act and think independently",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/android"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/b2.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/b2/",
+   "title": "BAL",
+   "blurb": "a fast-rolling recon drone for These Lucky Stars sci-fi settings",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "bots/bal"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/hel-1.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/hel-1/",
+   "title": "HEL-1",
+   "blurb": "a small flying drone for These Lucky Stars sci-fi settings",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "bots/hel-1"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/t00l.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
+   "title": "T00L",
+   "blurb": "a sturdy and adaptable assistant bot for These Lucky Stars sci-fi settings",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "bots/t00l"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/trk-a.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/trk-a/",
+   "title": "TRK-A",
+   "blurb": "a small and reliable robot platform for These Lucky Stars sci-fi settings",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "bots/trk-a"
+   ]
+  }
+ ],
  "content/docs/free-srd/inventory--equipment/generic-equipment.md": [
   {
    "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
@@ -1249,9 +1306,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 8,
@@ -1320,64 +1377,7 @@
    ]
   }
  ],
- "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md": [
-  {
-   "page": "content/docs/free-srd/character-creation/races/android.md",
-   "url": "/docs/free-srd/character-creation/races/android/",
-   "title": "Android",
-   "blurb": "liberated robots able to act and think independently",
-   "out": 1,
-   "in": 0,
-   "via": [
-    "races/android"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2/",
-   "title": "BAL",
-   "blurb": "a fast-rolling recon drone for These Lucky Stars sci-fi settings",
-   "out": 1,
-   "in": 0,
-   "via": [
-    "bots/bal"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1/",
-   "title": "HEL-1",
-   "blurb": "a small flying drone for These Lucky Stars sci-fi settings",
-   "out": 1,
-   "in": 0,
-   "via": [
-    "bots/hel-1"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l/",
-   "title": "T00L",
-   "blurb": "a sturdy and adaptable assistant bot for These Lucky Stars sci-fi settings",
-   "out": 1,
-   "in": 0,
-   "via": [
-    "bots/t00l"
-   ]
-  },
-  {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a/",
-   "title": "TRK-A",
-   "blurb": "a small and reliable robot platform for These Lucky Stars sci-fi settings",
-   "out": 1,
-   "in": 0,
-   "via": [
-    "bots/trk-a"
-   ]
-  }
- ],
- "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md": [
+ "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md": [
   {
    "page": "content/docs/free-srd/inventory--equipment/item-tags.md",
    "url": "/docs/free-srd/inventory--equipment/item-tags/",
@@ -1579,9 +1579,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 3,
@@ -1689,9 +1689,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 0,
    "in": 2,
@@ -1840,9 +1840,9 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-   "title": "Components",
+   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+   "title": "Bot Components",
    "blurb": "Installable components for robots, drones, and Androids",
    "out": 20,
    "in": 0,
@@ -1993,8 +1993,8 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2/",
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/b2.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/b2/",
    "title": "BAL",
    "blurb": "a fast-rolling recon drone for These Lucky Stars sci-fi settings",
    "out": 1,
@@ -2004,8 +2004,8 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1/",
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/hel-1.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/hel-1/",
    "title": "HEL-1",
    "blurb": "a small flying drone for These Lucky Stars sci-fi settings",
    "out": 1,
@@ -2015,8 +2015,8 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l/",
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/t00l.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
    "title": "T00L",
    "blurb": "a sturdy and adaptable assistant bot for These Lucky Stars sci-fi settings",
    "out": 1,
@@ -2026,8 +2026,8 @@
    ]
   },
   {
-   "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a.md",
-   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a/",
+   "page": "content/docs/free-srd/creatures--npcs/sci-fi/trk-a.md",
+   "url": "/docs/free-srd/creatures--npcs/sci-fi/trk-a/",
    "title": "TRK-A",
    "blurb": "a small and reliable robot platform for These Lucky Stars sci-fi settings",
    "out": 1,

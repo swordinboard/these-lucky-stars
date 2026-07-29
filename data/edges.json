@@ -39,7 +39,7 @@
   "source": "page:/",
   "target": "components/shield-mount",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#shield-mount",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
   "text": "Shield Mount",
   "file": "content/_index.md",
   "line": 19
@@ -73,9 +73,9 @@
  },
  {
   "source": "page:/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "target": "page:/docs/free-srd/creatures--npcs/sci-fi/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/",
   "text": "Robots and Drones",
   "file": "content/_index.md",
   "line": 25
@@ -2881,9 +2881,9 @@
  },
  {
   "source": "abilities/tech-armor",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "components",
   "file": "content/snippets/abilities/tech-armor.md",
   "line": 15
@@ -3523,19 +3523,19 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "text": "Bots & Drones",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "text": "Bot Components",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 78
+  "line": 73
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+  "target": "page:/docs/free-srd/creatures--npcs/sci-fi/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "text": "Components",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/",
+  "text": "Sci-Fi Creatures & NPCs",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": 82
  },
@@ -4681,46 +4681,6 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "bots/bal",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "BAL",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "bots/hel-1",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "HEL-1",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "bots/t00l",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "T00L",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "bots/trk-a",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "TRK-A",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "components/audio-processor",
   "type": "reference",
   "class": "catalog",
@@ -4916,6 +4876,46 @@
   "class": "catalog",
   "url": null,
   "text": "Wrist Laser",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/bal",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "BAL",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/hel-1",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "HEL-1",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/t00l",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "T00L",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "bots/trk-a",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "TRK-A",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -6090,6 +6090,16 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "text": "Bot Components",
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "type": "reference",
   "class": "section-index",
@@ -6129,14 +6139,220 @@
   "line": null
  },
  {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "type": "reference",
-  "class": "section-index",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "text": "Bots & Drones",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": null
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/overview",
+  "type": "include",
+  "url": "/snippets/components/overview",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/installation",
+  "type": "include",
+  "url": "/snippets/components/installation",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/power-sources",
+  "type": "include",
+  "url": "/snippets/components/power-sources",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/damage-and-wounds",
+  "type": "include",
+  "url": "/snippets/components/damage-and-wounds",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/audio-processor",
+  "type": "include",
+  "url": "/snippets/components/audio-processor",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 54
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/augmented-arm-actuators",
+  "type": "include",
+  "url": "/snippets/components/augmented-arm-actuators",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 56
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/automatic-crash-foam-system",
+  "type": "include",
+  "url": "/snippets/components/automatic-crash-foam-system",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 58
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/backup-power-cell",
+  "type": "include",
+  "url": "/snippets/components/backup-power-cell",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 60
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/heavy-wrist-laser",
+  "type": "include",
+  "url": "/snippets/components/heavy-wrist-laser",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 62
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/improved-cooling-system",
+  "type": "include",
+  "url": "/snippets/components/improved-cooling-system",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 64
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/internal-comp-jack",
+  "type": "include",
+  "url": "/snippets/components/internal-comp-jack",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 66
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/manipulator-override",
+  "type": "include",
+  "url": "/snippets/components/manipulator-override",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 68
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/optical-suite",
+  "type": "include",
+  "url": "/snippets/components/optical-suite",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 70
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/reinforced-chassis-plating",
+  "type": "include",
+  "url": "/snippets/components/reinforced-chassis-plating",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 72
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/relay-node",
+  "type": "include",
+  "url": "/snippets/components/relay-node",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 74
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/repair-subroutine",
+  "type": "include",
+  "url": "/snippets/components/repair-subroutine",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 76
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/servo-boost-legs",
+  "type": "include",
+  "url": "/snippets/components/servo-boost-legs",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 78
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/shield-mount",
+  "type": "include",
+  "url": "/snippets/components/shield-mount",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 80
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/signal-mast-retractable",
+  "type": "include",
+  "url": "/snippets/components/signal-mast-retractable",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 82
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/signal-mast-heavy",
+  "type": "include",
+  "url": "/snippets/components/signal-mast-heavy",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 84
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/stabilizer-gyros",
+  "type": "include",
+  "url": "/snippets/components/stabilizer-gyros",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 86
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/subdermal-plating",
+  "type": "include",
+  "url": "/snippets/components/subdermal-plating",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 88
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/targeting-array",
+  "type": "include",
+  "url": "/snippets/components/targeting-array",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 90
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "target": "components/wrist-laser",
+  "type": "include",
+  "url": "/snippets/components/wrist-laser",
+  "text": null,
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "line": 92
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
@@ -7021,267 +7237,6 @@
   "line": 140
  },
  {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "bots/hel-1",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1",
-  "text": "HEL-1",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 12
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "bots/t00l",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/t00l",
-  "text": "T00L",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 13
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "bots/bal",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/b2",
-  "text": "BAL",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 14
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "bots/trk-a",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/trk-a",
-  "text": "TRK-A",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "target": "bots/automated-machines",
-  "type": "include",
-  "url": "/snippets/bots/automated-machines",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/_index.md",
-  "line": 9
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/overview",
-  "type": "include",
-  "url": "/snippets/components/overview",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 9
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/installation",
-  "type": "include",
-  "url": "/snippets/components/installation",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 13
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/power-sources",
-  "type": "include",
-  "url": "/snippets/components/power-sources",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/damage-and-wounds",
-  "type": "include",
-  "url": "/snippets/components/damage-and-wounds",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/audio-processor",
-  "type": "include",
-  "url": "/snippets/components/audio-processor",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 54
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/augmented-arm-actuators",
-  "type": "include",
-  "url": "/snippets/components/augmented-arm-actuators",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 56
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/automatic-crash-foam-system",
-  "type": "include",
-  "url": "/snippets/components/automatic-crash-foam-system",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 58
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/backup-power-cell",
-  "type": "include",
-  "url": "/snippets/components/backup-power-cell",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 60
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/heavy-wrist-laser",
-  "type": "include",
-  "url": "/snippets/components/heavy-wrist-laser",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 62
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/improved-cooling-system",
-  "type": "include",
-  "url": "/snippets/components/improved-cooling-system",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 64
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/internal-comp-jack",
-  "type": "include",
-  "url": "/snippets/components/internal-comp-jack",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 66
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/manipulator-override",
-  "type": "include",
-  "url": "/snippets/components/manipulator-override",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 68
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/optical-suite",
-  "type": "include",
-  "url": "/snippets/components/optical-suite",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 70
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/reinforced-chassis-plating",
-  "type": "include",
-  "url": "/snippets/components/reinforced-chassis-plating",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 72
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/relay-node",
-  "type": "include",
-  "url": "/snippets/components/relay-node",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 74
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/repair-subroutine",
-  "type": "include",
-  "url": "/snippets/components/repair-subroutine",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 76
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/servo-boost-legs",
-  "type": "include",
-  "url": "/snippets/components/servo-boost-legs",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 78
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/shield-mount",
-  "type": "include",
-  "url": "/snippets/components/shield-mount",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 80
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/signal-mast-retractable",
-  "type": "include",
-  "url": "/snippets/components/signal-mast-retractable",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 82
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/signal-mast-heavy",
-  "type": "include",
-  "url": "/snippets/components/signal-mast-heavy",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 84
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/stabilizer-gyros",
-  "type": "include",
-  "url": "/snippets/components/stabilizer-gyros",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 86
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/subdermal-plating",
-  "type": "include",
-  "url": "/snippets/components/subdermal-plating",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 88
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/targeting-array",
-  "type": "include",
-  "url": "/snippets/components/targeting-array",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 90
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
-  "target": "components/wrist-laser",
-  "type": "include",
-  "url": "/snippets/components/wrist-laser",
-  "text": null,
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md",
-  "line": 92
- },
- {
   "source": "page:/docs/free-srd/creatures--npcs/",
   "target": "page:/docs/free-srd/creatures--npcs/sci-fi/",
   "type": "reference",
@@ -7303,12 +7258,57 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "target": "bots/hel-1",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
-  "text": "Bots & Drones",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/hel-1/",
+  "text": "HEL-1",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/t00l",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
+  "text": "T00L",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
   "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/bal",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/b2/",
+  "text": "BAL",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 21
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/trk-a",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/trk-a/",
+  "text": "TRK-A",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 25
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "text": "Bot Components",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 34
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/automated-machines",
+  "type": "include",
+  "url": "/snippets/bots/automated-machines",
+  "text": null,
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 15
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/core/",
@@ -10380,9 +10380,9 @@
  },
  {
   "source": "races/android",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "components",
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "line": 29
@@ -10391,7 +10391,7 @@
   "source": "races/android",
   "target": "components/backup-power-cell",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#backup-power-cell",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
   "text": "Backup Power Cell",
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "line": 33

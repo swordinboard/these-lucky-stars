@@ -28,8 +28,7 @@ change what the builder sees:
 - §1 both items (merge hygiene, not builder inputs)
 - §2 the nine blank summaries — accepted, all on `wip:` pages
 - §5 C2 orphans, §5d duplicate page headings, §6 chrome, §7 playtest
-- §4 Move 3 — waiting on a second kind of creature. Move 1 is closed: not
-  moving.
+- §4 is closed: Move 1 declined, Move 3 done.
 
 **Already done and load-bearing for the builder:** `data/blocks.json` with
 `wip`/`owns_heading`/`url`/`page_urls`/`requires`, `data/edges.json` with
@@ -48,8 +47,10 @@ These would do visible damage on the live site.
       exist and put them in the sitemap. *One line each, say when.*
       - `free-srd/medieval-module.md`, `modern-module.md`,
         `frontier--industry-module.md`
-      - `free-srd/creatures--npcs/_index.md` and both children (`core/`,
-        `sci-fi/`) — nothing is statted yet
+      - `free-srd/creatures--npcs/core/_index.md` — nothing statted yet.
+        The parent and `sci-fi/` should **ship**: sci-fi carries the four bot
+        platforms and the automated-machines rules, and the parent's
+        `{{< children >}}` still renders with core drafted out.
       Note `tool-kits.md` is **not** on this list: it is `wip: true` but has real
       rules on it and fixes a link that was broken. It should ship.
 - [ ] **Decide the Medieval/Modern/Frontier duplication.** There are now two
@@ -82,24 +83,25 @@ These would do visible damage on the live site.
       Equipment, where a reader looks for gear; the module page is the
       grab-and-go view across it. Decided, not deferred.
 
-- [ ] **Move 3 — bots & drones into Creatures & NPCs.** The section now exists:
+- [x] ~~**Move 3 — bots & drones into Creatures & NPCs.**~~ **Done.** Four
+      platforms is a start to a creature list, so it did not wait.
 
       ```
-      Creatures & NPCs            (nav toggle, {{< children >}} index)
-         Core Creatures & NPCs
-         Sci-Fi Creatures & NPCs
+      Creatures & NPCs                 (nav toggle, {{< children >}} index)
+         Core Creatures & NPCs         — nothing statted yet
+         Sci-Fi Creatures & NPCs       — HEL-1, T00L, BAL, TRK-A
       ```
 
-      All three are `wip: true` placeholders with nothing statted yet. Each
-      setting page is set up like Races — a hand-written list leading to one page
-      per creature — because `{{< children >}}` needs children to list and there
-      are none.
+      The old `bots--drones/_index.md` content — the automated-machines rules and
+      the Drone/Robot platform lists — became the Sci-Fi page, so that page is no
+      longer a placeholder. **Bot Components did not move**: components are
+      `type: equipment`, gear you buy, so they stayed in the equipment section as
+      `sci-fi-equipment/bot-components.md` for the same reason Move 1 was
+      declined. The Sci-Fi Module hub now lists them under Equipment and the
+      platforms under Creatures & NPCs.
 
-      **Remaining:** move the four bot/drone platforms from
-      `inventory--equipment/sci-fi-equipment/bots--drones/` into
-      `creatures--npcs/sci-fi/`. Still waiting on a second kind of creature, so
-      the section is not a folder with four robots in it. The Sci-Fi page links
-      to where they currently live in the meantime.
+      Three 301s cover the six old URLs, components first so the wildcard cannot
+      swallow it.
 
 ## 5. Audits prepared, awaiting your review
 

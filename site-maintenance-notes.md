@@ -52,8 +52,9 @@ or item — the unit a GM can select when building a custom PDF.
 - **~425 blocks live in `content/snippets/<namespace>/<slug>.md`.** Each carries
   block frontmatter (below) and holds the actual prose.
 - **15 pages are themselves blocks** (`content/docs/.../size.md`, the race pages,
-  `legal.md`, the bot stubs). They stand alone as one coherent unit, so they are
-  referenced in place instead of being extracted. They carry the same
+  `legal.md`, the four bot platforms under `creatures--npcs/sci-fi/`). They stand
+  alone as one coherent unit, so they are referenced in place instead of being
+  extracted. They carry the same
   frontmatter keys in their page frontmatter.
 - **The other ~30 docs pages are shells.** They are headings, tables, and
   `{{% include %}}` pulls — the prose lives in the snippets. `combat.md` is not
@@ -441,8 +442,9 @@ Three section indexes stay hand-written on purpose, and should:
 - **Bots & Drones** — grouped into Drone and Robot platforms, with blurbs and a
   `*(TBD)*` entry for a platform that does not exist yet.
 - **Creatures & NPCs / Core** and **/ Sci-Fi** — both are Races-shaped: a
-  hand-written list leading to one page per creature. `children` needs children,
-  and nothing is statted yet.
+  hand-written list leading to one page per creature, grouped (Drone Platforms /
+  Robot Platforms) with a `*(TBD)*` entry, and the platform pages are
+  `bookHidden`. Core has nothing statted yet.
 - **`docs/_index.md`** — three children with curated one-line blurbs.
 
 `desc="true"` appends each child's `description`, but most descriptions here are
