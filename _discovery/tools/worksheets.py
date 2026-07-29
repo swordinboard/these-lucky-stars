@@ -20,6 +20,39 @@ EDGES = json.load(open(D("data/edges.json")))
 RELATED = json.load(open(D("data/related.json")))
 IMPLICIT = json.load(open(D("_discovery/tools/implicit-edges.json")))
 
+CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
+# Cohort gaps that are correct by design, so they never resurface as noise:
+# `general` marks the General tab, so the Luck and Battery abilities are meant to
+# lack it; framework blocks are not instances of the cohort they introduce.
+FRAMEWORK = ("overview", "installation", "power-sources", "damage-and-wounds",
+             "wounds", "common-injuries", "action-types")
+
+
+def body_of(b):
+    """A block's prose: no frontmatter, no headings, link targets stripped."""
+    try:
+        raw = open(D(b["file"])).read()
+    except OSError:
+        return ""
+    txt = raw.split("---", 2)[2] if raw.startswith("---") else raw
+    txt = re.sub(r"^#{1,6}.*$", "", txt, flags=re.M)
+    return re.sub(r"\]\([^)]*\)", "]", txt).strip()
+
+
+def first_sentence(b, limit=150):
+    txt = re.sub(r"\s+", " ", body_of(b))
+    txt = re.sub(r"[*_]{1,3}", "", txt)          # emphasis markers are not prose
+    txt = re.sub(r"^[>|\-\s]+", "", txt).strip()
+    m = re.search(r"^(.{0,%d}?[.!?])(\s|$)" % limit, txt)
+    s = m.group(1) if m else txt[:limit]
+    return s + ("…" if not m and len(txt) > limit else "")
+
+
+def spot(note="your call"):
+    """A pre-placed annotation slot, so notes need no copy-pasting."""
+    w(f"  <!-- {note}: -->")
+
+
 STRUCTURAL = {"equipment", "sci-fi", "core", "generic", "site-chrome", "character-creation"}
 OVERVIEWISH = ("overview", "basics", "index")
 
@@ -34,27 +67,139 @@ w("")
 w(f"Corpus: **{len(BLOCKS)} blocks**, **{len(EDGES)} edges**, "
   f"**{sum(1 for b in BLOCKS if b.get('wip'))} wip**.")
 w("")
+w("## How to annotate this")
+w("")
+w("Every decision has an **empty HTML comment already sitting under it**:")
+w("")
+w("```")
+w("- **`traits/alert`** \u2014 Alert")
+w("  <!-- ok / new title: -->")
+w("```")
+w("")
+w("Type inside it. Freehand \u2014 no fixed vocabulary, say what you mean and I will")
+w("act on it. Leave a spot untouched and I will treat it as unreviewed and leave")
+w("that item alone. The prompt text before the colon is a hint, not a menu.")
+w("")
+w("Regenerating this file **erases annotations**, so I will not re-run")
+w("`worksheets.py` while a review is in flight.")
+w("")
+w("Suggested order, and why: **C5** (smallest, warms up the judgement), then")
+w("**C1** (tag renames would otherwise invalidate C3's quoted fragments), then")
+w("**C3** (the one that needs rewrites).")
+w("")
 w("---")
 w("")
 
 # ------------------------------------------------------------------ C1 tags ---
 w("## C1. Tag membership")
 w("")
-w("Scan each list for holes — a block that belongs but is missing, or a member")
-w("that does not fit. Tag names are the query surface the PDF builder will use.")
+w("Tag names are the query surface the PDF builder will use, so a hole here")
+w("becomes a hole in the selection UI. The anomalies are listed first — those are")
+w("the decisions. Full membership lists are at the end of the section, collapsed,")
+w("for when you want to browse rather than review.")
 w("")
 tags = collections.defaultdict(list)
 for b in BLOCKS:
-    for t in b.get("tags", []):
-        tags[t].append(b)
-for t, members in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-    w(f"### `{t}` — {len(members)}")
+    if b.get("excluded"):
+        continue
+    for tg in b.get("tags", []):
+        tags[tg].append(b)
+LIVE = [b for b in BLOCKS if not b.get("excluded")]
+w(f"**{len(LIVE)} blocks, {len(tags)} distinct tags.**")
+w("")
+
+w("### C1a. Near-duplicate tag names")
+w("")
+w("Two tags whose names differ only by plural or punctuation. Either they mean")
+w("different things and something should say so, or one should win.")
+w("")
+dupes = []
+names = sorted(tags)
+for a in names:
+    for b2 in names:
+        if a < b2 and (a + "s" == b2 or b2 + "s" == a
+                       or a.replace("-", "") == b2.replace("-", "")):
+            dupes.append((a, b2))
+if dupes:
+    for a, b2 in dupes:
+        w(f"- **`{a}` ({len(tags[a])})** vs **`{b2}` ({len(tags[b2])})**")
+        w(f"  - `{a}`: " + ", ".join(f"`{x['id']}`" for x in sorted(tags[a], key=lambda x: x["id"])))
+        w(f"  - `{b2}`: " + ", ".join(f"`{x['id']}`" for x in sorted(tags[b2], key=lambda x: x["id"])))
+        spot("merge into which, or keep both and why")
+        w("")
+else:
+    w("- none")
     w("")
-    for b in sorted(members, key=lambda b: b["id"]):
-        others = [x for x in b["tags"] if x != t]
-        w(f"- `{b['id']}` — {b['title']}"
-          + (f"  <sub>{', '.join(others)}</sub>" if others else "  <sub>(only tag)</sub>"))
+
+w("### C1b. Tags with two or fewer members")
+w("")
+w("A tag this small is either under-applied, redundant with a bigger tag, or a")
+w("category of one that does not need to be a tag.")
+w("")
+small = sorted((tg for tg, m in tags.items() if len(m) <= 2), key=lambda tg: (len(tags[tg]), tg))
+for tg in small:
+    mem = sorted(tags[tg], key=lambda x: x["id"])
+    w(f"- **`{tg}`** ({len(mem)}) — " + ", ".join(f"`{x['id']}`" for x in mem))
+    spot("keep / merge into X / delete")
+w("")
+
+w("### C1c. Blocks with no tags at all")
+w("")
+w("Invisible to every tag query. Not necessarily wrong — a framework block may")
+w("not belong to any group — but it should be a decision, not an oversight.")
+w("")
+untagged = [b for b in LIVE if not b.get("tags")]
+for b in sorted(untagged, key=lambda b: b["id"]):
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>type={b['type']}</sub>")
+    w(f"      {first_sentence(b, 110)}")
+    spot("tags to add, or leave untagged")
+w("" if untagged else "- none")
+w("")
+
+w("### C1d. Cohort gaps")
+w("")
+w("A tag carried by most of a namespace but missing from some members. Category")
+w("tags (`core`, `sci-fi`) and framework blocks are excluded — those gaps are")
+w("correct by definition and were only noise.")
+w("")
+ns = collections.defaultdict(list)
+for b in LIVE:
+    ns[b["id"].split("/")[0]].append(b)
+gaps = []
+for n, mem in sorted(ns.items()):
+    if len(mem) < 4:
+        continue
+    cnt = collections.Counter(tg for x in mem for tg in x.get("tags", []))
+    for tg, c in cnt.items():
+        if tg in CATEGORY_TAGS or not 0.7 <= c / len(mem) < 1.0:
+            continue
+        miss = [x for x in mem
+                if tg not in x.get("tags", []) and not x["id"].rsplit("/", 1)[1] in FRAMEWORK]
+        if miss:
+            gaps.append((n, tg, c, len(mem), miss))
+if gaps:
+    for n, tg, c, tot, miss in sorted(gaps, key=lambda r: -len(r[4])):
+        w(f"- **`{tg}`** is on {c}/{tot} of `{n}/` — missing from {len(miss)}:")
+        for x in sorted(miss, key=lambda x: x["id"]):
+            w(f"  - `{x['id']}` — {x['title']}")
+        spot("expected (say why) / add the tag")
+        w("")
+else:
+    w("- none")
     w("")
+
+w("### C1e. Tags per block")
+w("")
+dist = collections.Counter(len(b.get("tags", [])) for b in LIVE)
+w("| Tags | Blocks |")
+w("|---|---|")
+for k in sorted(dist):
+    w(f"| {k} | {dist[k]} |")
+w("")
+w("A distribution to eyeball, not a list of decisions. A single-tag block is fine")
+w("if that tag is the functional one; it is thin if the tag is structural.")
+spot("anything look wrong here")
+w("")
 
 w("### Blocks a quick-reference table would show with an empty cell")
 w("")
@@ -82,22 +227,39 @@ for t in sorted(by_type):
         w(f"- `{b['id']}` — {b['title']}  <sub>{page}</sub>")
     w("")
 
-w("### Blocks with only structural tags")
+w("### C1f. Blocks with only structural tags")
 w("")
 w("These carry no functional tag, so a tag-as-query pull (\"give me all the")
-w("grenades\") cannot reach them.")
+w("grenades\") cannot reach them. Structural tags are "
+  + ", ".join(f"`{s}`" for s in sorted(STRUCTURAL)) + ".")
 w("")
-thin = [b for b in BLOCKS
-        if b.get("tags") and not (set(b["tags"]) - STRUCTURAL) and not b.get("excluded")]
+thin = [b for b in LIVE
+        if b.get("tags") and not (set(b["tags"]) - STRUCTURAL)]
 if thin:
     for b in sorted(thin, key=lambda b: b["id"]):
-        w(f"- `{b['id']}` — {b['title']}  <sub>{', '.join(b['tags'])}</sub>")
+        w(f"- **`{b['id']}`** — {b['title']}  <sub>{', '.join(b['tags'])}</sub>")
+        w(f"      {first_sentence(b, 110)}")
+        spot("functional tag to add, or fine as-is")
 else:
     w("- none")
 w("")
-untagged = [b for b in BLOCKS if not b.get("tags")]
-w(f"Blocks with no tags at all: **{len(untagged)}**"
-  + ("" if not untagged else " — " + ", ".join(f"`{b['id']}`" for b in untagged)))
+
+w("### C1g. Full membership lists")
+w("")
+w("Reference, not review — every tag with every member. Collapsed so it does not")
+w("bury the decisions above.")
+w("")
+w("<details><summary>All " + str(len(tags)) + " tags</summary>")
+w("")
+for tg, members in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+    w(f"**`{tg}`** — {len(members)}")
+    w("")
+    for b in sorted(members, key=lambda b: b["id"]):
+        others = [x for x in b["tags"] if x != tg]
+        w(f"- `{b['id']}` — {b['title']}"
+          + (f"  <sub>{', '.join(others)}</sub>" if others else "  <sub>(only tag)</sub>"))
+    w("")
+w("</details>")
 w("")
 w("---")
 w("")
@@ -265,6 +427,113 @@ w("")
 w("---")
 w("")
 
+# ------------------------------------------------ C3 self-containment ---
+w("## C3. Self-containment — blocks that point outside themselves")
+w("")
+w("A block has to read correctly when a GM prints it alone, with none of its")
+w("page around it. This flags **deictic language** — text pointing at something")
+w("outside the block: `above`, `below`, `this page`, `the following`,")
+w("`as described`, `see the`.")
+w("")
+w("Two filters run first, or the list is mostly noise:")
+w("")
+w("- **Comparisons are dropped.** \"stress drops below threshold\" and \"well below")
+w("  max carry weight\" are measurements, not pointers.")
+w("- **In-block referents are dropped.** \"use the chart below\" is fine when the")
+w("  chart is the next line of the same block. Those are listed separately.")
+w("")
+w("Then the rule that decides severity: **a pointer that is a link is fine.**")
+w("`see the [Martial Training] proficiency` survives being printed alone — the")
+w("reader can follow it. **Unlinked deixis is the bug**, because nothing in the")
+w("printed page tells the reader where to look.")
+w("")
+
+C3_PATS = [
+    ("above/below",        r"\b(above|below)\b"),
+    ("this/these <thing>", r"\b(this|these)\s+(section|page|chapter|list|table|chart)\b"),
+    ("as noted/described", r"\bas (noted|described|mentioned|shown|stated|listed)\b"),
+    ("see the/above/below", r"\bsee (the|below|above)\b"),
+    ("earlier/previous",   r"\b(earlier|previously|previous)\b"),
+    ("the following",      r"\bthe following\b"),
+    ("\u2026here",             r"\b(listed|shown|described|found) here\b"),
+]
+# words that make "below"/"above" a measurement rather than a direction
+COMPARE = r"(lowered|lower|drops?|falls?|reduce[sd]?|well|beyond|but|is|are|stays?|remains?|at or)\s+(\w+\s+)?$"
+
+def c3_scan():
+    inblock, outside = [], []
+    for b in sorted(LIVE, key=lambda x: x["id"]):
+        txt = body_of(b)
+        if not txt:
+            continue
+        for name, pat in C3_PATS:
+            hit = None
+            for m in re.finditer(pat, txt, re.I):
+                before, after = txt[: m.start()], txt[m.end():]
+                word = m.group(0).lower()
+                if re.search(COMPARE, before[-40:], re.I):
+                    continue
+                selfref = (("below" in word or "following" in word)
+                           and re.search(r"^\s*[|>\-*]", after, re.M)) or \
+                          ("above" in word and re.search(r"^\s*[|>]", before, re.M))
+                frag = re.sub(r"\s+", " ", txt[max(0, m.start() - 55): m.end() + 55])
+                # was the pointer written as a link? body_of() left "]" behind
+                linked = "]" in txt[max(0, m.start() - 30): m.end() + 30]
+                hit = (b, name, frag, linked, selfref)
+                break
+            if hit:
+                (inblock if hit[4] else outside).append(hit)
+                break
+    return inblock, outside
+
+inblock, outside = c3_scan()
+unlinked = [h for h in outside if not h[3]]
+linked = [h for h in outside if h[3]]
+
+w(f"Scanned {len(LIVE)} blocks. **{len(outside)}** point outside themselves; of")
+w(f"those **{len(unlinked)}** do it without a link. A further {len(inblock)} point at")
+w("something inside their own block and are listed last as a sanity check.")
+w("")
+
+w(f"### C3a. Unlinked pointers — {len(unlinked)} blocks")
+w("")
+w("**These are the ones that break when printed alone.** Most are a one-sentence")
+w("rewrite: name the thing instead of gesturing at it, or add the link.")
+w("")
+for b, name, frag, _, _ in unlinked:
+    page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>  `[{name}]`")
+    w(f"      \u2026{frag}\u2026")
+    spot("rewrite / add link / fine as-is")
+w("" if unlinked else "- none")
+w("")
+
+w(f"### C3b. Linked pointers — {len(linked)} blocks")
+w("")
+w("The pointer is a link, so a reader can follow it out of a printed page. Listed")
+w("for completeness; skip unless one reads badly.")
+w("")
+for b, name, frag, _, _ in linked:
+    w(f"- `{b['id']}` — {b['title']}  `[{name}]`")
+    w(f"      \u2026{frag}\u2026")
+w("" if linked else "- none")
+w("")
+
+w(f"### C3c. Points at its own content — {len(inblock)} blocks")
+w("")
+w("\"The chart below\" where the chart is in the same block. Correct as written —")
+w("here so you can confirm the filter is not hiding a real problem.")
+w("")
+w("<details><summary>" + str(len(inblock)) + " blocks</summary>")
+w("")
+for b, name, frag, _, _ in inblock:
+    w(f"- `{b['id']}` `[{name}]` \u2026{frag}\u2026")
+w("")
+w("</details>")
+w("")
+w("---")
+w("")
+
 # ---------------------------------------------------- C5 headings for print ---
 w("## C5. Section-block titles — what the PDF builder will print")
 w("")
@@ -283,18 +552,79 @@ sec = [b for b in BLOCKS if not b["owns_heading"] and not b.get("excluded")
 byhead = collections.Counter((b["source_page"], b["anchor"]) for b in sec)
 shared = [b for b in sec if byhead[(b["source_page"], b["anchor"])] > 1]
 
-w(f"### Never rendered anywhere — {len(shared)} blocks")
+w(f"### Titles that have never been a heading — {len(shared)} blocks")
 w("")
-w("These sit under a heading they share with other blocks, so the heading names")
-w("the *group*, not the block. Their own title has never appeared on the site.")
-w("**Read these as headings and decide if each stands alone.**")
+w("These sit under a heading they share with other blocks, so that heading names")
+w("the *group*, not the block \u2014 the block's own `title` was never a heading a")
+w("reader saw.")
 w("")
-w("| Block | Title the builder would print | Grouped under |")
-w("|---|---|---|")
-for b in sorted(shared, key=lambda b: b["id"]):
-    w(f"| `{b['id']}` | **{b['title']}** | `#{b['anchor']}` on "
-      f"{b['source_page'].replace('content/docs/free-srd/','')} |")
+w("**But most of them state their name anyway**, as a bold lead-in on the first")
+w("line: `**Disarm** *(3 AP)* \u2014 Attempt to\u2026`. Where that happens the title has")
+w("been proofread after all, and the builder would print the same words. So this")
+w("splits into a short list that needs a decision and a longer one to confirm.")
 w("")
+def names_itself(b):
+    """True if the block opens by stating its own name in bold.
+
+    Many section blocks do -- `**Disarm** *(3 AP)* - ...`. That name IS rendered
+    on the page, so the title has been proofread after all; it just is not a
+    heading. Only the blocks that never state their name are unreviewed.
+    """
+    head = re.sub(r"\s+", " ", body_of(b))[:120].lstrip("> ")
+    m = re.match(r"\*\*([^*]+?)\*\*", head)
+    if not m:
+        return None
+    lead = m.group(1).strip().rstrip(":=").strip()
+    return lead if lead.lower().startswith(b["title"].lower()[:12]) else None
+
+confirmed = [b for b in shared if names_itself(b)]
+unseen = [b for b in shared if not names_itself(b)]
+
+w(f"#### Never stated anywhere \u2014 {len(unseen)} blocks, these need a decision")
+w("")
+w("Nothing on the page prints this block's name, in any form. Whatever the PDF")
+w("builder prints is text no reader has ever checked.")
+w("")
+for b in sorted(unseen, key=lambda b: b["id"]):
+    page = b["source_page"].replace("content/docs/free-srd/", "")
+    w(f"- **`{b['id']}`** \u2192 would print **\u201c{b['title']}\u201d**"
+      f"  <sub>under `#{b['anchor']}` on {page}</sub>")
+    w(f"      opens: {first_sentence(b, 130)}")
+    spot("ok / new title")
+w("" if unseen else "- none")
+w("")
+w(f"#### Already stated as a bold lead-in \u2014 {len(confirmed)} blocks, confirm only")
+w("")
+w("These open by naming themselves \u2014 `**Disarm** *(3 AP)* \u2014 Attempt to\u2026` \u2014 so the")
+w("name **is** on the page and has been read, just as prose rather than a heading.")
+w("The builder would print the same words. Skim for anything that reads oddly as a")
+w("standalone heading; otherwise this is a no-op.")
+w("")
+for b in sorted(confirmed, key=lambda b: b["id"]):
+    w(f"- `{b['id']}` \u2014 bold lead-in \u201c{names_itself(b)}\u201d, title \u201c{b['title']}\u201d"
+      + ("  **\u2190 differ**" if names_itself(b) != b["title"] else ""))
+w("")
+spot("anything in this list read wrong as a heading")
+w("")
+w("<details><summary>Full detail for all " + str(len(shared)) + ", grouped by shared heading</summary>")
+w("")
+
+groups = collections.defaultdict(list)
+for b in shared:
+    groups[(b["source_page"], b["anchor"])].append(b)
+for (page, anchor), mem in sorted(groups.items()):
+    short = page.replace("content/docs/free-srd/", "")
+    w(f"**Under `#{anchor}` on {short}** — {len(mem)} blocks share this heading")
+    w("")
+    for b in sorted(mem, key=lambda b: b["id"]):
+        sibs = [x["title"] for x in sorted(mem, key=lambda x: x["id"]) if x["id"] != b["id"]]
+        w(f"- `{b['id']}` → would print **\u201c{b['title']}\u201d**")
+        w(f"      beside: {', '.join(sibs) if sibs else '(none)'}")
+        w(f"      opens: {first_sentence(b, 130)}")
+    w("")
+w("</details>")
+w("")
+
 w(f"The other {len(sec) - len(shared)} are the sole block under their heading, so their")
 w("title is that heading and has been proofread by being read.")
 w("")

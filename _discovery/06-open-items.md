@@ -16,12 +16,12 @@ change what the builder sees:
 
 **Would change the builder's inputs** — worth doing first:
 
-- §5 C1 — tag membership review. Tags are the builder's query surface; a hole
-  here becomes a hole in the selection UI.
-- §5 C3 — self-containment re-check. A block that leans on its old page context
-  reads wrong the moment a GM prints it alone.
-- §8 — the 15 section-block titles never rendered anywhere. `title` is what the
-  builder prints; 15 of them have never been proofread by being read.
+- §5 C1 — tag membership. Tags are the builder's query surface; a hole here
+  becomes a hole in the selection UI. **20 slots.**
+- §5 C3 — self-containment. A block that leans on its page context reads wrong
+  the moment a GM prints it alone. **9 slots.**
+- §5 C5 — titles the builder would print. **2 slots** — down from 15 once the
+  blocks that name themselves in bold were separated out.
 
 **Would not** — safe to do during or after Phase 4:
 
@@ -105,14 +105,42 @@ These would do visible damage on the live site.
 
 ## 5. Audits prepared, awaiting your review
 
-All in `_discovery/04-phase3-worksheets.md`; regenerate with `worksheets.py`.
+All in `_discovery/04-phase3-worksheets.md`. **32 annotation slots**, each an
+empty `<!-- -->` sitting under the item — type in it, freehand. An untouched slot
+means unreviewed and I leave that item alone. Regenerating the file erases
+annotations, so `worksheets.py` stays un-run while a review is in flight.
 
-- [ ] **C1 — tag membership.** 63 tags with their member lists. Scan for holes;
-      tags are the query surface the PDF builder will use.
+Suggested order: **C5** (3 slots), **C1** (20), **C3** (9). C1 before C3 because
+a tag rename would invalidate C3's quoted fragments.
+
+- [ ] **C5 — titles the builder would print.** Was 15 blocks; **2 need a
+      decision.** The other 13 open by naming themselves in bold
+      (`**Disarm** *(3 AP)* — …`), so those titles have been read on the page
+      after all and the builder prints the same words. The two left never state
+      their name anywhere: `movement/speed-tiers` and
+      `movement/speed-tiers-chart` — the same pair that turned up as the
+      composite collapsible on Vehicle Rules.
+- [ ] **C1 — tags.** 61 tags, and the review is now the anomalies rather than 63
+      membership lists (those are collapsed at the end as reference):
+      - **C1a** `action` (9) vs `actions` (11) — a real duplicate pair
+      - **C1b** 9 tags with ≤2 members — keep / merge / delete
+      - **C1c** 4 blocks with no tags at all, invisible to every query
+      - **C1d** one cohort gap, and I believe it is correct: `general` marks the
+        General tab, so the 12 Luck and Battery abilities are meant to lack it.
+        Confirm and it stops being reported.
+      - **C1e** tags-per-block distribution, to eyeball
+      - **C1f** 4 blocks carrying only structural tags
+- [ ] **C3 — self-containment.** New section; there was no tooling for this
+      before. 434 blocks swept for language pointing outside the block, then
+      filtered: comparisons dropped ("stress drops below threshold"), and
+      pointers whose referent is *inside* the same block dropped (24 of them,
+      listed collapsed as a filter sanity-check). **9 left**, all unlinked deixis
+      — "This page provides a list", "The following catalog lists", "The heal
+      times above". A linked pointer is fine; an unlinked one has nothing for a
+      printed reader to follow. Most are one-sentence rewrites.
 - [ ] **C2 — orphans and implicit edges.** 81 rule/reference blocks nothing links
-      to, plus the 18 rule couplings that have no link in the prose.
-- [ ] **C3 — self-containment re-check.** Blocks have moved a lot since Queue 2;
-      the ones most likely to lean on their old page context want a re-read.
+      to, plus the 18 rule couplings with no link in the prose. Not builder-
+      blocking; no annotation slots added yet.
 
 ## 5b. The compact index — settled
 
