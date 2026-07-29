@@ -131,6 +131,42 @@ def includes_of(path, seen=None):
     return out
 
 
+children_re = re.compile(r"\{\{<\s*children([^>]*?)/?>\}\}")
+
+
+def children_of(path):
+    """Doc paths listed by {{< children >}} on a page — mirrors the shortcode.
+
+    Without this, generating a section index would silently delete that
+    section's outbound edges from the graph, because the links no longer exist
+    in the markdown. Same trap `blockdetails` had.
+    """
+    calls = children_re.findall(PAGES[path]["body"])
+    if not calls:
+        return []
+    out = []
+    for call in calls:
+        params = dict(param_re.findall(call))
+        section = path
+        if params.get("page"):
+            section = PAGE_BY_URL.get(params["page"].rstrip("/") + "/")
+            if not section:
+                continue
+        base = os.path.dirname(section)
+        for dp in DOCS:
+            if dp == section:
+                continue
+            d = os.path.dirname(dp)
+            # direct children: a sibling file, or a subsection's own _index.md
+            if not (d == base or (os.path.dirname(d) == base and dp.endswith("_index.md"))):
+                continue
+            fm = PAGES[dp]["fm"]
+            if fm.get("bookHidden") or fm.get("draft"):
+                continue
+            out.append(dp)
+    return out
+
+
 blockset_re = re.compile(r"\{\{<\s*blockset([^>]*?)/?>\}\}")
 catalog_prop_re = re.compile(r"\{\{<\s*catalog([^>]*?)/>\}\}")
 param_re = re.compile(r'(\w+)="([^"]*)"')
@@ -450,6 +486,13 @@ for path, P in PAGES.items():
                 edges.append({"source": src, "target": cid, "type": "reference",
                               "class": "catalog", "url": None,
                               "text": blocks[cid]["title"], "file": path, "line": None})
+        # {{< children >}} renders the links a section index used to hand-write.
+        for cp in children_of(path):
+            tgt = PAGE_BLOCK.get(cp, f"page:{url_for(cp)}")
+            edges.append({"source": src, "target": tgt, "type": "reference",
+                          "class": "section-index", "url": url_for(cp),
+                          "text": PAGES[cp]["fm"].get("title"), "file": path,
+                          "line": None})
 
 for ie in IMPLICIT:
     edges.append({"source": ie["source"], "target": ie["target"], "type": "reference",

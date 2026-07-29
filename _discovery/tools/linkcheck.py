@@ -19,8 +19,6 @@ for f in glob.glob(B+"/**/index.html",recursive=True):
             if not path.endswith("/"): path+="/"
         if path not in ids: broken.append((src,href,"no-page"))
         elif frag and frag not in ids[path]: broken.append((src,href,"no-anchor"))
-known=[b for b in broken if "tool-kits" in b[1]]
-real=[b for b in broken if "tool-kits" not in b[1]]
-print(f"links scanned OK. broken (excluding {len(known)} known tool-kits): {len(real)}")
-for b in real[:20]: print("   ",b)
-sys.exit(1 if real else 0)
+print(f"links scanned OK. broken: {len(broken)}")
+for b in broken[:20]: print("   ",b)
+sys.exit(1 if broken else 0)

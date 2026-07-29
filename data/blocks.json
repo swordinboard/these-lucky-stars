@@ -11435,7 +11435,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "All melee. +2 damage, changes type to shock. FORT check or lose 1 AP."
+  "summary": "All melee. +1 damage, changes type to shock. FORT check or lose 1 AP."
  },
  {
   "id": "sci-fi-equipment/shock-rifle",
@@ -11593,7 +11593,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "30pts protection, 20ft radius, up to 6 rounds."
+  "summary": "40pts protection, 20ft radius, up to 6 rounds."
  },
  {
   "id": "sci-fi-equipment/standard-issue-knife",

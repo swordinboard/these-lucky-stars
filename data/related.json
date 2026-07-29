@@ -1677,6 +1677,32 @@
    ]
   }
  ],
+ "content/docs/free-srd/inventory--equipment/tool-kits.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/proficiencies/_index.md",
+   "url": "/docs/free-srd/character-creation/proficiencies/",
+   "title": "Proficiencies",
+   "blurb": "weapon types, tools, armor, and skills that provide passive bonuses or unlock actions",
+   "out": 3,
+   "in": 0,
+   "via": [
+    "proficiencies/b-e-kit",
+    "proficiencies/disguise-kit",
+    "proficiencies/repair-kit"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/character-creation/abilities/_index.md",
+   "url": "/docs/free-srd/character-creation/abilities/",
+   "title": "Abilities",
+   "blurb": "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "abilities/kit-trap"
+   ]
+  }
+ ],
  "content/docs/free-srd/sci-fi-module.md": [
   {
    "page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",

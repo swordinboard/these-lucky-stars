@@ -36,9 +36,9 @@ What it checks, and why each one exists:
 
 **Known/accepted failures** (safe to merge with these):
 
-- One broken link: `/docs/free-srd/inventory--equipment/tool-kits/` in
-  `generic-equipment.md` — a generic Tool Kits page is planned but not written.
-  `linkcheck.py` excludes it by name; remove that exclusion when the page exists.
+- ~~One broken link to a missing Tool Kits page.~~ **Resolved** — the page exists
+  and `linkcheck.py` no longer excludes anything. **Zero broken links is now the
+  expected result**; treat any at all as a failure.
 - With a baseline, `rendercheck` reports differences for anything you changed on
   purpose. Read the list; it should only contain your intended edits.
 
@@ -411,6 +411,48 @@ Titles should read as the name a *reader* sees, not as the id.
 
 ---
 
+## Section index lists (the `children` shortcode)
+
+A section `_index.md` whose whole body is a list of its children should call:
+
+```
+{{< children >}}
+```
+
+It lists the section's child pages **in nav order** (by `weight`), so the list and
+the sidebar cannot disagree. `bookHidden` pages are skipped; drafts never reach
+the template.
+
+Generating these caught three drifts the hand-written lists had accumulated:
+Character Creation still listed the old Proficiencies-before-Traits order,
+Inventory & Equipment had two entries transposed and was missing Tool Kits
+entirely, and Sci-Fi Equipment listed a curated order that the **nav was not
+using** — all four of its children shared `weight: 2`, so Hugo was falling back
+to title order. The weights are now distinct and both agree.
+
+**Ties are the trap.** Equal weights among siblings mean Hugo orders by title,
+which is rarely what a hand-written list says. If a generated list comes out in a
+surprising order, look for a shared `weight` before anything else.
+
+Three section indexes stay hand-written on purpose, and should:
+
+- **Races** — its five children are all `bookHidden`, and the page groups them
+  Core / Sci-Fi in columns.
+- **Bots & Drones** — grouped into Drone and Robot platforms, with blurbs and a
+  `*(TBD)*` entry for a platform that does not exist yet.
+- **`docs/_index.md`** — three children with curated one-line blurbs.
+
+`desc="true"` appends each child's `description`, but most descriptions here are
+written for search engines and run far too long for a list. Check before using.
+
+`builddata.py` resolves `{{< children >}}` the same way, so the section-index
+edges stay in the graph. **Any new shortcode that emits links or places blocks
+has to be taught to `builddata.py` in the same commit** — otherwise the graph
+silently loses edges and blocks start looking orphaned. This has now bitten
+twice: `blockdetails` and `children`.
+
+---
+
 ## Related sections (the `related` shortcode)
 
 ```
@@ -598,8 +640,9 @@ Page content starts here...
 
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
-- Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `related`,
-  `download-card`, `columns`, `roadmap`, `quickref` — all in `layouts/_shortcodes/`,
+- Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `children`,
+  `related`, `download-card`, `columns`, `roadmap`, `quickref` — all in
+  `layouts/_shortcodes/`,
   plus `details` / `tabs` / `tab` from the theme
 - **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
   naming each part of the call. Read the top of the file rather than guessing from

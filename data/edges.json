@@ -4921,48 +4921,63 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/",
-  "target": "page:/docs/free-srd/inventory--equipment/inventory/",
-  "type": "reference",
-  "url": "inventory/",
-  "text": "Inventory Management",
-  "file": "content/docs/free-srd/inventory--equipment/_index.md",
-  "line": 11
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/equipment/",
   "type": "reference",
-  "url": "equipment/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/equipment/",
   "text": "Equipment Overview",
   "file": "content/docs/free-srd/inventory--equipment/_index.md",
-  "line": 12
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
   "type": "reference",
-  "url": "generic-equipment/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/generic-equipment/",
   "text": "Generic Equipment",
   "file": "content/docs/free-srd/inventory--equipment/_index.md",
-  "line": 13
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/",
+  "target": "page:/docs/free-srd/inventory--equipment/inventory/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/inventory/",
+  "text": "Inventory Management",
+  "file": "content/docs/free-srd/inventory--equipment/_index.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/item-tags/",
   "type": "reference",
-  "url": "item-tags/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/",
   "text": "Item Tags",
   "file": "content/docs/free-srd/inventory--equipment/_index.md",
-  "line": 14
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/",
+  "target": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/tool-kits/",
+  "text": "Tool Kits",
+  "file": "content/docs/free-srd/inventory--equipment/_index.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "type": "reference",
-  "url": "sci-fi-equipment/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "text": "Sci-Fi Equipment",
   "file": "content/docs/free-srd/inventory--equipment/_index.md",
-  "line": 15
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/equipment/",
@@ -5092,14 +5107,12 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
-  "target": "unresolved:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "page:/docs/free-srd/inventory--equipment/tool-kits/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/tool-kits/",
   "text": "Tool Kits",
   "file": "content/docs/free-srd/inventory--equipment/generic-equipment.md",
-  "line": 179,
-  "class": "known-broken",
-  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+  "line": 179
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/generic-equipment/",
@@ -6031,49 +6044,99 @@
   "line": null
  },
  {
-  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+  "source": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
   "type": "reference",
-  "url": "sci-fi-weapons/",
-  "text": "Sci-Fi Weapons",
-  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": 11
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
+  "text": "Sci-Fi Tool Kits",
+  "file": "content/docs/free-srd/inventory--equipment/tool-kits.md",
+  "line": 28
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "proficiencies/b-e-kit",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/proficiencies/#be-kit-proficiency",
+  "text": "B&E Kit",
+  "file": "content/docs/free-srd/inventory--equipment/tool-kits.md",
+  "line": 34
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "proficiencies/disguise-kit",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/proficiencies/#disguise-kit-proficiency",
+  "text": "Disguise Kit",
+  "file": "content/docs/free-srd/inventory--equipment/tool-kits.md",
+  "line": 35
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "proficiencies/repair-kit",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/proficiencies/#repair-kit-proficiency",
+  "text": "Repair Kit",
+  "file": "content/docs/free-srd/inventory--equipment/tool-kits.md",
+  "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/tool-kits/",
+  "target": "abilities/kit-trap",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/abilities/#kit-trap",
+  "text": "Kit Trap",
+  "file": "content/docs/free-srd/inventory--equipment/tool-kits.md",
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "type": "reference",
-  "url": "sci-fi-armor/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "text": "Sci-Fi Armor",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": 12
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
   "type": "reference",
-  "url": "sci-fi-kits/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
   "text": "Sci-Fi Tool Kits",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": 13
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
   "type": "reference",
-  "url": "sci-fi-misc-equipment/",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
   "text": "Sci-Fi Misc Equipment",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": 14
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
+  "text": "Sci-Fi Weapons",
+  "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
   "type": "reference",
-  "url": "bots--drones/",
-  "text": "Sci-Fi Robots and Drones",
+  "class": "section-index",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "text": "Bots & Drones",
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/_index.md",
-  "line": 15
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
@@ -7220,111 +7283,123 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/basics/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/",
   "type": "reference",
-  "url": "basics/",
-  "text": "The Basics",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/action-economy/",
+  "text": "Action Economy",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 11
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/attributes/",
   "type": "reference",
-  "url": "attributes/",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/attributes/",
   "text": "Attributes",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 12
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/basics/",
   "type": "reference",
-  "url": "size/",
-  "text": "Size",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/basics/",
+  "text": "The Basics",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 13
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/stats/",
-  "type": "reference",
-  "url": "stats/",
-  "text": "Stats",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 14
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/",
-  "type": "reference",
-  "url": "action-economy/",
-  "text": "Action Economy",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 15
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/health/",
-  "type": "reference",
-  "url": "health/",
-  "text": "Health",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 16
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/combat/",
   "type": "reference",
-  "url": "combat/",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/wounds--conditions/",
-  "type": "reference",
-  "url": "wounds--conditions/",
-  "text": "Wounds & Conditions",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 18
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/environmental-effects/",
-  "type": "reference",
-  "url": "environmental-effects/",
-  "text": "Environmental Effects",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/core-rules/",
-  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "type": "reference",
-  "url": "vehicle-rules/",
-  "text": "Vehicle Rules",
-  "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 20
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
   "type": "reference",
-  "url": "damaged--broken-gear/",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged & Broken Gear",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 21
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/environmental-effects/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/environmental-effects/",
+  "text": "Environmental Effects",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/health/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/health/",
+  "text": "Health",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "type": "reference",
-  "url": "sci-fi-additions/",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/",
   "text": "Sci-Fi Additions",
   "file": "content/docs/free-srd/core-rules/_index.md",
-  "line": 22
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "core-rules/size",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "Size",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/stats/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/stats/",
+  "text": "Stats",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/wounds--conditions/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/",
+  "text": "Wounds & Conditions",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8878,46 +8953,51 @@
   "source": "page:/docs/free-srd/character-creation/",
   "target": "chargen/overview",
   "type": "reference",
-  "url": "character-creation-overview/",
+  "class": "section-index",
+  "url": "/docs/free-srd/character-creation/character-creation-overview/",
   "text": "Character Creation Overview",
   "file": "content/docs/free-srd/character-creation/_index.md",
-  "line": 11
- },
- {
-  "source": "page:/docs/free-srd/character-creation/",
-  "target": "races/overview",
-  "type": "reference",
-  "url": "races/",
-  "text": "Races",
-  "file": "content/docs/free-srd/character-creation/_index.md",
-  "line": 12
- },
- {
-  "source": "page:/docs/free-srd/character-creation/",
-  "target": "page:/docs/free-srd/character-creation/proficiencies/",
-  "type": "reference",
-  "url": "proficiencies/",
-  "text": "Proficiencies",
-  "file": "content/docs/free-srd/character-creation/_index.md",
-  "line": 13
- },
- {
-  "source": "page:/docs/free-srd/character-creation/",
-  "target": "page:/docs/free-srd/character-creation/abilities/",
-  "type": "reference",
-  "url": "abilities/",
-  "text": "Abilities",
-  "file": "content/docs/free-srd/character-creation/_index.md",
-  "line": 14
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/character-creation/",
   "target": "page:/docs/free-srd/character-creation/traits/",
   "type": "reference",
-  "url": "traits/",
+  "class": "section-index",
+  "url": "/docs/free-srd/character-creation/traits/",
   "text": "Traits",
   "file": "content/docs/free-srd/character-creation/_index.md",
-  "line": 15
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/",
+  "target": "page:/docs/free-srd/character-creation/proficiencies/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/character-creation/proficiencies/",
+  "text": "Proficiencies",
+  "file": "content/docs/free-srd/character-creation/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/",
+  "target": "page:/docs/free-srd/character-creation/abilities/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/character-creation/abilities/",
+  "text": "Abilities",
+  "file": "content/docs/free-srd/character-creation/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/character-creation/",
+  "target": "races/overview",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/character-creation/races/",
+  "text": "Races",
+  "file": "content/docs/free-srd/character-creation/_index.md",
+  "line": null
  },
  {
   "source": "chargen/overview",

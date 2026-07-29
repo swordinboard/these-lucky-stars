@@ -4,7 +4,38 @@ Everything outstanding, in one place. The Phase 1–3 decision docs (`03`, `05`)
 are records of *decisions*; this is the running list of *work*. Annotate it the
 way you did the queues.
 
-Last synced against the tree at `33411b3`.
+Last synced against the tree at `8c11c20`.
+
+---
+
+## 0. What is left before the builder
+
+Phase 4 is **not blocked**. Nothing below has to happen first — the data the
+builder consumes is complete and rebuildable today. Sorted by whether it would
+change what the builder sees:
+
+**Would change the builder's inputs** — worth doing first:
+
+- §5 C1 — tag membership review. Tags are the builder's query surface; a hole
+  here becomes a hole in the selection UI.
+- §5 C3 — self-containment re-check. A block that leans on its old page context
+  reads wrong the moment a GM prints it alone.
+- §8 — the 15 section-block titles never rendered anywhere. `title` is what the
+  builder prints; 15 of them have never been proofread by being read.
+
+**Would not** — safe to do during or after Phase 4:
+
+- §1 both items (merge hygiene, not builder inputs)
+- §2 B10 (one rules-text inconsistency)
+- §5 C2 orphans, §5d duplicate page headings, §6 chrome, §7 playtest
+- §4 Move 1 and Move 3 — both deliberately waiting on content that does not
+  exist yet
+
+**Already done and load-bearing for the builder:** `data/blocks.json` with
+`wip`/`owns_heading`/`url`/`page_urls`/`requires`, `data/edges.json` with
+dependency/reference/include edges, `{{< blockset >}}` performing select-and-
+assemble on the live site, and a preflight that now reports **zero** broken
+links with no exclusions.
 
 ---
 
@@ -23,53 +54,63 @@ These would do visible damage on the live site.
       for the same setting. Keep both, or drop the equipment stubs and let the
       module page be the only placeholder until there is content?
 
-## 2. Content gaps the generated tables now expose
+## 2. Content gaps the generated tables expose
 
-- [ ] **9 blocks render a blank summary cell** — the 4 bot platforms (BAL, HEL-1,
-      T00L, TRK-A) and the 5 races. Both sets are WIP stubs, so this is writing,
-      not fixing. Tracked live by `worksheets.py`.
-      <!-- correct for now, okay to send, all wip pages --> 
-- [ ] **B1 — Student / Expert require "INT"**, but the system has KNO.
-      <!-- change to KNO -->
-- [ ] **B2 — Shock Charger**: summary said +2, rules text says +1.
-      <!-- change to +1 -->
-- [ ] **B3 — Squad Shield**: summary said 30pts, rules text says 40.
-      <!-- change to 40 -->
-- [ ] **B4 — Fast Kit Trap**: 12 AP retrieval vs Kit Trap's 20 — discount or typo?
-      <!-- discount is correct -->
-- [ ] **B5 — Backup Power Cell**: old table said Back, block says Belt twice.
-      Currently resolves to Belt.       <!-- belt is correct -->
-- [ ] **B9 — the Tool Kits hole.** `generic-equipment.md` links to a generic Tool
-      Kits page that does not exist. The one intentionally broken link; excluded
-      by name in `linkcheck.py`. Remove that exclusion when the page lands.
-      <!-- need to add a generic tool kits page wip placeholder, nested under generic equipment or alongsixe generic equipment, weight directly below -->
+- [x] ~~**9 blocks render a blank summary cell**~~ — the 4 bot platforms (BAL,
+      HEL-1, T00L, TRK-A) and the 5 races. **Accepted as-is**: every one is on a
+      `wip: true` page, so the blank reads as unfinished rather than broken.
+      Still tracked live by `worksheets.py` for when the stubs get written.
+- [x] ~~B1 — Student / Expert require "INT"~~ → **KNO**, in three places: both
+      prerequisite lines and Expert's rules text. `INT` no longer appears
+      anywhere in `content/`.
+- [x] ~~B2 — Shock Charger +2 vs +1~~ → **+1**. The summary was wrong; the rules
+      text was right.
+- [x] ~~B3 — Squad Shield 30pts vs 40~~ → **40**. Same shape: summary wrong,
+      rules text right.
+- [x] ~~B4 — Fast Kit Trap 12 AP vs Kit Trap's 20~~ → **the discount is
+      correct**, no change.
+- [x] ~~B5 — Backup Power Cell, Back vs Belt~~ → **Belt is correct**, no change.
+- [x] ~~B9 — the Tool Kits hole.~~ **Page written**, at
+      `inventory--equipment/tool-kits.md`, `wip: true`, weight 30 — directly
+      below Generic Equipment and above Sci-Fi Equipment. It carries the
+      setting-agnostic kit rules (equip slots, 1d12 supply, refills), links out
+      to the sci-fi catalog as the only concrete set so far, and points at the
+      three kit proficiencies and Kit Trap. The `linkcheck.py` exclusion is
+      **gone**; the site now reports zero broken links with nothing excluded.
+
+- [ ] **B10 (new) — Student grants +2, Expert calls it "+1".** Found while
+      fixing B1. `abilities/student` says "gain a +2 bonus"; `abilities/expert`
+      says "add your KNO bonus rather than the +1 bonus provided". One of the two
+      numbers is wrong and it is a rules call, not a typo I should guess at.
 
 ## 3. Parked features
 
 - [ ] **Related section generation.** `{{< related >}}` works and runs live on
       Vehicle Rules, but the generated list loses the editorial intent of the
       five hand-written ones — it knows what links where, not where a reader
-      *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.      <!-- keep parked -->
-      Needs a think, not a script.
-- [ ] **A4 — generated section index lists.** The hand-written bullet lists on
-      each section `_index.md` are duplicated nav. You said wait until the nav
-      settled; it now has, apart from Move 1 below.
-      *Precedent set:* the Item Tags jump list is now
-      `{{< catalog namespace="item-tags" layout="names" />}}`. It had already
-      drifted from the blocks it pointed at — wrong sort order, and `[___]` on
-      three entries the titles had dropped — which is the argument for doing the
-      rest.     
-       <!-- _index pages that show just a list of chikdren an be generated to match the nav order, nav has mostly settled-->
+      *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.
+      **Staying parked by your call.** Needs a think, not a script.
+- [x] ~~**A4 — generated section index lists.**~~ **Done**, as
+      `{{< children >}}`, on the four `_index.md` pages whose whole body was a
+      child list: Core Rules, Character Creation, Inventory & Equipment, Sci-Fi
+      Equipment. Ordered by `weight`, so list and sidebar cannot disagree.
+
+      It caught three drifts immediately. Character Creation still listed the old
+      Proficiencies-before-Traits order. Inventory & Equipment had two entries
+      transposed *and* was missing Tool Kits. Sci-Fi Equipment listed a curated
+      order the **nav was not using** — all four children shared `weight: 2`, so
+      Hugo was ordering by title; the weights are now distinct and both agree.
+
+      Races, Bots & Drones and `docs/_index.md` stay hand-written on purpose:
+      they group, blurb, or name something that does not exist yet.
 
 ## 4. Structure still on the table
 
 - [x] ~~Races: split like the others?~~ **Intentionally not split** — races have
       a different setup, one page per race behind a hub.
-        <!-- correct -->
-- [ ] **Page-per-feature (the wiki model).** Whether abilities/proficiencies/
-      traits each become their own page like races do. Measurements and the
-      argument are in the section below.
-        <!-- not going with it, discussed, set to remove from list -->
+- [x] ~~**Page-per-feature (the wiki model).**~~ **Not doing it** — decided.
+      The compact index gave us what the d20 feats page was actually good at
+      without 114 new pages, most of them under 40 words.
 - [ ] **Move 1 — sci-fi equipment under the module.** 6 pages, 36 links across 19
       files, 1 wildcard redirect. *Recommendation: do it when the other module
       catalogs go live, so it is one move instead of two.*
@@ -88,39 +129,24 @@ All in `_discovery/04-phase3-worksheets.md`; regenerate with `worksheets.py`.
 - [ ] **C3 — self-containment re-check.** Blocks have moved a lot since Queue 2;
       the ones most likely to lean on their old page context want a re-read.
 
-## 5b. Page-per-feature — the wiki question
+## 5b. The compact index — settled
 
-The reference for this is the d20 3.5 SRD feats index: every feature on its own
-page, one hub page listing them. Two separable ideas came out of it.
+The reference was the d20 3.5 SRD feats index. Two separable ideas came out of
+it; **the index shipped and the page-per-feature half did not.**
 
-**The compact index** is done: `{{< catalog layout="names" />}}` drops the
-summary column and flows linked names into columns. It is now on **all six**
-feature pages — Abilities, Proficiencies and Traits, core and sci-fi — after the
-side-by-side comparison went the compact way.
+`{{< catalog layout="names" />}}` drops the summary column and flows linked names
+into responsive columns. It is on all six feature pages — Abilities,
+Proficiencies and Traits, core and sci-fi — and on the Item Tags jump list.
 
-Consequence worth knowing: the feature pages no longer print `summary` anywhere.
-The one-liners are still live — they feed the Sci-Fi Module hub tables and
-`data/blocks.json` — but a reader on the Traits page now sees names and reads the
-entry, rather than skimming a blurb column. Keep writing summaries; the builder
-and the hubs need them.
+A page per feature was measured and declined: **114 new pages** (76 abilities, 18
+proficiencies, 20 traits), site count 59 → ~173, 34 inbound links to rewrite, for
+a **median block length of 46 words** — 44 of the 114 under 40, and `traits/alert`
+is 10. Races earn their own pages because artwork and lore are coming; a 10-word
+trait reads worse alone than as a row in a list.
 
-**A page per feature** is the bigger half, and the numbers argue for care:
-
-| | |
-|---|---|
-| Pages created | **114** (76 abilities, 18 proficiencies, 20 traits) |
-| Site page count | 59 → ~173 |
-| Inbound links to rewrite | 34, across 34 files |
-| Median block length | **46 words** |
-| Blocks under 40 words | **44 of 114** — `traits/alert` is 10 words |
-
-Races justify their own pages because artwork and lore are coming. A 10-word
-trait does not obviously want a page of its own, and a page that thin reads worse
-than a row in a list. The three namespaces may also deserve different answers:
-abilities are the longest and most numerous, traits the shortest.
-
-Nothing about this is blocked — the blocks are already separate files, so it is a
-relocation, not a rewrite. Worth deciding after the compact index is seen live.
+Consequence of the compact index worth remembering: the feature pages no longer
+print `summary` anywhere. The one-liners are still live — they feed the module
+hub tables and `data/blocks.json` — so keep writing them. The builder needs them.
 
 ## 5c. `requires` and the prerequisite line — settled
 
@@ -229,10 +255,10 @@ heading as well as the content, and a raw snippet stops reading as a document.
 
 - [ ] **"How this SRD is organized"** — a short explanation of blocks and modules
       for readers. You suggested the Free SRD index or the landing page.
-- [ ] **Section landing pages** — your call was that the ones not reached by nav
-      stay link lists. The new `abilities/`, `proficiencies/` and `traits/`
-      section indexes are reached by nav and currently open straight into the
-      core content, which reads fine — worth a look on the preview.
+- [x] ~~**Section landing pages**~~ — resolved by A4. The four that were pure
+      link lists are generated; the three that group or blurb stay hand-written.
+      Abilities, Proficiencies and Traits open straight into their core content
+      and now carry a line pointing at their setting-specific page.
 - [ ] **Builder announcement page** — not until there is a beta.
 - [ ] **`quickref` shortcode** — defined, unused, duplicates `details`. Parked by
       your call; delete it if it is still unused when this is done.
@@ -283,11 +309,16 @@ Kept short; the commit messages carry the detail.
 
 - Blocks extracted, frontmatter written, canonical data generated and rebuildable
 - Quick-reference tables single-sourced from `summary`
-- `wip: true` as one toggle; `tier` and `reference` dropped
+- `wip: true` as one toggle; `tier`, `reference` and `headless` dropped
 - Δ retired; `[___]` out of every title, label and anchor
 - Four proficiencies disambiguated from the items they share a name with
-- `catalog` gained property selection and cross-page links; `blockset` and
-  `related` added
+- `catalog` gained property selection, cross-page links and `layout="names"`;
+  `blockset`, `related`, `blockdetails` and `children` added
+- Every custom shortcode carries a SIGNATURE / EXAMPLE / ARGUMENTS header
 - Sci-Fi Module page built as quick reference, nothing rendered twice
-- Character options split per module (Option 3)
+- Character options split per module (Option 3); nav ordered by when the choice
+  is made; feature indexes collapsed with core→module pointers
+- 318 of 320 collapsibles converted to `blockdetails`, killing the label drift
+- Section index lists generated from nav order
+- Tool Kits page written — **the site now has zero broken links, no exclusions**
 - Preflight: build, snippet lint, link check, data freshness, rendered-text diff
