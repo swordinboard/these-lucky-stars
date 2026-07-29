@@ -5,9 +5,9 @@ worksheets.py — regenerate the Phase 3 audit worksheets from data/.
     python3 _discovery/tools/worksheets.py
 
 Writes _discovery/04-phase3-worksheets.md: tag membership, orphaned blocks,
-implicit edges, feature-prerequisite cross-checks, and a hand-written-vs-
-generated comparison of the Related sections. Pure read + report; it never touches content. Re-run it after
-`builddata.py` whenever you want a fresh review sheet.
+implicit edges, feature-prerequisite cross-checks, section-block heading
+readiness, and a hand-written-vs-generated comparison of the Related sections.
+Pure read + report; it never touches content. Re-run it after `builddata.py`.
 """
 import json, os, re, collections
 
@@ -169,9 +169,9 @@ w("   category conditions (\"any tool kit\") stay prose.")
 w("3. **The index nesting** (`- ` / `-- ` in a catalog) — where a reader meets")
 w("   the entry. Recorded as `listed_under`.")
 w("")
-w("**2 and 3 are not the same thing and must not be merged.** Slip Strike is")
-w("listed under Momentum Dodge because it builds on that chain, but requires")
-w("Agile Dodge. Both are right.")
+w("**2 and 3 are not the same thing and must not be merged.** They agree today,")
+w("but 39 `requires` point into a different list entirely, which no index tree")
+w("can show — so neither can be generated from the other.")
 w("")
 
 URL2ID = {}
@@ -261,6 +261,71 @@ for b in feats:
 w(f"Also worth remembering: **{crossns}** `requires` point at a feature in another")
 w("list (abilities depending on proficiencies or traits). No index tree can show")
 w("those, which is the other reason the nesting cannot be generated from them.")
+w("")
+w("---")
+w("")
+
+# ---------------------------------------------------- C5 headings for print ---
+w("## C5. Section-block titles — what the PDF builder will print")
+w("")
+w("104 blocks carry no heading of their own; the host page supplies one. Anything")
+w("re-assembling them elsewhere — `{{< blockset >}}` today, the PDF builder later —")
+w("prints `title` instead. For most of them that title has already been proofread,")
+w("because it *is* the heading a reader sees. For a few it has never been rendered")
+w("anywhere, and those are the ones that can print wrong.")
+w("")
+w("This is how `sci-fi/huds` was caught printing \"Huds\" instead of")
+w("\"Heads Up Displays (HUDs)\".")
+w("")
+
+sec = [b for b in BLOCKS if not b["owns_heading"] and not b.get("excluded")
+       and b.get("source_page")]
+byhead = collections.Counter((b["source_page"], b["anchor"]) for b in sec)
+shared = [b for b in sec if byhead[(b["source_page"], b["anchor"])] > 1]
+
+w(f"### Never rendered anywhere — {len(shared)} blocks")
+w("")
+w("These sit under a heading they share with other blocks, so the heading names")
+w("the *group*, not the block. Their own title has never appeared on the site.")
+w("**Read these as headings and decide if each stands alone.**")
+w("")
+w("| Block | Title the builder would print | Grouped under |")
+w("|---|---|---|")
+for b in sorted(shared, key=lambda b: b["id"]):
+    w(f"| `{b['id']}` | **{b['title']}** | `#{b['anchor']}` on "
+      f"{b['source_page'].replace('content/docs/free-srd/','')} |")
+w("")
+w(f"The other {len(sec) - len(shared)} are the sole block under their heading, so their")
+w("title is that heading and has been proofread by being read.")
+w("")
+
+w("### Heading level is the bigger print problem")
+w("")
+lv = collections.Counter()
+for b in BLOCKS:
+    if b["owns_heading"] and b["home"] == "snippet":
+        try:
+            body = open(D(b["file"])).read().split("\n---", 1)[1]
+        except (OSError, IndexError):
+            continue
+        m = re.search(r"^(#{1,6})\s", body, re.M)
+        if m:
+            lv[len(m.group(1))] += 1
+w("The blocks that *own* a heading hard-code its level in their markdown:")
+w("")
+for k in sorted(lv):
+    w(f"- **h{k}** — {lv[k]} blocks")
+w("")
+w("So a GM who assembles a PDF and puts one of those at a different depth gets a")
+w("heading at the wrong level, and the markdown cannot bend. The 104 blocks with")
+w("*no* heading are the flexible ones — they carry a title and let whatever renders")
+w("them choose the level.")
+w("")
+w("**The builder should print every block the same way: take `title`, choose the")
+w("level from where the GM placed it, and skip the block's own leading heading")
+w("when `owns_heading` is true.** That pair of fields is exactly what makes the")
+w("normalisation possible — no content change needed, and the two shapes stop")
+w("mattering at print time.")
 w("")
 w("---")
 w("")

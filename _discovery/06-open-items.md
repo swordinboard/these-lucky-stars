@@ -148,6 +148,29 @@ The nesting and `requires` agree on all 29 nested blocks.
       and `{{< blockset >}}`, which performs the builder's core operation —
       select blocks by property, assemble into a larger one — on the live site.
 
+### Headings, when a GM rearranges blocks
+
+Worth settling before the builder prints anything. Measured, in `04-…§C5`:
+
+- **319 blocks own a heading and hard-code its level** — 298 at `h3`, 20 at `h4`,
+  1 at `h2`. Put one of those at a different depth in an assembled document and
+  the level is wrong, and the markdown cannot bend.
+- **104 blocks own no heading** and carry only `title`. Those are the *flexible*
+  ones — whatever renders them picks the level.
+
+So the shape that looked like the liability is the one that behaves, and the
+majority is the constrained set. **The builder should print every block the same
+way: take `title`, choose the level from where the GM placed it, and skip the
+block's own leading heading when `owns_heading` is true.** No content change
+needed — `owns_heading` + `title` is exactly the pair that makes it possible.
+
+- [ ] **15 section-block titles have never been rendered anywhere** (§C5). They
+      sit under a shared group heading — "Aggressive Actions" over Standard
+      Attack, Disarm, Grapple and the rest — so the block's own title has never
+      been proofread by being read. This is how `sci-fi/huds` printed "Huds".
+      Most read fine; `movement/speed-tiers-chart` under "Speed Tiers" is the
+      one I would look at first.
+
 ---
 
 ## Done since the restructure began

@@ -1460,9 +1460,9 @@ sitting in the data.
 3. **The index nesting** (`- ` / `-- ` in a catalog) — where a reader meets
    the entry. Recorded as `listed_under`.
 
-**2 and 3 are not the same thing and must not be merged.** Slip Strike is
-listed under Momentum Dodge because it builds on that chain, but requires
-Agile Dodge. Both are right.
+**2 and 3 are not the same thing and must not be merged.** They agree today,
+but 39 `requires` point into a different list entirely, which no index tree
+can show — so neither can be generated from the other.
 
 ### `requires` against the prerequisite line
 
@@ -1484,6 +1484,65 @@ something they do not require.
 Also worth remembering: **39** `requires` point at a feature in another
 list (abilities depending on proficiencies or traits). No index tree can show
 those, which is the other reason the nesting cannot be generated from them.
+
+---
+
+## C5. Section-block titles — what the PDF builder will print
+
+104 blocks carry no heading of their own; the host page supplies one. Anything
+re-assembling them elsewhere — `{{< blockset >}}` today, the PDF builder later —
+prints `title` instead. For most of them that title has already been proofread,
+because it *is* the heading a reader sees. For a few it has never been rendered
+anywhere, and those are the ones that can print wrong.
+
+This is how `sci-fi/huds` was caught printing "Huds" instead of
+"Heads Up Displays (HUDs)".
+
+### Never rendered anywhere — 15 blocks
+
+These sit under a heading they share with other blocks, so the heading names
+the *group*, not the block. Their own title has never appeared on the site.
+**Read these as headings and decide if each stands alone.**
+
+| Block | Title the builder would print | Grouped under |
+|---|---|---|
+| `actions/move` | **Move** | `#movement-actions` on core-rules/action-economy.md |
+| `actions/step` | **Step** | `#movement-actions` on core-rules/action-economy.md |
+| `combat/brace` | **Brace** | `#defensive-actions` on core-rules/combat.md |
+| `combat/disarm` | **Disarm** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/draw-a-weapon` | **Draw a Weapon** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/grapple` | **Grapple** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/shatter` | **Shatter** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/stand` | **Stand** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/standard-attack` | **Standard Attack** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/stealth` | **Stealth** | `#defensive-actions` on core-rules/combat.md |
+| `combat/trip` | **Trip** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/unarmed-attack` | **Unarmed Attack** | `#aggressive-actions` on core-rules/combat.md |
+| `combat/use-cover` | **Use Cover** | `#defensive-actions` on core-rules/combat.md |
+| `movement/speed-tiers` | **Speed Tiers** | `#speed-tiers` on core-rules/action-economy.md |
+| `movement/speed-tiers-chart` | **Speed Tiers Chart** | `#speed-tiers` on core-rules/action-economy.md |
+
+The other 89 are the sole block under their heading, so their
+title is that heading and has been proofread by being read.
+
+### Heading level is the bigger print problem
+
+The blocks that *own* a heading hard-code its level in their markdown:
+
+- **h2** — 1 blocks
+- **h3** — 298 blocks
+- **h4** — 20 blocks
+
+So a GM who assembles a PDF and puts one of those at a different depth gets a
+heading at the wrong level, and the markdown cannot bend. The 104 blocks with
+*no* heading are the flexible ones — they carry a title and let whatever renders
+them choose the level.
+
+**The builder should print every block the same way: take `title`, choose the
+level from where the GM placed it, and skip the block's own leading heading
+when `owns_heading` is true.** That pair of fields is exactly what makes the
+normalisation possible — no content change needed, and the two shapes stop
+mattering at print time.
 
 ---
 
