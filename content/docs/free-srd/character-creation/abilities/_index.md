@@ -1,7 +1,8 @@
 ---
 title: Abilities
 description: "Abilities in These Lucky Stars are the special actions and passive effects that set your character apart. Some improve with multiple selections; most can stack with others."
-weight: 30
+weight: 40
+bookCollapseSection: true
 ---
 
 # Abilities
@@ -10,6 +11,11 @@ weight: 30
 
 {{< tabs >}}
 {{% tab "Core General" %}}
+**This page is the core selection** — the abilities available in any setting.
+Setting-themed abilities live with their module:
+
+- [Sci-Fi Abilities](/docs/free-srd/character-creation/abilities/sci-fi/)
+
 {{< catalog layout="names" >}}
 abilities/agile-dodge
 - abilities/momentum-dodge

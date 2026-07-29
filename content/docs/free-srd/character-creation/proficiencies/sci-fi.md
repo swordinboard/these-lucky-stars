@@ -6,15 +6,11 @@ weight: 10
 
 # Sci-Fi Proficiencies
 
-{{< tabs >}}
-{{% tab "Sci-Fi" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 proficiencies/comp-jack
 proficiencies/general-robotics
 proficiencies/general-technology
 {{< /catalog >}}
-{{% /tab %}}
-{{< /tabs >}}
 
 
 ## Sci-Fi

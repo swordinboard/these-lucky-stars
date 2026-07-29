@@ -84,10 +84,16 @@ All in `_discovery/04-phase3-worksheets.md`; regenerate with `worksheets.py`.
 The reference for this is the d20 3.5 SRD feats index: every feature on its own
 page, one hub page listing them. Two separable ideas came out of it.
 
-**The compact index** is done and previewable: `{{< catalog layout="names" />}}`
-drops the summary column and flows linked names into columns. It is on both
-Abilities pages; Proficiencies and Traits still use tables, so the two styles can
-be compared directly.
+**The compact index** is done: `{{< catalog layout="names" />}}` drops the
+summary column and flows linked names into columns. It is now on **all six**
+feature pages — Abilities, Proficiencies and Traits, core and sci-fi — after the
+side-by-side comparison went the compact way.
+
+Consequence worth knowing: the feature pages no longer print `summary` anywhere.
+The one-liners are still live — they feed the Sci-Fi Module hub tables and
+`data/blocks.json` — but a reader on the Traits page now sees names and reads the
+entry, rather than skimming a blurb column. Keep writing summaries; the builder
+and the hubs need them.
 
 **A page per feature** is the bigger half, and the numbers argue for care:
 

@@ -20,7 +20,7 @@ until you also edit the page by hand, in TWO places:
 
   1. THE CATALOG. It is hand-listed, in display order, and nothing derives it:
 
-         {{< catalog header="Name|Description" >}}
+         {{< catalog layout="names" >}}
          traits/alert
          {{< /catalog >}}
 

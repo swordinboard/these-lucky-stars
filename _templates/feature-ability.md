@@ -54,7 +54,9 @@ site until you also edit the page by hand, in TWO places:
 
   Core abilities:    content/docs/free-srd/character-creation/abilities/_index.md
                      — note it has TABS. General and Luck abilities are
-                       separate catalogs; put it in the right one.
+                       separate catalogs; put it in the right one. Abilities is
+                       the only feature page still using tabs; Proficiencies and
+                       Traits have one list each.
   Sci-fi abilities:  content/docs/free-srd/character-creation/abilities/sci-fi.md
 
 The Sci-Fi Module hub picks the ability up on its own — its tables select by

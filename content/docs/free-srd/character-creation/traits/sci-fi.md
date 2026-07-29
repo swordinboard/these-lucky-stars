@@ -6,15 +6,11 @@ weight: 10
 
 # Sci-Fi Traits
 
-{{< tabs >}}
-{{% tab "Sci-Fi" %}}
-{{< catalog header="Name|Description" >}}
+{{< catalog layout="names" >}}
 traits/inter-planet-traveler
 traits/scrap-hauler
 traits/space-adept
 {{< /catalog >}}
-{{% /tab %}}
-{{< /tabs >}}
 
 
 ## Sci-Fi

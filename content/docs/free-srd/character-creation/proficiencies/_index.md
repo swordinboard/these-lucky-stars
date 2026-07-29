@@ -1,16 +1,20 @@
 ---
 title: "Proficiencies"
 description: "Proficiencies in These Lucky Stars cover what your character is trained in — weapon types, tools, armor, and skills that provide passive bonuses or unlock actions."
-weight: 20
+weight: 30
+bookCollapseSection: true
 ---
 
 ## Proficiencies
 
 {{% include "/snippets/proficiencies/overview" %}}
 
-{{< tabs >}}
-{{% tab "Core" %}}
-{{< catalog header="Name|Description" >}}
+**This page is the core selection** — the proficiencies available in any setting.
+Setting-themed proficiencies live with their module:
+
+- [Sci-Fi Proficiencies](/docs/free-srd/character-creation/proficiencies/sci-fi/)
+
+{{< catalog layout="names" >}}
 proficiencies/armor
 proficiencies/b-e-kit
 proficiencies/disguise-kit
@@ -26,8 +30,6 @@ proficiencies/vehicle
 - proficiencies/licensed-instincts
 proficiencies/weapon
 {{< /catalog >}}
-{{% /tab %}}
-{{< /tabs >}}
 
 ---
 

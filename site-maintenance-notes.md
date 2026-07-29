@@ -308,6 +308,16 @@ which had drifted, listing Pressurized before Power Source and carrying `[___]`
 on three entries the titles had long since dropped. `.four-col` is still used on
 `character-creation-overview.md`; don't delete the styles.
 
+**All six feature pages use it** — Abilities, Proficiencies and Traits, core and
+sci-fi. Those six catalogs stay **hand-listed on purpose**: the `- ` / `-- `
+indent is the prerequisite tree, and no property filter can produce it. A new
+feature needs the catalog entry and the `blockdetails` placement added by hand;
+the `_templates/feature-*.md` comments spell this out.
+
+Note the trade: `layout="names"` prints no `summary`, so the feature pages no
+longer show the one-liners. They are still live on the module hub tables and in
+`data/blocks.json` — keep writing them.
+
 ---
 
 ## Work-in-progress pages (`wip: true`)
@@ -548,6 +558,19 @@ Any URL change requires a redirect in `netlify.toml` to avoid 404s in Google Sea
 | `bookHidden: true` | Hides page AND all children from nav; page still builds and is sitemapped |
 | `weight: N` | Controls order within parent section (lower = higher in nav) |
 | `draft: true` | Page not built, not sitemapped, not accessible |
+
+Every section with visible children sets `bookCollapseSection: true`. **Races is
+the deliberate exception** — all five race pages are `bookHidden: true`, so the
+chevron would expand onto an empty list; the Races page lists them in its body
+instead.
+
+Character Creation is ordered by when you make the choice, not alphabetically:
+**Races (10) → Traits (20) → Proficiencies (30) → Abilities (40)**, with the
+overview at 1. If you add a step, weight it where the player meets it.
+
+Each of Abilities, Proficiencies and Traits opens with a short "this page is the
+core selection" line and links to its setting-specific child page, because those
+children are one click behind a collapsed nav section.
 
 ---
 
