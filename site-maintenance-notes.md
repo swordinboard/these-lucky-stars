@@ -192,6 +192,52 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
 
 ---
 
+## Collapsible entries (`details` vs the `blockdetails` shortcode)
+
+Most catalog pages wrap each block in a collapsible:
+
+```
+{{% details "Reinforced Boots" %}}
+
+{{% include "/snippets/generic-equipment/reinforced-boots" %}}
+
+{{% /details %}}
+```
+
+That types the block's name once as a label and again as a path, and **the label
+is not checked against the block**. It drifts: an audit found 10 of 320 labels
+disagreeing with the block they wrap, two of them plain errors — a summary table
+row reading "Reinforced Boots" opening an entry headed "Sturdy Boots", and a
+"Fire-Startee" label on Fire-Starter.
+
+`blockdetails` names the block once and takes the label from its `title`:
+
+```
+{{< blockdetails "generic-equipment/reinforced-boots" >}}
+{{< blockdetails "generic-equipment/reinforced-boots" open >}}
+```
+
+Rendered output is byte-identical to the two-part form. Two differences that
+matter:
+
+- The `<summary>` label **cannot** drift from the entry it opens.
+- A bad id **fails the build** with the id and calling page named, where
+  `include` renders nothing at all (rule #2 above).
+
+Note `<summary>` carries no `id` — for a details-wrapped block the heading
+*inside* the snippet is what the anchor comes from, so that heading stays.
+
+`builddata.py` reads `blockdetails` as a placement exactly like an include, so
+`pages`, `page_urls`, anchors and include edges all come out the same. If you add
+another shortcode that displays a block, teach `builddata.py` about it in the
+same breath or the block will look unplaced.
+
+**Rollout is incomplete** — 320 call sites still use the two-part form. Both
+work; convert opportunistically or in one pass. Tracked in
+`_discovery/06-open-items.md` §5d.
+
+---
+
 ## Quick-reference tables (the `catalog` shortcode)
 
 The summary tables on the catalog pages are **generated from block frontmatter**.

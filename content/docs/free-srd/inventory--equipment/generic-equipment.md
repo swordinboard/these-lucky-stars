@@ -49,7 +49,7 @@ generic-equipment/work-gloves
 
 {{% /details %}}
 
-{{% details "Sturdy Boots" %}}
+{{% details "Reinforced Boots" %}}
 
 {{% include "/snippets/generic-equipment/reinforced-boots" %}}
 
@@ -278,7 +278,7 @@ generic-equipment/waterskin
 
 {{% /details %}}
 
-{{% details "Fire-Startee" %}}
+{{% details "Fire-Starter" %}}
 
 {{% include "/snippets/generic-equipment/fire-starter" %}}
 

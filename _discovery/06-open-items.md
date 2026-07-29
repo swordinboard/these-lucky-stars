@@ -4,7 +4,7 @@ Everything outstanding, in one place. The Phase 1–3 decision docs (`03`, `05`)
 are records of *decisions*; this is the running list of *work*. Annotate it the
 way you did the queues.
 
-Last synced against the tree at `ef2c2a2`.
+Last synced against the tree at `33411b3`.
 
 ---
 
@@ -122,6 +122,68 @@ Three real errors were found this way and fixed:
 
 The nesting and `requires` agree on all 29 nested blocks.
 
+## 5d. Where a block's name is typed — the drift surface
+
+The question asked was whether blocks should carry **no heading at all**, just
+`title`, with the heading generated at render time. Measured answer: it works,
+but it is aimed at the wrong target.
+
+**It works.** `include` uses the percent form, so a heading generated inside the
+shortcode is re-parsed as markdown — real auto-ID, present in `.TableOfContents`.
+And all **319** snippet headings match their `title` character-for-character, so
+generated headings would reproduce every existing anchor exactly. Zero link
+breakage. (The other 12 `owns_heading` blocks are page-as-block pages — races,
+size, legal, the four bots — whose heading is the page H1 and out of scope.)
+
+**The builder does not need it.** `owns_heading` + `title` already lets the
+builder print every block the same way (§8). Flipping would delete a special
+case, nothing more.
+
+**But the name is typed in three places, and only one of them is in the block:**
+
+| Where | Count |
+|---|---|
+| The snippet's own `#` heading | 319 |
+| A page heading directly above the include | 97 |
+| A `{{% details "Name" %}}` label wrapping the include | 320 |
+
+The snippet headings have never drifted. The **details labels have — 10 of 320
+disagree with the block they wrap.** Two were plain bugs and are now fixed
+(`Sturdy Boots` → Reinforced Boots; `Fire-Startee` → Fire-Starter). The rest:
+
+- [ ] **8 remaining details labels disagree with their block's `title`.** Decide
+      which side is right in each case, then make them agree.
+      - `item-tags.md` ×4 — `Ballistic [___]`, `Battery [___]`, `Fuel Cell [___]`,
+        `Throwable [___]`. The `[___]` was stripped from titles and anchors but
+        survives in these labels. Deliberate, or leftovers?
+      - `sci-fi-kits.md:11` — label `Breaking and Entering Kit`, title `B&E Kit`.
+      - `sci-fi-misc-equipment.md:213` — `Fuel Cell` vs `Fuel Cells`.
+      - `vehicle-rules.md:33,39` — `Speed Tiers` vs `Speed Tiers Chart`, and
+        `Modes & Maneuverability` vs `Speed Descriptors`. **These two are exactly
+        the §8 "never rendered, never proofread" titles** — the label is what a
+        reader sees, the title is what the builder would print, and they say
+        different things.
+
+**The narrower change, recommended over the full flip:**
+
+- [x] ~~**Feed the `details` label from the block.**~~ **Done — the mechanism
+      exists**, as `{{< blockdetails "block/id" >}}`. Rendered output verified
+      byte-identical to the two-part form, and a bad id now fails the build
+      instead of rendering nothing. `builddata.py` reads it as a placement, so
+      `pages`/`page_urls`/anchors/edges are unaffected.
+- [ ] **Convert the 320 call sites to `blockdetails`.** Mechanical; both forms
+      work, so this can be one pass or opportunistic. Removes 320 hand-typed
+      labels and 320 hand-typed snippet paths. Run the preflight after — the
+      rendered-text diff is the proof.
+- [ ] **Delete page headings that duplicate the block heading below them.** 97
+      includes have a heading directly above (h1 ×7, h2 ×41, h3 ×40, h4 ×9);
+      some of the h2s are genuine group headings ("Aggressive Actions") and stay.
+
+The full flip stays available and would need no content change to adopt later.
+Its costs, for the record: 319 snippets edited, ~97 page headings deleted, a
+`level=` argument at every call site, a silently-failing include would lose the
+heading as well as the content, and a raw snippet stops reading as a document.
+
 ## 6. Chrome
 
 - [ ] **"How this SRD is organized"** — a short explanation of blocks and modules
@@ -169,7 +231,8 @@ needed — `owns_heading` + `title` is exactly the pair that makes it possible.
       Attack, Disarm, Grapple and the rest — so the block's own title has never
       been proofread by being read. This is how `sci-fi/huds` printed "Huds".
       Most read fine; `movement/speed-tiers-chart` under "Speed Tiers" is the
-      one I would look at first.
+      one I would look at first — see §5d, where the same two blocks turn up as
+      details-label disagreements.
 
 ---
 

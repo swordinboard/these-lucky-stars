@@ -1,0 +1,33 @@
+{{- /*
+  blockdetails — a collapsible entry for one block, named by the block.
+
+    {{< blockdetails "generic-equipment/reinforced-boots" >}}
+
+  Replaces the two-part form, which types the name once and the path again:
+
+    {{% details "Reinforced Boots" %}}
+    {{% include "/snippets/generic-equipment/reinforced-boots" %}}
+    {{% /details %}}
+
+  The <summary> label comes from the block's `title`, so the label can never
+  drift from the entry it opens. Add `open` to start expanded.
+
+  Unlike `include`, a bad id fails the build instead of rendering nothing.
+*/ -}}
+{{- $id := .Get 0 -}}
+{{- $match := where site.Data.blocks "id" $id -}}
+{{- if not $match -}}
+  {{- errorf "blockdetails: no block with id %q (called from %s)" $id .Page.File.Path -}}
+{{- end -}}
+{{- $b := index $match 0 -}}
+{{- $page := site.GetPage (printf "/snippets/%s" $id) -}}
+{{- if not $page -}}
+  {{- errorf "blockdetails: no snippet page for %q (called from %s)" $id .Page.File.Path -}}
+{{- end -}}
+<details{{ if in .Params "open" }} open{{ end }}>
+<summary>{{ $b.title | .Page.RenderString }}</summary>
+{{- /* remove whitespaces */ -}}
+<div class="markdown-inner">
+{{ $page.Content }}
+</div></details>
+{{- /* remove whitespaces */ -}}

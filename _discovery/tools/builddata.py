@@ -25,6 +25,9 @@ CONTENT = os.path.join(REPO, "content")
 
 # ---------------------------------------------------------------- parsing ---
 inc_re = re.compile(r'\{\{[<%]\s*include\s+"([^"]+)"')
+# blockdetails names a block by id rather than by snippet path, but places it on
+# the page exactly as an include does — so it is normalised into the same list.
+bdetails_re = re.compile(r'\{\{[<%]\s*blockdetails\s+"([^"]+)"')
 link_re = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 heading_re = re.compile(r"^(#{1,6})\s+(.*)$")
 catalog_re = re.compile(r"\{\{<\s*catalog\b")
@@ -80,6 +83,9 @@ def parse(path):
     for i, line in enumerate(lines, 1):
         for m in inc_re.finditer(line):
             includes.append({"line": i + offset, "target": m.group(1)})
+        for m in bdetails_re.finditer(line):
+            includes.append({"line": i + offset,
+                             "target": "/snippets/" + m.group(1)})
         for m in link_re.finditer(line):
             links.append({"line": i + offset, "text": m.group(1), "url": m.group(2)})
     return {"fm": fm, "headings": headings, "includes": includes,
