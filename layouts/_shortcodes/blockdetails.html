@@ -1,7 +1,20 @@
 {{- /*
   blockdetails — a collapsible entry for one block, named by the block.
 
+  SIGNATURE
+    {{< blockdetails "<namespace>/<slug>" [open] >}}
+                      └───────┬────────┘   └─┬─┘
+                              │              └─ optional: start expanded
+                              └─ the block id exactly as its `id:` frontmatter
+                                 reads — no /snippets/ prefix, no .md
+
+  EXAMPLE
     {{< blockdetails "generic-equipment/reinforced-boots" >}}
+    {{< blockdetails "generic-equipment/reinforced-boots" open >}}
+
+  ARGUMENTS
+    0     (required)  block id. Must exist in data/blocks.json.
+    open  (optional)  bare flag; renders <details open>.
 
   Replaces the two-part form, which types the name once and the path again:
 

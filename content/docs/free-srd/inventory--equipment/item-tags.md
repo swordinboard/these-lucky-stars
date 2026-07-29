@@ -9,30 +9,7 @@ bookToc: false
 
 Many items have tags to quickly identify common features and use requirements. The tag "Special" is used when that piece of equipment has details out of the ordinary.
 
-<div class="four-col">
-
-- [Adaptive Mesh](#adaptive-mesh)
-- [Arcing](#arcing)
-- [Ballistic](#ballistic)
-- [Battery](#battery)
-- [Belt Fed](#belt-fed)
-- [Bulky](#bulky)
-- [Concealable](#concealable)
-- [Durable](#durable)
-- [Firing Modes](#firing-modes)
-- [Fragile](#fragile)
-- [Fuel Cell](#fuel-cell)
-- [Injector](#injector)
-- [Long Reload](#long-reload)
-- [Pressurized](#pressurized)
-- [Power Source](#power-source)
-- [Rounds Reload](#rounds-reload)
-- [Space Suit](#space-suit)
-- [Throwable](#throwable)
-- [Two-Handed](#two-handed)
-- [Versatile](#versatile)
-
-</div>
+{{< catalog namespace="item-tags" layout="names" />}}
 
 ---
 

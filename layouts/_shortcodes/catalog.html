@@ -3,6 +3,41 @@
   The summary text lives ONLY on each block snippet (its `summary:` field);
   this shortcode reads it, so tables never duplicate the one-liner.
 
+  SIGNATURE — hand-listed rows (has inner text, so it is NOT self-closing)
+    {{< catalog header="<col1>|<col2>" >}}
+    <namespace>/<slug>
+    - <namespace>/<slug>        ← one level of nesting
+    -- <namespace>/<slug>       ← two levels
+    {{< /catalog >}}
+
+  SIGNATURE — rows chosen by property (self-closing: note the `/>}}`)
+    {{< catalog <filter>="<value>" … header="<col1>|<col2>" />}}
+    {{< catalog <filter>="<value>" … layout="names" />}}
+
+  EXAMPLES
+    {{< catalog header="Name|Description" >}}
+    abilities/agile-dodge
+    - abilities/momentum-dodge
+    -- abilities/slip-strike
+    {{< /catalog >}}
+
+    {{< catalog category="sci-fi" namespace="abilities" header="Ability|Description" />}}
+    {{< catalog namespace="item-tags" layout="names" />}}
+
+  ARGUMENTS
+    header   "Left|Right" — the two column headings. Default "Name|Notes".
+             Ignored by layout="names", which has no columns.
+    layout   omit for a table; "names" for a compact multi-column list of
+             linked names, no summaries.
+    order    "title" (default) or "id". Property form only.
+    Filters, AND-ed, property form only:
+      category   core | sci-fi | fantasy …
+      namespace  the part of the id before the slash
+      type       rule | feature | equipment | creature | reference
+      tag        any tag on the block
+      page       a page URL; selects everything displayed there
+      wip        "exclude" to drop unfinished blocks
+
   Two ways to choose the rows:
 
   1. Hand-listed, in display order (`- ` / `-- ` mark sub-entries):

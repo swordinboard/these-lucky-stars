@@ -48,6 +48,11 @@ These would do visible damage on the live site.
 - [ ] **A4 — generated section index lists.** The hand-written bullet lists on
       each section `_index.md` are duplicated nav. You said wait until the nav
       settled; it now has, apart from Move 1 below.
+      *Precedent set:* the Item Tags jump list is now
+      `{{< catalog namespace="item-tags" layout="names" />}}`. It had already
+      drifted from the blocks it pointed at — wrong sort order, and `[___]` on
+      three entries the titles had dropped — which is the argument for doing the
+      rest.
 
 ## 4. Structure still on the table
 

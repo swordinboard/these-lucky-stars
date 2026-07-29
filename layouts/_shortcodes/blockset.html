@@ -1,6 +1,18 @@
 {{/*
-  {{< blockset category="sci-fi" namespace="abilities" >}}
-  {{< blockset category="sci-fi" type="rule" order="title" >}}
+  blockset — render every block matching a set of filters, in full.
+
+  SIGNATURE
+    {{< blockset <filter>="<value>" … [order="title"] [level="3"] >}}
+
+  EXAMPLES
+    {{< blockset category="sci-fi" namespace="abilities" >}}
+    {{< blockset category="sci-fi" type="rule" order="title" >}}
+    {{< blockset tag="condition" wip="exclude" level="4" >}}
+
+  ARGUMENTS — all optional; at least one filter is what makes it useful
+    level   heading depth for blocks that carry no heading of their own.
+            Default "3".
+    (filters and order are listed below)
 
   Renders every block matching the filters, in full, straight from
   data/blocks.json. Where {{% include %}} names one block by hand, this names a

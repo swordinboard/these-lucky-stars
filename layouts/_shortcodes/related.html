@@ -1,6 +1,17 @@
 {{/*
-  {{< related >}}          — all related pages
-  {{< related limit="4" >}} — top N
+  related — list the pages this page's blocks connect to.
+
+  SIGNATURE
+    {{< related [limit="<n>"] >}}
+
+  EXAMPLES
+    {{< related >}}            — every related page
+    {{< related limit="4" >}}  — the four strongest
+
+  ARGUMENTS
+    limit  (optional) how many to show. Omit for all.
+
+  Takes no block id — it reads the page it is called from.
 
   Renders the page's Related list from data/related.json, which builddata.py
   derives from the edge graph: pages whose blocks reference this page's blocks,

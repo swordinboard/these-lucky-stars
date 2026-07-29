@@ -1,14 +1,25 @@
 {{/*
-  quickref shortcode v2
+  quickref — an inline expandable popover, for a definition mid-sentence.
 
-  Usage:
-    {{% quickref title="Defense (DEF)" %}}
-    Content here, including snippet includes.
-    Add a normal markdown link inside if you want one.
+  ⚠ UNUSED. It duplicates the theme's `details` and is retired by disuse; the
+  file is kept in case the inline-popover behaviour is wanted later. Use
+  `blockdetails` (or `details`) for block entries. See 06-open-items.md §6.
+
+  SIGNATURE
+    {{% quickref "<label>" %}}
+    inner markdown
     {{% /quickref %}}
 
-  Parameters:
-    title (required) - The clickable label text
+  EXAMPLE
+    {{% quickref "Defense (DEF)" %}}
+    {{% include "/snippets/stats/defense" %}}
+    {{% /quickref %}}
+
+  ARGUMENTS
+    0  (required) the clickable label text.
+
+  Percent form — the inner content is markdown, and may contain includes.
+  Prints fully expanded rather than as a dropdown.
 */}}
 
 {{ $id := delimit (shuffle (seq 1 9)) "" | truncate 8 "" }}

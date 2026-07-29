@@ -1,3 +1,24 @@
+{{/*
+  include — drop one block's content into a page.
+
+  SIGNATURE
+    {{% include "/snippets/<namespace>/<slug>" %}}
+                 └──────────┬──────────────┘
+                            └─ the block id, with /snippets/ in front and no .md
+
+  EXAMPLE
+    {{% include "/snippets/combat/opportunity-attack" %}}
+
+  ARGUMENTS
+    0  (required)  path to the snippet. Leading slash, no file extension.
+
+  Use the PERCENT form. `{{< include >}}` would emit the block's HTML without
+  re-parsing it, which breaks markdown that follows on the host page.
+
+  ⚠ A path that does not exist renders NOTHING — no error, no warning, no build
+  failure. Run the preflight after re-wiring includes. `blockdetails` does not
+  have this problem; prefer it wherever the block is going inside a collapsible.
+*/}}
 {{ $path := .Get 0 }}
 {{ with .Site.GetPage $path }}
   {{ .Content }}

@@ -1,3 +1,35 @@
+{{/*
+  columns — lay inner content out side by side. Theme shortcode, overridden here.
+
+  SIGNATURE — explicit split
+    {{< columns [ratio="<n>:<n>"] >}}
+    left-hand markdown
+    <--->
+    right-hand markdown
+    {{< /columns >}}
+
+  SIGNATURE — a list, one column per top-level item
+    {{< columns [ratio="<n>:<n>"] >}}
+    - first column
+    - second column
+    {{< /columns >}}
+
+  EXAMPLES
+    {{< columns >}}
+    ## Melee
+    <--->
+    ## Ranged
+    {{< /columns >}}
+
+    {{< columns ratio="2:1" >}}  — left column twice as wide
+
+  ARGUMENTS
+    ratio  (optional) colon-separated flex-grow weights, one per column.
+           Default: every column equal.
+
+  `<--->` is the separator; add more to get more columns. Stacks on narrow
+  screens via the theme's .book-columns styles.
+*/}}
 {{- $ratio := (split (.Get "ratio") ":") -}}
 {{- if strings.Contains .InnerDeindent "<--->" -}}
 {{- $attributes := partial "docs/text/mapper" (dict

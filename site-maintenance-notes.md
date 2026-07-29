@@ -283,6 +283,25 @@ Tables are deliberately two columns (name + blurb). Extra columns that used to
 exist (component Slot/Install, kit Cost/Wt) were dropped; that data is stated in
 each item's own entry.
 
+### `layout="names"` — a jump list rather than a table
+
+Drops the summary column and flows linked names into responsive columns
+(2 / 3 / 4, styled as `.block-index` in `assets/_custom.scss`). Use it where the
+chart would end up longer than the entries it points at, or for a
+jump-to-anchor index at the top of a page:
+
+```
+{{< catalog namespace="item-tags" layout="names" />}}
+```
+
+Child entries nest inside their parent's `<li>`, so column flow can never orphan
+a prerequisite away from what it depends on.
+
+This replaced the hand-written `<div class="four-col">` index on Item Tags —
+which had drifted, listing Pressurized before Power Source and carrying `[___]`
+on three entries the titles had long since dropped. `.four-col` is still used on
+`character-creation-overview.md`; don't delete the styles.
+
 ---
 
 ## Work-in-progress pages (`wip: true`)
@@ -547,10 +566,14 @@ Page content starts here...
 
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
-- Shortcodes available: `include`, `catalog`, `download-card`, `roadmap`, `columns`,
-  `quickref` (see `layouts/_shortcodes/`), plus `details` / `tabs` / `tab` from the theme
+- Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `related`,
+  `download-card`, `columns`, `roadmap`, `quickref` — all in `layouts/_shortcodes/`,
+  plus `details` / `tabs` / `tab` from the theme
+- **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
+  naming each part of the call. Read the top of the file rather than guessing from
+  a call site, and keep that block current when you change a shortcode.
 - `quickref` is defined but **unused** — it duplicates `details`. Retired by disuse;
-  the file stays available. Use `details`.
+  the file stays available. Use `blockdetails`.
 - Snippet includes: `{{% include "/snippets/<namespace>/<slug>" %}}` — source files in
   `content/snippets/<namespace>/`, none are published. The path always matches the
   block's `id`. See the block architecture and snippet rules at the top of this file.

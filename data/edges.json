@@ -5653,191 +5653,11 @@
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
   "target": "item-tags/adaptive-mesh",
-  "type": "reference",
-  "url": "#adaptive-mesh",
-  "text": "Adaptive Mesh",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 14
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/arcing",
-  "type": "reference",
-  "url": "#arcing",
-  "text": "Arcing",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 15
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/ballistic",
-  "type": "reference",
-  "url": "#ballistic",
-  "text": "Ballistic",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 16
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/battery",
-  "type": "reference",
-  "url": "#battery",
-  "text": "Battery",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 17
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/belt-fed",
-  "type": "reference",
-  "url": "#belt-fed",
-  "text": "Belt Fed",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 18
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/bulky",
-  "type": "reference",
-  "url": "#bulky",
-  "text": "Bulky",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/concealable",
-  "type": "reference",
-  "url": "#concealable",
-  "text": "Concealable",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/durable",
-  "type": "reference",
-  "url": "#durable",
-  "text": "Durable",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/firing-modes",
-  "type": "reference",
-  "url": "#firing-modes",
-  "text": "Firing Modes",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 22
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/fragile",
-  "type": "reference",
-  "url": "#fragile",
-  "text": "Fragile",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 23
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/fuel-cells",
-  "type": "reference",
-  "url": "#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 24
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/injector",
-  "type": "reference",
-  "url": "#injector",
-  "text": "Injector",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 25
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/long-reload",
-  "type": "reference",
-  "url": "#long-reload",
-  "text": "Long Reload",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 26
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/pressurized",
-  "type": "reference",
-  "url": "#pressurized",
-  "text": "Pressurized",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 27
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/power-source",
-  "type": "reference",
-  "url": "#power-source",
-  "text": "Power Source",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 28
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/rounds-reload",
-  "type": "reference",
-  "url": "#rounds-reload",
-  "text": "Rounds Reload",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 29
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/space-suit",
-  "type": "reference",
-  "url": "#space-suit",
-  "text": "Space Suit",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/throwable",
-  "type": "reference",
-  "url": "#throwable",
-  "text": "Throwable",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 31
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/two-handed",
-  "type": "reference",
-  "url": "#two-handed",
-  "text": "Two-Handed",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 32
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/versatile",
-  "type": "reference",
-  "url": "#versatile",
-  "text": "Versatile",
-  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 33
- },
- {
-  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
-  "target": "item-tags/adaptive-mesh",
   "type": "include",
   "url": "/snippets/item-tags/adaptive-mesh",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 41
+  "line": 18
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5846,7 +5666,7 @@
   "url": "/snippets/item-tags/arcing",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 47
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5855,7 +5675,7 @@
   "url": "/snippets/item-tags/ballistic",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 53
+  "line": 30
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5864,7 +5684,7 @@
   "url": "/snippets/item-tags/battery",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 59
+  "line": 36
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5873,7 +5693,7 @@
   "url": "/snippets/item-tags/belt-fed",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 65
+  "line": 42
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5882,7 +5702,7 @@
   "url": "/snippets/item-tags/bulky",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 71
+  "line": 48
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5891,7 +5711,7 @@
   "url": "/snippets/item-tags/concealable",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 77
+  "line": 54
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5900,7 +5720,7 @@
   "url": "/snippets/item-tags/durable",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 83
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5909,7 +5729,7 @@
   "url": "/snippets/item-tags/firing-modes",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 89
+  "line": 66
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5918,7 +5738,7 @@
   "url": "/snippets/item-tags/fragile",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 95
+  "line": 72
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5927,7 +5747,7 @@
   "url": "/snippets/item-tags/fuel-cells",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 101
+  "line": 78
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5936,7 +5756,7 @@
   "url": "/snippets/item-tags/injector",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 107
+  "line": 84
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5945,7 +5765,7 @@
   "url": "/snippets/item-tags/long-reload",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 113
+  "line": 90
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5954,7 +5774,7 @@
   "url": "/snippets/item-tags/pressurized",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 119
+  "line": 96
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5963,7 +5783,7 @@
   "url": "/snippets/item-tags/power-source",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 125
+  "line": 102
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5972,7 +5792,7 @@
   "url": "/snippets/item-tags/rounds-reload",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 131
+  "line": 108
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5981,7 +5801,7 @@
   "url": "/snippets/item-tags/space-suit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 137
+  "line": 114
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5990,7 +5810,7 @@
   "url": "/snippets/item-tags/throwable",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 143
+  "line": 120
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -5999,7 +5819,7 @@
   "url": "/snippets/item-tags/two-handed",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 149
+  "line": 126
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
@@ -6008,7 +5828,207 @@
   "url": "/snippets/item-tags/versatile",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
-  "line": 155
+  "line": 132
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/adaptive-mesh",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Adaptive Mesh",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/arcing",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Arcing",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/ballistic",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Ballistic",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/battery",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Battery",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/belt-fed",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Belt Fed",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/bulky",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Bulky",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/concealable",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Concealable",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/durable",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Durable",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/firing-modes",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Firing Modes",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/fragile",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Fragile",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/fuel-cells",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Fuel Cell",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/injector",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Injector",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/long-reload",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Long Reload",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/power-source",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Power Source",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/pressurized",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Pressurized",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/rounds-reload",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Rounds Reload",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/space-suit",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Space Suit",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/throwable",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Throwable",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/two-handed",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Two-Handed",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/inventory--equipment/item-tags/",
+  "target": "item-tags/versatile",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Versatile",
+  "file": "content/docs/free-srd/inventory--equipment/item-tags.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",

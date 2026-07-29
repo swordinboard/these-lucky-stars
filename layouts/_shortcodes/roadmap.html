@@ -1,3 +1,18 @@
+{{/*
+  roadmap — the interactive development-roadmap widget.
+
+  SIGNATURE
+    {{< roadmap >}}
+
+  ARGUMENTS
+    none. Every phase, waypoint and label is hard-coded in the markup below —
+    edit this file to change the roadmap, not the page that calls it.
+
+  Phases live in .rm-phases as .rm-phase blocks; the dots above them are the
+  matching .rm-waypoint buttons, paired by data-phase / showPhase(index).
+  Change one and change the other. Status comes from the class on each:
+  complete | active | upcoming | future — matching the legend at the bottom.
+*/}}
 <style>
 /* Roadmap-scoped styles — all colors inherit from site variables */
 .roadmap {

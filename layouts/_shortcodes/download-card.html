@@ -1,3 +1,23 @@
+{{/*
+  download-card — a clickable cover image linking to a PDF.
+
+  SIGNATURE
+    {{< download-card title="<label>" pdf="<path>" preview="<image path>" >}}
+
+  EXAMPLE
+    {{< download-card
+        title="Character Sheet"
+        pdf="/downloads/tls-character-sheet.pdf"
+        preview="/images/character-sheet-preview.png" >}}
+
+  ARGUMENTS
+    title    (required) label shown over the image, also the img alt text
+    pdf      (required) URL of the file. Opens in a new tab.
+    preview  (optional) cover image. Without it the card shows
+             "No Preview Available".
+
+  Paths are site-absolute — they start at /, meaning static/.
+*/}}
 {{- $title := .Get "title" -}}
 {{- $pdf := .Get "pdf" -}}
 {{- $preview := .Get "preview" -}}
