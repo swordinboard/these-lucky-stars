@@ -13,7 +13,7 @@ weight: 30
 {{< catalog layout="names" >}}
 abilities/agile-dodge
 - abilities/momentum-dodge
--- abilities/slip-strike
+- abilities/slip-strike
 abilities/bolster
 abilities/charge
 - abilities/agile-charge

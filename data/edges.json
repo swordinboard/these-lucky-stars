@@ -2382,6 +2382,16 @@
   "class": "prerequisite"
  },
  {
+  "source": "abilities/fast-kit-trap",
+  "target": "abilities/kit-trap",
+  "type": "dependency",
+  "url": "#kit-trap",
+  "text": "Kit Trap",
+  "file": "content/snippets/abilities/fast-kit-trap.md",
+  "line": 13,
+  "class": "prerequisite"
+ },
+ {
   "source": "abilities/fearless-rage",
   "target": "abilities/rage",
   "type": "dependency",
@@ -2587,6 +2597,16 @@
   "url": "#suppressing-fire",
   "text": "Suppressing Fire",
   "file": "content/snippets/abilities/line-of-fire.md",
+  "line": 13,
+  "class": "prerequisite"
+ },
+ {
+  "source": "abilities/long-performance",
+  "target": "abilities/general-spectacle",
+  "type": "dependency",
+  "url": "#general-spectacle",
+  "text": "General Spectacle",
+  "file": "content/snippets/abilities/long-performance.md",
   "line": 13,
   "class": "prerequisite"
  },

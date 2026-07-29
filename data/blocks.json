@@ -726,7 +726,10 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Kit Trap uses less AP."
+  "summary": "Kit Trap uses less AP.",
+  "requires": [
+   "abilities/kit-trap"
+  ]
  },
  {
   "id": "abilities/fearless-rage",
@@ -980,7 +983,7 @@
    "core"
   ],
   "type": "feature",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "ability",
    "core",
@@ -1225,7 +1228,7 @@
    "core"
   ],
   "type": "feature",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "ability",
    "core",
@@ -1373,7 +1376,10 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Use General Spectacle for multiple rounds."
+  "summary": "Use General Spectacle for multiple rounds.",
+  "requires": [
+   "abilities/general-spectacle"
+  ]
  },
  {
   "id": "abilities/lucky-strike",
@@ -2119,7 +2125,7 @@
   "anchor": "slip-strike",
   "url": "/docs/free-srd/character-creation/abilities/#slip-strike",
   "owns_heading": true,
-  "listed_under": "abilities/momentum-dodge",
+  "listed_under": "abilities/agile-dodge",
   "category": [
    "core"
   ],

@@ -99,15 +99,30 @@ deliberately rare (2 blocks): it exists only for names too long for a table cell
 like `Analgesic Radiation Antidote 5 (ARA-5)` → `ARA-5`. If a block needs a
 different display name for any other reason, fix the title instead.
 
+### Starting a new block
+
+`_templates/` holds a fill-in-the-blank file for each kind of block, taken from
+real blocks rather than invented. Copy one into
+`content/snippets/<namespace>/<slug>.md` and fill it in. The files sit outside
+`content/`, so Hugo never reads them and they never enter the corpus.
+
+Each carries a comment explaining the decisions that kind of block involves —
+delete the comment when you are done, since **a snippet must never end with an
+HTML comment**.
+
 ### Feature prerequisites are written in three places
 
 Each does a different job. Keep them separate; `worksheets.py` §C4 reports drift.
 
 | Where | Job | Maintained |
 |---|---|---|
-| The prerequisite line in the block's text | what a reader sees | by hand |
-| `requires:` in frontmatter | the mechanical rule the builder obeys | by hand |
+| The prerequisite line in the block's text | what a reader sees | by hand — **load-bearing** |
+| `requires:` in frontmatter | the mechanical rule the builder obeys | by hand, checked against the line |
 | `- ` / `-- ` indents in a catalog | where a reader meets the entry | by hand |
+
+The prerequisite line is the source of truth: `requires` is exactly the feature
+links in it. That is a deliberate choice, so **a link losing its target changes
+the builder's dependency data**. §C4 of the worksheets exists to catch it.
 
 `requires` holds **features only**. Attributes (`AGI 2`), levels (`Level 5`),
 items, and category conditions ("Proficiency with any tool kit", "one other
@@ -115,15 +130,11 @@ Battery ability") stay in the prose line — they are conditions on a character,
 not blocks a PDF can contain. Battery Saboteur is the model: it records the one
 named proficiency and leaves "one other Battery ability" to the text.
 
-**The nesting is not the dependency graph.** Slip Strike is listed under
-Momentum Dodge because it builds on that chain, but requires Agile Dodge — both
-correct. And 39 `requires` point into a different list (abilities depending on
-proficiencies or traits), which no index tree can show. Generating either from
-the other would lose information.
-
-`requires` *is* currently derivable from the prerequisite line: all 52 are
-exactly the feature links in their own line. That makes generating it possible,
-which is a decision, not an obligation — see `06-open-items.md`.
+**The nesting is still not the dependency graph**, even though the two currently
+agree on all 29 nested blocks. **39** `requires` point into a *different* list —
+abilities depending on proficiencies or traits — and no index tree can show
+those, because the parent is not on that page. Generating either from the other
+would lose information in both directions.
 
 **Two blocks may not share a title on the same page** — Hugo silently appends
 `-1` to the second anchor, so a link that looked right yesterday lands in the

@@ -102,25 +102,25 @@ abilities are the longest and most numerous, traits the shortest.
 Nothing about this is blocked — the blocks are already separate files, so it is a
 relocation, not a rewrite. Worth deciding after the compact index is seen live.
 
-## 5c. Should `requires` be generated?
+## 5c. `requires` and the prerequisite line — settled
 
-Checked, not assumed: **all 52 features that carry `requires` hold exactly the
-feature links in their own prerequisite line** — no exceptions, once items and
-item tags are excluded per the rule that only features become requires.
+The prerequisite line is **load-bearing**, by decision: `requires` is exactly the
+feature links in it, and a link losing its target would change the builder's
+dependency data. Accepted knowingly; §C4 of the worksheets reports any drift.
 
-So the field is derivable today. Three ways to go:
+`requires` stays hand-written for now rather than generated — it is authorable
+and reviewable in the block, and the check already guarantees the two agree.
+Switching to generated remains available and would need no content change.
 
-- **Keep it hand-written.** It stays authorable and reviewable in the block, and
-  `worksheets.py` §C4 now reports any drift from the line. Nothing breaks.
-- **Generate it** from the line's feature links, and drop it from frontmatter.
-  Removes one of the three manual jobs. Costs: the prerequisite line becomes
-  load-bearing markup — a link that loses its target silently changes the
-  builder's dependency data.
-- **Keep both and let the check enforce equality.** Belt and braces; the check
-  already exists.
+Three real errors were found this way and fixed:
 
-Not urgent. Worth deciding before the builder starts consuming `requires` in
-anger.
+- `slip-strike` was nested under Momentum Dodge but requires Agile Dodge; it
+  modifies either, so it now sits beside Momentum Dodge under Agile Dodge.
+- `long-performance` and `fast-kit-trap` never named the ability they modify in
+  their prerequisite lines, which is why the generated `requires` missed it too.
+  Both lines and both `requires` now record it.
+
+The nesting and `requires` agree on all 29 nested blocks.
 
 ## 6. Chrome
 
