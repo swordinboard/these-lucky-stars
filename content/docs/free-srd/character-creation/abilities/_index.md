@@ -9,13 +9,13 @@ bookCollapseSection: true
 
 {{% include "/snippets/abilities/overview" %}}
 
-{{< tabs >}}
-{{% tab "Core General" %}}
 **This page is the core selection** — the abilities available in any setting.
 Setting-themed abilities live with their module:
 
 - [Sci-Fi Abilities](/docs/free-srd/character-creation/abilities/sci-fi/)
 
+{{< tabs >}}
+{{% tab "Core General" %}}
 {{< catalog layout="names" >}}
 abilities/agile-dodge
 - abilities/momentum-dodge

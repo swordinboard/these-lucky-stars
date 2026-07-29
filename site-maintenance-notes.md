@@ -570,7 +570,10 @@ overview at 1. If you add a step, weight it where the player meets it.
 
 Each of Abilities, Proficiencies and Traits opens with a short "this page is the
 core selection" line and links to its setting-specific child page, because those
-children are one click behind a collapsed nav section.
+children are one click behind a collapsed nav section. That line goes **after the
+overview snippet and before the catalog** — and on Abilities, which is the only
+feature page still using tabs, it goes *outside* the tabs block. Nothing but
+catalogs belongs inside a tabs block.
 
 ---
 
