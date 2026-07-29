@@ -28,22 +28,28 @@ These would do visible damage on the live site.
 - [ ] **9 blocks render a blank summary cell** — the 4 bot platforms (BAL, HEL-1,
       T00L, TRK-A) and the 5 races. Both sets are WIP stubs, so this is writing,
       not fixing. Tracked live by `worksheets.py`.
+      <!-- correct for now, okay to send, all wip pages --> 
 - [ ] **B1 — Student / Expert require "INT"**, but the system has KNO.
+      <!-- change to KNO -->
 - [ ] **B2 — Shock Charger**: summary said +2, rules text says +1.
+      <!-- change to +1 -->
 - [ ] **B3 — Squad Shield**: summary said 30pts, rules text says 40.
+      <!-- change to 40 -->
 - [ ] **B4 — Fast Kit Trap**: 12 AP retrieval vs Kit Trap's 20 — discount or typo?
+      <!-- discount is correct -->
 - [ ] **B5 — Backup Power Cell**: old table said Back, block says Belt twice.
-      Currently resolves to Belt.
+      Currently resolves to Belt.       <!-- belt is correct -->
 - [ ] **B9 — the Tool Kits hole.** `generic-equipment.md` links to a generic Tool
       Kits page that does not exist. The one intentionally broken link; excluded
       by name in `linkcheck.py`. Remove that exclusion when the page lands.
+      <!-- need to add a generic tool kits page wip placeholder, nested under generic equipment or alongsixe generic equipment, weight directly below -->
 
 ## 3. Parked features
 
 - [ ] **Related section generation.** `{{< related >}}` works and runs live on
       Vehicle Rules, but the generated list loses the editorial intent of the
       five hand-written ones — it knows what links where, not where a reader
-      *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.
+      *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.      <!-- keep parked -->
       Needs a think, not a script.
 - [ ] **A4 — generated section index lists.** The hand-written bullet lists on
       each section `_index.md` are duplicated nav. You said wait until the nav
@@ -52,15 +58,18 @@ These would do visible damage on the live site.
       `{{< catalog namespace="item-tags" layout="names" />}}`. It had already
       drifted from the blocks it pointed at — wrong sort order, and `[___]` on
       three entries the titles had dropped — which is the argument for doing the
-      rest.
+      rest.     
+       <!-- _index pages that show just a list of chikdren an be generated to match the nav order, nav has mostly settled-->
 
 ## 4. Structure still on the table
 
 - [x] ~~Races: split like the others?~~ **Intentionally not split** — races have
       a different setup, one page per race behind a hub.
+        <!-- correct -->
 - [ ] **Page-per-feature (the wiki model).** Whether abilities/proficiencies/
       traits each become their own page like races do. Measurements and the
       argument are in the section below.
+        <!-- not going with it, discussed, set to remove from list -->
 - [ ] **Move 1 — sci-fi equipment under the module.** 6 pages, 36 links across 19
       files, 1 wildcard redirect. *Recommendation: do it when the other module
       catalogs go live, so it is one move instead of two.*
