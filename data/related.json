@@ -1113,6 +1113,30 @@
    ]
   }
  ],
+ "content/docs/free-srd/creatures--npcs/core/_index.md": [
+  {
+   "page": "content/docs/free-srd/character-creation/races/_index.md",
+   "url": "/docs/free-srd/character-creation/races/",
+   "title": "Races",
+   "blurb": "The various Races available for player characters in These Lucky Stars",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "races/overview"
+   ]
+  },
+  {
+   "page": "content/docs/free-srd/core-rules/size.md",
+   "url": "/docs/free-srd/core-rules/size/",
+   "title": "Size",
+   "blurb": "attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge",
+   "out": 1,
+   "in": 0,
+   "via": [
+    "core-rules/size"
+   ]
+  }
+ ],
  "content/docs/free-srd/inventory--equipment/generic-equipment.md": [
   {
    "page": "content/docs/free-srd/inventory--equipment/item-tags.md",

@@ -440,6 +440,9 @@ Three section indexes stay hand-written on purpose, and should:
   Core / Sci-Fi in columns.
 - **Bots & Drones** — grouped into Drone and Robot platforms, with blurbs and a
   `*(TBD)*` entry for a platform that does not exist yet.
+- **Creatures & NPCs / Core** and **/ Sci-Fi** — both are Races-shaped: a
+  hand-written list leading to one page per creature. `children` needs children,
+  and nothing is statted yet.
 - **`docs/_index.md`** — three children with curated one-line blurbs.
 
 `desc="true"` appends each child's `description`, but most descriptions here are
@@ -605,6 +608,15 @@ Every section with visible children sets `bookCollapseSection: true`. **Races is
 the deliberate exception** — all five race pages are `bookHidden: true`, so the
 chevron would expand onto an empty list; the Races page lists them in its body
 instead.
+
+**Every feature catalog sits inside a `{{< tabs >}}` block**, including the four
+that have only one tab. The tab frame visually contains the index, which reads
+cleaner than a bare list — that is the reason, so do not "simplify" a single-tab
+wrapper away. Abilities uses two tabs per page because it has real groupings
+(General / Luck, Sci-Fi General / Sci-Fi Battery).
+
+Nothing but catalogs goes inside a tabs block: prose above it, entries below.
+A note placed inside a tab is only visible while that tab is selected.
 
 Character Creation is ordered by when you make the choice, not alphabetically:
 **Races (10) → Traits (20) → Proficiencies (30) → Abilities (40)**, with the

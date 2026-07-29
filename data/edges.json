@@ -7282,6 +7282,80 @@
   "line": 92
  },
  {
+  "source": "page:/docs/free-srd/creatures--npcs/",
+  "target": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/",
+  "text": "Sci-Fi Creatures & NPCs",
+  "file": "content/docs/free-srd/creatures--npcs/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/",
+  "target": "page:/docs/free-srd/creatures--npcs/core/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/creatures--npcs/core/",
+  "text": "Core Creatures & NPCs",
+  "file": "content/docs/free-srd/creatures--npcs/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/",
+  "text": "Bots & Drones",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/core/",
+  "target": "races/overview",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/races/",
+  "text": "Races",
+  "file": "content/docs/free-srd/creatures--npcs/core/_index.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/core/",
+  "target": "page:/docs/free-srd/core-rules/attributes/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/attributes/",
+  "text": "Attributes",
+  "file": "content/docs/free-srd/creatures--npcs/core/_index.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/core/",
+  "target": "page:/docs/free-srd/core-rules/stats/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/stats/",
+  "text": "Stats",
+  "file": "content/docs/free-srd/creatures--npcs/core/_index.md",
+  "line": 21
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/core/",
+  "target": "core-rules/size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "Size",
+  "file": "content/docs/free-srd/creatures--npcs/core/_index.md",
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/core/",
+  "target": "page:/docs/free-srd/core-rules/combat/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/",
+  "text": "Combat",
+  "file": "content/docs/free-srd/creatures--npcs/core/_index.md",
+  "line": 23
+ },
+ {
   "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/action-economy/",
   "type": "reference",
@@ -9195,7 +9269,7 @@
   "url": "/snippets/traits/alert",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 40
+  "line": 44
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9204,7 +9278,7 @@
   "url": "/snippets/traits/composed",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 42
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9213,7 +9287,7 @@
   "url": "/snippets/traits/diplomatic",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 44
+  "line": 48
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9222,7 +9296,7 @@
   "url": "/snippets/traits/hot-headed",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 46
+  "line": 50
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9231,7 +9305,7 @@
   "url": "/snippets/traits/intimidating",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 48
+  "line": 52
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9240,7 +9314,7 @@
   "url": "/snippets/traits/lucky",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 50
+  "line": 54
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9249,7 +9323,7 @@
   "url": "/snippets/traits/mentally-sound",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 52
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9258,7 +9332,7 @@
   "url": "/snippets/traits/particularly-attractive",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 54
+  "line": 58
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9267,7 +9341,7 @@
   "url": "/snippets/traits/picture-of-health",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 56
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9276,7 +9350,7 @@
   "url": "/snippets/traits/sly",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 58
+  "line": 62
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9285,7 +9359,7 @@
   "url": "/snippets/traits/sneaky",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 60
+  "line": 64
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9294,7 +9368,7 @@
   "url": "/snippets/traits/stubborn",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 62
+  "line": 66
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9303,7 +9377,7 @@
   "url": "/snippets/traits/tough",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 64
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9312,7 +9386,7 @@
   "url": "/snippets/traits/unremarkable",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 66
+  "line": 70
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9321,7 +9395,7 @@
   "url": "/snippets/traits/unshakable",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 68
+  "line": 72
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/",
@@ -9330,7 +9404,7 @@
   "url": "/snippets/traits/well-connected",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/_index.md",
-  "line": 70
+  "line": 74
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
@@ -9339,7 +9413,7 @@
   "url": "/snippets/traits/inter-planet-traveler",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
-  "line": 18
+  "line": 22
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
@@ -9348,7 +9422,7 @@
   "url": "/snippets/traits/scrap-hauler",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
-  "line": 20
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/character-creation/traits/sci-fi/",
@@ -9357,7 +9431,7 @@
   "url": "/snippets/traits/space-adept",
   "text": null,
   "file": "content/docs/free-srd/character-creation/traits/sci-fi.md",
-  "line": 22
+  "line": 26
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9384,7 +9458,7 @@
   "url": "/snippets/proficiencies/armor",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 38
+  "line": 42
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9393,7 +9467,7 @@
   "url": "/snippets/proficiencies/b-e-kit",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 40
+  "line": 44
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9402,7 +9476,7 @@
   "url": "/snippets/proficiencies/disguise-kit",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 42
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9411,7 +9485,7 @@
   "url": "/snippets/proficiencies/improved-ability",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 44
+  "line": 48
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9420,7 +9494,7 @@
   "url": "/snippets/proficiencies/licensed-instincts",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 46
+  "line": 50
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9429,7 +9503,7 @@
   "url": "/snippets/proficiencies/martial-training",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 48
+  "line": 52
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9438,7 +9512,7 @@
   "url": "/snippets/proficiencies/medic-training",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 50
+  "line": 54
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9447,7 +9521,7 @@
   "url": "/snippets/proficiencies/medical-instincts",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 52
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9456,7 +9530,7 @@
   "url": "/snippets/proficiencies/negotiation-training",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 54
+  "line": 58
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9465,7 +9539,7 @@
   "url": "/snippets/proficiencies/repair-kit",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 56
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9474,7 +9548,7 @@
   "url": "/snippets/proficiencies/research",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 58
+  "line": 62
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9483,7 +9557,7 @@
   "url": "/snippets/proficiencies/survival-training",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 60
+  "line": 64
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9492,7 +9566,7 @@
   "url": "/snippets/proficiencies/vehicle",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 62
+  "line": 66
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/",
@@ -9501,7 +9575,7 @@
   "url": "/snippets/proficiencies/weapon",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/_index.md",
-  "line": 64
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
@@ -9510,7 +9584,7 @@
   "url": "/snippets/proficiencies/comp-jack",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
-  "line": 18
+  "line": 22
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
@@ -9519,7 +9593,7 @@
   "url": "/snippets/proficiencies/general-robotics",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
-  "line": 20
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/character-creation/proficiencies/sci-fi/",
@@ -9528,7 +9602,7 @@
   "url": "/snippets/proficiencies/general-technology",
   "text": null,
   "file": "content/docs/free-srd/character-creation/proficiencies/sci-fi.md",
-  "line": 22
+  "line": 26
  },
  {
   "source": "page:/docs/free-srd/character-creation/abilities/",

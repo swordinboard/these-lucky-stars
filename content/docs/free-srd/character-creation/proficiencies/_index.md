@@ -14,6 +14,8 @@ Setting-themed proficiencies live with their module:
 
 - [Sci-Fi Proficiencies](/docs/free-srd/character-creation/proficiencies/sci-fi/)
 
+{{< tabs >}}
+{{% tab "Core" %}}
 {{< catalog layout="names" >}}
 proficiencies/armor
 proficiencies/b-e-kit
@@ -30,6 +32,8 @@ proficiencies/vehicle
 - proficiencies/licensed-instincts
 proficiencies/weapon
 {{< /catalog >}}
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 

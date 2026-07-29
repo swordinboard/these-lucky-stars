@@ -14,6 +14,8 @@ Setting-themed traits live with their module:
 
 - [Sci-Fi Traits](/docs/free-srd/character-creation/traits/sci-fi/)
 
+{{< tabs >}}
+{{% tab "Core" %}}
 {{< catalog layout="names" >}}
 traits/alert
 traits/composed
@@ -32,6 +34,8 @@ traits/unremarkable
 traits/unshakable
 traits/well-connected
 {{< /catalog >}}
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 

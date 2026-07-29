@@ -26,10 +26,10 @@ change what the builder sees:
 **Would not** — safe to do during or after Phase 4:
 
 - §1 both items (merge hygiene, not builder inputs)
-- §2 B10 (one rules-text inconsistency)
+- §2 the nine blank summaries — accepted, all on `wip:` pages
 - §5 C2 orphans, §5d duplicate page headings, §6 chrome, §7 playtest
-- §4 Move 1 and Move 3 — both deliberately waiting on content that does not
-  exist yet
+- §4 Move 3 — waiting on a second kind of creature. Move 1 is closed: not
+  moving.
 
 **Already done and load-bearing for the builder:** `data/blocks.json` with
 `wip`/`owns_heading`/`url`/`page_urls`/`requires`, `data/edges.json` with
@@ -43,10 +43,15 @@ links with no exclusions.
 
 These would do visible damage on the live site.
 
-- [ ] **`draft: true` on the three parked module pages.** `medieval-module.md`,
-      `modern-module.md`, `frontier--industry-module.md` are `wip: true` so they
-      preview. Left live they publish URLs for modules that do not exist and put
-      them in the sitemap. *One line each, say when.*
+- [ ] **`draft: true` on the six parked placeholder pages.** All are `wip: true`
+      so they preview. Left live they publish URLs for content that does not
+      exist and put them in the sitemap. *One line each, say when.*
+      - `free-srd/medieval-module.md`, `modern-module.md`,
+        `frontier--industry-module.md`
+      - `free-srd/creatures--npcs/_index.md` and both children (`core/`,
+        `sci-fi/`) — nothing is statted yet
+      Note `tool-kits.md` is **not** on this list: it is `wip: true` but has real
+      rules on it and fixes a link that was broken. It should ship.
 - [ ] **Decide the Medieval/Modern/Frontier duplication.** There are now two
       parked things per future setting: the equipment stubs at
       `inventory--equipment/<setting>-equipment/` (already `draft: true`) and the
@@ -56,23 +61,10 @@ These would do visible damage on the live site.
 
 ## 2. Content gaps the generated tables expose
 
-- [x] ~~**9 blocks render a blank summary cell**~~ — the 4 bot platforms (BAL,
-      HEL-1, T00L, TRK-A) and the 5 races. **Accepted as-is**: every one is on a
+- [ ] **9 blocks render a blank summary cell** — the 4 bot platforms (BAL, HEL-1,
+      T00L, TRK-A) and the 5 races. **Accepted as-is** for now: every one is on a
       `wip: true` page, so the blank reads as unfinished rather than broken.
-      Still tracked live by `worksheets.py` for when the stubs get written.
-- [x] ~~B9 — the Tool Kits hole.~~ **Page written**, at
-      `inventory--equipment/tool-kits.md`, `wip: true`, weight 30 — directly
-      below Generic Equipment and above Sci-Fi Equipment. It carries the
-      setting-agnostic kit rules (equip slots, 1d12 supply, refills), links out
-      to the sci-fi catalog as the only concrete set so far, and points at the
-      three kit proficiencies and Kit Trap. The `linkcheck.py` exclusion is
-      **gone**; the site now reports zero broken links with nothing excluded.
-
-- [ ] **B10 (new) — Student grants +2, Expert calls it "+1".** Found while
-      fixing B1. `abilities/student` says "gain a +2 bonus"; `abilities/expert`
-      says "add your KNO bonus rather than the +1 bonus provided". One of the two
-      numbers is wrong and it is a rules call, not a typo I should guess at.
-     <!-- +1 bonus fron Student is correct, +2 is incorrect -->
+      Tracked live by `worksheets.py` for when the stubs get written.
 
 ## 3. Parked features
 
@@ -81,35 +73,33 @@ These would do visible damage on the live site.
       five hand-written ones — it knows what links where, not where a reader
       *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.
       **Staying parked by your call.** Needs a think, not a script.
-- [x] ~~**A4 — generated section index lists.**~~ **Done**, as
-      `{{< children >}}`, on the four `_index.md` pages whose whole body was a
-      child list: Core Rules, Character Creation, Inventory & Equipment, Sci-Fi
-      Equipment. Ordered by `weight`, so list and sidebar cannot disagree.
-
-      It caught three drifts immediately. Character Creation still listed the old
-      Proficiencies-before-Traits order. Inventory & Equipment had two entries
-      transposed *and* was missing Tool Kits. Sci-Fi Equipment listed a curated
-      order the **nav was not using** — all four children shared `weight: 2`, so
-      Hugo was ordering by title; the weights are now distinct and both agree.
-
-      Races, Bots & Drones and `docs/_index.md` stay hand-written on purpose:
-      they group, blurb, or name something that does not exist yet.
-      <!-- is this in maintenamce notes yet? if not add it there and remove this item here. -->
 
 ## 4. Structure still on the table
 
-- [ ] **Move 1 — sci-fi equipment under the module.** 6 pages, 36 links across 19
-      files, 1 wildcard redirect. *Recommendation: do it when the other module
-      catalogs go live, so it is one move instead of two.*
-     <!-- not moving, keeping module page as full reference list and not a parent with the pages nested beneath -->
-- [ ] **Move 3 — bots & drones into a creatures section.** Agreed in principle;
-      waiting until there is a second kind of creature so the section is not a
-      folder with four robots in it.
-      <!-- lets create the crestures and npcs page and give it the same setup as many of the other pages: _index is geberated list, sections by setting (core, scifi) go beneath and each of those acts as a maintainte page liek the races one with a list leading leading to  to individual pages. so
-         creatures & npcs (as a nav toggle)
-            core crestures & npcs
-            scifi creatures & npcs
--->
+- [x] ~~**Move 1 — sci-fi equipment under the module.**~~ **Not moving.** The
+      module page stays a full reference list rather than becoming a parent with
+      the equipment pages nested beneath it. Equipment stays under Inventory &
+      Equipment, where a reader looks for gear; the module page is the
+      grab-and-go view across it. Decided, not deferred.
+
+- [ ] **Move 3 — bots & drones into Creatures & NPCs.** The section now exists:
+
+      ```
+      Creatures & NPCs            (nav toggle, {{< children >}} index)
+         Core Creatures & NPCs
+         Sci-Fi Creatures & NPCs
+      ```
+
+      All three are `wip: true` placeholders with nothing statted yet. Each
+      setting page is set up like Races — a hand-written list leading to one page
+      per creature — because `{{< children >}}` needs children to list and there
+      are none.
+
+      **Remaining:** move the four bot/drone platforms from
+      `inventory--equipment/sci-fi-equipment/bots--drones/` into
+      `creatures--npcs/sci-fi/`. Still waiting on a second kind of creature, so
+      the section is not a folder with four robots in it. The Sci-Fi page links
+      to where they currently live in the meantime.
 
 ## 5. Audits prepared, awaiting your review
 
