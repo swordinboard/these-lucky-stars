@@ -27,47 +27,19 @@ The following wound types describe common injuries. Each can be minor or major d
 | [Puncture](#puncture) | Grazing stab, shallow impalement | Deep stab, organ or artery damage | Bleeding |
 | [Sprain](#sprain) | Twisted ankle, pulled muscle | Torn ligament, severe hyperextension | Crippled or Restrained |
 
-{{% details "Burn" %}}
+{{< blockdetails "wounds/burn" >}}
 
-{{% include "/snippets/wounds/burn" %}}
+{{< blockdetails "wounds/contusion" >}}
 
-{{% /details %}}
+{{< blockdetails "wounds/dislocation" >}}
 
-{{% details "Contusion" %}}
+{{< blockdetails "wounds/fracture" >}}
 
-{{% include "/snippets/wounds/contusion" %}}
+{{< blockdetails "wounds/laceration" >}}
 
-{{% /details %}}
+{{< blockdetails "wounds/puncture" >}}
 
-{{% details "Dislocation" %}}
-
-{{% include "/snippets/wounds/dislocation" %}}
-
-{{% /details %}}
-
-{{% details "Fracture" %}}
-
-{{% include "/snippets/wounds/fracture" %}}
-
-{{% /details %}}
-
-{{% details "Laceration" %}}
-
-{{% include "/snippets/wounds/laceration" %}}
-
-{{% /details %}}
-
-{{% details "Puncture" %}}
-
-{{% include "/snippets/wounds/puncture" %}}
-
-{{% /details %}}
-
-{{% details "Sprain" %}}
-
-{{% include "/snippets/wounds/sprain" %}}
-
-{{% /details %}}
+{{< blockdetails "wounds/sprain" >}}
 
 ---
 
@@ -79,92 +51,32 @@ The following wound types describe common injuries. Each can be minor or major d
 
 {{% include "/snippets/conditions/overview" %}}
 
-{{% details "Asphyxiating" %}}
+{{< blockdetails "conditions/asphyxiating" >}}
 
-{{% include "/snippets/conditions/asphyxiating" %}}
+{{< blockdetails "conditions/bleeding" >}}
 
-{{% /details %}}
+{{< blockdetails "conditions/confused" >}}
 
-{{% details "Bleeding" %}}
+{{< blockdetails "conditions/crippled" >}}
 
-{{% include "/snippets/conditions/bleeding" %}}
+{{< blockdetails "conditions/dying" >}}
 
-{{% /details %}}
+{{< blockdetails "conditions/fatigued" >}}
 
-{{% details "Confused" %}}
+{{< blockdetails "conditions/frightened" >}}
 
-{{% include "/snippets/conditions/confused" %}}
+{{< blockdetails "conditions/immobilized" >}}
 
-{{% /details %}}
+{{< blockdetails "conditions/pinned" >}}
 
-{{% details "Crippled" %}}
+{{< blockdetails "conditions/prone" >}}
 
-{{% include "/snippets/conditions/crippled" %}}
+{{< blockdetails "conditions/restrained" >}}
 
-{{% /details %}}
+{{< blockdetails "conditions/shaken" >}}
 
-{{% details "Dying" %}}
+{{< blockdetails "conditions/sick" >}}
 
-{{% include "/snippets/conditions/dying" %}}
+{{< blockdetails "conditions/stressed" >}}
 
-{{% /details %}}
-
-{{% details "Fatigued" %}}
-
-{{% include "/snippets/conditions/fatigued" %}}
-
-{{% /details %}}
-
-{{% details "Frightened" %}}
-
-{{% include "/snippets/conditions/frightened" %}}
-
-{{% /details %}}
-
-{{% details "Immobilized" %}}
-
-{{% include "/snippets/conditions/immobilized" %}}
-
-{{% /details %}}
-
-{{% details "Pinned" %}}
-
-{{% include "/snippets/conditions/pinned" %}}
-
-{{% /details %}}
-
-{{% details "Prone" %}}
-
-{{% include "/snippets/conditions/prone" %}}
-
-{{% /details %}}
-
-{{% details "Restrained" %}}
-
-{{% include "/snippets/conditions/restrained" %}}
-
-{{% /details %}}
-
-{{% details "Shaken" %}}
-
-{{% include "/snippets/conditions/shaken" %}}
-
-{{% /details %}}
-
-{{% details "Sick" %}}
-
-{{% include "/snippets/conditions/sick" %}}
-
-{{% /details %}}
-
-{{% details "Stressed" %}}
-
-{{% include "/snippets/conditions/stressed" %}}
-
-{{% /details %}}
-
-{{% details "Unconscious" %}}
-
-{{% include "/snippets/conditions/unconscious" %}}
-
-{{% /details %}}
+{{< blockdetails "conditions/unconscious" >}}

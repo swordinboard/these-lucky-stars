@@ -33,86 +33,30 @@ proficiencies/weapon
 
 ## Core
 
-{{% details "Armor" %}}
+{{< blockdetails "proficiencies/armor" >}}
 
-{{% include "/snippets/proficiencies/armor" %}}
+{{< blockdetails "proficiencies/b-e-kit" >}}
 
-{{% /details %}}
+{{< blockdetails "proficiencies/disguise-kit" >}}
 
-{{% details "B&E Kit Proficiency" %}}
+{{< blockdetails "proficiencies/improved-ability" >}}
 
-{{% include "/snippets/proficiencies/b-e-kit" %}}
+{{< blockdetails "proficiencies/licensed-instincts" >}}
 
-{{% /details %}}
+{{< blockdetails "proficiencies/martial-training" >}}
 
-{{% details "Disguise Kit Proficiency" %}}
+{{< blockdetails "proficiencies/medic-training" >}}
 
-{{% include "/snippets/proficiencies/disguise-kit" %}}
+{{< blockdetails "proficiencies/medical-instincts" >}}
 
-{{% /details %}}
+{{< blockdetails "proficiencies/negotiation-training" >}}
 
-{{% details "Improved Ability" %}}
+{{< blockdetails "proficiencies/repair-kit" >}}
 
-{{% include "/snippets/proficiencies/improved-ability" %}}
+{{< blockdetails "proficiencies/research" >}}
 
-{{% /details %}}
+{{< blockdetails "proficiencies/survival-training" >}}
 
-{{% details "Licensed Instincts" %}}
+{{< blockdetails "proficiencies/vehicle" >}}
 
-{{% include "/snippets/proficiencies/licensed-instincts" %}}
-
-{{% /details %}}
-
-{{% details "Martial Training" %}}
-
-{{% include "/snippets/proficiencies/martial-training" %}}
-
-{{% /details %}}
-
-{{% details "Medic Training" %}}
-
-{{% include "/snippets/proficiencies/medic-training" %}}
-
-{{% /details %}}
-
-{{% details "Medical Instincts" %}}
-
-{{% include "/snippets/proficiencies/medical-instincts" %}}
-
-{{% /details %}}
-
-{{% details "Negotiation Training" %}}
-
-{{% include "/snippets/proficiencies/negotiation-training" %}}
-
-{{% /details %}}
-
-{{% details "Repair Kit Proficiency" %}}
-
-{{% include "/snippets/proficiencies/repair-kit" %}}
-
-{{% /details %}}
-
-{{% details "Research" %}}
-
-{{% include "/snippets/proficiencies/research" %}}
-
-{{% /details %}}
-
-{{% details "Survival Training" %}}
-
-{{% include "/snippets/proficiencies/survival-training" %}}
-
-{{% /details %}}
-
-{{% details "Vehicle" %}}
-
-{{% include "/snippets/proficiencies/vehicle" %}}
-
-{{% /details %}}
-
-{{% details "Weapon" %}}
-
-{{% include "/snippets/proficiencies/weapon" %}}
-
-{{% /details %}}
+{{< blockdetails "proficiencies/weapon" >}}

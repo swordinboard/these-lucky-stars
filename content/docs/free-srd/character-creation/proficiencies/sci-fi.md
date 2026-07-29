@@ -19,20 +19,8 @@ proficiencies/general-technology
 
 ## Sci-Fi
 
-{{% details "Comp Jack Proficiency" %}}
+{{< blockdetails "proficiencies/comp-jack" >}}
 
-{{% include "/snippets/proficiencies/comp-jack" %}}
+{{< blockdetails "proficiencies/general-robotics" >}}
 
-{{% /details %}}
-
-{{% details "General Robotics" %}}
-
-{{% include "/snippets/proficiencies/general-robotics" %}}
-
-{{% /details %}}
-
-{{% details "General Technology" %}}
-
-{{% include "/snippets/proficiencies/general-technology" %}}
-
-{{% /details %}}
+{{< blockdetails "proficiencies/general-technology" >}}

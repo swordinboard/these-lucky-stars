@@ -13,122 +13,42 @@ Many items have tags to quickly identify common features and use requirements. T
 
 ---
 
-{{% details "Adaptive Mesh" %}}
+{{< blockdetails "item-tags/adaptive-mesh" >}}
 
-{{% include "/snippets/item-tags/adaptive-mesh" %}}
+{{< blockdetails "item-tags/arcing" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/ballistic" >}}
 
-{{% details "Arcing" %}}
+{{< blockdetails "item-tags/battery" >}}
 
-{{% include "/snippets/item-tags/arcing" %}}
+{{< blockdetails "item-tags/belt-fed" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/bulky" >}}
 
-{{% details "Ballistic" %}}
+{{< blockdetails "item-tags/concealable" >}}
 
-{{% include "/snippets/item-tags/ballistic" %}}
+{{< blockdetails "item-tags/durable" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/firing-modes" >}}
 
-{{% details "Battery" %}}
+{{< blockdetails "item-tags/fragile" >}}
 
-{{% include "/snippets/item-tags/battery" %}}
+{{< blockdetails "item-tags/fuel-cells" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/injector" >}}
 
-{{% details "Belt Fed" %}}
+{{< blockdetails "item-tags/long-reload" >}}
 
-{{% include "/snippets/item-tags/belt-fed" %}}
+{{< blockdetails "item-tags/pressurized" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/power-source" >}}
 
-{{% details "Bulky" %}}
+{{< blockdetails "item-tags/rounds-reload" >}}
 
-{{% include "/snippets/item-tags/bulky" %}}
+{{< blockdetails "item-tags/space-suit" >}}
 
-{{% /details %}}
+{{< blockdetails "item-tags/throwable" >}}
 
-{{% details "Concealable" %}}
+{{< blockdetails "item-tags/two-handed" >}}
 
-{{% include "/snippets/item-tags/concealable" %}}
-
-{{% /details %}}
-
-{{% details "Durable" %}}
-
-{{% include "/snippets/item-tags/durable" %}}
-
-{{% /details %}}
-
-{{% details "Firing Modes" %}}
-
-{{% include "/snippets/item-tags/firing-modes" %}}
-
-{{% /details %}}
-
-{{% details "Fragile" %}}
-
-{{% include "/snippets/item-tags/fragile" %}}
-
-{{% /details %}}
-
-{{% details "Fuel Cell" %}}
-
-{{% include "/snippets/item-tags/fuel-cells" %}}
-
-{{% /details %}}
-
-{{% details "Injector" %}}
-
-{{% include "/snippets/item-tags/injector" %}}
-
-{{% /details %}}
-
-{{% details "Long Reload" %}}
-
-{{% include "/snippets/item-tags/long-reload" %}}
-
-{{% /details %}}
-
-{{% details "Pressurized" %}}
-
-{{% include "/snippets/item-tags/pressurized" %}}
-
-{{% /details %}}
-
-{{% details "Power Source" %}}
-
-{{% include "/snippets/item-tags/power-source" %}}
-
-{{% /details %}}
-
-{{% details "Rounds Reload" %}}
-
-{{% include "/snippets/item-tags/rounds-reload" %}}
-
-{{% /details %}}
-
-{{% details "Space Suit" %}}
-
-{{% include "/snippets/item-tags/space-suit" %}}
-
-{{% /details %}}
-
-{{% details "Throwable" %}}
-
-{{% include "/snippets/item-tags/throwable" %}}
-
-{{% /details %}}
-
-{{% details "Two-Handed" %}}
-
-{{% include "/snippets/item-tags/two-handed" %}}
-
-{{% /details %}}
-
-{{% details "Versatile" %}}
-
-{{% include "/snippets/item-tags/versatile" %}}
-
-{{% /details %}}
+{{< blockdetails "item-tags/versatile" >}}

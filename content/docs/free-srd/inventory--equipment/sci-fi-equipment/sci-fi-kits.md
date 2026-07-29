@@ -8,32 +8,12 @@ weight: 2
 
 {{% include "/snippets/sci-fi-equipment/kit-supplies" %}}
 
-{{% details "Breaking and Entering Kit" %}}
+{{< blockdetails "sci-fi-equipment/b-e-kit" >}}
 
-{{% include "/snippets/sci-fi-equipment/b-e-kit" %}}
+{{< blockdetails "sci-fi-equipment/disguise-kit" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/medical-kit" >}}
 
-{{% details "Disguise Kit" %}}
+{{< blockdetails "sci-fi-equipment/repair-kit" >}}
 
-{{% include "/snippets/sci-fi-equipment/disguise-kit" %}}
-
-{{% /details %}}
-
-{{% details "Medical Kit" %}}
-
-{{% include "/snippets/sci-fi-equipment/medical-kit" %}}
-
-{{% /details %}}
-
-{{% details "Repair Kit" %}}
-
-{{% include "/snippets/sci-fi-equipment/repair-kit" %}}
-
-{{% /details %}}
-
-{{% details "Tech Kit" %}}
-
-{{% include "/snippets/sci-fi-equipment/tech-kit" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/tech-kit" >}}

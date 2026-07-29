@@ -35,98 +35,34 @@ traits/well-connected
 
 ## Core
 
-{{% details "Alert" %}}
+{{< blockdetails "traits/alert" >}}
 
-{{% include "/snippets/traits/alert" %}}
+{{< blockdetails "traits/composed" >}}
 
-{{% /details %}}
+{{< blockdetails "traits/diplomatic" >}}
 
-{{% details "Composed" %}}
+{{< blockdetails "traits/hot-headed" >}}
 
-{{% include "/snippets/traits/composed" %}}
+{{< blockdetails "traits/intimidating" >}}
 
-{{% /details %}}
+{{< blockdetails "traits/lucky" >}}
 
-{{% details "Diplomatic" %}}
+{{< blockdetails "traits/mentally-sound" >}}
 
-{{% include "/snippets/traits/diplomatic" %}}
+{{< blockdetails "traits/particularly-attractive" >}}
 
-{{% /details %}}
+{{< blockdetails "traits/picture-of-health" >}}
 
-{{% details "Hot-Headed" %}}
+{{< blockdetails "traits/sly" >}}
 
-{{% include "/snippets/traits/hot-headed" %}}
+{{< blockdetails "traits/sneaky" >}}
 
-{{% /details %}}
+{{< blockdetails "traits/stubborn" >}}
 
-{{% details "Intimidating" %}}
+{{< blockdetails "traits/tough" >}}
 
-{{% include "/snippets/traits/intimidating" %}}
+{{< blockdetails "traits/unremarkable" >}}
 
-{{% /details %}}
+{{< blockdetails "traits/unshakable" >}}
 
-{{% details "Lucky" %}}
-
-{{% include "/snippets/traits/lucky" %}}
-
-{{% /details %}}
-
-{{% details "Mentally Sound" %}}
-
-{{% include "/snippets/traits/mentally-sound" %}}
-
-{{% /details %}}
-
-{{% details "Particularly Attractive" %}}
-
-{{% include "/snippets/traits/particularly-attractive" %}}
-
-{{% /details %}}
-
-{{% details "Picture of Health" %}}
-
-{{% include "/snippets/traits/picture-of-health" %}}
-
-{{% /details %}}
-
-{{% details "Sly" %}}
-
-{{% include "/snippets/traits/sly" %}}
-
-{{% /details %}}
-
-{{% details "Sneaky" %}}
-
-{{% include "/snippets/traits/sneaky" %}}
-
-{{% /details %}}
-
-{{% details "Stubborn" %}}
-
-{{% include "/snippets/traits/stubborn" %}}
-
-{{% /details %}}
-
-{{% details "Tough" %}}
-
-{{% include "/snippets/traits/tough" %}}
-
-{{% /details %}}
-
-{{% details "Unremarkable" %}}
-
-{{% include "/snippets/traits/unremarkable" %}}
-
-{{% /details %}}
-
-{{% details "Unshakable" %}}
-
-{{% include "/snippets/traits/unshakable" %}}
-
-{{% /details %}}
-
-{{% details "Well-Connected" %}}
-
-{{% include "/snippets/traits/well-connected" %}}
-
-{{% /details %}}
+{{< blockdetails "traits/well-connected" >}}

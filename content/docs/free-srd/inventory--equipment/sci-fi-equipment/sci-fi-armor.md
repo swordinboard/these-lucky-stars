@@ -37,79 +37,31 @@ sci-fi-equipment/ultraweave-evosuit
 
 ### Light Armor
 
-{{% details "Basic P-Suit" %}}
+{{< blockdetails "sci-fi-equipment/basic-p-suit" >}}
 
-{{% include "/snippets/sci-fi-equipment/basic-p-suit" %}}
+{{< blockdetails "sci-fi-equipment/classic-evosuit" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/combat-vest" >}}
 
-{{% details "Classic Evosuit" %}}
+{{< blockdetails "sci-fi-equipment/light-combat-vest" >}}
 
-{{% include "/snippets/sci-fi-equipment/classic-evosuit" %}}
+{{< blockdetails "sci-fi-equipment/padded-flight-suit" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/scav-gear" >}}
 
-{{% details "Combat Vest" %}}
-
-{{% include "/snippets/sci-fi-equipment/combat-vest" %}}
-
-{{% /details %}}
-
-{{% details "Light Combat Vest" %}}
-
-{{% include "/snippets/sci-fi-equipment/light-combat-vest" %}}
-
-{{% /details %}}
-
-{{% details "Padded Flight Suit" %}}
-
-{{% include "/snippets/sci-fi-equipment/padded-flight-suit" %}}
-
-{{% /details %}}
-
-{{% details "Scav Gear" %}}
-
-{{% include "/snippets/sci-fi-equipment/scav-gear" %}}
-
-{{% /details %}}
-
-{{% details "Site Safety Gear" %}}
-
-{{% include "/snippets/sci-fi-equipment/site-safety-gear" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/site-safety-gear" >}}
 
 ### Heavy Armor
 
-{{% details "Combat Evosuit" %}}
+{{< blockdetails "sci-fi-equipment/combat-evosuit" >}}
 
-{{% include "/snippets/sci-fi-equipment/combat-evosuit" %}}
+{{< blockdetails "sci-fi-equipment/enforcer-armor" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/eva-suit" >}}
 
-{{% details "Enforcer Armor" %}}
+{{< blockdetails "sci-fi-equipment/security-flight-suit" >}}
 
-{{% include "/snippets/sci-fi-equipment/enforcer-armor" %}}
-
-{{% /details %}}
-
-{{% details "EVA Suit" %}}
-
-{{% include "/snippets/sci-fi-equipment/eva-suit" %}}
-
-{{% /details %}}
-
-{{% details "Security Flight Suit" %}}
-
-{{% include "/snippets/sci-fi-equipment/security-flight-suit" %}}
-
-{{% /details %}}
-
-{{% details "Ultraweave Evosuit" %}}
-
-{{% include "/snippets/sci-fi-equipment/ultraweave-evosuit" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/ultraweave-evosuit" >}}
 
 ---
 
@@ -132,53 +84,21 @@ sci-fi-equipment/targeting-hud
 
 ### Armor Upgrades
 
-{{% details "Auto-Injector" %}}
+{{< blockdetails "sci-fi-equipment/auto-injector" >}}
 
-{{% include "/snippets/sci-fi-equipment/auto-injector" %}}
+{{< blockdetails "sci-fi-equipment/chameleon-unit" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/emergency-shank" >}}
 
-{{% details "Chameleon Unit" %}}
+{{< blockdetails "sci-fi-equipment/hazard-hud" >}}
 
-{{% include "/snippets/sci-fi-equipment/chameleon-unit" %}}
+{{< blockdetails "sci-fi-equipment/coms-unit" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/mebn-hud" >}}
 
-{{% details "Emergency Shank" %}}
+{{< blockdetails "sci-fi-equipment/safer-unit" >}}
 
-{{% include "/snippets/sci-fi-equipment/emergency-shank" %}}
-
-{{% /details %}}
-
-{{% details "Hazard HUD" %}}
-
-{{% include "/snippets/sci-fi-equipment/hazard-hud" %}}
-
-{{% /details %}}
-
-{{% details "Coms Unit" %}}
-
-{{% include "/snippets/sci-fi-equipment/coms-unit" %}}
-
-{{% /details %}}
-
-{{% details "MeBN HUD" %}}
-
-{{% include "/snippets/sci-fi-equipment/mebn-hud" %}}
-
-{{% /details %}}
-
-{{% details "SAFER Unit" %}}
-
-{{% include "/snippets/sci-fi-equipment/safer-unit" %}}
-
-{{% /details %}}
-
-{{% details "Targeting HUD" %}}
-
-{{% include "/snippets/sci-fi-equipment/targeting-hud" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/targeting-hud" >}}
 
 ---
 
@@ -195,15 +115,7 @@ sci-fi-equipment/ballistic-shield
 sci-fi-equipment/collapsible-shield
 {{< /catalog >}}
 
-{{% details "Ballistic Shield" %}}
+{{< blockdetails "sci-fi-equipment/ballistic-shield" >}}
 
-{{% include "/snippets/sci-fi-equipment/ballistic-shield" %}}
-
-{{% /details %}}
-
-{{% details "Collapsible Shield" %}}
-
-{{% include "/snippets/sci-fi-equipment/collapsible-shield" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/collapsible-shield" >}}
  

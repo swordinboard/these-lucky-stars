@@ -32,5 +32,35 @@ Leaving it out is how Fast Kit Trap and Long Performance ended up with no
 recorded prerequisite at all.
 
 `worksheets.py` section C4 reports any drift between the line and `requires`.
+
+WRITING THIS FILE IS NOT ENOUGH — the ability will not appear anywhere on the
+site until you also edit the page by hand, in TWO places:
+
+  1. THE FEAT TREE. The catalog is hand-listed, because the indent IS the
+     prerequisite tree and nothing derives it:
+
+         {{< catalog layout="names" >}}
+         abilities/charge
+         - abilities/agile-charge      <- requires Charge
+         -- abilities/leaping-charge   <- requires Agile Charge
+         {{< /catalog >}}
+
+     Add the id under whatever it requires, at one more `-` than its parent.
+     A top-level ability gets no prefix. The list is alphabetical within each
+     level.
+
+  2. THE ENTRY ITSELF:  {{< blockdetails "abilities/<slug>" >}}
+     in the section below the tree, in alphabetical order.
+
+  Core abilities:    content/docs/free-srd/character-creation/abilities/_index.md
+                     — note it has TABS. General and Luck abilities are
+                       separate catalogs; put it in the right one.
+  Sci-fi abilities:  content/docs/free-srd/character-creation/abilities/sci-fi.md
+
+The Sci-Fi Module hub picks the ability up on its own — its tables select by
+property, so leave it alone.
+
+Nesting and `requires` must agree; §C4 checks that too.
+
 Delete this comment — a snippet must never END with one.
 -->

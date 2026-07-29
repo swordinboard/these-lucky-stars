@@ -31,41 +31,17 @@ generic-equipment/wide-brim-hat
 generic-equipment/work-gloves
 {{< /catalog >}}
 
-{{% details "Face Wrap" %}}
+{{< blockdetails "generic-equipment/face-wrap" >}}
 
-{{% include "/snippets/generic-equipment/face-wrap" %}}
+{{< blockdetails "generic-equipment/heavy-cloak" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/rain-poncho" >}}
 
-{{% details "Heavy Cloak" %}}
+{{< blockdetails "generic-equipment/reinforced-boots" >}}
 
-{{% include "/snippets/generic-equipment/heavy-cloak" %}}
+{{< blockdetails "generic-equipment/wide-brim-hat" >}}
 
-{{% /details %}}
-
-{{% details "Rain Poncho" %}}
-
-{{% include "/snippets/generic-equipment/rain-poncho" %}}
-
-{{% /details %}}
-
-{{% details "Reinforced Boots" %}}
-
-{{% include "/snippets/generic-equipment/reinforced-boots" %}}
-
-{{% /details %}}
-
-{{% details "Wide-Brim Hat" %}}
-
-{{% include "/snippets/generic-equipment/wide-brim-hat" %}}
-
-{{% /details %}}
-
-{{% details "Work Gloves" %}}
-
-{{% include "/snippets/generic-equipment/work-gloves" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/work-gloves" >}}
 
 ---
 
@@ -87,71 +63,27 @@ generic-equipment/saddlebags
 generic-equipment/satchel
 {{< /catalog >}}
 
-{{% details "Backpack" %}}
+{{< blockdetails "generic-equipment/backpack" >}}
 
-{{% include "/snippets/generic-equipment/backpack" %}}
+{{< blockdetails "generic-equipment/barrel" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/lockable-chest" >}}
 
-{{% details "Barrel" %}}
+{{< blockdetails "generic-equipment/crate" >}}
 
-{{% include "/snippets/generic-equipment/barrel" %}}
+{{< blockdetails "generic-equipment/dry-sack" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/pouch-set-ammo" >}}
 
-{{% details "Chest, Lockable" %}}
+{{< blockdetails "generic-equipment/pouch-set-small" >}}
 
-{{% include "/snippets/generic-equipment/lockable-chest" %}}
+{{< blockdetails "generic-equipment/pouch-set-standard" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/quiver" >}}
 
-{{% details "Crate" %}}
+{{< blockdetails "generic-equipment/saddlebags" >}}
 
-{{% include "/snippets/generic-equipment/crate" %}}
-
-{{% /details %}}
-
-{{% details "Dry Sack" %}}
-
-{{% include "/snippets/generic-equipment/dry-sack" %}}
-
-{{% /details %}}
-
-{{% details "Pouch Set, Ammo" %}}
-
-{{% include "/snippets/generic-equipment/pouch-set-ammo" %}}
-
-{{% /details %}}
-
-{{% details "Pouch Set, Small" %}}
-
-{{% include "/snippets/generic-equipment/pouch-set-small" %}}
-
-{{% /details %}}
-
-{{% details "Pouch Set, Standard" %}}
-
-{{% include "/snippets/generic-equipment/pouch-set-standard" %}}
-
-{{% /details %}}
-
-{{% details "Quiver / Bolt Case" %}}
-
-{{% include "/snippets/generic-equipment/quiver" %}}
-
-{{% /details %}}
-
-{{% details "Saddlebags" %}}
-
-{{% include "/snippets/generic-equipment/saddlebags" %}}
-
-{{% /details %}}
-
-{{% details "Satchel" %}}
-
-{{% include "/snippets/generic-equipment/satchel" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/satchel" >}}
 
 ---
 
@@ -166,29 +98,13 @@ generic-equipment/oil-lantern
 generic-equipment/torch
 {{< /catalog >}}
 
-{{% details "Candle" %}}
+{{< blockdetails "generic-equipment/candle" >}}
 
-{{% include "/snippets/generic-equipment/candle" %}}
+{{< blockdetails "generic-equipment/fuel-oil-flask" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/oil-lantern" >}}
 
-{{% details "Fuel / Oil Flask" %}}
-
-{{% include "/snippets/generic-equipment/fuel-oil-flask" %}}
-
-{{% /details %}}
-
-{{% details "Oil Lantern" %}}
-
-{{% include "/snippets/generic-equipment/oil-lantern" %}}
-
-{{% /details %}}
-
-{{% details "Torch" %}}
-
-{{% include "/snippets/generic-equipment/torch" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/torch" >}}
 
 ---
 
@@ -205,41 +121,17 @@ generic-equipment/restorative-tonic
 generic-equipment/splint-materials
 {{< /catalog >}}
 
-{{% details "Antiseptic Poultice" %}}
+{{< blockdetails "generic-equipment/antiseptic-poultice" >}}
 
-{{% include "/snippets/generic-equipment/antiseptic-poultice" %}}
+{{< blockdetails "generic-equipment/antitoxin" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/bandages-large" >}}
 
-{{% details "Antitoxin" %}}
+{{< blockdetails "generic-equipment/bandages-small" >}}
 
-{{% include "/snippets/generic-equipment/antitoxin" %}}
+{{< blockdetails "generic-equipment/restorative-tonic" >}}
 
-{{% /details %}}
-
-{{% details "Bandages, Large" %}}
-
-{{% include "/snippets/generic-equipment/bandages-large" %}}
-
-{{% /details %}}
-
-{{% details "Bandages, Small" %}}
-
-{{% include "/snippets/generic-equipment/bandages-small" %}}
-
-{{% /details %}}
-
-{{% details "Restorative Tonic" %}}
-
-{{% include "/snippets/generic-equipment/restorative-tonic" %}}
-
-{{% /details %}}
-
-{{% details "Splint Materials" %}}
-
-{{% include "/snippets/generic-equipment/splint-materials" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/splint-materials" >}}
 
 ---
 
@@ -260,65 +152,25 @@ generic-equipment/tent-4-person
 generic-equipment/waterskin
 {{< /catalog >}}
 
-{{% details "Bedroll" %}}
+{{< blockdetails "generic-equipment/bedroll" >}}
 
-{{% include "/snippets/generic-equipment/bedroll" %}}
+{{< blockdetails "generic-equipment/compass" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/field-ration" >}}
 
-{{% details "Compass / Navigational Tool" %}}
+{{< blockdetails "generic-equipment/fire-starter" >}}
 
-{{% include "/snippets/generic-equipment/compass" %}}
+{{< blockdetails "generic-equipment/rope-50ft" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/signal-mirror" >}}
 
-{{% details "Field Ration" %}}
+{{< blockdetails "generic-equipment/signal-whistle" >}}
 
-{{% include "/snippets/generic-equipment/field-ration" %}}
+{{< blockdetails "generic-equipment/tent-2-person" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/tent-4-person" >}}
 
-{{% details "Fire-Starter" %}}
-
-{{% include "/snippets/generic-equipment/fire-starter" %}}
-
-{{% /details %}}
-
-{{% details "Rope, 50ft" %}}
-
-{{% include "/snippets/generic-equipment/rope-50ft" %}}
-
-{{% /details %}}
-
-{{% details "Signal Mirror" %}}
-
-{{% include "/snippets/generic-equipment/signal-mirror" %}}
-
-{{% /details %}}
-
-{{% details "Signal Whistle" %}}
-
-{{% include "/snippets/generic-equipment/signal-whistle" %}}
-
-{{% /details %}}
-
-{{% details "Tent, 2-Person" %}}
-
-{{% include "/snippets/generic-equipment/tent-2-person" %}}
-
-{{% /details %}}
-
-{{% details "Tent, 4-Person" %}}
-
-{{% include "/snippets/generic-equipment/tent-4-person" %}}
-
-{{% /details %}}
-
-{{% details "Waterskin / Canteen" %}}
-
-{{% include "/snippets/generic-equipment/waterskin" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/waterskin" >}}
 
 ---
 
@@ -340,71 +192,27 @@ generic-equipment/shovel
 generic-equipment/whetstone
 {{< /catalog >}}
 
-{{% details "Chain, 10ft" %}}
+{{< blockdetails "generic-equipment/chain-10ft" >}}
 
-{{% include "/snippets/generic-equipment/chain-10ft" %}}
+{{< blockdetails "generic-equipment/chalk-sticks" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/grappling-hook" >}}
 
-{{% details "Chalk / Charcoal Sticks" %}}
+{{< blockdetails "generic-equipment/ink-writing-instrument" >}}
 
-{{% include "/snippets/generic-equipment/chalk-sticks" %}}
+{{< blockdetails "generic-equipment/long-crowbar" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/manacles" >}}
 
-{{% details "Grappling Hook" %}}
+{{< blockdetails "generic-equipment/parchment-sheets" >}}
 
-{{% include "/snippets/generic-equipment/grappling-hook" %}}
+{{< blockdetails "generic-equipment/pitons" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/sewing-set" >}}
 
-{{% details "Ink & Writing Instrument" %}}
+{{< blockdetails "generic-equipment/shovel" >}}
 
-{{% include "/snippets/generic-equipment/ink-writing-instrument" %}}
-
-{{% /details %}}
-
-{{% details "Long Crowbar" %}}
-
-{{% include "/snippets/generic-equipment/long-crowbar" %}}
-
-{{% /details %}}
-
-{{% details "Manacles / Restraints" %}}
-
-{{% include "/snippets/generic-equipment/manacles" %}}
-
-{{% /details %}}
-
-{{% details "Parchment / Paper Sheets (5)" %}}
-
-{{% include "/snippets/generic-equipment/parchment-sheets" %}}
-
-{{% /details %}}
-
-{{% details "Pitons / Climbing Spikes (6)" %}}
-
-{{% include "/snippets/generic-equipment/pitons" %}}
-
-{{% /details %}}
-
-{{% details "Sewing Set" %}}
-
-{{% include "/snippets/generic-equipment/sewing-set" %}}
-
-{{% /details %}}
-
-{{% details "Shovel" %}}
-
-{{% include "/snippets/generic-equipment/shovel" %}}
-
-{{% /details %}}
-
-{{% details "Whetstone" %}}
-
-{{% include "/snippets/generic-equipment/whetstone" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/whetstone" >}}
 
 ---
 
@@ -426,68 +234,24 @@ generic-equipment/coil-of-wire
 generic-equipment/wooden-stakes
 {{< /catalog >}}
 
-{{% details "Animal Feed (1 day)" %}}
+{{< blockdetails "generic-equipment/animal-feed" >}}
 
-{{% include "/snippets/generic-equipment/animal-feed" %}}
+{{< blockdetails "generic-equipment/twine" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/blank-book-journal" >}}
 
-{{% details "Ball of Twine / String" %}}
+{{< blockdetails "generic-equipment/block-of-soap" >}}
 
-{{% include "/snippets/generic-equipment/twine" %}}
+{{< blockdetails "generic-equipment/common-alcohol-flask" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/bag-of-salt" >}}
 
-{{% details "Blank Book / Journal" %}}
+{{< blockdetails "generic-equipment/iron-spikes" >}}
 
-{{% include "/snippets/generic-equipment/blank-book-journal" %}}
+{{< blockdetails "generic-equipment/small-bell" >}}
 
-{{% /details %}}
+{{< blockdetails "generic-equipment/candle-wax-block" >}}
 
-{{% details "Block of Soap" %}}
+{{< blockdetails "generic-equipment/coil-of-wire" >}}
 
-{{% include "/snippets/generic-equipment/block-of-soap" %}}
-
-{{% /details %}}
-
-{{% details "Common Alcohol, Flask" %}}
-
-{{% include "/snippets/generic-equipment/common-alcohol-flask" %}}
-
-{{% /details %}}
-
-{{% details "Bag of Salt" %}}
-
-{{% include "/snippets/generic-equipment/bag-of-salt" %}}
-
-{{% /details %}}
-
-{{% details "Iron Spikes (10)" %}}
-
-{{% include "/snippets/generic-equipment/iron-spikes" %}}
-
-{{% /details %}}
-
-{{% details "Small Bell" %}}
-
-{{% include "/snippets/generic-equipment/small-bell" %}}
-
-{{% /details %}}
-
-{{% details "Candle Wax Block" %}}
-
-{{% include "/snippets/generic-equipment/candle-wax-block" %}}
-
-{{% /details %}}
-
-{{% details "Coil of Wire" %}}
-
-{{% include "/snippets/generic-equipment/coil-of-wire" %}}
-
-{{% /details %}}
-
-{{% details "Wooden Stakes (6)" %}}
-
-{{% include "/snippets/generic-equipment/wooden-stakes" %}}
-
-{{% /details %}}
+{{< blockdetails "generic-equipment/wooden-stakes" >}}

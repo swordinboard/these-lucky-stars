@@ -173,12 +173,18 @@ Six of the eight remaining are now resolved, by your call:
   singular `Fuel Cell` stays as the name of the *tag*, which is a different
   block.
 
-- [ ] **2 label disagreements left, both on `vehicle-rules.md` (WIP, held for
-      review):** `Speed Tiers` vs title `Speed Tiers Chart`, and
-      `Modes & Maneuverability` vs title `Speed Descriptors`. **These are exactly
-      the §8 "never rendered, never proofread" titles** — the label is what a
-      reader sees, the title is what the builder would print, and they say
-      different things.
+The last two, on `vehicle-rules.md`, turned out **not to be drift at all** — the
+conversion pass surfaced why. They are *composite* collapsibles: `Speed Tiers`
+holds two blocks (`speed-tiers-chart` and `speed-tiers`), and
+`Modes & Maneuverability` holds a hand-written `#### heading` plus
+`speed-descriptors`. In both the label is a correct group name, not a block name.
+They keep the `details` + `include` form, which is what it is for.
+
+- [ ] **Still true of those two blocks: their own titles have never been
+      rendered** (§8). `Speed Tiers Chart` and `Speed Descriptors` are what the
+      PDF builder would print when a GM pulls either block out on its own, and
+      neither has ever been read on a page. Worth a look when Vehicle Rules
+      comes off WIP.
 
 **The narrower change, recommended over the full flip:**
 
@@ -187,13 +193,17 @@ Six of the eight remaining are now resolved, by your call:
       byte-identical to the two-part form, and a bad id now fails the build
       instead of rendering nothing. `builddata.py` reads it as a placement, so
       `pages`/`page_urls`/anchors/edges are unaffected.
-- [ ] **Convert the 320 call sites to `blockdetails`.** Mechanical; both forms
-      work, so this can be one pass or opportunistic. Removes 320 hand-typed
-      labels and 320 hand-typed snippet paths. Run the preflight after — the
-      rendered-text diff is the proof.
+- [x] ~~**Convert the 320 call sites to `blockdetails`.**~~ **Done — 318 of 320
+      converted** across 14 files, removing 318 hand-typed labels and 318
+      hand-typed snippet paths. The 2 left are the composite collapsibles above.
+      Verified: `data/` byte-identical (436 blocks, 1118 edges, same type
+      breakdown), and every rendered page identical once the theme's own
+      content-derived ids are masked — the hugo-book menu hashes `md5 .Page`, so
+      any content edit reshuffles the sidebar checkbox ids on every page.
 - [ ] **Delete page headings that duplicate the block heading below them.** 97
       includes have a heading directly above (h1 ×7, h2 ×41, h3 ×40, h4 ×9);
       some of the h2s are genuine group headings ("Aggressive Actions") and stay.
+      This is the last of the three name-typing sites still hand-maintained.
 
 The full flip stays available and would need no content change to adopt later.
 Its costs, for the record: 319 snippets edited, ~97 page headings deleted, a

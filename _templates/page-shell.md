@@ -18,18 +18,17 @@ combat/standard-attack
 
 ## Aggressive Actions
 
-{{% details "Standard Attack" %}}
-
-{{% include "/snippets/combat/standard-attack" %}}
-
-{{% /details %}}
+{{< blockdetails "combat/standard-attack" >}}
 
 <!--
 A SHELL PAGE: headings, tables and includes. It is NOT a block and carries no
 block frontmatter — no id, no category, no type. Deliberately.
 
-Three ways to pull blocks in:
-  {{% include "/snippets/…" %}}          one block, by path
+Four ways to pull blocks in:
+  {{< blockdetails "ns/slug" >}}         one block in a collapsible — the
+                                         <summary> label comes from its title,
+                                         so it cannot drift. Prefer this.
+  {{% include "/snippets/…" %}}          one block, bare, by path
   {{< blockset category="…" … />}}       a whole set, in full, by property
   {{< catalog … >}} / catalog … />       a table or index of links
 

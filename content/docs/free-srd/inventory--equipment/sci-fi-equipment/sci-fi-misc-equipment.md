@@ -25,23 +25,11 @@ sci-fi-equipment/mobile-phone
 
 *See also: [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) — a helmet-mounted Local tier upgrade for armor and space suits.*
 
-{{% details "Coms Headset" %}}
+{{< blockdetails "sci-fi-equipment/coms-headset" >}}
 
-{{% include "/snippets/sci-fi-equipment/coms-headset" %}}
+{{< blockdetails "sci-fi-equipment/long-range-coms" >}}
 
-{{% /details %}}
-
-{{% details "Long Range Coms" %}}
-
-{{% include "/snippets/sci-fi-equipment/long-range-coms" %}}
-
-{{% /details %}}
-
-{{% details "Mobile Phone" %}}
-
-{{% include "/snippets/sci-fi-equipment/mobile-phone" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/mobile-phone" >}}
 
 ---
 
@@ -57,35 +45,15 @@ sci-fi-equipment/pain-suppressant-injector
 sci-fi-equipment/vitaboost-injector
 {{< /catalog >}}
 
-{{% details "Analgesic Radiation Antidote 5 (ARA-5)" %}}
+{{< blockdetails "sci-fi-equipment/ara-5" >}}
 
-{{% include "/snippets/sci-fi-equipment/ara-5" %}}
+{{< blockdetails "sci-fi-equipment/crash-foam-canister" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/emergency-trauma-patch" >}}
 
-{{% details "Crash Foam Canister" %}}
+{{< blockdetails "sci-fi-equipment/pain-suppressant-injector" >}}
 
-{{% include "/snippets/sci-fi-equipment/crash-foam-canister" %}}
-
-{{% /details %}}
-
-{{% details "Emergency Trauma Patch" %}}
-
-{{% include "/snippets/sci-fi-equipment/emergency-trauma-patch" %}}
-
-{{% /details %}}
-
-{{% details "Pain Suppressant Injector" %}}
-
-{{% include "/snippets/sci-fi-equipment/pain-suppressant-injector" %}}
-
-{{% /details %}}
-
-{{% details "Vitaboost Injector" %}}
-
-{{% include "/snippets/sci-fi-equipment/vitaboost-injector" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/vitaboost-injector" >}}
 
 ---
 
@@ -103,47 +71,19 @@ sci-fi-equipment/solar-array-pack
 sci-fi-equipment/survival-tent
 {{< /catalog >}}
 
-{{% details "Emergency Beacon" %}}
+{{< blockdetails "sci-fi-equipment/emergency-beacon" >}}
 
-{{% include "/snippets/sci-fi-equipment/emergency-beacon" %}}
+{{< blockdetails "sci-fi-equipment/emergency-oxygen-mask" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/field-ration" >}}
 
-{{% details "Emergency Oxygen Mask" %}}
+{{< blockdetails "sci-fi-equipment/portable-heater" >}}
 
-{{% include "/snippets/sci-fi-equipment/emergency-oxygen-mask" %}}
+{{< blockdetails "sci-fi-equipment/portable-water-purifier" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/solar-array-pack" >}}
 
-{{% details "Field Ration" %}}
-
-{{% include "/snippets/sci-fi-equipment/field-ration" %}}
-
-{{% /details %}}
-
-{{% details "Portable Heater" %}}
-
-{{% include "/snippets/sci-fi-equipment/portable-heater" %}}
-
-{{% /details %}}
-
-{{% details "Portable Water Purifier" %}}
-
-{{% include "/snippets/sci-fi-equipment/portable-water-purifier" %}}
-
-{{% /details %}}
-
-{{% details "Solar Array Pack" %}}
-
-{{% include "/snippets/sci-fi-equipment/solar-array-pack" %}}
-
-{{% /details %}}
-
-{{% details "Survival Tent" %}}
-
-{{% include "/snippets/sci-fi-equipment/survival-tent" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/survival-tent" >}}
 
 ---
 
@@ -174,122 +114,42 @@ sci-fi-equipment/squad-shield
 sci-fi-equipment/battery-cores
 {{< /catalog >}}
 
-{{% details "Bio Scanner" %}}
+{{< blockdetails "sci-fi-equipment/bio-scanner" >}}
 
-{{% include "/snippets/sci-fi-equipment/bio-scanner" %}}
+{{< blockdetails "sci-fi-equipment/bioskin-veil" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/boost-pack" >}}
 
-{{% details "Bioskin Veil" %}}
+{{< blockdetails "sci-fi-equipment/comp-jack" >}}
 
-{{% include "/snippets/sci-fi-equipment/bioskin-veil" %}}
+{{< blockdetails "sci-fi-equipment/data-spike" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/decoy-beacon" >}}
 
-{{% details "Boost Pack" %}}
+{{< blockdetails "sci-fi-equipment/fuel-cells" >}}
 
-{{% include "/snippets/sci-fi-equipment/boost-pack" %}}
+{{< blockdetails "sci-fi-equipment/grapple-line-launcher" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/gravity-anchor" >}}
 
-{{% details "Comp Jack" %}}
+{{< blockdetails "sci-fi-equipment/jump-boosters" >}}
 
-{{% include "/snippets/sci-fi-equipment/comp-jack" %}}
+{{< blockdetails "sci-fi-equipment/jump-pack" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/mag-boots" >}}
 
-{{% details "Data Spike" %}}
+{{< blockdetails "sci-fi-equipment/mag-cuffs" >}}
 
-{{% include "/snippets/sci-fi-equipment/data-spike" %}}
+{{< blockdetails "sci-fi-equipment/mini-laser-cutter" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/personal-shield" >}}
 
-{{% details "Decoy Beacon" %}}
+{{< blockdetails "sci-fi-equipment/reactor-cores" >}}
 
-{{% include "/snippets/sci-fi-equipment/decoy-beacon" %}}
+{{< blockdetails "sci-fi-equipment/remote-detonator" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/signature-spoofer" >}}
 
-{{% details "Fuel Cells" %}}
+{{< blockdetails "sci-fi-equipment/squad-shield" >}}
 
-{{% include "/snippets/sci-fi-equipment/fuel-cells" %}}
-
-{{% /details %}}
-
-{{% details "Grapple-Line Launcher" %}}
-
-{{% include "/snippets/sci-fi-equipment/grapple-line-launcher" %}}
-
-{{% /details %}}
-
-{{% details "Gravity Anchor" %}}
-
-{{% include "/snippets/sci-fi-equipment/gravity-anchor" %}}
-
-{{% /details %}}
-
-{{% details "Jump Boosters" %}}
-
-{{% include "/snippets/sci-fi-equipment/jump-boosters" %}}
-
-{{% /details %}}
-
-{{% details "Jump Pack" %}}
-
-{{% include "/snippets/sci-fi-equipment/jump-pack" %}}
-
-{{% /details %}}
-
-{{% details "Mag Boots" %}}
-
-{{% include "/snippets/sci-fi-equipment/mag-boots" %}}
-
-{{% /details %}}
-
-{{% details "Mag Cuffs" %}}
-
-{{% include "/snippets/sci-fi-equipment/mag-cuffs" %}}
-
-{{% /details %}}
-
-{{% details "Mini Laser Cutter" %}}
-
-{{% include "/snippets/sci-fi-equipment/mini-laser-cutter" %}}
-
-{{% /details %}}
-
-{{% details "Personal Shield" %}}
-
-{{% include "/snippets/sci-fi-equipment/personal-shield" %}}
-
-{{% /details %}}
-
-{{% details "Reactor Cores" %}}
-
-{{% include "/snippets/sci-fi-equipment/reactor-cores" %}}
-
-{{% /details %}}
-
-{{% details "Remote Detonator" %}}
-
-{{% include "/snippets/sci-fi-equipment/remote-detonator" %}}
-
-{{% /details %}}
-
-{{% details "Signature Spoofer" %}}
-
-{{% include "/snippets/sci-fi-equipment/signature-spoofer" %}}
-
-{{% /details %}}
-
-{{% details "Squad Shield" %}}
-
-{{% include "/snippets/sci-fi-equipment/squad-shield" %}}
-
-{{% /details %}}
-
-{{% details "Standardized Battery Cores" %}}
-
-{{% include "/snippets/sci-fi-equipment/battery-cores" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/battery-cores" >}}

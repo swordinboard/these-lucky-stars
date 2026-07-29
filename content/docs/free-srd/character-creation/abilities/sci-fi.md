@@ -33,84 +33,32 @@ abilities/swift-custom-battery
 
 ## Sci-Fi General
 
-{{% details "Tech Armor" %}}
+{{< blockdetails "abilities/tech-armor" >}}
 
-{{% include "/snippets/abilities/tech-armor" %}}
+{{< blockdetails "abilities/companion-bot" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/ghost-protocol" >}}
 
-{{% details "Companion Bot" %}}
+{{< blockdetails "abilities/opensaysame" >}}
 
-{{% include "/snippets/abilities/companion-bot" %}}
+{{< blockdetails "abilities/rigged-comp-jack" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/salvage" >}}
 
-{{% details "Ghost Protocol" %}}
+{{< blockdetails "abilities/signal-intelligence" >}}
 
-{{% include "/snippets/abilities/ghost-protocol" %}}
-
-{{% /details %}}
-
-{{% details "Opensaysame" %}}
-
-{{% include "/snippets/abilities/opensaysame" %}}
-
-{{% /details %}}
-
-{{% details "Rigged Comp Jack" %}}
-
-{{% include "/snippets/abilities/rigged-comp-jack" %}}
-
-{{% /details %}}
-
-{{% details "Salvage" %}}
-
-{{% include "/snippets/abilities/salvage" %}}
-
-{{% /details %}}
-
-{{% details "Signal Intelligence" %}}
-
-{{% include "/snippets/abilities/signal-intelligence" %}}
-
-{{% /details %}}
-
-{{% details "Special Encouragement" %}}
-
-{{% include "/snippets/abilities/special-encouragement" %}}
-
-{{% /details %}}
+{{< blockdetails "abilities/special-encouragement" >}}
 
 ---
 
 ## Sci-Fi Battery
 
-{{% details "Battery Saboteur" %}}
+{{< blockdetails "abilities/battery-saboteur" >}}
 
-{{% include "/snippets/abilities/battery-saboteur" %}}
+{{< blockdetails "abilities/battery-saver" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/overcharge" >}}
 
-{{% details "Battery Saver" %}}
+{{< blockdetails "abilities/power-main-tap" >}}
 
-{{% include "/snippets/abilities/battery-saver" %}}
-
-{{% /details %}}
-
-{{% details "Overcharge" %}}
-
-{{% include "/snippets/abilities/overcharge" %}}
-
-{{% /details %}}
-
-{{% details "Power Main Tap" %}}
-
-{{% include "/snippets/abilities/power-main-tap" %}}
-
-{{% /details %}}
-
-{{% details "Swift Custom Battery" %}}
-
-{{% include "/snippets/abilities/swift-custom-battery" %}}
-
-{{% /details %}}
+{{< blockdetails "abilities/swift-custom-battery" >}}

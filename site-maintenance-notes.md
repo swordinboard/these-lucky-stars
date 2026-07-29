@@ -194,7 +194,15 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
 
 ## Collapsible entries (`details` vs the `blockdetails` shortcode)
 
-Most catalog pages wrap each block in a collapsible:
+Catalog pages wrap each block in a collapsible. **Use `blockdetails`:**
+
+```
+{{< blockdetails "generic-equipment/reinforced-boots" >}}
+{{< blockdetails "generic-equipment/reinforced-boots" open >}}
+```
+
+The older two-part form still works and is still correct for the few
+collapsibles that hold more than one block:
 
 ```
 {{% details "Reinforced Boots" %}}
@@ -204,20 +212,18 @@ Most catalog pages wrap each block in a collapsible:
 {{% /details %}}
 ```
 
-That types the block's name once as a label and again as a path, and **the label
-is not checked against the block**. It drifts: an audit found 10 of 320 labels
-disagreeing with the block they wrap, two of them plain errors — a summary table
-row reading "Reinforced Boots" opening an entry headed "Sturdy Boots", and a
+That form types the block's name once as a label and again as a path, and **the
+label is not checked against the block**. It drifted: 10 of 320 labels disagreed
+with the block they wrapped, two of them plain errors — a summary table row
+reading "Reinforced Boots" opening an entry headed "Sturdy Boots", and a
 "Fire-Startee" label on Fire-Starter.
 
-`blockdetails` names the block once and takes the label from its `title`:
+318 of the 320 have been converted. The 2 that remain are on Vehicle Rules and
+are **composite** — one collapsible holding two blocks, and one holding a
+hand-written heading plus a block. `blockdetails` takes exactly one block, so
+those keep the long form.
 
-```
-{{< blockdetails "generic-equipment/reinforced-boots" >}}
-{{< blockdetails "generic-equipment/reinforced-boots" open >}}
-```
-
-Rendered output is byte-identical to the two-part form. Two differences that
+Rendered output is byte-identical between the two forms. Two differences that
 matter:
 
 - The `<summary>` label **cannot** drift from the entry it opens.
@@ -232,9 +238,9 @@ Note `<summary>` carries no `id` — for a details-wrapped block the heading
 another shortcode that displays a block, teach `builddata.py` about it in the
 same breath or the block will look unplaced.
 
-**Rollout is incomplete** — 320 call sites still use the two-part form. Both
-work; convert opportunistically or in one pass. Tracked in
-`_discovery/06-open-items.md` §5d.
+When you add a new block to a page, reach for `blockdetails` first. Only fall
+back to `details` + `include` when the collapsible genuinely holds more than one
+block, or a heading the block does not own.
 
 ---
 

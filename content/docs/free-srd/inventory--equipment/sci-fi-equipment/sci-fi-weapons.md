@@ -26,37 +26,17 @@ sci-fi-equipment/shock-baton
 
 #### Light Melee Weapons
 
-{{% details "Knuckle Taser" %}}
+{{< blockdetails "sci-fi-equipment/knuckle-taser" >}}
 
-{{% include "/snippets/sci-fi-equipment/knuckle-taser" %}}
-
-{{% /details %}}
-
-{{% details "Standard Issue Knife" %}}
-
-{{% include "/snippets/sci-fi-equipment/standard-issue-knife" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/standard-issue-knife" >}}
 
 #### Medium Melee Weapons
 
-{{% details "Emergency Hatchet" %}}
+{{< blockdetails "sci-fi-equipment/emergency-hatchet" >}}
 
-{{% include "/snippets/sci-fi-equipment/emergency-hatchet" %}}
+{{< blockdetails "sci-fi-equipment/ripper-blade" >}}
 
-{{% /details %}}
-
-{{% details "Ripper Blade" %}}
-
-{{% include "/snippets/sci-fi-equipment/ripper-blade" %}}
-
-{{% /details %}}
-
-{{% details "Shock Baton" %}}
-
-{{% include "/snippets/sci-fi-equipment/shock-baton" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/shock-baton" >}}
 
 ---
 
@@ -89,69 +69,29 @@ sci-fi-equipment/heavy-rotary-cannon
 
 #### Pistols
 
-{{% details "Auto Pistol" %}}
+{{< blockdetails "sci-fi-equipment/auto-pistol" >}}
 
-{{% include "/snippets/sci-fi-equipment/auto-pistol" %}}
+{{< blockdetails "sci-fi-equipment/heavy-pistol" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/laser-pistol" >}}
 
-{{% details "Heavy Pistol" %}}
-
-{{% include "/snippets/sci-fi-equipment/heavy-pistol" %}}
-
-{{% /details %}}
-
-{{% details "Laser Pistol" %}}
-
-{{% include "/snippets/sci-fi-equipment/laser-pistol" %}}
-
-{{% /details %}}
-
-{{% details "Light Pistol" %}}
-
-{{% include "/snippets/sci-fi-equipment/light-pistol" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/light-pistol" >}}
 
 #### Rifles
 
-{{% details "Compact Rifle" %}}
+{{< blockdetails "sci-fi-equipment/compact-rifle" >}}
 
-{{% include "/snippets/sci-fi-equipment/compact-rifle" %}}
+{{< blockdetails "sci-fi-equipment/laser-rifle" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/long-rifle" >}}
 
-{{% details "Laser Rifle" %}}
+{{< blockdetails "sci-fi-equipment/shock-rifle" >}}
 
-{{% include "/snippets/sci-fi-equipment/laser-rifle" %}}
-
-{{% /details %}}
-
-{{% details "Long Rifle" %}}
-
-{{% include "/snippets/sci-fi-equipment/long-rifle" %}}
-
-{{% /details %}}
-
-{{% details "Shock Rifle" %}}
-
-{{% include "/snippets/sci-fi-equipment/shock-rifle" %}}
-
-{{% /details %}}
-
-{{% details "Standard Issue Rifle" %}}
-
-{{% include "/snippets/sci-fi-equipment/standard-issue-rifle" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/standard-issue-rifle" >}}
 
 #### Heavy Ranged Weapons
 
-{{% details "Heavy Rotary Cannon" %}}
-
-{{% include "/snippets/sci-fi-equipment/heavy-rotary-cannon" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" >}}
 
 ---
 
@@ -179,58 +119,22 @@ sci-fi-equipment/weighted-core
 
 #### Ranged Weapon Upgrades
 
-{{% details "Bipod" %}}
+{{< blockdetails "sci-fi-equipment/bipod" >}}
 
-{{% include "/snippets/sci-fi-equipment/bipod" %}}
+{{< blockdetails "sci-fi-equipment/drum-magazines" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/extended-barrel" >}}
 
-{{% details "Drum Magazines" %}}
+{{< blockdetails "sci-fi-equipment/forward-assault-shield" >}}
 
-{{% include "/snippets/sci-fi-equipment/drum-magazines" %}}
+{{< blockdetails "sci-fi-equipment/overcharge-chamber" >}}
 
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/recoil-compensation-system" >}}
 
-{{% details "Extended Barrel" %}}
-
-{{% include "/snippets/sci-fi-equipment/extended-barrel" %}}
-
-{{% /details %}}
-
-{{% details "Forward Assault Shield" %}}
-
-{{% include "/snippets/sci-fi-equipment/forward-assault-shield" %}}
-
-{{% /details %}}
-
-{{% details "Overcharge Chamber" %}}
-
-{{% include "/snippets/sci-fi-equipment/overcharge-chamber" %}}
-
-{{% /details %}}
-
-{{% details "Recoil Compensation System" %}}
-
-{{% include "/snippets/sci-fi-equipment/recoil-compensation-system" %}}
-
-{{% /details %}}
-
-{{% details "Reflex Sight" %}}
-
-{{% include "/snippets/sci-fi-equipment/reflex-sight" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/reflex-sight" >}}
 
 #### Melee Weapon Upgrades
 
-{{% details "Shock Charger" %}}
+{{< blockdetails "sci-fi-equipment/shock-charger" >}}
 
-{{% include "/snippets/sci-fi-equipment/shock-charger" %}}
-
-{{% /details %}}
-
-{{% details "Weighted Core" %}}
-
-{{% include "/snippets/sci-fi-equipment/weighted-core" %}}
-
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/weighted-core" >}}

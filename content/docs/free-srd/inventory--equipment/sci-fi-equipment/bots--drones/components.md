@@ -51,122 +51,42 @@ components/wrist-laser
 
 ## Components
 
-{{% details "Audio Processor" %}}
+{{< blockdetails "components/audio-processor" >}}
 
-{{% include "/snippets/components/audio-processor" %}}
+{{< blockdetails "components/augmented-arm-actuators" >}}
 
-{{% /details %}}
+{{< blockdetails "components/automatic-crash-foam-system" >}}
 
-{{% details "Augmented Arm Actuators" %}}
+{{< blockdetails "components/backup-power-cell" >}}
 
-{{% include "/snippets/components/augmented-arm-actuators" %}}
+{{< blockdetails "components/heavy-wrist-laser" >}}
 
-{{% /details %}}
+{{< blockdetails "components/improved-cooling-system" >}}
 
-{{% details "Automatic Crash Foam System" %}}
+{{< blockdetails "components/internal-comp-jack" >}}
 
-{{% include "/snippets/components/automatic-crash-foam-system" %}}
+{{< blockdetails "components/manipulator-override" >}}
 
-{{% /details %}}
+{{< blockdetails "components/optical-suite" >}}
 
-{{% details "Backup Power Cell" %}}
+{{< blockdetails "components/reinforced-chassis-plating" >}}
 
-{{% include "/snippets/components/backup-power-cell" %}}
+{{< blockdetails "components/relay-node" >}}
 
-{{% /details %}}
+{{< blockdetails "components/repair-subroutine" >}}
 
-{{% details "Heavy Wrist Laser" %}}
+{{< blockdetails "components/servo-boost-legs" >}}
 
-{{% include "/snippets/components/heavy-wrist-laser" %}}
+{{< blockdetails "components/shield-mount" >}}
 
-{{% /details %}}
+{{< blockdetails "components/signal-mast-retractable" >}}
 
-{{% details "Improved Cooling System" %}}
+{{< blockdetails "components/signal-mast-heavy" >}}
 
-{{% include "/snippets/components/improved-cooling-system" %}}
+{{< blockdetails "components/stabilizer-gyros" >}}
 
-{{% /details %}}
+{{< blockdetails "components/subdermal-plating" >}}
 
-{{% details "Internal Comp Jack" %}}
+{{< blockdetails "components/targeting-array" >}}
 
-{{% include "/snippets/components/internal-comp-jack" %}}
-
-{{% /details %}}
-
-{{% details "Manipulator Override" %}}
-
-{{% include "/snippets/components/manipulator-override" %}}
-
-{{% /details %}}
-
-{{% details "Optical Suite" %}}
-
-{{% include "/snippets/components/optical-suite" %}}
-
-{{% /details %}}
-
-{{% details "Reinforced Chassis Plating" %}}
-
-{{% include "/snippets/components/reinforced-chassis-plating" %}}
-
-{{% /details %}}
-
-{{% details "Relay Node" %}}
-
-{{% include "/snippets/components/relay-node" %}}
-
-{{% /details %}}
-
-{{% details "Repair Subroutine" %}}
-
-{{% include "/snippets/components/repair-subroutine" %}}
-
-{{% /details %}}
-
-{{% details "Servo Boost Legs" %}}
-
-{{% include "/snippets/components/servo-boost-legs" %}}
-
-{{% /details %}}
-
-{{% details "Shield Mount" %}}
-
-{{% include "/snippets/components/shield-mount" %}}
-
-{{% /details %}}
-
-{{% details "Signal Mast, Retractable" %}}
-
-{{% include "/snippets/components/signal-mast-retractable" %}}
-
-{{% /details %}}
-
-{{% details "Signal Mast, Heavy" %}}
-
-{{% include "/snippets/components/signal-mast-heavy" %}}
-
-{{% /details %}}
-
-{{% details "Stabilizer Gyros" %}}
-
-{{% include "/snippets/components/stabilizer-gyros" %}}
-
-{{% /details %}}
-
-{{% details "Subdermal Plating" %}}
-
-{{% include "/snippets/components/subdermal-plating" %}}
-
-{{% /details %}}
-
-{{% details "Targeting Array" %}}
-
-{{% include "/snippets/components/targeting-array" %}}
-
-{{% /details %}}
-
-{{% details "Wrist Laser" %}}
-
-{{% include "/snippets/components/wrist-laser" %}}
-
-{{% /details %}}
+{{< blockdetails "components/wrist-laser" >}}

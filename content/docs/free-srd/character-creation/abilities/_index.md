@@ -85,378 +85,130 @@ abilities/tis-but-a-scratch
 
 ## Core General
 
-{{% details "Agile Charge" %}}
+{{< blockdetails "abilities/agile-charge" >}}
 
-{{% include "/snippets/abilities/agile-charge" %}}
+{{< blockdetails "abilities/agile-dodge" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/bash" >}}
 
-{{% details "Agile Dodge" %}}
+{{< blockdetails "abilities/bolster" >}}
 
-{{% include "/snippets/abilities/agile-dodge" %}}
+{{< blockdetails "abilities/charge" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/controlled-suppressing-fire" >}}
 
-{{% details "Bash" %}}
+{{< blockdetails "abilities/coordinated-strike" >}}
 
-{{% include "/snippets/abilities/bash" %}}
+{{< blockdetails "abilities/danger-reflex" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/dead-drop" >}}
 
-{{% details "Bolster" %}}
+{{< blockdetails "abilities/defender" >}}
 
-{{% include "/snippets/abilities/bolster" %}}
+{{< blockdetails "abilities/dual-attack" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/dual-defense" >}}
 
-{{% details "Charge" %}}
+{{< blockdetails "abilities/dual-strike" >}}
 
-{{% include "/snippets/abilities/charge" %}}
+{{< blockdetails "abilities/expert" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/extended-rage" >}}
 
-{{% details "Controlled Suppressing Fire" %}}
+{{< blockdetails "abilities/extra-attack" >}}
 
-{{% include "/snippets/abilities/controlled-suppressing-fire" %}}
+{{< blockdetails "abilities/fast-kit-trap" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/fearless-rage" >}}
 
-{{% details "Coordinated Strike" %}}
+{{< blockdetails "abilities/field-medic" >}}
 
-{{% include "/snippets/abilities/coordinated-strike" %}}
+{{< blockdetails "abilities/field-patch" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/focus-attack" >}}
 
-{{% details "Danger Reflex" %}}
+{{< blockdetails "abilities/focus-in" >}}
 
-{{% include "/snippets/abilities/danger-reflex" %}}
+{{< blockdetails "abilities/friend-in-need" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/general-spectacle" >}}
 
-{{% details "Dead Drop" %}}
+{{< blockdetails "abilities/improved-bash" >}}
 
-{{% include "/snippets/abilities/dead-drop" %}}
+{{< blockdetails "abilities/improved-suppressing-fire" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/indomitable-rage" >}}
 
-{{% details "Defender" %}}
+{{< blockdetails "abilities/just-grazed" >}}
 
-{{% include "/snippets/abilities/defender" %}}
+{{< blockdetails "abilities/just-winded" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/kit-trap" >}}
 
-{{% details "Dual Attack" %}}
+{{< blockdetails "abilities/leaping-charge" >}}
 
-{{% include "/snippets/abilities/dual-attack" %}}
+{{< blockdetails "abilities/leg-shot" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/line-of-fire" >}}
 
-{{% details "Dual Defense" %}}
+{{< blockdetails "abilities/long-performance" >}}
 
-{{% include "/snippets/abilities/dual-defense" %}}
+{{< blockdetails "abilities/martial-supremacy" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/momentum-dodge" >}}
 
-{{% details "Dual Strike" %}}
+{{< blockdetails "abilities/oppressive-suppression" >}}
 
-{{% include "/snippets/abilities/dual-strike" %}}
+{{< blockdetails "abilities/outburst" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/patient-shot" >}}
 
-{{% details "Expert" %}}
+{{< blockdetails "abilities/powerful-rage" >}}
 
-{{% include "/snippets/abilities/expert" %}}
+{{< blockdetails "abilities/precise-focus" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/quick-draw" >}}
 
-{{% details "Extended Rage" %}}
+{{< blockdetails "abilities/quick-firing" >}}
 
-{{% include "/snippets/abilities/extended-rage" %}}
+{{< blockdetails "abilities/rage" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/rally" >}}
 
-{{% details "Extra Attack" %}}
+{{< blockdetails "abilities/reckless-attack" >}}
 
-{{% include "/snippets/abilities/extra-attack" %}}
+{{< blockdetails "abilities/slip-strike" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/student" >}}
 
-{{% details "Fast Kit Trap" %}}
+{{< blockdetails "abilities/suppressing-fire" >}}
 
-{{% include "/snippets/abilities/fast-kit-trap" %}}
+{{< blockdetails "abilities/swift-dual-attack" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/the-look" >}}
 
-{{% details "Fearless Rage" %}}
+{{< blockdetails "abilities/true-defender" >}}
 
-{{% include "/snippets/abilities/fearless-rage" %}}
+{{< blockdetails "abilities/unsettling-rage" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/vital-focus" >}}
 
-{{% details "Field Medic" %}}
-
-{{% include "/snippets/abilities/field-medic" %}}
-
-{{% /details %}}
-
-{{% details "Field Patch" %}}
-
-{{% include "/snippets/abilities/field-patch" %}}
-
-{{% /details %}}
-
-{{% details "Focus Attack" %}}
-
-{{% include "/snippets/abilities/focus-attack" %}}
-
-{{% /details %}}
-
-{{% details "Focus In" %}}
-
-{{% include "/snippets/abilities/focus-in" %}}
-
-{{% /details %}}
-
-{{% details "Friend in Need" %}}
-
-{{% include "/snippets/abilities/friend-in-need" %}}
-
-{{% /details %}}
-
-{{% details "General Spectacle" %}}
-
-{{% include "/snippets/abilities/general-spectacle" %}}
-
-{{% /details %}}
-
-{{% details "Improved Bash" %}}
-
-{{% include "/snippets/abilities/improved-bash" %}}
-
-{{% /details %}}
-
-{{% details "Improved Suppressing Fire" %}}
-
-{{% include "/snippets/abilities/improved-suppressing-fire" %}}
-
-{{% /details %}}
-
-{{% details "Indomitable Rage" %}}
-
-{{% include "/snippets/abilities/indomitable-rage" %}}
-
-{{% /details %}}
-
-{{% details "Just Grazed" %}}
-
-{{% include "/snippets/abilities/just-grazed" %}}
-
-{{% /details %}}
-
-{{% details "Just Winded" %}}
-
-{{% include "/snippets/abilities/just-winded" %}}
-
-{{% /details %}}
-
-{{% details "Kit Trap" %}}
-
-{{% include "/snippets/abilities/kit-trap" %}}
-
-{{% /details %}}
-
-{{% details "Leaping Charge" %}}
-
-{{% include "/snippets/abilities/leaping-charge" %}}
-
-{{% /details %}}
-
-{{% details "Leg Shot" %}}
-
-{{% include "/snippets/abilities/leg-shot" %}}
-
-{{% /details %}}
-
-{{% details "Line of Fire" %}}
-
-{{% include "/snippets/abilities/line-of-fire" %}}
-
-{{% /details %}}
-
-{{% details "Long Performance" %}}
-
-{{% include "/snippets/abilities/long-performance" %}}
-
-{{% /details %}}
-
-{{% details "Martial Supremacy" %}}
-
-{{% include "/snippets/abilities/martial-supremacy" %}}
-
-{{% /details %}}
-
-{{% details "Momentum Dodge" %}}
-
-{{% include "/snippets/abilities/momentum-dodge" %}}
-
-{{% /details %}}
-
-{{% details "Oppressive Suppression" %}}
-
-{{% include "/snippets/abilities/oppressive-suppression" %}}
-
-{{% /details %}}
-
-{{% details "Outburst" %}}
-
-{{% include "/snippets/abilities/outburst" %}}
-
-{{% /details %}}
-
-{{% details "Patient Shot" %}}
-
-{{% include "/snippets/abilities/patient-shot" %}}
-
-{{% /details %}}
-
-{{% details "Powerful Rage" %}}
-
-{{% include "/snippets/abilities/powerful-rage" %}}
-
-{{% /details %}}
-
-{{% details "Precise Focus" %}}
-
-{{% include "/snippets/abilities/precise-focus" %}}
-
-{{% /details %}}
-
-{{% details "Quick Draw" %}}
-
-{{% include "/snippets/abilities/quick-draw" %}}
-
-{{% /details %}}
-
-{{% details "Quick Firing" %}}
-
-{{% include "/snippets/abilities/quick-firing" %}}
-
-{{% /details %}}
-
-{{% details "Rage" %}}
-
-{{% include "/snippets/abilities/rage" %}}
-
-{{% /details %}}
-
-{{% details "Rally" %}}
-
-{{% include "/snippets/abilities/rally" %}}
-
-{{% /details %}}
-
-{{% details "Reckless Attack" %}}
-
-{{% include "/snippets/abilities/reckless-attack" %}}
-
-{{% /details %}}
-
-{{% details "Slip Strike" %}}
-
-{{% include "/snippets/abilities/slip-strike" %}}
-
-{{% /details %}}
-
-{{% details "Student" %}}
-
-{{% include "/snippets/abilities/student" %}}
-
-{{% /details %}}
-
-{{% details "Suppressing Fire" %}}
-
-{{% include "/snippets/abilities/suppressing-fire" %}}
-
-{{% /details %}}
-
-{{% details "Swift Dual Attack" %}}
-
-{{% include "/snippets/abilities/swift-dual-attack" %}}
-
-{{% /details %}}
-
-{{% details "The Look" %}}
-
-{{% include "/snippets/abilities/the-look" %}}
-
-{{% /details %}}
-
-{{% details "True Defender" %}}
-
-{{% include "/snippets/abilities/true-defender" %}}
-
-{{% /details %}}
-
-{{% details "Unsettling Rage" %}}
-
-{{% include "/snippets/abilities/unsettling-rage" %}}
-
-{{% /details %}}
-
-{{% details "Vital Focus" %}}
-
-{{% include "/snippets/abilities/vital-focus" %}}
-
-{{% /details %}}
-
-{{% details "Vital Strike" %}}
-
-{{% include "/snippets/abilities/vital-strike" %}}
-
-{{% /details %}}
+{{< blockdetails "abilities/vital-strike" >}}
 
 ---
 
 ## Core Luck
 
-{{% details "Adaptive Luck" %}}
+{{< blockdetails "abilities/adaptive-luck" >}}
 
-{{% include "/snippets/abilities/adaptive-luck" %}}
+{{< blockdetails "abilities/bonus-luck" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/friend-of-fortune" >}}
 
-{{% details "Bonus Luck" %}}
+{{< blockdetails "abilities/lucky-strike" >}}
 
-{{% include "/snippets/abilities/bonus-luck" %}}
+{{< blockdetails "abilities/medical-marvel" >}}
 
-{{% /details %}}
+{{< blockdetails "abilities/natural-gift" >}}
 
-{{% details "Friend of Fortune" %}}
-
-{{% include "/snippets/abilities/friend-of-fortune" %}}
-
-{{% /details %}}
-
-{{% details "Lucky Strike" %}}
-
-{{% include "/snippets/abilities/lucky-strike" %}}
-
-{{% /details %}}
-
-{{% details "Medical Marvel" %}}
-
-{{% include "/snippets/abilities/medical-marvel" %}}
-
-{{% /details %}}
-
-{{% details "Natural Gift" %}}
-
-{{% include "/snippets/abilities/natural-gift" %}}
-
-{{% /details %}}
-
-{{% details "Tis But a Scratch" %}}
-
-{{% include "/snippets/abilities/tis-but-a-scratch" %}}
-
-{{% /details %}}
+{{< blockdetails "abilities/tis-but-a-scratch" >}}
