@@ -60,16 +60,6 @@ These would do visible damage on the live site.
       HEL-1, T00L, TRK-A) and the 5 races. **Accepted as-is**: every one is on a
       `wip: true` page, so the blank reads as unfinished rather than broken.
       Still tracked live by `worksheets.py` for when the stubs get written.
-- [x] ~~B1 — Student / Expert require "INT"~~ → **KNO**, in three places: both
-      prerequisite lines and Expert's rules text. `INT` no longer appears
-      anywhere in `content/`.
-- [x] ~~B2 — Shock Charger +2 vs +1~~ → **+1**. The summary was wrong; the rules
-      text was right.
-- [x] ~~B3 — Squad Shield 30pts vs 40~~ → **40**. Same shape: summary wrong,
-      rules text right.
-- [x] ~~B4 — Fast Kit Trap 12 AP vs Kit Trap's 20~~ → **the discount is
-      correct**, no change.
-- [x] ~~B5 — Backup Power Cell, Back vs Belt~~ → **Belt is correct**, no change.
 - [x] ~~B9 — the Tool Kits hole.~~ **Page written**, at
       `inventory--equipment/tool-kits.md`, `wip: true`, weight 30 — directly
       below Generic Equipment and above Sci-Fi Equipment. It carries the
@@ -82,6 +72,7 @@ These would do visible damage on the live site.
       fixing B1. `abilities/student` says "gain a +2 bonus"; `abilities/expert`
       says "add your KNO bonus rather than the +1 bonus provided". One of the two
       numbers is wrong and it is a rules call, not a typo I should guess at.
+     <!-- +1 bonus fron Student is correct, +2 is incorrect -->
 
 ## 3. Parked features
 
@@ -103,20 +94,22 @@ These would do visible damage on the live site.
 
       Races, Bots & Drones and `docs/_index.md` stay hand-written on purpose:
       they group, blurb, or name something that does not exist yet.
+      <!-- is this in maintenamce notes yet? if not add it there and remove this item here. -->
 
 ## 4. Structure still on the table
 
-- [x] ~~Races: split like the others?~~ **Intentionally not split** — races have
-      a different setup, one page per race behind a hub.
-- [x] ~~**Page-per-feature (the wiki model).**~~ **Not doing it** — decided.
-      The compact index gave us what the d20 feats page was actually good at
-      without 114 new pages, most of them under 40 words.
 - [ ] **Move 1 — sci-fi equipment under the module.** 6 pages, 36 links across 19
       files, 1 wildcard redirect. *Recommendation: do it when the other module
       catalogs go live, so it is one move instead of two.*
+     <!-- not moving, keeping module page as full reference list and not a parent with the pages nested beneath -->
 - [ ] **Move 3 — bots & drones into a creatures section.** Agreed in principle;
       waiting until there is a second kind of creature so the section is not a
       folder with four robots in it.
+      <!-- lets create the crestures and npcs page and give it the same setup as many of the other pages: _index is geberated list, sections by setting (core, scifi) go beneath and each of those acts as a maintainte page liek the races one with a list leading leading to  to individual pages. so
+         creatures & npcs (as a nav toggle)
+            core crestures & npcs
+            scifi creatures & npcs
+-->
 
 ## 5. Audits prepared, awaiting your review
 
@@ -229,27 +222,11 @@ They keep the `details` + `include` form, which is what it is for.
 
 **The narrower change, recommended over the full flip:**
 
-- [x] ~~**Feed the `details` label from the block.**~~ **Done — the mechanism
-      exists**, as `{{< blockdetails "block/id" >}}`. Rendered output verified
-      byte-identical to the two-part form, and a bad id now fails the build
-      instead of rendering nothing. `builddata.py` reads it as a placement, so
-      `pages`/`page_urls`/anchors/edges are unaffected.
-- [x] ~~**Convert the 320 call sites to `blockdetails`.**~~ **Done — 318 of 320
-      converted** across 14 files, removing 318 hand-typed labels and 318
-      hand-typed snippet paths. The 2 left are the composite collapsibles above.
-      Verified: `data/` byte-identical (436 blocks, 1118 edges, same type
-      breakdown), and every rendered page identical once the theme's own
-      content-derived ids are masked — the hugo-book menu hashes `md5 .Page`, so
-      any content edit reshuffles the sidebar checkbox ids on every page.
 - [ ] **Delete page headings that duplicate the block heading below them.** 97
       includes have a heading directly above (h1 ×7, h2 ×41, h3 ×40, h4 ×9);
       some of the h2s are genuine group headings ("Aggressive Actions") and stay.
       This is the last of the three name-typing sites still hand-maintained.
 
-The full flip stays available and would need no content change to adopt later.
-Its costs, for the record: 319 snippets edited, ~97 page headings deleted, a
-`level=` argument at every call site, a silently-failing include would lose the
-heading as well as the content, and a raw snippet stops reading as a document.
 
 ## 6. Chrome
 
