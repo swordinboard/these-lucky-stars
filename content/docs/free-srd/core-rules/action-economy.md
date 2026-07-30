@@ -24,7 +24,11 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 ### Standard Actions
 
-{{% include "/snippets/actions/standard-actions" %}}
+> [!IMPORTANT]
+> The full catalog of Standard Actions — attacks, moves, grapples, and so on — lives in the [Combat](/docs/free-srd/core-rules/combat/) action catalog. Move and Step are also Standard Actions, but because they are fundamental to positioning, their full rules live in the [Movement](#movement) section below.
+{{% include
+
+"/snippets/actions/standard-actions" %}}
 
 #### Readied Actions
 
@@ -52,7 +56,7 @@ Movement is the most common action a character takes during any scene — in com
 
 ### Movement Actions
 
-Move and Step are the two primary movement actions. Both are Standard Actions, and both are also listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog for reference during play.
+Move and Step are the two primary movement actions. Both are Standard Actions.
 
 {{% include "/snippets/actions/move" %}}
 

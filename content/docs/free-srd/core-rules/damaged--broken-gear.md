@@ -6,6 +6,8 @@ weight: 85
 
 # Damaged & Broken Gear
 
+Objects, equipment, and structures can be damaged and broken. This page covers how items are targeted by attacks, item conditions, how object durability works, and how common materials and items hold up under attack.
+
 {{% include "/snippets/objects/overview" %}}
 
 ## Targeting Objects

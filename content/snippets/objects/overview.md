@@ -6,8 +6,6 @@ type: reference
 tags: [objects]
 ---
 
-Objects, equipment, and structures can be damaged and broken. This page covers how items are targeted by attacks, item conditions, how object durability works, and how common materials and items hold up under attack.
-
 Before committing to damaging an object the table should first consider if the damage *makes sense*. When it really comes down to it, all objects can be broken with the right combination of time, proper tools, and effort. But getting that combination together, especially under pressure of combat, isn't always realistic. Just because an object can be struck doesn't mean it will be damaged. This is especially true for items designed for defense which have their own rules discussed later in the section.
 
 > [!IMPORTANT]

@@ -60,6 +60,8 @@ An attack that deals 2 or more VIT damage or reduces the defender to 0 VIT infli
 
 ## Actions in Combat
 
+The following catalog lists the most common actions characters take during combat. All actions listed here are [Standard Actions](/docs/free-srd/core-rules/action-economy/#standard-actions) unless noted otherwise.
+
 {{% include "/snippets/combat/actions-in-combat" %}}
 
 ### Aggressive Actions

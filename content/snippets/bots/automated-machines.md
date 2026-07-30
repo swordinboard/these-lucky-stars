@@ -6,8 +6,6 @@ type: rule
 tags: [bots, sci-fi]
 ---
 
-Many civilizations rely on robots to aid in space exploration as well as services and manufacturing at home. This page provides a list of the most common models available.
-
 There is a distinction to be made between *robots, drones, and Androids* that primarily has to do with free will and the difference between sentience and sapience. All are considered automated machines.
 
 **Drones** are the most simple form of automated machine, with simple construction and AI able to understand and execute basic commands, but lacking true problem solving skills. These machines usually have a single intended purpose and will perform well, but cannot perform outside that box. If they communicate at all, it is in dronespeak or binary.

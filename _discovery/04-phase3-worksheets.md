@@ -44,7 +44,7 @@ different things and something should say so, or one should win.
 - **`action` (9)** vs **`actions` (11)**
   - `action`: `combat/brace`, `combat/disarm`, `combat/draw-a-weapon`, `combat/shatter`, `combat/stand`, `combat/standard-attack`, `combat/trip`, `combat/unarmed-attack`, `combat/use-cover`
   - `actions`: `actions/action-types`, `actions/difficult-terrain`, `actions/move`, `actions/multi-turn-actions`, `actions/opportunity-actions`, `actions/reactions`, `actions/readied-actions`, `actions/standard-actions`, `actions/step`, `combat/opportunity-attack`, `stats/action-points`
-  <!-- merge into which, or keep both and why: -->
+  <!-- merge into actions -->
 
 ### C1b. Tags with two or fewer members
 
@@ -52,28 +52,30 @@ A tag this small is either under-applied, redundant with a bigger tag, or a
 category of one that does not need to be a tag.
 
 - **`heavy-ranged`** (1) — `sci-fi-equipment/heavy-rotary-cannon`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep, more expected later -->
 - **`size`** (1) — `core-rules/size`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep, more expected later -->
 - **`damage`** (2) — `combat/damage-dice`, `health/applying-damage`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep, should also be applied to bl9cks for exposure, resistances, weakness -->
 - **`defensive`** (2) — `combat/brace`, `combat/use-cover`
-  <!-- keep / merge into X / delete: -->
+  <!-- change to defensive actions, should apply to all defensive actions -->
 - **`drones`** (2) — `bots/bal`, `bots/hel-1`
-  <!-- keep / merge into X / delete: -->
+  <!-- delete: -->
 - **`environment`** (2) — `environment/environmental-effects`, `environment/extreme-environments`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep -->
 - **`inventory`** (2) — `inventory/body-slots`, `inventory/carry-limits`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep -->
 - **`light-melee`** (2) — `sci-fi-equipment/knuckle-taser`, `sci-fi-equipment/standard-issue-knife`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep, more expected later -->
 - **`melee-upgrade`** (2) — `sci-fi-equipment/shock-charger`, `sci-fi-equipment/weighted-core`
-  <!-- keep / merge into X / delete: -->
+  <!-- keep, more expected later -->
 
 ### C1c. Blocks with no tags at all
 
 Invisible to every tag query. Not necessarily wrong — a framework block may
 not belong to any group — but it should be a decision, not an oversight.
+
+<!-- th3se are hard for me to work with witbout a full tag list infront of me -->
 
 - **`conditions/overview`** — Conditions  <sub>type=reference</sub>
       Conditions alter how your character is able to act.
@@ -87,7 +89,7 @@ not belong to any group — but it should be a decision, not an oversight.
 - **`wounds/wounds`** — Wounds  <sub>type=rule</sub>
       Every wound is classified as either minor or major based on the severity of the injury.
   <!-- tags to add, or leave untagged: -->
-
+<!-- are these jusy the openings or are th3se the full snippets? -->
 
 ### C1d. Cohort gaps
 
@@ -108,7 +110,7 @@ correct by definition and were only noise.
   - `abilities/power-main-tap` — Power Main Tap
   - `abilities/swift-custom-battery` — Swift Custom Battery
   - `abilities/tis-but-a-scratch` — Tis But a Scratch
-  <!-- expected (say why) / add the tag: -->
+  <!-- these fall into other categories, ans each ability got one tag for its category without overlap.: -->
 
 ### C1e. Tags per block
 
@@ -170,6 +172,8 @@ renders a blank cell on every catalog and module page that lists it.
 - `item-tags/two-handed` — Two-Handed  <sub>inventory--equipment/item-tags.md</sub>
 - `item-tags/versatile` — Versatile  <sub>inventory--equipment/item-tags.md</sub>
 
+<!-- these couod probably have summaries derrived/generated  from them, but is not entirley necessary unless they appear in a blockset -->
+
 ### C1f. Blocks with only structural tags
 
 These carry no functional tag, so a tag-as-query pull ("give me all the
@@ -177,16 +181,16 @@ grenades") cannot reach them. Structural tags are `character-creation`, `core`, 
 
 - **`chargen/overview`** — Character Creation Overview  <sub>character-creation</sub>
       [!Important] > It is highly recommended for players to familiarize themselves with the rules before making a c…
-  <!-- functional tag to add, or fine as-is: -->
+  <!-- fine as-is: -->
 - **`equipment/common-terms`** — Common Equipment Terms  <sub>equipment</sub>
       The standard price for a new piece of equipment.
-  <!-- functional tag to add, or fine as-is: -->
+  <!-- fine as-is: -->
 - **`sci-fi/communications`** — Communications  <sub>sci-fi, equipment</sub>
       Communication devices — also refered to as coms or com devices — are able to connect to other com devices with…
-  <!-- functional tag to add, or fine as-is: -->
+  <!-- fine as is -->
 - **`sci-fi/huds`** — Heads Up Displays (HUDs)  <sub>sci-fi, equipment</sub>
       Heads Up Displays, or HUDs, are helmet upgrades that add a display layer to a visor, screen, or lense.
-  <!-- functional tag to add, or fine as-is: -->
+  <!-- fine as-is: -->
 
 ### C1g. Full membership lists
 
@@ -1562,6 +1566,8 @@ Rule/reference blocks with no inbound prose link: **81**
 | `components/power-sources` — Power Sources and batteries | rule | inventory--equipment/sci-fi-equipment/bot-components.md |
 | `sci-fi-equipment/kit-supplies` — Sci-Fi Tool Kits | rule | inventory--equipment/sci-fi-equipment/sci-fi-kits.md |
 
+<!-- none of these have inbound links because they are pieces of larger pages. find a way to check if each is located on a nav-linked page and it will probably show they all appear just fine --> 
+
 ### Implicit edges — rule couplings with no link in the prose
 
 These are invisible while reading. Decide per row: leave implicit, or write a
@@ -1590,7 +1596,7 @@ real in-text link.
 
 ---
 
-## C4. Feature prerequisites — the three places they are written
+|## C4. Feature prerequisites — the three places they are written
 
 A feature's prerequisites are stated in three places, each doing a different
 job. This section reports where they disagree, so drift surfaces instead of
@@ -1614,6 +1620,7 @@ can show — so neither can be generated from the other.
 Every one is exactly the set of feature links in its own prerequisite line,
 which means `requires` is currently *derivable* rather than independent —
 worth knowing before deciding to keep maintaining it by hand.
+<!-- didnt we do this? i thought we did this -->
 
 ### `requires` against the index nesting
 
@@ -1660,31 +1667,31 @@ rewrite: name the thing instead of gesturing at it, or add the link.
 
 - **`bots/automated-machines`** — Bots & Drones  <sub>creatures--npcs/sci-fi/_index.md</sub>  `[this/these <thing>]`
       …oration as well as services and manufacturing at home. This page provides a list of the most common models available. …
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- removed section. wip page and very different new location, but the r3st read fine for a wip reference at the moment.-->
 - **`combat/actions-in-combat`** — Actions in Combat  <sub>core-rules/combat.md</sub>  `[the following]`
       …The following catalog lists the most common actions characters take …
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- removed section, moved to pagw chrome-->
 - **`components/installation`** — Installation  <sub>inventory--equipment/sci-fi-equipment/bot-components.md</sub>  `[above/below]`
       … slot coverage at the GM's discretion. Each component below indicates whether it is internal or external.…
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- just remove "below" for me -->
 - **`environment/environmental-effects`** — Environmental Effects  <sub>core-rules/environmental-effects.md</sub>  `[as noted/described]`
       …Failure leads to conditions, wounds, and/or VIT damage as described by the type of environment. Success avoids harm, but r…
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- fine as-is -->
 - **`objects/conditions`** — Object Conditions  <sub>core-rules/damaged--broken-gear.md</sub>  `[as noted/described]`
       …tion condition directly returns it to 2 VIT or max VIT as described by the effect.* **Full Function** — The object is at …
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- fine as-is -->
 - **`objects/overview`** — Damaged & Broken Gear  <sub>core-rules/damaged--broken-gear.md</sub>  `[this/these <thing>]`
       …, equipment, and structures can be damaged and broken. This page covers how items are targeted by attacks, item conditi…
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- first entry moved to page chrome. an open9ng summary of a page that contains blocks is chrome, not part of a block. run a check and report other findings.-->
 - **`sci-fi-equipment/kit-supplies`** — Sci-Fi Tool Kits  <sub>inventory--equipment/sci-fi-equipment/sci-fi-kits.md</sub>  `[as noted/described]`
       …n. Each kit can be equipped to one or more body slots as noted in its description. A tool kit must be equipped to be …
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- fine as-is -->
 - **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md</sub>  `[this/these <thing>]`
       …low slightly different rules from mechanical vehicles. This section gathers all mount-specific rules in one place. > [!…
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- fine as-is, all rules referenc3d are actually contained in that snippet. part of a wip page and may need adjustemnts later. also notic2d this snippet has hardcoded headings  throughout, nay be an issue for the builder. -->
 - **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md</sub>  `[above/below]`
       …g associated conditions are removed. The heal times above represent when a wound no longer has a mechanical effe…
-  <!-- rewrite / add link / fine as-is: -->
+  <!-- fine as-is, reference contained in same snippet -->
 
 
 ### C3b. Linked pointers — 3 blocks
@@ -1694,6 +1701,7 @@ for completeness; skip unless one reads badly.
 
 - `actions/standard-actions` — Standard Actions  `[above/below]`
       …oning, their full rules live in the [Movement] section below. A few Standard Actions have special timing patterns …
+       <!-- moved part to page chrome -->
 - `combat/opportunity-attack` — Opportunity Attack  `[see the/above/below]`
       … Opportunity Attacks cannot normally be made unarmed — see the [Martial Training] proficiency for the exception. The …
 - `equipment/medkit-note` — Medkit Note  `[see the/above/below]`
@@ -1764,10 +1772,10 @@ builder prints is text no reader has ever checked.
 
 - **`movement/speed-tiers`** → would print **“Speed Tiers”**  <sub>under `#speed-tiers` on core-rules/action-economy.md</sub>
       opens: Speed in These Lucky Stars is categorized into four tiers based on distance covered per round.
-  <!-- ok / new title: -->
+  <!-- ok -->
 - **`movement/speed-tiers-chart`** → would print **“Speed Tiers Chart”**  <sub>under `#speed-tiers` on core-rules/action-economy.md</sub>
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| | Slow | up to 40 | up to 5mph | W…
-  <!-- ok / new title: -->
+  <!-- ok  -->
 
 
 #### Already stated as a bold lead-in — 13 blocks, confirm only
@@ -1791,7 +1799,7 @@ standalone heading; otherwise this is a no-op.
 - `combat/unarmed-attack` — bold lead-in “Unarmed Attack”, title “Unarmed Attack”
 - `combat/use-cover` — bold lead-in “Use Cover”, title “Use Cover”
 
-  <!-- anything in this list read wrong as a heading: -->
+  <!-- in a way the bold entry (when it is sperate of the sentanc eitself) is the header. its basically in an line header used for lists. im not really sure what to do with that. adding a header just states it twice, once as a header and once in bold in-line. -->
 
 <details><summary>Full detail for all 15, grouped by shared heading</summary>
 
@@ -1813,6 +1821,8 @@ standalone heading; otherwise this is a no-op.
       beside: Speed Tiers
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| | Slow | up to 40 | up to 5mph | W…
 
+<!-- header/title is fine on both. second opens as a table/chart this wouod just become the title for that. both are appropriate. -->
+
 **Under `#aggressive-actions` on core-rules/combat.md** — 8 blocks share this heading
 
 - `combat/disarm` → would print **“Disarm”**
@@ -1824,6 +1834,7 @@ standalone heading; otherwise this is a no-op.
 - `combat/grapple` → would print **“Grapple”**
       beside: Disarm, Draw a Weapon, Shatter, Stand, Standard Attack, Trip, Unarmed Attack
       opens: Grapple = STR + AGI + Mods A character may spend 2 AP to make a contested grapple check against an opponent.
+      <!-- the "grapple" 5hat it pucked up is formula inside a callout box (> beginning), in italics. this is a seperate case and this bl9ck in fact does not have a header inside it. "Grapple" is the appropriate header/title though-->
 - `combat/shatter` → would print **“Shatter”**
       beside: Disarm, Draw a Weapon, Grapple, Stand, Standard Attack, Trip, Unarmed Attack
       opens: Shatter (3 AP) — Attempt to break an item held or worn by an opponent.
@@ -1875,6 +1886,9 @@ level from where the GM placed it, and skip the block's own leading heading
 when `owns_heading` is true.** That pair of fields is exactly what makes the
 normalisation possible — no content change needed, and the two shapes stop
 mattering at print time.
+
+<!-- all seems like a related header issue when you inlcude the
+ose bold lead ups as low-teir list headers.  if the builder couud ignore hard coded prose headers, could it include the bold ones in that and make it a header level? the real issue then is just mak8 g sure the (X AP)is properly stated in the main prose and not only in the bold -->
 
 ---
 
@@ -1983,3 +1997,4 @@ Free wins — these pages currently end with no Related section at all.
 - `inventory--equipment/tool-kits.md` → Proficiencies, Abilities
 - `sci-fi-module.md` → Sci-Fi Misc Equipment, Sci-Fi Weapons, Sci-Fi Armor, Bot Components, Sci-Fi Abilities, Sci-Fi Additions
 
+<!-- we will keep the hand written related sections, and rem9ve any work done to generate them. -->
