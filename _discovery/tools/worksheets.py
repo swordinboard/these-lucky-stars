@@ -6,7 +6,7 @@ worksheets.py — regenerate the Phase 3 audit worksheets from data/.
 
 Writes _discovery/04-phase3-worksheets.md: tag membership, orphaned blocks,
 implicit edges, feature-prerequisite cross-checks, section-block heading
-readiness, and a hand-written-vs-generated comparison of the Related sections.
+readiness. Related sections are hand-written by decision and not audited here.
 Pure read + report; it never touches content. Re-run it after `builddata.py`.
 """
 import json, os, re, collections
@@ -17,7 +17,6 @@ D = lambda *p: os.path.join(REPO, *p)
 BLOCKS = json.load(open(D("data/blocks.json")))
 B = {b["id"]: b for b in BLOCKS}
 EDGES = json.load(open(D("data/edges.json")))
-RELATED = json.load(open(D("data/related.json")))
 IMPLICIT = json.load(open(D("_discovery/tools/implicit-edges.json")))
 
 CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
@@ -26,6 +25,10 @@ CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
 # lack it; framework blocks are not instances of the cohort they introduce.
 FRAMEWORK = ("overview", "installation", "power-sources", "damage-and-wounds",
              "wounds", "common-injuries", "action-types")
+# Mutually exclusive group tags: each ability carries exactly one, so the others
+# are *meant* to be absent. Reviewed and confirmed -- reporting them as cohort
+# gaps was 12 false positives per run.
+GROUP_TAGS = {"general", "luck", "battery"}
 
 
 def body_of(b):
@@ -51,6 +54,35 @@ def first_sentence(b, limit=150):
 def spot(note="your call"):
     """A pre-placed annotation slot, so notes need no copy-pasting."""
     w(f"  <!-- {note}: -->")
+
+
+
+# hugo-book builds the sidebar from the file tree, so a page is in the nav unless
+# it is bookHidden or a draft. Deriving it from the repo rather than from a build
+# keeps this script a pure function of the content -- an earlier version globbed
+# /tmp for a build and silently read a stale one.
+def _page_url(path):
+    rel = path[len("content"):]
+    return rel[: -len("_index.md")] if rel.endswith("/_index.md") else rel[:-3] + "/"
+
+
+def _in_nav(path):
+    try:
+        head = open(D(path)).read().split("---", 2)[1]
+    except (OSError, IndexError):
+        return True
+    return not re.search(r"^(bookHidden|draft):\s*true\s*$", head, re.M | re.I)
+
+
+NAV = {_page_url(p) for p in
+       {b.get("source_page") for b in BLOCKS if b.get("source_page")}
+       | {pg for b in BLOCKS for pg in (b.get("pages") or []) if pg.startswith("content/docs/")}
+       if _in_nav(p)}
+
+
+def reachable_by_browsing(b):
+    """Is this block displayed on a page a reader can reach from the sidebar?"""
+    return any(u in NAV for u in (b.get("page_urls") or []))
 
 
 STRUCTURAL = {"equipment", "sci-fi", "core", "generic", "site-chrome", "character-creation"}
@@ -148,6 +180,12 @@ w("")
 w("Invisible to every tag query. Not necessarily wrong — a framework block may")
 w("not belong to any group — but it should be a decision, not an oversight.")
 w("")
+w("**The whole tag vocabulary, so you can choose without scrolling.** Counts in")
+w("brackets. The quoted line under each block is its *opening sentence*, not the")
+w("whole snippet.")
+w("")
+w("> " + " · ".join(f"`{tg}` ({len(tags[tg])})" for tg in sorted(tags)))
+w("")
 untagged = [b for b in LIVE if not b.get("tags")]
 for b in sorted(untagged, key=lambda b: b["id"]):
     w(f"- **`{b['id']}`** — {b['title']}  <sub>type={b['type']}</sub>")
@@ -158,9 +196,14 @@ w("")
 
 w("### C1d. Cohort gaps")
 w("")
-w("A tag carried by most of a namespace but missing from some members. Category")
-w("tags (`core`, `sci-fi`) and framework blocks are excluded — those gaps are")
-w("correct by definition and were only noise.")
+w("A tag carried by most of a namespace but missing from some members. Three")
+w("kinds of gap are excluded because they are correct by definition and were only")
+w("noise: **category tags** (`core`, `sci-fi`) track `category`, not a cohort;")
+w("**framework blocks** are not instances of what they introduce; and the")
+w("**mutually exclusive group tags** " +
+  ", ".join(f"`{g}`" for g in sorted(GROUP_TAGS)) + " — each ability carries")
+w("exactly one, so the others are meant to be missing. That last exclusion was")
+w("confirmed on review and removed 12 false positives per run.")
 w("")
 ns = collections.defaultdict(list)
 for b in LIVE:
@@ -171,7 +214,7 @@ for n, mem in sorted(ns.items()):
         continue
     cnt = collections.Counter(tg for x in mem for tg in x.get("tags", []))
     for tg, c in cnt.items():
-        if tg in CATEGORY_TAGS or not 0.7 <= c / len(mem) < 1.0:
+        if tg in CATEGORY_TAGS or tg in GROUP_TAGS or not 0.7 <= c / len(mem) < 1.0:
             continue
         miss = [x for x in mem
                 if tg not in x.get("tags", []) and not x["id"].rsplit("/", 1)[1] in FRAMEWORK]
@@ -203,22 +246,75 @@ w("")
 
 w("### Blocks a quick-reference table would show with an empty cell")
 w("")
-w("`summary` is what the generated tables print. A selectable block without one")
-w("renders a blank cell on every catalog and module page that lists it.")
+w("`summary` is what a generated **table** prints. A `layout=\"names\"` index has")
+w("no summary column at all, so a block appearing only in one of those cannot")
+w("show a blank cell.")
 w("")
-# what a table actually lists: selectable things, plus anything a generated
-# catalog points at (a rules-additions table lists rule blocks too)
-catalogued = {e["target"] for e in EDGES if e.get("class") == "catalog"}
-missing = [b for b in BLOCKS
-           if not b.get("summary") and not b.get("excluded")
-           and b.get("selectable", True)
-           and (b.get("type") in ("feature", "equipment", "creature")
-                or b["id"] in catalogued)]
+# A blank cell only exists where a catalog actually has a summary column, so the
+# call's `layout` decides. Reading the calls from content is the only way to know
+# -- the edge graph records that a catalog points at a block, not how it renders.
+def catalog_targets():
+    """(ids shown in a summary-bearing table, ids shown only in a names index)"""
+    import glob
+    table, names = set(), set()
+    for path in glob.glob(D("content/**/*.md"), recursive=True):
+        src = open(path).read()
+        for m in re.finditer(r"\{\{<\s*catalog([^>]*?)/>\}\}", src):      # property form
+            prm = dict(re.findall(r'(\w+)="([^"]*)"', m.group(1)))
+            (names if prm.get("layout") == "names" else table).update(
+                selected_by_params(prm))
+        for m in re.finditer(r"\{\{<\s*catalog([^>]*?)>\}\}(.*?)\{\{<\s*/catalog\s*>\}\}",
+                             src, re.S):                                   # hand-listed
+            prm = dict(re.findall(r'(\w+)="([^"]*)"', m.group(1)))
+            ids = {re.sub(r"^-+\s*", "", ln.strip())
+                   for ln in m.group(2).split("\n") if ln.strip()}
+            (names if prm.get("layout") == "names" else table).update(ids)
+    return table, names
+
+
+def selected_by_params(prm):
+    out = set()
+    for b in BLOCKS:
+        if b.get("excluded"):
+            continue
+        if prm.get("category") and prm["category"] not in (b.get("category") or []):
+            continue
+        if prm.get("type") and prm["type"] != b.get("type"):
+            continue
+        if prm.get("tag") and prm["tag"] not in (b.get("tags") or []):
+            continue
+        if prm.get("page") and prm["page"] not in (b.get("page_urls") or []):
+            continue
+        if prm.get("namespace") and not b["id"].startswith(prm["namespace"] + "/"):
+            continue
+        if prm.get("wip") == "exclude" and b.get("wip"):
+            continue
+        out.add(b["id"])
+    return out
+
+
+IN_TABLE, IN_NAMES = catalog_targets()
+nosum = [b for b in BLOCKS
+         if not b.get("summary") and not b.get("excluded") and b.get("selectable", True)]
+missing = [b for b in nosum if b["id"] in IN_TABLE]
+names_only = [b for b in nosum if b["id"] in IN_NAMES and b["id"] not in IN_TABLE]
+no_table = [b for b in nosum if b["id"] not in IN_TABLE and b["id"] not in IN_NAMES]
 by_type = collections.defaultdict(list)
 for b in missing:
     by_type[b["type"]].append(b)
-w(f"**{len(missing)} blocks**")
+w(f"**{len(missing)} blocks render a visible blank cell.**")
 w("")
+if names_only:
+    w(f"A further **{len(names_only)}** appear only in a `layout=\"names\"` index, where")
+    w("there is no cell to be blank — no visible defect, though the builder would")
+    w("still print them without a one-liner: "
+      + ", ".join(f"`{b['id']}`" for b in sorted(names_only, key=lambda b: b["id"])) + ".")
+    w("")
+if no_table:
+    w(f"The remaining **{len(no_table)}** summary-less blocks appear in no generated")
+    w("list at all — they are section rules read in place on their page, and a")
+    w("one-liner would have nowhere to render. Not listed; not a defect.")
+    w("")
 for t in sorted(by_type):
     w(f"*{t}*")
     w("")
@@ -297,11 +393,23 @@ orphans = [b for b in zero
            and not any(k in b["id"].split("/")[-1] for k in OVERVIEWISH)]
 w(f"Rule/reference blocks with no inbound prose link: **{len(orphans)}**")
 w("")
-w("| Block | Type | Lives on |")
-w("|---|---|---|")
-for b in sorted(orphans, key=lambda b: (b.get("source_page") or "", b["id"])):
+w("These are mostly *pieces of larger pages* rather than things a reader would")
+w("look up, so no inbound link is expected. What matters is whether a reader can")
+w("still **reach** them by browsing — the last column answers that from the")
+w("sidebar nav of a real build.")
+w("")
+off_nav = [b for b in orphans if not reachable_by_browsing(b)]
+w(f"**{len(orphans) - len(off_nav)} of {len(orphans)} sit on a page the nav links to.**"
+  + (f" The {len(off_nav)} that do not are the rows to look at."
+     if off_nav else " Nothing is stranded."))
+w("")
+w("| Block | Type | Lives on | Reachable by browsing |")
+w("|---|---|---|---|")
+for b in sorted(orphans, key=lambda b: (not reachable_by_browsing(b),
+                                        b.get("source_page") or "", b["id"])):
     page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
-    w(f"| `{b['id']}` — {b['title']} | {b.get('type','')} | {page} |")
+    ok = "yes" if reachable_by_browsing(b) else "**NO**"
+    w(f"| `{b['id']}` — {b['title']} | {b.get('type','')} | {page} | {ok} |")
 w("")
 
 w("### Implicit edges — rule couplings with no link in the prose")
@@ -388,9 +496,12 @@ else:
     w(f"**No disagreements** across {sum(1 for b in feats if b.get('requires'))} features "
       "that carry `requires`.")
     w("")
-    w("Every one is exactly the set of feature links in its own prerequisite line,")
-    w("which means `requires` is currently *derivable* rather than independent —")
-    w("worth knowing before deciding to keep maintaining it by hand.")
+    w("Every one is exactly the set of feature links in its own prerequisite line.")
+    w("**Nothing to do here — this is a regression check, not an open item.** It")
+    w("passes on every run and stays in the worksheet so that if a prerequisite")
+    w("line and its `requires` ever drift apart, the count above stops being zero.")
+    w("The three real errors it caught — Slip Strike, Long Performance, Fast Kit")
+    w("Trap — were fixed when it was written.")
 w("")
 
 w("### `requires` against the index nesting")
@@ -660,55 +771,8 @@ w("")
 w("---")
 w("")
 
-# --------------------------------------------------------------- D related ---
-w("## D. Related sections — hand-written vs generated")
-w("")
-w("`{{< related >}}` renders the generated column. The hand-written lists carry")
-w("editorial judgement the edge graph does not have (they point where a reader")
-w("*should* go next, not only where the prose happens to link), so this is a")
-w("per-page call, not a global swap.")
-w("")
-for page in sorted(RELATED):
-    src = open(D(page)).read()
-    hand = re.findall(r"^- \[([^\]]+)\]\(([^)]+)\)", src[src.find("## Related"):], re.M) \
-        if "## Related" in src else []
-    gen = RELATED[page]
-    if not hand and "{{< related >}}" in src:
-        continue   # already converted
-    if not hand:
-        continue   # no hand-written list to compare against
-    w(f"### `{page.replace('content/docs/free-srd/', '')}`")
-    w("")
-    w("| Hand-written | Generated (in order) |")
-    w("|---|---|")
-    for i in range(max(len(hand), len(gen))):
-        h = hand[i][0] if i < len(hand) else ""
-        g = (f"{gen[i]['title']} <sub>out {gen[i]['out']} / in {gen[i]['in']}</sub>"
-             if i < len(gen) else "")
-        w(f"| {h} | {g} |")
-    only_hand = {h[0].split(" — ")[0] for h in hand} - {g["title"] for g in gen}
-    only_gen = {g["title"] for g in gen} - {h[0].split(" — ")[0] for h in hand}
-    if only_hand:
-        w("")
-        w(f"*Generated would drop:* {', '.join(sorted(only_hand))}")
-    if only_gen:
-        w(f"*Generated would add:* {', '.join(sorted(only_gen))}")
-    w("")
-
-w("### Pages with a generated list and no hand-written one")
-w("")
-w("Free wins — these pages currently end with no Related section at all.")
-w("")
-for page in sorted(RELATED):
-    src = open(D(page)).read()
-    if "## Related" in src:
-        continue
-    names = ", ".join(g["title"] for g in RELATED[page][:6])
-    w(f"- `{page.replace('content/docs/free-srd/', '')}` → {names}")
-w("")
-
 path = D("_discovery/04-phase3-worksheets.md")
 open(path, "w").write("\n".join(out) + "\n")
 print(f"wrote {os.path.relpath(path, REPO)} ({len(out)} lines)")
 print(f"  {len(tags)} tags, {len(orphans)} orphans, {len(missing)} missing summaries, "
-      f"{len(IMPLICIT)} implicit edges, {len(RELATED)} pages with related data")
+      f"{len(IMPLICIT)} implicit edges")

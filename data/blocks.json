@@ -2642,7 +2642,8 @@
   "in_degree": 0,
   "tags": [
    "actions",
-   "movement"
+   "movement",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "",
@@ -2813,7 +2814,8 @@
   "in_degree": 0,
   "tags": [
    "actions",
-   "movement"
+   "movement",
+   "defensive-actions"
   ],
   "flags": [],
   "notes": "",
@@ -3290,8 +3292,7 @@
   "type": "creature",
   "in_degree": 0,
   "tags": [
-   "bots",
-   "drones"
+   "bots"
   ],
   "flags": [],
   "notes": "",
@@ -3319,8 +3320,7 @@
   "type": "creature",
   "in_degree": 0,
   "tags": [
-   "bots",
-   "drones"
+   "bots"
   ],
   "flags": [],
   "notes": "",
@@ -3489,8 +3489,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "defensive"
+   "actions",
+   "defensive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3633,7 +3633,8 @@
   "type": "rule",
   "in_degree": 0,
   "tags": [
-   "combat"
+   "combat",
+   "damage"
   ],
   "flags": [],
   "notes": "",
@@ -3690,8 +3691,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3720,8 +3721,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3752,7 +3753,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "stats"
+   "stats",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "",
@@ -3814,7 +3816,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "actions"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "",
@@ -3843,8 +3846,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3873,8 +3876,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3903,8 +3906,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -3935,7 +3938,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "stats"
+   "stats",
+   "defensive-actions"
   ],
   "flags": [],
   "notes": "",
@@ -4020,8 +4024,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -4050,8 +4054,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "aggressive"
+   "actions",
+   "aggressive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -4080,8 +4084,8 @@
   "in_degree": 0,
   "tags": [
    "combat",
-   "action",
-   "defensive"
+   "actions",
+   "defensive-actions"
   ],
   "flags": [],
   "notes": "Named combat action (per ruling: individual blocks).",
@@ -5371,7 +5375,8 @@
   "type": "rule",
   "in_degree": 0,
   "tags": [
-   "environment"
+   "environment",
+   "damage"
   ],
   "flags": [],
   "notes": "Single block per ruling: exposure intervals, heat & cold, toxic atmosphere, visibility.",
@@ -5401,7 +5406,8 @@
   "type": "rule",
   "in_degree": 0,
   "tags": [
-   "environment"
+   "environment",
+   "damage"
   ],
   "flags": [],
   "notes": "",

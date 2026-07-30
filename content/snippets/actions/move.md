@@ -3,7 +3,7 @@ title: "Move"
 id: actions/move
 category: [core]
 type: rule
-tags: [actions, movement]
+tags: [actions, movement, aggressive-actions]
 ---
 
 **Move** *(2 AP)* — A character may spend 2 AP to move up to their Speed. The Move action can be taken multiple times in a turn. Some movements may combine multiple modes of travel — such as ground and climb Speeds used in a single move — with the character's maximum travel distance capped at the distance of their Primary Speed.

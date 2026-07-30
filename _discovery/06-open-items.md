@@ -16,25 +16,31 @@ change what the builder sees:
 
 **Would change the builder's inputs** — worth doing first:
 
-- §5 C1 — tag membership. Tags are the builder's query surface; a hole here
-  becomes a hole in the selection UI. **20 slots.**
-- §5 C3 — self-containment. A block that leans on its page context reads wrong
-  the moment a GM prints it alone. **9 slots.**
-- §5 C5 — titles the builder would print. **2 slots** — down from 15 once the
-  blocks that name themselves in bold were separated out.
+- §8 — **internal sub-headings.** 24 blocks carry headings *inside* them, up to
+  7 deep. This is the one thing found so far that the builder cannot normalise
+  from `title` + `owns_heading` alone.
+- §5 C1c — the 4 untagged blocks. Small, and tags are the builder's query
+  surface.
+
+C1, C3 and C5 are reviewed and actioned; C2 came back clean.
 
 **Would not** — safe to do during or after Phase 4:
 
 - §1 both items (merge hygiene, not builder inputs)
-- §2 the nine blank summaries — accepted, all on `wip:` pages
-- §5 C2 orphans, §5d duplicate page headings, §6 chrome, §7 playtest
+- §2 the eight blank summaries — accepted, all on `wip:` pages
+- §5's 18 implicit edges, §5d duplicate page headings, §6 chrome, §7 playtest
 - §4 is closed: Move 1 declined, Move 3 done.
 
 **Already done and load-bearing for the builder:** `data/blocks.json` with
 `wip`/`owns_heading`/`url`/`page_urls`/`requires`, `data/edges.json` with
-dependency/reference/include edges, `{{< blockset >}}` performing select-and-
-assemble on the live site, and a preflight that now reports **zero** broken
+dependency/reference/include edges, and a preflight that reports **zero** broken
 links with no exclusions.
+
+One correction worth carrying into Phase 4: **`{{< blockset >}}` is not used
+anywhere on the site.** It was described here as performing the builder's core
+operation live; it does not, because the module hubs use property-filtered
+`catalog` instead. The template works and is the closest thing to a prototype,
+but it is unexercised — treat it as untested code, not as proof.
 
 ---
 
@@ -62,18 +68,22 @@ These would do visible damage on the live site.
 
 ## 2. Content gaps the generated tables expose
 
-- [ ] **9 blocks render a blank summary cell** — the 4 bot platforms (BAL, HEL-1,
-      T00L, TRK-A) and the 5 races. **Accepted as-is** for now: every one is on a
-      `wip: true` page, so the blank reads as unfinished rather than broken.
-      Tracked live by `worksheets.py` for when the stubs get written.
+- [ ] **8 blocks render a visible blank summary cell** — the 4 bot platforms
+      (BAL, HEL-1, T00L, TRK-A) and the 4 sci-fi races. **Accepted as-is**: every
+      one is on a `wip: true` page, so the blank reads as unfinished rather than
+      broken. Was reported as 29; the check is now layout-aware, and the 20
+      item-tags blocks only appear in a `layout="names"` index, which has no
+      summary column to leave blank. Classic Human is in no generated table at
+      all.
 
 ## 3. Parked features
 
-- [ ] **Related section generation.** `{{< related >}}` works and runs live on
-      Vehicle Rules, but the generated list loses the editorial intent of the
-      five hand-written ones — it knows what links where, not where a reader
-      *should* go next. Side-by-side comparison is in `04-phase3-worksheets.md`.
-      **Staying parked by your call.** Needs a think, not a script.
+- [x] ~~**Related section generation.**~~ **Removed.** Hand-written Related
+      sections are the decision, so the machinery is gone rather than parked:
+      `related.html`, `data/related.json`, the generator in `builddata.py`, and
+      §D of the worksheets. Vehicle Rules was the one page using
+      `{{< related >}}` and now carries a hand-written list, seeded from what the
+      generator produced and then ordered editorially.
 
 ## 4. Structure still on the table
 
@@ -103,44 +113,46 @@ These would do visible damage on the live site.
       Three 301s cover the six old URLs, components first so the wildcard cannot
       swallow it.
 
-## 5. Audits prepared, awaiting your review
+## 5. Audits — reviewed, actioned, and what is left
 
-All in `_discovery/04-phase3-worksheets.md`. **32 annotation slots**, each an
-empty `<!-- -->` sitting under the item — type in it, freehand. An untouched slot
-means unreviewed and I leave that item alone. Regenerating the file erases
-annotations, so `worksheets.py` stays un-run while a review is in flight.
+`_discovery/04-phase3-worksheets.md`. All three review sections came back
+annotated; the notes are applied. What remains open is listed here.
 
-Suggested order: **C5** (3 slots), **C1** (20), **C3** (9). C1 before C3 because
-a tag rename would invalidate C3's quoted fragments.
+**C5 — titles the builder prints. Closed.** Both flagged titles confirmed
+appropriate as-is. The bigger outcome was the *reason* they were flagged: 13 of
+the 15 name themselves in a bold lead-in, and your read is that the bold lead-in
+**is** the heading — an inline list header. Recorded in §8 as the builder's
+heading rule.
 
-- [ ] **C5 — titles the builder would print.** Was 15 blocks; **2 need a
-      decision.** The other 13 open by naming themselves in bold
-      (`**Disarm** *(3 AP)* — …`), so those titles have been read on the page
-      after all and the builder prints the same words. The two left never state
-      their name anywhere: `movement/speed-tiers` and
-      `movement/speed-tiers-chart` — the same pair that turned up as the
-      composite collapsible on Vehicle Rules.
-- [ ] **C1 — tags.** 61 tags, and the review is now the anomalies rather than 63
-      membership lists (those are collapsed at the end as reference):
-      - **C1a** `action` (9) vs `actions` (11) — a real duplicate pair
-      - **C1b** 9 tags with ≤2 members — keep / merge / delete
-      - **C1c** 4 blocks with no tags at all, invisible to every query
-      - **C1d** one cohort gap, and I believe it is correct: `general` marks the
-        General tab, so the 12 Luck and Battery abilities are meant to lack it.
-        Confirm and it stops being reported.
-      - **C1e** tags-per-block distribution, to eyeball
-      - **C1f** 4 blocks carrying only structural tags
-- [ ] **C3 — self-containment.** New section; there was no tooling for this
-      before. 434 blocks swept for language pointing outside the block, then
-      filtered: comparisons dropped ("stress drops below threshold"), and
-      pointers whose referent is *inside* the same block dropped (24 of them,
-      listed collapsed as a filter sanity-check). **9 left**, all unlinked deixis
-      — "This page provides a list", "The following catalog lists", "The heal
-      times above". A linked pointer is fine; an unlinked one has nothing for a
-      printed reader to follow. Most are one-sentence rewrites.
-- [ ] **C2 — orphans and implicit edges.** 81 rule/reference blocks nothing links
-      to, plus the 18 rule couplings with no link in the prose. Not builder-
-      blocking; no annotation slots added yet.
+**C1 — tags. Actioned, one item open.**
+
+- `action` merged into `actions` (9 blocks).
+- `defensive` → `defensive-actions`, applied to all four defensive actions.
+  **`aggressive` → `aggressive-actions` by the same logic** — it had the same
+  gap, 7 of 10, and was only absent from your list because it had more than two
+  members. Move, Opportunity Attack and Grapple gained it. Say if that
+  over-reached.
+- `drones` deleted from BAL and HEL-1; `bots` already covers them.
+- `damage` extended to Damage Resistance & Weakness and both environment blocks
+  (exposure).
+- `general`/`luck`/`battery` confirmed mutually exclusive, so the cohort check no
+  longer reports them — 12 false positives per run, gone.
+- C1f's four structural-only blocks confirmed fine as-is.
+- [ ] **C1c — 4 untagged blocks still undecided.** `conditions/overview`,
+      `wounds/overview`, `wounds/wounds`, `wounds/common-injuries`. You said the
+      list was hard to work from without the tag vocabulary in front of you — the
+      section now prints all 59 tags with counts inline, directly above the four
+      blocks.
+
+**C3 — self-containment. Closed.** You fixed five yourself by moving
+page-scoped prose onto the pages, which is the right shape: an opening summary of
+a page that *contains* blocks is page chrome, not part of a block. I removed the
+last "below" from `components/installation`. The rest were confirmed fine.
+
+- [ ] **C2 — orphans and implicit edges.** Your hunch checked out: the worksheet
+      now carries a *reachable by browsing* column, and **all 81 sit on a page
+      the nav links to**. Nothing is stranded. The 18 implicit edges are still
+      unreviewed.
 
 ## 5b. The compact index — settled
 
@@ -290,13 +302,33 @@ way: take `title`, choose the level from where the GM placed it, and skip the
 block's own leading heading when `owns_heading` is true.** No content change
 needed — `owns_heading` + `title` is exactly the pair that makes it possible.
 
-- [ ] **15 section-block titles have never been rendered anywhere** (§C5). They
-      sit under a shared group heading — "Aggressive Actions" over Standard
-      Attack, Disarm, Grapple and the rest — so the block's own title has never
-      been proofread by being read. This is how `sci-fi/huds` printed "Huds".
-      Most read fine; `movement/speed-tiers-chart` under "Speed Tiers" is the
-      one I would look at first — see §5d, where the same two blocks turn up as
-      details-label disagreements.
+### The bold lead-in is a heading
+
+Settled in the C5 review, and it changes the rule above. 13 of the 15
+section blocks that share a group heading open by naming themselves in bold:
+
+    **Disarm** *(3 AP)* — Attempt to disarm an opponent…
+
+Your read is that this **is** a heading — an inline, low-tier list header — and
+that adding a real heading would state the name twice. So the builder's rule
+becomes:
+
+**Take `title`. Choose the level from where the GM placed it. Skip the block's
+own leading heading when `owns_heading` is true, and skip a bold lead-in that
+repeats the title.** The lead-in's parenthetical — `*(3 AP)*` — must survive,
+because it is the only place some blocks state the AP cost.
+
+- [x] ~~Is the AP cost ever stated *only* in the bold lead-in?~~ **Checked: no.**
+      All 13 restate the cost in the prose body. `combat/stealth` has no AP cost
+      to state, and says so. So promoting a lead-in to a heading loses nothing —
+      but the check is worth re-running if these blocks are rewritten.
+- [ ] **24 blocks carry internal sub-headings** beyond their own title — 41 at
+      `h3`, 19 at `h4`, 15 at `h2`, 1 at `h1`. `vehicles/mounts` has 5;
+      `chargen/overview` and `sci-fi/computer-systems` have 7 each. You spotted
+      this on Mounts. Re-levelling a block's *own* heading is easy; re-levelling
+      the ones nested inside it means shifting a whole tree, and an `h2` inside a
+      block placed at `h4` is simply wrong. This is the real heading problem for
+      the builder, and it is a superset of the one above.
 
 ---
 

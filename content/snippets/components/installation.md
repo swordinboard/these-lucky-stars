@@ -13,4 +13,4 @@ Regardless of being an internal or external component, a body slot can hold only
 - **Internal** parts are built into the host's frame and do not occupy the visible slot. The host can still wear normal equipment in that body slot.
 - **External** parts replace or extend the host's frame at that slot, and prevent any other equipment from being worn there. Armor that includes that slot still functions but is reduced to its remaining slot coverage at the GM's discretion.
 
-Each component below indicates whether it is internal or external.
+Each component indicates whether it is internal or external.

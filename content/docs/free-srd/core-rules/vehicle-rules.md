@@ -86,4 +86,8 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 
 ## Related
 
-{{< related >}}
+- [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/) — Action Points, Speed Tiers, and the movement actions vehicle speed builds on.
+- [Combat](/docs/free-srd/core-rules/combat/) — attack and damage resolution, which vehicle collisions and impacts feed into.
+- [Size](/docs/free-srd/core-rules/size/) — the size values that set collision damage and maneuverability.
+- [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) — what happens to passengers when a vehicle takes damage.
+- [Attributes](/docs/free-srd/core-rules/attributes/) — the attributes a pilot rolls for vehicle actions.

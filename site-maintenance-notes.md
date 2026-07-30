@@ -111,6 +111,30 @@ Each carries a comment explaining the decisions that kind of block involves —
 delete the comment when you are done, since **a snippet must never end with an
 HTML comment**.
 
+### Tag conventions
+
+Tags are the query surface the PDF builder will use, so the vocabulary matters
+more than it looks. Settled in the C1 review:
+
+- **Category tags** (`core`, `sci-fi`) mirror `category:` and are not a cohort —
+  a sci-fi block is *meant* to lack `core`.
+- **Group tags** `general` / `luck` / `battery` are **mutually exclusive**. Every
+  ability carries exactly one, and they drive the tabs on the Abilities pages.
+  A missing `general` on a Luck ability is correct, not a gap.
+- **Action-class tags** are `aggressive-actions` and `defensive-actions`, and they
+  must cover *every* action in that class on the Combat page — including the ones
+  that live in other namespaces (`actions/move`, `actions/step`) and the ones
+  whose primary tags are elsewhere (`combat/grapple`, `combat/stealth`).
+- Prefer the plural: it is `actions`, not `action`. A singular/plural pair is the
+  most common way this vocabulary drifts, and `worksheets.py` §C1a flags it.
+- A tag with one or two members is fine when more are expected (`size`,
+  `heavy-ranged`, `light-melee`); it is redundant when a broader tag already
+  reaches the same blocks (`drones`, dropped because `bots` covered it).
+
+`worksheets.py` §C1 reports anomalies rather than dumping every membership list —
+near-duplicate names, tags with ≤2 members, untagged blocks, cohort gaps, and
+blocks carrying only structural tags.
+
 ### Feature prerequisites are written in three places
 
 Each does a different job. Keep them separate; `worksheets.py` §C4 reports drift.
@@ -136,6 +160,14 @@ agree on all 29 nested blocks. **39** `requires` point into a *different* list �
 abilities depending on proficiencies or traits — and no index tree can show
 those, because the parent is not on that page. Generating either from the other
 would lose information in both directions.
+
+**A page-level summary is page chrome, not part of a block.** An opening
+paragraph that says what *the page* covers — "This page covers how items are
+targeted…" — belongs in the page shell, above the include, not inside the block.
+Printed alone in a PDF the block would be describing a page the reader does not
+have. Five of these were found and moved during the C3 review. The same applies
+to any pointer with no link: "the chart below" is fine when the chart is in the
+same block, and broken when it is not. `worksheets.py` §C3 sweeps for both.
 
 **Two blocks may not share a title on the same page** — Hugo silently appends
 `-1` to the second anchor, so a link that looked right yesterday lands in the
@@ -349,12 +381,12 @@ There is no `wip` *tag* — it was removed as redundant once the flag was comput
 
 ---
 
-## Canonical data (`data/blocks.json`, `data/edges.json`, `data/related.json`)
+## Canonical data (`data/blocks.json`, `data/edges.json`)
 
 Generated from the content tree. Hugo loads `data/` automatically, so templates
 can read `site.Data.blocks`; the Phase 4 PDF builder is the main intended
-consumer. The only thing the live site reads today is `related.json`, via the
-`related` shortcode.
+consumer. The live site reads `blocks.json` directly, via the `catalog`,
+`blockdetails` and `blockset` shortcodes.
 
 **Regenerate after any structural content change:**
 
@@ -364,8 +396,6 @@ python3 _discovery/tools/builddata.py
 
 - `blocks.json` — every block with its frontmatter, plus computed `anchor`,
   `pages` (every page it appears on), `in_degree`, and `source_page`.
-- `related.json` — per-page Related lists derived from the edge graph (see
-  below). Rebuilt with the other two.
 - Each block also carries a computed `url` (where it is read on the site) and
   `owns_heading` (whether its own file supplies its heading).
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
@@ -458,29 +488,21 @@ twice: `blockdetails` and `children`.
 
 ---
 
-## Related sections (the `related` shortcode)
+## Related sections — hand-written, by decision
+
+Each page's `## Related` list is **written by hand**. A generated version existed
+(`related.html` + `data/related.json`, derived from the edge graph) and was
+removed: the graph knows what links where, not where a reader *should* go next,
+and the hand-written lists carry that judgement. Do not rebuild it.
+
+Write the list as plain markdown under a `## Related` heading, newest-reader-first
+rather than by link count, with a short reason per entry:
 
 ```
 ## Related
 
-{{< related >}}
+- [Health](/docs/free-srd/core-rules/health/) — the two-layer health system, how DEF and VIT interact with damage.
 ```
-
-Renders the page's Related list from `data/related.json`. Two pages are related
-when blocks on one reference blocks homed on the other, in either direction;
-outbound links count double in the ordering. Each row's blurb is the target
-page's `description`, minus the SEO lead-in.
-
-- Keep the markdown `## Related` heading in the page — the shortcode emits only
-  the list, so the heading still reaches the table of contents.
-- `{{< related limit="4" >}}` trims to the strongest N.
-- It renders **nothing** when the page has no entry in `related.json`, so only
-  place it where there is data. `builddata.py` prints how many pages have lists.
-
-**The generated list is not a drop-in replacement for a hand-written one.** The
-hand-written `## Related` lists on five core-rules pages encode where a reader
-*should* go next, which the graph cannot know — it only sees where the prose
-happens to link. `_discovery/04-phase3-worksheets.md` has the side-by-side.
 
 ---
 
@@ -655,8 +677,7 @@ Page content starts here...
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
 - Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `children`,
-  `related`, `download-card`, `columns`, `roadmap`, `quickref` — all in
-  `layouts/_shortcodes/`,
+  `download-card`, `columns`, `roadmap`, `quickref` — all in `layouts/_shortcodes/`,
   plus `details` / `tabs` / `tab` from the theme
 - **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
   naming each part of the call. Read the top of the file rather than guessing from

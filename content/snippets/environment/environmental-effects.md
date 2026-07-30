@@ -3,7 +3,7 @@ title: "Environmental Effects"
 id: environment/environmental-effects
 category: [core]
 type: rule
-tags: [environment]
+tags: [environment, damage]
 ---
 
 Environmental effects are a tool for the GM to add texture and tension to encounters. They are not meant to be tracked in every single encounter — most weather and terrain is narrative flavor. The GM should only apply mechanical effects when the environment is severe enough to meaningfully affect the characters or when it would make a situation more interesting.

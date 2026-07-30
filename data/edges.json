@@ -382,21 +382,12 @@
  },
  {
   "source": "combat/actions-in-combat",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#standard-actions",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#standard-actions",
-  "text": "Standard Actions",
-  "file": "content/snippets/combat/actions-in-combat.md",
-  "line": 9
- },
- {
-  "source": "combat/actions-in-combat",
   "target": "page:/docs/free-srd/core-rules/action-economy/#readied-actions",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy/#readied-actions",
-  "text": "Readied Action",
+  "text": "Readied Actions",
   "file": "content/snippets/combat/actions-in-combat.md",
-  "line": 11
+  "line": 9
  },
  {
   "source": "combat/attacking-and-defending",
@@ -576,7 +567,7 @@
   "url": "/docs/free-srd/character-creation/races/android",
   "text": "here",
   "file": "content/snippets/bots/automated-machines.md",
-  "line": 17
+  "line": 15
  },
  {
   "source": "bots/automated-machines",
@@ -585,7 +576,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
   "text": "object durability rules",
   "file": "content/snippets/bots/automated-machines.md",
-  "line": 19
+  "line": 17
  },
  {
   "source": "conditions/overview",
@@ -942,24 +933,6 @@
   "url": "#multi-turn-actions",
   "text": "Multi-Turn Actions",
   "file": "content/snippets/actions/readied-actions.md",
-  "line": 9
- },
- {
-  "source": "actions/standard-actions",
-  "target": "page:/docs/free-srd/core-rules/combat/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/",
-  "text": "Combat",
-  "file": "content/snippets/actions/standard-actions.md",
-  "line": 9
- },
- {
-  "source": "actions/standard-actions",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement",
-  "type": "reference",
-  "url": "#movement",
-  "text": "Movement",
-  "file": "content/snippets/actions/standard-actions.md",
   "line": 9
  },
  {
@@ -7491,7 +7464,16 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 51
+  "line": 28
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/action-economy/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/#movement",
+  "type": "reference",
+  "url": "#movement",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/action-economy.md",
+  "line": 28
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7500,7 +7482,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 55
+  "line": 54
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7509,7 +7491,7 @@
   "url": "/docs/free-srd/core-rules/stats/#action-points",
   "text": "Stats — Action Points",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 81
+  "line": 84
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7518,7 +7500,7 @@
   "url": "/docs/free-srd/core-rules/stats/#speed",
   "text": "Stats — Speed",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 81
+  "line": 84
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7527,7 +7509,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 82
+  "line": 85
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7536,7 +7518,7 @@
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 83
+  "line": 86
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7563,7 +7545,7 @@
   "url": "/snippets/actions/standard-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 27
+  "line": 30
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7572,7 +7554,7 @@
   "url": "/snippets/actions/readied-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 31
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7581,7 +7563,7 @@
   "url": "/snippets/actions/multi-turn-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 35
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7590,7 +7572,7 @@
   "url": "/snippets/actions/opportunity-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 39
+  "line": 42
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7599,7 +7581,7 @@
   "url": "/snippets/combat/opportunity-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 43
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7608,7 +7590,7 @@
   "url": "/snippets/actions/reactions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 47
+  "line": 50
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7617,7 +7599,7 @@
   "url": "/snippets/actions/move",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 57
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7626,7 +7608,7 @@
   "url": "/snippets/actions/step",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 59
+  "line": 62
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7635,7 +7617,7 @@
   "url": "/snippets/movement/primary-speed",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 63
+  "line": 66
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7644,7 +7626,7 @@
   "url": "/snippets/movement/speed-descriptors",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 67
+  "line": 70
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7653,7 +7635,7 @@
   "url": "/snippets/movement/speed-tiers",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 71
+  "line": 74
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7662,7 +7644,7 @@
   "url": "/snippets/movement/speed-tiers-chart",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 73
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7671,7 +7653,7 @@
   "url": "/snippets/actions/difficult-terrain",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 77
+  "line": 80
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -7846,12 +7828,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/#standard-actions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/action-economy/#standard-actions",
+  "text": "Standard Actions",
+  "file": "content/docs/free-srd/core-rules/combat.md",
+  "line": 63
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/combat/",
   "target": "page:/docs/free-srd/core-rules/action-economy/#readied-actions",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy/#readied-actions",
   "text": "Readied Actions",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 93
+  "line": 95
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7860,7 +7851,7 @@
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 105
+  "line": 107
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7869,7 +7860,7 @@
   "url": "/docs/free-srd/core-rules/action-economy/",
   "text": "Action Economy & Movement",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 106
+  "line": 108
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7878,7 +7869,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 107
+  "line": 109
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7887,7 +7878,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged & Broken Gear",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 108
+  "line": 110
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7896,7 +7887,7 @@
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 109
+  "line": 111
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -7905,7 +7896,7 @@
   "url": "/docs/free-srd/core-rules/environmental-effects/",
   "text": "Environmental Effects",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 110
+  "line": 112
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8004,7 +7995,7 @@
   "url": "/snippets/combat/actions-in-combat",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 63
+  "line": 65
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8013,7 +8004,7 @@
   "url": "/snippets/combat/standard-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 67
+  "line": 69
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8022,7 +8013,7 @@
   "url": "/snippets/actions/move",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 69
+  "line": 71
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8031,7 +8022,7 @@
   "url": "/snippets/combat/opportunity-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 71
+  "line": 73
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8040,7 +8031,7 @@
   "url": "/snippets/combat/disarm",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 73
+  "line": 75
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8049,7 +8040,7 @@
   "url": "/snippets/combat/draw-a-weapon",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 75
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8058,7 +8049,7 @@
   "url": "/snippets/combat/grapple",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 79
+  "line": 81
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8067,7 +8058,7 @@
   "url": "/snippets/combat/shatter",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 81
+  "line": 83
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8076,7 +8067,7 @@
   "url": "/snippets/combat/stand",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 83
+  "line": 85
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8085,7 +8076,7 @@
   "url": "/snippets/combat/trip",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 85
+  "line": 87
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8094,7 +8085,7 @@
   "url": "/snippets/combat/unarmed-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 87
+  "line": 89
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8103,7 +8094,7 @@
   "url": "/snippets/combat/brace",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 91
+  "line": 93
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8112,7 +8103,7 @@
   "url": "/snippets/combat/stealth",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 95
+  "line": 97
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8121,7 +8112,7 @@
   "url": "/snippets/actions/step",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 97
+  "line": 99
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8130,7 +8121,7 @@
   "url": "/snippets/combat/use-cover",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 99
+  "line": 101
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8139,7 +8130,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
   "text": "Ballistic Shield",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 36
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8148,7 +8139,7 @@
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 43
+  "line": 45
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8157,7 +8148,7 @@
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 44
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8166,7 +8157,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 45
+  "line": 47
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8175,7 +8166,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/",
   "text": "Item Tags",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 46
+  "line": 48
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8184,7 +8175,7 @@
   "url": "/docs/free-srd/inventory--equipment/equipment/",
   "text": "Inventory & Equipment",
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 47
+  "line": 49
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8193,7 +8184,7 @@
   "url": "/snippets/objects/overview",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 9
+  "line": 11
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8202,7 +8193,7 @@
   "url": "/snippets/objects/targeting-objects",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 13
+  "line": 15
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8211,7 +8202,7 @@
   "url": "/snippets/objects/durability",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 17
+  "line": 19
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8220,7 +8211,7 @@
   "url": "/snippets/objects/conditions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 21
+  "line": 23
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8229,7 +8220,7 @@
   "url": "/snippets/objects/material-def",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 25
+  "line": 27
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8238,7 +8229,7 @@
   "url": "/snippets/objects/armor-degradation",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 32
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8247,7 +8238,7 @@
   "url": "/snippets/objects/shield-degradation",
   "text": null,
   "file": "content/docs/free-srd/core-rules/damaged--broken-gear.md",
-  "line": 37
+  "line": 39
  },
  {
   "source": "page:/docs/free-srd/core-rules/environmental-effects/",
@@ -8599,6 +8590,51 @@
   "text": "Stats",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
   "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/action-economy/",
+  "text": "Action Economy & Movement",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 89
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "page:/docs/free-srd/core-rules/combat/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/",
+  "text": "Combat",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 90
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "core-rules/size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "Size",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 91
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "page:/docs/free-srd/core-rules/wounds--conditions/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/",
+  "text": "Wounds & Conditions",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 92
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "page:/docs/free-srd/core-rules/attributes/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/attributes/",
+  "text": "Attributes",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 93
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",

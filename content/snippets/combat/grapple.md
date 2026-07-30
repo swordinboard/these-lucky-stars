@@ -3,7 +3,7 @@ title: "Grapple"
 id: combat/grapple
 category: [core]
 type: rule
-tags: [combat, stats]
+tags: [combat, stats, aggressive-actions]
 ---
 
 > **Grapple = STR + AGI + Mods**

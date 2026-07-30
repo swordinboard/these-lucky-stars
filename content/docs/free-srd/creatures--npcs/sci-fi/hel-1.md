@@ -6,7 +6,7 @@ wip: true
 id: bots/hel-1
 category: [sci-fi]
 type: creature
-tags: [bots, drones]
+tags: [bots]
 ---
 # HEL-1
 
