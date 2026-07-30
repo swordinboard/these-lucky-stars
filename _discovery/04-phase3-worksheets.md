@@ -70,7 +70,7 @@ not belong to any group — but it should be a decision, not an oversight.
 brackets. The quoted line under each block is its *opening sentence*, not the
 whole snippet.
 
-> `ability` (76) · `actions` (20) · `aggressive-actions` (10) · `armor` (14) · `armor-upgrade` (8) · `attributes` (5) · `basics` (10) · `battery` (5) · `bots` (6) · `character-creation` (5) · `clothing` (6) · `combat` (26) · `communications` (3) · `component` (24) · `computers` (8) · `condition` (16) · `containers` (11) · `core` (93) · `damage` (5) · `defensive-actions` (4) · `environment` (2) · `equipment` (173) · `general` (63) · `generic` (59) · `health` (4) · `heavy-armor` (5) · `heavy-ranged` (1) · `inventory` (2) · `item-tag` (20) · `kit` (6) · `light-armor` (7) · `light-melee` (2) · `light-sources` (4) · `luck` (8) · `medical` (12) · `medium-melee` (3) · `melee-upgrade` (2) · `melee-weapon` (5) · `movement` (6) · `objects` (7) · `pistol` (4) · `proficiency` (18) · `races` (6) · `ranged-upgrade` (7) · `ranged-weapon` (10) · `rifle` (5) · `sci-fi` (141) · `shield` (5) · `size` (1) · `stats` (11) · `survival` (17) · `tech` (20) · `tools` (11) · `trade-goods` (11) · `trait` (20) · `upgrade` (17) · `vehicles` (11) · `weapon` (15) · `wound-type` (7)
+> `ability` (76) · `actions` (20) · `aggressive-actions` (10) · `armor` (14) · `armor-upgrade` (8) · `attributes` (5) · `basics` (10) · `battery` (5) · `bots` (6) · `character-creation` (5) · `clothing` (6) · `combat` (26) · `communications` (3) · `component` (24) · `computers` (8) · `condition` (16) · `containers` (11) · `core` (93) · `damage` (5) · `defensive-actions` (4) · `environment` (2) · `equipment` (173) · `general` (63) · `generic` (59) · `health` (4) · `heavy-armor` (5) · `heavy-ranged` (1) · `inventory` (2) · `item-tag` (20) · `kit` (6) · `light-armor` (7) · `light-melee` (2) · `light-sources` (4) · `luck` (8) · `medical` (12) · `medium-melee` (3) · `melee-upgrade` (2) · `melee-weapon` (5) · `movement` (6) · `objects` (7) · `pistol` (4) · `proficiency` (18) · `races` (6) · `ranged-upgrade` (7) · `ranged-weapon` (10) · `rifle` (5) · `sci-fi` (141) · `shield` (5) · `size` (1) · `stats` (11) · `survival` (17) · `tech` (22) · `tools` (11) · `trade-goods` (11) · `trait` (20) · `upgrade` (17) · `vehicles` (11) · `weapon` (15) · `wound-type` (7)
 
 - **`conditions/overview`** — Conditions  <sub>type=reference</sub>
       Conditions alter how your character is able to act.
@@ -104,8 +104,8 @@ confirmed on review and removed 12 false positives per run.
 |---|---|
 | 0 | 4 |
 | 1 | 102 |
-| 2 | 68 |
-| 3 | 210 |
+| 2 | 66 |
+| 3 | 212 |
 | 4 | 35 |
 | 5 | 15 |
 
@@ -153,12 +153,6 @@ grenades") cannot reach them. Structural tags are `character-creation`, `core`, 
   <!-- functional tag to add, or fine as-is: -->
 - **`equipment/common-terms`** — Common Equipment Terms  <sub>equipment</sub>
       The standard price for a new piece of equipment.
-  <!-- functional tag to add, or fine as-is: -->
-- **`sci-fi/communications`** — Communications  <sub>sci-fi, equipment</sub>
-      Communication devices — also refered to as coms or com devices — are able to connect to other com devices with…
-  <!-- functional tag to add, or fine as-is: -->
-- **`sci-fi/huds`** — Heads Up Displays (HUDs)  <sub>sci-fi, equipment</sub>
-      Heads Up Displays, or HUDs, are helmet upgrades that add a display layer to a visor, screen, or lense.
   <!-- functional tag to add, or fine as-is: -->
 
 ### C1g. Full membership lists
@@ -340,9 +334,9 @@ bury the decisions above.
 - `sci-fi-equipment/ultraweave-evosuit` — Ultraweave Evosuit  <sub>sci-fi, armor, heavy-armor</sub>
 - `sci-fi-equipment/vitaboost-injector` — Vitaboost Injector  <sub>sci-fi, medical</sub>
 - `sci-fi-equipment/weighted-core` — Weighted Core  <sub>sci-fi, upgrade, melee-upgrade</sub>
-- `sci-fi/communications` — Communications  <sub>sci-fi</sub>
+- `sci-fi/communications` — Communications  <sub>sci-fi, tech</sub>
 - `sci-fi/energy-shields` — Energy Shields  <sub>sci-fi, shield</sub>
-- `sci-fi/huds` — Heads Up Displays (HUDs)  <sub>sci-fi</sub>
+- `sci-fi/huds` — Heads Up Displays (HUDs)  <sub>sci-fi, tech</sub>
 
 **`sci-fi`** — 141
 
@@ -480,10 +474,10 @@ bury the decisions above.
 - `sci-fi-equipment/vitaboost-injector` — Vitaboost Injector  <sub>equipment, medical</sub>
 - `sci-fi-equipment/weighted-core` — Weighted Core  <sub>equipment, upgrade, melee-upgrade</sub>
 - `sci-fi/ballistics-in-space` — Ballistic Weapons In Space  <sub>combat</sub>
-- `sci-fi/communications` — Communications  <sub>equipment</sub>
+- `sci-fi/communications` — Communications  <sub>equipment, tech</sub>
 - `sci-fi/computer-systems` — Computer Systems  <sub>computers</sub>
 - `sci-fi/energy-shields` — Energy Shields  <sub>equipment, shield</sub>
-- `sci-fi/huds` — Heads Up Displays (HUDs)  <sub>equipment</sub>
+- `sci-fi/huds` — Heads Up Displays (HUDs)  <sub>equipment, tech</sub>
 - `traits/inter-planet-traveler` — Inter-Planet Traveler  <sub>trait</sub>
 - `traits/scrap-hauler` — Scrap Hauler  <sub>trait</sub>
 - `traits/space-adept` — Space Adept  <sub>trait</sub>
@@ -847,6 +841,31 @@ bury the decisions above.
 - `components/targeting-array` — Targeting Array  <sub>equipment, sci-fi</sub>
 - `components/wrist-laser` — Wrist Laser  <sub>equipment, sci-fi</sub>
 
+**`tech`** — 22
+
+- `sci-fi-equipment/battery-cores` — Standardized Battery Cores  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/bio-scanner` — Bio Scanner  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/bioskin-veil` — Bioskin Veil  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/boost-pack` — Boost Pack  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/comp-jack` — Comp Jack  <sub>equipment, sci-fi, computers</sub>
+- `sci-fi-equipment/data-spike` — Data Spike  <sub>equipment, sci-fi, computers</sub>
+- `sci-fi-equipment/decoy-beacon` — Decoy Beacon  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/fuel-cells` — Fuel Cells  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/grapple-line-launcher` — Grapple-Line Launcher  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/gravity-anchor` — Gravity Anchor  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/jump-boosters` — Jump Boosters  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/jump-pack` — Jump Pack  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/mag-boots` — Mag Boots  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/mag-cuffs` — Mag Cuffs  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/mini-laser-cutter` — Mini Laser Cutter  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/personal-shield` — Personal Shield  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/reactor-cores` — Reactor Cores  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/remote-detonator` — Remote Detonator  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/signature-spoofer` — Signature Spoofer  <sub>equipment, sci-fi</sub>
+- `sci-fi-equipment/squad-shield` — Squad Shield  <sub>equipment, sci-fi</sub>
+- `sci-fi/communications` — Communications  <sub>sci-fi, equipment</sub>
+- `sci-fi/huds` — Heads Up Displays (HUDs)  <sub>sci-fi, equipment</sub>
+
 **`actions`** — 20
 
 - `actions/action-types` — Action Types  <sub>(only tag)</sub>
@@ -892,29 +911,6 @@ bury the decisions above.
 - `item-tags/throwable` — Throwable  <sub>(only tag)</sub>
 - `item-tags/two-handed` — Two-Handed  <sub>(only tag)</sub>
 - `item-tags/versatile` — Versatile  <sub>(only tag)</sub>
-
-**`tech`** — 20
-
-- `sci-fi-equipment/battery-cores` — Standardized Battery Cores  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/bio-scanner` — Bio Scanner  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/bioskin-veil` — Bioskin Veil  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/boost-pack` — Boost Pack  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/comp-jack` — Comp Jack  <sub>equipment, sci-fi, computers</sub>
-- `sci-fi-equipment/data-spike` — Data Spike  <sub>equipment, sci-fi, computers</sub>
-- `sci-fi-equipment/decoy-beacon` — Decoy Beacon  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/fuel-cells` — Fuel Cells  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/grapple-line-launcher` — Grapple-Line Launcher  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/gravity-anchor` — Gravity Anchor  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/jump-boosters` — Jump Boosters  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/jump-pack` — Jump Pack  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/mag-boots` — Mag Boots  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/mag-cuffs` — Mag Cuffs  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/mini-laser-cutter` — Mini Laser Cutter  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/personal-shield` — Personal Shield  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/reactor-cores` — Reactor Cores  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/remote-detonator` — Remote Detonator  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/signature-spoofer` — Signature Spoofer  <sub>equipment, sci-fi</sub>
-- `sci-fi-equipment/squad-shield` — Squad Shield  <sub>equipment, sci-fi</sub>
 
 **`trait`** — 20
 
@@ -1703,6 +1699,173 @@ here so you can confirm the filter is not hiding a real problem.
 - `wounds/common-injuries` `[the following]` …While this is by no means a definitive list, the following chart provides examples of common injuries and their r…
 
 </details>
+
+---
+
+## C6. Internal sub-headings — the heading problem the builder cannot solve
+
+§C5 is about a block's *own* title. This is about headings **inside** a block.
+
+Re-levelling a block's own heading is one substitution. Re-levelling a tree
+inside it means shifting every heading by the same delta — which only works if
+the tree is well-formed to begin with: every internal heading strictly below
+the level the block sits at, with no gaps and no siblings.
+
+The **page level** column is the depth the host page currently gives the block
+— its own heading if it has one, otherwise the page heading above its include.
+
+**24 blocks carry internal sub-headings.** 15 are cleanly shiftable; **9 are not.**
+
+### C6a. Not shiftable as written — 9 blocks
+
+Each of these breaks the rule in a different way, so they are grouped by cause
+rather than listed flat.
+
+#### Skips a level
+
+The tree starts more than one step below the block. Shifting it keeps the
+gap, and a gap is a rendering bug at any depth.
+
+- **`attributes/mental-attributes`** — Mental Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h4</sub>
+      #### Knowledge (KNO)
+      #### Insight (INS)
+      #### Charisma (CHA)
+      #### Will (WILL)
+  <!-- how to fix, or leave: -->
+- **`attributes/physical-attributes`** — Physical Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h4</sub>
+      #### Strength (STR)
+      #### Agility (AGI)
+      #### Dexterity (DEX)
+      #### Fortitude (FORT)
+  <!-- how to fix, or leave: -->
+- **`races/reptilian`** — Reptilian  <sub>character-creation/races/reptilian.md · sits at h1 · internal h3</sub>
+      ### Features
+  <!-- how to fix, or leave: -->
+- **`races/star-touched-human`** — Star-touched Human  <sub>character-creation/races/star-touched-human.md · sits at h1 · internal h3</sub>
+      ### Features
+  <!-- how to fix, or leave: -->
+- **`races/zeta-grey`** — Zeta Grey  <sub>character-creation/races/zeta-grey.md · sits at h1 · internal h3</sub>
+      ### Features
+  <!-- how to fix, or leave: -->
+
+#### Contains a sibling, not a child
+
+An internal heading at the **same level as the block itself**, so it reads as
+a peer section rather than part of the block. These are mostly blocks that
+were merged from several page sections in Phase 2.
+
+- **`basics/target-numbers`** — Target Numbers  <sub>core-rules/basics.md · sits at h3 · internal h3, h4</sub>
+      ### Target Difficulty Guide
+      #### "Impossible" Tasks
+      #### Strenuous Tasks
+      #### Challenging Tasks
+      #### Simple Tasks
+  <!-- how to fix, or leave: -->
+- **`core-rules/size`** — Size  <sub>core-rules/size.md · sits at h2 · internal h2</sub>
+      ## How Size Affects a Character
+      ## Character Size Chart
+      ## Size in Combat
+      ## Related
+  <!-- how to fix, or leave: -->
+- **`environment/environmental-effects`** — Environmental Effects  <sub>core-rules/environmental-effects.md · sits at h2 · internal h2, h3</sub>
+      ## Exposure Intervals
+      ### Heat & Cold
+      ### Toxic Atmosphere
+      ## Visibility
+  <!-- how to fix, or leave: -->
+
+#### Other
+
+`chargen/overview` is a page-as-block whose `title` (“Character Creation Overview”) does not match its H1
+(“Character Creation”), which is why it reads as owning no heading. The H1
+is the page title; the six h2s are its sections.
+
+- **`chargen/overview`** — Character Creation Overview  <sub>character-creation/character-creation-overview.md · sits at no heading of its own on the page · internal h1, h2</sub>
+      # Character Creation
+      ## Character Sheets
+      ## Playable Races
+      ## Character Archetypes
+      ## Character Features
+      ## Starting at Level 1
+      ## Leveling Up
+  <!-- how to fix, or leave: -->
+
+#### Two findings here that are not about levels
+
+- **`core-rules/size` has a `## Related` section inside the block.** Every
+  other page keeps Related in the page shell. Printed into a PDF this block
+  would carry a “Related” heading and four site links with it. That is a
+  content bug regardless of what the builder does with heading levels.
+  <!-- move Related out of the block: -->
+- **The five race pages disagree with each other.** Android and Classic Human
+  put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at
+  `h3`. Same page shape, same block type, three of five skipping a level. This
+  is the cheapest fix in C6a.
+  <!-- make all five h2: -->
+
+### C6b. Cleanly shiftable — 15 blocks
+
+Every internal heading is exactly one level below the block, contiguous. A
+builder can move the whole tree by one delta. Listed to confirm, not to fix.
+
+- `attributes/determining-attributes` — sits at h2, 2 internal heading(s) at h3
+- `basics/advantage` — sits at h2, 3 internal heading(s) at h3
+- `combat/attacking-and-defending` — sits at h2, 2 internal heading(s) at h3
+- `combat/damage` — sits at h2, 3 internal heading(s) at h3
+- `environment/extreme-environments` — sits at h2, 3 internal heading(s) at h3
+- `equipment/common-terms` — sits at h2, 6 internal heading(s) at h3
+- `inventory/carry-limits` — sits at h2, 2 internal heading(s) at h3
+- `races/android` — sits at h1, 1 internal heading(s) at h2
+- `races/classic-human` — sits at h1, 1 internal heading(s) at h2
+- `races/overview` — sits at h1, 3 internal heading(s) at h2
+- `sci-fi/computer-systems` — sits at h2, 7 internal heading(s) at h3
+- `vehicles/collision-damage` — sits at h3, 2 internal heading(s) at h4
+- `vehicles/impact-and-overrun` — sits at h3, 2 internal heading(s) at h4
+- `vehicles/mounts` — sits at h2, 5 internal heading(s) at h3
+- `wounds/wounds` — sits at h2, 3 internal heading(s) at h3
+
+  <!-- anything in this list that should not be shiftable: -->
+
+### C6c. The fixed-level idea
+
+**12 blocks are whole pages** (`home: page`) — the races, the bot platforms, Size, the character-creation
+overview. A page-as-block cannot be broken down or re-homed; it is inserted
+whole or not at all. So the level of its internal structure could simply be
+**fixed** rather than computed, and the builder would place it at a known depth
+instead of shifting it.
+
+That would remove most of C6a at a stroke — 6 of the not-shiftable blocks are
+`home: page`. The remaining ones are snippets included into shells, where a
+fixed level does not apply because the block genuinely moves.
+
+| Block | home | In C6a? |
+|---|---|---|
+| `chargen/overview` | page | **yes** |
+| `core-rules/size` | page | **yes** |
+| `races/android` | page | no |
+| `races/classic-human` | page | no |
+| `races/overview` | page | no |
+| `races/reptilian` | page | **yes** |
+| `races/star-touched-human` | page | **yes** |
+| `races/zeta-grey` | page | **yes** |
+| `attributes/determining-attributes` | snippet | no |
+| `attributes/mental-attributes` | snippet | **yes** |
+| `attributes/physical-attributes` | snippet | **yes** |
+| `basics/advantage` | snippet | no |
+| `basics/target-numbers` | snippet | **yes** |
+| `combat/attacking-and-defending` | snippet | no |
+| `combat/damage` | snippet | no |
+| `environment/environmental-effects` | snippet | **yes** |
+| `environment/extreme-environments` | snippet | no |
+| `equipment/common-terms` | snippet | no |
+| `inventory/carry-limits` | snippet | no |
+| `sci-fi/computer-systems` | snippet | no |
+| `vehicles/collision-damage` | snippet | no |
+| `vehicles/impact-and-overrun` | snippet | no |
+| `vehicles/mounts` | snippet | no |
+| `wounds/wounds` | snippet | no |
+
+  <!-- fixed level for home:page blocks — yes, and at what depth: -->
 
 ---
 

@@ -645,6 +645,168 @@ w("")
 w("---")
 w("")
 
+# --------------------------------------------- C6 internal sub-headings ---
+w("## C6. Internal sub-headings — the heading problem the builder cannot solve")
+w("")
+w("§C5 is about a block's *own* title. This is about headings **inside** a block.")
+w("")
+w("Re-levelling a block's own heading is one substitution. Re-levelling a tree")
+w("inside it means shifting every heading by the same delta — which only works if")
+w("the tree is well-formed to begin with: every internal heading strictly below")
+w("the level the block sits at, with no gaps and no siblings.")
+w("")
+w("The **page level** column is the depth the host page currently gives the block")
+w("— its own heading if it has one, otherwise the page heading above its include.")
+w("")
+
+
+def block_headings(b):
+    try:
+        raw = open(D(b["file"])).read()
+    except OSError:
+        return []
+    body = raw.split("---", 2)[2] if raw.startswith("---") else raw
+    return [(len(m.group(1)), m.group(2).strip())
+            for m in re.finditer(r"^(#{1,6})\s+(.*)$", body, re.M)]
+
+
+def page_level(b):
+    """Depth the host page gives this block."""
+    hs = block_headings(b)
+    if b["owns_heading"]:
+        return hs[0][0] if hs else None
+    for hp in (b.get("pages") or []):
+        try:
+            src = open(D(hp)).read().split("\n")
+        except OSError:
+            continue
+        needle = "/snippets/" + b["id"]
+        for i, line in enumerate(src):
+            if needle in line:
+                for j in range(i - 1, -1, -1):
+                    m = re.match(r"^(#{1,6})\s", src[j])
+                    if m:
+                        return len(m.group(1))
+    return None
+
+
+nested = []
+for b in LIVE:
+    hs = block_headings(b)
+    sub = hs[1:] if b["owns_heading"] and hs else hs
+    if not sub:
+        continue
+    pl = page_level(b)
+    lv = sorted({l for l, _ in sub})
+    ok = pl is not None and lv and lv[0] == pl + 1 and lv == list(range(lv[0], lv[0] + len(lv)))
+    nested.append((b, sub, pl, lv, ok))
+
+shiftable = [n for n in nested if n[4]]
+broken = [n for n in nested if not n[4]]
+w(f"**{len(nested)} blocks carry internal sub-headings.** "
+  f"{len(shiftable)} are cleanly shiftable; **{len(broken)} are not.**")
+w("")
+
+w(f"### C6a. Not shiftable as written — {len(broken)} blocks")
+w("")
+w("Each of these breaks the rule in a different way, so they are grouped by cause")
+w("rather than listed flat.")
+w("")
+
+def render(n, note=True):
+    b, sub, pl, lv, _ = n
+    page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+    at = f"h{pl}" if pl else "no heading of its own on the page"
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page} · sits at {at} · internal "
+      + ", ".join(f"h{x}" for x in lv) + "</sub>")
+    for l, txt in sub:
+        w(f"      {'#' * l} {txt}")
+    if note:
+        spot("how to fix, or leave")
+
+skip = [n for n in broken if n[2] is not None and n[3] and n[3][0] > n[2] + 1]
+sibling = [n for n in broken if n not in skip and n[2] is not None and n[3] and n[3][0] <= n[2]]
+rest = [n for n in broken if n not in skip and n not in sibling]
+
+if skip:
+    w("#### Skips a level")
+    w("")
+    w("The tree starts more than one step below the block. Shifting it keeps the")
+    w("gap, and a gap is a rendering bug at any depth.")
+    w("")
+    for n in skip:
+        render(n)
+    w("")
+if sibling:
+    w("#### Contains a sibling, not a child")
+    w("")
+    w("An internal heading at the **same level as the block itself**, so it reads as")
+    w("a peer section rather than part of the block. These are mostly blocks that")
+    w("were merged from several page sections in Phase 2.")
+    w("")
+    for n in sibling:
+        render(n)
+    w("")
+if rest:
+    w("#### Other")
+    w("")
+    w("`chargen/overview` is a page-as-block whose `title` "
+      "(\u201cCharacter Creation Overview\u201d) does not match its H1")
+    w("(\u201cCharacter Creation\u201d), which is why it reads as owning no heading. The H1")
+    w("is the page title; the six h2s are its sections.")
+    w("")
+    for n in rest:
+        render(n)
+    w("")
+
+w("#### Two findings here that are not about levels")
+w("")
+w("- **`core-rules/size` has a `## Related` section inside the block.** Every")
+w("  other page keeps Related in the page shell. Printed into a PDF this block")
+w("  would carry a \u201cRelated\u201d heading and four site links with it. That is a")
+w("  content bug regardless of what the builder does with heading levels.")
+spot("move Related out of the block")
+w("- **The five race pages disagree with each other.** Android and Classic Human")
+w("  put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at")
+w("  `h3`. Same page shape, same block type, three of five skipping a level. This")
+w("  is the cheapest fix in C6a.")
+spot("make all five h2")
+w("")
+
+w(f"### C6b. Cleanly shiftable — {len(shiftable)} blocks")
+w("")
+w("Every internal heading is exactly one level below the block, contiguous. A")
+w("builder can move the whole tree by one delta. Listed to confirm, not to fix.")
+w("")
+for b, sub, pl, lv, _ in sorted(shiftable, key=lambda n: n[0]["id"]):
+    w(f"- `{b['id']}` — sits at h{pl}, {len(sub)} internal heading(s) at h{lv[0]}")
+w("")
+spot("anything in this list that should not be shiftable")
+w("")
+
+w("### C6c. The fixed-level idea")
+w("")
+w(f"**{sum(1 for b in LIVE if b.get('home') == 'page')} blocks are whole pages**"
+  " (`home: page`) — the races, the bot platforms, Size, the character-creation")
+w("overview. A page-as-block cannot be broken down or re-homed; it is inserted")
+w("whole or not at all. So the level of its internal structure could simply be")
+w("**fixed** rather than computed, and the builder would place it at a known depth")
+w("instead of shifting it.")
+w("")
+w("That would remove most of C6a at a stroke — 6 of the not-shiftable blocks are")
+w("`home: page`. The remaining ones are snippets included into shells, where a")
+w("fixed level does not apply because the block genuinely moves.")
+w("")
+w("| Block | home | In C6a? |")
+w("|---|---|---|")
+for b, sub, pl, lv, ok in sorted(nested, key=lambda n: (n[0].get("home"), n[0]["id"])):
+    w(f"| `{b['id']}` | {b.get('home')} | {'**yes**' if not ok else 'no'} |")
+w("")
+spot("fixed level for home:page blocks — yes, and at what depth")
+w("")
+w("---")
+w("")
+
 # ---------------------------------------------------- C5 headings for print ---
 w("## C5. Section-block titles — what the PDF builder will print")
 w("")

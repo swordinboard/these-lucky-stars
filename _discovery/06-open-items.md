@@ -16,11 +16,13 @@ change what the builder sees:
 
 **Would change the builder's inputs** — worth doing first:
 
-- §8 — **internal sub-headings.** 24 blocks carry headings *inside* them, up to
-  7 deep. This is the one thing found so far that the builder cannot normalise
-  from `title` + `owns_heading` alone.
+- §8 / worksheet **§C6** — **internal sub-headings.** 24 blocks carry headings
+  inside them; 15 shift cleanly, **9 do not**. The one thing found so far that
+  `title` + `owns_heading` cannot normalise. Reviewed and slotted; two of the
+  nine are plain content bugs (a `## Related` inside `core-rules/size`, and three
+  of five race pages skipping a level).
 - §5 C1c — the 4 untagged blocks. Small, and tags are the builder's query
-  surface.
+  surface. (Communications and HUDs gained `tech`; the rest of C1f confirmed fine.)
 
 C1, C3 and C5 are reviewed and actioned; C2 came back clean.
 
@@ -322,13 +324,44 @@ because it is the only place some blocks state the AP cost.
       All 13 restate the cost in the prose body. `combat/stealth` has no AP cost
       to state, and says so. So promoting a lead-in to a heading loses nothing —
       but the check is worth re-running if these blocks are rewritten.
-- [ ] **24 blocks carry internal sub-headings** beyond their own title — 41 at
-      `h3`, 19 at `h4`, 15 at `h2`, 1 at `h1`. `vehicles/mounts` has 5;
-      `chargen/overview` and `sci-fi/computer-systems` have 7 each. You spotted
-      this on Mounts. Re-levelling a block's *own* heading is easy; re-levelling
-      the ones nested inside it means shifting a whole tree, and an `h2` inside a
-      block placed at `h4` is simply wrong. This is the real heading problem for
-      the builder, and it is a superset of the one above.
+- [ ] **24 blocks carry internal sub-headings.** You spotted this on Mounts and
+      it generalises. Reviewed in worksheet **§C6**, with slots. The shape of it:
+
+      **15 are cleanly shiftable** — every internal heading exactly one level
+      below where the block sits, contiguous. A builder moves the whole tree by
+      one delta and they are fine.
+
+      **9 are not**, in three distinct ways:
+
+      | Cause | Blocks |
+      |---|---|
+      | Skips a level | the two attribute groups (h2 → h4); Reptilian, Star-touched Human, Zeta Grey (h1 → h3) |
+      | Contains a sibling, not a child | `basics/target-numbers`, `core-rules/size`, `environment/environmental-effects` |
+      | Page-as-block with its own H1 | `chargen/overview` |
+
+      Two of those are not really about levels at all:
+
+      - **`core-rules/size` keeps its `## Related` section inside the block.**
+        Every other page keeps Related in the shell. Printed into a PDF this
+        block drags a "Related" heading and four site links with it. A content
+        bug whatever the builder does.
+      - **The five race pages disagree with each other** — Android and Classic
+        Human put Features at `h2`, the other three at `h3`. Same page shape,
+        same block type. Cheapest fix on the list.
+
+      `chargen/overview` also has a **title/heading mismatch**: `title` is
+      "Character Creation Overview", the H1 says "Character Creation", which is
+      why it reads as owning no heading.
+
+- [ ] **Your fixed-level idea, sized.** **12 blocks are whole pages**
+      (`home: page`) — the races, the four bot platforms, Size, the
+      character-creation overview. A page-as-block cannot be broken down or
+      re-homed; it goes in whole or not at all. So its internal levels could be
+      **fixed** rather than shifted, and the builder would place it at a known
+      depth. **6 of the 9 not-shiftable blocks are `home: page`**, so that one
+      decision clears two thirds of the problem. The rest are snippets included
+      into shells, where the block genuinely moves and a fixed level cannot
+      apply. §C6c has the table and a slot for the depth.
 
 ---
 

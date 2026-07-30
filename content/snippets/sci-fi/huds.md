@@ -3,7 +3,7 @@ title: "Heads Up Displays (HUDs)"
 id: sci-fi/huds
 category: [sci-fi]
 type: rule
-tags: [sci-fi, equipment]
+tags: [sci-fi, equipment, tech]
 summary: "Item type"
 ---
 

@@ -3,7 +3,7 @@ title: "Communications"
 id: sci-fi/communications
 category: [sci-fi]
 type: rule
-tags: [sci-fi, equipment]
+tags: [sci-fi, equipment, tech]
 summary: "Subsystem"
 ---
 

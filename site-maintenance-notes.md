@@ -161,6 +161,16 @@ abilities depending on proficiencies or traits — and no index tree can show
 those, because the parent is not on that page. Generating either from the other
 would lose information in both directions.
 
+**Internal sub-headings must be exactly one level below the block, contiguous.**
+A block placed at `h2` may contain `h3`s; it may not contain `h4`s (a gap), and it
+may not contain another `h2` (a sibling, not a child). 24 blocks carry internal
+headings and 9 break this — see worksheet §C6. It matters because a PDF builder
+re-levels a block by shifting its whole tree, and a shift preserves gaps.
+
+**Related sections belong to the page shell, never inside a block.**
+`core-rules/size` is the one that got this wrong: printed into a PDF the block
+drags a "Related" heading and four site links with it.
+
 **A page-level summary is page chrome, not part of a block.** An opening
 paragraph that says what *the page* covers — "This page covers how items are
 targeted…" — belongs in the page shell, above the include, not inside the block.
