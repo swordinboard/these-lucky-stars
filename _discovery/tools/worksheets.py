@@ -19,6 +19,31 @@ B = {b["id"]: b for b in BLOCKS}
 EDGES = json.load(open(D("data/edges.json")))
 IMPLICIT = json.load(open(D("_discovery/tools/implicit-edges.json")))
 
+# Reviewed and settled. Items listed here are counted but not re-listed, so the
+# worksheet keeps showing what is left rather than what has already been read.
+# Remove an entry to put it back in front of you.
+ACCEPTED_TAGS = {          # C1b — small tags, all confirmed keep
+    "heavy-ranged": "more expected later",
+    "size": "more expected later",
+    "environment": "keep",
+    "inventory": "keep",
+    "light-melee": "more expected later",
+    "melee-upgrade": "more expected later",
+}
+ACCEPTED_STRUCTURAL = {    # C1f — carry only structural tags, confirmed fine
+    "chargen/overview", "equipment/common-terms",
+}
+ACCEPTED_DEIXIS = {        # C3a — pointer reviewed, left as written
+    "environment/environmental-effects": "reads fine in place",
+    "objects/conditions": "reference is inside the same block",
+    "sci-fi-equipment/kit-supplies": "reads fine in place",
+    "vehicles/mounts": "all rules referenced are in the same snippet",
+    "wounds/wounds": "reference is inside the same block",
+}
+ACCEPTED_TITLES = {        # C5 — title confirmed appropriate as-is
+    "movement/speed-tiers", "movement/speed-tiers-chart", "combat/grapple",
+}
+
 CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
 # Cohort gaps that are correct by design, so they never resurface as noise:
 # `general` marks the General tab, so the Luck and Battery abilities are meant to
@@ -115,9 +140,24 @@ w("")
 w("Regenerating this file **erases annotations**, so I will not re-run")
 w("`worksheets.py` while a review is in flight.")
 w("")
-w("Suggested order, and why: **C5** (smallest, warms up the judgement), then")
-w("**C1** (tag renames would otherwise invalidate C3's quoted fragments), then")
-w("**C3** (the one that needs rewrites).")
+w("**Anything you have already decided is gone from here.** Settled items are")
+w("recorded in `ACCEPTED_*` at the top of `worksheets.py`, counted in a one-line")
+w("note but not re-listed, so this file keeps showing what is *left*. Delete an")
+w("entry there to put something back in front of you.")
+w("")
+w("### What is open")
+w("")
+w("| Section | Slots | What it is |")
+w("|---|---|---|")
+w("| **C7** | 28 | Heading migration leftovers — the call sites that could not be converted mechanically. **Start here**; the answers set the pattern for the next two sections. |")
+w("| **C6** | 18 | Blocks whose internal headings break the h2 convention. Mostly mechanical renumbering. |")
+w("| **C1c** | 4 | Blocks with no tags at all. |")
+w("| **C1e** | 1 | Tags-per-block distribution, eyeball only. |")
+w("| **C5** | 1 | One title still unreviewed. |")
+w("")
+w("Passing checks, kept so drift gets caught: **C1a** near-duplicate tag names,")
+w("**C1d** cohort gaps, **C2** orphan reachability, **C4** `requires` against the")
+w("prerequisite line. All currently report clean.")
 w("")
 w("---")
 w("")
@@ -169,6 +209,14 @@ w("A tag this small is either under-applied, redundant with a bigger tag, or a")
 w("category of one that does not need to be a tag.")
 w("")
 small = sorted((tg for tg, m in tags.items() if len(m) <= 2), key=lambda tg: (len(tags[tg]), tg))
+settled = [tg for tg in small if tg in ACCEPTED_TAGS]
+small = [tg for tg in small if tg not in ACCEPTED_TAGS]
+if settled:
+    w(f"*{len(settled)} reviewed and kept: "
+      + ", ".join(f"`{s}` ({ACCEPTED_TAGS[s]})" for s in settled) + ".*")
+    w("")
+if not small:
+    w("- nothing new")
 for tg in small:
     mem = sorted(tags[tg], key=lambda x: x["id"])
     w(f"- **`{tg}`** ({len(mem)}) — " + ", ".join(f"`{x['id']}`" for x in mem))
@@ -331,6 +379,12 @@ w("grenades\") cannot reach them. Structural tags are "
 w("")
 thin = [b for b in LIVE
         if b.get("tags") and not (set(b["tags"]) - STRUCTURAL)]
+done_thin = [b for b in thin if b["id"] in ACCEPTED_STRUCTURAL]
+thin = [b for b in thin if b["id"] not in ACCEPTED_STRUCTURAL]
+if done_thin:
+    w(f"*{len(done_thin)} reviewed and left as-is: "
+      + ", ".join(f"`{b['id']}`" for b in done_thin) + ".*")
+    w("")
 if thin:
     for b in sorted(thin, key=lambda b: b["id"]):
         w(f"- **`{b['id']}`** — {b['title']}  <sub>{', '.join(b['tags'])}</sub>")
@@ -403,6 +457,8 @@ w(f"**{len(orphans) - len(off_nav)} of {len(orphans)} sit on a page the nav link
   + (f" The {len(off_nav)} that do not are the rows to look at."
      if off_nav else " Nothing is stranded."))
 w("")
+w("<details><summary>the " + str(len(orphans)) + " rows</summary>")
+w("")
 w("| Block | Type | Lives on | Reachable by browsing |")
 w("|---|---|---|---|")
 for b in sorted(orphans, key=lambda b: (not reachable_by_browsing(b),
@@ -410,6 +466,8 @@ for b in sorted(orphans, key=lambda b: (not reachable_by_browsing(b),
     page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
     ok = "yes" if reachable_by_browsing(b) else "**NO**"
     w(f"| `{b['id']}` — {b['title']} | {b.get('type','')} | {page} | {ok} |")
+w("")
+w("</details>")
 w("")
 
 w("### Implicit edges — rule couplings with no link in the prose")
@@ -611,6 +669,12 @@ w("")
 w("**These are the ones that break when printed alone.** Most are a one-sentence")
 w("rewrite: name the thing instead of gesturing at it, or add the link.")
 w("")
+settled_d = [h for h in unlinked if h[0]["id"] in ACCEPTED_DEIXIS]
+unlinked = [h for h in unlinked if h[0]["id"] not in ACCEPTED_DEIXIS]
+if settled_d:
+    w(f"*{len(settled_d)} reviewed and left as written: "
+      + ", ".join(f"`{h[0]['id']}` ({ACCEPTED_DEIXIS[h[0]['id']]})" for h in settled_d) + ".*")
+    w("")
 for b, name, frag, _, _ in unlinked:
     page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
     w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>  `[{name}]`")
@@ -784,17 +848,18 @@ w("---")
 w("")
 
 # --------------------------------------------- C6 internal sub-headings ---
-w("## C6. Internal sub-headings — the heading problem the builder cannot solve")
+w("## C6. Internal sub-headings — the h2 convention")
 w("")
-w("§C5 is about a block's *own* title. This is about headings **inside** a block.")
+w("§C5 is about a block's own title. This is about headings **inside** a block.")
 w("")
-w("Re-levelling a block's own heading is one substitution. Re-levelling a tree")
-w("inside it means shifting every heading by the same delta — which only works if")
-w("the tree is well-formed to begin with: every internal heading strictly below")
-w("the level the block sits at, with no gaps and no siblings.")
+w("Since the heading migration the rule is fixed: **a block authors its internal")
+w("headings starting at `h2`, contiguous.** The call site says what level the")
+w("block occupies and the shortcode shifts the whole tree to sit below it, so the")
+w("authored numbers are relative, not absolute. Because internals always start at")
+w("h2, that shift is never negative.")
 w("")
-w("The **page level** column is the depth the host page currently gives the block")
-w("— its own heading if it has one, otherwise the page heading above its include.")
+w("A block breaks the convention if its internals start somewhere other than h2,")
+w("or skip a level on the way down. Either way the shift preserves the fault.")
 w("")
 
 
@@ -808,139 +873,63 @@ def block_headings(b):
             for m in re.finditer(r"^(#{1,6})\s+(.*)$", body, re.M)]
 
 
-def page_level(b):
-    """Depth the host page gives this block."""
-    hs = block_headings(b)
-    if b["owns_heading"]:
-        return hs[0][0] if hs else None
-    for hp in (b.get("pages") or []):
-        try:
-            src = open(D(hp)).read().split("\n")
-        except OSError:
-            continue
-        needle = "/snippets/" + b["id"]
-        for i, line in enumerate(src):
-            if needle in line:
-                for j in range(i - 1, -1, -1):
-                    m = re.match(r"^(#{1,6})\s", src[j])
-                    if m:
-                        return len(m.group(1))
-    return None
-
-
 nested = []
 for b in LIVE:
     hs = block_headings(b)
     sub = hs[1:] if b["owns_heading"] and hs else hs
     if not sub:
         continue
-    pl = page_level(b)
     lv = sorted({l for l, _ in sub})
-    ok = pl is not None and lv and lv[0] == pl + 1 and lv == list(range(lv[0], lv[0] + len(lv)))
-    nested.append((b, sub, pl, lv, ok))
+    ok = lv[0] == 2 and lv == list(range(2, 2 + len(lv)))
+    nested.append((b, sub, lv, ok))
 
-shiftable = [n for n in nested if n[4]]
-broken = [n for n in nested if not n[4]]
-w(f"**{len(nested)} blocks carry internal sub-headings.** "
-  f"{len(shiftable)} are cleanly shiftable; **{len(broken)} are not.**")
+good = [n for n in nested if n[3]]
+bad = [n for n in nested if not n[3]]
+w(f"**{len(nested)} blocks carry internal sub-headings.** {len(good)} follow the")
+w(f"convention; **{len(bad)} do not.**")
 w("")
 
-w(f"### C6a. Not shiftable as written — {len(broken)} blocks")
+w(f"### C6a. Off-convention — {len(bad)} blocks")
 w("")
-w("Each of these breaks the rule in a different way, so they are grouped by cause")
-w("rather than listed flat.")
+w("Renumbering is mechanical and changes nothing on the page for a block whose")
+w("call site already supplies a level — the shortcode was going to shift it")
+w("anyway. It only matters that the *relative* depths are right.")
 w("")
-
-def render(n, note=True):
-    b, sub, pl, lv, _ = n
+for b, sub, lv, _ in sorted(bad, key=lambda n: n[0]["id"]):
     page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
-    at = f"h{pl}" if pl else "no heading of its own on the page"
-    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page} · sits at {at} · internal "
-      + ", ".join(f"h{x}" for x in lv) + "</sub>")
-    for l, txt in sub:
+    want = list(range(2, 2 + len(lv)))
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>")
+    w(f"      authored at {', '.join('h%d' % x for x in lv)}"
+      f" \u2192 should be {', '.join('h%d' % x for x in want)}"
+      + ("   *(gap in the tree)*" if lv != list(range(lv[0], lv[0] + len(lv))) else ""))
+    for l, txt in sub[:6]:
         w(f"      {'#' * l} {txt}")
-    if note:
-        spot("how to fix, or leave")
+    if len(sub) > 6:
+        w(f"      … and {len(sub) - 6} more")
+    spot("renumber / leave")
+w("")
 
-skip = [n for n in broken if n[2] is not None and n[3] and n[3][0] > n[2] + 1]
-sibling = [n for n in broken if n not in skip and n[2] is not None and n[3] and n[3][0] <= n[2]]
-rest = [n for n in broken if n not in skip and n not in sibling]
-
-if skip:
-    w("#### Skips a level")
-    w("")
-    w("The tree starts more than one step below the block. Shifting it keeps the")
-    w("gap, and a gap is a rendering bug at any depth.")
-    w("")
-    for n in skip:
-        render(n)
-    w("")
-if sibling:
-    w("#### Contains a sibling, not a child")
-    w("")
-    w("An internal heading at the **same level as the block itself**, so it reads as")
-    w("a peer section rather than part of the block. These are mostly blocks that")
-    w("were merged from several page sections in Phase 2.")
-    w("")
-    for n in sibling:
-        render(n)
-    w("")
-if rest:
-    w("#### Other")
-    w("")
-    w("`chargen/overview` is a page-as-block whose `title` "
-      "(\u201cCharacter Creation Overview\u201d) does not match its H1")
-    w("(\u201cCharacter Creation\u201d), which is why it reads as owning no heading. The H1")
-    w("is the page title; the six h2s are its sections.")
-    w("")
-    for n in rest:
-        render(n)
-    w("")
-
-w("#### Two findings here that are not about levels")
+w("#### Two of these are not about levels")
 w("")
 w("- **`core-rules/size` has a `## Related` section inside the block.** Every")
 w("  other page keeps Related in the page shell. Printed into a PDF this block")
-w("  would carry a \u201cRelated\u201d heading and four site links with it. That is a")
-w("  content bug regardless of what the builder does with heading levels.")
+w("  drags a \u201cRelated\u201d heading and four site links with it.")
 spot("move Related out of the block")
 w("- **The five race pages disagree with each other.** Android and Classic Human")
 w("  put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at")
-w("  `h3`. Same page shape, same block type, three of five skipping a level. This")
-w("  is the cheapest fix in C6a.")
+w("  `h3`. Same page shape, same block type.")
 spot("make all five h2")
 w("")
 
-w(f"### C6b. Cleanly shiftable — {len(shiftable)} blocks")
+w(f"### C6b. On convention — {len(good)} blocks")
 w("")
-w("Every internal heading is exactly one level below the block, contiguous. A")
-w("builder can move the whole tree by one delta. Listed to confirm, not to fix.")
+w("<details><summary>listed for completeness</summary>")
 w("")
-for b, sub, pl, lv, _ in sorted(shiftable, key=lambda n: n[0]["id"]):
-    w(f"- `{b['id']}` — sits at h{pl}, {len(sub)} internal heading(s) at h{lv[0]}")
+for b, sub, lv, _ in sorted(good, key=lambda n: n[0]["id"]):
+    w(f"- `{b['id']}` — {len(sub)} internal heading(s) at "
+      + ", ".join("h%d" % x for x in lv))
 w("")
-spot("anything in this list that should not be shiftable")
-w("")
-
-w("### C6c. The fixed-level idea")
-w("")
-w(f"**{sum(1 for b in LIVE if b.get('home') == 'page')} blocks are whole pages**"
-  " (`home: page`) — the races, the bot platforms, Size, the character-creation")
-w("overview. A page-as-block cannot be broken down or re-homed; it is inserted")
-w("whole or not at all. So the level of its internal structure could simply be")
-w("**fixed** rather than computed, and the builder would place it at a known depth")
-w("instead of shifting it.")
-w("")
-w("That would remove most of C6a at a stroke — 6 of the not-shiftable blocks are")
-w("`home: page`. The remaining ones are snippets included into shells, where a")
-w("fixed level does not apply because the block genuinely moves.")
-w("")
-w("| Block | home | In C6a? |")
-w("|---|---|---|")
-for b, sub, pl, lv, ok in sorted(nested, key=lambda n: (n[0].get("home"), n[0]["id"])):
-    w(f"| `{b['id']}` | {b.get('home')} | {'**yes**' if not ok else 'no'} |")
-w("")
-spot("fixed level for home:page blocks — yes, and at what depth")
+w("</details>")
 w("")
 w("---")
 w("")
@@ -991,11 +980,17 @@ def names_itself(b):
 confirmed = [b for b in shared if names_itself(b)]
 unseen = [b for b in shared if not names_itself(b)]
 
-w(f"#### Never stated anywhere \u2014 {len(unseen)} blocks, these need a decision")
+w(f"#### Never stated anywhere \u2014 {len(unseen)} left to decide")
 w("")
 w("Nothing on the page prints this block's name, in any form. Whatever the PDF")
 w("builder prints is text no reader has ever checked.")
 w("")
+done_t = [b for b in unseen if b["id"] in ACCEPTED_TITLES]
+unseen = [b for b in unseen if b["id"] not in ACCEPTED_TITLES]
+if done_t:
+    w(f"*{len(done_t)} reviewed, titles confirmed appropriate: "
+      + ", ".join(f"`{b['id']}`" for b in done_t) + ".*")
+    w("")
 for b in sorted(unseen, key=lambda b: b["id"]):
     page = b["source_page"].replace("content/docs/free-srd/", "")
     w(f"- **`{b['id']}`** \u2192 would print **\u201c{b['title']}\u201d**"
@@ -1014,8 +1009,6 @@ w("")
 for b in sorted(confirmed, key=lambda b: b["id"]):
     w(f"- `{b['id']}` \u2014 bold lead-in \u201c{names_itself(b)}\u201d, title \u201c{b['title']}\u201d"
       + ("  **\u2190 differ**" if names_itself(b) != b["title"] else ""))
-w("")
-spot("anything in this list read wrong as a heading")
 w("")
 w("<details><summary>Full detail for all " + str(len(shared)) + ", grouped by shared heading</summary>")
 w("")

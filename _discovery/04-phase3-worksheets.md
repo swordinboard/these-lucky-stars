@@ -21,9 +21,24 @@ that item alone. The prompt text before the colon is a hint, not a menu.
 Regenerating this file **erases annotations**, so I will not re-run
 `worksheets.py` while a review is in flight.
 
-Suggested order, and why: **C5** (smallest, warms up the judgement), then
-**C1** (tag renames would otherwise invalidate C3's quoted fragments), then
-**C3** (the one that needs rewrites).
+**Anything you have already decided is gone from here.** Settled items are
+recorded in `ACCEPTED_*` at the top of `worksheets.py`, counted in a one-line
+note but not re-listed, so this file keeps showing what is *left*. Delete an
+entry there to put something back in front of you.
+
+### What is open
+
+| Section | Slots | What it is |
+|---|---|---|
+| **C7** | 28 | Heading migration leftovers — the call sites that could not be converted mechanically. **Start here**; the answers set the pattern for the next two sections. |
+| **C6** | 18 | Blocks whose internal headings break the h2 convention. Mostly mechanical renumbering. |
+| **C1c** | 4 | Blocks with no tags at all. |
+| **C1e** | 1 | Tags-per-block distribution, eyeball only. |
+| **C5** | 1 | One title still unreviewed. |
+
+Passing checks, kept so drift gets caught: **C1a** near-duplicate tag names,
+**C1d** cohort gaps, **C2** orphan reachability, **C4** `requires` against the
+prerequisite line. All currently report clean.
 
 ---
 
@@ -48,18 +63,9 @@ different things and something should say so, or one should win.
 A tag this small is either under-applied, redundant with a bigger tag, or a
 category of one that does not need to be a tag.
 
-- **`heavy-ranged`** (1) — `sci-fi-equipment/heavy-rotary-cannon`
-  <!-- keep / merge into X / delete: -->
-- **`size`** (1) — `core-rules/size`
-  <!-- keep / merge into X / delete: -->
-- **`environment`** (2) — `environment/environmental-effects`, `environment/extreme-environments`
-  <!-- keep / merge into X / delete: -->
-- **`inventory`** (2) — `inventory/body-slots`, `inventory/carry-limits`
-  <!-- keep / merge into X / delete: -->
-- **`light-melee`** (2) — `sci-fi-equipment/knuckle-taser`, `sci-fi-equipment/standard-issue-knife`
-  <!-- keep / merge into X / delete: -->
-- **`melee-upgrade`** (2) — `sci-fi-equipment/shock-charger`, `sci-fi-equipment/weighted-core`
-  <!-- keep / merge into X / delete: -->
+*6 reviewed and kept: `heavy-ranged` (more expected later), `size` (more expected later), `environment` (keep), `inventory` (keep), `light-melee` (more expected later), `melee-upgrade` (more expected later).*
+
+- nothing new
 
 ### C1c. Blocks with no tags at all
 
@@ -148,12 +154,9 @@ one-liner would have nowhere to render. Not listed; not a defect.
 These carry no functional tag, so a tag-as-query pull ("give me all the
 grenades") cannot reach them. Structural tags are `character-creation`, `core`, `equipment`, `generic`, `sci-fi`, `site-chrome`.
 
-- **`chargen/overview`** — Character Creation Overview  <sub>character-creation</sub>
-      [!Important] > It is highly recommended for players to familiarize themselves with the rules before making a c…
-  <!-- functional tag to add, or fine as-is: -->
-- **`equipment/common-terms`** — Common Equipment Terms  <sub>equipment</sub>
-      The standard price for a new piece of equipment.
-  <!-- functional tag to add, or fine as-is: -->
+*2 reviewed and left as-is: `chargen/overview`, `equipment/common-terms`.*
+
+- none
 
 ### C1g. Full membership lists
 
@@ -1454,6 +1457,8 @@ sidebar nav of a real build.
 
 **64 of 64 sit on a page the nav links to.** Nothing is stranded.
 
+<details><summary>the 64 rows</summary>
+
 | Block | Type | Lives on | Reachable by browsing |
 |---|---|---|---|
 | `actions/action-types` — Action Types | rule | core-rules/action-economy.md | yes |
@@ -1520,6 +1525,8 @@ sidebar nav of a real build.
 | `components/installation` — Installation | rule | inventory--equipment/sci-fi-equipment/bot-components.md | yes |
 | `components/power-sources` — Power Sources and batteries | rule | inventory--equipment/sci-fi-equipment/bot-components.md | yes |
 | `sci-fi-equipment/kit-supplies` — Sci-Fi Tool Kits | rule | inventory--equipment/sci-fi-equipment/sci-fi-kits.md | yes |
+
+</details>
 
 ### Implicit edges — rule couplings with no link in the prose
 
@@ -1620,22 +1627,9 @@ something inside their own block and are listed last as a sanity check.
 **These are the ones that break when printed alone.** Most are a one-sentence
 rewrite: name the thing instead of gesturing at it, or add the link.
 
-- **`environment/environmental-effects`** — Environmental Effects  <sub>core-rules/environmental-effects.md</sub>  `[as noted/described]`
-      …Failure leads to conditions, wounds, and/or VIT damage as described by the type of environment. Success avoids harm, but r…
-  <!-- rewrite / add link / fine as-is: -->
-- **`objects/conditions`** — Object Conditions  <sub>core-rules/damaged--broken-gear.md</sub>  `[as noted/described]`
-      …tion condition directly returns it to 2 VIT or max VIT as described by the effect.* **Full Function** — The object is at …
-  <!-- rewrite / add link / fine as-is: -->
-- **`sci-fi-equipment/kit-supplies`** — Sci-Fi Tool Kits  <sub>inventory--equipment/sci-fi-equipment/sci-fi-kits.md</sub>  `[as noted/described]`
-      …n. Each kit can be equipped to one or more body slots as noted in its description. A tool kit must be equipped to be …
-  <!-- rewrite / add link / fine as-is: -->
-- **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md</sub>  `[this/these <thing>]`
-      …low slightly different rules from mechanical vehicles. This section gathers all mount-specific rules in one place. > [!…
-  <!-- rewrite / add link / fine as-is: -->
-- **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md</sub>  `[above/below]`
-      …g associated conditions are removed. The heal times above represent when a wound no longer has a mechanical effe…
-  <!-- rewrite / add link / fine as-is: -->
+*5 reviewed and left as written: `environment/environmental-effects` (reads fine in place), `objects/conditions` (reference is inside the same block), `sci-fi-equipment/kit-supplies` (reads fine in place), `vehicles/mounts` (all rules referenced are in the same snippet), `wounds/wounds` (reference is inside the same block).*
 
+- none
 
 ### C3b. Linked pointers — 3 blocks
 
@@ -1847,190 +1841,146 @@ duplicate of `movement/speed-tiers` anyway, so neither value was correct.
 
 ---
 
-## C6. Internal sub-headings — the heading problem the builder cannot solve
+## C6. Internal sub-headings — the h2 convention
 
-§C5 is about a block's *own* title. This is about headings **inside** a block.
+§C5 is about a block's own title. This is about headings **inside** a block.
 
-Re-levelling a block's own heading is one substitution. Re-levelling a tree
-inside it means shifting every heading by the same delta — which only works if
-the tree is well-formed to begin with: every internal heading strictly below
-the level the block sits at, with no gaps and no siblings.
+Since the heading migration the rule is fixed: **a block authors its internal
+headings starting at `h2`, contiguous.** The call site says what level the
+block occupies and the shortcode shifts the whole tree to sit below it, so the
+authored numbers are relative, not absolute. Because internals always start at
+h2, that shift is never negative.
 
-The **page level** column is the depth the host page currently gives the block
-— its own heading if it has one, otherwise the page heading above its include.
+A block breaks the convention if its internals start somewhere other than h2,
+or skip a level on the way down. Either way the shift preserves the fault.
 
-**24 blocks carry internal sub-headings.** 7 are cleanly shiftable; **17 are not.**
+**24 blocks carry internal sub-headings.** 8 follow the
+convention; **16 do not.**
 
-### C6a. Not shiftable as written — 17 blocks
+### C6a. Off-convention — 16 blocks
 
-Each of these breaks the rule in a different way, so they are grouped by cause
-rather than listed flat.
+Renumbering is mechanical and changes nothing on the page for a block whose
+call site already supplies a level — the shortcode was going to shift it
+anyway. It only matters that the *relative* depths are right.
 
-#### Skips a level
-
-The tree starts more than one step below the block. Shifting it keeps the
-gap, and a gap is a rendering bug at any depth.
-
-- **`races/reptilian`** — Reptilian  <sub>character-creation/races/reptilian.md · sits at h1 · internal h3</sub>
-      ### Features
-  <!-- how to fix, or leave: -->
-- **`races/star-touched-human`** — Star-touched Human  <sub>character-creation/races/star-touched-human.md · sits at h1 · internal h3</sub>
-      ### Features
-  <!-- how to fix, or leave: -->
-- **`races/zeta-grey`** — Zeta Grey  <sub>character-creation/races/zeta-grey.md · sits at h1 · internal h3</sub>
-      ### Features
-  <!-- how to fix, or leave: -->
-
-#### Contains a sibling, not a child
-
-An internal heading at the **same level as the block itself**, so it reads as
-a peer section rather than part of the block. These are mostly blocks that
-were merged from several page sections in Phase 2.
-
-- **`attributes/determining-attributes`** — Two Ways to Determine Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
-      ## Attribute Pool
-  <!-- how to fix, or leave: -->
-- **`attributes/mental-attributes`** — Mental Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
-      ## Insight (INS)
-      ## Charisma (CHA)
-      ## Will (WILL)
-  <!-- how to fix, or leave: -->
-- **`attributes/physical-attributes`** — Physical Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
-      ## Agility (AGI)
-      ## Dexterity (DEX)
-      ## Fortitude (FORT)
-  <!-- how to fix, or leave: -->
-- **`basics/advantage`** — Advantage  <sub>core-rules/basics.md · sits at h3 · internal h3</sub>
+- **`basics/advantage`** — Advantage  <sub>core-rules/basics.md</sub>
+      authored at h3 → should be h2
       ### Special Notes for the Game Master:
       ### Advantage and Contested Rolls
-  <!-- how to fix, or leave: -->
-- **`combat/attacking-and-defending`** — Attacking and Defending  <sub>core-rules/combat.md · sits at h3 · internal h3</sub>
-      ### Advantage and Disadvantage in Combat
-  <!-- how to fix, or leave: -->
-- **`combat/damage`** — Damage  <sub>core-rules/combat.md · sits at h3 · internal h3</sub>
-      ### Damage Modifiers
-      ### Damage Types
-  <!-- how to fix, or leave: -->
-- **`core-rules/size`** — Size  <sub>core-rules/size.md · sits at h2 · internal h2</sub>
-      ## How Size Affects a Character
-      ## Character Size Chart
-      ## Size in Combat
-      ## Related
-  <!-- how to fix, or leave: -->
-- **`environment/environmental-effects`** — Environmental Effects  <sub>core-rules/environmental-effects.md · sits at h2 · internal h2, h3</sub>
-      ### Heat & Cold
-      ### Toxic Atmosphere
-      ## Visibility
-  <!-- how to fix, or leave: -->
-- **`sci-fi/computer-systems`** — Computer Systems  <sub>core-rules/sci-fi-additions.md · sits at h3 · internal h3, h4</sub>
-      ### System Level
-      ### Common Actions
-      ### Security Countermeasures
-      #### Triggers
-      #### Resets
-      #### Effects
-  <!-- how to fix, or leave: -->
-- **`vehicles/collision-damage`** — Collision Damage  <sub>core-rules/vehicle-rules.md · sits at h4 · internal h4</sub>
-      #### Collision & Occupants
-  <!-- how to fix, or leave: -->
-- **`vehicles/impact-and-overrun`** — Impact & Overrun  <sub>core-rules/vehicle-rules.md · sits at h4 · internal h4</sub>
-      #### Scenario B — A Hazard Appeares in the Path
-  <!-- how to fix, or leave: -->
-- **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md · sits at h3 · internal h3</sub>
-      ### Mount Features
-      ### Unwilling Mounts
-      ### Mounts and Impact/Overrun
-      ### Sudden Stops
-  <!-- how to fix, or leave: -->
-- **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md · sits at h3 · internal h3</sub>
-      ### Major Wounds
-      ### Narrative Healing
-  <!-- how to fix, or leave: -->
-
-#### Other
-
-`chargen/overview` is a page-as-block whose `title` (“Character Creation Overview”) does not match its H1
-(“Character Creation”), which is why it reads as owning no heading. The H1
-is the page title; the six h2s are its sections.
-
-- **`chargen/overview`** — Character Creation Overview  <sub>character-creation/character-creation-overview.md · sits at no heading of its own on the page · internal h1, h2</sub>
+  <!-- renumber / leave: -->
+- **`basics/target-numbers`** — Target Numbers  <sub>core-rules/basics.md</sub>
+      authored at h4 → should be h2
+      #### "Impossible" Tasks
+      #### Strenuous Tasks
+      #### Challenging Tasks
+      #### Simple Tasks
+  <!-- renumber / leave: -->
+- **`chargen/overview`** — Character Creation Overview  <sub>character-creation/character-creation-overview.md</sub>
+      authored at h1, h2 → should be h2, h3
       # Character Creation
       ## Character Sheets
       ## Playable Races
       ## Character Archetypes
       ## Character Features
       ## Starting at Level 1
-      ## Leveling Up
-  <!-- how to fix, or leave: -->
+      … and 1 more
+  <!-- renumber / leave: -->
+- **`combat/attacking-and-defending`** — Attacking and Defending  <sub>core-rules/combat.md</sub>
+      authored at h3 → should be h2
+      ### Advantage and Disadvantage in Combat
+  <!-- renumber / leave: -->
+- **`combat/damage`** — Damage  <sub>core-rules/combat.md</sub>
+      authored at h3 → should be h2
+      ### Damage Modifiers
+      ### Damage Types
+  <!-- renumber / leave: -->
+- **`environment/extreme-environments`** — Extreme Environments  <sub>core-rules/environmental-effects.md</sub>
+      authored at h3 → should be h2
+      ### Vacuum
+      ### Radiation
+      ### Specialized Equipment
+  <!-- renumber / leave: -->
+- **`equipment/common-terms`** — Common Equipment Terms  <sub>inventory--equipment/equipment.md</sub>
+      authored at h3 → should be h2
+      ### Price
+      ### Weight
+      ### Object DEF
+      ### DEF Bonus
+      ### Range
+      ### Tags
+  <!-- renumber / leave: -->
+- **`inventory/carry-limits`** — Inventory Management  <sub>inventory--equipment/inventory.md</sub>
+      authored at h3 → should be h2
+      ### Max Weight
+      ### Max Bulky Items
+  <!-- renumber / leave: -->
+- **`races/reptilian`** — Reptilian  <sub>character-creation/races/reptilian.md</sub>
+      authored at h3 → should be h2
+      ### Features
+  <!-- renumber / leave: -->
+- **`races/star-touched-human`** — Star-touched Human  <sub>character-creation/races/star-touched-human.md</sub>
+      authored at h3 → should be h2
+      ### Features
+  <!-- renumber / leave: -->
+- **`races/zeta-grey`** — Zeta Grey  <sub>character-creation/races/zeta-grey.md</sub>
+      authored at h3 → should be h2
+      ### Features
+  <!-- renumber / leave: -->
+- **`sci-fi/computer-systems`** — Computer Systems  <sub>core-rules/sci-fi-additions.md</sub>
+      authored at h3, h4 → should be h2, h3
+      ### System Level
+      ### Common Actions
+      ### Security Countermeasures
+      #### Triggers
+      #### Resets
+      #### Effects
+  <!-- renumber / leave: -->
+- **`vehicles/collision-damage`** — Collision Damage  <sub>core-rules/vehicle-rules.md</sub>
+      authored at h4 → should be h2
+      #### Collision & Occupants
+  <!-- renumber / leave: -->
+- **`vehicles/impact-and-overrun`** — Impact & Overrun  <sub>core-rules/vehicle-rules.md</sub>
+      authored at h4 → should be h2
+      #### Scenario B — A Hazard Appeares in the Path
+  <!-- renumber / leave: -->
+- **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md</sub>
+      authored at h3 → should be h2
+      ### Mount Features
+      ### Unwilling Mounts
+      ### Mounts and Impact/Overrun
+      ### Sudden Stops
+  <!-- renumber / leave: -->
+- **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md</sub>
+      authored at h3 → should be h2
+      ### Major Wounds
+      ### Narrative Healing
+  <!-- renumber / leave: -->
 
-#### Two findings here that are not about levels
+#### Two of these are not about levels
 
 - **`core-rules/size` has a `## Related` section inside the block.** Every
   other page keeps Related in the page shell. Printed into a PDF this block
-  would carry a “Related” heading and four site links with it. That is a
-  content bug regardless of what the builder does with heading levels.
+  drags a “Related” heading and four site links with it.
   <!-- move Related out of the block: -->
 - **The five race pages disagree with each other.** Android and Classic Human
   put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at
-  `h3`. Same page shape, same block type, three of five skipping a level. This
-  is the cheapest fix in C6a.
+  `h3`. Same page shape, same block type.
   <!-- make all five h2: -->
 
-### C6b. Cleanly shiftable — 7 blocks
+### C6b. On convention — 8 blocks
 
-Every internal heading is exactly one level below the block, contiguous. A
-builder can move the whole tree by one delta. Listed to confirm, not to fix.
+<details><summary>listed for completeness</summary>
 
-- `basics/target-numbers` — sits at h3, 4 internal heading(s) at h4
-- `environment/extreme-environments` — sits at h2, 3 internal heading(s) at h3
-- `equipment/common-terms` — sits at h2, 6 internal heading(s) at h3
-- `inventory/carry-limits` — sits at h2, 2 internal heading(s) at h3
-- `races/android` — sits at h1, 1 internal heading(s) at h2
-- `races/classic-human` — sits at h1, 1 internal heading(s) at h2
-- `races/overview` — sits at h1, 3 internal heading(s) at h2
+- `attributes/determining-attributes` — 1 internal heading(s) at h2
+- `attributes/mental-attributes` — 3 internal heading(s) at h2
+- `attributes/physical-attributes` — 3 internal heading(s) at h2
+- `core-rules/size` — 4 internal heading(s) at h2
+- `environment/environmental-effects` — 3 internal heading(s) at h2, h3
+- `races/android` — 1 internal heading(s) at h2
+- `races/classic-human` — 1 internal heading(s) at h2
+- `races/overview` — 3 internal heading(s) at h2, h3
 
-  <!-- anything in this list that should not be shiftable: -->
-
-### C6c. The fixed-level idea
-
-**12 blocks are whole pages** (`home: page`) — the races, the bot platforms, Size, the character-creation
-overview. A page-as-block cannot be broken down or re-homed; it is inserted
-whole or not at all. So the level of its internal structure could simply be
-**fixed** rather than computed, and the builder would place it at a known depth
-instead of shifting it.
-
-That would remove most of C6a at a stroke — 6 of the not-shiftable blocks are
-`home: page`. The remaining ones are snippets included into shells, where a
-fixed level does not apply because the block genuinely moves.
-
-| Block | home | In C6a? |
-|---|---|---|
-| `chargen/overview` | page | **yes** |
-| `core-rules/size` | page | **yes** |
-| `races/android` | page | no |
-| `races/classic-human` | page | no |
-| `races/overview` | page | no |
-| `races/reptilian` | page | **yes** |
-| `races/star-touched-human` | page | **yes** |
-| `races/zeta-grey` | page | **yes** |
-| `attributes/determining-attributes` | snippet | **yes** |
-| `attributes/mental-attributes` | snippet | **yes** |
-| `attributes/physical-attributes` | snippet | **yes** |
-| `basics/advantage` | snippet | **yes** |
-| `basics/target-numbers` | snippet | no |
-| `combat/attacking-and-defending` | snippet | **yes** |
-| `combat/damage` | snippet | **yes** |
-| `environment/environmental-effects` | snippet | **yes** |
-| `environment/extreme-environments` | snippet | no |
-| `equipment/common-terms` | snippet | no |
-| `inventory/carry-limits` | snippet | no |
-| `sci-fi/computer-systems` | snippet | **yes** |
-| `vehicles/collision-damage` | snippet | **yes** |
-| `vehicles/impact-and-overrun` | snippet | **yes** |
-| `vehicles/mounts` | snippet | **yes** |
-| `wounds/wounds` | snippet | **yes** |
-
-  <!-- fixed level for home:page blocks — yes, and at what depth: -->
+</details>
 
 ---
 
@@ -2056,15 +2006,14 @@ line: `**Disarm** *(3 AP)* — Attempt to…`. Where that happens the title has
 been proofread after all, and the builder would print the same words. So this
 splits into a short list that needs a decision and a longer one to confirm.
 
-#### Never stated anywhere — 1 blocks, these need a decision
+#### Never stated anywhere — 1 left to decide
 
 Nothing on the page prints this block's name, in any form. Whatever the PDF
 builder prints is text no reader has ever checked.
 
-- **`movement/speed-tiers-chart`** → would print **“Speed Tiers Chart”**  <sub>under `#speed` on core-rules/action-economy.md</sub>
-      opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| | Slow | up to 40 | up to 5mph | W…
-  <!-- ok / new title: -->
+*1 reviewed, titles confirmed appropriate: `movement/speed-tiers-chart`.*
 
+- none
 
 #### Already stated as a bold lead-in — 14 blocks, confirm only
 
@@ -2087,8 +2036,6 @@ standalone heading; otherwise this is a no-op.
 - `combat/unarmed-attack` — bold lead-in “Unarmed Attack”, title “Unarmed Attack”
 - `combat/use-cover` — bold lead-in “Use Cover”, title “Use Cover”
 - `movement/primary-speed` — bold lead-in “Primary Speed = 20 + 5 per +1 AGI Bonus or Flat −5 if AGI Penalty + Mods”, title “Primary Speed”  **← differ**
-
-  <!-- anything in this list read wrong as a heading: -->
 
 <details><summary>Full detail for all 15, grouped by shared heading</summary>
 
