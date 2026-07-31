@@ -24,7 +24,10 @@ REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 CONTENT = os.path.join(REPO, "content")
 
 # ---------------------------------------------------------------- parsing ---
-inc_re = re.compile(r'\{\{[<%]\s*include\s+"([^"]+)"')
+# The optional 2nd/3rd args decide how the block's title renders. A level
+# argument means the shortcode emits the title itself, which changes where the
+# block's anchor comes from — see the anchor resolution below.
+inc_re = re.compile(r'\{\{[<%]\s*include\s+"([^"]+)"(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?')
 # blockdetails names a block by id rather than by snippet path, but places it on
 # the page exactly as an include does — so it is normalised into the same list.
 bdetails_re = re.compile(r'\{\{[<%]\s*blockdetails\s+"([^"]+)"')
@@ -82,7 +85,8 @@ def parse(path):
     includes, links = [], []
     for i, line in enumerate(lines, 1):
         for m in inc_re.finditer(line):
-            includes.append({"line": i + offset, "target": m.group(1)})
+            includes.append({"line": i + offset, "target": m.group(1),
+                             "level": m.group(2) or "", "show": m.group(3) or ""})
         for m in bdetails_re.finditer(line):
             includes.append({"line": i + offset,
                              "target": "/snippets/" + m.group(1)})
@@ -361,7 +365,16 @@ for bid, b in blocks.items():
             if SNIPPETS.get("content" + norm_target(i["target"]) + ".md") == bid]
     if not incs:
         continue
-    line = incs[0]["line"]
+    inc = incs[0]
+    # An include carrying a level renders the block's OWN title as the heading,
+    # so the anchor comes from the title — not from whatever page heading happens
+    # to sit above it. Without this the anchor silently becomes the block's first
+    # internal heading once the page-chrome heading is removed.
+    if inc.get("level") and inc["show"] != "false":
+        b["anchor"] = hugo_anchor(b["title"])
+        b["owns_heading"] = True
+        continue
+    line = inc["line"]
     above = [h for h in PAGES[host]["headings"] if h["line"] < line]
     b["anchor"] = above[-1]["anchor"] if above else (hs[0]["anchor"] if hs else None)
 

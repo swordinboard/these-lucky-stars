@@ -2836,7 +2836,7 @@
   ],
   "anchor": "attribute-values",
   "url": "/docs/free-srd/core-rules/attributes/#attribute-values",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2864,7 +2864,7 @@
   ],
   "anchor": "two-ways-to-determine-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#two-ways-to-determine-attributes",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2892,7 +2892,7 @@
   ],
   "anchor": "mental-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#mental-attributes",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2920,7 +2920,7 @@
   ],
   "anchor": "attributes",
   "url": "/docs/free-srd/core-rules/attributes/#attributes",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2948,7 +2948,7 @@
   ],
   "anchor": "physical-attributes",
   "url": "/docs/free-srd/core-rules/attributes/#physical-attributes",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],

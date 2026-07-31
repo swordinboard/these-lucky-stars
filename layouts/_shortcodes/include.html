@@ -1,25 +1,104 @@
-{{/*
-  include — drop one block's content into a page.
+{{- /*
+  include — place one block on a page, and decide how its title renders.
 
   SIGNATURE
-    {{% include "/snippets/<namespace>/<slug>" %}}
-                 └──────────┬──────────────┘
-                            └─ the block id, with /snippets/ in front and no .md
+    {{% include "/snippets/<namespace>/<slug>" [<level>] [<show-title>] %}}
+                 └──────────┬──────────────┘   └──┬──┘   └─────┬─────┘
+                            │                     │            └─ "false" to
+                            │                     │               suppress the
+                            │                     │               title itself
+                            │                     └─ the level this block
+                            │                        OCCUPIES on the page
+                            └─ the block id with /snippets/ in front, no .md
 
-  EXAMPLE
-    {{% include "/snippets/combat/opportunity-attack" %}}
+  EXAMPLES
+    {{% include "/snippets/attributes/overview" %}}            — no title emitted
+    {{% include "/snippets/attributes/overview" "h2" %}}       — <h2>Attributes</h2>
+    {{% include "/snippets/combat/disarm" "lead" %}}           — **Disarm** — …
+    {{% include "/snippets/combat/disarm" "plain" %}}          — Disarm, unstyled
+    {{% include "/snippets/vehicles/mounts" "h3" "false" %}}   — no title, internals
+                                                                 still positioned at h3
 
   ARGUMENTS
-    0  (required)  path to the snippet. Leading slash, no file extension.
+    0  (required)  path to the snippet.
+    1  (optional)  h1–h6 | lead | plain. Omit to emit no title at all and leave
+                   the block's internal headings exactly as authored.
+    2  (optional)  "false" suppresses the title while keeping the level context,
+                   for when the page supplies its own heading above the include.
 
-  Use the PERCENT form. `{{< include >}}` would emit the block's HTML without
-  re-parsing it, which breaks markdown that follows on the host page.
+  HOW THE LEVEL WORKS
 
-  ⚠ A path that does not exist renders NOTHING — no error, no warning, no build
-  failure. Run the preflight after re-wiring includes. `blockdetails` does not
-  have this problem; prefer it wherever the block is going inside a collapsible.
-*/}}
-{{ $path := .Get 0 }}
-{{ with .Site.GetPage $path }}
-  {{ .Content }}
+  The second argument is the level the block *occupies*, not merely the size of
+  the text. Snippets author their internal headings starting at `h2` by
+  convention, so a block placed at `hN` has its internals shifted to `hN+1` and
+  down. Because internals always start at h2, that shift is never negative.
+
+  In `lead` and `plain` modes internal headings become italic or unstyled
+  paragraphs instead, keeping their ids so links still land.
+
+  ANCHORS ARE PRESERVED IN EVERY MODE. The title carries the block's anchor from
+  data/blocks.json — as a real heading id in hN mode, and on the wrapping <p> in
+  lead/plain mode. Catalog rows and prose links point at those anchors, so losing
+  them would break links silently.
+
+  ⚠ A path that does not exist renders NOTHING — no error, no build failure.
+*/ -}}
+{{- $path := .Get 0 -}}
+{{- $mode := .Get 1 -}}
+{{- $show := ne (.Get 2) "false" -}}
+{{- $page := site.GetPage $path -}}
+{{- if not $page -}}
+  {{- errorf "include: no snippet at %q (called from %s)" $path .Page.File.Path -}}
+{{- end -}}
+{{- $id := strings.TrimPrefix "/snippets/" $path -}}
+{{- $match := where site.Data.blocks "id" $id -}}
+{{- $title := "" -}}{{- $anchor := "" -}}
+{{- with $match -}}
+  {{- $b := index . 0 -}}
+  {{- $title = $b.title -}}
+  {{- $anchor = $b.anchor | default (anchorize $b.title) -}}
+{{- end -}}
+{{- $html := $page.Content -}}
+
+{{- if hasPrefix $mode "h" -}}
+  {{- $lvl := int (substr $mode 1) -}}
+  {{/* Shift the internal tree so it sits strictly below this block. The delta
+       comes from the SHALLOWEST heading the block actually authored, so a block
+       whose internals start too deep corrects itself. */}}
+  {{- $min := 0 -}}
+  {{- range $n := (seq 1 6) -}}
+    {{- if and (eq $min 0) (findRE (printf "<h%d[ >]" $n) $html) }}{{ $min = $n }}{{ end -}}
+  {{- end -}}
+  {{- if gt $min 0 -}}
+    {{- $delta := sub (add $lvl 1) $min -}}
+    {{- if ne $delta 0 -}}
+      {{/* Order matters: a rewrite must never re-catch its own output. Going
+           deeper, start from the deepest level; going shallower, the shallowest. */}}
+      {{- range $n := (cond (gt $delta 0) (seq 6 1) (seq 1 6)) -}}
+        {{- $to := add $n $delta -}}
+        {{- if and (gt $to 0) (lt $to 7) -}}
+          {{- $html = replaceRE (printf "<(/?)h%d([ >])" $n) (printf "<${1}h%d${2}" $to) $html -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and $show $title }}
+{{ printf "%s %s" (strings.Repeat $lvl "#") $title | safeHTML }}
 {{ end }}
+{{ $html | safeHTML }}
+{{- else if or (eq $mode "lead") (eq $mode "plain") -}}
+  {{/* Internal headings become text-level headings, ids kept so links land. */}}
+  {{- $open := cond (eq $mode "lead") "<p${2}><em>" "<p${2}>" -}}
+  {{- $close := cond (eq $mode "lead") "</em></p>" "</p>" -}}
+  {{- $html = replaceRE `<h[1-6]([^>]*?)( id="[^"]*")?[^>]*>(.*?)</h[1-6]>`
+        (printf "%s${3}%s" $open $close) $html -}}
+  {{- if and $show $title -}}
+    {{- $badge := cond (eq $mode "lead")
+        (printf `<p id="%s"><strong>%s</strong> — ` $anchor $title)
+        (printf `<p id="%s">%s</p><p>` $anchor $title) -}}
+    {{- $html = replaceRE `^\s*<p>` $badge $html -}}
+  {{- end -}}
+{{ $html | safeHTML }}
+{{- else -}}
+{{ $html }}
+{{- end -}}

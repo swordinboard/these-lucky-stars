@@ -7662,7 +7662,7 @@
   "url": "/snippets/attributes/overview",
   "text": null,
   "file": "content/docs/free-srd/core-rules/attributes.md",
-  "line": 9
+  "line": 7
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -7671,7 +7671,7 @@
   "url": "/snippets/attributes/determining-attributes",
   "text": null,
   "file": "content/docs/free-srd/core-rules/attributes.md",
-  "line": 13
+  "line": 9
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -7680,7 +7680,7 @@
   "url": "/snippets/attributes/attribute-values",
   "text": null,
   "file": "content/docs/free-srd/core-rules/attributes.md",
-  "line": 17
+  "line": 11
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -7689,7 +7689,7 @@
   "url": "/snippets/attributes/physical-attributes",
   "text": null,
   "file": "content/docs/free-srd/core-rules/attributes.md",
-  "line": 21
+  "line": 13
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -7698,7 +7698,7 @@
   "url": "/snippets/attributes/mental-attributes",
   "text": null,
   "file": "content/docs/free-srd/core-rules/attributes.md",
-  "line": 25
+  "line": 15
  },
  {
   "source": "page:/docs/free-srd/core-rules/basics/",

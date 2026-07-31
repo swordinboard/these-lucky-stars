@@ -4,22 +4,12 @@ description: "The eight attributes that define your character in These Lucky Sta
 weight: 20
 ---
 
-## Attributes
+{{% include "/snippets/attributes/overview" "h2" %}}
 
-{{% include "/snippets/attributes/overview" %}}
+{{% include "/snippets/attributes/determining-attributes" "h2" %}}
 
-## Two Ways to Determine Attributes
+{{% include "/snippets/attributes/attribute-values" "h2" %}}
 
-{{% include "/snippets/attributes/determining-attributes" %}}
+{{% include "/snippets/attributes/physical-attributes" "h2" %}}
 
-## Attribute Values
-
-{{% include "/snippets/attributes/attribute-values" %}}
-
-## Physical Attributes
-
-{{% include "/snippets/attributes/physical-attributes" %}}
-
-## Mental Attributes
-
-{{% include "/snippets/attributes/mental-attributes" %}}
+{{% include "/snippets/attributes/mental-attributes" "h2" %}}
