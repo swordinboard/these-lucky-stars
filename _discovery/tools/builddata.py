@@ -135,6 +135,11 @@ def includes_of(path, seen=None):
     return out
 
 
+def blockdetails_ids(path):
+    """Block ids placed by {{< blockdetails >}} on a page."""
+    return bdetails_re.findall(PAGES[path]["body"])
+
+
 children_re = re.compile(r"\{\{<\s*children([^>]*?)/?>\}\}")
 
 
@@ -374,6 +379,12 @@ for bid, b in blocks.items():
         b["anchor"] = hugo_anchor(b["title"])
         b["owns_heading"] = True
         continue
+    # blockdetails puts the anchor on its <details> element once the block has
+    # no heading of its own, so the block still owns an anchor even though
+    # nothing on the host page declares one.
+    if bid in blockdetails_ids(host):
+        b["anchor"] = hugo_anchor(b["title"])
+        continue
     line = inc["line"]
     above = [h for h in PAGES[host]["headings"] if h["line"] < line]
     b["anchor"] = above[-1]["anchor"] if above else (hs[0]["anchor"] if hs else None)
@@ -385,6 +396,18 @@ for dp in DOCS:
     m = {}
     for h in PAGES[dp]["headings"]:
         m.setdefault(h["anchor"], PAGE_BLOCK.get(dp))
+    # An include carrying a level renders the block's title as a heading on this
+    # page, so that anchor exists even though it is nowhere in the markdown.
+    # Without this, every link to such a heading resolves to nothing.
+    for inc in PAGES[dp]["includes"]:
+        sid = SNIPPETS.get("content" + norm_target(inc["target"]) + ".md")
+        if sid and inc.get("level") and inc.get("show") != "false":
+            m.setdefault(hugo_anchor(blocks[sid]["title"]) if sid in blocks else "", sid)
+    # blockdetails carries the anchor on its <details> once the block no longer
+    # has a heading of its own.
+    for bid2 in blockdetails_ids(dp):
+        if bid2 in blocks and not blocks[bid2].get("owns_heading"):
+            m.setdefault(hugo_anchor(blocks[bid2]["title"]), bid2)
     for sid in includes_of(dp):
         for h in PAGES["content/snippets/" + sid + ".md"]["headings"]:
             if m.get(h["anchor"]) is None:

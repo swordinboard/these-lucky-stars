@@ -3750,7 +3750,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "combat",
    "stats",
@@ -3782,7 +3782,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "combat",
    "stats"
@@ -3935,7 +3935,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "combat",
    "stats",
@@ -9208,7 +9208,7 @@
   ],
   "anchor": "breaking-and-entering-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#breaking-and-entering-kit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9839,7 +9839,7 @@
   ],
   "anchor": "disguise-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#disguise-kit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10473,7 +10473,7 @@
   ],
   "anchor": "sci-fi-tool-kits",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#sci-fi-tool-kits",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
@@ -10825,7 +10825,7 @@
   ],
   "anchor": "medical-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#medical-kit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11232,7 +11232,7 @@
   ],
   "anchor": "repair-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#repair-kit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11744,7 +11744,7 @@
   ],
   "anchor": "tech-kit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#tech-kit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -12104,7 +12104,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "stats",
    "actions"
@@ -12128,7 +12128,7 @@
   ],
   "anchor": "attack",
   "url": "/docs/free-srd/core-rules/stats/#attack",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12187,7 +12187,7 @@
   ],
   "anchor": "luck",
   "url": "/docs/free-srd/core-rules/stats/#luck",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12216,7 +12216,7 @@
   ],
   "anchor": "stress-threshold",
   "url": "/docs/free-srd/core-rules/stats/#stress-threshold",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],

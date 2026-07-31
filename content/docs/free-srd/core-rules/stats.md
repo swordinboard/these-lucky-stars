@@ -15,27 +15,21 @@ Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page
 
 ## Combat & Action Stats
 
-### Initiative
+{{% include "/snippets/combat/initiative" "h3" %}}
 
-{{% include "/snippets/combat/initiative" %}}
-
-### Action Points
-
-{{% include "/snippets/stats/action-points" %}}
+{{% include "/snippets/stats/action-points" "h3" %}}
 
 Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features. See [Action Economy](/docs/free-srd/core-rules/action-economy/#action-types) for the full breakdown of action types (Standard, Opportunity, and Reaction).
 
 ### Speed
 
-{{% include "/snippets/movement/primary-speed" %}}
+{{% include "/snippets/movement/primary-speed" "h3" "false" %}}
 
 **Speed Modes**
 
 {{% include "/snippets/movement/speed-descriptors" %}}
 
-**Speed Tiers**
-
-{{% include "/snippets/movement/speed-tiers" %}}
+{{% include "/snippets/movement/speed-tiers" "lead" %}}
 
 {{% include "/snippets/movement/speed-tiers-chart" %}}
 
@@ -43,39 +37,25 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 ## Health & Defense Stats
 
-### Defense
+{{% include "/snippets/stats/defense" "h3" %}}
 
-{{% include "/snippets/stats/defense" %}}
-
-### Vitality
-
-{{% include "/snippets/stats/vitality" %}}
+{{% include "/snippets/stats/vitality" "h3" %}}
 
 ### Wounds & Conditions
 
 See [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) for wound triggers, severities, condition effects, and recovery.
 
-### Stress Threshold
-
-{{% include "/snippets/stats/stress-threshold" %}}
+{{% include "/snippets/stats/stress-threshold" "h3" %}}
 
 ## Other Stats
 
-### Luck
+{{% include "/snippets/stats/luck" "h3" %}}
 
-{{% include "/snippets/stats/luck" %}}
+{{% include "/snippets/combat/grapple" "h3" %}}
 
-### Grapple
+{{% include "/snippets/combat/stealth" "h3" %}}
 
-{{% include "/snippets/combat/grapple" %}}
-
-### Stealth
-
-{{% include "/snippets/combat/stealth" %}}
-
-### Attack
-
-{{% include "/snippets/stats/attack" %}}
+{{% include "/snippets/stats/attack" "h3" %}}
 
 ## Blank Boxes
 

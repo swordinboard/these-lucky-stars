@@ -2,7 +2,7 @@
   blockdetails — a collapsible entry for one block, named by the block.
 
   SIGNATURE
-    {{< blockdetails "<namespace>/<slug>" [open] >}}
+    {{< blockdetails "<namespace>/<slug>" [<level>] [open] >}}
                       └───────┬────────┘   └─┬─┘
                               │              └─ optional: start expanded
                               └─ the block id exactly as its `id:` frontmatter
@@ -14,7 +14,15 @@
 
   ARGUMENTS
     0     (required)  block id. Must exist in data/blocks.json.
+    1     (optional)  h1–h6 — the level this block occupies, used to re-level its
+                      INTERNAL headings. The title itself is never emitted as a
+                      heading here: <summary> already names the block, and
+                      repeating it would state the name twice.
     open  (optional)  bare flag; renders <details open>.
+
+  The block's anchor is on the <details> element, since <summary> cannot carry
+  an id and there is no heading inside to hold one. Browsers expand a <details>
+  when navigation targets it, so `#anchor` links still land.
 
   Replaces the two-part form, which types the name once and the path again:
 
@@ -28,6 +36,8 @@
   Unlike `include`, a bad id fails the build instead of rendering nothing.
 */ -}}
 {{- $id := .Get 0 -}}
+{{- $lvl := .Get 1 -}}
+{{- if eq $lvl "open" }}{{ $lvl = "" }}{{ end -}}
 {{- $match := where site.Data.blocks "id" $id -}}
 {{- if not $match -}}
   {{- errorf "blockdetails: no block with id %q (called from %s)" $id .Page.File.Path -}}
@@ -37,10 +47,41 @@
 {{- if not $page -}}
   {{- errorf "blockdetails: no snippet page for %q (called from %s)" $id .Page.File.Path -}}
 {{- end -}}
-<details{{ if in .Params "open" }} open{{ end }}>
+{{- $html := $page.Content -}}
+{{- /* Shift the block's internal headings so they sit below the level this
+       block occupies. Same rule as `include`: the delta comes from the
+       shallowest heading the block authored, so a block whose internals start
+       too deep corrects itself. */ -}}
+{{- if hasPrefix $lvl "h" -}}
+  {{- $n := int (substr $lvl 1) -}}
+  {{- $min := 0 -}}
+  {{- range $i := (seq 1 6) -}}
+    {{- if and (eq $min 0) (findRE (printf "<h%d[ >]" $i) $html) }}{{ $min = $i }}{{ end -}}
+  {{- end -}}
+  {{- if gt $min 0 -}}
+    {{- $delta := sub (add $n 1) $min -}}
+    {{- if ne $delta 0 -}}
+      {{- range $i := (cond (gt $delta 0) (seq 6 1) (seq 1 6)) -}}
+        {{- $to := add $i $delta -}}
+        {{- if and (gt $to 0) (lt $to 7) -}}
+          {{- $html = replaceRE (printf "<(/?)h%d([ >])" $i) (printf "<${1}h%d${2}" $to) $html -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* The anchor rides on <details>, not on a heading inside it. <summary>
+       cannot carry the id, and repeating the title as a heading inside would
+       state the name twice — the summary already is the heading. Browsers
+       expand a <details> when navigation targets it, so links still land. */ -}}
+{{- /* Only claim the anchor when the block does not still carry its own
+       heading — otherwise the id would exist twice while the migration is
+       part-done. */ -}}
+{{- $own := $b.owns_heading -}}
+<details{{ if not $own }} id="{{ $b.anchor | default (anchorize $b.title) }}"{{ end }}{{ if in .Params "open" }} open{{ end }}>
 <summary>{{ $b.title | .Page.RenderString }}</summary>
 {{- /* remove whitespaces */ -}}
 <div class="markdown-inner">
-{{ $page.Content }}
+{{ $html | safeHTML }}
 </div></details>
 {{- /* remove whitespaces */ -}}

@@ -4,16 +4,14 @@ description: "Tool kits for the sci-fi module in These Lucky Stars — specializ
 weight: 3
 ---
 
-## Sci-Fi Tool Kits
+{{% include "/snippets/sci-fi-equipment/kit-supplies" "h2" %}}
 
-{{% include "/snippets/sci-fi-equipment/kit-supplies" %}}
+{{< blockdetails "sci-fi-equipment/b-e-kit" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/b-e-kit" >}}
+{{< blockdetails "sci-fi-equipment/disguise-kit" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/disguise-kit" >}}
+{{< blockdetails "sci-fi-equipment/medical-kit" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/medical-kit" >}}
+{{< blockdetails "sci-fi-equipment/repair-kit" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/repair-kit" >}}
-
-{{< blockdetails "sci-fi-equipment/tech-kit" >}}
+{{< blockdetails "sci-fi-equipment/tech-kit" "h3" >}}
