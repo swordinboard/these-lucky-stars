@@ -4,25 +4,21 @@ description: "These Lucky Stars' two-layer health system: Defense absorbs hits, 
 weight: 50
 ---
 
-## Health
 
-{{% include "/snippets/health/overview" %}}
+{{% include "/snippets/health/overview" "h2" %}}
 
-## Defense
 
-{{% include "/snippets/stats/defense" %}}
+{{% include "/snippets/stats/defense" "h2" %}}
 
 ---
 
-## Vitality
 
-{{% include "/snippets/stats/vitality" %}}
+{{% include "/snippets/stats/vitality" "h2" %}}
 
 ---
 
-## Applying Damage
 
-{{% include "/snippets/health/applying-damage" %}}
+{{% include "/snippets/health/applying-damage" "h2" %}}
 
 For how damage totals are calculated — damage dice, modifiers, resistance, and damage types — see [Combat](/docs/free-srd/core-rules/combat/#damage).
 

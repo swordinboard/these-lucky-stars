@@ -156,6 +156,33 @@ last "below" from `components/installation`. The rest were confirmed fine.
       the nav links to**. Nothing is stranded. The 18 implicit edges are still
       unreviewed.
 
+## 5a. Heading migration — in progress
+
+Blocks no longer carry their own heading. The call site decides the level, and
+the shortcode emits it: `{{% include "/snippets/x/y" "h3" %}}`. Full design and
+the four modes are in the shortcode header and the maintenance notes.
+
+**Done:** Attributes, Stats, Sci-Fi Tool Kits, and the rest of **core-rules** —
+81 call sites converted, 22 snippet headings stripped.
+
+- [ ] **22 "bare" blocks in core-rules still need a decision.** These sit under a
+      shared group heading with no heading of their own, so giving them a level
+      would *add* a heading that has never been on the site. Most are the C5
+      bold-lead-in blocks — Disarm, Grapple, Trip, Move, Step and the rest of the
+      combat actions — where your call was that **the bold lead-in is the
+      heading**. Converting them means stripping the hand-written bold lead-in
+      and using `"lead"` mode. That is a visible change, so it is left for you.
+      Full list in the wave-1 commit message.
+- [ ] **`movement/speed-tiers-chart` anchor drifted**, `#speed-tiers` →
+      `#speed`. It is a bare block, so its anchor is inherited from whatever
+      heading precedes it — and that heading became a generated one. Nothing
+      links to it (its two inbound edges are implicit, not links) and the site
+      has zero broken links, but it shows the shape of the problem: **a bare
+      block's anchor is a side effect of its neighbour.** Resolving the 22 above
+      resolves this too.
+- [ ] **Remaining sections:** character-creation and inventory--equipment,
+      ~370 call sites, mostly `blockdetails`.
+
 ## 5b. The compact index — settled
 
 The reference was the d20 3.5 SRD feats index. Two separable ideas came out of

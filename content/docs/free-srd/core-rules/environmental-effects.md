@@ -4,9 +4,8 @@ description: "Rules for visibility, heat, cold, toxic atmosphere, and other haza
 weight: 80
 ---
 
-## Environmental Effects
 
-{{% include "/snippets/environment/environmental-effects" %}}
+{{% include "/snippets/environment/environmental-effects" "h2" %}}
 
 ## Extreme Environments
 **Sci-Fi Module Addition**

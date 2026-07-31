@@ -10,21 +10,17 @@ Objects, equipment, and structures can be damaged and broken. This page covers h
 
 {{% include "/snippets/objects/overview" %}}
 
-## Targeting Objects
 
-{{% include "/snippets/objects/targeting-objects" %}}
+{{% include "/snippets/objects/targeting-objects" "h2" %}}
 
-## Object Durability
 
-{{% include "/snippets/objects/durability" %}}
+{{% include "/snippets/objects/durability" "h2" %}}
 
-## Object Conditions
 
-{{% include "/snippets/objects/conditions" %}}
+{{% include "/snippets/objects/conditions" "h2" %}}
 
-## Material DEF
 
-{{% include "/snippets/objects/material-def" %}}
+{{% include "/snippets/objects/material-def" "h2" %}}
 
 ## Breaking Defensive Items
 

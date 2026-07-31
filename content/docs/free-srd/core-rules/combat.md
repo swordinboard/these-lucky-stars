@@ -10,47 +10,37 @@ This page covers how fights are resolved in These Lucky Stars — from initiativ
 
 ---
 
-## Combat Basics
 
-{{% include "/snippets/combat/combat-basics" %}}
+{{% include "/snippets/combat/combat-basics" "h2" %}}
 
-## Initiative
 
-{{% include "/snippets/combat/initiative" %}}
+{{% include "/snippets/combat/initiative" "h2" %}}
 
 ---
 
-## Attacking and Defending
 
-{{% include "/snippets/combat/attacking-and-defending" %}}
+{{% include "/snippets/combat/attacking-and-defending" "h2" %}}
 
-### Cover
 
-{{% include "/snippets/combat/cover" %}}
+{{% include "/snippets/combat/cover" "h3" %}}
 
-### Surprise Attacks
 
-{{% include "/snippets/combat/surprise-attacks" %}}
+{{% include "/snippets/combat/surprise-attacks" "h3" %}}
 
-## Steps to an Attack
 
-{{% include "/snippets/combat/steps-to-an-attack" %}}
+{{% include "/snippets/combat/steps-to-an-attack" "h2" %}}
 
-## Damage
 
-{{% include "/snippets/combat/damage" %}}
+{{% include "/snippets/combat/damage" "h2" %}}
 
-### Damage Sources
 
-{{% include "/snippets/combat/damage-sources" %}}
+{{% include "/snippets/combat/damage-sources" "h3" %}}
 
-### Damage Resistance and Weakness
 
-{{% include "/snippets/combat/damage-resistance" %}}
+{{% include "/snippets/combat/damage-resistance" "h3" %}}
 
-### Applying Damage
 
-{{% include "/snippets/health/applying-damage" %}}
+{{% include "/snippets/health/applying-damage" "h3" %}}
 
 A damaged character's DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends. See the [Defense](/docs/free-srd/core-rules/health/#defense) section under Health for complete DEF reset rules.
 
@@ -66,7 +56,7 @@ The following catalog lists the most common actions characters take during comba
 
 ### Aggressive Actions
 
-{{% include "/snippets/combat/standard-attack" %}}
+{{% include "/snippets/combat/standard-attack" "h3" "false" %}}
 
 {{% include "/snippets/actions/move" %}}
 
@@ -90,7 +80,7 @@ The following catalog lists the most common actions characters take during comba
 
 ### Defensive Actions
 
-{{% include "/snippets/combat/brace" %}}
+{{% include "/snippets/combat/brace" "h3" "false" %}}
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 

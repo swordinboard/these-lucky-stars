@@ -10,17 +10,15 @@ This page covers how a character spends their time and effort during a round of 
 
 ---
 
-## Action Points
 
-{{% include "/snippets/stats/action-points" %}}
+{{% include "/snippets/stats/action-points" "h2" %}}
 
 Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features.
 
 ---
 
-## Action Types
 
-{{% include "/snippets/actions/action-types" %}}
+{{% include "/snippets/actions/action-types" "h2" %}}
 
 ### Standard Actions
 
@@ -29,25 +27,20 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/actions/standard-actions" %}}
 
-#### Readied Actions
 
-{{% include "/snippets/actions/readied-actions" %}}
+{{% include "/snippets/actions/readied-actions" "h4" %}}
 
-#### Multi-Turn Actions
 
-{{% include "/snippets/actions/multi-turn-actions" %}}
+{{% include "/snippets/actions/multi-turn-actions" "h4" %}}
 
-### Opportunity Actions
 
-{{% include "/snippets/actions/opportunity-actions" %}}
+{{% include "/snippets/actions/opportunity-actions" "h3" %}}
 
-#### Opportunity Attack
 
-{{% include "/snippets/combat/opportunity-attack" %}}
+{{% include "/snippets/combat/opportunity-attack" "h4" %}}
 
-### Reactions
 
-{{% include "/snippets/actions/reactions" %}}
+{{% include "/snippets/actions/reactions" "h3" %}}
 
 ## Movement
 
@@ -63,21 +56,18 @@ Move and Step are the two primary movement actions. Both are Standard Actions.
 
 ### Speed
 
-{{% include "/snippets/movement/primary-speed" %}}
+{{% include "/snippets/movement/primary-speed" "h3" "false" %}}
 
-#### Speed Descriptors
 
-{{% include "/snippets/movement/speed-descriptors" %}}
+{{% include "/snippets/movement/speed-descriptors" "h4" %}}
 
-#### Speed Tiers
 
-{{% include "/snippets/movement/speed-tiers" %}}
+{{% include "/snippets/movement/speed-tiers" "h4" %}}
 
 {{% include "/snippets/movement/speed-tiers-chart" %}}
 
-### Difficult Terrain and Obstacles
 
-{{% include "/snippets/actions/difficult-terrain" %}}
+{{% include "/snippets/actions/difficult-terrain" "h3" %}}
 
 ## Related
 

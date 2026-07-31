@@ -5,13 +5,11 @@ weight: 70
 wip: true
 ---
 
-# Wounds & Conditions
 
-{{% include "/snippets/wounds/overview" %}}
+{{% include "/snippets/wounds/overview" "h1" %}}
 
-## Wounds
 
-{{% include "/snippets/wounds/wounds" %}}
+{{% include "/snippets/wounds/wounds" "h2" %}}
 
 ## Wound Types
 
@@ -27,56 +25,54 @@ The following wound types describe common injuries. Each can be minor or major d
 | [Puncture](#puncture) | Grazing stab, shallow impalement | Deep stab, organ or artery damage | Bleeding |
 | [Sprain](#sprain) | Twisted ankle, pulled muscle | Torn ligament, severe hyperextension | Crippled or Restrained |
 
-{{< blockdetails "wounds/burn" >}}
+{{< blockdetails "wounds/burn" "h3" >}}
 
-{{< blockdetails "wounds/contusion" >}}
+{{< blockdetails "wounds/contusion" "h3" >}}
 
-{{< blockdetails "wounds/dislocation" >}}
+{{< blockdetails "wounds/dislocation" "h3" >}}
 
-{{< blockdetails "wounds/fracture" >}}
+{{< blockdetails "wounds/fracture" "h3" >}}
 
-{{< blockdetails "wounds/laceration" >}}
+{{< blockdetails "wounds/laceration" "h3" >}}
 
-{{< blockdetails "wounds/puncture" >}}
+{{< blockdetails "wounds/puncture" "h3" >}}
 
-{{< blockdetails "wounds/sprain" >}}
+{{< blockdetails "wounds/sprain" "h3" >}}
 
 ---
 
-## Common Injuries
 
-{{% include "/snippets/wounds/common-injuries" %}}
+{{% include "/snippets/wounds/common-injuries" "h2" %}}
 
-## Conditions
 
-{{% include "/snippets/conditions/overview" %}}
+{{% include "/snippets/conditions/overview" "h2" %}}
 
-{{< blockdetails "conditions/asphyxiating" >}}
+{{< blockdetails "conditions/asphyxiating" "h3" >}}
 
-{{< blockdetails "conditions/bleeding" >}}
+{{< blockdetails "conditions/bleeding" "h3" >}}
 
-{{< blockdetails "conditions/confused" >}}
+{{< blockdetails "conditions/confused" "h3" >}}
 
-{{< blockdetails "conditions/crippled" >}}
+{{< blockdetails "conditions/crippled" "h3" >}}
 
-{{< blockdetails "conditions/dying" >}}
+{{< blockdetails "conditions/dying" "h3" >}}
 
-{{< blockdetails "conditions/fatigued" >}}
+{{< blockdetails "conditions/fatigued" "h3" >}}
 
-{{< blockdetails "conditions/frightened" >}}
+{{< blockdetails "conditions/frightened" "h3" >}}
 
-{{< blockdetails "conditions/immobilized" >}}
+{{< blockdetails "conditions/immobilized" "h3" >}}
 
-{{< blockdetails "conditions/pinned" >}}
+{{< blockdetails "conditions/pinned" "h3" >}}
 
-{{< blockdetails "conditions/prone" >}}
+{{< blockdetails "conditions/prone" "h3" >}}
 
-{{< blockdetails "conditions/restrained" >}}
+{{< blockdetails "conditions/restrained" "h3" >}}
 
-{{< blockdetails "conditions/shaken" >}}
+{{< blockdetails "conditions/shaken" "h3" >}}
 
-{{< blockdetails "conditions/sick" >}}
+{{< blockdetails "conditions/sick" "h3" >}}
 
-{{< blockdetails "conditions/stressed" >}}
+{{< blockdetails "conditions/stressed" "h3" >}}
 
-{{< blockdetails "conditions/unconscious" >}}
+{{< blockdetails "conditions/unconscious" "h3" >}}

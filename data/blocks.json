@@ -2576,7 +2576,7 @@
   ],
   "anchor": "action-types",
   "url": "/docs/free-srd/core-rules/action-economy/#action-types",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2604,7 +2604,7 @@
   ],
   "anchor": "difficult-terrain-and-obstacles",
   "url": "/docs/free-srd/core-rules/action-economy/#difficult-terrain-and-obstacles",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2664,12 +2664,12 @@
   ],
   "anchor": "multi-turn-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#multi-turn-actions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "actions"
   ],
@@ -2692,7 +2692,7 @@
   ],
   "anchor": "opportunity-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#opportunity-actions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2720,7 +2720,7 @@
   ],
   "anchor": "reactions",
   "url": "/docs/free-srd/core-rules/action-economy/#reactions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2748,12 +2748,12 @@
   ],
   "anchor": "readied-actions",
   "url": "/docs/free-srd/core-rules/action-economy/#readied-actions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 3,
   "tags": [
    "actions"
   ],
@@ -2976,12 +2976,12 @@
   ],
   "anchor": "advantage",
   "url": "/docs/free-srd/core-rules/basics/#advantage",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 4,
   "tags": [
    "basics"
   ],
@@ -3004,7 +3004,7 @@
   ],
   "anchor": "contested-rolls",
   "url": "/docs/free-srd/core-rules/basics/#contested-rolls",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3032,7 +3032,7 @@
   ],
   "anchor": "d100-or-percentage",
   "url": "/docs/free-srd/core-rules/basics/#d100-or-percentage",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3088,7 +3088,7 @@
   ],
   "anchor": "key-terms",
   "url": "/docs/free-srd/core-rules/basics/#key-terms",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3116,7 +3116,7 @@
   ],
   "anchor": "resolving-a-tie",
   "url": "/docs/free-srd/core-rules/basics/#resolving-a-tie",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3144,7 +3144,7 @@
   ],
   "anchor": "success-and-failure",
   "url": "/docs/free-srd/core-rules/basics/#success-and-failure",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3172,12 +3172,12 @@
   ],
   "anchor": "supply-rolls",
   "url": "/docs/free-srd/core-rules/basics/#supply-rolls",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 3,
   "tags": [
    "basics"
   ],
@@ -3200,12 +3200,12 @@
   ],
   "anchor": "target-numbers",
   "url": "/docs/free-srd/core-rules/basics/#target-numbers",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "basics"
   ],
@@ -3228,7 +3228,7 @@
   ],
   "anchor": "the-rounding-rule",
   "url": "/docs/free-srd/core-rules/basics/#the-rounding-rule",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3453,7 +3453,7 @@
   ],
   "anchor": "attacking-and-defending",
   "url": "/docs/free-srd/core-rules/combat/#attacking-and-defending",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3511,7 +3511,7 @@
   ],
   "anchor": "combat-basics",
   "url": "/docs/free-srd/core-rules/combat/#combat-basics",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3539,12 +3539,12 @@
   ],
   "anchor": "cover",
   "url": "/docs/free-srd/core-rules/combat/#cover",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 4,
   "tags": [
    "combat"
   ],
@@ -3567,7 +3567,7 @@
   ],
   "anchor": "damage",
   "url": "/docs/free-srd/core-rules/combat/#damage",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3626,12 +3626,12 @@
   ],
   "anchor": "damage-resistance-and-weakness",
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 7,
   "tags": [
    "combat",
    "damage"
@@ -3655,12 +3655,12 @@
   ],
   "anchor": "damage-sources",
   "url": "/docs/free-srd/core-rules/combat/#damage-sources",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "combat"
   ],
@@ -3777,7 +3777,7 @@
   ],
   "anchor": "initiative",
   "url": "/docs/free-srd/core-rules/combat/#initiative",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3808,7 +3808,7 @@
   ],
   "anchor": "opportunity-attack",
   "url": "/docs/free-srd/core-rules/action-economy/#opportunity-attack",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3960,7 +3960,7 @@
   ],
   "anchor": "steps-to-an-attack",
   "url": "/docs/free-srd/core-rules/combat/#steps-to-an-attack",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3988,12 +3988,12 @@
   ],
   "anchor": "surprise-attacks",
   "url": "/docs/free-srd/core-rules/combat/#surprise-attacks",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "combat"
   ],
@@ -4847,7 +4847,7 @@
   ],
   "anchor": "asphyxiating",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#asphyxiating",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -4876,7 +4876,7 @@
   ],
   "anchor": "bleeding",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#bleeding",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -4905,7 +4905,7 @@
   ],
   "anchor": "confused",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#confused",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -4934,7 +4934,7 @@
   ],
   "anchor": "crippled",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#crippled",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -4993,7 +4993,7 @@
   ],
   "anchor": "dying",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5022,7 +5022,7 @@
   ],
   "anchor": "fatigued",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#fatigued",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5051,7 +5051,7 @@
   ],
   "anchor": "frightened",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#frightened",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5080,7 +5080,7 @@
   ],
   "anchor": "immobilized",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#immobilized",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5109,12 +5109,12 @@
   ],
   "anchor": "conditions",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#conditions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "reference",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [],
   "flags": [],
   "notes": "Condition framing + summary table.",
@@ -5135,7 +5135,7 @@
   ],
   "anchor": "pinned",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#pinned",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5164,7 +5164,7 @@
   ],
   "anchor": "prone",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#prone",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5193,7 +5193,7 @@
   ],
   "anchor": "restrained",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#restrained",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5222,7 +5222,7 @@
   ],
   "anchor": "shaken",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#shaken",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5251,7 +5251,7 @@
   ],
   "anchor": "sick",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#sick",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5280,7 +5280,7 @@
   ],
   "anchor": "stressed",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#stressed",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5309,7 +5309,7 @@
   ],
   "anchor": "unconscious",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#unconscious",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5368,7 +5368,7 @@
   ],
   "anchor": "environmental-effects",
   "url": "/docs/free-srd/core-rules/environmental-effects/#environmental-effects",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -7386,7 +7386,7 @@
   ],
   "anchor": "applying-damage",
   "url": "/docs/free-srd/core-rules/combat/#applying-damage",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -7416,7 +7416,7 @@
   ],
   "anchor": "health",
   "url": "/docs/free-srd/core-rules/health/#health",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -8095,12 +8095,12 @@
   ],
   "anchor": "speed-descriptors",
   "url": "/docs/free-srd/core-rules/action-economy/#speed-descriptors",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "movement"
   ],
@@ -8127,12 +8127,12 @@
   ],
   "anchor": "speed-tiers",
   "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "movement"
   ],
@@ -8157,8 +8157,8 @@
    "/docs/free-srd/core-rules/stats/",
    "/docs/free-srd/core-rules/vehicle-rules/"
   ],
-  "anchor": "speed-tiers",
-  "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
+  "anchor": "speed",
+  "url": "/docs/free-srd/core-rules/action-economy/#speed",
   "owns_heading": false,
   "category": [
    "core"
@@ -8218,12 +8218,12 @@
   ],
   "anchor": "object-conditions",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 3,
   "tags": [
    "objects"
   ],
@@ -8246,12 +8246,12 @@
   ],
   "anchor": "object-durability",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "objects"
   ],
@@ -8274,7 +8274,7 @@
   ],
   "anchor": "material-def",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#material-def",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -8361,7 +8361,7 @@
   ],
   "anchor": "targeting-objects",
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#targeting-objects",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -11872,7 +11872,7 @@
   ],
   "anchor": "ballistic-weapons-in-space",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#ballistic-weapons-in-space",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
@@ -11906,7 +11906,7 @@
   ],
   "anchor": "communications",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#communications",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
@@ -11937,12 +11937,12 @@
   ],
   "anchor": "computer-systems",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#computer-systems",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "computers",
    "sci-fi"
@@ -11969,7 +11969,7 @@
   ],
   "anchor": "energy-shields",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
@@ -12002,7 +12002,7 @@
   ],
   "anchor": "heads-up-displays-huds",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],
@@ -12099,12 +12099,12 @@
   ],
   "anchor": "action-points",
   "url": "/docs/free-srd/core-rules/action-economy/#action-points",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "stats",
    "actions"
@@ -12158,12 +12158,12 @@
   ],
   "anchor": "defense",
   "url": "/docs/free-srd/core-rules/health/#defense",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 3,
   "tags": [
    "stats",
    "health"
@@ -12246,12 +12246,12 @@
   ],
   "anchor": "vitality",
   "url": "/docs/free-srd/core-rules/health/#vitality",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "stats",
    "health"
@@ -12874,7 +12874,7 @@
   ],
   "anchor": "boarding--bailing",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12902,7 +12902,7 @@
   ],
   "anchor": "collision-damage",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#collision-damage",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12930,7 +12930,7 @@
   ],
   "anchor": "cover-from-vehicles",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#cover-from-vehicles",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12958,7 +12958,7 @@
   ],
   "anchor": "drive",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#drive",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -12986,7 +12986,7 @@
   ],
   "anchor": "ignition",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#ignition",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13014,12 +13014,12 @@
   ],
   "anchor": "impact--overrun",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#impact--overrun",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "vehicles"
   ],
@@ -13042,7 +13042,7 @@
   ],
   "anchor": "initiative--occupants",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#initiative--occupants",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13070,12 +13070,12 @@
   ],
   "anchor": "mounts",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#mounts",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],
@@ -13098,7 +13098,7 @@
   ],
   "anchor": "vehicle-rules",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-rules",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13126,7 +13126,7 @@
   ],
   "anchor": "vehicle-actions",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-actions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13154,12 +13154,12 @@
   ],
   "anchor": "vehicle-size",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-size",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],
@@ -13182,7 +13182,7 @@
   ],
   "anchor": "burn",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#burn",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13211,7 +13211,7 @@
   ],
   "anchor": "common-injuries",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#common-injuries",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13237,7 +13237,7 @@
   ],
   "anchor": "contusion",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#contusion",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13266,7 +13266,7 @@
   ],
   "anchor": "dislocation",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dislocation",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13295,7 +13295,7 @@
   ],
   "anchor": "fracture",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#fracture",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13324,7 +13324,7 @@
   ],
   "anchor": "laceration",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#laceration",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13353,7 +13353,7 @@
   ],
   "anchor": "wounds--conditions",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#wounds--conditions",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -13379,7 +13379,7 @@
   ],
   "anchor": "puncture",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#puncture",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13408,7 +13408,7 @@
   ],
   "anchor": "sprain",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#sprain",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -13437,12 +13437,12 @@
   ],
   "anchor": "wounds",
   "url": "/docs/free-srd/core-rules/wounds--conditions/#wounds",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [],
   "flags": [],
   "notes": "Minor/major classification, dressing/healing rules, narrative healing.",
