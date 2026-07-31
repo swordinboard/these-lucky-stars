@@ -237,6 +237,28 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
 
 ## Collapsible entries (`details` vs the `blockdetails` shortcode)
 
+**The anchor goes on the content div inside `<details>`, never on `<details>`
+itself or on `<summary>`.** A browser only auto-expands a closed `<details>`
+when the fragment targets something *inside* it, and that auto-open is what
+makes a catalog row reveal the entry it points at. Verified in Chromium:
+
+| id on | details opens |
+|---|---|
+| `<details>` | **no** |
+| `<summary>` | **no** |
+| the content div inside | **yes** |
+
+`.markdown-inner[id]` carries `scroll-margin-top: 4rem` so the summary — the
+entry's name — is not pushed off the top of the viewport when you land on it.
+
+**Testing this needs a real HTTP server, not `file://`.** The stylesheet is
+referenced root-absolutely (`/book.min.<hash>.css`), so under `file://` it
+resolves to a path that does not exist and the page renders unstyled. A
+scroll-position measurement taken that way is meaningless. `cd public && python3
+-m http.server` and point the browser at localhost.
+
+
+
 Catalog pages wrap each block in a collapsible. **Use `blockdetails`:**
 
 ```

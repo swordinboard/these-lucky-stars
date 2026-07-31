@@ -337,3 +337,12 @@ html {
 @media print {
   .markdown .block-index { columns: 3; }
 }
+
+/* A blockdetails entry carries its anchor on the content div, because a browser
+   only auto-expands a closed <details> when the fragment targets something
+   inside it. Without a scroll margin the browser would put that div at the top
+   of the viewport and push the <summary> — the entry's name — off screen. */
+details > .markdown-inner[id],
+details .markdown-inner > :is(h1, h2, h3, h4, h5, h6)[id] {
+  scroll-margin-top: 4rem;
+}

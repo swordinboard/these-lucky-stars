@@ -74,14 +74,19 @@
        cannot carry the id, and repeating the title as a heading inside would
        state the name twice — the summary already is the heading. Browsers
        expand a <details> when navigation targets it, so links still land. */ -}}
-{{- /* Only claim the anchor when the block does not still carry its own
-       heading — otherwise the id would exist twice while the migration is
-       part-done. */ -}}
+{{- /* The anchor goes on the CONTENT div, not on <details> or <summary>.
+       A browser only auto-expands a closed <details> when the fragment targets
+       something INSIDE it — verified in Chromium: id on <details> or on
+       <summary> scrolls but leaves it shut, id on the inner div opens it. That
+       auto-open is why a catalog row used to reveal the entry it points at.
+       Claimed only when the block has no heading of its own, so the id is never
+       duplicated while the migration is part-done. */ -}}
 {{- $own := $b.owns_heading -}}
-<details{{ if not $own }} id="{{ $b.anchor | default (anchorize $b.title) }}"{{ end }}{{ if in .Params "open" }} open{{ end }}>
+{{- $anchor := $b.anchor | default (anchorize $b.title) -}}
+<details{{ if in .Params "open" }} open{{ end }}>
 <summary>{{ $b.title | .Page.RenderString }}</summary>
 {{- /* remove whitespaces */ -}}
-<div class="markdown-inner">
+<div class="markdown-inner"{{ if not $own }} id="{{ $anchor }}"{{ end }}>
 {{ $html | safeHTML }}
 </div></details>
 {{- /* remove whitespaces */ -}}
