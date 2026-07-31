@@ -1439,41 +1439,35 @@ bury the decisions above.
 
 ### Orphans — no other block's prose points at these
 
-**317 blocks** have `in_degree: 0`, and **all but 0** of them are still reachable — they are listed in a
+**299 blocks** have `in_degree: 0`, and **all but 0** of them are still reachable — they are listed in a
 `{{< catalog >}}` table or linked from page-frame prose. For a catalogued
 item (a grenade, an ability) that is the normal, expected state, so the only
 rows worth reviewing are the **rules and reference blocks**: a rule nothing
 else links to may be a missing cross-reference rather than a standalone rule.
 
-Rule/reference blocks with no inbound prose link: **81**
+Rule/reference blocks with no inbound prose link: **64**
 
 These are mostly *pieces of larger pages* rather than things a reader would
 look up, so no inbound link is expected. What matters is whether a reader can
 still **reach** them by browsing — the last column answers that from the
 sidebar nav of a real build.
 
-**81 of 81 sit on a page the nav links to.** Nothing is stranded.
+**64 of 64 sit on a page the nav links to.** Nothing is stranded.
 
 | Block | Type | Lives on | Reachable by browsing |
 |---|---|---|---|
 | `actions/action-types` — Action Types | rule | core-rules/action-economy.md | yes |
 | `actions/difficult-terrain` — Difficult Terrain and Obstacles | rule | core-rules/action-economy.md | yes |
 | `actions/move` — Move | rule | core-rules/action-economy.md | yes |
-| `actions/multi-turn-actions` — Multi-Turn Actions | rule | core-rules/action-economy.md | yes |
 | `actions/opportunity-actions` — Opportunity Actions | rule | core-rules/action-economy.md | yes |
 | `actions/reactions` — Reactions | rule | core-rules/action-economy.md | yes |
-| `actions/readied-actions` — Readied Actions | rule | core-rules/action-economy.md | yes |
 | `actions/standard-actions` — Standard Actions | rule | core-rules/action-economy.md | yes |
 | `actions/step` — Step | rule | core-rules/action-economy.md | yes |
 | `combat/opportunity-attack` — Opportunity Attack | rule | core-rules/action-economy.md | yes |
 | `movement/primary-speed` — Primary Speed | rule | core-rules/action-economy.md | yes |
-| `movement/speed-descriptors` — Speed Descriptors | rule | core-rules/action-economy.md | yes |
-| `movement/speed-tiers` — Speed Tiers | rule | core-rules/action-economy.md | yes |
-| `stats/action-points` — Action Points | rule | core-rules/action-economy.md | yes |
 | `attributes/attribute-values` — Attribute Values | rule | core-rules/attributes.md | yes |
 | `attributes/determining-attributes` — Two Ways to Determine Attributes | rule | core-rules/attributes.md | yes |
 | `attributes/mental-attributes` — Mental Attributes | rule | core-rules/attributes.md | yes |
-| `basics/advantage` — Advantage | rule | core-rules/basics.md | yes |
 | `basics/contested-rolls` — Contested Rolls | rule | core-rules/basics.md | yes |
 | `basics/d100-or-percentage` — D100 or Percentage | rule | core-rules/basics.md | yes |
 | `basics/decision-rolls` — Decision Rolls | rule | core-rules/basics.md | yes |
@@ -1484,19 +1478,12 @@ sidebar nav of a real build.
 | `combat/actions-in-combat` — Actions in Combat | rule | core-rules/combat.md | yes |
 | `combat/attacking-and-defending` — Attacking and Defending | rule | core-rules/combat.md | yes |
 | `combat/brace` — Brace | rule | core-rules/combat.md | yes |
-| `combat/cover` — Cover | rule | core-rules/combat.md | yes |
-| `combat/damage-resistance` — Damage Resistance and Weakness | rule | core-rules/combat.md | yes |
-| `combat/damage-sources` — Damage Sources | rule | core-rules/combat.md | yes |
 | `combat/disarm` — Disarm | rule | core-rules/combat.md | yes |
 | `combat/draw-a-weapon` — Draw a Weapon | rule | core-rules/combat.md | yes |
-| `combat/grapple` — Grapple | rule | core-rules/combat.md | yes |
-| `combat/initiative` — Initiative | rule | core-rules/combat.md | yes |
 | `combat/shatter` — Shatter | rule | core-rules/combat.md | yes |
 | `combat/stand` — Stand | rule | core-rules/combat.md | yes |
 | `combat/standard-attack` — Standard Attack | rule | core-rules/combat.md | yes |
-| `combat/stealth` — Stealth | rule | core-rules/combat.md | yes |
 | `combat/steps-to-an-attack` — Steps to an Attack | rule | core-rules/combat.md | yes |
-| `combat/surprise-attacks` — Surprise Attacks | rule | core-rules/combat.md | yes |
 | `combat/trip` — Trip | rule | core-rules/combat.md | yes |
 | `combat/unarmed-attack` — Unarmed Attack | rule | core-rules/combat.md | yes |
 | `combat/use-cover` — Use Cover | rule | core-rules/combat.md | yes |
@@ -1507,18 +1494,14 @@ sidebar nav of a real build.
 | `objects/targeting-objects` — Targeting Objects | rule | core-rules/damaged--broken-gear.md | yes |
 | `environment/environmental-effects` — Environmental Effects | rule | core-rules/environmental-effects.md | yes |
 | `environment/extreme-environments` — Extreme Environments | rule | core-rules/environmental-effects.md | yes |
-| `sci-fi/computer-systems` — Computer Systems | rule | core-rules/sci-fi-additions.md | yes |
 | `stats/attack` — Attack | rule | core-rules/stats.md | yes |
 | `stats/luck` — Luck | rule | core-rules/stats.md | yes |
 | `vehicles/boarding-and-bailing` — Boarding & Bailing | rule | core-rules/vehicle-rules.md | yes |
 | `vehicles/cover-from-vehicles` — Cover from Vehicles | rule | core-rules/vehicle-rules.md | yes |
 | `vehicles/drive` — Drive | rule | core-rules/vehicle-rules.md | yes |
 | `vehicles/ignition` — Ignition | rule | core-rules/vehicle-rules.md | yes |
-| `vehicles/impact-and-overrun` — Impact & Overrun | rule | core-rules/vehicle-rules.md | yes |
 | `vehicles/initiative-and-occupants` — Initiative & Occupants | rule | core-rules/vehicle-rules.md | yes |
-| `vehicles/mounts` — Mounts | rule | core-rules/vehicle-rules.md | yes |
 | `vehicles/vehicle-actions` — Vehicle Actions | rule | core-rules/vehicle-rules.md | yes |
-| `vehicles/vehicle-size` — Vehicle Size | rule | core-rules/vehicle-rules.md | yes |
 | `wounds/burn` — Burn | rule | core-rules/wounds--conditions.md | yes |
 | `wounds/common-injuries` — Common Injuries | reference | core-rules/wounds--conditions.md | yes |
 | `wounds/contusion` — Contusion | rule | core-rules/wounds--conditions.md | yes |
@@ -1702,6 +1685,168 @@ here so you can confirm the filter is not hiding a real problem.
 
 ---
 
+## C7. Heading migration — blocks with no heading of their own
+
+Blocks no longer carry their own heading; the call site picks the level and
+the shortcode emits it. Core rules is migrated. **These are the call sites
+that could not be converted mechanically**, because the block has no heading
+to move — giving it a level would *add* a heading that has never been on the
+site. Each needs a call.
+
+The four modes, for reference:
+
+| Call | Renders |
+|---|---|
+| `{{% include "…" %}}` | body only, no name |
+| `{{% include "…" "h3" %}}` | `### Title` then the body |
+| `{{% include "…" "lead" %}}` | **Title** — body, run on |
+| `{{% include "…" "h3" "false" %}}` | no name, but internals positioned at h4 |
+
+### C7a. Opens with its own bold lead-in — 13 call sites
+
+Your call in §C5 was that **the bold lead-in is the heading** — an inline,
+low-tier list header. If that is right, these convert to `"lead"`: the
+hand-written `**Name**` comes out of the snippet and the shortcode emits it
+from `title` instead, so the name is single-sourced like everywhere else.
+
+Rendered output is the same either way. What changes is that the name stops
+being typed inside the block. **The `*(3 AP)*` part stays in the prose** — it
+is not part of the name, and every one of these restates the cost in the body
+(checked; `combat/stealth` has no cost and says so).
+
+- **`actions/move`** — title “Move”, under **Movement Actions** (h3)
+      now:  **Move** *(2 AP)* — A character may spend 2 AP to move up to the…
+      lead: **Move** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`actions/step`** — title “Step”, under **Movement Actions** (h3)
+      now:  **Step** *(1 AP)* — Once per round a character may spend 1 AP to…
+      lead: **Step** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+  - also on `core-rules/combat.md` under **Aggressive Actions**
+- **`combat/disarm`** — title “Disarm”, under **Aggressive Actions** (h3)
+      now:  **Disarm** *(3 AP)* — Attempt to disarm an opponent that is holdin…
+      lead: **Disarm** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/draw-a-weapon`** — title “Draw a Weapon”, under **Aggressive Actions** (h3)
+      now:  **Draw a Weapon** *(1–3 AP)* — Drawing an equipped weapon or picking one …
+      lead: **Draw a Weapon** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/grapple`** — title “Grapple”, under **Aggressive Actions** (h3)
+      now:  **Grapple = STR + AGI + Mods** A character may spend 2 AP to make a contested grapple …
+      lead: **Grapple** — … (name from `title`, rest unchanged)
+      ⚠ the lead-in says “Grapple = STR + AGI + Mods” but `title` is “Grapple”
+  <!-- lead / leave bare / hN: -->
+- **`combat/shatter`** — title “Shatter”, under **Aggressive Actions** (h3)
+      now:  **Shatter** *(3 AP)* — Attempt to break an item held or worn by an …
+      lead: **Shatter** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/stand`** — title “Stand”, under **Aggressive Actions** (h3)
+      now:  **Stand** *(1 AP)* — Stand from prone. May provoke an Opportunity…
+      lead: **Stand** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/trip`** — title “Trip”, under **Aggressive Actions** (h3)
+      now:  **Trip** *(3 AP)* — Make a standard attack roll. If successful, …
+      lead: **Trip** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/unarmed-attack`** — title “Unarmed Attack”, under **Aggressive Actions** (h3)
+      now:  **Unarmed Attack** *(2 AP)* — Functions as a standard attack but deals −3 …
+      lead: **Unarmed Attack** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+- **`combat/stealth`** — title “Stealth”, under **Defensive Actions** (h3)
+      now:  **Stealth** — Like many other rolls, Stealth checks are made using …
+      lead: **Stealth** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+  - also on `core-rules/combat.md` under **Defensive Actions**
+- **`combat/use-cover`** — title “Use Cover”, under **Defensive Actions** (h3)
+      now:  **Use Cover** A character can shift into or between cover types as pa…
+      lead: **Use Cover** — … (name from `title`, rest unchanged)
+  <!-- lead / leave bare / hN: -->
+
+### C7b. No lead-in either — 11 call sites
+
+These render with no name at all. They sit under a group heading that names
+something broader, or follow another block as a continuation. Leaving them
+bare is legitimate; the question is whether each *should* be findable on its
+own, since the PDF builder will print `title` for them regardless.
+
+- **`actions/standard-actions`** — title “Standard Actions”  <sub>core-rules/action-economy.md · under **Standard Actions** (h3)</sub>
+      **The heading above already says exactly this.** It was not
+      converted only because prose sits between the two, so this is a
+      straight `"h3"` — delete the heading, no visible change.
+      opens: Standard Actions are actions a character takes on their own turn and pays for from their AP pool…
+  <!-- leave bare / hN / merge into the block above: -->
+- **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/action-economy.md · under **Speed** (h3)</sub>
+      opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
+  <!-- leave bare / hN / merge into the block above: -->
+- **`combat/actions-in-combat`** — title “Actions in Combat”  <sub>core-rules/combat.md · under **Actions in Combat** (h2)</sub>
+      **The heading above already says exactly this.** It was not
+      converted only because prose sits between the two, so this is a
+      straight `"h2"` — delete the heading, no visible change.
+      opens: Actions in combat are organized by their tactical role: Aggressive Actions are actions that pres…
+  <!-- leave bare / hN / merge into the block above: -->
+- **`objects/overview`** — title “Damaged & Broken Gear”  <sub>core-rules/damaged--broken-gear.md · under **Damaged & Broken Gear** (h1)</sub>
+      **The heading above already says exactly this.** It was not
+      converted only because prose sits between the two, so this is a
+      straight `"h1"` — delete the heading, no visible change.
+      opens: Before committing to damaging an object the table should first consider if the damage makes sens…
+  <!-- leave bare / hN / merge into the block above: -->
+- **`objects/armor-degradation`** — title “Armor Degradation”  <sub>core-rules/damaged--broken-gear.md · under **Armor** (h3)</sub>
+      opens: Equipped armor degrades in condition whenever the wearer suffers a major wound.
+  <!-- leave bare / hN / merge into the block above: -->
+- **`objects/shield-degradation`** — title “Shield Degradation”  <sub>core-rules/damaged--broken-gear.md · under **Shields** (h3)</sub>
+      opens: Shields use supply dice to represent wear from use.
+  <!-- leave bare / hN / merge into the block above: -->
+- **`environment/extreme-environments`** — title “Extreme Environments”  <sub>core-rules/environmental-effects.md · under **Extreme Environments** (h2)</sub>
+      **The heading above already says exactly this.** It was not
+      converted only because prose sits between the two, so this is a
+      straight `"h2"` — delete the heading, no visible change.
+      opens: The core [Environmental Effects] rules cover weather and conditions that wear characters down ov…
+  <!-- leave bare / hN / merge into the block above: -->
+- **`movement/speed-descriptors`** — title “Speed Descriptors”  <sub>core-rules/stats.md · under **Speed** (h3)</sub>
+      opens: Format: > Mode Distance in Feet (Base Maneuverability, Acceleration) > Swim 80ft (High, 20ft/rou…
+  <!-- leave bare / hN / merge into the block above: -->
+- **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/stats.md · under **Speed** (h3)</sub>
+      opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
+  <!-- leave bare / hN / merge into the block above: -->
+- **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/vehicle-rules.md · under **Speed Tiers** (h4)</sub>
+      opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
+  <!-- leave bare / hN / merge into the block above: -->
+- **`movement/speed-tiers`** — title “Speed Tiers”  <sub>core-rules/vehicle-rules.md · under **Speed Tiers** (h4)</sub>
+      **The heading above already says exactly this.** It was not
+      converted only because prose sits between the two, so this is a
+      straight `"h4"` — delete the heading, no visible change.
+      opens: Speed in These Lucky Stars is categorized into four tiers based on distance covered per round.
+  <!-- leave bare / hN / merge into the block above: -->
+
+### C7c. Page and block disagree on the name
+
+Converted with `"false"`, so the page keeps its own heading and the block
+supplies no name. That is right where the heading names a *group*, and a
+smell where it names the same single block twice over.
+
+- **action-economy.md** — page says “Speed”, block `movement/primary-speed` is titled “Primary Speed”  <sub>heading covers one block</sub>
+  <!-- rename the block / rename the page heading / keep both: -->
+- **basics.md** — page says “Decision Rolls - the Primary Mechanic”, block `basics/decision-rolls` is titled “Decision Rolls”  <sub>heading covers one block</sub>
+  <!-- rename the block / rename the page heading / keep both: -->
+- **combat.md** — page says “Aggressive Actions”, block `combat/standard-attack` is titled “Standard Attack”  <sub>heading covers a group of 9</sub>
+  <!-- rename the block / rename the page heading / keep both: -->
+- **combat.md** — page says “Defensive Actions”, block `combat/brace` is titled “Brace”  <sub>heading covers a group of 4</sub>
+  <!-- rename the block / rename the page heading / keep both: -->
+- **vehicle-rules.md** — page says “Modes & Maneuverability”, block `movement/speed-descriptors` is titled “Speed Descriptors”  <sub>heading covers one block</sub>
+  <!-- rename the block / rename the page heading / keep both: -->
+
+### C7d. One anchor drifted
+
+`movement/speed-tiers-chart` moved from `#speed-tiers` to `#speed`. It is a
+bare block, so its anchor is inherited from whatever heading precedes it, and
+that heading became a generated one. Nothing links to it and the site has zero
+broken links — but **a bare block's anchor is a side effect of its neighbour**,
+which is the real argument for resolving C7a and C7b. Its old anchor was a
+duplicate of `movement/speed-tiers` anyway, so neither value was correct.
+  <!-- give it a heading, fold it into Speed Tiers, or leave it anchorless: -->
+
+---
+
 ## C6. Internal sub-headings — the heading problem the builder cannot solve
 
 §C5 is about a block's *own* title. This is about headings **inside** a block.
@@ -1714,9 +1859,9 @@ the level the block sits at, with no gaps and no siblings.
 The **page level** column is the depth the host page currently gives the block
 — its own heading if it has one, otherwise the page heading above its include.
 
-**24 blocks carry internal sub-headings.** 15 are cleanly shiftable; **9 are not.**
+**24 blocks carry internal sub-headings.** 7 are cleanly shiftable; **17 are not.**
 
-### C6a. Not shiftable as written — 9 blocks
+### C6a. Not shiftable as written — 17 blocks
 
 Each of these breaks the rule in a different way, so they are grouped by cause
 rather than listed flat.
@@ -1726,18 +1871,6 @@ rather than listed flat.
 The tree starts more than one step below the block. Shifting it keeps the
 gap, and a gap is a rendering bug at any depth.
 
-- **`attributes/mental-attributes`** — Mental Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h4</sub>
-      #### Knowledge (KNO)
-      #### Insight (INS)
-      #### Charisma (CHA)
-      #### Will (WILL)
-  <!-- how to fix, or leave: -->
-- **`attributes/physical-attributes`** — Physical Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h4</sub>
-      #### Strength (STR)
-      #### Agility (AGI)
-      #### Dexterity (DEX)
-      #### Fortitude (FORT)
-  <!-- how to fix, or leave: -->
 - **`races/reptilian`** — Reptilian  <sub>character-creation/races/reptilian.md · sits at h1 · internal h3</sub>
       ### Features
   <!-- how to fix, or leave: -->
@@ -1754,12 +1887,29 @@ An internal heading at the **same level as the block itself**, so it reads as
 a peer section rather than part of the block. These are mostly blocks that
 were merged from several page sections in Phase 2.
 
-- **`basics/target-numbers`** — Target Numbers  <sub>core-rules/basics.md · sits at h3 · internal h3, h4</sub>
-      ### Target Difficulty Guide
-      #### "Impossible" Tasks
-      #### Strenuous Tasks
-      #### Challenging Tasks
-      #### Simple Tasks
+- **`attributes/determining-attributes`** — Two Ways to Determine Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
+      ## Attribute Pool
+  <!-- how to fix, or leave: -->
+- **`attributes/mental-attributes`** — Mental Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
+      ## Insight (INS)
+      ## Charisma (CHA)
+      ## Will (WILL)
+  <!-- how to fix, or leave: -->
+- **`attributes/physical-attributes`** — Physical Attributes  <sub>core-rules/attributes.md · sits at h2 · internal h2</sub>
+      ## Agility (AGI)
+      ## Dexterity (DEX)
+      ## Fortitude (FORT)
+  <!-- how to fix, or leave: -->
+- **`basics/advantage`** — Advantage  <sub>core-rules/basics.md · sits at h3 · internal h3</sub>
+      ### Special Notes for the Game Master:
+      ### Advantage and Contested Rolls
+  <!-- how to fix, or leave: -->
+- **`combat/attacking-and-defending`** — Attacking and Defending  <sub>core-rules/combat.md · sits at h3 · internal h3</sub>
+      ### Advantage and Disadvantage in Combat
+  <!-- how to fix, or leave: -->
+- **`combat/damage`** — Damage  <sub>core-rules/combat.md · sits at h3 · internal h3</sub>
+      ### Damage Modifiers
+      ### Damage Types
   <!-- how to fix, or leave: -->
 - **`core-rules/size`** — Size  <sub>core-rules/size.md · sits at h2 · internal h2</sub>
       ## How Size Affects a Character
@@ -1768,10 +1918,33 @@ were merged from several page sections in Phase 2.
       ## Related
   <!-- how to fix, or leave: -->
 - **`environment/environmental-effects`** — Environmental Effects  <sub>core-rules/environmental-effects.md · sits at h2 · internal h2, h3</sub>
-      ## Exposure Intervals
       ### Heat & Cold
       ### Toxic Atmosphere
       ## Visibility
+  <!-- how to fix, or leave: -->
+- **`sci-fi/computer-systems`** — Computer Systems  <sub>core-rules/sci-fi-additions.md · sits at h3 · internal h3, h4</sub>
+      ### System Level
+      ### Common Actions
+      ### Security Countermeasures
+      #### Triggers
+      #### Resets
+      #### Effects
+  <!-- how to fix, or leave: -->
+- **`vehicles/collision-damage`** — Collision Damage  <sub>core-rules/vehicle-rules.md · sits at h4 · internal h4</sub>
+      #### Collision & Occupants
+  <!-- how to fix, or leave: -->
+- **`vehicles/impact-and-overrun`** — Impact & Overrun  <sub>core-rules/vehicle-rules.md · sits at h4 · internal h4</sub>
+      #### Scenario B — A Hazard Appeares in the Path
+  <!-- how to fix, or leave: -->
+- **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md · sits at h3 · internal h3</sub>
+      ### Mount Features
+      ### Unwilling Mounts
+      ### Mounts and Impact/Overrun
+      ### Sudden Stops
+  <!-- how to fix, or leave: -->
+- **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md · sits at h3 · internal h3</sub>
+      ### Major Wounds
+      ### Narrative Healing
   <!-- how to fix, or leave: -->
 
 #### Other
@@ -1803,26 +1976,18 @@ is the page title; the six h2s are its sections.
   is the cheapest fix in C6a.
   <!-- make all five h2: -->
 
-### C6b. Cleanly shiftable — 15 blocks
+### C6b. Cleanly shiftable — 7 blocks
 
 Every internal heading is exactly one level below the block, contiguous. A
 builder can move the whole tree by one delta. Listed to confirm, not to fix.
 
-- `attributes/determining-attributes` — sits at h2, 2 internal heading(s) at h3
-- `basics/advantage` — sits at h2, 3 internal heading(s) at h3
-- `combat/attacking-and-defending` — sits at h2, 2 internal heading(s) at h3
-- `combat/damage` — sits at h2, 3 internal heading(s) at h3
+- `basics/target-numbers` — sits at h3, 4 internal heading(s) at h4
 - `environment/extreme-environments` — sits at h2, 3 internal heading(s) at h3
 - `equipment/common-terms` — sits at h2, 6 internal heading(s) at h3
 - `inventory/carry-limits` — sits at h2, 2 internal heading(s) at h3
 - `races/android` — sits at h1, 1 internal heading(s) at h2
 - `races/classic-human` — sits at h1, 1 internal heading(s) at h2
 - `races/overview` — sits at h1, 3 internal heading(s) at h2
-- `sci-fi/computer-systems` — sits at h2, 7 internal heading(s) at h3
-- `vehicles/collision-damage` — sits at h3, 2 internal heading(s) at h4
-- `vehicles/impact-and-overrun` — sits at h3, 2 internal heading(s) at h4
-- `vehicles/mounts` — sits at h2, 5 internal heading(s) at h3
-- `wounds/wounds` — sits at h2, 3 internal heading(s) at h3
 
   <!-- anything in this list that should not be shiftable: -->
 
@@ -1848,22 +2013,22 @@ fixed level does not apply because the block genuinely moves.
 | `races/reptilian` | page | **yes** |
 | `races/star-touched-human` | page | **yes** |
 | `races/zeta-grey` | page | **yes** |
-| `attributes/determining-attributes` | snippet | no |
+| `attributes/determining-attributes` | snippet | **yes** |
 | `attributes/mental-attributes` | snippet | **yes** |
 | `attributes/physical-attributes` | snippet | **yes** |
-| `basics/advantage` | snippet | no |
-| `basics/target-numbers` | snippet | **yes** |
-| `combat/attacking-and-defending` | snippet | no |
-| `combat/damage` | snippet | no |
+| `basics/advantage` | snippet | **yes** |
+| `basics/target-numbers` | snippet | no |
+| `combat/attacking-and-defending` | snippet | **yes** |
+| `combat/damage` | snippet | **yes** |
 | `environment/environmental-effects` | snippet | **yes** |
 | `environment/extreme-environments` | snippet | no |
 | `equipment/common-terms` | snippet | no |
 | `inventory/carry-limits` | snippet | no |
-| `sci-fi/computer-systems` | snippet | no |
-| `vehicles/collision-damage` | snippet | no |
-| `vehicles/impact-and-overrun` | snippet | no |
-| `vehicles/mounts` | snippet | no |
-| `wounds/wounds` | snippet | no |
+| `sci-fi/computer-systems` | snippet | **yes** |
+| `vehicles/collision-damage` | snippet | **yes** |
+| `vehicles/impact-and-overrun` | snippet | **yes** |
+| `vehicles/mounts` | snippet | **yes** |
+| `wounds/wounds` | snippet | **yes** |
 
   <!-- fixed level for home:page blocks — yes, and at what depth: -->
 
@@ -1891,20 +2056,17 @@ line: `**Disarm** *(3 AP)* — Attempt to…`. Where that happens the title has
 been proofread after all, and the builder would print the same words. So this
 splits into a short list that needs a decision and a longer one to confirm.
 
-#### Never stated anywhere — 2 blocks, these need a decision
+#### Never stated anywhere — 1 blocks, these need a decision
 
 Nothing on the page prints this block's name, in any form. Whatever the PDF
 builder prints is text no reader has ever checked.
 
-- **`movement/speed-tiers`** → would print **“Speed Tiers”**  <sub>under `#speed-tiers` on core-rules/action-economy.md</sub>
-      opens: Speed in These Lucky Stars is categorized into four tiers based on distance covered per round.
-  <!-- ok / new title: -->
-- **`movement/speed-tiers-chart`** → would print **“Speed Tiers Chart”**  <sub>under `#speed-tiers` on core-rules/action-economy.md</sub>
+- **`movement/speed-tiers-chart`** → would print **“Speed Tiers Chart”**  <sub>under `#speed` on core-rules/action-economy.md</sub>
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| | Slow | up to 40 | up to 5mph | W…
   <!-- ok / new title: -->
 
 
-#### Already stated as a bold lead-in — 13 blocks, confirm only
+#### Already stated as a bold lead-in — 14 blocks, confirm only
 
 These open by naming themselves — `**Disarm** *(3 AP)* — Attempt to…` — so the
 name **is** on the page and has been read, just as prose rather than a heading.
@@ -1924,6 +2086,7 @@ standalone heading; otherwise this is a no-op.
 - `combat/trip` — bold lead-in “Trip”, title “Trip”
 - `combat/unarmed-attack` — bold lead-in “Unarmed Attack”, title “Unarmed Attack”
 - `combat/use-cover` — bold lead-in “Use Cover”, title “Use Cover”
+- `movement/primary-speed` — bold lead-in “Primary Speed = 20 + 5 per +1 AGI Bonus or Flat −5 if AGI Penalty + Mods”, title “Primary Speed”  **← differ**
 
   <!-- anything in this list read wrong as a heading: -->
 
@@ -1938,13 +2101,13 @@ standalone heading; otherwise this is a no-op.
       beside: Move
       opens: Step (1 AP) — Once per round a character may spend 1 AP to move a single space (5 ft) at any point during their turn.
 
-**Under `#speed-tiers` on core-rules/action-economy.md** — 2 blocks share this heading
+**Under `#speed` on core-rules/action-economy.md** — 2 blocks share this heading
 
-- `movement/speed-tiers` → would print **“Speed Tiers”**
+- `movement/primary-speed` → would print **“Primary Speed”**
       beside: Speed Tiers Chart
-      opens: Speed in These Lucky Stars is categorized into four tiers based on distance covered per round.
+      opens: Primary Speed = 20 + 5 per +1 AGI Bonus or Flat −5 if AGI Penalty + Mods Speed describes the normal mode of movement of a characte…
 - `movement/speed-tiers-chart` → would print **“Speed Tiers Chart”**
-      beside: Speed Tiers
+      beside: Primary Speed
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| | Slow | up to 40 | up to 5mph | W…
 
 **Under `#aggressive-actions` on core-rules/combat.md** — 8 blocks share this heading
@@ -1988,16 +2151,16 @@ standalone heading; otherwise this is a no-op.
 
 </details>
 
-The other 89 are the sole block under their heading, so their
+The other 50 are the sole block under their heading, so their
 title is that heading and has been proofread by being read.
 
 ### Heading level is the bigger print problem
 
 The blocks that *own* a heading hard-code its level in their markdown:
 
-- **h2** — 1 blocks
-- **h3** — 298 blocks
-- **h4** — 20 blocks
+- **h2** — 5 blocks
+- **h3** — 278 blocks
+- **h4** — 22 blocks
 
 So a GM who assembles a PDF and puts one of those at a different depth gets a
 heading at the wrong level, and the markdown cannot bend. The 104 blocks with

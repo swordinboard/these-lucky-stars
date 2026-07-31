@@ -645,6 +645,144 @@ w("")
 w("---")
 w("")
 
+# ------------------------------------------ C7 heading migration decisions ---
+w("## C7. Heading migration — blocks with no heading of their own")
+w("")
+w("Blocks no longer carry their own heading; the call site picks the level and")
+w("the shortcode emits it. Core rules is migrated. **These are the call sites")
+w("that could not be converted mechanically**, because the block has no heading")
+w("to move — giving it a level would *add* a heading that has never been on the")
+w("site. Each needs a call.")
+w("")
+w("The four modes, for reference:")
+w("")
+w("| Call | Renders |")
+w("|---|---|")
+w('| `{{% include "…" %}}` | body only, no name |')
+w('| `{{% include "…" "h3" %}}` | `### Title` then the body |')
+w('| `{{% include "…" "lead" %}}` | **Title** — body, run on |')
+w('| `{{% include "…" "h3" "false" %}}` | no name, but internals positioned at h4 |')
+w("")
+
+BARE = re.compile(r'^\{\{%\s*include\s+"/snippets/([^"]+)"\s*%\}\}$')
+
+
+def bare_sites():
+    """Call sites still rendering a block with no name at all."""
+    import glob
+    out = []
+    for path in sorted(glob.glob(D("content/docs/**/*.md"), recursive=True)):
+        grp = None
+        for line in open(path).read().split("\n"):
+            hm = re.match(r"^(#{1,6})\s+(.*)$", line)
+            if hm:
+                grp = (len(hm.group(1)), hm.group(2).strip())
+            m = BARE.match(line.strip())
+            if m and m.group(1) in B:
+                out.append((os.path.relpath(path, REPO), m.group(1), grp))
+    return out
+
+
+def bold_lead(b):
+    """The block's own hand-written bold lead-in, if it opens with one."""
+    txt = body_of(b)
+    m = re.match(r"\s*>?\s*\*\*([^*]+?)\*\*(.{0,60})", txt, re.S)
+    if not m:
+        return None
+    return m.group(1).strip(), re.sub(r"\s+", " ", m.group(2))
+
+
+sites = bare_sites()
+core = [s for s in sites if "/core-rules/" in s[0]]
+withlead, nolead = [], []
+for path, bid, grp in core:
+    bl = bold_lead(B[bid])
+    # a lead-in only counts if it names the block
+    if bl and bl[0].lower().startswith(B[bid]["title"].lower()[:10]):
+        withlead.append((path, bid, grp, bl))
+    else:
+        nolead.append((path, bid, grp, bl))
+
+w(f"### C7a. Opens with its own bold lead-in — {len(withlead)} call sites")
+w("")
+w("Your call in §C5 was that **the bold lead-in is the heading** — an inline,")
+w("low-tier list header. If that is right, these convert to `\"lead\"`: the")
+w("hand-written `**Name**` comes out of the snippet and the shortcode emits it")
+w("from `title` instead, so the name is single-sourced like everywhere else.")
+w("")
+w("Rendered output is the same either way. What changes is that the name stops")
+w("being typed inside the block. **The `*(3 AP)*` part stays in the prose** — it")
+w("is not part of the name, and every one of these restates the cost in the body")
+w("(checked; `combat/stealth` has no cost and says so).")
+w("")
+seen = set()
+for path, bid, grp, bl in withlead:
+    if bid in seen:
+        w(f"  - also on `{path.replace('content/docs/free-srd/', '')}`"
+          + (f" under **{grp[1]}**" if grp else ""))
+        continue
+    seen.add(bid)
+    w(f"- **`{bid}`** — title \u201c{B[bid]['title']}\u201d"
+      + (f", under **{grp[1]}** (h{grp[0]})" if grp else ""))
+    w(f"      now:  **{bl[0]}**{bl[1][:56]}\u2026")
+    w(f"      lead: **{B[bid]['title']}** \u2014 \u2026 (name from `title`, rest unchanged)")
+    if bl[0] != B[bid]["title"]:
+        w(f"      \u26a0 the lead-in says \u201c{bl[0]}\u201d but `title` is \u201c{B[bid]['title']}\u201d")
+    spot("lead / leave bare / hN")
+w("")
+
+w(f"### C7b. No lead-in either — {len(nolead)} call sites")
+w("")
+w("These render with no name at all. They sit under a group heading that names")
+w("something broader, or follow another block as a continuation. Leaving them")
+w("bare is legitimate; the question is whether each *should* be findable on its")
+w("own, since the PDF builder will print `title` for them regardless.")
+w("")
+for path, bid, grp, bl in nolead:
+    short = path.replace("content/docs/free-srd/", "")
+    same = grp and grp[1] == B[bid]["title"]
+    w(f"- **`{bid}`** — title \u201c{B[bid]['title']}\u201d  <sub>{short}"
+      + (f" · under **{grp[1]}** (h{grp[0]})" if grp else "") + "</sub>")
+    if same:
+        w(f"      **The heading above already says exactly this.** It was not")
+        w(f"      converted only because prose sits between the two, so this is a")
+        w(f"      straight `\"h{grp[0]}\"` — delete the heading, no visible change.")
+    w(f"      opens: {first_sentence(B[bid], 96)}")
+    spot("leave bare / hN / merge into the block above")
+w("")
+
+w("### C7c. Page and block disagree on the name")
+w("")
+w("Converted with `\"false\"`, so the page keeps its own heading and the block")
+w("supplies no name. That is right where the heading names a *group*, and a")
+w("smell where it names the same single block twice over.")
+w("")
+DISAGREE = [
+    ("core-rules/action-economy.md", "movement/primary-speed", "Speed", "one block"),
+    ("core-rules/basics.md", "basics/decision-rolls", "Decision Rolls - the Primary Mechanic", "one block"),
+    ("core-rules/combat.md", "combat/standard-attack", "Aggressive Actions", "a group of 9"),
+    ("core-rules/combat.md", "combat/brace", "Defensive Actions", "a group of 4"),
+    ("core-rules/vehicle-rules.md", "movement/speed-descriptors", "Modes & Maneuverability", "one block"),
+]
+for path, bid, pagename, scope in DISAGREE:
+    w(f"- **{path.replace('core-rules/', '')}** — page says \u201c{pagename}\u201d, "
+      f"block `{bid}` is titled \u201c{B[bid]['title']}\u201d  <sub>heading covers {scope}</sub>")
+    spot("rename the block / rename the page heading / keep both")
+w("")
+
+w("### C7d. One anchor drifted")
+w("")
+w("`movement/speed-tiers-chart` moved from `#speed-tiers` to `#speed`. It is a")
+w("bare block, so its anchor is inherited from whatever heading precedes it, and")
+w("that heading became a generated one. Nothing links to it and the site has zero")
+w("broken links — but **a bare block's anchor is a side effect of its neighbour**,")
+w("which is the real argument for resolving C7a and C7b. Its old anchor was a")
+w("duplicate of `movement/speed-tiers` anyway, so neither value was correct.")
+spot("give it a heading, fold it into Speed Tiers, or leave it anchorless")
+w("")
+w("---")
+w("")
+
 # --------------------------------------------- C6 internal sub-headings ---
 w("## C6. Internal sub-headings — the heading problem the builder cannot solve")
 w("")
