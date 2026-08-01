@@ -1711,50 +1711,50 @@ is not part of the name, and every one of these restates the cost in the body
 - **`actions/move`** — title “Move”, under **Movement Actions** (h3)
       now:  **Move** *(2 AP)* — A character may spend 2 AP to move up to the…
       lead: **Move** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
 - **`actions/step`** — title “Step”, under **Movement Actions** (h3)
       now:  **Step** *(1 AP)* — Once per round a character may spend 1 AP to…
       lead: **Step** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
   - also on `core-rules/combat.md` under **Aggressive Actions**
 - **`combat/disarm`** — title “Disarm”, under **Aggressive Actions** (h3)
       now:  **Disarm** *(3 AP)* — Attempt to disarm an opponent that is holdin…
       lead: **Disarm** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
 - **`combat/draw-a-weapon`** — title “Draw a Weapon”, under **Aggressive Actions** (h3)
       now:  **Draw a Weapon** *(1–3 AP)* — Drawing an equipped weapon or picking one …
       lead: **Draw a Weapon** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead  -->
 - **`combat/grapple`** — title “Grapple”, under **Aggressive Actions** (h3)
       now:  **Grapple = STR + AGI + Mods** A character may spend 2 AP to make a contested grapple …
       lead: **Grapple** — … (name from `title`, rest unchanged)
       ⚠ the lead-in says “Grapple = STR + AGI + Mods” but `title` is “Grapple”
-  <!-- lead / leave bare / hN: -->
+  <!-- lead. this is correct, the equation is not a lead in it is its own part of that entry. -->
 - **`combat/shatter`** — title “Shatter”, under **Aggressive Actions** (h3)
       now:  **Shatter** *(3 AP)* — Attempt to break an item held or worn by an …
       lead: **Shatter** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
 - **`combat/stand`** — title “Stand”, under **Aggressive Actions** (h3)
       now:  **Stand** *(1 AP)* — Stand from prone. May provoke an Opportunity…
       lead: **Stand** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead  -->
 - **`combat/trip`** — title “Trip”, under **Aggressive Actions** (h3)
       now:  **Trip** *(3 AP)* — Make a standard attack roll. If successful, …
       lead: **Trip** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
 - **`combat/unarmed-attack`** — title “Unarmed Attack”, under **Aggressive Actions** (h3)
       now:  **Unarmed Attack** *(2 AP)* — Functions as a standard attack but deals −3 …
       lead: **Unarmed Attack** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead  -->
 - **`combat/stealth`** — title “Stealth”, under **Defensive Actions** (h3)
       now:  **Stealth** — Like many other rolls, Stealth checks are made using …
       lead: **Stealth** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead -->
   - also on `core-rules/combat.md` under **Defensive Actions**
 - **`combat/use-cover`** — title “Use Cover”, under **Defensive Actions** (h3)
       now:  **Use Cover** A character can shift into or between cover types as pa…
       lead: **Use Cover** — … (name from `title`, rest unchanged)
-  <!-- lead / leave bare / hN: -->
+  <!-- lead  -->
 
 ### C7b. No lead-in either — 11 call sites
 
@@ -1768,49 +1768,49 @@ own, since the PDF builder will print `title` for them regardless.
       converted only because prose sits between the two, so this is a
       straight `"h3"` — delete the heading, no visible change.
       opens: Standard Actions are actions a character takes on their own turn and pays for from their AP pool…
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare, prose between is necessary site chrome -->
 - **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/action-economy.md · under **Speed** (h3)</sub>
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare  -->
 - **`combat/actions-in-combat`** — title “Actions in Combat”  <sub>core-rules/combat.md · under **Actions in Combat** (h2)</sub>
       **The heading above already says exactly this.** It was not
       converted only because prose sits between the two, so this is a
       straight `"h2"` — delete the heading, no visible change.
       opens: Actions in combat are organized by their tactical role: Aggressive Actions are actions that pres…
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare, prose between is necessary site chrome -->
 - **`objects/overview`** — title “Damaged & Broken Gear”  <sub>core-rules/damaged--broken-gear.md · under **Damaged & Broken Gear** (h1)</sub>
       **The heading above already says exactly this.** It was not
       converted only because prose sits between the two, so this is a
       straight `"h1"` — delete the heading, no visible change.
       opens: Before committing to damaging an object the table should first consider if the damage makes sens…
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare, prose between is necessary site chrome -->
 - **`objects/armor-degradation`** — title “Armor Degradation”  <sub>core-rules/damaged--broken-gear.md · under **Armor** (h3)</sub>
       opens: Equipped armor degrades in condition whenever the wearer suffers a major wound.
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare -->
 - **`objects/shield-degradation`** — title “Shield Degradation”  <sub>core-rules/damaged--broken-gear.md · under **Shields** (h3)</sub>
       opens: Shields use supply dice to represent wear from use.
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare  -->
 - **`environment/extreme-environments`** — title “Extreme Environments”  <sub>core-rules/environmental-effects.md · under **Extreme Environments** (h2)</sub>
       **The heading above already says exactly this.** It was not
       converted only because prose sits between the two, so this is a
       straight `"h2"` — delete the heading, no visible change.
       opens: The core [Environmental Effects] rules cover weather and conditions that wear characters down ov…
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- h2, remove heading and prose from page -->
 - **`movement/speed-descriptors`** — title “Speed Descriptors”  <sub>core-rules/stats.md · under **Speed** (h3)</sub>
       opens: Format: > Mode Distance in Feet (Base Maneuverability, Acceleration) > Swim 80ft (High, 20ft/rou…
-  <!-- leave bare / hN / merge into the block above: -->
+  <!--  lead, remove "speed modes" -->
 - **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/stats.md · under **Speed** (h3)</sub>
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare -->
 - **`movement/speed-tiers-chart`** — title “Speed Tiers Chart”  <sub>core-rules/vehicle-rules.md · under **Speed Tiers** (h4)</sub>
       opens: Tier | Speed Range (ft/round) | Approximate Speed | Examples | Modifier | |---|---|---|---|---| …
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare  -->
 - **`movement/speed-tiers`** — title “Speed Tiers”  <sub>core-rules/vehicle-rules.md · under **Speed Tiers** (h4)</sub>
       **The heading above already says exactly this.** It was not
       converted only because prose sits between the two, so this is a
       straight `"h4"` — delete the heading, no visible change.
       opens: Speed in These Lucky Stars is categorized into four tiers based on distance covered per round.
-  <!-- leave bare / hN / merge into the block above: -->
+  <!-- leave bare -->
 
 ### C7c. Page and block disagree on the name
 
@@ -1819,15 +1819,15 @@ supplies no name. That is right where the heading names a *group*, and a
 smell where it names the same single block twice over.
 
 - **action-economy.md** — page says “Speed”, block `movement/primary-speed` is titled “Primary Speed”  <sub>heading covers one block</sub>
-  <!-- rename the block / rename the page heading / keep both: -->
+  <!-- keep both: -->
 - **basics.md** — page says “Decision Rolls - the Primary Mechanic”, block `basics/decision-rolls` is titled “Decision Rolls”  <sub>heading covers one block</sub>
-  <!-- rename the block / rename the page heading / keep both: -->
+  <!-- keep both: -->
 - **combat.md** — page says “Aggressive Actions”, block `combat/standard-attack` is titled “Standard Attack”  <sub>heading covers a group of 9</sub>
-  <!-- rename the block / rename the page heading / keep both: -->
+  <!-- keep both, beleieve that that snippet should be set to lead in that scenario -->
 - **combat.md** — page says “Defensive Actions”, block `combat/brace` is titled “Brace”  <sub>heading covers a group of 4</sub>
-  <!-- rename the block / rename the page heading / keep both: -->
+  <!-- keep both, beleieve that that snippet should be set to lead in that scenario -->
 - **vehicle-rules.md** — page says “Modes & Maneuverability”, block `movement/speed-descriptors` is titled “Speed Descriptors”  <sub>heading covers one block</sub>
-  <!-- rename the block / rename the page heading / keep both: -->
+  <!-- keep both: -->
 
 ### C7d. One anchor drifted
 
@@ -1837,7 +1837,7 @@ that heading became a generated one. Nothing links to it and the site has zero
 broken links — but **a bare block's anchor is a side effect of its neighbour**,
 which is the real argument for resolving C7a and C7b. Its old anchor was a
 duplicate of `movement/speed-tiers` anyway, so neither value was correct.
-  <!-- give it a heading, fold it into Speed Tiers, or leave it anchorless: -->
+  <!-- leave it anchorless: -->
 
 ---
 
@@ -1867,14 +1867,14 @@ anyway. It only matters that the *relative* depths are right.
       authored at h3 → should be h2
       ### Special Notes for the Game Master:
       ### Advantage and Contested Rolls
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`basics/target-numbers`** — Target Numbers  <sub>core-rules/basics.md</sub>
       authored at h4 → should be h2
       #### "Impossible" Tasks
       #### Strenuous Tasks
       #### Challenging Tasks
       #### Simple Tasks
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`chargen/overview`** — Character Creation Overview  <sub>character-creation/character-creation-overview.md</sub>
       authored at h1, h2 → should be h2, h3
       # Character Creation
@@ -1884,22 +1884,22 @@ anyway. It only matters that the *relative* depths are right.
       ## Character Features
       ## Starting at Level 1
       … and 1 more
-  <!-- renumber / leave: -->
+  <!-- renumber-->
 - **`combat/attacking-and-defending`** — Attacking and Defending  <sub>core-rules/combat.md</sub>
       authored at h3 → should be h2
       ### Advantage and Disadvantage in Combat
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`combat/damage`** — Damage  <sub>core-rules/combat.md</sub>
       authored at h3 → should be h2
       ### Damage Modifiers
       ### Damage Types
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`environment/extreme-environments`** — Extreme Environments  <sub>core-rules/environmental-effects.md</sub>
       authored at h3 → should be h2
       ### Vacuum
       ### Radiation
       ### Specialized Equipment
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`equipment/common-terms`** — Common Equipment Terms  <sub>inventory--equipment/equipment.md</sub>
       authored at h3 → should be h2
       ### Price
@@ -1908,24 +1908,24 @@ anyway. It only matters that the *relative* depths are right.
       ### DEF Bonus
       ### Range
       ### Tags
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`inventory/carry-limits`** — Inventory Management  <sub>inventory--equipment/inventory.md</sub>
       authored at h3 → should be h2
       ### Max Weight
       ### Max Bulky Items
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`races/reptilian`** — Reptilian  <sub>character-creation/races/reptilian.md</sub>
       authored at h3 → should be h2
       ### Features
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`races/star-touched-human`** — Star-touched Human  <sub>character-creation/races/star-touched-human.md</sub>
       authored at h3 → should be h2
       ### Features
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`races/zeta-grey`** — Zeta Grey  <sub>character-creation/races/zeta-grey.md</sub>
       authored at h3 → should be h2
       ### Features
-  <!-- renumber / leave: -->
+  <!-- renumber  -->
 - **`sci-fi/computer-systems`** — Computer Systems  <sub>core-rules/sci-fi-additions.md</sub>
       authored at h3, h4 → should be h2, h3
       ### System Level
@@ -1934,27 +1934,27 @@ anyway. It only matters that the *relative* depths are right.
       #### Triggers
       #### Resets
       #### Effects
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`vehicles/collision-damage`** — Collision Damage  <sub>core-rules/vehicle-rules.md</sub>
       authored at h4 → should be h2
       #### Collision & Occupants
-  <!-- renumber / leave: -->
+  <!-- renumber  -->
 - **`vehicles/impact-and-overrun`** — Impact & Overrun  <sub>core-rules/vehicle-rules.md</sub>
       authored at h4 → should be h2
       #### Scenario B — A Hazard Appeares in the Path
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`vehicles/mounts`** — Mounts  <sub>core-rules/vehicle-rules.md</sub>
       authored at h3 → should be h2
       ### Mount Features
       ### Unwilling Mounts
       ### Mounts and Impact/Overrun
       ### Sudden Stops
-  <!-- renumber / leave: -->
+  <!-- renumber  -->
 - **`wounds/wounds`** — Wounds  <sub>core-rules/wounds--conditions.md</sub>
       authored at h3 → should be h2
       ### Major Wounds
       ### Narrative Healing
-  <!-- renumber / leave: -->
+  <!-- renumber  -->
 
 #### Two of these are not about levels
 
@@ -1965,7 +1965,7 @@ anyway. It only matters that the *relative* depths are right.
 - **The five race pages disagree with each other.** Android and Classic Human
   put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at
   `h3`. Same page shape, same block type.
-  <!-- make all five h2: -->
+  <!-- make all five h2 -->
 
 ### C6b. On convention — 8 blocks
 
