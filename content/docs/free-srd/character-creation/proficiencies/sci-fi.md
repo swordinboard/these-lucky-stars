@@ -2,6 +2,7 @@
 title: "Sci-Fi Proficiencies"
 description: "The sci-fi proficiencies available to a character in a spacefaring setting."
 weight: 10
+bookToC: false
 ---
 
 # Sci-Fi Proficiencies

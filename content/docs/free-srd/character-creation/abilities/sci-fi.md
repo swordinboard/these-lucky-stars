@@ -2,6 +2,7 @@
 title: "Sci-Fi Abilities"
 description: "The sci-fi abilities available to a character in a spacefaring setting."
 weight: 10
+bookToC: false
 ---
 
 # Sci-Fi Abilities

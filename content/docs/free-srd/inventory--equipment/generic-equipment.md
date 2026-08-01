@@ -2,11 +2,12 @@
 title: "Generic Equipment"
 description: "Setting-agnostic gear for These Lucky Stars: tools, survival supplies, medkits, containers, light sources, and general utility items usable across any module."
 weight: 20
+bookToC: false
 ---
 
 ## Generic Equipment
 
-Thisnpage containts setting-agnostic items available in most times and settings. GMs can adjust names and descriptions to better fit their setting's flavor. Some items serve primarily narrative functions.
+This page containts setting-agnostic items available in most times and settings. GMs can adjust names and descriptions to better fit their setting's flavor. Some items serve primarily narrative functions.
 
 - [Clothing & Wearables](#clothing--wearables)
 - [Containers & Storage](#containers--storage)

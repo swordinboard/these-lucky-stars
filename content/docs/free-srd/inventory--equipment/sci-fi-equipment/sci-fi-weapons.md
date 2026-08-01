@@ -2,11 +2,16 @@
 title: "Sci-Fi Weapons"
 description: "Weapons for the sci-fi module in These Lucky Stars — energy weapons, ballistics, and more, with range, tags, and special rules."
 weight: 1
+bookToC: false
 ---
 
-## Weapons
+# Weapons
 
-### Melee Weapons
+- [Melee Weapons](#melee-weapons)
+- [Ranged Weapons](#ranged-weapons)
+- [Weapon Upgrades](#weapon-upgrades)
+
+## Melee Weapons
 
 {{< tabs >}}
 {{% tab "Light Melee Weapons" %}}
@@ -24,23 +29,23 @@ sci-fi-equipment/shock-baton
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Light Melee Weapons
+### Light Melee Weapons
 
-{{< blockdetails "sci-fi-equipment/knuckle-taser" "h5" >}}
+{{< blockdetails "sci-fi-equipment/knuckle-taser" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/standard-issue-knife" "h5" >}}
+{{< blockdetails "sci-fi-equipment/standard-issue-knife" "h4" >}}
 
-#### Medium Melee Weapons
+### Medium Melee Weapons
 
-{{< blockdetails "sci-fi-equipment/emergency-hatchet" "h5" >}}
+{{< blockdetails "sci-fi-equipment/emergency-hatchet" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/ripper-blade" "h5" >}}
+{{< blockdetails "sci-fi-equipment/ripper-blade" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/shock-baton" "h5" >}}
+{{< blockdetails "sci-fi-equipment/shock-baton" "h4" >}}
 
 ---
 
-### Ranged Weapons
+## Ranged Weapons
 
 {{< tabs >}}
 {{% tab "Pistols" %}}
@@ -67,31 +72,31 @@ sci-fi-equipment/heavy-rotary-cannon
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Pistols
+### Pistols
 
-{{< blockdetails "sci-fi-equipment/auto-pistol" "h5" >}}
+{{< blockdetails "sci-fi-equipment/auto-pistol" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/heavy-pistol" "h5" >}}
+{{< blockdetails "sci-fi-equipment/heavy-pistol" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/laser-pistol" "h5" >}}
+{{< blockdetails "sci-fi-equipment/laser-pistol" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/light-pistol" "h5" >}}
+{{< blockdetails "sci-fi-equipment/light-pistol" "h4" >}}
 
-#### Rifles
+### Rifles
 
-{{< blockdetails "sci-fi-equipment/compact-rifle" "h5" >}}
+{{< blockdetails "sci-fi-equipment/compact-rifle" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/laser-rifle" "h5" >}}
+{{< blockdetails "sci-fi-equipment/laser-rifle" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/long-rifle" "h5" >}}
+{{< blockdetails "sci-fi-equipment/long-rifle" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/shock-rifle" "h5" >}}
+{{< blockdetails "sci-fi-equipment/shock-rifle" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/standard-issue-rifle" "h5" >}}
+{{< blockdetails "sci-fi-equipment/standard-issue-rifle" "h4" >}}
 
-#### Heavy Ranged Weapons
+### Heavy Ranged Weapons
 
-{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" "h5" >}}
+{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" "h4" >}}
 
 ---
 
@@ -117,24 +122,24 @@ sci-fi-equipment/weighted-core
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Ranged Weapon Upgrades
+### Ranged Weapon Upgrades
 
-{{< blockdetails "sci-fi-equipment/bipod" "h5" >}}
+{{< blockdetails "sci-fi-equipment/bipod" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/drum-magazines" "h5" >}}
+{{< blockdetails "sci-fi-equipment/drum-magazines" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/extended-barrel" "h5" >}}
+{{< blockdetails "sci-fi-equipment/extended-barrel" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/forward-assault-shield" "h5" >}}
+{{< blockdetails "sci-fi-equipment/forward-assault-shield" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/overcharge-chamber" "h5" >}}
+{{< blockdetails "sci-fi-equipment/overcharge-chamber" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/recoil-compensation-system" "h5" >}}
+{{< blockdetails "sci-fi-equipment/recoil-compensation-system" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/reflex-sight" "h5" >}}
+{{< blockdetails "sci-fi-equipment/reflex-sight" "h4" >}}
 
-#### Melee Weapon Upgrades
+### Melee Weapon Upgrades
 
-{{< blockdetails "sci-fi-equipment/shock-charger" "h5" >}}
+{{< blockdetails "sci-fi-equipment/shock-charger" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/weighted-core" "h5" >}}
+{{< blockdetails "sci-fi-equipment/weighted-core" "h4" >}}

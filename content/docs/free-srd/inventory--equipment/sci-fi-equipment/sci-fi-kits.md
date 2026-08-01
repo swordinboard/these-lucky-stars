@@ -2,6 +2,7 @@
 title: Sci-Fi Tool Kits
 description: "Tool kits for the sci-fi module in These Lucky Stars — specialized kits for repair, medicine, hacking, and other technical tasks, with supply dice and use rules."
 weight: 3
+bookToC: false
 ---
 
 {{% include "/snippets/sci-fi-equipment/kit-supplies" "h2" %}}

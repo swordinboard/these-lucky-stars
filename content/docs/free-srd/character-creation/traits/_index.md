@@ -3,6 +3,7 @@ title: Traits
 description: "Traits in These Lucky Stars represent who your character is — personality, physique, and background. Selected at level 1 and chosen once."
 weight: 20
 bookCollapseSection: true
+bookToC: false
 ---
 
 

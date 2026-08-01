@@ -2,6 +2,7 @@
 title: "Tool Kits"
 description: "Tool kits in These Lucky Stars — pre-assembled collections of tools and supplies built for a specific type of task, with supply dice and equip rules."
 weight: 30
+bookToC: false
 wip: true
 ---
 

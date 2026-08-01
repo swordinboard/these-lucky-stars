@@ -82,18 +82,20 @@ whole snippet.
 
 > `ability` (76) · `actions` (20) · `aggressive-actions` (10) · `armor` (14) · `armor-upgrade` (8) · `attributes` (5) · `basics` (10) · `battery` (5) · `bots` (6) · `character-creation` (5) · `clothing` (6) · `combat` (26) · `communications` (3) · `component` (24) · `computers` (8) · `condition` (16) · `containers` (11) · `core` (93) · `damage` (5) · `defensive-actions` (4) · `environment` (2) · `equipment` (173) · `general` (63) · `generic` (59) · `health` (4) · `heavy-armor` (5) · `heavy-ranged` (1) · `inventory` (2) · `item-tag` (20) · `kit` (6) · `light-armor` (7) · `light-melee` (2) · `light-sources` (4) · `luck` (8) · `medical` (12) · `medium-melee` (3) · `melee-upgrade` (2) · `melee-weapon` (5) · `movement` (6) · `objects` (7) · `pistol` (4) · `proficiency` (18) · `races` (6) · `ranged-upgrade` (7) · `ranged-weapon` (10) · `rifle` (5) · `sci-fi` (141) · `shield` (5) · `size` (1) · `stats` (11) · `survival` (17) · `tech` (22) · `tools` (11) · `trade-goods` (11) · `trait` (20) · `upgrade` (17) · `vehicles` (11) · `weapon` (15) · `wound-type` (7)
 
+<!-- wound-type should probabky be changed to wound -->
+
 - **`conditions/overview`** — Conditions  <sub>type=reference</sub>
       Conditions alter how your character is able to act.
-  <!-- tags to add, or leave untagged: -->
+  <!-- condition, core -->
 - **`wounds/common-injuries`** — Common Injuries  <sub>type=reference</sub>
       While this is by no means a definitive list, the following chart provides examples of common injuries and thei…
-  <!-- tags to add, or leave untagged: -->
+  <!-- wound, condition, damage, core -->
 - **`wounds/overview`** — Wounds & Conditions  <sub>type=reference</sub>
       Wounds and conditions are most often associated with combat.
-  <!-- tags to add, or leave untagged: -->
+  <!-- wound, condition, core -->
 - **`wounds/wounds`** — Wounds  <sub>type=rule</sub>
       Every wound is classified as either minor or major based on the severity of the injury.
-  <!-- tags to add, or leave untagged: -->
+  <!-- wound, core -->
 
 
 ### C1d. Cohort gaps
@@ -121,7 +123,7 @@ confirmed on review and removed 12 false positives per run.
 
 A distribution to eyeball, not a list of decisions. A single-tag block is fine
 if that tag is the functional one; it is thin if the tag is structural.
-  <!-- anything look wrong here: -->
+  <!-- looks fine, no flags-->
 
 ### Blocks a quick-reference table would show with an empty cell
 
@@ -152,6 +154,8 @@ one-liner would have nowhere to render. Not listed; not a defect.
 - `races/reptilian` — Reptilian  <sub>character-creation/races/reptilian.md</sub>
 - `races/star-touched-human` — Star-touched Human  <sub>character-creation/races/star-touched-human.md</sub>
 - `races/zeta-grey` — Zeta Grey  <sub>character-creation/races/zeta-grey.md</sub>
+
+<!-- th3se are all fine -->
 
 ### C1f. Blocks with only structural tags
 
@@ -1775,7 +1779,7 @@ anyway. It only matters that the *relative* depths are right.
       “Character Creation Overview” but the H1 says “Character Creation”, and that
       is the only reason the block reads as owning no heading. Fix the
       names and its six `h2` sections are already on convention.
-  <!-- which name wins — title or the H1: -->
+  <!-- title wins -->
 - **`equipment/common-terms`** — Common Equipment Terms  <sub>inventory--equipment/equipment.md</sub>
       authored at h3 → should be h2
       ### Price
@@ -1784,19 +1788,19 @@ anyway. It only matters that the *relative* depths are right.
       ### DEF Bonus
       ### Range
       ### Tags
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 - **`inventory/carry-limits`** — Inventory Management  <sub>inventory--equipment/inventory.md</sub>
       authored at h3 → should be h2
       ### Max Weight
       ### Max Bulky Items
-  <!-- renumber / leave: -->
+  <!-- renumber -->
 
 #### Two of these are not about levels
 
 - **`core-rules/size` has a `## Related` section inside the block.** Every
   other page keeps Related in the page shell. Printed into a PDF this block
   drags a “Related” heading and four site links with it.
-  <!-- move Related out of the block: -->
+  <!-- move Related out of the block, check plan with me first if this is a page as block situation -->
 
 ### C6b. On convention — 21 blocks
 

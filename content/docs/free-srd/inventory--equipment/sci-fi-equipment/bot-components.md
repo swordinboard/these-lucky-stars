@@ -2,6 +2,7 @@
 title: "Bot Components"
 description: "Installable components for robots, drones, and Androids"
 weight: 5
+bookToC: false
 wip: true
 ---
 # Bot Components

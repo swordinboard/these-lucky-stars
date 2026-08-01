@@ -2,15 +2,20 @@
 title: "Sci-Fi Armor"
 description: "Armor for the sci-fi module in These Lucky Stars — from light combat suits to EVA suits and space-rated gear, with stats and tags for each."
 weight: 2
+bookToC: false
 ---
 
 # Sci-Fi Armor
 
+- [Armor](#armor)
+- [Armor Upgrades](#armor-upgrades)
+- [Shields](#shields)
+- 
+## Armor
+
 {{% include "/snippets/equipment/armor-basics" "h1" "false" %}}
 
-{{% include "/snippets/objects/armor-degradation" %}}
-
-## Armor
+{{% include "/snippets/objects/armor-degradation" "lead" %}}
 
 {{< tabs >}}
 {{% tab "Light Armor" %}}

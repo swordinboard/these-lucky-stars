@@ -2,6 +2,7 @@
 title: "Sci-Fi Misc Equipment"
 description: "Miscellaneous sci-fi gear for These Lucky Stars: survival equipment, medical supplies, tech and gadgets for space-faring campaigns."
 weight: 4
+bookToC: false
 ---
 
 ## Sci-Fi Miscellaneous Equipment
