@@ -23,7 +23,10 @@ data = D("public/builder/blocks.json")
 if not os.path.exists(data):
     sys.exit("public/builder/blocks.json not found — run hugo first.")
 
-css = open(D("assets/builder.css")).read()
+# Must mirror the concatenation in layouts/builder/list.html — builder.css
+# alone leaves catalogs and column lists unstyled in the offline copy.
+css = (open(D("assets/builder.css")).read() + "\n"
+       + open(D("assets/content-constructs.css")).read())
 js = open(D("assets/builder.js")).read()
 blocks = open(data).read()
 
