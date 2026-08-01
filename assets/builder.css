@@ -275,7 +275,26 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 /* --------------------------------------------------------------- the PDF */
 
 @media print {
-  @page { margin: 14mm 16mm 17mm; }   /* the thead adds the rest of the top gap */
+  /* The running footer: document title left, page number right.
+     Unlike the header this cannot be a repeated element. A counter only
+     paginates inside an @page margin box — anywhere else counter(page)
+     resolves to 0 on every sheet, which is exactly what a fixed-position
+     probe produced. The title arrives through a custom property because CSS
+     content cannot read the document; builder.js keeps --doc-title in step
+     with the title block. Browsers without margin-box support lose the
+     footer and keep everything else. */
+  @page {
+    margin: 14mm 16mm 17mm;           /* the thead adds the rest of the top gap */
+
+    @bottom-left {
+      content: var(--doc-title, "");
+      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+    }
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+    }
+  }
 
   html, body { height: auto; overflow: visible; display: block;
     background: #fff; color: #000; font-size: 10.5pt; }

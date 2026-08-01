@@ -194,8 +194,18 @@
     return "<p>" + esc(it.text || "") + "</p>";
   }
 
+  /* The printed footer takes the title from a CSS custom property, since CSS
+   * content cannot read the document. JSON.stringify gives a correctly quoted
+   * and escaped CSS string — quotes and backslashes are escaped the same way,
+   * and the title cannot contain a newline because Enter is swallowed. */
+  function syncFooterTitle() {
+    document.documentElement.style.setProperty(
+      "--doc-title", JSON.stringify(doc.title || ""));
+  }
+
   function renderPreview() {
     var host = document.getElementById("doc");
+    syncFooterTitle();
     host.innerHTML = "";
 
     var present = {};
@@ -350,6 +360,18 @@
     };
   }
 
+  /* Which tab carries `on` in the markup is the single source of truth for the
+   * library's opening mode — including at boot, so the default can be changed
+   * in list.html alone without the search bar getting out of step with it. */
+  function setMode(tab) {
+    var cur = document.querySelector(".lib-tab.on");
+    if (cur) cur.classList.remove("on");
+    tab.classList.add("on");
+    /* the type/setting/wip filters describe blocks; they mean nothing here */
+    document.getElementById("searchbar").style.display =
+      tab.dataset.mode === "pages" ? "none" : "";
+  }
+
   function renderLibrary() {
     var mode = document.querySelector(".lib-tab.on").dataset.mode;
     var host = document.getElementById("lib-list");
@@ -401,7 +423,8 @@
     lib.classList.toggle("open", open);
     document.getElementById("scrim").hidden = !open;
     document.getElementById("lib-toggle").setAttribute("aria-expanded", open);
-    if (open) document.getElementById("q").focus();
+    var q = document.getElementById("q");
+    if (open && q.offsetParent !== null) q.focus();
   }
 
   function menu(open) {
@@ -451,13 +474,7 @@
       document.getElementById(id).addEventListener("change", renderLibrary);
     });
     Array.prototype.forEach.call(document.querySelectorAll(".lib-tab"), function (t) {
-      t.onclick = function () {
-        document.querySelector(".lib-tab.on").classList.remove("on");
-        t.classList.add("on");
-        document.getElementById("searchbar").style.display =
-          t.dataset.mode === "pages" ? "none" : "";
-        renderLibrary();
-      };
+      t.onclick = function () { setMode(t); renderLibrary(); };
     });
 
     var host = document.getElementById("doc");
@@ -517,6 +534,7 @@
       var f = e.target.dataset && e.target.dataset.field;
       if (!f) return;
       doc[f] = e.target.textContent.trim();
+      if (f === "title") syncFooterTitle();
       save();
     });
     /* A paste carries markup with it; only the words belong in a title. */
@@ -602,6 +620,7 @@
       document.getElementById("opt-toc").checked = doc.showToc !== false;
 
       wire();
+      setMode(document.querySelector(".lib-tab.on"));
       renderLibrary();
       renderPreview();
       document.body.classList.remove("loading");

@@ -92,6 +92,7 @@ Two extra things, both caught by the preflight — but know what they are:
    - Compact ticked → the PDF still has content in it
    - Contents page unticked → the title still sits above the first block
    - The grey line is on **every** page, not just the first
+   - The footer shows your title and `3 / 9` on every page
    - On a phone: no sideways scrolling
 4. If you want the offline single-file copy refreshed:
    `python3 _discovery/tools/standalone.py tls-pdf-builder.html`
