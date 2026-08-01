@@ -270,8 +270,11 @@
     searchIndex = {};
     DATA.blocks.forEach(function (b) {
       searchIndex[b.id] = {
+        /* full-text comes from the block's own HTML rather than a second
+           plaintext copy in the payload — that copy was 223 KB of the file */
         hay: (b.title + " " + b.summary + " " + b.tags.join(" ") + " " +
-             b.type + " " + b.id + " " + b.text).toLowerCase(),
+             b.type + " " + b.id + " " +
+             b.html.replace(/<[^>]*>/g, " ")).toLowerCase(),
         title: b.title.toLowerCase()
       };
     });
@@ -329,7 +332,8 @@
           var r = el("button", "lib-row");
           r.innerHTML = "<span class='lib-title'>" + esc(p.title) +
             (p.wip ? " <em class='wip'>wip</em>" : "") + "</span>" +
-            "<span class='lib-meta'>" + p.blocks.length + " blocks</span>";
+            "<span class='lib-meta'>" + p.blocks.length +
+            (p.blocks.length === 1 ? " block" : " blocks") + "</span>";
           r.onclick = function () { addPage(p.url); commit(); };
           host.appendChild(r);
         });
@@ -479,8 +483,11 @@
 
   /* ----------------------------------------------------------------- boot */
 
-  fetch("/builder/blocks.json")
-    .then(function (r) { return r.json(); })
+  /* Normally the data is fetched. A standalone copy of this page can inline it
+   * instead, which is how the app runs with no server behind it. */
+  (window.TLS_BLOCKS
+      ? Promise.resolve(window.TLS_BLOCKS)
+      : fetch("/builder/blocks.json").then(function (r) { return r.json(); }))
     .then(function (d) {
       DATA = d;
       DATA.blocks.forEach(function (b) {

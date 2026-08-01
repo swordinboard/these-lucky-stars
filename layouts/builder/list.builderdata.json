@@ -42,7 +42,6 @@
         "url"      (or .url "")
         "anchor"   (or .anchor "")
         "requires" (or .requires slice)
-        "text"     (cond (eq $p nil) "" (plainify $html))
         "html"     $html) -}}
   {{- end -}}
 {{- end -}}

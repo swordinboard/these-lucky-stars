@@ -12,12 +12,14 @@
   --accent: #b3282d;
   --sel: #fdf2f2;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #17191c; --fg: #e7e7e7; --muted: #9aa0a6; --line: #2e3238;
-    --panel: #1e2125; --accent: #e0575c; --sel: #2a1e20;
-  }
-}
+@media (prefers-color-scheme: dark) { :root { --bg: #17191c; --fg: #e7e7e7;
+  --muted: #9aa0a6; --line: #2e3238; --panel: #1e2125; --accent: #e0575c;
+  --sel: #2a1e20; } }
+/* an explicit theme choice has to beat the OS preference in BOTH directions */
+:root[data-theme="dark"] { --bg: #17191c; --fg: #e7e7e7; --muted: #9aa0a6;
+  --line: #2e3238; --panel: #1e2125; --accent: #e0575c; --sel: #2a1e20; }
+:root[data-theme="light"] { --bg: #fff; --fg: #1a1a1a; --muted: #6b6b6b;
+  --line: #e0e0e0; --panel: #f7f7f7; --accent: #b3282d; --sel: #fdf2f2; }
 
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
