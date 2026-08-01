@@ -352,9 +352,16 @@ for bid, b in blocks.items():
 #  * section block -> the host-page heading immediately above its include
 for bid, b in blocks.items():
     hs = PAGES[b["file"]]["headings"]
-    # owns_heading: the block's file opens with its own title. Section blocks do
-    # NOT — their heading lives on the host page, so anything re-assembling them
-    # elsewhere ({{< blockset >}}, the PDF builder) has to supply the heading.
+    # owns_heading: does the block's FILE still open with its own title?
+    #
+    # A fact about the snippet, never about where it is placed. It briefly also
+    # got set from the call site — "this include renders the title" — and the two
+    # meanings disagreed on 80 blocks, which is what made §C6 report healthy
+    # blocks as broken. Keep it file-derived.
+    #
+    # It is a MIGRATION METER, not a permanent field: every converted block sets
+    # it false, and when it reaches zero the field and its two readers
+    # (blockset, blockdetails) can all go.
     b["owns_heading"] = bool(hs) and hugo_anchor(b["title"]) == hs[0]["anchor"]
     if b["owns_heading"]:
         b["anchor"] = hs[0]["anchor"]
@@ -377,7 +384,6 @@ for bid, b in blocks.items():
     # internal heading once the page-chrome heading is removed.
     if inc.get("level") and inc["show"] != "false":
         b["anchor"] = hugo_anchor(b["title"])
-        b["owns_heading"] = True
         continue
     # blockdetails puts the anchor on its <details> element once the block has
     # no heading of its own, so the block still owns an anchor even though

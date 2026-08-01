@@ -429,7 +429,8 @@ python3 _discovery/tools/builddata.py
 - `blocks.json` — every block with its frontmatter, plus computed `anchor`,
   `pages` (every page it appears on), `in_degree`, and `source_page`.
 - Each block also carries a computed `url` (where it is read on the site) and
-  `owns_heading` (whether its own file supplies its heading).
+  `owns_heading` (whether its own file still supplies its heading — a migration
+meter, currently 303 of 434, destined for deletion at zero).
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
   the target — feature prerequisites), `reference` (stands alone but points at
   the target; the builder surfaces it as a fillable hole), `mention` (inert,

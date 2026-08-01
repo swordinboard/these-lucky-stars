@@ -180,6 +180,24 @@ the four modes are in the shortcode header and the maintenance notes.
       has zero broken links, but it shows the shape of the problem: **a bare
       block's anchor is a side effect of its neighbour.** Resolving the 22 above
       resolves this too.
+- [ ] **Retire `owns_heading` when the migration finishes.** It means one thing
+      only: *does this block's file still open with its own title?* Which makes
+      it the **migration meter** — every converted block sets it false, and it is
+      currently **303 of 434**. At zero, three things go together: the field
+      itself, `blockset`'s "supply a heading if the block has none", and
+      `blockdetails`' "claim the anchor if the block has none". Both conditions
+      become unconditional.
+
+      The PDF builder never needs it. Its whole purpose was "skip the block's
+      leading heading when printing", and after the migration no block has one —
+      the builder takes `title`, picks a level, and prints. That uniformity was
+      the point of the exercise.
+
+      *It briefly meant two things.* I had it also set from the call site — "this
+      include renders the title" — and the two definitions disagreed on 80
+      blocks, which is what made §C6 report healthy blocks as broken. Now
+      file-derived only.
+
 - [ ] **Remaining sections:** character-creation and inventory--equipment,
       ~370 call sites, mostly `blockdetails`.
 
