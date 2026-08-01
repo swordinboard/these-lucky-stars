@@ -10,7 +10,7 @@ bookToC: false
 - [Armor](#armor)
 - [Armor Upgrades](#armor-upgrades)
 - [Shields](#shields)
-- 
+
 ## Armor
 
 {{% include "/snippets/equipment/armor-basics" "h1" "false" %}}

@@ -219,9 +219,11 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
    renders nothing at all — no error, no warning, no build failure. Always run
    the preflight after re-wiring includes.
 
-3. **Heading levels travel with the block.** A snippet extracted from a `###`
-   context carries `###` with it. Re-homing a block under a different heading
-   depth changes how it renders. Check the page after moving blocks.
+3. **Snippets do not carry a title heading — the call site decides.** A snippet
+   holds its body only. `{{% include %}}` generates the title from
+   `data/blocks.json` at whatever level the call site asks for, so the same
+   block can sit at `h2` on one page and `h3` on another without editing it.
+   See *Heading levels are set at the call site* below.
 
 4. **Anchors are generated from heading text, and keep unusual characters.**
    `### Crippled Δ` becomes `#crippled-δ`, not `#crippled`; underscores are kept
@@ -232,6 +234,68 @@ These are the ways a snippet can break a page. The preflight catches #1 and #3.
 
 5. **Snippets are never published as pages.** `content/snippets/_index.md` sets
    `build: render: never` with a cascade — do not remove it.
+
+---
+
+## Heading levels are set at the call site
+
+A snippet contains **no title heading**. The block's title lives in
+`data/blocks.json`, and `{{% include %}}` renders it at whatever level the page
+asks for:
+
+```
+{{% include "/snippets/attributes/overview" "h2" %}}
+{{% include "/snippets/combat/disarm"       "lead" %}}
+{{% include "/snippets/vehicles/mounts"     "h3" "false" %}}
+```
+
+The level argument is the level the block **occupies on the page**, not just the
+size of the text. `lead` renders the title as bold lead-in prose and `plain`
+renders it unstyled; omitting the argument emits no title at all.
+
+**The h2 convention.** Snippets that need internal sub-headings author them
+starting at `h2`. The shortcode shifts them to sit one level under whatever the
+call site asked for — a block placed at `h3` has its internals rewritten to `h4`.
+Because internals always start at `h2`, that shift is never negative. Author to
+this convention or the internals land at the wrong depth.
+
+`blockdetails` takes the same level argument and applies the same shift.
+
+Why it is built this way: the same block appears at different depths on different
+pages, and before this the heading was baked into the snippet, so re-homing a
+block meant editing it. It also killed a class of anchor collision — all nine
+aggressive actions used to share `#aggressive-actions`, because the heading above
+them belonged to the page, not the block. Each now owns its own name.
+
+---
+
+## Table of contents
+
+The theme's ToC is **overridden** in `layouts/_partials/docs/toc.html`, and its
+visibility check in `layouts/_partials/docs/toc-show.html`.
+
+Hugo's built-in `.TableOfContents` is derived from the page's own markdown AST,
+so it only sees headings typed literally into the page file. Every heading that
+arrives through `{{% include %}}` is invisible to it — by the time a block is
+placed it is already-rendered HTML, long past the point where Hugo collects
+headings. After the heading migration that is most of them: on the current
+content the built-in ToC listed 139 of 197 in-range headings, missing 58 across
+10 pages. The override walks `.Content` — the finished page, includes and all —
+and rebuilds the exact markup the theme expects, so its CSS and scroll-spy work
+unchanged.
+
+**The heading range lives in `hugo.toml` twice.** `[markup.tableOfContents]`
+`startLevel`/`endLevel` are not reachable from a template, so the override reads
+`params.bookTocStart` / `bookTocEnd`. Change one and change the other, or the ToC
+and the rest of Hugo will disagree.
+
+`bookToC: false` in a page's frontmatter still suppresses the ToC entirely.
+
+Note that the theme renders the ToC **twice** per page — once in a hidden
+`<aside class="hidden">` for the mobile drop-down and once in the desktop
+`<aside class="book-toc">` sidebar. Both carry `id="TableOfContents"`. That is
+the theme's own doing, not the override's; it matters when scripting the page,
+because a naive selector finds the hidden copy first.
 
 ---
 
@@ -578,6 +642,8 @@ After pulling a theme update, **always diff these overridden files** before depl
 |---|---|---|
 | `layouts/_partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
 | `layouts/_partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
+| `layouts/_partials/docs/toc.html` | `themes/hugo-book/layouts/_partials/docs/toc.html` | Rewritten to build the ToC from `.Content` instead of `.TableOfContents`, so headings arriving via `{{% include %}}` are listed. Range from `params.bookTocStart`/`bookTocEnd`. See *Table of contents*. |
+| `layouts/_partials/docs/toc-show.html` | `themes/hugo-book/layouts/_partials/docs/toc-show.html` | Visibility test scans `.Content` rather than asking whether the built-in ToC is empty — otherwise a page whose headings all come from includes would be judged to have none. Still honours `bookToC: false`. |
 
 **How to diff:**
 ```

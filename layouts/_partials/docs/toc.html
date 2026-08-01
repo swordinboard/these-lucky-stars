@@ -1,0 +1,58 @@
+{{- /*
+  Table of contents, built from the RENDERED page instead of its markdown.
+
+  Hugo's `.TableOfContents` comes from the page's own markdown AST, so it only
+  ever sees headings typed directly into the page file. Every heading arriving
+  through `{{% include %}}` is invisible to it — by the time a block is placed
+  it is already-rendered HTML. Since the heading migration that is most of them:
+  137 in-range headings across 35 pages were missing from their ToC.
+
+  This walks `.Content` — the finished page, includes and all — and rebuilds the
+  markup the theme expects, so its CSS and scroll-spy keep working unchanged.
+
+  Range comes from `bookTocStart` / `bookTocEnd` in hugo.toml, because
+  `markup.tableOfContents` is not reachable from a template.
+*/ -}}
+{{ partial "docs/inject/toc-before" . }}
+{{- $start := int (default 2 site.Params.bookTocStart) -}}
+{{- $end := int (default 4 site.Params.bookTocEnd) -}}
+
+{{- $items := slice -}}
+{{- range findRE `(?s)<h[1-6][^>]*\sid="[^"]*"[^>]*>.*?</h[1-6]>` .Content -}}
+  {{- $lvl := int (substr . 2 1) -}}
+  {{- if and (ge $lvl $start) (le $lvl $end) -}}
+    {{- $id := replaceRE `(?s)^.*?\sid="([^"]*)".*$` "$1" . -}}
+    {{/* drop the theme's trailing anchor link first, then any other markup */}}
+    {{- $text := replaceRE `(?s)<a class="anchor".*?</a>` "" . -}}
+    {{- $text = trim (replaceRE `(?s)<[^>]*>` "" $text) " \n\t" -}}
+    {{- if and $id $text -}}
+      {{- $items = $items | append (dict "d" (sub $lvl $start) "id" $id "text" $text) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $items -}}
+  {{- $out := "" -}}
+  {{- $prev := -1 -}}
+  {{- range $items -}}
+    {{- if eq $prev -1 -}}
+      {{- range seq (add .d 1) }}{{ $out = print $out "<ul>" }}{{ end -}}
+    {{- else if gt .d $prev -}}
+      {{- range seq (sub .d $prev) }}{{ $out = print $out "<ul>" }}{{ end -}}
+    {{- else if lt .d $prev -}}
+      {{- $out = print $out "</li>" -}}
+      {{- range seq (sub $prev .d) }}{{ $out = print $out "</ul></li>" }}{{ end -}}
+    {{- else -}}
+      {{- $out = print $out "</li>" -}}
+    {{- end -}}
+    {{- $out = print $out (printf `<li><a href="#%s">%s</a>` .id .text) -}}
+    {{- $prev = .d -}}
+  {{- end -}}
+  {{/* Close the last item, then unwind: each nesting level needs its </ul> AND
+       the parent <li> it sits inside, before the outermost </ul>. */}}
+  {{- $out = print $out "</li>" -}}
+  {{- if gt $prev 0 }}{{ range seq $prev }}{{ $out = print $out "</ul></li>" }}{{ end }}{{ end -}}
+  {{- $out = print $out "</ul>" -}}
+<nav id="TableOfContents">{{ $out | safeHTML }}</nav>
+{{- end -}}
+{{ partial "docs/inject/toc-after" . }}
