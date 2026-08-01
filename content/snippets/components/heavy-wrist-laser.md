@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, component]
 summary: "Mounted laser rifle equivalent"
 ---
 
-### Heavy Wrist Laser
-
 *–Cr — 5lbs — 8 Object DEF — (10) 90ft — Arms — External — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
 
 *Damage Type: Burn*

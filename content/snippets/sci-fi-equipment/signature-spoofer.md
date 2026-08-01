@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, tech]
 summary: "Emits a false bio-signature to scanners."
 ---
 
-### Signature Spoofer
-
 *–Cr — 1lb — Neck — [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Micro]*
 
 A pendant-style device that broadcasts a forged biometric signature — voiceprint, retinal pattern, thermal profile, and pulse — to nearby sensors. Once a target signature is loaded (requires a [Data Spike](#data-spike) of the original sample), the spoofer presents that signature to any scanner within 15ft.

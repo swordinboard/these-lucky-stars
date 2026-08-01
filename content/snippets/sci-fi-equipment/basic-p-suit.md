@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, armor, light-armor]
 summary: "Minimum protection for airless environments."
 ---
 
-#### Basic P-Suit
-
 *--Cr — +2 DEF Bonus — -1 AGI/DEX — 20lbs — 8 Object DEF — [Pressurized](/docs/free-srd/inventory--equipment/item-tags/#pressurized)*
 
 *Upgrades: [Coms Unit](#coms-unit), 1hr Oxygen Microtank*

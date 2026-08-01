@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, weapon, pistol, ranged-weapon]
 summary: "Ballistic. Full-auto. Concealable. 20ft range."
 ---
 
-### Auto Pistol
-
 *--Cr — 2lbs — 8 Object DEF — 20ft — [Ballistic [1d6]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
 *Damage Type: Physical*
 

@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. +1 attack, negates zero-g knockback."
 ---
 
-### Recoil Compensation System
-
 *--Cr — 1lbs*
 *Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
 

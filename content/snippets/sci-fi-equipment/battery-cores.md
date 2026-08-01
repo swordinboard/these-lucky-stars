@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, tech]
 summary: "Portable power available in multiple sizes."
 ---
 
-### Standardized Battery Cores
-
 The most common way to power electronic systems both small and large. From disposable electronics to generator backup systems, there's a battery for pretty much anything.
 Batteries are available in standard sizes that cannot be interchanged without modification. This can be done with the tech kit and a KNO check. The check starts at 10 for a battery one size larger or smaller and increases by +3 for each additional difference in size.
 

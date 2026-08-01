@@ -15,7 +15,7 @@ weight: 4
 
 ## Communication Devices
 
-{{% include "/snippets/sci-fi/communications" %}}
+{{% include "/snippets/sci-fi/communications" "h2" "false" %}}
 
 {{< catalog header="Item|Notes" >}}
 sci-fi-equipment/coms-headset
@@ -25,11 +25,11 @@ sci-fi-equipment/mobile-phone
 
 *See also: [Coms Unit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit) — a helmet-mounted Local tier upgrade for armor and space suits.*
 
-{{< blockdetails "sci-fi-equipment/coms-headset" >}}
+{{< blockdetails "sci-fi-equipment/coms-headset" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/long-range-coms" >}}
+{{< blockdetails "sci-fi-equipment/long-range-coms" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/mobile-phone" >}}
+{{< blockdetails "sci-fi-equipment/mobile-phone" "h3" >}}
 
 ---
 
@@ -45,15 +45,15 @@ sci-fi-equipment/pain-suppressant-injector
 sci-fi-equipment/vitaboost-injector
 {{< /catalog >}}
 
-{{< blockdetails "sci-fi-equipment/ara-5" >}}
+{{< blockdetails "sci-fi-equipment/ara-5" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/crash-foam-canister" >}}
+{{< blockdetails "sci-fi-equipment/crash-foam-canister" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/emergency-trauma-patch" >}}
+{{< blockdetails "sci-fi-equipment/emergency-trauma-patch" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/pain-suppressant-injector" >}}
+{{< blockdetails "sci-fi-equipment/pain-suppressant-injector" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/vitaboost-injector" >}}
+{{< blockdetails "sci-fi-equipment/vitaboost-injector" "h3" >}}
 
 ---
 
@@ -71,19 +71,19 @@ sci-fi-equipment/solar-array-pack
 sci-fi-equipment/survival-tent
 {{< /catalog >}}
 
-{{< blockdetails "sci-fi-equipment/emergency-beacon" >}}
+{{< blockdetails "sci-fi-equipment/emergency-beacon" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/emergency-oxygen-mask" >}}
+{{< blockdetails "sci-fi-equipment/emergency-oxygen-mask" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/field-ration" >}}
+{{< blockdetails "sci-fi-equipment/field-ration" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/portable-heater" >}}
+{{< blockdetails "sci-fi-equipment/portable-heater" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/portable-water-purifier" >}}
+{{< blockdetails "sci-fi-equipment/portable-water-purifier" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/solar-array-pack" >}}
+{{< blockdetails "sci-fi-equipment/solar-array-pack" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/survival-tent" >}}
+{{< blockdetails "sci-fi-equipment/survival-tent" "h3" >}}
 
 ---
 
@@ -114,42 +114,42 @@ sci-fi-equipment/squad-shield
 sci-fi-equipment/battery-cores
 {{< /catalog >}}
 
-{{< blockdetails "sci-fi-equipment/bio-scanner" >}}
+{{< blockdetails "sci-fi-equipment/bio-scanner" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/bioskin-veil" >}}
+{{< blockdetails "sci-fi-equipment/bioskin-veil" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/boost-pack" >}}
+{{< blockdetails "sci-fi-equipment/boost-pack" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/comp-jack" >}}
+{{< blockdetails "sci-fi-equipment/comp-jack" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/data-spike" >}}
+{{< blockdetails "sci-fi-equipment/data-spike" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/decoy-beacon" >}}
+{{< blockdetails "sci-fi-equipment/decoy-beacon" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/fuel-cells" >}}
+{{< blockdetails "sci-fi-equipment/fuel-cells" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/grapple-line-launcher" >}}
+{{< blockdetails "sci-fi-equipment/grapple-line-launcher" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/gravity-anchor" >}}
+{{< blockdetails "sci-fi-equipment/gravity-anchor" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/jump-boosters" >}}
+{{< blockdetails "sci-fi-equipment/jump-boosters" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/jump-pack" >}}
+{{< blockdetails "sci-fi-equipment/jump-pack" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/mag-boots" >}}
+{{< blockdetails "sci-fi-equipment/mag-boots" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/mag-cuffs" >}}
+{{< blockdetails "sci-fi-equipment/mag-cuffs" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/mini-laser-cutter" >}}
+{{< blockdetails "sci-fi-equipment/mini-laser-cutter" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/personal-shield" >}}
+{{< blockdetails "sci-fi-equipment/personal-shield" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/reactor-cores" >}}
+{{< blockdetails "sci-fi-equipment/reactor-cores" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/remote-detonator" >}}
+{{< blockdetails "sci-fi-equipment/remote-detonator" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/signature-spoofer" >}}
+{{< blockdetails "sci-fi-equipment/signature-spoofer" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/squad-shield" >}}
+{{< blockdetails "sci-fi-equipment/squad-shield" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/battery-cores" >}}
+{{< blockdetails "sci-fi-equipment/battery-cores" "h3" >}}

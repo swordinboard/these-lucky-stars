@@ -6,7 +6,7 @@ weight: 2
 
 # Sci-Fi Armor
 
-{{% include "/snippets/equipment/armor-basics" %}}
+{{% include "/snippets/equipment/armor-basics" "h1" "false" %}}
 
 {{% include "/snippets/objects/armor-degradation" %}}
 
@@ -37,31 +37,31 @@ sci-fi-equipment/ultraweave-evosuit
 
 ### Light Armor
 
-{{< blockdetails "sci-fi-equipment/basic-p-suit" >}}
+{{< blockdetails "sci-fi-equipment/basic-p-suit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/classic-evosuit" >}}
+{{< blockdetails "sci-fi-equipment/classic-evosuit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/combat-vest" >}}
+{{< blockdetails "sci-fi-equipment/combat-vest" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/light-combat-vest" >}}
+{{< blockdetails "sci-fi-equipment/light-combat-vest" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/padded-flight-suit" >}}
+{{< blockdetails "sci-fi-equipment/padded-flight-suit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/scav-gear" >}}
+{{< blockdetails "sci-fi-equipment/scav-gear" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/site-safety-gear" >}}
+{{< blockdetails "sci-fi-equipment/site-safety-gear" "h4" >}}
 
 ### Heavy Armor
 
-{{< blockdetails "sci-fi-equipment/combat-evosuit" >}}
+{{< blockdetails "sci-fi-equipment/combat-evosuit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/enforcer-armor" >}}
+{{< blockdetails "sci-fi-equipment/enforcer-armor" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/eva-suit" >}}
+{{< blockdetails "sci-fi-equipment/eva-suit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/security-flight-suit" >}}
+{{< blockdetails "sci-fi-equipment/security-flight-suit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/ultraweave-evosuit" >}}
+{{< blockdetails "sci-fi-equipment/ultraweave-evosuit" "h4" >}}
 
 ---
 
@@ -84,27 +84,27 @@ sci-fi-equipment/targeting-hud
 
 ### Armor Upgrades
 
-{{< blockdetails "sci-fi-equipment/auto-injector" >}}
+{{< blockdetails "sci-fi-equipment/auto-injector" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/chameleon-unit" >}}
+{{< blockdetails "sci-fi-equipment/chameleon-unit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/emergency-shank" >}}
+{{< blockdetails "sci-fi-equipment/emergency-shank" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/hazard-hud" >}}
+{{< blockdetails "sci-fi-equipment/hazard-hud" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/coms-unit" >}}
+{{< blockdetails "sci-fi-equipment/coms-unit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/mebn-hud" >}}
+{{< blockdetails "sci-fi-equipment/mebn-hud" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/safer-unit" >}}
+{{< blockdetails "sci-fi-equipment/safer-unit" "h4" >}}
 
-{{< blockdetails "sci-fi-equipment/targeting-hud" >}}
+{{< blockdetails "sci-fi-equipment/targeting-hud" "h4" >}}
 
 ---
 
 ## Shields
 
-{{% include "/snippets/equipment/shields-basics" %}}
+{{% include "/snippets/equipment/shields-basics" "h2" "false" %}}
 
 {{% include "/snippets/objects/shield-degradation" %}}
 
@@ -115,7 +115,7 @@ sci-fi-equipment/ballistic-shield
 sci-fi-equipment/collapsible-shield
 {{< /catalog >}}
 
-{{< blockdetails "sci-fi-equipment/ballistic-shield" >}}
+{{< blockdetails "sci-fi-equipment/ballistic-shield" "h3" >}}
 
-{{< blockdetails "sci-fi-equipment/collapsible-shield" >}}
+{{< blockdetails "sci-fi-equipment/collapsible-shield" "h3" >}}
  

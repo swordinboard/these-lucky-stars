@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-## Ballistic
-
 *Ballistic [type, max ammo]*
 
 Ballistic weapons use ballistic ammunition (ammo). To keep things simple, most weapons with the Ballistic tag use interchangeable ammo. If the tag is followed by a term in brackets, only that ammo type can be used.

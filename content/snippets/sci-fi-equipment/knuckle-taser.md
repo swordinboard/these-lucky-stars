@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, weapon, light-melee, melee-weapon]
 summary: "Hand slot. Built in shock charger for a shocking punch."
 ---
 
-### Knuckle Taser
-
 *--Cr — 0.5lbs — 6 Object DEF — [Battery [Micro]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
 *Damage Type: Physical or Shock*
 *Upgrades: [Shock Charger](#shock-charger)*

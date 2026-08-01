@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All ballistic. Increased ammo die size."
 ---
 
-### Drum Magazines
-
 *--Cr — 4lbs*
 *Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
 

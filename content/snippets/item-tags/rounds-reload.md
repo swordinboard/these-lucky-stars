@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-### Rounds Reload
-
 These weapons can be topped off up to max capacity for 1 AP as long as the weapon is not empty. Doing so allows you to adjust ammo die sizes of Ballistic weapons during combat by combining and rearranging them.
 
 > [!TIP]

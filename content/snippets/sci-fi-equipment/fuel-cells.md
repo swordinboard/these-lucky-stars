@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, tech]
 summary: "Pressurized propellant canisters in small, medium, and large sizes."
 ---
 
-### Fuel Cells
-
 Standardized pressurized canisters of combustible propellant. Used in propulsion packs, flamethrowers, heating equipment, and more. Fuel cells are refillable at designated fuel depots and but cannot be recharged in the field.
 Unlike batteries items requiring a fuel cell can accept any size due to the shared nozzle and fitting. Most equipment that is fitted with a large fuel cell inherits the Bulky and Two-Handed tags due to the increased size when appropriate.
 

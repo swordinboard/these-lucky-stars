@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "An early model space suit, well equipped but bulky."
 ---
 
-#### EVA Suit
-
 *--Cr — +6 DEF Bonus — -2 AGI/DEX — 200lbs — 14 Object DEF — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades:[Coms Unit](#coms-unit), [SAFER Unit](#safer-unit)*

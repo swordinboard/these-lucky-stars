@@ -162,10 +162,11 @@ Blocks no longer carry their own heading. The call site decides the level, and
 the shortcode emits it: `{{% include "/snippets/x/y" "h3" %}}`. Full design and
 the four modes are in the shortcode header and the maintenance notes.
 
-**Done:** all of **core-rules** and all of **character-creation**, plus Sci-Fi
-Tool Kits — 196 call sites converted, 133 snippet headings stripped.
-`owns_heading` is the meter: **192 of 434** blocks still hold their own heading,
-all of them in inventory--equipment.
+**Done — all three sections.** core-rules, character-creation and
+inventory--equipment: **388 call sites converted, 313 snippet headings
+stripped.** Every ordinary block now takes its heading from the call site.
+
+`owns_heading` is down to **12 of 434**, and that is the floor — see below.
 
 - [ ] **22 "bare" blocks in core-rules still need a decision.** These sit under a
       shared group heading with no heading of their own, so giving them a level
@@ -182,28 +183,28 @@ all of them in inventory--equipment.
       has zero broken links, but it shows the shape of the problem: **a bare
       block's anchor is a side effect of its neighbour.** Resolving the 22 above
       resolves this too.
-- [ ] **Retire `owns_heading` when the migration finishes.** It means one thing
-      only: *does this block's file still open with its own title?* Which makes
-      it the **migration meter** — every converted block sets it false, and it is
-      currently **303 of 434**. At zero, three things go together: the field
-      itself, `blockset`'s "supply a heading if the block has none", and
-      `blockdetails`' "claim the anchor if the block has none". Both conditions
-      become unconditional.
+- [x] ~~**Retire `owns_heading` when the migration finishes.**~~ **It does not
+      retire — I was wrong about that.** The meter bottoms out at **12, not 0**:
 
-      The PDF builder never needs it. Its whole purpose was "skip the block's
-      leading heading when printing", and after the migration no block has one —
-      the builder takes `title`, picks a level, and prints. That uniformity was
-      the point of the exercise.
+      - **11 are page-as-blocks** — the five races, the four bot platforms, Size,
+        and the races hub. A page-as-block's H1 *is* its title; there is no
+        separate heading to strip, and there never will be.
+      - **1 is `conditions/dead-battery`**, a snippet deliberately left bare on
+        the Android page, so it keeps its own heading.
 
-      *It briefly meant two things.* I had it also set from the call site — "this
-      include renders the title" — and the two definitions disagreed on 80
-      blocks, which is what made §C6 report healthy blocks as broken. Now
-      file-derived only.
+      So the field keeps a real meaning: *this file supplies its own heading.*
+      That is exactly the signal the PDF builder needs — a page-as-block printed
+      into a PDF already carries its H1 and must not be given a second one, while
+      every ordinary block now needs one supplied. Both readers stay:
+      `blockset` uses it to decide whether to supply a heading, and
+      `blockdetails` uses it to avoid claiming an anchor twice — which is now
+      dead code, but it is the guard that stops a newly written snippet with a
+      heading from duplicating an id.
 
-- [ ] **Remaining section: inventory--equipment.** ~190 call sites, almost all
-      `blockdetails` on the equipment catalogs. It also carries the last two
-      held-back renumbers (`equipment/common-terms`, `inventory/carry-limits`),
-      which go with their pages.
+- [x] ~~**Remaining section: inventory--equipment.**~~ Done. 180 blockdetails
+      and 6 includes converted, plus the two held-back renumbers
+      (`equipment/common-terms`, `inventory/carry-limits`) now that their call
+      sites carry a level.
 
 ## 5b. The compact index — settled
 

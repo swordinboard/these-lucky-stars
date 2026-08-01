@@ -13,42 +13,42 @@ Many items have tags to quickly identify common features and use requirements. T
 
 ---
 
-{{< blockdetails "item-tags/adaptive-mesh" >}}
+{{< blockdetails "item-tags/adaptive-mesh" "h2" >}}
 
-{{< blockdetails "item-tags/arcing" >}}
+{{< blockdetails "item-tags/arcing" "h2" >}}
 
-{{< blockdetails "item-tags/ballistic" >}}
+{{< blockdetails "item-tags/ballistic" "h2" >}}
 
-{{< blockdetails "item-tags/battery" >}}
+{{< blockdetails "item-tags/battery" "h2" >}}
 
-{{< blockdetails "item-tags/belt-fed" >}}
+{{< blockdetails "item-tags/belt-fed" "h2" >}}
 
-{{< blockdetails "item-tags/bulky" >}}
+{{< blockdetails "item-tags/bulky" "h2" >}}
 
-{{< blockdetails "item-tags/concealable" >}}
+{{< blockdetails "item-tags/concealable" "h2" >}}
 
-{{< blockdetails "item-tags/durable" >}}
+{{< blockdetails "item-tags/durable" "h2" >}}
 
-{{< blockdetails "item-tags/firing-modes" >}}
+{{< blockdetails "item-tags/firing-modes" "h2" >}}
 
-{{< blockdetails "item-tags/fragile" >}}
+{{< blockdetails "item-tags/fragile" "h2" >}}
 
-{{< blockdetails "item-tags/fuel-cells" >}}
+{{< blockdetails "item-tags/fuel-cells" "h2" >}}
 
-{{< blockdetails "item-tags/injector" >}}
+{{< blockdetails "item-tags/injector" "h2" >}}
 
-{{< blockdetails "item-tags/long-reload" >}}
+{{< blockdetails "item-tags/long-reload" "h2" >}}
 
-{{< blockdetails "item-tags/pressurized" >}}
+{{< blockdetails "item-tags/pressurized" "h2" >}}
 
-{{< blockdetails "item-tags/power-source" >}}
+{{< blockdetails "item-tags/power-source" "h2" >}}
 
-{{< blockdetails "item-tags/rounds-reload" >}}
+{{< blockdetails "item-tags/rounds-reload" "h2" >}}
 
-{{< blockdetails "item-tags/space-suit" >}}
+{{< blockdetails "item-tags/space-suit" "h2" >}}
 
-{{< blockdetails "item-tags/throwable" >}}
+{{< blockdetails "item-tags/throwable" "h2" >}}
 
-{{< blockdetails "item-tags/two-handed" >}}
+{{< blockdetails "item-tags/two-handed" "h2" >}}
 
-{{< blockdetails "item-tags/versatile" >}}
+{{< blockdetails "item-tags/versatile" "h2" >}}

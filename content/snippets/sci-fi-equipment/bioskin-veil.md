@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, tech]
 summary: "Creates a near-perfect disguise."
 ---
 
-### Bioskin Veil
-
 *--Cr — 0lbs — Head — Single Use per application*
 
 A near-invisible membrane that overlays the wearer's face and neck, reshaping to match another creature's. This appearance must be scanned from a captured image or live subject. The scanning process takes one minute, during which the veil must be worn adjacent to the scanned subject. Activation costs 1 AP and the transformation takes only a few seconds.

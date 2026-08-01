@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, component]
 summary: "Increases com range to 20 miles"
 ---
 
-### Signal Mast, Retractable
-
 *–Cr — 1lb — Neck — Internal*
 
 A retractable antenna and signal booster. The host's com devices have their range increased to 20 miles under normal conditions, and the host can transmit and receive on any open or shared encrypted frequency at that range. Draws negligible power from the host battery.

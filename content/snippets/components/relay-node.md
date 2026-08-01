@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, component]
 summary: "Sync into a shared sensor network"
 ---
 
-### Relay Node
-
 *–Cr — 1lb — Neck — Internal*
 
 A short-range data relay that allows the host to share sensor feeds with other Relay Node-equipped units. Each Relay Node is purchased and installed individually, then synced with one or more other Relay Nodes already in operation.

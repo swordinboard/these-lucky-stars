@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-### Battery
-
 *Battery [size]*
 
 Requires a [standard battery core](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores) of the listed size to operate. Most items with this tag require a single supply roll with each activation of the item (such as an attack). Weight and price of these items do not include a battery.

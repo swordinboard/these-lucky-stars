@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Pistols, Rifles. +20ft normal range."
 ---
 
-### Extended Barrel
-
 *--Cr — 1lbs*
 *Compatibility: Pistols, Rifles*
 

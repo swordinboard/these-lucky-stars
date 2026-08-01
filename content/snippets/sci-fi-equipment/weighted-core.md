@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, melee-upgrade]
 summary: "Medium melee, polearms, two-handed. +3 damage. Loses throwable tag."
 ---
 
-### Weighted Core
-
 *--Cr — 3lbs*
 *Compatibility: Medium Melee Weapons, Polearms and Staffs.*
 

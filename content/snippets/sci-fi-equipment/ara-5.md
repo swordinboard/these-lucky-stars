@@ -8,8 +8,6 @@ tags: [equipment, sci-fi, medical]
 summary: "Single use. Removes radiation wounds and conditions within 1hr."
 ---
 
-### Analgesic Radiation Antidote 5 (ARA-5)
-
 *--Cr — 0lbs — [Injector](/docs/free-srd/inventory--equipment/item-tags/#injector)*
 
 Single use injector that removes radiation-based wounds and conditions if applied within 1hr of exposure. Application costs 2 AP.

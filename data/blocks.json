@@ -4106,7 +4106,7 @@
   ],
   "anchor": "audio-processor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#audio-processor",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4137,7 +4137,7 @@
   ],
   "anchor": "augmented-arm-actuators",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#augmented-arm-actuators",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4168,7 +4168,7 @@
   ],
   "anchor": "automatic-crash-foam-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#automatic-crash-foam-system",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4199,7 +4199,7 @@
   ],
   "anchor": "backup-power-cell",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4259,7 +4259,7 @@
   ],
   "anchor": "heavy-wrist-laser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#heavy-wrist-laser",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4290,7 +4290,7 @@
   ],
   "anchor": "improved-cooling-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#improved-cooling-system",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4350,7 +4350,7 @@
   ],
   "anchor": "internal-comp-jack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#internal-comp-jack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4382,7 +4382,7 @@
   ],
   "anchor": "manipulator-override",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#manipulator-override",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4413,7 +4413,7 @@
   ],
   "anchor": "optical-suite",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#optical-suite",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4502,7 +4502,7 @@
   ],
   "anchor": "reinforced-chassis-plating",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#reinforced-chassis-plating",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4533,7 +4533,7 @@
   ],
   "anchor": "relay-node",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#relay-node",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4564,7 +4564,7 @@
   ],
   "anchor": "repair-subroutine",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#repair-subroutine",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4595,7 +4595,7 @@
   ],
   "anchor": "servo-boost-legs",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#servo-boost-legs",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4626,7 +4626,7 @@
   ],
   "anchor": "shield-mount",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4657,7 +4657,7 @@
   ],
   "anchor": "signal-mast-heavy",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-heavy",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4690,7 +4690,7 @@
   ],
   "anchor": "signal-mast-retractable",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-retractable",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4723,7 +4723,7 @@
   ],
   "anchor": "stabilizer-gyros",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#stabilizer-gyros",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4754,7 +4754,7 @@
   ],
   "anchor": "subdermal-plating",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#subdermal-plating",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4785,7 +4785,7 @@
   ],
   "anchor": "targeting-array",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#targeting-array",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -4816,7 +4816,7 @@
   ],
   "anchor": "wrist-laser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#wrist-laser",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -5543,7 +5543,7 @@
   ],
   "anchor": "animal-feed-1-day",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#animal-feed-1-day",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5574,7 +5574,7 @@
   ],
   "anchor": "antiseptic-poultice",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#antiseptic-poultice",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5605,7 +5605,7 @@
   ],
   "anchor": "antitoxin",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#antitoxin",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5636,7 +5636,7 @@
   ],
   "anchor": "backpack",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#backpack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5667,7 +5667,7 @@
   ],
   "anchor": "bag-of-salt",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bag-of-salt",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5698,7 +5698,7 @@
   ],
   "anchor": "bandages-large",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bandages-large",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5731,7 +5731,7 @@
   ],
   "anchor": "bandages-small",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bandages-small",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5764,7 +5764,7 @@
   ],
   "anchor": "barrel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#barrel",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5795,7 +5795,7 @@
   ],
   "anchor": "bedroll",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#bedroll",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5826,7 +5826,7 @@
   ],
   "anchor": "blank-book--journal",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#blank-book--journal",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5857,7 +5857,7 @@
   ],
   "anchor": "block-of-soap",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#block-of-soap",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5888,7 +5888,7 @@
   ],
   "anchor": "candle",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#candle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5919,7 +5919,7 @@
   ],
   "anchor": "candle-wax-block",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#candle-wax-block",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5950,7 +5950,7 @@
   ],
   "anchor": "chain-10ft",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chain-10ft",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -5981,7 +5981,7 @@
   ],
   "anchor": "chalk--charcoal-sticks",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chalk--charcoal-sticks",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6012,7 +6012,7 @@
   ],
   "anchor": "coil-of-wire",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#coil-of-wire",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6043,7 +6043,7 @@
   ],
   "anchor": "common-alcohol-flask",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#common-alcohol-flask",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6074,7 +6074,7 @@
   ],
   "anchor": "compass--navigational-tool",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#compass--navigational-tool",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6106,7 +6106,7 @@
   ],
   "anchor": "crate",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#crate",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6137,7 +6137,7 @@
   ],
   "anchor": "dry-sack",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#dry-sack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6168,7 +6168,7 @@
   ],
   "anchor": "face-wrap",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#face-wrap",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6199,7 +6199,7 @@
   ],
   "anchor": "field-ration",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#field-ration",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6231,7 +6231,7 @@
   ],
   "anchor": "fire-starter",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#fire-starter",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6262,7 +6262,7 @@
   ],
   "anchor": "fuel--oil-flask",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#fuel--oil-flask",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6293,7 +6293,7 @@
   ],
   "anchor": "grappling-hook",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#grappling-hook",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6324,7 +6324,7 @@
   ],
   "anchor": "heavy-cloak",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#heavy-cloak",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6355,7 +6355,7 @@
   ],
   "anchor": "ink--writing-instrument",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#ink--writing-instrument",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6386,7 +6386,7 @@
   ],
   "anchor": "iron-spikes-10",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#iron-spikes-10",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6417,7 +6417,7 @@
   ],
   "anchor": "chest-lockable",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#chest-lockable",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6448,7 +6448,7 @@
   ],
   "anchor": "long-crowbar",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#long-crowbar",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6479,7 +6479,7 @@
   ],
   "anchor": "manacles--restraints",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#manacles--restraints",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6510,7 +6510,7 @@
   ],
   "anchor": "oil-lantern",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#oil-lantern",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6541,7 +6541,7 @@
   ],
   "anchor": "parchment--paper-sheets-5",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#parchment--paper-sheets-5",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6572,7 +6572,7 @@
   ],
   "anchor": "pitons--climbing-spikes-6",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pitons--climbing-spikes-6",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6603,7 +6603,7 @@
   ],
   "anchor": "pouch-set-ammo",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-ammo",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6636,7 +6636,7 @@
   ],
   "anchor": "pouch-set-small",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-small",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6669,7 +6669,7 @@
   ],
   "anchor": "pouch-set-standard",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#pouch-set-standard",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6702,7 +6702,7 @@
   ],
   "anchor": "quiver--bolt-case",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#quiver--bolt-case",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6733,7 +6733,7 @@
   ],
   "anchor": "rain-poncho",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#rain-poncho",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6764,7 +6764,7 @@
   ],
   "anchor": "reinforced-boots",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#reinforced-boots",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6795,7 +6795,7 @@
   ],
   "anchor": "restorative-tonic",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#restorative-tonic",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6826,7 +6826,7 @@
   ],
   "anchor": "rope-50ft",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#rope-50ft",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6857,7 +6857,7 @@
   ],
   "anchor": "saddlebags",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#saddlebags",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6888,7 +6888,7 @@
   ],
   "anchor": "satchel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#satchel",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6919,7 +6919,7 @@
   ],
   "anchor": "sewing-set",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#sewing-set",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6950,7 +6950,7 @@
   ],
   "anchor": "shovel",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#shovel",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -6981,7 +6981,7 @@
   ],
   "anchor": "signal-mirror",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#signal-mirror",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7012,7 +7012,7 @@
   ],
   "anchor": "signal-whistle",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#signal-whistle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7043,7 +7043,7 @@
   ],
   "anchor": "small-bell",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#small-bell",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7074,7 +7074,7 @@
   ],
   "anchor": "splint-materials",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#splint-materials",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7105,7 +7105,7 @@
   ],
   "anchor": "tent-2-person",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#tent-2-person",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7136,7 +7136,7 @@
   ],
   "anchor": "tent-4-person",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#tent-4-person",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7167,7 +7167,7 @@
   ],
   "anchor": "torch",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#torch",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7198,7 +7198,7 @@
   ],
   "anchor": "ball-of-twine--string",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#ball-of-twine--string",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7229,7 +7229,7 @@
   ],
   "anchor": "waterskin--canteen",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#waterskin--canteen",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7260,7 +7260,7 @@
   ],
   "anchor": "whetstone",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#whetstone",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7291,7 +7291,7 @@
   ],
   "anchor": "wide-brim-hat",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#wide-brim-hat",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7322,7 +7322,7 @@
   ],
   "anchor": "wooden-stakes-6",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#wooden-stakes-6",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7353,7 +7353,7 @@
   ],
   "anchor": "work-gloves",
   "url": "/docs/free-srd/inventory--equipment/generic-equipment/#work-gloves",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7500,7 +7500,7 @@
   ],
   "anchor": "adaptive-mesh",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#adaptive-mesh",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7528,7 +7528,7 @@
   ],
   "anchor": "arcing",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7556,7 +7556,7 @@
   ],
   "anchor": "ballistic",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7584,7 +7584,7 @@
   ],
   "anchor": "battery",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7612,7 +7612,7 @@
   ],
   "anchor": "belt-fed",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#belt-fed",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7640,7 +7640,7 @@
   ],
   "anchor": "bulky",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7668,7 +7668,7 @@
   ],
   "anchor": "concealable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7696,7 +7696,7 @@
   ],
   "anchor": "durable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7724,7 +7724,7 @@
   ],
   "anchor": "firing-modes",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7752,7 +7752,7 @@
   ],
   "anchor": "fragile",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fragile",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7780,7 +7780,7 @@
   ],
   "anchor": "fuel-cell",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7808,7 +7808,7 @@
   ],
   "anchor": "injector",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7836,7 +7836,7 @@
   ],
   "anchor": "long-reload",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#long-reload",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7864,7 +7864,7 @@
   ],
   "anchor": "power-source",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7892,7 +7892,7 @@
   ],
   "anchor": "pressurized",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#pressurized",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7920,7 +7920,7 @@
   ],
   "anchor": "rounds-reload",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#rounds-reload",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7948,7 +7948,7 @@
   ],
   "anchor": "space-suit",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -7976,7 +7976,7 @@
   ],
   "anchor": "throwable",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -8004,7 +8004,7 @@
   ],
   "anchor": "two-handed",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -8032,7 +8032,7 @@
   ],
   "anchor": "versatile",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#versatile",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "core"
   ],
@@ -9111,7 +9111,7 @@
   ],
   "anchor": "analgesic-radiation-antidote-5-ara-5",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9143,7 +9143,7 @@
   ],
   "anchor": "auto-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#auto-injector",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9175,7 +9175,7 @@
   ],
   "anchor": "auto-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9239,7 +9239,7 @@
   ],
   "anchor": "ballistic-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9270,7 +9270,7 @@
   ],
   "anchor": "basic-p-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#basic-p-suit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9302,7 +9302,7 @@
   ],
   "anchor": "standardized-battery-cores",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9333,7 +9333,7 @@
   ],
   "anchor": "bio-scanner",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9364,7 +9364,7 @@
   ],
   "anchor": "bioskin-veil",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bioskin-veil",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9395,7 +9395,7 @@
   ],
   "anchor": "bipod",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#bipod",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9427,7 +9427,7 @@
   ],
   "anchor": "boost-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#boost-pack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9458,7 +9458,7 @@
   ],
   "anchor": "chameleon-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#chameleon-unit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9490,7 +9490,7 @@
   ],
   "anchor": "classic-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#classic-evosuit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9522,7 +9522,7 @@
   ],
   "anchor": "collapsible-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#collapsible-shield",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9553,7 +9553,7 @@
   ],
   "anchor": "combat-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-evosuit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9585,7 +9585,7 @@
   ],
   "anchor": "combat-vest",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9617,7 +9617,7 @@
   ],
   "anchor": "comp-jack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9649,7 +9649,7 @@
   ],
   "anchor": "compact-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#compact-rifle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9682,7 +9682,7 @@
   ],
   "anchor": "coms-headset",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9713,7 +9713,7 @@
   ],
   "anchor": "coms-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9745,7 +9745,7 @@
   ],
   "anchor": "crash-foam-canister",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9776,7 +9776,7 @@
   ],
   "anchor": "data-spike",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#data-spike",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9808,7 +9808,7 @@
   ],
   "anchor": "decoy-beacon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#decoy-beacon",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9870,7 +9870,7 @@
   ],
   "anchor": "drum-magazines",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#drum-magazines",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9902,7 +9902,7 @@
   ],
   "anchor": "emergency-beacon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-beacon",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9933,7 +9933,7 @@
   ],
   "anchor": "emergency-hatchet",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#emergency-hatchet",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9966,7 +9966,7 @@
   ],
   "anchor": "emergency-oxygen-mask",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-oxygen-mask",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -9997,7 +9997,7 @@
   ],
   "anchor": "emergency-shank",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#emergency-shank",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10029,7 +10029,7 @@
   ],
   "anchor": "emergency-trauma-patch",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-trauma-patch",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10060,7 +10060,7 @@
   ],
   "anchor": "enforcer-armor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#enforcer-armor",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10092,7 +10092,7 @@
   ],
   "anchor": "eva-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10124,7 +10124,7 @@
   ],
   "anchor": "extended-barrel",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#extended-barrel",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10156,7 +10156,7 @@
   ],
   "anchor": "field-ration",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#field-ration",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10188,7 +10188,7 @@
   ],
   "anchor": "forward-assault-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#forward-assault-shield",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10220,7 +10220,7 @@
   ],
   "anchor": "fuel-cells",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10251,7 +10251,7 @@
   ],
   "anchor": "grapple-line-launcher",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#grapple-line-launcher",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10282,7 +10282,7 @@
   ],
   "anchor": "gravity-anchor",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#gravity-anchor",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10313,7 +10313,7 @@
   ],
   "anchor": "hazard-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10345,7 +10345,7 @@
   ],
   "anchor": "heavy-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#heavy-pistol",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10378,7 +10378,7 @@
   ],
   "anchor": "heavy-rotary-cannon",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#heavy-rotary-cannon",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10411,7 +10411,7 @@
   ],
   "anchor": "jump-boosters",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-boosters",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10442,7 +10442,7 @@
   ],
   "anchor": "jump-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-pack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10503,7 +10503,7 @@
   ],
   "anchor": "knuckle-taser",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#knuckle-taser",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10536,7 +10536,7 @@
   ],
   "anchor": "laser-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10569,7 +10569,7 @@
   ],
   "anchor": "laser-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10602,7 +10602,7 @@
   ],
   "anchor": "light-combat-vest",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#light-combat-vest",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10634,7 +10634,7 @@
   ],
   "anchor": "light-pistol",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#light-pistol",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10667,7 +10667,7 @@
   ],
   "anchor": "long-range-coms",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#long-range-coms",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10698,7 +10698,7 @@
   ],
   "anchor": "long-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#long-rifle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10731,7 +10731,7 @@
   ],
   "anchor": "mag-boots",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-boots",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10762,7 +10762,7 @@
   ],
   "anchor": "mag-cuffs",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-cuffs",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10793,7 +10793,7 @@
   ],
   "anchor": "mebn-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#mebn-hud",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10856,7 +10856,7 @@
   ],
   "anchor": "mini-laser-cutter",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mini-laser-cutter",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10887,7 +10887,7 @@
   ],
   "anchor": "mobile-phone",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mobile-phone",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10918,7 +10918,7 @@
   ],
   "anchor": "overcharge-chamber",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#overcharge-chamber",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10950,7 +10950,7 @@
   ],
   "anchor": "padded-flight-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#padded-flight-suit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -10982,7 +10982,7 @@
   ],
   "anchor": "pain-suppressant-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11013,7 +11013,7 @@
   ],
   "anchor": "personal-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#personal-shield",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11044,7 +11044,7 @@
   ],
   "anchor": "portable-heater",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-heater",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11075,7 +11075,7 @@
   ],
   "anchor": "portable-water-purifier",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-water-purifier",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11106,7 +11106,7 @@
   ],
   "anchor": "reactor-cores",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11137,7 +11137,7 @@
   ],
   "anchor": "recoil-compensation-system",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#recoil-compensation-system",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11169,7 +11169,7 @@
   ],
   "anchor": "reflex-sight",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#reflex-sight",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11201,7 +11201,7 @@
   ],
   "anchor": "remote-detonator",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#remote-detonator",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11263,7 +11263,7 @@
   ],
   "anchor": "ripper-blade",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#ripper-blade",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11296,7 +11296,7 @@
   ],
   "anchor": "safer-unit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#safer-unit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11328,7 +11328,7 @@
   ],
   "anchor": "scav-gear",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#scav-gear",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11360,7 +11360,7 @@
   ],
   "anchor": "security-flight-suit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#security-flight-suit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11392,7 +11392,7 @@
   ],
   "anchor": "shock-baton",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11425,7 +11425,7 @@
   ],
   "anchor": "shock-charger",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-charger",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11457,7 +11457,7 @@
   ],
   "anchor": "shock-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-rifle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11490,7 +11490,7 @@
   ],
   "anchor": "signature-spoofer",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#signature-spoofer",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11521,7 +11521,7 @@
   ],
   "anchor": "site-safety-gear",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#site-safety-gear",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11553,7 +11553,7 @@
   ],
   "anchor": "solar-array-pack",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#solar-array-pack",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11584,7 +11584,7 @@
   ],
   "anchor": "squad-shield",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#squad-shield",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11615,7 +11615,7 @@
   ],
   "anchor": "standard-issue-knife",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#standard-issue-knife",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11648,7 +11648,7 @@
   ],
   "anchor": "standard-issue-rifle",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#standard-issue-rifle",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11681,7 +11681,7 @@
   ],
   "anchor": "survival-tent",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#survival-tent",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11712,7 +11712,7 @@
   ],
   "anchor": "targeting-hud",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#targeting-hud",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11775,7 +11775,7 @@
   ],
   "anchor": "ultraweave-evosuit",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ultraweave-evosuit",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11807,7 +11807,7 @@
   ],
   "anchor": "vitaboost-injector",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -11838,7 +11838,7 @@
   ],
   "anchor": "weighted-core",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#weighted-core",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],

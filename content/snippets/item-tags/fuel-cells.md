@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-### Fuel Cell
-
 *Fuel Cell*
 
 Requires a [standardized fuel cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells) to operate. Fuel cells are pressurized containers of combustible  propellant used in propulsion systems, heat-based tools, and combustion equipment. Most items with this tag require a single supply roll per use.

@@ -31,17 +31,17 @@ generic-equipment/wide-brim-hat
 generic-equipment/work-gloves
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/face-wrap" >}}
+{{< blockdetails "generic-equipment/face-wrap" "h3" >}}
 
-{{< blockdetails "generic-equipment/heavy-cloak" >}}
+{{< blockdetails "generic-equipment/heavy-cloak" "h3" >}}
 
-{{< blockdetails "generic-equipment/rain-poncho" >}}
+{{< blockdetails "generic-equipment/rain-poncho" "h3" >}}
 
-{{< blockdetails "generic-equipment/reinforced-boots" >}}
+{{< blockdetails "generic-equipment/reinforced-boots" "h3" >}}
 
-{{< blockdetails "generic-equipment/wide-brim-hat" >}}
+{{< blockdetails "generic-equipment/wide-brim-hat" "h3" >}}
 
-{{< blockdetails "generic-equipment/work-gloves" >}}
+{{< blockdetails "generic-equipment/work-gloves" "h3" >}}
 
 ---
 
@@ -63,27 +63,27 @@ generic-equipment/saddlebags
 generic-equipment/satchel
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/backpack" >}}
+{{< blockdetails "generic-equipment/backpack" "h3" >}}
 
-{{< blockdetails "generic-equipment/barrel" >}}
+{{< blockdetails "generic-equipment/barrel" "h3" >}}
 
-{{< blockdetails "generic-equipment/lockable-chest" >}}
+{{< blockdetails "generic-equipment/lockable-chest" "h3" >}}
 
-{{< blockdetails "generic-equipment/crate" >}}
+{{< blockdetails "generic-equipment/crate" "h3" >}}
 
-{{< blockdetails "generic-equipment/dry-sack" >}}
+{{< blockdetails "generic-equipment/dry-sack" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-ammo" >}}
+{{< blockdetails "generic-equipment/pouch-set-ammo" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-small" >}}
+{{< blockdetails "generic-equipment/pouch-set-small" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-standard" >}}
+{{< blockdetails "generic-equipment/pouch-set-standard" "h3" >}}
 
-{{< blockdetails "generic-equipment/quiver" >}}
+{{< blockdetails "generic-equipment/quiver" "h3" >}}
 
-{{< blockdetails "generic-equipment/saddlebags" >}}
+{{< blockdetails "generic-equipment/saddlebags" "h3" >}}
 
-{{< blockdetails "generic-equipment/satchel" >}}
+{{< blockdetails "generic-equipment/satchel" "h3" >}}
 
 ---
 
@@ -98,13 +98,13 @@ generic-equipment/oil-lantern
 generic-equipment/torch
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/candle" >}}
+{{< blockdetails "generic-equipment/candle" "h3" >}}
 
-{{< blockdetails "generic-equipment/fuel-oil-flask" >}}
+{{< blockdetails "generic-equipment/fuel-oil-flask" "h3" >}}
 
-{{< blockdetails "generic-equipment/oil-lantern" >}}
+{{< blockdetails "generic-equipment/oil-lantern" "h3" >}}
 
-{{< blockdetails "generic-equipment/torch" >}}
+{{< blockdetails "generic-equipment/torch" "h3" >}}
 
 ---
 
@@ -121,17 +121,17 @@ generic-equipment/restorative-tonic
 generic-equipment/splint-materials
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/antiseptic-poultice" >}}
+{{< blockdetails "generic-equipment/antiseptic-poultice" "h3" >}}
 
-{{< blockdetails "generic-equipment/antitoxin" >}}
+{{< blockdetails "generic-equipment/antitoxin" "h3" >}}
 
-{{< blockdetails "generic-equipment/bandages-large" >}}
+{{< blockdetails "generic-equipment/bandages-large" "h3" >}}
 
-{{< blockdetails "generic-equipment/bandages-small" >}}
+{{< blockdetails "generic-equipment/bandages-small" "h3" >}}
 
-{{< blockdetails "generic-equipment/restorative-tonic" >}}
+{{< blockdetails "generic-equipment/restorative-tonic" "h3" >}}
 
-{{< blockdetails "generic-equipment/splint-materials" >}}
+{{< blockdetails "generic-equipment/splint-materials" "h3" >}}
 
 ---
 
@@ -152,25 +152,25 @@ generic-equipment/tent-4-person
 generic-equipment/waterskin
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/bedroll" >}}
+{{< blockdetails "generic-equipment/bedroll" "h3" >}}
 
-{{< blockdetails "generic-equipment/compass" >}}
+{{< blockdetails "generic-equipment/compass" "h3" >}}
 
-{{< blockdetails "generic-equipment/field-ration" >}}
+{{< blockdetails "generic-equipment/field-ration" "h3" >}}
 
-{{< blockdetails "generic-equipment/fire-starter" >}}
+{{< blockdetails "generic-equipment/fire-starter" "h3" >}}
 
-{{< blockdetails "generic-equipment/rope-50ft" >}}
+{{< blockdetails "generic-equipment/rope-50ft" "h3" >}}
 
-{{< blockdetails "generic-equipment/signal-mirror" >}}
+{{< blockdetails "generic-equipment/signal-mirror" "h3" >}}
 
-{{< blockdetails "generic-equipment/signal-whistle" >}}
+{{< blockdetails "generic-equipment/signal-whistle" "h3" >}}
 
-{{< blockdetails "generic-equipment/tent-2-person" >}}
+{{< blockdetails "generic-equipment/tent-2-person" "h3" >}}
 
-{{< blockdetails "generic-equipment/tent-4-person" >}}
+{{< blockdetails "generic-equipment/tent-4-person" "h3" >}}
 
-{{< blockdetails "generic-equipment/waterskin" >}}
+{{< blockdetails "generic-equipment/waterskin" "h3" >}}
 
 ---
 
@@ -192,27 +192,27 @@ generic-equipment/shovel
 generic-equipment/whetstone
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/chain-10ft" >}}
+{{< blockdetails "generic-equipment/chain-10ft" "h3" >}}
 
-{{< blockdetails "generic-equipment/chalk-sticks" >}}
+{{< blockdetails "generic-equipment/chalk-sticks" "h3" >}}
 
-{{< blockdetails "generic-equipment/grappling-hook" >}}
+{{< blockdetails "generic-equipment/grappling-hook" "h3" >}}
 
-{{< blockdetails "generic-equipment/ink-writing-instrument" >}}
+{{< blockdetails "generic-equipment/ink-writing-instrument" "h3" >}}
 
-{{< blockdetails "generic-equipment/long-crowbar" >}}
+{{< blockdetails "generic-equipment/long-crowbar" "h3" >}}
 
-{{< blockdetails "generic-equipment/manacles" >}}
+{{< blockdetails "generic-equipment/manacles" "h3" >}}
 
-{{< blockdetails "generic-equipment/parchment-sheets" >}}
+{{< blockdetails "generic-equipment/parchment-sheets" "h3" >}}
 
-{{< blockdetails "generic-equipment/pitons" >}}
+{{< blockdetails "generic-equipment/pitons" "h3" >}}
 
-{{< blockdetails "generic-equipment/sewing-set" >}}
+{{< blockdetails "generic-equipment/sewing-set" "h3" >}}
 
-{{< blockdetails "generic-equipment/shovel" >}}
+{{< blockdetails "generic-equipment/shovel" "h3" >}}
 
-{{< blockdetails "generic-equipment/whetstone" >}}
+{{< blockdetails "generic-equipment/whetstone" "h3" >}}
 
 ---
 
@@ -234,24 +234,24 @@ generic-equipment/coil-of-wire
 generic-equipment/wooden-stakes
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/animal-feed" >}}
+{{< blockdetails "generic-equipment/animal-feed" "h3" >}}
 
-{{< blockdetails "generic-equipment/twine" >}}
+{{< blockdetails "generic-equipment/twine" "h3" >}}
 
-{{< blockdetails "generic-equipment/blank-book-journal" >}}
+{{< blockdetails "generic-equipment/blank-book-journal" "h3" >}}
 
-{{< blockdetails "generic-equipment/block-of-soap" >}}
+{{< blockdetails "generic-equipment/block-of-soap" "h3" >}}
 
-{{< blockdetails "generic-equipment/common-alcohol-flask" >}}
+{{< blockdetails "generic-equipment/common-alcohol-flask" "h3" >}}
 
-{{< blockdetails "generic-equipment/bag-of-salt" >}}
+{{< blockdetails "generic-equipment/bag-of-salt" "h3" >}}
 
-{{< blockdetails "generic-equipment/iron-spikes" >}}
+{{< blockdetails "generic-equipment/iron-spikes" "h3" >}}
 
-{{< blockdetails "generic-equipment/small-bell" >}}
+{{< blockdetails "generic-equipment/small-bell" "h3" >}}
 
-{{< blockdetails "generic-equipment/candle-wax-block" >}}
+{{< blockdetails "generic-equipment/candle-wax-block" "h3" >}}
 
-{{< blockdetails "generic-equipment/coil-of-wire" >}}
+{{< blockdetails "generic-equipment/coil-of-wire" "h3" >}}
 
-{{< blockdetails "generic-equipment/wooden-stakes" >}}
+{{< blockdetails "generic-equipment/wooden-stakes" "h3" >}}

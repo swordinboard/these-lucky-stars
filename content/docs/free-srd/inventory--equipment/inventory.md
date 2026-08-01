@@ -4,8 +4,8 @@ description: "How inventory works in These Lucky Stars — carry weight, item sl
 weight: 2
 ---
 
-## Inventory Management
-{{% include "/snippets/inventory/carry-limits" %}}
 
-## Equipment Body Slots
-{{% include "/snippets/inventory/body-slots" %}}
+{{% include "/snippets/inventory/carry-limits" "h2" %}}
+
+
+{{% include "/snippets/inventory/body-slots" "h2" %}}

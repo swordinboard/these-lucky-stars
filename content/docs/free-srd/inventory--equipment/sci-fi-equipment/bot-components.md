@@ -6,20 +6,17 @@ wip: true
 ---
 # Bot Components
 
-{{% include "/snippets/components/overview" %}}
-
-## Installation
-
-{{% include "/snippets/components/installation" %}}
-
-## Power Sources and batteries
-
-{{% include "/snippets/components/power-sources" %}}
+{{% include "/snippets/components/overview" "h1" "false" %}}
 
 
-## Damage and Wounds
+{{% include "/snippets/components/installation" "h2" %}}
 
-{{% include "/snippets/components/damage-and-wounds" %}}
+
+{{% include "/snippets/components/power-sources" "h2" %}}
+
+
+
+{{% include "/snippets/components/damage-and-wounds" "h2" %}}
 
 
 ## Component Quick Reference
@@ -51,42 +48,42 @@ components/wrist-laser
 
 ## Bot Components
 
-{{< blockdetails "components/audio-processor" >}}
+{{< blockdetails "components/audio-processor" "h3" >}}
 
-{{< blockdetails "components/augmented-arm-actuators" >}}
+{{< blockdetails "components/augmented-arm-actuators" "h3" >}}
 
-{{< blockdetails "components/automatic-crash-foam-system" >}}
+{{< blockdetails "components/automatic-crash-foam-system" "h3" >}}
 
-{{< blockdetails "components/backup-power-cell" >}}
+{{< blockdetails "components/backup-power-cell" "h3" >}}
 
-{{< blockdetails "components/heavy-wrist-laser" >}}
+{{< blockdetails "components/heavy-wrist-laser" "h3" >}}
 
-{{< blockdetails "components/improved-cooling-system" >}}
+{{< blockdetails "components/improved-cooling-system" "h3" >}}
 
-{{< blockdetails "components/internal-comp-jack" >}}
+{{< blockdetails "components/internal-comp-jack" "h3" >}}
 
-{{< blockdetails "components/manipulator-override" >}}
+{{< blockdetails "components/manipulator-override" "h3" >}}
 
-{{< blockdetails "components/optical-suite" >}}
+{{< blockdetails "components/optical-suite" "h3" >}}
 
-{{< blockdetails "components/reinforced-chassis-plating" >}}
+{{< blockdetails "components/reinforced-chassis-plating" "h3" >}}
 
-{{< blockdetails "components/relay-node" >}}
+{{< blockdetails "components/relay-node" "h3" >}}
 
-{{< blockdetails "components/repair-subroutine" >}}
+{{< blockdetails "components/repair-subroutine" "h3" >}}
 
-{{< blockdetails "components/servo-boost-legs" >}}
+{{< blockdetails "components/servo-boost-legs" "h3" >}}
 
-{{< blockdetails "components/shield-mount" >}}
+{{< blockdetails "components/shield-mount" "h3" >}}
 
-{{< blockdetails "components/signal-mast-retractable" >}}
+{{< blockdetails "components/signal-mast-retractable" "h3" >}}
 
-{{< blockdetails "components/signal-mast-heavy" >}}
+{{< blockdetails "components/signal-mast-heavy" "h3" >}}
 
-{{< blockdetails "components/stabilizer-gyros" >}}
+{{< blockdetails "components/stabilizer-gyros" "h3" >}}
 
-{{< blockdetails "components/subdermal-plating" >}}
+{{< blockdetails "components/subdermal-plating" "h3" >}}
 
-{{< blockdetails "components/targeting-array" >}}
+{{< blockdetails "components/targeting-array" "h3" >}}
 
-{{< blockdetails "components/wrist-laser" >}}
+{{< blockdetails "components/wrist-laser" "h3" >}}

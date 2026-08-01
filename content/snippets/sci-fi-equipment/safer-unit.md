@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, armor-upgrade]
 summary: "Back. A propulsion unit for navigating in zero gravity."
 ---
 
-#### SAFER Unit
-
 *--Cr — 40lbs — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) — Back*
 
 Simplified Aid For EVA Rescue unit

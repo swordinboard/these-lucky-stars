@@ -7,8 +7,6 @@ tags: [equipment, generic, containers]
 summary: "Holds most handheld items for quick access."
 ---
 
-### Pouch Set, Standard
-
 *--Price — 1lbs*
 
 A standard set of medium pouches that allows quick access to most small items. Can store up to four handheld-sized items, each weighing no more than 5lbs. Stored items can be retrived for 1 AP.

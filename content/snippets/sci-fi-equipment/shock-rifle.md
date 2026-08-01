@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
 ---
 
-### Shock Rifle
-
 *--Cr — 6lbs — 8 Object DEF — 20ft — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Shock*
 

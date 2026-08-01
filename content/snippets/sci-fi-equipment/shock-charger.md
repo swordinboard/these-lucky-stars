@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, melee-upgrade]
 summary: "All melee. +1 damage, changes type to shock. FORT check or lose 1 AP."
 ---
 
-### Shock Charger
-
 *--Cr — 1lbs*
 *Compatibility: All Melee Weapons*
 

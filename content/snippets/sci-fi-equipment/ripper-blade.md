@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Two-handed. Deals +5 shatter damage to armor."
 ---
 
-### Ripper Blade
-
 *--Cr — 2lbs — 16 Object DEF — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Physical*
 

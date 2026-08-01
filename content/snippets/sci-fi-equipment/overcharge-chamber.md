@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "All battery ranged. 3/day increase a damage die by one size."
 ---
 
-### Overcharge Chamber
-
 *--Cr — 0lbs*
 *Compatibility: All Battery Based Ranged Weapons*
 

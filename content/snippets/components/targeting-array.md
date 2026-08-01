@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, component]
 summary: "+1 ranged ATK, limited daily uses"
 ---
 
-### Targeting Array
-
 *–Cr — 1lb — Head — Internal*
 
 A targeting computer wired directly into the host's optical systems. 3/day for 1 AP, the host can activate the array gaining a +1 bonus to ranged attack rolls *made during their next turn.*

@@ -15,6 +15,5 @@ weight: 1
 - [Tech & Gadgets](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#tech--gadgets)
 - [Weapons](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/)
 
-## Common Equipment Terms
 
-{{% include "/snippets/equipment/common-terms" %}}
+{{% include "/snippets/equipment/common-terms" "h2" %}}

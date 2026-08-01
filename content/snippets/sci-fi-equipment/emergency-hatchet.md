@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Throwable [20ft]."
 ---
 
-### Emergency Hatchet
-
 *--Cr — 1lbs — 10 Object DEF — [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) [20ft]*
 *Damage Type: Physical*
 

@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, armor, heavy-armor]
 summary: "Tactical variation of the padded flight suit."
 ---
 
-#### Security Flight Suit
-
 *--Cr — +4 DEF Bonus — -1 AGI/DEX — 12lbs — 14 Object DEF*
 
 *Upgrades: [Coms Unit](#coms-unit)*

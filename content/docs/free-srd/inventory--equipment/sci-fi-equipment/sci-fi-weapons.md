@@ -26,17 +26,17 @@ sci-fi-equipment/shock-baton
 
 #### Light Melee Weapons
 
-{{< blockdetails "sci-fi-equipment/knuckle-taser" >}}
+{{< blockdetails "sci-fi-equipment/knuckle-taser" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/standard-issue-knife" >}}
+{{< blockdetails "sci-fi-equipment/standard-issue-knife" "h5" >}}
 
 #### Medium Melee Weapons
 
-{{< blockdetails "sci-fi-equipment/emergency-hatchet" >}}
+{{< blockdetails "sci-fi-equipment/emergency-hatchet" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/ripper-blade" >}}
+{{< blockdetails "sci-fi-equipment/ripper-blade" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/shock-baton" >}}
+{{< blockdetails "sci-fi-equipment/shock-baton" "h5" >}}
 
 ---
 
@@ -69,29 +69,29 @@ sci-fi-equipment/heavy-rotary-cannon
 
 #### Pistols
 
-{{< blockdetails "sci-fi-equipment/auto-pistol" >}}
+{{< blockdetails "sci-fi-equipment/auto-pistol" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/heavy-pistol" >}}
+{{< blockdetails "sci-fi-equipment/heavy-pistol" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/laser-pistol" >}}
+{{< blockdetails "sci-fi-equipment/laser-pistol" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/light-pistol" >}}
+{{< blockdetails "sci-fi-equipment/light-pistol" "h5" >}}
 
 #### Rifles
 
-{{< blockdetails "sci-fi-equipment/compact-rifle" >}}
+{{< blockdetails "sci-fi-equipment/compact-rifle" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/laser-rifle" >}}
+{{< blockdetails "sci-fi-equipment/laser-rifle" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/long-rifle" >}}
+{{< blockdetails "sci-fi-equipment/long-rifle" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/shock-rifle" >}}
+{{< blockdetails "sci-fi-equipment/shock-rifle" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/standard-issue-rifle" >}}
+{{< blockdetails "sci-fi-equipment/standard-issue-rifle" "h5" >}}
 
 #### Heavy Ranged Weapons
 
-{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" >}}
+{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" "h5" >}}
 
 ---
 
@@ -119,22 +119,22 @@ sci-fi-equipment/weighted-core
 
 #### Ranged Weapon Upgrades
 
-{{< blockdetails "sci-fi-equipment/bipod" >}}
+{{< blockdetails "sci-fi-equipment/bipod" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/drum-magazines" >}}
+{{< blockdetails "sci-fi-equipment/drum-magazines" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/extended-barrel" >}}
+{{< blockdetails "sci-fi-equipment/extended-barrel" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/forward-assault-shield" >}}
+{{< blockdetails "sci-fi-equipment/forward-assault-shield" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/overcharge-chamber" >}}
+{{< blockdetails "sci-fi-equipment/overcharge-chamber" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/recoil-compensation-system" >}}
+{{< blockdetails "sci-fi-equipment/recoil-compensation-system" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/reflex-sight" >}}
+{{< blockdetails "sci-fi-equipment/reflex-sight" "h5" >}}
 
 #### Melee Weapon Upgrades
 
-{{< blockdetails "sci-fi-equipment/shock-charger" >}}
+{{< blockdetails "sci-fi-equipment/shock-charger" "h5" >}}
 
-{{< blockdetails "sci-fi-equipment/weighted-core" >}}
+{{< blockdetails "sci-fi-equipment/weighted-core" "h5" >}}

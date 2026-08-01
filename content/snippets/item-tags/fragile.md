@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-### Fragile
-
 Items with the Fragile tag have a maximum VIT of 2 rather than the standard 3. They reach their broken state faster and have only one damaged threshold before failing entirely.
 
 **Special Applications:**

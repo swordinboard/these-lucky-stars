@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range."
 ---
 
-### Bipod
-
 *--Cr — 1lbs*
 *Compatibility: Rifles, Heavy Ranged Weapons*
 

@@ -7,8 +7,6 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Heavy Ranged. Partial cover, -1 attack while active."
 ---
 
-### Forward Assault Shield
-
 *--Cr — 3lbs*
 *Compatibility: Heavy Ranged Weapons*
 

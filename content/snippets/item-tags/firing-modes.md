@@ -6,8 +6,6 @@ type: rule
 tags: [item-tag]
 ---
 
-### Firing Modes
-
 A weapon's firing mode determines what abilities can be used with it and how quickly it depletes ammo.
 
 **Full-auto:** A rapid-fire mode good for suppression and support. Each attack requires one supply roll.
