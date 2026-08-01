@@ -37,7 +37,8 @@ What it checks, and why each one exists:
 | 3 | `linkcheck.py` | Broken internal links and `#anchors`, scanned on the **built** site (so it sees shortcode- and include-generated output, not just markdown). |
 | 4 | `builddata.py --check` | `data/blocks.json` / `data/edges.json` drifted out of sync with the content. |
 | 5 | `buildercss.py` | A shortcode's markup reaching the PDF builder with no styling, so it prints as a bare stack. Names the class and points at `assets/content-constructs.css`. |
-| 6 | `rendercheck.py` (only with a baseline) | **Content that disappears from the rendered page even though the markdown still exists.** Include boundaries can swallow text; a source-level diff will not see it. Prints `REVIEW`, not PASS/FAIL — read the list and confirm you meant those changes. |
+| 6 | `orphancheck.py` | A snippet that exists but sits on no page — in the corpus and the PDF builder, invisible to anyone browsing. The quietest failure here, because nothing else reports it. |
+| 7 | `rendercheck.py` (only with a baseline) | **Content that disappears from the rendered page even though the markdown still exists.** Include boundaries can swallow text; a source-level diff will not see it. Prints `REVIEW`, not PASS/FAIL — read the list and confirm you meant those changes. |
 
 **Known/accepted failures** (safe to merge with these):
 
@@ -832,11 +833,18 @@ If `/snippets/` or taxonomy pages reappear in the sitemap after an update, check
 
 Nothing here needs a manual sync step. Three mechanisms carry it:
 
-**Content is generated, never listed.** `layouts/builder/list.builderdata.json`
-is a Hugo output format that emits `/builder/blocks.json` from the site's own
-pages and snippets at build time. Write a new snippet or page and it is in the
-builder on the next build — there is no inventory to update, and nothing to
-remember.
+**Content is generated, but the generator is a local step.**
+`layouts/builder/list.builderdata.json` emits `/builder/blocks.json` at Hugo
+build time — but it reads `site.Data.blocks` and `site.Data.pages`, i.e. the
+committed `data/*.json`. Those are produced by `builddata.py`, and **Netlify
+only runs `hugo --minify`** — it never runs `builddata.py`. So `data/` is a
+committed inventory of the corpus, not something rebuilt on deploy.
+
+In practice that means: after adding or renaming a snippet, run
+`python3 _discovery/tools/builddata.py` and commit the result. You do not have
+to *remember* to — check 4 fails until you do — but it is a real step, not
+magic. A prose-only edit to an existing snippet usually needs nothing, since
+`data/` records frontmatter and structure rather than body text.
 
 **Shared styling has one home.** The builder page sits outside the book theme's
 chrome, so it does not load the theme stylesheet, and anything a shortcode

@@ -57,8 +57,11 @@ if python3 _discovery/tools/builddata.py --check; then ok "canonical data matche
 step "5. PDF builder styles every construct the content uses"
 if python3 _discovery/tools/buildercss.py "$OUT/site"; then ok "no unstyled constructs in the builder"; else bad "see above"; fi
 
+step "6. Every block is reachable from some page"
+if python3 _discovery/tools/orphancheck.py; then ok "no stranded blocks"; else bad "see above"; fi
+
 if [ -n "$BASELINE" ]; then
-  step "6. Rendered-text diff vs $BASELINE (no silent content loss)"
+  step "7. Rendered-text diff vs $BASELINE (no silent content loss)"
   wt="$OUT/baseline"
   if git worktree add -q --detach "$wt" "$BASELINE" 2>/dev/null; then
     rm -rf "$wt/themes/hugo-book"
