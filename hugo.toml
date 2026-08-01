@@ -29,15 +29,21 @@ disableKinds = ["taxonomy", "term"]
   url = "/digitalcharactersheet.html"
   weight = 2
 
+# Hugo page rather than a static file — see content/builder/ and layouts/builder/.
+[[menu.after]]
+  name = "PDF Builder"
+  url = "/builder/"
+  weight = 3
+
 [[menu.after]]
   name = "Attribute Converter"
   url = "/attributeconverter.html"
-  weight = 3
+  weight = 4
 
 [[menu.after]]
   name = "Planet Generator"
   url = "/planetnamegenerator.html"
-  weight = 4
+  weight = 5
 
 # PDF BUILDER DATA
 #
