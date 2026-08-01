@@ -820,3 +820,28 @@ Current known noise exclusions (already handled):
 - `content/snippets/_index.md` with `build: render: never` cascade — removes `/snippets/` and all snippet URLs
 
 If `/snippets/` or taxonomy pages reappear in the sitemap after an update, check those two settings first.
+
+---
+
+## The PDF builder duplicates some site CSS on purpose
+
+`assets/builder.css` is standalone: it does not import `assets/_custom.scss` or
+the theme's `_shortcodes.scss`, because the builder page deliberately sits
+outside the book theme's chrome. The cost is that any *shortcode construct* a
+page uses arrives in the builder as bare, unstyled markup.
+
+That has already bitten once. A `{{< catalog layout="names" >}}` index reached
+the builder as a plain nested `<ul>`, so a two-column list of short names
+printed as one very tall single-column stack, and `{{< tabs >}}` printed its
+radio buttons into the PDF.
+
+`builder.css` therefore carries its own copies of the rules for
+`.block-index`, `.four-col`, `.book-columns` and `.book-tabs`, under a comment
+saying so. **If you restyle any of those on the site, restyle them there too.**
+The audit that finds new cases is: collect every `class="…"` in
+`public/builder/blocks.json` and check each name against `builder.css`.
+
+One deliberate divergence: on the site `{{< tabs >}}` shows one panel and hides
+the rest. A printed document cannot be clicked, and hiding a panel would drop
+its content from the PDF, so the builder shows every panel and turns each tab
+label into a heading.

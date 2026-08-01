@@ -169,6 +169,54 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 /* details are a screen affordance; in a PDF the content simply belongs there */
 .markdown details > summary { cursor: pointer; font-weight: 600; }
 
+/* ------------------------------------------------- catalogs and site widgets
+
+   builder.css is standalone — it does not pull in the site's _custom.scss or
+   the theme's shortcode styles. Any construct a page uses therefore arrives
+   here as bare markup: a {{< catalog layout="names" >}} index came through as
+   an unstyled nested <ul>, so a two-column list of short names printed as one
+   very tall single-column stack, and {{< tabs >}} printed its radio buttons.
+   These rules mirror assets/_custom.scss and the theme's _shortcodes.scss.
+   If the site's versions change, change these to match. */
+
+.markdown .block-index {
+  list-style: none; margin: 1em 0; padding: 0;
+  columns: 2; column-gap: 1rem;      /* raise to 3 for a denser printed index */
+  font-size: .85em; line-height: 1.4;
+}
+/* keep a parent and its children in one column, and on one page */
+.markdown .block-index > li { break-inside: avoid; page-break-inside: avoid; }
+/* hanging indent: a wrapped name continues under itself, not back at the dash,
+   which would otherwise read as a new entry at a glance */
+.markdown .block-index li {
+  padding-block: .1rem; padding-inline-start: .85em; text-indent: -.85em;
+}
+.markdown .block-index ul { list-style: none; margin: 0; padding-inline-start: .5rem; }
+.markdown .block-index li.deep { margin-inline-start: .5rem; }
+.markdown .block-index ul li::before {
+  content: ""; display: inline-block; width: .25rem; height: 1px;
+  vertical-align: middle; margin-inline-end: .25rem;
+  background: currentColor; opacity: .5;
+}
+.markdown .block-index a { text-decoration: none; }
+
+/* {{< columns >}} and the four-column link lists */
+.markdown .four-col { columns: 3; column-gap: 1.5rem; }
+.markdown .four-col a { display: block; padding: .15rem 0; }
+.markdown .book-columns { display: flex; flex-wrap: wrap; gap: 1rem; }
+.markdown .book-columns > div { flex: 1 1 14rem; min-width: 0; }
+
+/* {{< tabs >}} are a way to show one panel and hide the rest. A document has
+   no way to click, and hiding the other panels would silently drop their
+   content from the PDF — the Core Luck abilities would simply not be there.
+   So every panel is shown, and each tab's label becomes its heading. */
+.markdown .book-tabs { display: block; margin: 1em 0; }
+.markdown .book-tabs input.toggle { display: none; }
+.markdown .book-tabs > label {
+  display: block; font-weight: 600; margin: .9em 0 .2em;
+}
+.markdown .book-tabs .book-tabs-content { display: block; }
+
 /* ------------------------------------------------------------ narrow screens
 
    Below 900px there is not room for a permanent library beside the document,
@@ -214,6 +262,10 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   .stage { padding: 10px 0 40vh; }
   #doc { padding: 1.5em 1.15em; box-shadow: none; }
   .doc-toc.two-col ul { columns: 1; }
+  /* the site drops to a single column here too, but these names are short
+     enough that two still beats the long scroll the index exists to avoid */
+  .markdown .four-col { columns: 2; }
+  .markdown .book-columns { display: block; }
 
   .item-bar {
     position: static; display: none; flex-wrap: wrap; box-shadow: none;
