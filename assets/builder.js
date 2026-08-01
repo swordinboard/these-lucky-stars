@@ -414,6 +414,127 @@
 
   function commit() { save(); renderPreview(); }
 
+  /* --------------------------------------------- printing with page numbers
+
+     A contents page needs to know which page each entry lands on, and nothing
+     in the browser will say: CSS target-counter() is unimplemented in Chrome,
+     and pagination is not exposed to JS at all. counter(page) works in the
+     running footer only because an @page margin box is evaluated by the engine
+     per sheet — body content has no equivalent.
+
+     So printing paginates the document itself, with paged.js, and reads the
+     answer off the result. The pages it produces are what gets printed, so the
+     numbers cannot disagree with the document they describe — measuring with
+     one engine and printing with another would be a guess.
+
+     Ctrl+P bypasses this and prints through the browser's own pagination: the
+     PDF is correct, just without contents-page numbers. Pagination is async and
+     beforeprint cannot wait for it, so there is no way to hook it. */
+
+  var pagedLoading = null;
+
+  /* The library build exposes PagedModule; the polyfill build exposes Paged.
+   * Accept either so swapping builds does not silently disable printing. */
+  function pagedApi() { return window.PagedModule || window.Paged || null; }
+
+  function loadPaged() {
+    if (pagedApi()) return Promise.resolve();
+    if (pagedLoading) return pagedLoading;
+    var url = document.documentElement.getAttribute("data-paged-src");
+    if (!url) return Promise.reject(new Error("paged.js not available"));
+    pagedLoading = new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = url;
+      s.onload = resolve;
+      s.onerror = function () { reject(new Error("paged.js failed to load")); };
+      document.head.appendChild(s);
+    });
+    return pagedLoading;
+  }
+
+  /* Filling the numbers in changes the contents page, which could re-flow the
+   * document the numbers describe. Reserving the space up front means the
+   * layout paged.js measured is the layout that prints. */
+  function reserveTocSlots(root) {
+    Array.prototype.forEach.call(root.querySelectorAll(".doc-toc li"), function (li) {
+      var slot = el("span", "toc-pg");
+      slot.textContent = " ";
+      li.appendChild(slot);
+    });
+  }
+
+  function fillTocNumbers(rendered) {
+    var filled = 0, missing = 0;
+    Array.prototype.forEach.call(rendered.querySelectorAll(".doc-toc li"), function (li) {
+      var a = li.querySelector("a"), slot = li.querySelector(".toc-pg");
+      if (!a || !slot) return;
+      var target = rendered.querySelector(cssId(a.getAttribute("href").slice(1)));
+      var page = target && target.closest(".pagedjs_page");
+      if (page && page.getAttribute("data-page-number")) {
+        slot.textContent = page.getAttribute("data-page-number");
+        filled++;
+      } else {
+        missing++;
+      }
+    });
+    return { filled: filled, missing: missing };
+  }
+
+  /* Block ids contain characters querySelector would read as syntax. */
+  function cssId(id) {
+    return "#" + (window.CSS && CSS.escape ? CSS.escape(id) : id.replace(/([^\w-])/g, "\\$1"));
+  }
+
+  function printDocument() {
+    var btn = document.getElementById("print");
+    btn.disabled = true;
+    loadPaged().then(function () {
+      var source = document.getElementById("doc").cloneNode(true);
+      /* editing chrome must not reach paper */
+      Array.prototype.forEach.call(source.querySelectorAll(".item-bar"), function (n) {
+        n.parentNode.removeChild(n);
+      });
+      Array.prototype.forEach.call(source.querySelectorAll("[contenteditable]"), function (n) {
+        n.removeAttribute("contenteditable");
+      });
+      reserveTocSlots(source);
+
+      var out = el("div", "paged-out");
+      out.id = "paged-out";
+      document.body.appendChild(out);
+
+      return new (pagedApi().Previewer)()
+        .preview(source.innerHTML, [], out)
+        .then(function (flow) {
+          var res = fillTocNumbers(out);
+          document.body.classList.add("printing");
+          return { flow: flow, res: res, out: out };
+        });
+    }).then(function (state) {
+      function cleanup() {
+        document.body.classList.remove("printing");
+        var n = document.getElementById("paged-out");
+        if (n) n.parentNode.removeChild(n);
+        window.removeEventListener("afterprint", cleanup);
+        btn.disabled = false;
+      }
+      window.addEventListener("afterprint", cleanup);
+      window.print();
+      /* Safari and some mobile browsers never fire afterprint. */
+      setTimeout(function () {
+        if (document.body.classList.contains("printing")) cleanup();
+      }, 60000);
+    }).catch(function (err) {
+      /* Never leave someone unable to print because the paginator failed. */
+      if (window.console) console.warn("paged.js unavailable, printing without contents-page numbers:", err);
+      var n = document.getElementById("paged-out");
+      if (n) n.parentNode.removeChild(n);
+      document.body.classList.remove("printing");
+      btn.disabled = false;
+      window.print();
+    });
+  }
+
   /* ------------------------------------------------------ narrow-screen shell */
 
   function narrow() { return window.matchMedia("(max-width: 900px)").matches; }
@@ -558,7 +679,7 @@
       document.body.classList.toggle("compact", e.target.checked);
     });
 
-    document.getElementById("print").onclick = function () { window.print(); };
+    document.getElementById("print").onclick = printDocument;
     document.getElementById("clear").onclick = function () {
       if (!confirm("Clear the whole document? This cannot be undone.")) return;
       doc = blankDoc();

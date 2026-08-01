@@ -14,7 +14,10 @@
       | resources.Concat "builder-bundle.css" | resources.Minify | resources.Fingerprint -}}
 {{- $js  := resources.Get "builder.js"  | resources.Minify | resources.Fingerprint -}}
 <!DOCTYPE html>
-<html lang="{{ site.Language.Lang }}">
+{{- /* Fetched only when Print is pressed — see printDocument() in builder.js
+       and assets/vendor/README.md for why it exists at all. */ -}}
+{{- $paged := resources.Get "vendor/paged.min.js" | resources.Fingerprint -}}
+<html lang="{{ site.Language.Lang }}" data-paged-src="{{ $paged.RelPermalink }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +26,9 @@
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- /* The @page running head can only take a string, so the strapline is
+         handed to CSS as a custom property rather than as markup. */ -}}
+  <style>:root { --running-head: "{{ site.Title }}: a modular TTRPG by Sword in Board Workshop"; }</style>
 </head>
 <body class="loading">
 
@@ -65,23 +71,18 @@
     <div id="lib-list"></div>
   </aside>
 
-  {{- /* The table is here purely to get a running head onto every printed
-         sheet. A thead is the only construct browsers both repeat per page AND
-         reserve vertical space for — a position:fixed element repeats but
-         reserves nothing, so the head lands on top of the first line of body
-         text. The table is display:block on screen, so it changes nothing
-         there; only @media print turns it back into a table. */ -}}
+  {{- /* The running head used to be a repeating <thead> wrapped around this
+         article, because @page margin boxes were assumed unsupported. They are
+         not — the footer proved it — and the table could not survive printing
+         through paged.js, which paginates a clone of #doc alone. Both header
+         and footer are now margin boxes in builder.css: one mechanism, and it
+         works the same whether the browser paginates or paged.js does. */ -}}
   <main class="stage">
-    <table class="print-frame">
-      <thead><tr><td>
-        <div class="running-head">{{ site.Title }}: a modular TTRPG by Sword in Board Workshop</div>
-      </td></tr></thead>
-      <tbody><tr><td>
-        <article id="doc" class="markdown"></article>
-      </td></tr></tbody>
-    </table>
+    <article id="doc" class="markdown"></article>
   </main>
 </div>
+
+{{- /* paged.js renders the paginated document in here at print time. */ -}}
 
 <script src="{{ $js.RelPermalink }}"></script>
 </body>

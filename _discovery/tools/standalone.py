@@ -28,6 +28,11 @@ if not os.path.exists(data):
 css = (open(D("assets/builder.css")).read() + "\n"
        + open(D("assets/content-constructs.css")).read())
 js = open(D("assets/builder.js")).read()
+# Offline there is nothing to lazy-load from, so paged.js is inlined and
+# builder.js finds window.PagedModule already present. Without it Print still
+# works, just through the browser's own pagination and with no contents-page
+# numbers. Costs ~500KB.
+paged = open(D("assets/vendor/paged.min.js")).read()
 blocks = open(data).read()
 
 # The app markup lives in the Hugo layout, wrapped in template syntax. Take the
@@ -40,12 +45,18 @@ body = re.sub(r"\{\{.*?\}\}", "", body, flags=re.S).strip()
 # to a JSON parser and inert to the HTML tokenizer.
 safe = blocks.replace("<", "\\u003c")
 
+# The running head is a custom property set in the layout's <head>, which the
+# body-only extraction below does not pick up.
+head_css = ':root { --running-head: "These Lucky Stars: a modular TTRPG by Sword in Board Workshop"; }'
+
 out = f"""<style>
+{head_css}
 {css}
 </style>
 
 {body}
 
+<script>{paged}</script>
 <script>window.TLS_BLOCKS = {safe};</script>
 <script>
 {js}

@@ -93,9 +93,15 @@ Two extra things, both caught by the preflight — but know what they are:
    - Contents page unticked → the title still sits above the first block
    - The grey line is on **every** page, not just the first
    - The footer shows your title and `3 / 9` on every page
+   - The contents page has page numbers against each entry, and they are right
    - On a phone: no sideways scrolling
 4. If you want the offline single-file copy refreshed:
    `python3 _discovery/tools/standalone.py tls-pdf-builder.html`
+
+Note: contents-page numbers only appear when you use the **Print button**.
+Ctrl+P prints through the browser's own pagination — a correct PDF, but with no
+numbers in the contents. That is not fixable: numbering needs the document
+paginated first, which is asynchronous, and the browser will not wait.
 
 ---
 

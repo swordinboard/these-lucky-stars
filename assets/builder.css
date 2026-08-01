@@ -207,10 +207,11 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
    inline above the selected item instead of floating on hover, which touch
    does not have. */
 
-/* Inert on screen — see the comment in layouts/builder/list.html. */
-.print-frame, .print-frame > tbody, .print-frame > tbody > tr,
-.print-frame > tbody > tr > td { display: block; width: auto; }
-.print-frame > thead { display: none; }
+/* paged.js measures what it lays out, so this cannot be display:none — a
+   hidden box has no geometry and pagination throws on the first
+   getBoundingClientRect. It is parked off-screen instead, and @media print
+   brings it back. */
+.paged-out { position: absolute; left: -200vw; top: 0; }
 .on-narrow { display: none; }
 .scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 35; }
 
@@ -284,8 +285,12 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
      with the title block. Browsers without margin-box support lose the
      footer and keep everything else. */
   @page {
-    margin: 14mm 16mm 17mm;           /* the thead adds the rest of the top gap */
+    margin: 17mm 16mm;
 
+    @top-center {
+      content: var(--running-head, "");
+      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+    }
     @bottom-left {
       content: var(--doc-title, "");
       font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
@@ -330,20 +335,27 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   body.compact .doc-front, body.compact .doc-toc,
   body.compact .doc-head { opacity: 1 !important; }
 
-  /* The running head, repeated on every sheet. Chrome will only repeat a
-     position:fixed element that sits inside the page content box, and it
-     reserves no space there — the head then prints on top of the first line of
-     body text, and drops off the last page entirely. A thead does both jobs.
-     The @page top margin is small because the thead supplies the gap itself. */
-  .print-frame { display: table; width: 100%; border-collapse: collapse; }
-  .print-frame > thead { display: table-header-group; }
-  .print-frame > tbody { display: table-row-group; }
-  .print-frame tr { display: table-row; }
-  .print-frame > thead > tr > td,
-  .print-frame > tbody > tr > td { display: table-cell; border: 0; padding: 0; }
-  .running-head {
-    text-align: center; font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
-    padding-bottom: 5mm; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  /* When paged.js has laid the document out, print that and nothing else. */
+  body.printing .app, body.printing .bar { display: none !important; }
+  body.printing .paged-out { position: static; left: auto; }
+
+  /* Content that does not fit a page box stays in the DOM, clipped. Without an
+     explicit clip it is invisible on paper but still lands in the PDF's text
+     layer, so copying or searching the file turns up a duplicate of whatever
+     moved to the next page. */
+  .pagedjs_page_content { overflow: hidden; }
+
+  /* Contents-page numbers, filled in from the paginated output. The dotted
+     leader is a flexing element rather than a repeated character, so it lands
+     on the same baseline whatever the entry's length. */
+  .paged-out .doc-toc li { display: flex; align-items: baseline; }
+  .paged-out .doc-toc .toc-dots {
+    flex: 1 1 auto; min-width: 1em; margin: 0 .35em;
+    border-bottom: 1px dotted currentColor; opacity: .3;
+    transform: translateY(-.2em);
+  }
+  .paged-out .doc-toc .toc-pg {
+    font-variant-numeric: tabular-nums; min-width: 1.4em; text-align: right;
   }
 
   /* Keep a heading with the text it introduces, and don't split a short block
