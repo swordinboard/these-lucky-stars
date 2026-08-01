@@ -25,8 +25,6 @@
   <button id="lib-toggle" class="on-narrow" aria-expanded="false"
           aria-controls="lib">＋ Add</button>
   <span class="brand"><a href="/docs/free-srd/">These Lucky Stars</a></span>
-  <input type="text" id="doc-title" aria-label="Document title" placeholder="Document title">
-  <input type="text" id="doc-sub" aria-label="Subtitle" placeholder="Subtitle">
   <span id="count">0 items</span>
   <span class="spacer"></span>
   <div class="bar-more" id="bar-more">
@@ -62,8 +60,21 @@
     <div id="lib-list"></div>
   </aside>
 
+  {{- /* The table is here purely to get a running head onto every printed
+         sheet. A thead is the only construct browsers both repeat per page AND
+         reserve vertical space for — a position:fixed element repeats but
+         reserves nothing, so the head lands on top of the first line of body
+         text. The table is display:block on screen, so it changes nothing
+         there; only @media print turns it back into a table. */ -}}
   <main class="stage">
-    <article id="doc" class="markdown"></article>
+    <table class="print-frame">
+      <thead><tr><td>
+        <div class="running-head">{{ site.Title }}: a modular TTRPG by Sword in Board Workshop</div>
+      </td></tr></thead>
+      <tbody><tr><td>
+        <article id="doc" class="markdown"></article>
+      </td></tr></tbody>
+    </table>
   </main>
 </div>
 

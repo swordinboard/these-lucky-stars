@@ -43,12 +43,6 @@ button:hover { border-color: var(--accent); color: var(--accent); }
 }
 .bar .brand { font-weight: 700; letter-spacing: .01em; }
 .bar .brand a { color: inherit; text-decoration: none; }
-.bar input[type=text] {
-  background: var(--bg); border: 1px solid var(--line); border-radius: 5px;
-  padding: 5px 9px; min-width: 0;
-}
-#doc-title { width: 15rem; font-weight: 600; }
-#doc-sub { width: 13rem; }
 .bar .spacer { flex: 1; }
 .bar label { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
 #count { color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -101,6 +95,19 @@ button:hover { border-color: var(--accent); color: var(--accent); }
 }
 .doc-head h1 { margin: 0 0 .15em; font-size: 2em; }
 .doc-sub { margin: 0; color: var(--muted); }
+
+/* The title block is typed straight into the document. It has to look editable
+   without looking like a form field sitting in the middle of a page proof —
+   hence an underline that only appears on hover, and a placeholder that only
+   appears when the line is empty. */
+[data-field] { border-radius: 3px; padding: 0 2px; margin-left: -2px; outline: none; }
+[data-field]:hover { box-shadow: inset 0 -1px 0 var(--line); }
+[data-field]:focus { box-shadow: inset 0 -2px 0 var(--accent); }
+[data-field]:empty::before {
+  content: attr(data-ph); color: var(--muted); opacity: .65;
+}
+/* An empty subtitle still needs to be clickable to be fillable in. */
+.doc-sub:empty { display: block; min-height: 1.5em; }
 .doc-toc { margin: 2em 0; border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line); padding: 1em 0; }
 .doc-toc h2 { margin: 0 0 .5em; font-size: 1em; text-transform: uppercase;
@@ -174,13 +181,16 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
    inline above the selected item instead of floating on hover, which touch
    does not have. */
 
+/* Inert on screen — see the comment in layouts/builder/list.html. */
+.print-frame, .print-frame > tbody, .print-frame > tbody > tr,
+.print-frame > tbody > tr > td { display: block; width: auto; }
+.print-frame > thead { display: none; }
 .on-narrow { display: none; }
 .scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 35; }
 
 @media (max-width: 900px) {
   .on-narrow { display: inline-flex; }
-  .wide-only, .brand, #doc-sub { display: none; }
-  #doc-title { flex: 1 1 6rem; width: auto; min-width: 0; }
+  .wide-only, .brand { display: none; }
   .bar { position: relative; gap: 7px; flex-wrap: nowrap; padding: 7px 9px; }
   #count { font-size: 12px; }
 
@@ -237,7 +247,7 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 /* --------------------------------------------------------------- the PDF */
 
 @media print {
-  @page { margin: 17mm 16mm; }
+  @page { margin: 14mm 16mm 17mm; }   /* the thead adds the rest of the top gap */
 
   html, body { height: auto; overflow: visible; display: block;
     background: #fff; color: #000; font-size: 10.5pt; }
@@ -251,8 +261,43 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 
   .doc-head { margin-bottom: 1.5em; }
   .doc-head h1 { font-size: 22pt; }
-  .doc-toc { break-after: page; }
   .doc-toc.two-col ul { columns: 2; }
+
+  /* With a contents page the front matter is a title page and the document
+     starts on a fresh sheet. Without one there is nothing to break away from:
+     the title sits directly above the first block. */
+  .doc-front.has-toc { break-after: page; }
+
+  /* Nothing in the title block should read as a form control on paper, and an
+     unfilled line should leave no trace — no placeholder, no empty gap. */
+  [data-field] { box-shadow: none !important; padding: 0; margin-left: 0; }
+  [data-field]:empty { display: none; }
+  [data-field]:empty::before { content: none; }
+
+  /* Compact is a screen-only editing view: it collapses every item to its
+     toolbar row so a long document can be reordered. Printing while it is on
+     produced a PDF with no content at all — the bodies were still hidden and
+     the toolbars are print-hidden too. Paper always gets the full document. */
+  body.compact .item-body { display: block !important; }
+  body.compact .item { min-height: 0; padding: 0; }
+  body.compact .doc-front, body.compact .doc-toc,
+  body.compact .doc-head { opacity: 1 !important; }
+
+  /* The running head, repeated on every sheet. Chrome will only repeat a
+     position:fixed element that sits inside the page content box, and it
+     reserves no space there — the head then prints on top of the first line of
+     body text, and drops off the last page entirely. A thead does both jobs.
+     The @page top margin is small because the thead supplies the gap itself. */
+  .print-frame { display: table; width: 100%; border-collapse: collapse; }
+  .print-frame > thead { display: table-header-group; }
+  .print-frame > tbody { display: table-row-group; }
+  .print-frame tr { display: table-row; }
+  .print-frame > thead > tr > td,
+  .print-frame > tbody > tr > td { display: table-cell; border: 0; padding: 0; }
+  .running-head {
+    text-align: center; font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+    padding-bottom: 5mm; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
 
   /* Keep a heading with the text it introduces, and don't split a short block
      across a page boundary. Long blocks must still be allowed to break, or a

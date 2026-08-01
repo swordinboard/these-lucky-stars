@@ -25,6 +25,17 @@
   var selected = null;        // uid
   var searchIndex = null;
 
+  /* The title block is edited in place rather than through a field in the
+   * toolbar — it is the one part of the document whose words are the user's
+   * own. "plaintext-only" keeps pasted markup from landing in the heading;
+   * where it is unsupported the paste handler below does the same job. */
+  var EDIT = (function () {
+    var probe = document.createElement("div");
+    try { probe.contentEditable = "plaintext-only"; } catch (e) {}
+    return probe.contentEditable === "plaintext-only"
+      ? "contenteditable='plaintext-only'" : "contenteditable='true'";
+  }());
+
   /* ---------------------------------------------------------------- utils */
 
   var uidSeq = 0;
@@ -196,12 +207,22 @@
       }
     });
 
-    var head = el("header", "doc-head");
-    head.innerHTML = "<h1>" + esc(doc.title) + "</h1>" +
-      (doc.subtitle ? "<p class='doc-sub'>" + esc(doc.subtitle) + "</p>" : "");
-    host.appendChild(head);
+    /* The title and the contents page are one front section, not two things
+     * that happen to be adjacent. With a contents page it is a title page and
+     * takes a page break after it; without one it is just a masthead that runs
+     * straight into the first block. Either way the title is at the top. */
+    var withToc = !!(doc.showToc && doc.items.length);
+    var front = el("header", "doc-front" + (withToc ? " has-toc" : ""));
 
-    if (doc.showToc && doc.items.length) {
+    var head = el("div", "doc-head");
+    head.innerHTML =
+      "<h1 " + EDIT + " data-field='title' data-ph='Name your document…' " +
+        "title='Click to edit'>" + esc(doc.title) + "</h1>" +
+      "<p class='doc-sub' " + EDIT + " data-field='subtitle' " +
+        "data-ph='Add a subtitle…' title='Click to edit'>" + esc(doc.subtitle) + "</p>";
+    front.appendChild(head);
+
+    if (withToc) {
       var toc = el("nav", "doc-toc" + (doc.items.length > 10 ? " two-col" : ""));
       var h = "<h2>Contents</h2><ul>";
       doc.items.forEach(function (it) {
@@ -209,8 +230,9 @@
           slug(it.kind === "page" ? it.url : it.id) + "'>" + esc(itemTitle(it)) + "</a></li>";
       });
       toc.innerHTML = h + "</ul>";
-      host.appendChild(toc);
+      front.appendChild(toc);
     }
+    host.appendChild(front);
 
     if (!doc.items.length) {
       var empty = el("div", "empty");
@@ -488,11 +510,28 @@
       else if (e.key === "Delete" || e.key === "Backspace") { e.preventDefault(); act("del", selected); }
     });
 
-    document.getElementById("doc-title").addEventListener("input", function (e) {
-      doc.title = e.target.value; commit();
+    /* Typing in the title block must not re-render the document — that would
+     * rebuild the node under the caret and drop it to the start on every
+     * keystroke. Save the text, leave the DOM alone. */
+    document.getElementById("doc").addEventListener("input", function (e) {
+      var f = e.target.dataset && e.target.dataset.field;
+      if (!f) return;
+      doc[f] = e.target.textContent.trim();
+      save();
     });
-    document.getElementById("doc-sub").addEventListener("input", function (e) {
-      doc.subtitle = e.target.value; commit();
+    /* A paste carries markup with it; only the words belong in a title. */
+    document.getElementById("doc").addEventListener("paste", function (e) {
+      if (!(e.target.dataset && e.target.dataset.field)) return;
+      e.preventDefault();
+      var t = (e.clipboardData || window.clipboardData).getData("text")
+        .replace(/\s+/g, " ").trim();
+      document.execCommand("insertText", false, t);
+    });
+    /* Enter would open a second line in a one-line heading. */
+    document.getElementById("doc").addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && e.target.dataset && e.target.dataset.field) {
+        e.preventDefault(); e.target.blur();
+      }
     });
     document.getElementById("opt-toc").addEventListener("change", function (e) {
       doc.showToc = e.target.checked; commit();
@@ -505,8 +544,6 @@
     document.getElementById("clear").onclick = function () {
       if (!confirm("Clear the whole document? This cannot be undone.")) return;
       doc = blankDoc();
-      document.getElementById("doc-title").value = doc.title;
-      document.getElementById("doc-sub").value = doc.subtitle;
       selected = null;
       commit();
     };
@@ -526,8 +563,6 @@
           var d = JSON.parse(r.result);
           if (!d.items) throw 0;
           doc = d;
-          document.getElementById("doc-title").value = doc.title || "";
-          document.getElementById("doc-sub").value = doc.subtitle || "";
           selected = null;
           commit();
         } catch (err) { alert("That file is not a builder document."); }
@@ -564,8 +599,6 @@
       Object.keys(cats).sort().forEach(function (c) { fc.add(new Option(c, c)); });
 
       doc = load();
-      document.getElementById("doc-title").value = doc.title || "";
-      document.getElementById("doc-sub").value = doc.subtitle || "";
       document.getElementById("opt-toc").checked = doc.showToc !== false;
 
       wire();
