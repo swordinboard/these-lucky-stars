@@ -563,6 +563,34 @@ ORDER = ["id", "title", "home", "file", "source_page", "pages", "page_urls", "an
          "summary", "label", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
 
+# ------------------------------------------------------------------ pages ---
+# The PDF builder offers whole pages as ready-made chunks, so it needs each
+# page's blocks IN THE ORDER THEY ARE READ. blocks.json cannot answer that: it
+# is keyed by block and its `pages` list says *which* pages, not *where* on
+# them. `includes_of` already walks a page in document order, so record it here
+# rather than making the builder guess.
+out_pages = []
+for dp in sorted(DOCS):
+    P = PAGES[dp]
+    fm = P["fm"]
+    if fm.get("draft"):
+        continue
+    ids = [s for s in includes_of(dp) + blockset_ids(dp, blocks) if s in blocks]
+    # a page-as-block is its own single item
+    own = [b["id"] for b in blocks.values() if b["home"] == "page" and b["file"] == dp]
+    ids = own + [i for i in ids if i not in own]
+    if not ids:
+        continue
+    out_pages.append({
+        "url": url_for(dp),
+        "title": fm.get("title") or "",
+        "file": dp,
+        "section": "/".join(dp.split("/")[3:-1]) or "",
+        "weight": fm.get("weight"),
+        "wip": bool(fm.get("wip")),
+        "blocks": ids,
+    })
+
 
 # ------------------------------------------------------------------ write ---
 def dump(o):
@@ -570,10 +598,11 @@ def dump(o):
 
 
 bp, ep = os.path.join(REPO, "data/blocks.json"), os.path.join(REPO, "data/edges.json")
+pp = os.path.join(REPO, "data/pages.json")
 
 if "--check" in sys.argv:
     stale = []
-    for p, new in ((bp, out_blocks), (ep, edges)):
+    for p, new in ((bp, out_blocks), (ep, edges), (pp, out_pages)):
         cur = json.load(open(p)) if os.path.exists(p) else None
         if cur != json.loads(dump(new)):
             stale.append(os.path.basename(p))
@@ -586,6 +615,7 @@ if "--check" in sys.argv:
 os.makedirs(os.path.join(REPO, "data"), exist_ok=True)
 open(bp, "w").write(dump(out_blocks) + "\n")
 open(ep, "w").write(dump(edges) + "\n")
+open(pp, "w").write(dump(out_pages) + "\n")
 types = collections.Counter(e["type"] for e in edges)
 unres = [e for e in edges if str(e["target"]).startswith("unresolved:")]
 print(f"wrote data/blocks.json ({len(out_blocks)} blocks) and data/edges.json ({len(edges)} edges)")

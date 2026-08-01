@@ -1,0 +1,64 @@
+{{- /*
+  The PDF builder — a standalone app page, deliberately outside the book theme
+  chrome (no sidebar, no ToC; it needs the full width).
+
+  Content comes from /builder/blocks.json, emitted by list.builderdata.json in
+  this directory. The PDF is produced by the browser's own print pipeline, so
+  the print rules in builder.css ARE the output format.
+*/ -}}
+{{- $css := resources.Get "builder.css" | resources.Minify | resources.Fingerprint -}}
+{{- $js  := resources.Get "builder.js"  | resources.Minify | resources.Fingerprint -}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} — {{ site.Title }}</title>
+  <meta name="description" content="{{ .Params.description }}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+<body class="loading">
+
+<div class="bar">
+  <span class="brand"><a href="/docs/free-srd/">These Lucky Stars</a></span>
+  <input type="text" id="doc-title" aria-label="Document title" placeholder="Document title">
+  <input type="text" id="doc-sub" aria-label="Subtitle" placeholder="Subtitle">
+  <span id="count">0 items</span>
+  <span class="spacer"></span>
+  <label><input type="checkbox" id="opt-toc" checked> Contents page</label>
+  <label><input type="checkbox" id="compact"> Compact</label>
+  <button id="export">Save</button>
+  <span class="file-btn"><button type="button">Open</button>
+    <input type="file" id="import" accept="application/json" aria-label="Open a saved document"></span>
+  <button id="clear">Clear</button>
+  <button id="print" class="btn-primary">Print / PDF</button>
+</div>
+
+<div class="app">
+  <aside class="lib">
+    <div class="lib-tabs">
+      <button class="lib-tab on" data-mode="blocks">Blocks</button>
+      <button class="lib-tab" data-mode="pages">Whole pages</button>
+    </div>
+    <div id="searchbar">
+      <input type="text" id="q" placeholder="Search rules, gear, features…" aria-label="Search blocks">
+      <div class="filters">
+        <select id="f-type" aria-label="Filter by type"><option value="">any type</option></select>
+        <select id="f-cat" aria-label="Filter by category"><option value="">any setting</option></select>
+        <label title="Work-in-progress pages are shown by default — their rules are usable, but still being written."><input type="checkbox" id="f-wip"> hide wip</label>
+      </div>
+      <div id="lib-count"></div>
+    </div>
+    <div id="lib-list"></div>
+  </aside>
+
+  <main class="stage">
+    <article id="doc" class="markdown"></article>
+  </main>
+</div>
+
+<script src="{{ $js.RelPermalink }}"></script>
+</body>
+</html>

@@ -39,6 +39,19 @@ disableKinds = ["taxonomy", "term"]
   url = "/planetnamegenerator.html"
   weight = 4
 
+# PDF BUILDER DATA
+#
+# The builder is a browser app: it needs every block's *rendered* HTML, which
+# only Hugo can produce. This output format emits /builder/blocks.json alongside
+# the builder page. See layouts/builder/list.builderdata.json.
+
+[outputFormats]
+  [outputFormats.builderdata]
+    mediaType = "application/json"
+    baseName = "blocks"
+    isPlainText = true
+    notAlternative = true
+
 # BOOK THEME PARAMETERS
 
 [params]

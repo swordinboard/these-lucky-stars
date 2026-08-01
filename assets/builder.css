@@ -1,0 +1,199 @@
+/* PDF builder — screen UI and the print rules that produce the PDF.
+ *
+ * The print block at the bottom is the actual output format. Everything above
+ * it is scaffolding that @media print throws away. */
+
+:root {
+  --bg: #fff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --line: #e0e0e0;
+  --panel: #f7f7f7;
+  --accent: #b3282d;
+  --sel: #fdf2f2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17191c; --fg: #e7e7e7; --muted: #9aa0a6; --line: #2e3238;
+    --panel: #1e2125; --accent: #e0575c; --sel: #2a1e20;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--fg); background: var(--bg);
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden;
+}
+body.loading .app { opacity: 0; }
+
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 1px solid var(--line);
+  border-radius: 5px; padding: 4px 9px; }
+button:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ------------------------------------------------------------------ chrome */
+
+.bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px; border-bottom: 1px solid var(--line); background: var(--panel);
+}
+.bar .brand { font-weight: 700; letter-spacing: .01em; }
+.bar .brand a { color: inherit; text-decoration: none; }
+.bar input[type=text] {
+  background: var(--bg); border: 1px solid var(--line); border-radius: 5px;
+  padding: 5px 9px; min-width: 0;
+}
+#doc-title { width: 15rem; font-weight: 600; }
+#doc-sub { width: 13rem; }
+.bar .spacer { flex: 1; }
+.bar label { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
+#count { color: var(--muted); font-variant-numeric: tabular-nums; }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { color: #fff; filter: brightness(1.08); }
+.file-btn { position: relative; overflow: hidden; display: inline-block; }
+.file-btn input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+
+.app { display: grid; grid-template-columns: 320px 1fr; min-height: 0; }
+
+/* ----------------------------------------------------------------- library */
+
+.lib { border-right: 1px solid var(--line); display: flex; flex-direction: column;
+  min-height: 0; background: var(--panel); }
+.lib-tabs { display: flex; border-bottom: 1px solid var(--line); }
+.lib-tab { flex: 1; border: 0; border-radius: 0; padding: 9px; color: var(--muted); }
+.lib-tab.on { color: var(--fg); font-weight: 600; box-shadow: inset 0 -2px 0 var(--accent); }
+#searchbar { padding: 9px; display: grid; gap: 7px; border-bottom: 1px solid var(--line); }
+#q { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 5px;
+  background: var(--bg); }
+.filters { display: flex; gap: 6px; align-items: center; flex-wrap: wrap;
+  font-size: 13px; color: var(--muted); }
+.filters select { border: 1px solid var(--line); border-radius: 5px; padding: 3px;
+  background: var(--bg); max-width: 8rem; }
+#lib-count { font-size: 12px; color: var(--muted); }
+#lib-list { overflow-y: auto; min-height: 0; padding-bottom: 2rem; }
+.lib-sec { padding: 10px 11px 4px; font-size: 11px; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--muted); }
+.lib-row { display: grid; width: 100%; text-align: left; border: 0; border-radius: 0;
+  border-bottom: 1px solid var(--line); padding: 8px 11px;
+  grid-template-columns: 1fr auto; gap: 1px 8px; }
+.lib-row:hover { background: var(--sel); color: inherit; }
+.lib-title { font-weight: 600; }
+.lib-meta { font-size: 11px; color: var(--muted); align-self: center; }
+.lib-sum { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted);
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.wip { font-size: 11px; color: var(--accent); font-style: normal; }
+
+/* ----------------------------------------------------------------- preview */
+
+.stage { overflow-y: auto; min-height: 0; padding: 26px 0 45vh; background: var(--panel); }
+#doc {
+  background: var(--bg); max-width: 46em; margin: 0 auto; padding: 3.2em 3.4em;
+  box-shadow: 0 1px 4px rgba(0,0,0,.13);
+}
+.doc-head h1 { margin: 0 0 .15em; font-size: 2em; }
+.doc-sub { margin: 0; color: var(--muted); }
+.doc-toc { margin: 2em 0; border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line); padding: 1em 0; }
+.doc-toc h2 { margin: 0 0 .5em; font-size: 1em; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--muted); }
+.doc-toc ul { list-style: none; margin: 0; padding: 0; }
+.doc-toc.two-col ul { columns: 2; }
+.doc-toc a { color: inherit; text-decoration: none; }
+.doc-toc a:hover { color: var(--accent); }
+.doc-toc .lvl3 { padding-left: 1em; } .doc-toc .lvl4 { padding-left: 2em; }
+.doc-toc .lvl5, .doc-toc .lvl6 { padding-left: 3em; }
+.empty { color: var(--muted); border: 1px dashed var(--line); border-radius: 7px;
+  padding: 2em; text-align: center; }
+
+.item { position: relative; border: 1px solid transparent; border-radius: 6px;
+  margin: 2px 0; padding: 2px 6px; }
+.item:hover { border-color: var(--line); }
+.item.sel { border-color: var(--accent); background: var(--sel); }
+.item.drop { border-top: 2px solid var(--accent); }
+.item-bar {
+  display: none; align-items: center; gap: 5px; position: absolute;
+  top: -15px; right: 4px; z-index: 5; background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.13); font-size: 12px;
+}
+.item:hover .item-bar, .item.sel .item-bar { display: flex; }
+.item-bar button { padding: 1px 6px; font-size: 12px; line-height: 1.5; }
+.item-kind { font-size: 10px; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; }
+.item-name { font-weight: 600; max-width: 15em; overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap; }
+.lvl-badge { color: var(--muted); font-variant-numeric: tabular-nums; }
+.grip { cursor: grab; color: var(--muted); }
+
+/* compact: collapse every item to its toolbar row, for reordering long docs */
+body.compact .item-body { display: none; }
+body.compact .item { border-color: var(--line); padding: 0; min-height: 30px; }
+body.compact .item-bar { display: flex; position: static; box-shadow: none;
+  border: 0; border-radius: 0; background: none; width: 100%; }
+body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
+
+/* ------------------------------------------------------- document typography */
+
+.markdown h1, .markdown h2, .markdown h3,
+.markdown h4, .markdown h5, .markdown h6 { line-height: 1.25; margin: 1.1em 0 .4em; }
+.markdown h1 { font-size: 1.7em; } .markdown h2 { font-size: 1.4em; }
+.markdown h3 { font-size: 1.17em; } .markdown h4 { font-size: 1.03em; }
+.markdown h5, .markdown h6 { font-size: 1em; }
+.markdown p, .markdown ul, .markdown ol, .markdown table { margin: .6em 0; }
+.markdown a { color: var(--accent); }
+.markdown table { border-collapse: collapse; width: 100%; font-size: .93em; }
+.markdown th, .markdown td { border: 1px solid var(--line); padding: 5px 8px;
+  text-align: left; vertical-align: top; }
+.markdown th { background: var(--panel); }
+.markdown blockquote { margin: .7em 0; padding: .1em 1em; border-left: 3px solid var(--line);
+  color: var(--muted); }
+.markdown code { font-size: .92em; background: var(--panel); padding: 1px 4px; border-radius: 3px; }
+.markdown details { margin: .5em 0; }
+.markdown img { max-width: 100%; }
+/* details are a screen affordance; in a PDF the content simply belongs there */
+.markdown details > summary { cursor: pointer; font-weight: 600; }
+
+/* --------------------------------------------------------------- the PDF */
+
+@media print {
+  @page { margin: 17mm 16mm; }
+
+  html, body { height: auto; overflow: visible; display: block;
+    background: #fff; color: #000; font-size: 10.5pt; }
+  .bar, .lib, .item-bar, .empty { display: none !important; }
+  .app { display: block; }
+  .stage { overflow: visible; padding: 0; background: #fff; }
+
+  #doc { max-width: none; margin: 0; padding: 0; box-shadow: none; background: #fff; }
+  .item { border: 0 !important; background: none !important; margin: 0; padding: 0; }
+
+  .doc-head { margin-bottom: 1.5em; }
+  .doc-head h1 { font-size: 22pt; }
+  .doc-toc { break-after: page; }
+  .doc-toc.two-col ul { columns: 2; }
+
+  /* Keep a heading with the text it introduces, and don't split a short block
+     across a page boundary. Long blocks must still be allowed to break, or a
+     block taller than a page vanishes into a gap. */
+  .markdown h1, .markdown h2, .markdown h3,
+  .markdown h4, .markdown h5, .markdown h6 { break-after: avoid; break-inside: avoid; }
+  .markdown p, .markdown li, .markdown blockquote { orphans: 2; widows: 2; }
+  .markdown tr, .markdown img, .markdown blockquote { break-inside: avoid; }
+  .markdown table { break-inside: auto; }
+  .markdown thead { display: table-header-group; }
+
+  /* open every collapsed entry — a closed <details> would print as a bare label */
+  .markdown details > summary { list-style: none; }
+  .markdown details > summary::-webkit-details-marker { display: none; }
+
+  .markdown a { color: #000; text-decoration: none; }
+  /* on screen a blockquote is an aside; on paper it is often the rule itself
+     (damage formulas, worked examples) and must not print washed out */
+  .markdown blockquote { color: #222; border-left-color: #999; }
+  .doc-sub { color: #444; }
+  .markdown th { background: #f0f0f0 !important; -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; }
+  .markdown th, .markdown td { border-color: #999; }
+}
