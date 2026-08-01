@@ -8,8 +8,6 @@ summary: "Increase Rage duration by two rounds."
 requires: [abilities/rage]
 ---
 
-### Extended Rage
-
 *[Rage](#rage)*
 
 Your Rage ability's duration is increased by two rounds.

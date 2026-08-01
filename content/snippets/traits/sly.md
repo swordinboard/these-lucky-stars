@@ -7,6 +7,4 @@ tags: [trait, core]
 summary: "+2 to deception rolls."
 ---
 
-### Sly
-
 You don't have a tell, or maybe just barely. Gain a +2 bonus on rolls when deceiving others verbally.

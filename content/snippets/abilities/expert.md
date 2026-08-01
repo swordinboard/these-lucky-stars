@@ -8,8 +8,6 @@ summary: "Improve the Student bonus for a chosen topic."
 requires: [abilities/student]
 ---
 
-### Expert
-
 **Expert [___]**
 
 *[Student](#student), KNO 2*

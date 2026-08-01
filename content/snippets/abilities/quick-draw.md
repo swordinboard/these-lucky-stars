@@ -7,8 +7,6 @@ tags: [ability, core, general]
 summary: "Draw an equipped weapon for no AP."
 ---
 
-### Quick Draw
-
 *DEX 3*
 
 Once per round you are able to draw an equipped weapon for no AP or draw a concealed weapon for 1 AP.

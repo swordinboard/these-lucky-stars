@@ -7,8 +7,6 @@ tags: [ability, core, luck]
 summary: "Gain one additional Luck point."
 ---
 
-### Bonus Luck
-
 *At least one other ability in the Luck category, per selection*
 
 Gain one additional Luck point.

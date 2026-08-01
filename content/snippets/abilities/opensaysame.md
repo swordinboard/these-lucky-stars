@@ -8,8 +8,6 @@ summary: "Break a door panel to guarantee it opens or closes."
 requires: [proficiencies/general-technology]
 ---
 
-### Opensaysame
-
 *[General Technology](/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology) Proficiency*
 
 Some doors require your special touch. 1/day as long as you have at least one luck point remaining, you can spend 2 AP to break an electronic door control panel with a successful attack and guarantee the door opens or closes (your choice).

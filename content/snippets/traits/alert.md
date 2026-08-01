@@ -7,6 +7,4 @@ tags: [trait, core]
 summary: "+4 to initiative."
 ---
 
-### Alert
-
 You have particularly keen senses. Gain +4 Initiative.

@@ -7,8 +7,6 @@ tags: [proficiency, core]
 summary: "Special training with a particular ability."
 ---
 
-### Improved Ability
-
 **Improved Ability [___]**
 
 *Level 4*

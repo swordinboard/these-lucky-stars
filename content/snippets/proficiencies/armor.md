@@ -7,8 +7,6 @@ tags: [proficiency, core]
 summary: "Trained in the use of a selected armor type."
 ---
 
-### Armor
-
 **Armor [___]**
 
 You have been trained in the use of a selected armor type. Gain a +1 max DEF bonus while using the selected armor type.

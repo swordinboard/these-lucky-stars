@@ -7,8 +7,6 @@ tags: [ability, core, general]
 summary: "Add bonus damage to surprise attacks."
 ---
 
-### Vital Strike
-
 *DEX 2, Level 3*
 
 Add 1d6 of bonus damage to successful surprise attacks.

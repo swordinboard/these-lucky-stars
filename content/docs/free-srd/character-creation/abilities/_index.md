@@ -5,9 +5,8 @@ weight: 40
 bookCollapseSection: true
 ---
 
-# Abilities
 
-{{% include "/snippets/abilities/overview" %}}
+{{% include "/snippets/abilities/overview" "h1" %}}
 
 **This page is the core selection** — the abilities available in any setting.
 Setting-themed abilities live with their module:
@@ -91,130 +90,130 @@ abilities/tis-but-a-scratch
 
 ## Core General
 
-{{< blockdetails "abilities/agile-charge" >}}
+{{< blockdetails "abilities/agile-charge" "h3" >}}
 
-{{< blockdetails "abilities/agile-dodge" >}}
+{{< blockdetails "abilities/agile-dodge" "h3" >}}
 
-{{< blockdetails "abilities/bash" >}}
+{{< blockdetails "abilities/bash" "h3" >}}
 
-{{< blockdetails "abilities/bolster" >}}
+{{< blockdetails "abilities/bolster" "h3" >}}
 
-{{< blockdetails "abilities/charge" >}}
+{{< blockdetails "abilities/charge" "h3" >}}
 
-{{< blockdetails "abilities/controlled-suppressing-fire" >}}
+{{< blockdetails "abilities/controlled-suppressing-fire" "h3" >}}
 
-{{< blockdetails "abilities/coordinated-strike" >}}
+{{< blockdetails "abilities/coordinated-strike" "h3" >}}
 
-{{< blockdetails "abilities/danger-reflex" >}}
+{{< blockdetails "abilities/danger-reflex" "h3" >}}
 
-{{< blockdetails "abilities/dead-drop" >}}
+{{< blockdetails "abilities/dead-drop" "h3" >}}
 
-{{< blockdetails "abilities/defender" >}}
+{{< blockdetails "abilities/defender" "h3" >}}
 
-{{< blockdetails "abilities/dual-attack" >}}
+{{< blockdetails "abilities/dual-attack" "h3" >}}
 
-{{< blockdetails "abilities/dual-defense" >}}
+{{< blockdetails "abilities/dual-defense" "h3" >}}
 
-{{< blockdetails "abilities/dual-strike" >}}
+{{< blockdetails "abilities/dual-strike" "h3" >}}
 
-{{< blockdetails "abilities/expert" >}}
+{{< blockdetails "abilities/expert" "h3" >}}
 
-{{< blockdetails "abilities/extended-rage" >}}
+{{< blockdetails "abilities/extended-rage" "h3" >}}
 
-{{< blockdetails "abilities/extra-attack" >}}
+{{< blockdetails "abilities/extra-attack" "h3" >}}
 
-{{< blockdetails "abilities/fast-kit-trap" >}}
+{{< blockdetails "abilities/fast-kit-trap" "h3" >}}
 
-{{< blockdetails "abilities/fearless-rage" >}}
+{{< blockdetails "abilities/fearless-rage" "h3" >}}
 
-{{< blockdetails "abilities/field-medic" >}}
+{{< blockdetails "abilities/field-medic" "h3" >}}
 
-{{< blockdetails "abilities/field-patch" >}}
+{{< blockdetails "abilities/field-patch" "h3" >}}
 
-{{< blockdetails "abilities/focus-attack" >}}
+{{< blockdetails "abilities/focus-attack" "h3" >}}
 
-{{< blockdetails "abilities/focus-in" >}}
+{{< blockdetails "abilities/focus-in" "h3" >}}
 
-{{< blockdetails "abilities/friend-in-need" >}}
+{{< blockdetails "abilities/friend-in-need" "h3" >}}
 
-{{< blockdetails "abilities/general-spectacle" >}}
+{{< blockdetails "abilities/general-spectacle" "h3" >}}
 
-{{< blockdetails "abilities/improved-bash" >}}
+{{< blockdetails "abilities/improved-bash" "h3" >}}
 
-{{< blockdetails "abilities/improved-suppressing-fire" >}}
+{{< blockdetails "abilities/improved-suppressing-fire" "h3" >}}
 
-{{< blockdetails "abilities/indomitable-rage" >}}
+{{< blockdetails "abilities/indomitable-rage" "h3" >}}
 
-{{< blockdetails "abilities/just-grazed" >}}
+{{< blockdetails "abilities/just-grazed" "h3" >}}
 
-{{< blockdetails "abilities/just-winded" >}}
+{{< blockdetails "abilities/just-winded" "h3" >}}
 
-{{< blockdetails "abilities/kit-trap" >}}
+{{< blockdetails "abilities/kit-trap" "h3" >}}
 
-{{< blockdetails "abilities/leaping-charge" >}}
+{{< blockdetails "abilities/leaping-charge" "h3" >}}
 
-{{< blockdetails "abilities/leg-shot" >}}
+{{< blockdetails "abilities/leg-shot" "h3" >}}
 
-{{< blockdetails "abilities/line-of-fire" >}}
+{{< blockdetails "abilities/line-of-fire" "h3" >}}
 
-{{< blockdetails "abilities/long-performance" >}}
+{{< blockdetails "abilities/long-performance" "h3" >}}
 
-{{< blockdetails "abilities/martial-supremacy" >}}
+{{< blockdetails "abilities/martial-supremacy" "h3" >}}
 
-{{< blockdetails "abilities/momentum-dodge" >}}
+{{< blockdetails "abilities/momentum-dodge" "h3" >}}
 
-{{< blockdetails "abilities/oppressive-suppression" >}}
+{{< blockdetails "abilities/oppressive-suppression" "h3" >}}
 
-{{< blockdetails "abilities/outburst" >}}
+{{< blockdetails "abilities/outburst" "h3" >}}
 
-{{< blockdetails "abilities/patient-shot" >}}
+{{< blockdetails "abilities/patient-shot" "h3" >}}
 
-{{< blockdetails "abilities/powerful-rage" >}}
+{{< blockdetails "abilities/powerful-rage" "h3" >}}
 
-{{< blockdetails "abilities/precise-focus" >}}
+{{< blockdetails "abilities/precise-focus" "h3" >}}
 
-{{< blockdetails "abilities/quick-draw" >}}
+{{< blockdetails "abilities/quick-draw" "h3" >}}
 
-{{< blockdetails "abilities/quick-firing" >}}
+{{< blockdetails "abilities/quick-firing" "h3" >}}
 
-{{< blockdetails "abilities/rage" >}}
+{{< blockdetails "abilities/rage" "h3" >}}
 
-{{< blockdetails "abilities/rally" >}}
+{{< blockdetails "abilities/rally" "h3" >}}
 
-{{< blockdetails "abilities/reckless-attack" >}}
+{{< blockdetails "abilities/reckless-attack" "h3" >}}
 
-{{< blockdetails "abilities/slip-strike" >}}
+{{< blockdetails "abilities/slip-strike" "h3" >}}
 
-{{< blockdetails "abilities/student" >}}
+{{< blockdetails "abilities/student" "h3" >}}
 
-{{< blockdetails "abilities/suppressing-fire" >}}
+{{< blockdetails "abilities/suppressing-fire" "h3" >}}
 
-{{< blockdetails "abilities/swift-dual-attack" >}}
+{{< blockdetails "abilities/swift-dual-attack" "h3" >}}
 
-{{< blockdetails "abilities/the-look" >}}
+{{< blockdetails "abilities/the-look" "h3" >}}
 
-{{< blockdetails "abilities/true-defender" >}}
+{{< blockdetails "abilities/true-defender" "h3" >}}
 
-{{< blockdetails "abilities/unsettling-rage" >}}
+{{< blockdetails "abilities/unsettling-rage" "h3" >}}
 
-{{< blockdetails "abilities/vital-focus" >}}
+{{< blockdetails "abilities/vital-focus" "h3" >}}
 
-{{< blockdetails "abilities/vital-strike" >}}
+{{< blockdetails "abilities/vital-strike" "h3" >}}
 
 ---
 
 ## Core Luck
 
-{{< blockdetails "abilities/adaptive-luck" >}}
+{{< blockdetails "abilities/adaptive-luck" "h3" >}}
 
-{{< blockdetails "abilities/bonus-luck" >}}
+{{< blockdetails "abilities/bonus-luck" "h3" >}}
 
-{{< blockdetails "abilities/friend-of-fortune" >}}
+{{< blockdetails "abilities/friend-of-fortune" "h3" >}}
 
-{{< blockdetails "abilities/lucky-strike" >}}
+{{< blockdetails "abilities/lucky-strike" "h3" >}}
 
-{{< blockdetails "abilities/medical-marvel" >}}
+{{< blockdetails "abilities/medical-marvel" "h3" >}}
 
-{{< blockdetails "abilities/natural-gift" >}}
+{{< blockdetails "abilities/natural-gift" "h3" >}}
 
-{{< blockdetails "abilities/tis-but-a-scratch" >}}
+{{< blockdetails "abilities/tis-but-a-scratch" "h3" >}}

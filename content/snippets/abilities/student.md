@@ -7,8 +7,6 @@ tags: [ability, core, general]
 summary: "Gain a bonus by applying knowledge of a topic."
 ---
 
-### Student
-
 **Student [___]**
 
 *KNO 2*

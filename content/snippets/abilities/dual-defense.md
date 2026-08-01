@@ -8,8 +8,6 @@ summary: "Gain DEF when wielding multiple melee weapons."
 requires: [proficiencies/weapon, abilities/dual-attack]
 ---
 
-### Dual Defense
-
 *[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), [Dual Attack](#dual-attack), Level 3*
 
 You can easily defend yourself with your second melee weapon. When wielding multiple melee weapons you are proficient with gain +1 max DEF per weapon.

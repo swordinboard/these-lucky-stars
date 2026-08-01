@@ -162,8 +162,10 @@ Blocks no longer carry their own heading. The call site decides the level, and
 the shortcode emits it: `{{% include "/snippets/x/y" "h3" %}}`. Full design and
 the four modes are in the shortcode header and the maintenance notes.
 
-**Done:** Attributes, Stats, Sci-Fi Tool Kits, and the rest of **core-rules** —
-81 call sites converted, 22 snippet headings stripped.
+**Done:** all of **core-rules** and all of **character-creation**, plus Sci-Fi
+Tool Kits — 196 call sites converted, 133 snippet headings stripped.
+`owns_heading` is the meter: **192 of 434** blocks still hold their own heading,
+all of them in inventory--equipment.
 
 - [ ] **22 "bare" blocks in core-rules still need a decision.** These sit under a
       shared group heading with no heading of their own, so giving them a level
@@ -198,8 +200,10 @@ the four modes are in the shortcode header and the maintenance notes.
       blocks, which is what made §C6 report healthy blocks as broken. Now
       file-derived only.
 
-- [ ] **Remaining sections:** character-creation and inventory--equipment,
-      ~370 call sites, mostly `blockdetails`.
+- [ ] **Remaining section: inventory--equipment.** ~190 call sites, almost all
+      `blockdetails` on the equipment catalogs. It also carries the last two
+      held-back renumbers (`equipment/common-terms`, `inventory/carry-limits`),
+      which go with their pages.
 
 ## 5b. The compact index — settled
 

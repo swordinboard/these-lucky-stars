@@ -5,9 +5,8 @@ weight: 30
 bookCollapseSection: true
 ---
 
-## Proficiencies
 
-{{% include "/snippets/proficiencies/overview" %}}
+{{% include "/snippets/proficiencies/overview" "h2" %}}
 
 **This page is the core selection** — the proficiencies available in any setting.
 Setting-themed proficiencies live with their module:
@@ -39,30 +38,30 @@ proficiencies/weapon
 
 ## Core
 
-{{< blockdetails "proficiencies/armor" >}}
+{{< blockdetails "proficiencies/armor" "h3" >}}
 
-{{< blockdetails "proficiencies/b-e-kit" >}}
+{{< blockdetails "proficiencies/b-e-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/disguise-kit" >}}
+{{< blockdetails "proficiencies/disguise-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/improved-ability" >}}
+{{< blockdetails "proficiencies/improved-ability" "h3" >}}
 
-{{< blockdetails "proficiencies/licensed-instincts" >}}
+{{< blockdetails "proficiencies/licensed-instincts" "h3" >}}
 
-{{< blockdetails "proficiencies/martial-training" >}}
+{{< blockdetails "proficiencies/martial-training" "h3" >}}
 
-{{< blockdetails "proficiencies/medic-training" >}}
+{{< blockdetails "proficiencies/medic-training" "h3" >}}
 
-{{< blockdetails "proficiencies/medical-instincts" >}}
+{{< blockdetails "proficiencies/medical-instincts" "h3" >}}
 
-{{< blockdetails "proficiencies/negotiation-training" >}}
+{{< blockdetails "proficiencies/negotiation-training" "h3" >}}
 
-{{< blockdetails "proficiencies/repair-kit" >}}
+{{< blockdetails "proficiencies/repair-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/research" >}}
+{{< blockdetails "proficiencies/research" "h3" >}}
 
-{{< blockdetails "proficiencies/survival-training" >}}
+{{< blockdetails "proficiencies/survival-training" "h3" >}}
 
-{{< blockdetails "proficiencies/vehicle" >}}
+{{< blockdetails "proficiencies/vehicle" "h3" >}}
 
-{{< blockdetails "proficiencies/weapon" >}}
+{{< blockdetails "proficiencies/weapon" "h3" >}}

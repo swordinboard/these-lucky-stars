@@ -8,8 +8,6 @@ summary: "Turn battery cores into explosives."
 requires: [proficiencies/general-technology]
 ---
 
-### Battery Saboteur
-
 *[General Technology](/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology) Proficiency, one other Battery ability, KNO 4*
 
 You can easily turn battery cores into explosives. Doing so requires a use of the tech kit with supplies and takes one minute. Explosive cores deal damage based on size and charge. To roll damage, roll the battery's current charge (supply) and use the chart below. They can be set to explode with a hard impact, or be rigged to explode on a pre-set timer of up to 2 minutes.

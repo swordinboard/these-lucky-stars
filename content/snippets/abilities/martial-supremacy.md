@@ -8,8 +8,6 @@ summary: "Reroll a decision die during unarmed trip, disarm, or grapple."
 requires: [proficiencies/martial-training]
 ---
 
-### Martial Supremacy
-
 *[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, Level 3*
 
 2/day you may reroll a single decision die during any unarmed trip, disarm, or grapple attempt. This ability may be used once per decision die.

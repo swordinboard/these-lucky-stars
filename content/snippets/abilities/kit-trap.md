@@ -7,8 +7,6 @@ tags: [ability, core, general]
 summary: "Use your tool kit to make difficult terrain."
 ---
 
-### Kit Trap
-
 *Proficiency with any tool kit*
 
 You’ve dropped your kit enough times to know exactly how to empty it out in the most inconvenient way possible. For 3 AP you can completely empty and drop your toolkit, covering up to six 5ft spaces. These spaces must be connected and no space can be further than 15ft from another. Spaces that become covered in a toolkit from this ability become difficult terrain for all other characters: actions taken are at a minor disadvantage and their speed is reduced to half (you remain unaffected).

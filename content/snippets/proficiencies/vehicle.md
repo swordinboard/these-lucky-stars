@@ -7,8 +7,6 @@ tags: [proficiency, core]
 summary: "Familiar with a type of vehicle."
 ---
 
-### Vehicle
-
 **Vehicle [___]**
 
 You are familiar with a type of vehicle. Gain a +1 bonus to rolls made to pilot/drive/ride the selected type of vehicle.

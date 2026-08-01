@@ -19,8 +19,8 @@ traits/space-adept
 
 ## Sci-Fi
 
-{{< blockdetails "traits/inter-planet-traveler" >}}
+{{< blockdetails "traits/inter-planet-traveler" "h3" >}}
 
-{{< blockdetails "traits/scrap-hauler" >}}
+{{< blockdetails "traits/scrap-hauler" "h3" >}}
 
-{{< blockdetails "traits/space-adept" >}}
+{{< blockdetails "traits/space-adept" "h3" >}}

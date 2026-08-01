@@ -7,8 +7,6 @@ tags: [ability, core, general]
 summary: "Double your DEF against a melee attack."
 ---
 
-### Defender
-
 *FORT 2*
 
 You are particularly skilled at defending from melee attacks. Once per day (1/day) anytime a melee attack is declared against you while at max DEF, you may double your DEF until the beginning of your next turn.

@@ -19,8 +19,8 @@ proficiencies/general-technology
 
 ## Sci-Fi
 
-{{< blockdetails "proficiencies/comp-jack" >}}
+{{< blockdetails "proficiencies/comp-jack" "h3" >}}
 
-{{< blockdetails "proficiencies/general-robotics" >}}
+{{< blockdetails "proficiencies/general-robotics" "h3" >}}
 
-{{< blockdetails "proficiencies/general-technology" >}}
+{{< blockdetails "proficiencies/general-technology" "h3" >}}

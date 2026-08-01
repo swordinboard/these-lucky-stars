@@ -7,8 +7,6 @@ tags: [proficiency, core]
 summary: "Specialized training with a selected weapon type."
 ---
 
-### Weapon
-
 **Weapon [___]**
 
 You have specialized training in the use of a selected weapon type. Gain a +1 ATK bonus while using the selected weapon.

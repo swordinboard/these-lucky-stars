@@ -5,9 +5,8 @@ weight: 20
 bookCollapseSection: true
 ---
 
-# Traits
 
-{{% include "/snippets/traits/overview" %}}
+{{% include "/snippets/traits/overview" "h1" %}}
 
 **This page is the core selection** — the traits available in any setting.
 Setting-themed traits live with their module:
@@ -41,34 +40,34 @@ traits/well-connected
 
 ## Core
 
-{{< blockdetails "traits/alert" >}}
+{{< blockdetails "traits/alert" "h3" >}}
 
-{{< blockdetails "traits/composed" >}}
+{{< blockdetails "traits/composed" "h3" >}}
 
-{{< blockdetails "traits/diplomatic" >}}
+{{< blockdetails "traits/diplomatic" "h3" >}}
 
-{{< blockdetails "traits/hot-headed" >}}
+{{< blockdetails "traits/hot-headed" "h3" >}}
 
-{{< blockdetails "traits/intimidating" >}}
+{{< blockdetails "traits/intimidating" "h3" >}}
 
-{{< blockdetails "traits/lucky" >}}
+{{< blockdetails "traits/lucky" "h3" >}}
 
-{{< blockdetails "traits/mentally-sound" >}}
+{{< blockdetails "traits/mentally-sound" "h3" >}}
 
-{{< blockdetails "traits/particularly-attractive" >}}
+{{< blockdetails "traits/particularly-attractive" "h3" >}}
 
-{{< blockdetails "traits/picture-of-health" >}}
+{{< blockdetails "traits/picture-of-health" "h3" >}}
 
-{{< blockdetails "traits/sly" >}}
+{{< blockdetails "traits/sly" "h3" >}}
 
-{{< blockdetails "traits/sneaky" >}}
+{{< blockdetails "traits/sneaky" "h3" >}}
 
-{{< blockdetails "traits/stubborn" >}}
+{{< blockdetails "traits/stubborn" "h3" >}}
 
-{{< blockdetails "traits/tough" >}}
+{{< blockdetails "traits/tough" "h3" >}}
 
-{{< blockdetails "traits/unremarkable" >}}
+{{< blockdetails "traits/unremarkable" "h3" >}}
 
-{{< blockdetails "traits/unshakable" >}}
+{{< blockdetails "traits/unshakable" "h3" >}}
 
-{{< blockdetails "traits/well-connected" >}}
+{{< blockdetails "traits/well-connected" "h3" >}}

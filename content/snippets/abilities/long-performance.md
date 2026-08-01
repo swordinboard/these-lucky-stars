@@ -8,8 +8,6 @@ requires: [abilities/general-spectacle]
 summary: "Use General Spectacle for multiple rounds."
 ---
 
-### Long Performance
-
 *[General Spectacle](#general-spectacle), CHA 3*
 
 Once begun, you may continue your General Spectacle performance for a number of rounds equal to 1/2 your level. Each round after the first, the target for the WILL distraction save is lowered by -2. Each failed save accumulates another +1 point of Stress. Taking any other action during these rounds end the effect. This ability can be interrupted.

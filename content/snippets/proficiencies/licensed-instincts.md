@@ -8,8 +8,6 @@ summary: "Add INS bonus to Vehicle Proficiency rolls."
 requires: [proficiencies/vehicle]
 ---
 
-### Licensed Instincts
-
 **Licensed Instincts [___]**
 
 *[Vehicle](#vehicle) Proficiency, KNO 2, INS 1*
