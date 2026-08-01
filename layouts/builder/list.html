@@ -6,7 +6,12 @@
   this directory. The PDF is produced by the browser's own print pipeline, so
   the print rules in builder.css ARE the output format.
 */ -}}
-{{- $css := resources.Get "builder.css" | resources.Minify | resources.Fingerprint -}}
+{{- /* builder.css plus the construct styles the site shares with it, as one
+       stylesheet. content-constructs.css is the single source for anything a
+       shortcode emits into a page; see its header. */ -}}
+{{- $shared := resources.Get "content-constructs.css" -}}
+{{- $css := slice (resources.Get "builder.css") $shared
+      | resources.Concat "builder-bundle.css" | resources.Minify | resources.Fingerprint -}}
 {{- $js  := resources.Get "builder.js"  | resources.Minify | resources.Fingerprint -}}
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}">

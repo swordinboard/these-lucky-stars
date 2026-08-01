@@ -152,27 +152,12 @@ html {
 // MULTI-COLUMN LAYOUT
 // ---------------------------------------------------------------------------
 
-.two-col {
-  column-count: 2;
-  column-gap: 1.5rem;
-}
-
-.three-col {
-  column-count: 3;
-  column-gap: 1.5rem;
-}
-
-.four-col {
-  column-count: 4;
-  column-gap: 1.5rem;
-}
-
-.two-col a,
-.three-col a,
-.four-col a {
-  display: block;
-  padding: 0.15rem 0;
-}
+// Column COUNTS only — everything else about these lists lives in
+// assets/content-constructs.css, which the PDF builder loads too. See the
+// header of that file before adding rules here.
+.two-col   { column-count: 2; }
+.three-col { column-count: 3; }
+.four-col  { column-count: 4; }
 
 @media (max-width: 1200px) {
   .four-col {
@@ -276,56 +261,12 @@ html {
   color: #fff;
 }
 /* Compact block index — {{< catalog layout="names" />}}
-   A long feature list reads better as scannable columns of names than as a
-   chart whose summary column makes it longer than the entries themselves.
-
    Two columns on the narrowest screens rather than one: these are short names,
-   and a single column just recreates the long scroll the index exists to avoid.
-   Sub-entries are nested markup, so a family never splits across a column. */
-.markdown .block-index {
-  list-style: none;
-  margin: $padding-16 0;
-  padding: 0;
-  columns: 2;
-  column-gap: $padding-16;
-  font-size: 0.85rem;
-  line-height: 1.4;
-
-  > li {
-    break-inside: avoid;          // keep a parent with its children
-    page-break-inside: avoid;     // older engines
-  }
-
-  // hanging indent: a name that wraps continues under itself, not back at the
-  // dash — which otherwise reads as a new entry at a glance
-  li {
-    padding-block: 0.1rem;
-    padding-inline-start: 0.85em;
-    text-indent: -0.85em;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-inline-start: $padding-8;
-  }
-  li.deep { margin-inline-start: $padding-8; }
-
-  // sub-entries read as dependent on the entry above them
-  ul li::before {
-    content: "";
-    display: inline-block;
-    width: $padding-4;
-    height: 1px;
-    vertical-align: middle;
-    margin-inline-end: $padding-4;
-    background: var(--gray-400, currentColor);
-    opacity: 0.5;
-  }
-
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; }
-}
+   and a single column just recreates the long scroll the index exists to avoid. */
+// Column COUNT only — the rest of the block index (hanging indents, the dash
+// markers, break-inside) lives in assets/content-constructs.css so the PDF
+// builder gets the identical treatment. Read that file's header first.
+.markdown .block-index { columns: 2; }
 
 @media screen and (min-width: 40rem) {
   .markdown .block-index { columns: 3; }

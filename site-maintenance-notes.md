@@ -823,25 +823,38 @@ If `/snippets/` or taxonomy pages reappear in the sitemap after an update, check
 
 ---
 
-## The PDF builder duplicates some site CSS on purpose
+## The PDF builder keeps itself in step with the site
 
-`assets/builder.css` is standalone: it does not import `assets/_custom.scss` or
-the theme's `_shortcodes.scss`, because the builder page deliberately sits
-outside the book theme's chrome. The cost is that any *shortcode construct* a
-page uses arrives in the builder as bare, unstyled markup.
+Nothing here needs a manual sync step. Three mechanisms carry it:
 
-That has already bitten once. A `{{< catalog layout="names" >}}` index reached
-the builder as a plain nested `<ul>`, so a two-column list of short names
-printed as one very tall single-column stack, and `{{< tabs >}}` printed its
-radio buttons into the PDF.
+**Content is generated, never listed.** `layouts/builder/list.builderdata.json`
+is a Hugo output format that emits `/builder/blocks.json` from the site's own
+pages and snippets at build time. Write a new snippet or page and it is in the
+builder on the next build — there is no inventory to update, and nothing to
+remember.
 
-`builder.css` therefore carries its own copies of the rules for
-`.block-index`, `.four-col`, `.book-columns` and `.book-tabs`, under a comment
-saying so. **If you restyle any of those on the site, restyle them there too.**
-The audit that finds new cases is: collect every `class="…"` in
-`public/builder/blocks.json` and check each name against `builder.css`.
+**Shared styling has one home.** The builder page sits outside the book theme's
+chrome, so it does not load the theme stylesheet, and anything a shortcode
+emits would otherwise reach it as bare markup. `assets/content-constructs.css`
+holds the styling for those constructs and is loaded by **both**: the site via
+`layouts/_partials/docs/inject/head.html`, the builder by concatenation in
+`layouts/builder/list.html`. Edit that one file and both move together.
 
-One deliberate divergence: on the site `{{< tabs >}}` shows one panel and hides
-the rest. A printed document cannot be clicked, and hiding a panel would drop
-its content from the PDF, so the builder shows every panel and turns each tab
-label into a heading.
+The single exception is the column *count*, which is genuinely context-specific
+— the site's measure grows with the viewport, the builder's document is a fixed
+46em page proof — so the site sets its counts in `_custom.scss` and the builder
+sets its own in `builder.css`, each with a comment pointing at the shared file.
+The builder also deliberately flattens `{{< tabs >}}`: a PDF cannot be clicked,
+and hiding a panel would drop its content from the document entirely.
+
+**New constructs fail the preflight.** `_discovery/tools/buildercss.py`, run as
+check 5 of `check.sh`, compares every class in `public/builder/blocks.json`
+against the stylesheet the builder actually ships and fails on any that has no
+rule. Add a shortcode that emits new markup and the preflight names the class
+and points at the shared file. This is the part that covers what sharing cannot
+— a construct that did not exist when the shared file was written.
+
+That combination is why this section no longer lists anything to do by hand.
+The one habit worth keeping: put new construct styling in
+`assets/content-constructs.css`, not in `_custom.scss` or `builder.css`, or it
+will only appear on one side.

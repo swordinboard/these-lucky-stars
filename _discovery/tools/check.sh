@@ -54,8 +54,11 @@ else bad "broken links above"; fi
 step "4. data/blocks.json + data/edges.json up to date"
 if python3 _discovery/tools/builddata.py --check; then ok "canonical data matches content"; else bad "run: python3 _discovery/tools/builddata.py"; fi
 
+step "5. PDF builder styles every construct the content uses"
+if python3 _discovery/tools/buildercss.py "$OUT/site"; then ok "no unstyled constructs in the builder"; else bad "see above"; fi
+
 if [ -n "$BASELINE" ]; then
-  step "5. Rendered-text diff vs $BASELINE (no silent content loss)"
+  step "6. Rendered-text diff vs $BASELINE (no silent content loss)"
   wt="$OUT/baseline"
   if git worktree add -q --detach "$wt" "$BASELINE" 2>/dev/null; then
     rm -rf "$wt/themes/hugo-book"
