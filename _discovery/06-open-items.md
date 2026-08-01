@@ -28,10 +28,16 @@ C1, C3 and C5 are reviewed and actioned; C2 came back clean.
 
 **Would not** — safe to do during or after Phase 4:
 
-- §1 both items (merge hygiene, not builder inputs)
-- §2 the eight blank summaries — accepted, all on `wip:` pages
-- §5's 18 implicit edges, §5d duplicate page headings, §6 chrome, §7 playtest
+- §1 `draft: true` on the six parked pages (merge hygiene, not builder inputs)
+- §5d duplicate page headings, §6 chrome, §7 playtest
 - §4 is closed: Move 1 declined, Move 3 done.
+
+**Closed by decision, no work to do:**
+
+- §1 the Medieval/Modern/Frontier duplication — both placeholders stay; the
+  duplication *is* the structure.
+- §2 the eight blank summary cells — expected until the WIP content is written.
+- §5 C2's 18 implicit edges — reviewed, fine as implicit.
 
 **Already done and load-bearing for the builder:** `data/blocks.json` with
 `wip`/`owns_heading`/`url`/`page_urls`/`requires`, `data/edges.json` with
@@ -61,17 +67,18 @@ These would do visible damage on the live site.
         `{{< children >}}` still renders with core drafted out.
       Note `tool-kits.md` is **not** on this list: it is `wip: true` but has real
       rules on it and fixes a link that was broken. It should ship.
-- [ ] **Decide the Medieval/Modern/Frontier duplication.** There are now two
+- [x] **Medieval/Modern/Frontier duplication — decided: keep both.** There are two
       parked things per future setting: the equipment stubs at
       `inventory--equipment/<setting>-equipment/` (already `draft: true`) and the
-      new module pages at `free-srd/<setting>-module.md`. Both are placeholders
-      for the same setting. Keep both, or drop the equipment stubs and let the
-      module page be the only placeholder until there is content?
+      module pages at `free-srd/<setting>-module.md`. Your call: *"the placeholder
+      duplication makes up the structure, it's fine."* Both stay — they are the
+      shape the settings will fill in, not an accident. Nothing to do.
 
 ## 2. Content gaps the generated tables expose
 
-- [ ] **8 blocks render a visible blank summary cell** — the 4 bot platforms
-      (BAL, HEL-1, T00L, TRK-A) and the 4 sci-fi races. **Accepted as-is**: every
+- [x] **8 blocks render a visible blank summary cell** — the 4 bot platforms
+      (BAL, HEL-1, T00L, TRK-A) and the 4 sci-fi races. **Closed — expected until
+      the WIP content is written**, and not a defect to chase. Every
       one is on a `wip: true` page, so the blank reads as unfinished rather than
       broken. Was reported as 29; the check is now layout-aware, and the 20
       item-tags blocks only appear in a `layout="names"` index, which has no
@@ -151,10 +158,10 @@ page-scoped prose onto the pages, which is the right shape: an opening summary o
 a page that *contains* blocks is page chrome, not part of a block. I removed the
 last "below" from `components/installation`. The rest were confirmed fine.
 
-- [ ] **C2 — orphans and implicit edges.** Your hunch checked out: the worksheet
-      now carries a *reachable by browsing* column, and **all 81 sit on a page
-      the nav links to**. Nothing is stranded. The 18 implicit edges are still
-      unreviewed.
+- [x] **C2 — orphans and implicit edges. Closed.** Your hunch checked out: the
+      worksheet carries a *reachable by browsing* column, and **all 81 sit on a
+      page the nav links to**. Nothing is stranded. The 18 implicit edges were
+      reviewed and accepted as-is — they stay implicit.
 
 ## 5a. Heading migration — in progress
 

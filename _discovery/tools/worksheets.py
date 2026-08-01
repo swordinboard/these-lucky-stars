@@ -367,8 +367,28 @@ no_table = [b for b in nosum if b["id"] not in IN_TABLE and b["id"] not in IN_NA
 by_type = collections.defaultdict(list)
 for b in missing:
     by_type[b["type"]].append(b)
-w(f"**{len(missing)} blocks render a visible blank cell.**")
+# A blank cell on a `wip:` page reads as unfinished, not broken -- your call, and
+# it stays true as long as the page is still WIP. Only a blank on a *shipped* page
+# is a defect, so that is the number worth surfacing.
+missing_wip = [b for b in missing if b.get("wip")]
+missing = [b for b in missing if not b.get("wip")]
+by_type = collections.defaultdict(list)
+for b in missing:
+    by_type[b["type"]].append(b)
+if missing:
+    w(f"**{len(missing)} blocks on shipped pages render a visible blank cell.** "
+      "These are the defects —")
+    w("a reader sees an empty column with no signal that anything is unfinished.")
+else:
+    w("**No shipped page renders a blank summary cell.**")
 w("")
+if missing_wip:
+    w(f"A further **{len(missing_wip)}** are on `wip: true` pages — **expected until "
+      "that content is")
+    w("written**, and accepted as such: the blank reads as unfinished rather than "
+      "broken. ")
+    w(", ".join(f"`{b['id']}`" for b in sorted(missing_wip, key=lambda b: b["id"])) + ".")
+    w("")
 if names_only:
     w(f"A further **{len(names_only)}** appear only in a `layout=\"names\"` index, where")
     w("there is no cell to be blank — no visible defect, though the builder would")
@@ -489,13 +509,19 @@ w("")
 
 w("### Implicit edges — rule couplings with no link in the prose")
 w("")
-w("These are invisible while reading. Decide per row: leave implicit, or write a")
-w("real in-text link.")
+w(f"**Reviewed and accepted — all {len(IMPLICIT)} stay implicit.** No decision "
+  "outstanding here; the")
+w("table is kept as a record of the couplings, not as a queue. Listed because a")
+w("future rules change to either side is worth checking against the other.")
+w("")
+w("<details><summary>the " + str(len(IMPLICIT)) + " couplings</summary>")
 w("")
 w("| From | To | Why it is coupled |")
 w("|---|---|---|")
 for e in IMPLICIT:
     w(f"| `{e['source']}` | `{e['target']}` | {e.get('note','')} |")
+w("")
+w("</details>")
 w("")
 w("---")
 w("")
