@@ -273,34 +273,40 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   .lib { transition: none; }
 }
 
+/* Running head and footer. Deliberately OUTSIDE @media print: @page only
+   applies when printing anyway, and paged.js lays its pages out on screen —
+   nested in @media print it never saw this rule, rendered no margin boxes, and
+   the only header on the sheet came from Chrome's own, printed in Chrome's page
+   margin outside paged.js's full-sheet boxes.
+
+   The running footer: document title left, page number right.
+   Unlike the header this cannot be a repeated element. A counter only
+   paginates inside an @page margin box — anywhere else counter(page)
+   resolves to 0 on every sheet, which is exactly what a fixed-position
+   probe produced. The title arrives through a custom property because CSS
+   content cannot read the document; builder.js keeps --doc-title in step
+   with the title block. Browsers without margin-box support lose the
+   footer and keep everything else. */
+@page {
+  margin: 17mm 16mm;
+
+  @top-center {
+    content: var(--running-head, "");
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+  @bottom-left {
+    content: var(--doc-title, "");
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+}
+
 /* --------------------------------------------------------------- the PDF */
 
 @media print {
-  /* The running footer: document title left, page number right.
-     Unlike the header this cannot be a repeated element. A counter only
-     paginates inside an @page margin box — anywhere else counter(page)
-     resolves to 0 on every sheet, which is exactly what a fixed-position
-     probe produced. The title arrives through a custom property because CSS
-     content cannot read the document; builder.js keeps --doc-title in step
-     with the title block. Browsers without margin-box support lose the
-     footer and keep everything else. */
-  @page {
-    margin: 17mm 16mm;
-
-    @top-center {
-      content: var(--running-head, "");
-      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
-    }
-    @bottom-left {
-      content: var(--doc-title, "");
-      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
-    }
-    @bottom-right {
-      content: counter(page) " / " counter(pages);
-      font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
-    }
-  }
-
   html, body { height: auto; overflow: visible; display: block;
     background: #fff; color: #000; font-size: 10.5pt; }
   .bar, .lib, .item-bar, .empty, .scrim { display: none !important; }

@@ -480,6 +480,34 @@
     return { filled: filled, missing: missing };
   }
 
+  /* Once the Previewer is handed the stylesheets, paged.js resolves the @page
+   * margin boxes itself — var() and the page counters included — and writes
+   * them into a ::after on each box. An earlier version filled them from here
+   * instead, which printed everything twice. If a header ever goes missing,
+   * check that the sheets are still being passed before adding code here. */
+
+  /* Chrome prints the paginated boxes as ordinary content, so its own @page
+   * margins would inset each already-page-sized box and its own margin boxes
+   * would print a second header at the sheet edge. Both are turned off for the
+   * duration of the paged print; the native Ctrl+P path still needs them. */
+  var PAGED_PRINT_CSS =
+    "@page { margin: 0; " +
+    "@top-center { content: none; } " +
+    "@bottom-left { content: none; } " +
+    "@bottom-right { content: none; } }";
+
+  function applyPagedPageRule(on) {
+    var id = "paged-page-rule", node = document.getElementById(id);
+    if (on && !node) {
+      node = document.createElement("style");
+      node.id = id;
+      node.textContent = PAGED_PRINT_CSS;
+      document.head.appendChild(node);
+    } else if (!on && node) {
+      node.parentNode.removeChild(node);
+    }
+  }
+
   /* Block ids contain characters querySelector would read as syntax. */
   function cssId(id) {
     return "#" + (window.CSS && CSS.escape ? CSS.escape(id) : id.replace(/([^\w-])/g, "\\$1"));
@@ -523,16 +551,26 @@
       out.id = "paged-out";
       document.body.appendChild(out);
 
+      /* Previewer must be handed the stylesheets explicitly. Passing [] does
+       * not mean "use the document's" — it means none, and paged.js then
+       * paginates against its own defaults: 1in margins instead of the 17mm in
+       * @page, and no print rules at all. */
+      var sheets = Array.prototype.map.call(
+        document.querySelectorAll('link[rel="stylesheet"]'),
+        function (l) { return l.href; });
+
       return new (pagedApi().Previewer)()
-        .preview(source.innerHTML, [], out)
+        .preview(source.innerHTML, sheets, out)
         .then(function (flow) {
           var res = fillTocNumbers(out);
+          applyPagedPageRule(true);
           document.body.classList.add("printing");
           return { flow: flow, res: res, out: out };
         });
     }).then(function (state) {
       function cleanup() {
         restoreCompact();
+        applyPagedPageRule(false);
         document.body.classList.remove("printing");
         var n = document.getElementById("paged-out");
         if (n) n.parentNode.removeChild(n);
@@ -550,6 +588,7 @@
       if (window.console) console.warn("paged.js unavailable, printing without contents-page numbers:", err);
       var n = document.getElementById("paged-out");
       if (n) n.parentNode.removeChild(n);
+      applyPagedPageRule(false);
       document.body.classList.remove("printing");
       btn.disabled = false;
       /* the native path has its own compact handling in @media print */
