@@ -253,6 +253,18 @@
       host.appendChild(wrap);
     });
 
+    /* The toolbar renders above its item, so selecting something already at the
+     * top of the scroll area puts the controls you just summoned out of sight —
+     * on a phone that is most of the screen. Nudge it back into view. */
+    if (selected) {
+      var sel = host.querySelector(".item.sel");
+      var stage = document.querySelector(".stage");
+      if (sel && stage &&
+          sel.getBoundingClientRect().top < stage.getBoundingClientRect().top) {
+        sel.scrollIntoView({ block: "start", behavior: "auto" });
+      }
+    }
+
     /* A closed <details> prints as a bare label with its content missing, and
      * CSS cannot open one. The builder is assembling a document to be read on
      * paper, where the collapse serves no purpose, so open them all. */
@@ -334,7 +346,7 @@
             (p.wip ? " <em class='wip'>wip</em>" : "") + "</span>" +
             "<span class='lib-meta'>" + p.blocks.length +
             (p.blocks.length === 1 ? " block" : " blocks") + "</span>";
-          r.onclick = function () { addPage(p.url); commit(); };
+          r.onclick = function () { addPage(p.url); afterAdd(); };
           host.appendChild(r);
         });
       });
@@ -349,7 +361,7 @@
         (b.wip ? " <em class='wip'>wip</em>" : "") + "</span>" +
         "<span class='lib-meta'>" + esc(b.type) + "</span>" +
         (b.summary ? "<span class='lib-sum'>" + esc(b.summary) + "</span>" : "");
-      r.onclick = function () { addBlock(b.id); commit(); };
+      r.onclick = function () { addBlock(b.id); afterAdd(); };
       host.appendChild(r);
     });
   }
@@ -357,6 +369,30 @@
   /* ---------------------------------------------------------------- wiring */
 
   function commit() { save(); renderPreview(); }
+
+  /* ------------------------------------------------------ narrow-screen shell */
+
+  function narrow() { return window.matchMedia("(max-width: 900px)").matches; }
+
+  function drawer(open) {
+    var lib = document.getElementById("lib");
+    lib.classList.toggle("open", open);
+    document.getElementById("scrim").hidden = !open;
+    document.getElementById("lib-toggle").setAttribute("aria-expanded", open);
+    if (open) document.getElementById("q").focus();
+  }
+
+  function menu(open) {
+    document.getElementById("bar").classList.toggle("more-open", open);
+    document.getElementById("menu-toggle").setAttribute("aria-expanded", open);
+  }
+
+  /* On a phone the drawer covers the document, so leaving it open after an add
+   * hides the thing you just did. Close it and let the result be visible. */
+  function afterAdd() {
+    commit();
+    if (narrow()) drawer(false);
+  }
 
   function act(a, u) {
     if (a === "up") move(u, -1);
@@ -369,6 +405,25 @@
   }
 
   function wire() {
+    document.getElementById("lib-toggle").onclick = function () {
+      drawer(!document.getElementById("lib").classList.contains("open"));
+    };
+    document.getElementById("scrim").onclick = function () { drawer(false); };
+    document.getElementById("menu-toggle").onclick = function (e) {
+      e.stopPropagation();
+      menu(!document.getElementById("bar").classList.contains("more-open"));
+    };
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest("#bar-more") && !e.target.closest("#menu-toggle")) menu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { drawer(false); menu(false); }
+    });
+    /* returning to a wide window must not leave the drawer transformed away */
+    window.matchMedia("(max-width: 900px)").addEventListener("change", function (ev) {
+      if (!ev.matches) { drawer(false); menu(false); }
+    });
+
     document.getElementById("q").addEventListener("input", renderLibrary);
     ["f-type", "f-cat", "f-wip"].forEach(function (id) {
       document.getElementById(id).addEventListener("change", renderLibrary);

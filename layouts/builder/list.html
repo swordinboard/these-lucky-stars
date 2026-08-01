@@ -21,23 +21,31 @@
 </head>
 <body class="loading">
 
-<div class="bar">
+<div class="bar" id="bar">
+  <button id="lib-toggle" class="on-narrow" aria-expanded="false"
+          aria-controls="lib">＋ Add</button>
   <span class="brand"><a href="/docs/free-srd/">These Lucky Stars</a></span>
   <input type="text" id="doc-title" aria-label="Document title" placeholder="Document title">
   <input type="text" id="doc-sub" aria-label="Subtitle" placeholder="Subtitle">
   <span id="count">0 items</span>
   <span class="spacer"></span>
-  <label><input type="checkbox" id="opt-toc" checked> Contents page</label>
-  <label><input type="checkbox" id="compact"> Compact</label>
-  <button id="export">Save</button>
-  <span class="file-btn"><button type="button">Open</button>
-    <input type="file" id="import" accept="application/json" aria-label="Open a saved document"></span>
-  <button id="clear">Clear</button>
-  <button id="print" class="btn-primary">Print / PDF</button>
+  <div class="bar-more" id="bar-more">
+    <label><input type="checkbox" id="opt-toc" checked> Contents page</label>
+    <label><input type="checkbox" id="compact"> Compact</label>
+    <button id="export">Save</button>
+    <span class="file-btn"><button type="button">Open</button>
+      <input type="file" id="import" accept="application/json" aria-label="Open a saved document"></span>
+    <button id="clear">Clear</button>
+  </div>
+  <button id="menu-toggle" class="on-narrow" aria-expanded="false"
+          aria-controls="bar-more" aria-label="More options">⋯</button>
+  <button id="print" class="btn-primary">Print<span class="wide-only"> / PDF</span></button>
 </div>
 
+<div class="scrim" id="scrim" hidden></div>
+
 <div class="app">
-  <aside class="lib">
+  <aside class="lib" id="lib">
     <div class="lib-tabs">
       <button class="lib-tab on" data-mode="blocks">Blocks</button>
       <button class="lib-tab" data-mode="pages">Whole pages</button>

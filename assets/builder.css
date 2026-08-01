@@ -59,6 +59,11 @@ button:hover { border-color: var(--accent); color: var(--accent); }
 
 .app { display: grid; grid-template-columns: 320px 1fr; min-height: 0; }
 
+/* A grid item will not shrink below its min-content width unless told to. The
+   bar is a nowrap flex row, so its min-content is the sum of its buttons —
+   without this the whole page inherits that width and scrolls sideways. */
+.bar, .app, .stage, .lib { min-width: 0; }
+
 /* ----------------------------------------------------------------- library */
 
 .lib { border-right: 1px solid var(--line); display: flex; flex-direction: column;
@@ -110,7 +115,7 @@ button:hover { border-color: var(--accent); color: var(--accent); }
   padding: 2em; text-align: center; }
 
 .item { position: relative; border: 1px solid transparent; border-radius: 6px;
-  margin: 2px 0; padding: 2px 6px; }
+  margin: 2px 0; padding: 2px 6px; scroll-margin-top: 10px; }
 .item:hover { border-color: var(--line); }
 .item.sel { border-color: var(--accent); background: var(--sel); }
 .item.drop { border-top: 2px solid var(--accent); }
@@ -157,6 +162,78 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 /* details are a screen affordance; in a PDF the content simply belongs there */
 .markdown details > summary { cursor: pointer; font-weight: 600; }
 
+/* ------------------------------------------------------------ narrow screens
+
+   Below 900px there is not room for a permanent library beside the document,
+   so it becomes a drawer over it. The document is the thing being worked on and
+   stays put; the library is what you reach for. Adding something closes the
+   drawer, so you see it land.
+
+   Drag-to-reorder does not exist on touch, so the ↑↓ buttons are the mechanism
+   there, not a convenience — they get real tap targets, and the toolbar sits
+   inline above the selected item instead of floating on hover, which touch
+   does not have. */
+
+.on-narrow { display: none; }
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 35; }
+
+@media (max-width: 900px) {
+  .on-narrow { display: inline-flex; }
+  .wide-only, .brand, #doc-sub { display: none; }
+  #doc-title { flex: 1 1 6rem; width: auto; min-width: 0; }
+  .bar { position: relative; gap: 7px; flex-wrap: nowrap; padding: 7px 9px; }
+  #count { font-size: 12px; }
+
+  .bar-more {
+    display: none; position: absolute; top: calc(100% + 4px); right: 8px;
+    z-index: 40; flex-direction: column; align-items: stretch; gap: 9px;
+    background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
+    padding: 11px; box-shadow: 0 3px 14px rgba(0,0,0,.22); min-width: 11rem;
+  }
+  .bar.more-open .bar-more { display: flex; }
+  .bar-more .file-btn, .bar-more button { width: 100%; }
+
+  .app { grid-template-columns: 1fr; }
+  .lib {
+    position: fixed; top: 0; bottom: 0; left: 0; z-index: 38;
+    width: min(88vw, 340px); border-right: 1px solid var(--line);
+    transform: translateX(-100%); transition: transform .2s ease;
+  }
+  .lib.open { transform: none; }
+
+  .stage { padding: 10px 0 40vh; }
+  #doc { padding: 1.5em 1.15em; box-shadow: none; }
+  .doc-toc.two-col ul { columns: 1; }
+
+  .item-bar {
+    position: static; display: none; flex-wrap: wrap; box-shadow: none;
+    margin: 0 0 6px; border-radius: 5px;
+  }
+  .item:hover .item-bar { display: none; }
+  .item.sel .item-bar { display: flex; }
+  .grip { display: none; }          /* no drag-and-drop on touch */
+
+  /* The kind chip and the repeated title cost a whole toolbar row on a phone,
+     and the item's own heading is directly below saying the same thing. In
+     compact mode the body is hidden, so there the name is all there is. */
+  .item-bar .item-kind, .item-bar .item-name { display: none; }
+  body.compact .item-bar .item-name { display: block; flex: 1; }
+}
+
+@media (min-width: 901px) { .scrim { display: none; } }
+
+/* Fingers need bigger targets than a mouse pointer does. */
+@media (pointer: coarse) {
+  .item-bar { gap: 7px; font-size: 13px; }
+  .item-bar button { padding: 7px 12px; font-size: 14px; }
+  .lib-row { padding: 12px 11px; }
+  .lib-tab { padding: 13px 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lib { transition: none; }
+}
+
 /* --------------------------------------------------------------- the PDF */
 
 @media print {
@@ -164,9 +241,10 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 
   html, body { height: auto; overflow: visible; display: block;
     background: #fff; color: #000; font-size: 10.5pt; }
-  .bar, .lib, .item-bar, .empty { display: none !important; }
+  .bar, .lib, .item-bar, .empty, .scrim { display: none !important; }
   .app { display: block; }
   .stage { overflow: visible; padding: 0; background: #fff; }
+  .app { grid-template-columns: 1fr; }
 
   #doc { max-width: none; margin: 0; padding: 0; box-shadow: none; background: #fff; }
   .item { border: 0 !important; background: none !important; margin: 0; padding: 0; }
