@@ -40,6 +40,19 @@ ACCEPTED_DEIXIS = {        # C3a — pointer reviewed, left as written
     "vehicles/mounts": "all rules referenced are in the same snippet",
     "wounds/wounds": "reference is inside the same block",
 }
+ACCEPTED_BARE = {          # C7b — reviewed, stays nameless on the page
+    "actions/standard-actions": "prose between is necessary site chrome",
+    "combat/actions-in-combat": "prose between is necessary site chrome",
+    "objects/overview": "prose between is necessary site chrome",
+    "objects/armor-degradation": "leave bare",
+    "objects/shield-degradation": "leave bare",
+    "movement/speed-tiers": "leave bare",
+    "movement/speed-tiers-chart": "leave bare, and anchorless by decision",
+}
+ACCEPTED_NAMES = {         # C7c — page heading and block title both stand
+    "movement/primary-speed", "basics/decision-rolls", "combat/standard-attack",
+    "combat/brace", "movement/speed-descriptors",
+}
 ACCEPTED_TITLES = {        # C5 — title confirmed appropriate as-is
     "movement/speed-tiers", "movement/speed-tiers-chart", "combat/grapple",
 }
@@ -149,15 +162,19 @@ w("### What is open")
 w("")
 w("| Section | Slots | What it is |")
 w("|---|---|---|")
-w("| **C7** | 28 | Heading migration leftovers — the call sites that could not be converted mechanically. **Start here**; the answers set the pattern for the next two sections. |")
-w("| **C6** | 18 | Blocks whose internal headings break the h2 convention. Mostly mechanical renumbering. |")
+w("| **C6a** | 4 | Three blocks off the h2 convention, plus the `Related` section sitting inside `core-rules/size`. |")
 w("| **C1c** | 4 | Blocks with no tags at all. |")
 w("| **C1e** | 1 | Tags-per-block distribution, eyeball only. |")
-w("| **C5** | 1 | One title still unreviewed. |")
+w("")
+w("Two of the three C6a blocks are **waiting on the inventory wave, not on you** —")
+w("renumbering a block whose call site has no level yet would render it a level")
+w("too shallow, so they move when their page does.")
+w("")
+w("**C7 is closed.** Everything in it was answered and applied.")
 w("")
 w("Passing checks, kept so drift gets caught: **C1a** near-duplicate tag names,")
 w("**C1d** cohort gaps, **C2** orphan reachability, **C4** `requires` against the")
-w("prerequisite line. All currently report clean.")
+w("prerequisite line, **C5** section-block titles. All currently report clean.")
 w("")
 w("---")
 w("")
@@ -802,6 +819,15 @@ w("something broader, or follow another block as a continuation. Leaving them")
 w("bare is legitimate; the question is whether each *should* be findable on its")
 w("own, since the PDF builder will print `title` for them regardless.")
 w("")
+settled_b = [n for n in nolead if n[1] in ACCEPTED_BARE]
+nolead = [n for n in nolead if n[1] not in ACCEPTED_BARE]
+if settled_b:
+    ids = sorted({n[1] for n in settled_b})
+    w(f"*{len(settled_b)} call sites across {len(ids)} blocks reviewed and left bare: "
+      + ", ".join(f"`{i}`" for i in ids) + ".*")
+    w("")
+if not nolead:
+    w("- nothing left")
 for path, bid, grp, bl in nolead:
     short = path.replace("content/docs/free-srd/", "")
     same = grp and grp[1] == B[bid]["title"]
@@ -828,7 +854,13 @@ DISAGREE = [
     ("core-rules/combat.md", "combat/brace", "Defensive Actions", "a group of 4"),
     ("core-rules/vehicle-rules.md", "movement/speed-descriptors", "Modes & Maneuverability", "one block"),
 ]
-for path, bid, pagename, scope in DISAGREE:
+open_d = [d for d in DISAGREE if d[1] not in ACCEPTED_NAMES]
+if len(open_d) < len(DISAGREE):
+    w(f"*{len(DISAGREE) - len(open_d)} reviewed — keep both names. The page heading "
+      "names the section, the block names itself, and the two doing different jobs "
+      "is the point.*")
+    w("")
+for path, bid, pagename, scope in open_d:
     w(f"- **{path.replace('core-rules/', '')}** — page says \u201c{pagename}\u201d, "
       f"block `{bid}` is titled \u201c{B[bid]['title']}\u201d  <sub>heading covers {scope}</sub>")
     spot("rename the block / rename the page heading / keep both")
@@ -842,7 +874,9 @@ w("that heading became a generated one. Nothing links to it and the site has zer
 w("broken links — but **a bare block's anchor is a side effect of its neighbour**,")
 w("which is the real argument for resolving C7a and C7b. Its old anchor was a")
 w("duplicate of `movement/speed-tiers` anyway, so neither value was correct.")
-spot("give it a heading, fold it into Speed Tiers, or leave it anchorless")
+w("")
+w("**Settled: left anchorless.** It is a chart belonging to Speed Tiers, not a")
+w("thing a reader looks up on its own.")
 w("")
 w("---")
 w("")
@@ -873,10 +907,23 @@ def block_headings(b):
             for m in re.finditer(r"^(#{1,6})\s+(.*)$", body, re.M)]
 
 
+def internal_headings(b):
+    """Headings inside a block, excluding one that merely restates its title.
+
+    `owns_heading` cannot be used for this any more: since the migration it
+    means \u201cthe call site emits the title\u201d, which is true of blocks whose file
+    contains no heading at all. Compare the text instead.
+    """
+    hs = block_headings(b)
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    if hs and norm(hs[0][1]) == norm(b["title"]):
+        return hs[1:]
+    return hs
+
+
 nested = []
 for b in LIVE:
-    hs = block_headings(b)
-    sub = hs[1:] if b["owns_heading"] and hs else hs
+    sub = internal_headings(b)
     if not sub:
         continue
     lv = sorted({l for l, _ in sub})
@@ -898,6 +945,15 @@ w("")
 for b, sub, lv, _ in sorted(bad, key=lambda n: n[0]["id"]):
     page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
     want = list(range(2, 2 + len(lv)))
+    if b["id"] == "chargen/overview":
+        w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>")
+        w("      **Not a renumber — I mis-framed this row.** Renumbering would demote")
+        w("      the page's H1 to an H2. The real fault is a name mismatch: `title` is")
+        w(f"      \u201c{b['title']}\u201d but the H1 says \u201cCharacter Creation\u201d, and that")
+        w("      is the only reason the block reads as owning no heading. Fix the")
+        w("      names and its six `h2` sections are already on convention.")
+        spot("which name wins — title or the H1")
+        continue
     w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>")
     w(f"      authored at {', '.join('h%d' % x for x in lv)}"
       f" \u2192 should be {', '.join('h%d' % x for x in want)}"
@@ -915,10 +971,16 @@ w("- **`core-rules/size` has a `## Related` section inside the block.** Every")
 w("  other page keeps Related in the page shell. Printed into a PDF this block")
 w("  drags a \u201cRelated\u201d heading and four site links with it.")
 spot("move Related out of the block")
-w("- **The five race pages disagree with each other.** Android and Classic Human")
-w("  put Features at `h2`; Reptilian, Star-touched Human and Zeta Grey put it at")
-w("  `h3`. Same page shape, same block type.")
-spot("make all five h2")
+RACE_IDS = [b for b in LIVE if b["id"].startswith("races/") and b["id"] != "races/overview"]
+race_lv = {}
+for rb in RACE_IDS:
+    sub = internal_headings(rb)
+    if sub:
+        race_lv.setdefault(sub[0][0], []).append(rb["id"])
+if len(race_lv) > 1:
+    w("- **The race pages disagree with each other** on what level Features sits at: "
+      + "; ".join(f"h{k} on {', '.join(v)}" for k, v in sorted(race_lv.items())) + ".")
+    spot("pick one level for all of them")
 w("")
 
 w(f"### C6b. On convention — {len(good)} blocks")
