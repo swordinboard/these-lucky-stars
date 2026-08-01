@@ -3,6 +3,10 @@
 Reference for Claude and site maintainers. Covers what to check before and after
 different types of updates to avoid breaking changes or inconsistencies.
 
+> **Just want the steps?** See **[publishing-checklist.md](publishing-checklist.md)** —
+> a one-page "when you do X, do A then B" list with no explanations.
+> This file is the reasoning behind it; that file is the routine.
+
 ---
 
 ## ⚠ Before merging to `main` (the live site)
@@ -32,7 +36,8 @@ What it checks, and why each one exists:
 | 2 | `snippetlint.py` | A snippet ending in an HTML comment — see the snippet rules below. This one silently deletes page content. |
 | 3 | `linkcheck.py` | Broken internal links and `#anchors`, scanned on the **built** site (so it sees shortcode- and include-generated output, not just markdown). |
 | 4 | `builddata.py --check` | `data/blocks.json` / `data/edges.json` drifted out of sync with the content. |
-| 5 | `rendercheck.py` (only with a baseline) | **Content that disappears from the rendered page even though the markdown still exists.** Include boundaries can swallow text; a source-level diff will not see it. |
+| 5 | `buildercss.py` | A shortcode's markup reaching the PDF builder with no styling, so it prints as a bare stack. Names the class and points at `assets/content-constructs.css`. |
+| 6 | `rendercheck.py` (only with a baseline) | **Content that disappears from the rendered page even though the markdown still exists.** Include boundaries can swallow text; a source-level diff will not see it. Prints `REVIEW`, not PASS/FAIL — read the list and confirm you meant those changes. |
 
 **Known/accepted failures** (safe to merge with these):
 
