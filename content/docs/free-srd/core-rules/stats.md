@@ -25,9 +25,7 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/movement/primary-speed" "h3" "false" %}}
 
-**Speed Modes**
-
-{{% include "/snippets/movement/speed-descriptors" %}}
+{{% include "/snippets/movement/speed-descriptors" "lead" %}}
 
 {{% include "/snippets/movement/speed-tiers" "lead" %}}
 

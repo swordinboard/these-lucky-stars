@@ -56,39 +56,39 @@ The following catalog lists the most common actions characters take during comba
 
 ### Aggressive Actions
 
-{{% include "/snippets/combat/standard-attack" "h3" "false" %}}
+{{% include "/snippets/combat/standard-attack" "lead" %}}
 
-{{% include "/snippets/actions/move" %}}
+{{% include "/snippets/actions/move" "lead" %}}
 
 **Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/combat/opportunity-attack" %}}
 
-{{% include "/snippets/combat/disarm" %}}
+{{% include "/snippets/combat/disarm" "lead" %}}
 
-{{% include "/snippets/combat/draw-a-weapon" %}}
+{{% include "/snippets/combat/draw-a-weapon" "lead" %}}
 
 **Grapple** *(2 AP)*
 
-{{% include "/snippets/combat/grapple" %}}
+{{% include "/snippets/combat/grapple" "lead" %}}
 
-{{% include "/snippets/combat/shatter" %}}
+{{% include "/snippets/combat/shatter" "lead" %}}
 
-{{% include "/snippets/combat/stand" %}}
+{{% include "/snippets/combat/stand" "lead" %}}
 
-{{% include "/snippets/combat/trip" %}}
+{{% include "/snippets/combat/trip" "lead" %}}
 
-{{% include "/snippets/combat/unarmed-attack" %}}
+{{% include "/snippets/combat/unarmed-attack" "lead" %}}
 
 ### Defensive Actions
 
-{{% include "/snippets/combat/brace" "h3" "false" %}}
+{{% include "/snippets/combat/brace" "lead" %}}
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-{{% include "/snippets/combat/stealth" %}}
+{{% include "/snippets/combat/stealth" "lead" %}}
 
-{{% include "/snippets/actions/step" %}}
+{{% include "/snippets/actions/step" "lead" %}}
 
-{{% include "/snippets/combat/use-cover" %}}
+{{% include "/snippets/combat/use-cover" "lead" %}}
 
 ---
 

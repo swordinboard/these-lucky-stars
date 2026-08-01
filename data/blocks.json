@@ -2632,9 +2632,9 @@
    "/docs/free-srd/core-rules/action-economy/",
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "movement-actions",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
-  "owns_heading": false,
+  "anchor": "move",
+  "url": "/docs/free-srd/core-rules/action-economy/#move",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -2804,9 +2804,9 @@
    "/docs/free-srd/core-rules/action-economy/",
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "movement-actions",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
-  "owns_heading": false,
+  "anchor": "step",
+  "url": "/docs/free-srd/core-rules/action-economy/#step",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3479,9 +3479,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "defensive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
-  "owns_heading": false,
+  "anchor": "brace",
+  "url": "/docs/free-srd/core-rules/combat/#brace",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3681,9 +3681,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "disarm",
+  "url": "/docs/free-srd/core-rules/combat/#disarm",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3711,9 +3711,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "draw-a-weapon",
+  "url": "/docs/free-srd/core-rules/combat/#draw-a-weapon",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3743,9 +3743,9 @@
    "/docs/free-srd/core-rules/combat/",
    "/docs/free-srd/core-rules/stats/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "grapple",
+  "url": "/docs/free-srd/core-rules/combat/#grapple",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3836,9 +3836,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "shatter",
+  "url": "/docs/free-srd/core-rules/combat/#shatter",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3866,9 +3866,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "stand",
+  "url": "/docs/free-srd/core-rules/combat/#stand",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3896,9 +3896,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "standard-attack",
+  "url": "/docs/free-srd/core-rules/combat/#standard-attack",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -3928,9 +3928,9 @@
    "/docs/free-srd/core-rules/combat/",
    "/docs/free-srd/core-rules/stats/"
   ],
-  "anchor": "defensive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
-  "owns_heading": false,
+  "anchor": "stealth",
+  "url": "/docs/free-srd/core-rules/combat/#stealth",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -4014,9 +4014,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "trip",
+  "url": "/docs/free-srd/core-rules/combat/#trip",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -4044,9 +4044,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "aggressive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "owns_heading": false,
+  "anchor": "unarmed-attack",
+  "url": "/docs/free-srd/core-rules/combat/#unarmed-attack",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -4074,9 +4074,9 @@
   "page_urls": [
    "/docs/free-srd/core-rules/combat/"
   ],
-  "anchor": "defensive-actions",
-  "url": "/docs/free-srd/core-rules/combat/#defensive-actions",
-  "owns_heading": false,
+  "anchor": "use-cover",
+  "url": "/docs/free-srd/core-rules/combat/#use-cover",
+  "owns_heading": true,
   "category": [
    "core"
   ],
@@ -5399,7 +5399,7 @@
   ],
   "anchor": "extreme-environments",
   "url": "/docs/free-srd/core-rules/environmental-effects/#extreme-environments",
-  "owns_heading": false,
+  "owns_heading": true,
   "category": [
    "core"
   ],

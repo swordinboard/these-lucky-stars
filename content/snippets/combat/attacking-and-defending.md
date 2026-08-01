@@ -6,7 +6,7 @@ type: rule
 tags: [combat]
 ---
 
-### The Attack Roll: Opposed Rolls
+## The Attack Roll: Opposed Rolls
 
 When a character makes an attack against a defender who is aware and able to react, both the attacker and defender make opposed rolls:
 
@@ -18,7 +18,7 @@ Attackers roll their attack (ATK) while defenders roll their defense (DEF).
 
 Because the defender's roll uses their *current* DEF they become easier to hit if they have taken damage.
 
-### Advantage and Disadvantage in Combat
+## Advantage and Disadvantage in Combat
 
 The GM may grant [advantage or disadvantage](/docs/free-srd/core-rules/basics/#advantage) to either side of an opposed roll based on tactical or narrative circumstances. The following should be considered:
 

@@ -16,7 +16,7 @@ Wounds are applied normally when VIT thresholds are met. When VIT reaches 0 rule
 
 ---
 
-### Vacuum
+## Vacuum
 
 The hazards of a vacuum deserve special mention because it combines multiple items simultaneously. A character exposed to the vacuum of space without a sealed, pressurized suit immediately gains the **asphyxiating** condition and suffers **extreme cold exposure**.
 
@@ -24,12 +24,12 @@ The hazards of a vacuum deserve special mention because it combines multiple ite
 
 *Equipment* — A [pressurized suit](/docs/free-srd/inventory--equipment/item-tags/#pressurized) prevents asphyxiation and decompression trauma but provides no thermal protection. A full [space suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit) handles all three — asphyxiation, decompression, and cold resistance — but oxygen is still limited (1 hour for most suits, 5 hours for the [EVA Suit](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit)). When oxygen runs out, asphyxiating begins regardless of suit integrity.
 
-### Radiation
+## Radiation
 
 Unlike heat and cold, radiation exposure may not be immediately obvious to the characters. The GM may track radiation damage privately and reveal symptoms — the sick or fatigued conditions, unexplained burns — as they accumulate. Characters with detection equipment such as a [Hazard HUD](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud) would know they are in danger. Low-level radiation zones may use longer intervals of 10 minutes or more, while active reactor breaches and similar sources use intervals of 1 round to 1 minute.
 
 ---
 
-### Specialized Equipment
+## Specialized Equipment
 
 Standard space suits, pressurized suits, and field medical supplies like ARA-5 are designed for the expected hazards of space travel. Extreme environments push beyond what standard equipment is built for. GMs are encouraged to introduce specialized gear — thermal shielding, hardened radiation suits, cryo-rated armor — when the adventure calls for it. Such equipment might be purchased, salvaged, modified, or improvised, and its availability can drive meaningful preparation and decision-making at the table.

@@ -50,9 +50,9 @@ Movement is the most common action a character takes during any scene — in com
 
 Move and Step are the two primary movement actions. Both are Standard Actions.
 
-{{% include "/snippets/actions/move" %}}
+{{% include "/snippets/actions/move" "lead" %}}
 
-{{% include "/snippets/actions/step" %}}
+{{% include "/snippets/actions/step" "lead" %}}
 
 ### Speed
 

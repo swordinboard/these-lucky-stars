@@ -9,11 +9,11 @@ summary: "Subsystem"
 
 Computer systems can be accessed from dedicated terminals. Most characters in sci-fi settings will interact with computer systems at some point. Navigating simple systems is considered common knowledge. Secured systems require more work — they may be encrypted, require physical keys, or fight back. Accessing a secured system requires the matching key or code, or a [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack) and some technical know-how.
 
-### Networks
+## Networks
 
 Networks are formed by a series of linked devices, primarily communication devices. Most networks are put in place to facilitate ease of communication and information sharing. For purposes of encyption, networks use the same security and interaction rules as computer systems, but the actions can be performed by connecting a comp jack to any connected device within range in place of a terminal. Networks with Security level 0 are usually known as public networks and can be connected to freely. Secured networks need access keys to be connected to, or to be accessed with the comp jack.
 
-### System Level
+## System Level
 
 A computer system's security level determines how difficult it is to gain access or perform certain actions. When a security level is referenced for a check, use the base target from the chart below.
 
@@ -28,7 +28,7 @@ A computer system's security level determines how difficult it is to gain access
 
 *Level 0 systems are unsecured and do not require a comp jack or key/code to access. They may still have countermeasures — the base target is provided for bypass calculations.*
 
-### Common Actions
+## Common Actions
 
 Actions are typically performed in the following order:
 
@@ -50,11 +50,11 @@ A failed Bypass automatically triggers the countermeasure.
 
 **Search** *(2 AP)* — Search the system for specific information. Requires an INS check, typically target 9, though information-dense systems may have a higher target. If attempting to access specific files on a computer system they must usually be found using the search action before they can be viewed or downloaded.
 
-### Security Countermeasures
+## Security Countermeasures
 
 Countermeasures are an optional security layer that can be added to most systems. Unless there are obvious physical signs — such as visible automated weapons — countermeasures are undetectable without an Analyze action. Each countermeasure will have a **trigger**, a **reset**, and an **effect**.
 
-#### Triggers
+### Triggers
 
 **Command** — Activated when a specific command is entered into the system.
 
@@ -64,7 +64,7 @@ Countermeasures are an optional security layer that can be added to most systems
 
 **Keyless** — Activated whenever access is gained without the correct key or code.
 
-#### Resets
+### Resets
 
 **Automatic** — Resets once specific conditions are met, such as a timer expiring, hostiles being eliminated, or the system being locked again.
 
@@ -74,7 +74,7 @@ Countermeasures are an optional security layer that can be added to most systems
 
 **None** — Single-use per access point. Once triggered it is exhausted.
 
-#### Effects
+### Effects
 
 **Alarm** — Triggers an audible alert or silently signals a pre-programmed receiver. Analyze reveals which type, though the recipient of a silent alarm is not disclosed. Can be avoided or deactivated with a Bypass.
 

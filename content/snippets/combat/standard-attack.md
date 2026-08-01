@@ -6,4 +6,4 @@ type: rule
 tags: [combat, actions, aggressive-actions]
 ---
 
-**Standard Attack** *(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.
+*(2 AP)* — Once per turn, make a basic melee or ranged attack with any weapon, or an unarmed attack.

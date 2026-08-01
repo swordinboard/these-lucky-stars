@@ -30,11 +30,11 @@ This is why a slow-moving large vehicle still deals meaningful damage even with 
 
 > **Example — Truck crushes pedestrian.** A size 4 truck is slowly backing up (Slow speed) and a pedestrian is caught under its wheels. Damage is 4d6 + 0, averaging 14. The GM describes this as the pedestrian being pinned and dragged by the truck's weight — overrun, not impact. The character takes significant damage despite the truck barely moving.
 
-#### Damage to the Vehicle
+## Damage to the Vehicle
 
 The striking vehicle takes **collision damage** from an impact/overrun **only** if the target is of comparable size or larger than the vehicle. A car striking a pedestrian takes no damage. A car striking another car, a wall, or a Large creature takes damage equal to the collision damage (rolled separately).
 
-#### Collision & Occupants
+## Collision & Occupants
 
 Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude-fort) check** to brace against an impact — on a success, the occupant takes half damage.
 

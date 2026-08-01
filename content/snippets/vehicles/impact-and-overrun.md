@@ -8,7 +8,7 @@ tags: [vehicles]
 
 When a vehicle's path passes through a creature's space, the creature is in the vehicle's way. This is not an attack — it is a consequence of movement. The rules below resolve what happens, and who rolls what, based on whose intent created the situation.
 
-#### Scenario A — The Driver Chose the Path
+## Scenario A — The Driver Chose the Path
 
 If the driver declares a Drive path that deliberately passes through a creature's space, no driver check is required. The driver intended the collision and the vehicle proceeds along its path.
 
@@ -18,7 +18,7 @@ A creature eligible to dodge makes an *AGI check against the vehicle's speed and
 
 > Target to Dodge a Vehicle = 6 + vehicle's Speed modifier + number of spaces character is required to move.
 
-#### Scenario B — A Hazard Appeares in the Path
+## Scenario B — A Hazard Appeares in the Path
 
 If a creature, object, or other obstacle unexpectedly enters the driver's declared path mid-movement — through a [Readied Action](/docs/free-srd/core-rules/action-economy/#readied-actions), sudden visibility, another character's movement, or any other circumstance the driver did not anticipate — the driver makes a check to react.
 

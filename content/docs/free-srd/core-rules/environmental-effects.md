@@ -7,6 +7,4 @@ weight: 80
 
 {{% include "/snippets/environment/environmental-effects" "h2" %}}
 
-## Extreme Environments
-**Sci-Fi Module Addition**
-{{% include "/snippets/environment/extreme-environments" %}}
+{{% include "/snippets/environment/extreme-environments" "h2" %}}

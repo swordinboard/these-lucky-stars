@@ -20,7 +20,7 @@ The target number of a normal decision roll should reflect the difficulty of the
 >
 >This curve and scaling increase rewards choices during character creation/level up and makes low level modifiers hold their value for common rolls, especially when paired with Advantage/Disadvantage and Luck.
 
-### Target Difficulty Guide
+## Target Difficulty Guide
 
 | Description        |  Target Number  |
 |--------------------|-----------------|
@@ -29,18 +29,18 @@ The target number of a normal decision roll should reflect the difficulty of the
 | Challenging Task   |      8-12       |
 | Simple Task        |      4-6        |
 
-#### "Impossible" Tasks
+### "Impossible" Tasks
 
 The "Impossible" task description is used to describe any task that would be narratively impossible to achieve normally. For example: Lifting a train car over one's head, running on a cloud, convincing a King to invade his closest ally unprovoked, knowing the exact number of grains of sand in a large jar at a glance. These things cannot - or should not - normally be attempted as there is no way one would reasonably be able to succeed. It is up to the GM to decide whether to allow something to be attempted if the difficulty should begin at or above "Impossible." A target that reaches this description due to adjustments, abilities, or other modifications to the target value, is not considered an "Impossible" task.
 
-#### Strenuous Tasks
+### Strenuous Tasks
 
 Most strenuous tasks are the result of many modifiers to a target number, and would give even a trained professional a difficult time under normal conditions. They may be attempted, but their diffuculty should be made narratively clear. Even for the prepared and well trained targets in this range present a real risk of failure. At the low end of the range, a 14 often becomes no better than a coin flip for such characters.
 
-#### Challenging Tasks
+### Challenging Tasks
 
 Most tasks fall into the challenging range between 8 and 12. While they pose a healthy chance of success, often still worth a gamble for the unprepared, modifiers to the situation can quicky tip the scale in favor of success or failure. Generally an 8 is almost a coin flip for the unprepared or untrained, while a 12 is unlikely. For the trained or prepared, an 8 can become guaranteed, while a 12 can become routine.
 
-#### Simple Tasks
+### Simple Tasks
 
 Simple tasks stand a good chance of success for anyone of able body and mind. Many actions or effects that present a risk outside of a character's control or are performed under pressure require a decision roll at this level, usually a 6.

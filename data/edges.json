@@ -8256,7 +8256,7 @@
   "url": "/snippets/environment/extreme-environments",
   "text": null,
   "file": "content/docs/free-srd/core-rules/environmental-effects.md",
-  "line": 12
+  "line": 10
  },
  {
   "source": "page:/docs/free-srd/core-rules/health/",
@@ -8463,7 +8463,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 46
+  "line": 44
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8499,7 +8499,7 @@
   "url": "/snippets/movement/speed-descriptors",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 30
+  "line": 28
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8508,7 +8508,7 @@
   "url": "/snippets/movement/speed-tiers",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 32
+  "line": 30
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8517,7 +8517,7 @@
   "url": "/snippets/movement/speed-tiers-chart",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 34
+  "line": 32
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8526,7 +8526,7 @@
   "url": "/snippets/stats/defense",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 40
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8535,7 +8535,7 @@
   "url": "/snippets/stats/vitality",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 42
+  "line": 40
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8544,7 +8544,7 @@
   "url": "/snippets/stats/stress-threshold",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 48
+  "line": 46
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8553,7 +8553,7 @@
   "url": "/snippets/stats/luck",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 52
+  "line": 50
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8562,7 +8562,7 @@
   "url": "/snippets/combat/grapple",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 54
+  "line": 52
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8571,7 +8571,7 @@
   "url": "/snippets/combat/stealth",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 56
+  "line": 54
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8580,7 +8580,7 @@
   "url": "/snippets/stats/attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/stats.md",
-  "line": 58
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",

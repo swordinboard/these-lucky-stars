@@ -93,10 +93,22 @@
   {{- $html = replaceRE `<h[1-6]([^>]*?)( id="[^"]*")?[^>]*>(.*?)</h[1-6]>`
         (printf "%s${3}%s" $open $close) $html -}}
   {{- if and $show $title -}}
-    {{- $badge := cond (eq $mode "lead")
-        (printf `<p id="%s"><strong>%s</strong> — ` $anchor $title)
-        (printf `<p id="%s">%s</p><p>` $anchor $title) -}}
-    {{- $html = replaceRE `^\s*<p>` $badge $html -}}
+    {{/* Run the name into the first paragraph when there is one. A block that
+         opens with a blockquote or a table has no paragraph to join, so the
+         name becomes its own line instead — without this it was dropped
+         silently (combat/grapple and movement/speed-descriptors both open with
+         a blockquote). */}}
+    {{- if findRE `^\s*<p>` $html -}}
+      {{- $badge := cond (eq $mode "lead")
+          (printf `<p id="%s"><strong>%s</strong> — ` $anchor $title)
+          (printf `<p id="%s">%s</p><p>` $anchor $title) -}}
+      {{- $html = replaceRE `^\s*<p>` $badge $html -}}
+    {{- else -}}
+      {{- $badge := cond (eq $mode "lead")
+          (printf `<p id="%s"><strong>%s</strong></p>` $anchor $title)
+          (printf `<p id="%s">%s</p>` $anchor $title) -}}
+      {{- $html = print $badge $html -}}
+    {{- end -}}
   {{- end -}}
 {{ $html | safeHTML }}
 {{- else -}}

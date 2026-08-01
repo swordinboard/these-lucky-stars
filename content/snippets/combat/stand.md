@@ -6,4 +6,4 @@ type: rule
 tags: [combat, actions, aggressive-actions]
 ---
 
-**Stand** *(1 AP)* — Stand from prone. May provoke an Opportunity Attack.
+*(1 AP)* — Stand from prone. May provoke an Opportunity Attack.
