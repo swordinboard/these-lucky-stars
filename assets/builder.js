@@ -488,14 +488,34 @@
   function printDocument() {
     var btn = document.getElementById("print");
     btn.disabled = true;
+
+    /* paged.js lays the clone out on screen, so @media print is not in force
+     * while it does — every screen-only rule still applies. Compact is the one
+     * that matters: it hides every item body, so pagination would faithfully
+     * lay out a document with its contents missing, and fade the contents page
+     * to 45% besides. Dropping the class for the duration is simpler than
+     * duplicating the print rules, and it covers all four of them at once.
+     * The checkbox is untouched, so the editing view comes back as it was. */
+    var wasCompact = document.body.classList.contains("compact");
+    if (wasCompact) document.body.classList.remove("compact");
+    function restoreCompact() {
+      if (wasCompact) document.body.classList.add("compact");
+    }
+
     loadPaged().then(function () {
       var source = document.getElementById("doc").cloneNode(true);
       /* editing chrome must not reach paper */
       Array.prototype.forEach.call(source.querySelectorAll(".item-bar"), function (n) {
         n.parentNode.removeChild(n);
       });
-      Array.prototype.forEach.call(source.querySelectorAll("[contenteditable]"), function (n) {
+      /* An unfilled title or subtitle shows its placeholder through
+       * [data-field]:empty::before. Print CSS suppresses that, which again is
+       * not in force here — so the hooks come off the clone entirely. */
+      Array.prototype.forEach.call(source.querySelectorAll("[data-field]"), function (n) {
         n.removeAttribute("contenteditable");
+        n.removeAttribute("data-field");
+        n.removeAttribute("data-ph");
+        if (!n.textContent.trim()) n.parentNode.removeChild(n);
       });
       reserveTocSlots(source);
 
@@ -512,6 +532,7 @@
         });
     }).then(function (state) {
       function cleanup() {
+        restoreCompact();
         document.body.classList.remove("printing");
         var n = document.getElementById("paged-out");
         if (n) n.parentNode.removeChild(n);
@@ -531,6 +552,8 @@
       if (n) n.parentNode.removeChild(n);
       document.body.classList.remove("printing");
       btn.disabled = false;
+      /* the native path has its own compact handling in @media print */
+      restoreCompact();
       window.print();
     });
   }
