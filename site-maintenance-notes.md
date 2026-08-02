@@ -136,11 +136,28 @@ building a PDF wants to select the vehicles as a set. Statted vehicles share the
 {{< catalog namespace="vehicles" type="vehicle" category="sci-fi" />}}
 ```
 
-**A creature's stat block and a vehicle's are one construct** — a blockquote of
-labelled values, plus an attribute table for creatures. Plain markdown on
-purpose: a construct emitting its own markup needs a rule in
-`assets/content-constructs.css` or check 5 fails it, and a stat block is the
-last thing that should render as a bare stack in a printed PDF.
+**A creature's stat block and a vehicle's are one construct** — the
+`{{% statblock %}}` card, styled in `assets/content-constructs.css` so the site
+and the PDF builder stay in step. Three things about it are decisions rather
+than details:
+
+- **The card is the container, not `details`.** A collapsed stat block cannot be
+  scanned, and scanning out of order is the entire job of one. Wrapping a card in
+  a `details` afterwards still works where a page wants it; the reverse — a
+  collapsible as the primary container — does not.
+- **The card prints its own name**, so a snippet using it is included with **no
+  level argument**. The card has to survive being pulled into a PDF alone, where
+  a heading supplied by some other page does not follow it. On a creature's own
+  page the name therefore appears in the `h1` and again in the card header, which
+  is intended and is what the reference books do. `builddata.py` knows about
+  this: a snippet whose body calls `statblock` takes its anchor from its own
+  title, the same rule `blockdetails` gets.
+- **Sections inside a card are `---` and bold labels, never headings** — see the
+  duplicate-id case above.
+
+The `statblock` shortcode uses the **percent form** (`{{% statblock %}}`), like
+the theme's `details`, because its body is markdown. With `{{< >}}` the body
+arrives as raw text and prints as one unformatted paragraph.
 
 Two things worth knowing before writing numbers, because both are easy to get
 backwards:
@@ -838,8 +855,8 @@ Page content starts here...
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
 - Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `children`,
-  `download-card`, `columns`, `roadmap`, `quickref` — all in `layouts/_shortcodes/`,
-  plus `details` / `tabs` / `tab` from the theme
+  `statblock`, `download-card`, `columns`, `roadmap`, `quickref` — all in
+  `layouts/_shortcodes/`, plus `details` / `tabs` / `tab` from the theme
 - **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
   naming each part of the call. Read the top of the file rather than guessing from
   a call site, and keep that block current when you change a shortcode.

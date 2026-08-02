@@ -531,8 +531,7 @@
   "weight": "20",
   "wip": true,
   "blocks": [
-   "bots/automated-machines",
-   "creatures/station-guard"
+   "bots/automated-machines"
   ]
  },
  {
@@ -555,6 +554,17 @@
   "wip": true,
   "blocks": [
    "bots/hel-1"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "title": "Station Guard",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "section": "creatures--npcs/sci-fi",
+  "weight": null,
+  "wip": true,
+  "blocks": [
+   "creatures/station-guard"
   ]
  },
  {

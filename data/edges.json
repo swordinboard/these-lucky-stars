@@ -135,51 +135,6 @@
   "line": 6
  },
  {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/combat-vest",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
-  "text": "Combat Vest",
-  "file": "content/snippets/creatures/station-guard.md",
-  "line": 25
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/shock-baton",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
-  "text": "Shock Baton",
-  "file": "content/snippets/creatures/station-guard.md",
-  "line": 25
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/auto-pistol",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
-  "text": "Auto Pistol",
-  "file": "content/snippets/creatures/station-guard.md",
-  "line": 25
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/coms-headset",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
-  "text": "Coms Headset",
-  "file": "content/snippets/creatures/station-guard.md",
-  "line": 25
- },
- {
-  "source": "creatures/station-guard",
-  "target": "item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Full-Auto",
-  "file": "content/snippets/creatures/station-guard.md",
-  "line": 30
- },
- {
   "source": "traits/particularly-attractive",
   "target": "traits/unremarkable",
   "type": "mention",
@@ -7376,12 +7331,21 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "creatures/station-guard",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "text": "Station Guard",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 33
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "Bot Components",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 37
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
@@ -7393,13 +7357,49 @@
   "line": 15
  },
  {
-  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "creatures/station-guard",
-  "type": "include",
-  "url": "/snippets/creatures/station-guard",
-  "text": null,
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 33
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/combat-vest",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
+  "text": "Combat Vest",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 31
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/shock-baton",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
+  "text": "Shock Baton",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 31
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/auto-pistol",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
+  "text": "Auto Pistol",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 31
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/coms-headset",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
+  "text": "Coms Headset",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 31
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Full-Auto",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/core/",

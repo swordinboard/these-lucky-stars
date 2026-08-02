@@ -30,7 +30,8 @@ most likely to be travelling with.
 The people a party argues with before anyone draws — dock security, station
 crews, pirates. Alien life belongs here too, and is not statted yet.
 
-{{< blockdetails "creatures/station-guard" "h3" >}}
+- [Station Guard](/docs/free-srd/creatures--npcs/sci-fi/station-guard/) — Contract dock security
+- *(TBD)* — Pirates, and a crew to hire
 
 The parts that go **inside** a bot are equipment rather than creatures, and stay
 with the rest of the gear:

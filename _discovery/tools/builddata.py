@@ -34,6 +34,11 @@ bdetails_re = re.compile(r'\{\{[<%]\s*blockdetails\s+"([^"]+)"')
 link_re = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 heading_re = re.compile(r"^(#{1,6})\s+(.*)$")
 catalog_re = re.compile(r"\{\{<\s*catalog\b")
+# statblock draws a card that prints the block's own name as its header, so a
+# snippet using it names itself without a markdown heading — and therefore owns
+# an anchor that nothing on the host page declares. Same situation blockdetails
+# is in, and it gets the same treatment in the anchor resolution below.
+statblock_re = re.compile(r"\{\{[<%]\s*statblock\b")
 
 
 def hugo_anchor(text):
@@ -389,6 +394,12 @@ for bid, b in blocks.items():
     # no heading of its own, so the block still owns an anchor even though
     # nothing on the host page declares one.
     if bid in blockdetails_ids(host):
+        b["anchor"] = hugo_anchor(b["title"])
+        continue
+    # a statblock card carries the block's name in its header and the anchor on
+    # the card itself, so the block owns an anchor whether or not the include
+    # asked for a heading.
+    if statblock_re.search(PAGES[b["file"]]["body"]):
         b["anchor"] = hugo_anchor(b["title"])
         continue
     line = inc["line"]

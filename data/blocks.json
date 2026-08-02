@@ -5361,18 +5361,18 @@
  {
   "id": "creatures/station-guard",
   "title": "Station Guard",
-  "home": "snippet",
-  "file": "content/snippets/creatures/station-guard.md",
-  "source_page": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "home": "page",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "source_page": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
   "pages": [
-   "content/docs/free-srd/creatures--npcs/sci-fi/_index.md"
+   "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md"
   ],
   "page_urls": [
-   "/docs/free-srd/creatures--npcs/sci-fi/"
+   "/docs/free-srd/creatures--npcs/sci-fi/station-guard/"
   ],
   "anchor": "station-guard",
-  "url": "/docs/free-srd/creatures--npcs/sci-fi/#station-guard",
-  "owns_heading": false,
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "owns_heading": true,
   "category": [
    "sci-fi"
   ],

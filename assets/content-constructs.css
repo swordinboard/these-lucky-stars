@@ -86,3 +86,126 @@
   display: block;
   padding: 0.15rem 0;
 }
+
+/* ------------------------------------------- stat cards — {{% statblock %}} */
+
+/* A creature, NPC or vehicle stat block, drawn as one bordered card rather than
+   as loose prose. The container IS the point: a stat block is read as a unit and
+   scanned out of order, so it needs an edge. It is deliberately not a <details>
+   — a collapsed card cannot be scanned at all, and a GM opening a page wants the
+   numbers already on screen. Wrapping one in a details afterwards still works.
+ *
+ * The two consumers name their colors differently, so every value falls back
+ * through both: --gray-200 etc. on the site, --line etc. in the PDF builder,
+ * then a literal. Miss the fallback and the card loses its border in whichever
+ * consumer you did not test. */
+.statblock {
+  --sb-line: var(--gray-200, var(--line, #d6d1c4));
+  --sb-ink: var(--body-font-color, var(--fg, #1a1c20));
+  --sb-muted: var(--gray-500, var(--muted, #6b6b6b));
+
+  border: 1px solid var(--sb-line);
+  border-radius: 3px;
+  padding: 0.85rem 1rem;
+  margin: 1.25rem 0;
+  /* keep a card whole in a column and on a printed page */
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* name + type line, closed off by the heavy rule that reads as "card header" */
+.statblock-head {
+  border-bottom: 2px solid var(--sb-ink);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.65rem;
+}
+
+.statblock-name {
+  margin: 0;
+  font-family: var(--font-display, Georgia, 'Times New Roman', serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.statblock-type {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--sb-muted);
+}
+
+/* `---` between sections is a band divider inside the card, not a page rule */
+.statblock hr {
+  border: 0;
+  border-top: 1px solid var(--sb-line);
+  margin: 0.7rem 0;
+  background: none;
+  height: 0;
+}
+
+/* the card owns its outer spacing; its first and last children must not add to it */
+.statblock-body > :first-child { margin-top: 0; }
+.statblock-body > :last-child { margin-bottom: 0; }
+.statblock-body p { margin: 0.4rem 0; }
+.statblock-body ul { margin: 0.35rem 0; padding-inline-start: 1.1rem; }
+.statblock-body li { margin: 0.2rem 0; }
+
+/* The attribute row: compact, centred, readable at a glance — and, above all,
+   INSIDE THE CARD. Three theme rules have to be answered here, which is why
+   these carry the `.markdown` prefix rather than reading as plainly as the rest
+   of this file:
+     - the theme sets `table { display: block; overflow: auto }`, so a table is
+       a horizontal scroller that sizes to its content instead of to the card;
+     - its cell padding is `8px 16px`, and 16px of side padding on eight columns
+       is what pushed CHA and WILL past the border;
+     - both are written as `.markdown table tr th`, which outspecifies a bare
+       `.statblock-body th` and silently wins.
+   `table-layout: fixed` then divides the width evenly, so eight attributes fit
+   a phone without a scroller and every column is the same size. */
+.markdown .statblock-body table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+  border-collapse: collapse;
+  margin: 0.55rem 0;
+  font-size: 0.85rem;
+}
+
+.markdown .statblock-body table tr th,
+.markdown .statblock-body table tr td {
+  border: 1px solid var(--sb-line);
+  padding: 0.3rem 0.15rem;
+  text-align: center;
+}
+
+.markdown .statblock-body table tr th {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* the derived-stat lines ride in a blockquote; inside a card it is a panel,
+   not a quotation, so the theme's quote treatment is stripped back */
+.statblock-body blockquote {
+  margin: 0.5rem 0;
+  padding: 0.45rem 0.6rem;
+  border: 0;
+  border-inline-start: 3px solid var(--sb-line);
+  background: none;
+  font-size: 0.95rem;
+}
+
+.statblock-body blockquote p { margin: 0.18rem 0; }
+
+/* An 8-attribute row is the widest thing on the card. Rather than let it push
+   the page sideways on a phone, tighten it until it fits. */
+@media (max-width: 30rem) {
+  .statblock { padding: 0.7rem 0.75rem; }
+  .markdown .statblock-body table { font-size: 0.78rem; }
+  .markdown .statblock-body table tr th,
+  .markdown .statblock-body table tr td { padding: 0.25rem 0.05rem; }
+  .markdown .statblock-body table tr th { font-size: 0.6rem; letter-spacing: 0; }
+}
