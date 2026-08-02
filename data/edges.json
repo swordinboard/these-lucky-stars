@@ -10439,7 +10439,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
   "text": "object durability rules",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "races/android",
@@ -10448,7 +10448,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 24
+  "line": 25
  },
  {
   "source": "races/android",
@@ -10457,7 +10457,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
   "text": "Dying",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 25
+  "line": 26
  },
  {
   "source": "races/android",
@@ -10466,7 +10466,7 @@
   "url": "#dead-battery",
   "text": "Dead Battery",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 25
+  "line": 26
  },
  {
   "source": "races/android",
@@ -10475,7 +10475,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "components",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 29
+  "line": 30
  },
  {
   "source": "races/android",
@@ -10484,7 +10484,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
   "text": "Backup Power Cell",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 33
+  "line": 34
  },
  {
   "source": "races/android",
@@ -10493,7 +10493,7 @@
   "url": "/snippets/conditions/dead-battery",
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 35
+  "line": 36
  },
  {
   "source": "environment/heat-and-cold",

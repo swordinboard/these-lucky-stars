@@ -8,6 +8,7 @@ id: races/reptilian
 category: [sci-fi]
 type: feature
 tags: [races, sci-fi]
+summary: "Shapeshifters who hold one other humanoid form for life, detectable on an INS check."
 ---
 # Reptilian
 <!-- classic reptilan race -->

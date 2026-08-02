@@ -7,6 +7,7 @@ id: bots/trk-a
 category: [sci-fi]
 type: creature
 tags: [bots]
+summary: "A small, reliable robot platform for field and support roles."
 ---
 # TRK-A
 

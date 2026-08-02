@@ -8,6 +8,7 @@ id: races/zeta-grey
 category: [sci-fi]
 type: feature
 tags: [races, sci-fi]
+summary: "Highly intelligent greys who can rescale their body between 3 and 9 feet once a day."
 ---
 # Zeta Grey
 <!-- Combo little green men and Greys -->

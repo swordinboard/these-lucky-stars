@@ -8,6 +8,7 @@ id: races/star-touched-human
 category: [sci-fi]
 type: feature
 tags: [races, sci-fi]
+summary: "Famously lucky humans — each grants every player character +1 Luck, stacking up to three times."
 ---
 # Star-touched Human
 

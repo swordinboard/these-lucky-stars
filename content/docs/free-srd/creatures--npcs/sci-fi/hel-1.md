@@ -7,6 +7,7 @@ id: bots/hel-1
 category: [sci-fi]
 type: creature
 tags: [bots]
+summary: "A small flying drone for aerial reconnaissance and light operations."
 ---
 # HEL-1
 

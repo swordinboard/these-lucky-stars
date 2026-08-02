@@ -8,6 +8,7 @@ id: races/android
 category: [sci-fi]
 type: feature
 tags: [races, sci-fi]
+summary: "Freethinking robots with a tough chassis, upgradable component slots, and a battery for a power source."
 ---
 # Android
 <!-- basic android race -->
