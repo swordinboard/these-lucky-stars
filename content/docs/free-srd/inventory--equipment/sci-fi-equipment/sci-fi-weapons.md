@@ -1,204 +1,102 @@
 ---
 title: "Sci-Fi Weapons"
 description: "Weapons for the sci-fi module in These Lucky Stars — energy weapons, ballistics, and more, with range, tags, and special rules."
-weight: 2
+weight: 1
+bookToC: false
 ---
 
-## Weapons
+# Weapons
 
-### Melee Weapons
+- [Melee Weapons](#melee-weapons)
+- [Ranged Weapons](#ranged-weapons)
+- [Weapon Upgrades](#weapon-upgrades)
+
+## Melee Weapons
 
 {{< tabs >}}
 {{% tab "Light Melee Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Knuckle Taser](#knuckle-taser) | Hand slot. Built in shock charger for a shocking punch. |
-| [Standard Issue Knife](#standard-issue-knife) | Concealable. Throwable [10ft]. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/knuckle-taser
+sci-fi-equipment/standard-issue-knife
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Medium Melee Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Emergency Hatchet](#emergency-hatchet) | Throwable [20ft]. |
-| [Ripper Blade](#ripper-blade) | Two-handed. Deals +5 shatter damage to armor. |
-| [Shock Baton](#shock-baton) | Built in shock charger. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/emergency-hatchet
+sci-fi-equipment/ripper-blade
+sci-fi-equipment/shock-baton
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Light Melee Weapons
+### Light Melee Weapons
 
-{{% details "Knuckle Taser" %}}
-### Knuckle Taser
+{{< blockdetails "sci-fi-equipment/knuckle-taser" "h4" >}}
 
-*--Cr — 0.5lbs — 6 Object DEF — [Battery [Micro]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
-*Damage Type: Physical or Shock*
-*Upgrades: [Shock Charger](#shock-charger)*
+{{< blockdetails "sci-fi-equipment/standard-issue-knife" "h4" >}}
 
-Equipped to the hand body slot like a glove. Pressure plates help to prevent accidental activation, allowing normal use of the hands. Often worn in pairs, this classic low-profile weapon delivers a shocking punch.
-{{% /details %}}
+### Medium Melee Weapons
 
-{{% details "Standard Issue Knife" %}}
-### Standard Issue Knife
+{{< blockdetails "sci-fi-equipment/emergency-hatchet" "h4" >}}
 
-*--Cr — 0.5lbs — 6 Object DEF — [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable), [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) [10ft]*
-*Damage Type: Physical*
+{{< blockdetails "sci-fi-equipment/ripper-blade" "h4" >}}
 
-A reliable all-purpose combat knife. Compact enough to conceal and balanced for throwing.
-{{% /details %}}
-
-#### Medium Melee Weapons
-
-{{% details "Emergency Hatchet" %}}
-### Emergency Hatchet
-
-*--Cr — 1lbs — 10 Object DEF — [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) [20ft]*
-*Damage Type: Physical*
-
-A sturdy hatchet designed for emergency use. Equally suited to breaching, survival tasks, and close combat.
-{{% /details %}}
-
-{{% details "Ripper Blade" %}}
-### Ripper Blade
-
-*--Cr — 2lbs — 16 Object DEF — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Physical*
-
-A 2ft reciprocating serrated blade with a second handle cut out near the midsection. Designed to catch onto fabric or armor and be torn free by activating the blade with the second hand. Unlike most weapons, the Ripper Blade can target equipped armor with the [Shatter](/docs/free-srd/core-rules/combat/#aggressive-actions) action, dealing damage to the armor's Object DEF instead of the wearer. Deals +5 shatter damage when used this way.
-{{% /details %}}
-
-{{% details "Shock Baton" %}}
-### Shock Baton
-
-*--Cr — 1lbs — 10 Object DEF — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
-*Damage Type: Physical or Shock*
-*Upgrades: [Shock Charger](#shock-charger)*
-
-A standard issue electrified baton used by law enforcement and security personnel. Effective at stunning and incapacitating targets.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/shock-baton" "h4" >}}
 
 ---
 
-### Ranged Weapons
+## Ranged Weapons
 
 {{< tabs >}}
 {{% tab "Pistols" %}}
-| Name | Notes |
-|---|---|
-| [Auto Pistol](#auto-pistol) | Ballistic. Full-auto. Concealable. 20ft range. |
-| [Heavy Pistol](#heavy-pistol) | Ballistic. Single shot. 50ft range. |
-| [Laser Pistol](#laser-pistol) | Battery [small]. Single shot. Burn. 60ft range. |
-| [Light Pistol](#light-pistol) | Ballistic. Semi-auto. Concealable. 30ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/auto-pistol
+sci-fi-equipment/heavy-pistol
+sci-fi-equipment/laser-pistol
+sci-fi-equipment/light-pistol
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Rifles" %}}
-| Name | Notes |
-|---|---|
-| [Compact Rifle](#compact-rifle) | Ballistic. Full-auto. Two-handed. 30ft range. |
-| [Laser Rifle](#laser-rifle) | Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range. |
-| [Long Rifle](#long-rifle) | Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range. |
-| [Shock Rifle](#shock-rifle) | Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range. |
-| [Standard Issue Rifle](#standard-issue-rifle) | Ballistic. Semi-auto. Two-handed. 40ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/compact-rifle
+sci-fi-equipment/laser-rifle
+sci-fi-equipment/long-rifle
+sci-fi-equipment/shock-rifle
+sci-fi-equipment/standard-issue-rifle
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Heavy Ranged Weapons" %}}
-| Name | Notes |
-|---|---|
-| [Heavy Rotary Cannon](#heavy-rotary-cannon) | Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range. |
+{{< catalog header="Name|Notes" >}}
+sci-fi-equipment/heavy-rotary-cannon
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Pistols
+### Pistols
 
-{{% details "Auto Pistol" %}}
-### Auto Pistol
+{{< blockdetails "sci-fi-equipment/auto-pistol" "h4" >}}
 
-*--Cr — 2lbs — 8 Object DEF — 20ft — [Ballistic [1d6]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
-*Damage Type: Physical*
+{{< blockdetails "sci-fi-equipment/heavy-pistol" "h4" >}}
 
-A compact fully automatic pistol chambered for close quarters. High rate of fire at the cost of range.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/laser-pistol" "h4" >}}
 
-{{% details "Heavy Pistol" %}}
-### Heavy Pistol
+{{< blockdetails "sci-fi-equipment/light-pistol" "h4" >}}
 
-*--Cr — 2lbs — 8 Object DEF — 50ft — [Ballistic [1d12]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
-*Damage Type: Physical*
+### Rifles
 
-A hard-hitting single shot sidearm with notable stopping power and effective range for a pistol.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/compact-rifle" "h4" >}}
 
-{{% details "Laser Pistol" %}}
-### Laser Pistol
+{{< blockdetails "sci-fi-equipment/laser-rifle" "h4" >}}
 
-*--Cr — 1lbs — 8 Object DEF — 60ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn)*
-*Damage Type: Burn*
+{{< blockdetails "sci-fi-equipment/long-rifle" "h4" >}}
 
-A compact energy sidearm with excellent range for its size.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/shock-rifle" "h4" >}}
 
-{{% details "Light Pistol" %}}
-### Light Pistol
+{{< blockdetails "sci-fi-equipment/standard-issue-rifle" "h4" >}}
 
-*--Cr — 1lbs — 8 Object DEF — 30ft — [Ballistic [1d8]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Semi-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Concealable](/docs/free-srd/inventory--equipment/item-tags/#concealable)*
-*Damage Type: Physical*
+### Heavy Ranged Weapons
 
-A slim, lightweight sidearm easy to conceal and quick to draw. Reliable for self-defense at moderate range.
-{{% /details %}}
-
-#### Rifles
-
-{{% details "Compact Rifle" %}}
-### Compact Rifle
-
-*--Cr — 6lbs — 8 Object DEF — 30ft — [Ballistic [1d10]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Physical*
-
-A lightweight automatic rifle optimized for maneuverability in tight spaces.
-{{% /details %}}
-
-{{% details "Laser Rifle" %}}
-### Laser Rifle
-
-*--Cr — 12lbs — 8 Object DEF — (10) 90ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Burn](/docs/free-srd/inventory--equipment/item-tags/#burn), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Burn*
-
-A long-range energy rifle capable of precise shots at extended distances. Minimum range of 10ft.
-{{% /details %}}
-
-{{% details "Long Rifle" %}}
-### Long Rifle
-
-*--Cr — 12lbs — 8 Object DEF — (10) 50ft — [Ballistic [1d12]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Physical*
-
-A heavy precision rifle designed for long-range engagements. Bulky and slow to maneuver but highly effective at distance. Minimum range of 10ft.
-{{% /details %}}
-
-{{% details "Shock Rifle" %}}
-### Shock Rifle
-
-*--Cr — 6lbs — 8 Object DEF — 20ft — [Battery [Medium]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Arcing](/docs/free-srd/inventory--equipment/item-tags/#arcing), [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Shock*
-
-An energy rifle that fires arcing electrical bolts capable of jumping between nearby targets.
-{{% /details %}}
-
-{{% details "Standard Issue Rifle" %}}
-### Standard Issue Rifle
-
-*--Cr — 18lbs — 8 Object DEF — 40ft — [Ballistic [1d10]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Semi-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Physical*
-
-The workhorse of military and paramilitary forces. Reliable, accurate, and effective at standard combat ranges.
-{{% /details %}}
-
-#### Heavy Ranged Weapons
-
-{{% details "Heavy Rotary Cannon" %}}
-### Heavy Rotary Cannon
-
-*--Cr — 20lbs — 8 Object DEF — (5) 60ft — [Ballistic [1d12]](/docs/free-srd/inventory--equipment/item-tags/#ballistic), [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky), [Belt Fed](/docs/free-srd/inventory--equipment/item-tags/#belt-fed), [Long Reload](/docs/free-srd/inventory--equipment/item-tags/#long-reload), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
-*Damage Type: Physical*
-
-A devastating multi-barrel rotary cannon fed by an external ammunition belt. Requires time to spin up and reload, but delivers overwhelming suppressive fire.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/heavy-rotary-cannon" "h4" >}}
 
 ---
 
@@ -206,105 +104,42 @@ A devastating multi-barrel rotary cannon fed by an external ammunition belt. Req
 
 {{< tabs >}}
 {{% tab "Ranged Weapon Upgrades" %}}
-| Upgrade | Notes |
-|---|---|
-| [Bipod](#bipod) | Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range. |
-| [Drum Magazines](#drum-magazines) | All ballistic. Increased ammo die size. |
-| [Extended Barrel](#extended-barrel) | Pistols, Rifles. +20ft normal range. |
-| [Forward Assault Shield](#forward-assault-shield) | Heavy Ranged. Partial cover, -1 attack while active. |
-| [Overcharge Chamber](#overcharge-chamber) | All battery ranged. 3/day increase a damage die by one size. |
-| [Recoil Compensation System](#recoil-compensation-system) | All ballistic. +1 attack, negates zero-g knockback. |
-| [Reflex Sight](#reflex-sight) | All ranged. +2 to attacks at normal range. |
+{{< catalog header="Upgrade|Notes" >}}
+sci-fi-equipment/bipod
+sci-fi-equipment/drum-magazines
+sci-fi-equipment/extended-barrel
+sci-fi-equipment/forward-assault-shield
+sci-fi-equipment/overcharge-chamber
+sci-fi-equipment/recoil-compensation-system
+sci-fi-equipment/reflex-sight
+{{< /catalog >}}
 {{% /tab %}}
 {{% tab "Melee Weapon Upgrades" %}}
-| Upgrade | Notes |
-|---|---|
-| [Shock Charger](#shock-charger) | All melee. +2 damage, changes type to shock. FORT check or lose 1 AP. |
-| [Weighted Core](#weighted-core) | Medium melee, polearms, two-handed. +3 damage. Loses throwable tag. |
+{{< catalog header="Upgrade|Notes" >}}
+sci-fi-equipment/shock-charger
+sci-fi-equipment/weighted-core
+{{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Ranged Weapon Upgrades
+### Ranged Weapon Upgrades
 
-{{% details "Bipod" %}}
-### Bipod
+{{< blockdetails "sci-fi-equipment/bipod" "h4" >}}
 
-*--Cr — 1lbs*
-*Compatibility: Rifles, Heavy Ranged Weapons*
+{{< blockdetails "sci-fi-equipment/drum-magazines" "h4" >}}
 
-Deployable stabilization that increases accuracy. Can be deployed on a solid surface for 1 AP. Grants a +4 bonus to attack when deployed, but increases minimum range by 10ft.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/extended-barrel" "h4" >}}
 
-{{% details "Drum Magazines" %}}
-### Drum Magazines
+{{< blockdetails "sci-fi-equipment/forward-assault-shield" "h4" >}}
 
-*--Cr — 4lbs*
-*Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
+{{< blockdetails "sci-fi-equipment/overcharge-chamber" "h4" >}}
 
-A high capacity magazine that increases the max ammo die size of a ballistic weapon by two sizes (max d12), but causes a -1 attack penalty due to the added weight, and removes any Concealable tag.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/recoil-compensation-system" "h4" >}}
 
-{{% details "Extended Barrel" %}}
-### Extended Barrel
+{{< blockdetails "sci-fi-equipment/reflex-sight" "h4" >}}
 
-*--Cr — 1lbs*
-*Compatibility: Pistols, Rifles*
+### Melee Weapon Upgrades
 
-Increases the normal range of a weapon by 20ft.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/shock-charger" "h4" >}}
 
-{{% details "Forward Assault Shield" %}}
-### Forward Assault Shield
-
-*--Cr — 3lbs*
-*Compatibility: Heavy Ranged Weapons*
-
-A mounted ballistic shield that provides partial cover from the front but causes a -1 penalty to attack while active. Can be deployed or folded away for 1 AP.
-{{% /details %}}
-
-{{% details "Overcharge Chamber" %}}
-### Overcharge Chamber
-
-*--Cr — 0lbs*
-*Compatibility: All Battery Based Ranged Weapons*
-
-Allows a temporary power boost. 3/day the user can spend an extra supply roll to increase a single damage die by one size. This effect can be stacked multiple times to increase multiple damage dice of the same attack but cannot affect a single die more than once.
-{{% /details %}}
-
-{{% details "Recoil Compensation System" %}}
-### Recoil Compensation System
-
-*--Cr — 1lbs*
-*Compatibility: All [Ballistic](/docs/free-srd/inventory--equipment/item-tags/#ballistic) Ranged Weapons*
-
-Significantly reduces the effects of recoil. Eliminates the knockback effect of full-auto ballistic weapons in zero gravity and grants a +1 bonus to attacks.
-{{% /details %}}
-
-{{% details "Reflex Sight" %}}
-### Reflex Sight
-
-*--Cr — 0lbs*
-*Compatibility: All Ranged Weapons*
-
-A holographic sight that improves target acquisition. Grants +2 to attacks made at normal range.
-{{% /details %}}
-
-#### Melee Weapon Upgrades
-
-{{% details "Shock Charger" %}}
-### Shock Charger
-
-*--Cr — 1lbs*
-*Compatibility: All Melee Weapons*
-
-Adds +1 damage to attacks and changes the damage type to [Shock](/docs/free-srd/inventory--equipment/item-tags/#shock). On a successful hit, the target must succeed on a target 6 FORT check or lose 1 AP during their next turn. Can be toggled on and off for 0 AP.
-{{% /details %}}
-
-{{% details "Weighted Core" %}}
-### Weighted Core
-
-*--Cr — 3lbs*
-*Compatibility: Medium Melee Weapons, Polearms and Staffs.*
-
-A dense weight added to the striking end of the weapon, increasing damage dealt by +3. The weapon loses the [Throwable](/docs/free-srd/inventory--equipment/item-tags/#throwable) tag if it had it, and users with less than 2 STR are at a disadvantage when making attacks.
-{{% /details %}}
+{{< blockdetails "sci-fi-equipment/weighted-core" "h4" >}}

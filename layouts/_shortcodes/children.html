@@ -1,0 +1,47 @@
+{{/*
+  children — list this section's child pages, in nav order.
+
+  SIGNATURE
+    {{< children [page="<section path>"] [desc="true"] >}}
+
+  EXAMPLES
+    {{< children >}}                              — children of the current page
+    {{< children page="/docs/free-srd/core-rules" >}}
+    {{< children desc="true" >}}                  — append each page's description
+
+  ARGUMENTS
+    page  (optional) list another section's children instead of this page's.
+                     Site-absolute path, no trailing slash.
+    desc  (optional) "true" to append the child's `description` after an em dash.
+                     Most descriptions here are written for search engines and
+                     are far too long for a list — check before turning it on.
+
+  Ordering is `weight`, exactly what the sidebar uses, so the list and the nav
+  can never disagree. Pages with `bookHidden: true` are skipped, because they are
+  deliberately absent from the nav (the race pages are all hidden — that is why
+  the Races index keeps its hand-written, grouped list instead of calling this).
+  Drafts never reach the template at all.
+
+  A section index that is *only* a list of its children should call this. One
+  that groups, blurbs, or names something that does not exist yet — Races,
+  Bots & Drones, the docs landing page — stays hand-written on purpose.
+*/}}
+{{- $p := .Page -}}
+{{- with .Get "page" }}{{ $p = site.GetPage . }}{{ end -}}
+{{- if not $p -}}
+  {{- errorf "children: no page at %q (called from %s)" (.Get "page") .Page.File.Path -}}
+{{- end -}}
+{{- $kids := slice -}}
+{{- range $p.Pages.ByWeight -}}
+  {{- if not .Params.bookhidden }}{{ $kids = $kids | append . }}{{ end -}}
+{{- end -}}
+{{- if not $kids -}}
+  {{- errorf "children: %q has no listable child pages (called from %s)" $p.RelPermalink .Page.File.Path -}}
+{{- end -}}
+<ul>
+{{- range $kids }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{- if eq ($.Get "desc") "true" }}{{ with .Description }} — {{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}{{ end -}}
+  </li>
+{{- end }}
+</ul>

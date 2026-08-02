@@ -1,0 +1,22 @@
+{{/*
+  Work-in-progress notice.
+
+  Any page with `wip: true` in its frontmatter gets this banner rendered above
+  its content. Omitting the key means false, so nothing has to be written on a
+  finished page.
+
+  This is the only home for the notice text — edit it here. It is rendered
+  through RenderString so the markdown alert syntax, the theme's blockquote
+  render hook (-> .book-hint.caution) and smart typography all still apply; the
+  .markdown wrapper is required because .book-hint is scoped under .markdown.
+
+  `wip: true` also drives: the In Development list page, and the PDF builder's
+  "exclude unfinished rules" filter (see data/blocks.json -> block.wip).
+*/}}
+{{- if .Params.wip -}}
+<div class="markdown book-wip-notice">
+{{ .RenderString (dict "display" "block") `> [!CAUTION]
+> This section is a work in progress and intended as a working preview only. Missing information and ongoing changes should be expected. Thank you for your patience while we continue to update and improve the system.
+> -- Anthony` }}
+</div>
+{{- end -}}

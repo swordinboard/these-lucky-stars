@@ -4,78 +4,12 @@ description: "The eight attributes that define your character in These Lucky Sta
 weight: 20
 ---
 
-## Attributes
+{{% include "/snippets/attributes/overview" "h2" %}}
 
-Attributes act as your primary stat block, they are the building blocks of your character and act as a base for their other stats. They are divided into two categories: Physical Attributes and Mental Attributes.
+{{% include "/snippets/attributes/determining-attributes" "h2" %}}
 
-For ease of reference attributes are often written as two numbers, the temporary value after modifiers and the base value before modifiers.
+{{% include "/snippets/attributes/attribute-values" "h2" %}}
 
-Attribute checks are used for any action that does not directly have another stat affecting it. The attribute used is determined by the GM, based on the player's description of their action.
+{{% include "/snippets/attributes/physical-attributes" "h2" %}}
 
-**Size Note:**
-Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
-
----
-
-## Two Ways to Determine Attributes
-
-### Roll Your Attributes - The Standard
-
-Roll 2d4, then subtract the lower result from the higher result. Repeat this process until you have a total of 8 values, one to be assigned to each attribute.
-
-**Attribute = |1d4-1d4|**
-
-> [!TIP]
-> **Example:** If I roll a 2 and a 4, I subtract 4-2, to get a value of 2.
-
-### Attribute Pool
-Using the rolling method above, each player rolls 8 attribute values and adds them to a pool for the entire party. The party then distributes the pool of attribute values across all characters as they see fit. It should be noted that this gives the party the opportunity to adapt the Luck stat however they like.
-
----
-
-## Attribute Values
-
-**Maximum** attribute value before modifiers is 7.
-
-There is no **minimum** attribute value.
-
-
-**Poor Attributes:** A poor attribute is any attribute with a value less than 0. Poor attributes can lead to the crippled or unconscious conditions.
-
-A character with two or more poor physical attributes is [crippled](/docs/free-srd/core-rules/wounds--conditions/#crippled) until they no longer have two or more poor physical attributes.
-
-A character with two or more poor mental attributes falls [unconscious](/docs/free-srd/core-rules/wounds--conditions/#unconscious) until they no longer have two or more poor mental attributes.
-
-**Null Attributes:**  Some creatures have null [-N-] attributes. Null attributes are effectively 0, however cannot be raised or lowered.
-
----
-
-## Physical Attributes
-
-#### Strength (STR)
-Physical power, how much weight or force one can lift/move. Useful for making melee attacks and carrying heavy loads.
-
-#### Agility (AGI)
-Full body movement, amount of grace and control one can demonstrate in their movements. Useful for avoiding injury, moving quietly, and increasing movement speed.
-
-#### Dexterity (DEX)
-Small hand and finger movement, amount of control, precision, and accuracy one demonstrates while handling items and controls. Useful for making ranged attacks, handling locks, crafting items, and a variety of technical skills.
-
-#### Fortitude (FORT)
-A measurement of how physically resilient and healthy one is. How well one shrugs off fatigue, minor injuries, and sickness. Useful for avoiding injury and withstanding hazardous conditions.
-
----
-
-## Mental Attributes
-
-#### Knowledge (KNO)
-General intelligence and familiarity with complex or specific subjects. Useful for navigating, crafting items, investigation, problem solving, and a variety of technical skills.
-
-#### Insight (INS)
-General awareness, gut instincts, ability to read situations, moods, and intentions. Useful for noticing details, searching for things, understanding those around you, riding animals, and interpreting and reacting to situations as they unfold.
-
-#### Charisma (CHA)
-General social skills, ability to persuade or change the moods of others, to lie, and to hide or successfully express one's intentions. Useful for communicating and manipulating.
-
-#### Will (WILL)
-A measurement of how mentally resilient one is. How well one dismisses temptation, fear and influence. Useful for avoiding other's influence and remaining focused under stress.
+{{% include "/snippets/attributes/mental-attributes" "h2" %}}

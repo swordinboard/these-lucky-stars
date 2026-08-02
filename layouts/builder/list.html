@@ -1,0 +1,89 @@
+{{- /*
+  The PDF builder — a standalone app page, deliberately outside the book theme
+  chrome (no sidebar, no ToC; it needs the full width).
+
+  Content comes from /builder/blocks.json, emitted by list.builderdata.json in
+  this directory. The PDF is produced by the browser's own print pipeline, so
+  the print rules in builder.css ARE the output format.
+*/ -}}
+{{- /* builder.css plus the construct styles the site shares with it, as one
+       stylesheet. content-constructs.css is the single source for anything a
+       shortcode emits into a page; see its header. */ -}}
+{{- $shared := resources.Get "content-constructs.css" -}}
+{{- $css := slice (resources.Get "builder.css") $shared
+      | resources.Concat "builder-bundle.css" | resources.Minify | resources.Fingerprint -}}
+{{- $js  := resources.Get "builder.js"  | resources.Minify | resources.Fingerprint -}}
+<!DOCTYPE html>
+{{- /* Fetched only when Print is pressed — see printDocument() in builder.js
+       and assets/vendor/README.md for why it exists at all. */ -}}
+{{- $paged := resources.Get "vendor/paged.min.js" | resources.Fingerprint -}}
+<html lang="{{ site.Language.Lang }}" data-paged-src="{{ $paged.RelPermalink }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} — {{ site.Title }}</title>
+  <meta name="description" content="{{ .Params.description }}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- /* The @page running head can only take a string, so the strapline is
+         handed to CSS as a custom property rather than as markup. */ -}}
+  <style>:root { --running-head: "{{ site.Title }}: a modular TTRPG by Sword in Board Workshop"; }</style>
+</head>
+<body class="loading">
+
+<div class="bar" id="bar">
+  <button id="lib-toggle" class="on-narrow" aria-expanded="false"
+          aria-controls="lib">＋ Add</button>
+  <span class="brand"><a href="/docs/free-srd/">These Lucky Stars</a></span>
+  <span id="count">0 items</span>
+  <span class="spacer"></span>
+  <div class="bar-more" id="bar-more">
+    <label><input type="checkbox" id="opt-toc" checked> Contents page</label>
+    <label><input type="checkbox" id="compact"> Compact</label>
+    <button id="export">Save</button>
+    <span class="file-btn"><button type="button">Open</button>
+      <input type="file" id="import" accept="application/json" aria-label="Open a saved document"></span>
+    <button id="clear">Clear</button>
+  </div>
+  <button id="menu-toggle" class="on-narrow" aria-expanded="false"
+          aria-controls="bar-more" aria-label="More options">⋯</button>
+  <button id="print" class="btn-primary">Print<span class="wide-only"> / PDF</span></button>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="app">
+  <aside class="lib" id="lib">
+    <div class="lib-tabs">
+      <button class="lib-tab" data-mode="blocks">Blocks</button>
+      <button class="lib-tab on" data-mode="pages">Whole pages</button>
+    </div>
+    <div id="searchbar">
+      <input type="text" id="q" placeholder="Search rules, gear, features…" aria-label="Search blocks">
+      <div class="filters">
+        <select id="f-type" aria-label="Filter by type"><option value="">any type</option></select>
+        <select id="f-cat" aria-label="Filter by category"><option value="">any setting</option></select>
+        <label title="Work-in-progress pages are shown by default — their rules are usable, but still being written."><input type="checkbox" id="f-wip"> hide wip</label>
+      </div>
+      <div id="lib-count"></div>
+    </div>
+    <div id="lib-list"></div>
+  </aside>
+
+  {{- /* The running head used to be a repeating <thead> wrapped around this
+         article, because @page margin boxes were assumed unsupported. They are
+         not — the footer proved it — and the table could not survive printing
+         through paged.js, which paginates a clone of #doc alone. Both header
+         and footer are now margin boxes in builder.css: one mechanism, and it
+         works the same whether the browser paginates or paged.js does. */ -}}
+  <main class="stage">
+    <article id="doc" class="markdown"></article>
+  </main>
+</div>
+
+{{- /* paged.js renders the paginated document in here at print time. */ -}}
+
+<script src="{{ $js.RelPermalink }}"></script>
+</body>
+</html>

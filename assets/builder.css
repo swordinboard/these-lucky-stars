@@ -1,0 +1,422 @@
+/* PDF builder — screen UI and the print rules that produce the PDF.
+ *
+ * The print block at the bottom is the actual output format. Everything above
+ * it is scaffolding that @media print throws away. */
+
+:root {
+  --bg: #fff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --line: #e0e0e0;
+  --panel: #f7f7f7;
+  --accent: #b3282d;
+  --sel: #fdf2f2;
+}
+@media (prefers-color-scheme: dark) { :root { --bg: #17191c; --fg: #e7e7e7;
+  --muted: #9aa0a6; --line: #2e3238; --panel: #1e2125; --accent: #e0575c;
+  --sel: #2a1e20; } }
+/* an explicit theme choice has to beat the OS preference in BOTH directions */
+:root[data-theme="dark"] { --bg: #17191c; --fg: #e7e7e7; --muted: #9aa0a6;
+  --line: #2e3238; --panel: #1e2125; --accent: #e0575c; --sel: #2a1e20; }
+:root[data-theme="light"] { --bg: #fff; --fg: #1a1a1a; --muted: #6b6b6b;
+  --line: #e0e0e0; --panel: #f7f7f7; --accent: #b3282d; --sel: #fdf2f2; }
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--fg); background: var(--bg);
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden;
+}
+body.loading .app { opacity: 0; }
+
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 1px solid var(--line);
+  border-radius: 5px; padding: 4px 9px; }
+button:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ------------------------------------------------------------------ chrome */
+
+.bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px; border-bottom: 1px solid var(--line); background: var(--panel);
+}
+.bar .brand { font-weight: 700; letter-spacing: .01em; }
+.bar .brand a { color: inherit; text-decoration: none; }
+.bar .spacer { flex: 1; }
+.bar label { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
+#count { color: var(--muted); font-variant-numeric: tabular-nums; }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { color: #fff; filter: brightness(1.08); }
+.file-btn { position: relative; overflow: hidden; display: inline-block; }
+.file-btn input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+
+.app { display: grid; grid-template-columns: 320px 1fr; min-height: 0; }
+
+/* A grid item will not shrink below its min-content width unless told to. The
+   bar is a nowrap flex row, so its min-content is the sum of its buttons —
+   without this the whole page inherits that width and scrolls sideways. */
+.bar, .app, .stage, .lib { min-width: 0; }
+
+/* ----------------------------------------------------------------- library */
+
+.lib { border-right: 1px solid var(--line); display: flex; flex-direction: column;
+  min-height: 0; background: var(--panel); }
+.lib-tabs { display: flex; border-bottom: 1px solid var(--line); }
+.lib-tab { flex: 1; border: 0; border-radius: 0; padding: 9px; color: var(--muted); }
+.lib-tab.on { color: var(--fg); font-weight: 600; box-shadow: inset 0 -2px 0 var(--accent); }
+#searchbar { padding: 9px; display: grid; gap: 7px; border-bottom: 1px solid var(--line); }
+#q { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 5px;
+  background: var(--bg); }
+.filters { display: flex; gap: 6px; align-items: center; flex-wrap: wrap;
+  font-size: 13px; color: var(--muted); }
+.filters select { border: 1px solid var(--line); border-radius: 5px; padding: 3px;
+  background: var(--bg); max-width: 8rem; }
+#lib-count { font-size: 12px; color: var(--muted); }
+#lib-list { overflow-y: auto; min-height: 0; padding-bottom: 2rem; }
+.lib-sec { padding: 10px 11px 4px; font-size: 11px; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--muted); }
+.lib-row { display: grid; width: 100%; text-align: left; border: 0; border-radius: 0;
+  border-bottom: 1px solid var(--line); padding: 8px 11px;
+  grid-template-columns: 1fr auto; gap: 1px 8px; }
+.lib-row:hover { background: var(--sel); color: inherit; }
+.lib-title { font-weight: 600; }
+.lib-meta { font-size: 11px; color: var(--muted); align-self: center; }
+.lib-sum { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted);
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.wip { font-size: 11px; color: var(--accent); font-style: normal; }
+
+/* ----------------------------------------------------------------- preview */
+
+.stage { overflow-y: auto; min-height: 0; padding: 26px 0 45vh; background: var(--panel); }
+#doc {
+  background: var(--bg); max-width: 46em; margin: 0 auto; padding: 3.2em 3.4em;
+  box-shadow: 0 1px 4px rgba(0,0,0,.13);
+}
+.doc-head h1 { margin: 0 0 .15em; font-size: 2em; }
+.doc-sub { margin: 0; color: var(--muted); }
+
+/* The title block is typed straight into the document. It has to look editable
+   without looking like a form field sitting in the middle of a page proof —
+   hence an underline that only appears on hover, and a placeholder that only
+   appears when the line is empty. */
+[data-field] { border-radius: 3px; padding: 0 2px; margin-left: -2px; outline: none; }
+[data-field]:hover { box-shadow: inset 0 -1px 0 var(--line); }
+[data-field]:focus { box-shadow: inset 0 -2px 0 var(--accent); }
+[data-field]:empty::before {
+  content: attr(data-ph); color: var(--muted); opacity: .65;
+}
+/* An empty subtitle still needs to be clickable to be fillable in. */
+.doc-sub:empty { display: block; min-height: 1.5em; }
+.doc-toc { margin: 2em 0; border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line); padding: 1em 0; }
+.doc-toc h2 { margin: 0 0 .5em; font-size: 1em; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--muted); }
+.doc-toc ul { list-style: none; margin: 0; padding: 0; }
+.doc-toc.two-col ul { columns: 2; }
+.doc-toc a { color: inherit; text-decoration: none; }
+.doc-toc a:hover { color: var(--accent); }
+.doc-toc .lvl3 { padding-left: 1em; } .doc-toc .lvl4 { padding-left: 2em; }
+.doc-toc .lvl5, .doc-toc .lvl6 { padding-left: 3em; }
+.empty { color: var(--muted); border: 1px dashed var(--line); border-radius: 7px;
+  padding: 2em; text-align: center; }
+
+.item { position: relative; border: 1px solid transparent; border-radius: 6px;
+  margin: 2px 0; padding: 2px 6px; scroll-margin-top: 10px; }
+.item:hover { border-color: var(--line); }
+.item.sel { border-color: var(--accent); background: var(--sel); }
+.item.drop { border-top: 2px solid var(--accent); }
+.item-bar {
+  display: none; align-items: center; gap: 5px; position: absolute;
+  top: -15px; right: 4px; z-index: 5; background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.13); font-size: 12px;
+}
+.item:hover .item-bar, .item.sel .item-bar { display: flex; }
+.item-bar button { padding: 1px 6px; font-size: 12px; line-height: 1.5; }
+.item-kind { font-size: 10px; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; }
+.item-name { font-weight: 600; max-width: 15em; overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap; }
+.lvl-badge { color: var(--muted); font-variant-numeric: tabular-nums; }
+.grip { cursor: grab; color: var(--muted); }
+
+/* compact: collapse every item to its toolbar row, for reordering long docs */
+body.compact .item-body { display: none; }
+body.compact .item { border-color: var(--line); padding: 0; min-height: 30px; }
+body.compact .item-bar { display: flex; position: static; box-shadow: none;
+  border: 0; border-radius: 0; background: none; width: 100%; }
+body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
+
+/* ------------------------------------------------------- document typography */
+
+.markdown h1, .markdown h2, .markdown h3,
+.markdown h4, .markdown h5, .markdown h6 { line-height: 1.25; margin: 1.1em 0 .4em; }
+.markdown h1 { font-size: 1.7em; } .markdown h2 { font-size: 1.4em; }
+.markdown h3 { font-size: 1.17em; } .markdown h4 { font-size: 1.03em; }
+.markdown h5, .markdown h6 { font-size: 1em; }
+.markdown p, .markdown ul, .markdown ol, .markdown table { margin: .6em 0; }
+.markdown a { color: var(--accent); }
+.markdown table { border-collapse: collapse; width: 100%; font-size: .93em; }
+.markdown th, .markdown td { border: 1px solid var(--line); padding: 5px 8px;
+  text-align: left; vertical-align: top; }
+.markdown th { background: var(--panel); }
+.markdown blockquote { margin: .7em 0; padding: .1em 1em; border-left: 3px solid var(--line);
+  color: var(--muted); }
+.markdown code { font-size: .92em; background: var(--panel); padding: 1px 4px; border-radius: 3px; }
+.markdown details { margin: .5em 0; }
+.markdown img { max-width: 100%; }
+/* details are a screen affordance; in a PDF the content simply belongs there */
+.markdown details > summary { cursor: pointer; font-weight: 600; }
+
+/* ------------------------------------------------- catalogs and site widgets
+
+   The look of these constructs lives in assets/content-constructs.css, which
+   the site loads too and which this stylesheet is concatenated with at build
+   time — so restyling a catalog index on the site cannot leave the builder
+   showing the old one. Only the two things that genuinely differ here are
+   below. Anything else about a construct belongs in the shared file. */
+
+/* Column COUNT. The site's measure grows with the viewport, so it steps 2 -> 3
+   -> 4 there; the builder's document is a fixed 46em page proof at any window
+   size, and 4 columns of that width would break names across lines. */
+.markdown .block-index { columns: 2; }
+.markdown .four-col { columns: 3; }
+.markdown .book-columns { display: flex; flex-wrap: wrap; gap: 1rem; }
+.markdown .book-columns > div { flex: 1 1 14rem; min-width: 0; }
+
+/* Site chrome that has no business in a printed document — a banner
+   advertising the builder, inside a PDF made by the builder, is pure noise.
+   Every part is named rather than relying on the root: check 5 verifies each
+   class the content uses is styled somewhere, and it cannot know that a hidden
+   parent takes its children with it. */
+.feature-banner, .feature-banner-link, .feature-banner-shot,
+.feature-banner-body, .feature-banner-tag, .feature-banner-title,
+.feature-banner-text, .feature-banner-cta, .feature-banner-arrow {
+  display: none;
+}
+
+/* {{< tabs >}} show one panel and hide the rest. A document cannot be clicked,
+   and a hidden panel would be missing from the PDF outright — the Core Luck
+   abilities would simply not be there. So every panel prints, and each tab's
+   label becomes its heading. This is a deliberate divergence from the site,
+   which is why it is here and not in the shared file. */
+.markdown .book-tabs { display: block; margin: 1em 0; }
+.markdown .book-tabs input.toggle { display: none; }
+.markdown .book-tabs > label { display: block; font-weight: 600; margin: .9em 0 .2em; }
+.markdown .book-tabs .book-tabs-content { display: block; }
+
+/* ------------------------------------------------------------ narrow screens
+
+   Below 900px there is not room for a permanent library beside the document,
+   so it becomes a drawer over it. The document is the thing being worked on and
+   stays put; the library is what you reach for. Adding something closes the
+   drawer, so you see it land.
+
+   Drag-to-reorder does not exist on touch, so the ↑↓ buttons are the mechanism
+   there, not a convenience — they get real tap targets, and the toolbar sits
+   inline above the selected item instead of floating on hover, which touch
+   does not have. */
+
+/* Printing takes a moment: 500KB of paginator on first use, then the layout
+   pass. During it paged.js applies the print stylesheet to the screen, so the
+   app visibly comes apart before the print dialog appears. The overlay covers
+   that. It is opaque rather than translucent because the point is to hide the
+   reflow, not to hint at it.
+
+   Deliberately NOT hidden via @media print: paged.js flattens print rules onto
+   the screen, so such a rule would hide the overlay exactly when it is needed.
+   printDocument() removes the element before printing instead. */
+.print-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  display: flex; align-items: center; justify-content: center; gap: 11px;
+  background: var(--bg); color: var(--muted); font-size: 15px;
+}
+.print-spinner {
+  width: 17px; height: 17px; border: 2px solid var(--line);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: print-spin .7s linear infinite;
+}
+@keyframes print-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .print-spinner { animation: none; } }
+
+/* paged.js measures what it lays out, so this cannot be display:none — a
+   hidden box has no geometry and pagination throws on the first
+   getBoundingClientRect. It is parked off-screen instead, and @media print
+   brings it back. */
+.paged-out { position: absolute; left: -200vw; top: 0; }
+.on-narrow { display: none; }
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 35; }
+
+@media (max-width: 900px) {
+  .on-narrow { display: inline-flex; }
+  .wide-only, .brand { display: none; }
+  .bar { position: relative; gap: 7px; flex-wrap: nowrap; padding: 7px 9px; }
+  #count { font-size: 12px; }
+
+  .bar-more {
+    display: none; position: absolute; top: calc(100% + 4px); right: 8px;
+    z-index: 40; flex-direction: column; align-items: stretch; gap: 9px;
+    background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
+    padding: 11px; box-shadow: 0 3px 14px rgba(0,0,0,.22); min-width: 11rem;
+  }
+  .bar.more-open .bar-more { display: flex; }
+  .bar-more .file-btn, .bar-more button { width: 100%; }
+
+  .app { grid-template-columns: 1fr; }
+  .lib {
+    position: fixed; top: 0; bottom: 0; left: 0; z-index: 38;
+    width: min(88vw, 340px); border-right: 1px solid var(--line);
+    transform: translateX(-100%); transition: transform .2s ease;
+  }
+  .lib.open { transform: none; }
+
+  .stage { padding: 10px 0 40vh; }
+  #doc { padding: 1.5em 1.15em; box-shadow: none; }
+  .doc-toc.two-col ul { columns: 1; }
+  .markdown .four-col { columns: 2; }
+  .markdown .book-columns { display: block; }
+
+  .item-bar {
+    position: static; display: none; flex-wrap: wrap; box-shadow: none;
+    margin: 0 0 6px; border-radius: 5px;
+  }
+  .item:hover .item-bar { display: none; }
+  .item.sel .item-bar { display: flex; }
+  .grip { display: none; }          /* no drag-and-drop on touch */
+
+  /* The kind chip and the repeated title cost a whole toolbar row on a phone,
+     and the item's own heading is directly below saying the same thing. In
+     compact mode the body is hidden, so there the name is all there is. */
+  .item-bar .item-kind, .item-bar .item-name { display: none; }
+  body.compact .item-bar .item-name { display: block; flex: 1; }
+}
+
+@media (min-width: 901px) { .scrim { display: none; } }
+
+/* Fingers need bigger targets than a mouse pointer does. */
+@media (pointer: coarse) {
+  .item-bar { gap: 7px; font-size: 13px; }
+  .item-bar button { padding: 7px 12px; font-size: 14px; }
+  .lib-row { padding: 12px 11px; }
+  .lib-tab { padding: 13px 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lib { transition: none; }
+}
+
+/* Running head and footer. Deliberately OUTSIDE @media print: @page only
+   applies when printing anyway, and paged.js lays its pages out on screen —
+   nested in @media print it never saw this rule, rendered no margin boxes, and
+   the only header on the sheet came from Chrome's own, printed in Chrome's page
+   margin outside paged.js's full-sheet boxes.
+
+   The running footer: document title left, page number right.
+   Unlike the header this cannot be a repeated element. A counter only
+   paginates inside an @page margin box — anywhere else counter(page)
+   resolves to 0 on every sheet, which is exactly what a fixed-position
+   probe produced. The title arrives through a custom property because CSS
+   content cannot read the document; builder.js keeps --doc-title in step
+   with the title block. Browsers without margin-box support lose the
+   footer and keep everything else. */
+@page {
+  margin: 17mm 16mm;
+
+  @top-center {
+    content: var(--running-head, "");
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+  @bottom-left {
+    content: var(--doc-title, "");
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    font-size: 7pt; letter-spacing: .04em; color: #9a9a9a;
+  }
+}
+
+/* --------------------------------------------------------------- the PDF */
+
+@media print {
+  html, body { height: auto; overflow: visible; display: block;
+    background: #fff; color: #000; font-size: 10.5pt; }
+  .bar, .lib, .item-bar, .empty, .scrim { display: none !important; }
+  .app { display: block; }
+  .stage { overflow: visible; padding: 0; background: #fff; }
+  .app { grid-template-columns: 1fr; }
+
+  #doc { max-width: none; margin: 0; padding: 0; box-shadow: none; background: #fff; }
+  .item { border: 0 !important; background: none !important; margin: 0; padding: 0; }
+
+  .doc-head { margin-bottom: 1.5em; }
+  .doc-head h1 { font-size: 22pt; }
+  .doc-toc.two-col ul { columns: 2; }
+
+  /* With a contents page the front matter is a title page and the document
+     starts on a fresh sheet. Without one there is nothing to break away from:
+     the title sits directly above the first block. */
+  .doc-front.has-toc { break-after: page; }
+
+  /* Nothing in the title block should read as a form control on paper, and an
+     unfilled line should leave no trace — no placeholder, no empty gap. */
+  [data-field] { box-shadow: none !important; padding: 0; margin-left: 0; }
+  [data-field]:empty { display: none; }
+  [data-field]:empty::before { content: none; }
+
+  /* Compact is a screen-only editing view: it collapses every item to its
+     toolbar row so a long document can be reordered. Printing while it is on
+     produced a PDF with no content at all — the bodies were still hidden and
+     the toolbars are print-hidden too. Paper always gets the full document. */
+  body.compact .item-body { display: block !important; }
+  body.compact .item { min-height: 0; padding: 0; }
+  body.compact .doc-front, body.compact .doc-toc,
+  body.compact .doc-head { opacity: 1 !important; }
+
+  /* When paged.js has laid the document out, print that and nothing else. */
+  body.printing .app, body.printing .bar { display: none !important; }
+  body.printing .paged-out { position: static; left: auto; }
+
+  /* Content that does not fit a page box stays in the DOM, clipped. Without an
+     explicit clip it is invisible on paper but still lands in the PDF's text
+     layer, so copying or searching the file turns up a duplicate of whatever
+     moved to the next page. */
+  .pagedjs_page_content { overflow: hidden; }
+
+  /* Contents-page numbers, filled in from the paginated output. The dotted
+     leader is a flexing element rather than a repeated character, so it lands
+     on the same baseline whatever the entry's length. */
+  .paged-out .doc-toc li { display: flex; align-items: baseline; }
+  .paged-out .doc-toc .toc-dots {
+    flex: 1 1 auto; min-width: 1em; margin: 0 .35em;
+    border-bottom: 1px dotted currentColor; opacity: .3;
+    transform: translateY(-.2em);
+  }
+  .paged-out .doc-toc .toc-pg {
+    font-variant-numeric: tabular-nums; min-width: 1.4em; text-align: right;
+  }
+
+  /* Keep a heading with the text it introduces, and don't split a short block
+     across a page boundary. Long blocks must still be allowed to break, or a
+     block taller than a page vanishes into a gap. */
+  .markdown h1, .markdown h2, .markdown h3,
+  .markdown h4, .markdown h5, .markdown h6 { break-after: avoid; break-inside: avoid; }
+  .markdown p, .markdown li, .markdown blockquote { orphans: 2; widows: 2; }
+  .markdown tr, .markdown img, .markdown blockquote { break-inside: avoid; }
+  .markdown table { break-inside: auto; }
+  .markdown thead { display: table-header-group; }
+
+  /* open every collapsed entry — a closed <details> would print as a bare label */
+  .markdown details > summary { list-style: none; }
+  .markdown details > summary::-webkit-details-marker { display: none; }
+
+  .markdown a { color: #000; text-decoration: none; }
+  /* on screen a blockquote is an aside; on paper it is often the rule itself
+     (damage formulas, worked examples) and must not print washed out */
+  .markdown blockquote { color: #222; border-left-color: #999; }
+  .doc-sub { color: #444; }
+  .markdown th { background: #f0f0f0 !important; -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; }
+  .markdown th, .markdown td { border-color: #999; }
+}

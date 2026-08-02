@@ -1,0 +1,69 @@
+{{/*
+  blockset — render every block matching a set of filters, in full.
+
+  SIGNATURE
+    {{< blockset <filter>="<value>" … [order="title"] [level="3"] >}}
+
+  EXAMPLES
+    {{< blockset category="sci-fi" namespace="abilities" >}}
+    {{< blockset category="sci-fi" type="rule" order="title" >}}
+    {{< blockset tag="condition" wip="exclude" level="4" >}}
+
+  ARGUMENTS — all optional; at least one filter is what makes it useful
+    level   heading depth for blocks that carry no heading of their own.
+            Default "3".
+    (filters and order are listed below)
+
+  Renders every block matching the filters, in full, straight from
+  data/blocks.json. Where {{% include %}} names one block by hand, this names a
+  *set* by property — so a module page picks up a new sci-fi ability the moment
+  the block is authored, with no page edit.
+
+  Filters (all optional, combined with AND):
+    category   — core | sci-fi | fantasy …  (matches the block's category list)
+    page       — a page URL; selects every block displayed on it
+    namespace  — the part of the id before the slash: abilities, traits, sci-fi …
+    type       — rule | feature | equipment | creature | reference
+    tag        — any tag on the block
+    order      — "title" (default) or "id"
+    wip        — "exclude" to drop unfinished blocks (default: keep)
+
+  Blocks marked `excluded: true` are never rendered. Renders nothing at all if
+  no block matches, so check the page after adding a call.
+
+  This is the same select-blocks-and-assemble operation the PDF builder performs;
+  keep them behaving the same way.
+*/}}
+{{- $blocks := site.Data.blocks -}}
+{{- with .Get "category" }}{{ $c := . }}{{ $blocks = where $blocks "category" "intersect" (slice $c) }}{{ end -}}
+{{- with .Get "type" }}{{ $blocks = where $blocks "type" . }}{{ end -}}
+{{- with .Get "page" }}{{ $u := . }}{{ $blocks = where $blocks "page_urls" "intersect" (slice $u) }}{{ end -}}
+{{- with .Get "tag" }}{{ $t := . }}{{ $blocks = where $blocks "tags" "intersect" (slice $t) }}{{ end -}}
+{{- with .Get "namespace" -}}
+  {{- $ns := printf "%s/" . -}}
+  {{- $keep := slice -}}
+  {{- range $blocks }}{{ if hasPrefix .id $ns }}{{ $keep = $keep | append . }}{{ end }}{{ end -}}
+  {{- $blocks = $keep -}}
+{{- end -}}
+{{- if eq (.Get "wip") "exclude" }}{{ $blocks = where $blocks "wip" "!=" true }}{{ end -}}
+{{- $blocks = where $blocks "excluded" "!=" true -}}
+{{- $blocks = sort $blocks (default "title" (.Get "order")) -}}
+{{- $h := default "3" (.Get "level") -}}
+{{- range $blocks -}}
+  {{- if eq .home "page" -}}
+    {{/* whole-page blocks (races, bot platforms) are too big to inline — link them */}}
+    <h{{ $h }} id="{{ anchorize .title }}"><a href="{{ .url }}">{{ .title }}</a></h{{ $h }}>
+    {{- with .summary }}<p>{{ $.Page.RenderString (dict "display" "inline") . }}</p>{{ end -}}
+  {{- else -}}
+    {{/* section blocks carry no heading of their own — supply it, or the block
+         arrives here as an anonymous wall of prose */}}
+    {{- if not .owns_heading -}}
+      <h{{ $h }} id="{{ anchorize .title }}">{{ .title }}</h{{ $h }}>
+    {{- end -}}
+    {{- with site.GetPage (printf "/snippets/%s" .id) -}}
+      {{- .Content -}}
+    {{- else -}}
+      <p><strong>MISSING BLOCK: {{ .id }}</strong></p>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

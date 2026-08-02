@@ -3,9 +3,13 @@ title: "Android"
 description: "Introducing the Android — liberated robots able to act and think independently"
 weight: 30
 bookHidden: true
+wip: true
+id: races/android
+category: [sci-fi]
+type: feature
+tags: [races, sci-fi]
+summary: "Freethinking robots with a tough chassis, upgradable component slots, and a battery for a power source."
 ---
-
-{{% include "/snippets/wip-announcement.md" %}}
 # Android
 <!-- basic android race -->
 While roige robots and liberated AI minds may be commonplace in some reaches of the universe, Androids are built with all the freedoms of a true individual in mind. Their appearance can differ by region and manufacturer but all are freethinking individuals with true emotions, interests, and quirks. 
@@ -23,14 +27,10 @@ An Android uses the standard character DEF/VIT rules, not the [object durability
 
 **Upgradable** — Each body slot of an Android can have components installed. Installed components may prevent the use of other equipment, details are provided per component.
 
-**Power Source** — Like other machines, Androids require a power source. A Medium [Battery] is built into their chest chassis, powering all functions of the Android. An Android's power source is upgradeable with [components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components).
+**Power Source** — Like other machines, Androids require a power source. A Medium [Battery] is built into their chest chassis, powering all functions of the Android. An Android's power source is upgradeable with [components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/).
 
 Androids function much like people do in that they require rest. During a long rest they enter Rest Mode for six hours to resolve caching conflicts, free up memory, and prevent battery degradation. Every 12 hours an Android goes without a successful Rest Mode Session requires 2 supply rolls of their primary power source.
 
-An Android's power source can be replaced for 8 AP by the Android or another character. If this action is interrupted the Android immediately falls into Dead Battery mode. If a [Backup Power Cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/#backup-power-cell) component is installed, the Android may switch to it for 2 AP.
+An Android's power source can be replaced for 8 AP by the Android or another character. If this action is interrupted the Android immediately falls into Dead Battery mode. If a [Backup Power Cell](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell) component is installed, the Android may switch to it for 2 AP.
 
-**Dead Battery** — *Automated Machine Condition*
-<!-- may need to move this section or put into a snippet -->
-If an Android's or other automated machine's primary power source is fully depleted at any time, they immediately shut down and are considered unconscious for all purposes. Attacks against a machine in Dead Battery gain advantage and count as surprise attacks. For Androids, all memory since the last successful Rest Mode session is lost upon entering Dead Battery.
-
-*Ending Dead Battery:* Replace or sufficiently recharge the primary power source.
+{{% include "/snippets/conditions/dead-battery" %}}

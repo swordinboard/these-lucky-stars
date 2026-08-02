@@ -12,6 +12,11 @@ disableKinds = ["taxonomy", "term"]
   [markup.tableOfContents]
     startLevel = 2  # Starts at h2
     endLevel = 4    # Ends at h4
+    # NOTE: Hugo's built-in ToC only sees headings written in the page's own
+    # markdown, so it misses every heading that arrives through {{% include %}}.
+    # layouts/_partials/docs/toc.html replaces it with one built from the
+    # rendered page. These two values are mirrored in [params] below, because
+    # the markup config is not reachable from a template — keep them in step.
 
 # CUSTOM MENU ITEMS
 
@@ -24,19 +29,42 @@ disableKinds = ["taxonomy", "term"]
   url = "/digitalcharactersheet.html"
   weight = 2
 
+# Hugo page rather than a static file — see content/builder/ and layouts/builder/.
+[[menu.after]]
+  name = "PDF Builder"
+  url = "/builder/"
+  weight = 3
+
 [[menu.after]]
   name = "Attribute Converter"
   url = "/attributeconverter.html"
-  weight = 3
+  weight = 4
 
 [[menu.after]]
   name = "Planet Generator"
   url = "/planetnamegenerator.html"
-  weight = 4
+  weight = 5
+
+# PDF BUILDER DATA
+#
+# The builder is a browser app: it needs every block's *rendered* HTML, which
+# only Hugo can produce. This output format emits /builder/blocks.json alongside
+# the builder page. See layouts/builder/list.builderdata.json.
+
+[outputFormats]
+  [outputFormats.builderdata]
+    mediaType = "application/json"
+    baseName = "blocks"
+    isPlainText = true
+    notAlternative = true
 
 # BOOK THEME PARAMETERS
 
 [params]
+  # Range for the generated table of contents (layouts/_partials/docs/toc.html).
+  # Mirrors markup.tableOfContents above, which a template cannot read.
+  bookTocStart = 2
+  bookTocEnd = 4
   # Theme: 'light', 'dark', or 'auto' (follows browser/OS preference)
   BookTheme = 'auto'
   

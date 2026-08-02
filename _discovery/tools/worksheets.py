@@ -1,0 +1,1159 @@
+#!/usr/bin/env python3
+"""
+worksheets.py — regenerate the Phase 3 audit worksheets from data/.
+
+    python3 _discovery/tools/worksheets.py
+
+Writes _discovery/04-phase3-worksheets.md: tag membership, orphaned blocks,
+implicit edges, feature-prerequisite cross-checks, section-block heading
+readiness. Related sections are hand-written by decision and not audited here.
+Pure read + report; it never touches content. Re-run it after `builddata.py`.
+"""
+import json, os, re, collections
+
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+D = lambda *p: os.path.join(REPO, *p)
+
+BLOCKS = json.load(open(D("data/blocks.json")))
+B = {b["id"]: b for b in BLOCKS}
+EDGES = json.load(open(D("data/edges.json")))
+IMPLICIT = json.load(open(D("_discovery/tools/implicit-edges.json")))
+
+# Reviewed and settled. Items listed here are counted but not re-listed, so the
+# worksheet keeps showing what is left rather than what has already been read.
+# Remove an entry to put it back in front of you.
+ACCEPTED_TAGS = {          # C1b — small tags, all confirmed keep
+    "heavy-ranged": "more expected later",
+    "size": "more expected later",
+    "environment": "keep",
+    "inventory": "keep",
+    "light-melee": "more expected later",
+    "melee-upgrade": "more expected later",
+}
+ACCEPTED_STRUCTURAL = {    # C1f — carry only structural tags, confirmed fine
+    "chargen/overview", "equipment/common-terms",
+}
+ACCEPTED_DEIXIS = {        # C3a — pointer reviewed, left as written
+    "environment/environmental-effects": "reads fine in place",
+    "objects/conditions": "reference is inside the same block",
+    "sci-fi-equipment/kit-supplies": "reads fine in place",
+    "vehicles/mounts": "all rules referenced are in the same snippet",
+    "wounds/wounds": "reference is inside the same block",
+}
+ACCEPTED_BARE = {          # C7b — reviewed, stays nameless on the page
+    "actions/standard-actions": "prose between is necessary site chrome",
+    "combat/actions-in-combat": "prose between is necessary site chrome",
+    "objects/overview": "prose between is necessary site chrome",
+    "objects/armor-degradation": "leave bare",
+    "objects/shield-degradation": "leave bare",
+    "movement/speed-tiers": "leave bare",
+    "movement/speed-tiers-chart": "leave bare, and anchorless by decision",
+}
+ACCEPTED_NAMES = {         # C7c — page heading and block title both stand
+    "movement/primary-speed", "basics/decision-rolls", "combat/standard-attack",
+    "combat/brace", "movement/speed-descriptors",
+}
+ACCEPTED_TITLES = {        # C5 — title confirmed appropriate as-is
+    "movement/speed-tiers", "movement/speed-tiers-chart", "combat/grapple",
+}
+
+CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
+# Cohort gaps that are correct by design, so they never resurface as noise:
+# `general` marks the General tab, so the Luck and Battery abilities are meant to
+# lack it; framework blocks are not instances of the cohort they introduce.
+FRAMEWORK = ("overview", "installation", "power-sources", "damage-and-wounds",
+             "wounds", "common-injuries", "action-types")
+# Mutually exclusive group tags: each ability carries exactly one, so the others
+# are *meant* to be absent. Reviewed and confirmed -- reporting them as cohort
+# gaps was 12 false positives per run.
+GROUP_TAGS = {"general", "luck", "battery"}
+
+
+def body_of(b):
+    """A block's prose: no frontmatter, no headings, link targets stripped."""
+    try:
+        raw = open(D(b["file"])).read()
+    except OSError:
+        return ""
+    txt = raw.split("---", 2)[2] if raw.startswith("---") else raw
+    txt = re.sub(r"^#{1,6}.*$", "", txt, flags=re.M)
+    return re.sub(r"\]\([^)]*\)", "]", txt).strip()
+
+
+def first_sentence(b, limit=150):
+    txt = re.sub(r"\s+", " ", body_of(b))
+    txt = re.sub(r"[*_]{1,3}", "", txt)          # emphasis markers are not prose
+    txt = re.sub(r"^[>|\-\s]+", "", txt).strip()
+    m = re.search(r"^(.{0,%d}?[.!?])(\s|$)" % limit, txt)
+    s = m.group(1) if m else txt[:limit]
+    return s + ("…" if not m and len(txt) > limit else "")
+
+
+def spot(note="your call"):
+    """A pre-placed annotation slot, so notes need no copy-pasting."""
+    w(f"  <!-- {note}: -->")
+
+
+
+# hugo-book builds the sidebar from the file tree, so a page is in the nav unless
+# it is bookHidden or a draft. Deriving it from the repo rather than from a build
+# keeps this script a pure function of the content -- an earlier version globbed
+# /tmp for a build and silently read a stale one.
+def _page_url(path):
+    rel = path[len("content"):]
+    return rel[: -len("_index.md")] if rel.endswith("/_index.md") else rel[:-3] + "/"
+
+
+def _in_nav(path):
+    try:
+        head = open(D(path)).read().split("---", 2)[1]
+    except (OSError, IndexError):
+        return True
+    return not re.search(r"^(bookHidden|draft):\s*true\s*$", head, re.M | re.I)
+
+
+NAV = {_page_url(p) for p in
+       {b.get("source_page") for b in BLOCKS if b.get("source_page")}
+       | {pg for b in BLOCKS for pg in (b.get("pages") or []) if pg.startswith("content/docs/")}
+       if _in_nav(p)}
+
+
+def reachable_by_browsing(b):
+    """Is this block displayed on a page a reader can reach from the sidebar?"""
+    return any(u in NAV for u in (b.get("page_urls") or []))
+
+
+STRUCTURAL = {"equipment", "sci-fi", "core", "generic", "site-chrome", "character-creation"}
+OVERVIEWISH = ("overview", "basics", "index")
+
+out = []
+w = out.append
+
+w("# Phase 3 — audit worksheets")
+w("")
+w("Generated by `_discovery/tools/worksheets.py` from `data/`. Re-run it after")
+w("`builddata.py` to refresh. Nothing here changes content — it is a review sheet.")
+w("")
+w(f"Corpus: **{len(BLOCKS)} blocks**, **{len(EDGES)} edges**, "
+  f"**{sum(1 for b in BLOCKS if b.get('wip'))} wip**.")
+w("")
+w("## How to annotate this")
+w("")
+w("Every decision has an **empty HTML comment already sitting under it**:")
+w("")
+w("```")
+w("- **`traits/alert`** \u2014 Alert")
+w("  <!-- ok / new title: -->")
+w("```")
+w("")
+w("Type inside it. Freehand \u2014 no fixed vocabulary, say what you mean and I will")
+w("act on it. Leave a spot untouched and I will treat it as unreviewed and leave")
+w("that item alone. The prompt text before the colon is a hint, not a menu.")
+w("")
+w("Regenerating this file **erases annotations**, so I will not re-run")
+w("`worksheets.py` while a review is in flight.")
+w("")
+w("**Anything you have already decided is gone from here.** Settled items are")
+w("recorded in `ACCEPTED_*` at the top of `worksheets.py`, counted in a one-line")
+w("note but not re-listed, so this file keeps showing what is *left*. Delete an")
+w("entry there to put something back in front of you.")
+w("")
+w("### What is open")
+w("")
+w("| Section | Slots | What it is |")
+w("|---|---|---|")
+w("| **C6a** | 4 | Three blocks off the h2 convention, plus the `Related` section sitting inside `core-rules/size`. |")
+w("| **C1c** | 4 | Blocks with no tags at all. |")
+w("| **C1e** | 1 | Tags-per-block distribution, eyeball only. |")
+w("")
+w("Two of the three C6a blocks are **waiting on the inventory wave, not on you** —")
+w("renumbering a block whose call site has no level yet would render it a level")
+w("too shallow, so they move when their page does.")
+w("")
+w("**C7 is closed.** Everything in it was answered and applied.")
+w("")
+w("Passing checks, kept so drift gets caught: **C1a** near-duplicate tag names,")
+w("**C1d** cohort gaps, **C2** orphan reachability, **C4** `requires` against the")
+w("prerequisite line, **C5** section-block titles. All currently report clean.")
+w("")
+w("---")
+w("")
+
+# ------------------------------------------------------------------ C1 tags ---
+w("## C1. Tag membership")
+w("")
+w("Tag names are the query surface the PDF builder will use, so a hole here")
+w("becomes a hole in the selection UI. The anomalies are listed first — those are")
+w("the decisions. Full membership lists are at the end of the section, collapsed,")
+w("for when you want to browse rather than review.")
+w("")
+tags = collections.defaultdict(list)
+for b in BLOCKS:
+    if b.get("excluded"):
+        continue
+    for tg in b.get("tags", []):
+        tags[tg].append(b)
+LIVE = [b for b in BLOCKS if not b.get("excluded")]
+w(f"**{len(LIVE)} blocks, {len(tags)} distinct tags.**")
+w("")
+
+w("### C1a. Near-duplicate tag names")
+w("")
+w("Two tags whose names differ only by plural or punctuation. Either they mean")
+w("different things and something should say so, or one should win.")
+w("")
+dupes = []
+names = sorted(tags)
+for a in names:
+    for b2 in names:
+        if a < b2 and (a + "s" == b2 or b2 + "s" == a
+                       or a.replace("-", "") == b2.replace("-", "")):
+            dupes.append((a, b2))
+if dupes:
+    for a, b2 in dupes:
+        w(f"- **`{a}` ({len(tags[a])})** vs **`{b2}` ({len(tags[b2])})**")
+        w(f"  - `{a}`: " + ", ".join(f"`{x['id']}`" for x in sorted(tags[a], key=lambda x: x["id"])))
+        w(f"  - `{b2}`: " + ", ".join(f"`{x['id']}`" for x in sorted(tags[b2], key=lambda x: x["id"])))
+        spot("merge into which, or keep both and why")
+        w("")
+else:
+    w("- none")
+    w("")
+
+w("### C1b. Tags with two or fewer members")
+w("")
+w("A tag this small is either under-applied, redundant with a bigger tag, or a")
+w("category of one that does not need to be a tag.")
+w("")
+small = sorted((tg for tg, m in tags.items() if len(m) <= 2), key=lambda tg: (len(tags[tg]), tg))
+settled = [tg for tg in small if tg in ACCEPTED_TAGS]
+small = [tg for tg in small if tg not in ACCEPTED_TAGS]
+if settled:
+    w(f"*{len(settled)} reviewed and kept: "
+      + ", ".join(f"`{s}` ({ACCEPTED_TAGS[s]})" for s in settled) + ".*")
+    w("")
+if not small:
+    w("- nothing new")
+for tg in small:
+    mem = sorted(tags[tg], key=lambda x: x["id"])
+    w(f"- **`{tg}`** ({len(mem)}) — " + ", ".join(f"`{x['id']}`" for x in mem))
+    spot("keep / merge into X / delete")
+w("")
+
+w("### C1c. Blocks with no tags at all")
+w("")
+w("Invisible to every tag query. Not necessarily wrong — a framework block may")
+w("not belong to any group — but it should be a decision, not an oversight.")
+w("")
+w("**The whole tag vocabulary, so you can choose without scrolling.** Counts in")
+w("brackets. The quoted line under each block is its *opening sentence*, not the")
+w("whole snippet.")
+w("")
+w("> " + " · ".join(f"`{tg}` ({len(tags[tg])})" for tg in sorted(tags)))
+w("")
+untagged = [b for b in LIVE if not b.get("tags")]
+for b in sorted(untagged, key=lambda b: b["id"]):
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>type={b['type']}</sub>")
+    w(f"      {first_sentence(b, 110)}")
+    spot("tags to add, or leave untagged")
+w("" if untagged else "- none")
+w("")
+
+w("### C1d. Cohort gaps")
+w("")
+w("A tag carried by most of a namespace but missing from some members. Three")
+w("kinds of gap are excluded because they are correct by definition and were only")
+w("noise: **category tags** (`core`, `sci-fi`) track `category`, not a cohort;")
+w("**framework blocks** are not instances of what they introduce; and the")
+w("**mutually exclusive group tags** " +
+  ", ".join(f"`{g}`" for g in sorted(GROUP_TAGS)) + " — each ability carries")
+w("exactly one, so the others are meant to be missing. That last exclusion was")
+w("confirmed on review and removed 12 false positives per run.")
+w("")
+ns = collections.defaultdict(list)
+for b in LIVE:
+    ns[b["id"].split("/")[0]].append(b)
+gaps = []
+for n, mem in sorted(ns.items()):
+    if len(mem) < 4:
+        continue
+    cnt = collections.Counter(tg for x in mem for tg in x.get("tags", []))
+    for tg, c in cnt.items():
+        if tg in CATEGORY_TAGS or tg in GROUP_TAGS or not 0.7 <= c / len(mem) < 1.0:
+            continue
+        miss = [x for x in mem
+                if tg not in x.get("tags", []) and not x["id"].rsplit("/", 1)[1] in FRAMEWORK]
+        if miss:
+            gaps.append((n, tg, c, len(mem), miss))
+if gaps:
+    for n, tg, c, tot, miss in sorted(gaps, key=lambda r: -len(r[4])):
+        w(f"- **`{tg}`** is on {c}/{tot} of `{n}/` — missing from {len(miss)}:")
+        for x in sorted(miss, key=lambda x: x["id"]):
+            w(f"  - `{x['id']}` — {x['title']}")
+        spot("expected (say why) / add the tag")
+        w("")
+else:
+    w("- none")
+    w("")
+
+w("### C1e. Tags per block")
+w("")
+dist = collections.Counter(len(b.get("tags", [])) for b in LIVE)
+w("| Tags | Blocks |")
+w("|---|---|")
+for k in sorted(dist):
+    w(f"| {k} | {dist[k]} |")
+w("")
+w("A distribution to eyeball, not a list of decisions. A single-tag block is fine")
+w("if that tag is the functional one; it is thin if the tag is structural.")
+spot("anything look wrong here")
+w("")
+
+w("### Blocks a quick-reference table would show with an empty cell")
+w("")
+w("`summary` is what a generated **table** prints. A `layout=\"names\"` index has")
+w("no summary column at all, so a block appearing only in one of those cannot")
+w("show a blank cell.")
+w("")
+# A blank cell only exists where a catalog actually has a summary column, so the
+# call's `layout` decides. Reading the calls from content is the only way to know
+# -- the edge graph records that a catalog points at a block, not how it renders.
+def catalog_targets():
+    """(ids shown in a summary-bearing table, ids shown only in a names index)"""
+    import glob
+    table, names = set(), set()
+    for path in glob.glob(D("content/**/*.md"), recursive=True):
+        src = open(path).read()
+        for m in re.finditer(r"\{\{<\s*catalog([^>]*?)/>\}\}", src):      # property form
+            prm = dict(re.findall(r'(\w+)="([^"]*)"', m.group(1)))
+            (names if prm.get("layout") == "names" else table).update(
+                selected_by_params(prm))
+        for m in re.finditer(r"\{\{<\s*catalog([^>]*?)>\}\}(.*?)\{\{<\s*/catalog\s*>\}\}",
+                             src, re.S):                                   # hand-listed
+            prm = dict(re.findall(r'(\w+)="([^"]*)"', m.group(1)))
+            ids = {re.sub(r"^-+\s*", "", ln.strip())
+                   for ln in m.group(2).split("\n") if ln.strip()}
+            (names if prm.get("layout") == "names" else table).update(ids)
+    return table, names
+
+
+def selected_by_params(prm):
+    out = set()
+    for b in BLOCKS:
+        if b.get("excluded"):
+            continue
+        if prm.get("category") and prm["category"] not in (b.get("category") or []):
+            continue
+        if prm.get("type") and prm["type"] != b.get("type"):
+            continue
+        if prm.get("tag") and prm["tag"] not in (b.get("tags") or []):
+            continue
+        if prm.get("page") and prm["page"] not in (b.get("page_urls") or []):
+            continue
+        if prm.get("namespace") and not b["id"].startswith(prm["namespace"] + "/"):
+            continue
+        if prm.get("wip") == "exclude" and b.get("wip"):
+            continue
+        out.add(b["id"])
+    return out
+
+
+IN_TABLE, IN_NAMES = catalog_targets()
+nosum = [b for b in BLOCKS
+         if not b.get("summary") and not b.get("excluded") and b.get("selectable", True)]
+missing = [b for b in nosum if b["id"] in IN_TABLE]
+names_only = [b for b in nosum if b["id"] in IN_NAMES and b["id"] not in IN_TABLE]
+no_table = [b for b in nosum if b["id"] not in IN_TABLE and b["id"] not in IN_NAMES]
+by_type = collections.defaultdict(list)
+for b in missing:
+    by_type[b["type"]].append(b)
+# A blank cell on a `wip:` page reads as unfinished, not broken -- your call, and
+# it stays true as long as the page is still WIP. Only a blank on a *shipped* page
+# is a defect, so that is the number worth surfacing.
+missing_wip = [b for b in missing if b.get("wip")]
+missing = [b for b in missing if not b.get("wip")]
+by_type = collections.defaultdict(list)
+for b in missing:
+    by_type[b["type"]].append(b)
+if missing:
+    w(f"**{len(missing)} blocks on shipped pages render a visible blank cell.** "
+      "These are the defects —")
+    w("a reader sees an empty column with no signal that anything is unfinished.")
+else:
+    w("**No shipped page renders a blank summary cell.**")
+w("")
+if missing_wip:
+    w(f"A further **{len(missing_wip)}** are on `wip: true` pages — **expected until "
+      "that content is")
+    w("written**, and accepted as such: the blank reads as unfinished rather than "
+      "broken. ")
+    w(", ".join(f"`{b['id']}`" for b in sorted(missing_wip, key=lambda b: b["id"])) + ".")
+    w("")
+if names_only:
+    w(f"A further **{len(names_only)}** appear only in a `layout=\"names\"` index, where")
+    w("there is no cell to be blank — no visible defect, though the builder would")
+    w("still print them without a one-liner: "
+      + ", ".join(f"`{b['id']}`" for b in sorted(names_only, key=lambda b: b["id"])) + ".")
+    w("")
+if no_table:
+    w(f"The remaining **{len(no_table)}** summary-less blocks appear in no generated")
+    w("list at all — they are section rules read in place on their page, and a")
+    w("one-liner would have nowhere to render. Not listed; not a defect.")
+    w("")
+for t in sorted(by_type):
+    w(f"*{t}*")
+    w("")
+    for b in sorted(by_type[t], key=lambda b: b["id"]):
+        page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+        w(f"- `{b['id']}` — {b['title']}  <sub>{page}</sub>")
+    w("")
+
+w("### C1f. Blocks with only structural tags")
+w("")
+w("These carry no functional tag, so a tag-as-query pull (\"give me all the")
+w("grenades\") cannot reach them. Structural tags are "
+  + ", ".join(f"`{s}`" for s in sorted(STRUCTURAL)) + ".")
+w("")
+thin = [b for b in LIVE
+        if b.get("tags") and not (set(b["tags"]) - STRUCTURAL)]
+done_thin = [b for b in thin if b["id"] in ACCEPTED_STRUCTURAL]
+thin = [b for b in thin if b["id"] not in ACCEPTED_STRUCTURAL]
+if done_thin:
+    w(f"*{len(done_thin)} reviewed and left as-is: "
+      + ", ".join(f"`{b['id']}`" for b in done_thin) + ".*")
+    w("")
+if thin:
+    for b in sorted(thin, key=lambda b: b["id"]):
+        w(f"- **`{b['id']}`** — {b['title']}  <sub>{', '.join(b['tags'])}</sub>")
+        w(f"      {first_sentence(b, 110)}")
+        spot("functional tag to add, or fine as-is")
+else:
+    w("- none")
+w("")
+
+w("### C1g. Full membership lists")
+w("")
+w("Reference, not review — every tag with every member. Collapsed so it does not")
+w("bury the decisions above.")
+w("")
+w("<details><summary>All " + str(len(tags)) + " tags</summary>")
+w("")
+for tg, members in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+    w(f"**`{tg}`** — {len(members)}")
+    w("")
+    for b in sorted(members, key=lambda b: b["id"]):
+        others = [x for x in b["tags"] if x != tg]
+        w(f"- `{b['id']}` — {b['title']}"
+          + (f"  <sub>{', '.join(others)}</sub>" if others else "  <sub>(only tag)</sub>"))
+    w("")
+w("</details>")
+w("")
+w("---")
+w("")
+
+# --------------------------------------------------------------- C2 orphans ---
+w("## C2. Reference / edge review")
+w("")
+types = collections.Counter(e["type"] for e in EDGES)
+w("| Edge type | Count |")
+w("|---|---|")
+for t, n in sorted(types.items(), key=lambda kv: -kv[1]):
+    w(f"| `{t}` | {n} |")
+w("")
+
+w("### Orphans — no other block's prose points at these")
+w("")
+zero = [b for b in BLOCKS if b.get("in_degree", 0) == 0 and not b.get("excluded")]
+listed = {e["target"] for e in EDGES if str(e["source"]).startswith("page:")}
+unreachable = [b for b in zero if b["id"] not in listed]
+w(f"**{len(zero)} blocks** have `in_degree: 0`, and **all but "
+  f"{len(unreachable)}** of them are still reachable — they are listed in a")
+w("`{{< catalog >}}` table or linked from page-frame prose. For a catalogued")
+w("item (a grenade, an ability) that is the normal, expected state, so the only")
+w("rows worth reviewing are the **rules and reference blocks**: a rule nothing")
+w("else links to may be a missing cross-reference rather than a standalone rule.")
+w("")
+if unreachable:
+    w("**Genuinely unreachable — not linked, not catalogued:**")
+    w("")
+    for b in sorted(unreachable, key=lambda b: b["id"]):
+        w(f"- `{b['id']}` — {b['title']}")
+    w("")
+orphans = [b for b in zero
+           if b.get("type") in ("rule", "reference")
+           and not any(k in b["id"].split("/")[-1] for k in OVERVIEWISH)]
+w(f"Rule/reference blocks with no inbound prose link: **{len(orphans)}**")
+w("")
+w("These are mostly *pieces of larger pages* rather than things a reader would")
+w("look up, so no inbound link is expected. What matters is whether a reader can")
+w("still **reach** them by browsing — the last column answers that from the")
+w("sidebar nav of a real build.")
+w("")
+off_nav = [b for b in orphans if not reachable_by_browsing(b)]
+w(f"**{len(orphans) - len(off_nav)} of {len(orphans)} sit on a page the nav links to.**"
+  + (f" The {len(off_nav)} that do not are the rows to look at."
+     if off_nav else " Nothing is stranded."))
+w("")
+w("<details><summary>the " + str(len(orphans)) + " rows</summary>")
+w("")
+w("| Block | Type | Lives on | Reachable by browsing |")
+w("|---|---|---|---|")
+for b in sorted(orphans, key=lambda b: (not reachable_by_browsing(b),
+                                        b.get("source_page") or "", b["id"])):
+    page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+    ok = "yes" if reachable_by_browsing(b) else "**NO**"
+    w(f"| `{b['id']}` — {b['title']} | {b.get('type','')} | {page} | {ok} |")
+w("")
+w("</details>")
+w("")
+
+w("### Implicit edges — rule couplings with no link in the prose")
+w("")
+w(f"**Reviewed and accepted — all {len(IMPLICIT)} stay implicit.** No decision "
+  "outstanding here; the")
+w("table is kept as a record of the couplings, not as a queue. Listed because a")
+w("future rules change to either side is worth checking against the other.")
+w("")
+w("<details><summary>the " + str(len(IMPLICIT)) + " couplings</summary>")
+w("")
+w("| From | To | Why it is coupled |")
+w("|---|---|---|")
+for e in IMPLICIT:
+    w(f"| `{e['source']}` | `{e['target']}` | {e.get('note','')} |")
+w("")
+w("</details>")
+w("")
+w("---")
+w("")
+
+# ------------------------------------------------------- C4 feature prereqs ---
+w("## C4. Feature prerequisites — the three places they are written")
+w("")
+w("A feature's prerequisites are stated in three places, each doing a different")
+w("job. This section reports where they disagree, so drift surfaces instead of")
+w("sitting in the data.")
+w("")
+w("1. **The prerequisite line** in the block's own text — what a reader sees.")
+w("2. **`requires:`** in frontmatter — the mechanical rule the PDF builder obeys.")
+w("   By decision it holds *features only*: attributes, levels, items and")
+w("   category conditions (\"any tool kit\") stay prose.")
+w("3. **The index nesting** (`- ` / `-- ` in a catalog) — where a reader meets")
+w("   the entry. Recorded as `listed_under`.")
+w("")
+w("**2 and 3 are not the same thing and must not be merged.** They agree today,")
+w("but 39 `requires` point into a different list entirely, which no index tree")
+w("can show — so neither can be generated from the other.")
+w("")
+
+URL2ID = {}
+for bid, b in B.items():
+    if b.get("url"):
+        URL2ID[b["url"]] = bid
+    if b.get("anchor"):
+        URL2ID.setdefault("#" + b["anchor"], bid)
+
+
+def prereq_line(b):
+    try:
+        body = open(D(b["file"])).read().split("\n---", 1)[1]
+    except (OSError, IndexError):
+        return ""
+    for ln in body.split("\n"):
+        t = ln.strip()
+        if t.startswith("*") and t.endswith("*") and not t.startswith("**") and len(t) > 4:
+            return t.strip("*").strip()
+    return ""
+
+
+def derived_requires(b):
+    """What `requires` would be if generated from the prerequisite line."""
+    out = set()
+    for _, url in re.findall(r"\[([^\]]+)\]\(([^)]+)\)", prereq_line(b)):
+        hit = URL2ID.get(url)
+        if hit and B[hit]["type"] == "feature":
+            out.add(hit)
+    return out
+
+
+feats = [b for b in BLOCKS if b["type"] == "feature" and b["home"] == "snippet"]
+drift = [(b, sorted(set(b.get("requires") or []) - derived_requires(b)),
+             sorted(derived_requires(b) - set(b.get("requires") or [])))
+         for b in feats]
+drift = [d for d in drift if d[1] or d[2]]
+
+w("### `requires` against the prerequisite line")
+w("")
+if drift:
+    w(f"**{len(drift)} features disagree.** Either the line names a feature the")
+    w("frontmatter does not record, or the frontmatter records one the line does")
+    w("not mention.")
+    w("")
+    w("| Block | In `requires`, not linked in the line | Linked in the line, not in `requires` |")
+    w("|---|---|---|")
+    for b, missing, extra in drift:
+        w(f"| `{b['id']}` | {', '.join(f'`{m}`' for m in missing) or '—'} "
+          f"| {', '.join(f'`{e}`' for e in extra) or '—'} |")
+else:
+    w(f"**No disagreements** across {sum(1 for b in feats if b.get('requires'))} features "
+      "that carry `requires`.")
+    w("")
+    w("Every one is exactly the set of feature links in its own prerequisite line.")
+    w("**Nothing to do here — this is a regression check, not an open item.** It")
+    w("passes on every run and stays in the worksheet so that if a prerequisite")
+    w("line and its `requires` ever drift apart, the count above stops being zero.")
+    w("The three real errors it caught — Slip Strike, Long Performance, Fast Kit")
+    w("Trap — were fixed when it was written.")
+w("")
+
+w("### `requires` against the index nesting")
+w("")
+w("Differences here are expected — the two answer different questions. Read it")
+w("as a review list, not an error list.")
+w("")
+nested = [b for b in BLOCKS if b.get("listed_under")]
+rows = []
+for b in nested:
+    req = set(b.get("requires") or [])
+    if b["listed_under"] in req:
+        continue
+    rows.append((b, req))
+w(f"{len(nested)} blocks are nested in an index; **{len(rows)}** are nested under")
+w("something they do not require.")
+w("")
+if rows:
+    w("| Block | Listed under | Actually requires |")
+    w("|---|---|---|")
+    for b, req in rows:
+        w(f"| `{b['id']}` | `{b['listed_under']}` | "
+          f"{', '.join(f'`{r}`' for r in sorted(req)) or '— nothing recorded —'} |")
+w("")
+
+crossns = 0
+for b in feats:
+    ns = b["id"].split("/")[0]
+    crossns += sum(1 for r in (b.get("requires") or []) if r.split("/")[0] != ns)
+w(f"Also worth remembering: **{crossns}** `requires` point at a feature in another")
+w("list (abilities depending on proficiencies or traits). No index tree can show")
+w("those, which is the other reason the nesting cannot be generated from them.")
+w("")
+w("---")
+w("")
+
+# ------------------------------------------------ C3 self-containment ---
+w("## C3. Self-containment — blocks that point outside themselves")
+w("")
+w("A block has to read correctly when a GM prints it alone, with none of its")
+w("page around it. This flags **deictic language** — text pointing at something")
+w("outside the block: `above`, `below`, `this page`, `the following`,")
+w("`as described`, `see the`.")
+w("")
+w("Two filters run first, or the list is mostly noise:")
+w("")
+w("- **Comparisons are dropped.** \"stress drops below threshold\" and \"well below")
+w("  max carry weight\" are measurements, not pointers.")
+w("- **In-block referents are dropped.** \"use the chart below\" is fine when the")
+w("  chart is the next line of the same block. Those are listed separately.")
+w("")
+w("Then the rule that decides severity: **a pointer that is a link is fine.**")
+w("`see the [Martial Training] proficiency` survives being printed alone — the")
+w("reader can follow it. **Unlinked deixis is the bug**, because nothing in the")
+w("printed page tells the reader where to look.")
+w("")
+
+C3_PATS = [
+    ("above/below",        r"\b(above|below)\b"),
+    ("this/these <thing>", r"\b(this|these)\s+(section|page|chapter|list|table|chart)\b"),
+    ("as noted/described", r"\bas (noted|described|mentioned|shown|stated|listed)\b"),
+    ("see the/above/below", r"\bsee (the|below|above)\b"),
+    ("earlier/previous",   r"\b(earlier|previously|previous)\b"),
+    ("the following",      r"\bthe following\b"),
+    ("\u2026here",             r"\b(listed|shown|described|found) here\b"),
+]
+# words that make "below"/"above" a measurement rather than a direction
+COMPARE = r"(lowered|lower|drops?|falls?|reduce[sd]?|well|beyond|but|is|are|stays?|remains?|at or)\s+(\w+\s+)?$"
+
+def c3_scan():
+    inblock, outside = [], []
+    for b in sorted(LIVE, key=lambda x: x["id"]):
+        txt = body_of(b)
+        if not txt:
+            continue
+        for name, pat in C3_PATS:
+            hit = None
+            for m in re.finditer(pat, txt, re.I):
+                before, after = txt[: m.start()], txt[m.end():]
+                word = m.group(0).lower()
+                if re.search(COMPARE, before[-40:], re.I):
+                    continue
+                selfref = (("below" in word or "following" in word)
+                           and re.search(r"^\s*[|>\-*]", after, re.M)) or \
+                          ("above" in word and re.search(r"^\s*[|>]", before, re.M))
+                frag = re.sub(r"\s+", " ", txt[max(0, m.start() - 55): m.end() + 55])
+                # was the pointer written as a link? body_of() left "]" behind
+                linked = "]" in txt[max(0, m.start() - 30): m.end() + 30]
+                hit = (b, name, frag, linked, selfref)
+                break
+            if hit:
+                (inblock if hit[4] else outside).append(hit)
+                break
+    return inblock, outside
+
+inblock, outside = c3_scan()
+unlinked = [h for h in outside if not h[3]]
+linked = [h for h in outside if h[3]]
+
+w(f"Scanned {len(LIVE)} blocks. **{len(outside)}** point outside themselves; of")
+w(f"those **{len(unlinked)}** do it without a link. A further {len(inblock)} point at")
+w("something inside their own block and are listed last as a sanity check.")
+w("")
+
+w(f"### C3a. Unlinked pointers — {len(unlinked)} blocks")
+w("")
+w("**These are the ones that break when printed alone.** Most are a one-sentence")
+w("rewrite: name the thing instead of gesturing at it, or add the link.")
+w("")
+settled_d = [h for h in unlinked if h[0]["id"] in ACCEPTED_DEIXIS]
+unlinked = [h for h in unlinked if h[0]["id"] not in ACCEPTED_DEIXIS]
+if settled_d:
+    w(f"*{len(settled_d)} reviewed and left as written: "
+      + ", ".join(f"`{h[0]['id']}` ({ACCEPTED_DEIXIS[h[0]['id']]})" for h in settled_d) + ".*")
+    w("")
+for b, name, frag, _, _ in unlinked:
+    page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>  `[{name}]`")
+    w(f"      \u2026{frag}\u2026")
+    spot("rewrite / add link / fine as-is")
+w("" if unlinked else "- none")
+w("")
+
+w(f"### C3b. Linked pointers — {len(linked)} blocks")
+w("")
+w("The pointer is a link, so a reader can follow it out of a printed page. Listed")
+w("for completeness; skip unless one reads badly.")
+w("")
+for b, name, frag, _, _ in linked:
+    w(f"- `{b['id']}` — {b['title']}  `[{name}]`")
+    w(f"      \u2026{frag}\u2026")
+w("" if linked else "- none")
+w("")
+
+w(f"### C3c. Points at its own content — {len(inblock)} blocks")
+w("")
+w("\"The chart below\" where the chart is in the same block. Correct as written —")
+w("here so you can confirm the filter is not hiding a real problem.")
+w("")
+w("<details><summary>" + str(len(inblock)) + " blocks</summary>")
+w("")
+for b, name, frag, _, _ in inblock:
+    w(f"- `{b['id']}` `[{name}]` \u2026{frag}\u2026")
+w("")
+w("</details>")
+w("")
+w("---")
+w("")
+
+# ------------------------------------------ C7 heading migration decisions ---
+w("## C7. Heading migration — blocks with no heading of their own")
+w("")
+w("Blocks no longer carry their own heading; the call site picks the level and")
+w("the shortcode emits it. Core rules is migrated. **These are the call sites")
+w("that could not be converted mechanically**, because the block has no heading")
+w("to move — giving it a level would *add* a heading that has never been on the")
+w("site. Each needs a call.")
+w("")
+w("The four modes, for reference:")
+w("")
+w("| Call | Renders |")
+w("|---|---|")
+w('| `{{% include "…" %}}` | body only, no name |')
+w('| `{{% include "…" "h3" %}}` | `### Title` then the body |')
+w('| `{{% include "…" "lead" %}}` | **Title** — body, run on |')
+w('| `{{% include "…" "h3" "false" %}}` | no name, but internals positioned at h4 |')
+w("")
+
+BARE = re.compile(r'^\{\{%\s*include\s+"/snippets/([^"]+)"\s*%\}\}$')
+
+
+def bare_sites():
+    """Call sites still rendering a block with no name at all."""
+    import glob
+    out = []
+    for path in sorted(glob.glob(D("content/docs/**/*.md"), recursive=True)):
+        grp = None
+        for line in open(path).read().split("\n"):
+            hm = re.match(r"^(#{1,6})\s+(.*)$", line)
+            if hm:
+                grp = (len(hm.group(1)), hm.group(2).strip())
+            m = BARE.match(line.strip())
+            if m and m.group(1) in B:
+                out.append((os.path.relpath(path, REPO), m.group(1), grp))
+    return out
+
+
+def bold_lead(b):
+    """The block's own hand-written bold lead-in, if it opens with one."""
+    txt = body_of(b)
+    m = re.match(r"\s*>?\s*\*\*([^*]+?)\*\*(.{0,60})", txt, re.S)
+    if not m:
+        return None
+    return m.group(1).strip(), re.sub(r"\s+", " ", m.group(2))
+
+
+sites = bare_sites()
+core = [s for s in sites if "/core-rules/" in s[0]]
+withlead, nolead = [], []
+for path, bid, grp in core:
+    bl = bold_lead(B[bid])
+    # a lead-in only counts if it names the block
+    if bl and bl[0].lower().startswith(B[bid]["title"].lower()[:10]):
+        withlead.append((path, bid, grp, bl))
+    else:
+        nolead.append((path, bid, grp, bl))
+
+w(f"### C7a. Opens with its own bold lead-in — {len(withlead)} call sites")
+w("")
+w("Your call in §C5 was that **the bold lead-in is the heading** — an inline,")
+w("low-tier list header. If that is right, these convert to `\"lead\"`: the")
+w("hand-written `**Name**` comes out of the snippet and the shortcode emits it")
+w("from `title` instead, so the name is single-sourced like everywhere else.")
+w("")
+w("Rendered output is the same either way. What changes is that the name stops")
+w("being typed inside the block. **The `*(3 AP)*` part stays in the prose** — it")
+w("is not part of the name, and every one of these restates the cost in the body")
+w("(checked; `combat/stealth` has no cost and says so).")
+w("")
+seen = set()
+for path, bid, grp, bl in withlead:
+    if bid in seen:
+        w(f"  - also on `{path.replace('content/docs/free-srd/', '')}`"
+          + (f" under **{grp[1]}**" if grp else ""))
+        continue
+    seen.add(bid)
+    w(f"- **`{bid}`** — title \u201c{B[bid]['title']}\u201d"
+      + (f", under **{grp[1]}** (h{grp[0]})" if grp else ""))
+    w(f"      now:  **{bl[0]}**{bl[1][:56]}\u2026")
+    w(f"      lead: **{B[bid]['title']}** \u2014 \u2026 (name from `title`, rest unchanged)")
+    if bl[0] != B[bid]["title"]:
+        w(f"      \u26a0 the lead-in says \u201c{bl[0]}\u201d but `title` is \u201c{B[bid]['title']}\u201d")
+    spot("lead / leave bare / hN")
+w("")
+
+w(f"### C7b. No lead-in either — {len(nolead)} call sites")
+w("")
+w("These render with no name at all. They sit under a group heading that names")
+w("something broader, or follow another block as a continuation. Leaving them")
+w("bare is legitimate; the question is whether each *should* be findable on its")
+w("own, since the PDF builder will print `title` for them regardless.")
+w("")
+settled_b = [n for n in nolead if n[1] in ACCEPTED_BARE]
+nolead = [n for n in nolead if n[1] not in ACCEPTED_BARE]
+if settled_b:
+    ids = sorted({n[1] for n in settled_b})
+    w(f"*{len(settled_b)} call sites across {len(ids)} blocks reviewed and left bare: "
+      + ", ".join(f"`{i}`" for i in ids) + ".*")
+    w("")
+if not nolead:
+    w("- nothing left")
+for path, bid, grp, bl in nolead:
+    short = path.replace("content/docs/free-srd/", "")
+    same = grp and grp[1] == B[bid]["title"]
+    w(f"- **`{bid}`** — title \u201c{B[bid]['title']}\u201d  <sub>{short}"
+      + (f" · under **{grp[1]}** (h{grp[0]})" if grp else "") + "</sub>")
+    if same:
+        w(f"      **The heading above already says exactly this.** It was not")
+        w(f"      converted only because prose sits between the two, so this is a")
+        w(f"      straight `\"h{grp[0]}\"` — delete the heading, no visible change.")
+    w(f"      opens: {first_sentence(B[bid], 96)}")
+    spot("leave bare / hN / merge into the block above")
+w("")
+
+w("### C7c. Page and block disagree on the name")
+w("")
+w("Converted with `\"false\"`, so the page keeps its own heading and the block")
+w("supplies no name. That is right where the heading names a *group*, and a")
+w("smell where it names the same single block twice over.")
+w("")
+DISAGREE = [
+    ("core-rules/action-economy.md", "movement/primary-speed", "Speed", "one block"),
+    ("core-rules/basics.md", "basics/decision-rolls", "Decision Rolls - the Primary Mechanic", "one block"),
+    ("core-rules/combat.md", "combat/standard-attack", "Aggressive Actions", "a group of 9"),
+    ("core-rules/combat.md", "combat/brace", "Defensive Actions", "a group of 4"),
+    ("core-rules/vehicle-rules.md", "movement/speed-descriptors", "Modes & Maneuverability", "one block"),
+]
+open_d = [d for d in DISAGREE if d[1] not in ACCEPTED_NAMES]
+if len(open_d) < len(DISAGREE):
+    w(f"*{len(DISAGREE) - len(open_d)} reviewed — keep both names. The page heading "
+      "names the section, the block names itself, and the two doing different jobs "
+      "is the point.*")
+    w("")
+for path, bid, pagename, scope in open_d:
+    w(f"- **{path.replace('core-rules/', '')}** — page says \u201c{pagename}\u201d, "
+      f"block `{bid}` is titled \u201c{B[bid]['title']}\u201d  <sub>heading covers {scope}</sub>")
+    spot("rename the block / rename the page heading / keep both")
+w("")
+
+w("### C7d. One anchor drifted")
+w("")
+w("`movement/speed-tiers-chart` moved from `#speed-tiers` to `#speed`. It is a")
+w("bare block, so its anchor is inherited from whatever heading precedes it, and")
+w("that heading became a generated one. Nothing links to it and the site has zero")
+w("broken links — but **a bare block's anchor is a side effect of its neighbour**,")
+w("which is the real argument for resolving C7a and C7b. Its old anchor was a")
+w("duplicate of `movement/speed-tiers` anyway, so neither value was correct.")
+w("")
+w("**Settled: left anchorless.** It is a chart belonging to Speed Tiers, not a")
+w("thing a reader looks up on its own.")
+w("")
+w("---")
+w("")
+
+# --------------------------------------------- C6 internal sub-headings ---
+w("## C6. Internal sub-headings — the h2 convention")
+w("")
+w("§C5 is about a block's own title. This is about headings **inside** a block.")
+w("")
+w("Since the heading migration the rule is fixed: **a block authors its internal")
+w("headings starting at `h2`, contiguous.** The call site says what level the")
+w("block occupies and the shortcode shifts the whole tree to sit below it, so the")
+w("authored numbers are relative, not absolute. Because internals always start at")
+w("h2, that shift is never negative.")
+w("")
+w("A block breaks the convention if its internals start somewhere other than h2,")
+w("or skip a level on the way down. Either way the shift preserves the fault.")
+w("")
+
+
+def block_headings(b):
+    try:
+        raw = open(D(b["file"])).read()
+    except OSError:
+        return []
+    body = raw.split("---", 2)[2] if raw.startswith("---") else raw
+    return [(len(m.group(1)), m.group(2).strip())
+            for m in re.finditer(r"^(#{1,6})\s+(.*)$", body, re.M)]
+
+
+def internal_headings(b):
+    """Headings inside a block, excluding one that merely restates its title.
+
+    `owns_heading` cannot be used for this any more: since the migration it
+    means \u201cthe call site emits the title\u201d, which is true of blocks whose file
+    contains no heading at all. Compare the text instead.
+    """
+    hs = block_headings(b)
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    if hs and norm(hs[0][1]) == norm(b["title"]):
+        return hs[1:]
+    return hs
+
+
+nested = []
+for b in LIVE:
+    sub = internal_headings(b)
+    if not sub:
+        continue
+    lv = sorted({l for l, _ in sub})
+    ok = lv[0] == 2 and lv == list(range(2, 2 + len(lv)))
+    nested.append((b, sub, lv, ok))
+
+good = [n for n in nested if n[3]]
+bad = [n for n in nested if not n[3]]
+w(f"**{len(nested)} blocks carry internal sub-headings.** {len(good)} follow the")
+w(f"convention; **{len(bad)} do not.**")
+w("")
+
+w(f"### C6a. Off-convention — {len(bad)} blocks")
+w("")
+w("Renumbering is mechanical and changes nothing on the page for a block whose")
+w("call site already supplies a level — the shortcode was going to shift it")
+w("anyway. It only matters that the *relative* depths are right.")
+w("")
+for b, sub, lv, _ in sorted(bad, key=lambda n: n[0]["id"]):
+    page = (b.get("source_page") or "?").replace("content/docs/free-srd/", "")
+    want = list(range(2, 2 + len(lv)))
+    if b["id"] == "chargen/overview":
+        w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>")
+        w("      **Not a renumber — I mis-framed this row.** Renumbering would demote")
+        w("      the page's H1 to an H2. The real fault is a name mismatch: `title` is")
+        w(f"      \u201c{b['title']}\u201d but the H1 says \u201cCharacter Creation\u201d, and that")
+        w("      is the only reason the block reads as owning no heading. Fix the")
+        w("      names and its six `h2` sections are already on convention.")
+        spot("which name wins — title or the H1")
+        continue
+    w(f"- **`{b['id']}`** — {b['title']}  <sub>{page}</sub>")
+    w(f"      authored at {', '.join('h%d' % x for x in lv)}"
+      f" \u2192 should be {', '.join('h%d' % x for x in want)}"
+      + ("   *(gap in the tree)*" if lv != list(range(lv[0], lv[0] + len(lv))) else ""))
+    for l, txt in sub[:6]:
+        w(f"      {'#' * l} {txt}")
+    if len(sub) > 6:
+        w(f"      … and {len(sub) - 6} more")
+    spot("renumber / leave")
+w("")
+
+w("#### Two of these are not about levels")
+w("")
+w("- **`core-rules/size` has a `## Related` section inside the block.** Every")
+w("  other page keeps Related in the page shell. Printed into a PDF this block")
+w("  drags a \u201cRelated\u201d heading and four site links with it.")
+spot("move Related out of the block")
+RACE_IDS = [b for b in LIVE if b["id"].startswith("races/") and b["id"] != "races/overview"]
+race_lv = {}
+for rb in RACE_IDS:
+    sub = internal_headings(rb)
+    if sub:
+        race_lv.setdefault(sub[0][0], []).append(rb["id"])
+if len(race_lv) > 1:
+    w("- **The race pages disagree with each other** on what level Features sits at: "
+      + "; ".join(f"h{k} on {', '.join(v)}" for k, v in sorted(race_lv.items())) + ".")
+    spot("pick one level for all of them")
+w("")
+
+w(f"### C6b. On convention — {len(good)} blocks")
+w("")
+w("<details><summary>listed for completeness</summary>")
+w("")
+for b, sub, lv, _ in sorted(good, key=lambda n: n[0]["id"]):
+    w(f"- `{b['id']}` — {len(sub)} internal heading(s) at "
+      + ", ".join("h%d" % x for x in lv))
+w("")
+w("</details>")
+w("")
+w("---")
+w("")
+
+# ---------------------------------------------------- C5 headings for print ---
+w("## C5. Section-block titles — what the PDF builder will print")
+w("")
+w("104 blocks carry no heading of their own; the host page supplies one. Anything")
+w("re-assembling them elsewhere — `{{< blockset >}}` today, the PDF builder later —")
+w("prints `title` instead. For most of them that title has already been proofread,")
+w("because it *is* the heading a reader sees. For a few it has never been rendered")
+w("anywhere, and those are the ones that can print wrong.")
+w("")
+w("This is how `sci-fi/huds` was caught printing \"Huds\" instead of")
+w("\"Heads Up Displays (HUDs)\".")
+w("")
+
+sec = [b for b in BLOCKS if not b["owns_heading"] and not b.get("excluded")
+       and b.get("source_page")]
+byhead = collections.Counter((b["source_page"], b["anchor"]) for b in sec)
+shared = [b for b in sec if byhead[(b["source_page"], b["anchor"])] > 1]
+
+w(f"### Titles that have never been a heading — {len(shared)} blocks")
+w("")
+w("These sit under a heading they share with other blocks, so that heading names")
+w("the *group*, not the block \u2014 the block's own `title` was never a heading a")
+w("reader saw.")
+w("")
+w("**But most of them state their name anyway**, as a bold lead-in on the first")
+w("line: `**Disarm** *(3 AP)* \u2014 Attempt to\u2026`. Where that happens the title has")
+w("been proofread after all, and the builder would print the same words. So this")
+w("splits into a short list that needs a decision and a longer one to confirm.")
+w("")
+def names_itself(b):
+    """True if the block opens by stating its own name in bold.
+
+    Many section blocks do -- `**Disarm** *(3 AP)* - ...`. That name IS rendered
+    on the page, so the title has been proofread after all; it just is not a
+    heading. Only the blocks that never state their name are unreviewed.
+    """
+    head = re.sub(r"\s+", " ", body_of(b))[:120].lstrip("> ")
+    m = re.match(r"\*\*([^*]+?)\*\*", head)
+    if not m:
+        return None
+    lead = m.group(1).strip().rstrip(":=").strip()
+    return lead if lead.lower().startswith(b["title"].lower()[:12]) else None
+
+confirmed = [b for b in shared if names_itself(b)]
+unseen = [b for b in shared if not names_itself(b)]
+
+w(f"#### Never stated anywhere \u2014 {len(unseen)} left to decide")
+w("")
+w("Nothing on the page prints this block's name, in any form. Whatever the PDF")
+w("builder prints is text no reader has ever checked.")
+w("")
+done_t = [b for b in unseen if b["id"] in ACCEPTED_TITLES]
+unseen = [b for b in unseen if b["id"] not in ACCEPTED_TITLES]
+if done_t:
+    w(f"*{len(done_t)} reviewed, titles confirmed appropriate: "
+      + ", ".join(f"`{b['id']}`" for b in done_t) + ".*")
+    w("")
+for b in sorted(unseen, key=lambda b: b["id"]):
+    page = b["source_page"].replace("content/docs/free-srd/", "")
+    w(f"- **`{b['id']}`** \u2192 would print **\u201c{b['title']}\u201d**"
+      f"  <sub>under `#{b['anchor']}` on {page}</sub>")
+    w(f"      opens: {first_sentence(b, 130)}")
+    spot("ok / new title")
+w("" if unseen else "- none")
+w("")
+w(f"#### Already stated as a bold lead-in \u2014 {len(confirmed)} blocks, confirm only")
+w("")
+w("These open by naming themselves \u2014 `**Disarm** *(3 AP)* \u2014 Attempt to\u2026` \u2014 so the")
+w("name **is** on the page and has been read, just as prose rather than a heading.")
+w("The builder would print the same words. Skim for anything that reads oddly as a")
+w("standalone heading; otherwise this is a no-op.")
+w("")
+for b in sorted(confirmed, key=lambda b: b["id"]):
+    w(f"- `{b['id']}` \u2014 bold lead-in \u201c{names_itself(b)}\u201d, title \u201c{b['title']}\u201d"
+      + ("  **\u2190 differ**" if names_itself(b) != b["title"] else ""))
+w("")
+w("<details><summary>Full detail for all " + str(len(shared)) + ", grouped by shared heading</summary>")
+w("")
+
+groups = collections.defaultdict(list)
+for b in shared:
+    groups[(b["source_page"], b["anchor"])].append(b)
+for (page, anchor), mem in sorted(groups.items()):
+    short = page.replace("content/docs/free-srd/", "")
+    w(f"**Under `#{anchor}` on {short}** — {len(mem)} blocks share this heading")
+    w("")
+    for b in sorted(mem, key=lambda b: b["id"]):
+        sibs = [x["title"] for x in sorted(mem, key=lambda x: x["id"]) if x["id"] != b["id"]]
+        w(f"- `{b['id']}` → would print **\u201c{b['title']}\u201d**")
+        w(f"      beside: {', '.join(sibs) if sibs else '(none)'}")
+        w(f"      opens: {first_sentence(b, 130)}")
+    w("")
+w("</details>")
+w("")
+
+w(f"The other {len(sec) - len(shared)} are the sole block under their heading, so their")
+w("title is that heading and has been proofread by being read.")
+w("")
+
+w("### Heading level is the bigger print problem")
+w("")
+lv = collections.Counter()
+for b in BLOCKS:
+    if b["owns_heading"] and b["home"] == "snippet":
+        try:
+            body = open(D(b["file"])).read().split("\n---", 1)[1]
+        except (OSError, IndexError):
+            continue
+        m = re.search(r"^(#{1,6})\s", body, re.M)
+        if m:
+            lv[len(m.group(1))] += 1
+w("The blocks that *own* a heading hard-code its level in their markdown:")
+w("")
+for k in sorted(lv):
+    w(f"- **h{k}** — {lv[k]} blocks")
+w("")
+w("So a GM who assembles a PDF and puts one of those at a different depth gets a")
+w("heading at the wrong level, and the markdown cannot bend. The 104 blocks with")
+w("*no* heading are the flexible ones — they carry a title and let whatever renders")
+w("them choose the level.")
+w("")
+w("**The builder should print every block the same way: take `title`, choose the")
+w("level from where the GM placed it, and skip the block's own leading heading")
+w("when `owns_heading` is true.** That pair of fields is exactly what makes the")
+w("normalisation possible — no content change needed, and the two shapes stop")
+w("mattering at print time.")
+w("")
+w("---")
+w("")
+
+path = D("_discovery/04-phase3-worksheets.md")
+open(path, "w").write("\n".join(out) + "\n")
+print(f"wrote {os.path.relpath(path, REPO)} ({len(out)} lines)")
+print(f"  {len(tags)} tags, {len(orphans)} orphans, {len(missing)} missing summaries, "
+      f"{len(IMPLICIT)} implicit edges")

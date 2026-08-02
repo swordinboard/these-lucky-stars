@@ -1,0 +1,80 @@
+{{- /*
+  /builder/blocks.json — everything the PDF builder needs, in one file.
+
+  The builder runs entirely in the browser, so it cannot render markdown or
+  resolve shortcodes; only Hugo can. This emits each block's finished HTML
+  alongside its metadata, once, at build time.
+
+  WHY THE HTML IS SHIPPED AT ITS AUTHORED LEVEL. Snippets author internal
+  headings starting at h2 (see "Heading levels are set at the call site" in
+  site-maintenance-notes.md). Nothing here shifts them — the builder does that
+  in JS when a block is placed, exactly as `include` does at build time. That
+  convention is what lets one copy of a block serve every heading tier.
+
+  Blocks whose home is a page carry the page's own h1; the builder emits the
+  title itself, so it is stripped here.
+*/ -}}
+{{- /* The theme appends a "#" permalink to every heading. On the site it is a
+       hover affordance; in a printed document it is a stray character after
+       every title, so it comes off here rather than in the browser. */ -}}
+{{- $anchorlink := `(?s)<a class="anchor"[^>]*>.*?</a>` -}}
+{{- /* Which blocks are rendered INSIDE another block. A snippet may include
+       another snippet (combat/damage pulls in combat/damage-dice), so the
+       parent's HTML already carries the child. The page lists both, which is
+       right for the site — it renders the parent once — but breaking a page
+       apart in the builder would emit the child a second time. The builder
+       needs to know the nesting to drop it; see breakApart() in builder.js. */ -}}
+{{- $nested := dict -}}
+{{- range site.Data.edges -}}
+  {{- if and (eq .type "include") (not (hasPrefix (string .source) "page:")) -}}
+    {{- $cur := or (index $nested .source) slice -}}
+    {{- $nested = merge $nested (dict .source ($cur | append .target)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $blocks := slice -}}
+{{- range site.Data.blocks -}}
+  {{- if not .excluded -}}
+    {{- $path := strings.TrimSuffix ".md" (strings.TrimPrefix "content" .file) -}}
+    {{- $path = strings.TrimSuffix "/_index" $path -}}
+    {{- $p := site.GetPage $path -}}
+    {{- $html := "" -}}
+    {{- with $p -}}
+      {{- $html = .Content | string -}}
+    {{- end -}}
+    {{/* a page-as-block opens with the page h1 — the builder supplies the title */}}
+    {{- $html = replaceRE `(?s)\A\s*<h1[^>]*>.*?</h1>` "" $html -}}
+    {{- $html = replaceRE $anchorlink "" $html -}}
+    {{- $blocks = $blocks | append (dict
+        "id"       .id
+        "title"    .title
+        "summary"  (or .summary "")
+        "type"     (or .type "")
+        "category" (or .category slice)
+        "tags"     (or .tags slice)
+        "wip"      (or .wip false)
+        "url"      (or .url "")
+        "anchor"   (or .anchor "")
+        "requires" (or .requires slice)
+        "contains" (or (index $nested .id) slice)
+        "html"     $html) -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Page chunks carry the real page — chrome and all — because a page's
+       section intros and group headings are substantive rules text, not
+       decoration. Its own h1 comes off for the same reason a block's does:
+       the builder emits the chunk title itself. */ -}}
+{{- $pages := slice -}}
+{{- range site.Data.pages -}}
+  {{- $p := site.GetPage .url -}}
+  {{- if and $p (gt (len .blocks) 0) -}}
+    {{- $pages = $pages | append (dict
+        "url"     .url
+        "title"   .title
+        "section" .section
+        "wip"     .wip
+        "blocks"  .blocks
+        "html"    (replaceRE `(?s)\A\s*<h1[^>]*>.*?</h1>` ""
+                    (replaceRE $anchorlink "" ($p.Content | string)))) -}}
+  {{- end -}}
+{{- end -}}
+{{- dict "blocks" $blocks "pages" $pages "built" (now.Format "2006-01-02") | jsonify -}}

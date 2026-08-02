@@ -1,0 +1,21 @@
+{{- /*
+  Whether to show the ToC. The theme decides by asking if Hugo's built-in
+  `.TableOfContents` is empty — but that one cannot see headings that arrive
+  through an include, so a page built entirely from blocks looked empty and had
+  its ToC hidden. Ask the rendered page instead, with the same range
+  docs/toc.html uses.
+
+  `bookToC: false` on a page, or site-wide, still wins.
+*/ -}}
+{{- $start := int (default 2 site.Params.bookTocStart) -}}
+{{- $end := int (default 4 site.Params.bookTocEnd) -}}
+{{- $found := false -}}
+{{- range findRE `(?s)<h[1-6][^>]*\sid="[^"]*"[^>]*>.*?</h[1-6]>` .Content -}}
+  {{- $lvl := int (substr . 2 1) -}}
+  {{- if and (ge $lvl $start) (le $lvl $end) }}{{ $found = true }}{{ end -}}
+{{- end -}}
+{{- return and
+  (not (eq .Params.bookToC false))
+  (not (eq .Site.Params.BookToC false))
+  $found
+-}}

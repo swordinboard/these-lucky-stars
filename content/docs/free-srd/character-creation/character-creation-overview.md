@@ -2,6 +2,10 @@
 title: "Character Creation Overview"
 description: "How to build a character in These Lucky Stars — attributes, stats, traits, proficiencies, and abilities — plus how leveling up works."
 weight: 1
+id: chargen/overview
+category: [core]
+type: reference
+tags: [character-creation]
 ---
 
 # Character Creation
@@ -23,7 +27,7 @@ You can find a ***WORK IN PROGRESS*** digital character sheet option [here](/dig
 
 ## Playable Races
 
-Players choose a [race](/docs/free-srd/core-rules/character-creation/races) (or species, or ancestry, we aren't picky here) from the those made available to their GM's setting. This selection often comes with narrative depth per the GM but otherwise begins to describe the character while providing any special abilities and Trait selections the player may make during character creation.
+Players choose a [race](/docs/free-srd/character-creation/races) (or species, or ancestry, we aren't picky here) from the those made available to their GM's setting. This selection often comes with narrative depth per the GM but otherwise begins to describe the character while providing any special abilities and Trait selections the player may make during character creation.
 
 ## Character Archetypes
 

@@ -3,14 +3,18 @@ title: "Reptilian"
 description: "Introducing the Reptilian — A classic sci-fi race of conspiracy and subterfuge"
 weight: 30
 bookHidden: true
+wip: true
+id: races/reptilian
+category: [sci-fi]
+type: feature
+tags: [races, sci-fi]
+summary: "Shapeshifters who hold one other humanoid form for life, detectable on an INS check."
 ---
-
-{{% include "/snippets/wip-announcement.md" %}}
 # Reptilian
 <!-- classic reptilan race -->
 Somewhere from the outer reaches come a race of shapeshifting Reptilians, bent on corruption and subturfuge. Or maybe they're just really, really shy. A classic sci-fi race, popular among politicians, salesmen, and others of similar motivations.
 
-### Features
+## Features
 
 **Single Shift** — Reptilians have the ability to shapeshift, allowing them to appear as another humanoid species. This effect does not change the number of limbs or size of the Reptilian. Once a species is chosen, the Reptilian always appears as the same unique member of that species while using its Single Shift, essentially locking in that form for life.
 

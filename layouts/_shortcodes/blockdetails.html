@@ -1,0 +1,92 @@
+{{- /*
+  blockdetails — a collapsible entry for one block, named by the block.
+
+  SIGNATURE
+    {{< blockdetails "<namespace>/<slug>" [<level>] [open] >}}
+                      └───────┬────────┘   └─┬─┘
+                              │              └─ optional: start expanded
+                              └─ the block id exactly as its `id:` frontmatter
+                                 reads — no /snippets/ prefix, no .md
+
+  EXAMPLE
+    {{< blockdetails "generic-equipment/reinforced-boots" >}}
+    {{< blockdetails "generic-equipment/reinforced-boots" open >}}
+
+  ARGUMENTS
+    0     (required)  block id. Must exist in data/blocks.json.
+    1     (optional)  h1–h6 — the level this block occupies, used to re-level its
+                      INTERNAL headings. The title itself is never emitted as a
+                      heading here: <summary> already names the block, and
+                      repeating it would state the name twice.
+    open  (optional)  bare flag; renders <details open>.
+
+  The block's anchor is on the <details> element, since <summary> cannot carry
+  an id and there is no heading inside to hold one. Browsers expand a <details>
+  when navigation targets it, so `#anchor` links still land.
+
+  Replaces the two-part form, which types the name once and the path again:
+
+    {{% details "Reinforced Boots" %}}
+    {{% include "/snippets/generic-equipment/reinforced-boots" %}}
+    {{% /details %}}
+
+  The <summary> label comes from the block's `title`, so the label can never
+  drift from the entry it opens. Add `open` to start expanded.
+
+  Unlike `include`, a bad id fails the build instead of rendering nothing.
+*/ -}}
+{{- $id := .Get 0 -}}
+{{- $lvl := .Get 1 -}}
+{{- if eq $lvl "open" }}{{ $lvl = "" }}{{ end -}}
+{{- $match := where site.Data.blocks "id" $id -}}
+{{- if not $match -}}
+  {{- errorf "blockdetails: no block with id %q (called from %s)" $id .Page.File.Path -}}
+{{- end -}}
+{{- $b := index $match 0 -}}
+{{- $page := site.GetPage (printf "/snippets/%s" $id) -}}
+{{- if not $page -}}
+  {{- errorf "blockdetails: no snippet page for %q (called from %s)" $id .Page.File.Path -}}
+{{- end -}}
+{{- $html := $page.Content -}}
+{{- /* Shift the block's internal headings so they sit below the level this
+       block occupies. Same rule as `include`: the delta comes from the
+       shallowest heading the block authored, so a block whose internals start
+       too deep corrects itself. */ -}}
+{{- if hasPrefix $lvl "h" -}}
+  {{- $n := int (substr $lvl 1) -}}
+  {{- $min := 0 -}}
+  {{- range $i := (seq 1 6) -}}
+    {{- if and (eq $min 0) (findRE (printf "<h%d[ >]" $i) $html) }}{{ $min = $i }}{{ end -}}
+  {{- end -}}
+  {{- if gt $min 0 -}}
+    {{- $delta := sub (add $n 1) $min -}}
+    {{- if ne $delta 0 -}}
+      {{- range $i := (cond (gt $delta 0) (seq 6 1) (seq 1 6)) -}}
+        {{- $to := add $i $delta -}}
+        {{- if and (gt $to 0) (lt $to 7) -}}
+          {{- $html = replaceRE (printf "<(/?)h%d([ >])" $i) (printf "<${1}h%d${2}" $to) $html -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* The anchor rides on <details>, not on a heading inside it. <summary>
+       cannot carry the id, and repeating the title as a heading inside would
+       state the name twice — the summary already is the heading. Browsers
+       expand a <details> when navigation targets it, so links still land. */ -}}
+{{- /* The anchor goes on the CONTENT div, not on <details> or <summary>.
+       A browser only auto-expands a closed <details> when the fragment targets
+       something INSIDE it — verified in Chromium: id on <details> or on
+       <summary> scrolls but leaves it shut, id on the inner div opens it. That
+       auto-open is why a catalog row used to reveal the entry it points at.
+       Claimed only when the block has no heading of its own, so the id is never
+       duplicated while the migration is part-done. */ -}}
+{{- $own := $b.owns_heading -}}
+{{- $anchor := $b.anchor | default (anchorize $b.title) -}}
+<details{{ if in .Params "open" }} open{{ end }}>
+<summary>{{ $b.title | .Page.RenderString }}</summary>
+{{- /* remove whitespaces */ -}}
+<div class="markdown-inner"{{ if not $own }} id="{{ $anchor }}"{{ end }}>
+{{ $html | safeHTML }}
+</div></details>
+{{- /* remove whitespaces */ -}}

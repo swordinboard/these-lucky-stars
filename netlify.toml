@@ -105,6 +105,24 @@
   to = "/docs/free-srd/core-rules/:splat"
   status = 301
 
+# Bots & drones moved out of equipment into Creatures & NPCs.
+# The components that install INTO a bot are equipment and stayed behind,
+# renamed bot-components — so that one is listed first, before the wildcard.
+[[redirects]]
+  from = "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components/"
+  to = "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/"
+  to = "/docs/free-srd/creatures--npcs/sci-fi/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/*"
+  to = "/docs/free-srd/creatures--npcs/sci-fi/:splat"
+  status = 301
+
 # Pages that moved into /core-rules/ subsection
 [[redirects]]
   from = "/docs/free-srd/basics/"
@@ -139,10 +157,6 @@
   status = 301
 
 # Removed or drafted-out pages → nearest valid parent
-[[redirects]]
-  from = "/docs/free-srd/sci-fi-module/"
-  to = "/docs/free-srd/"
-  status = 301
 
 [[redirects]]
   from = "/docs/ohnothoughts/"

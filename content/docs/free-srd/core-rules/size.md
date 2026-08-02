@@ -2,6 +2,10 @@
 title: "Size"
 description: "How size works in These Lucky Stars — attribute and stat modifiers, space and melee reach, damage dice scaling, and the full size chart from Tiny to Huge."
 weight: 27
+id: core-rules/size
+category: [core]
+type: rule
+tags: [size, combat, stats]
 ---
 
 ## Size
@@ -44,7 +48,7 @@ A single tiny creature does not occupy a large enough space to prevent a larger 
 
 Size affects combat directly though damage, reach, and action modifiers
 
-**Damage dice.** {{% include "/snippets/damage-dice" %}}
+**Damage dice.** {{% include "/snippets/combat/damage-dice" %}}
 
 **Space and reach.** The space occupied and melee reach values on the chart above determine how a character positions on the battlefield and who they can strike in melee. Some creatures have modified space and reach compared to the sizes present on the chart.
 

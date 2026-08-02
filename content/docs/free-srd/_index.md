@@ -6,7 +6,7 @@ bookCollapseSection: false
 bookToC: false
 ---
 
-{{% include "/snippets/announcement" %}}
+{{% include "/snippets/site/announcement" %}}
 
 # Free SRD
 
@@ -15,7 +15,7 @@ These Lucky Stars is a tabletop roleplaying game built for dynamic play balancin
 The system is built in a series of starter modules intended to help GMs build specific settings. Each starter module is intended to cover a range of related settings and allow the GM to set the dial to exactly where they want. Good examples of this can be seen in the Sci-Fi armor list — which includes a modern EVA space suit alongside futuristic Evosuits.
 
 ## Where to Start
-If you're new here, especially as a GM, you might start with [the Basics](/docs/free-srd/core-rules/basics). Get to know key terms, the 2d6 resolution system, and general rules of play. Some players prefer to jump right into [character creation](/docs/free-srd/core-rules/character-creation/character-creation-overview). If that is the case, suggested reading has been added to that page to provide some direction when questions arise.
+If you're new here, especially as a GM, you might start with [the Basics](/docs/free-srd/core-rules/basics). Get to know key terms, the 2d6 resolution system, and general rules of play. Some players prefer to jump right into [character creation](/docs/free-srd/character-creation/character-creation-overview). If that is the case, suggested reading has been added to that page to provide some direction when questions arise.
 
 ## System Features
 These Lucky Stars is a classess rules moderate tabletop RPG featuring a 2d6 resolution system, [eight attributes](/docs/free-srd/core-rules/attributes), a unique [health system](/docs/free-srd/core-rules/health), and a building blocks structure that allows Game Masters to build a ruleset that reflects their intended setting.

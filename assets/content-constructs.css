@@ -1,0 +1,88 @@
+/* Shared content-construct styles — loaded by BOTH the site and the PDF builder.
+ *
+ * WHY THIS FILE EXISTS
+ * The builder page (layouts/builder/) sits outside the book theme's chrome and
+ * so does not load the theme stylesheet. Anything a shortcode emits therefore
+ * arrived there as bare markup: a {{< catalog layout="names" >}} index printed
+ * as one very tall single-column stack because none of its styling followed it.
+ * The fix was originally a hand-copy into builder.css, which immediately went
+ * out of date — the copy missed the responsive rules and the print rule.
+ *
+ * So these rules live here once. The site loads this file from
+ * layouts/_partials/docs/inject/head.html; the builder concatenates it onto
+ * builder.css. Edit here and both change together.
+ *
+ * WHAT BELONGS HERE
+ * Everything about how these constructs look, EXCEPT the column count.
+ * The count is the one property that legitimately differs: the site's content
+ * column grows with the viewport, while the builder's document is a fixed 46em
+ * page proof no matter how wide the window is. Each side sets its own count —
+ * assets/_custom.scss for the site, assets/builder.css for the builder — and
+ * both are marked with a comment pointing here.
+ *
+ * Adding a new shortcode that emits its own markup? Put its styling here, not
+ * in one of the two consumers, or it will only appear in one of them.
+ * _discovery/tools/check.sh fails the build if a class reaches the builder with
+ * no styling anywhere, so a missed construct is caught before it ships.
+ */
+
+/* ------------------------------------ compact block index — {{< catalog >}} */
+
+/* A long feature list reads better as scannable columns of names than as a
+   chart whose summary column makes it longer than the entries themselves. */
+.markdown .block-index {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  column-gap: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* keep a parent with its children — in a column, and on a page */
+.markdown .block-index > li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* hanging indent: a name that wraps continues under itself, not back at the
+   dash — which otherwise reads as a new entry at a glance */
+.markdown .block-index li {
+  padding-block: 0.1rem;
+  padding-inline-start: 0.85em;
+  text-indent: -0.85em;
+}
+
+.markdown .block-index ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0.5rem;
+}
+
+.markdown .block-index li.deep { margin-inline-start: 0.5rem; }
+
+/* sub-entries read as dependent on the entry above them */
+.markdown .block-index ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.25rem;
+  height: 1px;
+  vertical-align: middle;
+  margin-inline-end: 0.25rem;
+  background: var(--gray-400, currentColor);
+  opacity: 0.5;
+}
+
+.markdown .block-index a { text-decoration: none; }
+.markdown .block-index a:hover { text-decoration: underline; }
+
+/* --------------------------------------------- multi-column link lists */
+
+.two-col, .three-col, .four-col { column-gap: 1.5rem; }
+
+.two-col a,
+.three-col a,
+.four-col a {
+  display: block;
+  padding: 0.15rem 0;
+}

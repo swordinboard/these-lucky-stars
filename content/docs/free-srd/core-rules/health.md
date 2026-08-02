@@ -4,27 +4,21 @@ description: "These Lucky Stars' two-layer health system: Defense absorbs hits, 
 weight: 50
 ---
 
-## Health
 
-These Lucky Stars uses a two-layer health system. The first layer, **Defense (DEF)**, is primarily used in combat and represents how well a character defends against attacks — both avoiding them and bracing against them. The second layer, **Vitality (VIT)**, represents how much of a beating or how many injuries a character can withstand before they are incapacitated. Characters may also accumulate [wounds and conditions](/docs/free-srd/core-rules/wounds--conditions/), which have their own effects and recovery rules.
+{{% include "/snippets/health/overview" "h2" %}}
 
----
 
-## Defense
-
-{{% include "/snippets/defense" %}}
+{{% include "/snippets/stats/defense" "h2" %}}
 
 ---
 
-## Vitality
 
-{{% include "/snippets/vitality" %}}
+{{% include "/snippets/stats/vitality" "h2" %}}
 
 ---
 
-## Applying Damage
 
-{{% include "/snippets/health-loop" %}}
+{{% include "/snippets/health/applying-damage" "h2" %}}
 
 For how damage totals are calculated — damage dice, modifiers, resistance, and damage types — see [Combat](/docs/free-srd/core-rules/combat/#damage).
 
