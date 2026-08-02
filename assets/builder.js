@@ -582,21 +582,34 @@
           return { flow: flow, res: res, out: out };
         });
     }).then(function (state) {
+      var cleaned = false;
       function cleanup() {
+        if (cleaned) return;
+        cleaned = true;
         restoreCompact();
         applyPagedPageRule(false);
         document.body.classList.remove("printing");
         var n = document.getElementById("paged-out");
         if (n) n.parentNode.removeChild(n);
+        /* paged.js applies the print stylesheet to the screen — that is what a
+         * paged preview is — and leaves the flattened copy in the document.
+         * Our print CSS hides the toolbar and library with an unscoped
+         * `display: none !important`, so anything left behind keeps the app
+         * hidden for good: the page looks frozen and only a reload brings it
+         * back. Take the injected styles out with everything else. */
+        Array.prototype.forEach.call(
+          document.querySelectorAll("style[data-pagedjs-inserted-styles]"),
+          function (st) { st.parentNode.removeChild(st); });
         window.removeEventListener("afterprint", cleanup);
+        window.removeEventListener("focus", cleanup);
         btn.disabled = false;
       }
       window.addEventListener("afterprint", cleanup);
+      /* Not every browser fires afterprint — regaining focus means the dialog
+       * closed either way, and the timeout is the last resort. */
+      window.addEventListener("focus", cleanup);
       window.print();
-      /* Safari and some mobile browsers never fire afterprint. */
-      setTimeout(function () {
-        if (document.body.classList.contains("printing")) cleanup();
-      }, 60000);
+      setTimeout(cleanup, 60000);
     }).catch(function (err) {
       /* Never leave someone unable to print because the paginator failed. */
       if (window.console) console.warn("paged.js unavailable, printing without contents-page numbers:", err);
