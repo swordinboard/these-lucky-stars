@@ -5,6 +5,14 @@ bookToC: false
 
 {{% include "/snippets/site/announcement" %}}
 
+# Welcome!
+
+Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
+
+Get started with the [Free SRD](/docs/free-srd) learn the system and start playing.
+
+Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
+
 {{< feature-banner
     title="PDF Builder"
     url="/builder/"
@@ -16,14 +24,6 @@ Build your own reference PDF from the SRD. Search the rules, gear and features
 your table actually uses — or drop in a whole page and break it apart — then
 arrange, title, and print. Works on your phone, better on desktop.
 {{< /feature-banner >}}
-
-# Welcome!
-
-Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.
-
-Get started with the [Free SRD](/docs/free-srd) learn the system and start playing.
-
-Join the Reddit community and get involved! [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 
 > [!WARNING]
 > **Latest 7/22/26 Changes**
