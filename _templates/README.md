@@ -8,16 +8,24 @@ generators and the PDF builder already expect.
 `builddata.py` never counts them as blocks.** Copy a file into
 `content/snippets/<namespace>/<slug>.md`, then fill it in.
 
+Three of them are the exception to "taken from real blocks": `creature.md`,
+`creature-page.md` and `vehicle.md` are **worked examples**, because nothing is
+statted yet. Their prose is invented, but every number in them is derived from a
+rule that is already on the site and the derivation is written out in the
+comment. Replace them with a real entry once one exists.
+
 | Template | For |
 |---|---|
 | `feature-ability.md` | An ability — the only kind with prerequisites |
 | `feature-proficiency.md` | A proficiency |
 | `feature-trait.md` | A trait |
 | `equipment.md` | Any purchasable or carryable item |
-| `rule.md` | A rule that a page presents under its own heading |
-| `rule-standalone.md` | A rule that carries its own heading (conditions, wounds) |
+| `vehicle.md` | A statted vehicle — the thing the vehicle rules are about |
+| `rule.md` | A rule a page presents as part of a section |
+| `rule-standalone.md` | A rule read on its own and listed in a table (conditions, wounds) |
 | `reference.md` | Intro/overview prose at the top of a section |
-| `creature.md` | A creature or platform — a whole page, not a snippet |
+| `creature.md` | A creature or NPC sharing a page with its siblings |
+| `creature-page.md` | A creature substantial enough to own a whole page |
 | `page-shell.md` | A docs page that assembles blocks; not a block itself |
 
 ## The rules these encode
@@ -26,14 +34,24 @@ generators and the PDF builder already expect.
   the builder cannot see it.
 - **`summary` is the one-liner** every generated table prints. Write one for
   anything a catalog will list; a missing summary renders a blank cell.
-- **Heading or no heading is a real decision.** If the block's file starts with
-  its own `###`, it owns its heading and can be re-assembled anywhere. If not,
-  the host page supplies the heading and anything re-assembling the block has to
-  supply one too — `blocks.json` records this as `owns_heading`.
+- **A snippet does not carry a heading.** The title lives in `blocks.json`, and
+  the call site decides what level it renders at — so the same block can sit at
+  `h2` on one page and `h3` on another. `blockdetails` prints the name in its
+  `<summary>`, so a heading inside would state it twice. All 423 snippets work
+  this way; the only blocks that keep a heading are the 13 that *are* pages,
+  which need an `h1` matching their title. `blocks.json` records this as
+  `owns_heading`.
+- **Internal sub-headings start at `h2`,** whatever level the block will occupy.
+  The shortcode shifts the whole tree down to sit one level under the call site,
+  so authoring to `h2` is what makes a block re-homeable.
 - **`requires` holds features only.** Attributes, levels, items, and "any tool
   kit"-style conditions stay in the prose line.
 - **`[___]` never goes in a heading**, only in the body.
 - **Never end a snippet with an HTML comment** — it swallows the rest of the
   host page. `snippetlint.py` checks this.
+- **A stat block is a blockquote and a table, and nothing else.** Creatures and
+  vehicles share one construct so they read the same at the table and in a PDF.
+  It is deliberately plain markdown: anything that emits new markup needs a rule
+  in `assets/content-constructs.css` or check 5 of the preflight fails it.
 
 Full explanations are in `site-maintenance-notes.md`.

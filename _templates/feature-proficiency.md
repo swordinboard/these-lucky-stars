@@ -7,12 +7,13 @@ tags: [proficiency, core]
 summary: "Trained to fight unarmed as effectively as armed."
 ---
 
-### Martial Training
-
 You have been trained to be as deadly without a weapon as you are when armed
 with one. Your unarmed attacks no longer take a -3 penalty.
 
 <!--
+NO HEADING — <summary> prints the name, and an include generates it at the call
+site's level.
+
 If the proficiency shares its name with the item it applies to, the TITLE takes
 the suffix and the item keeps the plain name:
     Comp Jack Proficiency   (#comp-jack-proficiency)

@@ -20,9 +20,10 @@
                       repeating it would state the name twice.
     open  (optional)  bare flag; renders <details open>.
 
-  The block's anchor is on the <details> element, since <summary> cannot carry
-  an id and there is no heading inside to hold one. Browsers expand a <details>
-  when navigation targets it, so `#anchor` links still land.
+  The block's anchor is on the CONTENT DIV inside <details> — not on <details>
+  and not on <summary>, neither of which auto-expands a closed entry when a
+  fragment targets it. See the implementation note below, and the verified
+  table in site-maintenance-notes.md.
 
   Replaces the two-part form, which types the name once and the path again:
 
@@ -70,11 +71,11 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- /* The anchor rides on <details>, not on a heading inside it. <summary>
-       cannot carry the id, and repeating the title as a heading inside would
-       state the name twice — the summary already is the heading. Browsers
-       expand a <details> when navigation targets it, so links still land. */ -}}
-{{- /* The anchor goes on the CONTENT div, not on <details> or <summary>.
+{{- /* The block supplies no heading of its own: <summary> already is the
+       heading, and repeating the title inside would state the name twice.
+       That is why the anchor needs somewhere else to live.
+
+       The anchor goes on the CONTENT div, not on <details> or <summary>.
        A browser only auto-expands a closed <details> when the fragment targets
        something INSIDE it — verified in Chromium: id on <details> or on
        <summary> scrolls but leaves it shut, id on the inner div opens it. That

@@ -8,14 +8,15 @@ summary: "Enter an enraged state for a short duration."
 requires: [abilities/charge]
 ---
 
-### Rage
-
 *[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Charge](#charge), AGI 2, Level 3*
 
 2/day for 1 AP you may briefly enter an enraged state to gain +2 STR and +2 FORT
 for four rounds.
 
 <!--
+NO HEADING — <summary> prints the name, and an include generates it at the call
+site's level. The prerequisite line is the first thing in the file.
+
 THE PREREQUISITE LINE IS LOAD-BEARING. `requires` is exactly the set of links in
 it that point at FEATURES — nothing else. Keep them in step, in this order:
 

@@ -7,13 +7,12 @@ tags: [trait, core]
 summary: "+4 to initiative."
 ---
 
-### Alert
-
 You have particularly keen senses. Gain +4 Initiative.
 
 <!--
 Traits are the shortest blocks on the site — a rule and nothing else. No
-prerequisite line, so no `requires`.
+prerequisite line, so no `requires`, and no heading: <summary> prints the name,
+and an include generates it at the call site's level.
 
 WRITING THIS FILE IS NOT ENOUGH — the trait will not appear anywhere on the site
 until you also edit the page by hand, in TWO places:

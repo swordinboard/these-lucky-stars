@@ -86,7 +86,7 @@ title: "Rage"                 # the block's own heading text
 label: "ARA-5"                # rare: a short name for tables when the title is unwieldy
 id: abilities/rage            # unique; matches the file path under content/snippets/
 category: [core]              # list: core | sci-fi | fantasy … (a block can be in several)
-type: feature                 # rule | feature | equipment | creature | reference
+type: feature                 # rule | feature | equipment | creature | vehicle | reference
 tags: [ability, core, general]  # drives tag-as-query pulls and the builder's grouping
 summary: "Enter an enraged state for a short duration."   # the quick-reference one-liner
 requires: [abilities/charge]  # feature prerequisites — the builder auto-includes these
@@ -116,6 +116,47 @@ real blocks rather than invented. Copy one into
 Each carries a comment explaining the decisions that kind of block involves —
 delete the comment when you are done, since **a snippet must never end with an
 HTML comment**.
+
+### Statted things: creatures and vehicles
+
+Two templates cover creatures, and the difference is where the block lives.
+`creature.md` is a snippet that shares a page with its siblings — the shape the
+3.5e monster pages use, where Shrieker and Violet Fungus sit on one Fungus page.
+`creature-page.md` is a page-homed block for something that will grow artwork
+and lore, which is what the four bot platforms and the five races are.
+
+`vehicle.md` is a statted vehicle, and it introduced **`type: vehicle`** to the
+vocabulary. A vehicle is not equipment (it is not carried, and it has occupants)
+and not a creature (it is an object, and it takes no turn of its own), and a GM
+building a PDF wants to select the vehicles as a set. Statted vehicles share the
+`vehicles/` namespace with the vehicle *rules*, the same way `bots/` holds both
+`automated-machines` and the four platforms; `type` is what separates them:
+
+```
+{{< catalog namespace="vehicles" type="vehicle" category="sci-fi" />}}
+```
+
+**A creature's stat block and a vehicle's are one construct** — a blockquote of
+labelled values, plus an attribute table for creatures. Plain markdown on
+purpose: a construct emitting its own markup needs a rule in
+`assets/content-constructs.css` or check 5 fails it, and a stat block is the
+last thing that should render as a bare stack in a printed PDF.
+
+Two things worth knowing before writing numbers, because both are easy to get
+backwards:
+
+- **Attributes print final values**, size modifiers already applied, the way 5e
+  prints final numbers rather than making a reader do arithmetic mid-fight. The
+  attribute *is* the modifier — a roll is `2d6 + attribute` — so there is no
+  second column. Machines use null `[-N-]` where they have no capacity at all.
+- **Creatures use the character DEF/VIT rules; vehicles use object durability.**
+  Bots and drones are creatures here, deliberately: they take wounds and
+  conditions and are repaired like a character. A vehicle's DEF does *not* reset
+  when combat ends — it stays down until repaired.
+
+Weapons carry no damage die in this system. **Damage dice come from the size
+comparison** between attacker and defender, plus the attribute used in the
+attack, so a stat block prints the same-size die (`1d8`) and the table shifts it.
 
 ### Tag conventions
 
@@ -187,7 +228,17 @@ same block, and broken when it is not. `worksheets.py` §C3 sweeps for both.
 
 **Two blocks may not share a title on the same page** — Hugo silently appends
 `-1` to the second anchor, so a link that looked right yesterday lands in the
-wrong place. Across different pages a shared title is legal but still ambiguous
+wrong place.
+
+**Nor may two blocks on one page share an internal heading, and that case is
+worse.** The `-1` suffix only protects headings Hugo renders in a single
+markdown pass. A heading arriving through `include` or `blockdetails` is already
+finished HTML by then, so it is never de-duplicated at all: two blocks that both
+author `## Attacks` emit **two elements with `id="attacks"`** — invalid HTML, and
+a ToC listing the name twice with both links landing on the first. Verified
+against a two-block build. This is why the creature and vehicle templates label
+their sections with bold lines instead of headings. Reach for an internal
+heading only in a block that is alone on its page. Across different pages a shared title is legal but still ambiguous
 for the PDF builder, which sees a flat list. Where a proficiency shared a name
 with the item it applies to, the proficiency carries the suffix:
 `Comp Jack Proficiency` (`#comp-jack-proficiency`) while the item stays
@@ -499,8 +550,13 @@ python3 _discovery/tools/builddata.py
 - `blocks.json` — every block with its frontmatter, plus computed `anchor`,
   `pages` (every page it appears on), `in_degree`, and `source_page`.
 - Each block also carries a computed `url` (where it is read on the site) and
-  `owns_heading` (whether its own file still supplies its heading — a migration
-meter, currently 303 of 434, destined for deletion at zero).
+  `owns_heading` (whether its own file supplies its heading). **The heading
+  migration is done: 13 of 436, and it will not reach zero.** All 423 snippets
+  are at `false`, which is the target. What is left is the 12 page-homed blocks,
+  which need an `h1` matching their title because the theme does not print one
+  on desktop, plus `conditions/dead-battery`, which is included mid-page inside
+  the Android entry and owns its heading deliberately. Read a `true` on a
+  *snippet* as the defect; a `true` on a page is correct.
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
   the target — feature prerequisites), `reference` (stands alone but points at
   the target; the builder surfaces it as a fillable hole), `mention` (inert,
