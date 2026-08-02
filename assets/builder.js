@@ -527,9 +527,30 @@
     return "#" + (window.CSS && CSS.escape ? CSS.escape(id) : id.replace(/([^\w-])/g, "\\$1"));
   }
 
+  /* Shown from the moment Print is pressed until the dialog is about to open,
+   * so the paginator's work — including the app coming apart under the
+   * flattened print styles — happens behind a plain "working on it" screen
+   * rather than in front of the user. Removed before printing rather than
+   * hidden by print CSS; see the note on .print-overlay in builder.css. */
+  function showPrintOverlay() {
+    if (document.getElementById("print-overlay")) return;
+    var o = el("div", "print-overlay");
+    o.id = "print-overlay";
+    o.setAttribute("role", "status");
+    o.appendChild(el("div", "print-spinner"));
+    o.appendChild(el("span", null, "Preparing your PDF…"));
+    document.body.appendChild(o);
+  }
+
+  function hidePrintOverlay() {
+    var o = document.getElementById("print-overlay");
+    if (o) o.parentNode.removeChild(o);
+  }
+
   function printDocument() {
     var btn = document.getElementById("print");
     btn.disabled = true;
+    showPrintOverlay();
 
     /* paged.js lays the clone out on screen, so @media print is not in force
      * while it does — every screen-only rule still applies. Compact is the one
@@ -586,6 +607,7 @@
       function cleanup() {
         if (cleaned) return;
         cleaned = true;
+        hidePrintOverlay();
         restoreCompact();
         applyPagedPageRule(false);
         document.body.classList.remove("printing");
@@ -608,11 +630,15 @@
       /* Not every browser fires afterprint — regaining focus means the dialog
        * closed either way, and the timeout is the last resort. */
       window.addEventListener("focus", cleanup);
+      /* The dialog is about to take over the screen, so the overlay has done
+       * its job — and it must not be in the DOM while the page prints. */
+      hidePrintOverlay();
       window.print();
       setTimeout(cleanup, 60000);
     }).catch(function (err) {
       /* Never leave someone unable to print because the paginator failed. */
       if (window.console) console.warn("paged.js unavailable, printing without contents-page numbers:", err);
+      hidePrintOverlay();
       var n = document.getElementById("paged-out");
       if (n) n.parentNode.removeChild(n);
       applyPagedPageRule(false);

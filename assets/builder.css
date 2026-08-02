@@ -207,6 +207,28 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
    inline above the selected item instead of floating on hover, which touch
    does not have. */
 
+/* Printing takes a moment: 500KB of paginator on first use, then the layout
+   pass. During it paged.js applies the print stylesheet to the screen, so the
+   app visibly comes apart before the print dialog appears. The overlay covers
+   that. It is opaque rather than translucent because the point is to hide the
+   reflow, not to hint at it.
+
+   Deliberately NOT hidden via @media print: paged.js flattens print rules onto
+   the screen, so such a rule would hide the overlay exactly when it is needed.
+   printDocument() removes the element before printing instead. */
+.print-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  display: flex; align-items: center; justify-content: center; gap: 11px;
+  background: var(--bg); color: var(--muted); font-size: 15px;
+}
+.print-spinner {
+  width: 17px; height: 17px; border: 2px solid var(--line);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: print-spin .7s linear infinite;
+}
+@keyframes print-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .print-spinner { animation: none; } }
+
 /* paged.js measures what it lays out, so this cannot be display:none — a
    hidden box has no geometry and pagination throws on the first
    getBoundingClientRect. It is parked off-screen instead, and @media print
