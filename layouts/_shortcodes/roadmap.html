@@ -313,14 +313,14 @@
   <!-- Waypoint track -->
   <div class="rm-track">
     <div class="rm-track-line"></div>
-    <div class="rm-track-progress" style="width: 33%;"></div>
+    <div class="rm-track-progress" style="width: 2%;"></div>
     <div class="rm-waypoints">
-      <button class="rm-waypoint complete" aria-selected="false" onclick="showPhase(0, this)">
-        <div class="rm-waypoint-dot">✦</div>
+      <button class="rm-waypoint active" aria-selected="true" onclick="showPhase(0, this)">
+        <div class="rm-waypoint-dot">✧</div>
         <span class="rm-waypoint-num">01</span>
       </button>
-      <button class="rm-waypoint active" aria-selected="true" onclick="showPhase(1, this)">
-        <div class="rm-waypoint-dot">✧</div>
+      <button class="rm-waypoint upcoming" aria-selected="false" onclick="showPhase(1, this)">
+        <div class="rm-waypoint-dot">◇</div>
         <span class="rm-waypoint-num">02</span>
       </button>
       <button class="rm-waypoint upcoming" aria-selected="false" onclick="showPhase(2, this)">
@@ -339,11 +339,11 @@
   <!-- <p class="rm-phase-note">Your note text here</p> -->
   <div class="rm-phases">
 
-    <div class="rm-phase complete" data-phase="0">
+    <div class="rm-phase active visible" data-phase="0">
       <div class="rm-phase-card">
         <div class="rm-phase-header">
           <h3 class="rm-phase-title">Free SRD &amp; Foundations</h3>
-          <span class="rm-phase-status">Complete</span>
+          <span class="rm-phase-status">In Progress</span>
         </div>
         <p class="rm-phase-subtitle">Free rules at theseluckystars.com</p>
         <ul class="rm-phase-items">
@@ -354,11 +354,11 @@
       </div>
     </div>
 
-    <div class="rm-phase active visible" data-phase="1">
+    <div class="rm-phase upcoming" data-phase="1">
       <div class="rm-phase-card">
         <div class="rm-phase-header">
           <h3 class="rm-phase-title">First Prints</h3>
-          <span class="rm-phase-status">In Progress</span>
+          <span class="rm-phase-status">Upcoming</span>
         </div>
         <p class="rm-phase-subtitle">Compiled works and digital tools</p>
         <ul class="rm-phase-items">
