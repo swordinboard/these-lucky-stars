@@ -136,6 +136,25 @@
   color: var(--sb-muted);
 }
 
+/* The type line is small AND italic AND sits over the starfield tile, so on a
+   dark background the theme's muted grey (#999d9f, about 6:1) reads far fainter
+   than its contrast ratio suggests. Lift it to about 9.8:1 — still clearly
+   secondary to body text at #d8dce2, but readable at a glance. Light mode is
+   deliberately untouched; it was never the problem.
+
+   Both switches have to be answered. The site is BookTheme='auto' and follows
+   the OS, but the PDF builder can force a scheme against it, so an explicit
+   light override is needed too — without it, forcing light inside a dark OS
+   would keep the lifted value. */
+@media (prefers-color-scheme: dark) {
+  .statblock { --sb-muted: #c3c9d1; }
+}
+
+:root[data-theme="dark"] .statblock { --sb-muted: #c3c9d1; }
+:root[data-theme="light"] .statblock {
+  --sb-muted: var(--gray-500, var(--muted, #6b6b6b));
+}
+
 /* `---` between sections is a band divider inside the card, not a page rule */
 .statblock hr {
   border: 0;
