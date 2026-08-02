@@ -27,7 +27,10 @@ most likely to be travelling with.
 
 ## Alien Life & Crews
 
-Nothing statted yet. Alien life, station crews and pirates belong here.
+The people a party argues with before anyone draws — dock security, station
+crews, pirates. Alien life belongs here too, and is not statted yet.
+
+{{< blockdetails "creatures/station-guard" "h3" >}}
 
 The parts that go **inside** a bot are equipment rather than creatures, and stay
 with the rest of the gear:

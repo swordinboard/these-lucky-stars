@@ -3,7 +3,7 @@ title: "Station Guard"
 id: creatures/station-guard
 category: [sci-fi]
 type: creature
-tags: [creatures, sci-fi, npc]
+tags: [creatures, sci-fi]
 summary: "Contract security in a combat vest — shock baton, auto pistol, and orders."
 ---
 
@@ -52,6 +52,11 @@ NAMESPACES: bot and drone platforms are `bots/`. Everything else statted —
 crews, pirates, animals, alien life — is `creatures/`. Category splits the
 settings, so a core-setting creature is the same file with `category: [core]`
 and no sci-fi tag.
+
+Tag it `creatures` and its category, and stop there. A finer tag (`npc`,
+`animals`, `hostile`) earns its place once there is a real split to name —
+right now it would reach exactly the same blocks as `creatures`, which is the
+test the tag conventions use for redundancy.
 
 NO HEADING, INSIDE OR OUT. The block does not repeat its own name: <summary>
 already prints the title, and an include generates it at the call site's level.

@@ -82,5 +82,11 @@ The automated machines and the platforms built on them. Full rules on
 [Sci-Fi Creatures & NPCs](/docs/free-srd/creatures--npcs/sci-fi/). The parts that
 go *inside* a bot are equipment, and are listed under Bot Components above.
 
+### Platforms
+
 {{< catalog type="creature" category="sci-fi" namespace="bots" header="Platform|Summary" />}}
+
+### Crews & Opposition
+
+{{< catalog type="creature" category="sci-fi" namespace="creatures" header="Creature|Summary" />}}
 
