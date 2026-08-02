@@ -18,6 +18,19 @@
        hover affordance; in a printed document it is a stray character after
        every title, so it comes off here rather than in the browser. */ -}}
 {{- $anchorlink := `(?s)<a class="anchor"[^>]*>.*?</a>` -}}
+{{- /* Which blocks are rendered INSIDE another block. A snippet may include
+       another snippet (combat/damage pulls in combat/damage-dice), so the
+       parent's HTML already carries the child. The page lists both, which is
+       right for the site — it renders the parent once — but breaking a page
+       apart in the builder would emit the child a second time. The builder
+       needs to know the nesting to drop it; see breakApart() in builder.js. */ -}}
+{{- $nested := dict -}}
+{{- range site.Data.edges -}}
+  {{- if and (eq .type "include") (not (hasPrefix (string .source) "page:")) -}}
+    {{- $cur := or (index $nested .source) slice -}}
+    {{- $nested = merge $nested (dict .source ($cur | append .target)) -}}
+  {{- end -}}
+{{- end -}}
 {{- $blocks := slice -}}
 {{- range site.Data.blocks -}}
   {{- if not .excluded -}}
@@ -42,6 +55,7 @@
         "url"      (or .url "")
         "anchor"   (or .anchor "")
         "requires" (or .requires slice)
+        "contains" (or (index $nested .id) slice)
         "html"     $html) -}}
   {{- end -}}
 {{- end -}}

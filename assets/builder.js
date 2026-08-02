@@ -136,9 +136,23 @@
     var item = doc.items[i];
     var p = DATA.pages.filter(function (x) { return x.url === item.url; })[0];
     if (!p) return;
-    var repl = p.blocks.map(function (id) {
-      return { uid: uid(), kind: "block", id: id, level: 2 };
+    /* A snippet may include another snippet, so a block's HTML can already
+     * carry another block whole — combat/damage renders combat/damage-dice
+     * inside itself. The page lists both, correctly: it renders the parent
+     * once. Emitting both here would print the child twice, which is what a
+     * broken-apart Combat page used to do. Drop any block another block in
+     * this same list already contains; it is still addable on its own. */
+    var swallowed = {};
+    p.blocks.forEach(function (id) {
+      var b = BY_ID[id];
+      if (b && b.contains) {
+        b.contains.forEach(function (child) { swallowed[child] = true; });
+      }
     });
+    var repl = p.blocks.filter(function (id) { return !swallowed[id]; })
+      .map(function (id) {
+        return { uid: uid(), kind: "block", id: id, level: 2 };
+      });
     doc.items.splice.apply(doc.items, [i, 1].concat(repl));
     selected = repl.length ? repl[0].uid : null;
   }
