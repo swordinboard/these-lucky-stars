@@ -185,6 +185,17 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 .markdown .book-columns { display: flex; flex-wrap: wrap; gap: 1rem; }
 .markdown .book-columns > div { flex: 1 1 14rem; min-width: 0; }
 
+/* Site chrome that has no business in a printed document — a banner
+   advertising the builder, inside a PDF made by the builder, is pure noise.
+   Every part is named rather than relying on the root: check 5 verifies each
+   class the content uses is styled somewhere, and it cannot know that a hidden
+   parent takes its children with it. */
+.feature-banner, .feature-banner-link, .feature-banner-shot,
+.feature-banner-body, .feature-banner-tag, .feature-banner-title,
+.feature-banner-text, .feature-banner-cta, .feature-banner-arrow {
+  display: none;
+}
+
 /* {{< tabs >}} show one panel and hide the rest. A document cannot be clicked,
    and a hidden panel would be missing from the PDF outright — the Core Luck
    abilities would simply not be there. So every panel prints, and each tab's

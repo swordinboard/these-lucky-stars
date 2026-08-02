@@ -287,3 +287,129 @@ details > .markdown-inner[id],
 details .markdown-inner > :is(h1, h2, h3, h4, h5, h6)[id] {
   scroll-margin-top: 4rem;
 }
+
+// ---------------------------------------------------------------------------
+// FEATURE BANNER SHORTCODE
+// ---------------------------------------------------------------------------
+// Announces a new tool on the home page. Built from the same parts as
+// .download-card — preview image, dark overlay, lift on hover — so the two read
+// as one family, but wider and side-by-side so it carries the top of a page.
+//
+// Site chrome: builder.css hides it, because a printed document should not
+// carry an ad for the thing that printed it.
+
+.feature-banner {
+  display: block;
+  margin: 1.5rem 0 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--body-background);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.16);
+  // the accent edge is what separates this from an ordinary card
+  border-left: 4px solid var(--accent);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.24);
+}
+
+.feature-banner-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-banner-shot {
+  position: relative;
+  overflow: hidden;
+  background: #1a1a1a;
+  min-height: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    transition: transform 0.4s ease;
+  }
+}
+
+.feature-banner:hover .feature-banner-shot img { transform: scale(1.035); }
+
+.feature-banner-body {
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.feature-banner-tag {
+  margin: 0;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+}
+
+.feature-banner-title {
+  margin: 0.1rem 0 0;
+  color: var(--accent-bright);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.feature-banner-text {
+  color: var(--body-font-color);
+  opacity: 0.82;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  max-width: 34em;
+  p { margin: 0.35rem 0 0; }
+}
+
+.feature-banner-cta {
+  margin: 0.7rem 0 0;
+  align-self: flex-start;
+  font-weight: 600;
+  color: var(--accent-bright);
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+
+  .feature-banner-arrow { display: inline-block; margin-left: 0.4em;
+    transition: transform 0.2s ease; }
+}
+
+.feature-banner:hover .feature-banner-cta { border-bottom-color: var(--accent); }
+.feature-banner:hover .feature-banner-arrow { transform: translateX(3px); }
+
+// Stack on narrow screens, image first — it is the part that sells the tool.
+@media (max-width: 46rem) {
+  .feature-banner-link { grid-template-columns: 1fr; }
+  // the preview's own ratio, so the diagonal and the printer badge both
+  // survive instead of being cropped off the bottom
+  .feature-banner-shot { aspect-ratio: 3 / 2; min-height: 0; }
+  .feature-banner-title { font-size: 1.45rem; }
+}
+
+.feature-banner--text .feature-banner-link { grid-template-columns: 1fr; }
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-banner,
+  .feature-banner-shot img,
+  .feature-banner-arrow { transition: none; }
+  .feature-banner:hover { transform: none; }
+  .feature-banner:hover .feature-banner-shot img { transform: none; }
+}

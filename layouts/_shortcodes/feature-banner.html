@@ -1,0 +1,51 @@
+{{/*
+  feature-banner — a wide announcement card for a new tool or page.
+
+  Louder than a `> [!WARNING]` changelog callout and quieter than a page of its
+  own: a preview image beside a short pitch and one call to action. Built from
+  the same parts as download-card (image, overlay, hover lift) so the two read
+  as the same family.
+
+  SIGNATURE
+    {{< feature-banner
+        title="<name>"
+        url="<where it goes>"
+        image="<preview>"
+        tag="<eyebrow>"
+        cta="<button label>" >}}
+    Body prose, markdown, optional.
+    {{< /feature-banner >}}
+
+  ARGUMENTS
+    title  (required) the headline
+    url    (required) the link — the whole card is clickable
+    image  (optional) preview image. Without one the card is text only.
+    tag    (optional) small eyebrow label, e.g. "New". Default "New".
+    cta    (optional) call-to-action label. Default "Open".
+    alt    (optional) image alt text. Defaults to "<title> preview".
+
+  The card is site chrome, so builder.css hides it: a printed document should
+  never carry an ad for the thing that printed it.
+*/}}
+{{- $title := .Get "title" -}}
+{{- $url   := .Get "url" -}}
+{{- $image := .Get "image" -}}
+{{- $tag   := default "New" (.Get "tag") -}}
+{{- $cta   := default "Open" (.Get "cta") -}}
+{{- $alt   := default (printf "%s preview" $title) (.Get "alt") -}}
+
+<aside class="feature-banner{{ if not $image }} feature-banner--text{{ end }}">
+  <a class="feature-banner-link" href="{{ $url }}">
+    {{- with $image }}
+    <div class="feature-banner-shot">
+      <img src="{{ . }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+    </div>
+    {{- end }}
+    <div class="feature-banner-body">
+      <p class="feature-banner-tag">{{ $tag }}</p>
+      <p class="feature-banner-title">{{ $title }}</p>
+      <div class="feature-banner-text">{{ .Inner | .Page.RenderString }}</div>
+      <p class="feature-banner-cta">{{ $cta }}<span class="feature-banner-arrow" aria-hidden="true">&#8202;→</span></p>
+    </div>
+  </a>
+</aside>

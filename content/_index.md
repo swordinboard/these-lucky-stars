@@ -5,6 +5,18 @@ bookToC: false
 
 {{% include "/snippets/site/announcement" %}}
 
+{{< feature-banner
+    title="PDF Builder"
+    url="/builder/"
+    image="/images/pdf-builder-preview.jpg"
+    tag="New tool"
+    cta="Build a PDF"
+    alt="The PDF builder: a searchable block library beside a document with a contents page" >}}
+Build your own reference PDF from the SRD. Search the rules, gear and features
+your table actually uses — or drop in a whole page and break it apart — then
+arrange, title, and print. Works on your phone, better on desktop.
+{{< /feature-banner >}}
+
 # Welcome!
 
 Here you can find the free SRD content and related web apps for These Lucky Stars, a dynamic tabletop roleplaying system by Sword in Board Workshop.

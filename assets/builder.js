@@ -571,6 +571,20 @@
       Array.prototype.forEach.call(source.querySelectorAll(".item-bar"), function (n) {
         n.parentNode.removeChild(n);
       });
+      /* Site chrome is not document content: the clone is what gets printed, so
+       * a banner advertising the builder comes out entirely rather than being
+       * merely hidden. It also carries an image, and see below. */
+      Array.prototype.forEach.call(source.querySelectorAll(".feature-banner"), function (n) {
+        n.parentNode.removeChild(n);
+      });
+      /* paged.js waits for images to load before it can measure them, and the
+       * container it lays out in is parked off-screen — so a lazy image never
+       * enters a viewport, never loads, and pagination waits for it forever.
+       * The Print button simply hung. Make every image in the clone eager. */
+      Array.prototype.forEach.call(source.querySelectorAll("img[loading]"), function (n) {
+        n.setAttribute("loading", "eager");
+      });
+
       /* An unfilled title or subtitle shows its placeholder through
        * [data-field]:empty::before. Print CSS suppresses that, which again is
        * not in force here — so the hooks come off the clone entirely. */
