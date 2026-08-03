@@ -1,4 +1,9 @@
 /public/
 /resources/_gen/
 /.hugo_build.lock
-/.claude/
+# Claude Code's working directory is local, EXCEPT settings.json — that one is
+# project configuration and has to be committed to apply to anyone working here.
+# Note the trailing /* rather than /: git cannot re-include a file whose parent
+# DIRECTORY is excluded, so a plain `/.claude/` makes the negation below a no-op.
+/.claude/*
+!/.claude/settings.json
