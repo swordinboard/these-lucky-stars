@@ -883,6 +883,17 @@
   ]
  },
  {
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "title": "Speeder Bike",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "section": "vehicles/sci-fi",
+  "weight": null,
+  "wip": true,
+  "blocks": [
+   "vehicles/speeder-bike"
+  ]
+ },
+ {
   "url": "/docs/legal/",
   "title": "Legal Information",
   "file": "content/docs/legal.md",

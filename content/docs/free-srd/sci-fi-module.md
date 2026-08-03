@@ -90,3 +90,14 @@ go *inside* a bot are equipment, and are listed under Bot Components above.
 
 {{< catalog type="creature" category="sci-fi" namespace="creatures" header="Creature|Summary" />}}
 
+---
+
+## Vehicles
+
+What the party drives, and what drives after them. Full rules on
+[Vehicle Rules](/docs/free-srd/core-rules/vehicle-rules/), and the statted list
+on [Sci-Fi Vehicles](/docs/free-srd/vehicles/sci-fi/). A living mount is statted
+as a creature, not here.
+
+{{< catalog type="vehicle" category="sci-fi" namespace="vehicles" header="Vehicle|Summary" />}}
+

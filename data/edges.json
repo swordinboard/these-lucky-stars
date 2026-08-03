@@ -3514,6 +3514,24 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 98
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/",
+  "type": "reference",
+  "url": "/docs/free-srd/vehicles/sci-fi/",
+  "text": "Sci-Fi Vehicles",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": 99
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "sci-fi/ballistics-in-space",
   "type": "reference",
   "class": "catalog",
@@ -4899,6 +4917,16 @@
   "class": "catalog",
   "url": null,
   "text": "Station Guard",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "vehicles/speeder-bike",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Speeder Bike",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -10558,6 +10586,70 @@
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/vehicles/_index.md",
+  "line": 12
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/",
+  "target": "page:/docs/free-srd/creatures--npcs/",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/",
+  "text": "Creatures & NPCs",
+  "file": "content/docs/free-srd/vehicles/_index.md",
+  "line": 23
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/vehicles/sci-fi/",
+  "text": "Sci-Fi Vehicles",
+  "file": "content/docs/free-srd/vehicles/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "vehicles/speeder-bike",
+  "type": "reference",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "text": "Speeder Bike",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 17
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "text": "Sci-Fi Equipment",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 29
+ },
+ {
+  "source": "vehicles/speeder-bike",
+  "target": "vehicles/boarding-and-bailing",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
+  "text": "Boarding & Bailing",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "line": 37
+ },
+ {
+  "source": "vehicles/speeder-bike",
+  "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
+  "text": "Shatter",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "line": 38
  },
  {
   "source": "environment/heat-and-cold",

@@ -12917,7 +12917,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],
@@ -13149,6 +13149,36 @@
   "notes": "",
   "selectable": true,
   "wip": true
+ },
+ {
+  "id": "vehicles/speeder-bike",
+  "title": "Speeder Bike",
+  "home": "page",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/speeder-bike/"
+  ],
+  "anchor": "speeder-bike",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "owns_heading": true,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Open-frame repulsor bike. Size 2, one rider, no cover, fast enough to be a problem."
  },
  {
   "id": "vehicles/vehicle-actions",
