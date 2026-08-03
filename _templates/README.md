@@ -8,12 +8,20 @@ generators and the PDF builder already expect.
 `builddata.py` never counts them as blocks.** Copy a file into
 `content/snippets/<namespace>/<slug>.md`, then fill it in.
 
-Three of them are the exception to "taken from real blocks": `creature.md`,
-`creature-page.md` and `vehicle.md` are **worked examples**, because the statted
-content is only just starting. Their prose is invented, but every number is
-derived from a rule already on the site and the derivation is written out in the
-comment. For a filled-in real one, read
+Four of them are the exception to "taken from real blocks": `creature.md`,
+`creature-page.md`, `vehicle.md` and `vehicle-page.md` are **worked examples**,
+because the statted content is only just starting. Their prose is invented, but
+every number is derived from a rule already on the site and the derivation is
+written out in the comment. For a filled-in real one, read
 `content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md`.
+
+**Creatures and vehicles each come in two forms**, and they are the only kinds
+that do. Most of either gets its own page, the way the races and the bot
+platforms do — start from `creature-page.md` or `vehicle-page.md`. The outliers,
+where a handful of small entries genuinely belong together, use `creature.md` or
+`vehicle.md` instead. The two forms differ **only** in frontmatter and the `h1`:
+the card inside is identical, so promoting a snippet to a page is a frontmatter
+edit and nothing more.
 
 | Template | For |
 |---|---|
@@ -21,7 +29,8 @@ comment. For a filled-in real one, read
 | `feature-proficiency.md` | A proficiency |
 | `feature-trait.md` | A trait |
 | `equipment.md` | Any purchasable or carryable item |
-| `vehicle.md` | A statted vehicle — the thing the vehicle rules are about |
+| `vehicle-page.md` | A statted vehicle on its own page — **start here** |
+| `vehicle.md` | A statted vehicle sharing a page with its siblings |
 | `rule.md` | A rule a page presents as part of a section |
 | `rule-standalone.md` | A rule read on its own and listed in a table (conditions, wounds) |
 | `reference.md` | Intro/overview prose at the top of a section |
