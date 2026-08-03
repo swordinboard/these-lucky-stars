@@ -7321,12 +7321,21 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "creatures/station-guard",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "text": "Station Guard",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 30
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "Bot Components",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 34
+  "line": 35
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
@@ -7336,6 +7345,33 @@
   "text": null,
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
   "line": 15
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/combat-vest",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
+  "text": "Combat Vest",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 33
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/shock-baton",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
+  "text": "Shock Baton",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 34
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/auto-pistol",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
+  "text": "Auto Pistol",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "line": 35
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/core/",
@@ -10494,6 +10530,70 @@
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/vehicles/_index.md",
+  "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/vehicles/sci-fi/",
+  "text": "Sci-Fi Vehicles",
+  "file": "content/docs/free-srd/vehicles/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "vehicles/speeder-bike",
+  "type": "reference",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "text": "Speeder Bike",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "text": "Sci-Fi Equipment",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 28
+ },
+ {
+  "source": "vehicles/speeder-bike",
+  "target": "proficiencies/vehicle",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/proficiencies/#vehicle",
+  "text": "Vehicle",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "line": 38
+ },
+ {
+  "source": "vehicles/speeder-bike",
+  "target": "vehicles/boarding-and-bailing",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
+  "text": "Boarding & Bailing",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "line": 57
  },
  {
   "source": "environment/heat-and-cold",

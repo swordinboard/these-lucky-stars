@@ -27,7 +27,8 @@ most likely to be travelling with.
 
 ## Alien Life & Crews
 
-Nothing statted yet. Alien life, station crews and pirates belong here.
+- [Station Guard](/docs/free-srd/creatures--npcs/sci-fi/station-guard/) — Routine security, armed and unenthusiastic
+- *(TBD)* — Alien life, ships' crews and pirates belong here
 
 The parts that go **inside** a bot are equipment rather than creatures, and stay
 with the rest of the gear:

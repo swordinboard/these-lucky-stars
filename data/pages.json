@@ -557,6 +557,17 @@
   ]
  },
  {
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "title": "Station Guard",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "section": "creatures--npcs/sci-fi",
+  "weight": "30",
+  "wip": true,
+  "blocks": [
+   "creatures/station-guard"
+  ]
+ },
+ {
   "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
   "title": "T00L",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/t00l.md",
@@ -869,6 +880,17 @@
    "sci-fi-equipment/reflex-sight",
    "sci-fi-equipment/shock-charger",
    "sci-fi-equipment/weighted-core"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "title": "Speeder Bike",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "section": "vehicles/sci-fi",
+  "weight": "30",
+  "wip": true,
+  "blocks": [
+   "vehicles/speeder-bike"
   ]
  },
  {

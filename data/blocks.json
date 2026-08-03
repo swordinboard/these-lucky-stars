@@ -5359,6 +5359,37 @@
   "wip": false
  },
  {
+  "id": "creatures/station-guard",
+  "title": "Station Guard",
+  "home": "page",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "source_page": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
+  "pages": [
+   "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/creatures--npcs/sci-fi/station-guard/"
+  ],
+  "anchor": "station-guard",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "owns_heading": true,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "creature",
+  "in_degree": 0,
+  "tags": [
+   "creatures",
+   "npcs",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "A competent, underpaid security contractor who fights to hold a door rather than to win."
+ },
+ {
   "id": "environment/environmental-effects",
   "title": "Environmental Effects",
   "home": "snippet",
@@ -8886,7 +8917,7 @@
    "core"
   ],
   "type": "feature",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "proficiency",
    "core"
@@ -9188,7 +9219,7 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "equipment",
    "sci-fi",
@@ -9598,7 +9629,7 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "equipment",
    "sci-fi",
@@ -11405,7 +11436,7 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "equipment",
    "sci-fi",
@@ -12887,7 +12918,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],
@@ -13119,6 +13150,36 @@
   "notes": "",
   "selectable": true,
   "wip": true
+ },
+ {
+  "id": "vehicles/speeder-bike",
+  "title": "Speeder Bike",
+  "home": "page",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/speeder-bike/"
+  ],
+  "anchor": "speeder-bike",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "owns_heading": true,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "An open-frame repulsor bike that trades every scrap of protection for speed."
  },
  {
   "id": "vehicles/vehicle-actions",
