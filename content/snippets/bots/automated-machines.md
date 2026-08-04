@@ -6,12 +6,21 @@ type: rule
 tags: [bots, sci-fi]
 ---
 
-There is a distinction to be made between *robots, drones, and Androids* that primarily has to do with free will and the difference between sentience and sapience. All are considered automated machines.
+Automated machines come in many forms; from single purpose drones to autonomous robots and even human-like androids. While their capabilities vary, all share the following:
 
-**Drones** are the most simple form of automated machine, with simple construction and AI able to understand and execute basic commands, but lacking true problem solving skills. These machines usually have a single intended purpose and will perform well, but cannot perform outside that box. If they communicate at all, it is in dronespeak or binary.
+**Robot Chassis** — A machine's chasis lacks biological healing, but otherwise uses the same DEF/VIT health system that creatures and characters use.
+ - Immune to asphyxiation and sickness. All other wounds and conditions remain possibilities through similar effect. For example, a bleeding machine leaks its coolant or lubricant, a Stressed machine suffers from circuitry issues.
+ - Wounds require a Repair or Tech Kit to fix (in this case either works regardless of scale) rather than a Medical Kit, and take twice as much AP to fix due to the lack of natural healing. Otherwise methods and targets remain the same. Features that apply to the use of the Med Kit do not carry their benefit when working on automated machines.
+ - Medical items designed for organic creatures — med kits, injectors, pain suppressants, and similar — have no effect on automated machines but some alternatives exist. See [Crash Foam Canister](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister) for a machine-specific field stabilization option.
+ - Automated machines are subject to the [Dying](/docs/free-srd/core-rules/wounds--conditions/#dying) condition when they lose their last VIT point to lethal damage, the same as organic creatures.
 
-**Robots** or **Bots** contain an AI that is capable of problem solving and learning. Their chassis is also more advanced, allowing them to adapt to different scenarios. They are able to execute a broad spectrum of commands and are able to learn or attempt new tasks. Bots are sapient, able to reason and think, where drones are limited to their basic functions.
+**Power Source** — Automated machines have  a [Battery](<!-- path -->) built into their chasis. The size of the battery is determined by the size of the machine (medium machines have medium batteries, small machines have small batteries, etc.). These batteries power all functions for the automated machine, and often not need to be replaced under normal circumstances.
 
-**Androids** are the most advanced automated machine with a humanoid chassis and an advanced AI that has, through unknown means, achieved sentience. Androids are both sapient and sentient. They display high level problem solving and critical thinking abilities alongside emotional perception and feeling, deep social bonding, and self-awareness. Unlike drones and bots Androids are not bound by master protocols, they act independently and of their own free will. For more on Androids, see the playable race entry [here](/docs/free-srd/character-creation/races/android).
+Automated machines function much like people do in that they require rest. During a long rest they enter Rest Mode for six hours to resolve caching conflicts, free up memory, and prevent battery degradation. Every 12 hours an automated machine goes without a successful Rest Mode session requires 2 supply rolls of their primary power source. When their battery is depleted, they recieve the [Dead Battery](<!-- path --> condition.). As long as an automated machine goes through regular Rest Mode cycles, its battery will not be an issue.
 
-Drones, bots, and Androids all use the standard character DEF/VIT rules rather than the [object durability rules](/docs/free-srd/core-rules/damaged--broken-gear/#object-durability) — they take wounds and conditions and are repaired like a character rather than broken like an object.
+An automated machine's power source cannot be altered with a tech kit. It takes ten minutes and use of the tech kit with supplies to successfully replace an automated machine's battery.
+
+**Upgradeable** — Automated machines can be upgraded with [components](<!-- path -->), however, the number of components is limited by the battery size of the automated machine.
+- Tiny and Small Batteries - 1 component
+- Medium and Large Batteries - 2 components
+- Industrial Batteries - 3 components

@@ -9,6 +9,6 @@ summary: "+2 DEX for fine motor tasks while powered"
 
 *–Cr — 3lbs — Hands — External — Power Source*
 
-Replacement manipulators with high-precision actuators. While the primary power source has supply remaining, the host gains +2 DEX for fine motor tasks including lockpicking, tech kit work, medical procedures, and similar checks. Does not apply to attack rolls or AGI/DEX-based defensive movement.
+Addition of high-sensitivity manipulators with precision actuators that grant the host a minor advantage on fine motor tasks when activated. Task may include lockpicking, tech kit work, medical procedures, and similar checks. Does not apply to attack rolls or AGI/DEX-based defensive movement. Activation requires 1 AP, 1 supply roll of the hosts's power source, and lasts for 6 rounds. 
 
 Occupies the Hand slot for other equipment.

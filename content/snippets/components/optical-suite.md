@@ -9,7 +9,7 @@ summary: "Low-light, thermal, zoom"
 
 *–Cr — 1lb — Head [HUD] — Internal*
 
-Integrated optical sensors with low-light, thermal, and zoom modes. The host gains advantage on sight-based INS checks in full and low-light conditions and can see clearly in total darkness out to 30ft. Switching modes costs no AP.
+Integrated optical sensors with low-light, thermal, and zoom modes. The host gains advantage on sight-based INS checks in full and low-light conditions and can see clearly in total darkness out to 100ft. Switching modes costs no AP.
 
 Draws negligible power from the primary power source.
 

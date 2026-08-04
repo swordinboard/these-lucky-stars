@@ -13,4 +13,6 @@ summary: "Mounted laser pistol equivalent"
 
 A compact laser emitter mounted to the host's forearm. Fires in a fixed forward position from the wrist, leaving the hands free. Functions as a [Laser Pistol](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol) and can benefit from a Laser Pistol [Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon).
 
-Occupies the Arm slot for other equipment. Aiming the Wrist Laser requires the same body posture as aiming a pistol — abilities and effects that prevent pistol use also prevent Wrist Laser use.
+Does not draw from the host's primary power source to fire, requires medium batteries as a laser rifle would.
+
+Occupies the Arms slot for other equipment.
