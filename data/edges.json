@@ -299,12 +299,12 @@
  },
  {
   "source": "components/shield-mount",
-  "target": "page:/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/damaged--broken-gear/#breaking-defensive-items",
-  "text": "Breaking Defensive Items",
+  "target": "objects/shield-degradation",
+  "type": "include",
+  "url": "/snippets/objects/shield-degradation",
+  "text": null,
   "file": "content/snippets/components/shield-mount.md",
-  "line": 12
+  "line": 16
  },
  {
   "source": "components/signal-mast-heavy",
@@ -562,21 +562,48 @@
  },
  {
   "source": "bots/automated-machines",
-  "target": "races/android",
+  "target": "sci-fi-equipment/crash-foam-canister",
   "type": "reference",
-  "url": "/docs/free-srd/character-creation/races/android",
-  "text": "here",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
+  "text": "Crash Foam Canister",
+  "file": "content/snippets/bots/automated-machines.md",
+  "line": 14
+ },
+ {
+  "source": "bots/automated-machines",
+  "target": "conditions/dying",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
+  "text": "Dying",
   "file": "content/snippets/bots/automated-machines.md",
   "line": 15
  },
  {
   "source": "bots/automated-machines",
-  "target": "objects/durability",
+  "target": "item-tags/battery",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-durability",
-  "text": "object durability rules",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
   "file": "content/snippets/bots/automated-machines.md",
   "line": 17
+ },
+ {
+  "source": "bots/automated-machines",
+  "target": "conditions/dead-battery",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#dead-battery",
+  "text": "Dead Battery",
+  "file": "content/snippets/bots/automated-machines.md",
+  "line": 19
+ },
+ {
+  "source": "bots/automated-machines",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "text": "components",
+  "file": "content/snippets/bots/automated-machines.md",
+  "line": 23
  },
  {
   "source": "conditions/overview",
@@ -8478,6 +8505,15 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "target": "conditions/overview",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#conditions",
+  "text": "condition",
+  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "line": 39
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "sci-fi/ballistics-in-space",
   "type": "include",
   "url": "/snippets/sci-fi/ballistics-in-space",
@@ -8523,12 +8559,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "target": "conditions/dead-battery",
+  "type": "include",
+  "url": "/snippets/conditions/dead-battery",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "line": 43
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "sci-fi/computer-systems",
   "type": "include",
   "url": "/snippets/sci-fi/computer-systems",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 37
+  "line": 48
  },
  {
   "source": "core-rules/size",
@@ -10535,57 +10580,21 @@
  },
  {
   "source": "races/android",
-  "target": "sci-fi-equipment/crash-foam-canister",
+  "target": "core-rules/size",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
-  "text": "Crash Foam Canister",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "Medium",
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 25
+  "line": 21
  },
  {
   "source": "races/android",
-  "target": "conditions/dying",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
-  "text": "Dying",
-  "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 26
- },
- {
-  "source": "races/android",
-  "target": "conditions/dead-battery",
-  "type": "reference",
-  "url": "#dead-battery",
-  "text": "Dead Battery",
-  "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 26
- },
- {
-  "source": "races/android",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "text": "components",
-  "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 30
- },
- {
-  "source": "races/android",
-  "target": "components/backup-power-cell",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
-  "text": "Backup Power Cell",
-  "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 34
- },
- {
-  "source": "races/android",
-  "target": "conditions/dead-battery",
+  "target": "bots/automated-machines",
   "type": "include",
-  "url": "/snippets/conditions/dead-battery",
+  "url": "/snippets/bots/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
-  "line": 36
+  "line": 25
  },
  {
   "source": "page:/docs/free-srd/vehicles/",

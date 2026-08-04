@@ -18,9 +18,9 @@ An Android uses the standard character DEF/VIT rules, not the [object durability
 
 ## Features
 
-Size: [Medium](<!-- size page path -->)
+Size: [Medium](/docs/free-srd/core-rules/size/)
 
 Androids have all the same features as automated machines, and begin play with one installed component with a value up to --Cr. 
 
-<!-- Add includeblock for Automated Machines set at H3 -->
+{{% include "/snippets/bots/automated-machines" "h3" %}}
 

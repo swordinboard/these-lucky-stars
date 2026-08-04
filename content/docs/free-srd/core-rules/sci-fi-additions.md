@@ -33,5 +33,16 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ---
 
+## Conditions
+
+Sci-fi settings add conditions the core list does not carry. They work the same
+way as any other [condition](/docs/free-srd/core-rules/wounds--conditions/#conditions)
+— this is where the ones that only exist alongside machines are collected.
+
+
+{{% include "/snippets/conditions/dead-battery" %}}
+
+---
+
 
 {{% include "/snippets/sci-fi/computer-systems" "h2" %}}

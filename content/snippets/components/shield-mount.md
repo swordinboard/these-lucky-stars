@@ -13,4 +13,4 @@ A mounted ballistic shield plate that deploys along the host's forearm, granting
 
 Occupies the Arms slot for other equipment.
 
-<!-- add includeblock for shield degredation set at lead. will wrapping it in a quickref inside a called snippet break the build? -->
+{{% include "/snippets/objects/shield-degradation" "lead" %}}

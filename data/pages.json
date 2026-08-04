@@ -186,7 +186,7 @@
   "wip": true,
   "blocks": [
    "races/android",
-   "conditions/dead-battery"
+   "bots/automated-machines"
   ]
  },
  {
@@ -425,6 +425,7 @@
    "sci-fi/communications",
    "sci-fi/energy-shields",
    "sci-fi/huds",
+   "conditions/dead-battery",
    "sci-fi/computer-systems"
   ]
  },
@@ -739,6 +740,7 @@
    "components/repair-subroutine",
    "components/servo-boost-legs",
    "components/shield-mount",
+   "objects/shield-degradation",
    "components/signal-mast-retractable",
    "components/signal-mast-heavy",
    "components/stabilizer-gyros",
