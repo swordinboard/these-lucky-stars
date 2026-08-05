@@ -206,6 +206,27 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 .markdown .book-tabs > label { display: block; font-weight: 600; margin: .9em 0 .2em; }
 .markdown .book-tabs .book-tabs-content { display: block; }
 
+/* {{% quickref %}} is a click-to-open popover on the site. Same problem as tabs
+   and the same answer: a document cannot be clicked, so it prints flat and open
+   with its label as a lead-in. It has to be open on SCREEN here too — the
+   builder's stage is a page proof, and a reference you cannot see while
+   assembling a document is one you will not notice is missing from it.
+
+   Note the specificity. content-constructs.css is concatenated AFTER this file,
+   so its `.quickref-dropdown { display: none }` would win on a tie; every rule
+   here is qualified with .markdown to outrank it. */
+.markdown .quickref-wrapper { display: block; margin: .5em 0; }
+.markdown .quickref-toggle {
+  display: block; border-bottom: 0; color: inherit; font-weight: 600; cursor: default;
+}
+.markdown .quickref-chevron { display: none; }
+.markdown .quickref-dropdown {
+  display: block; position: static; width: auto; max-height: none;
+  border: 0; border-inline-start: 2px solid var(--line); border-radius: 0;
+  box-shadow: none; margin: .2em 0 0;
+}
+.markdown .quickref-content { padding: 0 0 0 .75em; font-size: 1em; }
+
 /* ------------------------------------------------------------ narrow screens
 
    Below 900px there is not room for a permanent library beside the document,

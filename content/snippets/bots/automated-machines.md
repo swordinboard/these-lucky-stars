@@ -1,5 +1,5 @@
 ---
-title: "Bots & Drones"
+title: "Automated Machines"
 id: bots/automated-machines
 category: [sci-fi]
 type: rule

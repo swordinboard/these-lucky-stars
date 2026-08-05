@@ -3244,7 +3244,7 @@
  },
  {
   "id": "bots/automated-machines",
-  "title": "Bots & Drones",
+  "title": "Automated Machines",
   "home": "snippet",
   "file": "content/snippets/bots/automated-machines.md",
   "source_page": "content/docs/free-srd/character-creation/races/android.md",
@@ -3256,8 +3256,8 @@
    "/docs/free-srd/character-creation/races/android/",
    "/docs/free-srd/creatures--npcs/sci-fi/"
   ],
-  "anchor": "bots--drones",
-  "url": "/docs/free-srd/character-creation/races/android/#bots--drones",
+  "anchor": "automated-machines",
+  "url": "/docs/free-srd/character-creation/races/android/#automated-machines",
   "owns_heading": false,
   "category": [
    "sci-fi"

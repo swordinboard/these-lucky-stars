@@ -328,8 +328,12 @@ They keep the `details` + `include` form, which is what it is for.
       Abilities, Proficiencies and Traits open straight into their core content
       and now carry a line pointing at their setting-specific page.
 - [ ] **Builder announcement page** — not until there is a beta.
-- [ ] **`quickref` shortcode** — defined, unused, duplicates `details`. Parked by
-      your call; delete it if it is still unused when this is done.
+- [x] ~~**`quickref` shortcode**~~ — resolved, and the park was the right call.
+      It does not duplicate `details` after all: it is for a rule cited from
+      *inside* a block, and it nests inside `blockdetails`. Now styled from the
+      shared stylesheet, scripted once per page, and forced open in the builder
+      so it cannot hide content from a PDF. First use is Shield Mount citing
+      shield degradation. See *Inline references* in `site-maintenance-notes.md`.
 
 ## 7. Playtest / revisit
 

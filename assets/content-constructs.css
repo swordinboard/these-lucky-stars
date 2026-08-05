@@ -228,3 +228,105 @@
   .markdown .statblock-body table tr td { padding: 0.25rem 0.05rem; }
   .markdown .statblock-body table tr th { font-size: 0.6rem; letter-spacing: 0; }
 }
+
+/* ------------------------------------------ inline references — {{% quickref %}} */
+
+/* An expandable definition sitting mid-sentence, for a block that needs to
+   carry a rule the reader wants right there — a component citing shield
+   degradation, a feature citing a condition — rather than restating it (which
+   drifts) or sending them to another page.
+ *
+ * These rules used to be an inline <style> in the shortcode itself. That styled
+ * the site correctly and still failed preflight check 5, which compares the
+ * classes reaching the builder against the stylesheet the builder actually
+ * ships — this one. It also emitted a duplicate copy of the whole block for
+ * every instance on a page.
+ *
+ * The COLLAPSED state below is the site-with-JS state only. Printing opens it
+ * (bottom of this section) and the builder opens it too, in builder.css beside
+ * the {{< tabs >}} override. A construct that hid content behind a toggle would
+ * drop that content out of a PDF entirely, which is the one thing it must not
+ * do. */
+
+.quickref-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* Kill any paragraph margins the renderer injects around the shortcode */
+p > .quickref-wrapper,
+p + .quickref-wrapper,
+.quickref-wrapper + p { margin-top: 0; }
+
+.quickref-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--color-link, var(--accent, #4a90d9));
+  color: var(--color-link, var(--accent, #4a90d9));
+  padding-bottom: 1px;
+  margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  line-height: inherit;
+}
+
+.quickref-toggle:hover,
+.quickref-toggle:focus-visible { border-bottom-style: solid; outline: none; }
+
+.quickref-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
+.quickref-toggle[aria-expanded="true"] .quickref-chevron { transform: rotate(180deg); }
+
+.quickref-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 4px;
+  z-index: 100;
+  width: min(520px, 85vw);
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  background: var(--body-background, var(--bg, #fff));
+  border: 1px solid var(--gray-200, var(--line, #ddd));
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  .quickref-dropdown { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4); }
+}
+:root[data-theme="dark"] .quickref-dropdown { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4); }
+
+.quickref-toggle[aria-expanded="true"] + .quickref-dropdown { display: block; }
+
+.quickref-content { padding: 14px 18px; font-size: 0.92em; line-height: 1.55; }
+.quickref-content > :first-child { margin-top: 0; }
+.quickref-content > :last-child { margin-bottom: 0; }
+.quickref-content blockquote { margin-left: 0; padding-left: 12px; }
+.quickref-content ul, .quickref-content ol { padding-inline-start: 20px; }
+.quickref-content table { font-size: 0.9em; width: max-content; min-width: 100%; }
+
+/* Printing from the SITE. The builder has its own, stronger rules — it needs to
+   be open on screen as well, because the builder's screen view is the page
+   proof. */
+@media print {
+  .quickref-dropdown {
+    display: block !important;
+    position: static;
+    width: auto;
+    max-height: none;
+    border: none;
+    box-shadow: none;
+    margin: 0.5em 0;
+    border-inline-start: 3px solid var(--gray-200, #ccc);
+    padding-inline-start: 12px;
+  }
+  .quickref-toggle { border-bottom: none; color: inherit; font-weight: bold; }
+  .quickref-chevron { display: none; }
+}

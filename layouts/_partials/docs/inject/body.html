@@ -56,3 +56,42 @@
     });
   })();
 </script>
+{{- /* {{% quickref %}} behaviour — bound once per page, not once per instance.
+
+       This cannot live in the shortcode. Shortcode output is captured into
+       data/blocks.json, so a <script> there would be copied into every block
+       that used it, and would still never run: the PDF builder writes block
+       HTML with innerHTML, and innerHTML does not execute scripts. The builder
+       instead opens every quickref with CSS (assets/builder.css).
+
+       Delegated from document, so quickrefs that arrive inside a <details>
+       opened after load are still live. Styling is in
+       assets/content-constructs.css. */ -}}
+<script>
+  (function () {
+    function close(except) {
+      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function (t) {
+        if (t !== except) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+    document.addEventListener('click', function (e) {
+      var toggle = e.target.closest('.quickref-toggle');
+      if (toggle) {
+        e.preventDefault();
+        var open = toggle.getAttribute('aria-expanded') === 'true';
+        close(toggle);
+        toggle.setAttribute('aria-expanded', String(!open));
+        return;
+      }
+      if (!e.target.closest('.quickref-wrapper')) close(null);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        var toggle = e.target.closest('.quickref-toggle');
+        if (toggle) { e.preventDefault(); toggle.click(); }
+      } else if (e.key === 'Escape') {
+        close(null);
+      }
+    });
+  })();
+</script>

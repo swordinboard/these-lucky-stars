@@ -1,220 +1,75 @@
 {{/*
   quickref — an inline expandable popover, for a definition mid-sentence.
 
-  ⚠ UNUSED. It duplicates the theme's `details` and is retired by disuse; the
-  file is kept in case the inline-popover behaviour is wanted later. Use
-  `blockdetails` (or `details`) for block entries. See 06-open-items.md §6.
-
   SIGNATURE
     {{% quickref "<label>" %}}
     inner markdown
     {{% /quickref %}}
 
   EXAMPLE
-    {{% quickref "Defense (DEF)" %}}
-    {{% include "/snippets/stats/defense" %}}
+    {{% quickref "Shield Degradation" %}}
+    {{% include "/snippets/objects/shield-degradation" %}}
     {{% /quickref %}}
 
   ARGUMENTS
     0  (required) the clickable label text.
 
-  Percent form — the inner content is markdown, and may contain includes.
-  Prints fully expanded rather than as a dropdown.
+  INCLUDE WITH NO LEVEL ARGUMENT. The label above already names the rule, so a
+  "lead" or "h3" prints the name twice, one line apart.
+
+  Percent form — the inner content is markdown, and may contain includes. Safe
+  inside a snippet, and inside a `blockdetails` collapsible.
+
+  WHAT IT IS FOR. A block that needs to carry a rule the reader wants *right
+  there* — a component citing shield degradation, a feature citing a condition —
+  without restating the rule (which drifts) or sending them to another page
+  mid-sentence. Use `blockdetails` for a catalog entry; use this for a reference
+  inside one.
+
+  THREE STATES, AND ONLY ONE IS A DROPDOWN
+
+    site, JS running   collapsed; click or Enter/Space to open
+    site, printing     open and inline — the @media print rules
+    the PDF builder    open and inline, always
+
+  That is what makes it usable in a document. A PDF cannot be clicked, so a
+  construct that hid content behind a toggle would drop that content from the
+  document outright. The builder forces it open in assets/builder.css, beside
+  the same override for {{< tabs >}} and for the same reason.
+
+  STYLING LIVES IN assets/content-constructs.css, not here, so the site and the
+  builder cannot diverge — and so preflight check 5 can see it. Styles inlined
+  in this file styled the site correctly and still failed that check, because it
+  compares against the shared stylesheet the builder actually ships.
+
+  BEHAVIOUR LIVES IN layouts/_partials/docs/inject/body.html, once per page
+  rather than once per instance. It must not live here: shortcode output is
+  captured into data/blocks.json, so a <script> in this file would be copied
+  into every block using it and then never run — the builder writes block HTML
+  with innerHTML, and innerHTML does not execute scripts.
+
+  THE ID IS DERIVED, NOT RANDOM. It hashes the defining file, the label and the
+  ordinal, so rebuilding unchanged content gives byte-identical HTML. It used to
+  be `shuffle (seq 1 9)`, which changed on every build and made rendercheck's
+  diff unreadable.
 */}}
 
-{{ $id := delimit (shuffle (seq 1 9)) "" | truncate 8 "" }}
-{{ $title := .Get 0 }}
+{{- $title := .Get 0 -}}
+{{- $id := substr (md5 (printf "%s|%s|%d" .Page.File.Path $title .Ordinal)) 0 8 -}}
 
-<div class="quickref-wrapper" id="qr-{{ $id }}">
-  <div class="quickref-toggle" tabindex="0" role="button" aria-expanded="false" aria-controls="qr-dd-{{ $id }}">
-    <span class="quickref-title">{{ $title }}</span>
-    <svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </div>
-  <div class="quickref-dropdown" id="qr-dd-{{ $id }}">
-    <div class="quickref-content">
-      {{ .Inner | .Page.RenderString }}
-    </div>
-  </div>
+{{- /* ⚠ EMIT THIS MARKUP FLUSH LEFT. This is a {{% %}} shortcode, so its output
+       is handed back to the page's markdown renderer — and any line indented
+       four spaces or more becomes a CODE BLOCK there. Pretty-printing the
+       closing tags to match the opening ones put a literal `</div>` in the
+       rendered page, styled as code, at the end of every quickref. */ -}}
+<div class="quickref-wrapper">
+<div class="quickref-toggle" id="qr-{{ $id }}" tabindex="0" role="button" aria-expanded="false" aria-controls="qr-dd-{{ $id }}">
+<span>{{ $title }}</span>
+<svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </div>
-
-<style>
-/* === Quickref v2: compact expandable reference === */
-
-.quickref-wrapper {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-/* Kill any paragraph margins Hugo injects around the shortcode */
-p > .quickref-wrapper,
-p + .quickref-wrapper,
-.quickref-wrapper + p {
-  margin-top: 0;
-}
-
-.quickref-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  cursor: pointer;
-  border-bottom: 1px dashed var(--color-link, #4a90d9);
-  color: var(--color-link, #4a90d9);
-  padding-bottom: 1px;
-  margin: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  line-height: inherit;
-}
-
-.quickref-toggle:hover,
-.quickref-toggle:focus-visible {
-  border-bottom-style: solid;
-  outline: none;
-}
-
-.quickref-chevron {
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
-}
-
-.quickref-toggle[aria-expanded="true"] .quickref-chevron {
-  transform: rotate(180deg);
-}
-
-.quickref-dropdown {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  margin-top: 4px;
-  z-index: 100;
-  width: min(520px, 85vw);
-  max-height: 60vh;
-  overflow-y: auto;
-  overflow-x: auto;
-  background: var(--body-background, #fff);
-  border: 1px solid var(--color-border-default, #ddd);
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* Dark mode support for hugo-book */
-.dark .quickref-dropdown,
-[data-theme="dark"] .quickref-dropdown {
-  background: var(--body-background, #1a1a2e);
-  border-color: var(--color-border-default, #444);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-}
-
-.quickref-toggle[aria-expanded="true"] + .quickref-dropdown {
-  display: block;
-}
-
-.quickref-content {
-  padding: 16px 20px;
-  font-size: 0.92em;
-  line-height: 1.55;
-}
-
-.quickref-content > :first-child {
-  margin-top: 0;
-}
-
-.quickref-content > :last-child {
-  margin-bottom: 0;
-}
-
-.quickref-content blockquote {
-  margin-left: 0;
-  padding-left: 12px;
-}
-
-.quickref-content ul,
-.quickref-content ol {
-  padding-left: 20px;
-}
-
-/* Tables inside quickref: make them fit */
-.quickref-content table {
-  font-size: 0.9em;
-  width: max-content;
-  min-width: 100%;
-}
-
-/* Print / PDF: render fully open, inline, no dropdown */
-@media print {
-  .quickref-dropdown {
-    display: block !important;
-    position: static;
-    width: auto;
-    max-height: none;
-    border: none;
-    box-shadow: none;
-    margin: 0.5em 0;
-    border-left: 3px solid #ccc;
-    padding-left: 12px;
-  }
-
-  .quickref-toggle {
-    border-bottom: none;
-    color: inherit;
-    font-weight: bold;
-  }
-
-  .quickref-chevron {
-    display: none;
-  }
-}
-</style>
-
-<script>
-(function() {
-  if (window._quickrefBound) return;
-  window._quickrefBound = true;
-
-  document.addEventListener('click', function(e) {
-    var toggle = e.target.closest('.quickref-toggle');
-
-    if (toggle) {
-      e.preventDefault();
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-
-      // Close all other quickrefs first
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(other) {
-        if (other !== toggle) {
-          other.setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      return;
-    }
-
-    // Close quickrefs when clicking outside
-    if (!e.target.closest('.quickref-wrapper')) {
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(t) {
-        t.setAttribute('aria-expanded', 'false');
-      });
-    }
-  });
-
-  // Keyboard support
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      var toggle = e.target.closest('.quickref-toggle');
-      if (toggle) {
-        e.preventDefault();
-        toggle.click();
-      }
-    }
-    if (e.key === 'Escape') {
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(t) {
-        t.setAttribute('aria-expanded', 'false');
-      });
-    }
-  });
-})();
-</script>
+<div class="quickref-dropdown" id="qr-dd-{{ $id }}" role="region" aria-labelledby="qr-{{ $id }}">
+<div class="quickref-content markdown-inner">
+{{ .Inner | .Page.RenderString }}
+</div>
+</div>
+</div>

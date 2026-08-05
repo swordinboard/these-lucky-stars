@@ -13,4 +13,6 @@ A mounted ballistic shield plate that deploys along the host's forearm, granting
 
 Occupies the Arms slot for other equipment.
 
-{{% include "/snippets/objects/shield-degradation" "lead" %}}
+{{% quickref "Shield Degradation" %}}
+{{% include "/snippets/objects/shield-degradation" %}}
+{{% /quickref %}}

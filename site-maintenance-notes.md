@@ -447,6 +447,67 @@ block, or a heading the block does not own.
 
 ---
 
+## Inline references (the `quickref` shortcode)
+
+`quickref` was parked as "unused, duplicates `details`" and is now in service
+for the job `details` cannot do: **a rule cited from inside a block**, where the
+reader wants it right there and the alternatives are both bad — restate the rule
+and it drifts, or link away and they lose their place mid-sentence. Shield Mount
+citing shield degradation is the model:
+
+```
+{{% quickref "Shield Degradation" %}}
+{{% include "/snippets/objects/shield-degradation" %}}
+{{% /quickref %}}
+```
+
+**Include with no level argument.** The card's label already names the rule, so
+a `"lead"` or `"h3"` would print the name twice, one line apart.
+
+**It nests inside `blockdetails`.** That is the point — a component entry in a
+catalog can carry the rule it depends on without leaving the collapsible.
+
+### It has three states, and only one is a dropdown
+
+| Where | State |
+|---|---|
+| Site, JS running | collapsed; click or Enter/Space |
+| Site, printing | open and inline (`@media print`) |
+| The PDF builder | open and inline, always |
+
+That last row is what makes it safe in a document. **A construct that hides
+content behind a toggle drops that content out of a PDF entirely** — the same
+trap `{{< tabs >}}` has, solved the same way, in `assets/builder.css` right
+beside it. The builder's stage is a page proof, so it has to be open on screen
+there too, not only at print time.
+
+Note the override needs the extra specificity: `content-constructs.css` is
+concatenated **after** `builder.css`, so a tie goes to the shared file and every
+builder rule is qualified with `.markdown` to outrank it.
+
+### Three things about it that are load-bearing
+
+- **Styling lives in `assets/content-constructs.css`.** It used to be an inline
+  `<style>` in the shortcode. That styled the site correctly and still **failed
+  preflight check 5**, which compares classes reaching the builder against the
+  stylesheet the builder actually ships — and it emitted a duplicate copy of the
+  whole block for every instance on the page.
+- **Behaviour lives in `layouts/_partials/docs/inject/body.html`,** once per
+  page. It must not live in the shortcode: shortcode output is captured into
+  `data/blocks.json`, so a `<script>` there is copied into every block that uses
+  it and then never runs — the builder writes block HTML with `innerHTML`, and
+  `innerHTML` does not execute scripts.
+- **The element id is derived, not random.** It hashes file + label + ordinal.
+  It used to be `shuffle (seq 1 9)`, which changed on every build, so identical
+  content produced different HTML and `rendercheck`'s diff filled with noise.
+
+**Known limitation:** with JavaScript disabled on the site the panel stays shut,
+because the collapsed state is the CSS default. Printing and the builder are
+unaffected. Gating the collapse on a `js` class set in `<head>` would fix it if
+that ever matters.
+
+---
+
 ## Quick-reference tables (the `catalog` shortcode)
 
 The summary tables on the catalog pages are **generated from block frontmatter**.
@@ -860,8 +921,8 @@ Page content starts here...
 - **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
   naming each part of the call. Read the top of the file rather than guessing from
   a call site, and keep that block current when you change a shortcode.
-- `quickref` is defined but **unused** — it duplicates `details`. Retired by disuse;
-  the file stays available. Use `blockdetails`.
+- `quickref` is **in use again**, for a different job than `details`. See
+  *Inline references* below.
 - Snippet includes: `{{% include "/snippets/<namespace>/<slug>" %}}` — source files in
   `content/snippets/<namespace>/`, none are published. The path always matches the
   block's `id`. See the block architecture and snippet rules at the top of this file.
