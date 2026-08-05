@@ -1,6 +1,6 @@
 // ---------------------------------------------------------------- webfonts
 //
-// SELF-HOSTED, on purpose. These used to come from fonts.googleapis.com, and
+// SELF-HOSTED, on purpose. Cinzel used to come from fonts.googleapis.com, and
 // the PWA could not keep them: the service worker only caches responses whose
 // `type === "basic"`, which means same-origin, so a cross-origin font was never
 // cached and never could be. Opening a cached page offline fell through to
@@ -8,11 +8,14 @@
 // quietly changed typeface, with layout and colour intact, which is a horrible
 // thing to debug. Same-origin files are cached like any other asset.
 //
-// BOTH FAMILIES ARE VARIABLE FONTS. Google serves one file per family, style
-// and subset covering the whole weight axis — the css2 API hands back the same
-// URL for 400, 600 and 700, which is how 14 downloads turned out to be 6 files.
-// So the ranges below are declared as ranges, and every weight between them is
+// CINZEL IS A VARIABLE FONT. Google serves one file per subset covering the
+// whole weight axis — the css2 API hands back the same URL for 400, 600 and
+// 700 — so the weight below is declared as a range and every weight in it is
 // available for free.
+//
+// Source Sans 3 was self-hosted here too and has been removed: body text now
+// uses the system UI stack, which read better side by side. Only the site
+// title is a webfont.
 //
 // Only `latin` and `latin-ext` are shipped. The content uses nothing outside
 // them: no Greek (the Δ condition marker was retired), no Cyrillic. Two glyphs
@@ -39,38 +42,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url('/fonts/source-sans-3-var-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url('/fonts/source-sans-3-var-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Source Sans 3';
-  font-style: italic;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url('/fonts/source-sans-3-var-italic-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Source Sans 3';
-  font-style: italic;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url('/fonts/source-sans-3-var-italic-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
 // List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
@@ -85,8 +56,22 @@
    --body-background-tint: rgba(42,45,94,0.15);
 
    // TLS font families
-   --font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
-   --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+   // TYPE IS DELIBERATELY SYSTEM-FIRST, and only the site title is a webfont.
+   //
+   // Cinzel and Source Sans 3 used to drive everything here. Seen side by side
+   // against the no-webfont fallback the fallback read better at body sizes —
+   // Cinzel is a display face doing a body-text job, and Georgia and the system
+   // UI stack are both drawn for screen reading. So the webfont is now kept for
+   // the one place it earns its keep: the small-caps site title.
+   //
+   // THE STACKS ARE EXPLICIT ON PURPOSE. They used to name 'Palatino Linotype'
+   // and 'Segoe UI' ahead of the generic fallbacks, which meant the page looked
+   // one way on Windows (where both exist) and another everywhere else — the
+   // comparison that prompted this was rendered on Linux, i.e. the second case.
+   // Naming Georgia and system-ui directly makes every platform agree.
+   --font-title: 'Cinzel', Georgia, serif;      // site title only — see static/fonts/
+   --font-display: Georgia, 'Times New Roman', serif;
+   --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
    // Starfield tile image (swapped per color scheme)
    --starfield-image: url('/images/stars-light.png');
@@ -124,7 +109,7 @@ html {
 }
 
 .book-brand {
-   font-family: var(--font-display);
+   font-family: var(--font-title);
 }
 
 // ---------------------------------------------------------------------------
@@ -439,7 +424,7 @@ details .markdown-inner > :is(h1, h2, h3, h4, h5, h6)[id] {
 .feature-banner-title {
   margin: 0.1rem 0 0;
   color: var(--accent-bright);
-  font-family: "Cinzel", Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.75rem;
   line-height: 1.15;
   font-weight: 700;
