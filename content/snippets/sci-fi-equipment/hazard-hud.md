@@ -11,5 +11,6 @@ summary: "Helmet [HUD]. Lowers hazard detection checks within 10ft."
 
 A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type.
 
-**Heads Up Display (HUD)**
+{{% quickref "Heads Up Displays (HUDs)" %}}
 {{% include "/snippets/sci-fi/huds" %}}
+{{% /quickref %}}
