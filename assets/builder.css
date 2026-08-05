@@ -206,16 +206,22 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 .markdown .book-tabs > label { display: block; font-weight: 600; margin: .9em 0 .2em; }
 .markdown .book-tabs .book-tabs-content { display: block; }
 
-/* {{% quickref %}} is a click-to-open popover on the site. Same problem as tabs
-   and the same answer: a document cannot be clicked, so it prints flat and open
-   with its label as a lead-in. It has to be open on SCREEN here too — the
-   builder's stage is a page proof, and a reference you cannot see while
-   assembling a document is one you will not notice is missing from it.
+/* {{% quickref %}} is a click-to-open reference on the site, driven by a hidden
+   checkbox — deliberately the same mechanism as the tabs above, and for the
+   same reason. A document cannot be clicked, so it prints flat and open with
+   its label as a lead-in. It has to be open on SCREEN here too: the builder's
+   stage is a page proof, and a reference you cannot see while assembling a
+   document is one you will not notice is missing from it.
+
+   Because the state is a checkbox rather than script or a native <details>,
+   opening it is one sibling selector. That is the whole argument for the
+   mechanism — `details` cannot be forced open across browsers.
 
    Note the specificity. content-constructs.css is concatenated AFTER this file,
    so its `.quickref-dropdown { display: none }` would win on a tie; every rule
    here is qualified with .markdown to outrank it. */
 .markdown .quickref-wrapper { display: block; margin: .5em 0; }
+.markdown .quickref-check { display: none; }
 .markdown .quickref-toggle {
   display: block; border-bottom: 0; color: inherit; font-weight: 600; cursor: default;
 }
@@ -428,7 +434,14 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   .markdown table { break-inside: auto; }
   .markdown thead { display: table-header-group; }
 
-  /* open every collapsed entry — a closed <details> would print as a bare label */
+  /* Drop the disclosure triangle — in print it is a control that does nothing.
+     NOTE this does not OPEN a closed <details>; no cross-browser CSS does. The
+     only rule that works is `::details-content { content-visibility: visible }`,
+     Chrome 131+ only. It costs nothing today because no <details> reaches the
+     builder: builddata.py stores each block's own HTML, and `blockdetails`
+     wraps at the page level, outside the block. If a block ever carries its own
+     <details>, its content will print as a bare label — which is exactly why
+     quickref is a checkbox instead. */
   .markdown details > summary { list-style: none; }
   .markdown details > summary::-webkit-details-marker { display: none; }
 

@@ -231,22 +231,23 @@
 
 /* ------------------------------------------ inline references — {{% quickref %}} */
 
-/* An expandable definition sitting mid-sentence, for a block that needs to
-   carry a rule the reader wants right there — a component citing shield
-   degradation, a feature citing a condition — rather than restating it (which
-   drifts) or sending them to another page.
+/* An expandable reference sitting inside a block, for a rule the reader wants
+ * right there — a component citing shield degradation, a feature citing a
+ * condition — rather than restating it (which drifts) or sending them away.
  *
- * These rules used to be an inline <style> in the shortcode itself. That styled
- * the site correctly and still failed preflight check 5, which compares the
- * classes reaching the builder against the stylesheet the builder actually
- * ships — this one. It also emitted a duplicate copy of the whole block for
- * every instance on a page.
+ * NO SCRIPT. A hidden checkbox drives it, the same mechanism the theme's
+ * {{< tabs >}} uses. The point is that the open state is then plain CSS, so the
+ * PDF builder can force it open with one sibling selector — see builder.css. A
+ * construct the builder cannot open would drop its content out of a PDF.
  *
- * The COLLAPSED state below is the site-with-JS state only. Printing opens it
- * (bottom of this section) and the builder opens it too, in builder.css beside
- * the {{< tabs >}} override. A construct that hid content behind a toggle would
- * drop that content out of a PDF entirely, which is the one thing it must not
- * do. */
+ * Native <details> was measured and rejected for this: the only CSS that opens
+ * one is `::details-content { content-visibility: visible }`, Chrome 131+ and
+ * unsupported in Firefox and older Safari.
+ *
+ * These rules used to be an inline <style> in the shortcode. That styled the
+ * site correctly and still failed preflight check 5, which compares classes
+ * reaching the builder against the stylesheet the builder ships — this one. It
+ * also emitted a duplicate copy of the whole block per instance on the page. */
 
 .quickref-wrapper {
   position: relative;
@@ -260,6 +261,17 @@
 p > .quickref-wrapper,
 p + .quickref-wrapper,
 .quickref-wrapper + p { margin-top: 0; }
+
+/* Visually hidden but STILL FOCUSABLE. `display: none` would drop it out of the
+   tab order and leave the whole construct keyboard-dead. */
+.quickref-check {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  pointer-events: none;
+}
 
 .quickref-toggle {
   display: inline-flex;
@@ -275,11 +287,14 @@ p + .quickref-wrapper,
   line-height: inherit;
 }
 
-.quickref-toggle:hover,
-.quickref-toggle:focus-visible { border-bottom-style: solid; outline: none; }
+.quickref-toggle:hover { border-bottom-style: solid; }
+.quickref-check:focus-visible + .quickref-toggle {
+  outline: 2px solid var(--color-link, var(--accent, #4a90d9));
+  outline-offset: 2px;
+}
 
 .quickref-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
-.quickref-toggle[aria-expanded="true"] .quickref-chevron { transform: rotate(180deg); }
+.quickref-check:checked + .quickref-toggle .quickref-chevron { transform: rotate(180deg); }
 
 .quickref-dropdown {
   display: none;
@@ -303,7 +318,7 @@ p + .quickref-wrapper,
 }
 :root[data-theme="dark"] .quickref-dropdown { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4); }
 
-.quickref-toggle[aria-expanded="true"] + .quickref-dropdown { display: block; }
+.quickref-check:checked ~ .quickref-dropdown { display: block; }
 
 .quickref-content { padding: 14px 18px; font-size: 0.92em; line-height: 1.55; }
 .quickref-content > :first-child { margin-top: 0; }
@@ -313,8 +328,7 @@ p + .quickref-wrapper,
 .quickref-content table { font-size: 0.9em; width: max-content; min-width: 100%; }
 
 /* Printing from the SITE. The builder has its own, stronger rules — it needs to
-   be open on screen as well, because the builder's screen view is the page
-   proof. */
+   be open on screen as well, because the builder's stage is the page proof. */
 @media print {
   .quickref-dropdown {
     display: block !important;

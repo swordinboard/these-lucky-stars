@@ -331,7 +331,7 @@ They keep the `details` + `include` form, which is what it is for.
 - [x] ~~**`quickref` shortcode**~~ — resolved, and the park was the right call.
       It does not duplicate `details` after all: it is for a rule cited from
       *inside* a block, and it nests inside `blockdetails`. Now styled from the
-      shared stylesheet, scripted once per page, and forced open in the builder
+      shared stylesheet, driven by a checkbox with no JavaScript at all, and forced open in the builder
       so it cannot hide content from a PDF. First use is Shield Mount citing
       shield degradation. See *Inline references* in `site-maintenance-notes.md`.
 

@@ -467,44 +467,64 @@ a `"lead"` or `"h3"` would print the name twice, one line apart.
 **It nests inside `blockdetails`.** That is the point — a component entry in a
 catalog can carry the rule it depends on without leaving the collapsible.
 
-### It has three states, and only one is a dropdown
+### It has four states, and no JavaScript
 
 | Where | State |
 |---|---|
-| Site, JS running | collapsed; click or Enter/Space |
+| Site | collapsed; click the label, or Tab to it and press Space |
 | Site, printing | open and inline (`@media print`) |
 | The PDF builder | open and inline, always |
+| JavaScript disabled | exactly as above — nothing here is scripted |
 
-That last row is what makes it safe in a document. **A construct that hides
-content behind a toggle drops that content out of a PDF entirely** — the same
-trap `{{< tabs >}}` has, solved the same way, in `assets/builder.css` right
-beside it. The builder's stage is a page proof, so it has to be open on screen
-there too, not only at print time.
+**It is a hidden checkbox and a `<label>`**, the same mechanism the theme's
+`{{< tabs >}}` uses. That is not incidental: because the open state is a
+checkbox rather than script, the builder opens it with **one sibling selector**,
+in `assets/builder.css` right beside the tabs override. A construct the builder
+cannot open would drop its content out of a PDF entirely.
 
-Note the override needs the extra specificity: `content-constructs.css` is
-concatenated **after** `builder.css`, so a tie goes to the shared file and every
-builder rule is qualified with `.markdown` to outrank it.
+The override needs the extra specificity: `content-constructs.css` is
+concatenated **after** `builder.css`, so a tie goes to the shared file, and
+every builder rule is qualified with `.markdown` to outrank it.
 
-### Three things about it that are load-bearing
+### Why not native `<details>`
+
+Because **a closed `<details>` cannot be forced open from CSS across browsers**,
+which makes it unusable for anything that has to reach a PDF. Measured, not
+assumed:
+
+| Rule | Opens it? |
+|---|---|
+| `details::details-content { content-visibility: visible }` | yes — but Chrome 131+ only, not Firefox or older Safari |
+| `details:not([open]) > *:not(summary) { display: block }` | no — this stopped working in Chromium |
+| no rule | no |
+
+This is latent rather than live for `blockdetails`, because **no `<details>`
+currently reaches the builder at all**: `builddata.py` stores each block's own
+HTML and `blockdetails` wraps at the *page* level, outside the block. If a block
+ever carries its own `<details>`, its content will print as a bare label. The
+print rule in `builder.css` that mentions this only removes the disclosure
+triangle — it does not open anything, and now says so.
+
+### Two things about it that are load-bearing
 
 - **Styling lives in `assets/content-constructs.css`.** It used to be an inline
   `<style>` in the shortcode. That styled the site correctly and still **failed
   preflight check 5**, which compares classes reaching the builder against the
   stylesheet the builder actually ships — and it emitted a duplicate copy of the
   whole block for every instance on the page.
-- **Behaviour lives in `layouts/_partials/docs/inject/body.html`,** once per
-  page. It must not live in the shortcode: shortcode output is captured into
-  `data/blocks.json`, so a `<script>` there is copied into every block that uses
-  it and then never runs — the builder writes block HTML with `innerHTML`, and
-  `innerHTML` does not execute scripts.
-- **The element id is derived, not random.** It hashes file + label + ordinal.
-  It used to be `shuffle (seq 1 9)`, which changed on every build, so identical
-  content produced different HTML and `rendercheck`'s diff filled with noise.
+- **The element id is derived, not random**, hashing file + label + ordinal. It
+  is what ties the `<label>` to its checkbox, so it has to be stable *and*
+  unique. It used to be `shuffle (seq 1 9)`, which changed on every build, so
+  identical content produced different HTML and filled `rendercheck`'s diff with
+  noise.
 
-**Known limitation:** with JavaScript disabled on the site the panel stays shut,
-because the collapsed state is the CSS default. Printing and the builder are
-unaffected. Gating the collapse on a `js` class set in `<head>` would fix it if
-that ever matters.
+The hidden checkbox is offscreen via `opacity` and a 1px box, never
+`display: none` — that would drop it out of the tab order and leave the whole
+construct keyboard-dead.
+
+**What it gives up** against a scripted version: no click-outside-to-close, no
+Escape-to-close, and more than one can be open at once. `{{< tabs >}}` gives up
+the same things for the same reason, and none of them is worth a script tag.
 
 ---
 

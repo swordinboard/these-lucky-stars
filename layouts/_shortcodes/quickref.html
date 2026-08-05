@@ -1,5 +1,5 @@
 {{/*
-  quickref — an inline expandable popover, for a definition mid-sentence.
+  quickref — an expandable reference, for a rule cited from inside a block.
 
   SIGNATURE
     {{% quickref "<label>" %}}
@@ -26,48 +26,54 @@
   mid-sentence. Use `blockdetails` for a catalog entry; use this for a reference
   inside one.
 
-  THREE STATES, AND ONLY ONE IS A DROPDOWN
+  NO JAVASCRIPT. It is a hidden checkbox and a <label>, the same mechanism the
+  theme's {{< tabs >}} uses, so the open state lives in CSS and the PDF builder
+  can force it open with one plain rule. That is the whole reason it is built
+  this way rather than as a scripted popover:
 
-    site, JS running   collapsed; click or Enter/Space to open
-    site, printing     open and inline — the @media print rules
-    the PDF builder    open and inline, always
+    site            collapsed; click the label, or Tab to it and press Space
+    site, printing  open and inline (@media print in content-constructs.css)
+    the PDF builder open and inline, always (assets/builder.css)
+    JS disabled     behaves exactly as above — nothing here needs scripting
 
-  That is what makes it usable in a document. A PDF cannot be clicked, so a
-  construct that hid content behind a toggle would drop that content from the
-  document outright. The builder forces it open in assets/builder.css, beside
-  the same override for {{< tabs >}} and for the same reason.
+  A construct that hid content behind a toggle the builder could not open would
+  drop that content out of a PDF entirely. {{< tabs >}} has the same problem and
+  gets the same answer, a few lines away in the same stylesheet.
 
-  STYLING LIVES IN assets/content-constructs.css, not here, so the site and the
-  builder cannot diverge — and so preflight check 5 can see it. Styles inlined
-  in this file styled the site correctly and still failed that check, because it
-  compares against the shared stylesheet the builder actually ships.
+  WHY NOT NATIVE <details>? It cannot be forced open from CSS in a way that
+  holds across browsers. The only rule that works is
+  `details::details-content { content-visibility: visible }`, which is Chrome
+  131+ and unsupported in Firefox and older Safari; the older
+  `details:not([open]) > *` trick no longer works in Chromium at all. Both were
+  measured, not assumed. A checkbox is plain sibling-selector CSS everywhere.
 
-  BEHAVIOUR LIVES IN layouts/_partials/docs/inject/body.html, once per page
-  rather than once per instance. It must not live here: shortcode output is
-  captured into data/blocks.json, so a <script> in this file would be copied
-  into every block using it and then never run — the builder writes block HTML
-  with innerHTML, and innerHTML does not execute scripts.
+  THE INPUT IS VISUALLY HIDDEN BUT STILL FOCUSABLE — offscreen via `opacity`
+  and a 1px box, never `display: none`, which would drop it out of the tab
+  order and make the whole thing keyboard-dead.
 
-  THE ID IS DERIVED, NOT RANDOM. It hashes the defining file, the label and the
-  ordinal, so rebuilding unchanged content gives byte-identical HTML. It used to
-  be `shuffle (seq 1 9)`, which changed on every build and made rendercheck's
-  diff unreadable.
+  STYLING LIVES IN assets/content-constructs.css so the site and the builder
+  cannot diverge, and so preflight check 5 can see it. Styles inlined here
+  styled the site correctly and still failed that check, which compares against
+  the stylesheet the builder actually ships.
+
+  THE ID IS DERIVED, NOT RANDOM. It hashes file + label + ordinal, so rebuilding
+  unchanged content gives byte-identical HTML — and the id is load-bearing here,
+  since it is what ties the <label> to its checkbox. It used to be
+  `shuffle (seq 1 9)`, which changed on every build.
 */}}
 
 {{- $title := .Get 0 -}}
 {{- $id := substr (md5 (printf "%s|%s|%d" .Page.File.Path $title .Ordinal)) 0 8 -}}
 
 {{- /* ⚠ EMIT THIS MARKUP FLUSH LEFT. This is a {{% %}} shortcode, so its output
-       is handed back to the page's markdown renderer — and any line indented
+       goes back through the page's markdown renderer — and any line indented
        four spaces or more becomes a CODE BLOCK there. Pretty-printing the
        closing tags to match the opening ones put a literal `</div>` in the
        rendered page, styled as code, at the end of every quickref. */ -}}
 <div class="quickref-wrapper">
-<div class="quickref-toggle" id="qr-{{ $id }}" tabindex="0" role="button" aria-expanded="false" aria-controls="qr-dd-{{ $id }}">
-<span>{{ $title }}</span>
-<svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-</div>
-<div class="quickref-dropdown" id="qr-dd-{{ $id }}" role="region" aria-labelledby="qr-{{ $id }}">
+<input class="quickref-check" type="checkbox" id="qr-{{ $id }}">
+<label class="quickref-toggle" for="qr-{{ $id }}"><span>{{ $title }}</span><svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></label>
+<div class="quickref-dropdown">
 <div class="quickref-content markdown-inner">
 {{ .Inner | .Page.RenderString }}
 </div>
