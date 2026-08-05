@@ -435,13 +435,13 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   .markdown thead { display: table-header-group; }
 
   /* Drop the disclosure triangle — in print it is a control that does nothing.
-     NOTE this does not OPEN a closed <details>; no cross-browser CSS does. The
-     only rule that works is `::details-content { content-visibility: visible }`,
-     Chrome 131+ only. It costs nothing today because no <details> reaches the
-     builder: builddata.py stores each block's own HTML, and `blockdetails`
-     wraps at the page level, outside the block. If a block ever carries its own
-     <details>, its content will print as a bare label — which is exactly why
-     quickref is a checkbox instead. */
+     OPENING them is not done here and cannot be: no cross-browser CSS opens a
+     closed <details> (`::details-content { content-visibility: visible }` is
+     Chrome 131+ only, and the old `details:not([open]) > *` trick no longer
+     works in Chromium at all). renderPreview() in builder.js sets `.open = true`
+     on every <details> as it inserts the document instead. That matters more
+     than it looks: whole-page items carry their `blockdetails` wrappers, so the
+     Abilities page alone brings 62 of them. */
   .markdown details > summary { list-style: none; }
   .markdown details > summary::-webkit-details-marker { display: none; }
 

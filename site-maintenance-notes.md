@@ -488,22 +488,27 @@ every builder rule is qualified with `.markdown` to outrank it.
 
 ### Why not native `<details>`
 
-Because **a closed `<details>` cannot be forced open from CSS across browsers**,
-which makes it unusable for anything that has to reach a PDF. Measured, not
-assumed:
+Not because the builder cannot open one — it can, and does. **`builder.js` sets
+`.open = true` on every `<details>` as it inserts the document**, which is how
+whole-page items work: the Abilities page alone carries 62 of them from its
+`blockdetails` wrappers, and all 62 arrive open.
+
+The reason is narrower. **No cross-browser CSS opens a closed `<details>`**, so
+a details-based construct depends on that JS hook — which exists in the builder
+and does not exist in the site's own print path. Measured in Chromium 141:
 
 | Rule | Opens it? |
 |---|---|
-| `details::details-content { content-visibility: visible }` | yes — but Chrome 131+ only, not Firefox or older Safari |
+| `details::details-content { content-visibility: visible }` | yes — Chrome 131+ only, not Firefox or older Safari |
 | `details:not([open]) > *:not(summary) { display: block }` | no — this stopped working in Chromium |
 | no rule | no |
 
-This is latent rather than live for `blockdetails`, because **no `<details>`
-currently reaches the builder at all**: `builddata.py` stores each block's own
-HTML and `blockdetails` wraps at the *page* level, outside the block. If a block
-ever carries its own `<details>`, its content will print as a bare label. The
-print rule in `builder.css` that mentions this only removes the disclosure
-triangle — it does not open anything, and now says so.
+So the trade is: a `<details>` quickref would print open **from the builder**
+and closed **from the site's own Ctrl+P**, because only the builder has the
+script. The checkbox prints open from both, since `@media print` can reach it.
+Every `blockdetails` collapsible on the site already has the `<details>`
+behaviour — that is accepted, because the builder is the print path — so this is
+a preference about quickref specifically, not a defect either way.
 
 ### Two things about it that are load-bearing
 
