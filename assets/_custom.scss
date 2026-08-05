@@ -110,6 +110,41 @@ html {
 
 .book-brand {
    font-family: var(--font-title);
+
+   // The title is a two-line lockup — the last word drops below and centres
+   // against the line above, with a four-point star either side. The split is
+   // done in layouts/_partials/docs/brand.html, because CSS cannot address
+   // part of a text node; this only lays out what that partial emits.
+   //
+   // The logo stays on the theme's flex row and is NOT part of the centring —
+   // only the two text lines centre on each other, so the lockup reads as one
+   // unit sitting beside the mark rather than drifting with it.
+   .brand-lockup {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.08;
+   }
+
+   .brand-tail {
+      display: inline-flex;
+      align-items: center;
+      // The gap is what stops the stars crowding the word at small sizes;
+      // em-based so it tracks the title rather than the root font size.
+      gap: 0.3em;
+   }
+
+   .brand-star {
+      // Deliberately small — these punctuate the word, they do not compete
+      // with it. Height in `em` keeps that ratio at any title size.
+      width: 0.38em;
+      height: 0.38em;
+      flex: none;
+      // Optically centred on the x-height rather than the baseline, which is
+      // where a star of this size looks like it belongs next to small caps.
+      transform: translateY(-0.06em);
+      opacity: 0.85;
+   }
 }
 
 // ---------------------------------------------------------------------------
