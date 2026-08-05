@@ -119,6 +119,16 @@ html {
    // The logo stays on the theme's flex row and is NOT part of the centring —
    // only the two text lines centre on each other, so the lockup reads as one
    // unit sitting beside the mark rather than drifting with it.
+   // The theme sizes the mark at 1.5em, which was right beside a one-line
+   // title and looks stunted beside a two-line lockup. 2.2em is not a taste
+   // pick: it is the measured height of the lockup itself (45px against the
+   // mark's 31.5px), so the mark and the text block top and bottom together.
+   // Retune this if the title's size or line-height changes.
+   img {
+      height: 2.2em;
+      width: 2.2em;
+   }
+
    .brand-lockup {
       display: inline-flex;
       flex-direction: column;
