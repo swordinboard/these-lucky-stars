@@ -12,5 +12,7 @@ summary: "Head [Coms]. Encrypted radio, 1 mile range."
 Helmet-mounted communication device capable of direct device-to-device communication or network connection up to 1 mile. Connects to local public or private networks where available. Takes up the Head [Coms] subslot.
 
 {{% quickref "Communications" %}}
+*Full rules on [Sci-Fi Additions](/docs/free-srd/core-rules/sci-fi-additions/#communications)*
+
 {{% include "/snippets/sci-fi/communications" %}}
 {{% /quickref %}}

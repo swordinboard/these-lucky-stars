@@ -1505,11 +1505,20 @@
  {
   "source": "sci-fi-equipment/coms-unit",
   "target": "sci-fi/communications",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#communications",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/coms-unit.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/coms-unit",
+  "target": "sci-fi/communications",
   "type": "include",
   "url": "/snippets/sci-fi/communications",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/coms-unit.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/decoy-beacon",
@@ -1640,11 +1649,20 @@
  {
   "source": "sci-fi-equipment/hazard-hud",
   "target": "sci-fi/huds",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/hazard-hud.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/hazard-hud",
+  "target": "sci-fi/huds",
   "type": "include",
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/hazard-hud.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/heavy-pistol",
@@ -1838,11 +1856,20 @@
  {
   "source": "sci-fi-equipment/mebn-hud",
   "target": "sci-fi/huds",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/mebn-hud.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/mebn-hud",
+  "target": "sci-fi/huds",
   "type": "include",
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/mebn-hud.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/mini-laser-cutter",
@@ -1886,11 +1913,20 @@
  {
   "source": "sci-fi-equipment/personal-shield",
   "target": "sci-fi/energy-shields",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/personal-shield.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/personal-shield",
+  "target": "sci-fi/energy-shields",
   "type": "include",
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/personal-shield.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/portable-heater",
@@ -2109,11 +2145,20 @@
  {
   "source": "sci-fi-equipment/squad-shield",
   "target": "sci-fi/energy-shields",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/squad-shield.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/squad-shield",
+  "target": "sci-fi/energy-shields",
   "type": "include",
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/squad-shield.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/standard-issue-knife",
@@ -2168,11 +2213,20 @@
  {
   "source": "sci-fi-equipment/targeting-hud",
   "target": "sci-fi/huds",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds",
+  "text": "Sci-Fi Additions",
+  "file": "content/snippets/sci-fi-equipment/targeting-hud.md",
+  "line": 15
+ },
+ {
+  "source": "sci-fi-equipment/targeting-hud",
+  "target": "sci-fi/huds",
   "type": "include",
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/snippets/sci-fi-equipment/targeting-hud.md",
-  "line": 15
+  "line": 17
  },
  {
   "source": "sci-fi-equipment/ultraweave-evosuit",

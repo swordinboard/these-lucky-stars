@@ -225,7 +225,8 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 .markdown .quickref-toggle {
   display: block; border-bottom: 0; color: inherit; font-weight: 600; cursor: default;
 }
-.markdown .quickref-chevron { display: none; }
+.markdown .quickref-chevron,
+.markdown .quickref-close { display: none; }
 .markdown .quickref-dropdown {
   display: block; position: static; width: auto; max-height: none;
   border: 0; border-inline-start: 2px solid var(--line); border-radius: 0;
