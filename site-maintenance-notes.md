@@ -830,9 +830,19 @@ Match the resource type to the correct directive:
 | Fetch / XHR / preconnect | `connect-src` |
 | Images from external hosts | `img-src` |
 
+**Fonts are deliberately not on this list.** Cinzel and Source Sans 3 are
+self-hosted in `static/fonts/`, with the `@font-face` rules at the top of
+`assets/_custom.scss`. They used to come from Google Fonts, and the PWA could
+not keep them: the theme's service worker only caches responses whose
+`type === "basic"` — same-origin — so a cross-origin font was never cached and
+never could be. A cached page opened offline fell through to Palatino/Georgia
+for headings and Segoe UI/system-ui for body, changing the typeface while
+layout and colour stayed correct. Both families are **variable** fonts, so one
+file per family/style/subset covers every weight; only `latin` and `latin-ext`
+are shipped, because the content uses nothing outside them. Re-adding a webfont
+CDN would reintroduce the bug — self-host instead.
+
 Currently allowed external domains:
-- `https://fonts.googleapis.com` — Google Fonts stylesheet (style-src)
-- `https://fonts.gstatic.com` — Google Fonts files (font-src)
 - `https://www.googletagmanager.com` — GA4 script (script-src)
 - `https://www.google-analytics.com` — GA4 script + beacon (script-src, connect-src)
 - `https://region1.google-analytics.com` — GA4 regional beacon (connect-src)
