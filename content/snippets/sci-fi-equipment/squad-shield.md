@@ -11,8 +11,6 @@ summary: "40pts protection, 20ft radius, up to 6 rounds."
 
 Once activated, creates a spherical energy shield with a 20ft radius and provides a 40 point temorary DEF pool for up to 6 rounds. Must be set on a solid surface to use. Costs 1 AP to set and 1 AP to activate. Cooldown is 2d4 rounds. Requires 2 supply rolls when activated.
 
-{{% quickref "Energy Shields" %}}
-*Full rules on [Sci-Fi Additions](/docs/free-srd/core-rules/sci-fi-additions/#energy-shields)*
-
+{{% quickref "Energy Shields" "/docs/free-srd/core-rules/sci-fi-additions/#energy-shields" %}}
 {{% include "/snippets/sci-fi/energy-shields" %}}
 {{% /quickref %}}

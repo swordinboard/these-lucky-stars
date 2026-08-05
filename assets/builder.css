@@ -226,6 +226,7 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   display: block; border-bottom: 0; color: inherit; font-weight: 600; cursor: default;
 }
 .markdown .quickref-chevron,
+.markdown .quickref-source,
 .markdown .quickref-close { display: none; }
 .markdown .quickref-dropdown {
   display: block; position: static; width: auto; max-height: none;

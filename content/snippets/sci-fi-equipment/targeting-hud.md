@@ -11,8 +11,6 @@ summary: "Helmet [HUD]. Lock on to lower target number for ranged attacks."
 
 Can spend 1 AP to lock on to a target and gain a minor advantage to attacks made against that target. Displays a reticle that remains locked on until deactivated, the signal is disrupted, the target is destroyed, or line of sight is lost for one full round. Attacks made against a target you are not locked on to while the HUD is active on another target are at a disadvantage. Deactivating the display costs 1 AP.
 
-{{% quickref "Heads Up Displays (HUDs)" %}}
-*Full rules on [Sci-Fi Additions](/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds)*
-
+{{% quickref "Heads Up Displays (HUDs)" "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds" %}}
 {{% include "/snippets/sci-fi/huds" %}}
 {{% /quickref %}}

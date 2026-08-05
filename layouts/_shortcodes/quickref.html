@@ -2,7 +2,7 @@
   quickref — an expandable reference, for a rule cited from inside a block.
 
   SIGNATURE
-    {{% quickref "<label>" %}}
+    {{% quickref "<label>" [<source-url>] %}}
     inner markdown
     {{% /quickref %}}
 
@@ -11,23 +11,35 @@
     {{% include "/snippets/objects/shield-degradation" %}}
     {{% /quickref %}}
 
+    {{% quickref "Heads Up Displays (HUDs)" "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds" %}}
+    {{% include "/snippets/sci-fi/huds" %}}
+    {{% /quickref %}}
+
   ARGUMENTS
     0  (required) the clickable label text.
+    1  (optional) URL of the page the quoted rule lives on. Renders
+       `From <that page's title>:` above the content, linked.
+
+  POSITIONAL, not named — Hugo refuses to mix the two forms in one call, and
+  argument 0 is already positional. Same shape as include.html.
 
   INCLUDE WITH NO LEVEL ARGUMENT. The label above already names the rule, so a
   "lead" or "h3" prints the name twice, one line apart.
 
-  POINT AT THE RULE'S HOME PAGE FROM HERE, not from inside the snippet:
+  THE SOURCE URL LIVES AT THE CALL SITE, not in the snippet — the same block is quoted
+  from several places and not all of them want the line.
 
-    {{% quickref "Heads Up Displays (HUDs)" %}}
-    *Full rules on [Sci-Fi Additions](/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds)*
+  THE PAGE NAME IS NOT TYPED. It comes from that page's own title, so it cannot
+  drift the way the hand-written labels this replaced had — two of the six were
+  already wrong when they were swept up. Take the target from the block's `url`
+  in data/blocks.json: that is where the block is actually read on the site, so
+  the link cannot point at a page it does not appear on. A path resolving to no
+  page FAILS THE BUILD rather than rendering nothing, which is the failure mode
+  include.html warns about.
 
-    {{% include "/snippets/sci-fi/huds" %}}
-    {{% /quickref %}}
-
-  The same block is quoted from several call sites and not all of them want
-  that line, so it belongs to the call site. Take the target from the block's
-  `url` in data/blocks.json — that is where it is actually read on the site.
+  It is a screen affordance like the close control, and builder.css hides both:
+  a link cannot be followed off a printed page, and the builder's stage is a
+  proof of that page.
 
   Percent form — the inner content is markdown, and may contain includes. Safe
   inside a snippet, and inside a `blockdetails` collapsible.
@@ -77,6 +89,20 @@
 {{- $title := .Get 0 -}}
 {{- $id := substr (md5 (printf "%s|%s|%d" .Page.File.Path $title .Ordinal)) 0 8 -}}
 
+{{- /* Resolve `source` to the target page's OWN title, so the name in the line
+       is never hand-typed and cannot drift from the page it points at. Erroring
+       on a path that resolves to nothing is deliberate — rendering nothing is
+       how a broken include hides itself, and include.html says so at length. */ -}}
+{{- $source := .Get 1 -}}
+{{- $sourceName := "" -}}
+{{- with $source -}}
+  {{- $p := site.GetPage (index (split . "#") 0) -}}
+  {{- if not $p -}}
+    {{- errorf "quickref: source url %q resolves to no page (called from %s)" . $.Page.File.Path -}}
+  {{- end -}}
+  {{- $sourceName = $p.Title -}}
+{{- end -}}
+
 {{- /* ⚠ EMIT THIS MARKUP FLUSH LEFT. This is a {{% %}} shortcode, so its output
        goes back through the page's markdown renderer — and any line indented
        four spaces or more becomes a CODE BLOCK there. Pretty-printing the
@@ -90,6 +116,9 @@
        clicking it unchecks and the panel shuts — still no script. It is a
        screen affordance only: builder.css and @media print both hide it. */ -}}
 <label class="quickref-close" for="qr-{{ $id }}" role="button" aria-label="Close {{ $title }}" title="Close">&times;</label>
+{{- with $source }}
+<p class="quickref-source">From <a href="{{ . }}">{{ $sourceName }}</a>:</p>
+{{- end }}
 <div class="quickref-content markdown-inner">
 {{ .Inner | .Page.RenderString }}
 </div>
