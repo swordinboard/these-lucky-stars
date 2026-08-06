@@ -4,7 +4,7 @@ id: components/manipulator-override
 category: [sci-fi]
 type: equipment
 tags: [equipment, sci-fi, component]
-summary: "+2 DEX for fine motor tasks while powered"
+summary: "Assists with fine motor tasks while powered"
 ---
 
 *–Cr — 3lbs — Hands — External — Power Source*

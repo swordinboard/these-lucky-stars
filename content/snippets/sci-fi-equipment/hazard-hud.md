@@ -9,7 +9,7 @@ summary: "Helmet [HUD]. Lowers hazard detection checks within 10ft."
 
 *--Cr — 0lbs — Lvl 1 Encryption — Head [HUD]*
 
-A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type.
+A passive HUD that grants a minor advantage to detect or notice hazardous terrain, environments, and traps within 10ft. Displays a simple description of the hazard type, but does not offer a means of avoidance or other assistanc ein dealing with hazards.
 
 {{% quickref "Heads Up Displays (HUDs)" "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds" %}}
 {{% include "/snippets/sci-fi/huds" %}}
