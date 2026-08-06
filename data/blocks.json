@@ -4127,7 +4127,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Advantage on hearing-based INS, filter functions"
+  "summary": "Bonus to hearing-based INS, filter functions"
  },
  {
   "id": "components/augmented-arm-actuators",
@@ -11227,7 +11227,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "All ranged. +2 to attacks at normal range."
+  "summary": "All ranged. +1 to attacks at normal range."
  },
  {
   "id": "sci-fi-equipment/remote-detonator",
