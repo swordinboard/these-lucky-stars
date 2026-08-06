@@ -28,5 +28,11 @@ Damage type gets its own line; do not repeat it in the tag list.
 Same item in more than one setting? Give both blocks the same
 `variant_group:` and say "setting variant" in the stat line by hand.
 
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
+
 Delete this comment.
 -->

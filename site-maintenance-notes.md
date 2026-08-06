@@ -7,6 +7,12 @@ different types of updates to avoid breaking changes or inconsistencies.
 > a one-page "when you do X, do A then B" list with no explanations.
 > This file is the reasoning behind it; that file is the routine.
 
+> **Writing a rule, an item or a feature?** See
+> **[design-notes.md](design-notes.md)** as well. This file covers whether the
+> content is built correctly; that one covers whether the *mechanic* is the
+> right one — how big an effect should feel, and when it is a flat bonus rather
+> than advantage. The templates point at both.
+
 ---
 
 ## ⚠ Before merging to `main` (the live site)

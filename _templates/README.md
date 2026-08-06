@@ -38,6 +38,11 @@ edit and nothing more.
 | `creature.md` | A creature sharing a page with its siblings |
 | `page-shell.md` | A docs page that assembles blocks; not a block itself |
 
+**These templates cover site structure.** For whether the *mechanic* is right —
+how big an effect should feel, and when it is a flat bonus rather than advantage
+— see **[design-notes.md](../design-notes.md)**. Every template that can carry a
+bonus points there too.
+
 ## The rules these encode
 
 - **`id` matches the file path** under `content/snippets/`. No id, no block —

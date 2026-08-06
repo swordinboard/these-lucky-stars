@@ -88,5 +88,11 @@ A MOUNT IS NOT A VEHICLE. It is alive, it has attributes and features of its
 own, and it may refuse an order — stat it with creature.md. The mount rules
 cover how a rider commands it.
 
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
+
 Delete this comment.
 -->

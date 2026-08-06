@@ -119,5 +119,11 @@ because they are the ones that get written as if a vehicle were a creature:
 
 Then: list it on the section index by hand, and run builddata.py.
 
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
+
 Delete this comment.
 -->

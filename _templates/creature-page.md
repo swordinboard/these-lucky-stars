@@ -93,5 +93,11 @@ Two that bite on machines:
     or Tech Kit instead of a Med Kit. bots/automated-machines says so, and it is
     easy to get backwards.
 
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
+
 Delete this comment.
 -->

@@ -37,5 +37,16 @@ The Sci-Fi Module hub picks it up on its own — its tables select by property.
 The name and blurb in the catalog row come from `title` and `summary` here, so
 never type them into the page.
 
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
+
+For this kind specifically: traits and proficiencies are FLAT BONUSES by design.
+They are the "I don't really suck at this" baseline that other effects layer on
+top of, and none of them grants advantage. Keep it that way unless
+design-notes.md says otherwise.
+
 Delete this comment — a snippet must never END with one.
 -->
