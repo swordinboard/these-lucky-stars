@@ -10,4 +10,4 @@ summary: "All ranged. +2 to attacks at normal range."
 *--Cr — 0lbs*
 *Compatibility: All Ranged Weapons*
 
-A holographic sight that improves target acquisition. Grants +2 to attacks made at normal range.
+A holographic sight that improves target acquisition. Grants +1 to attacks made at normal range.
