@@ -43,6 +43,39 @@ replaces hearing, so it is a flat +2. The **Manipulator Override** assists fine
 motor work — better fingers do not tell you which pin to set — so it is a minor
 advantage.
 
+**Ask it about the check, not about the object.** This is the easy way to get
+question 2 wrong, and the **Compass** is the worked failure. A compass replaces
+a faculty — it tells you which way north is, and no amount of skill substitutes
+for it — so "replaces → flat bonus" looks right. But nobody rolls to find north.
+The check is *navigation*: getting from A to B, reading terrain, choosing a
+route, not walking in a circle for six hours. Against that check the compass
+only assists, and a character who does not know what to do with a heading can
+still get the party lost. It is advantage.
+
+The test: name the roll out loud before you answer. If the thing replaces
+something that is never itself rolled, it is assisting the roll that actually
+happens.
+
+### 3. Is the scale live?
+
+The advantage scale only does its job when something is pushing back on it. Ask
+whether the roll this effect touches is **contested or crowded**, or **isolated
+against a static target**.
+
+- **Contested, or crowded with other effects** → advantage is expressive. It can
+  be answered, cancelled, or stacked, and the position on the scale is the story
+  of the exchange.
+- **Isolated against a flat target** → the scale never moves, and advantage is
+  just a flat bonus wearing extra vocabulary. Use the bonus.
+
+The pair that draws this line: **Stabilizer Gyros** grant advantage on checks to
+resist knockdown, and those checks are contested by definition — somebody is
+shoving you, and the shover has their own effects in play. The **Antiseptic
+Poultice** grants a flat +2 on FORT checks against infection, and that check is
+almost never contested; it is a character alone against a fixed target, days
+after the fight. Same size of effect, different mechanic, because only one of
+them is standing on a live scale.
+
 ### Why the two levers are not the same
 
 **A flat bonus always applies. Advantage is a position on a scale that other
@@ -64,6 +97,23 @@ or proficiency grants advantage**, and that split is worth keeping.
 
 **Equipment and features are where the judgement happens.** Both levers appear
 there and both are correct in different cases.
+
+The line underneath that is **permanent versus choosable**, not "build versus
+situation":
+
+- A **trait or proficiency is permanent**. It is picked once, it is always on,
+  and it cannot be dropped when it becomes inconvenient. Permanent things get
+  flat bonuses.
+- **Equipment is a tactical choice made every scene.** It is carried, deployed,
+  swapped, and put down. A player who wants what an item offers pays for it in
+  slots, weight, AP, supply, and in whatever it stops them doing. That ongoing
+  price is what earns a place on the scale.
+
+The consequence worth stating: **major advantage cannot be bought at character
+creation.** It is reached by choices made at the table, with everything those
+choices cost, and there is no combination of traits and proficiencies that
+starts a character there. Keeping traits and proficiencies flat is what
+guarantees that.
 
 ### What the dice actually do
 
@@ -119,3 +169,67 @@ a lever, check whether the item is simply free.
 bonuses of any size — they remove a condition. Keep them stated as their own
 capability beside the modifier, not folded into it, or the item's cost gets
 priced against the wrong thing.
+
+---
+
+## Stacking to major is the intended behaviour
+
+Reaching major by stacking is not a corpus bug to be audited away. **It is
+allowed wherever every contributor was avoidable** — where a player looking at
+the stack can name the thing they should have done differently. Three real
+clusters, all of which were examined and all of which stay:
+
+**Equipment penalties.** A **Collapsible Shield** deployed alongside a
+two-handed weapon, a **Weighted Core** in the hands of a character under 2 STR,
+and a **Targeting HUD** locked onto somebody else all penalise the same attack,
+and together they reach major. That is the correct outcome, and the correct
+reading of it is *that character should put some things down and try something
+else*. Equipment is a tactical choice; a stack of bad tactical choices is
+supposed to hurt.
+
+**Vehicle penalties.** An untrained driver, taking a non-Drive action while
+driving, firing beyond a weapon's normal range, stacks three ways. Each one is a
+separate decision and each one has an obvious fix — get the proficiency, stop
+driving, get closer.
+
+**Positional penalties.** Grappling and attacking somebody outside the grapple,
+while prone, while obscured. Every element is a position, and positions can be
+changed.
+
+What these have in common is that they are **single specific effects that each
+do one thing**, not overlapping restatements of the same problem. That is the
+real test, and it is the same one `basics/advantage` already gives the GM: an
+effect earns a place in the count if it would matter on its own. Stacking is
+only a problem when the same disadvantage has been counted twice under two
+names.
+
+## Vague can be load-bearing
+
+"Grants advantage on navigation-related checks **when applicable**" looks like
+an unfinished sentence and is not. Pinning it down would mean enumerating which
+checks count, and the enumeration would be both long and wrong — a compass helps
+in open terrain and does nothing in a corridor, and no list survives contact
+with a real table.
+
+**Leave the vagueness where the GM is the better judge, and remove it where the
+mechanic is.** "When applicable" is a scope, and scope is the GM's call.
+"Grants advantage" without a severity used to be the other kind — a mechanical
+value left unstated — which is why it reads as an omission and "when applicable"
+does not.
+
+## Vehicle rules lean on disadvantage on purpose
+
+The vehicle rules hand out more disadvantage than any comparable section:
+untrained operation, driver actions other than Drive, dodging an oncoming
+vehicle, commanding an unwilling mount. That imbalance is deliberate and should
+not be normalised away by a later pass.
+
+**A vehicle is a force multiplier that the rules do not otherwise price.** It
+moves hundreds of feet a round, carries the party and their cargo, and turns
+collisions into dice nobody else can throw. The disadvantage load is the cost of
+entry, and the way out is the proficiency — which is exactly the "I don't really
+suck at this" gate that traits and proficiencies exist to open.
+
+When statting a new vehicle, expect its drawbacks to read heavier than an item's
+would. Check them against the vehicle rules already on the site rather than
+against the equipment corpus.

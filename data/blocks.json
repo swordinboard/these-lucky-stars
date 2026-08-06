@@ -4403,7 +4403,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "+2 DEX for fine motor tasks while powered"
+  "summary": "Assists with fine motor tasks while powered"
  },
  {
   "id": "components/optical-suite",
@@ -4744,7 +4744,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Resist knockdown, no falling damage under 20ft"
+  "summary": "Resist knockdown and fall damage"
  },
  {
   "id": "components/subdermal-plating",
