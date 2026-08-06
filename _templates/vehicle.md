@@ -19,7 +19,7 @@ seats behind a stub windscreen, and no pretence of comfort or protection.
 >
 > **Collision** 3d6 + speed modifier · **Ignition** 2 AP
 >
-> **Proficiency** [Vehicle [Skiff]](/docs/free-srd/character-creation/proficiencies/#vehicle) · **Power** [Fuel Cells](/docs/free-srd/inventory--equipment/item-tags/#fuel-cells)
+> **Proficiency** [Vehicle [Skiff]](/docs/free-srd/character-creation/proficiencies/#vehicle) · **Power** [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)
 
 ---
 

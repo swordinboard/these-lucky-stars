@@ -7821,7 +7821,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 7,
   "tags": [
    "item-tag"
   ],
@@ -13155,6 +13155,96 @@
   "wip": true
  },
  {
+  "id": "vehicles/skiff-hauler",
+  "title": "Skiff, Hauler",
+  "home": "snippet",
+  "file": "content/snippets/vehicles/skiff-hauler.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/skiffs/"
+  ],
+  "anchor": "skiff-hauler",
+  "url": "/docs/free-srd/vehicles/sci-fi/skiffs/#skiff-hauler",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Long-bed freight skiff. Size 5, slow and unwieldy, 1,600lb bed."
+ },
+ {
+  "id": "vehicles/skiff-runner",
+  "title": "Skiff, Runner",
+  "home": "snippet",
+  "file": "content/snippets/vehicles/skiff-runner.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/skiffs/"
+  ],
+  "anchor": "skiff-runner",
+  "url": "/docs/free-srd/vehicles/sci-fi/skiffs/#skiff-runner",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Stripped courier skiff. Size 3, fast and fragile, one seat."
+ },
+ {
+  "id": "vehicles/skiff-utility",
+  "title": "Skiff, Utility",
+  "home": "snippet",
+  "file": "content/snippets/vehicles/skiff-utility.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/skiffs/"
+  ],
+  "anchor": "skiff-utility",
+  "url": "/docs/free-srd/vehicles/sci-fi/skiffs/#skiff-utility",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Open-bed hover skiff. Size 3, two seats, no cover, 400lb bed."
+ },
+ {
   "id": "vehicles/speeder-bike",
   "title": "Speeder Bike",
   "home": "page",
@@ -13183,6 +13273,36 @@
   "selectable": true,
   "wip": true,
   "summary": "Open-frame repulsor bike. Size 2, one rider, no cover, fast enough to be a problem."
+ },
+ {
+  "id": "vehicles/utility-skiff",
+  "title": "Utility Skiff",
+  "home": "page",
+  "file": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/utility-skiff/"
+  ],
+  "anchor": "utility-skiff",
+  "url": "/docs/free-srd/vehicles/sci-fi/utility-skiff/",
+  "owns_heading": true,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Open-bed hover skiff. Size 3, two seats, no cover, 400lb bed. Page-form twin of Skiff, Utility."
  },
  {
   "id": "vehicles/vehicle-actions",

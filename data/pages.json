@@ -885,6 +885,19 @@
   ]
  },
  {
+  "url": "/docs/free-srd/vehicles/sci-fi/skiffs/",
+  "title": "Skiffs",
+  "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
+  "section": "vehicles/sci-fi",
+  "weight": "10",
+  "wip": true,
+  "blocks": [
+   "vehicles/skiff-utility",
+   "vehicles/skiff-hauler",
+   "vehicles/skiff-runner"
+  ]
+ },
+ {
   "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
   "title": "Speeder Bike",
   "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
@@ -893,6 +906,17 @@
   "wip": true,
   "blocks": [
    "vehicles/speeder-bike"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/utility-skiff/",
+  "title": "Utility Skiff",
+  "file": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
+  "section": "vehicles/sci-fi",
+  "weight": null,
+  "wip": true,
+  "blocks": [
+   "vehicles/utility-skiff"
   ]
  },
  {

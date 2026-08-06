@@ -15,7 +15,8 @@ statted first, since those are what a party meets on foot.
 ## Ground & Repulsor
 
 - [Speeder Bike](/docs/free-srd/vehicles/sci-fi/speeder-bike/) — Open frame, one rider, no cover and a great deal of speed
-- *(TBD)* — A utility skiff, for parties who need to carry something
+- [Skiffs](/docs/free-srd/vehicles/sci-fi/skiffs/) — The utility workhorse, the long-bed hauler, and the stripped runner
+- [Utility Skiff](/docs/free-srd/vehicles/sci-fi/utility-skiff/) — The same skiff on its own page, for comparison while the two forms are being weighed
 - *(TBD)* — An enclosed ground transport, for parties who would rather have cover
 
 ## Void Craft
