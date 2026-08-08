@@ -32,9 +32,9 @@ The major levels add or remove a decision die, and that die *replaces* the initi
 > [!Tip]
 > **Examples:**
 > - Three advantages against one disadvantage totals a major advantage (increases decision dice to 3d6).
-> - A major disadvantage answered by one minir advantage slides to a minor disadvantage (-2 penalty to roll).
+> - A major disadvantage answered by one minor advantage slides to a minor disadvantage (-2 penalty to roll).
 > - Two minor disadvantages met by a major advantage evens out to a neutral roll (no change to roll).
-> - Two major advantages met by a minor disadvantage resuls in a +1 major advantage (increase decision dice to 3d6 with a +1 bonus)
+> - Two major advantages met by a minor disadvantage results in a +1 major advantage (increase decision dice to 3d6 with a +1 bonus).
 
 ## Special Notes for the Game Master:
 
@@ -42,6 +42,7 @@ The major levels add or remove a decision die, and that die *replaces* the initi
 - Decide what applies before counting anything. Only include things that would have an effect on their own, do not include items that only matter when they add up. This can help limit the number of effects that cause advantage and keep it more narratively consistent.
 - Do not include things that already grant a bonus or penalty. For example, fatigued characters are not held at a disadvantage because the fatigued condition applies its own penalties.
 - The scale runs in both directions without a limit, but the count is not an accounting exercise. Most rolls should land on the scale between +1 and -1 points, and a total past +2 or -2 likely means the situation genuinely got out of hand.
+- All advantages and disadvantages must be revealed before the dice have been rolled, including those from abilities. Nothing is added to the count after the fact.
 - Talk with the rest of the table when determining advantage, it is everyone's responsibility to announce effects. It is the GM's responsibility to determine the balance of the situation and whatever advantage it may grant.
 
 ## Advantage and Contested Rolls
