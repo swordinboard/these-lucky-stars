@@ -23,15 +23,9 @@ Advantage works on a scale rather than as a flat bonus. Every effect that applie
 
 The GM decides which effects apply. Only then are they counted.
 
-**Every effect that applies is worth one or two points** in the direction it pushes — in the character's favor, or against them. Most effects are worth one point, howrver, a few weightier effects state that they grant a *major* advantage or disadvantage on their own; those are worth two points. Add every point together and match up the result with the scale.
+**Every effect that applies is worth one or two points** in the direction it pushes — in the character's favor, or against them. Most effects are worth one point and are labeled as a *minor* advantage or disadvantage. However, a few weightier effects state that they grant a *major* advantage or disadvantage on their own; those are worth two points. Add every point together and match up the result with the scale.
 
-| Total | Roll | Called |
-|---|---|---|
-| **+2 or more** | 3d6, plus 1 for every point past +2 | Major Advantage |
-| **+1** | 2d6, +2 | Minor Advantage |
-| **0** | 2d6 | Neutral |
-| **-1** | 2d6, -2 | Minor Disadvantage |
-| **-2 or less** | 1d6, minus 1 for every point past -2 | Major Disadvantage |
+{{% include "/snippets/basics/advantage-scale" %}}
 
 The major levels add or remove a decision die, and that die *replaces* the initial flat bonus or penalty rather than joining it — a standard Major Advantage rolls 3d6, and a standard Major Disadvantage rolls 1d6. But stacking beyond the ends of the scale keeps paying, one point at a time.
 
