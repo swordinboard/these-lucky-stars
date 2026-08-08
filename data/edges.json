@@ -750,6 +750,15 @@
   "line": 10
  },
  {
+  "source": "basics/advantage",
+  "target": "basics/advantage-scale",
+  "type": "include",
+  "url": "/snippets/basics/advantage-scale",
+  "text": null,
+  "file": "content/snippets/basics/advantage.md",
+  "line": 28
+ },
+ {
   "source": "generic-equipment/bandages-large",
   "target": "equipment/medkit-note",
   "type": "include",

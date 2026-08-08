@@ -2991,6 +2991,35 @@
   "wip": false
  },
  {
+  "id": "basics/advantage-scale",
+  "title": "The Advantage Scale",
+  "home": "snippet",
+  "file": "content/snippets/basics/advantage-scale.md",
+  "source_page": "content/docs/free-srd/core-rules/basics.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/basics.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/basics/"
+  ],
+  "anchor": null,
+  "url": "/docs/free-srd/core-rules/basics/",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 1,
+  "tags": [
+   "basics"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "The point total, what it rolls, and what it is called."
+ },
+ {
   "id": "basics/contested-rolls",
   "title": "Contested Rolls",
   "home": "snippet",

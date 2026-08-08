@@ -1,9 +1,10 @@
 ---
-title: "The Advantage Scale "
+title: "The Advantage Scale"
 id: basics/advantage-scale
 category: [core]
 type: rule
 tags: [basics]
+summary: "The point total, what it rolls, and what it is called."
 ---
 
 | Total | Roll | Called |
