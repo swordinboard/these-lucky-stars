@@ -43,7 +43,7 @@ does parked. That last part is what kills people.
 
 The Drive check is **AGI**, not DEX: a bike is steered with the whole body, which
 is the same call the rules make for motorcycles and mounts. An untrained rider
-takes disadvantage on every check to operate it.
+takes a minor disadvantage on every check to operate it.
 
 At 100ft/round of acceleration it needs four Drive actions to reach its full 400ft
 — and two to shed it, since a vehicle decelerates twice as fast as it accelerates.

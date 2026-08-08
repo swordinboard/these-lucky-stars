@@ -4,11 +4,11 @@ id: conditions/prone
 category: [core]
 type: rule
 tags: [condition]
-summary: "Half speed, disadvantage on melee attacks."
+summary: "Half speed, minor disadvantage on melee attacks."
 ---
 
 *Effect* — Characters lying on the ground are Prone. Prone characters move at
-half speed and are at a disadvantage when making melee attacks outside a grapple.
+half speed and are at a minor disadvantage when making melee attacks outside a grapple.
 
 *Duration/Healing* — Until the character stands, usually with the Stand action.
 

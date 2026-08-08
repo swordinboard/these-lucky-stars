@@ -24,7 +24,7 @@ The GM may grant [advantage or disadvantage](/docs/free-srd/core-rules/basics/#a
 
 *Type of Attack* — Melee attacks and ranged attacks may face different advantages and disadvantages. It is up to the GM to use their best judgment when determining if the type of attack should give advantage or disadvantage.
 
-*Cover* — Solid objects that block or limit an attacker's line of sight grant the defender an advantage. See [Cover](#cover) below.
+*Cover* — Solid objects that block or limit an attacker's line of sight grant the defender a minor advantage. See [Cover](#cover) below.
 
 *Terrain and Environment* — Especially for melee attacks, difficult terrain for one of the combatants may grant a bonus or penalty to one side's roll. Environmental effects such as obscured vision from smoke or darkness, or heavy winds or rainfall, may also change the result of an attack, particularly ranged attacks. In most cases both attacker and defender being blinded simply results in no change, as both combatants are equally disadvantaged.
 

@@ -81,7 +81,7 @@ EVERY VALUE IS DERIVED from a rule already on the site:
              Size, because it is rolled mid-chase.
   Ignition   the AP cost to start it, or the multi-round sequence. Say it even
              when it is trivial; "keyed, 1 AP" is worth a line.
-  Proficiency which Vehicle [___] avoids disadvantage on Drive checks. The
+  Proficiency which Vehicle [___] avoids a minor disadvantage on Drive checks. The
              blank goes in the LINK TEXT, never in a heading.
 
 A MOUNT IS NOT A VEHICLE. It is alive, it has attributes and features of its

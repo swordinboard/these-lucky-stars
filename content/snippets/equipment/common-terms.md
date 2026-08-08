@@ -29,8 +29,8 @@ Added to the wearer's DEF score while equipped.
 
 ## Range
 
-The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a disadvantage.
-Some weapons and upgrades have a minimum range. These are written in parenthesis before the normal range, such as (20)100. In these cases, attacks made at or below the minimum range also put the user at a disadvantage.
+The number displayed is a weapon's normal range. The normal range indicates the max distance at which a ranged weapon can be used without causing a minor disadvantage. A weapon's maximum effective range is double its normal range. When making an attack beyond the normal range but below max range, the attack is made at a minor disadvantage.
+Some weapons and upgrades have a minimum range. These are written in parenthesis before the normal range, such as (20)100. In these cases, attacks made at or below the minimum range also put the user at a minor disadvantage.
 
 ## Tags
 

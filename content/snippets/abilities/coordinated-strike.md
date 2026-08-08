@@ -4,9 +4,9 @@ id: abilities/coordinated-strike
 category: [core]
 type: feature
 tags: [ability, core, general]
-summary: "Designate a target — the next ally to attack it gains advantage."
+summary: "Designate a target — the next ally to attack it gains a minor advantage."
 ---
 
 *CHA 2, Level 3*
 
-For 2 AP, designate a target within line of sight. The next ally who attacks that target before the start of your next turn gains advantage on the attack.
+For 2 AP, designate a target within line of sight. The next ally who attacks that target before the start of your next turn gains a minor advantage on the attack.

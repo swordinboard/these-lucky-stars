@@ -388,7 +388,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Designate a target — the next ally to attack it gains advantage."
+  "summary": "Designate a target — the next ally to attack it gains a minor advantage."
  },
  {
   "id": "abilities/danger-reflex",
@@ -419,7 +419,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Advantage on AGI/DEX checks against effects of a triggered trap."
+  "summary": "Minor advantage on AGI/DEX checks against effects of a triggered trap."
  },
  {
   "id": "abilities/dead-drop",
@@ -863,7 +863,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Focus on an opponent to gain advantage."
+  "summary": "Focus on an opponent to gain a minor advantage."
  },
  {
   "id": "abilities/focus-in",
@@ -1737,7 +1737,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Bonus damage and advantage if stationary and untargeted since last turn.",
+  "summary": "Bonus damage and minor advantage if stationary and untargeted since last turn.",
   "requires": [
    "proficiencies/weapon"
   ]
@@ -2380,7 +2380,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Lock eyes to gain advantage on your next roll against them.",
+  "summary": "Lock eyes to gain a minor advantage on your next roll against them.",
   "requires": [
    "traits/particularly-attractive"
   ]
@@ -4982,7 +4982,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain advantage"
+  "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain minor advantage"
  },
  {
   "id": "conditions/dead-battery",
@@ -5212,7 +5212,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Half speed, disadvantage on melee attacks — adjacent attackers gain minor advantage"
+  "summary": "Half speed, minor disadvantage on melee attacks — adjacent attackers gain minor advantage"
  },
  {
   "id": "conditions/restrained",
@@ -5357,7 +5357,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Cannot take any actions — attackers gain advantage and surprise"
+  "summary": "Cannot take any actions — attackers gain minor advantage and surprise"
  },
  {
   "id": "core-rules/size",

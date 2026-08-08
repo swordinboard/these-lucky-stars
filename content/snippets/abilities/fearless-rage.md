@@ -10,4 +10,4 @@ requires: [abilities/rage]
 
 *[Rage](#rage), WILL 2, Level 5*
 
-While using the Rage ability, gain advantage when attempting to resist fear effects.
+While using the Rage ability, gain a minor advantage when attempting to resist fear effects.

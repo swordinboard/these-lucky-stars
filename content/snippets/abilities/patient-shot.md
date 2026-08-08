@@ -4,7 +4,7 @@ id: abilities/patient-shot
 category: [core]
 type: feature
 tags: [ability, core, general]
-summary: "Bonus damage and advantage if stationary and untargeted since last turn."
+summary: "Bonus damage and minor advantage if stationary and untargeted since last turn."
 requires: [proficiencies/weapon]
 ---
 

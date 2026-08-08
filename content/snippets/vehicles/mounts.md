@@ -25,7 +25,7 @@ A mount's combat capabilities come from its own stat block. When a rider command
 
 ## Unwilling Mounts
 
-Not every mount obeys every command. A well-trained, bonded, or willing mount cooperates with its rider's commands automatically. Riders may face a disadvantage when attempting to command an unwilling, unfamiliar, or spooked mount. 
+Not every mount obeys every command. A well-trained, bonded, or willing mount cooperates with its rider's commands automatically. Riders may face a minor disadvantage when attempting to command an unwilling, unfamiliar, or spooked mount. 
 
 A mount may also be willing to perform some actions, but unwilling to perform others. Most mounts are unwilling to perform actions that put them in direct danger and in some cases no command check will force them to do so.
 
