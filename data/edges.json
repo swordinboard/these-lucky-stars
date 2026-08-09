@@ -10621,30 +10621,8 @@
   "line": 16
  },
  {
-  "source": "environment/heat-and-cold",
-  "target": "environment/exposure-intervals",
-  "type": "reference",
-  "class": "mechanism",
-  "url": null,
-  "text": null,
-  "file": null,
-  "line": null,
-  "note": "FORT-interval mechanism defined in Exposure Intervals; this block only lists consequences (implicit — no link in text; ruled reference)"
- },
- {
-  "source": "environment/toxic-atmosphere",
-  "target": "environment/exposure-intervals",
-  "type": "reference",
-  "class": "mechanism",
-  "url": null,
-  "text": null,
-  "file": null,
-  "line": null,
-  "note": "Same interval mechanism dependency (implicit — no link in text; ruled reference)"
- },
- {
-  "source": "objects/conditions",
-  "target": "objects/durability",
+  "source": "rules/objects/conditions",
+  "target": "rules/objects/durability",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10654,8 +10632,8 @@
   "note": "The three conditions are VIT thresholds defined by Object Durability (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "objects/armor-degradation",
-  "target": "objects/conditions",
+  "source": "rules/objects/armor-degradation",
+  "target": "rules/objects/conditions",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10665,8 +10643,8 @@
   "note": "Uses Damaged/Broken as defined terms (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "objects/shield-degradation",
-  "target": "objects/conditions",
+  "source": "rules/objects/shield-degradation",
+  "target": "rules/objects/conditions",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10676,8 +10654,8 @@
   "note": "Uses Damaged/Broken as defined terms (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "objects/shield-degradation",
-  "target": "basics/supply-rolls",
+  "source": "rules/objects/shield-degradation",
+  "target": "rules/basics/supply-rolls",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10687,8 +10665,8 @@
   "note": "Shield wear runs on supply dice (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "vehicles/boarding-and-bailing",
-  "target": "movement/speed-tiers-chart",
+  "source": "rules/vehicles/boarding-and-bailing",
+  "target": "rules/movement/speed-tiers-chart",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10698,8 +10676,8 @@
   "note": "Targets are 6 + speed modifier from the chart (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "vehicles/collision-damage",
-  "target": "movement/speed-tiers-chart",
+  "source": "rules/vehicles/collision-damage",
+  "target": "rules/movement/speed-tiers-chart",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10709,8 +10687,8 @@
   "note": "Formula uses the chart's speed modifier (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "vehicles/impact-and-overrun",
-  "target": "vehicles/collision-damage",
+  "source": "rules/vehicles/impact-and-overrun",
+  "target": "rules/vehicles/collision-damage",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10720,8 +10698,8 @@
   "note": "Failure outcomes resolve via collision damage (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "vehicles/mounts",
-  "target": "vehicles/collision-damage",
+  "source": "rules/vehicles/mounts",
+  "target": "rules/vehicles/collision-damage",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10731,8 +10709,8 @@
   "note": "Sudden Stops deals collision damage (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "health/applying-damage",
-  "target": "stats/defense",
+  "source": "rules/health/applying-damage",
+  "target": "rules/stats/defense",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10742,8 +10720,8 @@
   "note": "The loop is defined in terms of DEF (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "health/applying-damage",
-  "target": "stats/vitality",
+  "source": "rules/health/applying-damage",
+  "target": "rules/stats/vitality",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10753,7 +10731,7 @@
   "note": "The loop is defined in terms of VIT (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "combat/damage-dice",
+  "source": "rules/combat/damage-dice",
   "target": "core-rules/size",
   "type": "reference",
   "class": "mechanism",
@@ -10764,8 +10742,8 @@
   "note": "Dice determined by attacker/defender size comparison (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "sci-fi-equipment/kit-supplies",
-  "target": "basics/supply-rolls",
+  "source": "gear/sci-fi-equipment/kit-supplies",
+  "target": "rules/basics/supply-rolls",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10775,8 +10753,8 @@
   "note": "Kit supplies run on supply dice (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "conditions/stressed",
-  "target": "stats/stress-threshold",
+  "source": "rules/conditions/stressed",
+  "target": "rules/stats/stress-threshold",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10786,8 +10764,8 @@
   "note": "Trigger defined by Stress Threshold (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "conditions/dying",
-  "target": "conditions/unconscious",
+  "source": "rules/conditions/dying",
+  "target": "rules/conditions/unconscious",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10797,8 +10775,8 @@
   "note": "Dying character 'immediately falls unconscious (as the condition)' (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "sci-fi/energy-shields",
-  "target": "stats/defense",
+  "source": "rules/sci-fi/energy-shields",
+  "target": "rules/stats/defense",
   "type": "reference",
   "class": "mechanism",
   "url": null,
@@ -10808,8 +10786,8 @@
   "note": "Temporary DEF pool concept extends DEF (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "stats/luck",
-  "target": "conditions/stressed",
+  "source": "rules/stats/luck",
+  "target": "rules/conditions/stressed",
   "type": "reference",
   "class": "mechanism",
   "url": null,

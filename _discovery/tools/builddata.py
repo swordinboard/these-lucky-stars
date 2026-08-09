@@ -444,11 +444,43 @@ MENTION_PREFIX = ("http://", "https://", "mailto:", "/digitalcharactersheet",
                   "/attributeconverter", "/planetnamegenerator", "/pdfs/", "/images/")
 MENTION_PAGES = {"/docs/downloads/", "/docs/roadmap/", "/docs/legal/",
                  "/docs/contributors/", "/docs/appinstall/", "/docs/free-srd/", "/docs/"}
+# ---------------------------------------------------------------------------
+# ⚠ HARDCODED BLOCK PATHS — INVISIBLE TO check.sh
+#
+# The four names below spell out block ids as literal strings. Nothing in the
+# preflight can tell you when they stop matching: they only decide how an edge
+# is CLASSIFIED, so a stale prefix produces edges that still exist and still
+# resolve — they just quietly lose their type. Every check stays green while the
+# prerequisite graph goes flat.
+#
+# This has already happened once. Renaming content/snippets/<ns>/ to
+# <group>/<ns>/ left FEATURE_NS and EQUIP_NS naming namespaces that no longer
+# existed, and 77 prerequisite plus 85 tag-definition edges degraded to plain
+# references with all seven checks passing.
+#
+# So: MOVING OR RENAMING ANYTHING UNDER content/snippets/ MEANS EDITING THIS
+# BLOCK. The assertions below turn a stale prefix into a build failure, which is
+# the only reason it is safe to keep the literals at all — but they can only
+# catch a prefix that matches NOTHING. A prefix that still matches the wrong
+# blocks passes, so read them, do not just run them.
+# ---------------------------------------------------------------------------
+
+# Prerequisite edges: an italic-only line naming another feature. Features are
+# the only blocks with prerequisites, and character/ holds exactly abilities,
+# proficiencies and traits.
 FEATURE_NS = ("character/",)
+
+# Tag-definition edges: gear pointing at the item tag that defines its behaviour.
+# NOT all of gear/ — item-tags and inventory are the targets, not the sources.
 EQUIP_NS = ("gear/generic-equipment/", "gear/sci-fi-equipment/",
             "gear/components/", "gear/equipment/")
+ITEM_TAG_NS = "gear/item-tags/"
 
 # implicit dependencies: real rule couplings with no link in the prose.
+# Hand-maintained, and every entry names two block ids outright — see the
+# warning above. builddata appends these edges without resolving them against
+# anything, so a stale id here becomes an edge pointing at a block that does not
+# exist. The assertion below is what stops that being silent.
 IMPLICIT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                        "implicit-edges.json")))
 
@@ -523,7 +555,7 @@ for path, P in PAGES.items():
               and raw_line.startswith("*") and not raw_line.startswith("**") and raw_line.endswith("*")):
             e.update(type="dependency")
             e["class"] = "prerequisite"
-        elif str(e["source"]).startswith(EQUIP_NS) and str(e["target"]).startswith("gear/item-tags/"):
+        elif str(e["source"]).startswith(EQUIP_NS) and str(e["target"]).startswith(ITEM_TAG_NS):
             e["class"] = "tag-definition"
         edges.append(e)
     for inc in P["includes"]:
@@ -547,6 +579,24 @@ for path, P in PAGES.items():
                           "class": "section-index", "url": url_for(cp),
                           "text": PAGES[cp]["fm"].get("title"), "file": path,
                           "line": None})
+
+# The guards for the hardcoded-path block above. Both failures they catch are
+# otherwise silent: check.sh sees typed edges and dangling implicit edges as
+# perfectly ordinary.
+for _label, _prefixes in (("FEATURE_NS", FEATURE_NS), ("EQUIP_NS", EQUIP_NS),
+                          ("ITEM_TAG_NS", (ITEM_TAG_NS,))):
+    for _p in _prefixes:
+        if not any(bid.startswith(_p) for bid in blocks):
+            sys.exit(f"FAIL {_label} names {_p!r}, which matches no block. "
+                     f"Something under content/snippets/ moved — see the "
+                     f"HARDCODED BLOCK PATHS note in builddata.py.")
+_dead = sorted({x for ie in IMPLICIT for x in (ie["source"], ie["target"])
+                if x not in blocks})
+if _dead:
+    sys.exit("FAIL implicit-edges.json names blocks that do not exist:\n  "
+             + "\n  ".join(_dead)
+             + "\nEdit _discovery/tools/implicit-edges.json. Nothing else "
+               "validates it — the edges would be built pointing at nothing.")
 
 for ie in IMPLICIT:
     edges.append({"source": ie["source"], "target": ie["target"], "type": "reference",

@@ -54,6 +54,11 @@ What it checks, and why each one exists:
 - With a baseline, `rendercheck` reports differences for anything you changed on
   purpose. Read the list; it should only contain your intended edits.
 
+**What the preflight cannot see:** block ids written as literal strings in the
+tooling. Nothing here visits them, so moving anything under `content/snippets/`
+can flatten the edge graph with all seven checks green. See *Two places the
+preflight cannot see* under **Moving or Renaming Content Pages**.
+
 ---
 
 ## Block architecture (read this before editing content)
@@ -884,6 +889,45 @@ Moving or renaming a **block** (a file under `content/snippets/`) also changes i
 `id`: update the `id:` frontmatter to match the new path, update every
 `{{% include %}}` and `{{< catalog >}}` reference to it, re-run `builddata.py`,
 and run the preflight — a stale include renders as nothing, silently.
+
+Also update `requires:` entries, `blockdetails` calls, hand-listed `catalog`
+rows, and any `namespace="…"` filter argument that names the part you moved.
+The preflight catches all of those.
+
+### Two places the preflight cannot see
+
+**Some block ids are written out as literal strings in the tooling.** They are
+not links, so `linkcheck` never visits them, and they do not change whether the
+site builds — they change how edges are *classified*. A stale one leaves edges
+that still exist and still resolve, minus their meaning, with all seven checks
+passing.
+
+| Where | Holds | Breaks as |
+|---|---|---|
+| `builddata.py` → `FEATURE_NS`, `EQUIP_NS`, `ITEM_TAG_NS` | namespace prefixes | `prerequisite` and `tag-definition` edges silently become plain references |
+| `_discovery/tools/implicit-edges.json` | whole block ids, both endpoints | edges built pointing at blocks that no longer exist |
+
+This is not hypothetical. Grouping the snippet tree into `rules/`, `character/`,
+`gear/` and `statblocks/` broke both at once: 77 prerequisite edges and 85
+tag-definition edges went flat, and 18 implicit edges pointed at nothing. Every
+check passed. It was caught by reading the edge-type line in `builddata.py`'s
+own output, which is the only place it showed.
+
+**`builddata.py` now fails loudly on both** — a prefix matching no block, or an
+implicit edge naming an unknown block, exits non-zero with the fix in the
+message. That guard only catches a name matching *nothing*, though. A prefix
+that still matches the *wrong* blocks passes clean, so after any move under
+`content/snippets/`, open the `HARDCODED BLOCK PATHS` comment in
+`builddata.py` and read it rather than trusting the run.
+
+**Sanity check after any move**, since the guards cannot verify counts:
+
+```
+python3 _discovery/tools/builddata.py    # compare the edge-type line
+```
+
+`dependency` counts prerequisites and `mention` counts external links; both
+should hold steady across a pure move. A drop to zero means a prefix went stale.
 
 Any URL change requires a redirect in `netlify.toml` to avoid 404s in Google Search Console.
 

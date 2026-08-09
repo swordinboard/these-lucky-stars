@@ -10763,7 +10763,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "basics"
   ],
@@ -12007,7 +12007,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -12037,7 +12037,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "condition"
   ],
@@ -12284,7 +12284,7 @@
    "core"
   ],
   "type": "reference",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "movement"
   ],
@@ -12343,7 +12343,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "objects"
   ],
@@ -12371,7 +12371,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "objects"
   ],
@@ -12740,7 +12740,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "stats",
    "health"
@@ -12798,7 +12798,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "stats"
   ],
@@ -12828,7 +12828,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "stats",
    "health"
@@ -12885,7 +12885,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "vehicles"
   ],
