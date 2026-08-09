@@ -872,6 +872,16 @@
   "class": "tag-definition"
  },
  {
+  "source": "generic-equipment/shovel",
+  "target": "item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/generic-equipment/shovel.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
   "source": "generic-equipment/splint-materials",
   "target": "equipment/medkit-note",
   "type": "include",

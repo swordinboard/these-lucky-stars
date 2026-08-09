@@ -7710,7 +7710,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 20,
+  "in_degree": 21,
   "tags": [
    "item-tag"
   ],
