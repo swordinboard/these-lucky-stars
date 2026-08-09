@@ -5192,7 +5192,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Only physical action is to escape the pin"
+  "summary": "Only physical action is to escape the pin",
+  "duration": "Until broken or escaped"
  },
  {
   "id": "conditions/prone",
@@ -5281,7 +5282,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "-1 to all decision rolls, -2 max DEF, +1 Stress"
+  "summary": "-1 to all decision rolls, -2 max DEF, +1 Stress",
+  "duration": "1d4+1 rounds"
  },
  {
   "id": "conditions/sick",

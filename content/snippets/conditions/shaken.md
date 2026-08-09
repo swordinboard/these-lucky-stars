@@ -5,6 +5,7 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "-1 to all decision rolls, -2 max DEF, +1 Stress"
+duration: "1d4+1 rounds"
 ---
 
 *Effect* — Can be caused when something shocking happens, whether mentally, emotionally, or physically such as fear or damage. -1 to all decision rolls, -2 max DEF, +1 Stress.
