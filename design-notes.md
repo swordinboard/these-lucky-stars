@@ -142,11 +142,33 @@ from 92% to 50%. Losing a die on an easy task is far more punishing than gaining
 one is generous, so major disadvantage is not the mirror image of major
 advantage and should not be handed out as though it were.
 
-### Say which one
+### Say which one, and major is allowed
 
-`grants advantage` without a severity is legal — `basics/advantage` defines a
-bare grant as minor on a neutral roll — but it reads as an omission. Write
-**minor** or **major** explicitly. The same goes for penalties.
+Always write **minor** or **major**. As of this writing there is not a single
+unqualified grant left in the corpus — 44 of them were made explicit in one
+pass — so a bare `grants advantage` now reads as something that was missed
+rather than something that was chosen.
+
+**An effect may grant major outright.** It does not have to be reached by
+stacking. Under the running count in `basics/advantage`, an effect is named for
+what it grants *on its own*: minor is worth one point, major is worth two, and
+both drop into the same addition as everything else. Four rules already do this
+and are correct to — Heavily Obscured, resisting a damage Weakness, dodging a
+vehicle at Fast or Very Fast, and keeping grip on a two-handed weapon against a
+disarm.
+
+What granting major does **not** mean is that the roll will be at major
+advantage. It means the effect contributes two points toward whatever the total
+turns out to be. A major advantage met by a minor disadvantage lands on minor —
+the effect did its work and the situation ate some of it — which is the same
+arithmetic that lets three separate advantages reach major from the other
+direction. Nothing is special-cased.
+
+So the question to ask is still question 1: **how big should it feel?** Major is
+the answer when a single effect should be worth two of anything else in play. It
+is a heavy thing to hand out — the four that do are environmental, physiological
+or geometric, none of them purchasable — and that is the pattern to check a new
+one against.
 
 ### Worked examples
 

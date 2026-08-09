@@ -4887,7 +4887,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -4895,7 +4895,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious"
+  "summary": "FORT checks each turn or fall unconscious — 1 VIT/round if unconscious",
+  "duration": "Until able to breathe"
  },
  {
   "id": "conditions/bleeding",
@@ -4916,7 +4917,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -4924,7 +4925,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks"
+  "summary": "Blood die at end of turn — 3 or lower deals 1 VIT, die shrinks",
+  "duration": "Until the wound is dressed"
  },
  {
   "id": "conditions/confused",
@@ -4945,7 +4947,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -4953,7 +4955,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress"
+  "summary": "-2 KNO, INS, and CHA, -1 AP/round, +1 Stress",
+  "duration": "2d6 rounds"
  },
  {
   "id": "conditions/crippled",
@@ -4974,7 +4977,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "condition"
   ],
@@ -4982,7 +4985,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain minor advantage"
+  "summary": "All speeds -10, +1 Stress if using 3+ AP — attackers gain minor advantage",
+  "duration": "Until the wound is healed"
  },
  {
   "id": "conditions/dead-battery",
@@ -5012,7 +5016,8 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false
+  "wip": false,
+  "duration": "Until power is restored"
  },
  {
   "id": "conditions/dying",
@@ -5033,7 +5038,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -5041,7 +5046,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
+  "summary": "FORT check each turn (starts at 3, +1/round) — failure or damage means death",
+  "duration": "Until healed, or death"
  },
  {
   "id": "conditions/fatigued",
@@ -5062,7 +5068,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -5070,7 +5076,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "-2 STR, AGI, and DEX, -2 AP/round"
+  "summary": "-2 STR, AGI, and DEX, -2 AP/round",
+  "duration": "Until rested"
  },
  {
   "id": "conditions/frightened",
@@ -5091,7 +5098,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -5099,7 +5106,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "-2 INS, +1 Stress"
+  "summary": "-2 INS, +1 Stress",
+  "duration": "Until removed from the cause"
  },
  {
   "id": "conditions/immobilized",
@@ -5120,7 +5128,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -5128,7 +5136,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Cannot take physical actions — DEX and AGI treated as null"
+  "summary": "Cannot take physical actions — DEX and AGI treated as null",
+  "duration": "Cause specific"
  },
  {
   "id": "conditions/overview",
@@ -5175,7 +5184,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -5204,7 +5213,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 4,
+  "in_degree": 3,
   "tags": [
    "condition"
   ],
@@ -5212,7 +5221,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Half speed, minor disadvantage on melee attacks — adjacent attackers gain minor advantage"
+  "summary": "Half speed, minor disadvantage on melee attacks — adjacent attackers gain minor advantage",
+  "duration": "Until standing"
  },
  {
   "id": "conditions/restrained",
@@ -5233,7 +5243,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -5241,7 +5251,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Physical actions limited — affected limb unusable"
+  "summary": "Physical actions limited — affected limb unusable",
+  "duration": "Until the restraint or wound is removed"
  },
  {
   "id": "conditions/shaken",
@@ -5262,7 +5273,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -5291,7 +5302,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "condition"
   ],
@@ -5299,7 +5310,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress"
+  "summary": "2+ AP/round requires target 10 FORT or retch for 1d4-1 rounds, +1 Stress",
+  "duration": "1d4 rounds"
  },
  {
   "id": "conditions/stressed",
@@ -5320,7 +5332,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -5328,7 +5340,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Cannot use Luck, -1 to all decision rolls per point over threshold"
+  "summary": "Cannot use Luck, -1 to all decision rolls per point over threshold",
+  "duration": "Until stress drops below threshold"
  },
  {
   "id": "conditions/unconscious",
@@ -5349,7 +5362,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "condition"
   ],
@@ -5357,7 +5370,8 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Cannot take any actions — attackers gain minor advantage and surprise"
+  "summary": "Cannot take any actions — attackers gain minor advantage and surprise",
+  "duration": "Cause specific"
  },
  {
   "id": "core-rules/size",

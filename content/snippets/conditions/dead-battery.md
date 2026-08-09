@@ -4,6 +4,7 @@ id: conditions/dead-battery
 category: [sci-fi]
 type: rule
 tags: [condition, sci-fi, bots]
+duration: "Until power is restored"
 ---
 
 ### Dead Battery

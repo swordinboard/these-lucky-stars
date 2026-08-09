@@ -5,6 +5,7 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "FORT check each turn (starts at 3, +1/round) — failure or damage means death"
+duration: "Until healed, or death"
 ---
 
 *Effect* — An unfortunate, close to death state almost always caused by direct injury. The dying condition occurs when a character loses their last VIT point to lethal damage. A dying character immediately falls unconscious (as the condition) and must succeed on a FORT check immediately as well as at the beginning of each of their following turns. The target begins at 3 and increases by +1 after each success. If the character fails this FORT check or takes additional damage, the character dies. Asphyxiating characters who gain the dying condition are always at a minor disadvantage.

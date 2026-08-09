@@ -26,7 +26,12 @@
 
   ARGUMENTS
     header   "Left|Right" — the two column headings. Default "Name|Notes".
+             With `field`, give three: "Left|Middle|Right".
              Ignored by layout="names", which has no columns.
+    field    a frontmatter key — adds a THIRD column reading that key from each
+             block, the way column two reads `summary`. The conditions chart
+             uses field="duration". A block without the key renders an empty
+             cell, so the gap is visible rather than silent.
     layout   omit for a table; "names" for a compact multi-column list of
              linked names, no summaries.
     order    "title" (default) or "id". Property form only.
@@ -69,8 +74,12 @@
   `#anchor`; a block that lives elsewhere gets its full URL from
   data/blocks.json, so a hub can list blocks it does not itself render.
 */ -}}
-{{- $header := .Get "header" | default "Name|Notes" -}}
+{{- $field := .Get "field" -}}
+{{- $header := .Get "header" | default (cond (ne $field "") "Name|Notes|Notes" "Name|Notes") -}}
 {{- $cols := split $header "|" -}}
+{{- if and $field (ne (len $cols) 3) -}}
+  {{- errorf "catalog: field=%q needs a three-part header, got %q (called from %s)" $field $header $.Page.File.Path -}}
+{{- end -}}
 {{- $key := printf "content/%s" .Page.File.Path -}}
 
 {{/* --- row selection --- */}}
@@ -155,9 +164,9 @@
     {{- $b := index $match 0 -}}
     {{- $href := $b.url -}}
     {{- if in $b.pages $key }}{{ $href = printf "#%s" $b.anchor }}{{ end -}}
-<tr><td>{{ $prefix }}<a href="{{ $href }}">{{ $b.label | default $b.title }}</a></td><td>{{ with $b.summary }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td></tr>
+<tr><td>{{ $prefix }}<a href="{{ $href }}">{{ $b.label | default $b.title }}</a></td><td>{{ with $b.summary }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td>{{ if $field }}<td>{{ with index $b $field }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td>{{ end }}</tr>
   {{- else -}}
-<tr><td>{{ $prefix }}{{ $id }}</td><td><strong>MISSING BLOCK: {{ $id }}</strong></td></tr>
+<tr><td>{{ $prefix }}{{ $id }}</td><td><strong>MISSING BLOCK: {{ $id }}</strong></td>{{ if $field }}<td></td>{{ end }}</tr>
   {{- end -}}
 {{- end }}
 </tbody>

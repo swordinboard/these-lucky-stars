@@ -5,6 +5,7 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "-2 STR, AGI, and DEX, -2 AP/round"
+duration: "Until rested"
 ---
 
 *Effect* — The body is tired and actions become sluggish and more difficult to perform. -2 to STR, AGI, and DEX, -2 AP per round.

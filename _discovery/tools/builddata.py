@@ -312,7 +312,7 @@ for path, P in PAGES.items():
         "notes": prev.get(bid, {}).get("notes", ""),
         "selectable": P["fm"].get("selectable", True),
     }
-    for k in ("summary", "label", "variant_group", "excluded", "requires"):
+    for k in ("summary", "label", "duration", "variant_group", "excluded", "requires"):
         if k in P["fm"]:
             b[k] = P["fm"][k]
     blocks[bid] = b
@@ -571,7 +571,7 @@ for bid, b in blocks.items():
 
 ORDER = ["id", "title", "home", "file", "source_page", "pages", "page_urls", "anchor", "url", "owns_heading", "listed_under", "category", "type",
          "in_degree", "tags", "flags", "notes", "selectable", "wip",
-         "summary", "label", "requires", "variant_group", "excluded"]
+         "summary", "label", "duration", "requires", "variant_group", "excluded"]
 out_blocks = [{k: b[k] for k in ORDER if k in b} for _, b in sorted(blocks.items())]
 
 # ------------------------------------------------------------------ pages ---

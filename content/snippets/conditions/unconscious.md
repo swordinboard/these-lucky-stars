@@ -5,6 +5,7 @@ category: [core]
 type: rule
 tags: [condition]
 summary: "Cannot take any actions — attackers gain minor advantage and surprise"
+duration: "Cause specific"
 ---
 
 *Effect* — Occurs when a character loses consciousness. Nothing works, body or mind. All attributes are considered 0 until the character regains consciousness, and they cannot take any actions. Unconsciousness can happen from a variety of effects, including attribute or VIT damage.
