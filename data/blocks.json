@@ -3872,7 +3872,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 6,
+  "in_degree": 7,
   "tags": [
    "size",
    "combat",
@@ -6837,7 +6837,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 5,
   "tags": [
    "item-tag"
   ],
@@ -7089,7 +7089,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 5,
+  "in_degree": 6,
   "tags": [
    "item-tag"
   ],
@@ -7423,7 +7423,7 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "equipment",
    "sci-fi",
@@ -11110,7 +11110,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "combat"
   ],
@@ -12098,7 +12098,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 2,
   "tags": [
    "environment",
    "damage"
@@ -12663,6 +12663,44 @@
   "summary": "Item type"
  },
  {
+  "id": "rules/sci-fi/spacecraft-scale",
+  "title": "Reading a Spacecraft Stat Block",
+  "home": "snippet",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+   "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+   "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+   "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+   "/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
+   "/docs/free-srd/vehicles/sci-fi/freighters/",
+   "/docs/free-srd/vehicles/sci-fi/luxury-yacht/"
+  ],
+  "anchor": "reading-a-spacecraft-stat-block",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 1,
+  "tags": [
+   "sci-fi",
+   "vehicles"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "What a ship's Size, Speed and weapons mean at a table, and where the rules stop."
+ },
+ {
   "id": "rules/stats/action-points",
   "title": "Action Points",
   "home": "snippet",
@@ -12859,7 +12897,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 3,
   "tags": [
    "vehicles"
   ],
@@ -12887,7 +12925,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 3,
   "tags": [
    "vehicles"
   ],
@@ -13111,7 +13149,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],
@@ -13524,6 +13562,36 @@
   "summary": "Contract security in a combat vest — shock baton, auto pistol, and orders."
  },
  {
+  "id": "statblocks/vehicles/bulk-hauler",
+  "title": "Bulk Hauler",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/freighters.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/freighters/"
+  ],
+  "anchor": "bulk-hauler",
+  "url": "/docs/free-srd/vehicles/sci-fi/freighters/#bulk-hauler",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Container ship. Size 24, a thousand tons, four crew, and ten minutes to start."
+ },
+ {
   "id": "statblocks/vehicles/cargo-crawler",
   "title": "Cargo Crawler",
   "home": "snippet",
@@ -13552,6 +13620,156 @@
   "selectable": true,
   "wip": true,
   "summary": "Tracked container hauler. Size 10, slow, blind, and impossible to stop."
+ },
+ {
+  "id": "statblocks/vehicles/interceptor",
+  "title": "Interceptor",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/combat-fighters/"
+  ],
+  "anchor": "interceptor",
+  "url": "/docs/free-srd/vehicles/sci-fi/combat-fighters/#interceptor",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Single-seat patrol fighter. Size 6, very fast, thin plate, an ejection seat that gets used."
+ },
+ {
+  "id": "statblocks/vehicles/light-freighter",
+  "title": "Light Freighter",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/light-freighter.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/freighters.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/freighters/"
+  ],
+  "anchor": "light-freighter",
+  "url": "/docs/free-srd/vehicles/sci-fi/freighters/#light-freighter",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "The party's ship. Size 18, a hundred tons of hold, patched plate, and a start sequence that sometimes works."
+ },
+ {
+  "id": "statblocks/vehicles/long-range-explorer",
+  "title": "Long-Range Explorer",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/expedition-vessels/"
+  ],
+  "anchor": "long-range-explorer",
+  "url": "/docs/free-srd/vehicles/sci-fi/expedition-vessels/#long-range-explorer",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Deep-range survey ship. Size 16, twelve crew, two years of endurance, and a lander in the bay."
+ },
+ {
+  "id": "statblocks/vehicles/luxury-yacht",
+  "title": "Luxury Yacht",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/luxury-yacht.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/luxury-yacht/"
+  ],
+  "anchor": "luxury-yacht",
+  "url": "/docs/free-srd/vehicles/sci-fi/luxury-yacht/#luxury-yacht",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Private pleasure craft. Size 14, very fast, beautiful, and made of almost nothing."
+ },
+ {
+  "id": "statblocks/vehicles/patrol-gunship",
+  "title": "Patrol Gunship",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/combat-fighters/"
+  ],
+  "anchor": "patrol-gunship",
+  "url": "/docs/free-srd/vehicles/sci-fi/combat-fighters/#patrol-gunship",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Armoured boarding craft. Size 9, a turret that does not fly the ship, and five people in the back."
  },
  {
   "id": "statblocks/vehicles/security-transport",
@@ -13702,5 +13920,35 @@
   "selectable": true,
   "wip": true,
   "summary": "Open-frame repulsor bike. Size 2, one rider, no cover, fast enough to be a problem."
+ },
+ {
+  "id": "statblocks/vehicles/survey-lander",
+  "title": "Survey Lander",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/survey-lander.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/expedition-vessels/"
+  ],
+  "anchor": "survey-lander",
+  "url": "/docs/free-srd/vehicles/sci-fi/expedition-vessels/#survey-lander",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Atmosphere-capable survey craft. Size 8, a lab, a sample hold, and six weeks away from anyone."
  }
 ]

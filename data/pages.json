@@ -426,6 +426,7 @@
    "rules/sci-fi/communications",
    "rules/sci-fi/energy-shields",
    "rules/sci-fi/huds",
+   "rules/sci-fi/spacecraft-scale",
    "rules/bots/automated-machines",
    "rules/sci-fi/computer-systems"
   ]
@@ -894,6 +895,57 @@
   "wip": true,
   "blocks": [
    "statblocks/vehicles/cargo-crawler"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+  "title": "Combat Fighters",
+  "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "section": "vehicles/sci-fi",
+  "weight": "40",
+  "wip": true,
+  "blocks": [
+   "rules/sci-fi/spacecraft-scale",
+   "statblocks/vehicles/interceptor",
+   "statblocks/vehicles/patrol-gunship"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
+  "title": "Expedition Vessels",
+  "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "section": "vehicles/sci-fi",
+  "weight": "50",
+  "wip": true,
+  "blocks": [
+   "rules/sci-fi/spacecraft-scale",
+   "statblocks/vehicles/survey-lander",
+   "statblocks/vehicles/long-range-explorer"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/freighters/",
+  "title": "Freighters",
+  "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "section": "vehicles/sci-fi",
+  "weight": "60",
+  "wip": true,
+  "blocks": [
+   "rules/sci-fi/spacecraft-scale",
+   "statblocks/vehicles/light-freighter",
+   "statblocks/vehicles/bulk-hauler"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
+  "title": "Luxury Yacht",
+  "file": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
+  "section": "vehicles/sci-fi",
+  "weight": "70",
+  "wip": true,
+  "blocks": [
+   "statblocks/vehicles/luxury-yacht",
+   "rules/sci-fi/spacecraft-scale"
   ]
  },
  {

@@ -24,7 +24,13 @@ whatever the party is about to steal off it.
 
 ## Spacecraft
 
-- [Combat Fighters](path)
-- [Expedition Vessels](path)
-- [Freighters](path)
-- [Luxury Yatch](path)
+A spacecraft is a vehicle and reads against the same rules, at a scale those
+rules are not usually pointed at. What the Speed line means, how a ship's guns
+are fired, and where the rules currently stop are all set out in
+[Reading a Spacecraft Stat Block](/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block),
+which is repeated on each of the pages below.
+
+- [Combat Fighters](/docs/free-srd/vehicles/sci-fi/combat-fighters/) — A single-seat interceptor that finds you, and a gunship that boards you
+- [Expedition Vessels](/docs/free-srd/vehicles/sci-fi/expedition-vessels/) — A survey lander and the long-range explorer that carries it
+- [Freighters](/docs/free-srd/vehicles/sci-fi/freighters/) — A light freighter to owe money on, and a bulk hauler to rob
+- [Luxury Yacht](/docs/free-srd/vehicles/sci-fi/luxury-yacht/) — Very fast, very fragile, and welcome in ports a working ship is not

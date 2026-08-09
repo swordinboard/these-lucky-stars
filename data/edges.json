@@ -180,6 +180,33 @@
   "line": 31
  },
  {
+  "source": "statblocks/vehicles/bulk-hauler",
+  "target": "gear/item-tags/durable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
+  "text": "Durable",
+  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "line": 16
+ },
+ {
+  "source": "statblocks/vehicles/bulk-hauler",
+  "target": "rules/environment/extreme-environments",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
+  "text": "vacuum",
+  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "line": 32
+ },
+ {
+  "source": "statblocks/vehicles/bulk-hauler",
+  "target": "gear/item-tags/space-suit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
+  "text": "space suit",
+  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "line": 32
+ },
+ {
   "source": "statblocks/vehicles/cargo-crawler",
   "target": "gear/item-tags/durable",
   "type": "reference",
@@ -187,6 +214,79 @@
   "text": "Durable",
   "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
   "line": 16
+ },
+ {
+  "source": "statblocks/vehicles/interceptor",
+  "target": "rules/combat/damage-sources",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#damage-sources",
+  "text": "extreme",
+  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "line": 30
+ },
+ {
+  "source": "statblocks/vehicles/interceptor",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block",
+  "text": "Reading a Spacecraft Stat Block",
+  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "line": 30
+ },
+ {
+  "source": "statblocks/vehicles/interceptor",
+  "target": "rules/environment/extreme-environments",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
+  "text": "vacuum",
+  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "line": 31
+ },
+ {
+  "source": "statblocks/vehicles/interceptor",
+  "target": "rules/vehicles/boarding-and-bailing",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
+  "text": "Bail",
+  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "line": 33
+ },
+ {
+  "source": "statblocks/vehicles/long-range-explorer",
+  "target": "gear/item-tags/durable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
+  "text": "Durable",
+  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "line": 16
+ },
+ {
+  "source": "statblocks/vehicles/long-range-explorer",
+  "target": "unresolved:#survey-lander",
+  "type": "reference",
+  "url": "#survey-lander",
+  "text": "Survey Lander",
+  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "line": 31,
+  "class": "broken-anchor"
+ },
+ {
+  "source": "statblocks/vehicles/patrol-gunship",
+  "target": "gear/item-tags/durable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
+  "text": "Durable",
+  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "line": 16
+ },
+ {
+  "source": "statblocks/vehicles/patrol-gunship",
+  "target": "rules/vehicles/boarding-and-bailing",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
+  "text": "boarding",
+  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "line": 32
  },
  {
   "source": "statblocks/vehicles/security-transport",
@@ -231,6 +331,15 @@
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Shatter",
   "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
+  "line": 31
+ },
+ {
+  "source": "statblocks/vehicles/survey-lander",
+  "target": "gear/sci-fi-equipment/bio-scanner",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
+  "text": "Bio Scanner",
+  "file": "content/snippets/statblocks/vehicles/survey-lander.md",
   "line": 31
  },
  {
@@ -1712,6 +1821,51 @@
   "text": "Comp Jack",
   "file": "content/snippets/rules/sci-fi/computer-systems.md",
   "line": 10
+ },
+ {
+  "source": "rules/sci-fi/spacecraft-scale",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "line": 10
+ },
+ {
+  "source": "rules/sci-fi/spacecraft-scale",
+  "target": "rules/vehicles/collision-damage",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#collision-damage",
+  "text": "collision damage",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "line": 12
+ },
+ {
+  "source": "rules/sci-fi/spacecraft-scale",
+  "target": "rules/vehicles/vehicle-actions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-actions",
+  "text": "an action other than Drive",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "line": 16
+ },
+ {
+  "source": "rules/sci-fi/spacecraft-scale",
+  "target": "core-rules/size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "1d12 damage die",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "line": 16
+ },
+ {
+  "source": "rules/sci-fi/spacecraft-scale",
+  "target": "rules/combat/damage-sources",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#damage-sources",
+  "text": "extreme",
+  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
+  "line": 16
  },
  {
   "source": "rules/combat/actions-in-combat",
@@ -3592,6 +3746,16 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Reading a Spacecraft Stat Block",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "rules/conditions/dead-battery",
   "type": "reference",
   "class": "catalog",
@@ -4942,11 +5106,71 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/bulk-hauler",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Bulk Hauler",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "statblocks/vehicles/cargo-crawler",
   "type": "reference",
   "class": "catalog",
   "url": null,
   "text": "Cargo Crawler",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/interceptor",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Interceptor",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/light-freighter",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Light Freighter",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/long-range-explorer",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Long-Range Explorer",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/luxury-yacht",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Luxury Yacht",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/patrol-gunship",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Patrol Gunship",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -4997,6 +5221,16 @@
   "class": "catalog",
   "url": null,
   "text": "Speeder Bike",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/survey-lander",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Survey Lander",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -8590,12 +8824,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/spacecraft-scale",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "line": 40
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "rules/bots/automated-machines",
   "type": "include",
   "url": "/snippets/rules/bots/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 37
+  "line": 45
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8604,7 +8847,7 @@
   "url": "/snippets/rules/sci-fi/computer-systems",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 41
+  "line": 49
  },
  {
   "source": "core-rules/size",
@@ -10693,47 +10936,48 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "unresolved:path",
+  "target": "rules/sci-fi/spacecraft-scale",
   "type": "reference",
-  "url": "path",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block",
+  "text": "Reading a Spacecraft Stat Block",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 30
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+  "type": "reference",
+  "url": "/docs/free-srd/vehicles/sci-fi/combat-fighters/",
   "text": "Combat Fighters",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 27,
-  "class": "known-broken",
-  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+  "line": 33
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "unresolved:path",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
   "type": "reference",
-  "url": "path",
+  "url": "/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
   "text": "Expedition Vessels",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 28,
-  "class": "known-broken",
-  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "unresolved:path",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
   "type": "reference",
-  "url": "path",
+  "url": "/docs/free-srd/vehicles/sci-fi/freighters/",
   "text": "Freighters",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 29,
-  "class": "known-broken",
-  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+  "line": 35
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "unresolved:path",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
   "type": "reference",
-  "url": "path",
-  "text": "Luxury Yatch",
+  "url": "/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
+  "text": "Luxury Yacht",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 30,
-  "class": "known-broken",
-  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+  "line": 36
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
@@ -10743,6 +10987,105 @@
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
   "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/spacecraft-scale",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+  "target": "statblocks/vehicles/interceptor",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/interceptor",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "line": 21
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
+  "target": "statblocks/vehicles/patrol-gunship",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/patrol-gunship",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
+  "line": 23
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/spacecraft-scale",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
+  "target": "statblocks/vehicles/survey-lander",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/survey-lander",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "line": 21
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
+  "target": "statblocks/vehicles/long-range-explorer",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/long-range-explorer",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
+  "line": 23
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/spacecraft-scale",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
+  "target": "statblocks/vehicles/light-freighter",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/light-freighter",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
+  "target": "statblocks/vehicles/bulk-hauler",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/bulk-hauler",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
+  "target": "statblocks/vehicles/luxury-yacht",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/luxury-yacht",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
+  "target": "rules/sci-fi/spacecraft-scale",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/spacecraft-scale",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
+  "line": 21
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/security-transport/",
