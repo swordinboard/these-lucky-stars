@@ -180,6 +180,42 @@
   "line": 31
  },
  {
+  "source": "statblocks/vehicles/cargo-crawler",
+  "target": "gear/item-tags/durable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
+  "text": "Durable",
+  "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
+  "line": 16
+ },
+ {
+  "source": "statblocks/vehicles/security-transport",
+  "target": "rules/combat/cover",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#cover",
+  "text": "full cover",
+  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "line": 30
+ },
+ {
+  "source": "statblocks/vehicles/security-transport",
+  "target": "gear/sci-fi-equipment/comp-jack",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
+  "text": "Comp Jack",
+  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "line": 31
+ },
+ {
+  "source": "statblocks/vehicles/security-transport",
+  "target": "gear/sci-fi-equipment/comp-jack",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
+  "text": "Comp Jack",
+  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "line": 32
+ },
+ {
   "source": "statblocks/vehicles/speeder-bike",
   "target": "rules/vehicles/boarding-and-bailing",
   "type": "reference",
@@ -4906,6 +4942,26 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/cargo-crawler",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Cargo Crawler",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "statblocks/vehicles/security-transport",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Security Transport",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "statblocks/vehicles/skiff-hauler",
   "type": "reference",
   "class": "catalog",
@@ -7337,39 +7393,14 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "bots/hel-1",
+  "target": "unresolved:path",
   "type": "reference",
-  "url": "/docs/free-srd/creatures--npcs/sci-fi/hel-1/",
-  "text": "HEL-1",
+  "url": "path",
+  "text": "Corporate Security",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "bots/t00l",
-  "type": "reference",
-  "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
-  "text": "T00L",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 20
- },
- {
-  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "bots/bal",
-  "type": "reference",
-  "url": "/docs/free-srd/creatures--npcs/sci-fi/b2/",
-  "text": "BAL",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "bots/trk-a",
-  "type": "reference",
-  "url": "/docs/free-srd/creatures--npcs/sci-fi/trk-a/",
-  "text": "TRK-A",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 25
+  "line": 20,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
@@ -7378,7 +7409,65 @@
   "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
   "text": "Station Guard",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 33
+  "line": 21
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Scrapper",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 22,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Scientist",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 23,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/bal",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/b2/",
+  "text": "BAL",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 34
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/hel-1",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/hel-1/",
+  "text": "HEL-1",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 35
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/t00l",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/t00l/",
+  "text": "T00L",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
+  "target": "bots/trk-a",
+  "type": "reference",
+  "url": "/docs/free-srd/creatures--npcs/sci-fi/trk-a/",
+  "text": "TRK-A",
+  "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
+  "line": 37
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
@@ -7387,7 +7476,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "Bot Components",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 38
+  "line": 39
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
@@ -7396,7 +7485,7 @@
   "url": "/snippets/rules/bots/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
-  "line": 15
+  "line": 30
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
@@ -8501,12 +8590,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "target": "rules/bots/automated-machines",
+  "type": "include",
+  "url": "/snippets/rules/bots/automated-machines",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "line": 37
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "rules/sci-fi/computer-systems",
   "type": "include",
   "url": "/snippets/rules/sci-fi/computer-systems",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 37
+  "line": 41
  },
  {
   "source": "core-rules/size",
@@ -10536,7 +10634,7 @@
   "url": "/docs/free-srd/core-rules/vehicle-rules/",
   "text": "Vehicle Rules",
   "file": "content/docs/free-srd/vehicles/_index.md",
-  "line": 12
+  "line": 16
  },
  {
   "source": "page:/docs/free-srd/vehicles/",
@@ -10545,7 +10643,7 @@
   "url": "/docs/free-srd/creatures--npcs/",
   "text": "Creatures & NPCs",
   "file": "content/docs/free-srd/vehicles/_index.md",
-  "line": 23
+  "line": 21
  },
  {
   "source": "page:/docs/free-srd/vehicles/",
@@ -10577,12 +10675,83 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/security-transport/",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/",
-  "text": "Sci-Fi Equipment",
+  "url": "/docs/free-srd/vehicles/sci-fi/security-transport/",
+  "text": "Security Transport",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 29
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
+  "type": "reference",
+  "url": "/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
+  "text": "Cargo Crawler",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 23
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Combat Fighters",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 27,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Expedition Vessels",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 28,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Freighters",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 29,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/",
+  "target": "unresolved:path",
+  "type": "reference",
+  "url": "path",
+  "text": "Luxury Yatch",
+  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
+  "line": 30,
+  "class": "known-broken",
+  "note": "intentionally left broken (tool-kits page planned); flagged for Phase 3"
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
+  "target": "statblocks/vehicles/cargo-crawler",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/cargo-crawler",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/security-transport/",
+  "target": "statblocks/vehicles/security-transport",
+  "type": "include",
+  "url": "/snippets/statblocks/vehicles/security-transport",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/security-transport.md",
+  "line": 20
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",

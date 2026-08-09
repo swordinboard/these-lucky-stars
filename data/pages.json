@@ -426,6 +426,7 @@
    "rules/sci-fi/communications",
    "rules/sci-fi/energy-shields",
    "rules/sci-fi/huds",
+   "rules/bots/automated-machines",
    "rules/sci-fi/computer-systems"
   ]
  },
@@ -882,6 +883,28 @@
    "gear/sci-fi-equipment/reflex-sight",
    "gear/sci-fi-equipment/shock-charger",
    "gear/sci-fi-equipment/weighted-core"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
+  "title": "Cargo Crawler",
+  "file": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
+  "section": "vehicles/sci-fi",
+  "weight": "30",
+  "wip": true,
+  "blocks": [
+   "statblocks/vehicles/cargo-crawler"
+  ]
+ },
+ {
+  "url": "/docs/free-srd/vehicles/sci-fi/security-transport/",
+  "title": "Security Transport",
+  "file": "content/docs/free-srd/vehicles/sci-fi/security-transport.md",
+  "section": "vehicles/sci-fi",
+  "weight": "20",
+  "wip": true,
+  "blocks": [
+   "statblocks/vehicles/security-transport"
   ]
  },
  {

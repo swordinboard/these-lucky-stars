@@ -6837,7 +6837,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "item-tag"
   ],
@@ -7707,7 +7707,7 @@
    "sci-fi"
   ],
   "type": "equipment",
-  "in_degree": 2,
+  "in_degree": 4,
   "tags": [
    "equipment",
    "sci-fi",
@@ -10836,10 +10836,12 @@
   "source_page": "content/docs/free-srd/character-creation/races/android.md",
   "pages": [
    "content/docs/free-srd/character-creation/races/android.md",
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
    "content/docs/free-srd/creatures--npcs/sci-fi/_index.md"
   ],
   "page_urls": [
    "/docs/free-srd/character-creation/races/android/",
+   "/docs/free-srd/core-rules/sci-fi-additions/",
    "/docs/free-srd/creatures--npcs/sci-fi/"
   ],
   "anchor": "automated-machines",
@@ -10857,7 +10859,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": true
+  "wip": false
  },
  {
   "id": "rules/combat/actions-in-combat",
@@ -10992,7 +10994,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 4,
+  "in_degree": 5,
   "tags": [
    "combat"
   ],
@@ -13520,6 +13522,66 @@
   "selectable": true,
   "wip": true,
   "summary": "Contract security in a combat vest — shock baton, auto pistol, and orders."
+ },
+ {
+  "id": "statblocks/vehicles/cargo-crawler",
+  "title": "Cargo Crawler",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/cargo-crawler/"
+  ],
+  "anchor": "cargo-crawler",
+  "url": "/docs/free-srd/vehicles/sci-fi/cargo-crawler/#cargo-crawler",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Tracked container hauler. Size 10, slow, blind, and impossible to stop."
+ },
+ {
+  "id": "statblocks/vehicles/security-transport",
+  "title": "Security Transport",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/security-transport.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/security-transport.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/security-transport/"
+  ],
+  "anchor": "security-transport",
+  "url": "/docs/free-srd/vehicles/sci-fi/security-transport/#security-transport",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Armoured wheeled transport. Size 5, full cover, firing ports, a locked cell in the back."
  },
  {
   "id": "statblocks/vehicles/skiff-hauler",
