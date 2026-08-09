@@ -48,7 +48,7 @@ shell page, with deck plans and crew stations as further sections.
 `type: vehicle` is its own type, beside `creature`. A vehicle is neither
 equipment (it is not carried, and it has occupants) nor a creature (it is an
 object, and it takes no turn of its own), and a GM building a PDF wants to
-select "the vehicles" as a set. `{{< catalog namespace="vehicles"
+select "the vehicles" as a set. `{{< catalog namespace="statblocks/vehicles"
 type="vehicle" />}}` lists them without picking up the rules blocks; category
 splits the settings, so a core-setting car is the same file with
 `category: [core]`.

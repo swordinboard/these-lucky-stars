@@ -150,7 +150,7 @@ pass — so a bare `grants advantage` now reads as something that was missed
 rather than something that was chosen.
 
 **An effect may grant major outright.** It does not have to be reached by
-stacking. Under the running count in `basics/advantage`, an effect is named for
+stacking. Under the running count in `rules/basics/advantage`, an effect is named for
 what it grants *on its own*: minor is worth one point, major is worth two, and
 both drop into the same addition as everything else. Seven rules already do
 this and are correct to: Heavily Obscured, resisting a damage Weakness, dodging
@@ -225,7 +225,7 @@ changed.
 
 What these have in common is that they are **single specific effects that each
 do one thing**, not overlapping restatements of the same problem. That is the
-real test, and it is the same one `basics/advantage` already gives the GM: an
+real test, and it is the same one `rules/basics/advantage` already gives the GM: an
 effect earns a place in the count if it would matter on its own. Stacking is
 only a problem when the same disadvantage has been counted twice under two
 names.

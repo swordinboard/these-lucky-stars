@@ -22,5 +22,5 @@ Size: [Medium](/docs/free-srd/core-rules/size/)
 
 Androids have all the same features as automated machines, and begin play with one installed component with a value up to --Cr. 
 
-{{% include "/snippets/bots/automated-machines" "h3" %}}
+{{% include "/snippets/rules/bots/automated-machines" "h3" %}}
 

@@ -1,6 +1,6 @@
 ---
 title: "Prone"
-id: conditions/prone
+id: rules/conditions/prone
 category: [core]
 type: rule
 tags: [condition]
@@ -20,7 +20,7 @@ rule.md — not a heading (no snippet carries one) but a `summary` and a
 placement of its own, usually {{< blockdetails >}} in a catalog.
 
 Conditions use the *Effect* / *Duration* / *Healing* labels. Keep the summary
-in step with the row in conditions/overview — that table is hand-written.
+in step with the row in rules/conditions/overview — that table is hand-written.
 
 Delete this comment.
 -->

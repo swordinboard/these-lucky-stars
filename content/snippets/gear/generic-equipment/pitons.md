@@ -1,0 +1,12 @@
+---
+title: "Pitons / Climbing Spikes (6)"
+id: gear/generic-equipment/pitons
+category: [core]
+type: equipment
+tags: [equipment, generic, tools]
+summary: "Metal spikes hammered into surfaces for climbing."
+---
+
+*--Cr // 1lb*
+
+A set of six metal spikes designed to be hammered into rock, wood, or ice to create anchor points for climbing ropes. Requires a hammer or similar tool to drive in.

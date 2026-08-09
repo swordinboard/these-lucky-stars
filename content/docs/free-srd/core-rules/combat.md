@@ -11,36 +11,36 @@ This page covers how fights are resolved in These Lucky Stars — from initiativ
 ---
 
 
-{{% include "/snippets/combat/combat-basics" "h2" %}}
+{{% include "/snippets/rules/combat/combat-basics" "h2" %}}
 
 
-{{% include "/snippets/combat/initiative" "h2" %}}
+{{% include "/snippets/rules/combat/initiative" "h2" %}}
 
 ---
 
 
-{{% include "/snippets/combat/attacking-and-defending" "h2" %}}
+{{% include "/snippets/rules/combat/attacking-and-defending" "h2" %}}
 
 
-{{% include "/snippets/combat/cover" "h3" %}}
+{{% include "/snippets/rules/combat/cover" "h3" %}}
 
 
-{{% include "/snippets/combat/surprise-attacks" "h3" %}}
+{{% include "/snippets/rules/combat/surprise-attacks" "h3" %}}
 
 
-{{% include "/snippets/combat/steps-to-an-attack" "h2" %}}
+{{% include "/snippets/rules/combat/steps-to-an-attack" "h2" %}}
 
 
-{{% include "/snippets/combat/damage" "h2" %}}
+{{% include "/snippets/rules/combat/damage" "h2" %}}
 
 
-{{% include "/snippets/combat/damage-sources" "h3" %}}
+{{% include "/snippets/rules/combat/damage-sources" "h3" %}}
 
 
-{{% include "/snippets/combat/damage-resistance" "h3" %}}
+{{% include "/snippets/rules/combat/damage-resistance" "h3" %}}
 
 
-{{% include "/snippets/health/applying-damage" "h3" %}}
+{{% include "/snippets/rules/health/applying-damage" "h3" %}}
 
 A damaged character's DEF remains damaged until they take another point of VIT damage or are able to reset their DEF either through an action in combat or when combat ends. See the [Defense](/docs/free-srd/core-rules/health/#defense) section under Health for complete DEF reset rules.
 
@@ -52,43 +52,43 @@ An attack that deals 2 or more VIT damage or reduces the defender to 0 VIT infli
 
 The following catalog lists the most common actions characters take during combat. All actions listed here are [Standard Actions](/docs/free-srd/core-rules/action-economy/#standard-actions) unless noted otherwise.
 
-{{% include "/snippets/combat/actions-in-combat" %}}
+{{% include "/snippets/rules/combat/actions-in-combat" %}}
 
 ### Aggressive Actions
 
-{{% include "/snippets/combat/standard-attack" "lead" %}}
+{{% include "/snippets/rules/combat/standard-attack" "lead" %}}
 
-{{% include "/snippets/actions/move" "lead" %}}
+{{% include "/snippets/rules/actions/move" "lead" %}}
 
-**Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/combat/opportunity-attack" %}}
+**Opportunity Attack** *(1 AP — Opportunity Action)* — {{% include "/snippets/rules/combat/opportunity-attack" %}}
 
-{{% include "/snippets/combat/disarm" "lead" %}}
+{{% include "/snippets/rules/combat/disarm" "lead" %}}
 
-{{% include "/snippets/combat/draw-a-weapon" "lead" %}}
+{{% include "/snippets/rules/combat/draw-a-weapon" "lead" %}}
 
 **Grapple** *(2 AP)*
 
-{{% include "/snippets/combat/grapple" "lead" %}}
+{{% include "/snippets/rules/combat/grapple" "lead" %}}
 
-{{% include "/snippets/combat/shatter" "lead" %}}
+{{% include "/snippets/rules/combat/shatter" "lead" %}}
 
-{{% include "/snippets/combat/stand" "lead" %}}
+{{% include "/snippets/rules/combat/stand" "lead" %}}
 
-{{% include "/snippets/combat/trip" "lead" %}}
+{{% include "/snippets/rules/combat/trip" "lead" %}}
 
-{{% include "/snippets/combat/unarmed-attack" "lead" %}}
+{{% include "/snippets/rules/combat/unarmed-attack" "lead" %}}
 
 ### Defensive Actions
 
-{{% include "/snippets/combat/brace" "lead" %}}
+{{% include "/snippets/rules/combat/brace" "lead" %}}
 
 **Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
-{{% include "/snippets/combat/stealth" "lead" %}}
+{{% include "/snippets/rules/combat/stealth" "lead" %}}
 
-{{% include "/snippets/actions/step" "lead" %}}
+{{% include "/snippets/rules/actions/step" "lead" %}}
 
-{{% include "/snippets/combat/use-cover" "lead" %}}
+{{% include "/snippets/rules/combat/use-cover" "lead" %}}
 
 ---
 

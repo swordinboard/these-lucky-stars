@@ -105,7 +105,7 @@ the include. The parked/commented-out collision examples had ridden along into
 
 **Fix:** the parked examples were moved back to the page frame
 (`vehicle-rules.md`, their baseline location), preserved verbatim and still
-hidden. Mounts renders again. `components/shield-mount.md` also contains a
+hidden. Mounts renders again. `gear/components/shield-mount.md` also contains a
 comment but is safe — it sits mid-snippet with content after it, inside a
 `details` wrapper.
 
@@ -185,7 +185,7 @@ Minor — noted for the Phase 3 content pass.
 
 ```yaml
 title: "Rage"
-id: abilities/rage
+id: character/abilities/rage
 category: [core]          # list; multi-setting allowed per ruling
 type: feature             # rule | feature | equipment | creature | reference
 tier: core                # core | supplement | module
@@ -195,7 +195,7 @@ summary: "Enter an enraged state for a short duration."  # quick-ref one-liner
 label: "Student [___]"    # catalog display name when it differs from title
 selectable: false         # only on note/chrome blocks (default true, omitted)
 excluded: true            # only on corpus-excluded blocks (announcements, license)
-requires: [abilities/charge]        # feature prerequisites (builder auto-include)
+requires: [character/abilities/charge]        # feature prerequisites (builder auto-include)
 variant_group: field-ration         # setting variants sharing an identity
 headless: true
 ```
@@ -212,7 +212,7 @@ composed text**. The only changed lines (108, across 16 pages) are the
 approved Wave 1 fixes plus exactly two ruled text replacements:
 
 1. Stats page Wounds & Conditions summary → one-line pointer (single-ID dedup
-   with `wounds/overview`; the old summary wording is preserved in git history).
+   with `rules/wounds/overview`; the old summary wording is preserved in git history).
 2. Grouped details labels ("Pouch Sets" → "Pouch Set, Ammo" etc.) from the
    ruled splits.
 
@@ -241,8 +241,8 @@ pins Hugo 0.148.1 extended (`netlify.toml`), so the push builds there; a local
   Related-blocks style may be the better pattern. Restyle in Phase 3 with the
   rest of the WIP page.
 - **Robot/drone/Android consolidation** — your Queue 5 note calls the current
-  split "a mess"; the blocks are in place either way (bots/automated-machines,
-  conditions/dead-battery, races/android) for a Phase 3 content pass.
+  split "a mess"; the blocks are in place either way (rules/bots/automated-machines,
+  rules/conditions/dead-battery, races/android) for a Phase 3 content pass.
 - **Content bugs left untouched** (need design calls): Student/Expert require
   "INT" (system has KNO); Shock Charger table +2 vs text +1; Squad Shield
   table 30 vs text 40; Fast Kit Trap 12 AP vs Kit Trap 20 AP.

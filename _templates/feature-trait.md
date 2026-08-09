@@ -1,6 +1,6 @@
 ---
 title: "Alert"
-id: traits/alert
+id: character/traits/alert
 category: [core]
 type: feature
 tags: [trait, core]
@@ -20,7 +20,7 @@ until you also edit the page by hand, in TWO places:
   1. THE CATALOG. It is hand-listed, in display order, and nothing derives it:
 
          {{< catalog layout="names" >}}
-         traits/alert
+         character/traits/alert
          {{< /catalog >}}
 
      `- ` and `-- ` are available for prerequisite depth as on the ability

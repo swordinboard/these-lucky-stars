@@ -147,8 +147,8 @@ heading rule.
 - `general`/`luck`/`battery` confirmed mutually exclusive, so the cohort check no
   longer reports them — 12 false positives per run, gone.
 - C1f's four structural-only blocks confirmed fine as-is.
-- [ ] **C1c — 4 untagged blocks still undecided.** `conditions/overview`,
-      `wounds/overview`, `wounds/wounds`, `wounds/common-injuries`. You said the
+- [ ] **C1c — 4 untagged blocks still undecided.** `rules/conditions/overview`,
+      `rules/wounds/overview`, `rules/wounds/wounds`, `rules/wounds/common-injuries`. You said the
       list was hard to work from without the tag vocabulary in front of you — the
       section now prints all 59 tags with counts inline, directly above the four
       blocks.
@@ -156,7 +156,7 @@ heading rule.
 **C3 — self-containment. Closed.** You fixed five yourself by moving
 page-scoped prose onto the pages, which is the right shape: an opening summary of
 a page that *contains* blocks is page chrome, not part of a block. I removed the
-last "below" from `components/installation`. The rest were confirmed fine.
+last "below" from `gear/components/installation`. The rest were confirmed fine.
 
 - [x] **C2 — orphans and implicit edges. Closed.** Your hunch checked out: the
       worksheet carries a *reachable by browsing* column, and **all 81 sit on a
@@ -183,7 +183,7 @@ stripped.** Every ordinary block now takes its heading from the call site.
       heading**. Converting them means stripping the hand-written bold lead-in
       and using `"lead"` mode. That is a visible change, so it is left for you.
       Full list in the wave-1 commit message.
-- [ ] **`movement/speed-tiers-chart` anchor drifted**, `#speed-tiers` →
+- [ ] **`rules/movement/speed-tiers-chart` anchor drifted**, `#speed-tiers` →
       `#speed`. It is a bare block, so its anchor is inherited from whatever
       heading precedes it — and that heading became a generated one. Nothing
       links to it (its two inbound edges are implicit, not links) and the site
@@ -196,7 +196,7 @@ stripped.** Every ordinary block now takes its heading from the call site.
       - **11 are page-as-blocks** — the five races, the four bot platforms, Size,
         and the races hub. A page-as-block's H1 *is* its title; there is no
         separate heading to strip, and there never will be.
-      - **1 is `conditions/dead-battery`**, a snippet deliberately left bare on
+      - **1 is `rules/conditions/dead-battery`**, a snippet deliberately left bare on
         the Android page, so it keeps its own heading.
 
       So the field keeps a real meaning: *this file supplies its own heading.*
@@ -210,7 +210,7 @@ stripped.** Every ordinary block now takes its heading from the call site.
 
 - [x] ~~**Remaining section: inventory--equipment.**~~ Done. 180 blockdetails
       and 6 includes converted, plus the two held-back renumbers
-      (`equipment/common-terms`, `inventory/carry-limits`) now that their call
+      (`gear/equipment/common-terms`, `gear/inventory/carry-limits`) now that their call
       sites carry a level.
 
 ## 5b. The compact index — settled
@@ -224,7 +224,7 @@ Proficiencies and Traits, core and sci-fi — and on the Item Tags jump list.
 
 A page per feature was measured and declined: **114 new pages** (76 abilities, 18
 proficiencies, 20 traits), site count 59 → ~173, 34 inbound links to rewrite, for
-a **median block length of 46 words** — 44 of the 114 under 40, and `traits/alert`
+a **median block length of 46 words** — 44 of the 114 under 40, and `character/traits/alert`
 is 10. Races earn their own pages because artwork and lore are coming; a 10-word
 trait reads worse alone than as a row in a list.
 
@@ -338,8 +338,8 @@ They keep the `details` + `include` form, which is what it is for.
 ## 7. Playtest / revisit
 
 - [ ] **Restrained and attacker advantage.** Removed for testing. One line in
-      `conditions/restrained.md` plus the matching summary-table row in
-      `conditions/overview.md` if it goes back.
+      `rules/conditions/restrained.md` plus the matching summary-table row in
+      `rules/conditions/overview.md` if it goes back.
 
 ## 8. Phase 4
 
@@ -382,7 +382,7 @@ repeats the title.** The lead-in's parenthetical — `*(3 AP)*` — must survive
 because it is the only place some blocks state the AP cost.
 
 - [x] ~~Is the AP cost ever stated *only* in the bold lead-in?~~ **Checked: no.**
-      All 13 restate the cost in the prose body. `combat/stealth` has no AP cost
+      All 13 restate the cost in the prose body. `rules/combat/stealth` has no AP cost
       to state, and says so. So promoting a lead-in to a heading loses nothing —
       but the check is worth re-running if these blocks are rewritten.
 - [ ] **24 blocks carry internal sub-headings.** You spotted this on Mounts and
@@ -397,7 +397,7 @@ because it is the only place some blocks state the AP cost.
       | Cause | Blocks |
       |---|---|
       | Skips a level | the two attribute groups (h2 → h4); Reptilian, Star-touched Human, Zeta Grey (h1 → h3) |
-      | Contains a sibling, not a child | `basics/target-numbers`, `core-rules/size`, `environment/environmental-effects` |
+      | Contains a sibling, not a child | `rules/basics/target-numbers`, `core-rules/size`, `rules/environment/environmental-effects` |
       | Page-as-block with its own H1 | `chargen/overview` |
 
       Two of those are not really about levels at all:

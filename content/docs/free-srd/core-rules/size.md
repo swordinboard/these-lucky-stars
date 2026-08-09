@@ -48,7 +48,7 @@ A single tiny creature does not occupy a large enough space to prevent a larger 
 
 Size affects combat directly though damage, reach, and action modifiers
 
-**Damage dice.** {{% include "/snippets/combat/damage-dice" %}}
+**Damage dice.** {{% include "/snippets/rules/combat/damage-dice" %}}
 
 **Space and reach.** The space occupied and melee reach values on the chart above determine how a character positions on the battlefield and who they can strike in melee. Some creatures have modified space and reach compared to the sizes present on the chart.
 

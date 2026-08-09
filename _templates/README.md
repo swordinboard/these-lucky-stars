@@ -6,14 +6,15 @@ generators and the PDF builder already expect.
 
 **These files are outside `content/`, so Hugo never reads them and
 `builddata.py` never counts them as blocks.** Copy a file into
-`content/snippets/<namespace>/<slug>.md`, then fill it in.
+`content/snippets/<group>/<namespace>/<slug>.md`, then fill it in. The four
+groups are `rules/`, `character/`, `gear/` and `statblocks/`.
 
 Two of them are the exception to "taken from real blocks": `creature.md` and
 `vehicle.md` are **worked examples**, because the statted content is only just
 starting. Their prose is invented, but every number is derived from a rule
 already on the site and the derivation is written out in the comment. For
-filled-in real ones, read `content/snippets/creatures/station-guard.md` and
-`content/snippets/vehicles/skiff-utility.md`.
+filled-in real ones, read `content/snippets/statblocks/creatures/station-guard.md` and
+`content/snippets/statblocks/vehicles/skiff-utility.md`.
 
 **A stat block is always a snippet.** There is no page-homed variant of either
 template. A page that presents a statted thing is a `page-shell.md` that

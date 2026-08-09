@@ -5,10 +5,10 @@ weight: 84
 wip: true
 ---
 
-{{% include "/snippets/vehicles/overview" "h2" %}}
+{{% include "/snippets/rules/vehicles/overview" "h2" %}}
 
 
-{{% include "/snippets/vehicles/vehicle-size" "h3" %}}
+{{% include "/snippets/rules/vehicles/vehicle-size" "h3" %}}
 
 ### Speed
 
@@ -29,41 +29,41 @@ Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers a
 Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
 
 {{% details "Speed Tiers" %}}
-{{% include "/snippets/movement/speed-tiers-chart" %}}
+{{% include "/snippets/rules/movement/speed-tiers-chart" %}}
 
-{{% include "/snippets/movement/speed-tiers" %}}
+{{% include "/snippets/rules/movement/speed-tiers" %}}
 {{% /details %}}
 
 {{% details "Modes & Maneuverability" %}}
 #### Modes & Maneuverability
 
-{{% include "/snippets/movement/speed-descriptors" "h4" "false" %}}
+{{% include "/snippets/rules/movement/speed-descriptors" "h4" "false" %}}
 {{% /details %}}
 ---
 
 
-{{% include "/snippets/vehicles/vehicle-actions" "h3" %}}
+{{% include "/snippets/rules/vehicles/vehicle-actions" "h3" %}}
 
 
-{{% include "/snippets/vehicles/ignition" "h4" %}}
+{{% include "/snippets/rules/vehicles/ignition" "h4" %}}
 
 
-{{% include "/snippets/vehicles/drive" "h4" %}}
+{{% include "/snippets/rules/vehicles/drive" "h4" %}}
 
 
-{{% include "/snippets/vehicles/boarding-and-bailing" "h4" %}}
+{{% include "/snippets/rules/vehicles/boarding-and-bailing" "h4" %}}
 
 
-{{% include "/snippets/vehicles/initiative-and-occupants" "h3" %}}
+{{% include "/snippets/rules/vehicles/initiative-and-occupants" "h3" %}}
 
 
-{{% include "/snippets/vehicles/cover-from-vehicles" "h3" %}}
+{{% include "/snippets/rules/vehicles/cover-from-vehicles" "h3" %}}
 
 
-{{% include "/snippets/vehicles/impact-and-overrun" "h3" %}}
+{{% include "/snippets/rules/vehicles/impact-and-overrun" "h3" %}}
 
 
-{{% include "/snippets/vehicles/collision-damage" "h3" %}}
+{{% include "/snippets/rules/vehicles/collision-damage" "h3" %}}
 
 <!--
 > **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.
@@ -71,7 +71,7 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 > **Example** — A size 4 truck moving at a Fast speed collides head-on with a size 2 car moving the opposite direction at a Moderate Speed. Damage is 4d6 + 7, averaging ~21, dealt to the car. Because the car is of comparable size to the truck, the truck also takes collision damage (rolled separately). -->
 
 
-{{% include "/snippets/vehicles/mounts" "h2" %}}
+{{% include "/snippets/rules/vehicles/mounts" "h2" %}}
 
 ## Related
 

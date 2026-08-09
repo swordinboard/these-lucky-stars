@@ -444,8 +444,9 @@ MENTION_PREFIX = ("http://", "https://", "mailto:", "/digitalcharactersheet",
                   "/attributeconverter", "/planetnamegenerator", "/pdfs/", "/images/")
 MENTION_PAGES = {"/docs/downloads/", "/docs/roadmap/", "/docs/legal/",
                  "/docs/contributors/", "/docs/appinstall/", "/docs/free-srd/", "/docs/"}
-FEATURE_NS = ("abilities/", "proficiencies/", "traits/")
-EQUIP_NS = ("generic-equipment/", "sci-fi-equipment/", "components/", "equipment/")
+FEATURE_NS = ("character/",)
+EQUIP_NS = ("gear/generic-equipment/", "gear/sci-fi-equipment/",
+            "gear/components/", "gear/equipment/")
 
 # implicit dependencies: real rule couplings with no link in the prose.
 IMPLICIT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
@@ -513,8 +514,8 @@ for path, P in PAGES.items():
         # ---- edge typing (rulings from the Phase 1 queues) ----
         pair = (e["source"], e["target"])
         raw_line = open(os.path.join(REPO, path)).read().split("\n")[lk["line"] - 1].strip()
-        if pair in (("traits/particularly-attractive", "traits/unremarkable"),
-                    ("traits/unremarkable", "traits/particularly-attractive")):
+        if pair in (("character/traits/particularly-attractive", "character/traits/unremarkable"),
+                    ("character/traits/unremarkable", "character/traits/particularly-attractive")):
             e.update(type="mention")
             e["class"] = "exclusivity"
             e["note"] = "ruled inert: gameplay-level exclusivity, no builder semantics"
@@ -522,7 +523,7 @@ for path, P in PAGES.items():
               and raw_line.startswith("*") and not raw_line.startswith("**") and raw_line.endswith("*")):
             e.update(type="dependency")
             e["class"] = "prerequisite"
-        elif str(e["source"]).startswith(EQUIP_NS) and str(e["target"]).startswith("item-tags/"):
+        elif str(e["source"]).startswith(EQUIP_NS) and str(e["target"]).startswith("gear/item-tags/"):
             e["class"] = "tag-definition"
         edges.append(e)
     for inc in P["includes"]:

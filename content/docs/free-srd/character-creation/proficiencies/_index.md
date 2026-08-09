@@ -7,7 +7,7 @@ bookToC: false
 ---
 
 
-{{% include "/snippets/proficiencies/overview" "h2" %}}
+{{% include "/snippets/character/proficiencies/overview" "h2" %}}
 
 **This page is the core selection** — the proficiencies available in any setting.
 Setting-themed proficiencies live with their module:
@@ -17,20 +17,20 @@ Setting-themed proficiencies live with their module:
 {{< tabs >}}
 {{% tab "Core" %}}
 {{< catalog layout="names" >}}
-proficiencies/armor
-proficiencies/b-e-kit
-proficiencies/disguise-kit
-proficiencies/improved-ability
-proficiencies/martial-training
-proficiencies/medic-training
-- proficiencies/medical-instincts
-proficiencies/negotiation-training
-proficiencies/repair-kit
-proficiencies/research
-proficiencies/survival-training
-proficiencies/vehicle
-- proficiencies/licensed-instincts
-proficiencies/weapon
+character/proficiencies/armor
+character/proficiencies/b-e-kit
+character/proficiencies/disguise-kit
+character/proficiencies/improved-ability
+character/proficiencies/martial-training
+character/proficiencies/medic-training
+- character/proficiencies/medical-instincts
+character/proficiencies/negotiation-training
+character/proficiencies/repair-kit
+character/proficiencies/research
+character/proficiencies/survival-training
+character/proficiencies/vehicle
+- character/proficiencies/licensed-instincts
+character/proficiencies/weapon
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -39,30 +39,30 @@ proficiencies/weapon
 
 ## Core
 
-{{< blockdetails "proficiencies/armor" "h3" >}}
+{{< blockdetails "character/proficiencies/armor" "h3" >}}
 
-{{< blockdetails "proficiencies/b-e-kit" "h3" >}}
+{{< blockdetails "character/proficiencies/b-e-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/disguise-kit" "h3" >}}
+{{< blockdetails "character/proficiencies/disguise-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/improved-ability" "h3" >}}
+{{< blockdetails "character/proficiencies/improved-ability" "h3" >}}
 
-{{< blockdetails "proficiencies/licensed-instincts" "h3" >}}
+{{< blockdetails "character/proficiencies/licensed-instincts" "h3" >}}
 
-{{< blockdetails "proficiencies/martial-training" "h3" >}}
+{{< blockdetails "character/proficiencies/martial-training" "h3" >}}
 
-{{< blockdetails "proficiencies/medic-training" "h3" >}}
+{{< blockdetails "character/proficiencies/medic-training" "h3" >}}
 
-{{< blockdetails "proficiencies/medical-instincts" "h3" >}}
+{{< blockdetails "character/proficiencies/medical-instincts" "h3" >}}
 
-{{< blockdetails "proficiencies/negotiation-training" "h3" >}}
+{{< blockdetails "character/proficiencies/negotiation-training" "h3" >}}
 
-{{< blockdetails "proficiencies/repair-kit" "h3" >}}
+{{< blockdetails "character/proficiencies/repair-kit" "h3" >}}
 
-{{< blockdetails "proficiencies/research" "h3" >}}
+{{< blockdetails "character/proficiencies/research" "h3" >}}
 
-{{< blockdetails "proficiencies/survival-training" "h3" >}}
+{{< blockdetails "character/proficiencies/survival-training" "h3" >}}
 
-{{< blockdetails "proficiencies/vehicle" "h3" >}}
+{{< blockdetails "character/proficiencies/vehicle" "h3" >}}
 
-{{< blockdetails "proficiencies/weapon" "h3" >}}
+{{< blockdetails "character/proficiencies/weapon" "h3" >}}

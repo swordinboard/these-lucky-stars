@@ -1,11 +1,11 @@
 ---
 title: "Rage"
-id: abilities/rage
+id: character/abilities/rage
 category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Enter an enraged state for a short duration."
-requires: [abilities/charge]
+requires: [character/abilities/charge]
 ---
 
 *[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Charge](#charge), AGI 2, Level 3*
@@ -41,9 +41,9 @@ site until you also edit the page by hand, in TWO places:
      prerequisite tree and nothing derives it:
 
          {{< catalog layout="names" >}}
-         abilities/charge
-         - abilities/agile-charge      <- requires Charge
-         -- abilities/leaping-charge   <- requires Agile Charge
+         character/abilities/charge
+         - character/abilities/agile-charge      <- requires Charge
+         -- character/abilities/leaping-charge   <- requires Agile Charge
          {{< /catalog >}}
 
      Add the id under whatever it requires, at one more `-` than its parent.

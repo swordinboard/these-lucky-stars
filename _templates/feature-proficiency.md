@@ -1,6 +1,6 @@
 ---
 title: "Martial Training"
-id: proficiencies/martial-training
+id: character/proficiencies/martial-training
 category: [core]
 type: feature
 tags: [proficiency, core]
@@ -29,7 +29,7 @@ the site until you also edit the page by hand, in TWO places:
   1. THE CATALOG. It is hand-listed, in display order, and nothing derives it:
 
          {{< catalog layout="names" >}}
-         proficiencies/martial-training
+         character/proficiencies/martial-training
          - proficiencies/<a proficiency that requires it>
          {{< /catalog >}}
 

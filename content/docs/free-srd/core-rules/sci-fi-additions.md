@@ -13,25 +13,25 @@ This page is the central home for sci-fi specific rules that extend or modify th
 ## Combat and Conditions
 
 
-{{% include "/snippets/sci-fi/ballistics-in-space" "h3" %}}
+{{% include "/snippets/rules/sci-fi/ballistics-in-space" "h3" %}}
 
 
-{{% include "/snippets/conditions/dead-battery" "h3" %}}
+{{% include "/snippets/rules/conditions/dead-battery" "h3" %}}
 
 ---
 
 ## Equipment
 
 
-{{% include "/snippets/sci-fi/communications" "h3" %}}
+{{% include "/snippets/rules/sci-fi/communications" "h3" %}}
 
 
-{{% include "/snippets/sci-fi/energy-shields" "h3" %}}
+{{% include "/snippets/rules/sci-fi/energy-shields" "h3" %}}
 
 
-{{% include "/snippets/sci-fi/huds" "h3" %}}
+{{% include "/snippets/rules/sci-fi/huds" "h3" %}}
 
 ---
 
 
-{{% include "/snippets/sci-fi/computer-systems" "h2" %}}
+{{% include "/snippets/rules/sci-fi/computer-systems" "h2" %}}

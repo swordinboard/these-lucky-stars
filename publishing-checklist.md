@@ -58,7 +58,7 @@ Two extra things, both caught by the preflight — but know what they are:
 2. **Put it on a page.** A new snippet is a file, not a placement. Until a page
    pulls it in it is invisible on the site — even though it *is* already in the
    PDF builder's library. Either:
-   - `{{% include "/snippets/<namespace>/<slug>" %}}` on the page, or
+   - `{{% include "/snippets/<group>/<namespace>/<slug>" %}}` on the page, or
    - make sure a `{{< catalog >}}` / `{{< blockset >}}` on some page has filters
      that match it.
 3. `python3 _discovery/tools/builddata.py` — always needed for a new snippet,

@@ -5,7 +5,7 @@ weight: 2
 ---
 
 
-{{% include "/snippets/inventory/carry-limits" "h2" %}}
+{{% include "/snippets/gear/inventory/carry-limits" "h2" %}}
 
 
-{{% include "/snippets/inventory/body-slots" "h2" %}}
+{{% include "/snippets/gear/inventory/body-slots" "h2" %}}

@@ -5,9 +5,9 @@
 
   SIGNATURE — hand-listed rows (has inner text, so it is NOT self-closing)
     {{< catalog header="<col1>|<col2>" >}}
-    <namespace>/<slug>
-    - <namespace>/<slug>        ← one level of nesting
-    -- <namespace>/<slug>       ← two levels
+    <group>/<namespace>/<slug>
+    - <group>/<namespace>/<slug>        ← one level of nesting
+    -- <group>/<namespace>/<slug>       ← two levels
     {{< /catalog >}}
 
   SIGNATURE — rows chosen by property (self-closing: note the `/>}}`)
@@ -16,13 +16,13 @@
 
   EXAMPLES
     {{< catalog header="Name|Description" >}}
-    abilities/agile-dodge
-    - abilities/momentum-dodge
-    -- abilities/slip-strike
+    character/abilities/agile-dodge
+    - character/abilities/momentum-dodge
+    -- character/abilities/slip-strike
     {{< /catalog >}}
 
-    {{< catalog category="sci-fi" namespace="abilities" header="Ability|Description" />}}
-    {{< catalog namespace="item-tags" layout="names" />}}
+    {{< catalog category="sci-fi" namespace="character/abilities" header="Ability|Description" />}}
+    {{< catalog namespace="gear/item-tags" layout="names" />}}
 
   ARGUMENTS
     header   "Left|Right" — the two column headings. Default "Name|Notes".
@@ -37,7 +37,8 @@
     order    "title" (default) or "id". Property form only.
     Filters, AND-ed, property form only:
       category   core | sci-fi | fantasy …
-      namespace  the part of the id before the slash
+      namespace  any leading segments of the id: a group ("gear") or a
+                 group and namespace ("gear/item-tags")
       type       rule | feature | equipment | creature | reference
       tag        any tag on the block
       page       a page URL; selects everything displayed there
@@ -48,15 +49,15 @@
   1. Hand-listed, in display order (`- ` / `-- ` mark sub-entries):
 
        {{< catalog header="Name|Description" >}}
-       abilities/agile-dodge
-       - abilities/momentum-dodge
-       -- abilities/slip-strike
+       character/abilities/agile-dodge
+       - character/abilities/momentum-dodge
+       -- character/abilities/slip-strike
        {{< /catalog >}}
 
   2. By property, the same filters {{< blockset >}} uses — for module hubs and
      any table that should pick up new blocks by itself:
 
-       {{< catalog category="sci-fi" namespace="abilities" header="Ability|Description" />}}
+       {{< catalog category="sci-fi" namespace="character/abilities" header="Ability|Description" />}}
 
      NOTE the self-closing `/>}}`. The hand-listed form has inner text, so
      Hugo insists the property form closes itself.

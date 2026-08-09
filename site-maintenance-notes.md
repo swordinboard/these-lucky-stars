@@ -61,8 +61,23 @@ What it checks, and why each one exists:
 The site is built from **blocks**. A block is one self-contained rule, feature,
 or item — the unit a GM can select when building a custom PDF.
 
-- **~425 blocks live in `content/snippets/<namespace>/<slug>.md`.** Each carries
-  block frontmatter (below) and holds the actual prose.
+- **~428 blocks live in `content/snippets/<group>/<namespace>/<slug>.md`.** Each
+  carries block frontmatter (below) and holds the actual prose. There are four
+  groups, and they sort by **kind**, not by setting — setting is what `category:`
+  records:
+
+  | Group | Holds |
+  |---|---|
+  | `rules/` | actions, attributes, basics, bots, combat, conditions, environment, health, movement, objects, sci-fi, stats, vehicles, wounds |
+  | `character/` | abilities, proficiencies, traits |
+  | `gear/` | components, equipment, generic-equipment, inventory, item-tags, sci-fi-equipment |
+  | `statblocks/` | creatures, vehicles |
+
+  **`vehicles` appears twice on purpose.** The driving, collision and mount
+  rules are `rules/vehicles/`; the statted craft are `statblocks/vehicles/`.
+  Creature and NPC rules will split the same way when they are written, which is
+  what the pairing is there to allow. `content/snippets/site/` sits outside the
+  four — it is site chrome, not game content.
 - **15 pages are themselves blocks** (`content/docs/.../size.md`, the race pages,
   `legal.md`, the four bot platforms under `creatures--npcs/sci-fi/`). They stand
   alone as one coherent unit, so they are referenced in place instead of being
@@ -90,12 +105,12 @@ Canonical machine-readable data lives in **`data/blocks.json`** and
 ```yaml
 title: "Rage"                 # the block's own heading text
 label: "ARA-5"                # rare: a short name for tables when the title is unwieldy
-id: abilities/rage            # unique; matches the file path under content/snippets/
+id: character/abilities/rage            # unique; matches the file path under content/snippets/
 category: [core]              # list: core | sci-fi | fantasy … (a block can be in several)
 type: feature                 # rule | feature | equipment | creature | vehicle | reference
 tags: [ability, core, general]  # drives tag-as-query pulls and the builder's grouping
 summary: "Enter an enraged state for a short duration."   # the quick-reference one-liner
-requires: [abilities/charge]  # feature prerequisites — the builder auto-includes these
+requires: [character/abilities/charge]  # feature prerequisites — the builder auto-includes these
 variant_group: field-ration   # optional: setting variants that share an identity
 selectable: false             # optional: note/chrome blocks that ride along, never picked alone
 excluded: true                # optional: not part of the buildable corpus at all
@@ -116,8 +131,8 @@ different display name for any other reason, fix the title instead.
 
 `_templates/` holds a fill-in-the-blank file for each kind of block, taken from
 real blocks rather than invented. Copy one into
-`content/snippets/<namespace>/<slug>.md` and fill it in. The files sit outside
-`content/`, so Hugo never reads them and they never enter the corpus.
+`content/snippets/<group>/<namespace>/<slug>.md` and fill it in. The files sit
+outside `content/`, so Hugo never reads them and they never enter the corpus.
 
 Each carries a comment explaining the decisions that kind of block involves —
 delete the comment when you are done, since **a snippet must never end with an
@@ -146,7 +161,7 @@ building a PDF wants to select the vehicles as a set. Statted vehicles share the
 `automated-machines` and the four platforms; `type` is what separates them:
 
 ```
-{{< catalog namespace="vehicles" type="vehicle" category="sci-fi" />}}
+{{< catalog namespace="statblocks/vehicles" type="vehicle" category="sci-fi" />}}
 ```
 
 **A creature's stat block and a vehicle's are one construct** — the
@@ -200,8 +215,8 @@ more than it looks. Settled in the C1 review:
   A missing `general` on a Luck ability is correct, not a gap.
 - **Action-class tags** are `aggressive-actions` and `defensive-actions`, and they
   must cover *every* action in that class on the Combat page — including the ones
-  that live in other namespaces (`actions/move`, `actions/step`) and the ones
-  whose primary tags are elsewhere (`combat/grapple`, `combat/stealth`).
+  that live in other namespaces (`rules/actions/move`, `rules/actions/step`) and the ones
+  whose primary tags are elsewhere (`rules/combat/grapple`, `rules/combat/stealth`).
 - Prefer the plural: it is `actions`, not `action`. A singular/plural pair is the
   most common way this vocabulary drifts, and `worksheets.py` §C1a flags it.
 - A tag with one or two members is fine when more are expected (`size`,
@@ -275,8 +290,8 @@ with the item it applies to, the proficiency carries the suffix:
 `Comp Jack`. The prose convention already read that way — "Comp Jack Proficiency,
 KNO 1" — so the title now matches how the rule is spoken about.
 
-One deliberate duplicate remains: `generic-equipment/field-ration` and
-`sci-fi-equipment/field-ration` are the same item in two settings, tied together
+One deliberate duplicate remains: `gear/generic-equipment/field-ration` and
+`gear/sci-fi-equipment/field-ration` are the same item in two settings, tied together
 by `variant_group: field-ration`. They live on different pages, so no anchor
 collides.
 
@@ -331,9 +346,9 @@ A snippet contains **no title heading**. The block's title lives in
 asks for:
 
 ```
-{{% include "/snippets/attributes/overview" "h2" %}}
-{{% include "/snippets/combat/disarm"       "lead" %}}
-{{% include "/snippets/vehicles/mounts"     "h3" "false" %}}
+{{% include "/snippets/rules/attributes/overview" "h2" %}}
+{{% include "/snippets/rules/combat/disarm"       "lead" %}}
+{{% include "/snippets/rules/vehicles/mounts"     "h3" "false" %}}
 ```
 
 The level argument is the level the block **occupies on the page**, not just the
@@ -413,8 +428,8 @@ scroll-position measurement taken that way is meaningless. `cd public && python3
 Catalog pages wrap each block in a collapsible. **Use `blockdetails`:**
 
 ```
-{{< blockdetails "generic-equipment/reinforced-boots" >}}
-{{< blockdetails "generic-equipment/reinforced-boots" open >}}
+{{< blockdetails "gear/generic-equipment/reinforced-boots" >}}
+{{< blockdetails "gear/generic-equipment/reinforced-boots" open >}}
 ```
 
 The older two-part form still works and is still correct for the few
@@ -423,7 +438,7 @@ collapsibles that hold more than one block:
 ```
 {{% details "Reinforced Boots" %}}
 
-{{% include "/snippets/generic-equipment/reinforced-boots" %}}
+{{% include "/snippets/gear/generic-equipment/reinforced-boots" %}}
 
 {{% /details %}}
 ```
@@ -470,7 +485,7 @@ citing shield degradation is the model:
 
 ```
 {{% quickref "Shield Degradation" %}}
-{{% include "/snippets/objects/shield-degradation" %}}
+{{% include "/snippets/rules/objects/shield-degradation" %}}
 {{% /quickref %}}
 ```
 
@@ -553,9 +568,9 @@ Do not hand-write table rows for blocks.
 
 ```
 {{< catalog header="Name|Description" >}}
-abilities/agile-dodge
-- abilities/momentum-dodge
--- abilities/slip-strike
+character/abilities/agile-dodge
+- character/abilities/momentum-dodge
+-- character/abilities/slip-strike
 {{< /catalog >}}
 ```
 
@@ -563,7 +578,7 @@ abilities/agile-dodge
 pick up new blocks by itself:
 
 ```
-{{< catalog category="sci-fi" namespace="abilities" header="Ability|Summary" />}}
+{{< catalog category="sci-fi" namespace="character/abilities" header="Ability|Summary" />}}
 {{< catalog type="equipment" page="/docs/free-srd/.../sci-fi-weapons/" />}}
 ```
 
@@ -599,7 +614,7 @@ chart would end up longer than the entries it points at, or for a
 jump-to-anchor index at the top of a page:
 
 ```
-{{< catalog namespace="item-tags" layout="names" />}}
+{{< catalog namespace="gear/item-tags" layout="names" />}}
 ```
 
 Child entries nest inside their parent's `<li>`, so column flow can never orphan
@@ -670,7 +685,7 @@ python3 _discovery/tools/builddata.py
   migration is done: 13 of 436, and it will not reach zero.** All 423 snippets
   are at `false`, which is the target. What is left is the 12 page-homed blocks,
   which need an `h1` matching their title because the theme does not print one
-  on desktop, plus `conditions/dead-battery`, which is included mid-page inside
+  on desktop, plus `rules/conditions/dead-battery`, which is included mid-page inside
   the Android entry and owns its heading deliberately. Read a `true` on a
   *snippet* as the defect; a `true` on a page is correct.
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
@@ -690,7 +705,7 @@ accident.
 ## Module pages (the `blockset` shortcode)
 
 ```
-{{< blockset category="sci-fi" namespace="abilities" >}}
+{{< blockset category="sci-fi" namespace="character/abilities" >}}
 {{< blockset category="sci-fi" type="rule" wip="exclude" order="id" level="4" >}}
 ```
 
@@ -972,9 +987,9 @@ Page content starts here...
   a call site, and keep that block current when you change a shortcode.
 - `quickref` is **in use again**, for a different job than `details`. See
   *Inline references* below.
-- Snippet includes: `{{% include "/snippets/<namespace>/<slug>" %}}` — source files in
-  `content/snippets/<namespace>/`, none are published. The path always matches the
-  block's `id`. See the block architecture and snippet rules at the top of this file.
+- Snippet includes: `{{% include "/snippets/<group>/<namespace>/<slug>" %}}` — source
+  files in `content/snippets/<group>/<namespace>/`, none are published. The path
+  always matches the block's `id`, all three segments of it. See the block architecture and snippet rules at the top of this file.
 - `content/snippets/_index.md` has `build: render: never` cascading to all children — do not remove this
 
 ---

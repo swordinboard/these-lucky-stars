@@ -12,7 +12,7 @@ Opposition, allies, and background characters for spacefaring settings. The
 automated machines are statted first, since a bot is the creature a party is
 most likely to be travelling with.
 
-{{% include "/snippets/bots/automated-machines" %}}
+{{% include "/snippets/rules/bots/automated-machines" %}}
 
 ## Drone Platforms
 
