@@ -7,26 +7,26 @@ tags: [vehicles, sci-fi]
 summary: "Stripped courier skiff. Size 3, fast and fragile, one seat."
 ---
 
-{{% statblock type="Ground Vehicle — Size 3 (3 spaces)" %}}
+{{% statblock type="Light Ground Vehicle — Size 2 (2 spaces)" %}}
 A utility skiff with the deck panels, the passenger seat and most of the frame
 cut away, on the reasoning that none of it made the thing go faster. Couriers
 love them. Dock supervisors do not.
 
-> **Cost** --Cr · **Object DEF** 12 · **VIT** 3 · **Cargo** 60lbs
+> **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** see descritpion
 >
 > **Speed** Ground 350ft (High, 90ft/round)
 >
-> **Occupants** driver only · **Cover** none (open frame)
+> **Occupants** driver only // **Cover** none (open frame)
 >
-> **Collision** 3d6 + speed modifier · **Ignition** 1 AP
+> **Collision** 2d6 + speed modifier // **Ignition** 2 AP
 >
-> **Proficiency** [Vehicle [Skiff]](/docs/free-srd/character-creation/proficiencies/#vehicle) · **Power** [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)
+> **Proficiency** [Vehicle [Light Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
 
 ---
 
 **Features**
 
-- **Stripped** — Object DEF 12 rather than the utility skiff's 18. The frame is what was removed, so it takes damage from collisions the heavier skiffs shrug off.
-- **Ground Effect** — Hovers a foot off the deck, ignoring difficult terrain less than a foot deep. Cannot climb a grade steeper than roughly 30°.
-- **Runs Hot** — Reaching the Fast tier drains the cells. Every full round spent above 200ft costs one supply roll of the fuel cells.
+- **Stripped Deck** — Most of the front deck has been cut back, leaving bare supports for two repulsor engines. There is just enough space to strap down a small amount of cargo, about 60lbs or two bulky items.
+- **Repulsor Craft** — Hovers a foot off the deck or ground, ignoring difficult terrain less than a foot deep. Cannot climb a grade steeper than roughly 30°.
+- **Runs Hot** — Reaching the Fast tier drains the cells. Every full round spent above 200ft costs one supply roll of the vehicle's battery.
 {{% /statblock %}}
