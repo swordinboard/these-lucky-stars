@@ -4,10 +4,9 @@ id: conditions/dead-battery
 category: [sci-fi]
 type: rule
 tags: [condition, sci-fi, bots]
+summary: "Shuts down as unconscious — attackers gain minor advantage and surprise"
 duration: "Until power is restored"
 ---
-
-### Dead Battery
 
 *Automated Machine Condition*
 

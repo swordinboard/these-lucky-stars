@@ -40,7 +40,7 @@ way as any other [condition](/docs/free-srd/core-rules/wounds--conditions/#condi
 — this is where the ones that only exist alongside machines are collected.
 
 
-{{% include "/snippets/conditions/dead-battery" %}}
+{{% include "/snippets/conditions/dead-battery" "h3" %}}
 
 ---
 

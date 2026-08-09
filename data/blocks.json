@@ -5002,7 +5002,7 @@
   ],
   "anchor": "dead-battery",
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#dead-battery",
-  "owns_heading": true,
+  "owns_heading": false,
   "category": [
    "sci-fi"
   ],
@@ -5017,6 +5017,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
+  "summary": "Shuts down as unconscious — attackers gain minor advantage and surprise",
   "duration": "Until power is restored"
  },
  {
