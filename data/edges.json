@@ -3439,7 +3439,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
   "text": "Weapons",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 57
+  "line": 61
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3448,7 +3448,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
   "text": "Armor",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 61
+  "line": 65
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3457,7 +3457,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
   "text": "Tool Kits",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 65
+  "line": 69
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3466,7 +3466,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
   "text": "Misc Equipment",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 69
+  "line": 73
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3475,7 +3475,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
   "text": "Bot Components",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 73
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3484,7 +3484,7 @@
   "url": "/docs/free-srd/creatures--npcs/sci-fi/",
   "text": "Sci-Fi Creatures & NPCs",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 82
+  "line": 86
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3493,7 +3493,7 @@
   "url": "/docs/free-srd/core-rules/vehicle-rules/",
   "text": "Vehicle Rules",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 98
+  "line": 102
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3502,7 +3502,7 @@
   "url": "/docs/free-srd/vehicles/sci-fi/",
   "text": "Sci-Fi Vehicles",
   "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": 99
+  "line": 103
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -3551,6 +3551,16 @@
   "class": "catalog",
   "url": null,
   "text": "Heads Up Displays (HUDs)",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "conditions/dead-battery",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Dead Battery",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -8451,7 +8461,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#conditions",
   "text": "condition",
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 39
+  "line": 37
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8464,21 +8474,12 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
-  "target": "environment/extreme-environments",
-  "type": "include",
-  "url": "/snippets/environment/extreme-environments",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "sci-fi/communications",
   "type": "include",
   "url": "/snippets/sci-fi/communications",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 26
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8487,7 +8488,7 @@
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 29
+  "line": 27
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8496,7 +8497,7 @@
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 32
+  "line": 30
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8505,7 +8506,7 @@
   "url": "/snippets/conditions/dead-battery",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 43
+  "line": 41
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8514,7 +8515,7 @@
   "url": "/snippets/sci-fi/computer-systems",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 48
+  "line": 46
  },
  {
   "source": "core-rules/size",

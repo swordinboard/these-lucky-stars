@@ -152,10 +152,11 @@ rather than something that was chosen.
 **An effect may grant major outright.** It does not have to be reached by
 stacking. Under the running count in `basics/advantage`, an effect is named for
 what it grants *on its own*: minor is worth one point, major is worth two, and
-both drop into the same addition as everything else. Four rules already do this
-and are correct to — Heavily Obscured, resisting a damage Weakness, dodging a
-vehicle at Fast or Very Fast, and keeping grip on a two-handed weapon against a
-disarm.
+both drop into the same addition as everything else. Seven rules already do
+this and are correct to: Heavily Obscured, resisting a damage Weakness, dodging
+a vehicle at Fast or Very Fast, keeping grip on a two-handed weapon against a
+disarm, and attacks against anyone Unconscious, Immobilized or in Dead
+Battery.
 
 What granting major does **not** mean is that the roll will be at major
 advantage. It means the effect contributes two points toward whatever the total
@@ -165,10 +166,14 @@ arithmetic that lets three separate advantages reach major from the other
 direction. Nothing is special-cased.
 
 So the question to ask is still question 1: **how big should it feel?** Major is
-the answer when a single effect should be worth two of anything else in play. It
-is a heavy thing to hand out — the four that do are environmental, physiological
-or geometric, none of them purchasable — and that is the pattern to check a new
-one against.
+the answer when a single effect should be worth two of anything else in play.
+
+**None of the seven is purchasable.** They are environmental, geometric, or
+states the target has been reduced to, and that is the pattern to check a new
+one against. The three helpless conditions are the clearest case: a target who
+cannot move, cannot see it coming, and cannot resist is not one more thing
+tilting the roll, and pricing them the same as a targeting HUD read as an
+undercount. Nothing a character *buys* grants major.
 
 ### Worked examples
 

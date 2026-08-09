@@ -30,6 +30,10 @@ and environment context around them, on
 
 {{< catalog category="sci-fi" namespace="sci-fi" header="Rule|Summary" />}}
 
+### Conditions
+
+{{< catalog category="sci-fi" tag="condition" header="Condition|Summary" />}}
+
 ---
 
 ## Character Options

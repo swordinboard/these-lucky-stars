@@ -12,4 +12,4 @@ Conditions alter how your character is able to act. Most provide penalties or so
 
 *Conditions and Combat* — Some conditions leave a character easier to hit. Where that applies, the condition's own description says so.
 
-{{< catalog tag="condition" category="core" header="Condition|Effect Summary|Base Duration" field="duration" />}}
+{{< catalog tag="condition" category="core" layout="names" />}}

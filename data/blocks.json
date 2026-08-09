@@ -5017,7 +5017,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Shuts down as unconscious — attackers gain minor advantage and surprise",
+  "summary": "Shuts down as unconscious — attackers gain major advantage and surprise",
   "duration": "Until power is restored"
  },
  {
@@ -5373,7 +5373,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Cannot take any actions — attackers gain minor advantage and surprise",
+  "summary": "Cannot take any actions — attackers gain major advantage and surprise",
   "duration": "Cause specific"
  },
  {
@@ -5472,12 +5472,10 @@
   "file": "content/snippets/environment/extreme-environments.md",
   "source_page": "content/docs/free-srd/core-rules/environmental-effects.md",
   "pages": [
-   "content/docs/free-srd/core-rules/environmental-effects.md",
-   "content/docs/free-srd/core-rules/sci-fi-additions.md"
+   "content/docs/free-srd/core-rules/environmental-effects.md"
   ],
   "page_urls": [
-   "/docs/free-srd/core-rules/environmental-effects/",
-   "/docs/free-srd/core-rules/sci-fi-additions/"
+   "/docs/free-srd/core-rules/environmental-effects/"
   ],
   "anchor": "extreme-environments",
   "url": "/docs/free-srd/core-rules/environmental-effects/#extreme-environments",
