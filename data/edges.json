@@ -8456,15 +8456,6 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
-  "target": "conditions/overview",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/wounds--conditions/#conditions",
-  "text": "condition",
-  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 37
- },
- {
-  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "sci-fi/ballistics-in-space",
   "type": "include",
   "url": "/snippets/sci-fi/ballistics-in-space",
@@ -8474,12 +8465,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
+  "target": "conditions/dead-battery",
+  "type": "include",
+  "url": "/snippets/conditions/dead-battery",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "sci-fi/communications",
   "type": "include",
   "url": "/snippets/sci-fi/communications",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 24
+  "line": 26
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8488,7 +8488,7 @@
   "url": "/snippets/sci-fi/energy-shields",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 27
+  "line": 29
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8497,16 +8497,7 @@
   "url": "/snippets/sci-fi/huds",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
-  "target": "conditions/dead-battery",
-  "type": "include",
-  "url": "/snippets/conditions/dead-battery",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 41
+  "line": 32
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
@@ -8515,7 +8506,7 @@
   "url": "/snippets/sci-fi/computer-systems",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "line": 46
+  "line": 37
  },
  {
   "source": "core-rules/size",

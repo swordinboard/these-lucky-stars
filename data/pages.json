@@ -422,10 +422,10 @@
   "wip": false,
   "blocks": [
    "sci-fi/ballistics-in-space",
+   "conditions/dead-battery",
    "sci-fi/communications",
    "sci-fi/energy-shields",
    "sci-fi/huds",
-   "conditions/dead-battery",
    "sci-fi/computer-systems"
   ]
  },

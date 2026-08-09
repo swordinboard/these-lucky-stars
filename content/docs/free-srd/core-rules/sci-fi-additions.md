@@ -10,11 +10,13 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ---
 
-## Combat & Environment
+## Combat and Conditions
 
 
 {{% include "/snippets/sci-fi/ballistics-in-space" "h3" %}}
 
+
+{{% include "/snippets/conditions/dead-battery" "h3" %}}
 
 ---
 
@@ -28,17 +30,6 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 
 {{% include "/snippets/sci-fi/huds" "h3" %}}
-
----
-
-## Conditions
-
-Sci-fi settings add conditions the core list does not carry. They work the same
-way as any other [condition](/docs/free-srd/core-rules/wounds--conditions/#conditions)
-— this is where the ones that only exist alongside machines are collected.
-
-
-{{% include "/snippets/conditions/dead-battery" "h3" %}}
 
 ---
 
