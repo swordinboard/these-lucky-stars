@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, component]
 summary: "Increases com range to 500 miles"
 ---
 
-*–Cr — 15lbs — Back — External*
+*--Cr // 15lbs // Back // External*
 
 A larger version of the Signal Mast, Retractable that increases the host's com device range to 500 miles. The host can transmit and receive on any open or shared encrypted frequency at that range, however the increased range causes a draw on the host's primary battery source. Each activation requires one supply roll of the host's primary power source and lasts for six hours.
 

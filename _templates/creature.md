@@ -8,11 +8,11 @@ summary: "Freight hand turned lookout — fast, unarmoured, and paid to shout."
 ---
 
 {{% statblock type="Medium Humanoid — Level 1 — 1 space" %}}
-> **DEF** 3 · **VIT** 1 · **AP** 4 · **Stress Threshold** 1
+> **DEF** 3 // **VIT** 1 // **AP** 4 // **Stress Threshold** 1
 >
 > **Speed** Ground 35ft (High)
 >
-> **Initiative** +7 · **Grapple** +4
+> **Initiative** +7 // **Grapple** +4
 
 | STR | AGI | DEX | FORT | KNO | INS | CHA | WILL |
 |---|---|---|---|---|---|---|---|
@@ -24,7 +24,7 @@ summary: "Freight hand turned lookout — fast, unarmoured, and paid to shout."
 
 **Attacks**
 
-- **Cargo Hook** — 2 AP · ATK +1 (STR) · 1d8 + 1 Physical · reach 5ft.
+- **Cargo Hook** — 2 AP // ATK +1 (STR) // 1d8 + 1 Physical // reach 5ft.
 
 ---
 
@@ -37,15 +37,18 @@ door behind them.
 {{% /statblock %}}
 
 <!--
-THE VARIANT TEMPLATE — a creature that shares a page with its siblings, the way
-the 3.5e Fungus page holds both Shrieker and Violet Fungus. Most creatures get
-their own page instead: start from creature-page.md, and use this one when a
-handful of small entries genuinely belong together on one page.
-
-Copy to content/snippets/creatures/<slug>.md and place it with a plain include,
-WITH NO LEVEL ARGUMENT:
+A STATTED CREATURE OR NPC. There is only this one form — a stat block is always
+a snippet. Copy to content/snippets/creatures/<slug>.md and place it with a
+plain include, WITH NO LEVEL ARGUMENT:
 
     {{% include "/snippets/creatures/dock-runner" %}}
+
+A creature that needs a page of its own does not become a page: the page becomes
+a page-shell.md that includes this snippet and wraps it in prose — an intro
+above, Tactics and Encounter Notes below. Several small entries that belong
+together are the same shell with several includes. Read
+content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md for the first
+shape and content/docs/free-srd/vehicles/sci-fi/skiffs.md for the second.
 
 No level, because the card prints the name itself and a generated heading above
 it would say it twice. builddata.py knows: a snippet whose body calls statblock
@@ -103,8 +106,8 @@ already includes its STR −2 / AGI +2. Attributes ARE the modifiers — a roll 
 for an attribute uses null [-N-]: effectively 0, and it cannot be raised or
 lowered.
 
-ATTACKS carry AP cost · ATK modifier with the attribute in parentheses · damage
-· reach or range · tags. Note what is NOT there: weapons in this system have no
+ATTACKS carry AP cost // ATK modifier with the attribute in parentheses //
+damage // reach or range // tags. Note what is NOT there: weapons in this system have no
 damage die of their own. THE DIE COMES FROM SIZE — 1d8 between creatures of the
 same size or ±1, 1d4 from two or more sizes smaller, 1d12 from two or more
 larger — and the attribute used in the attack is added to the damage. Print the
@@ -119,7 +122,9 @@ mount's own features through the rider's Drive action.
 
 Tactics is the 3.5e "Combat" paragraph and it is the most useful line in the
 entry — how it fights, when it runs, what it wants. On a short entry it rides
-inside the card, as above; a creature with its own page gives it a heading.
+inside the card, as above; on a shell page it becomes an h2 below the include,
+because it is guidance for running the thing rather than a number needed
+mid-scene.
 
 BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
 game-mechanic check that this comment does not: how big the effect should feel,

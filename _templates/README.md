@@ -8,20 +8,20 @@ generators and the PDF builder already expect.
 `builddata.py` never counts them as blocks.** Copy a file into
 `content/snippets/<namespace>/<slug>.md`, then fill it in.
 
-Four of them are the exception to "taken from real blocks": `creature.md`,
-`creature-page.md`, `vehicle.md` and `vehicle-page.md` are **worked examples**,
-because the statted content is only just starting. Their prose is invented, but
-every number is derived from a rule already on the site and the derivation is
-written out in the comment. For a filled-in real one, read
-`content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md`.
+Two of them are the exception to "taken from real blocks": `creature.md` and
+`vehicle.md` are **worked examples**, because the statted content is only just
+starting. Their prose is invented, but every number is derived from a rule
+already on the site and the derivation is written out in the comment. For
+filled-in real ones, read `content/snippets/creatures/station-guard.md` and
+`content/snippets/vehicles/skiff-utility.md`.
 
-**Creatures and vehicles each come in two forms**, and they are the only kinds
-that do. Most of either gets its own page, the way the races and the bot
-platforms do — start from `creature-page.md` or `vehicle-page.md`. The outliers,
-where a handful of small entries genuinely belong together, use `creature.md` or
-`vehicle.md` instead. The two forms differ **only** in frontmatter and the `h1`:
-the card inside is identical, so promoting a snippet to a page is a frontmatter
-edit and nothing more.
+**A stat block is always a snippet.** There is no page-homed variant of either
+template. A page that presents a statted thing is a `page-shell.md` that
+includes the snippet and wraps it in prose — intro above, Tactics and Encounter
+Notes below — and a page presenting several, like the Skiffs, is the same shell
+with several includes. The card holds everything a table needs mid-scene, so it
+survives being pulled into a PDF alone; the prose that belongs to the page stays
+on the page.
 
 | Template | For |
 |---|---|
@@ -29,13 +29,11 @@ edit and nothing more.
 | `feature-proficiency.md` | A proficiency |
 | `feature-trait.md` | A trait |
 | `equipment.md` | Any purchasable or carryable item |
-| `vehicle-page.md` | A statted vehicle on its own page — **start here** |
-| `vehicle.md` | A statted vehicle sharing a page with its siblings |
+| `vehicle.md` | A statted vehicle |
 | `rule.md` | A rule a page presents as part of a section |
 | `rule-standalone.md` | A rule read on its own and listed in a table (conditions, wounds) |
 | `reference.md` | Intro/overview prose at the top of a section |
-| `creature-page.md` | A creature or NPC on its own page — **start here** |
-| `creature.md` | A creature sharing a page with its siblings |
+| `creature.md` | A creature or NPC |
 | `page-shell.md` | A docs page that assembles blocks; not a block itself |
 
 **These templates cover site structure.** For whether the *mechanic* is right —
@@ -69,6 +67,10 @@ bonus points there too.
   Sections inside it are divided by `---` with bold labels — never headings,
   which collide across two cards on one page. The card prints its own name, so
   a snippet using it is included with **no level argument**.
+- **`//` separates fields on a line**, in a stat block and in an item's detail
+  line alike. An em dash is a label separator — `**Load Bed** — ...` — not a
+  divider, and the two never swap jobs.
+- **Prices are `--Cr`**, everywhere, until there is an economy to price against.
 - **The card is the container; `details` is not.** A collapsed stat block cannot
   be scanned, which is the one thing a stat block is for. Wrapping a card in a
   `details` afterwards still works where a page needs it.

@@ -1,49 +1,19 @@
 ---
 title: "Station Guard"
 description: "Station Guard — contract dock security for These Lucky Stars sci-fi settings, with a full stat block, tactics and encounter notes."
-bookHidden: true
+weight: 40
+bookToC: false
 wip: true
-id: creatures/station-guard
-category: [sci-fi]
-type: creature
-tags: [creatures, sci-fi]
-summary: "Contract security in a combat vest — shock baton, auto pistol, and orders."
 ---
 
 # Station Guard
 
-Dock and corridor security, hired by the berth rather than the year. Every
-station has them, no station pays them well, and most of them would rather
-write an incident report than fill one out about themselves. Competent with a
-baton, unenthusiastic about dying for someone else's cargo manifest.
+Every station has them, no station pays them well, and most of them would rather
+write an incident report than fill one out about themselves. Hired by the berth
+rather than the year, a station guard is the first thing a party argues with and
+the last thing they should have to kill.
 
-{{% statblock type="Medium Humanoid — Level 2 — 1 space" %}}
-> **DEF** 8 (5 + vest) · **VIT** 2 · **AP** 4 · **Stress Threshold** 2
->
-> **Speed** Ground 30ft (High)
->
-> **Initiative** +6 · **Grapple** +4
-
-| STR | AGI | DEX | FORT | KNO | INS | CHA | WILL |
-|---|---|---|---|---|---|---|---|
-| 2 | 2 | 2 | 3 | 1 | 2 | 1 | 2 |
-
-**Gear** — [Combat Vest](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest), [Shock Baton](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton), [Auto Pistol](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol) (ammo 1d6), [Coms Headset](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset)
-
----
-
-**Attacks**
-
-- **Shock Baton** — 2 AP · ATK +2 (STR) · 1d8 + 2 Physical or Shock · reach 5ft.
-- **Auto Pistol** — 2 AP · ATK +2 (DEX) · 1d8 + 2 Physical · 20ft · [Full-Auto](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), ammo 1d6.
-
----
-
-**Features**
-
-- **Call It In** — 1 AP. Raises the alarm on the coms net. Every other guard within earshot of a speaker rolls Initiative and arrives within 1d4 rounds.
-- **Contract Terms** — Surrenders or withdraws once reduced to 1 VIT, or once every other guard present is down. The pay does not cover this.
-{{% /statblock %}}
+{{% include "/snippets/creatures/station-guard" %}}
 
 ## Tactics
 

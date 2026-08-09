@@ -4,7 +4,7 @@ id: vehicles/skiff-hauler
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
-summary: "Long-bed freight skiff. Size 5, slow and unwieldy, 1,600lb bed."
+summary: "Long-bed freight skiff. Size 4, slow and unwieldy, 1,600lb bed."
 ---
 
 {{% statblock type="Light Ground Vehicle — Size 4 (4 spaces)" %}}
@@ -28,3 +28,4 @@ loading bays.
 
 - **Long Bed** — The forward deck carries 1,600lbs, or up to eight Medium passengers sitting unsecured. Unsecured passengers cannot brace or otherwise react to a collision.
 - **Repulsor Craft** — Hovers a foot off the deck or ground, ignoring difficult terrain less than a foot deep. Cannot climb a grade steeper than roughly 20°.
+{{% /statblock %}}

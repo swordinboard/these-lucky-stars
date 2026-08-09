@@ -22,6 +22,6 @@ The three below share a chassis and diverge primarily on **size** and **object D
 
 **Utility** is the default and the one a GM should reach for unnamed — a skiff in a scene is this skiff unless the fiction says otherwise.
 
-**Hauler** trades every kind of agility for mass. Five spaces of collision dice is genuinely dangerous, and Low maneuverability means the driver commits to a route several rounds before it matters. These are most often reserved for for long drives or constant slow-crawl circuits within large yards or compounds to avoid tight turn arounds.
+**Hauler** trades every kind of agility for mass. Four spaces of collision dice is genuinely dangerous, and Low maneuverability means the driver commits to a route several rounds before it matters. These are most often reserved for for long drives or constant slow-crawl circuits within large yards or compounds to avoid tight turn arounds.
 
 **Runner** is the chase vehicle. It reaches the Fast tier where the others cannot, and its Object DEF of 12 means it may not survive using that speed badly — a wall ends the scene rather than the round. These are best reserved for couriers and personell transport in locations that require creative solutions from limited resources.

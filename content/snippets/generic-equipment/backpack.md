@@ -7,7 +7,7 @@ tags: [equipment, generic, containers]
 summary: "+20 max carry weight."
 ---
 
-*--Price — 3lbs*
+*--Cr // 3lbs*
 
 A sturdy framed pack worn on the back with shoulder straps. Increases the wearer's max carry weight by 20lbs. Stoted items can be retrieved for 4 AP.
 

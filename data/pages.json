@@ -563,7 +563,7 @@
   "title": "Station Guard",
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
   "section": "creatures--npcs/sci-fi",
-  "weight": null,
+  "weight": "40",
   "wip": true,
   "blocks": [
    "creatures/station-guard"
@@ -887,7 +887,7 @@
  },
  {
   "url": "/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "title": "Skiffs",
+  "title": "Warehouse Skiffs",
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "section": "vehicles/sci-fi",
   "weight": "10",
@@ -903,21 +903,10 @@
   "title": "Speeder Bike",
   "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
   "section": "vehicles/sci-fi",
-  "weight": null,
+  "weight": "5",
   "wip": true,
   "blocks": [
    "vehicles/speeder-bike"
-  ]
- },
- {
-  "url": "/docs/free-srd/vehicles/sci-fi/utility-skiff/",
-  "title": "Utility Skiff",
-  "file": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
-  "section": "vehicles/sci-fi",
-  "weight": null,
-  "wip": true,
-  "blocks": [
-   "vehicles/utility-skiff"
   ]
  },
  {

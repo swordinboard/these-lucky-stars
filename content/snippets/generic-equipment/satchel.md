@@ -7,7 +7,7 @@ tags: [equipment, generic, containers]
 summary: "A mid-sized bag for documents or light supplies."
 ---
 
-*--Price — 1lb*
+*--Cr // 1lb*
 
 A mid-sized shoulder bag suitable for carrying documents, books, or a modest amount of supplies. Keeps contents more organized and accessible than a backpack, allowing them to be retrieved for 2 AP rather than 4.
 

@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, weapon, medium-melee, melee-weapon]
 summary: "Built in shock charger."
 ---
 
-*--Cr — 1lbs — 10 Object DEF — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
+*--Cr // 1lbs // 10 Object DEF // [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery)*
 *Damage Type: Physical or Shock*
 *Upgrades: [Shock Charger](#shock-charger)*
 

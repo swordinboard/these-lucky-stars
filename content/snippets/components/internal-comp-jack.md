@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, component, computers]
 summary: "A built in Comp Jack"
 ---
 
-*–Cr — 2lbs — Hands — Internal*
+*--Cr // 2lbs // Hands // Internal*
 
 An interface with retractable connectors built into the host's wrist. Functions as a standard [Comp Jack](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack). Requires [Comp Jack Proficiency](/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency) to use.
 

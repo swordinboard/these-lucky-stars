@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, armor, light-armor]
 summary: "Advances space suit popular among pilots and hazardous atmosphere workers."
 ---
 
-*--Cr — +3 DEF Bonus — -1 AGI/DEX — 20lbs — 8 Object DEF — [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
+*--Cr // +3 DEF Bonus // -1 AGI/DEX // 20lbs // 8 Object DEF // [Space Suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit)*
 
 *Upgrades: [Coms Unit](#coms-unit)*
 

@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, tech, computers]
 summary: "Disposable high-speed USB data extraction device."
 ---
 
-*--Cr — 0lbs — Single Use*
+*--Cr // 0lbs // Single Use*
 
 A disposable high-speed data extraction USB storage device used to rapidly download data by cutting it into packets. Dowloading onto a data spike takes 1d4+2 rounds.
 

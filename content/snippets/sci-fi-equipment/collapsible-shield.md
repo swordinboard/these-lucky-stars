@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, shield]
 summary: "+2 DEF 1d8 Supply"
 ---
 
-*--Cr — 5lbs — Arms — 1d8 Supply*
+*--Cr // 5lbs // Arms // 1d8 Supply*
 
 A wrist-mounted device that deploys a sturdy fan-like circular shield when activated. Depoying and storing the shield costs 1 AP.
 

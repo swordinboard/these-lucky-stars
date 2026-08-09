@@ -7,6 +7,6 @@ tags: [equipment, generic, survival]
 summary: "Bulky. Shelter for four with room for gear."
 ---
 
-*--Price — 12lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
+*--Cr // 12lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky)*
 
 A larger portable shelter that sleeps four with room for some gear. Provides protection from wind, rain, and mild weather. Takes approximately ten minutes to set up or break down.

@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, weapon, rifle, ranged-weapon]
 summary: "Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range."
 ---
 
-*--Cr — 12lbs — 8 Object DEF — (10) 90ft — [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
+*--Cr // 12lbs // 8 Object DEF // (10) 90ft // [Battery [Small]](/docs/free-srd/inventory--equipment/item-tags/#battery), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes), [Two-Handed](/docs/free-srd/inventory--equipment/item-tags/#two-handed)*
 *Damage Type: Burn*
 
 A long-range energy rifle capable of precise shots at extended distances.
@@ -17,8 +17,13 @@ NO HEADING. The block does not print its own name — <summary> already does, an
 an include generates the title at the call site's level. Every snippet in the
 tree works this way; only a page-homed block keeps a heading of its own.
 
-The stat line order: price — weight — object DEF — range — item tags.
-Generic items use `--Price`, sci-fi items use `--Cr`.
+The stat line order: price // weight // object DEF // range // item tags.
+Fields are separated by ` // `, never by an em dash — the em dash is a label
+separator (`**Load Bed** — ...`) and the two do not swap jobs.
+
+Price is `--Cr` for every item in every setting. It is a placeholder: there is
+no economy yet, and a real number written before there is one would have to be
+unwritten later. Leave it alone until prices are set everywhere at once.
 
 Item tags link to the item-tags page. A tag taking a size or type keeps the
 blank inside the LINK TEXT with a clean target: [Battery [Small]](…#battery)

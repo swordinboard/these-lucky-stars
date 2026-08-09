@@ -125,11 +125,18 @@ HTML comment**.
 
 ### Statted things: creatures and vehicles
 
-Two templates cover creatures, and the difference is where the block lives.
-`creature.md` is a snippet that shares a page with its siblings — the shape the
-3.5e monster pages use, where Shrieker and Violet Fungus sit on one Fungus page.
-`creature-page.md` is a page-homed block for something that will grow artwork
-and lore, which is what the four bot platforms and the five races are.
+**A stat block is always a snippet.** `creature.md` and `vehicle.md` are the
+only two templates for statted things, and there is no page-homed variant of
+either. A page that presents one — the Speeder Bike, the Station Guard — is a
+shell that includes the snippet and wraps it in prose: an intro above, Tactics
+and Encounter Notes below. A page that presents several, like the Skiffs, is the
+same shell with several includes and a section comparing them.
+
+That is what the card is for. Everything a table needs mid-scene lives inside
+it, so it can be pulled into a PDF alone and still work, while the prose that
+belongs to the page stays on the page. It also means one card serves the page
+and any digest, roster, or variant list that wants it later, with no second copy
+to drift.
 
 `vehicle.md` is a statted vehicle, and it introduced **`type: vehicle`** to the
 vocabulary. A vehicle is not equipment (it is not carried, and it has occupants)

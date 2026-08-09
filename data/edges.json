@@ -135,6 +135,51 @@
   "line": 6
  },
  {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/combat-vest",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
+  "text": "Combat Vest",
+  "file": "content/snippets/creatures/station-guard.md",
+  "line": 24
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/shock-baton",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
+  "text": "Shock Baton",
+  "file": "content/snippets/creatures/station-guard.md",
+  "line": 24
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/auto-pistol",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
+  "text": "Auto Pistol",
+  "file": "content/snippets/creatures/station-guard.md",
+  "line": 24
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "sci-fi-equipment/coms-headset",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
+  "text": "Coms Headset",
+  "file": "content/snippets/creatures/station-guard.md",
+  "line": 24
+ },
+ {
+  "source": "creatures/station-guard",
+  "target": "item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Full-Auto",
+  "file": "content/snippets/creatures/station-guard.md",
+  "line": 31
+ },
+ {
   "source": "traits/particularly-attractive",
   "target": "traits/unremarkable",
   "type": "mention",
@@ -3306,31 +3351,22 @@
   "line": 9
  },
  {
-  "source": "vehicles/skiff-hauler",
-  "target": "item-tags/fuel-cells",
+  "source": "vehicles/speeder-bike",
+  "target": "vehicles/boarding-and-bailing",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/vehicles/skiff-hauler.md",
-  "line": 23
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
+  "text": "Boarding & Bailing",
+  "file": "content/snippets/vehicles/speeder-bike.md",
+  "line": 30
  },
  {
-  "source": "vehicles/skiff-runner",
-  "target": "item-tags/fuel-cells",
+  "source": "vehicles/speeder-bike",
+  "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/vehicles/skiff-runner.md",
-  "line": 23
- },
- {
-  "source": "vehicles/skiff-utility",
-  "target": "item-tags/fuel-cells",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/vehicles/skiff-utility.md",
-  "line": 22
+  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
+  "text": "Shatter",
+  "file": "content/snippets/vehicles/speeder-bike.md",
+  "line": 31
  },
  {
   "source": "vehicles/vehicle-actions",
@@ -5020,16 +5056,6 @@
   "class": "catalog",
   "url": null,
   "text": "Speeder Bike",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "vehicles/utility-skiff",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Utility Skiff",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -7462,7 +7488,7 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "creatures/station-guard",
+  "target": "page:/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
   "type": "reference",
   "url": "/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
   "text": "Station Guard",
@@ -7488,49 +7514,13 @@
   "line": 15
  },
  {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/combat-vest",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
-  "text": "Combat Vest",
+  "source": "page:/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
+  "target": "creatures/station-guard",
+  "type": "include",
+  "url": "/snippets/creatures/station-guard",
+  "text": null,
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
-  "line": 31
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/shock-baton",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
-  "text": "Shock Baton",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
-  "line": 31
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/auto-pistol",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
-  "text": "Auto Pistol",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
-  "line": 31
- },
- {
-  "source": "creatures/station-guard",
-  "target": "sci-fi-equipment/coms-headset",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
-  "text": "Coms Headset",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
-  "line": 31
- },
- {
-  "source": "creatures/station-guard",
-  "target": "item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Full-Auto",
-  "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
-  "line": 38
+  "line": 16
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/core/",
@@ -10702,7 +10692,7 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "vehicles/speeder-bike",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/speeder-bike/",
   "type": "reference",
   "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
   "text": "Speeder Bike",
@@ -10720,30 +10710,12 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "vehicles/utility-skiff",
-  "type": "reference",
-  "url": "/docs/free-srd/vehicles/sci-fi/utility-skiff/",
-  "text": "Utility Skiff",
-  "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 19
- },
- {
-  "source": "page:/docs/free-srd/vehicles/sci-fi/",
   "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/",
   "text": "Sci-Fi Equipment",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/vehicle-rules/",
-  "text": "vehicle rules",
-  "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
-  "line": 16
+  "line": 29
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
@@ -10752,7 +10724,7 @@
   "url": "/snippets/vehicles/skiff-utility",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
-  "line": 20
+  "line": 15
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
@@ -10761,7 +10733,7 @@
   "url": "/snippets/vehicles/skiff-hauler",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
-  "line": 22
+  "line": 17
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
@@ -10770,43 +10742,16 @@
   "url": "/snippets/vehicles/skiff-runner",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
-  "line": 24
+  "line": 19
  },
  {
-  "source": "vehicles/speeder-bike",
-  "target": "vehicles/boarding-and-bailing",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
-  "text": "Boarding & Bailing",
+  "source": "page:/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "target": "vehicles/speeder-bike",
+  "type": "include",
+  "url": "/snippets/vehicles/speeder-bike",
+  "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
-  "line": 37
- },
- {
-  "source": "vehicles/speeder-bike",
-  "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "text": "Shatter",
-  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
-  "line": 38
- },
- {
-  "source": "vehicles/utility-skiff",
-  "target": "item-tags/fuel-cells",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
-  "line": 29
- },
- {
-  "source": "vehicles/utility-skiff",
-  "target": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "type": "reference",
-  "url": "/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "text": "Skiffs",
-  "file": "content/docs/free-srd/vehicles/sci-fi/utility-skiff.md",
-  "line": 58
+  "line": 16
  },
  {
   "source": "environment/heat-and-cold",

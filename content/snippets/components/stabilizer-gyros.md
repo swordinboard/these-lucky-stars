@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, component]
 summary: "Resist knockdown and fall damage"
 ---
 
-*–Cr — 2lbs — Legs/Feet — External*
+*--Cr // 2lbs // Legs/Feet // External*
 
 Improved balance and orientation systems built into the host's lower frame, expanding on joint reaction and capability. The host gains a minor advantage on checks to resist being knocked prone or pushed, and takes no falling damage from falls of 20ft or less.
 

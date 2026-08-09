@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, upgrade, ranged-upgrade]
 summary: "Pistols, Rifles. +20ft normal range."
 ---
 
-*--Cr — 1lbs*
+*--Cr // 1lbs*
 *Compatibility: Pistols, Rifles*
 
 Increases the normal range of a weapon by 20ft.

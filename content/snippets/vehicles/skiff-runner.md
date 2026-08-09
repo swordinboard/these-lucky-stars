@@ -4,7 +4,7 @@ id: vehicles/skiff-runner
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
-summary: "Stripped courier skiff. Size 3, fast and fragile, one seat."
+summary: "Stripped courier skiff. Size 2, fast and fragile, one seat."
 ---
 
 {{% statblock type="Light Ground Vehicle — Size 2 (2 spaces)" %}}
@@ -12,7 +12,7 @@ A utility skiff with the deck panels, the passenger seat and most of the frame
 cut away, on the reasoning that none of it made the thing go faster. Couriers
 love them. Dock supervisors do not.
 
-> **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** see descritpion
+> **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** see description
 >
 > **Speed** Ground 350ft (High, 90ft/round)
 >

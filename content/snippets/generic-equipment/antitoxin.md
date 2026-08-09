@@ -7,6 +7,6 @@ tags: [equipment, generic, medical]
 summary: "Removes or reduces toxin-based conditions."
 ---
 
-*--Price — 0lbs*
+*--Cr // 0lbs*
 
 A prepared oral remedy that counteracts common poisons and toxins. If administered within 1 hour of exposure, removes toxin-based wounds and conditions in 1d4 rounds. Application costs 2 AP.

@@ -7,7 +7,7 @@ tags: [equipment, generic, clothing]
 summary: "Protects hands during labor and rough handling."
 ---
 
-*--Price — 0lbs*
+*--Cr // 0lbs*
 
 Thick gloves made from leather or heavy cloth. Protect the hands from blisters, splinters, rough materials, and mild heat when handling tools, ropes, or debris.
 

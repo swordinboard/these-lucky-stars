@@ -7,6 +7,6 @@ tags: [equipment, generic, tools]
 summary: "Writing surfaces. Pack of five sheets."
 ---
 
-*--Price — 0lbs*
+*--Cr // 0lbs*
 
 A pack of five sheets of parchment, paper, or equivalent writing surface appropriate to the setting.

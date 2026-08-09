@@ -15,6 +15,6 @@ Reactor cores slowly regenerate their supply — a depleted die recovers one siz
 
 | Size | Physical Size | Common Charge | Description |
 |------|--------------|---------------|-------------|
-| Compact | ≈ Medium battery | 1d12 | –Cr — 2lbs |
-| Standard | ≈ Large battery | 2d12 | –Cr — 50lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
-| Industrial | ≈ Industrial battery | 4d12 | –Cr — 120lbs — [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+| Compact | ≈ Medium battery | 1d12 | --Cr // 2lbs |
+| Standard | ≈ Large battery | 2d12 | --Cr // 50lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+| Industrial | ≈ Industrial battery | 4d12 | --Cr // 120lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |

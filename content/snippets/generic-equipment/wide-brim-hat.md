@@ -7,7 +7,7 @@ tags: [equipment, generic, clothing]
 summary: "Minor protectiob from sun and light rain."
 ---
 
-*--Price — 0lbs*
+*--Cr // 0lbs*
 
 A broad-brimmed hat offering shade from the sun and some protection from light rain. A simple but practical piece of headwear for long days outdoors.
 

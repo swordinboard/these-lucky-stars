@@ -11,15 +11,15 @@ summary: "Open-bed hover skiff. Size 3, two seats, no cover, 400lb bed."
 The workhorse of every orbital yard and dust-side depot — a flat alloy deck, two
 seats behind a stub windscreen, and no pretence of comfort or protection.
 
-> **Cost** --Cr · **Object DEF** 18 · **VIT** 3 · **Cargo** 400lbs
+> **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 400lbs
 >
 > **Speed** Ground 200ft (Medium, 40ft/round)
 >
-> **Occupants** driver + 1 · **Cover** none (open deck)
+> **Occupants** driver + 1 // **Cover** none (open deck)
 >
-> **Collision** 3d6 + speed modifier · **Ignition** 2 AP
+> **Collision** 3d6 + speed modifier // **Ignition** 2 AP
 >
-> **Proficiency** [Vehicle [Skiff]](/docs/free-srd/character-creation/proficiencies/#vehicle) · **Power** [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)
+> **Proficiency** [Vehicle [Skiff]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Fuel Cell](/docs/free-srd/inventory--equipment/item-tags/#fuel-cell)
 
 ---
 
@@ -31,14 +31,19 @@ seats behind a stub windscreen, and no pretence of comfort or protection.
 
 <!--
 A STATTED VEHICLE, as opposed to the vehicle RULES that share this namespace.
-Copy to content/snippets/vehicles/<slug>.md and place it with a plain include
-and NO LEVEL ARGUMENT — the card prints the name itself:
+There is only this one form — a stat block is always a snippet. Copy to
+content/snippets/vehicles/<slug>.md and place it with a plain include and NO
+LEVEL ARGUMENT — the card prints the name itself:
 
     {{% include "/snippets/vehicles/utility-skiff" %}}
 
-For something party-sized — a ship they live aboard, with decks and crew
-stations — give it its own page instead, shaped like creature-page.md: page
-frontmatter, an h1, then this card at the top.
+A vehicle that needs a page of its own does not become a page: the page becomes
+a page-shell.md that includes this snippet and wraps it in prose — an intro
+above, Encounter Notes below. Variants that belong together are the same shell
+with several includes and a section comparing them; read
+content/docs/free-srd/vehicles/sci-fi/skiffs.md, which is exactly that. Something
+party-sized — a ship they live aboard, with decks and crew stations — is still a
+shell page, with deck plans and crew stations as further sections.
 
 `type: vehicle` is its own type, beside `creature`. A vehicle is neither
 equipment (it is not carried, and it has occupants) nor a creature (it is an
@@ -50,6 +55,10 @@ splits the settings, so a core-setting car is the same file with
 
 SECTIONS ARE `---` AND BOLD LABELS, NEVER HEADINGS — see creature.md for what
 goes wrong, which is duplicate element ids on any page holding two of these.
+That case is not hypothetical: the Skiffs page holds three.
+
+FIELDS ON A LINE ARE SEPARATED BY `//`. The em dash is a label separator —
+`**Load Bed** — ...` — and the two never swap jobs.
 
 EVERY VALUE IS DERIVED from a rule already on the site:
 

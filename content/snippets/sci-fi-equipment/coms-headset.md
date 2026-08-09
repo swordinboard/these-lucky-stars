@@ -7,7 +7,7 @@ tags: [equipment, sci-fi, communications]
 summary: "Wireless connection for com devices."
 ---
 
-*--Cr — 0lbs — Head*
+*--Cr // 0lbs // Head*
 
 Headsets are popular items that connect to a communication device and allow hands-free operation of the device. Styles vary, but all include a headphone (either in or over ear) and a microphone.
 
