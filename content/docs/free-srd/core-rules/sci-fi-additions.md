@@ -31,7 +31,11 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 {{% include "/snippets/rules/sci-fi/huds" "h3" %}}
 
+
 ---
 
+{{% include "/snippets/rules/bots/automated-machines" "h2" %}}
+
+---
 
 {{% include "/snippets/rules/sci-fi/computer-systems" "h2" %}}
