@@ -27,7 +27,7 @@ and a strong recommendation to use the seat early.
 
 **Features**
 
-- **Nose Cannons** — 3 AP. The pilot fires, rolling their own DEX attack at a *minor disadvantage* as an action other than Drive. Range 600ft, forward arc only, [Ballistic [1d10]](/docs/free-srd/inventory--equipment/item-tags/#ballistic). Against anything on foot this is a 1d12 [extreme](/docs/free-srd/core-rules/combat/#damage-sources) hit — see [Reading a Spacecraft Stat Block](/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block).
+- **Nose Cannons** — 3 AP. The pilot fires, rolling their own DEX attack at a *minor disadvantage* as an action other than Drive. Range 600ft, forward arc only, [Ballistic [1d10]](/docs/free-srd/inventory--equipment/item-tags/#ballistic).
 - **Sealed Cockpit** — Full cover from every angle and six hours of air. A breach costs the cover and starts the [vacuum](/docs/free-srd/core-rules/environmental-effects/#vacuum) clock; the pilot's suit is the only thing between them and it, which is why they fly in one.
 - **Thin Plate** — An inch of hard plate and no more, which is the whole of the Object DEF 20. An interceptor is not a thing that trades hits; it is a thing that is not there when the hit arrives.
 - **Ejection Seat** — 1 AP. A [Bail](/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing) with no check and no fall damage at any speed. The seat is a pressurized shell with one hour of air and a beacon, and it is the reason interceptor pilots are recovered rather than buried.

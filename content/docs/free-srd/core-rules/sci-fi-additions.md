@@ -34,14 +34,6 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ---
 
-## Vehicles
-
-
-{{% include "/snippets/rules/sci-fi/spacecraft-scale" "h3" %}}
-
-
----
-
 {{% include "/snippets/rules/bots/automated-machines" "h2" %}}
 
 ---

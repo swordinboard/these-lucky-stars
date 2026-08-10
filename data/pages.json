@@ -426,7 +426,6 @@
    "rules/sci-fi/communications",
    "rules/sci-fi/energy-shields",
    "rules/sci-fi/huds",
-   "rules/sci-fi/spacecraft-scale",
    "rules/bots/automated-machines",
    "rules/sci-fi/computer-systems"
   ]
@@ -905,7 +904,6 @@
   "weight": "40",
   "wip": true,
   "blocks": [
-   "rules/sci-fi/spacecraft-scale",
    "statblocks/vehicles/interceptor",
    "statblocks/vehicles/patrol-gunship"
   ]
@@ -918,7 +916,6 @@
   "weight": "50",
   "wip": true,
   "blocks": [
-   "rules/sci-fi/spacecraft-scale",
    "statblocks/vehicles/survey-lander",
    "statblocks/vehicles/long-range-explorer"
   ]
@@ -931,7 +928,6 @@
   "weight": "60",
   "wip": true,
   "blocks": [
-   "rules/sci-fi/spacecraft-scale",
    "statblocks/vehicles/light-freighter",
    "statblocks/vehicles/bulk-hauler"
   ]
@@ -944,8 +940,7 @@
   "weight": "70",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/luxury-yacht",
-   "rules/sci-fi/spacecraft-scale"
+   "statblocks/vehicles/luxury-yacht"
   ]
  },
  {

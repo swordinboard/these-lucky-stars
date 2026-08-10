@@ -16,8 +16,6 @@ either of them is interesting at a table.
 The two work as a pair, and are written that way: the explorer never touches a
 surface, and the lander is how anybody gets to one.
 
-{{< blockdetails "rules/sci-fi/spacecraft-scale" >}}
-
 {{% include "/snippets/statblocks/vehicles/survey-lander" %}}
 
 {{% include "/snippets/statblocks/vehicles/long-range-explorer" %}}

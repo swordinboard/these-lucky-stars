@@ -18,8 +18,6 @@ matters depends entirely on whether the party arrived as guests.
 
 {{% include "/snippets/statblocks/vehicles/luxury-yacht" %}}
 
-{{< blockdetails "rules/sci-fi/spacecraft-scale" >}}
-
 ## Tactics
 
 A yacht has no tactics because it has no armament and eighteen points of Object

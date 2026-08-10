@@ -3872,7 +3872,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 7,
+  "in_degree": 6,
   "tags": [
    "size",
    "combat",
@@ -11110,7 +11110,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 1,
   "tags": [
    "combat"
   ],
@@ -12663,44 +12663,6 @@
   "summary": "Item type"
  },
  {
-  "id": "rules/sci-fi/spacecraft-scale",
-  "title": "Reading a Spacecraft Stat Block",
-  "home": "snippet",
-  "file": "content/snippets/rules/sci-fi/spacecraft-scale.md",
-  "source_page": "content/docs/free-srd/core-rules/sci-fi-additions.md",
-  "pages": [
-   "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
-   "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
-   "content/docs/free-srd/vehicles/sci-fi/freighters.md",
-   "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/core-rules/sci-fi-additions/",
-   "/docs/free-srd/vehicles/sci-fi/combat-fighters/",
-   "/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
-   "/docs/free-srd/vehicles/sci-fi/freighters/",
-   "/docs/free-srd/vehicles/sci-fi/luxury-yacht/"
-  ],
-  "anchor": "reading-a-spacecraft-stat-block",
-  "url": "/docs/free-srd/core-rules/sci-fi-additions/#reading-a-spacecraft-stat-block",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 1,
-  "tags": [
-   "sci-fi",
-   "vehicles"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "What a ship's Size, Speed and weapons mean at a table, and where the rules stop."
- },
- {
   "id": "rules/stats/action-points",
   "title": "Action Points",
   "home": "snippet",
@@ -12925,7 +12887,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "vehicles"
   ],
@@ -13149,7 +13111,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "vehicles"
   ],
