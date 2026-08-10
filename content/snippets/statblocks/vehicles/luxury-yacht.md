@@ -15,11 +15,11 @@ to turn. Every kilo it saved on plate went into the drive.
 
 > **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 4,000lbs (luggage)
 >
-> **Speed** Fly 500ft (High, 150ft/round) — 300ft (Medium) in atmosphere
+> **Speed** Fly 500ft (High, 150ft/round)
 >
 > **Occupants** pilot + 11 // **Cover** full (enclosed)
 >
-> **Collision** 14d6 + speed modifier // **Ignition** 2 AP — the crew keep it warm
+> **Collision** 14d6 + speed modifier // **Ignition** 2 AP (kept warm)
 >
 > **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 

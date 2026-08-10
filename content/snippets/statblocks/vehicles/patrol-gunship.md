@@ -15,7 +15,7 @@ only option on the table.
 
 > **Cost** --Cr // **Object DEF** 35 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 2,000lbs
 >
-> **Speed** Fly 380ft (Medium, 100ft/round) — 200ft (Low) in atmosphere
+> **Speed** Fly 380ft (Medium, 100ft/round)
 >
 > **Occupants** pilot + 7 // **Cover** full (enclosed)
 >

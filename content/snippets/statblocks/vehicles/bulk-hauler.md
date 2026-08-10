@@ -15,7 +15,7 @@ longer than anyone currently aboard has been employed.
 
 > **Cost** --Cr // **Object DEF** 25 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 2,000,000lbs (twenty containers)
 >
-> **Speed** Fly 120ft (Low, 20ft/round) — cannot enter atmosphere
+> **Speed** Fly 120ft (Low, 20ft/round)
 >
 > **Occupants** pilot + 3 // **Cover** full (crew module) // none (spine)
 >
@@ -27,7 +27,7 @@ longer than anyone currently aboard has been employed.
 
 **Features**
 
-- **A Schedule With Engines** — Ten minutes to bring the drive up and no way to shorten it. A hauler cannot be stolen in a firefight, only stolen *from*, and every plan involving one is a plan about the ten minutes.
+- **A Schedule With Engines** — Ten minutes to bring the drive up and no way to shorten it, and a hull too large and too fragile to enter an atmosphere at all. A hauler cannot be stolen in a firefight, only stolen *from* — there is nowhere to take it and no way to leave quickly.
 - **Twenty Clamps** — Containers ride the open spine, not a hold. Each clamp releases individually for 2 AP from the module, and a released container drifts on the hauler's own vector — which is the closest thing this vessel has to a weapon.
 - **Open Spine** — The whole cargo run is exposed. Anyone out there is in [vacuum](/docs/free-srd/core-rules/environmental-effects/#vacuum) and needs a [space suit](/docs/free-srd/inventory--equipment/item-tags/#space-suit), gets no cover from the ship, and is entirely out of sight of a crew module a hundred feet away at the far end.
 - **Four People, Twenty-Four Spaces** — The entire crew fits in one compartment and nobody patrols. Boarding a hauler underway is not opposed by anyone; the difficulty is reaching it, not what happens after.

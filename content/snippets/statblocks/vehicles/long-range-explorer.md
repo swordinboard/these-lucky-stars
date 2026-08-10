@@ -15,7 +15,7 @@ place to live that happens to move.
 
 > **Cost** --Cr // **Object DEF** 30 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 20,000lbs
 >
-> **Speed** Fly 250ft (Low, 50ft/round) — cannot enter atmosphere
+> **Speed** Fly 250ft (Low, 50ft/round)
 >
 > **Occupants** pilot + 11 // **Cover** full (enclosed)
 >

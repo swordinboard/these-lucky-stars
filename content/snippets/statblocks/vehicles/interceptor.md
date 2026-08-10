@@ -15,7 +15,7 @@ and a strong recommendation to use the seat early.
 
 > **Cost** --Cr // **Object DEF** 20 // **VIT** 3 // **Cargo** 200lbs
 >
-> **Speed** Fly 600ft (High, 200ft/round) — 350ft (Medium) in atmosphere
+> **Speed** Fly 600ft (High, 200ft/round)
 >
 > **Occupants** pilot only // **Cover** full (sealed cockpit)
 >

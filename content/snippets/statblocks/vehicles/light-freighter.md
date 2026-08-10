@@ -15,11 +15,11 @@ the ship a party owes money on.
 
 > **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 200,000lbs (100 tons)
 >
-> **Speed** Fly 300ft (Medium, 60ft/round) — 180ft (Low) in atmosphere
+> **Speed** Fly 300ft (Medium, 60ft/round)
 >
 > **Occupants** pilot + 5 // **Cover** full (enclosed)
 >
-> **Collision** 18d6 + speed modifier // **Ignition** 3 rounds at 2 AP — see Temperamental
+> **Collision** 18d6 + speed modifier // **Ignition** 3 rounds at 2 AP (see Temperamental)
 >
 > **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
