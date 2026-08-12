@@ -14,7 +14,7 @@ loading bays.
 
 > **Cost** --Cr // **Object DEF** 20 // **VIT** 3 // **Cargo** 1,600lbs
 >
-> **Speed** Ground 120ft (Low, 25ft/round)
+> **Speed** Ground 325ft (Low, 50ft/round) // **Manueverability + Size** 8
 >
 > **Occupants** driver + 2 // **Cover** none (open deck)
 >

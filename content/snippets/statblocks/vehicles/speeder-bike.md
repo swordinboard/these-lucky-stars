@@ -14,7 +14,7 @@ problem rather than the machine's.
 
 > **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** 50lbs (saddlebags)
 >
-> **Speed** Ground 400ft (High, 100ft/round)
+> **Speed** Ground 1400ft (High, 300ft/round) // **Manueverability + Size** 2
 >
 > **Occupants** driver + 1 // **Cover** none (open frame)
 >

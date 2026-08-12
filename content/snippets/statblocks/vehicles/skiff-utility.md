@@ -13,7 +13,7 @@ seats behind a stub windscreen, and no pretence of comfort or protection.
 
 > **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 400lbs
 >
-> **Speed** Ground 200ft (Medium, 40ft/round)
+> **Speed** Ground 400ft (Medium, 80ft/round) // **Manueverability + Size** 5
 >
 > **Occupants** driver + 1 // **Cover** none (open deck)
 >

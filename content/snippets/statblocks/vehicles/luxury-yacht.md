@@ -4,32 +4,28 @@ id: statblocks/vehicles/luxury-yacht
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
-summary: "Private pleasure craft. Size 14, very fast, beautiful, and made of almost nothing."
+summary: "Private pleasure craft. Very fast, beautiful, and made of almost nothing."
 ---
 
 {{% statblock type="Spacecraft — Size 14 (14 spaces)" %}}
-Seventy feet of faired hull in a colour no working ship is ever painted. A
-salon, four staterooms, a crew of four who are paid to be invisible, and engines
-that would embarrass an interceptor over any distance where the interceptor has
-to turn. Every kilo it saved on plate went into the drive.
+Seventy feet of hull in a color no working ship is ever painted. Often manned by a crew of four who are paid to be invisible.
 
-> **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 4,000lbs (luggage)
->
-> **Speed** Fly 500ft (High, 150ft/round)
->
+>  **Cost** --Cr // **Cargo** 4,000lbs (luggage hold)
 > **Occupants** pilot + 11 // **Cover** full (enclosed)
 >
-> **Collision** 14d6 + speed modifier // **Ignition** 2 AP (kept warm)
+>**Object DEF** 18 // **VIT** 3
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Speed** Fly 4500ft (Moderate, 200ft/round)
+>
+> **Collision** 14d6 + speed modifier // **Ignition** see entry
+>
+> **Power** [Internal Reactor [5d12]](path to vehicle parts, not yet made) // **Jump Drive** 10ly capacity
 
 ---
 
 **Features**
 
-- **Not Built For This** — An inch of soft metal, faired and polished, for Object DEF 18 on a Size 14 hull. It is the least protected vessel on this list by a wide margin, and the only one whose owner has never once considered that a problem.
-- **Registry & Clearance** — A clean private registry and a berth reserved before arrival. Talking a yacht past a port authority, a cordon or an inspection carries a *minor advantage* on the check — an official reading that transponder starts from the assumption that this is somebody they should not inconvenience.
-- **The Salon** — Eight guests in a room with a real view. Any social scene run aboard is on the owner's ground, and the four crew are trained to hear nothing and to remember all of it.
-- **Kept Warm** — Ignition is 2 AP at any hour because a crew member is always aboard with the systems live. It is the fastest departure of any ship here, and it costs the party nothing except needing the crew's cooperation or absence.
-- **Fast, Not Agile** — Very Fast in a straight line, High maneuverability, and a hull that cannot take a single serious hit. A yacht wins a chase by never being caught and loses one the instant it is.
+- **Decorative Hull** — A quarter inch of polished soft metal makes up the majority of the hull. Any damage taken in space that results in VIT loss causes a hull breach.
+- **Registry & Clearance** — Talking a yacht past a port authority or an inspection carries a minor advantage if no disadvantages are present — most officials begin with the assumption that this is somebody they should not inconvenience.
+- **Kept Warm** — Ignition takes 2 AP and is ready to move immediately as long as a crewmember reamins onboard between ignition sequences. If not, ignition takes two full rounds at 2 AP a round: one round to power up the flight systens, one round to spool up the engines. Clear to move on the third round.
 {{% /statblock %}}

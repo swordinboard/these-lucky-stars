@@ -14,7 +14,7 @@ love them. Dock supervisors do not.
 
 > **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** see description
 >
-> **Speed** Ground 350ft (High, 90ft/round)
+> **Speed** Ground 550ft (High, 120ft/round) // **Manueverability + Size** 2
 >
 > **Occupants** driver only // **Cover** none (open frame)
 >
