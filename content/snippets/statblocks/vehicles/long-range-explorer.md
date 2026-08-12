@@ -13,15 +13,17 @@ help. Twelve bunks, a hangar bay, a reclamation plant that works, and enough
 consumables that the crew will get bored long before they get hungry. It is a
 place to live that happens to move.
 
-> **Cost** --Cr // **Object DEF** 30 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 20,000lbs
->
-> **Speed** Fly 250ft (Low, 50ft/round)
+> **Cost** --Cr // **Cargo** 20,000lbs
 >
 > **Occupants** pilot + 11 // **Cover** full (enclosed)
 >
+> **Object DEF** 30 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
+>
+> **Speed** Fly 250ft (Low, 50ft/round)
+>
 > **Collision** 16d6 + speed modifier // **Ignition** 5 rounds at 2 AP, from standby
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

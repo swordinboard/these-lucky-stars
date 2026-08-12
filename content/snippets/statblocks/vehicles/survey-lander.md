@@ -13,15 +13,17 @@ weather and go back up again afterwards. Half the interior is bunks and the
 other half is instruments, and the argument about which half should be larger
 has been running for as long as the design has existed.
 
-> **Cost** --Cr // **Object DEF** 20 // **VIT** 3 // **Cargo** 8,000lbs (sample hold)
->
-> **Speed** Fly 300ft (Medium, 75ft/round)
+> **Cost** --Cr // **Cargo** 8,000lbs (sample hold)
 >
 > **Occupants** pilot + 5 // **Cover** full (enclosed)
 >
+> **Object DEF** 20 // **VIT** 3
+>
+> **Speed** Fly 300ft (Medium, 75ft/round)
+>
 > **Collision** 8d6 + speed modifier // **Ignition** 3 rounds at 2 AP
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

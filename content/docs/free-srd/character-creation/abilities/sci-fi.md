@@ -24,9 +24,9 @@ character/abilities/signal-intelligence
 {{< catalog layout="names" >}}
 character/abilities/battery-saboteur
 character/abilities/battery-saver
+character/abilities/custom-battery
 character/abilities/overcharge
 character/abilities/power-main-tap
-character/abilities/swift-custom-battery
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -58,8 +58,8 @@ character/abilities/swift-custom-battery
 
 {{< blockdetails "character/abilities/battery-saver" "h3" >}}
 
+{{< blockdetails "character/abilities/custom-battery" "h3" >}}
+
 {{< blockdetails "character/abilities/overcharge" "h3" >}}
 
 {{< blockdetails "character/abilities/power-main-tap" "h3" >}}
-
-{{< blockdetails "character/abilities/swift-custom-battery" "h3" >}}

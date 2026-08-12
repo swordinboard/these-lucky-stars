@@ -12,15 +12,17 @@ Two metres of frame, a repulsor plate and a throttle. No armour, no cabin, no
 crumple zone — the design assumes anything it cannot outrun is the rider's
 problem rather than the machine's.
 
-> **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** 50lbs (saddlebags)
->
-> **Speed** Ground 1400ft (High, 300ft/round) // **Manueverability + Size** 2
+> **Cost** --Cr // **Cargo** 50lbs (saddlebags)
 >
 > **Occupants** driver + 1 // **Cover** none (open frame)
 >
+> **Object DEF** 12 // **VIT** 3
+>
+> **Speed** Ground 1400ft (High, 300ft/round) // **Manueverability + Size** 2
+>
 > **Collision** 2d6 + speed modifier // **Ignition** 1 AP
 >
-> **Proficiency** [Vehicle [Light Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Battery [Large]](/docs/free-srd/inventory--equipment/item-tags/#battery)
+> **Power** [Battery [Large]](/docs/free-srd/inventory--equipment/item-tags/#battery)
 
 ---
 

@@ -21,4 +21,4 @@ Reactor cores slowly regenerate their supply when disconnected; they regain 1 di
 - (Items that are intended for use with a reactor core cannot be modified to use batteries.)
 - In such a case, reloading a weapon that accepts reactor cores uses the same AP as a standard reload of its type as if it were a battery.
 
-> Reactor Cores benefit from the same abilities as Batteries, excluding the [Battery Saboteur](/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur) and [Custom Battery](path) abilities. Reactor Cores have more safety measures in place to prevent dangerous breakdown and modification than standard batteries.
+> Reactor Cores benefit from the same abilities as Batteries, excluding the [Battery Saboteur](/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur) and [Custom Battery](/docs/free-srd/character-creation/abilities/sci-fi/#custom-battery) abilities. Reactor Cores have more safety measures in place to prevent dangerous breakdown and modification than standard batteries.

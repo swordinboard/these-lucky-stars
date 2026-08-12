@@ -13,15 +13,17 @@ of those occasions. A hold, a galley, six bunks, and a registry that is accurate
 in most of the ports that matter. This is the ship a party owns, which is to say
 the ship a party owes money on.
 
-> **Cost** --Cr // **Object DEF** 18 // **VIT** 3 // **Cargo** 200,000lbs (100 tons)
->
-> **Speed** Fly 300ft (Medium, 60ft/round)
+> **Cost** --Cr // **Cargo** 200,000lbs (100 tons)
 >
 > **Occupants** pilot + 5 // **Cover** full (enclosed)
 >
+> **Object DEF** 18 // **VIT** 3
+>
+> **Speed** Fly 300ft (Medium, 60ft/round)
+>
 > **Collision** 18d6 + speed modifier // **Ignition** 3 rounds at 2 AP (see Temperamental)
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

@@ -13,15 +13,17 @@ and a crew module bolted to one end as an afterthought. It is not really a ship;
 it is a schedule with engines, and it has been running the same three ports for
 longer than anyone currently aboard has been employed.
 
-> **Cost** --Cr // **Object DEF** 25 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 2,000,000lbs (twenty containers)
->
-> **Speed** Fly 120ft (Low, 20ft/round)
+> **Cost** --Cr // **Cargo** 2,000,000lbs (twenty containers)
 >
 > **Occupants** pilot + 3 // **Cover** full (crew module) // none (spine)
 >
+> **Object DEF** 25 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
+>
+> **Speed** Fly 120ft (Low, 20ft/round)
+>
 > **Collision** 24d6 + speed modifier // **Ignition** ten minutes, cannot be hurried
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

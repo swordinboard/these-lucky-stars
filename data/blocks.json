@@ -507,6 +507,40 @@
   "summary": "Designate a target — the next ally to attack it gains a minor advantage."
  },
  {
+  "id": "character/abilities/custom-battery",
+  "title": "Custom Battery",
+  "home": "snippet",
+  "file": "content/snippets/character/abilities/custom-battery.md",
+  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/abilities/sci-fi/"
+  ],
+  "anchor": "custom-battery",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#custom-battery",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "feature",
+  "in_degree": 1,
+  "tags": [
+   "ability",
+   "sci-fi",
+   "battery"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Quickly install mismatched batteries.",
+  "requires": [
+   "character/proficiencies/general-technology"
+  ]
+ },
+ {
   "id": "character/abilities/danger-reflex",
   "title": "Danger Reflex",
   "home": "snippet",
@@ -2361,40 +2395,6 @@
   "summary": "Pin enemies in an area with automatic fire.",
   "requires": [
    "character/proficiencies/weapon"
-  ]
- },
- {
-  "id": "character/abilities/swift-custom-battery",
-  "title": "Swift Custom Battery",
-  "home": "snippet",
-  "file": "content/snippets/character/abilities/swift-custom-battery.md",
-  "source_page": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
-  "pages": [
-   "content/docs/free-srd/character-creation/abilities/sci-fi.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/character-creation/abilities/sci-fi/"
-  ],
-  "anchor": "swift-custom-battery",
-  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#swift-custom-battery",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "feature",
-  "in_degree": 0,
-  "tags": [
-   "ability",
-   "sci-fi",
-   "battery"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Quickly install mismatched batteries.",
-  "requires": [
-   "character/proficiencies/general-technology"
   ]
  },
  {
@@ -6781,7 +6781,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 21,
+  "in_degree": 22,
   "tags": [
    "item-tag"
   ],
@@ -13581,7 +13581,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Tracked container hauler. Size 10, slow, blind, and impossible to stop."
+  "summary": "Tracked container hauler. Big, slow, blind, and impossible to stop."
  },
  {
   "id": "statblocks/vehicles/interceptor",
@@ -13701,7 +13701,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Private pleasure craft. Size 14, very fast, beautiful, and made of almost nothing."
+  "summary": "Private pleasure craft. Very fast, beautiful, and made of almost nothing."
  },
  {
   "id": "statblocks/vehicles/patrol-gunship",
@@ -13761,7 +13761,7 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Armoured wheeled transport. Size 5, full cover, firing ports, a locked cell in the back."
+  "summary": "Armoured wheeled transport. Full cover, firing ports, and locked cell."
  },
  {
   "id": "statblocks/vehicles/skiff-hauler",

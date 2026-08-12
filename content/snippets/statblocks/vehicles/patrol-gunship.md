@@ -13,15 +13,17 @@ you are. Forty-five feet of spaced laminate around a troop bay and a docking
 collar, slow enough to be outrun and armoured enough that outrunning it is the
 only option on the table.
 
-> **Cost** --Cr // **Object DEF** 35 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 2,000lbs
->
-> **Speed** Fly 380ft (Medium, 100ft/round)
+> **Cost** --Cr // **Cargo** 2,000lbs
 >
 > **Occupants** pilot + 7 // **Cover** full (enclosed)
 >
+> **Object DEF** 35 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
+>
+> **Speed** Fly 380ft (Medium, 100ft/round)
+>
 > **Collision** 9d6 + speed modifier // **Ignition** 3 rounds at 2 AP
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

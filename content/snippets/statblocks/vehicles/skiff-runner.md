@@ -12,15 +12,17 @@ A utility skiff with the deck panels, the passenger seat and most of the frame
 cut away, on the reasoning that none of it made the thing go faster. Couriers
 love them. Dock supervisors do not.
 
-> **Cost** --Cr // **Object DEF** 12 // **VIT** 3 // **Cargo** see description
->
-> **Speed** Ground 550ft (High, 120ft/round) // **Manueverability + Size** 2
+> **Cost** --Cr // **Cargo** see description
 >
 > **Occupants** driver only // **Cover** none (open frame)
 >
+> **Object DEF** 12 // **VIT** 3
+>
+> **Speed** Ground 550ft (High, 120ft/round) // **Manueverability + Size** 2
+>
 > **Collision** 2d6 + speed modifier // **Ignition** 2 AP
 >
-> **Proficiency** [Vehicle [Light Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
+> **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
 
 ---
 

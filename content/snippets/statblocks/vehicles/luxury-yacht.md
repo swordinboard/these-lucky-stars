@@ -10,10 +10,11 @@ summary: "Private pleasure craft. Very fast, beautiful, and made of almost nothi
 {{% statblock type="Spacecraft — Size 14 (14 spaces)" %}}
 Seventy feet of hull in a color no working ship is ever painted. Often manned by a crew of four who are paid to be invisible.
 
->  **Cost** --Cr // **Cargo** 4,000lbs (luggage hold)
+> **Cost** --Cr // **Cargo** 4,000lbs (luggage hold)
+>
 > **Occupants** pilot + 11 // **Cover** full (enclosed)
 >
->**Object DEF** 18 // **VIT** 3
+> **Object DEF** 18 // **VIT** 3
 >
 > **Speed** Fly 4500ft (Moderate, 200ft/round)
 >

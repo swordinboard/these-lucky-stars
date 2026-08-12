@@ -12,15 +12,17 @@ The same idea stretched until it stopped being nimble: twenty feet of deck
 on a doubled repulsor plate, a bench for three, and a turning circle that closes
 loading bays.
 
-> **Cost** --Cr // **Object DEF** 20 // **VIT** 3 // **Cargo** 1,600lbs
->
-> **Speed** Ground 325ft (Low, 50ft/round) // **Manueverability + Size** 8
+> **Cost** --Cr // **Cargo** 1,600lbs
 >
 > **Occupants** driver + 2 // **Cover** none (open deck)
 >
+> **Object DEF** 20 // **VIT** 3
+>
+> **Speed** Ground 325ft (Low, 50ft/round) // **Manueverability + Size** 8
+>
 > **Collision** 4d6 + speed modifier // **Ignition** 2 AP
 >
-> **Proficiency** [Vehicle [Light Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
+> **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
 
 ---
 

@@ -10,15 +10,17 @@ summary: "Tracked container hauler. Big, slow, blind, and impossible to stop."
 {{% statblock type="Heavy Ground Vehicle — Size 10 (10 spaces)" %}}
 Fifty feet of tracked chassis on four tracked treads. Nothing about it is quick and nothing about it is subtle.
 
-> **Cost** --Cr // **Object DEF** 20 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable)) // **Cargo** 60,000lbs in various configurations
->
-> **Speed** Ground 400ft (Low, 30ft/round) // **Manueverability + Size** 15
+> **Cost** --Cr // **Cargo** 60,000lbs in various configurations
 >
 > **Occupants** driver + 3 (cab) // **Cover** full (cab) // none (deck)
 >
+> **Object DEF** 20 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
+>
+> **Speed** Ground 400ft (Low, 30ft/round) // **Manueverability + Size** 15
+>
 > **Collision** 10d6 + speed modifier // **Ignition** see Cold Start
 >
-> **Proficiency** [Vehicle [Heavy Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** Two [Reactor Cores [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** Two [Reactor Cores [Industrial]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

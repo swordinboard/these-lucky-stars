@@ -112,9 +112,9 @@
    "character/abilities/special-encouragement",
    "character/abilities/battery-saboteur",
    "character/abilities/battery-saver",
+   "character/abilities/custom-battery",
    "character/abilities/overcharge",
-   "character/abilities/power-main-tap",
-   "character/abilities/swift-custom-battery"
+   "character/abilities/power-main-tap"
   ]
  },
  {

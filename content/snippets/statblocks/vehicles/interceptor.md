@@ -13,15 +13,17 @@ exists to be somewhere else within the minute, and every kilo of plate it does
 not carry is a kilo it does not have to move. Pilots are issued a good helmet
 and a strong recommendation to use the seat early.
 
-> **Cost** --Cr // **Object DEF** 20 // **VIT** 3 // **Cargo** 200lbs
->
-> **Speed** Fly 600ft (High, 200ft/round)
+> **Cost** --Cr // **Cargo** 200lbs
 >
 > **Occupants** pilot only // **Cover** full (sealed cockpit)
 >
+> **Object DEF** 20 // **VIT** 3
+>
+> **Speed** Fly 600ft (High, 200ft/round)
+>
 > **Collision** 6d6 + speed modifier // **Ignition** scramble-rated, 2 rounds at 2 AP
 >
-> **Proficiency** [Vehicle [Spacecraft]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** [Reactor Core [Standard]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** [Reactor Core [Standard]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

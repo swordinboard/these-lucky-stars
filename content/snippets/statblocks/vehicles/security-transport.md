@@ -4,22 +4,24 @@ id: statblocks/vehicles/security-transport
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
-summary: "Armoured wheeled transport. Full cover, firing ports, and locked cell.""
+summary: "Armoured wheeled transport. Full cover, firing ports, and locked cell."
 ---
 
 {{% statblock type="Heavy Ground Vehicle — Size 5 (5 spaces)" %}}
 Twenty-five feet of plated box on six wheels, painted in whatever corporate
 livery holds the contract this quarter. It is not particularly fast, but it is sturdy.
 
-> **Cost** --Cr // **Object DEF** 30 // **VIT** 3 // **Cargo** 600lbs (lockers)
->
-> **Speed** Ground 650ft (Low, 40ft/round) // **Manueverability + Size** 9
+> **Cost** --Cr // **Cargo** 600lbs (lockers)
 >
 > **Occupants** driver + 4 (cab), +6 (cell) // **Cover** full (enclosed)
 >
+> **Object DEF** 30 // **VIT** 3
+>
+> **Speed** Ground 650ft (Low, 40ft/round) // **Manueverability + Size** 9
+>
 > **Collision** 5d6 + speed modifier // **Ignition** 2 AP with a ID or code
 >
-> **Proficiency** [Vehicle [Heavy Ground]](/docs/free-srd/character-creation/proficiencies/#vehicle) // **Power** Two [Reactor Cores [Standard]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
+> **Power** Two [Reactor Cores [Standard]](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores)
 
 ---
 

@@ -186,7 +186,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
   "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
-  "line": 16
+  "line": 20
  },
  {
   "source": "statblocks/vehicles/bulk-hauler",
@@ -195,7 +195,7 @@
   "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
   "text": "vacuum",
   "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
-  "line": 32
+  "line": 34
  },
  {
   "source": "statblocks/vehicles/bulk-hauler",
@@ -204,7 +204,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "space suit",
   "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
-  "line": 32
+  "line": 34
  },
  {
   "source": "statblocks/vehicles/cargo-crawler",
@@ -213,7 +213,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
   "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
-  "line": 16
+  "line": 17
  },
  {
   "source": "statblocks/vehicles/interceptor",
@@ -222,7 +222,7 @@
   "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
   "text": "vacuum",
   "file": "content/snippets/statblocks/vehicles/interceptor.md",
-  "line": 31
+  "line": 33
  },
  {
   "source": "statblocks/vehicles/interceptor",
@@ -231,7 +231,7 @@
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "text": "Bail",
   "file": "content/snippets/statblocks/vehicles/interceptor.md",
-  "line": 33
+  "line": 35
  },
  {
   "source": "statblocks/vehicles/long-range-explorer",
@@ -240,7 +240,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
   "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
-  "line": 16
+  "line": 20
  },
  {
   "source": "statblocks/vehicles/long-range-explorer",
@@ -249,7 +249,7 @@
   "url": "#survey-lander",
   "text": "Survey Lander",
   "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
-  "line": 31,
+  "line": 33,
   "class": "broken-anchor"
  },
  {
@@ -259,7 +259,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
   "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
-  "line": 16
+  "line": 20
  },
  {
   "source": "statblocks/vehicles/patrol-gunship",
@@ -268,7 +268,7 @@
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "text": "boarding",
   "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
-  "line": 32
+  "line": 34
  },
  {
   "source": "statblocks/vehicles/security-transport",
@@ -277,15 +277,6 @@
   "url": "/docs/free-srd/core-rules/combat/#cover",
   "text": "full cover",
   "file": "content/snippets/statblocks/vehicles/security-transport.md",
-  "line": 30
- },
- {
-  "source": "statblocks/vehicles/security-transport",
-  "target": "gear/sci-fi-equipment/comp-jack",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
-  "text": "Comp Jack",
-  "file": "content/snippets/statblocks/vehicles/security-transport.md",
   "line": 31
  },
  {
@@ -298,13 +289,22 @@
   "line": 32
  },
  {
+  "source": "statblocks/vehicles/security-transport",
+  "target": "gear/sci-fi-equipment/comp-jack",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
+  "text": "Comp Jack",
+  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "line": 33
+ },
+ {
   "source": "statblocks/vehicles/speeder-bike",
   "target": "rules/vehicles/boarding-and-bailing",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "text": "Boarding & Bailing",
   "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
-  "line": 30
+  "line": 32
  },
  {
   "source": "statblocks/vehicles/speeder-bike",
@@ -313,7 +313,7 @@
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Shatter",
   "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
-  "line": 31
+  "line": 33
  },
  {
   "source": "statblocks/vehicles/survey-lander",
@@ -322,7 +322,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
   "text": "Bio Scanner",
   "file": "content/snippets/statblocks/vehicles/survey-lander.md",
-  "line": 31
+  "line": 33
  },
  {
   "source": "gear/components/automatic-crash-foam-system",
@@ -855,7 +855,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/gear/sci-fi-equipment/battery-cores.md",
-  "line": 18,
+  "line": 19,
   "class": "tag-definition"
  },
  {
@@ -865,7 +865,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
   "text": "Bulky",
   "file": "content/snippets/gear/sci-fi-equipment/battery-cores.md",
-  "line": 19,
+  "line": 20,
   "class": "tag-definition"
  },
  {
@@ -1434,12 +1434,32 @@
  },
  {
   "source": "gear/sci-fi-equipment/reactor-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
+  "line": 17,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi-equipment/reactor-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
+  "line": 18,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi-equipment/reactor-cores",
   "target": "gear/item-tags/battery",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
   "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 10,
+  "line": 20,
   "class": "tag-definition"
  },
  {
@@ -1449,27 +1469,16 @@
   "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur",
   "text": "Battery Saboteur",
   "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 12
+  "line": 24
  },
  {
   "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/bulky",
+  "target": "character/abilities/custom-battery",
   "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#custom-battery",
+  "text": "Custom Battery",
   "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 19,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 20,
-  "class": "tag-definition"
+  "line": 24
  },
  {
   "source": "gear/sci-fi-equipment/recoil-compensation-system",
@@ -2654,6 +2663,25 @@
   "class": "prerequisite"
  },
  {
+  "source": "character/abilities/custom-battery",
+  "target": "character/proficiencies/general-technology",
+  "type": "dependency",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
+  "text": "General Technology",
+  "file": "content/snippets/character/abilities/custom-battery.md",
+  "line": 11,
+  "class": "prerequisite"
+ },
+ {
+  "source": "character/abilities/custom-battery",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/character/abilities/custom-battery.md",
+  "line": 14
+ },
+ {
   "source": "character/abilities/dead-drop",
   "target": "character/proficiencies/b-e-kit",
   "type": "dependency",
@@ -3198,16 +3226,6 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/character/abilities/suppressing-fire.md",
-  "line": 11,
-  "class": "prerequisite"
- },
- {
-  "source": "character/abilities/swift-custom-battery",
-  "target": "character/proficiencies/general-technology",
-  "type": "dependency",
-  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#general-technology",
-  "text": "General Technology",
-  "file": "content/snippets/character/abilities/swift-custom-battery.md",
   "line": 11,
   "class": "prerequisite"
  },
@@ -3763,6 +3781,16 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "character/abilities/custom-battery",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Custom Battery",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
   "target": "character/abilities/ghost-protocol",
   "type": "reference",
   "class": "catalog",
@@ -3838,16 +3866,6 @@
   "class": "catalog",
   "url": null,
   "text": "Special Encouragement",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "character/abilities/swift-custom-battery",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Swift Custom Battery",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": null
  },
@@ -10691,27 +10709,27 @@
  },
  {
   "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
-  "target": "character/abilities/overcharge",
+  "target": "character/abilities/custom-battery",
   "type": "include",
-  "url": "/snippets/character/abilities/overcharge",
+  "url": "/snippets/character/abilities/custom-battery",
   "text": null,
   "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "line": 61
  },
  {
   "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
-  "target": "character/abilities/power-main-tap",
+  "target": "character/abilities/overcharge",
   "type": "include",
-  "url": "/snippets/character/abilities/power-main-tap",
+  "url": "/snippets/character/abilities/overcharge",
   "text": null,
   "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "line": 63
  },
  {
   "source": "page:/docs/free-srd/character-creation/abilities/sci-fi/",
-  "target": "character/abilities/swift-custom-battery",
+  "target": "character/abilities/power-main-tap",
   "type": "include",
-  "url": "/snippets/character/abilities/swift-custom-battery",
+  "url": "/snippets/character/abilities/power-main-tap",
   "text": null,
   "file": "content/docs/free-srd/character-creation/abilities/sci-fi.md",
   "line": 65
