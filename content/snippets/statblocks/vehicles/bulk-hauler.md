@@ -19,7 +19,7 @@ longer than anyone currently aboard has been employed.
 >
 > **Object DEF** 25 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
 >
-> **Speed** Fly 120ft (Low, 20ft/round)
+> **Speed** Fly 120ft (Low, 20ft/round) // **Maneuverability + Size** 28
 >
 > **Collision** 24d6 + speed modifier // **Ignition** ten minutes, cannot be hurried
 >

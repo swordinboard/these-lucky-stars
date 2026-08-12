@@ -19,7 +19,7 @@ the ship a party owes money on.
 >
 > **Object DEF** 18 // **VIT** 3
 >
-> **Speed** Fly 300ft (Medium, 60ft/round)
+> **Speed** Fly 300ft (Medium, 60ft/round) // **Maneuverability + Size** 20
 >
 > **Collision** 18d6 + speed modifier // **Ignition** 3 rounds at 2 AP (see Temperamental)
 >

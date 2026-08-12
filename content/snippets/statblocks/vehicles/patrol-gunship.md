@@ -19,7 +19,7 @@ only option on the table.
 >
 > **Object DEF** 35 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
 >
-> **Speed** Fly 380ft (Medium, 100ft/round)
+> **Speed** Fly 380ft (Medium, 100ft/round) // **Maneuverability + Size** 11
 >
 > **Collision** 9d6 + speed modifier // **Ignition** 3 rounds at 2 AP
 >

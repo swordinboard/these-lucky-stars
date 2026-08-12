@@ -19,7 +19,7 @@ and a strong recommendation to use the seat early.
 >
 > **Object DEF** 20 // **VIT** 3
 >
-> **Speed** Fly 600ft (High, 200ft/round)
+> **Speed** Fly 600ft (High, 200ft/round) // **Maneuverability + Size** 6
 >
 > **Collision** 6d6 + speed modifier // **Ignition** scramble-rated, 2 rounds at 2 AP
 >

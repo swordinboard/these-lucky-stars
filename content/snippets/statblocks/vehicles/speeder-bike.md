@@ -18,7 +18,7 @@ problem rather than the machine's.
 >
 > **Object DEF** 12 // **VIT** 3
 >
-> **Speed** Ground 1400ft (High, 300ft/round) // **Manueverability + Size** 2
+> **Speed** Ground 1400ft (High, 300ft/round) // **Maneuverability + Size** 2
 >
 > **Collision** 2d6 + speed modifier // **Ignition** 1 AP
 >

@@ -18,7 +18,7 @@ loading bays.
 >
 > **Object DEF** 20 // **VIT** 3
 >
-> **Speed** Ground 325ft (Low, 50ft/round) // **Manueverability + Size** 8
+> **Speed** Ground 325ft (Low, 50ft/round) // **Maneuverability + Size** 8
 >
 > **Collision** 4d6 + speed modifier // **Ignition** 2 AP
 >

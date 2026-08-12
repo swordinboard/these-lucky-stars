@@ -16,7 +16,7 @@ Seventy feet of hull in a color no working ship is ever painted. Often manned by
 >
 > **Object DEF** 18 // **VIT** 3
 >
-> **Speed** Fly 4500ft (Moderate, 200ft/round)
+> **Speed** Fly 4500ft (Medium, 200ft/round) // **Maneuverability + Size** 16
 >
 > **Collision** 14d6 + speed modifier // **Ignition** see entry
 >
@@ -28,5 +28,5 @@ Seventy feet of hull in a color no working ship is ever painted. Often manned by
 
 - **Decorative Hull** — A quarter inch of polished soft metal makes up the majority of the hull. Any damage taken in space that results in VIT loss causes a hull breach.
 - **Registry & Clearance** — Talking a yacht past a port authority or an inspection carries a minor advantage if no disadvantages are present — most officials begin with the assumption that this is somebody they should not inconvenience.
-- **Kept Warm** — Ignition takes 2 AP and is ready to move immediately as long as a crewmember reamins onboard between ignition sequences. If not, ignition takes two full rounds at 2 AP a round: one round to power up the flight systens, one round to spool up the engines. Clear to move on the third round.
+- **Kept Warm** — Ignition takes 2 AP and is ready to move immediately as long as a crewmember remains onboard between ignition sequences. If not, ignition takes two full rounds at 2 AP a round: one round to power up the flight systems, one round to spool up the engines. Clear to move on the third round.
 {{% /statblock %}}

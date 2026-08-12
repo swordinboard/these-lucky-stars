@@ -19,7 +19,7 @@ place to live that happens to move.
 >
 > **Object DEF** 30 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
 >
-> **Speed** Fly 250ft (Low, 50ft/round)
+> **Speed** Fly 250ft (Low, 50ft/round) // **Maneuverability + Size** 20
 >
 > **Collision** 16d6 + speed modifier // **Ignition** 5 rounds at 2 AP, from standby
 >
