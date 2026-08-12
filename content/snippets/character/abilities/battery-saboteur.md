@@ -14,7 +14,7 @@ You can easily turn battery cores into explosives. Doing so requires a use of th
 
 | Battery Size | Burn Damage | Splash Radius |
 |-------|-------|-------|
-| Mini |Charge ÷ 2 | 5ft |
+| Micro | Charge ÷ 2 | 5ft |
 | Small | Charge | 10ft |
 | Medium | Charge x2 | 15ft |
 | Large | Charge x4 | 20ft |

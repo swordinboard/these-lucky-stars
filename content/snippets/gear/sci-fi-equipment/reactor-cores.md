@@ -13,9 +13,9 @@ Reactor cores slowly regenerate their supply when disconnected; they regain 1 di
 
 | Size | Physical Size | Common Charge | Description |
 |------|--------------|---------------|-------------|
-| Compact | ≈ Medium battery | 2d12 | --Cr // 2lbs |
-| Standard | ≈ Large battery | 3d12 | --Cr // 50lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
-| Industrial | ≈ Industrial battery | 6d12 | --Cr // 120lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+| Compact | ≈ Medium battery | 2d10 | --Cr // 2lbs |
+| Standard | ≈ Large battery | 4d10 | --Cr // 50lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
+| Industrial | ≈ Industrial battery | 6d10 | --Cr // 120lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) |
 
 **Reactor Cores as Batteries** — Items with the [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) tag can be modified to accept a reactor core of the same size by using the Tech Kit with supplies, 1hr of work, and succeeding on a target 14 KNO check. The same process is used to revert the change.
 - (Items that are intended for use with a reactor core cannot be modified to use batteries.)

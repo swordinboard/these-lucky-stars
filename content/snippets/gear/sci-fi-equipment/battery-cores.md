@@ -13,7 +13,7 @@ Batteries are available in standard sizes that cannot be interchanged under norm
 
 | Standard Size | Common Charge | Description |
 |----|----|----|
-| Mini | 1d6 | --Cr // 0lbs // 1/2in round, coin like |
+| Micro | 1d6 | --Cr // 0lbs // 1/2in round, coin like |
 | Small | 1d12 | --Cr // 0.5lbs // 3×1in cylinder |
 | Medium | 2d12 | --Cr // 2lbs // 8×4in cylinder |
 | Large | 4d12 | --Cr // 50lbs // [Bulky](/docs/free-srd/inventory--equipment/item-tags/#bulky) // 1ft cube with a handle recessed in the top. A similar size to modern car batteries. |
