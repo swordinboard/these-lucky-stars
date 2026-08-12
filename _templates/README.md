@@ -9,12 +9,20 @@ generators and the PDF builder already expect.
 `content/snippets/<group>/<namespace>/<slug>.md`, then fill it in. The four
 groups are `rules/`, `character/`, `gear/` and `statblocks/`.
 
-Two of them are the exception to "taken from real blocks": `creature.md` and
-`vehicle.md` are **worked examples**, because the statted content is only just
-starting. Their prose is invented, but every number is derived from a rule
-already on the site and the derivation is written out in the comment. For
-filled-in real ones, read `content/snippets/statblocks/creatures/station-guard.md` and
-`content/snippets/statblocks/vehicles/skiff-utility.md`.
+`creature.md` is the exception to "taken from real blocks": it is a **worked
+example**, because the statted content is only just starting. Its prose is
+invented, but every number is derived from a rule already on the site and the
+derivation is written out in the comment. For a filled-in real one, read
+`content/snippets/statblocks/creatures/station-guard.md`.
+
+**`vehicle.md` is not a copy-and-fill file** — it is the vehicle norms
+reference, and the template is section 7 inside it. Statting a vehicle means
+turning a brief ("light ground, 200mph, enclosed, two forward lasers") into
+numbers, so it carries the mph conversion, what the maneuverability ratings and
+Object DEF bands actually mean, a calibration table of every vehicle currently
+statted, the blank template, and one brief worked end to end. Read it whole the
+first time; after that only section 7 gets copied. For filled-in real ones, read
+`content/snippets/statblocks/vehicles/`.
 
 **A stat block is always a snippet.** There is no page-homed variant of either
 template. A page that presents a statted thing is a `page-shell.md` that
@@ -30,7 +38,7 @@ on the page.
 | `feature-proficiency.md` | A proficiency |
 | `feature-trait.md` | A trait |
 | `equipment.md` | Any purchasable or carryable item |
-| `vehicle.md` | A statted vehicle |
+| `vehicle.md` | A statted vehicle — norms, calibration and the template, in one file |
 | `rule.md` | A rule a page presents as part of a section |
 | `rule-standalone.md` | A rule read on its own and listed in a table (conditions, wounds) |
 | `reference.md` | Intro/overview prose at the top of a section |
