@@ -1,6 +1,6 @@
 ---
 title: "Skiff, Runner"
-id: statblocks/vehicles/skiff-runner
+id: statblocks/sci-fi/vehicles/skiff-runner
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

@@ -1,6 +1,6 @@
 ---
 title: "Equipment Body Slots"
-id: gear/inventory/body-slots
+id: gear/equipment/body-slots
 category: [core]
 type: rule
 tags: [inventory]

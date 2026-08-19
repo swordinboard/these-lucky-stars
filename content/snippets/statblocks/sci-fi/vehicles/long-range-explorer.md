@@ -1,6 +1,6 @@
 ---
 title: "Long-Range Explorer"
-id: statblocks/vehicles/long-range-explorer
+id: statblocks/sci-fi/vehicles/long-range-explorer
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

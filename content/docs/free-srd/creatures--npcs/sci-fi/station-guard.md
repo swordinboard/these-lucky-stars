@@ -13,7 +13,7 @@ write an incident report than fill one out about themselves. Hired by the berth
 rather than the year, a station guard is the first thing a party argues with and
 the last thing they should have to kill.
 
-{{% include "/snippets/statblocks/creatures/station-guard" %}}
+{{% include "/snippets/statblocks/sci-fi/npcs/station-guard" %}}
 
 ## Tactics
 

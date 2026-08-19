@@ -1,6 +1,6 @@
 ---
 title: "Speeder Bike"
-id: statblocks/vehicles/speeder-bike
+id: statblocks/sci-fi/vehicles/speeder-bike
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

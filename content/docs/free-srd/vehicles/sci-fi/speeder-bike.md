@@ -13,7 +13,7 @@ throttle to outrun the consequences. It hovers a foot off the deck, so it does
 not care what the ground is made of, and it turns as tightly at speed as it does
 parked. That last part is what kills people.
 
-{{% include "/snippets/statblocks/vehicles/speeder-bike" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/speeder-bike" %}}
 
 ## Encounter Notes
 

@@ -16,7 +16,7 @@ At a table it is two things at once: the fastest hull a party can realistically
 get their hands on, and a room full of people who own things. Which of those
 matters depends entirely on whether the party arrived as guests.
 
-{{% include "/snippets/statblocks/vehicles/luxury-yacht" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/luxury-yacht" %}}
 
 ## Tactics
 

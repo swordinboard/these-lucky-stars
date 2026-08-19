@@ -1,6 +1,6 @@
 ---
 title: "Security Transport"
-id: statblocks/vehicles/security-transport
+id: statblocks/sci-fi/vehicles/security-transport
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

@@ -1,6 +1,6 @@
 ---
 title: "Inventory Management"
-id: gear/inventory/carry-limits
+id: gear/equipment/carry-limits
 category: [core]
 type: rule
 tags: [inventory]

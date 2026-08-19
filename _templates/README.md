@@ -13,7 +13,7 @@ groups are `rules/`, `character/`, `gear/` and `statblocks/`.
 example**, because the statted content is only just starting. Its prose is
 invented, but every number is derived from a rule already on the site and the
 derivation is written out in the comment. For a filled-in real one, read
-`content/snippets/statblocks/creatures/station-guard.md`.
+`content/snippets/statblocks/sci-fi/npcs/station-guard.md`.
 
 **`vehicle.md` is not a copy-and-fill file** — it is the vehicle norms
 reference, and the template is section 7 inside it. Statting a vehicle means
@@ -22,7 +22,7 @@ numbers, so it carries the mph conversion, what the maneuverability ratings and
 Object DEF bands actually mean, a calibration table of every vehicle currently
 statted, the blank template, and one brief worked end to end. Read it whole the
 first time; after that only section 7 gets copied. For filled-in real ones, read
-`content/snippets/statblocks/vehicles/`.
+`content/snippets/statblocks/sci-fi/vehicles/`.
 
 **A stat block is always a snippet.** There is no page-homed variant of either
 template. A page that presents a statted thing is a `page-shell.md` that

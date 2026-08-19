@@ -1,6 +1,6 @@
 ---
 title: "Skiff, Utility"
-id: statblocks/vehicles/skiff-utility
+id: statblocks/sci-fi/vehicles/skiff-utility
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

@@ -1,6 +1,6 @@
 ---
 title: "Interceptor"
-id: statblocks/vehicles/interceptor
+id: statblocks/sci-fi/vehicles/interceptor
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

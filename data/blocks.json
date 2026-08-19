@@ -3872,7 +3872,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 6,
+  "in_degree": 5,
   "tags": [
    "size",
    "combat",
@@ -4643,6 +4643,62 @@
   "tags": [
    "equipment",
    "armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
+  "id": "gear/equipment/body-slots",
+  "title": "Equipment Body Slots",
+  "home": "snippet",
+  "file": "content/snippets/gear/equipment/body-slots.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/inventory.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/inventory/"
+  ],
+  "anchor": "equipment-body-slots",
+  "url": "/docs/free-srd/inventory--equipment/inventory/#equipment-body-slots",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "inventory"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
+  "id": "gear/equipment/carry-limits",
+  "title": "Inventory Management",
+  "home": "snippet",
+  "file": "content/snippets/gear/equipment/carry-limits.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/inventory.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/inventory/"
+  ],
+  "anchor": "inventory-management",
+  "url": "/docs/free-srd/inventory--equipment/inventory/#inventory-management",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "inventory"
   ],
   "flags": [],
   "notes": "",
@@ -6565,62 +6621,6 @@
   "selectable": true,
   "wip": false,
   "summary": "Protects hands during labor and rough handling."
- },
- {
-  "id": "gear/inventory/body-slots",
-  "title": "Equipment Body Slots",
-  "home": "snippet",
-  "file": "content/snippets/gear/inventory/body-slots.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/inventory.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/inventory/"
-  ],
-  "anchor": "equipment-body-slots",
-  "url": "/docs/free-srd/inventory--equipment/inventory/#equipment-body-slots",
-  "owns_heading": false,
-  "category": [
-   "core"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "inventory"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false
- },
- {
-  "id": "gear/inventory/carry-limits",
-  "title": "Inventory Management",
-  "home": "snippet",
-  "file": "content/snippets/gear/inventory/carry-limits.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/inventory.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/inventory.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/inventory/"
-  ],
-  "anchor": "inventory-management",
-  "url": "/docs/free-srd/inventory--equipment/inventory/#inventory-management",
-  "owns_heading": false,
-  "category": [
-   "core"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "inventory"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false
  },
  {
   "id": "gear/item-tags/adaptive-mesh",
@@ -10829,39 +10829,6 @@
   "wip": false
  },
  {
-  "id": "rules/bots/automated-machines",
-  "title": "Automated Machines",
-  "home": "snippet",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "source_page": "content/docs/free-srd/character-creation/races/android.md",
-  "pages": [
-   "content/docs/free-srd/character-creation/races/android.md",
-   "content/docs/free-srd/core-rules/sci-fi-additions.md",
-   "content/docs/free-srd/creatures--npcs/sci-fi/_index.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/character-creation/races/android/",
-   "/docs/free-srd/core-rules/sci-fi-additions/",
-   "/docs/free-srd/creatures--npcs/sci-fi/"
-  ],
-  "anchor": "automated-machines",
-  "url": "/docs/free-srd/character-creation/races/android/#automated-machines",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 1,
-  "tags": [
-   "bots",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false
- },
- {
   "id": "rules/combat/actions-in-combat",
   "title": "Actions in Combat",
   "home": "snippet",
@@ -12169,6 +12136,34 @@
   "wip": false
  },
  {
+  "id": "rules/movement/movement",
+  "title": "Movement",
+  "home": "snippet",
+  "file": "content/snippets/rules/movement/movement.md",
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/"
+  ],
+  "anchor": "movement",
+  "url": "/docs/free-srd/core-rules/action-economy/#movement",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "movement"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
   "id": "rules/movement/primary-speed",
   "title": "Primary Speed",
   "home": "snippet",
@@ -12254,7 +12249,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "movement"
   ],
@@ -12493,6 +12488,39 @@
   "in_degree": 0,
   "tags": [
    "objects"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
+  "id": "rules/sci-fi/automated-machines",
+  "title": "Automated Machines",
+  "home": "snippet",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "source_page": "content/docs/free-srd/character-creation/races/android.md",
+  "pages": [
+   "content/docs/free-srd/character-creation/races/android.md",
+   "content/docs/free-srd/core-rules/sci-fi-additions.md",
+   "content/docs/free-srd/creatures--npcs/sci-fi/_index.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/character-creation/races/android/",
+   "/docs/free-srd/core-rules/sci-fi-additions/",
+   "/docs/free-srd/creatures--npcs/sci-fi/"
+  ],
+  "anchor": "automated-machines",
+  "url": "/docs/free-srd/character-creation/races/android/#automated-machines",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 1,
+  "tags": [
+   "bots",
+   "sci-fi"
   ],
   "flags": [],
   "notes": "",
@@ -12859,7 +12887,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "vehicles"
   ],
@@ -13121,6 +13149,35 @@
   "wip": true
  },
  {
+  "id": "rules/vehicles/vehicle-movement",
+  "title": "Vehicle Movement",
+  "home": "snippet",
+  "file": "content/snippets/rules/vehicles/vehicle-movement.md",
+  "source_page": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
+  "anchor": null,
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "movement",
+   "vehicles"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
   "id": "rules/vehicles/vehicle-size",
   "title": "Vehicle Size",
   "home": "snippet",
@@ -13139,7 +13196,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "vehicles"
   ],
@@ -13494,10 +13551,10 @@
   "excluded": true
  },
  {
-  "id": "statblocks/creatures/station-guard",
+  "id": "statblocks/sci-fi/npcs/station-guard",
   "title": "Station Guard",
   "home": "snippet",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "source_page": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
   "pages": [
    "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md"
@@ -13524,10 +13581,36 @@
   "summary": "Contract security in a combat vest — shock baton, auto pistol, and orders."
  },
  {
-  "id": "statblocks/vehicles/bulk-hauler",
+  "id": "statblocks/sci-fi/vehicles/attack-speeder",
+  "title": "Attack Speeder",
+  "home": "snippet",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/attack-speeder.md",
+  "source_page": null,
+  "pages": [],
+  "page_urls": [],
+  "anchor": null,
+  "url": null,
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "vehicle",
+  "in_degree": 0,
+  "tags": [
+   "vehicles",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Armored single-seat repulsor bike built for fast strafing runs."
+ },
+ {
+  "id": "statblocks/sci-fi/vehicles/bulk-hauler",
   "title": "Bulk Hauler",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/bulk-hauler.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/freighters.md"
@@ -13554,10 +13637,10 @@
   "summary": "Container ship. Size 24, a thousand tons, four crew, and ten minutes to start."
  },
  {
-  "id": "statblocks/vehicles/cargo-crawler",
+  "id": "statblocks/sci-fi/vehicles/cargo-crawler",
   "title": "Cargo Crawler",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/cargo-crawler.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md"
@@ -13584,10 +13667,10 @@
   "summary": "Tracked container hauler. Big, slow, blind, and impossible to stop."
  },
  {
-  "id": "statblocks/vehicles/interceptor",
+  "id": "statblocks/sci-fi/vehicles/interceptor",
   "title": "Interceptor",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/interceptor.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md"
@@ -13614,10 +13697,10 @@
   "summary": "Single-seat patrol fighter. Size 6, very fast, thin plate, an ejection seat that gets used."
  },
  {
-  "id": "statblocks/vehicles/light-freighter",
+  "id": "statblocks/sci-fi/vehicles/light-freighter",
   "title": "Light Freighter",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/light-freighter.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/light-freighter.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/freighters.md"
@@ -13644,10 +13727,10 @@
   "summary": "The party's ship. Size 18, a hundred tons of hold, patched plate, and a start sequence that sometimes works."
  },
  {
-  "id": "statblocks/vehicles/long-range-explorer",
+  "id": "statblocks/sci-fi/vehicles/long-range-explorer",
   "title": "Long-Range Explorer",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/long-range-explorer.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md"
@@ -13674,10 +13757,10 @@
   "summary": "Deep-range survey ship. Size 16, twelve crew, two years of endurance, and a lander in the bay."
  },
  {
-  "id": "statblocks/vehicles/luxury-yacht",
+  "id": "statblocks/sci-fi/vehicles/luxury-yacht",
   "title": "Luxury Yacht",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/luxury-yacht.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/luxury-yacht.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md"
@@ -13704,10 +13787,10 @@
   "summary": "Private pleasure craft. Very fast, beautiful, and made of almost nothing."
  },
  {
-  "id": "statblocks/vehicles/patrol-gunship",
+  "id": "statblocks/sci-fi/vehicles/patrol-gunship",
   "title": "Patrol Gunship",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/patrol-gunship.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md"
@@ -13734,10 +13817,10 @@
   "summary": "Armoured boarding craft. Size 9, a turret that does not fly the ship, and five people in the back."
  },
  {
-  "id": "statblocks/vehicles/security-transport",
+  "id": "statblocks/sci-fi/vehicles/security-transport",
   "title": "Security Transport",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/security-transport.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/security-transport.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/security-transport.md"
@@ -13764,10 +13847,10 @@
   "summary": "Armoured wheeled transport. Full cover, firing ports, and locked cell."
  },
  {
-  "id": "statblocks/vehicles/skiff-hauler",
+  "id": "statblocks/sci-fi/vehicles/skiff-hauler",
   "title": "Skiff, Hauler",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/skiff-hauler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/skiff-hauler.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
@@ -13794,10 +13877,10 @@
   "summary": "Long-bed freight skiff. Size 4, slow and unwieldy, 1,600lb bed."
  },
  {
-  "id": "statblocks/vehicles/skiff-runner",
+  "id": "statblocks/sci-fi/vehicles/skiff-runner",
   "title": "Skiff, Runner",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/skiff-runner.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/skiff-runner.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
@@ -13824,10 +13907,10 @@
   "summary": "Stripped courier skiff. Size 2, fast and fragile, one seat."
  },
  {
-  "id": "statblocks/vehicles/skiff-utility",
+  "id": "statblocks/sci-fi/vehicles/skiff-utility",
   "title": "Skiff, Utility",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/skiff-utility.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/skiff-utility.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/skiffs.md"
@@ -13854,10 +13937,10 @@
   "summary": "Open-bed hover skiff. Size 3, two seats, no cover, 400lb bed."
  },
  {
-  "id": "statblocks/vehicles/speeder-bike",
+  "id": "statblocks/sci-fi/vehicles/speeder-bike",
   "title": "Speeder Bike",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/speeder-bike.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md"
@@ -13881,13 +13964,13 @@
   "notes": "",
   "selectable": true,
   "wip": true,
-  "summary": "Open-frame repulsor bike. Size 2, one rider, no cover, fast enough to be a problem."
+  "summary": "Open-frame repulsor bike. No protection, low clearance, fast enough to be a problem."
  },
  {
-  "id": "statblocks/vehicles/survey-lander",
+  "id": "statblocks/sci-fi/vehicles/survey-lander",
   "title": "Survey Lander",
   "home": "snippet",
-  "file": "content/snippets/statblocks/vehicles/survey-lander.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/survey-lander.md",
   "source_page": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
   "pages": [
    "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md"

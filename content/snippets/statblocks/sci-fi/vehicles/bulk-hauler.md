@@ -1,6 +1,6 @@
 ---
 title: "Bulk Hauler"
-id: statblocks/vehicles/bulk-hauler
+id: statblocks/sci-fi/vehicles/bulk-hauler
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

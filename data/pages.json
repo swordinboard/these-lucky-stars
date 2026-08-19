@@ -186,7 +186,7 @@
   "wip": true,
   "blocks": [
    "races/android",
-   "rules/bots/automated-machines"
+   "rules/sci-fi/automated-machines"
   ]
  },
  {
@@ -289,6 +289,7 @@
    "rules/actions/opportunity-actions",
    "rules/combat/opportunity-attack",
    "rules/actions/reactions",
+   "rules/movement/movement",
    "rules/actions/move",
    "rules/actions/step",
    "rules/movement/primary-speed",
@@ -426,7 +427,7 @@
    "rules/sci-fi/communications",
    "rules/sci-fi/energy-shields",
    "rules/sci-fi/huds",
-   "rules/bots/automated-machines",
+   "rules/sci-fi/automated-machines",
    "rules/sci-fi/computer-systems"
   ]
  },
@@ -475,6 +476,7 @@
   "blocks": [
    "rules/vehicles/overview",
    "rules/vehicles/vehicle-size",
+   "rules/vehicles/vehicle-movement",
    "rules/movement/speed-tiers-chart",
    "rules/movement/speed-tiers",
    "rules/movement/speed-descriptors",
@@ -533,7 +535,7 @@
   "weight": "20",
   "wip": true,
   "blocks": [
-   "rules/bots/automated-machines"
+   "rules/sci-fi/automated-machines"
   ]
  },
  {
@@ -566,7 +568,7 @@
   "weight": "40",
   "wip": true,
   "blocks": [
-   "statblocks/creatures/station-guard"
+   "statblocks/sci-fi/npcs/station-guard"
   ]
  },
  {
@@ -680,8 +682,8 @@
   "weight": "2",
   "wip": false,
   "blocks": [
-   "gear/inventory/carry-limits",
-   "gear/inventory/body-slots"
+   "gear/equipment/carry-limits",
+   "gear/equipment/body-slots"
   ]
  },
  {
@@ -893,7 +895,7 @@
   "weight": "30",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/cargo-crawler"
+   "statblocks/sci-fi/vehicles/cargo-crawler"
   ]
  },
  {
@@ -904,8 +906,8 @@
   "weight": "40",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/interceptor",
-   "statblocks/vehicles/patrol-gunship"
+   "statblocks/sci-fi/vehicles/interceptor",
+   "statblocks/sci-fi/vehicles/patrol-gunship"
   ]
  },
  {
@@ -916,8 +918,8 @@
   "weight": "50",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/survey-lander",
-   "statblocks/vehicles/long-range-explorer"
+   "statblocks/sci-fi/vehicles/survey-lander",
+   "statblocks/sci-fi/vehicles/long-range-explorer"
   ]
  },
  {
@@ -928,8 +930,8 @@
   "weight": "60",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/light-freighter",
-   "statblocks/vehicles/bulk-hauler"
+   "statblocks/sci-fi/vehicles/light-freighter",
+   "statblocks/sci-fi/vehicles/bulk-hauler"
   ]
  },
  {
@@ -940,7 +942,7 @@
   "weight": "70",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/luxury-yacht"
+   "statblocks/sci-fi/vehicles/luxury-yacht"
   ]
  },
  {
@@ -951,7 +953,7 @@
   "weight": "20",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/security-transport"
+   "statblocks/sci-fi/vehicles/security-transport"
   ]
  },
  {
@@ -962,9 +964,9 @@
   "weight": "10",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/skiff-utility",
-   "statblocks/vehicles/skiff-hauler",
-   "statblocks/vehicles/skiff-runner"
+   "statblocks/sci-fi/vehicles/skiff-utility",
+   "statblocks/sci-fi/vehicles/skiff-hauler",
+   "statblocks/sci-fi/vehicles/skiff-runner"
   ]
  },
  {
@@ -975,7 +977,7 @@
   "weight": "5",
   "wip": true,
   "blocks": [
-   "statblocks/vehicles/speeder-bike"
+   "statblocks/sci-fi/vehicles/speeder-bike"
   ]
  },
  {

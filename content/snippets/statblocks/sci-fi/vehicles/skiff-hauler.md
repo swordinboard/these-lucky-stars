@@ -1,6 +1,6 @@
 ---
 title: "Skiff, Hauler"
-id: statblocks/vehicles/skiff-hauler
+id: statblocks/sci-fi/vehicles/skiff-hauler
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

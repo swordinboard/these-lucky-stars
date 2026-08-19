@@ -198,13 +198,13 @@ Vehicle** and **Spacecraft**.
 
 ## 7. The template
 
-Copy this into `content/snippets/statblocks/vehicles/<slug>.md` and fill the
+Copy this into `content/snippets/statblocks/sci-fi/vehicles/<slug>.md` and fill the
 angle brackets. Field order is fixed — it is the order every card uses.
 
 ```markdown
 ---
 title: "<Name>"
-id: statblocks/vehicles/<slug>
+id: statblocks/sci-fi/vehicles/<slug>
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
@@ -246,7 +246,7 @@ GM should feel about it. Not a restatement of the numbers.>
 - **One blank `>` between every stat line.** Omit it and two lines merge into one
   run-on with no break.
 - **No title heading in the snippet.** The card prints its own name, so include it
-  with **no level argument**: `{{% include "/snippets/statblocks/vehicles/<slug>" %}}`
+  with **no level argument**: `{{% include "/snippets/statblocks/sci-fi/vehicles/<slug>" %}}`
 - **Never end the file with an HTML comment** — it swallows the rest of the host page.
 - Run `python3 _discovery/tools/builddata.py` after adding one, then
   `./_discovery/tools/check.sh`.
@@ -288,7 +288,7 @@ metal is 20 × 1.25 = **25**. VIT stays 3.
 ```markdown
 ---
 title: "Course Runner"
-id: statblocks/vehicles/course-runner
+id: statblocks/sci-fi/vehicles/course-runner
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

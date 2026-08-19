@@ -135,193 +135,184 @@
   "line": 6
  },
  {
-  "source": "statblocks/creatures/station-guard",
+  "source": "statblocks/sci-fi/npcs/station-guard",
   "target": "gear/sci-fi-equipment/combat-vest",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
   "text": "Combat Vest",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "line": 24
  },
  {
-  "source": "statblocks/creatures/station-guard",
+  "source": "statblocks/sci-fi/npcs/station-guard",
   "target": "gear/sci-fi-equipment/shock-baton",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
   "text": "Shock Baton",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "line": 24
  },
  {
-  "source": "statblocks/creatures/station-guard",
+  "source": "statblocks/sci-fi/npcs/station-guard",
   "target": "gear/sci-fi-equipment/auto-pistol",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
   "text": "Auto Pistol",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "line": 24
  },
  {
-  "source": "statblocks/creatures/station-guard",
+  "source": "statblocks/sci-fi/npcs/station-guard",
   "target": "gear/sci-fi-equipment/coms-headset",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
   "text": "Coms Headset",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "line": 24
  },
  {
-  "source": "statblocks/creatures/station-guard",
+  "source": "statblocks/sci-fi/npcs/station-guard",
   "target": "gear/item-tags/firing-modes",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Full-Auto",
-  "file": "content/snippets/statblocks/creatures/station-guard.md",
+  "file": "content/snippets/statblocks/sci-fi/npcs/station-guard.md",
   "line": 31
  },
  {
-  "source": "statblocks/vehicles/bulk-hauler",
+  "source": "statblocks/sci-fi/vehicles/bulk-hauler",
   "target": "gear/item-tags/durable",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
-  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/bulk-hauler.md",
   "line": 20
  },
  {
-  "source": "statblocks/vehicles/bulk-hauler",
+  "source": "statblocks/sci-fi/vehicles/bulk-hauler",
   "target": "rules/environment/extreme-environments",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
   "text": "vacuum",
-  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/bulk-hauler.md",
   "line": 34
  },
  {
-  "source": "statblocks/vehicles/bulk-hauler",
+  "source": "statblocks/sci-fi/vehicles/bulk-hauler",
   "target": "gear/item-tags/space-suit",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
   "text": "space suit",
-  "file": "content/snippets/statblocks/vehicles/bulk-hauler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/bulk-hauler.md",
   "line": 34
  },
  {
-  "source": "statblocks/vehicles/cargo-crawler",
+  "source": "statblocks/sci-fi/vehicles/cargo-crawler",
   "target": "gear/item-tags/durable",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
-  "file": "content/snippets/statblocks/vehicles/cargo-crawler.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/cargo-crawler.md",
   "line": 17
  },
  {
-  "source": "statblocks/vehicles/interceptor",
+  "source": "statblocks/sci-fi/vehicles/interceptor",
   "target": "rules/environment/extreme-environments",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/environmental-effects/#vacuum",
   "text": "vacuum",
-  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/interceptor.md",
   "line": 33
  },
  {
-  "source": "statblocks/vehicles/interceptor",
+  "source": "statblocks/sci-fi/vehicles/interceptor",
   "target": "rules/vehicles/boarding-and-bailing",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "text": "Bail",
-  "file": "content/snippets/statblocks/vehicles/interceptor.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/interceptor.md",
   "line": 35
  },
  {
-  "source": "statblocks/vehicles/long-range-explorer",
+  "source": "statblocks/sci-fi/vehicles/long-range-explorer",
   "target": "gear/item-tags/durable",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
-  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/long-range-explorer.md",
   "line": 20
  },
  {
-  "source": "statblocks/vehicles/long-range-explorer",
+  "source": "statblocks/sci-fi/vehicles/long-range-explorer",
   "target": "unresolved:#survey-lander",
   "type": "reference",
   "url": "#survey-lander",
   "text": "Survey Lander",
-  "file": "content/snippets/statblocks/vehicles/long-range-explorer.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/long-range-explorer.md",
   "line": 33,
   "class": "broken-anchor"
  },
  {
-  "source": "statblocks/vehicles/patrol-gunship",
+  "source": "statblocks/sci-fi/vehicles/patrol-gunship",
   "target": "gear/item-tags/durable",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#durable",
   "text": "Durable",
-  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/patrol-gunship.md",
   "line": 20
  },
  {
-  "source": "statblocks/vehicles/patrol-gunship",
+  "source": "statblocks/sci-fi/vehicles/patrol-gunship",
   "target": "rules/vehicles/boarding-and-bailing",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
   "text": "boarding",
-  "file": "content/snippets/statblocks/vehicles/patrol-gunship.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/patrol-gunship.md",
   "line": 34
  },
  {
-  "source": "statblocks/vehicles/security-transport",
+  "source": "statblocks/sci-fi/vehicles/security-transport",
   "target": "rules/combat/cover",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#cover",
   "text": "full cover",
-  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/security-transport.md",
   "line": 31
  },
  {
-  "source": "statblocks/vehicles/security-transport",
+  "source": "statblocks/sci-fi/vehicles/security-transport",
   "target": "gear/sci-fi-equipment/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
-  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/security-transport.md",
   "line": 32
  },
  {
-  "source": "statblocks/vehicles/security-transport",
+  "source": "statblocks/sci-fi/vehicles/security-transport",
   "target": "gear/sci-fi-equipment/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
-  "file": "content/snippets/statblocks/vehicles/security-transport.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/security-transport.md",
   "line": 33
  },
  {
-  "source": "statblocks/vehicles/speeder-bike",
-  "target": "rules/vehicles/boarding-and-bailing",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/vehicle-rules/#boarding--bailing",
-  "text": "Boarding & Bailing",
-  "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
-  "line": 32
- },
- {
-  "source": "statblocks/vehicles/speeder-bike",
+  "source": "statblocks/sci-fi/vehicles/speeder-bike",
   "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Shatter",
-  "file": "content/snippets/statblocks/vehicles/speeder-bike.md",
-  "line": 33
+  "file": "content/snippets/statblocks/sci-fi/vehicles/speeder-bike.md",
+  "line": 31
  },
  {
-  "source": "statblocks/vehicles/survey-lander",
+  "source": "statblocks/sci-fi/vehicles/survey-lander",
   "target": "gear/sci-fi-equipment/bio-scanner",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
   "text": "Bio Scanner",
-  "file": "content/snippets/statblocks/vehicles/survey-lander.md",
+  "file": "content/snippets/statblocks/sci-fi/vehicles/survey-lander.md",
   "line": 33
  },
  {
@@ -1796,6 +1787,51 @@
   "line": 10
  },
  {
+  "source": "rules/sci-fi/automated-machines",
+  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
+  "text": "Crash Foam Canister",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "line": 14
+ },
+ {
+  "source": "rules/sci-fi/automated-machines",
+  "target": "rules/conditions/dying",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
+  "text": "Dying",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "line": 15
+ },
+ {
+  "source": "rules/sci-fi/automated-machines",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "line": 17
+ },
+ {
+  "source": "rules/sci-fi/automated-machines",
+  "target": "rules/conditions/dead-battery",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/sci-fi-additions/#dead-battery",
+  "text": "Dead Battery",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "line": 19
+ },
+ {
+  "source": "rules/sci-fi/automated-machines",
+  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
+  "text": "components",
+  "file": "content/snippets/rules/sci-fi/automated-machines.md",
+  "line": 23
+ },
+ {
   "source": "rules/sci-fi/communications",
   "target": "rules/sci-fi/computer-systems",
   "type": "reference",
@@ -1994,51 +2030,6 @@
   "line": 9
  },
  {
-  "source": "rules/bots/automated-machines",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
-  "text": "Crash Foam Canister",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "line": 14
- },
- {
-  "source": "rules/bots/automated-machines",
-  "target": "rules/conditions/dying",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/wounds--conditions/#dying",
-  "text": "Dying",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "line": 15
- },
- {
-  "source": "rules/bots/automated-machines",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "line": 17
- },
- {
-  "source": "rules/bots/automated-machines",
-  "target": "rules/conditions/dead-battery",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/sci-fi-additions/#dead-battery",
-  "text": "Dead Battery",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "line": 19
- },
- {
-  "source": "rules/bots/automated-machines",
-  "target": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "text": "components",
-  "file": "content/snippets/rules/bots/automated-machines.md",
-  "line": 23
- },
- {
   "source": "rules/conditions/pinned",
   "target": "rules/combat/grapple",
   "type": "reference",
@@ -2093,6 +2084,15 @@
   "line": 29
  },
  {
+  "source": "rules/movement/movement",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/snippets/rules/movement/movement.md",
+  "line": 15
+ },
+ {
   "source": "rules/movement/primary-speed",
   "target": "rules/movement/speed-descriptors",
   "type": "reference",
@@ -2118,33 +2118,6 @@
   "text": "race",
   "file": "content/snippets/rules/movement/primary-speed.md",
   "line": 15
- },
- {
-  "source": "rules/movement/speed-descriptors",
-  "target": "core-rules/size",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/size/",
-  "text": "Size",
-  "file": "content/snippets/rules/movement/speed-descriptors.md",
-  "line": 31
- },
- {
-  "source": "rules/movement/speed-descriptors",
-  "target": "rules/vehicles/vehicle-size",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-size",
-  "text": "Vehicle Rules",
-  "file": "content/snippets/rules/movement/speed-descriptors.md",
-  "line": 31
- },
- {
-  "source": "rules/movement/speed-descriptors",
-  "target": "rules/movement/speed-tiers",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
-  "text": "Speed Tier",
-  "file": "content/snippets/rules/movement/speed-descriptors.md",
-  "line": 31
  },
  {
   "source": "rules/actions/difficult-terrain",
@@ -2423,7 +2396,7 @@
   "url": "#mounts",
   "text": "mounts",
   "file": "content/snippets/rules/vehicles/drive.md",
-  "line": 13
+  "line": 15
  },
  {
   "source": "rules/vehicles/impact-and-overrun",
@@ -3648,6 +3621,16 @@
   "text": "Sci-Fi Vehicles",
   "file": "content/docs/free-srd/sci-fi-module.md",
   "line": 103
+ },
+ {
+  "source": "page:/docs/free-srd/sci-fi-module/",
+  "target": "rules/sci-fi/automated-machines",
+  "type": "reference",
+  "class": "catalog",
+  "url": null,
+  "text": "Automated Machines",
+  "file": "content/docs/free-srd/sci-fi-module.md",
+  "line": null
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
@@ -5040,146 +5023,6 @@
   "line": null
  },
  {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/creatures/station-guard",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Station Guard",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/bulk-hauler",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Bulk Hauler",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/cargo-crawler",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Cargo Crawler",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/interceptor",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Interceptor",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/light-freighter",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Light Freighter",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/long-range-explorer",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Long-Range Explorer",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/luxury-yacht",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Luxury Yacht",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/patrol-gunship",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Patrol Gunship",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/security-transport",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Security Transport",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/skiff-hauler",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Skiff, Hauler",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/skiff-runner",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Skiff, Runner",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/skiff-utility",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Skiff, Utility",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/speeder-bike",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Speeder Bike",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
-  "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "statblocks/vehicles/survey-lander",
-  "type": "reference",
-  "class": "catalog",
-  "url": null,
-  "text": "Survey Lander",
-  "file": "content/docs/free-srd/sci-fi-module.md",
-  "line": null
- },
- {
   "source": "page:/docs/free-srd/inventory--equipment/",
   "target": "page:/docs/free-srd/inventory--equipment/equipment/",
   "type": "reference",
@@ -5907,18 +5750,18 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/inventory/",
-  "target": "gear/inventory/carry-limits",
+  "target": "gear/equipment/carry-limits",
   "type": "include",
-  "url": "/snippets/gear/inventory/carry-limits",
+  "url": "/snippets/gear/equipment/carry-limits",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/inventory.md",
   "line": 8
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/inventory/",
-  "target": "gear/inventory/body-slots",
+  "target": "gear/equipment/body-slots",
   "type": "include",
-  "url": "/snippets/gear/inventory/body-slots",
+  "url": "/snippets/gear/equipment/body-slots",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/inventory.md",
   "line": 11
@@ -7659,18 +7502,18 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/",
-  "target": "rules/bots/automated-machines",
+  "target": "rules/sci-fi/automated-machines",
   "type": "include",
-  "url": "/snippets/rules/bots/automated-machines",
+  "url": "/snippets/rules/sci-fi/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/_index.md",
   "line": 30
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/sci-fi/station-guard/",
-  "target": "statblocks/creatures/station-guard",
+  "target": "statblocks/sci-fi/npcs/station-guard",
   "type": "include",
-  "url": "/snippets/statblocks/creatures/station-guard",
+  "url": "/snippets/statblocks/sci-fi/npcs/station-guard",
   "text": null,
   "file": "content/docs/free-srd/creatures--npcs/sci-fi/station-guard.md",
   "line": 16
@@ -7842,21 +7685,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "page:/docs/free-srd/core-rules/combat/",
+  "target": "page:/docs/free-srd/core-rules/combat/#actions-in-combat",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/",
+  "url": "/docs/free-srd/core-rules/combat/#actions-in-combat",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
   "line": 16
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "page:/docs/free-srd/core-rules/combat/",
+  "target": "page:/docs/free-srd/core-rules/combat/#actions-in-combat",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/",
+  "url": "/docs/free-srd/core-rules/combat/#actions-in-combat",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 26
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7865,16 +7708,7 @@
   "url": "#movement",
   "text": "Movement",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 26
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "page:/docs/free-srd/core-rules/combat/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/",
-  "text": "Combat",
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 47
+  "line": 24
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7883,7 +7717,7 @@
   "url": "/docs/free-srd/core-rules/stats/#action-points",
   "text": "Stats — Action Points",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 74
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7892,7 +7726,7 @@
   "url": "/docs/free-srd/core-rules/stats/#speed",
   "text": "Stats — Speed",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 74
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7901,7 +7735,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 75
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7910,7 +7744,7 @@
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 76
+  "line": 78
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7928,7 +7762,7 @@
   "url": "/snippets/rules/actions/action-types",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 21
+  "line": 19
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7937,7 +7771,7 @@
   "url": "/snippets/rules/actions/standard-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 28
+  "line": 26
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7946,7 +7780,7 @@
   "url": "/snippets/rules/actions/readied-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 31
+  "line": 29
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7955,7 +7789,7 @@
   "url": "/snippets/rules/actions/multi-turn-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 34
+  "line": 32
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7964,7 +7798,7 @@
   "url": "/snippets/rules/actions/opportunity-actions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 37
+  "line": 35
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7973,7 +7807,7 @@
   "url": "/snippets/rules/combat/opportunity-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 40
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7982,7 +7816,16 @@
   "url": "/snippets/rules/actions/reactions",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 43
+  "line": 41
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/action-economy/",
+  "target": "rules/movement/movement",
+  "type": "include",
+  "url": "/snippets/rules/movement/movement",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/action-economy.md",
+  "line": 49
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7991,7 +7834,7 @@
   "url": "/snippets/rules/actions/move",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 53
+  "line": 55
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8000,7 +7843,7 @@
   "url": "/snippets/rules/actions/step",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 55
+  "line": 57
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8009,7 +7852,7 @@
   "url": "/snippets/rules/movement/primary-speed",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 59
+  "line": 61
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8018,7 +7861,7 @@
   "url": "/snippets/rules/movement/speed-descriptors",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 62
+  "line": 64
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8027,7 +7870,7 @@
   "url": "/snippets/rules/movement/speed-tiers",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 65
+  "line": 67
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8036,7 +7879,7 @@
   "url": "/snippets/rules/movement/speed-tiers-chart",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 67
+  "line": 69
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -8045,7 +7888,7 @@
   "url": "/snippets/rules/actions/difficult-terrain",
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 70
+  "line": 72
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -8229,21 +8072,12 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
-  "target": "rules/actions/readied-actions",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#readied-actions",
-  "text": "Readied Actions",
-  "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 85
- },
- {
-  "source": "page:/docs/free-srd/core-rules/combat/",
   "target": "page:/docs/free-srd/core-rules/health/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 97
+  "line": 93
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8252,7 +8086,7 @@
   "url": "/docs/free-srd/core-rules/action-economy/",
   "text": "Action Economy & Movement",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 98
+  "line": 94
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8261,7 +8095,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 99
+  "line": 95
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8270,7 +8104,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged & Broken Gear",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 100
+  "line": 96
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8279,7 +8113,7 @@
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 101
+  "line": 97
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8288,7 +8122,7 @@
   "url": "/docs/free-srd/core-rules/environmental-effects/",
   "text": "Environmental Effects",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 102
+  "line": 98
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8441,7 +8275,7 @@
   "url": "/snippets/rules/combat/grapple",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 71
+  "line": 69
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8450,7 +8284,7 @@
   "url": "/snippets/rules/combat/shatter",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 73
+  "line": 71
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8459,7 +8293,7 @@
   "url": "/snippets/rules/combat/stand",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 75
+  "line": 73
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8468,7 +8302,7 @@
   "url": "/snippets/rules/combat/trip",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 77
+  "line": 75
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8477,7 +8311,7 @@
   "url": "/snippets/rules/combat/unarmed-attack",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 79
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8486,7 +8320,7 @@
   "url": "/snippets/rules/combat/brace",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 83
+  "line": 81
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8495,7 +8329,7 @@
   "url": "/snippets/rules/combat/stealth",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 87
+  "line": 83
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8504,7 +8338,7 @@
   "url": "/snippets/rules/actions/step",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 89
+  "line": 85
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8513,7 +8347,7 @@
   "url": "/snippets/rules/combat/use-cover",
   "text": null,
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 91
+  "line": 87
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
@@ -8769,9 +8603,9 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
-  "target": "rules/bots/automated-machines",
+  "target": "rules/sci-fi/automated-machines",
   "type": "include",
-  "url": "/snippets/rules/bots/automated-machines",
+  "url": "/snippets/rules/sci-fi/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
   "line": 37
@@ -8990,7 +8824,7 @@
   "url": "/docs/free-srd/core-rules/stats/#speed",
   "text": "Stats",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 16
+  "line": 18
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -9057,12 +8891,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/vehicles/vehicle-movement",
+  "type": "include",
+  "url": "/snippets/rules/vehicles/vehicle-movement",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 13
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
   "target": "rules/movement/speed-tiers-chart",
   "type": "include",
   "url": "/snippets/rules/movement/speed-tiers-chart",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 32
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -9071,7 +8914,7 @@
   "url": "/snippets/rules/movement/speed-tiers",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 34
+  "line": 36
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -10799,9 +10642,9 @@
  },
  {
   "source": "races/android",
-  "target": "rules/bots/automated-machines",
+  "target": "rules/sci-fi/automated-machines",
   "type": "include",
-  "url": "/snippets/rules/bots/automated-machines",
+  "url": "/snippets/rules/sci-fi/automated-machines",
   "text": null,
   "file": "content/docs/free-srd/character-creation/races/android.md",
   "line": 25
@@ -10908,117 +10751,117 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/cargo-crawler/",
-  "target": "statblocks/vehicles/cargo-crawler",
+  "target": "statblocks/sci-fi/vehicles/cargo-crawler",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/cargo-crawler",
+  "url": "/snippets/statblocks/sci-fi/vehicles/cargo-crawler",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/cargo-crawler.md",
   "line": 20
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
-  "target": "statblocks/vehicles/interceptor",
+  "target": "statblocks/sci-fi/vehicles/interceptor",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/interceptor",
+  "url": "/snippets/statblocks/sci-fi/vehicles/interceptor",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
   "line": 19
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/combat-fighters/",
-  "target": "statblocks/vehicles/patrol-gunship",
+  "target": "statblocks/sci-fi/vehicles/patrol-gunship",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/patrol-gunship",
+  "url": "/snippets/statblocks/sci-fi/vehicles/patrol-gunship",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/combat-fighters.md",
   "line": 21
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
-  "target": "statblocks/vehicles/survey-lander",
+  "target": "statblocks/sci-fi/vehicles/survey-lander",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/survey-lander",
+  "url": "/snippets/statblocks/sci-fi/vehicles/survey-lander",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
   "line": 19
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/expedition-vessels/",
-  "target": "statblocks/vehicles/long-range-explorer",
+  "target": "statblocks/sci-fi/vehicles/long-range-explorer",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/long-range-explorer",
+  "url": "/snippets/statblocks/sci-fi/vehicles/long-range-explorer",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/expedition-vessels.md",
   "line": 21
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
-  "target": "statblocks/vehicles/light-freighter",
+  "target": "statblocks/sci-fi/vehicles/light-freighter",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/light-freighter",
+  "url": "/snippets/statblocks/sci-fi/vehicles/light-freighter",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
   "line": 18
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/freighters/",
-  "target": "statblocks/vehicles/bulk-hauler",
+  "target": "statblocks/sci-fi/vehicles/bulk-hauler",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/bulk-hauler",
+  "url": "/snippets/statblocks/sci-fi/vehicles/bulk-hauler",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/freighters.md",
   "line": 20
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/luxury-yacht/",
-  "target": "statblocks/vehicles/luxury-yacht",
+  "target": "statblocks/sci-fi/vehicles/luxury-yacht",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/luxury-yacht",
+  "url": "/snippets/statblocks/sci-fi/vehicles/luxury-yacht",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/luxury-yacht.md",
   "line": 19
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/security-transport/",
-  "target": "statblocks/vehicles/security-transport",
+  "target": "statblocks/sci-fi/vehicles/security-transport",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/security-transport",
+  "url": "/snippets/statblocks/sci-fi/vehicles/security-transport",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/security-transport.md",
   "line": 20
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "target": "statblocks/vehicles/skiff-utility",
+  "target": "statblocks/sci-fi/vehicles/skiff-utility",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/skiff-utility",
+  "url": "/snippets/statblocks/sci-fi/vehicles/skiff-utility",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "line": 15
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "target": "statblocks/vehicles/skiff-hauler",
+  "target": "statblocks/sci-fi/vehicles/skiff-hauler",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/skiff-hauler",
+  "url": "/snippets/statblocks/sci-fi/vehicles/skiff-hauler",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "line": 17
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/skiffs/",
-  "target": "statblocks/vehicles/skiff-runner",
+  "target": "statblocks/sci-fi/vehicles/skiff-runner",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/skiff-runner",
+  "url": "/snippets/statblocks/sci-fi/vehicles/skiff-runner",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/skiffs.md",
   "line": 19
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/speeder-bike/",
-  "target": "statblocks/vehicles/speeder-bike",
+  "target": "statblocks/sci-fi/vehicles/speeder-bike",
   "type": "include",
-  "url": "/snippets/statblocks/vehicles/speeder-bike",
+  "url": "/snippets/statblocks/sci-fi/vehicles/speeder-bike",
   "text": null,
   "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
   "line": 16

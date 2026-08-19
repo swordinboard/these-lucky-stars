@@ -38,10 +38,10 @@ door behind them.
 
 <!--
 A STATTED CREATURE OR NPC. There is only this one form — a stat block is always
-a snippet. Copy to content/snippets/creatures/<slug>.md and place it with a
+a snippet. Copy to content/snippets/statblocks/sci-fi/npcs/<slug>.md and place it with a
 plain include, WITH NO LEVEL ARGUMENT:
 
-    {{% include "/snippets/creatures/dock-runner" %}}
+    {{% include "/snippets/statblocks/sci-fi/npcs/dock-runner" %}}
 
 A creature that needs a page of its own does not become a page: the page becomes
 a page-shell.md that includes this snippet and wraps it in prose — an intro

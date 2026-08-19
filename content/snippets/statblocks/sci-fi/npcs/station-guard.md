@@ -1,6 +1,6 @@
 ---
 title: "Station Guard"
-id: statblocks/creatures/station-guard
+id: statblocks/sci-fi/npcs/station-guard
 category: [sci-fi]
 type: creature
 tags: [creatures, sci-fi]

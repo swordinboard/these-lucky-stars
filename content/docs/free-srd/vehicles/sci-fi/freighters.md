@@ -15,9 +15,9 @@ owned by anyone the party will meet.
 The light freighter is written to be *theirs* — patched, indebted, and unreliable
 in a specific documented way. The bulk hauler is written to be robbed.
 
-{{% include "/snippets/statblocks/vehicles/light-freighter" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/light-freighter" %}}
 
-{{% include "/snippets/statblocks/vehicles/bulk-hauler" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/bulk-hauler" %}}
 
 ## Choosing Between Them
 

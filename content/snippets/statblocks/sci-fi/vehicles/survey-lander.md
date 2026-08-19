@@ -1,6 +1,6 @@
 ---
 title: "Survey Lander"
-id: statblocks/vehicles/survey-lander
+id: statblocks/sci-fi/vehicles/survey-lander
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

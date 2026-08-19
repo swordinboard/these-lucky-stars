@@ -27,7 +27,7 @@ crews, pirates.
 
 {{% details "Automated Machines" %}}
 
-{{% include "/snippets/rules/bots/automated-machines" %}}
+{{% include "/snippets/rules/sci-fi/automated-machines" %}}
 
 {{% /details %}}
 

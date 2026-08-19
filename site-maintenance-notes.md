@@ -79,7 +79,7 @@ or item — the unit a GM can select when building a custom PDF.
   | `statblocks/` | creatures, vehicles |
 
   **`vehicles` appears twice on purpose.** The driving, collision and mount
-  rules are `rules/vehicles/`; the statted craft are `statblocks/vehicles/`.
+  rules are `rules/vehicles/`; the statted craft are `statblocks/sci-fi/vehicles/`.
   Creature and NPC rules will split the same way when they are written, which is
   what the pairing is there to allow. `content/snippets/site/` sits outside the
   four — it is site chrome, not game content.

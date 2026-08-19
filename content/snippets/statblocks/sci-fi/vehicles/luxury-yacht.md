@@ -1,6 +1,6 @@
 ---
 title: "Luxury Yacht"
-id: statblocks/vehicles/luxury-yacht
+id: statblocks/sci-fi/vehicles/luxury-yacht
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

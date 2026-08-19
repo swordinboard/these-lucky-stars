@@ -1,6 +1,6 @@
 ---
 title: "Light Freighter"
-id: statblocks/vehicles/light-freighter
+id: statblocks/sci-fi/vehicles/light-freighter
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

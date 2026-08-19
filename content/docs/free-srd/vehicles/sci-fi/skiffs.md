@@ -12,11 +12,11 @@ A warehouse skiff is a flat repulsor deck with controls bolted to the back; the 
 
 The three below share a chassis and diverge primarily on **size** and **object DEF**.
 
-{{% include "/snippets/statblocks/vehicles/skiff-utility" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/skiff-utility" %}}
 
-{{% include "/snippets/statblocks/vehicles/skiff-hauler" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/skiff-hauler" %}}
 
-{{% include "/snippets/statblocks/vehicles/skiff-runner" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/skiff-runner" %}}
 
 ## Choosing Between Them
 

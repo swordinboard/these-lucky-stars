@@ -16,9 +16,9 @@ before the second one arrives.
 They divide the job cleanly. The **Interceptor** finds you and keeps finding
 you. The **Patrol Gunship** takes its time and lands people on your hull.
 
-{{% include "/snippets/statblocks/vehicles/interceptor" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/interceptor" %}}
 
-{{% include "/snippets/statblocks/vehicles/patrol-gunship" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/patrol-gunship" %}}
 
 ## Choosing Between Them
 

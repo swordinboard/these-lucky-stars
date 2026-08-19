@@ -17,7 +17,7 @@ That is the whole of its value at a table. It is slow, it is blind, it is
 enormous, and it is *scenery* — which makes it the best cover, the best
 distraction and the worst thing to be standing in front of on the entire dock.
 
-{{% include "/snippets/statblocks/vehicles/cargo-crawler" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/cargo-crawler" %}}
 
 ## Tactics
 

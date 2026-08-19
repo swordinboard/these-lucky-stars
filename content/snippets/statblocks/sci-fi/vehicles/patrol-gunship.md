@@ -1,6 +1,6 @@
 ---
 title: "Patrol Gunship"
-id: statblocks/vehicles/patrol-gunship
+id: statblocks/sci-fi/vehicles/patrol-gunship
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]

@@ -17,7 +17,7 @@ It is the first vehicle on this list a party is likely to meet from the outside
 rather than the inside. Everything about it is built to be difficult to open in
 a hurry, and the fastest way through one is almost never the armour.
 
-{{% include "/snippets/statblocks/vehicles/security-transport" %}}
+{{% include "/snippets/statblocks/sci-fi/vehicles/security-transport" %}}
 
 ## Tactics
 

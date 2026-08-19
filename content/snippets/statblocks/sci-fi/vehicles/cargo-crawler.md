@@ -1,6 +1,6 @@
 ---
 title: "Cargo Crawler"
-id: statblocks/vehicles/cargo-crawler
+id: statblocks/sci-fi/vehicles/cargo-crawler
 category: [sci-fi]
 type: vehicle
 tags: [vehicles, sci-fi]
