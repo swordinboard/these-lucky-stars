@@ -10,7 +10,7 @@ tags: [movement]
 > Mode Distance in Feet (Acceleration)
 > Swim 80ft (20ft/round)
 
-Speed descriptors describe what type of movement or terrain the Speed applies to, and how much it can accelerate per round.
+Speed descriptors describe what type of movement or terrain the speed applies to, and how much it can accelerate per round.
 A character may have Speeds in multiple modes of travel, each with its own descriptors.
 
 ## Modes
@@ -34,7 +34,7 @@ A vehicle can safely deccelerate twice as quickly as it is able to accelerate.
 > Acceleration is primarily reserved for vehicles. Creatures, including mounts, do not have an acceleration attatched to their speed. Creatures can  use their full speed distance in a single Move action, including any bonuses.
 
 > [!TIP]
-> **Example** — If a stationary vehicle has a speed of Ground 350ft (75ft/round) and is making a drive action each turn, it must spend five rounds accelerating (via a drive action) before it can reach its top Speed:
+> **Example** — If a stationary vehicle has a speed of Ground 350ft (75ft/round) and is making a Drive action each turn, it must spend five rounds accelerating (via a Drive action) before it can reach its top Speed:
 > - Round 1: +75ft/round acceleration, Speed 75ft.
 > - Round 2: +75ft/round acceleration, Speed 150ft
 > - Round 3: +75ft/round acceleration, Speed 225ft
