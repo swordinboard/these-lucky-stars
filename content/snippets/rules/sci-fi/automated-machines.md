@@ -1,6 +1,6 @@
 ---
 title: "Automated Machines"
-id: rules/bots/automated-machines
+id: rules/sci-fi/automated-machines
 category: [sci-fi]
 type: rule
 tags: [bots, sci-fi]

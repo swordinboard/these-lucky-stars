@@ -5,17 +5,19 @@ weight: 84
 wip: true
 ---
 
-{{% include "/snippets/rules/vehicles/overview" "h2" %}}
+{{% include "/snippets/rules/vehicles/overview" "h1" %}}
 
 
-{{% include "/snippets/rules/vehicles/vehicle-size" "h3" %}}
+{{% include "/snippets/rules/vehicles/vehicle-size" "h2" %}}
 
-### Speed
+{{% include "/snippets/rules/vehicles/vehicle-movement" %}}
+
+## Speed
 
 > [!Note]
 > Because these rules deal closely with movement and Speed, this section includes the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations. Thus, those rules are reiterated here.
 
-#### Speed Tiers
+### Speed Tiers
 
 > [!NOTE]
 > *Short:* Base targets for vehicle interactions (drive, board, bail, dodge) are calculated as *6 + the speed modifier:*
@@ -34,36 +36,34 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 {{% include "/snippets/rules/movement/speed-tiers" %}}
 {{% /details %}}
 
-{{% details "Modes & Maneuverability" %}}
-#### Modes & Maneuverability
-
-{{% include "/snippets/rules/movement/speed-descriptors" "h4" "false" %}}
+{{% details "Speed Descrpitors" %}}
+{{% include "/snippets/rules/movement/speed-descriptors" %}}
 {{% /details %}}
+
 ---
 
-
-{{% include "/snippets/rules/vehicles/vehicle-actions" "h3" %}}
-
-
-{{% include "/snippets/rules/vehicles/ignition" "h4" %}}
+{{% include "/snippets/rules/vehicles/vehicle-actions" "h2" %}}
 
 
-{{% include "/snippets/rules/vehicles/drive" "h4" %}}
+{{% include "/snippets/rules/vehicles/ignition" "lead" %}}
 
 
-{{% include "/snippets/rules/vehicles/boarding-and-bailing" "h4" %}}
+{{% include "/snippets/rules/vehicles/drive" "lead" %}}
 
 
-{{% include "/snippets/rules/vehicles/initiative-and-occupants" "h3" %}}
+{{% include "/snippets/rules/vehicles/boarding-and-bailing" "lead" %}}
 
 
-{{% include "/snippets/rules/vehicles/cover-from-vehicles" "h3" %}}
+{{% include "/snippets/rules/vehicles/initiative-and-occupants" "lead" %}}
 
 
-{{% include "/snippets/rules/vehicles/impact-and-overrun" "h3" %}}
+{{% include "/snippets/rules/vehicles/cover-from-vehicles" "lead" %}}
 
 
-{{% include "/snippets/rules/vehicles/collision-damage" "h3" %}}
+{{% include "/snippets/rules/vehicles/impact-and-overrun" "lead" %}}
+
+
+{{% include "/snippets/rules/vehicles/collision-damage" "lead" %}}
 
 <!--
 > **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.

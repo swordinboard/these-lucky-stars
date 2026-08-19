@@ -66,8 +66,6 @@ The following catalog lists the most common actions characters take during comba
 
 {{% include "/snippets/rules/combat/draw-a-weapon" "lead" %}}
 
-**Grapple** *(2 AP)*
-
 {{% include "/snippets/rules/combat/grapple" "lead" %}}
 
 {{% include "/snippets/rules/combat/shatter" "lead" %}}
@@ -81,8 +79,6 @@ The following catalog lists the most common actions characters take during comba
 ### Defensive Actions
 
 {{% include "/snippets/rules/combat/brace" "lead" %}}
-
-**Readied Action** — Declare an action and a trigger during your turn. AP is paid immediately. The action resolves when the trigger occurs, any time before the start of your next turn. Readied actions are vulnerable to interruption or distraction, and a character may choose to abandon a readied action at any point before it resolves. The committed AP is lost whether the action fires or not. See [Readied Actions](/docs/free-srd/core-rules/action-economy/#readied-actions) under Action Economy for the full rules.
 
 {{% include "/snippets/rules/combat/stealth" "lead" %}}
 

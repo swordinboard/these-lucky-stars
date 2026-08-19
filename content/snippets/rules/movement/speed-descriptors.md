@@ -7,10 +7,10 @@ tags: [movement]
 ---
 
 > **Format:**
-> Mode Distance in Feet (Base Maneuverability, Acceleration)
-> Swim 80ft (High, 20ft/round)
+> Mode Distance in Feet (Acceleration)
+> Swim 80ft (20ft/round)
 
-Speed descriptors describe what type of movement or terrain the Speed applies to, how difficult it is to maneuver, and how much it can accelerate per round.
+Speed descriptors describe what type of movement or terrain the Speed applies to, and how much it can accelerate per round.
 A character may have Speeds in multiple modes of travel, each with its own descriptors.
 
 **Modes**
@@ -22,15 +22,7 @@ A character may have Speeds in multiple modes of travel, each with its own descr
 
 **Combining Modes**
 
-Some movements can combine multiple modes in a single Move action — for example, a character with both a ground and climb Speed may walk across a floor and climb a wall as part of one Move. When combining modes, a character or vehicle's maximum travel distance cannot exceed their Primary Speed.
-
-**Maneuverability**
-
-> Maneuverability = Base Value + Size Value + Speed Tier
-
-Each speed also has a **base maneuverability rating** (High (0), Medium (2), or Low (4)) that is used to determine how many spaces are required to make a 180° turn. To determine the turning distance, add the maneuverability number to the character or vehicle's size value (see the [Size](/docs/free-srd/core-rules/size/) page for characters and [Vehicle Rules](/docs/free-srd/core-rules/vehicle-rules/#vehicle-size) page for vehicles) and [Speed Tier](/docs/free-srd/core-rules/action-economy/#speed-tiers). The arc is then traced forward and to the side that many spaces. The minimum is zero spaces, which allows the character to fully turn in place. To determine the number of spaces for a 90° turn, simply divide this number by two and round down if necessary. 
-
-*If maneuverability is excluded or left blank, then it is null. A vehicle or creature with such a Speed may change direction at will without requiring any turn radius regardless of size or speed tier.*
+Some movements can combine multiple modes in a single Move or Drive action — for example, a character with both a ground and climb Speed may walk across a floor and climb a wall as part of one Move. When combining modes, a character or vehicle's maximum travel distance cannot exceed their Primary Speed.
 
 **Acceleration & Deceleration**
 
