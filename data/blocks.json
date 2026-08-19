@@ -10019,7 +10019,7 @@
    "core"
   ],
   "type": "reference",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "races",
    "character-creation"
@@ -12217,7 +12217,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 0,
   "tags": [
    "movement"
   ],

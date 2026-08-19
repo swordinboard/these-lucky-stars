@@ -21,9 +21,9 @@ matters depends entirely on whether the party arrived as guests.
 ## Tactics
 
 A yacht has no tactics because it has no armament and eighteen points of Object
-DEF on a seventy-foot hull. What it has is a High-maneuverability Very Fast
-speed line and a transponder that opens cordons, and both of those are used
-before anyone starts shooting rather than after.
+DEF on a seventy-foot hull. What it has is a Very Fast speed line and a
+transponder that opens cordons, and both of those are used before anyone starts
+shooting rather than after.
 
 The crew of four are not combatants and will not become combatants. Their
 training is to get the vessel clear and the owner below, in that order, and a

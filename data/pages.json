@@ -475,8 +475,8 @@
   "wip": true,
   "blocks": [
    "rules/vehicles/overview",
-   "rules/vehicles/vehicle-size",
    "rules/vehicles/vehicle-movement",
+   "rules/vehicles/vehicle-size",
    "rules/movement/speed-tiers-chart",
    "rules/movement/speed-tiers",
    "rules/movement/speed-descriptors",
