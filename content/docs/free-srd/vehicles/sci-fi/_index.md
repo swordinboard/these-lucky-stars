@@ -14,7 +14,7 @@ whatever the party is about to steal off it.
 
 ## Light Ground Vehicles
 
-- [Speeder Bike](/docs/free-srd/vehicles/sci-fi/speeder-bike/) — Open frame, one rider, no cover and a great deal of speed
+- [Speeder Bikes](/docs/free-srd/vehicles/sci-fi/speeder-bikes/) — The open courier frame and the armored attack variant
 - [Skiffs](/docs/free-srd/vehicles/sci-fi/skiffs/) — The utility workhorse, the long-bed hauler, and the stripped runner
 
 ## Heavy Ground Vehicles

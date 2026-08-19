@@ -16,7 +16,7 @@ Seventy feet of hull in a color no working ship is ever painted. Often manned by
 >
 > **Object DEF** 18 // **VIT** 3
 >
-> **Speed** Fly 4500ft (Medium, 200ft/round) // **Maneuverability + Size** 16
+> **Speed** Fly 4500ft (200ft/round)
 >
 > **Collision** 14d6 + speed modifier // **Ignition** see entry
 >

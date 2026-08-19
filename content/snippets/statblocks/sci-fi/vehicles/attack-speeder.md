@@ -17,7 +17,7 @@ a fight. The added armor keeps the rider safe from most impacts.
 >
 > **Object DEF** 25 // **VIT** 3
 >
-> **Speed** Ground 1150ft (High, 300ft/round) // **Maneuverability + Size** 2
+> **Speed** Ground 1150ft (300ft/round)
 >
 > **Collision** 2d6 + speed modifier // **Ignition** 2 AP
 >

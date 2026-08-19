@@ -17,7 +17,7 @@ seats behind a stub windscreen, and no pretence of comfort or protection.
 >
 > **Object DEF** 18 // **VIT** 3
 >
-> **Speed** Ground 400ft (Medium, 80ft/round) // **Maneuverability + Size** 5
+> **Speed** Ground 400ft (80ft/round)
 >
 > **Collision** 3d6 + speed modifier // **Ignition** 2 AP
 >

@@ -18,10 +18,10 @@ derivation is written out in the comment. For a filled-in real one, read
 **`vehicle.md` is not a copy-and-fill file** — it is the vehicle norms
 reference, and the template is section 7 inside it. Statting a vehicle means
 turning a brief ("light ground, 200mph, enclosed, two forward lasers") into
-numbers, so it carries the mph conversion, what the maneuverability ratings and
-Object DEF bands actually mean, a calibration table of every vehicle currently
-statted, the blank template, and one brief worked end to end. Read it whole the
-first time; after that only section 7 gets copied. For filled-in real ones, read
+numbers, so it carries the mph conversion, what the Object DEF bands actually
+mean, why turning is not a stat block field, a calibration table of every vehicle
+currently statted, the blank template, and one brief worked end to end. Read it
+whole the first time; after that only section 7 gets copied. For real ones, read
 `content/snippets/statblocks/sci-fi/vehicles/`.
 
 **A stat block is always a snippet.** There is no page-homed variant of either

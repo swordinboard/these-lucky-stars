@@ -970,14 +970,15 @@
   ]
  },
  {
-  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
-  "title": "Speeder Bike",
-  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bikes/",
+  "title": "Speeder Bikes",
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md",
   "section": "vehicles/sci-fi",
   "weight": "5",
   "wip": true,
   "blocks": [
-   "statblocks/sci-fi/vehicles/speeder-bike"
+   "statblocks/sci-fi/vehicles/speeder-bike",
+   "statblocks/sci-fi/vehicles/attack-speeder"
   ]
  },
  {

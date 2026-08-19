@@ -91,7 +91,7 @@ the site, so a GM can check them:
              stresses (circuitry faults) or has no threshold at all.
   Speed      Primary Speed = 20 + 5 per AGI bonus, or a flat −5 for any AGI
              penalty. Format is the site's speed descriptor:
-             Mode Distance (Maneuverability, Acceleration). Leave acceleration
+             Mode Distance (Acceleration). Leave acceleration
              off living creatures — blank means null, which is what they have.
   Initiative AGI + DEX + INS.
   Grapple    STR + AGI, plus the flat size modifier.

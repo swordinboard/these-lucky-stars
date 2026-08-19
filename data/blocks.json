@@ -13585,11 +13585,15 @@
   "title": "Attack Speeder",
   "home": "snippet",
   "file": "content/snippets/statblocks/sci-fi/vehicles/attack-speeder.md",
-  "source_page": null,
-  "pages": [],
-  "page_urls": [],
-  "anchor": null,
-  "url": null,
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md",
+  "pages": [
+   "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/vehicles/sci-fi/speeder-bikes/"
+  ],
+  "anchor": "attack-speeder",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bikes/#attack-speeder",
   "owns_heading": false,
   "category": [
    "sci-fi"
@@ -13603,7 +13607,7 @@
   "flags": [],
   "notes": "",
   "selectable": true,
-  "wip": false,
+  "wip": true,
   "summary": "Armored single-seat repulsor bike built for fast strafing runs."
  },
  {
@@ -13941,15 +13945,15 @@
   "title": "Speeder Bike",
   "home": "snippet",
   "file": "content/snippets/statblocks/sci-fi/vehicles/speeder-bike.md",
-  "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
+  "source_page": "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md",
   "pages": [
-   "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md"
+   "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md"
   ],
   "page_urls": [
-   "/docs/free-srd/vehicles/sci-fi/speeder-bike/"
+   "/docs/free-srd/vehicles/sci-fi/speeder-bikes/"
   ],
   "anchor": "speeder-bike",
-  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/#speeder-bike",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bikes/#speeder-bike",
   "owns_heading": false,
   "category": [
    "sci-fi"

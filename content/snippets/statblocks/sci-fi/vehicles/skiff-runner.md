@@ -18,7 +18,7 @@ love them. Dock supervisors do not.
 >
 > **Object DEF** 12 // **VIT** 3
 >
-> **Speed** Ground 550ft (High, 120ft/round) // **Maneuverability + Size** 2
+> **Speed** Ground 550ft (120ft/round)
 >
 > **Collision** 2d6 + speed modifier // **Ignition** 2 AP
 >

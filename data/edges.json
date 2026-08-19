@@ -10679,10 +10679,10 @@
  },
  {
   "source": "page:/docs/free-srd/vehicles/sci-fi/",
-  "target": "page:/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "target": "page:/docs/free-srd/vehicles/sci-fi/speeder-bikes/",
   "type": "reference",
-  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bike/",
-  "text": "Speeder Bike",
+  "url": "/docs/free-srd/vehicles/sci-fi/speeder-bikes/",
+  "text": "Speeder Bikes",
   "file": "content/docs/free-srd/vehicles/sci-fi/_index.md",
   "line": 17
  },
@@ -10858,13 +10858,22 @@
   "line": 19
  },
  {
-  "source": "page:/docs/free-srd/vehicles/sci-fi/speeder-bike/",
+  "source": "page:/docs/free-srd/vehicles/sci-fi/speeder-bikes/",
   "target": "statblocks/sci-fi/vehicles/speeder-bike",
   "type": "include",
   "url": "/snippets/statblocks/sci-fi/vehicles/speeder-bike",
   "text": null,
-  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bike.md",
-  "line": 16
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md",
+  "line": 19
+ },
+ {
+  "source": "page:/docs/free-srd/vehicles/sci-fi/speeder-bikes/",
+  "target": "statblocks/sci-fi/vehicles/attack-speeder",
+  "type": "include",
+  "url": "/snippets/statblocks/sci-fi/vehicles/attack-speeder",
+  "text": null,
+  "file": "content/docs/free-srd/vehicles/sci-fi/speeder-bikes.md",
+  "line": 21
  },
  {
   "source": "rules/objects/conditions",

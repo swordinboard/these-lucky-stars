@@ -19,7 +19,7 @@ has been running for as long as the design has existed.
 >
 > **Object DEF** 20 // **VIT** 3
 >
-> **Speed** Fly 300ft (Medium, 75ft/round) // **Maneuverability + Size** 10
+> **Speed** Fly 300ft (75ft/round)
 >
 > **Collision** 8d6 + speed modifier // **Ignition** 3 rounds at 2 AP
 >

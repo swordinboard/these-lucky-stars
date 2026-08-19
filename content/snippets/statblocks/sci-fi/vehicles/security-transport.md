@@ -17,7 +17,7 @@ livery holds the contract this quarter. It is not particularly fast, but it is s
 >
 > **Object DEF** 30 // **VIT** 3
 >
-> **Speed** Ground 650ft (Low, 40ft/round) // **Maneuverability + Size** 9
+> **Speed** Ground 650ft (40ft/round)
 >
 > **Collision** 5d6 + speed modifier // **Ignition** 2 AP with an ID or code
 >

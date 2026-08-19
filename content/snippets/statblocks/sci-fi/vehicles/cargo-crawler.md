@@ -16,7 +16,7 @@ Fifty feet of tracked chassis on four tracked treads. Nothing about it is quick 
 >
 > **Object DEF** 20 // **VIT** 4 ([Durable](/docs/free-srd/inventory--equipment/item-tags/#durable))
 >
-> **Speed** Ground 400ft (Low, 30ft/round) // **Maneuverability + Size** 14
+> **Speed** Ground 400ft (30ft/round)
 >
 > **Collision** 10d6 + speed modifier // **Ignition** see Cold Start
 >

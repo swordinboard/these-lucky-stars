@@ -23,7 +23,7 @@ rider's Drive action.
 | From the brief | Derived |
 |---|---|
 | Class (light ground / heavy ground / spacecraft) | Size, in 5ft spaces |
-| Rough speed, in mph or in feel | ft/round, tier, maneuverability, acceleration |
+| Rough speed, in mph or in feel | ft/round, tier, acceleration |
 | Enclosed or open | Cover |
 | Who rides | Occupants |
 | Construction ("armoured", "stripped", "hardened") | Object DEF, and VIT if Durable/Fragile |
@@ -59,22 +59,23 @@ in collision damage and in every vehicle interaction target (`6 + modifier`).
 Land on a number that sits clearly inside a tier rather than on a boundary. 400
 is the Fast/Very Fast seam — use 380 or 420 and mean it.
 
-### Maneuverability
+### Turning
 
-Base rating is **High (0)**, **Medium (2)** or **Low (4)** — those three words
-only. The full turning figure is `base + size + speed tier`; the card prints
-**`Maneuverability + Size`**, which is just `base + size`, and the tier is added
-at the table because it changes with how fast the thing is going.
+**Nothing about turning goes on the card.** A vehicle's turn radius is `size +
+speed modifier` in diagonal spaces for a 90° turn, and both halves of that are
+already known at the table — size is in the type line, and the speed modifier
+changes round to round with how fast the thing is actually going. There is
+nothing left to precompute.
 
-The number is spaces traced forward and to the side for a 180° turn; halve and
-round down for 90°.
+So do not invent a maneuverability rating, and do not put one in the speed
+descriptor. See `rules/vehicles/vehicle-movement` for the full rule, including
+which turns need a Drive check.
 
-- **High** — pivots. One rider, short frame, or a fighter: bikes, runners, interceptors.
-- **Medium** — a working vehicle that has to think about a corner.
-- **Low** — long, heavy, or committed to a route several rounds early.
-
-Watch the compounding: size is already in there, so Low on a large hull gets
-severe fast. The bulk hauler's 28 is 140ft of arc before the speed tier is added.
+What this does mean for design: **size is the handling stat.** A long hull
+corners badly because it is long, and that falls out of Size without any second
+number. If a vehicle should handle unusually well or badly for its size, say so
+in a Feature and give it a mechanical effect — the speeder bike's Steering Vanes
+are the model, doubling the spaces a turn costs once they are damaged.
 
 ### Acceleration
 
@@ -83,8 +84,8 @@ Per Move or Drive action, in `Nft/round`. Rounds to top speed is
 rounds** to top speed, and that spread is the characterisation — an interceptor
 is 3, a cargo crawler is 6.
 
-Leaving maneuverability or acceleration blank means **null**, which is a
-creature's default, not a machine's. Always write both.
+Leaving acceleration blank means **null**, which is a creature's default, not a
+machine's. Always write it.
 
 ---
 
@@ -121,7 +122,7 @@ or 2 with Fragile. VIT names a condition: 2+ Full Function, 1 Damaged, 0 Broken.
 ## 4. The rest of the fields
 
 **Size** — the **longest dimension** in 5ft spaces, not the footprint. A 12ft car
-is Size 3. This one number drives collision dice and maneuverability.
+is Size 3. This one number drives collision dice and turn radius.
 
 **Collision** — `1d6 per space + speed modifier`. It follows from Size but is
 restated on the card because it gets rolled mid-chase.
@@ -175,21 +176,22 @@ GM's scene, not a line on the card.
 
 Compare a new vehicle against these before committing. Every value here is live.
 
-| Vehicle | Class | Size | DEF | VIT | Speed | mph | Man. | Accel | M+S |
-|---|---|---|---|---|---|---|---|---|---|
-| Speeder Bike | Light Ground | 2 | 12 | 3 | 1400ft | 159 | High | 300 | 2 |
-| Skiff, Runner | Light Ground | 2 | 12 | 3 | 550ft | 62 | High | 120 | 2 |
-| Skiff, Utility | Light Ground | 3 | 18 | 3 | 400ft | 45 | Medium | 80 | 5 |
-| Skiff, Hauler | Light Ground | 4 | 20 | 3 | 325ft | 37 | Low | 50 | 8 |
-| Security Transport | Heavy Ground | 5 | 30 | 3 | 650ft | 74 | Low | 40 | 9 |
-| Cargo Crawler | Heavy Ground | 10 | 20 | 4 | 400ft | 45 | Low | 30 | 14 |
-| Interceptor | Spacecraft | 6 | 20 | 3 | 600ft | 68 | High | 200 | 6 |
-| Survey Lander | Spacecraft | 8 | 20 | 3 | 300ft | 34 | Medium | 75 | 10 |
-| Patrol Gunship | Spacecraft | 9 | 35 | 4 | 380ft | 43 | Medium | 100 | 11 |
-| Luxury Yacht | Spacecraft | 14 | 18 | 3 | 4500ft | 511 | Medium | 200 | 16 |
-| Long-Range Explorer | Spacecraft | 16 | 30 | 4 | 250ft | 28 | Low | 50 | 20 |
-| Light Freighter | Spacecraft | 18 | 18 | 3 | 300ft | 34 | Medium | 60 | 20 |
-| Bulk Hauler | Spacecraft | 24 | 25 | 4 | 120ft | 14 | Low | 20 | 28 |
+| Vehicle | Class | Size | DEF | VIT | Speed | mph | Accel |
+|---|---|---|---|---|---|---|---|
+| Speeder Bike | Light Ground | 2 | 12 | 3 | 1400ft | 159 | 300 |
+| Attack Speeder | Light Ground | 2 | 25 | 3 | 1150ft | 131 | 300 |
+| Skiff, Runner | Light Ground | 2 | 12 | 3 | 550ft | 62 | 120 |
+| Skiff, Utility | Light Ground | 3 | 18 | 3 | 400ft | 45 | 80 |
+| Skiff, Hauler | Light Ground | 4 | 20 | 3 | 325ft | 37 | 50 |
+| Security Transport | Heavy Ground | 5 | 30 | 3 | 650ft | 74 | 40 |
+| Cargo Crawler | Heavy Ground | 10 | 20 | 4 | 400ft | 45 | 30 |
+| Interceptor | Spacecraft | 6 | 20 | 3 | 600ft | 68 | 200 |
+| Survey Lander | Spacecraft | 8 | 20 | 3 | 300ft | 34 | 75 |
+| Patrol Gunship | Spacecraft | 9 | 35 | 4 | 380ft | 43 | 100 |
+| Luxury Yacht | Spacecraft | 14 | 18 | 3 | 4500ft | 511 | 200 |
+| Long-Range Explorer | Spacecraft | 16 | 30 | 4 | 250ft | 28 | 50 |
+| Light Freighter | Spacecraft | 18 | 18 | 3 | 300ft | 34 | 60 |
+| Bulk Hauler | Spacecraft | 24 | 25 | 4 | 120ft | 14 | 20 |
 
 Class strings in use are exactly **Light Ground Vehicle**, **Heavy Ground
 Vehicle** and **Spacecraft**.
@@ -221,7 +223,7 @@ GM should feel about it. Not a restatement of the numbers.>
 >
 > **Object DEF** <N> // **VIT** <3>
 >
-> **Speed** <Ground|Fly> <N>ft (<High|Medium|Low>, <N>ft/round) // **Maneuverability + Size** <N>
+> **Speed** <Ground|Fly> <N>ft (<N>ft/round)
 >
 > **Collision** <N>d6 + speed modifier // **Ignition** <2 AP>
 >
@@ -274,9 +276,6 @@ an acceleration that reaches that in a sane number of rounds: 400ft/round gives
 
 **Size** — an enclosed single-seater is short, call it 10ft: **Size 2**.
 
-**Maneuverability** — short, one occupant, built to corner: **High (0)**, so
-`Maneuverability + Size` is 0 + 2 = **2**, matching the bike and the runner.
-
 **Object DEF** — a light ground vehicle normally sits at 12–18. "Hardened roll
 chassis, higher than expected" is one band up: an inch and a quarter of hard
 metal is 20 × 1.25 = **25**. VIT stays 3.
@@ -307,7 +306,7 @@ to.
 >
 > **Object DEF** 25 // **VIT** 3
 >
-> **Speed** Ground 1760ft (High, 400ft/round) // **Maneuverability + Size** 2
+> **Speed** Ground 1760ft (400ft/round)
 >
 > **Collision** 2d6 + speed modifier // **Ignition** 2 AP
 >

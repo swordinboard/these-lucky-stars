@@ -16,7 +16,7 @@ Two and a half meters of frame, repulsor plates and a throttle. No armour, no ca
 >
 > **Object DEF** 12 // **VIT** 3
 >
-> **Speed** Ground 1400ft (High, 300ft/round) // **Maneuverability + Size** 2
+> **Speed** Ground 1400ft (300ft/round)
 >
 > **Collision** 2d6 + speed modifier // **Ignition** 1 AP
 >
