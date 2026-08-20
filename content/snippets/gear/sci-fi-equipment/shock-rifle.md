@@ -11,6 +11,6 @@ summary: "Battery [medium]. Arcing. Two-handed. 20ft range."
 
 A basic shock rifle that fires arcing electrical bolts capable of jumping between nearby targets.
 
-{{% quickref "Arcing" "/docs/free-srd/core-rules/inventory--equipment/item-tags/#arching" %}}
-{{% include "/snippets/gear/item-tags/arching" %}}
+{{% quickref "Arcing" "/docs/free-srd/inventory--equipment/item-tags/#arcing" %}}
+{{% include "/snippets/gear/item-tags/arcing" %}}
 {{% /quickref %}}

@@ -1588,6 +1588,15 @@
   "class": "tag-definition"
  },
  {
+  "source": "gear/sci-fi-equipment/shock-rifle",
+  "target": "gear/item-tags/arcing",
+  "type": "include",
+  "url": "/snippets/gear/item-tags/arcing",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
+  "line": 15
+ },
+ {
   "source": "gear/sci-fi-equipment/signature-spoofer",
   "target": "gear/item-tags/battery",
   "type": "reference",

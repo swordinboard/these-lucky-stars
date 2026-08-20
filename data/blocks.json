@@ -6657,10 +6657,12 @@
   "file": "content/snippets/gear/item-tags/arcing.md",
   "source_page": "content/docs/free-srd/inventory--equipment/item-tags.md",
   "pages": [
-   "content/docs/free-srd/inventory--equipment/item-tags.md"
+   "content/docs/free-srd/inventory--equipment/item-tags.md",
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
   ],
   "page_urls": [
-   "/docs/free-srd/inventory--equipment/item-tags/"
+   "/docs/free-srd/inventory--equipment/item-tags/",
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/"
   ],
   "anchor": "arcing",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
@@ -6669,7 +6671,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "item-tag"
   ],
@@ -7277,7 +7279,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Full-auto. Concealable. 20ft range."
+  "summary": "Ballistic. Full-auto. Concealable. 40ft range."
  },
  {
   "id": "gear/sci-fi-equipment/b-e-kit",
@@ -7751,7 +7753,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Full-auto. Two-handed. 30ft range."
+  "summary": "Ballistic. Full-auto. Two-handed. 80ft range."
  },
  {
   "id": "gear/sci-fi-equipment/coms-headset",
@@ -8447,7 +8449,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Single shot. 50ft range."
+  "summary": "Ballistic. Single shot. 80ft range."
  },
  {
   "id": "gear/sci-fi-equipment/heavy-rotary-cannon",
@@ -8480,7 +8482,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (5) 60ft range."
+  "summary": "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (10) 100ft range."
  },
  {
   "id": "gear/sci-fi-equipment/jump-boosters",
@@ -8638,7 +8640,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Battery [small]. Single shot. Burn. 60ft range."
+  "summary": "Battery [small]. Single shot. Burn. 50ft range."
  },
  {
   "id": "gear/sci-fi-equipment/laser-rifle",
@@ -8671,7 +8673,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Battery [small]. Single shot. Burn. Two-handed. (10) 90ft range."
+  "summary": "Battery [small]. Single shot. Burn. Two-handed. (10) 120ft range."
  },
  {
   "id": "gear/sci-fi-equipment/light-combat-vest",
@@ -8736,7 +8738,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Semi-auto. Concealable. 30ft range."
+  "summary": "Ballistic. Semi-auto. Concealable. 60ft range."
  },
  {
   "id": "gear/sci-fi-equipment/long-range-coms",
@@ -8800,7 +8802,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Single shot. Bulky. Two-handed. (10) 50ft range."
+  "summary": "Ballistic. Single shot. Bulky. Two-handed. (10) 150ft range."
  },
  {
   "id": "gear/sci-fi-equipment/mag-boots",
@@ -9559,7 +9561,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Battery [medium]. Single shot. Arcing. Shock. Two-handed. 20ft range."
+  "summary": "Battery [medium]. Arcing. Two-handed. 20ft range."
  },
  {
   "id": "gear/sci-fi-equipment/signature-spoofer",
@@ -9750,7 +9752,7 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Ballistic. Semi-auto. Two-handed. 40ft range."
+  "summary": "Ballistic. Semi-auto. Two-handed. 100ft range."
  },
  {
   "id": "gear/sci-fi-equipment/survival-tent",
