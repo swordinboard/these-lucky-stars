@@ -10,7 +10,7 @@ summary: "Open-frame repulsor bike. No protection, low clearance, fast enough to
 {{% statblock type="Light Ground Vehicle — Size 2 (2 spaces)" %}}
 Two and a half meters of frame, repulsor plates and a throttle. No armour, no cabin, no crumple zone, all speed.
 
-> **Cost** --Cr // **Cargo** 50lbs (saddlebags)
+> **Cost** --Cr // **Cargo** 60lbs or 2 bulky items (saddlebags)
 >
 > **Occupants** driver + 1 passenger // **Cover** none (open frame)
 >
