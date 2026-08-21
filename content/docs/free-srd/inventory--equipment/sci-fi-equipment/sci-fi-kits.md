@@ -5,14 +5,14 @@ weight: 3
 bookToC: false
 ---
 
-{{% include "/snippets/gear/sci-fi-equipment/kit-supplies" "h2" %}}
+{{% include "/snippets/gear/sci-fi/kits/kit-supplies" "h2" %}}
 
-{{< blockdetails "gear/sci-fi-equipment/b-e-kit" "h3" >}}
+{{< blockdetails "gear/sci-fi/kits/b-e-kit" "h3" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/disguise-kit" "h3" >}}
+{{< blockdetails "gear/sci-fi/kits/disguise-kit" "h3" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/medical-kit" "h3" >}}
+{{< blockdetails "gear/sci-fi/kits/medical-kit" "h3" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/repair-kit" "h3" >}}
+{{< blockdetails "gear/sci-fi/kits/repair-kit" "h3" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/tech-kit" "h3" >}}
+{{< blockdetails "gear/sci-fi/kits/tech-kit" "h3" >}}

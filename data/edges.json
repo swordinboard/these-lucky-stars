@@ -37,7 +37,7 @@
  },
  {
   "source": "page:/",
-  "target": "gear/components/shield-mount",
+  "target": "gear/sci-fi/bot-components/shield-mount",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
   "text": "Shield Mount",
@@ -136,7 +136,7 @@
  },
  {
   "source": "statblocks/sci-fi/npcs/station-guard",
-  "target": "gear/sci-fi-equipment/combat-vest",
+  "target": "gear/sci-fi/armor/combat-vest",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
   "text": "Combat Vest",
@@ -145,7 +145,7 @@
  },
  {
   "source": "statblocks/sci-fi/npcs/station-guard",
-  "target": "gear/sci-fi-equipment/shock-baton",
+  "target": "gear/sci-fi/weapons/shock-baton",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#shock-baton",
   "text": "Shock Baton",
@@ -154,7 +154,7 @@
  },
  {
   "source": "statblocks/sci-fi/npcs/station-guard",
-  "target": "gear/sci-fi-equipment/auto-pistol",
+  "target": "gear/sci-fi/weapons/auto-pistol",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#auto-pistol",
   "text": "Auto Pistol",
@@ -163,7 +163,7 @@
  },
  {
   "source": "statblocks/sci-fi/npcs/station-guard",
-  "target": "gear/sci-fi-equipment/coms-headset",
+  "target": "gear/sci-fi/misc/coms-headset",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
   "text": "Coms Headset",
@@ -281,7 +281,7 @@
  },
  {
   "source": "statblocks/sci-fi/vehicles/security-transport",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
@@ -290,7 +290,7 @@
  },
  {
   "source": "statblocks/sci-fi/vehicles/security-transport",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
@@ -308,7 +308,7 @@
  },
  {
   "source": "statblocks/sci-fi/vehicles/survey-lander",
-  "target": "gear/sci-fi-equipment/bio-scanner",
+  "target": "gear/sci-fi/misc/bio-scanner",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
   "text": "Bio Scanner",
@@ -316,210 +316,1198 @@
   "line": 33
  },
  {
-  "source": "gear/components/automatic-crash-foam-system",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "source": "gear/sci-fi/bot-components/automatic-crash-foam-system",
+  "target": "gear/sci-fi/misc/crash-foam-canister",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
-  "file": "content/snippets/gear/components/automatic-crash-foam-system.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/automatic-crash-foam-system.md",
   "line": 12
  },
  {
-  "source": "gear/components/automatic-crash-foam-system",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "source": "gear/sci-fi/bot-components/automatic-crash-foam-system",
+  "target": "gear/sci-fi/misc/crash-foam-canister",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
-  "file": "content/snippets/gear/components/automatic-crash-foam-system.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/automatic-crash-foam-system.md",
   "line": 14
  },
  {
-  "source": "gear/components/backup-power-cell",
+  "source": "gear/sci-fi/bot-components/backup-power-cell",
   "target": "gear/item-tags/battery",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
-  "file": "content/snippets/gear/components/backup-power-cell.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/backup-power-cell.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/heavy-wrist-laser",
+  "source": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "target": "gear/item-tags/battery",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/heavy-wrist-laser",
+  "source": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "target": "gear/item-tags/firing-modes",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/heavy-wrist-laser",
-  "target": "gear/sci-fi-equipment/laser-rifle",
+  "source": "gear/sci-fi/bot-components/heavy-wrist-laser",
+  "target": "gear/sci-fi/weapons/laser-rifle",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle",
   "text": "Laser Rifle",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
   "line": 12
  },
  {
-  "source": "gear/components/heavy-wrist-laser",
+  "source": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "target": "character/proficiencies/weapon",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
   "line": 12
  },
  {
-  "source": "gear/components/heavy-wrist-laser",
+  "source": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "target": "gear/item-tags/two-handed",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
   "line": 14,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/improved-cooling-system",
+  "source": "gear/sci-fi/bot-components/improved-cooling-system",
   "target": "gear/item-tags/battery",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
-  "file": "content/snippets/gear/components/improved-cooling-system.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/improved-cooling-system.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/improved-cooling-system",
+  "source": "gear/sci-fi/bot-components/improved-cooling-system",
   "target": "rules/combat/damage-resistance",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "partial damage resistance",
-  "file": "content/snippets/gear/components/improved-cooling-system.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/improved-cooling-system.md",
   "line": 12
  },
  {
-  "source": "gear/components/improved-cooling-system",
+  "source": "gear/sci-fi/bot-components/improved-cooling-system",
   "target": "rules/combat/damage-resistance",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
   "text": "full damage resistance",
-  "file": "content/snippets/gear/components/improved-cooling-system.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/improved-cooling-system.md",
   "line": 12
  },
  {
-  "source": "gear/components/installation",
+  "source": "gear/sci-fi/bot-components/installation",
   "target": "character/abilities/tech-armor",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/abilities/sci-fi/#tech-armor",
   "text": "Tech Armor",
-  "file": "content/snippets/gear/components/installation.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/installation.md",
   "line": 9
  },
  {
-  "source": "gear/components/internal-comp-jack",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "source": "gear/sci-fi/bot-components/internal-comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
-  "file": "content/snippets/gear/components/internal-comp-jack.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/internal-comp-jack.md",
   "line": 12
  },
  {
-  "source": "gear/components/internal-comp-jack",
+  "source": "gear/sci-fi/bot-components/internal-comp-jack",
   "target": "character/proficiencies/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
   "text": "Comp Jack Proficiency",
-  "file": "content/snippets/gear/components/internal-comp-jack.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/internal-comp-jack.md",
   "line": 12
  },
  {
-  "source": "gear/components/power-sources",
+  "source": "gear/sci-fi/bot-components/power-sources",
   "target": "gear/item-tags/power-source",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
   "text": "power sources",
-  "file": "content/snippets/gear/components/power-sources.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/power-sources.md",
   "line": 9,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/shield-mount",
+  "source": "gear/sci-fi/bot-components/shield-mount",
   "target": "rules/objects/shield-degradation",
   "type": "include",
   "url": "/snippets/rules/objects/shield-degradation",
   "text": null,
-  "file": "content/snippets/gear/components/shield-mount.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/shield-mount.md",
   "line": 17
  },
  {
-  "source": "gear/components/signal-mast-heavy",
+  "source": "gear/sci-fi/bot-components/signal-mast-heavy",
   "target": "character/abilities/companion-bot",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/abilities/sci-fi/#companion-bot",
   "text": "Companion Bot",
-  "file": "content/snippets/gear/components/signal-mast-heavy.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/signal-mast-heavy.md",
   "line": 14
  },
  {
-  "source": "gear/components/signal-mast-retractable",
+  "source": "gear/sci-fi/bot-components/signal-mast-retractable",
   "target": "character/abilities/companion-bot",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/abilities/sci-fi/#companion-bot",
   "text": "Companion Bot",
-  "file": "content/snippets/gear/components/signal-mast-retractable.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/signal-mast-retractable.md",
   "line": 14
  },
  {
-  "source": "gear/components/wrist-laser",
+  "source": "gear/sci-fi/bot-components/wrist-laser",
   "target": "gear/item-tags/battery",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
   "text": "Battery",
-  "file": "content/snippets/gear/components/wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/wrist-laser.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/wrist-laser",
+  "source": "gear/sci-fi/bot-components/wrist-laser",
   "target": "gear/item-tags/firing-modes",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
   "text": "Single Shot",
-  "file": "content/snippets/gear/components/wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/wrist-laser.md",
   "line": 10,
   "class": "tag-definition"
  },
  {
-  "source": "gear/components/wrist-laser",
-  "target": "gear/sci-fi-equipment/laser-pistol",
+  "source": "gear/sci-fi/bot-components/wrist-laser",
+  "target": "gear/sci-fi/weapons/laser-pistol",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol",
   "text": "Laser Pistol",
-  "file": "content/snippets/gear/components/wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/wrist-laser.md",
   "line": 12
  },
  {
-  "source": "gear/components/wrist-laser",
+  "source": "gear/sci-fi/bot-components/wrist-laser",
   "target": "character/proficiencies/weapon",
   "type": "reference",
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
-  "file": "content/snippets/gear/components/wrist-laser.md",
+  "file": "content/snippets/gear/sci-fi/bot-components/wrist-laser.md",
   "line": 12
+ },
+ {
+  "source": "gear/sci-fi/weapons/auto-pistol",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Full-Auto",
+  "file": "content/snippets/gear/sci-fi/weapons/auto-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/auto-pistol",
+  "target": "gear/item-tags/concealable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
+  "text": "Concealable",
+  "file": "content/snippets/gear/sci-fi/weapons/auto-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/compact-rifle",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Full-Auto",
+  "file": "content/snippets/gear/sci-fi/weapons/compact-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/compact-rifle",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/compact-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/drum-magazines",
+  "target": "gear/item-tags/ballistic",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
+  "text": "Ballistic",
+  "file": "content/snippets/gear/sci-fi/weapons/drum-magazines.md",
+  "line": 11,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/emergency-hatchet",
+  "target": "gear/item-tags/throwable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
+  "text": "Throwable",
+  "file": "content/snippets/gear/sci-fi/weapons/emergency-hatchet.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-pistol",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Single Shot",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-rotary-cannon",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Full-Auto",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-rotary-cannon",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-rotary-cannon",
+  "target": "gear/item-tags/belt-fed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#belt-fed",
+  "text": "Belt Fed",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-rotary-cannon",
+  "target": "gear/item-tags/long-reload",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#long-reload",
+  "text": "Long Reload",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/heavy-rotary-cannon",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/knuckle-taser",
+  "target": "gear/sci-fi/weapons/shock-charger",
+  "type": "reference",
+  "url": "#shock-charger",
+  "text": "Shock Charger",
+  "file": "content/snippets/gear/sci-fi/weapons/knuckle-taser.md",
+  "line": 11
+ },
+ {
+  "source": "gear/sci-fi/weapons/laser-pistol",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Single Shot",
+  "file": "content/snippets/gear/sci-fi/weapons/laser-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/laser-rifle",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Single Shot",
+  "file": "content/snippets/gear/sci-fi/weapons/laser-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/laser-rifle",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/laser-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/light-pistol",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Semi-Auto",
+  "file": "content/snippets/gear/sci-fi/weapons/light-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/light-pistol",
+  "target": "gear/item-tags/concealable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
+  "text": "Concealable",
+  "file": "content/snippets/gear/sci-fi/weapons/light-pistol.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/long-rifle",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Single Shot",
+  "file": "content/snippets/gear/sci-fi/weapons/long-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/long-rifle",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/weapons/long-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/long-rifle",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/long-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/recoil-compensation-system",
+  "target": "gear/item-tags/ballistic",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
+  "text": "Ballistic",
+  "file": "content/snippets/gear/sci-fi/weapons/recoil-compensation-system.md",
+  "line": 11,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/ripper-blade",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/ripper-blade.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/ripper-blade",
+  "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
+  "text": "Shatter",
+  "file": "content/snippets/gear/sci-fi/weapons/ripper-blade.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-baton",
+  "target": "gear/sci-fi/weapons/shock-charger",
+  "type": "reference",
+  "url": "#shock-charger",
+  "text": "Shock Charger",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-baton.md",
+  "line": 11
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-charger",
+  "target": "rules/combat/damage",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#damage-types",
+  "text": "Shock",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-charger.md",
+  "line": 13
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-rifle",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Single Shot",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-rifle",
+  "target": "gear/item-tags/arcing",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
+  "text": "Arcing",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-rifle",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/shock-rifle",
+  "target": "gear/item-tags/arcing",
+  "type": "include",
+  "url": "/snippets/gear/item-tags/arcing",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/weapons/shock-rifle.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/weapons/standard-issue-knife",
+  "target": "gear/item-tags/concealable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
+  "text": "Concealable",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-knife.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/standard-issue-knife",
+  "target": "gear/item-tags/throwable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
+  "text": "Throwable",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-knife.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/standard-issue-rifle",
+  "target": "gear/item-tags/firing-modes",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
+  "text": "Semi-Auto",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/standard-issue-rifle",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-rifle.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/weapons/weighted-core",
+  "target": "gear/item-tags/throwable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
+  "text": "Throwable",
+  "file": "content/snippets/gear/sci-fi/weapons/weighted-core.md",
+  "line": 13,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/ara-5",
+  "target": "gear/item-tags/injector",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
+  "text": "Injector",
+  "file": "content/snippets/gear/sci-fi/misc/ara-5.md",
+  "line": 11,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/battery-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/battery-cores.md",
+  "line": 19,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/battery-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/battery-cores.md",
+  "line": 20,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/bio-scanner",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/bio-scanner.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/boost-pack",
+  "target": "gear/item-tags/fuel-cells",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
+  "text": "Fuel Cell",
+  "file": "content/snippets/gear/sci-fi/misc/boost-pack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/boost-pack",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/boost-pack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/boost-pack",
+  "target": "character/abilities/charge",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/abilities/#charge",
+  "text": "Charge",
+  "file": "content/snippets/gear/sci-fi/misc/boost-pack.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/misc/comp-jack",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/comp-jack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/comp-jack",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/misc/comp-jack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/comp-jack",
+  "target": "character/proficiencies/comp-jack",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
+  "text": "Comp Jack Proficiency",
+  "file": "content/snippets/gear/sci-fi/misc/comp-jack.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/misc/coms-headset",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/misc/coms-headset.md",
+  "line": 14
+ },
+ {
+  "source": "gear/sci-fi/misc/decoy-beacon",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/decoy-beacon.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/fuel-cells",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/fuel-cells.md",
+  "line": 17,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/fuel-cells",
+  "target": "rules/objects/conditions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions",
+  "text": "Broken",
+  "file": "content/snippets/gear/sci-fi/misc/fuel-cells.md",
+  "line": 19
+ },
+ {
+  "source": "gear/sci-fi/misc/grapple-line-launcher",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/grapple-line-launcher.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/grapple-line-launcher",
+  "target": "gear/item-tags/two-handed",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
+  "text": "Two-Handed",
+  "file": "content/snippets/gear/sci-fi/misc/grapple-line-launcher.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/gravity-anchor",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/gravity-anchor.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/gravity-anchor",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/gravity-anchor.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/jump-boosters",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/jump-boosters.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/jump-pack",
+  "target": "gear/item-tags/fuel-cells",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
+  "text": "Fuel Cell",
+  "file": "content/snippets/gear/sci-fi/misc/jump-pack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/jump-pack",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/jump-pack.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/mini-laser-cutter",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/mini-laser-cutter.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/pain-suppressant-injector",
+  "target": "gear/item-tags/injector",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
+  "text": "Injector",
+  "file": "content/snippets/gear/sci-fi/misc/pain-suppressant-injector.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/personal-shield",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/personal-shield.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/personal-shield",
+  "target": "rules/sci-fi/energy-shields",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/energy-shields",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/misc/personal-shield.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/misc/portable-heater",
+  "target": "gear/item-tags/fuel-cells",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
+  "text": "Fuel Cell",
+  "file": "content/snippets/gear/sci-fi/misc/portable-heater.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/portable-water-purifier",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/portable-water-purifier.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "gear/item-tags/power-source",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
+  "text": "Power Source",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 17,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 18,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 20,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "character/abilities/battery-saboteur",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur",
+  "text": "Battery Saboteur",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 24
+ },
+ {
+  "source": "gear/sci-fi/misc/reactor-cores",
+  "target": "character/abilities/custom-battery",
+  "type": "reference",
+  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#custom-battery",
+  "text": "Custom Battery",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "line": 24
+ },
+ {
+  "source": "gear/sci-fi/misc/remote-detonator",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/remote-detonator.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/signature-spoofer",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/signature-spoofer.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/signature-spoofer",
+  "target": "gear/sci-fi/misc/data-spike",
+  "type": "reference",
+  "url": "#data-spike",
+  "text": "Data Spike",
+  "file": "content/snippets/gear/sci-fi/misc/signature-spoofer.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/misc/squad-shield",
+  "target": "gear/item-tags/battery",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
+  "text": "Battery",
+  "file": "content/snippets/gear/sci-fi/misc/squad-shield.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/squad-shield",
+  "target": "rules/sci-fi/energy-shields",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/energy-shields",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/misc/squad-shield.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/misc/survival-tent",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/misc/survival-tent.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/misc/vitaboost-injector",
+  "target": "gear/item-tags/injector",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
+  "text": "Injector",
+  "file": "content/snippets/gear/sci-fi/misc/vitaboost-injector.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/auto-injector",
+  "target": "gear/sci-fi/misc/ara-5",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
+  "text": "ARA-5",
+  "file": "content/snippets/gear/sci-fi/armor/auto-injector.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/auto-injector",
+  "target": "gear/sci-fi/misc/pain-suppressant-injector",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
+  "text": "Pain Suppressant",
+  "file": "content/snippets/gear/sci-fi/armor/auto-injector.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/auto-injector",
+  "target": "gear/sci-fi/misc/vitaboost-injector",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
+  "text": "Vitaboost",
+  "file": "content/snippets/gear/sci-fi/armor/auto-injector.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/basic-p-suit",
+  "target": "gear/item-tags/pressurized",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#pressurized",
+  "text": "Pressurized",
+  "file": "content/snippets/gear/sci-fi/armor/basic-p-suit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/basic-p-suit",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/armor/basic-p-suit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/classic-evosuit",
+  "target": "gear/item-tags/space-suit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
+  "text": "Space Suit",
+  "file": "content/snippets/gear/sci-fi/armor/classic-evosuit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/classic-evosuit",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/armor/classic-evosuit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/combat-evosuit",
+  "target": "gear/item-tags/space-suit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
+  "text": "Space Suit",
+  "file": "content/snippets/gear/sci-fi/armor/combat-evosuit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/combat-evosuit",
+  "target": "gear/sci-fi/armor/targeting-hud",
+  "type": "reference",
+  "url": "#targeting-hud",
+  "text": "Targeting HUD",
+  "file": "content/snippets/gear/sci-fi/armor/combat-evosuit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/combat-evosuit",
+  "target": "gear/sci-fi/armor/emergency-shank",
+  "type": "reference",
+  "url": "#emergency-shank",
+  "text": "Emergency Shank",
+  "file": "content/snippets/gear/sci-fi/armor/combat-evosuit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/coms-unit",
+  "target": "rules/sci-fi/communications",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/communications",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/armor/coms-unit.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/armor/eva-suit",
+  "target": "gear/item-tags/space-suit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
+  "text": "Space Suit",
+  "file": "content/snippets/gear/sci-fi/armor/eva-suit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/eva-suit",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/armor/eva-suit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/eva-suit",
+  "target": "gear/sci-fi/armor/safer-unit",
+  "type": "reference",
+  "url": "#safer-unit",
+  "text": "SAFER Unit",
+  "file": "content/snippets/gear/sci-fi/armor/eva-suit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/eva-suit",
+  "target": "gear/sci-fi/armor/safer-unit",
+  "type": "reference",
+  "url": "#safer-unit",
+  "text": "SAFER unit",
+  "file": "content/snippets/gear/sci-fi/armor/eva-suit.md",
+  "line": 14
+ },
+ {
+  "source": "gear/sci-fi/armor/hazard-hud",
+  "target": "rules/sci-fi/huds",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/huds",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/armor/hazard-hud.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/armor/light-combat-vest",
+  "target": "gear/item-tags/concealable",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
+  "text": "Concealable",
+  "file": "content/snippets/gear/sci-fi/armor/light-combat-vest.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/mebn-hud",
+  "target": "rules/sci-fi/huds",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/huds",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/armor/mebn-hud.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/armor/padded-flight-suit",
+  "target": "rules/combat/damage-resistance",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
+  "text": "Partial Damage Resistance",
+  "file": "content/snippets/gear/sci-fi/armor/padded-flight-suit.md",
+  "line": 10
+ },
+ {
+  "source": "gear/sci-fi/armor/safer-unit",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/armor/safer-unit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/security-flight-suit",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/armor/security-flight-suit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/armor/targeting-hud",
+  "target": "rules/sci-fi/huds",
+  "type": "include",
+  "url": "/snippets/rules/sci-fi/huds",
+  "text": null,
+  "file": "content/snippets/gear/sci-fi/armor/targeting-hud.md",
+  "line": 15
+ },
+ {
+  "source": "gear/sci-fi/armor/ultraweave-evosuit",
+  "target": "gear/item-tags/space-suit",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
+  "text": "Space Suit",
+  "file": "content/snippets/gear/sci-fi/armor/ultraweave-evosuit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/armor/ultraweave-evosuit",
+  "target": "rules/combat/damage-resistance",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
+  "text": "Partial Damage Resistance",
+  "file": "content/snippets/gear/sci-fi/armor/ultraweave-evosuit.md",
+  "line": 10
+ },
+ {
+  "source": "gear/sci-fi/armor/ultraweave-evosuit",
+  "target": "gear/sci-fi/armor/coms-unit",
+  "type": "reference",
+  "url": "#coms-unit",
+  "text": "Coms Unit",
+  "file": "content/snippets/gear/sci-fi/armor/ultraweave-evosuit.md",
+  "line": 12
+ },
+ {
+  "source": "gear/sci-fi/kits/b-e-kit",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/kits/b-e-kit.md",
+  "line": 10,
+  "class": "tag-definition"
+ },
+ {
+  "source": "gear/sci-fi/kits/repair-kit",
+  "target": "gear/item-tags/bulky",
+  "type": "reference",
+  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
+  "text": "Bulky",
+  "file": "content/snippets/gear/sci-fi/kits/repair-kit.md",
+  "line": 10,
+  "class": "tag-definition"
  },
  {
   "source": "gear/generic-equipment/bandages-large",
@@ -656,7 +1644,7 @@
  },
  {
   "source": "gear/item-tags/battery",
-  "target": "gear/sci-fi-equipment/battery-cores",
+  "target": "gear/sci-fi/misc/battery-cores",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
   "text": "standard battery core",
@@ -674,7 +1662,7 @@
  },
  {
   "source": "gear/item-tags/fuel-cells",
-  "target": "gear/sci-fi-equipment/fuel-cells",
+  "target": "gear/sci-fi/misc/fuel-cells",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells",
   "text": "standardized fuel cell",
@@ -701,7 +1689,7 @@
  },
  {
   "source": "gear/item-tags/power-source",
-  "target": "gear/sci-fi-equipment/reactor-cores",
+  "target": "gear/sci-fi/misc/reactor-cores",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
   "text": "reactor cores",
@@ -728,7 +1716,7 @@
  },
  {
   "source": "gear/item-tags/space-suit",
-  "target": "gear/sci-fi-equipment/coms-unit",
+  "target": "gear/sci-fi/armor/coms-unit",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
   "text": "Coms Unit",
@@ -752,994 +1740,6 @@
   "text": "Partial Exposure Resistance",
   "file": "content/snippets/gear/item-tags/space-suit.md",
   "line": 14
- },
- {
-  "source": "gear/sci-fi-equipment/ara-5",
-  "target": "gear/item-tags/injector",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
-  "text": "Injector",
-  "file": "content/snippets/gear/sci-fi-equipment/ara-5.md",
-  "line": 11,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/auto-injector",
-  "target": "gear/sci-fi-equipment/ara-5",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
-  "text": "ARA-5",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-injector.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/auto-injector",
-  "target": "gear/sci-fi-equipment/pain-suppressant-injector",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
-  "text": "Pain Suppressant",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-injector.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/auto-injector",
-  "target": "gear/sci-fi-equipment/vitaboost-injector",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
-  "text": "Vitaboost",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-injector.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/auto-pistol",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Full-Auto",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/auto-pistol",
-  "target": "gear/item-tags/concealable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
-  "text": "Concealable",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/b-e-kit",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/b-e-kit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/basic-p-suit",
-  "target": "gear/item-tags/pressurized",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#pressurized",
-  "text": "Pressurized",
-  "file": "content/snippets/gear/sci-fi-equipment/basic-p-suit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/basic-p-suit",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/basic-p-suit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/battery-cores",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/battery-cores.md",
-  "line": 19,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/battery-cores",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/battery-cores.md",
-  "line": 20,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/bio-scanner",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/bio-scanner.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/boost-pack",
-  "target": "gear/item-tags/fuel-cells",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/gear/sci-fi-equipment/boost-pack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/boost-pack",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/boost-pack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/boost-pack",
-  "target": "character/abilities/charge",
-  "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/#charge",
-  "text": "Charge",
-  "file": "content/snippets/gear/sci-fi-equipment/boost-pack.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/classic-evosuit",
-  "target": "gear/item-tags/space-suit",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
-  "text": "Space Suit",
-  "file": "content/snippets/gear/sci-fi-equipment/classic-evosuit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/classic-evosuit",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/classic-evosuit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/combat-evosuit",
-  "target": "gear/item-tags/space-suit",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
-  "text": "Space Suit",
-  "file": "content/snippets/gear/sci-fi-equipment/combat-evosuit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/combat-evosuit",
-  "target": "gear/sci-fi-equipment/targeting-hud",
-  "type": "reference",
-  "url": "#targeting-hud",
-  "text": "Targeting HUD",
-  "file": "content/snippets/gear/sci-fi-equipment/combat-evosuit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/combat-evosuit",
-  "target": "gear/sci-fi-equipment/emergency-shank",
-  "type": "reference",
-  "url": "#emergency-shank",
-  "text": "Emergency Shank",
-  "file": "content/snippets/gear/sci-fi-equipment/combat-evosuit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/comp-jack",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/comp-jack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/comp-jack",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/comp-jack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/comp-jack",
-  "target": "character/proficiencies/comp-jack",
-  "type": "reference",
-  "url": "/docs/free-srd/character-creation/proficiencies/sci-fi/#comp-jack-proficiency",
-  "text": "Comp Jack Proficiency",
-  "file": "content/snippets/gear/sci-fi-equipment/comp-jack.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/compact-rifle",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Full-Auto",
-  "file": "content/snippets/gear/sci-fi-equipment/compact-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/compact-rifle",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/compact-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/coms-headset",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/coms-headset.md",
-  "line": 14
- },
- {
-  "source": "gear/sci-fi-equipment/coms-unit",
-  "target": "rules/sci-fi/communications",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/communications",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/coms-unit.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/decoy-beacon",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/decoy-beacon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/drum-magazines",
-  "target": "gear/item-tags/ballistic",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
-  "text": "Ballistic",
-  "file": "content/snippets/gear/sci-fi-equipment/drum-magazines.md",
-  "line": 11,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/emergency-hatchet",
-  "target": "gear/item-tags/throwable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
-  "text": "Throwable",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-hatchet.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/eva-suit",
-  "target": "gear/item-tags/space-suit",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
-  "text": "Space Suit",
-  "file": "content/snippets/gear/sci-fi-equipment/eva-suit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/eva-suit",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/eva-suit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/eva-suit",
-  "target": "gear/sci-fi-equipment/safer-unit",
-  "type": "reference",
-  "url": "#safer-unit",
-  "text": "SAFER Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/eva-suit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/eva-suit",
-  "target": "gear/sci-fi-equipment/safer-unit",
-  "type": "reference",
-  "url": "#safer-unit",
-  "text": "SAFER unit",
-  "file": "content/snippets/gear/sci-fi-equipment/eva-suit.md",
-  "line": 14
- },
- {
-  "source": "gear/sci-fi-equipment/fuel-cells",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/fuel-cells.md",
-  "line": 17,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/fuel-cells",
-  "target": "rules/objects/conditions",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/damaged--broken-gear/#object-conditions",
-  "text": "Broken",
-  "file": "content/snippets/gear/sci-fi-equipment/fuel-cells.md",
-  "line": 19
- },
- {
-  "source": "gear/sci-fi-equipment/grapple-line-launcher",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/grapple-line-launcher.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/grapple-line-launcher",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/grapple-line-launcher.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/gravity-anchor",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/gravity-anchor.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/gravity-anchor",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/gravity-anchor.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/hazard-hud",
-  "target": "rules/sci-fi/huds",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/huds",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/hazard-hud.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-pistol",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Single Shot",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-rotary-cannon",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Full-Auto",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-rotary-cannon",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-rotary-cannon",
-  "target": "gear/item-tags/belt-fed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#belt-fed",
-  "text": "Belt Fed",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-rotary-cannon",
-  "target": "gear/item-tags/long-reload",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#long-reload",
-  "text": "Long Reload",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/heavy-rotary-cannon",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/jump-boosters",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/jump-boosters.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/jump-pack",
-  "target": "gear/item-tags/fuel-cells",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/gear/sci-fi-equipment/jump-pack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/jump-pack",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/jump-pack.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/knuckle-taser",
-  "target": "gear/sci-fi-equipment/shock-charger",
-  "type": "reference",
-  "url": "#shock-charger",
-  "text": "Shock Charger",
-  "file": "content/snippets/gear/sci-fi-equipment/knuckle-taser.md",
-  "line": 11
- },
- {
-  "source": "gear/sci-fi-equipment/laser-pistol",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Single Shot",
-  "file": "content/snippets/gear/sci-fi-equipment/laser-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/laser-rifle",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Single Shot",
-  "file": "content/snippets/gear/sci-fi-equipment/laser-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/laser-rifle",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/laser-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/light-combat-vest",
-  "target": "gear/item-tags/concealable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
-  "text": "Concealable",
-  "file": "content/snippets/gear/sci-fi-equipment/light-combat-vest.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/light-pistol",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Semi-Auto",
-  "file": "content/snippets/gear/sci-fi-equipment/light-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/light-pistol",
-  "target": "gear/item-tags/concealable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
-  "text": "Concealable",
-  "file": "content/snippets/gear/sci-fi-equipment/light-pistol.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/long-rifle",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Single Shot",
-  "file": "content/snippets/gear/sci-fi-equipment/long-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/long-rifle",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/long-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/long-rifle",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/long-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/mebn-hud",
-  "target": "rules/sci-fi/huds",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/huds",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/mebn-hud.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/mini-laser-cutter",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/mini-laser-cutter.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/padded-flight-suit",
-  "target": "rules/combat/damage-resistance",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
-  "text": "Partial Damage Resistance",
-  "file": "content/snippets/gear/sci-fi-equipment/padded-flight-suit.md",
-  "line": 10
- },
- {
-  "source": "gear/sci-fi-equipment/pain-suppressant-injector",
-  "target": "gear/item-tags/injector",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
-  "text": "Injector",
-  "file": "content/snippets/gear/sci-fi-equipment/pain-suppressant-injector.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/personal-shield",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/personal-shield.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/personal-shield",
-  "target": "rules/sci-fi/energy-shields",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/energy-shields",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/personal-shield.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/portable-heater",
-  "target": "gear/item-tags/fuel-cells",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#fuel-cell",
-  "text": "Fuel Cell",
-  "file": "content/snippets/gear/sci-fi-equipment/portable-heater.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/portable-water-purifier",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/portable-water-purifier.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/power-source",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#power-source",
-  "text": "Power Source",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 17,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 18,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 20,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "character/abilities/battery-saboteur",
-  "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#battery-saboteur",
-  "text": "Battery Saboteur",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 24
- },
- {
-  "source": "gear/sci-fi-equipment/reactor-cores",
-  "target": "character/abilities/custom-battery",
-  "type": "reference",
-  "url": "/docs/free-srd/character-creation/abilities/sci-fi/#custom-battery",
-  "text": "Custom Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "line": 24
- },
- {
-  "source": "gear/sci-fi-equipment/recoil-compensation-system",
-  "target": "gear/item-tags/ballistic",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#ballistic",
-  "text": "Ballistic",
-  "file": "content/snippets/gear/sci-fi-equipment/recoil-compensation-system.md",
-  "line": 11,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/remote-detonator",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/remote-detonator.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/repair-kit",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/repair-kit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/ripper-blade",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/ripper-blade.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/ripper-blade",
-  "target": "page:/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
-  "text": "Shatter",
-  "file": "content/snippets/gear/sci-fi-equipment/ripper-blade.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/safer-unit",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/safer-unit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/security-flight-suit",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/security-flight-suit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/shock-baton",
-  "target": "gear/sci-fi-equipment/shock-charger",
-  "type": "reference",
-  "url": "#shock-charger",
-  "text": "Shock Charger",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-baton.md",
-  "line": 11
- },
- {
-  "source": "gear/sci-fi-equipment/shock-charger",
-  "target": "rules/combat/damage",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-types",
-  "text": "Shock",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-charger.md",
-  "line": 13
- },
- {
-  "source": "gear/sci-fi-equipment/shock-rifle",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Single Shot",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/shock-rifle",
-  "target": "gear/item-tags/arcing",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#arcing",
-  "text": "Arcing",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/shock-rifle",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/shock-rifle",
-  "target": "gear/item-tags/arcing",
-  "type": "include",
-  "url": "/snippets/gear/item-tags/arcing",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/signature-spoofer",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/signature-spoofer.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/signature-spoofer",
-  "target": "gear/sci-fi-equipment/data-spike",
-  "type": "reference",
-  "url": "#data-spike",
-  "text": "Data Spike",
-  "file": "content/snippets/gear/sci-fi-equipment/signature-spoofer.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/squad-shield",
-  "target": "gear/item-tags/battery",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#battery",
-  "text": "Battery",
-  "file": "content/snippets/gear/sci-fi-equipment/squad-shield.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/squad-shield",
-  "target": "rules/sci-fi/energy-shields",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/energy-shields",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/squad-shield.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/standard-issue-knife",
-  "target": "gear/item-tags/concealable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#concealable",
-  "text": "Concealable",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-knife.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/standard-issue-knife",
-  "target": "gear/item-tags/throwable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
-  "text": "Throwable",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-knife.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/standard-issue-rifle",
-  "target": "gear/item-tags/firing-modes",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#firing-modes",
-  "text": "Semi-Auto",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/standard-issue-rifle",
-  "target": "gear/item-tags/two-handed",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
-  "text": "Two-Handed",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-rifle.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/survival-tent",
-  "target": "gear/item-tags/bulky",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#bulky",
-  "text": "Bulky",
-  "file": "content/snippets/gear/sci-fi-equipment/survival-tent.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/targeting-hud",
-  "target": "rules/sci-fi/huds",
-  "type": "include",
-  "url": "/snippets/rules/sci-fi/huds",
-  "text": null,
-  "file": "content/snippets/gear/sci-fi-equipment/targeting-hud.md",
-  "line": 15
- },
- {
-  "source": "gear/sci-fi-equipment/ultraweave-evosuit",
-  "target": "gear/item-tags/space-suit",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#space-suit",
-  "text": "Space Suit",
-  "file": "content/snippets/gear/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/ultraweave-evosuit",
-  "target": "rules/combat/damage-resistance",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/combat/#damage-resistance-and-weakness",
-  "text": "Partial Damage Resistance",
-  "file": "content/snippets/gear/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 10
- },
- {
-  "source": "gear/sci-fi-equipment/ultraweave-evosuit",
-  "target": "gear/sci-fi-equipment/coms-unit",
-  "type": "reference",
-  "url": "#coms-unit",
-  "text": "Coms Unit",
-  "file": "content/snippets/gear/sci-fi-equipment/ultraweave-evosuit.md",
-  "line": 12
- },
- {
-  "source": "gear/sci-fi-equipment/vitaboost-injector",
-  "target": "gear/item-tags/injector",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#injector",
-  "text": "Injector",
-  "file": "content/snippets/gear/sci-fi-equipment/vitaboost-injector.md",
-  "line": 10,
-  "class": "tag-definition"
- },
- {
-  "source": "gear/sci-fi-equipment/weighted-core",
-  "target": "gear/item-tags/throwable",
-  "type": "reference",
-  "url": "/docs/free-srd/inventory--equipment/item-tags/#throwable",
-  "text": "Throwable",
-  "file": "content/snippets/gear/sci-fi-equipment/weighted-core.md",
-  "line": 13,
-  "class": "tag-definition"
  },
  {
   "source": "gear/equipment/armor-basics",
@@ -1797,7 +1797,7 @@
  },
  {
   "source": "rules/sci-fi/automated-machines",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "target": "gear/sci-fi/misc/crash-foam-canister",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
   "text": "Crash Foam Canister",
@@ -1851,7 +1851,7 @@
  },
  {
   "source": "rules/sci-fi/computer-systems",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
   "text": "Comp Jack",
@@ -2238,7 +2238,7 @@
  },
  {
   "source": "rules/environment/extreme-environments",
-  "target": "gear/sci-fi-equipment/eva-suit",
+  "target": "gear/sci-fi/armor/eva-suit",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit",
   "text": "EVA Suit",
@@ -2247,7 +2247,7 @@
  },
  {
   "source": "rules/environment/extreme-environments",
-  "target": "gear/sci-fi-equipment/hazard-hud",
+  "target": "gear/sci-fi/armor/hazard-hud",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud",
   "text": "Hazard HUD",
@@ -3906,7 +3906,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/auto-pistol",
+  "target": "gear/sci-fi/weapons/auto-pistol",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3916,7 +3916,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/bipod",
+  "target": "gear/sci-fi/weapons/bipod",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3926,7 +3926,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/compact-rifle",
+  "target": "gear/sci-fi/weapons/compact-rifle",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3936,7 +3936,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/drum-magazines",
+  "target": "gear/sci-fi/weapons/drum-magazines",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3946,7 +3946,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/emergency-hatchet",
+  "target": "gear/sci-fi/weapons/emergency-hatchet",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3956,7 +3956,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/extended-barrel",
+  "target": "gear/sci-fi/weapons/extended-barrel",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3966,7 +3966,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/forward-assault-shield",
+  "target": "gear/sci-fi/weapons/forward-assault-shield",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3976,7 +3976,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/heavy-pistol",
+  "target": "gear/sci-fi/weapons/heavy-pistol",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3986,7 +3986,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/heavy-rotary-cannon",
+  "target": "gear/sci-fi/weapons/heavy-rotary-cannon",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -3996,7 +3996,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/knuckle-taser",
+  "target": "gear/sci-fi/weapons/knuckle-taser",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4006,7 +4006,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/laser-pistol",
+  "target": "gear/sci-fi/weapons/laser-pistol",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4016,7 +4016,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/laser-rifle",
+  "target": "gear/sci-fi/weapons/laser-rifle",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4026,7 +4026,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/light-pistol",
+  "target": "gear/sci-fi/weapons/light-pistol",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4036,7 +4036,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/long-rifle",
+  "target": "gear/sci-fi/weapons/long-rifle",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4046,7 +4046,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/overcharge-chamber",
+  "target": "gear/sci-fi/weapons/overcharge-chamber",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4056,7 +4056,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/recoil-compensation-system",
+  "target": "gear/sci-fi/weapons/recoil-compensation-system",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4066,7 +4066,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/reflex-sight",
+  "target": "gear/sci-fi/weapons/reflex-sight",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4076,7 +4076,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/ripper-blade",
+  "target": "gear/sci-fi/weapons/ripper-blade",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4086,7 +4086,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/shock-baton",
+  "target": "gear/sci-fi/weapons/shock-baton",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4096,7 +4096,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/shock-charger",
+  "target": "gear/sci-fi/weapons/shock-charger",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4106,7 +4106,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/shock-rifle",
+  "target": "gear/sci-fi/weapons/shock-rifle",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4116,7 +4116,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/standard-issue-knife",
+  "target": "gear/sci-fi/weapons/standard-issue-knife",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4126,7 +4126,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/standard-issue-rifle",
+  "target": "gear/sci-fi/weapons/standard-issue-rifle",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4136,7 +4136,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/weighted-core",
+  "target": "gear/sci-fi/weapons/weighted-core",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4146,7 +4146,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/auto-injector",
+  "target": "gear/sci-fi/armor/auto-injector",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4156,7 +4156,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/ballistic-shield",
+  "target": "gear/sci-fi/armor/ballistic-shield",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4166,7 +4166,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/basic-p-suit",
+  "target": "gear/sci-fi/armor/basic-p-suit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4176,7 +4176,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/chameleon-unit",
+  "target": "gear/sci-fi/armor/chameleon-unit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4186,7 +4186,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/classic-evosuit",
+  "target": "gear/sci-fi/armor/classic-evosuit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4196,7 +4196,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/collapsible-shield",
+  "target": "gear/sci-fi/armor/collapsible-shield",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4206,7 +4206,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/combat-evosuit",
+  "target": "gear/sci-fi/armor/combat-evosuit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4216,7 +4216,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/combat-vest",
+  "target": "gear/sci-fi/armor/combat-vest",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4226,7 +4226,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/coms-unit",
+  "target": "gear/sci-fi/armor/coms-unit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4236,7 +4236,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/emergency-shank",
+  "target": "gear/sci-fi/armor/emergency-shank",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4246,7 +4246,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/enforcer-armor",
+  "target": "gear/sci-fi/armor/enforcer-armor",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4256,7 +4256,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/eva-suit",
+  "target": "gear/sci-fi/armor/eva-suit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4266,7 +4266,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/hazard-hud",
+  "target": "gear/sci-fi/armor/hazard-hud",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4276,7 +4276,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/light-combat-vest",
+  "target": "gear/sci-fi/armor/light-combat-vest",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4286,7 +4286,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/mebn-hud",
+  "target": "gear/sci-fi/armor/mebn-hud",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4296,7 +4296,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/padded-flight-suit",
+  "target": "gear/sci-fi/armor/padded-flight-suit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4306,7 +4306,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/safer-unit",
+  "target": "gear/sci-fi/armor/safer-unit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4316,7 +4316,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/scav-gear",
+  "target": "gear/sci-fi/armor/scav-gear",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4326,7 +4326,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/security-flight-suit",
+  "target": "gear/sci-fi/armor/security-flight-suit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4336,7 +4336,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/site-safety-gear",
+  "target": "gear/sci-fi/armor/site-safety-gear",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4346,7 +4346,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/targeting-hud",
+  "target": "gear/sci-fi/armor/targeting-hud",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4356,7 +4356,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/ultraweave-evosuit",
+  "target": "gear/sci-fi/armor/ultraweave-evosuit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4366,7 +4366,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/b-e-kit",
+  "target": "gear/sci-fi/kits/b-e-kit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4376,7 +4376,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/disguise-kit",
+  "target": "gear/sci-fi/kits/disguise-kit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4386,7 +4386,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/medical-kit",
+  "target": "gear/sci-fi/kits/medical-kit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4396,7 +4396,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/repair-kit",
+  "target": "gear/sci-fi/kits/repair-kit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4406,7 +4406,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/tech-kit",
+  "target": "gear/sci-fi/kits/tech-kit",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4416,7 +4416,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/ara-5",
+  "target": "gear/sci-fi/misc/ara-5",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4426,7 +4426,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/battery-cores",
+  "target": "gear/sci-fi/misc/battery-cores",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4436,7 +4436,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/bio-scanner",
+  "target": "gear/sci-fi/misc/bio-scanner",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4446,7 +4446,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/bioskin-veil",
+  "target": "gear/sci-fi/misc/bioskin-veil",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4456,7 +4456,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/boost-pack",
+  "target": "gear/sci-fi/misc/boost-pack",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4466,7 +4466,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4476,7 +4476,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/coms-headset",
+  "target": "gear/sci-fi/misc/coms-headset",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4486,7 +4486,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "target": "gear/sci-fi/misc/crash-foam-canister",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4496,7 +4496,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/data-spike",
+  "target": "gear/sci-fi/misc/data-spike",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4506,7 +4506,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/decoy-beacon",
+  "target": "gear/sci-fi/misc/decoy-beacon",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4516,7 +4516,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/emergency-beacon",
+  "target": "gear/sci-fi/misc/emergency-beacon",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4526,7 +4526,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/emergency-oxygen-mask",
+  "target": "gear/sci-fi/misc/emergency-oxygen-mask",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4536,7 +4536,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/emergency-trauma-patch",
+  "target": "gear/sci-fi/misc/emergency-trauma-patch",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4546,7 +4546,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/field-ration",
+  "target": "gear/sci-fi/misc/field-ration",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4556,7 +4556,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/fuel-cells",
+  "target": "gear/sci-fi/misc/fuel-cells",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4566,7 +4566,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/grapple-line-launcher",
+  "target": "gear/sci-fi/misc/grapple-line-launcher",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4576,7 +4576,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/gravity-anchor",
+  "target": "gear/sci-fi/misc/gravity-anchor",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4586,7 +4586,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/jump-boosters",
+  "target": "gear/sci-fi/misc/jump-boosters",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4596,7 +4596,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/jump-pack",
+  "target": "gear/sci-fi/misc/jump-pack",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4606,7 +4606,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/long-range-coms",
+  "target": "gear/sci-fi/misc/long-range-coms",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4616,7 +4616,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/mag-boots",
+  "target": "gear/sci-fi/misc/mag-boots",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4626,7 +4626,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/mag-cuffs",
+  "target": "gear/sci-fi/misc/mag-cuffs",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4636,7 +4636,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/mini-laser-cutter",
+  "target": "gear/sci-fi/misc/mini-laser-cutter",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4646,7 +4646,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/mobile-phone",
+  "target": "gear/sci-fi/misc/mobile-phone",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4656,7 +4656,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/pain-suppressant-injector",
+  "target": "gear/sci-fi/misc/pain-suppressant-injector",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4666,7 +4666,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/personal-shield",
+  "target": "gear/sci-fi/misc/personal-shield",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4676,7 +4676,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/portable-heater",
+  "target": "gear/sci-fi/misc/portable-heater",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4686,7 +4686,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/portable-water-purifier",
+  "target": "gear/sci-fi/misc/portable-water-purifier",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4696,7 +4696,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/reactor-cores",
+  "target": "gear/sci-fi/misc/reactor-cores",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4706,7 +4706,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/remote-detonator",
+  "target": "gear/sci-fi/misc/remote-detonator",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4716,7 +4716,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/signature-spoofer",
+  "target": "gear/sci-fi/misc/signature-spoofer",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4726,7 +4726,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/solar-array-pack",
+  "target": "gear/sci-fi/misc/solar-array-pack",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4736,7 +4736,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/squad-shield",
+  "target": "gear/sci-fi/misc/squad-shield",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4746,7 +4746,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/survival-tent",
+  "target": "gear/sci-fi/misc/survival-tent",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4756,7 +4756,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/sci-fi-equipment/vitaboost-injector",
+  "target": "gear/sci-fi/misc/vitaboost-injector",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4766,7 +4766,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/audio-processor",
+  "target": "gear/sci-fi/bot-components/audio-processor",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4776,7 +4776,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/augmented-arm-actuators",
+  "target": "gear/sci-fi/bot-components/augmented-arm-actuators",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4786,7 +4786,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/automatic-crash-foam-system",
+  "target": "gear/sci-fi/bot-components/automatic-crash-foam-system",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4796,7 +4796,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/backup-power-cell",
+  "target": "gear/sci-fi/bot-components/backup-power-cell",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4806,7 +4806,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/heavy-wrist-laser",
+  "target": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4816,7 +4816,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/improved-cooling-system",
+  "target": "gear/sci-fi/bot-components/improved-cooling-system",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4826,7 +4826,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/internal-comp-jack",
+  "target": "gear/sci-fi/bot-components/internal-comp-jack",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4836,7 +4836,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/manipulator-override",
+  "target": "gear/sci-fi/bot-components/manipulator-override",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4846,7 +4846,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/optical-suite",
+  "target": "gear/sci-fi/bot-components/optical-suite",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4856,7 +4856,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/reinforced-chassis-plating",
+  "target": "gear/sci-fi/bot-components/reinforced-chassis-plating",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4866,7 +4866,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/relay-node",
+  "target": "gear/sci-fi/bot-components/relay-node",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4876,7 +4876,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/repair-subroutine",
+  "target": "gear/sci-fi/bot-components/repair-subroutine",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4886,7 +4886,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/servo-boost-legs",
+  "target": "gear/sci-fi/bot-components/servo-boost-legs",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4896,7 +4896,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/shield-mount",
+  "target": "gear/sci-fi/bot-components/shield-mount",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4906,7 +4906,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/signal-mast-heavy",
+  "target": "gear/sci-fi/bot-components/signal-mast-heavy",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4916,7 +4916,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/signal-mast-retractable",
+  "target": "gear/sci-fi/bot-components/signal-mast-retractable",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4926,7 +4926,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/stabilizer-gyros",
+  "target": "gear/sci-fi/bot-components/stabilizer-gyros",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4936,7 +4936,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/subdermal-plating",
+  "target": "gear/sci-fi/bot-components/subdermal-plating",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4946,7 +4946,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/targeting-array",
+  "target": "gear/sci-fi/bot-components/targeting-array",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -4956,7 +4956,7 @@
  },
  {
   "source": "page:/docs/free-srd/sci-fi-module/",
-  "target": "gear/components/wrist-laser",
+  "target": "gear/sci-fi/bot-components/wrist-laser",
   "type": "reference",
   "class": "catalog",
   "url": null,
@@ -6225,216 +6225,216 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/overview",
+  "target": "gear/sci-fi/bot-components/overview",
   "type": "include",
-  "url": "/snippets/gear/components/overview",
+  "url": "/snippets/gear/sci-fi/bot-components/overview",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 10
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/installation",
+  "target": "gear/sci-fi/bot-components/installation",
   "type": "include",
-  "url": "/snippets/gear/components/installation",
+  "url": "/snippets/gear/sci-fi/bot-components/installation",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 13
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/power-sources",
+  "target": "gear/sci-fi/bot-components/power-sources",
   "type": "include",
-  "url": "/snippets/gear/components/power-sources",
+  "url": "/snippets/gear/sci-fi/bot-components/power-sources",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 16
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/damage-and-wounds",
+  "target": "gear/sci-fi/bot-components/damage-and-wounds",
   "type": "include",
-  "url": "/snippets/gear/components/damage-and-wounds",
+  "url": "/snippets/gear/sci-fi/bot-components/damage-and-wounds",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 20
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/audio-processor",
+  "target": "gear/sci-fi/bot-components/audio-processor",
   "type": "include",
-  "url": "/snippets/gear/components/audio-processor",
+  "url": "/snippets/gear/sci-fi/bot-components/audio-processor",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 52
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/augmented-arm-actuators",
+  "target": "gear/sci-fi/bot-components/augmented-arm-actuators",
   "type": "include",
-  "url": "/snippets/gear/components/augmented-arm-actuators",
+  "url": "/snippets/gear/sci-fi/bot-components/augmented-arm-actuators",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 54
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/automatic-crash-foam-system",
+  "target": "gear/sci-fi/bot-components/automatic-crash-foam-system",
   "type": "include",
-  "url": "/snippets/gear/components/automatic-crash-foam-system",
+  "url": "/snippets/gear/sci-fi/bot-components/automatic-crash-foam-system",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 56
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/backup-power-cell",
+  "target": "gear/sci-fi/bot-components/backup-power-cell",
   "type": "include",
-  "url": "/snippets/gear/components/backup-power-cell",
+  "url": "/snippets/gear/sci-fi/bot-components/backup-power-cell",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 58
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/heavy-wrist-laser",
+  "target": "gear/sci-fi/bot-components/heavy-wrist-laser",
   "type": "include",
-  "url": "/snippets/gear/components/heavy-wrist-laser",
+  "url": "/snippets/gear/sci-fi/bot-components/heavy-wrist-laser",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 60
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/improved-cooling-system",
+  "target": "gear/sci-fi/bot-components/improved-cooling-system",
   "type": "include",
-  "url": "/snippets/gear/components/improved-cooling-system",
+  "url": "/snippets/gear/sci-fi/bot-components/improved-cooling-system",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 62
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/internal-comp-jack",
+  "target": "gear/sci-fi/bot-components/internal-comp-jack",
   "type": "include",
-  "url": "/snippets/gear/components/internal-comp-jack",
+  "url": "/snippets/gear/sci-fi/bot-components/internal-comp-jack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 64
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/manipulator-override",
+  "target": "gear/sci-fi/bot-components/manipulator-override",
   "type": "include",
-  "url": "/snippets/gear/components/manipulator-override",
+  "url": "/snippets/gear/sci-fi/bot-components/manipulator-override",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 66
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/optical-suite",
+  "target": "gear/sci-fi/bot-components/optical-suite",
   "type": "include",
-  "url": "/snippets/gear/components/optical-suite",
+  "url": "/snippets/gear/sci-fi/bot-components/optical-suite",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 68
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/reinforced-chassis-plating",
+  "target": "gear/sci-fi/bot-components/reinforced-chassis-plating",
   "type": "include",
-  "url": "/snippets/gear/components/reinforced-chassis-plating",
+  "url": "/snippets/gear/sci-fi/bot-components/reinforced-chassis-plating",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 70
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/relay-node",
+  "target": "gear/sci-fi/bot-components/relay-node",
   "type": "include",
-  "url": "/snippets/gear/components/relay-node",
+  "url": "/snippets/gear/sci-fi/bot-components/relay-node",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 72
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/repair-subroutine",
+  "target": "gear/sci-fi/bot-components/repair-subroutine",
   "type": "include",
-  "url": "/snippets/gear/components/repair-subroutine",
+  "url": "/snippets/gear/sci-fi/bot-components/repair-subroutine",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 74
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/servo-boost-legs",
+  "target": "gear/sci-fi/bot-components/servo-boost-legs",
   "type": "include",
-  "url": "/snippets/gear/components/servo-boost-legs",
+  "url": "/snippets/gear/sci-fi/bot-components/servo-boost-legs",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 76
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/shield-mount",
+  "target": "gear/sci-fi/bot-components/shield-mount",
   "type": "include",
-  "url": "/snippets/gear/components/shield-mount",
+  "url": "/snippets/gear/sci-fi/bot-components/shield-mount",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 78
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/signal-mast-retractable",
+  "target": "gear/sci-fi/bot-components/signal-mast-retractable",
   "type": "include",
-  "url": "/snippets/gear/components/signal-mast-retractable",
+  "url": "/snippets/gear/sci-fi/bot-components/signal-mast-retractable",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 80
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/signal-mast-heavy",
+  "target": "gear/sci-fi/bot-components/signal-mast-heavy",
   "type": "include",
-  "url": "/snippets/gear/components/signal-mast-heavy",
+  "url": "/snippets/gear/sci-fi/bot-components/signal-mast-heavy",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 82
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/stabilizer-gyros",
+  "target": "gear/sci-fi/bot-components/stabilizer-gyros",
   "type": "include",
-  "url": "/snippets/gear/components/stabilizer-gyros",
+  "url": "/snippets/gear/sci-fi/bot-components/stabilizer-gyros",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 84
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/subdermal-plating",
+  "target": "gear/sci-fi/bot-components/subdermal-plating",
   "type": "include",
-  "url": "/snippets/gear/components/subdermal-plating",
+  "url": "/snippets/gear/sci-fi/bot-components/subdermal-plating",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 86
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/targeting-array",
+  "target": "gear/sci-fi/bot-components/targeting-array",
   "type": "include",
-  "url": "/snippets/gear/components/targeting-array",
+  "url": "/snippets/gear/sci-fi/bot-components/targeting-array",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 88
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/",
-  "target": "gear/components/wrist-laser",
+  "target": "gear/sci-fi/bot-components/wrist-laser",
   "type": "include",
-  "url": "/snippets/gear/components/wrist-laser",
+  "url": "/snippets/gear/sci-fi/bot-components/wrist-laser",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
   "line": 90
@@ -6495,180 +6495,180 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/basic-p-suit",
+  "target": "gear/sci-fi/armor/basic-p-suit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/basic-p-suit",
+  "url": "/snippets/gear/sci-fi/armor/basic-p-suit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 45
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/classic-evosuit",
+  "target": "gear/sci-fi/armor/classic-evosuit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/classic-evosuit",
+  "url": "/snippets/gear/sci-fi/armor/classic-evosuit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 47
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/combat-vest",
+  "target": "gear/sci-fi/armor/combat-vest",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/combat-vest",
+  "url": "/snippets/gear/sci-fi/armor/combat-vest",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 49
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/light-combat-vest",
+  "target": "gear/sci-fi/armor/light-combat-vest",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/light-combat-vest",
+  "url": "/snippets/gear/sci-fi/armor/light-combat-vest",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 51
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/padded-flight-suit",
+  "target": "gear/sci-fi/armor/padded-flight-suit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/padded-flight-suit",
+  "url": "/snippets/gear/sci-fi/armor/padded-flight-suit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 53
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/scav-gear",
+  "target": "gear/sci-fi/armor/scav-gear",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/scav-gear",
+  "url": "/snippets/gear/sci-fi/armor/scav-gear",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 55
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/site-safety-gear",
+  "target": "gear/sci-fi/armor/site-safety-gear",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/site-safety-gear",
+  "url": "/snippets/gear/sci-fi/armor/site-safety-gear",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 57
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/combat-evosuit",
+  "target": "gear/sci-fi/armor/combat-evosuit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/combat-evosuit",
+  "url": "/snippets/gear/sci-fi/armor/combat-evosuit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 61
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/enforcer-armor",
+  "target": "gear/sci-fi/armor/enforcer-armor",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/enforcer-armor",
+  "url": "/snippets/gear/sci-fi/armor/enforcer-armor",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 63
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/eva-suit",
+  "target": "gear/sci-fi/armor/eva-suit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/eva-suit",
+  "url": "/snippets/gear/sci-fi/armor/eva-suit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 65
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/security-flight-suit",
+  "target": "gear/sci-fi/armor/security-flight-suit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/security-flight-suit",
+  "url": "/snippets/gear/sci-fi/armor/security-flight-suit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 67
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/ultraweave-evosuit",
+  "target": "gear/sci-fi/armor/ultraweave-evosuit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/ultraweave-evosuit",
+  "url": "/snippets/gear/sci-fi/armor/ultraweave-evosuit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 69
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/auto-injector",
+  "target": "gear/sci-fi/armor/auto-injector",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/auto-injector",
+  "url": "/snippets/gear/sci-fi/armor/auto-injector",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 92
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/chameleon-unit",
+  "target": "gear/sci-fi/armor/chameleon-unit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/chameleon-unit",
+  "url": "/snippets/gear/sci-fi/armor/chameleon-unit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 94
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/emergency-shank",
+  "target": "gear/sci-fi/armor/emergency-shank",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/emergency-shank",
+  "url": "/snippets/gear/sci-fi/armor/emergency-shank",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 96
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/hazard-hud",
+  "target": "gear/sci-fi/armor/hazard-hud",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/hazard-hud",
+  "url": "/snippets/gear/sci-fi/armor/hazard-hud",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 98
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/coms-unit",
+  "target": "gear/sci-fi/armor/coms-unit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/coms-unit",
+  "url": "/snippets/gear/sci-fi/armor/coms-unit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 100
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/mebn-hud",
+  "target": "gear/sci-fi/armor/mebn-hud",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/mebn-hud",
+  "url": "/snippets/gear/sci-fi/armor/mebn-hud",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 102
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/safer-unit",
+  "target": "gear/sci-fi/armor/safer-unit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/safer-unit",
+  "url": "/snippets/gear/sci-fi/armor/safer-unit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 104
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/targeting-hud",
+  "target": "gear/sci-fi/armor/targeting-hud",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/targeting-hud",
+  "url": "/snippets/gear/sci-fi/armor/targeting-hud",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 106
@@ -6693,72 +6693,72 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/ballistic-shield",
+  "target": "gear/sci-fi/armor/ballistic-shield",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/ballistic-shield",
+  "url": "/snippets/gear/sci-fi/armor/ballistic-shield",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 123
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/",
-  "target": "gear/sci-fi-equipment/collapsible-shield",
+  "target": "gear/sci-fi/armor/collapsible-shield",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/collapsible-shield",
+  "url": "/snippets/gear/sci-fi/armor/collapsible-shield",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "line": 125
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/kit-supplies",
+  "target": "gear/sci-fi/kits/kit-supplies",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/kit-supplies",
+  "url": "/snippets/gear/sci-fi/kits/kit-supplies",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 8
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/b-e-kit",
+  "target": "gear/sci-fi/kits/b-e-kit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/b-e-kit",
+  "url": "/snippets/gear/sci-fi/kits/b-e-kit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 10
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/disguise-kit",
+  "target": "gear/sci-fi/kits/disguise-kit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/disguise-kit",
+  "url": "/snippets/gear/sci-fi/kits/disguise-kit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 12
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/medical-kit",
+  "target": "gear/sci-fi/kits/medical-kit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/medical-kit",
+  "url": "/snippets/gear/sci-fi/kits/medical-kit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 14
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/repair-kit",
+  "target": "gear/sci-fi/kits/repair-kit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/repair-kit",
+  "url": "/snippets/gear/sci-fi/kits/repair-kit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 16
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/",
-  "target": "gear/sci-fi-equipment/tech-kit",
+  "target": "gear/sci-fi/kits/tech-kit",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/tech-kit",
+  "url": "/snippets/gear/sci-fi/kits/tech-kit",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
   "line": 18
@@ -6801,7 +6801,7 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/coms-unit",
+  "target": "gear/sci-fi/armor/coms-unit",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
   "text": "Coms Unit",
@@ -6819,315 +6819,315 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/coms-headset",
+  "target": "gear/sci-fi/misc/coms-headset",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/coms-headset",
+  "url": "/snippets/gear/sci-fi/misc/coms-headset",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 29
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/long-range-coms",
+  "target": "gear/sci-fi/misc/long-range-coms",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/long-range-coms",
+  "url": "/snippets/gear/sci-fi/misc/long-range-coms",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 31
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/mobile-phone",
+  "target": "gear/sci-fi/misc/mobile-phone",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/mobile-phone",
+  "url": "/snippets/gear/sci-fi/misc/mobile-phone",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 33
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/ara-5",
+  "target": "gear/sci-fi/misc/ara-5",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/ara-5",
+  "url": "/snippets/gear/sci-fi/misc/ara-5",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 49
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/crash-foam-canister",
+  "target": "gear/sci-fi/misc/crash-foam-canister",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/crash-foam-canister",
+  "url": "/snippets/gear/sci-fi/misc/crash-foam-canister",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 51
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/emergency-trauma-patch",
+  "target": "gear/sci-fi/misc/emergency-trauma-patch",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/emergency-trauma-patch",
+  "url": "/snippets/gear/sci-fi/misc/emergency-trauma-patch",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 53
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/pain-suppressant-injector",
+  "target": "gear/sci-fi/misc/pain-suppressant-injector",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/pain-suppressant-injector",
+  "url": "/snippets/gear/sci-fi/misc/pain-suppressant-injector",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 55
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/vitaboost-injector",
+  "target": "gear/sci-fi/misc/vitaboost-injector",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/vitaboost-injector",
+  "url": "/snippets/gear/sci-fi/misc/vitaboost-injector",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 57
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/emergency-beacon",
+  "target": "gear/sci-fi/misc/emergency-beacon",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/emergency-beacon",
+  "url": "/snippets/gear/sci-fi/misc/emergency-beacon",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 75
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/emergency-oxygen-mask",
+  "target": "gear/sci-fi/misc/emergency-oxygen-mask",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/emergency-oxygen-mask",
+  "url": "/snippets/gear/sci-fi/misc/emergency-oxygen-mask",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 77
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/field-ration",
+  "target": "gear/sci-fi/misc/field-ration",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/field-ration",
+  "url": "/snippets/gear/sci-fi/misc/field-ration",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 79
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/portable-heater",
+  "target": "gear/sci-fi/misc/portable-heater",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/portable-heater",
+  "url": "/snippets/gear/sci-fi/misc/portable-heater",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 81
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/portable-water-purifier",
+  "target": "gear/sci-fi/misc/portable-water-purifier",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/portable-water-purifier",
+  "url": "/snippets/gear/sci-fi/misc/portable-water-purifier",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 83
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/solar-array-pack",
+  "target": "gear/sci-fi/misc/solar-array-pack",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/solar-array-pack",
+  "url": "/snippets/gear/sci-fi/misc/solar-array-pack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 85
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/survival-tent",
+  "target": "gear/sci-fi/misc/survival-tent",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/survival-tent",
+  "url": "/snippets/gear/sci-fi/misc/survival-tent",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 87
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/bio-scanner",
+  "target": "gear/sci-fi/misc/bio-scanner",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/bio-scanner",
+  "url": "/snippets/gear/sci-fi/misc/bio-scanner",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 118
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/bioskin-veil",
+  "target": "gear/sci-fi/misc/bioskin-veil",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/bioskin-veil",
+  "url": "/snippets/gear/sci-fi/misc/bioskin-veil",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 120
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/boost-pack",
+  "target": "gear/sci-fi/misc/boost-pack",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/boost-pack",
+  "url": "/snippets/gear/sci-fi/misc/boost-pack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 122
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/comp-jack",
+  "target": "gear/sci-fi/misc/comp-jack",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/comp-jack",
+  "url": "/snippets/gear/sci-fi/misc/comp-jack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 124
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/data-spike",
+  "target": "gear/sci-fi/misc/data-spike",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/data-spike",
+  "url": "/snippets/gear/sci-fi/misc/data-spike",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 126
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/decoy-beacon",
+  "target": "gear/sci-fi/misc/decoy-beacon",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/decoy-beacon",
+  "url": "/snippets/gear/sci-fi/misc/decoy-beacon",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 128
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/fuel-cells",
+  "target": "gear/sci-fi/misc/fuel-cells",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/fuel-cells",
+  "url": "/snippets/gear/sci-fi/misc/fuel-cells",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 130
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/grapple-line-launcher",
+  "target": "gear/sci-fi/misc/grapple-line-launcher",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/grapple-line-launcher",
+  "url": "/snippets/gear/sci-fi/misc/grapple-line-launcher",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 132
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/gravity-anchor",
+  "target": "gear/sci-fi/misc/gravity-anchor",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/gravity-anchor",
+  "url": "/snippets/gear/sci-fi/misc/gravity-anchor",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 134
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/jump-boosters",
+  "target": "gear/sci-fi/misc/jump-boosters",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/jump-boosters",
+  "url": "/snippets/gear/sci-fi/misc/jump-boosters",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 136
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/jump-pack",
+  "target": "gear/sci-fi/misc/jump-pack",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/jump-pack",
+  "url": "/snippets/gear/sci-fi/misc/jump-pack",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 138
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/mag-boots",
+  "target": "gear/sci-fi/misc/mag-boots",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/mag-boots",
+  "url": "/snippets/gear/sci-fi/misc/mag-boots",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 140
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/mag-cuffs",
+  "target": "gear/sci-fi/misc/mag-cuffs",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/mag-cuffs",
+  "url": "/snippets/gear/sci-fi/misc/mag-cuffs",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 142
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/mini-laser-cutter",
+  "target": "gear/sci-fi/misc/mini-laser-cutter",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/mini-laser-cutter",
+  "url": "/snippets/gear/sci-fi/misc/mini-laser-cutter",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 144
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/personal-shield",
+  "target": "gear/sci-fi/misc/personal-shield",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/personal-shield",
+  "url": "/snippets/gear/sci-fi/misc/personal-shield",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 146
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/reactor-cores",
+  "target": "gear/sci-fi/misc/reactor-cores",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/reactor-cores",
+  "url": "/snippets/gear/sci-fi/misc/reactor-cores",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 148
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/remote-detonator",
+  "target": "gear/sci-fi/misc/remote-detonator",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/remote-detonator",
+  "url": "/snippets/gear/sci-fi/misc/remote-detonator",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 150
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/signature-spoofer",
+  "target": "gear/sci-fi/misc/signature-spoofer",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/signature-spoofer",
+  "url": "/snippets/gear/sci-fi/misc/signature-spoofer",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 152
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/squad-shield",
+  "target": "gear/sci-fi/misc/squad-shield",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/squad-shield",
+  "url": "/snippets/gear/sci-fi/misc/squad-shield",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 154
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/",
-  "target": "gear/sci-fi-equipment/battery-cores",
+  "target": "gear/sci-fi/misc/battery-cores",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/battery-cores",
+  "url": "/snippets/gear/sci-fi/misc/battery-cores",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
   "line": 156
@@ -7161,216 +7161,216 @@
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/knuckle-taser",
+  "target": "gear/sci-fi/weapons/knuckle-taser",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/knuckle-taser",
+  "url": "/snippets/gear/sci-fi/weapons/knuckle-taser",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 34
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/standard-issue-knife",
+  "target": "gear/sci-fi/weapons/standard-issue-knife",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/standard-issue-knife",
+  "url": "/snippets/gear/sci-fi/weapons/standard-issue-knife",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 36
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/emergency-hatchet",
+  "target": "gear/sci-fi/weapons/emergency-hatchet",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/emergency-hatchet",
+  "url": "/snippets/gear/sci-fi/weapons/emergency-hatchet",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 40
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/ripper-blade",
+  "target": "gear/sci-fi/weapons/ripper-blade",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/ripper-blade",
+  "url": "/snippets/gear/sci-fi/weapons/ripper-blade",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 42
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/shock-baton",
+  "target": "gear/sci-fi/weapons/shock-baton",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/shock-baton",
+  "url": "/snippets/gear/sci-fi/weapons/shock-baton",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 44
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/auto-pistol",
+  "target": "gear/sci-fi/weapons/auto-pistol",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/auto-pistol",
+  "url": "/snippets/gear/sci-fi/weapons/auto-pistol",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 77
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/heavy-pistol",
+  "target": "gear/sci-fi/weapons/heavy-pistol",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/heavy-pistol",
+  "url": "/snippets/gear/sci-fi/weapons/heavy-pistol",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 79
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/laser-pistol",
+  "target": "gear/sci-fi/weapons/laser-pistol",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/laser-pistol",
+  "url": "/snippets/gear/sci-fi/weapons/laser-pistol",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 81
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/light-pistol",
+  "target": "gear/sci-fi/weapons/light-pistol",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/light-pistol",
+  "url": "/snippets/gear/sci-fi/weapons/light-pistol",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 83
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/compact-rifle",
+  "target": "gear/sci-fi/weapons/compact-rifle",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/compact-rifle",
+  "url": "/snippets/gear/sci-fi/weapons/compact-rifle",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 87
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/laser-rifle",
+  "target": "gear/sci-fi/weapons/laser-rifle",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/laser-rifle",
+  "url": "/snippets/gear/sci-fi/weapons/laser-rifle",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 89
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/long-rifle",
+  "target": "gear/sci-fi/weapons/long-rifle",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/long-rifle",
+  "url": "/snippets/gear/sci-fi/weapons/long-rifle",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 91
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/shock-rifle",
+  "target": "gear/sci-fi/weapons/shock-rifle",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/shock-rifle",
+  "url": "/snippets/gear/sci-fi/weapons/shock-rifle",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 93
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/standard-issue-rifle",
+  "target": "gear/sci-fi/weapons/standard-issue-rifle",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/standard-issue-rifle",
+  "url": "/snippets/gear/sci-fi/weapons/standard-issue-rifle",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 95
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/heavy-rotary-cannon",
+  "target": "gear/sci-fi/weapons/heavy-rotary-cannon",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/heavy-rotary-cannon",
+  "url": "/snippets/gear/sci-fi/weapons/heavy-rotary-cannon",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 99
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/bipod",
+  "target": "gear/sci-fi/weapons/bipod",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/bipod",
+  "url": "/snippets/gear/sci-fi/weapons/bipod",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 127
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/drum-magazines",
+  "target": "gear/sci-fi/weapons/drum-magazines",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/drum-magazines",
+  "url": "/snippets/gear/sci-fi/weapons/drum-magazines",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 129
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/extended-barrel",
+  "target": "gear/sci-fi/weapons/extended-barrel",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/extended-barrel",
+  "url": "/snippets/gear/sci-fi/weapons/extended-barrel",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 131
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/forward-assault-shield",
+  "target": "gear/sci-fi/weapons/forward-assault-shield",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/forward-assault-shield",
+  "url": "/snippets/gear/sci-fi/weapons/forward-assault-shield",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 133
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/overcharge-chamber",
+  "target": "gear/sci-fi/weapons/overcharge-chamber",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/overcharge-chamber",
+  "url": "/snippets/gear/sci-fi/weapons/overcharge-chamber",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 135
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/recoil-compensation-system",
+  "target": "gear/sci-fi/weapons/recoil-compensation-system",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/recoil-compensation-system",
+  "url": "/snippets/gear/sci-fi/weapons/recoil-compensation-system",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 137
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/reflex-sight",
+  "target": "gear/sci-fi/weapons/reflex-sight",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/reflex-sight",
+  "url": "/snippets/gear/sci-fi/weapons/reflex-sight",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 139
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/shock-charger",
+  "target": "gear/sci-fi/weapons/shock-charger",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/shock-charger",
+  "url": "/snippets/gear/sci-fi/weapons/shock-charger",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 143
  },
  {
   "source": "page:/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/",
-  "target": "gear/sci-fi-equipment/weighted-core",
+  "target": "gear/sci-fi/weapons/weighted-core",
   "type": "include",
-  "url": "/snippets/gear/sci-fi-equipment/weighted-core",
+  "url": "/snippets/gear/sci-fi/weapons/weighted-core",
   "text": null,
   "file": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "line": 145
@@ -8333,7 +8333,7 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/damaged--broken-gear/",
-  "target": "gear/sci-fi-equipment/ballistic-shield",
+  "target": "gear/sci-fi/armor/ballistic-shield",
   "type": "reference",
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
   "text": "Ballistic Shield",
@@ -10979,7 +10979,7 @@
   "note": "Dice determined by attacker/defender size comparison (implicit — no link in text; ruled reference)"
  },
  {
-  "source": "gear/sci-fi-equipment/kit-supplies",
+  "source": "gear/sci-fi/kits/kit-supplies",
   "target": "rules/basics/supply-rolls",
   "type": "reference",
   "class": "mechanism",

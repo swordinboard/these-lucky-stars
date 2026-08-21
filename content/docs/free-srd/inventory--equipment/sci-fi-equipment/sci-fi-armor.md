@@ -20,53 +20,53 @@ bookToC: false
 {{< tabs >}}
 {{% tab "Light Armor" %}}
 {{< catalog header="Name|Notes" >}}
-gear/sci-fi-equipment/basic-p-suit
-gear/sci-fi-equipment/classic-evosuit
-gear/sci-fi-equipment/combat-vest
-gear/sci-fi-equipment/light-combat-vest
-gear/sci-fi-equipment/padded-flight-suit
-gear/sci-fi-equipment/scav-gear
-gear/sci-fi-equipment/site-safety-gear
+gear/sci-fi/armor/basic-p-suit
+gear/sci-fi/armor/classic-evosuit
+gear/sci-fi/armor/combat-vest
+gear/sci-fi/armor/light-combat-vest
+gear/sci-fi/armor/padded-flight-suit
+gear/sci-fi/armor/scav-gear
+gear/sci-fi/armor/site-safety-gear
 {{< /catalog >}}
 {{% /tab %}}
 {{% tab "Heavy Armor" %}}
 {{< catalog header="Name|Notes" >}}
-gear/sci-fi-equipment/combat-evosuit
-gear/sci-fi-equipment/enforcer-armor
-gear/sci-fi-equipment/eva-suit
-gear/sci-fi-equipment/security-flight-suit
-gear/sci-fi-equipment/ultraweave-evosuit
+gear/sci-fi/armor/combat-evosuit
+gear/sci-fi/armor/enforcer-armor
+gear/sci-fi/armor/eva-suit
+gear/sci-fi/armor/security-flight-suit
+gear/sci-fi/armor/ultraweave-evosuit
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Light Armor
 
-{{< blockdetails "gear/sci-fi-equipment/basic-p-suit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/basic-p-suit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/classic-evosuit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/classic-evosuit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/combat-vest" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/combat-vest" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/light-combat-vest" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/light-combat-vest" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/padded-flight-suit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/padded-flight-suit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/scav-gear" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/scav-gear" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/site-safety-gear" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/site-safety-gear" "h4" >}}
 
 ### Heavy Armor
 
-{{< blockdetails "gear/sci-fi-equipment/combat-evosuit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/combat-evosuit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/enforcer-armor" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/enforcer-armor" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/eva-suit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/eva-suit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/security-flight-suit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/security-flight-suit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/ultraweave-evosuit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/ultraweave-evosuit" "h4" >}}
 
 ---
 
@@ -75,35 +75,35 @@ gear/sci-fi-equipment/ultraweave-evosuit
 {{< tabs >}}
 {{% tab "Armor Upgrades" %}}
 {{< catalog header="Upgrade|Notes" >}}
-gear/sci-fi-equipment/auto-injector
-gear/sci-fi-equipment/chameleon-unit
-gear/sci-fi-equipment/emergency-shank
-gear/sci-fi-equipment/hazard-hud
-gear/sci-fi-equipment/coms-unit
-gear/sci-fi-equipment/mebn-hud
-gear/sci-fi-equipment/safer-unit
-gear/sci-fi-equipment/targeting-hud
+gear/sci-fi/armor/auto-injector
+gear/sci-fi/armor/chameleon-unit
+gear/sci-fi/armor/emergency-shank
+gear/sci-fi/armor/hazard-hud
+gear/sci-fi/armor/coms-unit
+gear/sci-fi/armor/mebn-hud
+gear/sci-fi/armor/safer-unit
+gear/sci-fi/armor/targeting-hud
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Armor Upgrades
 
-{{< blockdetails "gear/sci-fi-equipment/auto-injector" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/auto-injector" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/chameleon-unit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/chameleon-unit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/emergency-shank" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/emergency-shank" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/hazard-hud" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/hazard-hud" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/coms-unit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/coms-unit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/mebn-hud" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/mebn-hud" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/safer-unit" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/safer-unit" "h4" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/targeting-hud" "h4" >}}
+{{< blockdetails "gear/sci-fi/armor/targeting-hud" "h4" >}}
 
 ---
 
@@ -116,11 +116,11 @@ gear/sci-fi-equipment/targeting-hud
 See [Damaged and Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) for more on object damage and conditions.
 
 {{< catalog header="Name|Notes" >}}
-gear/sci-fi-equipment/ballistic-shield
-gear/sci-fi-equipment/collapsible-shield
+gear/sci-fi/armor/ballistic-shield
+gear/sci-fi/armor/collapsible-shield
 {{< /catalog >}}
 
-{{< blockdetails "gear/sci-fi-equipment/ballistic-shield" "h3" >}}
+{{< blockdetails "gear/sci-fi/armor/ballistic-shield" "h3" >}}
 
-{{< blockdetails "gear/sci-fi-equipment/collapsible-shield" "h3" >}}
+{{< blockdetails "gear/sci-fi/armor/collapsible-shield" "h3" >}}
  

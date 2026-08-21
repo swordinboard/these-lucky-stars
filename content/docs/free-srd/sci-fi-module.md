@@ -76,7 +76,7 @@ and environment context around them, on
 
 ### [Bot Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/)
 
-{{< catalog type="equipment" category="sci-fi" namespace="gear/components" header="Component|Summary" />}}
+{{< catalog type="equipment" category="sci-fi" namespace="gear/sci-fi/bot-components" header="Component|Summary" />}}
 
 ---
 

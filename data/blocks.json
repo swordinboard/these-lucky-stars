@@ -3884,743 +3884,6 @@
   "wip": false
  },
  {
-  "id": "gear/components/audio-processor",
-  "title": "Audio Processor",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/audio-processor.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "audio-processor",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#audio-processor",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Bonus to hearing-based INS, filter functions"
- },
- {
-  "id": "gear/components/augmented-arm-actuators",
-  "title": "Augmented Arm Actuators",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/augmented-arm-actuators.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "augmented-arm-actuators",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#augmented-arm-actuators",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "+2 STR for physical tasks while powered"
- },
- {
-  "id": "gear/components/automatic-crash-foam-system",
-  "title": "Automatic Crash Foam System",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/automatic-crash-foam-system.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "automatic-crash-foam-system",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#automatic-crash-foam-system",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Auto-deploys on Dying; 1 use, 4 AP to restock"
- },
- {
-  "id": "gear/components/backup-power-cell",
-  "title": "Backup Power Cell",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/backup-power-cell.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "backup-power-cell",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Secondary Medium battery housing"
- },
- {
-  "id": "gear/components/damage-and-wounds",
-  "title": "Damage and Wounds",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/damage-and-wounds.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "damage-and-wounds",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#damage-and-wounds",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "component",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true
- },
- {
-  "id": "gear/components/heavy-wrist-laser",
-  "title": "Heavy Wrist Laser",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/heavy-wrist-laser.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "heavy-wrist-laser",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#heavy-wrist-laser",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Mounted laser rifle equivalent"
- },
- {
-  "id": "gear/components/improved-cooling-system",
-  "title": "Improved Cooling System",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/improved-cooling-system.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "improved-cooling-system",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#improved-cooling-system",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Resist burn, ignore heat environmental effects"
- },
- {
-  "id": "gear/components/installation",
-  "title": "Installation",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/installation.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "installation",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#installation",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "component",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true
- },
- {
-  "id": "gear/components/internal-comp-jack",
-  "title": "Internal Comp Jack",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/internal-comp-jack.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "internal-comp-jack",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#internal-comp-jack",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component",
-   "computers"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "A built in Comp Jack"
- },
- {
-  "id": "gear/components/manipulator-override",
-  "title": "Manipulator Override",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/manipulator-override.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "manipulator-override",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#manipulator-override",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Assists with fine motor tasks while powered"
- },
- {
-  "id": "gear/components/optical-suite",
-  "title": "Optical Suite",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/optical-suite.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "optical-suite",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#optical-suite",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Low-light, thermal, zoom"
- },
- {
-  "id": "gear/components/overview",
-  "title": "Components",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/overview.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "bot-components",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#bot-components",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "reference",
-  "in_degree": 0,
-  "tags": [
-   "component",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true
- },
- {
-  "id": "gear/components/power-sources",
-  "title": "Power Sources and batteries",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/power-sources.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "power-sources-and-batteries",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#power-sources-and-batteries",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "component",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true
- },
- {
-  "id": "gear/components/reinforced-chassis-plating",
-  "title": "Reinforced Chassis Plating",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/reinforced-chassis-plating.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "reinforced-chassis-plating",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#reinforced-chassis-plating",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "+3 DEF Bonus"
- },
- {
-  "id": "gear/components/relay-node",
-  "title": "Relay Node",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/relay-node.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "relay-node",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#relay-node",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Sync into a shared sensor network"
- },
- {
-  "id": "gear/components/repair-subroutine",
-  "title": "Repair Subroutine",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/repair-subroutine.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "repair-subroutine",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#repair-subroutine",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Self-repair 1 VIT per long rest"
- },
- {
-  "id": "gear/components/servo-boost-legs",
-  "title": "Servo Boost Legs",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/servo-boost-legs.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "servo-boost-legs",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#servo-boost-legs",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "+10ft speed, +5ft jump while powered"
- },
- {
-  "id": "gear/components/shield-mount",
-  "title": "Shield Mount",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/shield-mount.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "shield-mount",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Partial cover while active. 1d12 Supply Die"
- },
- {
-  "id": "gear/components/signal-mast-heavy",
-  "title": "Signal Mast, Heavy",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/signal-mast-heavy.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "signal-mast-heavy",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-heavy",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Increases com range to 500 miles"
- },
- {
-  "id": "gear/components/signal-mast-retractable",
-  "title": "Signal Mast, Retractable",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/signal-mast-retractable.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "signal-mast-retractable",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-retractable",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Increases com range to 20 miles"
- },
- {
-  "id": "gear/components/stabilizer-gyros",
-  "title": "Stabilizer Gyros",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/stabilizer-gyros.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "stabilizer-gyros",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#stabilizer-gyros",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Resist knockdown and fall damage"
- },
- {
-  "id": "gear/components/subdermal-plating",
-  "title": "Subdermal Plating",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/subdermal-plating.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "subdermal-plating",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#subdermal-plating",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "+1 DEF Bonus, no slot conflict"
- },
- {
-  "id": "gear/components/targeting-array",
-  "title": "Targeting Array",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/targeting-array.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "targeting-array",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#targeting-array",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "+1 ranged ATK, limited daily uses"
- },
- {
-  "id": "gear/components/wrist-laser",
-  "title": "Wrist Laser",
-  "home": "snippet",
-  "file": "content/snippets/gear/components/wrist-laser.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
-  ],
-  "anchor": "wrist-laser",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#wrist-laser",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "component"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": true,
-  "summary": "Mounted laser pistol equivalent"
- },
- {
   "id": "gear/equipment/armor-basics",
   "title": "Armor Basics",
   "home": "snippet",
@@ -7185,42 +6448,10 @@
   "wip": false
  },
  {
-  "id": "gear/sci-fi-equipment/ara-5",
-  "title": "Analgesic Radiation Antidote 5 (ARA-5)",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/ara-5.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "analgesic-radiation-antidote-5-ara-5",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "medical"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Single use. Removes radiation wounds and conditions within 1hr.",
-  "label": "ARA-5"
- },
- {
-  "id": "gear/sci-fi-equipment/auto-injector",
+  "id": "gear/sci-fi/armor/auto-injector",
   "title": "Auto-Injector",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-injector.md",
+  "file": "content/snippets/gear/sci-fi/armor/auto-injector.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
@@ -7249,10 +6480,2691 @@
   "summary": "Neck slot. Auto-administers a preloaded injector on trauma."
  },
  {
-  "id": "gear/sci-fi-equipment/auto-pistol",
+  "id": "gear/sci-fi/armor/ballistic-shield",
+  "title": "Ballistic Shield",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/ballistic-shield.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "ballistic-shield",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "shield"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "+3 DEF, 1d12 Supply"
+ },
+ {
+  "id": "gear/sci-fi/armor/basic-p-suit",
+  "title": "Basic P-Suit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/basic-p-suit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "basic-p-suit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#basic-p-suit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Minimum protection for airless environments."
+ },
+ {
+  "id": "gear/sci-fi/armor/chameleon-unit",
+  "title": "Chameleon Unit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/chameleon-unit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "chameleon-unit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#chameleon-unit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Active camouflage system."
+ },
+ {
+  "id": "gear/sci-fi/armor/classic-evosuit",
+  "title": "Classic Evosuit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/classic-evosuit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "classic-evosuit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#classic-evosuit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Advances space suit popular among pilots and hazardous atmosphere workers."
+ },
+ {
+  "id": "gear/sci-fi/armor/collapsible-shield",
+  "title": "Collapsible Shield",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/collapsible-shield.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "collapsible-shield",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#collapsible-shield",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "shield"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "+2 DEF 1d8 Supply"
+ },
+ {
+  "id": "gear/sci-fi/armor/combat-evosuit",
+  "title": "Combat Evosuit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/combat-evosuit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "combat-evosuit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-evosuit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "heavy-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Advanced space suit designed for tactical use."
+ },
+ {
+  "id": "gear/sci-fi/armor/combat-vest",
+  "title": "Combat Vest",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/combat-vest.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "combat-vest",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Simple protective vest. No AGI/DEX penalty."
+ },
+ {
+  "id": "gear/sci-fi/armor/coms-unit",
+  "title": "Coms Unit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/coms-unit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "coms-unit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 7,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Head [Coms]. Encrypted radio, 1 mile range."
+ },
+ {
+  "id": "gear/sci-fi/armor/emergency-shank",
+  "title": "Emergency Shank",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/emergency-shank.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "emergency-shank",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#emergency-shank",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Arm slot. Single-use ranged or melee weapon."
+ },
+ {
+  "id": "gear/sci-fi/armor/enforcer-armor",
+  "title": "Enforcer Armor",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/enforcer-armor.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "enforcer-armor",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#enforcer-armor",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "heavy-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "No-frills armor favored by private security."
+ },
+ {
+  "id": "gear/sci-fi/armor/eva-suit",
+  "title": "EVA Suit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/eva-suit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "eva-suit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "heavy-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "An early model space suit, well equipped but bulky."
+ },
+ {
+  "id": "gear/sci-fi/armor/hazard-hud",
+  "title": "Hazard HUD",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/hazard-hud.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "hazard-hud",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Helmet [HUD]. Lowers hazard detection checks within 10ft."
+ },
+ {
+  "id": "gear/sci-fi/armor/light-combat-vest",
+  "title": "Light Combat Vest",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/light-combat-vest.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "light-combat-vest",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#light-combat-vest",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Concealable. Lower profile version of the combat vest."
+ },
+ {
+  "id": "gear/sci-fi/armor/mebn-hud",
+  "title": "MeBN HUD",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/mebn-hud.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "mebn-hud",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#mebn-hud",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
+ },
+ {
+  "id": "gear/sci-fi/armor/padded-flight-suit",
+  "title": "Padded Flight Suit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/padded-flight-suit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "padded-flight-suit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#padded-flight-suit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Offers greater protection than a standard coverall."
+ },
+ {
+  "id": "gear/sci-fi/armor/safer-unit",
+  "title": "SAFER Unit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/safer-unit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "safer-unit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#safer-unit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 2,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Back. A propulsion unit for navigating in zero gravity."
+ },
+ {
+  "id": "gear/sci-fi/armor/scav-gear",
+  "title": "Scav Gear",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/scav-gear.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "scav-gear",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#scav-gear",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Grants an extra body slot and +50 max carry weight."
+ },
+ {
+  "id": "gear/sci-fi/armor/security-flight-suit",
+  "title": "Security Flight Suit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/security-flight-suit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "security-flight-suit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#security-flight-suit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "heavy-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Tactical variation of the padded flight suit."
+ },
+ {
+  "id": "gear/sci-fi/armor/site-safety-gear",
+  "title": "Site Safety Gear",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/site-safety-gear.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "site-safety-gear",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#site-safety-gear",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "light-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Basic corporate-approved protective gear."
+ },
+ {
+  "id": "gear/sci-fi/armor/targeting-hud",
+  "title": "Targeting HUD",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/targeting-hud.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "targeting-hud",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#targeting-hud",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "upgrade",
+   "armor-upgrade"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Helmet [HUD]. Lock on to lower target number for ranged attacks."
+ },
+ {
+  "id": "gear/sci-fi/armor/ultraweave-evosuit",
+  "title": "Ultraweave Evosuit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/armor/ultraweave-evosuit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
+  ],
+  "anchor": "ultraweave-evosuit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ultraweave-evosuit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "armor",
+   "heavy-armor"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Most advanced Evosuit available."
+ },
+ {
+  "id": "gear/sci-fi/bot-components/audio-processor",
+  "title": "Audio Processor",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/audio-processor.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "audio-processor",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#audio-processor",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Bonus to hearing-based INS, filter functions"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/augmented-arm-actuators",
+  "title": "Augmented Arm Actuators",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/augmented-arm-actuators.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "augmented-arm-actuators",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#augmented-arm-actuators",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "+2 STR for physical tasks while powered"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/automatic-crash-foam-system",
+  "title": "Automatic Crash Foam System",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/automatic-crash-foam-system.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "automatic-crash-foam-system",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#automatic-crash-foam-system",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Auto-deploys on Dying; 1 use, 4 AP to restock"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/backup-power-cell",
+  "title": "Backup Power Cell",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/backup-power-cell.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "backup-power-cell",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#backup-power-cell",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Secondary Medium battery housing"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/damage-and-wounds",
+  "title": "Damage and Wounds",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/damage-and-wounds.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "damage-and-wounds",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#damage-and-wounds",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "component",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "gear/sci-fi/bot-components/heavy-wrist-laser",
+  "title": "Heavy Wrist Laser",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/heavy-wrist-laser.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "heavy-wrist-laser",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#heavy-wrist-laser",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Mounted laser rifle equivalent"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/improved-cooling-system",
+  "title": "Improved Cooling System",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/improved-cooling-system.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "improved-cooling-system",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#improved-cooling-system",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Resist burn, ignore heat environmental effects"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/installation",
+  "title": "Installation",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/installation.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "installation",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#installation",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "component",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "gear/sci-fi/bot-components/internal-comp-jack",
+  "title": "Internal Comp Jack",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/internal-comp-jack.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "internal-comp-jack",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#internal-comp-jack",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component",
+   "computers"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "A built in Comp Jack"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/manipulator-override",
+  "title": "Manipulator Override",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/manipulator-override.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "manipulator-override",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#manipulator-override",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Assists with fine motor tasks while powered"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/optical-suite",
+  "title": "Optical Suite",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/optical-suite.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "optical-suite",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#optical-suite",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Low-light, thermal, zoom"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/overview",
+  "title": "Components",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/overview.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "bot-components",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#bot-components",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "reference",
+  "in_degree": 0,
+  "tags": [
+   "component",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "gear/sci-fi/bot-components/power-sources",
+  "title": "Power Sources and batteries",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/power-sources.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "power-sources-and-batteries",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#power-sources-and-batteries",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "component",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "gear/sci-fi/bot-components/reinforced-chassis-plating",
+  "title": "Reinforced Chassis Plating",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/reinforced-chassis-plating.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "reinforced-chassis-plating",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#reinforced-chassis-plating",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "+3 DEF Bonus"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/relay-node",
+  "title": "Relay Node",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/relay-node.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "relay-node",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#relay-node",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Sync into a shared sensor network"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/repair-subroutine",
+  "title": "Repair Subroutine",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/repair-subroutine.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "repair-subroutine",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#repair-subroutine",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Self-repair 1 VIT per long rest"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/servo-boost-legs",
+  "title": "Servo Boost Legs",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/servo-boost-legs.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "servo-boost-legs",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#servo-boost-legs",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "+10ft speed, +5ft jump while powered"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/shield-mount",
+  "title": "Shield Mount",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/shield-mount.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "shield-mount",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Partial cover while active. 1d12 Supply Die"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/signal-mast-heavy",
+  "title": "Signal Mast, Heavy",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/signal-mast-heavy.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "signal-mast-heavy",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-heavy",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Increases com range to 500 miles"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/signal-mast-retractable",
+  "title": "Signal Mast, Retractable",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/signal-mast-retractable.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "signal-mast-retractable",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#signal-mast-retractable",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Increases com range to 20 miles"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/stabilizer-gyros",
+  "title": "Stabilizer Gyros",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/stabilizer-gyros.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "stabilizer-gyros",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#stabilizer-gyros",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Resist knockdown and fall damage"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/subdermal-plating",
+  "title": "Subdermal Plating",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/subdermal-plating.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "subdermal-plating",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#subdermal-plating",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "+1 DEF Bonus, no slot conflict"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/targeting-array",
+  "title": "Targeting Array",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/targeting-array.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "targeting-array",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#targeting-array",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "+1 ranged ATK, limited daily uses"
+ },
+ {
+  "id": "gear/sci-fi/bot-components/wrist-laser",
+  "title": "Wrist Laser",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/bot-components/wrist-laser.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/"
+  ],
+  "anchor": "wrist-laser",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#wrist-laser",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "component"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true,
+  "summary": "Mounted laser pistol equivalent"
+ },
+ {
+  "id": "gear/sci-fi/kits/b-e-kit",
+  "title": "Breaking and Entering Kit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/b-e-kit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "breaking-and-entering-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#breaking-and-entering-kit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "kit"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Bulky. Locks, traps, bypass tools."
+ },
+ {
+  "id": "gear/sci-fi/kits/disguise-kit",
+  "title": "Disguise Kit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/disguise-kit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "disguise-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#disguise-kit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "kit"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Alters appearance, applies camouflage."
+ },
+ {
+  "id": "gear/sci-fi/kits/kit-supplies",
+  "title": "Sci-Fi Tool Kits",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/kit-supplies.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "sci-fi-tool-kits",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#sci-fi-tool-kits",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "kit",
+   "sci-fi"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
+  "id": "gear/sci-fi/kits/medical-kit",
+  "title": "Medical Kit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/medical-kit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "medical-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#medical-kit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "kit"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Heals wounds and conditions."
+ },
+ {
+  "id": "gear/sci-fi/kits/repair-kit",
+  "title": "Repair Kit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/repair-kit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "repair-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#repair-kit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "kit"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Bulky. Machinery, vehicles, structures."
+ },
+ {
+  "id": "gear/sci-fi/kits/tech-kit",
+  "title": "Tech Kit",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/kits/tech-kit.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
+  ],
+  "anchor": "tech-kit",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#tech-kit",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "kit"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Electronic components and equipment."
+ },
+ {
+  "id": "gear/sci-fi/misc/ara-5",
+  "title": "Analgesic Radiation Antidote 5 (ARA-5)",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/ara-5.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "analgesic-radiation-antidote-5-ara-5",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#analgesic-radiation-antidote-5-ara-5",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "medical"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Single use. Removes radiation wounds and conditions within 1hr.",
+  "label": "ARA-5"
+ },
+ {
+  "id": "gear/sci-fi/misc/battery-cores",
+  "title": "Standardized Battery Cores",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/battery-cores.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "standardized-battery-cores",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Portable power available in multiple sizes."
+ },
+ {
+  "id": "gear/sci-fi/misc/bio-scanner",
+  "title": "Bio Scanner",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/bio-scanner.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "bio-scanner",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Scans organic matter. 2 AP, 5ft range."
+ },
+ {
+  "id": "gear/sci-fi/misc/bioskin-veil",
+  "title": "Bioskin Veil",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/bioskin-veil.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "bioskin-veil",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bioskin-veil",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Creates a near-perfect disguise."
+ },
+ {
+  "id": "gear/sci-fi/misc/boost-pack",
+  "title": "Boost Pack",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/boost-pack.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "boost-pack",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#boost-pack",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "10ft directional burst for 1 AP; does not provoke Opportunity Attacks."
+ },
+ {
+  "id": "gear/sci-fi/misc/comp-jack",
+  "title": "Comp Jack",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/comp-jack.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "comp-jack",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 4,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech",
+   "computers"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Required for interfacing with computer systems."
+ },
+ {
+  "id": "gear/sci-fi/misc/coms-headset",
+  "title": "Coms Headset",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/coms-headset.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "coms-headset",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "communications"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Wireless connection for com devices."
+ },
+ {
+  "id": "gear/sci-fi/misc/crash-foam-canister",
+  "title": "Crash Foam Canister",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/crash-foam-canister.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "crash-foam-canister",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 3,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "medical"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Single use. Stabilizes a Dying Android or automated machine."
+ },
+ {
+  "id": "gear/sci-fi/misc/data-spike",
+  "title": "Data Spike",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/data-spike.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "data-spike",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#data-spike",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech",
+   "computers"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Disposable high-speed USB data extraction device."
+ },
+ {
+  "id": "gear/sci-fi/misc/decoy-beacon",
+  "title": "Decoy Beacon",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/decoy-beacon.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "decoy-beacon",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#decoy-beacon",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Mimics com signals and life signs for 1hr."
+ },
+ {
+  "id": "gear/sci-fi/misc/emergency-beacon",
+  "title": "Emergency Beacon",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/emergency-beacon.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "emergency-beacon",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-beacon",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Sends a distress signal across a star system for 72hrs."
+ },
+ {
+  "id": "gear/sci-fi/misc/emergency-oxygen-mask",
+  "title": "Emergency Oxygen Mask",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/emergency-oxygen-mask.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "emergency-oxygen-mask",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-oxygen-mask",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "30 minutes of clean oxygen."
+ },
+ {
+  "id": "gear/sci-fi/misc/emergency-trauma-patch",
+  "title": "Emergency Trauma Patch",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/emergency-trauma-patch.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "emergency-trauma-patch",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-trauma-patch",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "medical"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Single use. Closes lacerations and punctures. Works on Evosuits."
+ },
+ {
+  "id": "gear/sci-fi/misc/field-ration",
+  "title": "Field Ration",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/field-ration.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "field-ration",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#field-ration",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "One day of nutrients for one person.",
+  "variant_group": "field-ration"
+ },
+ {
+  "id": "gear/sci-fi/misc/fuel-cells",
+  "title": "Fuel Cells",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/fuel-cells.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "fuel-cells",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Pressurized propellant canisters in small, medium, and large sizes."
+ },
+ {
+  "id": "gear/sci-fi/misc/grapple-line-launcher",
+  "title": "Grapple-Line Launcher",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/grapple-line-launcher.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "grapple-line-launcher",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#grapple-line-launcher",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Magnetic grappling hook."
+ },
+ {
+  "id": "gear/sci-fi/misc/gravity-anchor",
+  "title": "Gravity Anchor",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/gravity-anchor.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "gravity-anchor",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#gravity-anchor",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "10ft gravity field, 10 min per roll."
+ },
+ {
+  "id": "gear/sci-fi/misc/jump-boosters",
+  "title": "Jump Boosters",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/jump-boosters.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "jump-boosters",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-boosters",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "+10ft to horizontal and vertical jump."
+ },
+ {
+  "id": "gear/sci-fi/misc/jump-pack",
+  "title": "Jump Pack",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/jump-pack.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "jump-pack",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-pack",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Vertical launch up to 25ft or controlled arc; reduces fall damage."
+ },
+ {
+  "id": "gear/sci-fi/misc/long-range-coms",
+  "title": "Long Range Coms",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/long-range-coms.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "long-range-coms",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#long-range-coms",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "communications"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "500 mile range. Connects to local networks."
+ },
+ {
+  "id": "gear/sci-fi/misc/mag-boots",
+  "title": "Mag Boots",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/mag-boots.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "mag-boots",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-boots",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
+ },
+ {
+  "id": "gear/sci-fi/misc/mag-cuffs",
+  "title": "Mag Cuffs",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/mag-cuffs.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "mag-cuffs",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-cuffs",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Encrypted magnetic handcuffs with wrist controller."
+ },
+ {
+  "id": "gear/sci-fi/misc/mini-laser-cutter",
+  "title": "Mini Laser Cutter",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/mini-laser-cutter.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "mini-laser-cutter",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mini-laser-cutter",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Direct contact laser cutter/welder."
+ },
+ {
+  "id": "gear/sci-fi/misc/mobile-phone",
+  "title": "Mobile Phone",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/mobile-phone.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "mobile-phone",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mobile-phone",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "communications"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "1 mile range. Connects to local networks."
+ },
+ {
+  "id": "gear/sci-fi/misc/pain-suppressant-injector",
+  "title": "Pain Suppressant Injector",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/pain-suppressant-injector.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "pain-suppressant-injector",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "medical"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Variable dosage. Suppresses condition effects temporarily."
+ },
+ {
+  "id": "gear/sci-fi/misc/personal-shield",
+  "title": "Personal Shield",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/personal-shield.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "personal-shield",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#personal-shield",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "10pts protection for up to 3 rounds."
+ },
+ {
+  "id": "gear/sci-fi/misc/portable-heater",
+  "title": "Portable Heater",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/portable-heater.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "portable-heater",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-heater",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Heats a small area."
+ },
+ {
+  "id": "gear/sci-fi/misc/portable-water-purifier",
+  "title": "Portable Water Purifier",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/portable-water-purifier.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "portable-water-purifier",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-water-purifier",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Purifies up to 5 gallons per supply roll."
+ },
+ {
+  "id": "gear/sci-fi/misc/reactor-cores",
+  "title": "Reactor Cores",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/reactor-cores.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "reactor-cores",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Self-charging power cores for automated machines."
+ },
+ {
+  "id": "gear/sci-fi/misc/remote-detonator",
+  "title": "Remote Detonator",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/remote-detonator.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "remote-detonator",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#remote-detonator",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Detonates rigged explosives or systems."
+ },
+ {
+  "id": "gear/sci-fi/misc/signature-spoofer",
+  "title": "Signature Spoofer",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/signature-spoofer.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "signature-spoofer",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#signature-spoofer",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Emits a false bio-signature to scanners."
+ },
+ {
+  "id": "gear/sci-fi/misc/solar-array-pack",
+  "title": "Solar Array Pack",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/solar-array-pack.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "solar-array-pack",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#solar-array-pack",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Charges micro through large batteries via solar."
+ },
+ {
+  "id": "gear/sci-fi/misc/squad-shield",
+  "title": "Squad Shield",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/squad-shield.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "squad-shield",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#squad-shield",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "tech"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "40pts protection, 20ft radius, up to 6 rounds."
+ },
+ {
+  "id": "gear/sci-fi/misc/survival-tent",
+  "title": "Survival Tent",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/survival-tent.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "survival-tent",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#survival-tent",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 0,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "survival"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Pressurized 10×10ft shelter for four."
+ },
+ {
+  "id": "gear/sci-fi/misc/vitaboost-injector",
+  "title": "Vitaboost Injector",
+  "home": "snippet",
+  "file": "content/snippets/gear/sci-fi/misc/vitaboost-injector.md",
+  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
+  "pages": [
+   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
+  ],
+  "anchor": "vitaboost-injector",
+  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
+  "owns_heading": false,
+  "category": [
+   "sci-fi"
+  ],
+  "type": "equipment",
+  "in_degree": 1,
+  "tags": [
+   "equipment",
+   "sci-fi",
+   "medical"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false,
+  "summary": "Single use. Heals 1 VIT or attribute damage."
+ },
+ {
+  "id": "gear/sci-fi/weapons/auto-pistol",
   "title": "Auto Pistol",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/auto-pistol.md",
+  "file": "content/snippets/gear/sci-fi/weapons/auto-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -7282,197 +9194,10 @@
   "summary": "Ballistic. Full-auto. Concealable. 40ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/b-e-kit",
-  "title": "Breaking and Entering Kit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/b-e-kit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "breaking-and-entering-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#breaking-and-entering-kit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "kit"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Bulky. Locks, traps, bypass tools."
- },
- {
-  "id": "gear/sci-fi-equipment/ballistic-shield",
-  "title": "Ballistic Shield",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/ballistic-shield.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "ballistic-shield",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ballistic-shield",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "shield"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "+3 DEF, 1d12 Supply"
- },
- {
-  "id": "gear/sci-fi-equipment/basic-p-suit",
-  "title": "Basic P-Suit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/basic-p-suit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "basic-p-suit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#basic-p-suit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Minimum protection for airless environments."
- },
- {
-  "id": "gear/sci-fi-equipment/battery-cores",
-  "title": "Standardized Battery Cores",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/battery-cores.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "standardized-battery-cores",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#standardized-battery-cores",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Portable power available in multiple sizes."
- },
- {
-  "id": "gear/sci-fi-equipment/bio-scanner",
-  "title": "Bio Scanner",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/bio-scanner.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "bio-scanner",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bio-scanner",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Scans organic matter. 2 AP, 5ft range."
- },
- {
-  "id": "gear/sci-fi-equipment/bioskin-veil",
-  "title": "Bioskin Veil",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/bioskin-veil.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "bioskin-veil",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#bioskin-veil",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Creates a near-perfect disguise."
- },
- {
-  "id": "gear/sci-fi-equipment/bipod",
+  "id": "gear/sci-fi/weapons/bipod",
   "title": "Bipod",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/bipod.md",
+  "file": "content/snippets/gear/sci-fi/weapons/bipod.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -7501,232 +9226,10 @@
   "summary": "Rifles, Heavy Ranged. +4 attack when deployed, +10ft minimum range."
  },
  {
-  "id": "gear/sci-fi-equipment/boost-pack",
-  "title": "Boost Pack",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/boost-pack.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "boost-pack",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#boost-pack",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "10ft directional burst for 1 AP; does not provoke Opportunity Attacks."
- },
- {
-  "id": "gear/sci-fi-equipment/chameleon-unit",
-  "title": "Chameleon Unit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/chameleon-unit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "chameleon-unit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#chameleon-unit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Active camouflage system."
- },
- {
-  "id": "gear/sci-fi-equipment/classic-evosuit",
-  "title": "Classic Evosuit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/classic-evosuit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "classic-evosuit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#classic-evosuit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Advances space suit popular among pilots and hazardous atmosphere workers."
- },
- {
-  "id": "gear/sci-fi-equipment/collapsible-shield",
-  "title": "Collapsible Shield",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/collapsible-shield.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "collapsible-shield",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#collapsible-shield",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "shield"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "+2 DEF 1d8 Supply"
- },
- {
-  "id": "gear/sci-fi-equipment/combat-evosuit",
-  "title": "Combat Evosuit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/combat-evosuit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "combat-evosuit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-evosuit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "heavy-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Advanced space suit designed for tactical use."
- },
- {
-  "id": "gear/sci-fi-equipment/combat-vest",
-  "title": "Combat Vest",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/combat-vest.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "combat-vest",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#combat-vest",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Simple protective vest. No AGI/DEX penalty."
- },
- {
-  "id": "gear/sci-fi-equipment/comp-jack",
-  "title": "Comp Jack",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/comp-jack.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "comp-jack",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#comp-jack",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 4,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech",
-   "computers"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Required for interfacing with computer systems."
- },
- {
-  "id": "gear/sci-fi-equipment/compact-rifle",
+  "id": "gear/sci-fi/weapons/compact-rifle",
   "title": "Compact Rifle",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/compact-rifle.md",
+  "file": "content/snippets/gear/sci-fi/weapons/compact-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -7756,198 +9259,10 @@
   "summary": "Ballistic. Full-auto. Two-handed. 80ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/coms-headset",
-  "title": "Coms Headset",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/coms-headset.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "coms-headset",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#coms-headset",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "communications"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Wireless connection for com devices."
- },
- {
-  "id": "gear/sci-fi-equipment/coms-unit",
-  "title": "Coms Unit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/coms-unit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "coms-unit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#coms-unit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 7,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Head [Coms]. Encrypted radio, 1 mile range."
- },
- {
-  "id": "gear/sci-fi-equipment/crash-foam-canister",
-  "title": "Crash Foam Canister",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/crash-foam-canister.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "crash-foam-canister",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#crash-foam-canister",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 3,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "medical"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Single use. Stabilizes a Dying Android or automated machine."
- },
- {
-  "id": "gear/sci-fi-equipment/data-spike",
-  "title": "Data Spike",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/data-spike.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "data-spike",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#data-spike",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech",
-   "computers"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Disposable high-speed USB data extraction device."
- },
- {
-  "id": "gear/sci-fi-equipment/decoy-beacon",
-  "title": "Decoy Beacon",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/decoy-beacon.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "decoy-beacon",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#decoy-beacon",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Mimics com signals and life signs for 1hr."
- },
- {
-  "id": "gear/sci-fi-equipment/disguise-kit",
-  "title": "Disguise Kit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/disguise-kit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "disguise-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#disguise-kit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "kit"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Alters appearance, applies camouflage."
- },
- {
-  "id": "gear/sci-fi-equipment/drum-magazines",
+  "id": "gear/sci-fi/weapons/drum-magazines",
   "title": "Drum Magazines",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/drum-magazines.md",
+  "file": "content/snippets/gear/sci-fi/weapons/drum-magazines.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -7976,41 +9291,10 @@
   "summary": "All ballistic. Increased ammo die size."
  },
  {
-  "id": "gear/sci-fi-equipment/emergency-beacon",
-  "title": "Emergency Beacon",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-beacon.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "emergency-beacon",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-beacon",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Sends a distress signal across a star system for 72hrs."
- },
- {
-  "id": "gear/sci-fi-equipment/emergency-hatchet",
+  "id": "gear/sci-fi/weapons/emergency-hatchet",
   "title": "Emergency Hatchet",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-hatchet.md",
+  "file": "content/snippets/gear/sci-fi/weapons/emergency-hatchet.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8040,168 +9324,10 @@
   "summary": "Throwable [20ft]."
  },
  {
-  "id": "gear/sci-fi-equipment/emergency-oxygen-mask",
-  "title": "Emergency Oxygen Mask",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-oxygen-mask.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "emergency-oxygen-mask",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-oxygen-mask",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "30 minutes of clean oxygen."
- },
- {
-  "id": "gear/sci-fi-equipment/emergency-shank",
-  "title": "Emergency Shank",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-shank.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "emergency-shank",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#emergency-shank",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Arm slot. Single-use ranged or melee weapon."
- },
- {
-  "id": "gear/sci-fi-equipment/emergency-trauma-patch",
-  "title": "Emergency Trauma Patch",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/emergency-trauma-patch.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "emergency-trauma-patch",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#emergency-trauma-patch",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "medical"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Single use. Closes lacerations and punctures. Works on Evosuits."
- },
- {
-  "id": "gear/sci-fi-equipment/enforcer-armor",
-  "title": "Enforcer Armor",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/enforcer-armor.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "enforcer-armor",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#enforcer-armor",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "heavy-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "No-frills armor favored by private security."
- },
- {
-  "id": "gear/sci-fi-equipment/eva-suit",
-  "title": "EVA Suit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/eva-suit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "eva-suit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#eva-suit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "heavy-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "An early model space suit, well equipped but bulky."
- },
- {
-  "id": "gear/sci-fi-equipment/extended-barrel",
+  "id": "gear/sci-fi/weapons/extended-barrel",
   "title": "Extended Barrel",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/extended-barrel.md",
+  "file": "content/snippets/gear/sci-fi/weapons/extended-barrel.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8230,42 +9356,10 @@
   "summary": "Pistols, Rifles. +20ft normal range."
  },
  {
-  "id": "gear/sci-fi-equipment/field-ration",
-  "title": "Field Ration",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/field-ration.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "field-ration",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#field-ration",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "One day of nutrients for one person.",
-  "variant_group": "field-ration"
- },
- {
-  "id": "gear/sci-fi-equipment/forward-assault-shield",
+  "id": "gear/sci-fi/weapons/forward-assault-shield",
   "title": "Forward Assault Shield",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/forward-assault-shield.md",
+  "file": "content/snippets/gear/sci-fi/weapons/forward-assault-shield.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8294,135 +9388,10 @@
   "summary": "Heavy Ranged. Partial cover, -1 attack while active."
  },
  {
-  "id": "gear/sci-fi-equipment/fuel-cells",
-  "title": "Fuel Cells",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/fuel-cells.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "fuel-cells",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#fuel-cells",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Pressurized propellant canisters in small, medium, and large sizes."
- },
- {
-  "id": "gear/sci-fi-equipment/grapple-line-launcher",
-  "title": "Grapple-Line Launcher",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/grapple-line-launcher.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "grapple-line-launcher",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#grapple-line-launcher",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Magnetic grappling hook."
- },
- {
-  "id": "gear/sci-fi-equipment/gravity-anchor",
-  "title": "Gravity Anchor",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/gravity-anchor.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "gravity-anchor",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#gravity-anchor",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "10ft gravity field, 10 min per roll."
- },
- {
-  "id": "gear/sci-fi-equipment/hazard-hud",
-  "title": "Hazard HUD",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/hazard-hud.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "hazard-hud",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#hazard-hud",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Helmet [HUD]. Lowers hazard detection checks within 10ft."
- },
- {
-  "id": "gear/sci-fi-equipment/heavy-pistol",
+  "id": "gear/sci-fi/weapons/heavy-pistol",
   "title": "Heavy Pistol",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-pistol.md",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8452,10 +9421,10 @@
   "summary": "Ballistic. Single shot. 80ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/heavy-rotary-cannon",
+  "id": "gear/sci-fi/weapons/heavy-rotary-cannon",
   "title": "Heavy Rotary Cannon",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/heavy-rotary-cannon.md",
+  "file": "content/snippets/gear/sci-fi/weapons/heavy-rotary-cannon.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8485,102 +9454,10 @@
   "summary": "Ballistic. Full-auto. Bulky. Belt fed. Long reload. Two-handed. (10) 100ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/jump-boosters",
-  "title": "Jump Boosters",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/jump-boosters.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "jump-boosters",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-boosters",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "+10ft to horizontal and vertical jump."
- },
- {
-  "id": "gear/sci-fi-equipment/jump-pack",
-  "title": "Jump Pack",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/jump-pack.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "jump-pack",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#jump-pack",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Vertical launch up to 25ft or controlled arc; reduces fall damage."
- },
- {
-  "id": "gear/sci-fi-equipment/kit-supplies",
-  "title": "Sci-Fi Tool Kits",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/kit-supplies.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "sci-fi-tool-kits",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#sci-fi-tool-kits",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "rule",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "kit",
-   "sci-fi"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false
- },
- {
-  "id": "gear/sci-fi-equipment/knuckle-taser",
+  "id": "gear/sci-fi/weapons/knuckle-taser",
   "title": "Knuckle Taser",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/knuckle-taser.md",
+  "file": "content/snippets/gear/sci-fi/weapons/knuckle-taser.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8610,10 +9487,10 @@
   "summary": "Hand slot. Built in shock charger for a shocking punch."
  },
  {
-  "id": "gear/sci-fi-equipment/laser-pistol",
+  "id": "gear/sci-fi/weapons/laser-pistol",
   "title": "Laser Pistol",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/laser-pistol.md",
+  "file": "content/snippets/gear/sci-fi/weapons/laser-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8643,10 +9520,10 @@
   "summary": "Battery [small]. Single shot. Burn. 50ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/laser-rifle",
+  "id": "gear/sci-fi/weapons/laser-rifle",
   "title": "Laser Rifle",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/laser-rifle.md",
+  "file": "content/snippets/gear/sci-fi/weapons/laser-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8673,45 +9550,13 @@
   "notes": "",
   "selectable": true,
   "wip": false,
-  "summary": "Battery [small]. Single shot. Burn. Two-handed. (10) 120ft range."
+  "summary": "Battery [Medium]. Single shot. Burn. Two-handed. (10) 120ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/light-combat-vest",
-  "title": "Light Combat Vest",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/light-combat-vest.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "light-combat-vest",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#light-combat-vest",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Concealable. Lower profile version of the combat vest."
- },
- {
-  "id": "gear/sci-fi-equipment/light-pistol",
+  "id": "gear/sci-fi/weapons/light-pistol",
   "title": "Light Pistol",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/light-pistol.md",
+  "file": "content/snippets/gear/sci-fi/weapons/light-pistol.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8741,41 +9586,10 @@
   "summary": "Ballistic. Semi-auto. Concealable. 60ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/long-range-coms",
-  "title": "Long Range Coms",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/long-range-coms.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "long-range-coms",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#long-range-coms",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "communications"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "500 mile range. Connects to local networks."
- },
- {
-  "id": "gear/sci-fi-equipment/long-rifle",
+  "id": "gear/sci-fi/weapons/long-rifle",
   "title": "Long Rifle",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/long-rifle.md",
+  "file": "content/snippets/gear/sci-fi/weapons/long-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -8805,197 +9619,10 @@
   "summary": "Ballistic. Single shot. Bulky. Two-handed. (10) 150ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/mag-boots",
-  "title": "Mag Boots",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/mag-boots.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "mag-boots",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-boots",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Anchor to metal surfaces in zero/low gravity; -1 AGI while active."
- },
- {
-  "id": "gear/sci-fi-equipment/mag-cuffs",
-  "title": "Mag Cuffs",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/mag-cuffs.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "mag-cuffs",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mag-cuffs",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Encrypted magnetic handcuffs with wrist controller."
- },
- {
-  "id": "gear/sci-fi-equipment/mebn-hud",
-  "title": "MeBN HUD",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/mebn-hud.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "mebn-hud",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#mebn-hud",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Helmet [HUD]. Matches faces to bounties on the Mark'em Bounty Network."
- },
- {
-  "id": "gear/sci-fi-equipment/medical-kit",
-  "title": "Medical Kit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/medical-kit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "medical-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#medical-kit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "kit"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Heals wounds and conditions."
- },
- {
-  "id": "gear/sci-fi-equipment/mini-laser-cutter",
-  "title": "Mini Laser Cutter",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/mini-laser-cutter.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "mini-laser-cutter",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mini-laser-cutter",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Direct contact laser cutter/welder."
- },
- {
-  "id": "gear/sci-fi-equipment/mobile-phone",
-  "title": "Mobile Phone",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/mobile-phone.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "mobile-phone",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#mobile-phone",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "communications"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "1 mile range. Connects to local networks."
- },
- {
-  "id": "gear/sci-fi-equipment/overcharge-chamber",
+  "id": "gear/sci-fi/weapons/overcharge-chamber",
   "title": "Overcharge Chamber",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/overcharge-chamber.md",
+  "file": "content/snippets/gear/sci-fi/weapons/overcharge-chamber.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9024,197 +9651,10 @@
   "summary": "All battery ranged. 3/day increase a damage die by one size."
  },
  {
-  "id": "gear/sci-fi-equipment/padded-flight-suit",
-  "title": "Padded Flight Suit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/padded-flight-suit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "padded-flight-suit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#padded-flight-suit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Offers greater protection than a standard coverall."
- },
- {
-  "id": "gear/sci-fi-equipment/pain-suppressant-injector",
-  "title": "Pain Suppressant Injector",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/pain-suppressant-injector.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "pain-suppressant-injector",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#pain-suppressant-injector",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "medical"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Variable dosage. Suppresses condition effects temporarily."
- },
- {
-  "id": "gear/sci-fi-equipment/personal-shield",
-  "title": "Personal Shield",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/personal-shield.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "personal-shield",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#personal-shield",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "10pts protection for up to 3 rounds."
- },
- {
-  "id": "gear/sci-fi-equipment/portable-heater",
-  "title": "Portable Heater",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/portable-heater.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "portable-heater",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-heater",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Heats a small area."
- },
- {
-  "id": "gear/sci-fi-equipment/portable-water-purifier",
-  "title": "Portable Water Purifier",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/portable-water-purifier.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "portable-water-purifier",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#portable-water-purifier",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Purifies up to 5 gallons per supply roll."
- },
- {
-  "id": "gear/sci-fi-equipment/reactor-cores",
-  "title": "Reactor Cores",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/reactor-cores.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "reactor-cores",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#reactor-cores",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Self-charging power cores for automated machines."
- },
- {
-  "id": "gear/sci-fi-equipment/recoil-compensation-system",
+  "id": "gear/sci-fi/weapons/recoil-compensation-system",
   "title": "Recoil Compensation System",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/recoil-compensation-system.md",
+  "file": "content/snippets/gear/sci-fi/weapons/recoil-compensation-system.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9243,10 +9683,10 @@
   "summary": "All ballistic. +1 attack, negates zero-g knockback."
  },
  {
-  "id": "gear/sci-fi-equipment/reflex-sight",
+  "id": "gear/sci-fi/weapons/reflex-sight",
   "title": "Reflex Sight",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/reflex-sight.md",
+  "file": "content/snippets/gear/sci-fi/weapons/reflex-sight.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9275,72 +9715,10 @@
   "summary": "All ranged. +1 to attacks at normal range."
  },
  {
-  "id": "gear/sci-fi-equipment/remote-detonator",
-  "title": "Remote Detonator",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/remote-detonator.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "remote-detonator",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#remote-detonator",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Detonates rigged explosives or systems."
- },
- {
-  "id": "gear/sci-fi-equipment/repair-kit",
-  "title": "Repair Kit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/repair-kit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "repair-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#repair-kit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "kit"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Bulky. Machinery, vehicles, structures."
- },
- {
-  "id": "gear/sci-fi-equipment/ripper-blade",
+  "id": "gear/sci-fi/weapons/ripper-blade",
   "title": "Ripper Blade",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/ripper-blade.md",
+  "file": "content/snippets/gear/sci-fi/weapons/ripper-blade.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9370,106 +9748,10 @@
   "summary": "Two-handed. Deals +5 shatter damage to armor."
  },
  {
-  "id": "gear/sci-fi-equipment/safer-unit",
-  "title": "SAFER Unit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/safer-unit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "safer-unit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#safer-unit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 2,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Back. A propulsion unit for navigating in zero gravity."
- },
- {
-  "id": "gear/sci-fi-equipment/scav-gear",
-  "title": "Scav Gear",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/scav-gear.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "scav-gear",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#scav-gear",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Grants an extra body slot and +50 max carry weight."
- },
- {
-  "id": "gear/sci-fi-equipment/security-flight-suit",
-  "title": "Security Flight Suit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/security-flight-suit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "security-flight-suit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#security-flight-suit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "heavy-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Tactical variation of the padded flight suit."
- },
- {
-  "id": "gear/sci-fi-equipment/shock-baton",
+  "id": "gear/sci-fi/weapons/shock-baton",
   "title": "Shock Baton",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-baton.md",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-baton.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9499,10 +9781,10 @@
   "summary": "Built in shock charger."
  },
  {
-  "id": "gear/sci-fi-equipment/shock-charger",
+  "id": "gear/sci-fi/weapons/shock-charger",
   "title": "Shock Charger",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-charger.md",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-charger.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9531,10 +9813,10 @@
   "summary": "All melee. +1 damage, changes type to shock. FORT check or lose 1 AP."
  },
  {
-  "id": "gear/sci-fi-equipment/shock-rifle",
+  "id": "gear/sci-fi/weapons/shock-rifle",
   "title": "Shock Rifle",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/shock-rifle.md",
+  "file": "content/snippets/gear/sci-fi/weapons/shock-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9564,135 +9846,10 @@
   "summary": "Battery [medium]. Arcing. Two-handed. 20ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/signature-spoofer",
-  "title": "Signature Spoofer",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/signature-spoofer.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "signature-spoofer",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#signature-spoofer",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Emits a false bio-signature to scanners."
- },
- {
-  "id": "gear/sci-fi-equipment/site-safety-gear",
-  "title": "Site Safety Gear",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/site-safety-gear.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "site-safety-gear",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#site-safety-gear",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "light-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Basic corporate-approved protective gear."
- },
- {
-  "id": "gear/sci-fi-equipment/solar-array-pack",
-  "title": "Solar Array Pack",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/solar-array-pack.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "solar-array-pack",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#solar-array-pack",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Charges micro through large batteries via solar."
- },
- {
-  "id": "gear/sci-fi-equipment/squad-shield",
-  "title": "Squad Shield",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/squad-shield.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "squad-shield",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#squad-shield",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "tech"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "40pts protection, 20ft radius, up to 6 rounds."
- },
- {
-  "id": "gear/sci-fi-equipment/standard-issue-knife",
+  "id": "gear/sci-fi/weapons/standard-issue-knife",
   "title": "Standard Issue Knife",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-knife.md",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-knife.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9722,10 +9879,10 @@
   "summary": "Concealable. Throwable [10ft]."
  },
  {
-  "id": "gear/sci-fi-equipment/standard-issue-rifle",
+  "id": "gear/sci-fi/weapons/standard-issue-rifle",
   "title": "Standard Issue Rifle",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/standard-issue-rifle.md",
+  "file": "content/snippets/gear/sci-fi/weapons/standard-issue-rifle.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"
@@ -9755,167 +9912,10 @@
   "summary": "Ballistic. Semi-auto. Two-handed. 100ft range."
  },
  {
-  "id": "gear/sci-fi-equipment/survival-tent",
-  "title": "Survival Tent",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/survival-tent.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "survival-tent",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#survival-tent",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "survival"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Pressurized 10×10ft shelter for four."
- },
- {
-  "id": "gear/sci-fi-equipment/targeting-hud",
-  "title": "Targeting HUD",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/targeting-hud.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "targeting-hud",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#targeting-hud",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "upgrade",
-   "armor-upgrade"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Helmet [HUD]. Lock on to lower target number for ranged attacks."
- },
- {
-  "id": "gear/sci-fi-equipment/tech-kit",
-  "title": "Tech Kit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/tech-kit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/"
-  ],
-  "anchor": "tech-kit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-kits/#tech-kit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "kit"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Electronic components and equipment."
- },
- {
-  "id": "gear/sci-fi-equipment/ultraweave-evosuit",
-  "title": "Ultraweave Evosuit",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/ultraweave-evosuit.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/"
-  ],
-  "anchor": "ultraweave-evosuit",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#ultraweave-evosuit",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 0,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "armor",
-   "heavy-armor"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Most advanced Evosuit available."
- },
- {
-  "id": "gear/sci-fi-equipment/vitaboost-injector",
-  "title": "Vitaboost Injector",
-  "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/vitaboost-injector.md",
-  "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md",
-  "pages": [
-   "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/"
-  ],
-  "anchor": "vitaboost-injector",
-  "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#vitaboost-injector",
-  "owns_heading": false,
-  "category": [
-   "sci-fi"
-  ],
-  "type": "equipment",
-  "in_degree": 1,
-  "tags": [
-   "equipment",
-   "sci-fi",
-   "medical"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false,
-  "summary": "Single use. Heals 1 VIT or attribute damage."
- },
- {
-  "id": "gear/sci-fi-equipment/weighted-core",
+  "id": "gear/sci-fi/weapons/weighted-core",
   "title": "Weighted Core",
   "home": "snippet",
-  "file": "content/snippets/gear/sci-fi-equipment/weighted-core.md",
+  "file": "content/snippets/gear/sci-fi/weapons/weighted-core.md",
   "source_page": "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md",
   "pages": [
    "content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons.md"

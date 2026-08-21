@@ -472,8 +472,7 @@ FEATURE_NS = ("character/",)
 
 # Tag-definition edges: gear pointing at the item tag that defines its behaviour.
 # NOT all of gear/ — item-tags and inventory are the targets, not the sources.
-EQUIP_NS = ("gear/generic-equipment/", "gear/sci-fi-equipment/",
-            "gear/components/", "gear/equipment/")
+EQUIP_NS = ("gear/generic-equipment/", "gear/sci-fi/", "gear/equipment/")
 ITEM_TAG_NS = "gear/item-tags/"
 
 # implicit dependencies: real rule couplings with no link in the prose.

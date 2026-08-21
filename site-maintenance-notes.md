@@ -296,7 +296,7 @@ with the item it applies to, the proficiency carries the suffix:
 KNO 1" — so the title now matches how the rule is spoken about.
 
 One deliberate duplicate remains: `gear/generic-equipment/field-ration` and
-`gear/sci-fi-equipment/field-ration` are the same item in two settings, tied together
+`gear/sci-fi/misc/field-ration` are the same item in two settings, tied together
 by `variant_group: field-ration`. They live on different pages, so no anchor
 collides.
 
