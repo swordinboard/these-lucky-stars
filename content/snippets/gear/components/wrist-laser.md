@@ -7,9 +7,7 @@ tags: [equipment, sci-fi, component]
 summary: "Mounted laser pistol equivalent"
 ---
 
-*--Cr // 2lbs // 8 Object DEF // 60ft // Arms // External // [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
-
-*Damage Type: Burn*
+*--Cr // 2lbs // 8 Object DEF // 60ft // Arms // External // [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Small] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)* // *Damage Type: Burn*
 
 A compact laser emitter mounted to the host's forearm. Fires in a fixed forward position from the wrist, leaving the hands free. Functions as a [Laser Pistol](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol) and can benefit from a Laser Pistol [Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon).
 

@@ -370,7 +370,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle",
   "text": "Laser Rifle",
   "file": "content/snippets/gear/components/heavy-wrist-laser.md",
-  "line": 14
+  "line": 12
  },
  {
   "source": "gear/components/heavy-wrist-laser",
@@ -379,7 +379,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/gear/components/heavy-wrist-laser.md",
-  "line": 14
+  "line": 12
  },
  {
   "source": "gear/components/heavy-wrist-laser",
@@ -388,7 +388,7 @@
   "url": "/docs/free-srd/inventory--equipment/item-tags/#two-handed",
   "text": "Two-Handed",
   "file": "content/snippets/gear/components/heavy-wrist-laser.md",
-  "line": 16,
+  "line": 14,
   "class": "tag-definition"
  },
  {
@@ -510,7 +510,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-pistol",
   "text": "Laser Pistol",
   "file": "content/snippets/gear/components/wrist-laser.md",
-  "line": 14
+  "line": 12
  },
  {
   "source": "gear/components/wrist-laser",
@@ -519,7 +519,7 @@
   "url": "/docs/free-srd/character-creation/proficiencies/#weapon",
   "text": "Weapon Proficiency",
   "file": "content/snippets/gear/components/wrist-laser.md",
-  "line": 14
+  "line": 12
  },
  {
   "source": "gear/generic-equipment/bandages-large",
@@ -1244,7 +1244,7 @@
   "url": "#shock-charger",
   "text": "Shock Charger",
   "file": "content/snippets/gear/sci-fi-equipment/knuckle-taser.md",
-  "line": 12
+  "line": 11
  },
  {
   "source": "gear/sci-fi-equipment/laser-pistol",
@@ -1518,7 +1518,7 @@
   "url": "/docs/free-srd/core-rules/combat/#aggressive-actions",
   "text": "Shatter",
   "file": "content/snippets/gear/sci-fi-equipment/ripper-blade.md",
-  "line": 13
+  "line": 12
  },
  {
   "source": "gear/sci-fi-equipment/safer-unit",
@@ -1546,7 +1546,7 @@
   "url": "#shock-charger",
   "text": "Shock Charger",
   "file": "content/snippets/gear/sci-fi-equipment/shock-baton.md",
-  "line": 12
+  "line": 11
  },
  {
   "source": "gear/sci-fi-equipment/shock-charger",

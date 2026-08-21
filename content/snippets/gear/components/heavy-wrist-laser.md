@@ -7,9 +7,7 @@ tags: [equipment, sci-fi, component]
 summary: "Mounted laser rifle equivalent"
 ---
 
-*--Cr // 5lbs // 8 Object DEF // (10) 90ft // Arms // External // [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)*
-
-*Damage Type: Burn*
+*--Cr // 5lbs // 8 Object DEF // (10) 90ft // Arms // External // [Battery](/docs/free-srd/inventory--equipment/item-tags/#battery) [Medium] (dedicated), [Single Shot](/docs/free-srd/inventory--equipment/item-tags/#firing-modes)* // *Damage Type: Burn*
 
 A large laser emitter that runs along the length of the host's forearm. Functions as a [Laser Rifle](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/#laser-rifle) and can benefit from a Laser Rifle [Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon). Has a minimum range of 10ft.
 

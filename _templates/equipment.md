@@ -31,8 +31,14 @@ blank inside the LINK TEXT with a clean target: [Battery [Small]](…#battery)
 Damage type is the LAST field on the stat line, not a line of its own — it is
 separated by ` // ` like everything else, and the closing `*` of the tag list
 comes before it: `…#two-handed)* // *Damage Type: Burn*`. Do not repeat it in
-the tag list. Melee weapons and components still carry it on a separate line and
-have not been converted.
+the tag list. Every weapon and component in the tree reads this way — melee,
+ranged and wrist-mounted alike.
+
+SUMMARY IS A SCANNABLE ONE-LINER, NOT A TAG DUMP. It is what the generated
+tables print, so it should say what a reader cannot already guess from the
+name. Drop anything the name or the entry itself makes obvious — the Shock
+Rifle does not need "Shock" in its summary, and a rifle rarely needs its firing
+mode spelled out. Range earns its place; so does anything surprising.
 
 Same item in more than one setting? Give both blocks the same
 `variant_group:` and say "setting variant" in the stat line by hand.
