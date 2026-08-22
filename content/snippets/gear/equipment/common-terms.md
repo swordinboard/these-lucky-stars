@@ -10,7 +10,7 @@ tags: [equipment]
 
 The standard price for a new piece of equipment.
 
-> [!CAUTION]
+> [!WARNING]
 > **All prices are currently removed.**
 
 ## Weight

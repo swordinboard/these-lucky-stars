@@ -14,7 +14,7 @@ tags: [basics]
 
 **Table** – The players and the GM as a group. Responsible for recognizing modifiers, maintaining honesty, fair play, and a good time.
 
-> [!IMPORTANT]
+> [!NOTE]
 > **Modifiers** — Any additional value that alters another value. A *bonus* is a positive modifier. A *penalty* is a negative modifier. If something states a bonus and the value is negative, the bonus is 0. If something states a penalty and the value is positive, the penalty is 0. If something states a modifier it can use a bonus or a penalty.
 
 ---

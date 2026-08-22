@@ -10,7 +10,7 @@ Objects use the same DEF and VIT system as characters with minor modifications.
 
 In the case of objects, **DEF** represents the object's structural resistance rather than ability to defend itself. As such *an object's DEF does not reset unless it reaches 0 or until repaired.*
 
-> [!IMPORTANT]
+> [!NOTE]
 > **Key difference from characters:** Unlike characters, object DEF does not reset at the end of combat or when out of danger — accumulated damage to DEF persists until the object is repaired. (An object's DEF still resets when it reaches 0, the same as a character's.)
 > Objects cannot defend themselves; their DEF represents their structural integrity rather than their ability to avoid harm.
 

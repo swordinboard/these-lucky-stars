@@ -6,7 +6,7 @@ type: rule
 tags: [basics]
 ---
 
-> [!NOTE]
+> [!TIP]
 > **Short Version:**
 > Count everything meaningfully in a character's favor as +1 and everything against them as -1, then add it all together and apply to the scale:
 > - **+2 or more** = Major Advantage — roll 3d6, gain another +1 bonus for each point beyond 2.

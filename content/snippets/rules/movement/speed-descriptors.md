@@ -30,7 +30,7 @@ Most vehicles require time to accelerate in order to travel at their full Speed.
 
 A vehicle can safely deccelerate twice as quickly as it is able to accelerate.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Acceleration is primarily reserved for vehicles. Creatures, including mounts, do not have an acceleration attatched to their speed. Creatures can  use their full speed distance in a single Move action, including any bonuses.
 
 {{% quickref "Example of Acceleration" %}}

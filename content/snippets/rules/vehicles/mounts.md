@@ -10,7 +10,7 @@ Mounts are a special type of vehicle. Because mounts are living creatures with t
 
 ## Mounts as Equipment vs. Mounts as Allies
 
-> [!NOTE] 
+> [!TIP]
 > **Short:** If the mount is being directed, it acts as equipment and shares AP. If the mount is choosing its own actions, it is a cooperating ally and acts independently.
 
 The rules in this section apply to mounts that are being *ridden and controlled as equipment* — these mounts are directed by a rider the same way a driver controls a vehicle.

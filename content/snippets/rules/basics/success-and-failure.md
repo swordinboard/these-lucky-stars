@@ -6,7 +6,7 @@ type: rule
 tags: [basics]
 ---
 
-> [!NOTE]
+> [!TIP]
 > **Short Version:**
 > Success = Higher than or equal to target.
 
