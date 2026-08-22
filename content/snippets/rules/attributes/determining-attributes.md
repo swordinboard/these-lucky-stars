@@ -12,8 +12,9 @@ Roll 2d4, then subtract the lower result from the higher result. Repeat this pro
 
 **Attribute = |1d4-1d4|**
 
-> [!TIP]
-> **Example:** If I roll a 2 and a 4, I subtract 4-2, to get a value of 2.
+{{% quickref "Example of Rolling an Attribute" %}}
+If I roll a 2 and a 4, I subtract 4-2, to get a value of 2.
+{{% /quickref %}}
 
 ## Attribute Pool
 Using the rolling method above, each player rolls 8 attribute values and adds them to a pool for the entire party. The party then distributes the pool of attribute values across all characters as they see fit. It should be noted that this gives the party the opportunity to adapt the Luck stat however they like.

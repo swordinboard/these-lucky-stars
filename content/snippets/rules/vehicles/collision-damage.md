@@ -28,7 +28,9 @@ Most real collisions involve a mix of both. A car at moderate speed hitting a pe
 
 This is why a slow-moving large vehicle still deals meaningful damage even with no speed modifier — the dice represent the crushing weight of the vehicle, which doesn't go away just because the vehicle is barely moving. It's also why a fast motorcycle deals meaningful damage despite its small size — the speed modifier represents the kinetic energy of the strike, which doesn't require mass to be dangerous.
 
-> **Example — Truck crushes pedestrian.** A size 4 truck is slowly backing up (Slow speed) and a pedestrian is caught under its wheels. Damage is 4d6 + 0, averaging 14. The GM describes this as the pedestrian being pinned and dragged by the truck's weight — overrun, not impact. The character takes significant damage despite the truck barely moving.
+{{% quickref "Example of Overrun Damage" %}}
+A size 4 truck is slowly backing up (Slow speed) and a pedestrian is caught under its wheels. Damage is 4d6 + 0, averaging 14. The GM describes this as the pedestrian being pinned and dragged by the truck's weight — overrun, not impact. The character takes significant damage despite the truck barely moving.
+{{% /quickref %}}
 
 ## Damage to the Vehicle
 
@@ -40,7 +42,9 @@ Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-
 
 > Target to Brace = 6 + Speed modifier
 
-> **Example** — A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
+{{% quickref "Example of Bracing" %}}
+A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
+{{% /quickref %}}
 
 
 ---

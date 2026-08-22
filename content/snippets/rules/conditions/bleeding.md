@@ -14,4 +14,6 @@ duration: "Until the wound is dressed"
 
 *Healing* — A bleeding wound can be dressed with supplies from the med kit and a target 8 KNO check. Alternatively, a character can apply pressure to a bleeding wound for 2 AP and pause the bleeding effect for that round.
 
-> *Example — Multiple Bleeding Wounds:* Frankus has two bleeding puncture wounds. At the end of his turn he rolls his d8 blood die twice. For the first roll he lands a three, causing one point of VIT damage and his die to be lowered to a d6. When he makes his second roll with the d6, he lands a 5 and his turn ends without taking further bleed damage.
+{{% quickref "Example of Multiple Bleeding Wounds" %}}
+Frankus has two bleeding puncture wounds. At the end of his turn he rolls his d8 blood die twice. For the first roll he lands a three, causing one point of VIT damage and his die to be lowered to a d6. When he makes his second roll with the d6, he lands a 5 and his turn ends without taking further bleed damage.
+{{% /quickref %}}

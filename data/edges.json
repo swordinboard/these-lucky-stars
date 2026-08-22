@@ -1640,7 +1640,7 @@
   "url": "/snippets/rules/sci-fi/ballistics-in-space",
   "text": null,
   "file": "content/snippets/gear/item-tags/ballistic.md",
-  "line": 27
+  "line": 29
  },
  {
   "source": "gear/item-tags/battery",
@@ -2189,7 +2189,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/#shaken",
   "text": "shaken",
   "file": "content/snippets/rules/environment/environmental-effects.md",
-  "line": 53
+  "line": 54
  },
  {
   "source": "rules/environment/environmental-effects",
@@ -2198,7 +2198,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/snippets/rules/environment/environmental-effects.md",
-  "line": 73
+  "line": 74
  },
  {
   "source": "rules/environment/extreme-environments",
@@ -2342,7 +2342,7 @@
   "url": "/docs/free-srd/core-rules/attributes/#fortitude-fort",
   "text": "FORT",
   "file": "content/snippets/rules/vehicles/collision-damage.md",
-  "line": 39
+  "line": 41
  },
  {
   "source": "rules/vehicles/cover-from-vehicles",

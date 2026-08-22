@@ -14,6 +14,6 @@ Any solid object that an attack cannot penetrate can be used as cover. Cover typ
 
 Cover type is usually determined automatically by position. A character can shift into or between cover types as part of a Move action or for 1 AP if staying in place. Abilities and proficiencies can further increase the effectiveness of using cover.
 
-> [!Tip]
-> **Example of shifting in and out of cover**
-> Dave stops his movement beside a doorway that enters a long hallway to maintain full cover from a pair of guards he hears down the hallway. Once his party catches up with him he spends 1 AP to shift to partial cover, leaning out into the doorway and making an attack with his rifle. After the attack resolves he spends 1 AP to shift back to full cover.
+{{% quickref "Example of Shifting Cover" %}}
+Dave stops his movement beside a doorway that enters a long hallway to maintain full cover from a pair of guards he hears down the hallway. Once his party catches up with him he spends 1 AP to shift to partial cover, leaning out into the doorway and making an attack with his rifle. After the attack resolves he spends 1 AP to shift back to full cover.
+{{% /quickref %}}

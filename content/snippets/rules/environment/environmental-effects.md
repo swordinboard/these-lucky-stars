@@ -40,8 +40,9 @@ If VIT reaches 0 from exposure the character falls unconscious. Exposure VIT los
 
 Removing a character from the hazardous environment stops this progression. The fatigued and unconscious conditions from hrat/cold exposure are removed individually with 1 hour of rest in a safe environment per condition. Burn wounds and the dying condition must be dressed and healed normally. 
 
-> [!TIP]
-> **Example:** The party is crossing a frozen mountain pass in a snowstorm. The GM sets the interval at 10 minutes with a target 8 FORT check. Mara, who left her heavy coat behind to save carry weight, fails her first check and becomes fatigued. Ten minutes later she fails again — receiving a minor burn wound from frostbite. The party decides to set up camp before things get worse, and are able to shelter by a fire. After an hour, Mara's fatigue is healed but her wound still needs attention.
+{{% quickref "Example of Cold Exposure" %}}
+The party is crossing a frozen mountain pass in a snowstorm. The GM sets the interval at 10 minutes with a target 8 FORT check. Mara, who left her heavy coat behind to save carry weight, fails her first check and becomes fatigued. Ten minutes later she fails again — receiving a minor burn wound from frostbite. The party decides to set up camp before things get worse, and are able to shelter by a fire. After an hour, Mara's fatigue is healed but her wound still needs attention.
+{{% /quickref %}}
 
 
 ### Toxic Atmosphere
@@ -72,7 +73,8 @@ When both sides of an opposed roll are equally affected by visibility, no change
 
 It is worth noting thay the rules for visibility and terrain are not a separate set of rules — they are immersive applications of the existing advantage, disadvantage, and multi-turn action interruption rules found in [Combat](/docs/free-srd/core-rules/combat/).
 
-> [!TIP]
-> **Example:** A smoke grenade fills a corridor. Attackers firing into the smoke suffer major disadvantage. Two characters fighting in melee inside the smoke are both equally blinded — their opposed rolls are unchanged, but a third character sneaking up on either of them could make a surprise attack.
+{{% quickref "Example of Obscured Visibility" %}}
+A smoke grenade fills a corridor. Attackers firing into the smoke suffer major disadvantage. Two characters fighting in melee inside the smoke are both equally blinded — their opposed rolls are unchanged, but a third character sneaking up on either of them could make a surprise attack.
+{{% /quickref %}}
 
 ---

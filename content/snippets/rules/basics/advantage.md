@@ -29,12 +29,12 @@ The GM decides which effects apply. Only then are they counted.
 
 The major levels add or remove a decision die, and that die *replaces* the initial flat bonus or penalty rather than joining it — a standard Major Advantage rolls 3d6, and a standard Major Disadvantage rolls 1d6. But stacking beyond the ends of the scale keeps paying, one point at a time.
 
-> [!Tip]
-> **Examples:**
-> - Three advantages against one disadvantage totals a major advantage (increases decision dice to 3d6).
-> - A major disadvantage answered by one minor advantage slides to a minor disadvantage (-2 penalty to roll).
-> - Two minor disadvantages met by a major advantage evens out to a neutral roll (no change to roll).
-> - Two major advantages met by a minor disadvantage results in a +1 major advantage (increase decision dice to 3d6 with a +1 bonus).
+{{% quickref "Examples of Stacking Advantage" %}}
+- Three advantages against one disadvantage totals a major advantage (increases decision dice to 3d6).
+- A major disadvantage answered by one minor advantage slides to a minor disadvantage (-2 penalty to roll).
+- Two minor disadvantages met by a major advantage evens out to a neutral roll (no change to roll).
+- Two major advantages met by a minor disadvantage results in a +1 major advantage (increase decision dice to 3d6 with a +1 bonus).
+{{% /quickref %}}
 
 ## Special Notes for the Game Master:
 
