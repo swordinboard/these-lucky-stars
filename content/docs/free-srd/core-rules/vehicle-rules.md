@@ -13,7 +13,7 @@ wip: true
 
 ## Speed
 
-> [!Note]
+> [!NOTE]
 > Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations. Thus, those rules are reiterated here.
 
 ### Speed Tiers

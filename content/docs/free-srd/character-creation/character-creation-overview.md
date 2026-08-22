@@ -10,7 +10,7 @@ tags: [character-creation]
 
 # Character Creation
 
-> [!Important]
+> [!IMPORTANT]
 > It is highly recommended for players to familiarize themselves with the rules before making a character.
 > Minimum Reading, please get aquainted first:
 - [The Basics](/docs/free-srd/core-rules/basics)
