@@ -3,31 +3,32 @@ headless: true
 draft: true
 ---
 
-**Callout markers are ALL CAPS.** `[!NOTE]`, never `[!Note]`. The theme accepts
-either — both render as `book-hint` — so nothing breaks when it drifts, which is
-exactly why it drifts. Write them in caps so a grep for the marker finds every
-one of them.
+*Callout markers are ALL CAPS so a grep for the marker finds every one of them.* 
 
-> Used for small lists and minor callouts such as functions within content
+> Blank/default.
+> #5c6d7e slate
+> Used for small lists and functions within content that do not justify a callout with a "pop" of color
 >
 > Can span multiple lines
 
-> [!NOTE]
+> [!TIP]
+> #4a9e6b green
 > Used for quick notes or "short versions" that summarize a section
 
-> [!IMPORTANT]
-> Used for general callouts within content
+> [!NOTE]
+> #3d8ab0 blue
+> Used for general callouts within content that need a bit of attention drawn to them.
+
+>[!IMPORTANT]
+> #7b52a8 purple
+> Used for callouts with meta content, such as suggested reading
 
 > [!WARNING]
-> Used for contwnt status announcments
+> #d4923a orange
+> Used for content status level announcements such as WIP and update notices
 
 > [!CAUTION]
-> Used for site status annaouncments
+> #c05040 red
+> Used for site status level announcements, including outages, known issues, or major updates that may result in them
 
-> [!DANGER]
-> Used for the site-wide playtest status announcement
-
-**Examples are not callouts.** A worked example goes in a `{{% quickref %}}`,
-titled "Example of ___", so it collapses to one line rather than sitting open
-mid-page. `[!TIP]` used to carry examples and no longer appears anywhere in the
-corpus.
+**Examples are no longer callouts.** A worked example goes in as {{% quickref "Example of ___" %}} so it collapses to one line rather than sitting open mid-page. [!TIP] used to carry examples, but all have been moved to quickref
