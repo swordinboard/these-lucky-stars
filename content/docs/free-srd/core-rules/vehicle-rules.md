@@ -7,13 +7,20 @@ wip: true
 
 {{% include "/snippets/rules/vehicles/overview" "h1" %}}
 
-{{% include "/snippets/rules/vehicles/vehicle-movement" %}}
+## Vehicle Stats
 
-{{% include "/snippets/rules/vehicles/vehicle-size" "h2" %}}
+{{% include "/snippets/rules/vehicles/vehicle-size" "h3" %}}
 
----
+{{% include "/snippets/rules/vehicles/initiative-and-occupants" "h3" %}}
 
-## Movement and Speed Review
+{{% include "/snippets/rules/vehicles/ignition" "h3" %}}
+
+{{% include "/snippets/rules/vehicles/cover-from-vehicles" "h3" %}}
+
+
+## Movement and Speed
+
+{{% include "/snippets/rules/vehicles/vehicle-movement" "h3" %}}
 
 > [!IMPORTANT]
 > Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section](/docs/free-srd/core-rules/action-economy/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed tier modifiers for a range of calculations. Thus, those rules are reiterated here.
@@ -25,10 +32,6 @@ wip: true
 > - 8 at Moderate (mod 3)
 > - 12 at Fast (mod 7)
 > - 17 at Very Fast (mod 12)
-
-{{% details "Movement" %}}
-{{% include "/snippets/rules/movement/movement" "lead" %}}
-{{% /details %}}
 
 {{% details "Speed Tiers" %}}
 {{% include "/snippets/rules/movement/speed-tiers" "lead" %}}
@@ -42,20 +45,15 @@ wip: true
 {{% include "/snippets/rules/movement/speed-descriptors" "lead" %}}
 {{% /details %}}
 
+
 ---
 
 
 {{% include "/snippets/rules/vehicles/vehicle-actions" "h2" %}}
 
-{{% include "/snippets/rules/vehicles/ignition" "lead" %}}
+{{% include "/snippets/rules/vehicles/drive" "h3" %}}
 
-{{% include "/snippets/rules/vehicles/drive" "lead" %}}
-
-{{% include "/snippets/rules/vehicles/boarding-and-bailing" "lead" %}}
-
-{{% include "/snippets/rules/vehicles/initiative-and-occupants" "h2" %}}
-
-{{% include "/snippets/rules/vehicles/cover-from-vehicles" "h2" %}}
+{{% include "/snippets/rules/vehicles/boarding-and-bailing" "h3" %}}
 
 {{% include "/snippets/rules/vehicles/impact-and-overrun" "h2" %}}
 
