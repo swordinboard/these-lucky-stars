@@ -10,7 +10,7 @@ These stats are derived from Attributes. Most of them are combat focused, but ar
 
 > [!IMPORTANT]
 > **Size Note:**
-> Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
+> Character [Size](/docs/free-srd/core-rules/size) is described on a separate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
 
 ---
 
@@ -28,7 +28,7 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/rules/movement/speed-descriptors" "lead" %}}
 
-See [Movement](docs/free-srd/core-rules/action-economy/#movement) for more details on how speed is translated into actions.
+See [Movement](/docs/free-srd/core-rules/action-economy/#movement) for more details on how speed is translated into actions.
 
 ---
 

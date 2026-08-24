@@ -37,4 +37,4 @@ A mount commanded to collide with a target it would normally consider an ally, o
 
 ## Sudden Stops
 
-When a mount stops while moving at moderate speed or faster, the rider must succeed on an *STR check with a target of 6 the mounts speed modifier,* or be thrown 10ft in the direction of travel and take *collision damage using the rider's size modifier to determine the numbwr of d6, and adding the speed modifier at which they were traveling before the sudden stop.*
+When a mount stops while moving at moderate speed or faster, the rider must succeed on an *STR check with a target of 5 + the mount's speed modifier,* or be thrown 10ft in the direction of travel and take *collision damage using the rider's size modifier to determine the number of d6, and adding the speed modifier at which they were traveling before the sudden stop.*

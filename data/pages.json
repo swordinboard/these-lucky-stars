@@ -296,6 +296,7 @@
    "rules/movement/speed-descriptors",
    "rules/movement/speed-tiers",
    "rules/movement/speed-tiers-chart",
+   "rules/movement/relative-speed",
    "rules/actions/difficult-terrain"
   ]
  },
@@ -455,8 +456,6 @@
    "rules/stats/action-points",
    "rules/movement/primary-speed",
    "rules/movement/speed-descriptors",
-   "rules/movement/speed-tiers",
-   "rules/movement/speed-tiers-chart",
    "rules/stats/defense",
    "rules/stats/vitality",
    "rules/stats/stress-threshold",
@@ -477,8 +476,10 @@
    "rules/vehicles/overview",
    "rules/vehicles/vehicle-movement",
    "rules/vehicles/vehicle-size",
-   "rules/movement/speed-tiers-chart",
+   "rules/movement/movement",
    "rules/movement/speed-tiers",
+   "rules/movement/speed-tiers-chart",
+   "rules/movement/relative-speed",
    "rules/movement/speed-descriptors",
    "rules/vehicles/vehicle-actions",
    "rules/vehicles/ignition",

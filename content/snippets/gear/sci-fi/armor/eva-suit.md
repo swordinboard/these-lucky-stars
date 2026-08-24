@@ -11,4 +11,4 @@ summary: "An early model space suit, well equipped but bulky."
 
 *Upgrades:[Coms Unit](#coms-unit), [SAFER Unit](#safer-unit)*
 
-An early model multi-layered space suit designed primarily for maintenance spacewalks. The attatched backpack includes a 5hr oxygen tank, [SAFER unit](#safer-unit), and medium battery power source. The user cannot equip items to the head, gloves, legs, or back while wearing this space suit.
+An early model multi-layered space suit designed primarily for maintenance spacewalks. The attached backpack includes a 5hr oxygen tank, [SAFER unit](#safer-unit), and medium battery power source. The user cannot equip items to the head, gloves, legs, or back while wearing this space suit.

@@ -40,10 +40,10 @@ The striking vehicle takes **collision damage** from an impact/overrun **only** 
 
 Occupants of any vehicle involved in a collision may make a **[FORT](/docs/free-srd/core-rules/attributes/#fortitude-fort) check** to brace against an impact — on a success, the occupant takes half damage.
 
-> Target to Brace = 6 + Speed modifier
+> Target to Brace = 5 + Speed modifier
 
 {{% quickref "Example of Bracing" %}}
-A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 9 FORT check takes half.
+A size 2 car moving at Moderate speed strikes a wall. Collision damage is **2d6 + 3**, dealt to the vehicle, the wall, and each occupant. An occupant who succeeds on a target 8 FORT check takes half.
 {{% /quickref %}}
 
 

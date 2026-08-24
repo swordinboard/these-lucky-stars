@@ -18,7 +18,7 @@ A creature eligible to dodge makes an *AGI check against the vehicle's speed and
 
 > Target to Dodge a Vehicle = 5 + vehicle's Speed modifier + number of spaces the character is required to move.
 
-## Scenario B — A Hazard Appeares in the Path
+## Scenario B — A Hazard Appears in the Path
 
 If a creature, object, or other obstacle unexpectedly enters the driver's declared path mid-movement — through a [Readied Action](/docs/free-srd/core-rules/action-economy/#readied-actions), sudden visibility, another character's movement, or any other circumstance the driver did not anticipate — the driver makes a check to react.
 

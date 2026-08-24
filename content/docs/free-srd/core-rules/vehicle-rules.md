@@ -16,15 +16,15 @@ wip: true
 ## Movement and Speed Review
 
 > [!IMPORTANT]
-> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section]/docs/free-srd/core-rules/action-economy/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed theyier modifiers for a range of calculations. Thus, those rules are reiterated here.
+> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section](/docs/free-srd/core-rules/action-economy/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed tier modifiers for a range of calculations. Thus, those rules are reiterated here.
 
 > [!TIP]
-> *Short:* Vehicles follow most of the same rules as chracter ad creatures, but are more likely to be directly affected by speed tiers and acceleration.
+> *Short:* Vehicles follow most of the same rules as characters and creatures, but are more likely to be directly affected by speed tiers and acceleration.
 > Most base targets for vehicle interactions are calculated as *5 + the speed tier modifier:*
 > - 5 at Slow (mod 0)
 > - 8 at Moderate (mod 3)
 > - 12 at Fast (mod 7)
-> - 17 at Very Fast. (mod 12)
+> - 17 at Very Fast (mod 12)
 
 {{% details "Movement" %}}
 {{% include "/snippets/rules/movement/movement" "lead" %}}
@@ -38,7 +38,7 @@ wip: true
 {{% include "/snippets/rules/movement/relative-speed" "lead" %}}
 {{% /details %}}
 
-{{% details "Speed Descrpitors" %}}
+{{% details "Speed Descriptors" %}}
 {{% include "/snippets/rules/movement/speed-descriptors" "lead" %}}
 {{% /details %}}
 

@@ -12144,10 +12144,12 @@
   "file": "content/snippets/rules/movement/movement.md",
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
-   "content/docs/free-srd/core-rules/action-economy.md"
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
   "page_urls": [
-   "/docs/free-srd/core-rules/action-economy/"
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "movement",
   "url": "/docs/free-srd/core-rules/action-economy/#movement",
@@ -12197,6 +12199,36 @@
   "wip": false
  },
  {
+  "id": "rules/movement/relative-speed",
+  "title": "Relative Speed",
+  "home": "snippet",
+  "file": "content/snippets/rules/movement/relative-speed.md",
+  "source_page": "content/docs/free-srd/core-rules/action-economy.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/action-economy.md",
+   "content/docs/free-srd/core-rules/vehicle-rules.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/action-economy/",
+   "/docs/free-srd/core-rules/vehicle-rules/"
+  ],
+  "anchor": "relative-speed",
+  "url": "/docs/free-srd/core-rules/action-economy/#relative-speed",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "movement"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": false
+ },
+ {
   "id": "rules/movement/speed-descriptors",
   "title": "Speed Descriptors",
   "home": "snippet",
@@ -12236,12 +12268,10 @@
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md",
-   "content/docs/free-srd/core-rules/stats.md",
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
   "page_urls": [
    "/docs/free-srd/core-rules/action-economy/",
-   "/docs/free-srd/core-rules/stats/",
    "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "speed-tiers",
@@ -12251,7 +12281,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 2,
   "tags": [
    "movement"
   ],
@@ -12268,12 +12298,10 @@
   "source_page": "content/docs/free-srd/core-rules/action-economy.md",
   "pages": [
    "content/docs/free-srd/core-rules/action-economy.md",
-   "content/docs/free-srd/core-rules/stats.md",
    "content/docs/free-srd/core-rules/vehicle-rules.md"
   ],
   "page_urls": [
    "/docs/free-srd/core-rules/action-economy/",
-   "/docs/free-srd/core-rules/stats/",
    "/docs/free-srd/core-rules/vehicle-rules/"
   ],
   "anchor": "speed",

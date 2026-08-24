@@ -60,7 +60,7 @@ Move and Step are the two primary movement actions. Both are Standard Actions.
 
 {{% include "/snippets/rules/movement/speed-tiers-chart" %}}
 
-{{% include "/snippes/rules/movement/relative-speed" "h4" %}}
+{{% include "/snippets/rules/movement/relative-speed" "h4" %}}
 
 {{% include "/snippets/rules/actions/difficult-terrain" "h3" %}}
 
