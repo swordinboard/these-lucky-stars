@@ -8,8 +8,9 @@ weight: 30
 
 These stats are derived from Attributes. Most of them are combat focused, but are important for any character nonetheless. All of them can be affected by additional modifiers from a range of effects, character features, and equipment. Unless otherwise noted stats can be negative, providing a penalty rather than a bonus. Some stats act as a pool of points, others act as modifiers for certain rolls. They are listed here in a similar order to how they appear on the basic character sheet.
 
-**Size Note:**
-Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
+> [!IMPORTANT]
+> **Size Note:**
+> Character [Size](/docs/free-srd/core-rules/size) is described on a seperate page, it is a stand-alone item but is important for Attribute, Stats, and combat calculations.
 
 ---
 
@@ -27,9 +28,7 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/rules/movement/speed-descriptors" "lead" %}}
 
-{{% include "/snippets/rules/movement/speed-tiers" "lead" %}}
-
-{{% include "/snippets/rules/movement/speed-tiers-chart" %}}
+See [Movement](docs/free-srd/core-rules/action-economy/#movement) for more details on how speed is translated into actions.
 
 ---
 
@@ -41,7 +40,7 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 ### Wounds & Conditions
 
-See [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) for wound triggers, severities, condition effects, and recovery.
+See [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) for wound and condition triggers, severities, condition effects, and recovery.
 
 {{% include "/snippets/rules/stats/stress-threshold" "h3" %}}
 

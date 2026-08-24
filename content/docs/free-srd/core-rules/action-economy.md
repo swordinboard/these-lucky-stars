@@ -10,11 +10,9 @@ This page covers how a character spends their time and effort during a round of 
 
 ---
 
-
 {{% include "/snippets/rules/stats/action-points" "h2" %}}
 
 Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/#actions-in-combat) action catalog and in individual character features.
-
 
 {{% include "/snippets/rules/actions/action-types" "h2" %}}
 
@@ -25,20 +23,16 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/rules/actions/standard-actions" %}}
 
-
 {{% include "/snippets/rules/actions/readied-actions" "h4" %}}
-
 
 {{% include "/snippets/rules/actions/multi-turn-actions" "h4" %}}
 
-
 {{% include "/snippets/rules/actions/opportunity-actions" "h3" %}}
-
 
 {{% include "/snippets/rules/combat/opportunity-attack" "h4" %}}
 
-
 {{% include "/snippets/rules/actions/reactions" "h3" %}}
+
 
 ---
 
@@ -60,13 +54,13 @@ Move and Step are the two primary movement actions. Both are Standard Actions.
 
 {{% include "/snippets/rules/movement/primary-speed" "h3" "false" %}}
 
-
 {{% include "/snippets/rules/movement/speed-descriptors" "h4" %}}
-
 
 {{% include "/snippets/rules/movement/speed-tiers" "h4" %}}
 
 {{% include "/snippets/rules/movement/speed-tiers-chart" %}}
+
+{{% include "/snippes/rules/movement/relative-speed" "h4" %}}
 
 {{% include "/snippets/rules/actions/difficult-terrain" "h3" %}}
 

@@ -11,28 +11,31 @@ wip: true
 
 {{% include "/snippets/rules/vehicles/vehicle-size" "h2" %}}
 
-## Speed
+---
+
+## Movement and Speed Review
 
 > [!IMPORTANT]
-> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found on the [Stats](/docs/free-srd/core-rules/stats/#speed) page for convenience. Speed works the same for vehicles as it does for characters, and use Speed Tier Modifiers for a range of calculations. Thus, those rules are reiterated here.
-
-### Speed Tiers
+> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section]/docs/free-srd/core-rules/action-economy/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed theyier modifiers for a range of calculations. Thus, those rules are reiterated here.
 
 > [!TIP]
-> *Short:* Most base targets for vehicle interactions are calculated as *5 + the speed modifier:*
+> *Short:* Vehicles follow most of the same rules as chracter ad creatures, but are more likely to be directly affected by speed tiers and acceleration.
+> Most base targets for vehicle interactions are calculated as *5 + the speed tier modifier:*
 > - 5 at Slow (mod 0)
 > - 8 at Moderate (mod 3)
 > - 12 at Fast (mod 7)
 > - 17 at Very Fast. (mod 12)
 
-Many vehicle rules reference the vehicle's current **speed tier**. Speed tiers are universal across all vehicles and characters, and each tier carries a **speed modifier** used as a flat bonus to damage and to determine check targets for vehicle interactions.
-
-Speed tiers apply to any moving target, not only vehicles. A character on foot at sprint using special abilities may push into Moderate or higher speed. The tier vocabulary is the same regardless of what is moving.
+{{% details "Movement" %}}
+{{% include "/snippets/rules/movement/movement" "lead" %}}
+{{% /details %}}
 
 {{% details "Speed Tiers" %}}
+{{% include "/snippets/rules/movement/speed-tiers" "lead" %}}
+
 {{% include "/snippets/rules/movement/speed-tiers-chart" %}}
 
-{{% include "/snippets/rules/movement/speed-tiers" %}}
+{{% include "/snippets/rules/movement/relative-speed" "lead" %}}
 {{% /details %}}
 
 {{% details "Speed Descrpitors" %}}
@@ -41,28 +44,22 @@ Speed tiers apply to any moving target, not only vehicles. A character on foot a
 
 ---
 
-{{% include "/snippets/rules/vehicles/vehicle-actions" "h2" %}}
 
+{{% include "/snippets/rules/vehicles/vehicle-actions" "h2" %}}
 
 {{% include "/snippets/rules/vehicles/ignition" "lead" %}}
 
-
 {{% include "/snippets/rules/vehicles/drive" "lead" %}}
-
 
 {{% include "/snippets/rules/vehicles/boarding-and-bailing" "lead" %}}
 
+{{% include "/snippets/rules/vehicles/initiative-and-occupants" "h2" %}}
 
-{{% include "/snippets/rules/vehicles/initiative-and-occupants" "lead" %}}
+{{% include "/snippets/rules/vehicles/cover-from-vehicles" "h2" %}}
 
+{{% include "/snippets/rules/vehicles/impact-and-overrun" "h2" %}}
 
-{{% include "/snippets/rules/vehicles/cover-from-vehicles" "lead" %}}
-
-
-{{% include "/snippets/rules/vehicles/impact-and-overrun" "lead" %}}
-
-
-{{% include "/snippets/rules/vehicles/collision-damage" "lead" %}}
+{{% include "/snippets/rules/vehicles/collision-damage" "h3" %}}
 
 <!-- examples here need revisitibg since rule changes
 > **Example** — A size 1 motorcycle moving at Fast Speed strikes a pedestrian. Each occupy only a single space, making them comparable sizes. Damage is 1d6 + 7, averaging ~10. The GM describes this as a hard strike from the bike — impact, not overrun. The pedestrian and vehicle take the damage directly if the pedestrian cannot dodge the impact. The driver makes a FORT save to reduce the collision damage they will take by half.
