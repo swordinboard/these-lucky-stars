@@ -4,70 +4,65 @@ description: "How AP works in These Lucky Stars — action types, opportunity at
 weight: 40
 ---
 
-## Action Economy & Movement
+# Action Economy & Movement
 
-This page covers how a character spends their time and effort during a round of combat, and how they move through the world. The action economy describes *what* a character can do; movement describes *how far* they can go and *how fast*.
-
----
-
-
-{{% include "/snippets/stats/action-points" "h2" %}}
-
-Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog and in individual character features.
+This page covers how a character spends their time and effort during a round of combat, and how they move through the world. Action economy describes *what* a character can do; movement describes *how they move* they can go and *how fast*.
 
 ---
 
+{{% include "/snippets/rules/stats/action-points" "h2" %}}
 
-{{% include "/snippets/actions/action-types" "h2" %}}
+Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/core-rules/combat/#actions-in-combat) action catalog and in individual character features.
 
-### Standard Actions
+{{% include "/snippets/rules/actions/action-types" "h2" %}}
+
+## Standard Actions
 
 > [!IMPORTANT]
-> The full catalog of Standard Actions — attacks, moves, grapples, and so on — lives in the [Combat](/docs/free-srd/core-rules/combat/) action catalog. Move and Step are also Standard Actions, but because they are fundamental to positioning, their full rules live in the [Movement](#movement) section below.
+> The full catalog of Standard Actions — attacks, moves, grapples, and so on — lives in the [Combat](/docs/free-srd/core-rules/combat/#actions-in-combat) action catalog. Move and Step are also Standard Actions, but because they are fundamental to positioning, their full rules live in the [Movement](#movement) section below.
 
-{{% include "/snippets/actions/standard-actions" %}}
+{{% include "/snippets/rules/actions/standard-actions" %}}
 
+{{% include "/snippets/rules/actions/readied-actions" "h4" %}}
 
-{{% include "/snippets/actions/readied-actions" "h4" %}}
+{{% include "/snippets/rules/actions/multi-turn-actions" "h4" %}}
 
+{{% include "/snippets/rules/actions/opportunity-actions" "h3" %}}
 
-{{% include "/snippets/actions/multi-turn-actions" "h4" %}}
+{{% include "/snippets/rules/combat/opportunity-attack" "h4" %}}
 
-
-{{% include "/snippets/actions/opportunity-actions" "h3" %}}
-
-
-{{% include "/snippets/combat/opportunity-attack" "h4" %}}
+{{% include "/snippets/rules/actions/reactions" "h3" %}}
 
 
-{{% include "/snippets/actions/reactions" "h3" %}}
+---
 
 ## Movement
 
-Movement is the most common action a character takes during any scene — in combat, during exploration, and in any situation where physical position matters. On a character's turn, they may spend AP to move up to their Speed, to step, or to take other movement-related actions, many of which are listed in the [Combat](/docs/free-srd/core-rules/combat/) action catalog.
+Movement is the most common action a character takes during any scene — in combat, during exploration, and in any situation where physical position matters. On a character's turn, they may spend AP to move up to their Speed, to step, or to take other movement-related actions.
+
+{{% include "/snippets/rules/movement/movement" "h3" "false" %}}
 
 ### Movement Actions
 
 Move and Step are the two primary movement actions. Both are Standard Actions.
 
-{{% include "/snippets/actions/move" "lead" %}}
+{{% include "/snippets/rules/actions/move" "lead" %}}
 
-{{% include "/snippets/actions/step" "lead" %}}
+{{% include "/snippets/rules/actions/step" "lead" %}}
 
 ### Speed
 
-{{% include "/snippets/movement/primary-speed" "h3" "false" %}}
+{{% include "/snippets/rules/movement/primary-speed" "h3" "false" %}}
 
+{{% include "/snippets/rules/movement/speed-descriptors" "h4" %}}
 
-{{% include "/snippets/movement/speed-descriptors" "h4" %}}
+{{% include "/snippets/rules/movement/speed-tiers" "h4" %}}
 
+{{% include "/snippets/rules/movement/speed-tiers-chart" %}}
 
-{{% include "/snippets/movement/speed-tiers" "h4" %}}
+{{% include "/snippets/rules/movement/relative-speed" "h4" %}}
 
-{{% include "/snippets/movement/speed-tiers-chart" %}}
-
-
-{{% include "/snippets/actions/difficult-terrain" "h3" %}}
+{{% include "/snippets/rules/actions/difficult-terrain" "h3" %}}
 
 ## Related
 

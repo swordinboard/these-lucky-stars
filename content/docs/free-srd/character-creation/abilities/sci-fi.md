@@ -10,23 +10,23 @@ bookToC: false
 {{< tabs >}}
 {{% tab "Sci-Fi General" %}}
 {{< catalog layout="names" >}}
-abilities/tech-armor
-abilities/companion-bot
-- abilities/special-encouragement
-abilities/ghost-protocol
-abilities/opensaysame
-abilities/rigged-comp-jack
-abilities/salvage
-abilities/signal-intelligence
+character/abilities/tech-armor
+character/abilities/companion-bot
+- character/abilities/special-encouragement
+character/abilities/ghost-protocol
+character/abilities/opensaysame
+character/abilities/rigged-comp-jack
+character/abilities/salvage
+character/abilities/signal-intelligence
 {{< /catalog >}}
 {{% /tab %}}
 {{% tab "Sci-Fi Battery" %}}
 {{< catalog layout="names" >}}
-abilities/battery-saboteur
-abilities/battery-saver
-abilities/overcharge
-abilities/power-main-tap
-abilities/swift-custom-battery
+character/abilities/battery-saboteur
+character/abilities/battery-saver
+character/abilities/custom-battery
+character/abilities/overcharge
+character/abilities/power-main-tap
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -34,32 +34,32 @@ abilities/swift-custom-battery
 
 ## Sci-Fi General
 
-{{< blockdetails "abilities/tech-armor" "h3" >}}
+{{< blockdetails "character/abilities/tech-armor" "h3" >}}
 
-{{< blockdetails "abilities/companion-bot" "h3" >}}
+{{< blockdetails "character/abilities/companion-bot" "h3" >}}
 
-{{< blockdetails "abilities/ghost-protocol" "h3" >}}
+{{< blockdetails "character/abilities/ghost-protocol" "h3" >}}
 
-{{< blockdetails "abilities/opensaysame" "h3" >}}
+{{< blockdetails "character/abilities/opensaysame" "h3" >}}
 
-{{< blockdetails "abilities/rigged-comp-jack" "h3" >}}
+{{< blockdetails "character/abilities/rigged-comp-jack" "h3" >}}
 
-{{< blockdetails "abilities/salvage" "h3" >}}
+{{< blockdetails "character/abilities/salvage" "h3" >}}
 
-{{< blockdetails "abilities/signal-intelligence" "h3" >}}
+{{< blockdetails "character/abilities/signal-intelligence" "h3" >}}
 
-{{< blockdetails "abilities/special-encouragement" "h3" >}}
+{{< blockdetails "character/abilities/special-encouragement" "h3" >}}
 
 ---
 
 ## Sci-Fi Battery
 
-{{< blockdetails "abilities/battery-saboteur" "h3" >}}
+{{< blockdetails "character/abilities/battery-saboteur" "h3" >}}
 
-{{< blockdetails "abilities/battery-saver" "h3" >}}
+{{< blockdetails "character/abilities/battery-saver" "h3" >}}
 
-{{< blockdetails "abilities/overcharge" "h3" >}}
+{{< blockdetails "character/abilities/custom-battery" "h3" >}}
 
-{{< blockdetails "abilities/power-main-tap" "h3" >}}
+{{< blockdetails "character/abilities/overcharge" "h3" >}}
 
-{{< blockdetails "abilities/swift-custom-battery" "h3" >}}
+{{< blockdetails "character/abilities/power-main-tap" "h3" >}}

@@ -1,220 +1,126 @@
 {{/*
-  quickref — an inline expandable popover, for a definition mid-sentence.
-
-  ⚠ UNUSED. It duplicates the theme's `details` and is retired by disuse; the
-  file is kept in case the inline-popover behaviour is wanted later. Use
-  `blockdetails` (or `details`) for block entries. See 06-open-items.md §6.
+  quickref — an expandable reference, for a rule cited from inside a block.
 
   SIGNATURE
-    {{% quickref "<label>" %}}
+    {{% quickref "<label>" [<source-url>] %}}
     inner markdown
     {{% /quickref %}}
 
   EXAMPLE
-    {{% quickref "Defense (DEF)" %}}
-    {{% include "/snippets/stats/defense" %}}
+    {{% quickref "Shield Degradation" %}}
+    {{% include "/snippets/rules/objects/shield-degradation" %}}
+    {{% /quickref %}}
+
+    {{% quickref "Heads Up Displays (HUDs)" "/docs/free-srd/core-rules/sci-fi-additions/#heads-up-displays-huds" %}}
+    {{% include "/snippets/rules/sci-fi/huds" %}}
     {{% /quickref %}}
 
   ARGUMENTS
     0  (required) the clickable label text.
+    1  (optional) URL of the page the quoted rule lives on. Renders
+       `From <that page's title>:` above the content, linked.
 
-  Percent form — the inner content is markdown, and may contain includes.
-  Prints fully expanded rather than as a dropdown.
+  POSITIONAL, not named — Hugo refuses to mix the two forms in one call, and
+  argument 0 is already positional. Same shape as include.html.
+
+  INCLUDE WITH NO LEVEL ARGUMENT. The label above already names the rule, so a
+  "lead" or "h3" prints the name twice, one line apart.
+
+  THE SOURCE URL LIVES AT THE CALL SITE, not in the snippet — the same block is quoted
+  from several places and not all of them want the line.
+
+  THE PAGE NAME IS NOT TYPED. It comes from that page's own title, so it cannot
+  drift the way the hand-written labels this replaced had — two of the six were
+  already wrong when they were swept up. Take the target from the block's `url`
+  in data/blocks.json: that is where the block is actually read on the site, so
+  the link cannot point at a page it does not appear on. A path resolving to no
+  page FAILS THE BUILD rather than rendering nothing, which is the failure mode
+  include.html warns about.
+
+  It is a screen affordance like the close control, and builder.css hides both:
+  a link cannot be followed off a printed page, and the builder's stage is a
+  proof of that page.
+
+  Percent form — the inner content is markdown, and may contain includes. Safe
+  inside a snippet, and inside a `blockdetails` collapsible.
+
+  WHAT IT IS FOR. A block that needs to carry a rule the reader wants *right
+  there* — a component citing shield degradation, a feature citing a condition —
+  without restating the rule (which drifts) or sending them to another page
+  mid-sentence. Use `blockdetails` for a catalog entry; use this for a reference
+  inside one.
+
+  NO JAVASCRIPT. It is a hidden checkbox and a <label>, the same mechanism the
+  theme's {{< tabs >}} uses, so the open state lives in CSS and the PDF builder
+  can force it open with one plain rule. That is the whole reason it is built
+  this way rather than as a scripted popover:
+
+    site            collapsed; click the label, or Tab to it and press Space
+    site, printing  open and inline (@media print in content-constructs.css)
+    the PDF builder open and inline, always (assets/builder.css)
+    JS disabled     behaves exactly as above — nothing here needs scripting
+
+  A construct that hid content behind a toggle the builder could not open would
+  drop that content out of a PDF entirely. {{< tabs >}} has the same problem and
+  gets the same answer, a few lines away in the same stylesheet.
+
+  WHY NOT NATIVE <details>? It cannot be forced open from CSS in a way that
+  holds across browsers. The only rule that works is
+  `details::details-content { content-visibility: visible }`, which is Chrome
+  131+ and unsupported in Firefox and older Safari; the older
+  `details:not([open]) > *` trick no longer works in Chromium at all. Both were
+  measured, not assumed. A checkbox is plain sibling-selector CSS everywhere.
+
+  THE INPUT IS VISUALLY HIDDEN BUT STILL FOCUSABLE — offscreen via `opacity`
+  and a 1px box, never `display: none`, which would drop it out of the tab
+  order and make the whole thing keyboard-dead.
+
+  STYLING LIVES IN assets/content-constructs.css so the site and the builder
+  cannot diverge, and so preflight check 5 can see it. Styles inlined here
+  styled the site correctly and still failed that check, which compares against
+  the stylesheet the builder actually ships.
+
+  THE ID IS DERIVED, NOT RANDOM. It hashes file + label + ordinal, so rebuilding
+  unchanged content gives byte-identical HTML — and the id is load-bearing here,
+  since it is what ties the <label> to its checkbox. It used to be
+  `shuffle (seq 1 9)`, which changed on every build.
 */}}
 
-{{ $id := delimit (shuffle (seq 1 9)) "" | truncate 8 "" }}
-{{ $title := .Get 0 }}
+{{- $title := .Get 0 -}}
+{{- $id := substr (md5 (printf "%s|%s|%d" .Page.File.Path $title .Ordinal)) 0 8 -}}
 
-<div class="quickref-wrapper" id="qr-{{ $id }}">
-  <div class="quickref-toggle" tabindex="0" role="button" aria-expanded="false" aria-controls="qr-dd-{{ $id }}">
-    <span class="quickref-title">{{ $title }}</span>
-    <svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </div>
-  <div class="quickref-dropdown" id="qr-dd-{{ $id }}">
-    <div class="quickref-content">
-      {{ .Inner | .Page.RenderString }}
-    </div>
-  </div>
+{{- /* Resolve `source` to the target page's OWN title, so the name in the line
+       is never hand-typed and cannot drift from the page it points at. Erroring
+       on a path that resolves to nothing is deliberate — rendering nothing is
+       how a broken include hides itself, and include.html says so at length. */ -}}
+{{- $source := .Get 1 -}}
+{{- $sourceName := "" -}}
+{{- with $source -}}
+  {{- $p := site.GetPage (index (split . "#") 0) -}}
+  {{- if not $p -}}
+    {{- errorf "quickref: source url %q resolves to no page (called from %s)" . $.Page.File.Path -}}
+  {{- end -}}
+  {{- $sourceName = $p.Title -}}
+{{- end -}}
+
+{{- /* ⚠ EMIT THIS MARKUP FLUSH LEFT. This is a {{% %}} shortcode, so its output
+       goes back through the page's markdown renderer — and any line indented
+       four spaces or more becomes a CODE BLOCK there. Pretty-printing the
+       closing tags to match the opening ones put a literal `</div>` in the
+       rendered page, styled as code, at the end of every quickref. */ -}}
+<div class="quickref-wrapper">
+<input class="quickref-check" type="checkbox" id="qr-{{ $id }}">
+<label class="quickref-toggle" for="qr-{{ $id }}"><span>{{ $title }}</span><svg class="quickref-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></label>
+<div class="quickref-dropdown">
+{{- /* The close control is a SECOND <label> pointing at the same checkbox, so
+       clicking it unchecks and the panel shuts — still no script. It is a
+       screen affordance only: builder.css and @media print both hide it. */ -}}
+<label class="quickref-close" for="qr-{{ $id }}" role="button" aria-label="Close {{ $title }}" title="Close">&times;</label>
+{{- with $source }}
+<p class="quickref-source">From <a href="{{ . }}">{{ $sourceName }}</a>:</p>
+{{- end }}
+<div class="quickref-content markdown-inner">
+{{ .Inner | .Page.RenderString }}
 </div>
-
-<style>
-/* === Quickref v2: compact expandable reference === */
-
-.quickref-wrapper {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-/* Kill any paragraph margins Hugo injects around the shortcode */
-p > .quickref-wrapper,
-p + .quickref-wrapper,
-.quickref-wrapper + p {
-  margin-top: 0;
-}
-
-.quickref-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  cursor: pointer;
-  border-bottom: 1px dashed var(--color-link, #4a90d9);
-  color: var(--color-link, #4a90d9);
-  padding-bottom: 1px;
-  margin: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  line-height: inherit;
-}
-
-.quickref-toggle:hover,
-.quickref-toggle:focus-visible {
-  border-bottom-style: solid;
-  outline: none;
-}
-
-.quickref-chevron {
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
-}
-
-.quickref-toggle[aria-expanded="true"] .quickref-chevron {
-  transform: rotate(180deg);
-}
-
-.quickref-dropdown {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  margin-top: 4px;
-  z-index: 100;
-  width: min(520px, 85vw);
-  max-height: 60vh;
-  overflow-y: auto;
-  overflow-x: auto;
-  background: var(--body-background, #fff);
-  border: 1px solid var(--color-border-default, #ddd);
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* Dark mode support for hugo-book */
-.dark .quickref-dropdown,
-[data-theme="dark"] .quickref-dropdown {
-  background: var(--body-background, #1a1a2e);
-  border-color: var(--color-border-default, #444);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-}
-
-.quickref-toggle[aria-expanded="true"] + .quickref-dropdown {
-  display: block;
-}
-
-.quickref-content {
-  padding: 16px 20px;
-  font-size: 0.92em;
-  line-height: 1.55;
-}
-
-.quickref-content > :first-child {
-  margin-top: 0;
-}
-
-.quickref-content > :last-child {
-  margin-bottom: 0;
-}
-
-.quickref-content blockquote {
-  margin-left: 0;
-  padding-left: 12px;
-}
-
-.quickref-content ul,
-.quickref-content ol {
-  padding-left: 20px;
-}
-
-/* Tables inside quickref: make them fit */
-.quickref-content table {
-  font-size: 0.9em;
-  width: max-content;
-  min-width: 100%;
-}
-
-/* Print / PDF: render fully open, inline, no dropdown */
-@media print {
-  .quickref-dropdown {
-    display: block !important;
-    position: static;
-    width: auto;
-    max-height: none;
-    border: none;
-    box-shadow: none;
-    margin: 0.5em 0;
-    border-left: 3px solid #ccc;
-    padding-left: 12px;
-  }
-
-  .quickref-toggle {
-    border-bottom: none;
-    color: inherit;
-    font-weight: bold;
-  }
-
-  .quickref-chevron {
-    display: none;
-  }
-}
-</style>
-
-<script>
-(function() {
-  if (window._quickrefBound) return;
-  window._quickrefBound = true;
-
-  document.addEventListener('click', function(e) {
-    var toggle = e.target.closest('.quickref-toggle');
-
-    if (toggle) {
-      e.preventDefault();
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-
-      // Close all other quickrefs first
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(other) {
-        if (other !== toggle) {
-          other.setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      return;
-    }
-
-    // Close quickrefs when clicking outside
-    if (!e.target.closest('.quickref-wrapper')) {
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(t) {
-        t.setAttribute('aria-expanded', 'false');
-      });
-    }
-  });
-
-  // Keyboard support
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      var toggle = e.target.closest('.quickref-toggle');
-      if (toggle) {
-        e.preventDefault();
-        toggle.click();
-      }
-    }
-    if (e.key === 'Escape') {
-      document.querySelectorAll('.quickref-toggle[aria-expanded="true"]').forEach(function(t) {
-        t.setAttribute('aria-expanded', 'false');
-      });
-    }
-  });
-})();
-</script>
+</div>
+</div>

@@ -1,6 +1,6 @@
 ---
 title: "Sci-Fi Additions"
-description: "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, extreme environments, energy shields, HUDs, and computer systems."
+description: "Sci-fi module additions to the core rules: ballistic weapons in zero gravity, energy shields, HUDs, computer systems, and the Dead Battery condition."
 weight: 90
 ---
 
@@ -10,28 +10,32 @@ This page is the central home for sci-fi specific rules that extend or modify th
 
 ---
 
-## Combat & Environment
+## Combat and Conditions
 
 
-{{% include "/snippets/sci-fi/ballistics-in-space" "h3" %}}
+{{% include "/snippets/rules/sci-fi/ballistics-in-space" "h3" %}}
 
 
-{{% include "/snippets/environment/extreme-environments" "h3" %}}
+{{% include "/snippets/rules/conditions/dead-battery" "h3" %}}
 
 ---
 
 ## Equipment
 
 
-{{% include "/snippets/sci-fi/communications" "h3" %}}
+{{% include "/snippets/rules/sci-fi/communications" "h3" %}}
 
 
-{{% include "/snippets/sci-fi/energy-shields" "h3" %}}
+{{% include "/snippets/rules/sci-fi/energy-shields" "h3" %}}
 
 
-{{% include "/snippets/sci-fi/huds" "h3" %}}
+{{% include "/snippets/rules/sci-fi/huds" "h3" %}}
+
 
 ---
 
+{{% include "/snippets/rules/sci-fi/automated-machines" "h2" %}}
 
-{{% include "/snippets/sci-fi/computer-systems" "h2" %}}
+---
+
+{{% include "/snippets/rules/sci-fi/computer-systems" "h2" %}}

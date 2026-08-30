@@ -24,25 +24,25 @@ This page containts setting-agnostic items available in most times and settings.
 Non-armor wearables offering utility, environmental protection, or convenience. These items do not provide a DEF bonus.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/face-wrap
-generic-equipment/heavy-cloak
-generic-equipment/rain-poncho
-generic-equipment/reinforced-boots
-generic-equipment/wide-brim-hat
-generic-equipment/work-gloves
+gear/generic-equipment/face-wrap
+gear/generic-equipment/heavy-cloak
+gear/generic-equipment/rain-poncho
+gear/generic-equipment/reinforced-boots
+gear/generic-equipment/wide-brim-hat
+gear/generic-equipment/work-gloves
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/face-wrap" "h3" >}}
+{{< blockdetails "gear/generic-equipment/face-wrap" "h3" >}}
 
-{{< blockdetails "generic-equipment/heavy-cloak" "h3" >}}
+{{< blockdetails "gear/generic-equipment/heavy-cloak" "h3" >}}
 
-{{< blockdetails "generic-equipment/rain-poncho" "h3" >}}
+{{< blockdetails "gear/generic-equipment/rain-poncho" "h3" >}}
 
-{{< blockdetails "generic-equipment/reinforced-boots" "h3" >}}
+{{< blockdetails "gear/generic-equipment/reinforced-boots" "h3" >}}
 
-{{< blockdetails "generic-equipment/wide-brim-hat" "h3" >}}
+{{< blockdetails "gear/generic-equipment/wide-brim-hat" "h3" >}}
 
-{{< blockdetails "generic-equipment/work-gloves" "h3" >}}
+{{< blockdetails "gear/generic-equipment/work-gloves" "h3" >}}
 
 ---
 
@@ -51,40 +51,40 @@ generic-equipment/work-gloves
 Items used to carry, organize, and protect gear.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/backpack
-generic-equipment/barrel
-generic-equipment/lockable-chest
-generic-equipment/crate
-generic-equipment/dry-sack
-generic-equipment/pouch-set-ammo
-generic-equipment/pouch-set-small
-generic-equipment/pouch-set-standard
-generic-equipment/quiver
-generic-equipment/saddlebags
-generic-equipment/satchel
+gear/generic-equipment/backpack
+gear/generic-equipment/barrel
+gear/generic-equipment/lockable-chest
+gear/generic-equipment/crate
+gear/generic-equipment/dry-sack
+gear/generic-equipment/pouch-set-ammo
+gear/generic-equipment/pouch-set-small
+gear/generic-equipment/pouch-set-standard
+gear/generic-equipment/quiver
+gear/generic-equipment/saddlebags
+gear/generic-equipment/satchel
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/backpack" "h3" >}}
+{{< blockdetails "gear/generic-equipment/backpack" "h3" >}}
 
-{{< blockdetails "generic-equipment/barrel" "h3" >}}
+{{< blockdetails "gear/generic-equipment/barrel" "h3" >}}
 
-{{< blockdetails "generic-equipment/lockable-chest" "h3" >}}
+{{< blockdetails "gear/generic-equipment/lockable-chest" "h3" >}}
 
-{{< blockdetails "generic-equipment/crate" "h3" >}}
+{{< blockdetails "gear/generic-equipment/crate" "h3" >}}
 
-{{< blockdetails "generic-equipment/dry-sack" "h3" >}}
+{{< blockdetails "gear/generic-equipment/dry-sack" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-ammo" "h3" >}}
+{{< blockdetails "gear/generic-equipment/pouch-set-ammo" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-small" "h3" >}}
+{{< blockdetails "gear/generic-equipment/pouch-set-small" "h3" >}}
 
-{{< blockdetails "generic-equipment/pouch-set-standard" "h3" >}}
+{{< blockdetails "gear/generic-equipment/pouch-set-standard" "h3" >}}
 
-{{< blockdetails "generic-equipment/quiver" "h3" >}}
+{{< blockdetails "gear/generic-equipment/quiver" "h3" >}}
 
-{{< blockdetails "generic-equipment/saddlebags" "h3" >}}
+{{< blockdetails "gear/generic-equipment/saddlebags" "h3" >}}
 
-{{< blockdetails "generic-equipment/satchel" "h3" >}}
+{{< blockdetails "gear/generic-equipment/satchel" "h3" >}}
 
 ---
 
@@ -93,19 +93,19 @@ generic-equipment/satchel
 Portable sources of illumination. Unless noted otherwise, light sources illuminate a 20ft radius of bright light and an additional 20ft of dim light beyond that.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/candle
-generic-equipment/fuel-oil-flask
-generic-equipment/oil-lantern
-generic-equipment/torch
+gear/generic-equipment/candle
+gear/generic-equipment/fuel-oil-flask
+gear/generic-equipment/oil-lantern
+gear/generic-equipment/torch
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/candle" "h3" >}}
+{{< blockdetails "gear/generic-equipment/candle" "h3" >}}
 
-{{< blockdetails "generic-equipment/fuel-oil-flask" "h3" >}}
+{{< blockdetails "gear/generic-equipment/fuel-oil-flask" "h3" >}}
 
-{{< blockdetails "generic-equipment/oil-lantern" "h3" >}}
+{{< blockdetails "gear/generic-equipment/oil-lantern" "h3" >}}
 
-{{< blockdetails "generic-equipment/torch" "h3" >}}
+{{< blockdetails "gear/generic-equipment/torch" "h3" >}}
 
 ---
 
@@ -114,25 +114,25 @@ generic-equipment/torch
 Consumable medical items for field treatment, injury response, and condition management. Setting modules introduce more advanced medical options.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/antiseptic-poultice
-generic-equipment/antitoxin
-generic-equipment/bandages-large
-generic-equipment/bandages-small
-generic-equipment/restorative-tonic
-generic-equipment/splint-materials
+gear/generic-equipment/antiseptic-poultice
+gear/generic-equipment/antitoxin
+gear/generic-equipment/bandages-large
+gear/generic-equipment/bandages-small
+gear/generic-equipment/restorative-tonic
+gear/generic-equipment/splint-materials
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/antiseptic-poultice" "h3" >}}
+{{< blockdetails "gear/generic-equipment/antiseptic-poultice" "h3" >}}
 
-{{< blockdetails "generic-equipment/antitoxin" "h3" >}}
+{{< blockdetails "gear/generic-equipment/antitoxin" "h3" >}}
 
-{{< blockdetails "generic-equipment/bandages-large" "h3" >}}
+{{< blockdetails "gear/generic-equipment/bandages-large" "h3" >}}
 
-{{< blockdetails "generic-equipment/bandages-small" "h3" >}}
+{{< blockdetails "gear/generic-equipment/bandages-small" "h3" >}}
 
-{{< blockdetails "generic-equipment/restorative-tonic" "h3" >}}
+{{< blockdetails "gear/generic-equipment/restorative-tonic" "h3" >}}
 
-{{< blockdetails "generic-equipment/splint-materials" "h3" >}}
+{{< blockdetails "gear/generic-equipment/splint-materials" "h3" >}}
 
 ---
 
@@ -141,37 +141,37 @@ generic-equipment/splint-materials
 Gear for enduring hostile environments, sustaining life in the field, and navigating the wilderness.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/bedroll
-generic-equipment/compass
-generic-equipment/field-ration
-generic-equipment/fire-starter
-generic-equipment/rope-50ft
-generic-equipment/signal-mirror
-generic-equipment/signal-whistle
-generic-equipment/tent-2-person
-generic-equipment/tent-4-person
-generic-equipment/waterskin
+gear/generic-equipment/bedroll
+gear/generic-equipment/compass
+gear/generic-equipment/field-ration
+gear/generic-equipment/fire-starter
+gear/generic-equipment/rope-50ft
+gear/generic-equipment/signal-mirror
+gear/generic-equipment/signal-whistle
+gear/generic-equipment/tent-2-person
+gear/generic-equipment/tent-4-person
+gear/generic-equipment/waterskin
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/bedroll" "h3" >}}
+{{< blockdetails "gear/generic-equipment/bedroll" "h3" >}}
 
-{{< blockdetails "generic-equipment/compass" "h3" >}}
+{{< blockdetails "gear/generic-equipment/compass" "h3" >}}
 
-{{< blockdetails "generic-equipment/field-ration" "h3" >}}
+{{< blockdetails "gear/generic-equipment/field-ration" "h3" >}}
 
-{{< blockdetails "generic-equipment/fire-starter" "h3" >}}
+{{< blockdetails "gear/generic-equipment/fire-starter" "h3" >}}
 
-{{< blockdetails "generic-equipment/rope-50ft" "h3" >}}
+{{< blockdetails "gear/generic-equipment/rope-50ft" "h3" >}}
 
-{{< blockdetails "generic-equipment/signal-mirror" "h3" >}}
+{{< blockdetails "gear/generic-equipment/signal-mirror" "h3" >}}
 
-{{< blockdetails "generic-equipment/signal-whistle" "h3" >}}
+{{< blockdetails "gear/generic-equipment/signal-whistle" "h3" >}}
 
-{{< blockdetails "generic-equipment/tent-2-person" "h3" >}}
+{{< blockdetails "gear/generic-equipment/tent-2-person" "h3" >}}
 
-{{< blockdetails "generic-equipment/tent-4-person" "h3" >}}
+{{< blockdetails "gear/generic-equipment/tent-4-person" "h3" >}}
 
-{{< blockdetails "generic-equipment/waterskin" "h3" >}}
+{{< blockdetails "gear/generic-equipment/waterskin" "h3" >}}
 
 ---
 
@@ -180,40 +180,40 @@ generic-equipment/waterskin
 General purpose tools and equipment for problem-solving in the field. For task-specific tool collections, see [Tool Kits](/docs/free-srd/inventory--equipment/tool-kits/).
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/chain-10ft
-generic-equipment/chalk-sticks
-generic-equipment/grappling-hook
-generic-equipment/ink-writing-instrument
-generic-equipment/long-crowbar
-generic-equipment/manacles
-generic-equipment/parchment-sheets
-generic-equipment/pitons
-generic-equipment/sewing-set
-generic-equipment/shovel
-generic-equipment/whetstone
+gear/generic-equipment/chain-10ft
+gear/generic-equipment/chalk-sticks
+gear/generic-equipment/grappling-hook
+gear/generic-equipment/ink-writing-instrument
+gear/generic-equipment/long-crowbar
+gear/generic-equipment/manacles
+gear/generic-equipment/parchment-sheets
+gear/generic-equipment/pitons
+gear/generic-equipment/sewing-set
+gear/generic-equipment/shovel
+gear/generic-equipment/whetstone
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/chain-10ft" "h3" >}}
+{{< blockdetails "gear/generic-equipment/chain-10ft" "h3" >}}
 
-{{< blockdetails "generic-equipment/chalk-sticks" "h3" >}}
+{{< blockdetails "gear/generic-equipment/chalk-sticks" "h3" >}}
 
-{{< blockdetails "generic-equipment/grappling-hook" "h3" >}}
+{{< blockdetails "gear/generic-equipment/grappling-hook" "h3" >}}
 
-{{< blockdetails "generic-equipment/ink-writing-instrument" "h3" >}}
+{{< blockdetails "gear/generic-equipment/ink-writing-instrument" "h3" >}}
 
-{{< blockdetails "generic-equipment/long-crowbar" "h3" >}}
+{{< blockdetails "gear/generic-equipment/long-crowbar" "h3" >}}
 
-{{< blockdetails "generic-equipment/manacles" "h3" >}}
+{{< blockdetails "gear/generic-equipment/manacles" "h3" >}}
 
-{{< blockdetails "generic-equipment/parchment-sheets" "h3" >}}
+{{< blockdetails "gear/generic-equipment/parchment-sheets" "h3" >}}
 
-{{< blockdetails "generic-equipment/pitons" "h3" >}}
+{{< blockdetails "gear/generic-equipment/pitons" "h3" >}}
 
-{{< blockdetails "generic-equipment/sewing-set" "h3" >}}
+{{< blockdetails "gear/generic-equipment/sewing-set" "h3" >}}
 
-{{< blockdetails "generic-equipment/shovel" "h3" >}}
+{{< blockdetails "gear/generic-equipment/shovel" "h3" >}}
 
-{{< blockdetails "generic-equipment/whetstone" "h3" >}}
+{{< blockdetails "gear/generic-equipment/whetstone" "h3" >}}
 
 ---
 
@@ -222,37 +222,37 @@ generic-equipment/whetstone
 Common items that are useful in the field and frequently traded. Many of these serve double duty as practical tools and barter goods.
 
 {{< catalog header="Item|Notes" >}}
-generic-equipment/animal-feed
-generic-equipment/twine
-generic-equipment/blank-book-journal
-generic-equipment/block-of-soap
-generic-equipment/common-alcohol-flask
-generic-equipment/bag-of-salt
-generic-equipment/iron-spikes
-generic-equipment/small-bell
-generic-equipment/candle-wax-block
-generic-equipment/coil-of-wire
-generic-equipment/wooden-stakes
+gear/generic-equipment/animal-feed
+gear/generic-equipment/twine
+gear/generic-equipment/blank-book-journal
+gear/generic-equipment/block-of-soap
+gear/generic-equipment/common-alcohol-flask
+gear/generic-equipment/bag-of-salt
+gear/generic-equipment/iron-spikes
+gear/generic-equipment/small-bell
+gear/generic-equipment/candle-wax-block
+gear/generic-equipment/coil-of-wire
+gear/generic-equipment/wooden-stakes
 {{< /catalog >}}
 
-{{< blockdetails "generic-equipment/animal-feed" "h3" >}}
+{{< blockdetails "gear/generic-equipment/animal-feed" "h3" >}}
 
-{{< blockdetails "generic-equipment/twine" "h3" >}}
+{{< blockdetails "gear/generic-equipment/twine" "h3" >}}
 
-{{< blockdetails "generic-equipment/blank-book-journal" "h3" >}}
+{{< blockdetails "gear/generic-equipment/blank-book-journal" "h3" >}}
 
-{{< blockdetails "generic-equipment/block-of-soap" "h3" >}}
+{{< blockdetails "gear/generic-equipment/block-of-soap" "h3" >}}
 
-{{< blockdetails "generic-equipment/common-alcohol-flask" "h3" >}}
+{{< blockdetails "gear/generic-equipment/common-alcohol-flask" "h3" >}}
 
-{{< blockdetails "generic-equipment/bag-of-salt" "h3" >}}
+{{< blockdetails "gear/generic-equipment/bag-of-salt" "h3" >}}
 
-{{< blockdetails "generic-equipment/iron-spikes" "h3" >}}
+{{< blockdetails "gear/generic-equipment/iron-spikes" "h3" >}}
 
-{{< blockdetails "generic-equipment/small-bell" "h3" >}}
+{{< blockdetails "gear/generic-equipment/small-bell" "h3" >}}
 
-{{< blockdetails "generic-equipment/candle-wax-block" "h3" >}}
+{{< blockdetails "gear/generic-equipment/candle-wax-block" "h3" >}}
 
-{{< blockdetails "generic-equipment/coil-of-wire" "h3" >}}
+{{< blockdetails "gear/generic-equipment/coil-of-wire" "h3" >}}
 
-{{< blockdetails "generic-equipment/wooden-stakes" "h3" >}}
+{{< blockdetails "gear/generic-equipment/wooden-stakes" "h3" >}}

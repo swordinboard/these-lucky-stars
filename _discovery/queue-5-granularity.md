@@ -27,8 +27,8 @@ snippets included here).
 <!-- recommended setup for combat page is in Q2 notes, individual blocks for actions due to references elsewhere using some but not all actions -->
 
 ## 2. Basics "General Rules of Play" trio
-**Provisional:** three fine blocks (`basics/contested-rolls`,
-`basics/resolving-a-tie`, `basics/the-rounding-rule`). **Alternative:** one
+**Provisional:** three fine blocks (`rules/basics/contested-rolls`,
+`rules/basics/resolving-a-tie`, `rules/basics/the-rounding-rule`). **Alternative:** one
 "general rules of play" block.
 - The three are 3–8 lines each; individually addressable is nice (tie-resolution
   is referenced from contested rolls) but three near-trivial files is real
@@ -38,8 +38,8 @@ snippets included here).
 <!-- keep them seperate, lets users move them to relevent sections if they want -->
 
 ## 3. Attributes: per-group vs per-attribute
-**Provisional:** two blocks (`attributes/physical-attributes`,
-`attributes/mental-attributes`). **Alternative:** eight blocks, one per
+**Provisional:** two blocks (`rules/attributes/physical-attributes`,
+`rules/attributes/mental-attributes`). **Alternative:** eight blocks, one per
 attribute.
 - Per-attribute matches the "atomic selectable unit" ideal, but each is a
   two-line description that never gets referenced individually (the broken
@@ -66,7 +66,7 @@ already link per-item anchors.
 
 <!-- split. this was just a display/organizational choice, all should be able to stand on their own -->
 
-## 5. Computer Systems (`sci-fi/computer-systems`)
+## 5. Computer Systems (`rules/sci-fi/computer-systems`)
 **Provisional:** one block (networks + security levels + actions +
 countermeasures). **Alternative:** sub-blocks (`system-level` chart,
 `common-actions`, `security-countermeasures`).
@@ -78,7 +78,7 @@ countermeasures). **Alternative:** sub-blocks (`system-level` chart,
 
 <!-- keep as one block, standalone system is intended -->
 
-## 6. Mounts (`vehicles/mounts`)
+## 6. Mounts (`rules/vehicles/mounts`)
 **Provisional:** one block. **Alternative:** five (equipment-vs-allies, mount
 features, unwilling mounts, mounts and impact/overrun, sudden stops).
 - The five read as one continuous argument and the page is WIP (typos, likely
@@ -87,7 +87,7 @@ features, unwilling mounts, mounts and impact/overrun, sudden stops).
 
 <!-- agree -->
 
-## 7. Wounds framework (`wounds/wounds`)
+## 7. Wounds framework (`rules/wounds/wounds`)
 **Provisional:** one block (classification + dressing + minor + major +
 narrative healing). **Alternative:** separate `minor-wounds` / `major-wounds`
 blocks.
@@ -110,7 +110,7 @@ features (Robot Chassis / Upgradable / Power Source / Dead Battery).
 <!-- agree. Androids are a port of whT should be a creature type (robots). the whole robot/drone/android thing is a mess and needs simplification help in its current state -->
 
 ## 9. Inventory page
-**Provisional:** two blocks (`inventory/carry-limits`, `inventory/body-slots`).
+**Provisional:** two blocks (`gear/inventory/carry-limits`, `gear/inventory/body-slots`).
 **Alternative:** page-as-block (it's a short, coherent page; two blocks means
 extraction, page-as-block means zero new files).
 - **Lean:** page-as-block is defensible; two blocks only pays off if the

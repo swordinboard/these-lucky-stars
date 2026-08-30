@@ -1,6 +1,8 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap">
+{{- /* Cinzel and Source Sans 3 are SELF-HOSTED — static/fonts/, @font-face at
+       the top of assets/_custom.scss. They used to load from Google Fonts,
+       which the service worker could never cache (it only caches same-origin
+       responses), so a PWA page opened offline silently fell back to Georgia
+       and system-ui. Do not put the <link> back without reading that comment. */ -}}
 <link rel="apple-touch-icon" href="{{ "images/icon-180.png" | relURL }}">
 
 {{- /* Content constructs shared with the PDF builder. One source file, loaded
