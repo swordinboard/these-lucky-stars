@@ -8,17 +8,15 @@ type: rule
 tags: [size, combat, stats]
 ---
 
-## Size
+# Size
 
-A creature or character's size affects its attributes, its Grapple and Stealth stats, how much space it takes up during combat, and how attack damage is calculated against it. Smaller characters are harder to hit, and larger characters hit harder.
+A creature or character's size affects its attributes, its Grapple and Stealth stats, how much space it takes up during combat, and how attack damage is calculated. Smaller characters are harder to hit, and larger characters hit harder.
 
 Most characters are **Medium** size by default. A character's size is typically determined by their species or other character features. Some traits, abilities, or conditions may temporarily change a character's effective size.
 
----
-
 ## How Size Affects a Character
 
-Size influences characters along three separate paths:
+Size influences characters in three ways:
 
 - **Attribute modifiers** — Larger characters gain STR and lose AGI; smaller characters lose STR and gain AGI. This represents raw physical capability.
 - **Stat modifiers** — Grapple and Stealth receive flat modifiers on top of any changes caused by the attribute shifts. These represent how size physically affects handling and visibility, independent of strength or agility. Larger characters are harder to hide and more commanding in a grapple; smaller characters are the opposite.
@@ -28,10 +26,10 @@ Size influences characters along three separate paths:
 
 ## Character Size Chart
 
-| | Tiny | Small | Medium | Large | Huge |
+| | Tiny (-1) | Small (0) | Medium (1) | Large (2) | Huge (3) |
 |---|---|---|---|---|---|
 | **Expected Height** | < 2 ft | 2-4 ft | 4–8 ft | 8–16 ft | > 16 ft |
-| **Space Occupied** | ¼ space (2.5ft square) | 1 space (5ft square) | 1 space (5ft square) | 4-spaces (10ft square) | 9-spaces (15ft square) |
+| **Spaces Occupied** | ¼ space | 1 space | 1 space | 2x2 spaces | 3x3 spaces|
 | **Normal Melee Reach** | Occupied space only | 1 space (5ft) | 1 space (5ft) | 2 spaces (10ft) | 3 spaces (15ft) |
 | **STR Modifier** | −4 | −2 | — | +2 | +4 |
 | **AGI Modifier** | +4 | +2 | — | −2 | −4 |
