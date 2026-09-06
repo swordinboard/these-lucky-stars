@@ -12,7 +12,7 @@ tags: [size, combat, stats]
 
 A creature or character's size affects its attributes, its Grapple and Stealth stats, how much space it takes up during combat, and how attack damage is calculated. Smaller characters are harder to hit, and larger characters hit harder.
 
-Most characters are **Medium** size by default. A character's size is typically determined by their species or other character features. Some traits, abilities, or conditions may temporarily change a character's effective size.
+Most characters are **Medium** size by default. A character's size is typically determined by their species or other character features. Some traits, abilities, or conditions may change a character's effective size.
 
 ## How Size Affects a Character
 
