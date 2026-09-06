@@ -23,7 +23,7 @@ wip: true
 {{% include "/snippets/rules/vehicles/vehicle-movement" "h3" %}}
 
 > [!IMPORTANT]
-> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section](/docs/free-srd/core-rules/action-economy/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed tier modifiers for a range of calculations. Thus, those rules are reiterated here.
+> Because vehicle rules deal closely with movement and Speed, this section includes the Speed rules as found in the [Movement Section](/docs/free-srd/core-rules/movement/#movement) for convenience. Speed works the same for vehicles as it does for characters, and use speed tier modifiers for a range of calculations. Thus, those rules are reiterated here.
 
 > [!TIP]
 > *Short:* Vehicles follow most of the same rules as characters and creatures, but are more likely to be directly affected by speed tiers and acceleration.
@@ -69,7 +69,8 @@ wip: true
 
 ## Related
 
-- [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/) — Action Points, Speed Tiers, and the movement actions vehicle speed builds on.
+- [Movement](/docs/free-srd/core-rules/movement/) — Speed, Speed Tiers, and the movement actions vehicle speed builds on.
+- [Action Economy](/docs/free-srd/core-rules/action-economy/) — the Action Points a Drive or Ignition action is paid from.
 - [Combat](/docs/free-srd/core-rules/combat/) — attack and damage resolution, which vehicle collisions and impacts feed into.
 - [Size](/docs/free-srd/core-rules/size/) — the size values that set collision damage and maneuverability.
 - [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) — what happens to passengers when a vehicle takes damage.

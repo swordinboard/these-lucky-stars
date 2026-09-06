@@ -28,7 +28,7 @@ Specific AP costs for named actions are listed in the [Combat](/docs/free-srd/co
 
 {{% include "/snippets/rules/movement/speed-descriptors" "lead" %}}
 
-See [Movement](/docs/free-srd/core-rules/action-economy/#movement) for more details on how speed is translated into actions.
+See [Movement](/docs/free-srd/core-rules/movement/#movement) for more details on how speed is translated into actions.
 
 ---
 

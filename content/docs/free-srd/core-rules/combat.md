@@ -6,7 +6,7 @@ weight: 60
 
 # Combat
 
-This page covers how fights are resolved in These Lucky Stars — from initiative to damage to the full catalog of combat actions. For how Action Points, action types, and movement work, see [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/). For how damage interacts with a character's health, see [Health](/docs/free-srd/core-rules/health/).
+This page covers how fights are resolved in These Lucky Stars — from initiative to damage to the full catalog of combat actions. For how Action Points and action types work, see [Action Economy](/docs/free-srd/core-rules/action-economy/); for Speed and the movement actions, see [Movement](/docs/free-srd/core-rules/movement/). For how damage interacts with a character's health, see [Health](/docs/free-srd/core-rules/health/).
 
 ---
 
@@ -91,7 +91,8 @@ The following catalog lists the most common actions characters take during comba
 ## Related
 
 - [Health](/docs/free-srd/core-rules/health/) — the two-layer health system, how DEF and VIT interact with damage.
-- [Action Economy & Movement](/docs/free-srd/core-rules/action-economy/) — Action Points, action types, movement rules, and Speed Tiers.
+- [Action Economy](/docs/free-srd/core-rules/action-economy/) — Action Points, action types, and the readied, opportunity and reaction actions.
+- [Movement](/docs/free-srd/core-rules/movement/) — the Move and Step actions, Speed, and Speed Tiers.
 - [Wounds & Conditions](/docs/free-srd/core-rules/wounds--conditions/) — wound severities, condition effects, and recovery.
 - [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) — targeting objects, the Shatter action, and item DEF/VIT.
 - [Size](/docs/free-srd/core-rules/size/) — how size affects damage dice, reach, and space occupied.

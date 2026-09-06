@@ -6,7 +6,7 @@ type: rule
 tags: [vehicles]
 ---
 
-A character may attempt to board or bail from a moving vehicle for 2 AP, or as part of a [Move](/docs/free-srd/core-rules/action-economy/#movement-actions) action for no additional AP.
+A character may attempt to board or bail from a moving vehicle for 2 AP, or as part of a [Move](/docs/free-srd/core-rules/movement/#movement-actions) action for no additional AP.
 
 **Board** — The character must be adjacent to or in the path of the vehicle. Make an *AGI check with a target of 5 + the vehicle's speed modifier.* On a success, the character is now an occupant of the vehicle in some capacity. On a failure, the character remains where they are. It should be noted that success does not necessarily grant the person boarding a vehicle a traditional space within the vehicle; They may be clinging to the hood of a truck or have landed on the top of a traincar.
 

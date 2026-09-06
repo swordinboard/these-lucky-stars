@@ -1988,7 +1988,7 @@
   "source": "rules/combat/opportunity-attack",
   "target": "rules/movement/speed-tiers",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#speed-tiers",
+  "url": "/docs/free-srd/core-rules/movement/#speed-tiers",
   "text": "Speed Tiers",
   "file": "content/snippets/rules/combat/opportunity-attack.md",
   "line": 9
@@ -2004,9 +2004,9 @@
  },
  {
   "source": "rules/combat/stealth",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement-actions",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "url": "/docs/free-srd/core-rules/movement/#movement-actions",
   "text": "Move",
   "file": "content/snippets/rules/combat/stealth.md",
   "line": 11
@@ -2093,6 +2093,33 @@
   "line": 29
  },
  {
+  "source": "rules/movement/difficult-terrain",
+  "target": "rules/basics/target-numbers",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/basics/#target-numbers",
+  "text": "target numbers",
+  "file": "content/snippets/rules/movement/difficult-terrain.md",
+  "line": 9
+ },
+ {
+  "source": "rules/movement/difficult-terrain",
+  "target": "rules/basics/advantage",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/basics/#advantage",
+  "text": "advantage",
+  "file": "content/snippets/rules/movement/difficult-terrain.md",
+  "line": 9
+ },
+ {
+  "source": "rules/movement/difficult-terrain",
+  "target": "page:/docs/free-srd/core-rules/environmental-effects/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/environmental-effects",
+  "text": "Environmental Effects",
+  "file": "content/snippets/rules/movement/difficult-terrain.md",
+  "line": 9
+ },
+ {
   "source": "rules/movement/movement",
   "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
   "type": "reference",
@@ -2100,33 +2127,6 @@
   "text": "Vehicle Rules",
   "file": "content/snippets/rules/movement/movement.md",
   "line": 15
- },
- {
-  "source": "rules/actions/difficult-terrain",
-  "target": "rules/basics/target-numbers",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/basics/#target-numbers",
-  "text": "target numbers",
-  "file": "content/snippets/rules/actions/difficult-terrain.md",
-  "line": 9
- },
- {
-  "source": "rules/actions/difficult-terrain",
-  "target": "rules/basics/advantage",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/basics/#advantage",
-  "text": "advantage",
-  "file": "content/snippets/rules/actions/difficult-terrain.md",
-  "line": 9
- },
- {
-  "source": "rules/actions/difficult-terrain",
-  "target": "page:/docs/free-srd/core-rules/environmental-effects/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/environmental-effects",
-  "text": "Environmental Effects",
-  "file": "content/snippets/rules/actions/difficult-terrain.md",
-  "line": 9
  },
  {
   "source": "rules/actions/readied-actions",
@@ -2292,9 +2292,9 @@
  },
  {
   "source": "rules/vehicles/boarding-and-bailing",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement-actions",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "url": "/docs/free-srd/core-rules/movement/#movement-actions",
   "text": "Move",
   "file": "content/snippets/rules/vehicles/boarding-and-bailing.md",
   "line": 9
@@ -2481,9 +2481,9 @@
  },
  {
   "source": "rules/vehicles/vehicle-actions",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement-actions",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement-actions",
+  "url": "/docs/free-srd/core-rules/movement/#movement-actions",
   "text": "Move",
   "file": "content/snippets/rules/vehicles/vehicle-actions.md",
   "line": 9
@@ -3426,30 +3426,12 @@
  },
  {
   "source": "page:/docs/free-srd/",
-  "target": "page:/docs/free-srd/core-rules/attributes/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/attributes",
-  "text": "eight attributes",
-  "file": "content/docs/free-srd/_index.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/",
-  "target": "page:/docs/free-srd/core-rules/health/",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/health",
-  "text": "health system",
-  "file": "content/docs/free-srd/_index.md",
-  "line": 21
- },
- {
-  "source": "page:/docs/free-srd/",
   "target": "page:/docs/legal/",
   "type": "mention",
   "url": "/docs/legal",
   "text": "here",
   "file": "content/docs/free-srd/_index.md",
-  "line": 34
+  "line": 39
  },
  {
   "source": "page:/docs/free-srd/",
@@ -3458,7 +3440,7 @@
   "url": "/docs/roadmap",
   "text": "roadmap",
   "file": "content/docs/free-srd/_index.md",
-  "line": 37
+  "line": 42
  },
  {
   "source": "page:/docs/free-srd/",
@@ -7617,6 +7599,16 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "class": "section-index",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/_index.md",
+  "line": null
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/",
   "target": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "type": "reference",
   "class": "section-index",
@@ -7667,6 +7659,15 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/action-economy.md",
+  "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/action-economy/",
   "target": "page:/docs/free-srd/core-rules/combat/#actions-in-combat",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#actions-in-combat",
@@ -7685,12 +7686,21 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement-actions",
   "type": "reference",
-  "url": "#movement",
+  "url": "/docs/free-srd/core-rules/movement/#movement-actions",
   "text": "Movement",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
   "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/action-economy/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/action-economy.md",
+  "line": 38
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7699,16 +7709,7 @@
   "url": "/docs/free-srd/core-rules/stats/#action-points",
   "text": "Stats — Action Points",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 69
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "page:/docs/free-srd/core-rules/stats/#speed",
-  "type": "reference",
-  "url": "/docs/free-srd/core-rules/stats/#speed",
-  "text": "Stats — Speed",
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 69
+  "line": 39
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7717,7 +7718,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 70
+  "line": 40
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7726,7 +7727,7 @@
   "url": "/docs/free-srd/core-rules/health/",
   "text": "Health",
   "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 71
+  "line": 41
  },
  {
   "source": "page:/docs/free-srd/core-rules/action-economy/",
@@ -7799,87 +7800,6 @@
   "text": null,
   "file": "content/docs/free-srd/core-rules/action-economy.md",
   "line": 34
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/movement",
-  "type": "include",
-  "url": "/snippets/rules/movement/movement",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 43
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/actions/move",
-  "type": "include",
-  "url": "/snippets/rules/actions/move",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 49
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/actions/step",
-  "type": "include",
-  "url": "/snippets/rules/actions/step",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 51
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/primary-speed",
-  "type": "include",
-  "url": "/snippets/rules/movement/primary-speed",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 55
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/speed-descriptors",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-descriptors",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 57
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/speed-tiers",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-tiers",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 59
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/speed-tiers-chart",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-tiers-chart",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 61
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/movement/relative-speed",
-  "type": "include",
-  "url": "/snippets/rules/movement/relative-speed",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 63
- },
- {
-  "source": "page:/docs/free-srd/core-rules/action-economy/",
-  "target": "rules/actions/difficult-terrain",
-  "type": "include",
-  "url": "/snippets/rules/actions/difficult-terrain",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/action-economy.md",
-  "line": 65
  },
  {
   "source": "page:/docs/free-srd/core-rules/attributes/",
@@ -8021,7 +7941,16 @@
   "target": "page:/docs/free-srd/core-rules/action-economy/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy/",
-  "text": "Action Economy & Movement",
+  "text": "Action Economy",
+  "file": "content/docs/free-srd/core-rules/combat.md",
+  "line": 9
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/combat/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
   "file": "content/docs/free-srd/core-rules/combat.md",
   "line": 9
  },
@@ -8075,9 +8004,18 @@
   "target": "page:/docs/free-srd/core-rules/action-economy/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy/",
-  "text": "Action Economy & Movement",
+  "text": "Action Economy",
   "file": "content/docs/free-srd/core-rules/combat.md",
   "line": 94
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/combat/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/combat.md",
+  "line": 95
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8086,7 +8024,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 95
+  "line": 96
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8095,7 +8033,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged & Broken Gear",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 96
+  "line": 97
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8104,7 +8042,7 @@
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 97
+  "line": 98
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8113,7 +8051,7 @@
   "url": "/docs/free-srd/core-rules/environmental-effects/",
   "text": "Environmental Effects",
   "file": "content/docs/free-srd/core-rules/combat.md",
-  "line": 98
+  "line": 99
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
@@ -8548,6 +8486,150 @@
   "line": 21
  },
  {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/#standard-actions",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/action-economy/#standard-actions",
+  "text": "Standard Actions",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/action-economy/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/action-economy/",
+  "text": "Action Economy",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 44
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/stats/#speed",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/stats/#speed",
+  "text": "Stats — Speed",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 45
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/combat/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/combat/",
+  "text": "Combat",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 46
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/",
+  "text": "Vehicle Rules",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 47
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "core-rules/size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/size/",
+  "text": "Size",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 48
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "page:/docs/free-srd/core-rules/environmental-effects/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/environmental-effects/",
+  "text": "Environmental Effects",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 49
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/movement",
+  "type": "include",
+  "url": "/snippets/rules/movement/movement",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 12
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/actions/move",
+  "type": "include",
+  "url": "/snippets/rules/actions/move",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/actions/step",
+  "type": "include",
+  "url": "/snippets/rules/actions/step",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/primary-speed",
+  "type": "include",
+  "url": "/snippets/rules/movement/primary-speed",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 28
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/speed-descriptors",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-descriptors",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 30
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/speed-tiers",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-tiers",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 32
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/speed-tiers-chart",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-tiers-chart",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 34
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/relative-speed",
+  "type": "include",
+  "url": "/snippets/rules/movement/relative-speed",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 36
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/movement/",
+  "target": "rules/movement/difficult-terrain",
+  "type": "include",
+  "url": "/snippets/rules/movement/difficult-terrain",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "line": 40
+ },
+ {
   "source": "page:/docs/free-srd/core-rules/sci-fi-additions/",
   "target": "rules/sci-fi/ballistics-in-space",
   "type": "include",
@@ -8617,7 +8699,7 @@
   "url": "/docs/free-srd/core-rules/attributes/",
   "text": "Attributes",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 61
+  "line": 59
  },
  {
   "source": "core-rules/size",
@@ -8626,7 +8708,7 @@
   "url": "/docs/free-srd/core-rules/stats/#grapple",
   "text": "Stats — Grapple",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 62
+  "line": 60
  },
  {
   "source": "core-rules/size",
@@ -8635,7 +8717,7 @@
   "url": "/docs/free-srd/core-rules/stats/#stealth",
   "text": "Stats — Stealth",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 62
+  "line": 60
  },
  {
   "source": "core-rules/size",
@@ -8644,7 +8726,7 @@
   "url": "/docs/free-srd/core-rules/combat/#damage-dice",
   "text": "Combat — Damage Dice",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 63
+  "line": 61
  },
  {
   "source": "core-rules/size",
@@ -8653,7 +8735,7 @@
   "url": "/snippets/rules/combat/damage-dice",
   "text": null,
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 51
+  "line": 49
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
@@ -8684,9 +8766,9 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement",
+  "url": "/docs/free-srd/core-rules/movement/#movement",
   "text": "Movement",
   "file": "content/docs/free-srd/core-rules/stats.md",
   "line": 31
@@ -8801,21 +8883,30 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "page:/docs/free-srd/core-rules/action-economy/#movement",
+  "target": "page:/docs/free-srd/core-rules/movement/#movement",
   "type": "reference",
-  "url": "/docs/free-srd/core-rules/action-economy/#movement",
+  "url": "/docs/free-srd/core-rules/movement/#movement",
   "text": "Movement Section",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 19
+  "line": 26
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 72
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
   "target": "page:/docs/free-srd/core-rules/action-economy/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy/",
-  "text": "Action Economy & Movement",
+  "text": "Action Economy",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 74
+  "line": 73
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8824,7 +8915,7 @@
   "url": "/docs/free-srd/core-rules/combat/",
   "text": "Combat",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 75
+  "line": 74
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8833,7 +8924,7 @@
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 76
+  "line": 75
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8842,7 +8933,7 @@
   "url": "/docs/free-srd/core-rules/wounds--conditions/",
   "text": "Wounds & Conditions",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 77
+  "line": 76
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8851,7 +8942,7 @@
   "url": "/docs/free-srd/core-rules/attributes/",
   "text": "Attributes",
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 78
+  "line": 77
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8864,15 +8955,6 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/vehicles/vehicle-movement",
-  "type": "include",
-  "url": "/snippets/rules/vehicles/vehicle-movement",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 10
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
   "target": "rules/vehicles/vehicle-size",
   "type": "include",
   "url": "/snippets/rules/vehicles/vehicle-size",
@@ -8882,57 +8964,12 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/movement/movement",
+  "target": "rules/vehicles/initiative-and-occupants",
   "type": "include",
-  "url": "/snippets/rules/movement/movement",
+  "url": "/snippets/rules/vehicles/initiative-and-occupants",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 30
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/movement/speed-tiers",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-tiers",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 34
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/movement/speed-tiers-chart",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-tiers-chart",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 36
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/movement/relative-speed",
-  "type": "include",
-  "url": "/snippets/rules/movement/relative-speed",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 38
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/movement/speed-descriptors",
-  "type": "include",
-  "url": "/snippets/rules/movement/speed-descriptors",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 42
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/vehicles/vehicle-actions",
-  "type": "include",
-  "url": "/snippets/rules/vehicles/vehicle-actions",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 48
+  "line": 14
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8941,34 +8978,7 @@
   "url": "/snippets/rules/vehicles/ignition",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 50
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/vehicles/drive",
-  "type": "include",
-  "url": "/snippets/rules/vehicles/drive",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 52
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/vehicles/boarding-and-bailing",
-  "type": "include",
-  "url": "/snippets/rules/vehicles/boarding-and-bailing",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 54
- },
- {
-  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "rules/vehicles/initiative-and-occupants",
-  "type": "include",
-  "url": "/snippets/rules/vehicles/initiative-and-occupants",
-  "text": null,
-  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 56
+  "line": 16
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8977,7 +8987,79 @@
   "url": "/snippets/rules/vehicles/cover-from-vehicles",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 58
+  "line": 18
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/vehicles/vehicle-movement",
+  "type": "include",
+  "url": "/snippets/rules/vehicles/vehicle-movement",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 23
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/movement/speed-tiers",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-tiers",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 37
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/movement/speed-tiers-chart",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-tiers-chart",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 39
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/movement/relative-speed",
+  "type": "include",
+  "url": "/snippets/rules/movement/relative-speed",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 41
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/movement/speed-descriptors",
+  "type": "include",
+  "url": "/snippets/rules/movement/speed-descriptors",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 45
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/vehicles/vehicle-actions",
+  "type": "include",
+  "url": "/snippets/rules/vehicles/vehicle-actions",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 52
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/vehicles/drive",
+  "type": "include",
+  "url": "/snippets/rules/vehicles/drive",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 54
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
+  "target": "rules/vehicles/boarding-and-bailing",
+  "type": "include",
+  "url": "/snippets/rules/vehicles/boarding-and-bailing",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
+  "line": 56
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8986,7 +9068,7 @@
   "url": "/snippets/rules/vehicles/impact-and-overrun",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 60
+  "line": 58
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -8995,7 +9077,7 @@
   "url": "/snippets/rules/vehicles/collision-damage",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 62
+  "line": 60
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
@@ -9004,7 +9086,7 @@
   "url": "/snippets/rules/vehicles/mounts",
   "text": null,
   "file": "content/docs/free-srd/core-rules/vehicle-rules.md",
-  "line": 70
+  "line": 68
  },
  {
   "source": "page:/docs/free-srd/core-rules/wounds--conditions/",
@@ -9386,6 +9468,15 @@
   "type": "reference",
   "url": "/docs/free-srd/core-rules/action-economy",
   "text": "Action Economy",
+  "file": "content/docs/free-srd/character-creation/character-creation-overview.md",
+  "line": 20
+ },
+ {
+  "source": "chargen/overview",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement",
+  "text": "Movement",
   "file": "content/docs/free-srd/character-creation/character-creation-overview.md",
   "line": 20
  },

@@ -288,16 +288,7 @@
    "rules/actions/multi-turn-actions",
    "rules/actions/opportunity-actions",
    "rules/combat/opportunity-attack",
-   "rules/actions/reactions",
-   "rules/movement/movement",
-   "rules/actions/move",
-   "rules/actions/step",
-   "rules/movement/primary-speed",
-   "rules/movement/speed-descriptors",
-   "rules/movement/speed-tiers",
-   "rules/movement/speed-tiers-chart",
-   "rules/movement/relative-speed",
-   "rules/actions/difficult-terrain"
+   "rules/actions/reactions"
   ]
  },
  {
@@ -416,6 +407,25 @@
   ]
  },
  {
+  "url": "/docs/free-srd/core-rules/movement/",
+  "title": "Movement",
+  "file": "content/docs/free-srd/core-rules/movement.md",
+  "section": "core-rules",
+  "weight": "45",
+  "wip": true,
+  "blocks": [
+   "rules/movement/movement",
+   "rules/actions/move",
+   "rules/actions/step",
+   "rules/movement/primary-speed",
+   "rules/movement/speed-descriptors",
+   "rules/movement/speed-tiers",
+   "rules/movement/speed-tiers-chart",
+   "rules/movement/relative-speed",
+   "rules/movement/difficult-terrain"
+  ]
+ },
+ {
   "url": "/docs/free-srd/core-rules/sci-fi-additions/",
   "title": "Sci-Fi Additions",
   "file": "content/docs/free-srd/core-rules/sci-fi-additions.md",
@@ -474,19 +484,18 @@
   "wip": true,
   "blocks": [
    "rules/vehicles/overview",
-   "rules/vehicles/vehicle-movement",
    "rules/vehicles/vehicle-size",
-   "rules/movement/movement",
+   "rules/vehicles/initiative-and-occupants",
+   "rules/vehicles/ignition",
+   "rules/vehicles/cover-from-vehicles",
+   "rules/vehicles/vehicle-movement",
    "rules/movement/speed-tiers",
    "rules/movement/speed-tiers-chart",
    "rules/movement/relative-speed",
    "rules/movement/speed-descriptors",
    "rules/vehicles/vehicle-actions",
-   "rules/vehicles/ignition",
    "rules/vehicles/drive",
    "rules/vehicles/boarding-and-bailing",
-   "rules/vehicles/initiative-and-occupants",
-   "rules/vehicles/cover-from-vehicles",
    "rules/vehicles/impact-and-overrun",
    "rules/vehicles/collision-damage",
    "rules/vehicles/mounts"
