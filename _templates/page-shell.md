@@ -9,16 +9,16 @@ weight: 60
 {{% include "/snippets/combat/overview" %}}
 
 {{< catalog layout="names" >}}
-combat/standard-attack
-- combat/disarm
-- combat/trip
+rules/combat/standard-attack
+- rules/combat/disarm
+- rules/combat/trip
 {{< /catalog >}}
 
 ---
 
 ## Aggressive Actions
 
-{{< blockdetails "combat/standard-attack" >}}
+{{< blockdetails "rules/combat/standard-attack" >}}
 
 <!--
 A SHELL PAGE: headings, tables and includes. It is NOT a block and carries no

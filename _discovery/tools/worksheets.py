@@ -31,30 +31,30 @@ ACCEPTED_TAGS = {          # C1b — small tags, all confirmed keep
     "melee-upgrade": "more expected later",
 }
 ACCEPTED_STRUCTURAL = {    # C1f — carry only structural tags, confirmed fine
-    "chargen/overview", "equipment/common-terms",
+    "chargen/overview", "gear/equipment/common-terms",
 }
 ACCEPTED_DEIXIS = {        # C3a — pointer reviewed, left as written
-    "environment/environmental-effects": "reads fine in place",
-    "objects/conditions": "reference is inside the same block",
-    "sci-fi-equipment/kit-supplies": "reads fine in place",
-    "vehicles/mounts": "all rules referenced are in the same snippet",
-    "wounds/wounds": "reference is inside the same block",
+    "rules/environment/environmental-effects": "reads fine in place",
+    "rules/objects/conditions": "reference is inside the same block",
+    "gear/sci-fi-equipment/kit-supplies": "reads fine in place",
+    "rules/vehicles/mounts": "all rules referenced are in the same snippet",
+    "rules/wounds/wounds": "reference is inside the same block",
 }
 ACCEPTED_BARE = {          # C7b — reviewed, stays nameless on the page
-    "actions/standard-actions": "prose between is necessary site chrome",
-    "combat/actions-in-combat": "prose between is necessary site chrome",
-    "objects/overview": "prose between is necessary site chrome",
-    "objects/armor-degradation": "leave bare",
-    "objects/shield-degradation": "leave bare",
-    "movement/speed-tiers": "leave bare",
-    "movement/speed-tiers-chart": "leave bare, and anchorless by decision",
+    "rules/actions/standard-actions": "prose between is necessary site chrome",
+    "rules/combat/actions-in-combat": "prose between is necessary site chrome",
+    "rules/objects/overview": "prose between is necessary site chrome",
+    "rules/objects/armor-degradation": "leave bare",
+    "rules/objects/shield-degradation": "leave bare",
+    "rules/movement/speed-tiers": "leave bare",
+    "rules/movement/speed-tiers-chart": "leave bare, and anchorless by decision",
 }
 ACCEPTED_NAMES = {         # C7c — page heading and block title both stand
-    "movement/primary-speed", "basics/decision-rolls", "combat/standard-attack",
-    "combat/brace", "movement/speed-descriptors",
+    "rules/movement/primary-speed", "rules/basics/decision-rolls", "rules/combat/standard-attack",
+    "rules/combat/brace", "rules/movement/speed-descriptors",
 }
 ACCEPTED_TITLES = {        # C5 — title confirmed appropriate as-is
-    "movement/speed-tiers", "movement/speed-tiers-chart", "combat/grapple",
+    "rules/movement/speed-tiers", "rules/movement/speed-tiers-chart", "rules/combat/grapple",
 }
 
 CATEGORY_TAGS = {"core", "sci-fi", "fantasy"}
@@ -142,7 +142,7 @@ w("")
 w("Every decision has an **empty HTML comment already sitting under it**:")
 w("")
 w("```")
-w("- **`traits/alert`** \u2014 Alert")
+w("- **`character/traits/alert`** \u2014 Alert")
 w("  <!-- ok / new title: -->")
 w("```")
 w("")
@@ -820,7 +820,7 @@ w("")
 w("Rendered output is the same either way. What changes is that the name stops")
 w("being typed inside the block. **The `*(3 AP)*` part stays in the prose** — it")
 w("is not part of the name, and every one of these restates the cost in the body")
-w("(checked; `combat/stealth` has no cost and says so).")
+w("(checked; `rules/combat/stealth` has no cost and says so).")
 w("")
 seen = set()
 for path, bid, grp, bl in withlead:
@@ -874,11 +874,11 @@ w("supplies no name. That is right where the heading names a *group*, and a")
 w("smell where it names the same single block twice over.")
 w("")
 DISAGREE = [
-    ("core-rules/action-economy.md", "movement/primary-speed", "Speed", "one block"),
-    ("core-rules/basics.md", "basics/decision-rolls", "Decision Rolls - the Primary Mechanic", "one block"),
-    ("core-rules/combat.md", "combat/standard-attack", "Aggressive Actions", "a group of 9"),
-    ("core-rules/combat.md", "combat/brace", "Defensive Actions", "a group of 4"),
-    ("core-rules/vehicle-rules.md", "movement/speed-descriptors", "Modes & Maneuverability", "one block"),
+    ("core-rules/action-economy.md", "rules/movement/primary-speed", "Speed", "one block"),
+    ("core-rules/basics.md", "rules/basics/decision-rolls", "Decision Rolls - the Primary Mechanic", "one block"),
+    ("core-rules/combat.md", "rules/combat/standard-attack", "Aggressive Actions", "a group of 9"),
+    ("core-rules/combat.md", "rules/combat/brace", "Defensive Actions", "a group of 4"),
+    ("core-rules/vehicle-rules.md", "rules/movement/speed-descriptors", "Modes & Maneuverability", "one block"),
 ]
 open_d = [d for d in DISAGREE if d[1] not in ACCEPTED_NAMES]
 if len(open_d) < len(DISAGREE):
@@ -894,12 +894,12 @@ w("")
 
 w("### C7d. One anchor drifted")
 w("")
-w("`movement/speed-tiers-chart` moved from `#speed-tiers` to `#speed`. It is a")
+w("`rules/movement/speed-tiers-chart` moved from `#speed-tiers` to `#speed`. It is a")
 w("bare block, so its anchor is inherited from whatever heading precedes it, and")
 w("that heading became a generated one. Nothing links to it and the site has zero")
 w("broken links — but **a bare block's anchor is a side effect of its neighbour**,")
 w("which is the real argument for resolving C7a and C7b. Its old anchor was a")
-w("duplicate of `movement/speed-tiers` anyway, so neither value was correct.")
+w("duplicate of `rules/movement/speed-tiers` anyway, so neither value was correct.")
 w("")
 w("**Settled: left anchorless.** It is a chart belonging to Speed Tiers, not a")
 w("thing a reader looks up on its own.")
@@ -1031,7 +1031,7 @@ w("prints `title` instead. For most of them that title has already been proofrea
 w("because it *is* the heading a reader sees. For a few it has never been rendered")
 w("anywhere, and those are the ones that can print wrong.")
 w("")
-w("This is how `sci-fi/huds` was caught printing \"Huds\" instead of")
+w("This is how `rules/sci-fi/huds` was caught printing \"Huds\" instead of")
 w("\"Heads Up Displays (HUDs)\".")
 w("")
 

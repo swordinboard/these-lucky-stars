@@ -10,9 +10,9 @@ bookToC: false
 {{< tabs >}}
 {{% tab "Sci-Fi" %}}
 {{< catalog layout="names" >}}
-traits/inter-planet-traveler
-traits/scrap-hauler
-traits/space-adept
+character/traits/inter-planet-traveler
+character/traits/scrap-hauler
+character/traits/space-adept
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -20,8 +20,8 @@ traits/space-adept
 
 ## Sci-Fi
 
-{{< blockdetails "traits/inter-planet-traveler" "h3" >}}
+{{< blockdetails "character/traits/inter-planet-traveler" "h3" >}}
 
-{{< blockdetails "traits/scrap-hauler" "h3" >}}
+{{< blockdetails "character/traits/scrap-hauler" "h3" >}}
 
-{{< blockdetails "traits/space-adept" "h3" >}}
+{{< blockdetails "character/traits/space-adept" "h3" >}}

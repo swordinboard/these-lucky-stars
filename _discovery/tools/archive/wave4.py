@@ -27,8 +27,8 @@ def eval_block(name):
 SUSPECT_PAIRS = eval_block("SUSPECT_PAIRS")
 IMPLICIT = eval_block("IMPLICIT")
 
-VARIANT = {"generic-equipment/field-ration": "field-ration",
-           "sci-fi-equipment/field-ration": "field-ration"}
+VARIANT = {"gear/generic-equipment/field-ration": "field-ration",
+           "gear/sci-fi-equipment/field-ration": "field-ration"}
 
 # ---------- block table keyed by id, with final file locations ----------
 blocks = {}
@@ -162,8 +162,8 @@ for path, P in RAW.items():
         # typing rules
         pair = (e["source"], e["target"])
         line = line_text(path, lk["line"]).strip()
-        if pair in (("traits/particularly-attractive", "traits/unremarkable"),
-                    ("traits/unremarkable", "traits/particularly-attractive")):
+        if pair in (("character/traits/particularly-attractive", "character/traits/unremarkable"),
+                    ("character/traits/unremarkable", "character/traits/particularly-attractive")):
             e["type"] = "mention"; e["class"] = "exclusivity"
             e["note"] = "ruled inert: gameplay-level exclusivity, no builder semantics"
         elif pair in SUSPECT_PAIRS:

@@ -12,23 +12,28 @@ Opposition, allies, and background characters for spacefaring settings. The
 automated machines are statted first, since a bot is the creature a party is
 most likely to be travelling with.
 
-{{% include "/snippets/bots/automated-machines" %}}
+## Non-Player Characters
 
-## Drone Platforms
+The people a party argues with before anyone draws — dock security, station
+crews, pirates.
 
-- [HEL-1](/docs/free-srd/creatures--npcs/sci-fi/hel-1/) — A small flying drone
-- [T00L](/docs/free-srd/creatures--npcs/sci-fi/t00l/) — A sturdy and adaptable assistant
+- [Corporate Security](path) — Corporate backed security used to ensure trade secrets remain trade secrets.
+- [Station Guard](/docs/free-srd/creatures--npcs/sci-fi/station-guard/) — Contract dock security, money first and effort second
+- [Scrapper](path) — Shipyard thieves and starship pirates also make for good miners and mechanics.
+- [Scientist](path) — Lots of qualifications floating around in space.
+
+
+## Robot & Drone Platforms
+
+{{% details "Automated Machines" %}}
+
+{{% include "/snippets/rules/sci-fi/automated-machines" %}}
+
+{{% /details %}}
+
 - [BAL](/docs/free-srd/creatures--npcs/sci-fi/b2/) — A fast-rolling recon drone
+- [HEL-1](/docs/free-srd/creatures--npcs/sci-fi/hel-1/) — A small flying drone
+- [T00L](/docs/free-srd/creatures--npcs/sci-fi/t00l/) — An adaptable single-task assistant.
+- [TRK-A](/docs/free-srd/creatures--npcs/sci-fi/trk-a/) — A reliable base platform.
 
-## Robot Platforms
-
-- [TRK-A](/docs/free-srd/creatures--npcs/sci-fi/trk-a/) — A small and reliable platform
-- *(TBD)* — A full size humanoid robot for seamless integration
-
-## Alien Life & Crews
-
-Nothing statted yet. Alien life, station crews and pirates belong here.
-
-The parts that go **inside** a bot are equipment rather than creatures, and stay
-with the rest of the gear:
-[Bot Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/).
+The upgrades and parts that go **inside** an automated machine are listed in the equipment section: [Bot Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/).

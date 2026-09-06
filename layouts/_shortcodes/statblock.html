@@ -1,0 +1,70 @@
+{{/*
+  statblock — a self-contained stat card for a creature, NPC or vehicle.
+
+  SIGNATURE
+    {{% statblock [name="<name>"] [type="<type line>"] %}}
+    markdown body, sections divided by ---
+    {{% /statblock %}}
+
+  EXAMPLE
+    {{% statblock type="Medium Humanoid — Level 2" %}}
+    > **DEF** 8 · **VIT** 2 · **AP** 4
+
+    | STR | AGI |
+    |---|---|
+    | 2 | 2 |
+
+    ---
+
+    **Attacks**
+
+    - **Shock Baton** — 2 AP · ATK +2 (STR)
+    {{% /statblock %}}
+
+  ARGUMENTS
+    name  (optional) the card's heading. Defaults to the page's own title,
+          which for a snippet IS the block title and for a page-homed creature
+          is the page title — so it can never drift from the block. Pass this
+          only when the card is not the page's or block's namesake.
+    type  (optional) the italic line under the name: size, kind, level.
+
+  NOTE THE PERCENT FORM. `{{% %}}` renders the body as markdown before it
+  reaches this template, the same way the theme's `details` works. With `{{< >}}`
+  the body would arrive as raw text and print as one unformatted paragraph.
+
+  Use `---` between sections. It renders as an <hr>, which the card styles as a
+  band divider rather than a page rule — that is where the horizontal bands in
+  a 3.5e table or a 5.5e card come from.
+
+  THE CARD ALWAYS PRINTS ITS OWN NAME, and that is the point of it: the PDF
+  builder can pull a single block into a document on its own, where a heading
+  supplied by some other page does not come along. A card that did not name
+  itself would arrive in a GM's PDF as an anonymous grid of numbers.
+
+  That is also why a snippet using this is included WITHOUT a level argument —
+  `{{% include "/snippets/statblocks/creatures/station-guard" %}}` and no `"h3"`. The card
+  is the heading. builddata.py knows this: a snippet whose body calls statblock
+  takes its anchor from its own title, the same rule blockdetails gets.
+
+  Styling lives in assets/content-constructs.css so the site and the PDF builder
+  stay in step. Do not put it in _custom.scss or builder.css.
+*/}}
+{{- $name := .Get "name" | default .Page.Title -}}
+{{- $type := .Get "type" -}}
+{{- /* The anchor rides on the card ONLY when the card is a snippet's whole
+       presentation. A page-homed creature already opens with an h1 carrying
+       that exact anchor, and emitting it twice puts two elements with the same
+       id on the page — which is invalid, and sends every link to whichever the
+       browser finds first. */ -}}
+{{- $snippet := hasPrefix .Page.File.Path "snippets/" -}}
+<div class="statblock"{{ if $snippet }} id="{{ anchorize $name }}"{{ end }}>
+<div class="statblock-head">
+<p class="statblock-name">{{ $name | .Page.RenderString }}</p>
+{{- with $type }}
+<p class="statblock-type">{{ . | $.Page.RenderString }}</p>
+{{- end }}
+</div>
+<div class="statblock-body markdown-inner">
+{{ .Inner | safeHTML -}}
+</div></div>
+{{- /* remove whitespaces */ -}}

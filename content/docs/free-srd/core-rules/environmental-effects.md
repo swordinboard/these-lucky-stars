@@ -5,6 +5,6 @@ weight: 80
 ---
 
 
-{{% include "/snippets/environment/environmental-effects" "h2" %}}
+{{% include "/snippets/rules/environment/environmental-effects" "h2" %}}
 
-{{% include "/snippets/environment/extreme-environments" "h2" %}}
+{{% include "/snippets/rules/environment/extreme-environments" "h2" %}}

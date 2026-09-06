@@ -1,6 +1,6 @@
 ---
 title: "Abilities"
-id: abilities/overview
+id: character/abilities/overview
 category: [core]
 type: reference
 tags: [ability, character-creation]

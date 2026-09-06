@@ -53,16 +53,16 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `basics/key-terms` | Key Terms | snippet (proposed) | core | rule | core | low | basics |
-| `basics/decision-rolls` | Decision Rolls | snippet (proposed) | core | rule | core | low | basics |
-| `basics/target-numbers` | Target Numbers | snippet (proposed) | core | rule | core | low | basics — Includes the difficulty guide table and the four task-band descriptions. |
-| `basics/success-and-failure` | Success and Failure | snippet (proposed) | core | rule | core | low | basics |
-| `basics/advantage` | Advantage | snippet (proposed) | core | rule | core | medium | basics — Includes Gaining Advantage, GM notes, and contested-roll guidance. |
-| `basics/contested-rolls` | Contested Rolls | snippet (proposed) | core | rule | core | low | basics |
-| `basics/resolving-a-tie` | Resolving a Tie | snippet (proposed) | core | rule | core | low | basics |
-| `basics/the-rounding-rule` | The Rounding Rule | snippet (proposed) | core | rule | core | low | basics |
-| `basics/supply-rolls` | Supply Rolls | snippet (proposed) | core | rule | core | medium | basics |
-| `basics/d100-or-percentage` | D100 or Percentage | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/key-terms` | Key Terms | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/decision-rolls` | Decision Rolls | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/target-numbers` | Target Numbers | snippet (proposed) | core | rule | core | low | basics — Includes the difficulty guide table and the four task-band descriptions. |
+| `rules/basics/success-and-failure` | Success and Failure | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/advantage` | Advantage | snippet (proposed) | core | rule | core | medium | basics — Includes Gaining Advantage, GM notes, and contested-roll guidance. |
+| `rules/basics/contested-rolls` | Contested Rolls | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/resolving-a-tie` | Resolving a Tie | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/the-rounding-rule` | The Rounding Rule | snippet (proposed) | core | rule | core | low | basics |
+| `rules/basics/supply-rolls` | Supply Rolls | snippet (proposed) | core | rule | core | medium | basics |
+| `rules/basics/d100-or-percentage` | D100 or Percentage | snippet (proposed) | core | rule | core | low | basics |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -76,11 +76,11 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `attributes/overview` | Attributes | snippet (proposed) | core | rule | core | low | attributes |
-| `attributes/determining-attributes` | Two Ways to Determine Attributes | snippet (proposed) | core | rule | core | low | attributes |
-| `attributes/attribute-values` | Attribute Values | snippet (proposed) | core | rule | core | low | attributes |
-| `attributes/physical-attributes` | Physical Attributes | snippet (proposed) | core | rule | core | low | attributes |
-| `attributes/mental-attributes` | Mental Attributes | snippet (proposed) | core | rule | core | low | attributes |
+| `rules/attributes/overview` | Attributes | snippet (proposed) | core | rule | core | low | attributes |
+| `rules/attributes/determining-attributes` | Two Ways to Determine Attributes | snippet (proposed) | core | rule | core | low | attributes |
+| `rules/attributes/attribute-values` | Attribute Values | snippet (proposed) | core | rule | core | low | attributes |
+| `rules/attributes/physical-attributes` | Physical Attributes | snippet (proposed) | core | rule | core | low | attributes |
+| `rules/attributes/mental-attributes` | Mental Attributes | snippet (proposed) | core | rule | core | low | attributes |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -103,9 +103,9 @@ blocks and keep `home: snippet (existing)`.
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
 | `stats/wounds-and-conditions-summary` | Wounds & Conditions | snippet (proposed) | core | reference | core | low | stats — Duplicates the intro of the Wounds & Conditions page — identity decision (one block, two tags vs. two blocks) flagged in Queue 2. |
-| `stats/stress-threshold` | Stress Threshold | snippet (proposed) | core | rule | core | low | stats |
-| `stats/luck` | Luck | snippet (proposed) | core | rule | core | low | luck, stats |
-| `stats/attack` | Attack | snippet (proposed) | core | rule | core | low | stats |
+| `rules/stats/stress-threshold` | Stress Threshold | snippet (proposed) | core | rule | core | low | stats |
+| `rules/stats/luck` | Luck | snippet (proposed) | core | rule | core | low | luck, stats |
+| `rules/stats/attack` | Attack | snippet (proposed) | core | rule | core | low | stats |
 | `stats/blank-boxes` | Blank Boxes | snippet (proposed) | core | reference | core | low | stats — Character-sheet-specific note; low value as a standalone block. |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
@@ -120,13 +120,13 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `actions/action-types` | Action Types | snippet (proposed) | core | rule | core | low | actions — The three-category framing paragraph. |
-| `actions/standard-actions` | Standard Actions | snippet (proposed) | core | rule | core | low | actions |
-| `actions/readied-actions` | Readied Actions | snippet (proposed) | core | rule | core | medium | actions |
-| `actions/multi-turn-actions` | Multi-Turn Actions | snippet (proposed) | core | rule | core | low | actions |
-| `actions/opportunity-actions` | Opportunity Actions | snippet (proposed) | core | rule | core | low | actions — Framing rules for opportunity actions; the Opportunity Attack itself is already the combat/opportunity-attack snippet. |
-| `actions/reactions` | Reactions | snippet (proposed) | core | rule | core | low | actions |
-| `actions/difficult-terrain` | Difficult Terrain and Obstacles | snippet (proposed) | core | rule | core | low | actions |
+| `rules/actions/action-types` | Action Types | snippet (proposed) | core | rule | core | low | actions — The three-category framing paragraph. |
+| `rules/actions/standard-actions` | Standard Actions | snippet (proposed) | core | rule | core | low | actions |
+| `rules/actions/readied-actions` | Readied Actions | snippet (proposed) | core | rule | core | medium | actions |
+| `rules/actions/multi-turn-actions` | Multi-Turn Actions | snippet (proposed) | core | rule | core | low | actions |
+| `rules/actions/opportunity-actions` | Opportunity Actions | snippet (proposed) | core | rule | core | low | actions — Framing rules for opportunity actions; the Opportunity Attack itself is already the rules/combat/opportunity-attack snippet. |
+| `rules/actions/reactions` | Reactions | snippet (proposed) | core | rule | core | low | actions |
+| `rules/actions/difficult-terrain` | Difficult Terrain and Obstacles | snippet (proposed) | core | rule | core | low | actions |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -140,7 +140,7 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `health/overview` | Health | snippet (proposed) | core | reference | core | low | health |
+| `rules/health/overview` | Health | snippet (proposed) | core | reference | core | low | health |
 
 ## `content/docs/free-srd/core-rules/combat.md`
 
@@ -148,17 +148,17 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `combat/combat-basics` | Combat Basics | snippet (proposed) | core | rule | core | low | combat |
+| `rules/combat/combat-basics` | Combat Basics | snippet (proposed) | core | rule | core | low | combat |
 | `combat/attack-roll` | The Attack Roll: Opposed Rolls | snippet (proposed) | core | rule | core | low | combat |
-| `combat/advantage-in-combat` | Advantage and Disadvantage in Combat | snippet (proposed) | core | rule | core | low | combat — Depends on basics/advantage for the advantage scale (edge queued). |
-| `combat/cover` | Cover | snippet (proposed) | core | rule | core | medium | combat |
-| `combat/surprise-attacks` | Surprise Attacks | snippet (proposed) | core | rule | core | medium | combat |
-| `combat/steps-to-an-attack` | Steps to an Attack | snippet (proposed) | core | rule | core | low | combat |
+| `combat/advantage-in-combat` | Advantage and Disadvantage in Combat | snippet (proposed) | core | rule | core | low | combat — Depends on rules/basics/advantage for the advantage scale (edge queued). |
+| `rules/combat/cover` | Cover | snippet (proposed) | core | rule | core | medium | combat |
+| `rules/combat/surprise-attacks` | Surprise Attacks | snippet (proposed) | core | rule | core | medium | combat |
+| `rules/combat/steps-to-an-attack` | Steps to an Attack | snippet (proposed) | core | rule | core | low | combat |
 | `combat/damage-overview` | Damage | snippet (proposed) | core | rule | core | low | combat — The DEF damage formula. |
 | `combat/damage-modifiers` | Damage Modifiers | snippet (proposed) | core | rule | core | low | combat |
 | `combat/damage-types` | Damage Types | snippet (proposed) | core | rule | core | low | combat |
-| `combat/damage-sources` | Damage Sources | snippet (proposed) | core | rule | core | low | combat |
-| `combat/damage-resistance` | Damage Resistance and Weakness | snippet (proposed) | core | rule | core | high | combat |
+| `rules/combat/damage-sources` | Damage Sources | snippet (proposed) | core | rule | core | low | combat |
+| `rules/combat/damage-resistance` | Damage Resistance and Weakness | snippet (proposed) | core | rule | core | high | combat |
 | `combat/action-catalog` | Actions in Combat | snippet (proposed) | core | rule | core | medium | combat — Queue 5: split per named action (Disarm, Trip, Shatter, Brace…) vs. keep as one catalog. Contains includes of move/step/grapple/stealth/opportunity-attack snippets either way. |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
@@ -173,31 +173,31 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `wounds/overview` | Wounds & Conditions | snippet (proposed) | core | reference | core | low |  — Intro; overlaps the stats-page summary (Queue 2 identity flag). |
-| `wounds/wounds` | Wounds | snippet (proposed) | core | rule | core | medium |  — Minor/major classification, dressing/healing rules, narrative healing. |
-| `wounds/burn` | Burn | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/contusion` | Contusion | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/dislocation` | Dislocation | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/fracture` | Fracture | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/laceration` | Laceration | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/puncture` | Puncture | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/sprain` | Sprain | snippet (proposed) | core | rule | core | low | wounds, wound-type |
-| `wounds/common-injuries` | Common Injuries | snippet (proposed) | core | reference | core | low |  |
-| `conditions/overview` | Conditions | snippet (proposed) | core | reference | core | medium |  — Condition framing + summary table. |
-| `conditions/asphyxiating` | Asphyxiating | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/bleeding` | Bleeding | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/confused` | Confused | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/crippled` | Crippled | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/dying` | Dying | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/fatigued` | Fatigued | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/frightened` | Frightened | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/immobilized` | Immobilized | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/pinned` | Pinned | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/restrained` | Restrained [___] | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/shaken` | Shaken | snippet (proposed) | core | rule | core | medium | conditions, condition |
-| `conditions/sick` | Sick | snippet (proposed) | core | rule | core | low | conditions, condition |
-| `conditions/stressed` | Stressed | snippet (proposed) | core | rule | core | medium | conditions, condition |
-| `conditions/unconscious` | Unconscious | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/wounds/overview` | Wounds & Conditions | snippet (proposed) | core | reference | core | low |  — Intro; overlaps the stats-page summary (Queue 2 identity flag). |
+| `rules/wounds/wounds` | Wounds | snippet (proposed) | core | rule | core | medium |  — Minor/major classification, dressing/healing rules, narrative healing. |
+| `rules/wounds/burn` | Burn | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/contusion` | Contusion | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/dislocation` | Dislocation | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/fracture` | Fracture | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/laceration` | Laceration | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/puncture` | Puncture | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/sprain` | Sprain | snippet (proposed) | core | rule | core | low | wounds, wound-type |
+| `rules/wounds/common-injuries` | Common Injuries | snippet (proposed) | core | reference | core | low |  |
+| `rules/conditions/overview` | Conditions | snippet (proposed) | core | reference | core | medium |  — Condition framing + summary table. |
+| `rules/conditions/asphyxiating` | Asphyxiating | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/bleeding` | Bleeding | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/confused` | Confused | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/crippled` | Crippled | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/dying` | Dying | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/fatigued` | Fatigued | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/frightened` | Frightened | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/immobilized` | Immobilized | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/pinned` | Pinned | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/restrained` | Restrained [___] | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/shaken` | Shaken | snippet (proposed) | core | rule | core | medium | conditions, condition |
+| `rules/conditions/sick` | Sick | snippet (proposed) | core | rule | core | low | conditions, condition |
+| `rules/conditions/stressed` | Stressed | snippet (proposed) | core | rule | core | medium | conditions, condition |
+| `rules/conditions/unconscious` | Unconscious | snippet (proposed) | core | rule | core | low | conditions, condition |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -232,17 +232,17 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `vehicles/overview` | Vehicle Rules | snippet (proposed) | core | reference | supplement | low | vehicles, wip |
-| `vehicles/vehicle-size` | Vehicle Size | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/vehicle-actions` | Vehicle Actions | snippet (proposed) | core | rule | supplement | low | vehicles, wip — Intro + Driver Actions disadvantage rule. |
-| `vehicles/ignition` | Ignition | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/drive` | Drive | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/boarding-and-bailing` | Boarding & Bailing | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/initiative-and-occupants` | Initiative & Occupants | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/cover-from-vehicles` | Cover from Vehicles | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/impact-and-overrun` | Impact & Overrun | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
-| `vehicles/collision-damage` | Collision Damage | snippet (proposed) | core | rule | supplement | medium | vehicles, wip — Includes damage-to-vehicle and occupant brace rules. |
-| `vehicles/mounts` | Mounts | snippet (proposed) | core | rule | supplement | low | vehicles, wip — Queue 5: could split into equipment-vs-ally / features / unwilling / impact / sudden stops. |
+| `rules/vehicles/overview` | Vehicle Rules | snippet (proposed) | core | reference | supplement | low | vehicles, wip |
+| `rules/vehicles/vehicle-size` | Vehicle Size | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/vehicle-actions` | Vehicle Actions | snippet (proposed) | core | rule | supplement | low | vehicles, wip — Intro + Driver Actions disadvantage rule. |
+| `rules/vehicles/ignition` | Ignition | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/drive` | Drive | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/boarding-and-bailing` | Boarding & Bailing | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/initiative-and-occupants` | Initiative & Occupants | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/cover-from-vehicles` | Cover from Vehicles | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/impact-and-overrun` | Impact & Overrun | snippet (proposed) | core | rule | supplement | low | vehicles, wip |
+| `rules/vehicles/collision-damage` | Collision Damage | snippet (proposed) | core | rule | supplement | medium | vehicles, wip — Includes damage-to-vehicle and occupant brace rules. |
+| `rules/vehicles/mounts` | Mounts | snippet (proposed) | core | rule | supplement | low | vehicles, wip — Queue 5: could split into equipment-vs-ally / features / unwilling / impact / sudden stops. |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -256,11 +256,11 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `objects/overview` | Damaged & Broken Gear | snippet (proposed) | core | reference | core | low | objects |
-| `objects/targeting-objects` | Targeting Objects | snippet (proposed) | core | rule | core | low | objects |
-| `objects/durability` | Object Durability | snippet (proposed) | core | rule | core | medium | objects |
-| `objects/conditions` | Object Conditions | snippet (proposed) | core | rule | core | medium | objects |
-| `objects/material-def` | Material DEF | snippet (proposed) | core | reference | core | low | objects — Reference tables (material DEF, common item DEF). |
+| `rules/objects/overview` | Damaged & Broken Gear | snippet (proposed) | core | reference | core | low | objects |
+| `rules/objects/targeting-objects` | Targeting Objects | snippet (proposed) | core | rule | core | low | objects |
+| `rules/objects/durability` | Object Durability | snippet (proposed) | core | rule | core | medium | objects |
+| `rules/objects/conditions` | Object Conditions | snippet (proposed) | core | rule | core | medium | objects |
+| `rules/objects/material-def` | Material DEF | snippet (proposed) | core | reference | core | low | objects — Reference tables (material DEF, common item DEF). |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -274,7 +274,7 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `sci-fi/computer-systems` | Computer Systems | snippet (proposed) | sci-fi | rule | module | low | computers, sci-fi — Networks, security levels, hacking actions, countermeasures as one unit. |
+| `rules/sci-fi/computer-systems` | Computer Systems | snippet (proposed) | sci-fi | rule | module | low | computers, sci-fi — Networks, security levels, hacking actions, countermeasures as one unit. |
 
 ## `content/docs/free-srd/character-creation/_index.md`
 
@@ -343,27 +343,27 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `traits/overview` | Traits | snippet (proposed) | core | reference | core | low | character-creation, trait |
+| `character/traits/overview` | Traits | snippet (proposed) | core | reference | core | low | character-creation, trait |
 | `traits/racial-traits` | Racial Traits | snippet (proposed) | core | rule | core | low | character-creation, racial, trait — The [Racial] label rule. |
-| `traits/alert` | Alert | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/composed` | Composed | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/diplomatic` | Diplomatic | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/hot-headed` | Hot-Headed | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/intimidating` | Intimidating | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/lucky` | Lucky | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/mentally-sound` | Mentally Sound | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/particularly-attractive` | Particularly Attractive | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/picture-of-health` | Picture of Health | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/sly` | Sly | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/sneaky` | Sneaky | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/stubborn` | Stubborn | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/tough` | Tough | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/unremarkable` | Unremarkable | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/unshakable` | Unshakable | snippet (proposed) | core | feature | core | medium | trait, core |
-| `traits/well-connected` | Well-Connected | snippet (proposed) | core | feature | core | low | trait, core |
-| `traits/inter-planet-traveler` | Inter-Planet Traveler | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
-| `traits/scrap-hauler` | Scrap Hauler | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
-| `traits/space-adept` | Space Adept | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
+| `character/traits/alert` | Alert | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/composed` | Composed | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/diplomatic` | Diplomatic | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/hot-headed` | Hot-Headed | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/intimidating` | Intimidating | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/lucky` | Lucky | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/mentally-sound` | Mentally Sound | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/particularly-attractive` | Particularly Attractive | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/picture-of-health` | Picture of Health | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/sly` | Sly | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/sneaky` | Sneaky | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/stubborn` | Stubborn | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/tough` | Tough | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/unremarkable` | Unremarkable | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/unshakable` | Unshakable | snippet (proposed) | core | feature | core | medium | trait, core |
+| `character/traits/well-connected` | Well-Connected | snippet (proposed) | core | feature | core | low | trait, core |
+| `character/traits/inter-planet-traveler` | Inter-Planet Traveler | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
+| `character/traits/scrap-hauler` | Scrap Hauler | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
+| `character/traits/space-adept` | Space Adept | snippet (proposed) | sci-fi | feature | module | low | trait, sci-fi |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -380,24 +380,24 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `proficiencies/overview` | Proficiencies | snippet (proposed) | core | reference | core | low | character-creation, proficiency |
-| `proficiencies/armor` | Armor | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/b-e-kit` | B&E Kit | snippet (proposed) | core | feature | core | medium | proficiency, core |
-| `proficiencies/disguise-kit` | Disguise Kit | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/improved-ability` | Improved Ability | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/licensed-instincts` | Licensed Instincts | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/martial-training` | Martial Training | snippet (proposed) | core | feature | core | high | proficiency, core |
-| `proficiencies/medic-training` | Medic Training | snippet (proposed) | core | feature | core | medium | proficiency, core |
-| `proficiencies/medical-instincts` | Medical Instincts | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/negotiation-training` | Negotiation Training | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/repair-kit` | Repair Kit | snippet (proposed) | core | feature | core | medium | proficiency, core |
-| `proficiencies/research` | Research | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/survival-training` | Survival Training | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/vehicle` | Vehicle | snippet (proposed) | core | feature | core | low | proficiency, core |
-| `proficiencies/weapon` | Weapon | snippet (proposed) | core | feature | core | high | proficiency, core |
-| `proficiencies/comp-jack` | Comp Jack | snippet (proposed) | sci-fi | feature | module | high | proficiency, sci-fi |
-| `proficiencies/general-robotics` | General Robotics | snippet (proposed) | sci-fi | feature | module | medium | proficiency, sci-fi |
-| `proficiencies/general-technology` | General Technology | snippet (proposed) | sci-fi | feature | module | high | proficiency, sci-fi |
+| `character/proficiencies/overview` | Proficiencies | snippet (proposed) | core | reference | core | low | character-creation, proficiency |
+| `character/proficiencies/armor` | Armor | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/b-e-kit` | B&E Kit | snippet (proposed) | core | feature | core | medium | proficiency, core |
+| `character/proficiencies/disguise-kit` | Disguise Kit | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/improved-ability` | Improved Ability | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/licensed-instincts` | Licensed Instincts | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/martial-training` | Martial Training | snippet (proposed) | core | feature | core | high | proficiency, core |
+| `character/proficiencies/medic-training` | Medic Training | snippet (proposed) | core | feature | core | medium | proficiency, core |
+| `character/proficiencies/medical-instincts` | Medical Instincts | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/negotiation-training` | Negotiation Training | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/repair-kit` | Repair Kit | snippet (proposed) | core | feature | core | medium | proficiency, core |
+| `character/proficiencies/research` | Research | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/survival-training` | Survival Training | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/vehicle` | Vehicle | snippet (proposed) | core | feature | core | low | proficiency, core |
+| `character/proficiencies/weapon` | Weapon | snippet (proposed) | core | feature | core | high | proficiency, core |
+| `character/proficiencies/comp-jack` | Comp Jack | snippet (proposed) | sci-fi | feature | module | high | proficiency, sci-fi |
+| `character/proficiencies/general-robotics` | General Robotics | snippet (proposed) | sci-fi | feature | module | medium | proficiency, sci-fi |
+| `character/proficiencies/general-technology` | General Technology | snippet (proposed) | sci-fi | feature | module | high | proficiency, sci-fi |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -413,82 +413,82 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `abilities/overview` | Abilities | snippet (proposed) | core | reference | core | low | ability, character-creation |
-| `abilities/agile-charge` | Agile Charge | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/agile-dodge` | Agile Dodge | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/bash` | Bash | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/bolster` | Bolster | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/charge` | Charge | snippet (proposed) | core | feature | core | high | ability, core, general |
-| `abilities/controlled-suppressing-fire` | Controlled Suppressing Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/coordinated-strike` | Coordinated Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/danger-reflex` | Danger Reflex | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/dead-drop` | Dead Drop | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/defender` | Defender | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/dual-attack` | Dual Attack | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/dual-defense` | Dual Defense | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/dual-strike` | Dual Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/expert` | Expert | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/extended-rage` | Extended Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/extra-attack` | Extra Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/fast-kit-trap` | Fast Kit Trap | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/fearless-rage` | Fearless Rage | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/field-medic` | Field Medic | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/field-patch` | Field Patch | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/focus-attack` | Focus Attack | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/focus-in` | Focus In | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/friend-in-need` | Friend in Need | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/general-spectacle` | General Spectacle | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/improved-bash` | Improved Bash | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/improved-suppressing-fire` | Improved Suppressing Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/indomitable-rage` | Indomitable Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/just-grazed` | Just Grazed | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/just-winded` | Just Winded | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/kit-trap` | Kit Trap | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/leaping-charge` | Leaping Charge | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/leg-shot` | Leg Shot | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/line-of-fire` | Line of Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/long-performance` | Long Performance | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/martial-supremacy` | Martial Supremacy | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/momentum-dodge` | Momentum Dodge | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/oppressive-suppression` | Oppressive Suppression | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/outburst` | Outburst | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/patient-shot` | Patient Shot | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/powerful-rage` | Powerful Rage | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/precise-focus` | Precise Focus | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/quick-draw` | Quick Draw | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/quick-firing` | Quick Firing | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/rage` | Rage | snippet (proposed) | core | feature | core | high | ability, core, general |
-| `abilities/rally` | Rally | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/reckless-attack` | Reckless Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/slip-strike` | Slip Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/student` | Student | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/suppressing-fire` | Suppressing Fire | snippet (proposed) | core | feature | core | high | ability, core, general |
-| `abilities/swift-dual-attack` | Swift Dual Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/the-look` | The Look | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/true-defender` | True Defender | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/unsettling-rage` | Unsettling Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/vital-focus` | Vital Focus | snippet (proposed) | core | feature | core | low | ability, core, general |
-| `abilities/vital-strike` | Vital Strike | snippet (proposed) | core | feature | core | medium | ability, core, general |
-| `abilities/adaptive-luck` | Adaptive Luck | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/bonus-luck` | Bonus Luck | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/friend-of-fortune` | Friend of Fortune | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/lucky-strike` | Lucky Strike | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/medical-marvel` | Medical Marvel | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/natural-gift` | Natural Gift | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/tis-but-a-scratch` | Tis But a Scratch | snippet (proposed) | core | feature | core | low | ability, core, luck |
-| `abilities/tech-armor` | Tech Armor | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, general |
-| `abilities/companion-bot` | Companion Bot | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, general |
-| `abilities/ghost-protocol` | Ghost Protocol | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/opensaysame` | Opensaysame | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/rigged-comp-jack` | Rigged Comp Jack | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/salvage` | Salvage | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/signal-intelligence` | Signal Intelligence | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/special-encouragement` | Special Encouragement | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
-| `abilities/battery-saboteur` | Battery Saboteur | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, battery |
-| `abilities/battery-saver` | Battery Saver | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
-| `abilities/overcharge` | Overcharge | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
-| `abilities/power-main-tap` | Power Main Tap | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
-| `abilities/swift-custom-battery` | Swift Custom Battery | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
+| `character/abilities/overview` | Abilities | snippet (proposed) | core | reference | core | low | ability, character-creation |
+| `character/abilities/agile-charge` | Agile Charge | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/agile-dodge` | Agile Dodge | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/bash` | Bash | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/bolster` | Bolster | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/charge` | Charge | snippet (proposed) | core | feature | core | high | ability, core, general |
+| `character/abilities/controlled-suppressing-fire` | Controlled Suppressing Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/coordinated-strike` | Coordinated Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/danger-reflex` | Danger Reflex | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/dead-drop` | Dead Drop | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/defender` | Defender | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/dual-attack` | Dual Attack | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/dual-defense` | Dual Defense | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/dual-strike` | Dual Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/expert` | Expert | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/extended-rage` | Extended Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/extra-attack` | Extra Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/fast-kit-trap` | Fast Kit Trap | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/fearless-rage` | Fearless Rage | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/field-medic` | Field Medic | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/field-patch` | Field Patch | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/focus-attack` | Focus Attack | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/focus-in` | Focus In | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/friend-in-need` | Friend in Need | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/general-spectacle` | General Spectacle | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/improved-bash` | Improved Bash | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/improved-suppressing-fire` | Improved Suppressing Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/indomitable-rage` | Indomitable Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/just-grazed` | Just Grazed | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/just-winded` | Just Winded | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/kit-trap` | Kit Trap | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/leaping-charge` | Leaping Charge | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/leg-shot` | Leg Shot | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/line-of-fire` | Line of Fire | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/long-performance` | Long Performance | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/martial-supremacy` | Martial Supremacy | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/momentum-dodge` | Momentum Dodge | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/oppressive-suppression` | Oppressive Suppression | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/outburst` | Outburst | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/patient-shot` | Patient Shot | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/powerful-rage` | Powerful Rage | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/precise-focus` | Precise Focus | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/quick-draw` | Quick Draw | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/quick-firing` | Quick Firing | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/rage` | Rage | snippet (proposed) | core | feature | core | high | ability, core, general |
+| `character/abilities/rally` | Rally | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/reckless-attack` | Reckless Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/slip-strike` | Slip Strike | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/student` | Student | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/suppressing-fire` | Suppressing Fire | snippet (proposed) | core | feature | core | high | ability, core, general |
+| `character/abilities/swift-dual-attack` | Swift Dual Attack | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/the-look` | The Look | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/true-defender` | True Defender | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/unsettling-rage` | Unsettling Rage | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/vital-focus` | Vital Focus | snippet (proposed) | core | feature | core | low | ability, core, general |
+| `character/abilities/vital-strike` | Vital Strike | snippet (proposed) | core | feature | core | medium | ability, core, general |
+| `character/abilities/adaptive-luck` | Adaptive Luck | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/bonus-luck` | Bonus Luck | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/friend-of-fortune` | Friend of Fortune | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/lucky-strike` | Lucky Strike | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/medical-marvel` | Medical Marvel | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/natural-gift` | Natural Gift | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/tis-but-a-scratch` | Tis But a Scratch | snippet (proposed) | core | feature | core | low | ability, core, luck |
+| `character/abilities/tech-armor` | Tech Armor | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, general |
+| `character/abilities/companion-bot` | Companion Bot | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, general |
+| `character/abilities/ghost-protocol` | Ghost Protocol | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/opensaysame` | Opensaysame | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/rigged-comp-jack` | Rigged Comp Jack | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/salvage` | Salvage | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/signal-intelligence` | Signal Intelligence | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/special-encouragement` | Special Encouragement | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, general |
+| `character/abilities/battery-saboteur` | Battery Saboteur | snippet (proposed) | sci-fi | feature | module | medium | ability, sci-fi, battery |
+| `character/abilities/battery-saver` | Battery Saver | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
+| `character/abilities/overcharge` | Overcharge | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
+| `character/abilities/power-main-tap` | Power Main Tap | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
+| `character/abilities/swift-custom-battery` | Swift Custom Battery | snippet (proposed) | sci-fi | feature | module | low | ability, sci-fi, battery |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -512,8 +512,8 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `inventory/carry-limits` | Inventory Management | snippet (proposed) | core | rule | core | low | inventory |
-| `inventory/body-slots` | Equipment Body Slots | snippet (proposed) | core | rule | core | low | inventory |
+| `gear/inventory/carry-limits` | Inventory Management | snippet (proposed) | core | rule | core | low | inventory |
+| `gear/inventory/body-slots` | Equipment Body Slots | snippet (proposed) | core | rule | core | low | inventory |
 
 ## `content/docs/free-srd/inventory--equipment/equipment.md`
 
@@ -521,7 +521,7 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `equipment/common-terms` | Common Equipment Terms | snippet (proposed) | core | rule | core | low | equipment |
+| `gear/equipment/common-terms` | Common Equipment Terms | snippet (proposed) | core | rule | core | low | equipment |
 
 ## `content/docs/free-srd/inventory--equipment/generic-equipment.md`
 
@@ -529,62 +529,62 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `generic-equipment/face-wrap` | Face Wrap | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/heavy-cloak` | Heavy Cloak | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/rain-poncho` | Rain Poncho | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/reinforced-boots` | Reinforced Boots | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/wide-brim-hat` | Wide-Brim Hat | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/work-gloves` | Work Gloves | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
-| `generic-equipment/backpack` | Backpack | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/barrel` | Barrel | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/lockable-chest` | Chest, Lockable | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/crate` | Crate | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/dry-sack` | Dry Sack | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/face-wrap` | Face Wrap | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/heavy-cloak` | Heavy Cloak | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/rain-poncho` | Rain Poncho | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/reinforced-boots` | Reinforced Boots | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/wide-brim-hat` | Wide-Brim Hat | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/work-gloves` | Work Gloves | snippet (proposed) | core | equipment | core | low | equipment, generic, clothing |
+| `gear/generic-equipment/backpack` | Backpack | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/barrel` | Barrel | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/lockable-chest` | Chest, Lockable | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/crate` | Crate | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/dry-sack` | Dry Sack | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
 | `generic-equipment/pouch-sets` | Pouch Set, Ammo ⚠ multi-item (3 headings in one details) | snippet (proposed) | core | equipment | core | medium | equipment, generic, containers |
-| `generic-equipment/quiver` | Quiver / Bolt Case | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/saddlebags` | Saddlebags | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/satchel` | Satchel | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
-| `generic-equipment/candle` | Candle | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
-| `generic-equipment/fuel-oil-flask` | Fuel / Oil Flask | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
-| `generic-equipment/oil-lantern` | Oil Lantern | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
-| `generic-equipment/torch` | Torch | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
-| `generic-equipment/antiseptic-poultice` | Antiseptic Poultice | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
-| `generic-equipment/antitoxin` | Antitoxin | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
+| `gear/generic-equipment/quiver` | Quiver / Bolt Case | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/saddlebags` | Saddlebags | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/satchel` | Satchel | snippet (proposed) | core | equipment | core | low | equipment, generic, containers |
+| `gear/generic-equipment/candle` | Candle | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
+| `gear/generic-equipment/fuel-oil-flask` | Fuel / Oil Flask | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
+| `gear/generic-equipment/oil-lantern` | Oil Lantern | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
+| `gear/generic-equipment/torch` | Torch | snippet (proposed) | core | equipment | core | low | equipment, generic, light-sources |
+| `gear/generic-equipment/antiseptic-poultice` | Antiseptic Poultice | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
+| `gear/generic-equipment/antitoxin` | Antitoxin | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
 | `generic-equipment/bandages` | Bandages, Large ⚠ multi-item (2 headings in one details) | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
-| `generic-equipment/restorative-tonic` | Restorative Tonic | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
-| `generic-equipment/splint-materials` | Splint Materials | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
-| `generic-equipment/bedroll` | Bedroll | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/compass` | Compass / Navigational Tool | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/field-ration` | Field Ration | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/fire-starter` | Fire-Starter | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/rope-50ft` | Rope, 50ft | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/signal-mirror` | Signal Mirror | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/signal-whistle` | Signal Whistle | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/tent-2-person` | Tent, 2-Person | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/tent-4-person` | Tent, 4-Person | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/waterskin` | Waterskin / Canteen | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
-| `generic-equipment/chain-10ft` | Chain, 10ft | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/chalk-sticks` | Chalk / Charcoal Sticks | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/grappling-hook` | Grappling Hook | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/ink-writing-instrument` | Ink & Writing Instrument | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/long-crowbar` | Long Crowbar | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/manacles` | Manacles / Restraints | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/parchment-sheets` | Parchment / Paper Sheets (5) | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/pitons` | Pitons / Climbing Spikes (6) | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/sewing-set` | Sewing Set | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/shovel` | Shovel | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/whetstone` | Whetstone | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
-| `generic-equipment/animal-feed` | Animal Feed (1 day) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/twine` | Ball of Twine / String | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/blank-book-journal` | Blank Book / Journal | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/block-of-soap` | Block of Soap | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/common-alcohol-flask` | Common Alcohol, Flask | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/bag-of-salt` | Bag of Salt | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/iron-spikes` | Iron Spikes (10) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/small-bell` | Small Bell | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/candle-wax-block` | Candle Wax Block | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/coil-of-wire` | Coil of Wire | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
-| `generic-equipment/wooden-stakes` | Wooden Stakes (6) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/restorative-tonic` | Restorative Tonic | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
+| `gear/generic-equipment/splint-materials` | Splint Materials | snippet (proposed) | core | equipment | core | low | equipment, generic, medical |
+| `gear/generic-equipment/bedroll` | Bedroll | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/compass` | Compass / Navigational Tool | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/field-ration` | Field Ration | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/fire-starter` | Fire-Starter | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/rope-50ft` | Rope, 50ft | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/signal-mirror` | Signal Mirror | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/signal-whistle` | Signal Whistle | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/tent-2-person` | Tent, 2-Person | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/tent-4-person` | Tent, 4-Person | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/waterskin` | Waterskin / Canteen | snippet (proposed) | core | equipment | core | low | equipment, generic, survival |
+| `gear/generic-equipment/chain-10ft` | Chain, 10ft | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/chalk-sticks` | Chalk / Charcoal Sticks | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/grappling-hook` | Grappling Hook | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/ink-writing-instrument` | Ink & Writing Instrument | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/long-crowbar` | Long Crowbar | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/manacles` | Manacles / Restraints | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/parchment-sheets` | Parchment / Paper Sheets (5) | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/pitons` | Pitons / Climbing Spikes (6) | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/sewing-set` | Sewing Set | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/shovel` | Shovel | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/whetstone` | Whetstone | snippet (proposed) | core | equipment | core | low | equipment, generic, tools |
+| `gear/generic-equipment/animal-feed` | Animal Feed (1 day) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/twine` | Ball of Twine / String | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/blank-book-journal` | Blank Book / Journal | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/block-of-soap` | Block of Soap | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/common-alcohol-flask` | Common Alcohol, Flask | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/bag-of-salt` | Bag of Salt | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/iron-spikes` | Iron Spikes (10) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/small-bell` | Small Bell | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/candle-wax-block` | Candle Wax Block | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/coil-of-wire` | Coil of Wire | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
+| `gear/generic-equipment/wooden-stakes` | Wooden Stakes (6) | snippet (proposed) | core | equipment | core | low | equipment, generic, trade-goods |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -606,26 +606,26 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `item-tags/adaptive-mesh` | Adaptive Mesh | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/arcing` | Arcing | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/ballistic` | Ballistic | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/battery` | Battery | snippet (proposed) | core | rule | core | high | item-tag |
-| `item-tags/belt-fed` | Belt Fed | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/bulky` | Bulky | snippet (proposed) | core | rule | core | high | item-tag |
-| `item-tags/concealable` | Concealable | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/durable` | Durable | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/firing-modes` | Firing Modes | snippet (proposed) | core | rule | core | high | item-tag |
-| `item-tags/fragile` | Fragile | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/fuel-cells` | Fuel Cell | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/injector` | Injector | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/long-reload` | Long Reload | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/pressurized` | Pressurized | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/power-source` | Power Source | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/rounds-reload` | Rounds Reload | snippet (proposed) | core | rule | core | low | item-tag |
-| `item-tags/space-suit` | Space Suit | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/throwable` | Throwable | snippet (proposed) | core | rule | core | medium | item-tag |
-| `item-tags/two-handed` | Two-Handed | snippet (proposed) | core | rule | core | high | item-tag |
-| `item-tags/versatile` | Versatile | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/adaptive-mesh` | Adaptive Mesh | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/arcing` | Arcing | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/ballistic` | Ballistic | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/battery` | Battery | snippet (proposed) | core | rule | core | high | item-tag |
+| `gear/item-tags/belt-fed` | Belt Fed | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/bulky` | Bulky | snippet (proposed) | core | rule | core | high | item-tag |
+| `gear/item-tags/concealable` | Concealable | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/durable` | Durable | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/firing-modes` | Firing Modes | snippet (proposed) | core | rule | core | high | item-tag |
+| `gear/item-tags/fragile` | Fragile | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/fuel-cells` | Fuel Cell | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/injector` | Injector | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/long-reload` | Long Reload | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/pressurized` | Pressurized | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/power-source` | Power Source | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/rounds-reload` | Rounds Reload | snippet (proposed) | core | rule | core | low | item-tag |
+| `gear/item-tags/space-suit` | Space Suit | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/throwable` | Throwable | snippet (proposed) | core | rule | core | medium | item-tag |
+| `gear/item-tags/two-handed` | Two-Handed | snippet (proposed) | core | rule | core | high | item-tag |
+| `gear/item-tags/versatile` | Versatile | snippet (proposed) | core | rule | core | low | item-tag |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -644,30 +644,30 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `sci-fi-equipment/knuckle-taser` | Knuckle Taser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, light-melee |
-| `sci-fi-equipment/standard-issue-knife` | Standard Issue Knife | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, light-melee |
-| `sci-fi-equipment/emergency-hatchet` | Emergency Hatchet | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
-| `sci-fi-equipment/ripper-blade` | Ripper Blade | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
-| `sci-fi-equipment/shock-baton` | Shock Baton | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
-| `sci-fi-equipment/auto-pistol` | Auto Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
-| `sci-fi-equipment/heavy-pistol` | Heavy Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
-| `sci-fi-equipment/laser-pistol` | Laser Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
-| `sci-fi-equipment/light-pistol` | Light Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
-| `sci-fi-equipment/compact-rifle` | Compact Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
-| `sci-fi-equipment/laser-rifle` | Laser Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
-| `sci-fi-equipment/long-rifle` | Long Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
-| `sci-fi-equipment/shock-rifle` | Shock Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
-| `sci-fi-equipment/standard-issue-rifle` | Standard Issue Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
-| `sci-fi-equipment/heavy-rotary-cannon` | Heavy Rotary Cannon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, heavy-ranged |
-| `sci-fi-equipment/bipod` | Bipod | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/drum-magazines` | Drum Magazines | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/extended-barrel` | Extended Barrel | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/forward-assault-shield` | Forward Assault Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/overcharge-chamber` | Overcharge Chamber | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/recoil-compensation-system` | Recoil Compensation System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/reflex-sight` | Reflex Sight | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
-| `sci-fi-equipment/shock-charger` | Shock Charger | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, upgrade, melee-upgrade |
-| `sci-fi-equipment/weighted-core` | Weighted Core | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, melee-upgrade |
+| `gear/sci-fi-equipment/knuckle-taser` | Knuckle Taser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, light-melee |
+| `gear/sci-fi-equipment/standard-issue-knife` | Standard Issue Knife | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, light-melee |
+| `gear/sci-fi-equipment/emergency-hatchet` | Emergency Hatchet | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
+| `gear/sci-fi-equipment/ripper-blade` | Ripper Blade | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
+| `gear/sci-fi-equipment/shock-baton` | Shock Baton | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, medium-melee |
+| `gear/sci-fi-equipment/auto-pistol` | Auto Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
+| `gear/sci-fi-equipment/heavy-pistol` | Heavy Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
+| `gear/sci-fi-equipment/laser-pistol` | Laser Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
+| `gear/sci-fi-equipment/light-pistol` | Light Pistol | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, pistol |
+| `gear/sci-fi-equipment/compact-rifle` | Compact Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
+| `gear/sci-fi-equipment/laser-rifle` | Laser Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
+| `gear/sci-fi-equipment/long-rifle` | Long Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
+| `gear/sci-fi-equipment/shock-rifle` | Shock Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
+| `gear/sci-fi-equipment/standard-issue-rifle` | Standard Issue Rifle | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, rifle |
+| `gear/sci-fi-equipment/heavy-rotary-cannon` | Heavy Rotary Cannon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, weapon, heavy-ranged |
+| `gear/sci-fi-equipment/bipod` | Bipod | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/drum-magazines` | Drum Magazines | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/extended-barrel` | Extended Barrel | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/forward-assault-shield` | Forward Assault Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/overcharge-chamber` | Overcharge Chamber | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/recoil-compensation-system` | Recoil Compensation System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/reflex-sight` | Reflex Sight | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, ranged-upgrade |
+| `gear/sci-fi-equipment/shock-charger` | Shock Charger | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, upgrade, melee-upgrade |
+| `gear/sci-fi-equipment/weighted-core` | Weighted Core | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, melee-upgrade |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -690,28 +690,28 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `sci-fi-equipment/basic-p-suit` | Basic P-Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/classic-evosuit` | Classic Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/combat-vest` | Combat Vest | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/light-combat-vest` | Light Combat Vest | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/padded-flight-suit` | Padded Flight Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/scav-gear` | Scav Gear | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/site-safety-gear` | Site Safety Gear | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
-| `sci-fi-equipment/combat-evosuit` | Combat Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
-| `sci-fi-equipment/enforcer-armor` | Enforcer Armor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
-| `sci-fi-equipment/eva-suit` | EVA Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
-| `sci-fi-equipment/security-flight-suit` | Security Flight Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
-| `sci-fi-equipment/ultraweave-evosuit` | Ultraweave Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
-| `sci-fi-equipment/auto-injector` | Auto-Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/chameleon-unit` | Chameleon Unit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/emergency-shank` | Emergency Shank | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/hazard-hud` | Hazard HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/coms-unit` | Coms Unit | snippet (proposed) | sci-fi | equipment | module | high | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/mebn-hud` | MeBN HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/safer-unit` | SAFER Unit | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/targeting-hud` | Targeting HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
-| `sci-fi-equipment/ballistic-shield` | Ballistic Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, shield |
-| `sci-fi-equipment/collapsible-shield` | Collapsible Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, shield |
+| `gear/sci-fi-equipment/basic-p-suit` | Basic P-Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/classic-evosuit` | Classic Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/combat-vest` | Combat Vest | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/light-combat-vest` | Light Combat Vest | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/padded-flight-suit` | Padded Flight Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/scav-gear` | Scav Gear | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/site-safety-gear` | Site Safety Gear | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, light-armor |
+| `gear/sci-fi-equipment/combat-evosuit` | Combat Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
+| `gear/sci-fi-equipment/enforcer-armor` | Enforcer Armor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
+| `gear/sci-fi-equipment/eva-suit` | EVA Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
+| `gear/sci-fi-equipment/security-flight-suit` | Security Flight Suit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
+| `gear/sci-fi-equipment/ultraweave-evosuit` | Ultraweave Evosuit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, armor, heavy-armor |
+| `gear/sci-fi-equipment/auto-injector` | Auto-Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/chameleon-unit` | Chameleon Unit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/emergency-shank` | Emergency Shank | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/hazard-hud` | Hazard HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/coms-unit` | Coms Unit | snippet (proposed) | sci-fi | equipment | module | high | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/mebn-hud` | MeBN HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/safer-unit` | SAFER Unit | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/targeting-hud` | Targeting HUD | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, upgrade, armor-upgrade |
+| `gear/sci-fi-equipment/ballistic-shield` | Ballistic Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, shield |
+| `gear/sci-fi-equipment/collapsible-shield` | Collapsible Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, shield |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -732,12 +732,12 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `sci-fi-equipment/kit-supplies` | Sci-Fi Tool Kits | snippet (proposed) | sci-fi | rule | module | low | equipment, kit, sci-fi — Kit supply mechanics (1d12 supply, refills, tools-only actions). |
-| `sci-fi-equipment/b-e-kit` | B&E Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
-| `sci-fi-equipment/disguise-kit` | Disguise Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
-| `sci-fi-equipment/medical-kit` | Medical Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
-| `sci-fi-equipment/repair-kit` | Repair Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
-| `sci-fi-equipment/tech-kit` | Tech Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
+| `gear/sci-fi-equipment/kit-supplies` | Sci-Fi Tool Kits | snippet (proposed) | sci-fi | rule | module | low | equipment, kit, sci-fi — Kit supply mechanics (1d12 supply, refills, tools-only actions). |
+| `gear/sci-fi-equipment/b-e-kit` | B&E Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
+| `gear/sci-fi-equipment/disguise-kit` | Disguise Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
+| `gear/sci-fi-equipment/medical-kit` | Medical Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
+| `gear/sci-fi-equipment/repair-kit` | Repair Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
+| `gear/sci-fi-equipment/tech-kit` | Tech Kit | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, kit |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -753,41 +753,41 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `sci-fi-equipment/coms-headset` | Coms Headset | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
-| `sci-fi-equipment/long-range-coms` | Long Range Coms | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
-| `sci-fi-equipment/mobile-phone` | Mobile Phone | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
-| `sci-fi-equipment/ara-5` | Analgesic Radiation Antidote 5 (ARA-5) | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
-| `sci-fi-equipment/crash-foam-canister` | Crash Foam Canister | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, medical |
-| `sci-fi-equipment/emergency-trauma-patch` | Emergency Trauma Patch | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
-| `sci-fi-equipment/pain-suppressant-injector` | Pain Suppressant Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
-| `sci-fi-equipment/vitaboost-injector` | Vitaboost Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
-| `sci-fi-equipment/emergency-beacon` | Emergency Beacon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/emergency-oxygen-mask` | Emergency Oxygen Mask | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/field-ration` | Field Ration | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/portable-heater` | Portable Heater | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/portable-water-purifier` | Portable Water Purifier | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/solar-array-pack` | Solar Array Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/survival-tent` | Survival Tent | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
-| `sci-fi-equipment/bio-scanner` | Bio Scanner | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/bioskin-veil` | Bioskin Veil | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/boost-pack` | Boost Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/comp-jack` | Comp Jack | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, tech |
-| `sci-fi-equipment/data-spike` | Data Spike | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/decoy-beacon` | Decoy Beacon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/fuel-cells` | Fuel Cells | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/grapple-line-launcher` | Grapple-Line Launcher | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/gravity-anchor` | Gravity Anchor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/jump-boosters` | Jump Boosters | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/jump-pack` | Jump Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/mag-boots` | Mag Boots | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/mag-cuffs` | Mag Cuffs | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/mini-laser-cutter` | Mini Laser Cutter | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/personal-shield` | Personal Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/reactor-cores` | Reactor Cores | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/remote-detonator` | Remote Detonator | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/signature-spoofer` | Signature Spoofer | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/squad-shield` | Squad Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
-| `sci-fi-equipment/battery-cores` | Standardized Battery Cores | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/coms-headset` | Coms Headset | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
+| `gear/sci-fi-equipment/long-range-coms` | Long Range Coms | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
+| `gear/sci-fi-equipment/mobile-phone` | Mobile Phone | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, communications |
+| `gear/sci-fi-equipment/ara-5` | Analgesic Radiation Antidote 5 (ARA-5) | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
+| `gear/sci-fi-equipment/crash-foam-canister` | Crash Foam Canister | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, medical |
+| `gear/sci-fi-equipment/emergency-trauma-patch` | Emergency Trauma Patch | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
+| `gear/sci-fi-equipment/pain-suppressant-injector` | Pain Suppressant Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
+| `gear/sci-fi-equipment/vitaboost-injector` | Vitaboost Injector | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, medical |
+| `gear/sci-fi-equipment/emergency-beacon` | Emergency Beacon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/emergency-oxygen-mask` | Emergency Oxygen Mask | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/field-ration` | Field Ration | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/portable-heater` | Portable Heater | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/portable-water-purifier` | Portable Water Purifier | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/solar-array-pack` | Solar Array Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/survival-tent` | Survival Tent | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, survival |
+| `gear/sci-fi-equipment/bio-scanner` | Bio Scanner | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/bioskin-veil` | Bioskin Veil | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/boost-pack` | Boost Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/comp-jack` | Comp Jack | snippet (proposed) | sci-fi | equipment | module | medium | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/data-spike` | Data Spike | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/decoy-beacon` | Decoy Beacon | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/fuel-cells` | Fuel Cells | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/grapple-line-launcher` | Grapple-Line Launcher | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/gravity-anchor` | Gravity Anchor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/jump-boosters` | Jump Boosters | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/jump-pack` | Jump Pack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/mag-boots` | Mag Boots | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/mag-cuffs` | Mag Cuffs | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/mini-laser-cutter` | Mini Laser Cutter | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/personal-shield` | Personal Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/reactor-cores` | Reactor Cores | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/remote-detonator` | Remote Detonator | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/signature-spoofer` | Signature Spoofer | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/squad-shield` | Squad Shield | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
+| `gear/sci-fi-equipment/battery-cores` | Standardized Battery Cores | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, tech |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -806,7 +806,7 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `bots/automated-machines` | Bots & Drones | snippet (proposed) | sci-fi | rule | module | low | bots, sci-fi |
+| `rules/bots/automated-machines` | Bots & Drones | snippet (proposed) | sci-fi | rule | module | low | bots, sci-fi |
 
 ## `content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/hel-1.md`
 
@@ -846,29 +846,29 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Title | Home | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|---|
-| `components/overview` | Components | snippet (proposed) | sci-fi | reference | module | low | component, sci-fi |
-| `components/installation` | Installation | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
-| `components/power-sources` | Power Sources and batteries | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
-| `components/damage-and-wounds` | Damage and Wounds | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
-| `components/audio-processor` | Audio Processor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/augmented-arm-actuators` | Augmented Arm Actuators | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/automatic-crash-foam-system` | Automatic Crash Foam System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/backup-power-cell` | Backup Power Cell | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/heavy-wrist-laser` | Heavy Wrist Laser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/improved-cooling-system` | Improved Cooling System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/internal-comp-jack` | Internal Comp Jack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/manipulator-override` | Manipulator Override | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/optical-suite` | Optical Suite | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/reinforced-chassis-plating` | Reinforced Chassis Plating | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/relay-node` | Relay Node | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/repair-subroutine` | Repair Subroutine | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/servo-boost-legs` | Servo Boost Legs | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/shield-mount` | Shield Mount | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/overview` | Components | snippet (proposed) | sci-fi | reference | module | low | component, sci-fi |
+| `gear/components/installation` | Installation | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
+| `gear/components/power-sources` | Power Sources and batteries | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
+| `gear/components/damage-and-wounds` | Damage and Wounds | snippet (proposed) | sci-fi | rule | module | low | component, sci-fi |
+| `gear/components/audio-processor` | Audio Processor | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/augmented-arm-actuators` | Augmented Arm Actuators | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/automatic-crash-foam-system` | Automatic Crash Foam System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/backup-power-cell` | Backup Power Cell | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/heavy-wrist-laser` | Heavy Wrist Laser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/improved-cooling-system` | Improved Cooling System | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/internal-comp-jack` | Internal Comp Jack | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/manipulator-override` | Manipulator Override | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/optical-suite` | Optical Suite | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/reinforced-chassis-plating` | Reinforced Chassis Plating | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/relay-node` | Relay Node | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/repair-subroutine` | Repair Subroutine | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/servo-boost-legs` | Servo Boost Legs | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/shield-mount` | Shield Mount | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
 | `components/signal-masts` | Signal Mast, Retractable ⚠ multi-item (2 headings in one details) | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/stabilizer-gyros` | Stabilizer Gyros | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/subdermal-plating` | Subdermal Plating | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/targeting-array` | Targeting Array | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
-| `components/wrist-laser` | Wrist Laser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/stabilizer-gyros` | Stabilizer Gyros | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/subdermal-plating` | Subdermal Plating | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/targeting-array` | Targeting Array | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
+| `gear/components/wrist-laser` | Wrist Laser | snippet (proposed) | sci-fi | equipment | module | low | equipment, sci-fi, component |
 
 **Section-derived tag-sets implied by this split** (review together with the split — full member lists in Queue 4):
 
@@ -937,42 +937,42 @@ blocks and keep `home: snippet (existing)`.
 
 | ID | Snippet file | Cat | Type | Tier | Ref | Tags |
 |---|---|---|---|---|---|---|
-| `actions/move` | content/snippets/move.md | core | rule | core | low | actions, movement |
-| `actions/step` | content/snippets/step.md | core | rule | core | low | actions, movement |
-| `combat/damage-dice` | content/snippets/damage-dice.md | core | rule | core | low | combat, damage |
-| `combat/grapple` | content/snippets/grapple.md | core | rule | core | low | combat, stats |
-| `combat/initiative` | content/snippets/initiative.md | core | rule | core | low | combat, stats |
-| `combat/opportunity-attack` | content/snippets/opportunity-attack.md | core | rule | core | low | combat, actions |
-| `combat/stealth` | content/snippets/stealth.md | core | rule | core | low | combat, stats |
-| `environment/extreme-environments` | content/snippets/extreme-environments.md | sci-fi | rule | module | low | environment, sci-fi |
-| `equipment/armor-basics` | content/snippets/armor.md | core | rule | core | low | equipment, armor |
-| `equipment/medkit-note` | content/snippets/medical-item-medkit-note.md | core | reference | core | medium | equipment, medical |
-| `equipment/shields-basics` | content/snippets/shields.md | core | rule | core | low | equipment, shield |
-| `health/applying-damage` | content/snippets/health-loop.md | core | rule | core | low | health, combat, damage |
-| `movement/primary-speed` | content/snippets/primary-speed.md | core | rule | core | low | movement, stats |
-| `movement/speed-descriptors` | content/snippets/speed-descriptors.md | core | rule | core | low | movement |
-| `movement/speed-tiers` | content/snippets/speed-tiers.md | core | rule | core | low | movement |
-| `movement/speed-tiers-chart` | content/snippets/speed-tiers-chart.md | core | reference | core | medium | movement |
-| `objects/armor-degradation` | content/snippets/armor-damage.md | core | rule | core | low | objects, armor |
-| `objects/shield-degradation` | content/snippets/shields-damage.md | core | rule | core | low | objects, shield |
-| `sci-fi/ballistics-in-space` | content/snippets/sci-fi-add-ballistic.md | sci-fi | rule | module | low | sci-fi, combat |
-| `sci-fi/communications` | content/snippets/coms.md | sci-fi | rule | module | low | sci-fi, equipment |
-| `sci-fi/energy-shields` | content/snippets/energy-shields.md | sci-fi | rule | module | medium | sci-fi, equipment, shield |
-| `sci-fi/huds` | content/snippets/huds.md | sci-fi | rule | module | medium | sci-fi, equipment |
+| `rules/actions/move` | content/snippets/move.md | core | rule | core | low | actions, movement |
+| `rules/actions/step` | content/snippets/step.md | core | rule | core | low | actions, movement |
+| `rules/combat/damage-dice` | content/snippets/damage-dice.md | core | rule | core | low | combat, damage |
+| `rules/combat/grapple` | content/snippets/grapple.md | core | rule | core | low | combat, stats |
+| `rules/combat/initiative` | content/snippets/initiative.md | core | rule | core | low | combat, stats |
+| `rules/combat/opportunity-attack` | content/snippets/opportunity-attack.md | core | rule | core | low | combat, actions |
+| `rules/combat/stealth` | content/snippets/stealth.md | core | rule | core | low | combat, stats |
+| `rules/environment/extreme-environments` | content/snippets/extreme-environments.md | sci-fi | rule | module | low | environment, sci-fi |
+| `gear/equipment/armor-basics` | content/snippets/armor.md | core | rule | core | low | equipment, armor |
+| `gear/equipment/medkit-note` | content/snippets/medical-item-medkit-note.md | core | reference | core | medium | equipment, medical |
+| `gear/equipment/shields-basics` | content/snippets/shields.md | core | rule | core | low | equipment, shield |
+| `rules/health/applying-damage` | content/snippets/health-loop.md | core | rule | core | low | health, combat, damage |
+| `rules/movement/primary-speed` | content/snippets/primary-speed.md | core | rule | core | low | movement, stats |
+| `rules/movement/speed-descriptors` | content/snippets/speed-descriptors.md | core | rule | core | low | movement |
+| `rules/movement/speed-tiers` | content/snippets/speed-tiers.md | core | rule | core | low | movement |
+| `rules/movement/speed-tiers-chart` | content/snippets/speed-tiers-chart.md | core | reference | core | medium | movement |
+| `rules/objects/armor-degradation` | content/snippets/armor-damage.md | core | rule | core | low | objects, armor |
+| `rules/objects/shield-degradation` | content/snippets/shields-damage.md | core | rule | core | low | objects, shield |
+| `rules/sci-fi/ballistics-in-space` | content/snippets/sci-fi-add-ballistic.md | sci-fi | rule | module | low | sci-fi, combat |
+| `rules/sci-fi/communications` | content/snippets/coms.md | sci-fi | rule | module | low | sci-fi, equipment |
+| `rules/sci-fi/energy-shields` | content/snippets/energy-shields.md | sci-fi | rule | module | medium | sci-fi, equipment, shield |
+| `rules/sci-fi/huds` | content/snippets/huds.md | sci-fi | rule | module | medium | sci-fi, equipment |
 | `site/announcement` ⚠ excluded: site chrome, not a buildable block | content/snippets/announcement.md | core | reference | core | low | site-chrome |
 | `site/wip-announcement` ⚠ excluded: site chrome, not a buildable block | content/snippets/wip-announcement.md | core | reference | core | high | site-chrome |
-| `stats/action-points` | content/snippets/action-points.md | core | rule | core | low | stats, actions |
-| `stats/defense` | content/snippets/defense.md | core | rule | core | medium | stats, health |
-| `stats/vitality` | content/snippets/vitality.md | core | rule | core | low | stats, health |
+| `rules/stats/action-points` | content/snippets/action-points.md | core | rule | core | low | stats, actions |
+| `rules/stats/defense` | content/snippets/defense.md | core | rule | core | medium | stats, health |
+| `rules/stats/vitality` | content/snippets/vitality.md | core | rule | core | low | stats, health |
 
 ## Same-name blocks (identity decisions, §4.5)
 
 Distinct proposed IDs that share a display name. Each needs a ruling: one block with two tags, or two blocks that legitimately share a name. Recommendations in Queue 2 where the case is nontrivial.
 
-- **armor**: `proficiencies/armor`, `equipment/armor-basics`
-- **b&e kit**: `sci-fi-equipment/b-e-kit`, `proficiencies/b-e-kit`
-- **comp jack**: `sci-fi-equipment/comp-jack`, `proficiencies/comp-jack`
-- **disguise kit**: `sci-fi-equipment/disguise-kit`, `proficiencies/disguise-kit`
-- **field ration**: `generic-equipment/field-ration`, `sci-fi-equipment/field-ration`
-- **repair kit**: `sci-fi-equipment/repair-kit`, `proficiencies/repair-kit`
-- **wounds & conditions**: `stats/wounds-and-conditions-summary`, `wounds/overview`
+- **armor**: `character/proficiencies/armor`, `gear/equipment/armor-basics`
+- **b&e kit**: `gear/sci-fi-equipment/b-e-kit`, `character/proficiencies/b-e-kit`
+- **comp jack**: `gear/sci-fi-equipment/comp-jack`, `character/proficiencies/comp-jack`
+- **disguise kit**: `gear/sci-fi-equipment/disguise-kit`, `character/proficiencies/disguise-kit`
+- **field ration**: `gear/generic-equipment/field-ration`, `gear/sci-fi-equipment/field-ration`
+- **repair kit**: `gear/sci-fi-equipment/repair-kit`, `character/proficiencies/repair-kit`
+- **wounds & conditions**: `stats/wounds-and-conditions-summary`, `rules/wounds/overview`

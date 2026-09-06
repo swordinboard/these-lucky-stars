@@ -106,12 +106,12 @@ These are all recorded but untouched. Each is small; none is mechanical.
 
 | # | Item | The conflict | Where |
 |---|---|---|---|
-| B1 | **Student / Expert require "INT"** | The system has KNO, not INT | `abilities/student`, `abilities/expert` |
-| B2 | **Shock Charger damage** | Summary said +2, rules text says +1 | `sci-fi-equipment/shock-charger` |
-| B3 | **Squad Shield pool** | Summary said 30pts, rules text says 40 | `sci-fi-equipment/squad-shield` |
-| B4 | **Fast Kit Trap retrieval** | 12 AP vs Kit Trap's 20 AP — intended discount or typo? | `abilities/fast-kit-trap` |
-| B5 | **Backup Power Cell slot** | Old table said Back; block says Belt (twice). Now resolves to Belt | `components/backup-power-cell` |
-| B6 | **Pouch Set, Standard** | Heading reads lowercase "standard" | `generic-equipment/pouch-set-standard` |
+| B1 | **Student / Expert require "INT"** | The system has KNO, not INT | `character/abilities/student`, `character/abilities/expert` |
+| B2 | **Shock Charger damage** | Summary said +2, rules text says +1 | `gear/sci-fi-equipment/shock-charger` |
+| B3 | **Squad Shield pool** | Summary said 30pts, rules text says 40 | `gear/sci-fi-equipment/squad-shield` |
+| B4 | **Fast Kit Trap retrieval** | 12 AP vs Kit Trap's 20 AP — intended discount or typo? | `character/abilities/fast-kit-trap` |
+| B5 | **Backup Power Cell slot** | Old table said Back; block says Belt (twice). Now resolves to Belt | `gear/components/backup-power-cell` |
+| B6 | **Pouch Set, Standard** | Heading reads lowercase "standard" | `gear/generic-equipment/pouch-set-standard` |
 
 ### B7. `traits/racial-traits` — obsolete?
 
@@ -125,7 +125,7 @@ Races, or should it go?
 
 Your words: *"the whole robot/drone/android thing is a mess and needs
 simplification."* The pieces are now cleanly separated as blocks —
-`bots/automated-machines` (the taxonomy), `conditions/dead-battery`,
+`rules/bots/automated-machines` (the taxonomy), `rules/conditions/dead-battery`,
 `races/android`, `components/*`, and the 4 platform stubs — so this is now a
 content/structure call rather than an untangling job.
 
@@ -269,7 +269,7 @@ text differences, all of them intentional and listed below.
 | Item | Your call | What changed |
 |---|---|---|
 | **A2** | wip is one toggle | `wip: true` frontmatter on 13 pages. Banner now injected by `layouts/_partials/docs/inject/content-before.html`; the `snippets/site/wip-announcement` block is deleted. Each block gets a computed `wip` boolean in `blocks.json` for the builder. The redundant `wip` *tag* was removed from 19 files — verified the same 47 blocks are flagged before and after. WIP pages stay searchable; the banner boilerplate no longer pollutes the index (13 matches → 0). `bookHidden` untouched. |
-| **A1 (part)** | extreme environments is core | `environment/extreme-environments` is now `category: [core]`, `tier: core`, no `sci-fi` tag. Still displayed on both Environmental Effects and Sci-Fi Additions. |
+| **A1 (part)** | extreme environments is core | `rules/environment/extreme-environments` is now `category: [core]`, `tier: core`, no `sci-fi` tag. Still displayed on both Environmental Effects and Sci-Fi Additions. |
 | **A3 bug 1** | — | `traits.md` moved from `weight: 10` (tied with Races) to `40`, which also makes the nav match your hand-written reading order: Overview, Races, Proficiencies, Abilities, Traits. |
 | **B6** | typo | `Pouch Set, standard` → `Standard` in title and heading; the now-redundant `label:` dropped. Anchor unchanged. |
 | **B7** | pull it | Confirmed **no trait anywhere carries a `[Racial]` label** and nothing is tagged `racial` — it was fully orphaned. `snippets/traits/racial-traits.md` and its heading are removed; the Primary Speed sentence that pointed at "the character's Racial Traits" now points at [Races]. Full removed text is in the git history at `9ee0dd2` and quoted below. |
@@ -340,6 +340,6 @@ is — say the word if it should be explicit.
 - **Classic Human** carries the WIP banner but is the core race and was never
   tagged `wip`. I preserved current behaviour (`wip: true`) rather than guess.
   One line to flip if that banner was a leftover.
-- `conditions/overview` still has a **hand-written** 3-column table. `catalog`
+- `rules/conditions/overview` still has a **hand-written** 3-column table. `catalog`
   only emits two columns, so it could not be converted; its rows and the blocks'
   `summary` values have to be kept in step by hand for now.

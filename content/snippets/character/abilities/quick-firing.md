@@ -1,0 +1,13 @@
+---
+title: "Quick Firing"
+id: character/abilities/quick-firing
+category: [core]
+type: feature
+tags: [ability, core, general]
+summary: "Use two semi-auto pistols for full-auto abilities."
+requires: [character/proficiencies/weapon]
+---
+
+*[Weapon Proficiency](/docs/free-srd/character-creation/proficiencies/#weapon), DEX 4, Level 3*
+
+When wielding two semi-auto ranged weapons with which you are proficient, you may use abilities that require semi auto or full auto weapons. Ammo requirements apply to each weapon individually.

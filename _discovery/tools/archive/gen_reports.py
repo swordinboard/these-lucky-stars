@@ -294,11 +294,11 @@ Things to scan for specifically:
   exactly one of the two; the counts below should match the site's section
   counts (they do: traits 16+3, proficiencies 14+3, abilities 55+7+8+5).
 - **Sci-fi content living on core pages** keeps its `sci-fi` tag (e.g.
-  `environment/extreme-environments`, `sci-fi/ballistics-in-space` embedded in
+  `rules/environment/extreme-environments`, `rules/sci-fi/ballistics-in-space` embedded in
   the core Ballistic item-tag block). If a GM pulls "all core environment
   rules", extreme environments will NOT come along — that is by design, but
   verify it's the intended design.
-- **The `luck` set** — Luck the stat (`stats/luck`) and the Core Luck abilities
+- **The `luck` set** — Luck the stat (`rules/stats/luck`) and the Core Luck abilities
   share the tag. If the builder treats `luck` as one pull, the stat block rides
   along with the ability list. Confirm that's wanted.
 """)
@@ -352,7 +352,7 @@ L.append("""
 Found while reading; none of these is a discovery-pass decision, but future
 phases (or ordinary editing) will want the list:
 
-- `abilities/student` and `abilities/expert` require **INT** — the attribute
+- `character/abilities/student` and `character/abilities/expert` require **INT** — the attribute
   system has KNO, not INT.
 - Shock Charger: summary table says **+2 damage**, rules text says **+1**.
 - Squad Shield: summary table says **30pts** protection, rules text says **40 point**.

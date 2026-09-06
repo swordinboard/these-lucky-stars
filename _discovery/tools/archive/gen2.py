@@ -26,34 +26,34 @@ for path in RAW:
 
 # ---------- snippet blocks ----------
 SNIPPETS = {
- "action-points":      ("stats/action-points", "core", "rule", "core", ["stats", "actions"], None),
+ "action-points":      ("rules/stats/action-points", "core", "rule", "core", ["stats", "actions"], None),
  "announcement":       ("site/announcement", "core", "reference", "core", ["site-chrome"], "excluded"),
  "wip-announcement":   ("site/wip-announcement", "core", "reference", "core", ["site-chrome"], "excluded"),
- "armor":              ("equipment/armor-basics", "core", "rule", "core", ["equipment", "armor"], None),
- "armor-damage":       ("objects/armor-degradation", "core", "rule", "core", ["objects", "armor"], None),
- "coms":               ("sci-fi/communications", "sci-fi", "rule", "module", ["sci-fi", "equipment"], None),
- "damage-dice":        ("combat/damage-dice", "core", "rule", "core", ["combat", "damage"], None),
- "defense":            ("stats/defense", "core", "rule", "core", ["stats", "health"], None),
- "energy-shields":     ("sci-fi/energy-shields", "sci-fi", "rule", "module", ["sci-fi", "equipment", "shield"], None),
- "extreme-environments": ("environment/extreme-environments", "sci-fi", "rule", "module", ["environment", "sci-fi"], None),
- "grapple":            ("combat/grapple", "core", "rule", "core", ["combat", "stats"], None),
- "health-loop":        ("health/applying-damage", "core", "rule", "core", ["health", "combat", "damage"], None),
- "huds":               ("sci-fi/huds", "sci-fi", "rule", "module", ["sci-fi", "equipment"], None),
- "initiative":         ("combat/initiative", "core", "rule", "core", ["combat", "stats"], None),
- "medical-item-medkit-note": ("equipment/medkit-note", "core", "reference", "core", ["equipment", "medical"], None),
- "move":               ("actions/move", "core", "rule", "core", ["actions", "movement"], None),
- "opportunity-attack": ("combat/opportunity-attack", "core", "rule", "core", ["combat", "actions"], None),
- "primary-speed":      ("movement/primary-speed", "core", "rule", "core", ["movement", "stats"], None),
- "sci-fi-add-ballistic": ("sci-fi/ballistics-in-space", "sci-fi", "rule", "module", ["sci-fi", "combat"], None),
- "shields":            ("equipment/shields-basics", "core", "rule", "core", ["equipment", "shield"], None),
- "shields-damage":     ("objects/shield-degradation", "core", "rule", "core", ["objects", "shield"], None),
- "speed-descriptors":  ("movement/speed-descriptors", "core", "rule", "core", ["movement"], None),
- "speed-tiers":        ("movement/speed-tiers", "core", "rule", "core", ["movement"], None),
- "speed-tiers-chart":  ("movement/speed-tiers-chart", "core", "reference", "core", ["movement"], None),
- "stealth":            ("combat/stealth", "core", "rule", "core", ["combat", "stats"], None),
- "step":               ("actions/step", "core", "rule", "core", ["actions", "movement"], None),
- "vitality":           ("stats/vitality", "core", "rule", "core", ["stats", "health"], None),
- "dead-battery":       ("conditions/dead-battery", "sci-fi", "rule", "module", ["condition", "sci-fi", "bots"], None),
+ "armor":              ("gear/equipment/armor-basics", "core", "rule", "core", ["equipment", "armor"], None),
+ "armor-damage":       ("rules/objects/armor-degradation", "core", "rule", "core", ["objects", "armor"], None),
+ "coms":               ("rules/sci-fi/communications", "sci-fi", "rule", "module", ["sci-fi", "equipment"], None),
+ "damage-dice":        ("rules/combat/damage-dice", "core", "rule", "core", ["combat", "damage"], None),
+ "defense":            ("rules/stats/defense", "core", "rule", "core", ["stats", "health"], None),
+ "energy-shields":     ("rules/sci-fi/energy-shields", "sci-fi", "rule", "module", ["sci-fi", "equipment", "shield"], None),
+ "extreme-environments": ("rules/environment/extreme-environments", "sci-fi", "rule", "module", ["environment", "sci-fi"], None),
+ "grapple":            ("rules/combat/grapple", "core", "rule", "core", ["combat", "stats"], None),
+ "health-loop":        ("rules/health/applying-damage", "core", "rule", "core", ["health", "combat", "damage"], None),
+ "huds":               ("rules/sci-fi/huds", "sci-fi", "rule", "module", ["sci-fi", "equipment"], None),
+ "initiative":         ("rules/combat/initiative", "core", "rule", "core", ["combat", "stats"], None),
+ "medical-item-medkit-note": ("gear/equipment/medkit-note", "core", "reference", "core", ["equipment", "medical"], None),
+ "move":               ("rules/actions/move", "core", "rule", "core", ["actions", "movement"], None),
+ "opportunity-attack": ("rules/combat/opportunity-attack", "core", "rule", "core", ["combat", "actions"], None),
+ "primary-speed":      ("rules/movement/primary-speed", "core", "rule", "core", ["movement", "stats"], None),
+ "sci-fi-add-ballistic": ("rules/sci-fi/ballistics-in-space", "sci-fi", "rule", "module", ["sci-fi", "combat"], None),
+ "shields":            ("gear/equipment/shields-basics", "core", "rule", "core", ["equipment", "shield"], None),
+ "shields-damage":     ("rules/objects/shield-degradation", "core", "rule", "core", ["objects", "shield"], None),
+ "speed-descriptors":  ("rules/movement/speed-descriptors", "core", "rule", "core", ["movement"], None),
+ "speed-tiers":        ("rules/movement/speed-tiers", "core", "rule", "core", ["movement"], None),
+ "speed-tiers-chart":  ("rules/movement/speed-tiers-chart", "core", "reference", "core", ["movement"], None),
+ "stealth":            ("rules/combat/stealth", "core", "rule", "core", ["combat", "stats"], None),
+ "step":               ("rules/actions/step", "core", "rule", "core", ["actions", "movement"], None),
+ "vitality":           ("rules/stats/vitality", "core", "rule", "core", ["stats", "health"], None),
+ "dead-battery":       ("rules/conditions/dead-battery", "sci-fi", "rule", "module", ["condition", "sci-fi", "bots"], None),
 }
 
 # ---------- per-page config ----------
@@ -145,7 +145,7 @@ CONFIG = {
     ("standard-actions", "standard-actions", {"end": "readied-actions"}),
     ("readied-actions", "readied-actions", {}),
     ("multi-turn-actions", "multi-turn-actions", {}),
-    ("opportunity-actions", "opportunity-actions", {"end": "opportunity-attack", "note": "Framing rules for opportunity actions; the Opportunity Attack itself is already the combat/opportunity-attack snippet."}),
+    ("opportunity-actions", "opportunity-actions", {"end": "opportunity-attack", "note": "Framing rules for opportunity actions; the Opportunity Attack itself is already the rules/combat/opportunity-attack snippet."}),
     ("reactions", "reactions", {}),
     ("difficult-terrain-and-obstacles", "difficult-terrain", {}),
   ]},
@@ -187,10 +187,10 @@ CONFIG = {
   "det_map": {"wound-types": ("wounds", "rule", ["wound-type"]),
               "conditions": ("conditions", "rule", ["condition"])},
   "sections": [
-    ("wounds--conditions", "wounds/overview", {"end": "wounds", "type": "reference", "note": "Intro; overlaps the stats-page summary (Queue 2 identity flag)."}),
-    ("wounds", "wounds/wounds", {"end": "wound-types", "note": "Minor/major classification, dressing/healing rules, narrative healing."}),
-    ("common-injuries", "wounds/common-injuries", {"end": "conditions", "type": "reference"}),
-    ("conditions", "conditions/overview", {"end": "asphyxiating", "type": "reference", "note": "Condition framing + summary table."}),
+    ("wounds--conditions", "rules/wounds/overview", {"end": "wounds", "type": "reference", "note": "Intro; overlaps the stats-page summary (Queue 2 identity flag)."}),
+    ("wounds", "rules/wounds/wounds", {"end": "wound-types", "note": "Minor/major classification, dressing/healing rules, narrative healing."}),
+    ("common-injuries", "rules/wounds/common-injuries", {"end": "conditions", "type": "reference"}),
+    ("conditions", "rules/conditions/overview", {"end": "asphyxiating", "type": "reference", "note": "Condition framing + summary table."}),
   ]},
  CR + "/environmental-effects.md": {"mode": "sections", "ns": "environment", "cat": "core", "type": "rule", "tier": "core", "base_tags": ["environment"],
   "why": "User-ruled coarse: one Environmental Effects block (overview + exposure intervals + heat/cold + toxic + visibility); Extreme Environments stays the existing sci-fi snippet.",
@@ -254,7 +254,7 @@ CONFIG = {
  SF + "/sci-fi-kits.md": {"mode": "details", "cat": "sci-fi", "tier": "module",
   "why": "Fine: one block per kit, plus a block for the kit-supplies rules in the intro.",
   "det_map": {"*": ("sci-fi-equipment", "equipment", ["equipment", "sci-fi", "kit"])},
-  "sections": [("sci-fi-tool-kits", "sci-fi-equipment/kit-supplies", {"type": "rule", "tags": ["equipment", "sci-fi", "kit"], "note": "Kit supply mechanics (1d12 supply, refills, tools-only actions)."})]},
+  "sections": [("sci-fi-tool-kits", "gear/sci-fi-equipment/kit-supplies", {"type": "rule", "tags": ["equipment", "sci-fi", "kit"], "note": "Kit supply mechanics (1d12 supply, refills, tools-only actions)."})]},
  SF + "/sci-fi-weapons.md": {"mode": "details", "cat": "sci-fi", "tier": "module",
   "why": "Fine: one block per weapon/upgrade. Weapon-class headings become tags (tag-as-query).",
   "det_map": {
@@ -292,17 +292,17 @@ CONFIG = {
   "why": "Fine: one block per component, plus three rule blocks (installation, power, damage/wounds). Signal Masts details holds two components — Queue 5.",
   "det_map": {"*": ("components", "equipment", ["equipment", "sci-fi", "component"])},
   "sections": [
-    ("components", "components/overview", {"end": "installation", "type": "reference", "tags": ["sci-fi", "component"]}),
-    ("installation", "components/installation", {"end": "power-sources-and-batteries", "type": "rule", "tags": ["sci-fi", "component"]}),
-    ("power-sources-and-batteries", "components/power-sources", {"end": "damage-and-wounds", "type": "rule", "tags": ["sci-fi", "component"]}),
-    ("damage-and-wounds", "components/damage-and-wounds", {"end": "component-quick-reference", "type": "rule", "tags": ["sci-fi", "component"]}),
+    ("components", "gear/components/overview", {"end": "installation", "type": "reference", "tags": ["sci-fi", "component"]}),
+    ("installation", "gear/components/installation", {"end": "power-sources-and-batteries", "type": "rule", "tags": ["sci-fi", "component"]}),
+    ("power-sources-and-batteries", "gear/components/power-sources", {"end": "damage-and-wounds", "type": "rule", "tags": ["sci-fi", "component"]}),
+    ("damage-and-wounds", "gear/components/damage-and-wounds", {"end": "component-quick-reference", "type": "rule", "tags": ["sci-fi", "component"]}),
   ]},
  CC + "/traits.md": {"mode": "details", "cat": "core", "tier": "core",
   "why": "Fine: one block per trait (each already a `details`). Section headings Core/Sci-Fi become tags; the [Racial] label rule is its own block.",
   "det_map": {"core": ("traits", "feature", ["trait", "core"]),
               "sci-fi": ("traits", "feature", ["trait", "sci-fi"])},
   "sections": [
-    ("traits", "traits/overview", {"end": "racial-traits", "type": "reference", "tags": ["trait", "character-creation"]}),
+    ("traits", "character/traits/overview", {"end": "racial-traits", "type": "reference", "tags": ["trait", "character-creation"]}),
     ("racial-traits", "traits/racial-traits", {"end": "core", "type": "rule", "tags": ["trait", "racial", "character-creation"], "note": "The [Racial] label rule."}),
   ]},
  CC + "/proficiencies.md": {"mode": "details", "cat": "core", "tier": "core",
@@ -310,7 +310,7 @@ CONFIG = {
   "det_map": {"core": ("proficiencies", "feature", ["proficiency", "core"]),
               "sci-fi": ("proficiencies", "feature", ["proficiency", "sci-fi"])},
   "sections": [
-    ("proficiencies", "proficiencies/overview", {"end": "core", "type": "reference", "tags": ["proficiency", "character-creation"]}),
+    ("proficiencies", "character/proficiencies/overview", {"end": "core", "type": "reference", "tags": ["proficiency", "character-creation"]}),
   ]},
  CC + "/abilities.md": {"mode": "details", "cat": "core", "tier": "core",
   "why": "Fine: one block per ability — this is the flagship tag-as-query page. Section headings (Core General / Core Luck / Sci-Fi General / Sci-Fi Battery) become tag-sets.",
@@ -319,7 +319,7 @@ CONFIG = {
               "sci-fi-general": ("abilities", "feature", ["ability", "sci-fi", "general"]),
               "sci-fi-battery": ("abilities", "feature", ["ability", "sci-fi", "battery"])},
   "sections": [
-    ("abilities", "abilities/overview", {"end": "core-general", "type": "reference", "tags": ["ability", "character-creation"]}),
+    ("abilities", "character/abilities/overview", {"end": "core-general", "type": "reference", "tags": ["ability", "character-creation"]}),
   ]},
 }
 
@@ -529,11 +529,11 @@ for path in RAW:
 # ---------- ruling-driven post-processing ----------
 EXCLUDED = {"site/announcement": "site chrome", "site/wip-announcement": "site chrome",
             "site/license": "excluded from builder corpus per ruling — builder gets built-in license/cover/ToC"}
-NOT_SELECTABLE = {"equipment/medkit-note": "note block; rides along with a host item (per ruling)",
+NOT_SELECTABLE = {"gear/equipment/medkit-note": "note block; rides along with a host item (per ruling)",
                   "site/announcement": None, "site/wip-announcement": None}
-COMPUTERS = ["sci-fi/computer-systems", "sci-fi-equipment/comp-jack", "sci-fi-equipment/data-spike",
-             "components/internal-comp-jack", "proficiencies/comp-jack", "abilities/ghost-protocol",
-             "abilities/rigged-comp-jack", "abilities/signal-intelligence"]
+COMPUTERS = ["rules/sci-fi/computer-systems", "gear/sci-fi-equipment/comp-jack", "gear/sci-fi-equipment/data-spike",
+             "gear/components/internal-comp-jack", "character/proficiencies/comp-jack", "character/abilities/ghost-protocol",
+             "character/abilities/rigged-comp-jack", "character/abilities/signal-intelligence"]
 for b in blocks:
     if b["id"] in EXCLUDED and not any(str(f).startswith("excluded") for f in b["flags"]):
         b["flags"].append("excluded: " + EXCLUDED[b["id"]])
@@ -543,8 +543,8 @@ for b in blocks:
     if b["id"] == "traits/racial-traits":
         b["flags"].append("needs-review: possibly obsolete since Races were added (per ruling note)")
 # attacker-advantage tag: conditions whose details label carries Δ
-DELTA_CONDS = ["conditions/crippled", "conditions/dying", "conditions/fatigued", "conditions/immobilized",
-               "conditions/prone", "conditions/restrained", "conditions/sick", "conditions/unconscious"]
+DELTA_CONDS = ["rules/conditions/crippled", "rules/conditions/dying", "rules/conditions/fatigued", "rules/conditions/immobilized",
+               "rules/conditions/prone", "rules/conditions/restrained", "rules/conditions/sick", "rules/conditions/unconscious"]
 for b in blocks:
     if b["id"] in DELTA_CONDS:
         b["tags"].append("attacker-advantage")
@@ -617,53 +617,53 @@ PREREQ_PAGES = {CC + "/abilities.md", CC + "/proficiencies.md", CC + "/traits.md
 
 # curated (source_id, target_id) pairs -> queue1 with class
 SUSPECT_PAIRS = {
- ("combat/opportunity-attack", "movement/speed-tiers"): "mechanism",
- ("combat/opportunity-attack", "proficiencies/martial-training"): "mechanism",
- ("stats/vitality", "conditions/dying"): "mechanism",
- ("stats/vitality", "conditions/unconscious"): "mechanism",
- ("stats/vitality", "wounds/wounds"): "mechanism",
- ("conditions/pinned", "combat/grapple"): "mechanism",
- ("item-tags/ballistic", "basics/supply-rolls"): "mechanism",
- ("item-tags/battery", "sci-fi-equipment/battery-cores"): "mechanism",
- ("item-tags/fuel-cell", "sci-fi-equipment/fuel-cells"): "mechanism",
- ("item-tags/space-suit", "item-tags/pressurized"): "mechanism",
- ("item-tags/space-suit", "sci-fi-equipment/coms-unit"): "mechanism",
- ("item-tags/space-suit", "combat/damage-resistance"): "mechanism",
- ("item-tags/power-source", "sci-fi-equipment/battery-cores"): "mechanism",
- ("item-tags/power-source", "sci-fi-equipment/reactor-cores"): "mechanism",
- ("races/android", "conditions/dying"): "mechanism",
- ("environment/extreme-environments", "combat/damage-resistance"): "mechanism",
- ("components/heavy-wrist-laser", "sci-fi-equipment/laser-rifle"): "functions-as",
- ("components/wrist-laser", "sci-fi-equipment/laser-pistol"): "functions-as",
- ("components/automatic-crash-foam-system", "sci-fi-equipment/crash-foam-canister"): "functions-as",
- ("components/internal-comp-jack", "sci-fi-equipment/comp-jack"): "functions-as",
- ("sci-fi-equipment/comp-jack", "proficiencies/comp-jack"): "mechanism",
- ("traits/particularly-attractive", "traits/unremarkable"): "exclusivity",
- ("traits/unremarkable", "traits/particularly-attractive"): "exclusivity",
- ("combat/advantage-in-combat", "basics/advantage"): "mechanism",
- ("equipment/medkit-note", "wounds/wounds"): "mechanism",
+ ("rules/combat/opportunity-attack", "rules/movement/speed-tiers"): "mechanism",
+ ("rules/combat/opportunity-attack", "character/proficiencies/martial-training"): "mechanism",
+ ("rules/stats/vitality", "rules/conditions/dying"): "mechanism",
+ ("rules/stats/vitality", "rules/conditions/unconscious"): "mechanism",
+ ("rules/stats/vitality", "rules/wounds/wounds"): "mechanism",
+ ("rules/conditions/pinned", "rules/combat/grapple"): "mechanism",
+ ("gear/item-tags/ballistic", "rules/basics/supply-rolls"): "mechanism",
+ ("gear/item-tags/battery", "gear/sci-fi-equipment/battery-cores"): "mechanism",
+ ("item-tags/fuel-cell", "gear/sci-fi-equipment/fuel-cells"): "mechanism",
+ ("gear/item-tags/space-suit", "gear/item-tags/pressurized"): "mechanism",
+ ("gear/item-tags/space-suit", "gear/sci-fi-equipment/coms-unit"): "mechanism",
+ ("gear/item-tags/space-suit", "rules/combat/damage-resistance"): "mechanism",
+ ("gear/item-tags/power-source", "gear/sci-fi-equipment/battery-cores"): "mechanism",
+ ("gear/item-tags/power-source", "gear/sci-fi-equipment/reactor-cores"): "mechanism",
+ ("races/android", "rules/conditions/dying"): "mechanism",
+ ("rules/environment/extreme-environments", "rules/combat/damage-resistance"): "mechanism",
+ ("gear/components/heavy-wrist-laser", "gear/sci-fi-equipment/laser-rifle"): "functions-as",
+ ("gear/components/wrist-laser", "gear/sci-fi-equipment/laser-pistol"): "functions-as",
+ ("gear/components/automatic-crash-foam-system", "gear/sci-fi-equipment/crash-foam-canister"): "functions-as",
+ ("gear/components/internal-comp-jack", "gear/sci-fi-equipment/comp-jack"): "functions-as",
+ ("gear/sci-fi-equipment/comp-jack", "character/proficiencies/comp-jack"): "mechanism",
+ ("character/traits/particularly-attractive", "character/traits/unremarkable"): "exclusivity",
+ ("character/traits/unremarkable", "character/traits/particularly-attractive"): "exclusivity",
+ ("combat/advantage-in-combat", "rules/basics/advantage"): "mechanism",
+ ("gear/equipment/medkit-note", "rules/wounds/wounds"): "mechanism",
 }
 
 # curated implicit dependency-suspect edges (no link in text)
 IMPLICIT = [
  ("environment/heat-and-cold", "environment/exposure-intervals", "mechanism", "FORT-interval mechanism defined in Exposure Intervals; this block only lists consequences"),
  ("environment/toxic-atmosphere", "environment/exposure-intervals", "mechanism", "Same interval mechanism dependency"),
- ("objects/conditions", "objects/durability", "mechanism", "The three conditions are VIT thresholds defined by Object Durability"),
- ("objects/armor-degradation", "objects/conditions", "mechanism", "Uses Damaged/Broken as defined terms"),
- ("objects/shield-degradation", "objects/conditions", "mechanism", "Uses Damaged/Broken as defined terms"),
- ("objects/shield-degradation", "basics/supply-rolls", "mechanism", "Shield wear runs on supply dice"),
- ("vehicles/boarding-and-bailing", "movement/speed-tiers-chart", "mechanism", "Targets are 6 + speed modifier from the chart"),
- ("vehicles/collision-damage", "movement/speed-tiers-chart", "mechanism", "Formula uses the chart's speed modifier"),
- ("vehicles/impact-and-overrun", "vehicles/collision-damage", "mechanism", "Failure outcomes resolve via collision damage"),
- ("vehicles/mounts", "vehicles/collision-damage", "mechanism", "Sudden Stops deals collision damage"),
- ("health/applying-damage", "stats/defense", "mechanism", "The loop is defined in terms of DEF"),
- ("health/applying-damage", "stats/vitality", "mechanism", "The loop is defined in terms of VIT"),
- ("combat/damage-dice", "core-rules/size", "mechanism", "Dice determined by attacker/defender size comparison"),
- ("sci-fi-equipment/kit-supplies", "basics/supply-rolls", "mechanism", "Kit supplies run on supply dice"),
- ("conditions/stressed", "stats/stress-threshold", "mechanism", "Trigger defined by Stress Threshold"),
- ("conditions/dying", "conditions/unconscious", "mechanism", "Dying character 'immediately falls unconscious (as the condition)'"),
- ("sci-fi/energy-shields", "stats/defense", "mechanism", "Temporary DEF pool concept extends DEF"),
- ("stats/luck", "conditions/stressed", "mechanism", "Stressed disables Luck"),
+ ("rules/objects/conditions", "rules/objects/durability", "mechanism", "The three conditions are VIT thresholds defined by Object Durability"),
+ ("rules/objects/armor-degradation", "rules/objects/conditions", "mechanism", "Uses Damaged/Broken as defined terms"),
+ ("rules/objects/shield-degradation", "rules/objects/conditions", "mechanism", "Uses Damaged/Broken as defined terms"),
+ ("rules/objects/shield-degradation", "rules/basics/supply-rolls", "mechanism", "Shield wear runs on supply dice"),
+ ("rules/vehicles/boarding-and-bailing", "rules/movement/speed-tiers-chart", "mechanism", "Targets are 6 + speed modifier from the chart"),
+ ("rules/vehicles/collision-damage", "rules/movement/speed-tiers-chart", "mechanism", "Formula uses the chart's speed modifier"),
+ ("rules/vehicles/impact-and-overrun", "rules/vehicles/collision-damage", "mechanism", "Failure outcomes resolve via collision damage"),
+ ("rules/vehicles/mounts", "rules/vehicles/collision-damage", "mechanism", "Sudden Stops deals collision damage"),
+ ("rules/health/applying-damage", "rules/stats/defense", "mechanism", "The loop is defined in terms of DEF"),
+ ("rules/health/applying-damage", "rules/stats/vitality", "mechanism", "The loop is defined in terms of VIT"),
+ ("rules/combat/damage-dice", "core-rules/size", "mechanism", "Dice determined by attacker/defender size comparison"),
+ ("gear/sci-fi-equipment/kit-supplies", "rules/basics/supply-rolls", "mechanism", "Kit supplies run on supply dice"),
+ ("rules/conditions/stressed", "rules/stats/stress-threshold", "mechanism", "Trigger defined by Stress Threshold"),
+ ("rules/conditions/dying", "rules/conditions/unconscious", "mechanism", "Dying character 'immediately falls unconscious (as the condition)'"),
+ ("rules/sci-fi/energy-shields", "rules/stats/defense", "mechanism", "Temporary DEF pool concept extends DEF"),
+ ("rules/stats/luck", "rules/conditions/stressed", "mechanism", "Stressed disables Luck"),
 ]
 
 edges = []
@@ -736,7 +736,7 @@ for page, P in RAW.items():
             e["target"] = page_block.get(tpage, f"page:{url_for(tpage)}")
         # Q1 classes
         pair = (e["source"], e["target"])
-        if pair in (("traits/particularly-attractive", "traits/unremarkable"), ("traits/unremarkable", "traits/particularly-attractive")):
+        if pair in (("character/traits/particularly-attractive", "character/traits/unremarkable"), ("character/traits/unremarkable", "character/traits/particularly-attractive")):
             e["type"] = "mention"; e["class"] = "exclusivity"
             e["note"] = "ruled inert: gameplay-level exclusivity, no builder semantics"
         elif pair in SUSPECT_PAIRS:

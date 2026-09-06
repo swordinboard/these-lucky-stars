@@ -1,3 +1,48 @@
+// ---------------------------------------------------------------- webfonts
+//
+// SELF-HOSTED, on purpose. Cinzel used to come from fonts.googleapis.com, and
+// the PWA could not keep them: the service worker only caches responses whose
+// `type === "basic"`, which means same-origin, so a cross-origin font was never
+// cached and never could be. Opening a cached page offline fell through to
+// Palatino/Georgia for headings and Segoe UI/system-ui for body text — the site
+// quietly changed typeface, with layout and colour intact, which is a horrible
+// thing to debug. Same-origin files are cached like any other asset.
+//
+// CINZEL IS A VARIABLE FONT. Google serves one file per subset covering the
+// whole weight axis — the css2 API hands back the same URL for 400, 600 and
+// 700 — so the weight below is declared as a range and every weight in it is
+// available for free.
+//
+// Source Sans 3 was self-hosted here too and has been removed: body text now
+// uses the system UI stack, which read better side by side. Only the site
+// title is a webfont.
+//
+// Only `latin` and `latin-ext` are shipped. The content uses nothing outside
+// them: no Greek (the Δ condition marker was retired), no Cyrillic. Two glyphs
+// it does use, ≈ and ⟨⟩, are in NO Google subset for these families, so they
+// fell back to a system font before this change too.
+//
+// unicode-range values are Google's own, kept verbatim so the browser only
+// downloads latin-ext when a page actually needs it.
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/cinzel-var-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/cinzel-var-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 // List all overrides below :root. See _variables.scss for other color variables. Additional variables can be added to _variables.scss. Use 6-digit HEX value for all colors that do not need transparency/alpha. Use rgba for alpha colors.
 
 
@@ -11,8 +56,22 @@
    --body-background-tint: rgba(42,45,94,0.15);
 
    // TLS font families
-   --font-display: 'Cinzel', 'Palatino Linotype', 'Georgia', serif;
-   --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+   // TYPE IS DELIBERATELY SYSTEM-FIRST, and only the site title is a webfont.
+   //
+   // Cinzel and Source Sans 3 used to drive everything here. Seen side by side
+   // against the no-webfont fallback the fallback read better at body sizes —
+   // Cinzel is a display face doing a body-text job, and Georgia and the system
+   // UI stack are both drawn for screen reading. So the webfont is now kept for
+   // the one place it earns its keep: the small-caps site title.
+   //
+   // THE STACKS ARE EXPLICIT ON PURPOSE. They used to name 'Palatino Linotype'
+   // and 'Segoe UI' ahead of the generic fallbacks, which meant the page looked
+   // one way on Windows (where both exist) and another everywhere else — the
+   // comparison that prompted this was rendered on Linux, i.e. the second case.
+   // Naming Georgia and system-ui directly makes every platform agree.
+   --font-title: 'Cinzel', Georgia, serif;      // site title only — see static/fonts/
+   --font-display: Georgia, 'Times New Roman', serif;
+   --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
    // Starfield tile image (swapped per color scheme)
    --starfield-image: url('/images/stars-light.png');
@@ -50,7 +109,52 @@ html {
 }
 
 .book-brand {
-   font-family: var(--font-display);
+   font-family: var(--font-title);
+
+   // The title is a two-line lockup — the last word drops below and centres
+   // against the line above, with a four-point star either side. The split is
+   // done in layouts/_partials/docs/brand.html, because CSS cannot address
+   // part of a text node; this only lays out what that partial emits.
+   //
+   // The logo stays on the theme's flex row and is NOT part of the centring —
+   // only the two text lines centre on each other, so the lockup reads as one
+   // unit sitting beside the mark rather than drifting with it.
+   // The theme sizes the mark at 1.5em, which was right beside a one-line
+   // title and looks stunted beside a two-line lockup. 2.2em is not a taste
+   // pick: it is the measured height of the lockup itself (45px against the
+   // mark's 31.5px), so the mark and the text block top and bottom together.
+   // Retune this if the title's size or line-height changes.
+   img {
+      height: 2.2em;
+      width: 2.2em;
+   }
+
+   .brand-lockup {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.08;
+   }
+
+   .brand-tail {
+      display: inline-flex;
+      align-items: center;
+      // The gap is what stops the stars crowding the word at small sizes;
+      // em-based so it tracks the title rather than the root font size.
+      gap: 0.3em;
+   }
+
+   .brand-star {
+      // Deliberately small — these punctuate the word, they do not compete
+      // with it. Height in `em` keeps that ratio at any title size.
+      width: 0.38em;
+      height: 0.38em;
+      flex: none;
+      // Optically centred on the x-height rather than the baseline, which is
+      // where a star of this size looks like it belongs next to small caps.
+      transform: translateY(-0.06em);
+      opacity: 0.85;
+   }
 }
 
 // ---------------------------------------------------------------------------
@@ -365,7 +469,7 @@ details .markdown-inner > :is(h1, h2, h3, h4, h5, h6)[id] {
 .feature-banner-title {
   margin: 0.1rem 0 0;
   color: var(--accent-bright);
-  font-family: "Cinzel", Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.75rem;
   line-height: 1.15;
   font-weight: 700;

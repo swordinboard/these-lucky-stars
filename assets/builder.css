@@ -206,6 +206,35 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
 .markdown .book-tabs > label { display: block; font-weight: 600; margin: .9em 0 .2em; }
 .markdown .book-tabs .book-tabs-content { display: block; }
 
+/* {{% quickref %}} is a click-to-open reference on the site, driven by a hidden
+   checkbox — deliberately the same mechanism as the tabs above, and for the
+   same reason. A document cannot be clicked, so it prints flat and open with
+   its label as a lead-in. It has to be open on SCREEN here too: the builder's
+   stage is a page proof, and a reference you cannot see while assembling a
+   document is one you will not notice is missing from it.
+
+   Because the state is a checkbox rather than script or a native <details>,
+   opening it is one sibling selector. That is the whole argument for the
+   mechanism — `details` cannot be forced open across browsers.
+
+   Note the specificity. content-constructs.css is concatenated AFTER this file,
+   so its `.quickref-dropdown { display: none }` would win on a tie; every rule
+   here is qualified with .markdown to outrank it. */
+.markdown .quickref-wrapper { display: block; margin: .5em 0; }
+.markdown .quickref-check { display: none; }
+.markdown .quickref-toggle {
+  display: block; border-bottom: 0; color: inherit; font-weight: 600; cursor: default;
+}
+.markdown .quickref-chevron,
+.markdown .quickref-source,
+.markdown .quickref-close { display: none; }
+.markdown .quickref-dropdown {
+  display: block; position: static; width: auto; max-height: none;
+  border: 0; border-inline-start: 2px solid var(--line); border-radius: 0;
+  box-shadow: none; margin: .2em 0 0;
+}
+.markdown .quickref-content { padding: 0 0 0 .75em; font-size: 1em; }
+
 /* ------------------------------------------------------------ narrow screens
 
    Below 900px there is not room for a permanent library beside the document,
@@ -407,7 +436,14 @@ body.compact .doc-toc, body.compact .doc-head { opacity: .45; }
   .markdown table { break-inside: auto; }
   .markdown thead { display: table-header-group; }
 
-  /* open every collapsed entry — a closed <details> would print as a bare label */
+  /* Drop the disclosure triangle — in print it is a control that does nothing.
+     OPENING them is not done here and cannot be: no cross-browser CSS opens a
+     closed <details> (`::details-content { content-visibility: visible }` is
+     Chrome 131+ only, and the old `details:not([open]) > *` trick no longer
+     works in Chromium at all). renderPreview() in builder.js sets `.open = true`
+     on every <details> as it inserts the document instead. That matters more
+     than it looks: whole-page items carry their `blockdetails` wrappers, so the
+     Abilities page alone brings 62 of them. */
   .markdown details > summary { list-style: none; }
   .markdown details > summary::-webkit-details-marker { display: none; }
 

@@ -7,6 +7,12 @@ different types of updates to avoid breaking changes or inconsistencies.
 > a one-page "when you do X, do A then B" list with no explanations.
 > This file is the reasoning behind it; that file is the routine.
 
+> **Writing a rule, an item or a feature?** See
+> **[design-notes.md](design-notes.md)** as well. This file covers whether the
+> content is built correctly; that one covers whether the *mechanic* is the
+> right one — how big an effect should feel, and when it is a flat bonus rather
+> than advantage. The templates point at both.
+
 ---
 
 ## ⚠ Before merging to `main` (the live site)
@@ -48,6 +54,11 @@ What it checks, and why each one exists:
 - With a baseline, `rendercheck` reports differences for anything you changed on
   purpose. Read the list; it should only contain your intended edits.
 
+**What the preflight cannot see:** block ids written as literal strings in the
+tooling. Nothing here visits them, so moving anything under `content/snippets/`
+can flatten the edge graph with all seven checks green. See *Two places the
+preflight cannot see* under **Moving or Renaming Content Pages**.
+
 ---
 
 ## Block architecture (read this before editing content)
@@ -55,8 +66,23 @@ What it checks, and why each one exists:
 The site is built from **blocks**. A block is one self-contained rule, feature,
 or item — the unit a GM can select when building a custom PDF.
 
-- **~425 blocks live in `content/snippets/<namespace>/<slug>.md`.** Each carries
-  block frontmatter (below) and holds the actual prose.
+- **~428 blocks live in `content/snippets/<group>/<namespace>/<slug>.md`.** Each
+  carries block frontmatter (below) and holds the actual prose. There are four
+  groups, and they sort by **kind**, not by setting — setting is what `category:`
+  records:
+
+  | Group | Holds |
+  |---|---|
+  | `rules/` | actions, attributes, basics, bots, combat, conditions, environment, health, movement, objects, sci-fi, stats, vehicles, wounds |
+  | `character/` | abilities, proficiencies, traits |
+  | `gear/` | components, equipment, generic-equipment, inventory, item-tags, sci-fi-equipment |
+  | `statblocks/` | creatures, vehicles |
+
+  **`vehicles` appears twice on purpose.** The driving, collision and mount
+  rules are `rules/vehicles/`; the statted craft are `statblocks/sci-fi/vehicles/`.
+  Creature and NPC rules will split the same way when they are written, which is
+  what the pairing is there to allow. `content/snippets/site/` sits outside the
+  four — it is site chrome, not game content.
 - **15 pages are themselves blocks** (`content/docs/.../size.md`, the race pages,
   `legal.md`, the four bot platforms under `creatures--npcs/sci-fi/`). They stand
   alone as one coherent unit, so they are referenced in place instead of being
@@ -84,12 +110,12 @@ Canonical machine-readable data lives in **`data/blocks.json`** and
 ```yaml
 title: "Rage"                 # the block's own heading text
 label: "ARA-5"                # rare: a short name for tables when the title is unwieldy
-id: abilities/rage            # unique; matches the file path under content/snippets/
+id: character/abilities/rage            # unique; matches the file path under content/snippets/
 category: [core]              # list: core | sci-fi | fantasy … (a block can be in several)
-type: feature                 # rule | feature | equipment | creature | reference
+type: feature                 # rule | feature | equipment | creature | vehicle | reference
 tags: [ability, core, general]  # drives tag-as-query pulls and the builder's grouping
 summary: "Enter an enraged state for a short duration."   # the quick-reference one-liner
-requires: [abilities/charge]  # feature prerequisites — the builder auto-includes these
+requires: [character/abilities/charge]  # feature prerequisites — the builder auto-includes these
 variant_group: field-ration   # optional: setting variants that share an identity
 selectable: false             # optional: note/chrome blocks that ride along, never picked alone
 excluded: true                # optional: not part of the buildable corpus at all
@@ -110,12 +136,77 @@ different display name for any other reason, fix the title instead.
 
 `_templates/` holds a fill-in-the-blank file for each kind of block, taken from
 real blocks rather than invented. Copy one into
-`content/snippets/<namespace>/<slug>.md` and fill it in. The files sit outside
-`content/`, so Hugo never reads them and they never enter the corpus.
+`content/snippets/<group>/<namespace>/<slug>.md` and fill it in. The files sit
+outside `content/`, so Hugo never reads them and they never enter the corpus.
 
 Each carries a comment explaining the decisions that kind of block involves —
 delete the comment when you are done, since **a snippet must never end with an
 HTML comment**.
+
+### Statted things: creatures and vehicles
+
+**A stat block is always a snippet.** `creature.md` and `vehicle.md` are the
+only two templates for statted things, and there is no page-homed variant of
+either. A page that presents one — the Speeder Bike, the Station Guard — is a
+shell that includes the snippet and wraps it in prose: an intro above, Tactics
+and Encounter Notes below. A page that presents several, like the Skiffs, is the
+same shell with several includes and a section comparing them.
+
+That is what the card is for. Everything a table needs mid-scene lives inside
+it, so it can be pulled into a PDF alone and still work, while the prose that
+belongs to the page stays on the page. It also means one card serves the page
+and any digest, roster, or variant list that wants it later, with no second copy
+to drift.
+
+`vehicle.md` is a statted vehicle, and it introduced **`type: vehicle`** to the
+vocabulary. A vehicle is not equipment (it is not carried, and it has occupants)
+and not a creature (it is an object, and it takes no turn of its own), and a GM
+building a PDF wants to select the vehicles as a set. Statted vehicles share the
+`vehicles/` namespace with the vehicle *rules*, the same way `bots/` holds both
+`automated-machines` and the four platforms; `type` is what separates them:
+
+```
+{{< catalog namespace="statblocks/vehicles" type="vehicle" category="sci-fi" />}}
+```
+
+**A creature's stat block and a vehicle's are one construct** — the
+`{{% statblock %}}` card, styled in `assets/content-constructs.css` so the site
+and the PDF builder stay in step. Three things about it are decisions rather
+than details:
+
+- **The card is the container, not `details`.** A collapsed stat block cannot be
+  scanned, and scanning out of order is the entire job of one. Wrapping a card in
+  a `details` afterwards still works where a page wants it; the reverse — a
+  collapsible as the primary container — does not.
+- **The card prints its own name**, so a snippet using it is included with **no
+  level argument**. The card has to survive being pulled into a PDF alone, where
+  a heading supplied by some other page does not follow it. On a creature's own
+  page the name therefore appears in the `h1` and again in the card header, which
+  is intended and is what the reference books do. `builddata.py` knows about
+  this: a snippet whose body calls `statblock` takes its anchor from its own
+  title, the same rule `blockdetails` gets.
+- **Sections inside a card are `---` and bold labels, never headings** — see the
+  duplicate-id case above.
+
+The `statblock` shortcode uses the **percent form** (`{{% statblock %}}`), like
+the theme's `details`, because its body is markdown. With `{{< >}}` the body
+arrives as raw text and prints as one unformatted paragraph.
+
+Two things worth knowing before writing numbers, because both are easy to get
+backwards:
+
+- **Attributes print final values**, size modifiers already applied, the way 5e
+  prints final numbers rather than making a reader do arithmetic mid-fight. The
+  attribute *is* the modifier — a roll is `2d6 + attribute` — so there is no
+  second column. Machines use null `[-N-]` where they have no capacity at all.
+- **Creatures use the character DEF/VIT rules; vehicles use object durability.**
+  Bots and drones are creatures here, deliberately: they take wounds and
+  conditions and are repaired like a character. A vehicle's DEF does *not* reset
+  when combat ends — it stays down until repaired.
+
+Weapons carry no damage die in this system. **Damage dice come from the size
+comparison** between attacker and defender, plus the attribute used in the
+attack, so a stat block prints the same-size die (`1d8`) and the table shifts it.
 
 ### Tag conventions
 
@@ -129,8 +220,8 @@ more than it looks. Settled in the C1 review:
   A missing `general` on a Luck ability is correct, not a gap.
 - **Action-class tags** are `aggressive-actions` and `defensive-actions`, and they
   must cover *every* action in that class on the Combat page — including the ones
-  that live in other namespaces (`actions/move`, `actions/step`) and the ones
-  whose primary tags are elsewhere (`combat/grapple`, `combat/stealth`).
+  that live in other namespaces (`rules/actions/move`, `rules/actions/step`) and the ones
+  whose primary tags are elsewhere (`rules/combat/grapple`, `rules/combat/stealth`).
 - Prefer the plural: it is `actions`, not `action`. A singular/plural pair is the
   most common way this vocabulary drifts, and `worksheets.py` §C1a flags it.
 - A tag with one or two members is fine when more are expected (`size`,
@@ -187,15 +278,25 @@ same block, and broken when it is not. `worksheets.py` §C3 sweeps for both.
 
 **Two blocks may not share a title on the same page** — Hugo silently appends
 `-1` to the second anchor, so a link that looked right yesterday lands in the
-wrong place. Across different pages a shared title is legal but still ambiguous
+wrong place.
+
+**Nor may two blocks on one page share an internal heading, and that case is
+worse.** The `-1` suffix only protects headings Hugo renders in a single
+markdown pass. A heading arriving through `include` or `blockdetails` is already
+finished HTML by then, so it is never de-duplicated at all: two blocks that both
+author `## Attacks` emit **two elements with `id="attacks"`** — invalid HTML, and
+a ToC listing the name twice with both links landing on the first. Verified
+against a two-block build. This is why the creature and vehicle templates label
+their sections with bold lines instead of headings. Reach for an internal
+heading only in a block that is alone on its page. Across different pages a shared title is legal but still ambiguous
 for the PDF builder, which sees a flat list. Where a proficiency shared a name
 with the item it applies to, the proficiency carries the suffix:
 `Comp Jack Proficiency` (`#comp-jack-proficiency`) while the item stays
 `Comp Jack`. The prose convention already read that way — "Comp Jack Proficiency,
 KNO 1" — so the title now matches how the rule is spoken about.
 
-One deliberate duplicate remains: `generic-equipment/field-ration` and
-`sci-fi-equipment/field-ration` are the same item in two settings, tied together
+One deliberate duplicate remains: `gear/generic-equipment/field-ration` and
+`gear/sci-fi/misc/field-ration` are the same item in two settings, tied together
 by `variant_group: field-ration`. They live on different pages, so no anchor
 collides.
 
@@ -250,9 +351,9 @@ A snippet contains **no title heading**. The block's title lives in
 asks for:
 
 ```
-{{% include "/snippets/attributes/overview" "h2" %}}
-{{% include "/snippets/combat/disarm"       "lead" %}}
-{{% include "/snippets/vehicles/mounts"     "h3" "false" %}}
+{{% include "/snippets/rules/attributes/overview" "h2" %}}
+{{% include "/snippets/rules/combat/disarm"       "lead" %}}
+{{% include "/snippets/rules/vehicles/mounts"     "h3" "false" %}}
 ```
 
 The level argument is the level the block **occupies on the page**, not just the
@@ -332,8 +433,8 @@ scroll-position measurement taken that way is meaningless. `cd public && python3
 Catalog pages wrap each block in a collapsible. **Use `blockdetails`:**
 
 ```
-{{< blockdetails "generic-equipment/reinforced-boots" >}}
-{{< blockdetails "generic-equipment/reinforced-boots" open >}}
+{{< blockdetails "gear/generic-equipment/reinforced-boots" >}}
+{{< blockdetails "gear/generic-equipment/reinforced-boots" open >}}
 ```
 
 The older two-part form still works and is still correct for the few
@@ -342,7 +443,7 @@ collapsibles that hold more than one block:
 ```
 {{% details "Reinforced Boots" %}}
 
-{{% include "/snippets/generic-equipment/reinforced-boots" %}}
+{{% include "/snippets/gear/generic-equipment/reinforced-boots" %}}
 
 {{% /details %}}
 ```
@@ -379,6 +480,92 @@ block, or a heading the block does not own.
 
 ---
 
+## Inline references (the `quickref` shortcode)
+
+`quickref` was parked as "unused, duplicates `details`" and is now in service
+for the job `details` cannot do: **a rule cited from inside a block**, where the
+reader wants it right there and the alternatives are both bad — restate the rule
+and it drifts, or link away and they lose their place mid-sentence. Shield Mount
+citing shield degradation is the model:
+
+```
+{{% quickref "Shield Degradation" %}}
+{{% include "/snippets/rules/objects/shield-degradation" %}}
+{{% /quickref %}}
+```
+
+**Include with no level argument.** The card's label already names the rule, so
+a `"lead"` or `"h3"` would print the name twice, one line apart.
+
+**It nests inside `blockdetails`.** That is the point — a component entry in a
+catalog can carry the rule it depends on without leaving the collapsible.
+
+### It has four states, and no JavaScript
+
+| Where | State |
+|---|---|
+| Site | collapsed; click the label, or Tab to it and press Space |
+| Site, printing | open and inline (`@media print`) |
+| The PDF builder | open and inline, always |
+| JavaScript disabled | exactly as above — nothing here is scripted |
+
+**It is a hidden checkbox and a `<label>`**, the same mechanism the theme's
+`{{< tabs >}}` uses. That is not incidental: because the open state is a
+checkbox rather than script, the builder opens it with **one sibling selector**,
+in `assets/builder.css` right beside the tabs override. A construct the builder
+cannot open would drop its content out of a PDF entirely.
+
+The override needs the extra specificity: `content-constructs.css` is
+concatenated **after** `builder.css`, so a tie goes to the shared file, and
+every builder rule is qualified with `.markdown` to outrank it.
+
+### Why not native `<details>`
+
+Not because the builder cannot open one — it can, and does. **`builder.js` sets
+`.open = true` on every `<details>` as it inserts the document**, which is how
+whole-page items work: the Abilities page alone carries 62 of them from its
+`blockdetails` wrappers, and all 62 arrive open.
+
+The reason is narrower. **No cross-browser CSS opens a closed `<details>`**, so
+a details-based construct depends on that JS hook — which exists in the builder
+and does not exist in the site's own print path. Measured in Chromium 141:
+
+| Rule | Opens it? |
+|---|---|
+| `details::details-content { content-visibility: visible }` | yes — Chrome 131+ only, not Firefox or older Safari |
+| `details:not([open]) > *:not(summary) { display: block }` | no — this stopped working in Chromium |
+| no rule | no |
+
+So the trade is: a `<details>` quickref would print open **from the builder**
+and closed **from the site's own Ctrl+P**, because only the builder has the
+script. The checkbox prints open from both, since `@media print` can reach it.
+Every `blockdetails` collapsible on the site already has the `<details>`
+behaviour — that is accepted, because the builder is the print path — so this is
+a preference about quickref specifically, not a defect either way.
+
+### Two things about it that are load-bearing
+
+- **Styling lives in `assets/content-constructs.css`.** It used to be an inline
+  `<style>` in the shortcode. That styled the site correctly and still **failed
+  preflight check 5**, which compares classes reaching the builder against the
+  stylesheet the builder actually ships — and it emitted a duplicate copy of the
+  whole block for every instance on the page.
+- **The element id is derived, not random**, hashing file + label + ordinal. It
+  is what ties the `<label>` to its checkbox, so it has to be stable *and*
+  unique. It used to be `shuffle (seq 1 9)`, which changed on every build, so
+  identical content produced different HTML and filled `rendercheck`'s diff with
+  noise.
+
+The hidden checkbox is offscreen via `opacity` and a 1px box, never
+`display: none` — that would drop it out of the tab order and leave the whole
+construct keyboard-dead.
+
+**What it gives up** against a scripted version: no click-outside-to-close, no
+Escape-to-close, and more than one can be open at once. `{{< tabs >}}` gives up
+the same things for the same reason, and none of them is worth a script tag.
+
+---
+
 ## Quick-reference tables (the `catalog` shortcode)
 
 The summary tables on the catalog pages are **generated from block frontmatter**.
@@ -386,9 +573,9 @@ Do not hand-write table rows for blocks.
 
 ```
 {{< catalog header="Name|Description" >}}
-abilities/agile-dodge
-- abilities/momentum-dodge
--- abilities/slip-strike
+character/abilities/agile-dodge
+- character/abilities/momentum-dodge
+-- character/abilities/slip-strike
 {{< /catalog >}}
 ```
 
@@ -396,7 +583,7 @@ abilities/agile-dodge
 pick up new blocks by itself:
 
 ```
-{{< catalog category="sci-fi" namespace="abilities" header="Ability|Summary" />}}
+{{< catalog category="sci-fi" namespace="character/abilities" header="Ability|Summary" />}}
 {{< catalog type="equipment" page="/docs/free-srd/.../sci-fi-weapons/" />}}
 ```
 
@@ -432,7 +619,7 @@ chart would end up longer than the entries it points at, or for a
 jump-to-anchor index at the top of a page:
 
 ```
-{{< catalog namespace="item-tags" layout="names" />}}
+{{< catalog namespace="gear/item-tags" layout="names" />}}
 ```
 
 Child entries nest inside their parent's `<li>`, so column flow can never orphan
@@ -499,8 +686,13 @@ python3 _discovery/tools/builddata.py
 - `blocks.json` — every block with its frontmatter, plus computed `anchor`,
   `pages` (every page it appears on), `in_degree`, and `source_page`.
 - Each block also carries a computed `url` (where it is read on the site) and
-  `owns_heading` (whether its own file still supplies its heading — a migration
-meter, currently 303 of 434, destined for deletion at zero).
+  `owns_heading` (whether its own file supplies its heading). **The heading
+  migration is done: 13 of 436, and it will not reach zero.** All 423 snippets
+  are at `false`, which is the target. What is left is the 12 page-homed blocks,
+  which need an `h1` matching their title because the theme does not print one
+  on desktop, plus `rules/conditions/dead-battery`, which is included mid-page inside
+  the Android entry and owns its heading deliberately. Read a `true` on a
+  *snippet* as the defect; a `true` on a page is correct.
 - `edges.json` — every cross-reference: `dependency` (builder must auto-include
   the target — feature prerequisites), `reference` (stands alone but points at
   the target; the builder surfaces it as a fillable hole), `mention` (inert,
@@ -518,7 +710,7 @@ accident.
 ## Module pages (the `blockset` shortcode)
 
 ```
-{{< blockset category="sci-fi" namespace="abilities" >}}
+{{< blockset category="sci-fi" namespace="character/abilities" >}}
 {{< blockset category="sci-fi" type="rule" wip="exclude" order="id" level="4" >}}
 ```
 
@@ -647,6 +839,7 @@ After pulling a theme update, **always diff these overridden files** before depl
 | Our file | Theme original | What we changed |
 |---|---|---|
 | `layouts/_partials/docs/menu-filetree.html` | `themes/hugo-book/layouts/_partials/docs/menu-filetree.html` | Added `bookNavButton` param check so sections with content can still render as nav-toggle-only buttons. See comment at top of file. |
+| `layouts/_partials/docs/brand.html` | `themes/hugo-book/layouts/_partials/docs/brand.html` | The site title is a two-line lockup — last word on its own line, centred against the line above, a four-point star either side. The theme prints one text node, and CSS cannot address part of one, so the split happens in the template. It takes the LAST WORD of `.Site.Title` rather than the literal "Stars", and a one-word title falls back to the theme's plain span. Stars are inline SVG (`docs/brand-star.html`), not ✦ — that glyph is in neither Georgia nor our Cinzel subsets. Styled under `.book-brand` in `_custom.scss`. |
 | `layouts/_partials/docs/inject/head.html` | `themes/hugo-book/layouts/_partials/docs/inject/head.html` | Added Google Fonts `<link>` tags. Theme file is intentionally empty — low risk. |
 | `layouts/_partials/docs/toc.html` | `themes/hugo-book/layouts/_partials/docs/toc.html` | Rewritten to build the ToC from `.Content` instead of `.TableOfContents`, so headings arriving via `{{% include %}}` are listed. Range from `params.bookTocStart`/`bookTocEnd`. See *Table of contents*. |
 | `layouts/_partials/docs/toc-show.html` | `themes/hugo-book/layouts/_partials/docs/toc-show.html` | Visibility test scans `.Content` rather than asking whether the built-in ToC is empty — otherwise a page whose headings all come from includes would be judged to have none. Still honours `bookToC: false`. |
@@ -671,9 +864,19 @@ Match the resource type to the correct directive:
 | Fetch / XHR / preconnect | `connect-src` |
 | Images from external hosts | `img-src` |
 
+**Fonts are deliberately not on this list.** Cinzel and Source Sans 3 are
+self-hosted in `static/fonts/`, with the `@font-face` rules at the top of
+`assets/_custom.scss`. They used to come from Google Fonts, and the PWA could
+not keep them: the theme's service worker only caches responses whose
+`type === "basic"` — same-origin — so a cross-origin font was never cached and
+never could be. A cached page opened offline fell through to Palatino/Georgia
+for headings and Segoe UI/system-ui for body, changing the typeface while
+layout and colour stayed correct. Both families are **variable** fonts, so one
+file per family/style/subset covers every weight; only `latin` and `latin-ext`
+are shipped, because the content uses nothing outside them. Re-adding a webfont
+CDN would reintroduce the bug — self-host instead.
+
 Currently allowed external domains:
-- `https://fonts.googleapis.com` — Google Fonts stylesheet (style-src)
-- `https://fonts.gstatic.com` — Google Fonts files (font-src)
 - `https://www.googletagmanager.com` — GA4 script (script-src)
 - `https://www.google-analytics.com` — GA4 script + beacon (script-src, connect-src)
 - `https://region1.google-analytics.com` — GA4 regional beacon (connect-src)
@@ -686,6 +889,45 @@ Moving or renaming a **block** (a file under `content/snippets/`) also changes i
 `id`: update the `id:` frontmatter to match the new path, update every
 `{{% include %}}` and `{{< catalog >}}` reference to it, re-run `builddata.py`,
 and run the preflight — a stale include renders as nothing, silently.
+
+Also update `requires:` entries, `blockdetails` calls, hand-listed `catalog`
+rows, and any `namespace="…"` filter argument that names the part you moved.
+The preflight catches all of those.
+
+### Two places the preflight cannot see
+
+**Some block ids are written out as literal strings in the tooling.** They are
+not links, so `linkcheck` never visits them, and they do not change whether the
+site builds — they change how edges are *classified*. A stale one leaves edges
+that still exist and still resolve, minus their meaning, with all seven checks
+passing.
+
+| Where | Holds | Breaks as |
+|---|---|---|
+| `builddata.py` → `FEATURE_NS`, `EQUIP_NS`, `ITEM_TAG_NS` | namespace prefixes | `prerequisite` and `tag-definition` edges silently become plain references |
+| `_discovery/tools/implicit-edges.json` | whole block ids, both endpoints | edges built pointing at blocks that no longer exist |
+
+This is not hypothetical. Grouping the snippet tree into `rules/`, `character/`,
+`gear/` and `statblocks/` broke both at once: 77 prerequisite edges and 85
+tag-definition edges went flat, and 18 implicit edges pointed at nothing. Every
+check passed. It was caught by reading the edge-type line in `builddata.py`'s
+own output, which is the only place it showed.
+
+**`builddata.py` now fails loudly on both** — a prefix matching no block, or an
+implicit edge naming an unknown block, exits non-zero with the fix in the
+message. That guard only catches a name matching *nothing*, though. A prefix
+that still matches the *wrong* blocks passes clean, so after any move under
+`content/snippets/`, open the `HARDCODED BLOCK PATHS` comment in
+`builddata.py` and read it rather than trusting the run.
+
+**Sanity check after any move**, since the guards cannot verify counts:
+
+```
+python3 _discovery/tools/builddata.py    # compare the edge-type line
+```
+
+`dependency` counts prerequisites and `mention` counts external links; both
+should hold steady across a pure move. A drop to zero means a prefix went stale.
 
 Any URL change requires a redirect in `netlify.toml` to avoid 404s in Google Search Console.
 
@@ -782,16 +1024,16 @@ Page content starts here...
 ### Other conventions
 - Callout styles: see `md-formating-notes.md` (repo root)
 - Shortcodes available: `include`, `blockdetails`, `catalog`, `blockset`, `children`,
-  `download-card`, `columns`, `roadmap`, `quickref` — all in `layouts/_shortcodes/`,
-  plus `details` / `tabs` / `tab` from the theme
+  `statblock`, `download-card`, `columns`, `roadmap`, `quickref` — all in
+  `layouts/_shortcodes/`, plus `details` / `tabs` / `tab` from the theme
 - **Every one of those files opens with a SIGNATURE / EXAMPLE / ARGUMENTS block**
   naming each part of the call. Read the top of the file rather than guessing from
   a call site, and keep that block current when you change a shortcode.
-- `quickref` is defined but **unused** — it duplicates `details`. Retired by disuse;
-  the file stays available. Use `blockdetails`.
-- Snippet includes: `{{% include "/snippets/<namespace>/<slug>" %}}` — source files in
-  `content/snippets/<namespace>/`, none are published. The path always matches the
-  block's `id`. See the block architecture and snippet rules at the top of this file.
+- `quickref` is **in use again**, for a different job than `details`. See
+  *Inline references* below.
+- Snippet includes: `{{% include "/snippets/<group>/<namespace>/<slug>" %}}` — source
+  files in `content/snippets/<group>/<namespace>/`, none are published. The path
+  always matches the block's `id`, all three segments of it. See the block architecture and snippet rules at the top of this file.
 - `content/snippets/_index.md` has `build: render: never` cascading to all children — do not remove this
 
 ---

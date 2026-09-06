@@ -1,0 +1,32 @@
+---
+title: "Skiff, Utility"
+id: statblocks/sci-fi/vehicles/skiff-utility
+category: [sci-fi]
+type: vehicle
+tags: [vehicles, sci-fi]
+summary: "Open-bed hover skiff. Size 3, two seats, no cover, 400lb bed."
+---
+
+{{% statblock type="Light Ground Vehicle — Size 3 (3 spaces)" %}}
+The workhorse of every orbital yard and dust-side depot — a flat alloy deck, two
+seats behind a stub windscreen, and no pretence of comfort or protection.
+
+> **Cost** --Cr // **Cargo** 400lbs
+>
+> **Occupants** driver + 1 // **Cover** none (open deck)
+>
+> **Object DEF** 18 // **VIT** 3
+>
+> **Speed** Ground 400ft (80ft/round)
+>
+> **Collision** 3d6 + speed modifier // **Ignition** 2 AP
+>
+> **Power** [Battery [Industrial]](/docs/free-srd/inventory--equipment/item-tags/#battery)
+
+---
+
+**Features**
+
+- **Load Bed** — The forward deck carries 400lbs, or two Medium passengers sitting unsecured. Unsecured passengers cannot brace or otherwise react to a collision.
+- **Repulsor Craft** — Hovers a foot off the deck or ground, ignoring difficult terrain less than a foot deep. Cannot climb a grade steeper than roughly 30°.
+{{% /statblock %}}
