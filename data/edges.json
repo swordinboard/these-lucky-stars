@@ -24,7 +24,7 @@
   "url": "/docs/free-srd/core-rules/damaged--broken-gear/",
   "text": "Damaged & Broken Gear",
   "file": "content/_index.md",
-  "line": 30
+  "line": 36
  },
  {
   "source": "page:/",
@@ -33,7 +33,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#shields",
   "text": "Ballistic Shield and Collapsible Shield",
   "file": "content/_index.md",
-  "line": 31
+  "line": 37
  },
  {
   "source": "page:/",
@@ -42,7 +42,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount",
   "text": "Shield Mount",
   "file": "content/_index.md",
-  "line": 31
+  "line": 37
  },
  {
   "source": "page:/",
@@ -51,7 +51,7 @@
   "url": "/docs/free-srd/core-rules/sci-fi-additions/#computer-systems",
   "text": "Computer Interaction Rules",
   "file": "content/_index.md",
-  "line": 34
+  "line": 40
  },
  {
   "source": "page:/",
@@ -60,7 +60,7 @@
   "url": "/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment/#communication-devices",
   "text": "Communication devices",
   "file": "content/_index.md",
-  "line": 35
+  "line": 41
  },
  {
   "source": "page:/",
@@ -69,7 +69,7 @@
   "url": "/docs/free-srd/character-creation/races/",
   "text": "Playable Races",
   "file": "content/_index.md",
-  "line": 36
+  "line": 42
  },
  {
   "source": "page:/",
@@ -78,7 +78,7 @@
   "url": "/docs/free-srd/creatures--npcs/sci-fi/",
   "text": "Robots and Drones",
   "file": "content/_index.md",
-  "line": 37
+  "line": 43
  },
  {
   "source": "page:/",
@@ -87,16 +87,7 @@
   "url": "/docs/free-srd/core-rules/vehicle-rules/",
   "text": "Vehicle Rules",
   "file": "content/_index.md",
-  "line": 37
- },
- {
-  "source": "page:/",
-  "target": "external:https://www.reddit.com/r/theseluckystars/",
-  "type": "mention",
-  "url": "https://www.reddit.com/r/theseluckystars/",
-  "text": "r/theseluckystars",
-  "file": "content/_index.md",
-  "line": 41
+  "line": 43
  },
  {
   "source": "page:/",
@@ -105,7 +96,7 @@
   "url": "/digitalcharactersheet.html",
   "text": "Digital Character Sheet",
   "file": "content/_index.md",
-  "line": 47
+  "line": 50
  },
  {
   "source": "page:/",
@@ -114,7 +105,7 @@
   "url": "/attributeconverter.html",
   "text": "Attribute Converter",
   "file": "content/_index.md",
-  "line": 50
+  "line": 53
  },
  {
   "source": "page:/",
@@ -123,7 +114,7 @@
   "url": "/planetnamegenerator.html",
   "text": "Planet Name Generator",
   "file": "content/_index.md",
-  "line": 53
+  "line": 56
  },
  {
   "source": "page:/",

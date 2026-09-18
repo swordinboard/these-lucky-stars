@@ -6,6 +6,8 @@ type: reference
 tags: [size]
 ---
 
+<div class="size-chart">
+
 |                               | Minuscule (-2) | Tiny (-1)  | Small (0) | Medium (1) | Large (2)  | Huge (3)   | Massive (4) |
 | ----------------------------- | -------------- | ---------- | --------- | ---------- | ---------- | ---------- | ----------- |
 | **Expected Height**           | ≤1ft           | 1-2 ft     | 2-4 ft    | 4-8 ft     | 8-16 ft    | 16-32 ft   | 32+ ft      |
@@ -16,3 +18,6 @@ tags: [size]
 | **AGI Modifier**              | +3             | +2         | +1        | —          | -1         | -2         | -3          |
 | **Grapple Modifier**          | -3             | -2         | -1        | —          | +1         | +2         | +3          |
 | **Stealth Modifier**          | +6             | +4         | +2        | —          | -2         | -4         | -6          |
+
+</div>
+

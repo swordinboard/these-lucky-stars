@@ -229,6 +229,63 @@
   .markdown .statblock-body table tr th { font-size: 0.6rem; letter-spacing: 0; }
 }
 
+/* ------------------------------------------------------ size chart — .size-chart */
+
+/* The size chart is 8 columns wide (a row-label column plus 7 size tiers), which
+   is wider than the content column can hold at its natural width — the same
+   overflow the statblock attribute row solved above, but with a row-label
+   column in play this time, so an even split isn't right: the label column
+   needs real room ("Expected Width / Wingspan") and the 7 data columns don't.
+   `table-layout: fixed` divides by the widths below rather than by content, so
+   the table fits the column at every viewport instead of scrolling. */
+.markdown .size-chart table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+  border-collapse: collapse;
+  margin: 0.55rem 0;
+  font-size: 0.85rem;
+}
+
+.markdown .size-chart table th:first-child,
+.markdown .size-chart table td:first-child {
+  width: 22%;
+}
+
+.markdown .size-chart table tr th,
+.markdown .size-chart table tr td {
+  border: 1px solid var(--gray-200);
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.markdown .size-chart table tr th:first-child,
+.markdown .size-chart table tr td:first-child {
+  text-align: start;
+}
+
+@media (max-width: 30rem) {
+  /* Below this width there's no column budget left for "Minuscule (-2)" or
+     "Massive (4)" to sit in a header cell without breaking mid-word, which
+     reads worse than what this table did before: the theme's own scrolling
+     table. So the fixed layout is dropped here and the table reverts to that
+     default — natural width, horizontal scroll — rather than forcing a fit
+     that comes at the cost of legibility. */
+  .markdown .size-chart table {
+    display: block;
+    width: auto;
+    table-layout: auto;
+    overflow: auto;
+  }
+  .markdown .size-chart table tr th,
+  .markdown .size-chart table tr td {
+    overflow-wrap: normal;
+  }
+}
+
+
 /* ------------------------------------------ inline references — {{% quickref %}} */
 
 /* An expandable reference sitting inside a block, for a rule the reader wants
