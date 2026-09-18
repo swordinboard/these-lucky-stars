@@ -448,10 +448,17 @@
   "file": "content/docs/free-srd/core-rules/size.md",
   "section": "core-rules",
   "weight": "27",
-  "wip": false,
+  "wip": true,
   "blocks": [
-   "core-rules/size",
-   "rules/combat/damage-dice"
+   "rules/size/overview",
+   "rules/size/disclaimer",
+   "rules/size/chart",
+   "rules/size/details",
+   "rules/movement/occupied-spaces",
+   "rules/movement/tight-spaces",
+   "rules/combat/damage-dice",
+   "rules/size/adapting",
+   "rules/size/limitations"
   ]
  },
  {

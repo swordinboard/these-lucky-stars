@@ -3854,36 +3854,6 @@
   "wip": false
  },
  {
-  "id": "core-rules/size",
-  "title": "Size",
-  "home": "page",
-  "file": "content/docs/free-srd/core-rules/size.md",
-  "source_page": "content/docs/free-srd/core-rules/size.md",
-  "pages": [
-   "content/docs/free-srd/core-rules/size.md"
-  ],
-  "page_urls": [
-   "/docs/free-srd/core-rules/size/"
-  ],
-  "anchor": "size",
-  "url": "/docs/free-srd/core-rules/size/",
-  "owns_heading": true,
-  "category": [
-   "core"
-  ],
-  "type": "rule",
-  "in_degree": 5,
-  "tags": [
-   "size",
-   "combat",
-   "stats"
-  ],
-  "flags": [],
-  "notes": "",
-  "selectable": true,
-  "wip": false
- },
- {
   "id": "gear/equipment/armor-basics",
   "title": "Armor Basics",
   "home": "snippet",
@@ -10963,7 +10933,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 3,
+  "in_degree": 2,
   "tags": [
    "combat"
   ],
@@ -10993,7 +10963,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "combat",
    "damage"
@@ -11141,7 +11111,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 2,
+  "in_degree": 1,
   "tags": [
    "combat",
    "stats",
@@ -11326,7 +11296,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 1,
+  "in_degree": 0,
   "tags": [
    "combat",
    "stats",
@@ -11800,7 +11770,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "condition"
   ],
@@ -12166,6 +12136,35 @@
   "wip": true
  },
  {
+  "id": "rules/movement/occupied-spaces",
+  "title": "Movement Through Occupied Spaces",
+  "home": "snippet",
+  "file": "content/snippets/rules/movement/occupied-spaces.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "movement-through-occupied-spaces",
+  "url": "/docs/free-srd/core-rules/size/#movement-through-occupied-spaces",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 1,
+  "tags": [
+   "movement",
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
   "id": "rules/movement/primary-speed",
   "title": "Primary Speed",
   "home": "snippet",
@@ -12312,6 +12311,35 @@
   "in_degree": 2,
   "tags": [
    "movement"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "rules/movement/tight-spaces",
+  "title": "Tight Spaces",
+  "home": "snippet",
+  "file": "content/snippets/rules/movement/tight-spaces.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "tight-spaces",
+  "url": "/docs/free-srd/core-rules/size/#tight-spaces",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "movement",
+   "size"
   ],
   "flags": [],
   "notes": "",
@@ -12717,6 +12745,174 @@
   "selectable": true,
   "wip": false,
   "summary": "Item type"
+ },
+ {
+  "id": "rules/size/adapting",
+  "title": "Adapting Size",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/adapting.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "adapting-size",
+  "url": "/docs/free-srd/core-rules/size/#adapting-size",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "reference",
+  "in_degree": 0,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "rules/size/chart",
+  "title": "Size Chart",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/chart.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "size-chart",
+  "url": "/docs/free-srd/core-rules/size/#size-chart",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "reference",
+  "in_degree": 1,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "rules/size/details",
+  "title": "Size Details",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/details.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "size-details",
+  "url": "/docs/free-srd/core-rules/size/#size-details",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "rule",
+  "in_degree": 0,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "rules/size/disclaimer",
+  "title": "Size Disclaimer",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/disclaimer.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": null,
+  "url": "/docs/free-srd/core-rules/size/",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "reference",
+  "in_degree": 0,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": false,
+  "wip": true
+ },
+ {
+  "id": "rules/size/limitations",
+  "title": "Size Limitations",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/limitations.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "size-limitations",
+  "url": "/docs/free-srd/core-rules/size/#size-limitations",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "reference",
+  "in_degree": 0,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
+ },
+ {
+  "id": "rules/size/overview",
+  "title": "Size",
+  "home": "snippet",
+  "file": "content/snippets/rules/size/overview.md",
+  "source_page": "content/docs/free-srd/core-rules/size.md",
+  "pages": [
+   "content/docs/free-srd/core-rules/size.md"
+  ],
+  "page_urls": [
+   "/docs/free-srd/core-rules/size/"
+  ],
+  "anchor": "size",
+  "url": "/docs/free-srd/core-rules/size/#size",
+  "owns_heading": false,
+  "category": [
+   "core"
+  ],
+  "type": "reference",
+  "in_degree": 0,
+  "tags": [
+   "size"
+  ],
+  "flags": [],
+  "notes": "",
+  "selectable": true,
+  "wip": true
  },
  {
   "id": "rules/stats/action-points",
@@ -13224,7 +13420,7 @@
    "core"
   ],
   "type": "rule",
-  "in_degree": 0,
+  "in_degree": 1,
   "tags": [
    "vehicles"
   ],

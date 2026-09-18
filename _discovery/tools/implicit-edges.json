@@ -61,7 +61,7 @@
  },
  {
   "source": "rules/combat/damage-dice",
-  "target": "core-rules/size",
+  "target": "rules/size/chart",
   "class": "mechanism",
   "note": "Dice determined by attacker/defender size comparison (implicit — no link in text; ruled reference)"
  },

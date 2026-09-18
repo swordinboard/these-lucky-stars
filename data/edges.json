@@ -1959,7 +1959,7 @@
  },
  {
   "source": "rules/combat/grapple",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -2013,7 +2013,7 @@
  },
  {
   "source": "rules/combat/stealth",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -2127,6 +2127,15 @@
   "text": "Vehicle Rules",
   "file": "content/snippets/rules/movement/movement.md",
   "line": 15
+ },
+ {
+  "source": "rules/movement/tight-spaces",
+  "target": "rules/conditions/pinned",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#pinned",
+  "text": "Pinned",
+  "file": "content/snippets/rules/movement/tight-spaces.md",
+  "line": 16
  },
  {
   "source": "rules/actions/readied-actions",
@@ -2255,6 +2264,24 @@
   "line": 29
  },
  {
+  "source": "rules/size/details",
+  "target": "rules/movement/occupied-spaces",
+  "type": "reference",
+  "url": "#movement-through-occupied-spaces",
+  "text": "Movement Through Occupied Spaces",
+  "file": "content/snippets/rules/size/details.md",
+  "line": 13
+ },
+ {
+  "source": "rules/size/overview",
+  "target": "rules/vehicles/vehicle-size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-size",
+  "text": "vehicles",
+  "file": "content/snippets/rules/size/overview.md",
+  "line": 9
+ },
+ {
   "source": "rules/health/overview",
   "target": "page:/docs/free-srd/core-rules/wounds--conditions/",
   "type": "reference",
@@ -2283,7 +2310,7 @@
  },
  {
   "source": "rules/attributes/overview",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size",
   "text": "Size",
@@ -7511,7 +7538,7 @@
  },
  {
   "source": "page:/docs/free-srd/creatures--npcs/core/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -7619,7 +7646,7 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "class": "section-index",
   "url": "/docs/free-srd/core-rules/size/",
@@ -8037,7 +8064,7 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/combat/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -8532,7 +8559,7 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/movement/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -8693,53 +8720,152 @@
   "line": 41
  },
  {
-  "source": "core-rules/size",
+  "source": "page:/docs/free-srd/core-rules/size/",
   "target": "page:/docs/free-srd/core-rules/attributes/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/attributes/",
   "text": "Attributes",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 59
+  "line": 38
  },
  {
-  "source": "core-rules/size",
+  "source": "page:/docs/free-srd/core-rules/size/",
   "target": "rules/combat/grapple",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#grapple",
   "text": "Stats — Grapple",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 60
+  "line": 39
  },
  {
-  "source": "core-rules/size",
+  "source": "page:/docs/free-srd/core-rules/size/",
   "target": "rules/combat/stealth",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/stats/#stealth",
   "text": "Stats — Stealth",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 60
+  "line": 39
  },
  {
-  "source": "core-rules/size",
+  "source": "page:/docs/free-srd/core-rules/size/",
   "target": "rules/combat/damage",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/combat/#damage-dice",
   "text": "Combat — Damage Dice",
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 61
+  "line": 40
  },
  {
-  "source": "core-rules/size",
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "page:/docs/free-srd/core-rules/movement/",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/movement/",
+  "text": "Movement",
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 41
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/vehicles/vehicle-size",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/vehicle-rules/#vehicle-size",
+  "text": "Vehicle Rules — Vehicle Size",
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 42
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/conditions/pinned",
+  "type": "reference",
+  "url": "/docs/free-srd/core-rules/wounds--conditions/#pinned",
+  "text": "Wounds & Conditions — Pinned",
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 43
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/overview",
+  "type": "include",
+  "url": "/snippets/rules/size/overview",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 8
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/disclaimer",
+  "type": "include",
+  "url": "/snippets/rules/size/disclaimer",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 10
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/chart",
+  "type": "include",
+  "url": "/snippets/rules/size/chart",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 14
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/details",
+  "type": "include",
+  "url": "/snippets/rules/size/details",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 16
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/movement/occupied-spaces",
+  "type": "include",
+  "url": "/snippets/rules/movement/occupied-spaces",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 20
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/movement/tight-spaces",
+  "type": "include",
+  "url": "/snippets/rules/movement/tight-spaces",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 22
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
   "target": "rules/combat/damage-dice",
   "type": "include",
   "url": "/snippets/rules/combat/damage-dice",
   "text": null,
   "file": "content/docs/free-srd/core-rules/size.md",
-  "line": 49
+  "line": 28
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/adapting",
+  "type": "include",
+  "url": "/snippets/rules/size/adapting",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 32
+ },
+ {
+  "source": "page:/docs/free-srd/core-rules/size/",
+  "target": "rules/size/limitations",
+  "type": "include",
+  "url": "/snippets/rules/size/limitations",
+  "text": null,
+  "file": "content/docs/free-srd/core-rules/size.md",
+  "line": 34
  },
  {
   "source": "page:/docs/free-srd/core-rules/stats/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size",
   "text": "Size",
@@ -8919,7 +9045,7 @@
  },
  {
   "source": "page:/docs/free-srd/core-rules/vehicle-rules/",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Size",
@@ -10724,7 +10850,7 @@
  },
  {
   "source": "races/android",
-  "target": "core-rules/size",
+  "target": "page:/docs/free-srd/core-rules/size/",
   "type": "reference",
   "url": "/docs/free-srd/core-rules/size/",
   "text": "Medium",
@@ -11078,7 +11204,7 @@
  },
  {
   "source": "rules/combat/damage-dice",
-  "target": "core-rules/size",
+  "target": "rules/size/chart",
   "type": "reference",
   "class": "mechanism",
   "url": null,

@@ -73,7 +73,7 @@ or item — the unit a GM can select when building a custom PDF.
 
   | Group | Holds |
   |---|---|
-  | `rules/` | actions, attributes, basics, bots, combat, conditions, environment, health, movement, objects, sci-fi, stats, vehicles, wounds |
+  | `rules/` | actions, attributes, basics, bots, combat, conditions, environment, health, movement, objects, sci-fi, size, stats, vehicles, wounds |
   | `character/` | abilities, proficiencies, traits |
   | `gear/` | components, equipment, generic-equipment, inventory, item-tags, sci-fi-equipment |
   | `statblocks/` | creatures, vehicles |
@@ -83,8 +83,9 @@ or item — the unit a GM can select when building a custom PDF.
   Creature and NPC rules will split the same way when they are written, which is
   what the pairing is there to allow. `content/snippets/site/` sits outside the
   four — it is site chrome, not game content.
-- **15 pages are themselves blocks** (`content/docs/.../size.md`, the race pages,
-  `legal.md`, the four bot platforms under `creatures--npcs/sci-fi/`). They stand
+- **12 pages are themselves blocks** (the race pages and their `_index.md`,
+  `character-creation-overview.md`, `legal.md`, the four bot platforms under
+  `creatures--npcs/sci-fi/`). They stand
   alone as one coherent unit, so they are referenced in place instead of being
   extracted. They carry the same
   frontmatter keys in their page frontmatter.
