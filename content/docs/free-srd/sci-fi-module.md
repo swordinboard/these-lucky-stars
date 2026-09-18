@@ -28,7 +28,11 @@ Sci-fi rules that extend or modify the core rules. Full text, with the combat
 and environment context around them, on
 [Sci-Fi Additions](/docs/free-srd/core-rules/sci-fi-additions/).
 
-{{< catalog category="sci-fi" namespace="sci-fi" header="Rule|Summary" />}}
+{{< catalog category="sci-fi" namespace="rules/sci-fi" header="Rule|Summary" />}}
+
+### Conditions
+
+{{< catalog category="sci-fi" tag="condition" header="Condition|Summary" />}}
 
 ---
 
@@ -40,15 +44,15 @@ and environment context around them, on
 
 ### Abilities
 
-{{< catalog category="sci-fi" namespace="abilities" header="Ability|Summary" />}}
+{{< catalog category="sci-fi" namespace="character/abilities" header="Ability|Summary" />}}
 
 ### Proficiencies
 
-{{< catalog category="sci-fi" namespace="proficiencies" header="Proficiency|Summary" />}}
+{{< catalog category="sci-fi" namespace="character/proficiencies" header="Proficiency|Summary" />}}
 
 ### Traits
 
-{{< catalog category="sci-fi" namespace="traits" header="Trait|Summary" />}}
+{{< catalog category="sci-fi" namespace="character/traits" header="Trait|Summary" />}}
 
 ---
 
@@ -72,7 +76,7 @@ and environment context around them, on
 
 ### [Bot Components](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/)
 
-{{< catalog type="equipment" category="sci-fi" namespace="components" header="Component|Summary" />}}
+{{< catalog type="equipment" category="sci-fi" namespace="gear/sci-fi/bot-components" header="Component|Summary" />}}
 
 ---
 
@@ -82,5 +86,22 @@ The automated machines and the platforms built on them. Full rules on
 [Sci-Fi Creatures & NPCs](/docs/free-srd/creatures--npcs/sci-fi/). The parts that
 go *inside* a bot are equipment, and are listed under Bot Components above.
 
+### Platforms
+
 {{< catalog type="creature" category="sci-fi" namespace="bots" header="Platform|Summary" />}}
+
+### Crews & Opposition
+
+{{< catalog type="creature" category="sci-fi" namespace="statblocks/creatures" header="Creature|Summary" />}}
+
+---
+
+## Vehicles
+
+What the party drives, and what drives after them. Full rules on
+[Vehicle Rules](/docs/free-srd/core-rules/vehicle-rules/), and the statted list
+on [Sci-Fi Vehicles](/docs/free-srd/vehicles/sci-fi/). A living mount is statted
+as a creature, not here.
+
+{{< catalog type="vehicle" category="sci-fi" namespace="statblocks/vehicles" header="Vehicle|Summary" />}}
 

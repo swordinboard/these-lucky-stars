@@ -1,0 +1,54 @@
+{{- /*
+  brand — the sidebar site title. Theme partial, OVERRIDDEN here.
+
+  The theme prints the title as one text node: `<span>{{ .Site.Title }}</span>`.
+  That cannot be laid out as a lockup, because CSS has no way to address part of
+  a text node — so the split has to happen here, in the template.
+
+  WHAT THIS BUILDS
+
+      These Lucky
+      ✦ Stars ✦
+
+  The last word drops to its own line, centred against the line above it, with a
+  small four-point star either side.
+
+  THE SPLIT IS DERIVED, NOT HARDCODED. It takes the last word of .Site.Title
+  rather than the literal string "Stars", so renaming the site in hugo.toml
+  cannot leave a lockup that says something the config does not. A one-word
+  title falls back to the theme's plain single span — the lockup needs two
+  parts to be a lockup.
+
+  THE STARS ARE INLINE SVG, NOT A GLYPH. ✦ (U+2726) is not in Georgia and is
+  not in the Cinzel subsets shipped in static/fonts/, so a glyph would render
+  from whatever fallback font the reader happens to have — or as a tofu box.
+  The site title is the one place still using a webfont and the one thing that
+  visibly broke when the PWA served a cached page; it should not depend on a
+  second font resolving. `currentColor` keeps them on the title's colour in
+  both themes.
+
+  Styling is in assets/_custom.scss under `.book-brand`.
+*/ -}}
+{{- $words := split .Site.Title " " -}}
+{{- $n := len $words -}}
+<h2 class="book-brand">
+  <a class="flex align-center" href="{{ cond (not .Site.Home.File) .Sites.Default.Home.RelPermalink .Site.Home.RelPermalink }}">
+    {{- with .Site.Params.BookLogo -}}
+    <img src="{{ . | relURL }}" alt="{{ partial "docs/text/i18n" "Logo" }}" />
+    {{- end -}}
+    {{- if lt $n 2 -}}
+    <span>{{ .Site.Title }}</span>
+    {{- else -}}
+    {{- $lead := delimit (first (sub $n 1) $words) " " -}}
+    {{- $tail := index $words (sub $n 1) -}}
+    <span class="brand-lockup">
+      <span class="brand-lead">{{ $lead }}</span>
+      <span class="brand-tail">
+        {{- partial "docs/brand-star" . -}}
+        <span class="brand-tail-word">{{ $tail }}</span>
+        {{- partial "docs/brand-star" . -}}
+      </span>
+    </span>
+    {{- end -}}
+  </a>
+</h2>

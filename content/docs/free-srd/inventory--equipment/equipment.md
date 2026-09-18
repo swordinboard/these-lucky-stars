@@ -16,4 +16,4 @@ weight: 1
 - [Weapons](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-weapons/)
 
 
-{{% include "/snippets/equipment/common-terms" "h2" %}}
+{{% include "/snippets/gear/equipment/common-terms" "h2" %}}

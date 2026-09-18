@@ -1,0 +1,15 @@
+---
+title: "Drive"
+id: rules/vehicles/drive
+category: [core]
+type: rule
+tags: [vehicles]
+---
+
+ This action and its checks may be refered to as Drive, Pilot, or Ride depending on the vehicle or mount being used. The Drive action is used to increaze or decrease a vehicle's speed and direct its path, similar to a move action.
+
+**Path** — The driver spends 2 AP and declares a path within the vehicle's current movement range and the vehicle moves along that path. This path can pass through occupied spaces, however, it risks a [collision](#impact--overrun) if it does so. A vehicle at a stop can only move up to its acceleration in the first Drive action. A single Drive action can move up to *double* a vehicle or mount's Speed, as if combining two Move actions into one. However, acceleration must be considered when determining the total travel distance one can cover in a single round. and acceleration only applies *once* per Drive action.
+
+**Continued Movement** — Once a vehicle is moving it will continue to travel in the chosen direction upon the driver's next turn at the designated speed unless directed or stopped/slowed by the driver as part of another Drive action, or acted upon by an external force such as a collision. The Drive action is required to direct the path and alter speed, it is recommened to maintain control of the vehicle.
+
+**Drive Checks** — Success may need to be determined based on the complexity of the path, requiring Drive checks for tight turns — typically those close to or greater than 90° — sudden accelerations or decelerations, or other difficult maneuvers at the GM's discression. The driver must have the appropriate vehicle proficiency to drive without penalty — *an untrained driver suffers a minor disadvantage on all checks related to operating the vehicle* (including [mounts](#mounts)).

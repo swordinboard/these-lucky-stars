@@ -1,6 +1,6 @@
 ---
 title: "Cover"
-id: combat/cover
+id: rules/combat/cover
 category: [core]
 type: rule
 tags: [combat]

@@ -14,15 +14,15 @@ tabs_open_re = re.compile(r"\{\{[<%]\s*tabs?\b")
 
 GROUPS = {
  ("content/docs/free-srd/inventory--equipment/generic-equipment.md", "Pouch Sets"):
-   [("generic-equipment/pouch-set-ammo", "Pouch Set, Ammo"),
-    ("generic-equipment/pouch-set-small", "Pouch Set, Small"),
-    ("generic-equipment/pouch-set-standard", "Pouch Set, Standard")],
+   [("gear/generic-equipment/pouch-set-ammo", "Pouch Set, Ammo"),
+    ("gear/generic-equipment/pouch-set-small", "Pouch Set, Small"),
+    ("gear/generic-equipment/pouch-set-standard", "Pouch Set, Standard")],
  ("content/docs/free-srd/inventory--equipment/generic-equipment.md", "Bandages"):
-   [("generic-equipment/bandages-large", "Bandages, Large"),
-    ("generic-equipment/bandages-small", "Bandages, Small")],
+   [("gear/generic-equipment/bandages-large", "Bandages, Large"),
+    ("gear/generic-equipment/bandages-small", "Bandages, Small")],
  ("content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md", "Signal Masts"):
-   [("components/signal-mast-retractable", "Signal Mast, Retractable"),
-    ("components/signal-mast-heavy", "Signal Mast, Heavy")],
+   [("gear/components/signal-mast-retractable", "Signal Mast, Retractable"),
+    ("gear/components/signal-mast-heavy", "Signal Mast, Heavy")],
 }
 group_block_ids = {bid for items in GROUPS.values() for bid, _ in items}
 

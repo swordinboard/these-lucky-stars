@@ -10,9 +10,9 @@ bookToC: false
 {{< tabs >}}
 {{% tab "Sci-Fi" %}}
 {{< catalog layout="names" >}}
-proficiencies/comp-jack
-proficiencies/general-robotics
-proficiencies/general-technology
+character/proficiencies/comp-jack
+character/proficiencies/general-robotics
+character/proficiencies/general-technology
 {{< /catalog >}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -20,8 +20,8 @@ proficiencies/general-technology
 
 ## Sci-Fi
 
-{{< blockdetails "proficiencies/comp-jack" "h3" >}}
+{{< blockdetails "character/proficiencies/comp-jack" "h3" >}}
 
-{{< blockdetails "proficiencies/general-robotics" "h3" >}}
+{{< blockdetails "character/proficiencies/general-robotics" "h3" >}}
 
-{{< blockdetails "proficiencies/general-technology" "h3" >}}
+{{< blockdetails "character/proficiencies/general-technology" "h3" >}}

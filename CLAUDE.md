@@ -34,31 +34,6 @@ is what the container's session-start hook
 (`~/.claude/session-start-git-identity.sh`) already sets. Normally there is
 nothing to do here — the point is what *not* to do.
 
-**Do not reattribute commits to a human identity.** It looks like the tidy thing
-to do given the rule above, and it silently costs the Verified badge. The
-container's SSH signing key is registered to `noreply@anthropic.com`, so:
-
-- rewriting history to change the author strips the signatures outright
-  (`filter-branch` drops the `gpgsig` header), leaving no badge at all; and
-- signing with that key under a different committer email is *worse* than no
-  badge — GitHub reports `unknown_key` and shows an explicit **"Unverified"**
-  warning.
-
-A genuine Verified badge under a human name would need that person's own signing
-key, which the container does not have. So the split is deliberate: **the commit
-identity stays as the container sets it, and the attribution comes out of the
-text.** Those are two separate things, and only the second one is the rule above.
-
-If history ever does need rewriting, re-sign as part of the same pass or the
-badges are lost:
-
-```bash
-git filter-branch -f --commit-filter 'git commit-tree -S "$@"' origin/main..HEAD
-```
-
-Confirm afterwards that the key material still matches an untouched commit —
-identical bytes after `BEGIN SSH SIGNATURE` mean the same key signed both.
-
 ### This is enforced by config, not by good intentions
 
 `.claude/settings.json` turns the attribution off at the source:
@@ -70,12 +45,6 @@ identical bytes after `BEGIN SSH SIGNATURE` mean the same key signed both.
 }
 ```
 
-`attribution.commit` is the commit text **including any trailers** — that is the
-`Co-Authored-By` line — and `attribution.pr` is the pull request description
-footer. An empty string hides each. They are two fields of one feature, which is
-why the two artifacts were never worded alike: a commit gets a git trailer, a PR
-description gets prose. `includeCoAuthoredBy` is the deprecated predecessor,
-superseded by `attribution` but kept here so an older Claude Code still obeys.
 
 **This file is the reason `.gitignore` un-ignores `.claude/settings.json`.**
 Everything else under `.claude/` stays local; that one file is project
@@ -85,18 +54,7 @@ Do not rely on the rule above being read and followed. It was, for a while, and
 attribution still reached a public repo three separate times in three different
 wordings, because each mechanism had its own default and none of them could see
 an instruction that lived in a chat log. The config is what actually binds.
-
-### Still worth checking by eye
-
-Settings govern what this CLI emits. They do not necessarily govern what a
-hosted environment appends on its way out, and a PR opened through a remote
-session has been seen to gain a footer carrying the session URL after the body
-left the model. So: **after opening a PR, re-read the description.** If a footer
-is there, edit it out — editing does not re-append. The same can appear on issue
-and PR comments.
-
-Verify by reading the thing back, not by assuming the setting held.
-
+(
 ---
 
 ## Fresh container setup

@@ -5,7 +5,7 @@
     {{< blockset <filter>="<value>" … [order="title"] [level="3"] >}}
 
   EXAMPLES
-    {{< blockset category="sci-fi" namespace="abilities" >}}
+    {{< blockset category="sci-fi" namespace="character/abilities" >}}
     {{< blockset category="sci-fi" type="rule" order="title" >}}
     {{< blockset tag="condition" wip="exclude" level="4" >}}
 
@@ -22,7 +22,8 @@
   Filters (all optional, combined with AND):
     category   — core | sci-fi | fantasy …  (matches the block's category list)
     page       — a page URL; selects every block displayed on it
-    namespace  — the part of the id before the slash: abilities, traits, sci-fi …
+    namespace  — any leading segments of the id: a whole group ("character")
+                 or one namespace inside it ("character/traits")
     type       — rule | feature | equipment | creature | reference
     tag        — any tag on the block
     order      — "title" (default) or "id"

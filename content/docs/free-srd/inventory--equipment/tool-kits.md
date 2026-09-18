@@ -17,7 +17,7 @@ description of the kit in front of you rather than assuming.
 
 **Kit supplies.** Most actions using a kit also consume supplies. Each kit comes
 with a max supply of 1d12. Some actions need only the tools and no supplies —
-those can still be performed once a kit's supply is depleted. Refills cost 50Cr
+those can still be performed once a kit's supply is depleted. Refills cost --Cr
 and generally weigh a quarter of the full kit.
 
 ## Available kits

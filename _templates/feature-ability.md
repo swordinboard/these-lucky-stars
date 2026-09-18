@@ -1,14 +1,12 @@
 ---
 title: "Rage"
-id: abilities/rage
+id: character/abilities/rage
 category: [core]
 type: feature
 tags: [ability, core, general]
 summary: "Enter an enraged state for a short duration."
-requires: [abilities/charge]
+requires: [character/abilities/charge]
 ---
-
-### Rage
 
 *[Martial Training](/docs/free-srd/character-creation/proficiencies/#martial-training) Proficiency, [Charge](#charge), AGI 2, Level 3*
 
@@ -16,6 +14,9 @@ requires: [abilities/charge]
 for four rounds.
 
 <!--
+NO HEADING — <summary> prints the name, and an include generates it at the call
+site's level. The prerequisite line is the first thing in the file.
+
 THE PREREQUISITE LINE IS LOAD-BEARING. `requires` is exactly the set of links in
 it that point at FEATURES — nothing else. Keep them in step, in this order:
 
@@ -40,9 +41,9 @@ site until you also edit the page by hand, in TWO places:
      prerequisite tree and nothing derives it:
 
          {{< catalog layout="names" >}}
-         abilities/charge
-         - abilities/agile-charge      <- requires Charge
-         -- abilities/leaping-charge   <- requires Agile Charge
+         character/abilities/charge
+         - character/abilities/agile-charge      <- requires Charge
+         -- character/abilities/leaping-charge   <- requires Agile Charge
          {{< /catalog >}}
 
      Add the id under whatever it requires, at one more `-` than its parent.
@@ -64,6 +65,12 @@ The Sci-Fi Module hub picks the ability up on its own — its tables select by
 property, so leave it alone.
 
 Nesting and `requires` must agree; §C4 checks that too.
+
+BEFORE YOU WRITE A BONUS OR AN ADVANTAGE, read `design-notes.md`. It carries the
+game-mechanic check that this comment does not: how big the effect should feel,
+and whether it ASSISTS a skill (advantage) or REPLACES a faculty (flat bonus).
+This file is about site structure; that one is about whether the number is the
+right number.
 
 Delete this comment — a snippet must never END with one.
 -->

@@ -1,0 +1,12 @@
+---
+title: "Repair Kit Proficiency"
+id: character/proficiencies/repair-kit
+category: [core]
+type: feature
+tags: [proficiency, core]
+summary: "Trained in the use of the repair kit."
+---
+
+*KNO 1*
+
+You have been trained in the use of the repair kit. Gain a +2 bonus when using the repair kit to fix or alter equipment, vehicles, and structures.

@@ -2,8 +2,8 @@
   include — place one block on a page, and decide how its title renders.
 
   SIGNATURE
-    {{% include "/snippets/<namespace>/<slug>" [<level>] [<show-title>] %}}
-                 └──────────┬──────────────┘   └──┬──┘   └─────┬─────┘
+    {{% include "/snippets/<group>/<namespace>/<slug>" [<level>] [<show-title>] %}}
+                 └──────────────┬───────────────┘   └──┬──┘   └─────┬─────┘
                             │                     │            └─ "false" to
                             │                     │               suppress the
                             │                     │               title itself
@@ -12,11 +12,11 @@
                             └─ the block id with /snippets/ in front, no .md
 
   EXAMPLES
-    {{% include "/snippets/attributes/overview" %}}            — no title emitted
-    {{% include "/snippets/attributes/overview" "h2" %}}       — <h2>Attributes</h2>
-    {{% include "/snippets/combat/disarm" "lead" %}}           — **Disarm** — …
-    {{% include "/snippets/combat/disarm" "plain" %}}          — Disarm, unstyled
-    {{% include "/snippets/vehicles/mounts" "h3" "false" %}}   — no title, internals
+    {{% include "/snippets/rules/attributes/overview" %}}            — no title emitted
+    {{% include "/snippets/rules/attributes/overview" "h2" %}}       — <h2>Attributes</h2>
+    {{% include "/snippets/rules/combat/disarm" "lead" %}}           — **Disarm** — …
+    {{% include "/snippets/rules/combat/disarm" "plain" %}}          — Disarm, unstyled
+    {{% include "/snippets/rules/vehicles/mounts" "h3" "false" %}}   — no title, internals
                                                                  still positioned at h3
 
   ARGUMENTS
@@ -96,7 +96,7 @@
     {{/* Run the name into the first paragraph when there is one. A block that
          opens with a blockquote or a table has no paragraph to join, so the
          name becomes its own line instead — without this it was dropped
-         silently (combat/grapple and movement/speed-descriptors both open with
+         silently (rules/combat/grapple and rules/movement/speed-descriptors both open with
          a blockquote). */}}
     {{- if findRE `^\s*<p>` $html -}}
       {{- $badge := cond (eq $mode "lead")
