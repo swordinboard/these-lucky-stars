@@ -14,4 +14,6 @@ A restrained limb cannot be used to make attacks, hold or manipulate items, or p
 
 When caused by external restraints, the specific limitations depend on the type of equipment used. When caused by a wound, the condition persists until the wound is dressed.
 
+The restrained condition often comes with an effect description provided by whatever is causing the condition.
+
 *Duration* — Until the restraint is removed or the wound is dressed.

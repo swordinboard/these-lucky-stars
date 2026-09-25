@@ -16,6 +16,8 @@ Somewhere from the outer reaches come a race of shapeshifting Reptilians, bent o
 
 ## Features
 
+Size: [Medium](/docs/free-srd/core-rules/size/)
+
 **Single Shift** — Reptilians have the ability to shapeshift, allowing them to appear as another humanoid species. This effect does not change the number of limbs or size of the Reptilian. Once a species is chosen, the Reptilian always appears as the same unique member of that species while using its Single Shift, essentially locking in that form for life.
 
 When using this racial ability, the Reptoid does not gain any of the traits or abilities of the copied species, the effect is tangible and indiscernible but only in physical appearance. If suspected, a shifted Reptilian can be discovered with an INS check — target equal to 12 + the Reptilian's CHA. If used to copy a specific individual's appearance the difference is more noticeable and the target to detect is lowered to 6 + the Reptilian's CHA.
