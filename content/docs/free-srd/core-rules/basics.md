@@ -4,37 +4,37 @@ description: "How These Lucky Stars works — decision rolls, exploding dice, ad
 weight: 10
 ---
 
-{{% include "/snippets/basics/key-terms" "h2" %}}
+{{% include "/snippets/rules/basics/key-terms" "h2" %}}
 
 ## Decision Rolls - the Primary Mechanic
 
-{{% include "/snippets/basics/decision-rolls" "h2" "false" %}}
+{{% include "/snippets/rules/basics/decision-rolls" "h2" "false" %}}
 
 
-{{% include "/snippets/basics/target-numbers" "h3" %}}
+{{% include "/snippets/rules/basics/target-numbers" "h3" %}}
 
 
-{{% include "/snippets/basics/success-and-failure" "h3" %}}
+{{% include "/snippets/rules/basics/success-and-failure" "h3" %}}
 
 
-{{% include "/snippets/basics/advantage" "h2" %}}
+{{% include "/snippets/rules/basics/advantage" "h2" %}}
 
 ## General Rules of Play
 
 
-{{% include "/snippets/basics/contested-rolls" "h3" %}}
+{{% include "/snippets/rules/basics/contested-rolls" "h3" %}}
 
 
-{{% include "/snippets/basics/resolving-a-tie" "h3" %}}
+{{% include "/snippets/rules/basics/resolving-a-tie" "h3" %}}
 
 
-{{% include "/snippets/basics/the-rounding-rule" "h3" %}}
+{{% include "/snippets/rules/basics/the-rounding-rule" "h3" %}}
 
 
 ## Secondary Mechanics
 
 
-{{% include "/snippets/basics/supply-rolls" "h3" %}}
+{{% include "/snippets/rules/basics/supply-rolls" "h3" %}}
 
 
-{{% include "/snippets/basics/d100-or-percentage" "h3" %}}
+{{% include "/snippets/rules/basics/d100-or-percentage" "h3" %}}

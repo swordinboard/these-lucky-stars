@@ -5,20 +5,20 @@ weight: 50
 ---
 
 
-{{% include "/snippets/health/overview" "h2" %}}
+{{% include "/snippets/rules/health/overview" "h2" %}}
 
 
-{{% include "/snippets/stats/defense" "h2" %}}
-
----
-
-
-{{% include "/snippets/stats/vitality" "h2" %}}
+{{% include "/snippets/rules/stats/defense" "h2" %}}
 
 ---
 
 
-{{% include "/snippets/health/applying-damage" "h2" %}}
+{{% include "/snippets/rules/stats/vitality" "h2" %}}
+
+---
+
+
+{{% include "/snippets/rules/health/applying-damage" "h2" %}}
 
 For how damage totals are calculated — damage dice, modifiers, resistance, and damage types — see [Combat](/docs/free-srd/core-rules/combat/#damage).
 

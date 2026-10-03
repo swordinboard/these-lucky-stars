@@ -10,7 +10,7 @@ decisions.
 
 ## Hard failures (text is incoherent in isolation)
 
-### 1. `equipment/medkit-note` — an *existing snippet* that doesn't stand alone
+### 1. `gear/equipment/medkit-note` — an *existing snippet* that doesn't stand alone
 `content/snippets/medical-item-medkit-note.md` opens **"This is a single use
 item that can be used in place of a med kit…"** — "this" has no antecedent
 outside a host item entry (it is included under Bandages ×2 and Splint
@@ -31,12 +31,12 @@ not a heading (so it isn't even linkable — the page's own `#dead-battery` link
 is broken, Queue 3), and its home makes it invisible to anyone building a
 drone-only PDF. The source has an author comment: *"may need to move this
 section or put into a snippet."* *Direction:* extract as its own condition-type
-block (e.g. `conditions/dead-battery` or `bots/dead-battery`) referenced from
+block (e.g. `rules/conditions/dead-battery` or `bots/dead-battery`) referenced from
 both the Android page and the bots section. Human picks the namespace/home.
 
-<!-- pull as a snippet, conditions/dead-battery.-->
+<!-- pull as a snippet, rules/conditions/dead-battery.-->
 
-### 3. `abilities/expert` — meaningless without Student
+### 3. `character/abilities/expert` — meaningless without Student
 Text begins "Choose one of the topics selected by your Student ability." Listed
 in Queue 1 as a `prerequisite` edge, but flagged here too because unlike most
 prerequisite chains, the text is not merely *gated* by the target — it is
@@ -44,7 +44,7 @@ prerequisite chains, the text is not merely *gated* by the target — it is
 
 <!-- auto include. in fact, any time a feature has a prerequisite feature, that feature should be auto included. prerequisite equipment or equipment types are not forced-->
 
-### 4. `attributes/determining-attributes` — internal "above" reference
+### 4. `rules/attributes/determining-attributes` — internal "above" reference
 Kept as ONE block precisely because the Attribute Pool subsection opens "Using
 the rolling method above…". If the human prefers the fine split (two methods as
 two blocks), Attribute Pool needs a rewrite first. No action needed if the
@@ -109,24 +109,24 @@ alone.
 
 ## Identity-time dedup decisions (§4.5 — same rule, two places)
 
-### 9. Wounds & Conditions summary: `stats/wounds-and-conditions-summary` vs `wounds/overview`
+### 9. Wounds & Conditions summary: `stats/wounds-and-conditions-summary` vs `rules/wounds/overview`
 The Stats page carries a summary of wound/condition triggers that restates the
 intro of the Wounds & Conditions page (nearly the same three-bullet list).
 **Decision needed:** one block with two tags (single ID — the builder's dedup
 can then collapse it) or two blocks (a deliberate short-form/long-form pair).
-*Recommendation:* one block, ID `wounds/overview`, with the stats page keeping
+*Recommendation:* one block, ID `rules/wounds/overview`, with the stats page keeping
 only a one-line pointer — but that's a Phase 2 rewrite, so it stops here.
  <!-- Recommendation is acceptable -->
 
-### 10. Readied Action: `actions/readied-actions` vs the combat-catalog entry
+### 10. Readied Action: `rules/actions/readied-actions` vs the combat-catalog entry
 The combat catalog's "Readied Action" entry is a compressed restatement of the
 Action Economy section (which it links). Same rule, two renderings.
 **Decision:** single ID (catalog entry becomes a reference/include) or two
-blocks. *Recommendation:* single ID `actions/readied-actions`.
+blocks. *Recommendation:* single ID `rules/actions/readied-actions`.
 
 <!-- recommendation is acceptable -->
 
-### 11. Field Ration ×2: `generic-equipment/field-ration` vs `sci-fi-equipment/field-ration`
+### 11. Field Ration ×2: `gear/generic-equipment/field-ration` vs `gear/sci-fi-equipment/field-ration`
 Same name, same function, different flavor text (generic vs vacuum-sealed
 paste). **Decision:** these are proposed as two distinct blocks (different
 module tiers — a medieval GM gets the generic one, a sci-fi GM the paste). If
@@ -154,13 +154,13 @@ blocks, no action needed.
 
 ## Advisory (weak failures — probably fine, listed for completeness)
 
-- `sci-fi/ballistics-in-space` — assumes "ballistic weapons" context (it is
+- `rules/sci-fi/ballistics-in-space` — assumes "ballistic weapons" context (it is
   included inside the Ballistic item-tag block and the Sci-Fi Additions page);
   readable alone but its first line presumes the tag's existence.
 
 <!-- this is similar to the note reclassification mentioned earlier in this doc as it is usually intended to folllow along with an item but i  this case is able to stand alone within this page with safe assumptions made -->
 
-- `stats/vitality` (existing snippet) — fully readable alone, but its wound
+- `rules/stats/vitality` (existing snippet) — fully readable alone, but its wound
   bullets depend on wound severity definitions (Queue 1 mechanism edges) —
   the classic "reference vs dependency" call.
 
@@ -171,7 +171,7 @@ blocks, no action needed.
 
 <!-- safe to exclude -->
 
-- `wounds/common-injuries` — a GM-facing example table; stands alone, but only
-  useful next to `wounds/wounds`; kept as `reference: low`.
+- `rules/wounds/common-injuries` — a GM-facing example table; stands alone, but only
+  useful next to `rules/wounds/wounds`; kept as `reference: low`.
 
 <!-- reference is correct -->

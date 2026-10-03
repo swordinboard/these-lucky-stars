@@ -16,7 +16,9 @@ The other races generally regard humans as the luckiest species in existence, no
 
 ## Features
 
+Size: [Medium](/docs/free-srd/core-rules/size/)
+
 **Fortunate Inspiration** — Each player character in the party gains +1 Luck. This effect stacks up to 3 times.
 
-**Traits** — Star-touched Humans begin with 2 Trait selections.
+**Traits** — Star-touched Humans begin with two Trait selections.
 

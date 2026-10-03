@@ -10,14 +10,14 @@ tags: [character-creation]
 
 # Character Creation
 
-> [!Important]
+> [!IMPORTANT]
 > It is highly recommended for players to familiarize themselves with the rules before making a character.
 > Minimum Reading, please get aquainted first:
 - [The Basics](/docs/free-srd/core-rules/basics)
 > Prepared reading, these are needed during character creation. Read them ahead or be ready to reference them often:
 > - [Attributes](/docs/free-srd/core-rules/attributes), and [Stats](/docs/free-srd/core-rules/stats) 
 > Full picture reading, provides the best combined overview of play:
-> - [Action Economy](/docs/free-srd/core-rules/action-economy), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
+> - [Action Economy](/docs/free-srd/core-rules/action-economy), [Movement](/docs/free-srd/core-rules/movement), [Health](/docs/free-srd/core-rules/health), and [Combat](/docs/free-srd/core-rules/combat)
 
 
 ## Character Sheets

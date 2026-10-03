@@ -26,7 +26,13 @@ arrange, title, and print. Works on your phone, better on desktop.
 {{< /feature-banner >}}
 
 > [!WARNING]
-> **Latest 7/22/26 Changes**
+> **Latest 9/18/26 Changes**
+> - First batch of vehicle stat blocks (WIP)
+> - Size page reworked and broken into blocks for PDF builder. More clarifying rules for size as it relates to movement.
+> Movement and Action Economy broken into seperate pages.
+> - Advantage rules rebuilt for clarification, sliding scale rules implimented
+> 
+> **7/22/26 Changes**
 > - New page: [Damaged & Broken Gear](/docs/free-srd/core-rules/damaged--broken-gear/) — full rules for object durability, Object DEF/VIT, conditions, and breaking armor and shields.
 > - New items: [Ballistic Shield and Collapsible Shield](/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-armor/#shields) added to sci-fi armor; [Shield Mount](/docs/free-srd/inventory--equipment/sci-fi-equipment/bot-components/#shield-mount) component for robots and Androids.
 > - Equipment overhaul: all items updated to the Object DEF system. Armor DEF bonus renamed to **DEF Bonus** throughout.
@@ -36,9 +42,6 @@ arrange, title, and print. Works on your phone, better on desktop.
 > - Preview pages for [Playable Races](/docs/free-srd/character-creation/races/) — Classic Human, Star-Touched Human, Android, Reptilian, and Zeta Grey.
 > - Preview pages for [Robots and Drones](/docs/free-srd/creatures--npcs/sci-fi/) and [Vehicle Rules](/docs/free-srd/core-rules/vehicle-rules/).
 > - Various link fixes, cross-references, and clarifications throughout.
->
-> **5/7/26 Changes**
-> - Character features balancing audit and new additions. Update preview with change notes posted to [r/theseluckystars](https://www.reddit.com/r/theseluckystars/)
 >
 > -- Anthony
 

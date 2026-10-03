@@ -27,81 +27,81 @@ size cost. Decide the policy once, here.
 
 | Source | Target | Where | Note |
 |---|---|---|---|
-| `abilities/agile-charge` | `abilities/charge` | content/docs/free-srd/character-creation/abilities.md:116 |  |
-| `abilities/bash` | `abilities/charge` | content/docs/free-srd/character-creation/abilities.md:132 |  |
-| `abilities/battery-saboteur` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:728 |  |
-| `abilities/companion-bot` | `proficiencies/general-robotics` | content/docs/free-srd/character-creation/abilities.md:664 |  |
-| `abilities/controlled-suppressing-fire` | `abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:154 |  |
-| `abilities/controlled-suppressing-fire` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:154 |  |
-| `abilities/dead-drop` | `proficiencies/b-e-kit` | content/docs/free-srd/character-creation/abilities.md:179 |  |
-| `abilities/dual-attack` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:198 |  |
-| `abilities/dual-defense` | `abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:206 |  |
-| `abilities/dual-defense` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:206 |  |
-| `abilities/dual-strike` | `abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:216 |  |
-| `abilities/dual-strike` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:216 |  |
-| `abilities/expert` | `abilities/student` | content/docs/free-srd/character-creation/abilities.md:227 |  |
-| `abilities/extended-rage` | `abilities/rage` | content/docs/free-srd/character-creation/abilities.md:237 |  |
-| `abilities/extra-attack` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:247 |  |
-| `abilities/fearless-rage` | `abilities/rage` | content/docs/free-srd/character-creation/abilities.md:265 |  |
-| `abilities/field-medic` | `proficiencies/medic-training` | content/docs/free-srd/character-creation/abilities.md:273 |  |
-| `abilities/field-patch` | `proficiencies/medic-training` | content/docs/free-srd/character-creation/abilities.md:281 |  |
-| `abilities/friend-in-need` | `traits/tough` | content/docs/free-srd/character-creation/abilities.md:305 |  |
-| `abilities/friend-of-fortune` | `traits/lucky` | content/docs/free-srd/character-creation/abilities.md:614 |  |
-| `abilities/ghost-protocol` | `proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:674 |  |
-| `abilities/improved-bash` | `abilities/bash` | content/docs/free-srd/character-creation/abilities.md:325 |  |
-| `abilities/improved-bash` | `abilities/charge` | content/docs/free-srd/character-creation/abilities.md:325 |  |
-| `abilities/improved-suppressing-fire` | `abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:333 |  |
-| `abilities/improved-suppressing-fire` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:333 |  |
-| `abilities/indomitable-rage` | `abilities/fearless-rage` | content/docs/free-srd/character-creation/abilities.md:341 |  |
-| `abilities/indomitable-rage` | `abilities/rage` | content/docs/free-srd/character-creation/abilities.md:341 |  |
-| `abilities/indomitable-rage` | `traits/unshakable` | content/docs/free-srd/character-creation/abilities.md:341 |  |
-| `abilities/just-grazed` | `abilities/defender` | content/docs/free-srd/character-creation/abilities.md:349 |  |
-| `abilities/just-winded` | `abilities/defender` | content/docs/free-srd/character-creation/abilities.md:357 |  |
-| `abilities/leaping-charge` | `abilities/agile-charge` | content/docs/free-srd/character-creation/abilities.md:377 |  |
-| `abilities/leaping-charge` | `abilities/charge` | content/docs/free-srd/character-creation/abilities.md:377 |  |
-| `abilities/leg-shot` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:385 |  |
-| `abilities/line-of-fire` | `abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:393 |  |
-| `abilities/line-of-fire` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:393 |  |
-| `abilities/martial-supremacy` | `proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:409 |  |
-| `abilities/momentum-dodge` | `abilities/agile-dodge` | content/docs/free-srd/character-creation/abilities.md:418 |  |
-| `abilities/momentum-dodge` | `proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:418 |  |
-| `abilities/opensaysame` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:682 |  |
-| `abilities/oppressive-suppression` | `abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:426 |  |
-| `abilities/oppressive-suppression` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:426 |  |
-| `abilities/overcharge` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:750 |  |
-| `abilities/patient-shot` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:444 |  |
-| `abilities/power-main-tap` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:758 |  |
-| `abilities/powerful-rage` | `abilities/rage` | content/docs/free-srd/character-creation/abilities.md:452 |  |
-| `abilities/precise-focus` | `abilities/focus-attack` | content/docs/free-srd/character-creation/abilities.md:460 |  |
-| `abilities/precise-focus` | `abilities/focus-in` | content/docs/free-srd/character-creation/abilities.md:460 |  |
-| `abilities/quick-firing` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:478 |  |
-| `abilities/rigged-comp-jack` | `proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:692 |  |
-| `abilities/rigged-comp-jack` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:692 |  |
-| `abilities/salvage` | `proficiencies/repair-kit` | content/docs/free-srd/character-creation/abilities.md:700 |  |
-| `abilities/signal-intelligence` | `proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:708 |  |
-| `abilities/slip-strike` | `abilities/agile-dodge` | content/docs/free-srd/character-creation/abilities.md:513 |  |
-| `abilities/slip-strike` | `proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:513 |  |
-| `abilities/special-encouragement` | `abilities/companion-bot` | content/docs/free-srd/character-creation/abilities.md:716 |  |
-| `abilities/special-encouragement` | `proficiencies/general-robotics` | content/docs/free-srd/character-creation/abilities.md:716 |  |
-| `abilities/suppressing-fire` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:531 |  |
-| `abilities/swift-custom-battery` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:766 |  |
-| `abilities/swift-dual-attack` | `abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:540 |  |
-| `abilities/swift-dual-attack` | `proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:540 |  |
-| `abilities/tech-armor` | `proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:654 |  |
-| `abilities/the-look` | `traits/particularly-attractive` | content/docs/free-srd/character-creation/abilities.md:548 |  |
-| `abilities/tis-but-a-scratch` | `abilities/defender` | content/docs/free-srd/character-creation/abilities.md:642 |  |
-| `abilities/tis-but-a-scratch` | `abilities/just-grazed` | content/docs/free-srd/character-creation/abilities.md:642 |  |
-| `abilities/tis-but-a-scratch` | `abilities/just-winded` | content/docs/free-srd/character-creation/abilities.md:642 |  |
-| `abilities/tis-but-a-scratch` | `traits/tough` | content/docs/free-srd/character-creation/abilities.md:642 |  |
-| `abilities/true-defender` | `abilities/defender` | content/docs/free-srd/character-creation/abilities.md:556 |  |
-| `abilities/true-defender` | `abilities/friend-in-need` | content/docs/free-srd/character-creation/abilities.md:556 |  |
-| `abilities/true-defender` | `traits/tough` | content/docs/free-srd/character-creation/abilities.md:556 |  |
-| `abilities/unsettling-rage` | `abilities/powerful-rage` | content/docs/free-srd/character-creation/abilities.md:564 |  |
-| `abilities/unsettling-rage` | `abilities/rage` | content/docs/free-srd/character-creation/abilities.md:564 |  |
-| `abilities/unsettling-rage` | `traits/intimidating` | content/docs/free-srd/character-creation/abilities.md:564 |  |
-| `abilities/vital-focus` | `abilities/vital-strike` | content/docs/free-srd/character-creation/abilities.md:572 |  |
-| `proficiencies/licensed-instincts` | `proficiencies/vehicle` | content/docs/free-srd/character-creation/proficiencies.md:87 |  |
-| `proficiencies/medical-instincts` | `proficiencies/medic-training` | content/docs/free-srd/character-creation/proficiencies.md:110 |  |
+| `character/abilities/agile-charge` | `character/abilities/charge` | content/docs/free-srd/character-creation/abilities.md:116 |  |
+| `character/abilities/bash` | `character/abilities/charge` | content/docs/free-srd/character-creation/abilities.md:132 |  |
+| `character/abilities/battery-saboteur` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:728 |  |
+| `character/abilities/companion-bot` | `character/proficiencies/general-robotics` | content/docs/free-srd/character-creation/abilities.md:664 |  |
+| `character/abilities/controlled-suppressing-fire` | `character/abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:154 |  |
+| `character/abilities/controlled-suppressing-fire` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:154 |  |
+| `character/abilities/dead-drop` | `character/proficiencies/b-e-kit` | content/docs/free-srd/character-creation/abilities.md:179 |  |
+| `character/abilities/dual-attack` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:198 |  |
+| `character/abilities/dual-defense` | `character/abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:206 |  |
+| `character/abilities/dual-defense` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:206 |  |
+| `character/abilities/dual-strike` | `character/abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:216 |  |
+| `character/abilities/dual-strike` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:216 |  |
+| `character/abilities/expert` | `character/abilities/student` | content/docs/free-srd/character-creation/abilities.md:227 |  |
+| `character/abilities/extended-rage` | `character/abilities/rage` | content/docs/free-srd/character-creation/abilities.md:237 |  |
+| `character/abilities/extra-attack` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:247 |  |
+| `character/abilities/fearless-rage` | `character/abilities/rage` | content/docs/free-srd/character-creation/abilities.md:265 |  |
+| `character/abilities/field-medic` | `character/proficiencies/medic-training` | content/docs/free-srd/character-creation/abilities.md:273 |  |
+| `character/abilities/field-patch` | `character/proficiencies/medic-training` | content/docs/free-srd/character-creation/abilities.md:281 |  |
+| `character/abilities/friend-in-need` | `character/traits/tough` | content/docs/free-srd/character-creation/abilities.md:305 |  |
+| `character/abilities/friend-of-fortune` | `character/traits/lucky` | content/docs/free-srd/character-creation/abilities.md:614 |  |
+| `character/abilities/ghost-protocol` | `character/proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:674 |  |
+| `character/abilities/improved-bash` | `character/abilities/bash` | content/docs/free-srd/character-creation/abilities.md:325 |  |
+| `character/abilities/improved-bash` | `character/abilities/charge` | content/docs/free-srd/character-creation/abilities.md:325 |  |
+| `character/abilities/improved-suppressing-fire` | `character/abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:333 |  |
+| `character/abilities/improved-suppressing-fire` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:333 |  |
+| `character/abilities/indomitable-rage` | `character/abilities/fearless-rage` | content/docs/free-srd/character-creation/abilities.md:341 |  |
+| `character/abilities/indomitable-rage` | `character/abilities/rage` | content/docs/free-srd/character-creation/abilities.md:341 |  |
+| `character/abilities/indomitable-rage` | `character/traits/unshakable` | content/docs/free-srd/character-creation/abilities.md:341 |  |
+| `character/abilities/just-grazed` | `character/abilities/defender` | content/docs/free-srd/character-creation/abilities.md:349 |  |
+| `character/abilities/just-winded` | `character/abilities/defender` | content/docs/free-srd/character-creation/abilities.md:357 |  |
+| `character/abilities/leaping-charge` | `character/abilities/agile-charge` | content/docs/free-srd/character-creation/abilities.md:377 |  |
+| `character/abilities/leaping-charge` | `character/abilities/charge` | content/docs/free-srd/character-creation/abilities.md:377 |  |
+| `character/abilities/leg-shot` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:385 |  |
+| `character/abilities/line-of-fire` | `character/abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:393 |  |
+| `character/abilities/line-of-fire` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:393 |  |
+| `character/abilities/martial-supremacy` | `character/proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:409 |  |
+| `character/abilities/momentum-dodge` | `character/abilities/agile-dodge` | content/docs/free-srd/character-creation/abilities.md:418 |  |
+| `character/abilities/momentum-dodge` | `character/proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:418 |  |
+| `character/abilities/opensaysame` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:682 |  |
+| `character/abilities/oppressive-suppression` | `character/abilities/suppressing-fire` | content/docs/free-srd/character-creation/abilities.md:426 |  |
+| `character/abilities/oppressive-suppression` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:426 |  |
+| `character/abilities/overcharge` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:750 |  |
+| `character/abilities/patient-shot` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:444 |  |
+| `character/abilities/power-main-tap` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:758 |  |
+| `character/abilities/powerful-rage` | `character/abilities/rage` | content/docs/free-srd/character-creation/abilities.md:452 |  |
+| `character/abilities/precise-focus` | `character/abilities/focus-attack` | content/docs/free-srd/character-creation/abilities.md:460 |  |
+| `character/abilities/precise-focus` | `character/abilities/focus-in` | content/docs/free-srd/character-creation/abilities.md:460 |  |
+| `character/abilities/quick-firing` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:478 |  |
+| `character/abilities/rigged-comp-jack` | `character/proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:692 |  |
+| `character/abilities/rigged-comp-jack` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:692 |  |
+| `character/abilities/salvage` | `character/proficiencies/repair-kit` | content/docs/free-srd/character-creation/abilities.md:700 |  |
+| `character/abilities/signal-intelligence` | `character/proficiencies/comp-jack` | content/docs/free-srd/character-creation/abilities.md:708 |  |
+| `character/abilities/slip-strike` | `character/abilities/agile-dodge` | content/docs/free-srd/character-creation/abilities.md:513 |  |
+| `character/abilities/slip-strike` | `character/proficiencies/martial-training` | content/docs/free-srd/character-creation/abilities.md:513 |  |
+| `character/abilities/special-encouragement` | `character/abilities/companion-bot` | content/docs/free-srd/character-creation/abilities.md:716 |  |
+| `character/abilities/special-encouragement` | `character/proficiencies/general-robotics` | content/docs/free-srd/character-creation/abilities.md:716 |  |
+| `character/abilities/suppressing-fire` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:531 |  |
+| `character/abilities/swift-custom-battery` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:766 |  |
+| `character/abilities/swift-dual-attack` | `character/abilities/dual-attack` | content/docs/free-srd/character-creation/abilities.md:540 |  |
+| `character/abilities/swift-dual-attack` | `character/proficiencies/weapon` | content/docs/free-srd/character-creation/abilities.md:540 |  |
+| `character/abilities/tech-armor` | `character/proficiencies/general-technology` | content/docs/free-srd/character-creation/abilities.md:654 |  |
+| `character/abilities/the-look` | `character/traits/particularly-attractive` | content/docs/free-srd/character-creation/abilities.md:548 |  |
+| `character/abilities/tis-but-a-scratch` | `character/abilities/defender` | content/docs/free-srd/character-creation/abilities.md:642 |  |
+| `character/abilities/tis-but-a-scratch` | `character/abilities/just-grazed` | content/docs/free-srd/character-creation/abilities.md:642 |  |
+| `character/abilities/tis-but-a-scratch` | `character/abilities/just-winded` | content/docs/free-srd/character-creation/abilities.md:642 |  |
+| `character/abilities/tis-but-a-scratch` | `character/traits/tough` | content/docs/free-srd/character-creation/abilities.md:642 |  |
+| `character/abilities/true-defender` | `character/abilities/defender` | content/docs/free-srd/character-creation/abilities.md:556 |  |
+| `character/abilities/true-defender` | `character/abilities/friend-in-need` | content/docs/free-srd/character-creation/abilities.md:556 |  |
+| `character/abilities/true-defender` | `character/traits/tough` | content/docs/free-srd/character-creation/abilities.md:556 |  |
+| `character/abilities/unsettling-rage` | `character/abilities/powerful-rage` | content/docs/free-srd/character-creation/abilities.md:564 |  |
+| `character/abilities/unsettling-rage` | `character/abilities/rage` | content/docs/free-srd/character-creation/abilities.md:564 |  |
+| `character/abilities/unsettling-rage` | `character/traits/intimidating` | content/docs/free-srd/character-creation/abilities.md:564 |  |
+| `character/abilities/vital-focus` | `character/abilities/vital-strike` | content/docs/free-srd/character-creation/abilities.md:572 |  |
+| `character/proficiencies/licensed-instincts` | `character/proficiencies/vehicle` | content/docs/free-srd/character-creation/proficiencies.md:87 |  |
+| `character/proficiencies/medical-instincts` | `character/proficiencies/medic-training` | content/docs/free-srd/character-creation/proficiencies.md:110 |  |
 
 ### Class: `tag-definition` — equipment → item-tag definitions
 
@@ -118,21 +118,21 @@ downgrade these to reference).
 
 | Target tag block | Sources citing it |
 |---|---|
-| `item-tags/arcing` | `sci-fi-equipment/shock-rifle` |
-| `item-tags/ballistic` | `sci-fi-equipment/drum-magazines`, `sci-fi-equipment/recoil-compensation-system` |
-| `item-tags/battery` | `components/backup-power-cell`, `components/heavy-wrist-laser`, `components/improved-cooling-system`, `components/wrist-laser`, `sci-fi-equipment/bio-scanner`, `sci-fi-equipment/comp-jack`, `sci-fi-equipment/decoy-beacon`, `sci-fi-equipment/grapple-line-launcher`, `sci-fi-equipment/gravity-anchor`, `sci-fi-equipment/jump-boosters`, `sci-fi-equipment/mini-laser-cutter`, `sci-fi-equipment/personal-shield`, `sci-fi-equipment/portable-water-purifier`, `sci-fi-equipment/remote-detonator`, `sci-fi-equipment/signature-spoofer`, `sci-fi-equipment/squad-shield` |
-| `item-tags/belt-fed` | `sci-fi-equipment/heavy-rotary-cannon` |
-| `item-tags/bulky` | `generic-equipment/barrel`, `generic-equipment/crate`, `generic-equipment/lockable-chest`, `generic-equipment/tent-4-person`, `sci-fi-equipment/b-e-kit`, `sci-fi-equipment/battery-cores`, `sci-fi-equipment/boost-pack`, `sci-fi-equipment/fuel-cells`, `sci-fi-equipment/gravity-anchor`, `sci-fi-equipment/heavy-rotary-cannon`, `sci-fi-equipment/jump-pack`, `sci-fi-equipment/long-rifle`, `sci-fi-equipment/reactor-cores`, `sci-fi-equipment/repair-kit`, `sci-fi-equipment/safer-unit`, `sci-fi-equipment/survival-tent` |
-| `item-tags/concealable` | `sci-fi-equipment/auto-pistol`, `sci-fi-equipment/light-combat-vest`, `sci-fi-equipment/light-pistol`, `sci-fi-equipment/standard-issue-knife` |
-| `item-tags/firing-modes` | `components/heavy-wrist-laser`, `components/wrist-laser`, `sci-fi-equipment/auto-pistol`, `sci-fi-equipment/compact-rifle`, `sci-fi-equipment/heavy-pistol`, `sci-fi-equipment/heavy-rotary-cannon`, `sci-fi-equipment/laser-pistol`, `sci-fi-equipment/laser-rifle`, `sci-fi-equipment/light-pistol`, `sci-fi-equipment/long-rifle`, `sci-fi-equipment/shock-rifle`, `sci-fi-equipment/standard-issue-rifle` |
-| `item-tags/fuel-cells` | `sci-fi-equipment/boost-pack`, `sci-fi-equipment/jump-pack`, `sci-fi-equipment/portable-heater` |
-| `item-tags/injector` | `sci-fi-equipment/ara-5`, `sci-fi-equipment/pain-suppressant-injector`, `sci-fi-equipment/vitaboost-injector` |
-| `item-tags/long-reload` | `sci-fi-equipment/heavy-rotary-cannon` |
-| `item-tags/power-source` | `components/power-sources`, `sci-fi-equipment/reactor-cores` |
-| `item-tags/pressurized` | `sci-fi-equipment/basic-p-suit` |
-| `item-tags/space-suit` | `sci-fi-equipment/classic-evosuit`, `sci-fi-equipment/combat-evosuit`, `sci-fi-equipment/eva-suit`, `sci-fi-equipment/ultraweave-evosuit` |
-| `item-tags/throwable` | `generic-equipment/grappling-hook`, `sci-fi-equipment/emergency-hatchet`, `sci-fi-equipment/standard-issue-knife`, `sci-fi-equipment/weighted-core` |
-| `item-tags/two-handed` | `components/heavy-wrist-laser`, `sci-fi-equipment/comp-jack`, `sci-fi-equipment/compact-rifle`, `sci-fi-equipment/grapple-line-launcher`, `sci-fi-equipment/heavy-rotary-cannon`, `sci-fi-equipment/laser-rifle`, `sci-fi-equipment/long-rifle`, `sci-fi-equipment/ripper-blade`, `sci-fi-equipment/shock-rifle`, `sci-fi-equipment/standard-issue-rifle` |
+| `gear/item-tags/arcing` | `gear/sci-fi-equipment/shock-rifle` |
+| `gear/item-tags/ballistic` | `gear/sci-fi-equipment/drum-magazines`, `gear/sci-fi-equipment/recoil-compensation-system` |
+| `gear/item-tags/battery` | `gear/components/backup-power-cell`, `gear/components/heavy-wrist-laser`, `gear/components/improved-cooling-system`, `gear/components/wrist-laser`, `gear/sci-fi-equipment/bio-scanner`, `gear/sci-fi-equipment/comp-jack`, `gear/sci-fi-equipment/decoy-beacon`, `gear/sci-fi-equipment/grapple-line-launcher`, `gear/sci-fi-equipment/gravity-anchor`, `gear/sci-fi-equipment/jump-boosters`, `gear/sci-fi-equipment/mini-laser-cutter`, `gear/sci-fi-equipment/personal-shield`, `gear/sci-fi-equipment/portable-water-purifier`, `gear/sci-fi-equipment/remote-detonator`, `gear/sci-fi-equipment/signature-spoofer`, `gear/sci-fi-equipment/squad-shield` |
+| `gear/item-tags/belt-fed` | `gear/sci-fi-equipment/heavy-rotary-cannon` |
+| `gear/item-tags/bulky` | `gear/generic-equipment/barrel`, `gear/generic-equipment/crate`, `gear/generic-equipment/lockable-chest`, `gear/generic-equipment/tent-4-person`, `gear/sci-fi-equipment/b-e-kit`, `gear/sci-fi-equipment/battery-cores`, `gear/sci-fi-equipment/boost-pack`, `gear/sci-fi-equipment/fuel-cells`, `gear/sci-fi-equipment/gravity-anchor`, `gear/sci-fi-equipment/heavy-rotary-cannon`, `gear/sci-fi-equipment/jump-pack`, `gear/sci-fi-equipment/long-rifle`, `gear/sci-fi-equipment/reactor-cores`, `gear/sci-fi-equipment/repair-kit`, `gear/sci-fi-equipment/safer-unit`, `gear/sci-fi-equipment/survival-tent` |
+| `gear/item-tags/concealable` | `gear/sci-fi-equipment/auto-pistol`, `gear/sci-fi-equipment/light-combat-vest`, `gear/sci-fi-equipment/light-pistol`, `gear/sci-fi-equipment/standard-issue-knife` |
+| `gear/item-tags/firing-modes` | `gear/components/heavy-wrist-laser`, `gear/components/wrist-laser`, `gear/sci-fi-equipment/auto-pistol`, `gear/sci-fi-equipment/compact-rifle`, `gear/sci-fi-equipment/heavy-pistol`, `gear/sci-fi-equipment/heavy-rotary-cannon`, `gear/sci-fi-equipment/laser-pistol`, `gear/sci-fi-equipment/laser-rifle`, `gear/sci-fi-equipment/light-pistol`, `gear/sci-fi-equipment/long-rifle`, `gear/sci-fi-equipment/shock-rifle`, `gear/sci-fi-equipment/standard-issue-rifle` |
+| `gear/item-tags/fuel-cells` | `gear/sci-fi-equipment/boost-pack`, `gear/sci-fi-equipment/jump-pack`, `gear/sci-fi-equipment/portable-heater` |
+| `gear/item-tags/injector` | `gear/sci-fi-equipment/ara-5`, `gear/sci-fi-equipment/pain-suppressant-injector`, `gear/sci-fi-equipment/vitaboost-injector` |
+| `gear/item-tags/long-reload` | `gear/sci-fi-equipment/heavy-rotary-cannon` |
+| `gear/item-tags/power-source` | `gear/components/power-sources`, `gear/sci-fi-equipment/reactor-cores` |
+| `gear/item-tags/pressurized` | `gear/sci-fi-equipment/basic-p-suit` |
+| `gear/item-tags/space-suit` | `gear/sci-fi-equipment/classic-evosuit`, `gear/sci-fi-equipment/combat-evosuit`, `gear/sci-fi-equipment/eva-suit`, `gear/sci-fi-equipment/ultraweave-evosuit` |
+| `gear/item-tags/throwable` | `gear/generic-equipment/grappling-hook`, `gear/sci-fi-equipment/emergency-hatchet`, `gear/sci-fi-equipment/standard-issue-knife`, `gear/sci-fi-equipment/weighted-core` |
+| `gear/item-tags/two-handed` | `gear/components/heavy-wrist-laser`, `gear/sci-fi-equipment/comp-jack`, `gear/sci-fi-equipment/compact-rifle`, `gear/sci-fi-equipment/grapple-line-launcher`, `gear/sci-fi-equipment/heavy-rotary-cannon`, `gear/sci-fi-equipment/laser-rifle`, `gear/sci-fi-equipment/long-rifle`, `gear/sci-fi-equipment/ripper-blade`, `gear/sci-fi-equipment/shock-rifle`, `gear/sci-fi-equipment/standard-issue-rifle` |
 
 ### Class: `mechanism` — rule leans on another rule's machinery
 
@@ -147,35 +147,35 @@ linking to it* (marked "implicit — no link in text").
 
 | Source | Target | Where | Note |
 |---|---|---|---|
-| `combat/advantage-in-combat` | `basics/advantage` | content/docs/free-srd/core-rules/combat.md:44 |  |
-| `combat/damage-dice` | `core-rules/size` | — | Dice determined by attacker/defender size comparison (implicit — no link in text) |
-| `combat/opportunity-attack` | `proficiencies/martial-training` | content/snippets/opportunity-attack.md:5 |  |
-| `conditions/dying` | `conditions/unconscious` | — | Dying character 'immediately falls unconscious (as the condition)' (implicit — no link in text) |
-| `conditions/stressed` | `stats/stress-threshold` | — | Trigger defined by Stress Threshold (implicit — no link in text) |
-| `environment/extreme-environments` | `combat/damage-resistance` | content/snippets/extreme-environments.md:11 |  |
+| `combat/advantage-in-combat` | `rules/basics/advantage` | content/docs/free-srd/core-rules/combat.md:44 |  |
+| `rules/combat/damage-dice` | `core-rules/size` | — | Dice determined by attacker/defender size comparison (implicit — no link in text) |
+| `rules/combat/opportunity-attack` | `character/proficiencies/martial-training` | content/snippets/opportunity-attack.md:5 |  |
+| `rules/conditions/dying` | `rules/conditions/unconscious` | — | Dying character 'immediately falls unconscious (as the condition)' (implicit — no link in text) |
+| `rules/conditions/stressed` | `rules/stats/stress-threshold` | — | Trigger defined by Stress Threshold (implicit — no link in text) |
+| `rules/environment/extreme-environments` | `rules/combat/damage-resistance` | content/snippets/extreme-environments.md:11 |  |
 | `environment/heat-and-cold` | `environment/exposure-intervals` | — | FORT-interval mechanism defined in Exposure Intervals; this block only lists consequences (implicit — no link in text) |
 | `environment/toxic-atmosphere` | `environment/exposure-intervals` | — | Same interval mechanism dependency (implicit — no link in text) |
-| `health/applying-damage` | `stats/defense` | — | The loop is defined in terms of DEF (implicit — no link in text) |
-| `health/applying-damage` | `stats/vitality` | — | The loop is defined in terms of VIT (implicit — no link in text) |
-| `item-tags/battery` | `sci-fi-equipment/battery-cores` | content/docs/free-srd/inventory--equipment/item-tags.md:84 |  |
-| `item-tags/power-source` | `sci-fi-equipment/reactor-cores` | content/docs/free-srd/inventory--equipment/item-tags.md:174 |  |
-| `item-tags/space-suit` | `combat/damage-resistance` | content/docs/free-srd/inventory--equipment/item-tags.md:196 |  |
-| `item-tags/space-suit` | `combat/damage-resistance` | content/docs/free-srd/inventory--equipment/item-tags.md:197 |  |
-| `item-tags/space-suit` | `item-tags/pressurized` | content/docs/free-srd/inventory--equipment/item-tags.md:193 |  |
-| `item-tags/space-suit` | `sci-fi-equipment/coms-unit` | content/docs/free-srd/inventory--equipment/item-tags.md:194 |  |
-| `objects/armor-degradation` | `objects/conditions` | — | Uses Damaged/Broken as defined terms (implicit — no link in text) |
-| `objects/conditions` | `objects/durability` | — | The three conditions are VIT thresholds defined by Object Durability (implicit — no link in text) |
-| `objects/shield-degradation` | `basics/supply-rolls` | — | Shield wear runs on supply dice (implicit — no link in text) |
-| `objects/shield-degradation` | `objects/conditions` | — | Uses Damaged/Broken as defined terms (implicit — no link in text) |
-| `sci-fi-equipment/comp-jack` | `proficiencies/comp-jack` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md:248 |  |
-| `sci-fi-equipment/kit-supplies` | `basics/supply-rolls` | — | Kit supplies run on supply dice (implicit — no link in text) |
-| `sci-fi/energy-shields` | `stats/defense` | — | Temporary DEF pool concept extends DEF (implicit — no link in text) |
-| `stats/luck` | `conditions/stressed` | — | Stressed disables Luck (implicit — no link in text) |
-| `stats/vitality` | `wounds/wounds` | content/snippets/vitality.md:24 |  |
-| `vehicles/boarding-and-bailing` | `movement/speed-tiers-chart` | — | Targets are 6 + speed modifier from the chart (implicit — no link in text) |
-| `vehicles/collision-damage` | `movement/speed-tiers-chart` | — | Formula uses the chart's speed modifier (implicit — no link in text) |
-| `vehicles/impact-and-overrun` | `vehicles/collision-damage` | — | Failure outcomes resolve via collision damage (implicit — no link in text) |
-| `vehicles/mounts` | `vehicles/collision-damage` | — | Sudden Stops deals collision damage (implicit — no link in text) |
+| `rules/health/applying-damage` | `rules/stats/defense` | — | The loop is defined in terms of DEF (implicit — no link in text) |
+| `rules/health/applying-damage` | `rules/stats/vitality` | — | The loop is defined in terms of VIT (implicit — no link in text) |
+| `gear/item-tags/battery` | `gear/sci-fi-equipment/battery-cores` | content/docs/free-srd/inventory--equipment/item-tags.md:84 |  |
+| `gear/item-tags/power-source` | `gear/sci-fi-equipment/reactor-cores` | content/docs/free-srd/inventory--equipment/item-tags.md:174 |  |
+| `gear/item-tags/space-suit` | `rules/combat/damage-resistance` | content/docs/free-srd/inventory--equipment/item-tags.md:196 |  |
+| `gear/item-tags/space-suit` | `rules/combat/damage-resistance` | content/docs/free-srd/inventory--equipment/item-tags.md:197 |  |
+| `gear/item-tags/space-suit` | `gear/item-tags/pressurized` | content/docs/free-srd/inventory--equipment/item-tags.md:193 |  |
+| `gear/item-tags/space-suit` | `gear/sci-fi-equipment/coms-unit` | content/docs/free-srd/inventory--equipment/item-tags.md:194 |  |
+| `rules/objects/armor-degradation` | `rules/objects/conditions` | — | Uses Damaged/Broken as defined terms (implicit — no link in text) |
+| `rules/objects/conditions` | `rules/objects/durability` | — | The three conditions are VIT thresholds defined by Object Durability (implicit — no link in text) |
+| `rules/objects/shield-degradation` | `rules/basics/supply-rolls` | — | Shield wear runs on supply dice (implicit — no link in text) |
+| `rules/objects/shield-degradation` | `rules/objects/conditions` | — | Uses Damaged/Broken as defined terms (implicit — no link in text) |
+| `gear/sci-fi-equipment/comp-jack` | `character/proficiencies/comp-jack` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/sci-fi-misc-equipment.md:248 |  |
+| `gear/sci-fi-equipment/kit-supplies` | `rules/basics/supply-rolls` | — | Kit supplies run on supply dice (implicit — no link in text) |
+| `rules/sci-fi/energy-shields` | `rules/stats/defense` | — | Temporary DEF pool concept extends DEF (implicit — no link in text) |
+| `rules/stats/luck` | `rules/conditions/stressed` | — | Stressed disables Luck (implicit — no link in text) |
+| `rules/stats/vitality` | `rules/wounds/wounds` | content/snippets/vitality.md:24 |  |
+| `rules/vehicles/boarding-and-bailing` | `rules/movement/speed-tiers-chart` | — | Targets are 6 + speed modifier from the chart (implicit — no link in text) |
+| `rules/vehicles/collision-damage` | `rules/movement/speed-tiers-chart` | — | Formula uses the chart's speed modifier (implicit — no link in text) |
+| `rules/vehicles/impact-and-overrun` | `rules/vehicles/collision-damage` | — | Failure outcomes resolve via collision damage (implicit — no link in text) |
+| `rules/vehicles/mounts` | `rules/vehicles/collision-damage` | — | Sudden Stops deals collision damage (implicit — no link in text) |
 
 ### Class: `functions-as` — item defined by another item
 
@@ -188,11 +188,11 @@ Component/item blocks whose rules text is literally "functions as X"
 
 | Source | Target | Where | Note |
 |---|---|---|---|
-| `components/automatic-crash-foam-system` | `sci-fi-equipment/crash-foam-canister` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:91 |  |
-| `components/automatic-crash-foam-system` | `sci-fi-equipment/crash-foam-canister` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:93 |  |
-| `components/heavy-wrist-laser` | `sci-fi-equipment/laser-rifle` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:115 |  |
-| `components/internal-comp-jack` | `sci-fi-equipment/comp-jack` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:137 |  |
-| `components/wrist-laser` | `sci-fi-equipment/laser-pistol` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:282 |  |
+| `gear/components/automatic-crash-foam-system` | `gear/sci-fi-equipment/crash-foam-canister` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:91 |  |
+| `gear/components/automatic-crash-foam-system` | `gear/sci-fi-equipment/crash-foam-canister` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:93 |  |
+| `gear/components/heavy-wrist-laser` | `gear/sci-fi-equipment/laser-rifle` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:115 |  |
+| `gear/components/internal-comp-jack` | `gear/sci-fi-equipment/comp-jack` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:137 |  |
+| `gear/components/wrist-laser` | `gear/sci-fi-equipment/laser-pistol` | content/docs/free-srd/inventory--equipment/sci-fi-equipment/bots--drones/components.md:282 |  |
 
 ### Class: `exclusivity` — mutually exclusive selections
 
@@ -206,6 +206,6 @@ decides how these are represented.
 
 | Source | Target | Where | Note |
 |---|---|---|---|
-| `traits/particularly-attractive` | `traits/unremarkable` | content/docs/free-srd/character-creation/traits.md:97 |  |
-| `traits/unremarkable` | `traits/particularly-attractive` | content/docs/free-srd/character-creation/traits.md:135 |  |
+| `character/traits/particularly-attractive` | `character/traits/unremarkable` | content/docs/free-srd/character-creation/traits.md:97 |  |
+| `character/traits/unremarkable` | `character/traits/particularly-attractive` | content/docs/free-srd/character-creation/traits.md:135 |  |
 

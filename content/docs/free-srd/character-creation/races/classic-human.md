@@ -15,4 +15,6 @@ Humanity has long been described as a varied and highly diverse race, and tablet
 
 ## Features
 
+Size: [Medium](/docs/free-srd/core-rules/size/)
+
 **Traits** — Classic Humans begin with three Trait selections.

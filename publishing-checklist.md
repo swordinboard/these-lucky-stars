@@ -58,7 +58,7 @@ Two extra things, both caught by the preflight — but know what they are:
 2. **Put it on a page.** A new snippet is a file, not a placement. Until a page
    pulls it in it is invisible on the site — even though it *is* already in the
    PDF builder's library. Either:
-   - `{{% include "/snippets/<namespace>/<slug>" %}}` on the page, or
+   - `{{% include "/snippets/<group>/<namespace>/<slug>" %}}` on the page, or
    - make sure a `{{< catalog >}}` / `{{< blockset >}}` on some page has filters
      that match it.
 3. `python3 _discovery/tools/builddata.py` — always needed for a new snippet,
@@ -66,6 +66,24 @@ Two extra things, both caught by the preflight — but know what they are:
    block is missing from it.
 4. `./_discovery/tools/check.sh` — check 4 catches a missed step 3, check 6
    catches a missed step 2 and names the block.
+
+### Moved or renamed a snippet
+
+1. Update `id:` to match the new path, then every reference to it: `include`
+   paths, `blockdetails` calls, hand-listed `catalog` rows, `requires:` entries,
+   and any `namespace="…"` filter naming the part you moved.
+2. `python3 _discovery/tools/builddata.py`.
+3. **Read the edge-type line it prints**, don't just let it pass. `dependency`
+   counts feature prerequisites and should hold steady across a pure move; a
+   drop to zero means a hardcoded path in the tooling went stale.
+4. `./_discovery/tools/check.sh`.
+
+Step 3 exists because two things name block ids as literal strings and no check
+can see them: `FEATURE_NS` / `EQUIP_NS` / `ITEM_TAG_NS` in `builddata.py`, and
+every entry in `_discovery/tools/implicit-edges.json`. `builddata.py` fails
+loudly if one matches *nothing*, but a prefix that matches the *wrong* blocks
+passes clean. See **Moving or Renaming Content Pages** in
+`site-maintenance-notes.md`.
 
 ### Added a new page
 1. `./_discovery/tools/check.sh`

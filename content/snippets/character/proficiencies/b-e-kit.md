@@ -1,0 +1,10 @@
+---
+title: "B&E Kit Proficiency"
+id: character/proficiencies/b-e-kit
+category: [core]
+type: feature
+tags: [proficiency, core]
+summary: "Trained in the use of the B&E kit."
+---
+
+You have been trained in the use of the B&E kit. Gain a +2 bonus when attempting to unlock locks and disable traps while using the B&E kit.

@@ -37,7 +37,7 @@ not grow a parallel tree per setting.
 ### `{{< blockset >}}` — assemble a set of blocks by property
 
 ```
-{{< blockset category="sci-fi" namespace="abilities" >}}
+{{< blockset category="sci-fi" namespace="character/abilities" >}}
 {{< blockset category="sci-fi" type="rule" wip="exclude" >}}
 ```
 
@@ -77,8 +77,8 @@ from the id rather than from the name a reader sees:
 
 | Block | Was | Now (matches the page heading) |
 |---|---|---|
-| `sci-fi/huds` | "Huds" | "Heads Up Displays (HUDs)" |
-| `sci-fi/ballistics-in-space` | "Ballistics In Space" | "Ballistic Weapons In Space" |
+| `rules/sci-fi/huds` | "Huds" | "Heads Up Displays (HUDs)" |
+| `rules/sci-fi/ballistics-in-space` | "Ballistics In Space" | "Ballistic Weapons In Space" |
 
 The PDF builder would have printed "Huds" too. `blocks.json` now also carries
 `owns_heading`, marking the 105 **section blocks** whose heading lives on the

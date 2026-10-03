@@ -1,0 +1,6 @@
+{{- /* A small four-point star, for the site-title lockup. Inline SVG rather
+       than ✦ (U+2726) because that glyph is in neither Georgia nor the Cinzel
+       subsets we ship, so it would render from an arbitrary fallback or as
+       tofu. Sized in `em` and filled with currentColor, so it tracks the
+       title's size and colour in both themes. See docs/brand.html. */ -}}
+<svg class="brand-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C12 6.6 17.4 12 24 12 17.4 12 12 17.4 12 24 12 17.4 6.6 12 0 12 6.6 12 12 6.6 12 0Z" fill="currentColor"/></svg>

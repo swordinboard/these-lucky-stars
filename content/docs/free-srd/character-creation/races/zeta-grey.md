@@ -16,7 +16,9 @@ Whether cruising the stars in UFOs, bartending in the sketchiest part of an indu
 
 ## Features
 
-**Resize** — 1/day a Zeta Grey can scale the size of its body to suit its needs. Doing so is a standard action that costs 4 AP and provokes Opportunity Attacks. A Zeta Grey's height can be scaled to as little as 3ft or as tall as 9ft. Items and worn equipment are unaffected and may prevent the use of this ability.
+Size: [Medium](/docs/free-srd/core-rules/size/) or [Small](/docs/free-srd/core-rules/size/)
+
+**Resize** — 1/day a ZetA Grey can scale the size of its body to suit its needs. Doing so is a standard action that costs 4 AP and provokes Opportunity Attacks. A Zeta Grey's height can be scaled to as little as 3ft or as tall as 8ft. Use of this ability effectively changs the character's size between the small and medium categories. Items and worn equipment are unaffected and may prevent the use of this ability.
 
 **High Intelligence** — +1 KNO. KNO cannot be lowered by any effect.
 
