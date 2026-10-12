@@ -46,7 +46,7 @@ A failed Bypass automatically triggers the countermeasure.
 
 **Access** *(2 or 4 AP)* — Required to use a secured system. Using the matching key or code costs 2 AP. Using a comp jack costs 4 AP and requires a KNO roll with a target equal to the system's security base target. If using a comp jack, this action can be split across turns as long as it is not interrupted — the KNO roll is made on the turn the action completes. Once accessed, the system can be used freely until locked out or reset.
 
-**Command** *(1+ AP)* — Use hardware or software commands available on the system. Entering a command typically costs 1 AP; more complex commands may require additional AP or time. This could be turning on/off connected lights, connecting to a communication network, or beginning a download.
+**Command** *(1+ AP)* — Use hardware or software commands available on the system. Entering a command typically costs 1 AP; more complex commands may require additional AP or time. This could be turning on/off connected lights, connecting to a communication network, beginning a download, or controling a remote drone.
 
 **Search** *(2 AP)* — Search the system for specific information. Requires an INS check, typically target 9, though information-dense systems may have a higher target. If attempting to access specific files on a computer system they must usually be found using the search action before they can be viewed or downloaded.
 
