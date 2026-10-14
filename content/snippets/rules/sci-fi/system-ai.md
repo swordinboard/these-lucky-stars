@@ -10,6 +10,8 @@ Some computers have internal AI that can monitor and interact with connected sys
 
 System AI have the following features:
 
+**Attributes:** System AI have no physical attributes and cannot take physical actions. They do not have their own DEF and VIT; health and other physical stats are dependant on hardware they interact with and control. System AI have mental attributes as other creatures.
+
 **Software:** System AI are software models that exists within the computer they are connected to. Their data is stored within the computer system; reseting or destroying a computer's memory also resets or destroys the AI. A system AI is only able to interact with the world through the computer in which it resides and any systems that are connected to it. They typically have unlimited access to the systems and files within the computer, including any controls, equipment, cameras, sensors, and networks that may be connected. Advanced systen AI may have multiple backuo locations, mlensuring they remain active when one lication's hardware is damaged or reset.
 
 **System Specialist:** Because system AI are part of the computer they reside in, many actions are performed internally. Often they are able to perform these internal actions more quickly than someone acting on the computer through a terminal.
